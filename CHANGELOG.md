@@ -10,8 +10,7 @@ This project follows Semantic Versioning.
 
 ## Added
 
-- Created phase folders (01_Planning ~ 06_Business).
-- Created docs/decisions/ with ADR-TEMPLATE.md and ADR-001 ~ ADR-004.
+-
 
 ## Changed
 
@@ -31,10 +30,7 @@ This project follows Semantic Versioning.
 
 ## Documentation
 
-- Synchronized CLAUDE.md with README.md: added ADR Management Rules and GitHub
-  Rules sections, redefined DECISIONS.md as an ADR index, aligned CHANGELOG
-  categories, and allowed phase repetition/overlap in the workflow.
-- Filled in dates for ADR index (DECISIONS.md) and version 0.1.0.
+-
 
 ## Security
 
@@ -52,7 +48,9 @@ This project follows Semantic Versioning.
 - CLAUDE.md created.
 - DECISIONS.md created.
 - ADR management structure established.
-- Initial Architecture Decision Records created.
+- Initial Architecture Decision Records created (ADR-001 ~ ADR-004).
+- Created phase folders (01_Planning ~ 06_Business).
+- Created docs/decisions/ with ADR-TEMPLATE.md.
 
 ## Documentation
 
@@ -62,6 +60,9 @@ This project follows Semantic Versioning.
 - Defined development workflow.
 - Defined AI operating guidelines.
 - Defined GitHub workflow.
+- Synchronized CLAUDE.md with README.md: added ADR Management Rules and GitHub
+  Rules sections, redefined DECISIONS.md as an ADR index, aligned CHANGELOG
+  categories, and allowed phase repetition/overlap in the workflow.
 
 ---
 
