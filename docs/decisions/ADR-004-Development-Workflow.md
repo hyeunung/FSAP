@@ -2,11 +2,13 @@
 
 | Item   | Value      |
 | ------ | ---------- |
-| Status | Accepted   |
+| Status | Superseded |
 | Scope  | Process    |
 | Date   | 2026-07-29 |
 
 ---
+
+> **Superseded (2026-10-30):** 결정로그 C-07로 대체. 저장소를 기구 개발 폴더로 바꾸고 6단계 폴더를 지웠다. 기구 개발은 MechDesign_Engine 순서를 따른다. 아래는 기록으로 남긴다.
 
 ## Context
 

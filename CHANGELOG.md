@@ -10,11 +10,18 @@ This project follows Semantic Versioning.
 
 ## Added
 
--
+- 설계 요구서 초안 `docs/design-requirements.md`(엔진 양식, 과제 T01~T07).
+- 결정로그 `docs/decision-log.md`(대화 단계 C-01~C-08, 예전 ADR 목록).
+- 자료대기 목록 `docs/waiting-list.md`(D-01~D-15).
+- 벤치마크·특허 조사 `docs/benchmark.md`(R375X·R375A, Richpeace, 만료 특허 7건).
+- 엔진 기본 배치 폴더: `docs/reports/`, `tools/`, `purchased-step/`, `fea/cases/`, `fea/results/`, `deliverables/`.
 
 ## Changed
 
--
+- 저장소를 MAT-RS-001 기구 개발 폴더로 바꿨다(결정로그 C-07). 기구 모델링은 MechDesign_Engine으로 한다.
+- `README.md`, `CLAUDE.md`를 기구 개발용으로 다시 썼다(한글).
+- ADR-004 상태를 Superseded로(C-07).
+- `.gitignore`에 `tools/out/` 추가.
 
 ## Fixed
 
@@ -22,7 +29,8 @@ This project follows Semantic Versioning.
 
 ## Removed
 
--
+- 6단계 폴더 `01_Planning` ~ `06_Business`(비어 있었음).
+- `DECISIONS.md`(ADR 목록은 결정로그 "예전 ADR" 절로 옮김), `docs/decisions/ADR-TEMPLATE.md`(새 ADR을 만들지 않음).
 
 ## Deprecated
 
