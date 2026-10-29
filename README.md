@@ -25,7 +25,7 @@
 | `docs/benchmark.md` | R375X·비슷한 기계·특허 조사 |
 | `docs/reports/` | 워크플로우 보고서 |
 | `docs/decisions/` | 예전 ADR(001~004). 새 결정은 결정로그에 쓴다 |
-| `cad/` | SolidCraft 설계 파일 `MAT-RS-001_v<버전>.sc`(요구서 8-2) |
+| `3D_Modeling/` | SolidCraft 설계 파일 `FSAP_v<버전>.sc`(요구서 8-2) |
 | `tools/` | 점검 설정 `config.json`(cad: solidcraft). SolidCraft는 동작 검사를 설계 안 동작 연구로 해서 기계 전용 동작 모듈이 없다. `tools/out/`은 깃 제외 |
 | `purchased-step/<형번>/` | 구매품 실제 STEP |
 | `fea/cases/`, `fea/results/` | 해석 케이스·결과(솔버는 엔진 `engine/fea/`) |
