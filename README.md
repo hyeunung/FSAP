@@ -9,8 +9,8 @@
 ## 지금 상태 (2026-10-30)
 
 - 대화 단계. 설계 요구서 초안을 썼다. 모르는 치수(홈 폭·반경, 매트 크기, 테이프 폭 등)는 [자료대기](docs/waiting-list.md)에 있다.
-- 기술 방향은 [결정로그](docs/decision-log.md) C-01~C-08.
-- CAD(Fusion 또는 SolidCraft)는 아직 고르지 않았다. 워크플로우를 시작하기 전에 정한다.
+- 기술 방향은 [결정로그](docs/decision-log.md) C-01~C-09.
+- CAD는 **SolidCraft**(C-09). 이 컴퓨터의 실행 준비(MCP 연결·해석 환경)는 자료대기 D-16.
 - 모델 없음. 사용자가 "모델링 해줘"라고 하면 엔진이 과제 목록 → 구동부 → 디테일링 → 회귀 → 보고 → 회고를 돈다.
 
 ## 폴더
@@ -25,7 +25,8 @@
 | `docs/benchmark.md` | R375X·비슷한 기계·특허 조사 |
 | `docs/reports/` | 워크플로우 보고서 |
 | `docs/decisions/` | 예전 ADR(001~004). 새 결정은 결정로그에 쓴다 |
-| `tools/` | 점검 설정 `config.json`과 기계 전용 동작 모듈(CAD를 고른 뒤 준비 단계에서 만든다). `tools/out/`은 깃 제외 |
+| `cad/` | SolidCraft 설계 파일 `MAT-RS-001_v<버전>.sc`(요구서 8-2) |
+| `tools/` | 점검 설정 `config.json`(cad: solidcraft). SolidCraft는 동작 검사를 설계 안 동작 연구로 해서 기계 전용 동작 모듈이 없다. `tools/out/`은 깃 제외 |
 | `purchased-step/<형번>/` | 구매품 실제 STEP |
 | `fea/cases/`, `fea/results/` | 해석 케이스·결과(솔버는 엔진 `engine/fea/`) |
 | `deliverables/<문서 번호>/` | 납품 STEP·조립 STEP·도면. 완성본일 때만 |
@@ -38,5 +39,5 @@
 ## Git
 
 - `main`에 바로 커밋하지 않는다. 작업 브랜치에서 하고 PR로 합친다.
-- 커밋·푸시는 사용자가 말할 때만.
+- 설계 버전이 바뀔 때만(새 번호 .sc 저장) 커밋하고 푸시한다(요구서 8-5). 모델링 작업 브랜치는 `modeling/mat-rs-001`.
 - 변경 이력은 [`CHANGELOG.md`](CHANGELOG.md).

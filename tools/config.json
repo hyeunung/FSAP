@@ -1,0 +1,32 @@
+{
+  "cad": "solidcraft",
+  "doc": "../cad/MAT-RS-001_v0.0.0.sc",
+  "out": "out",
+  "step_dir": "../purchased-step",
+  "made_prefix": "P",
+  "bolt_prefixes": [
+    "CB",
+    "LCB",
+    "MSB",
+    "MS",
+    "NETW",
+    "SMSB"
+  ],
+  "nut_prefixes": [
+    "HNTT",
+    "PUSS"
+  ],
+  "skip_tops": [
+    "REF"
+  ],
+  "intended_hidden": [],
+  "port_parts": [],
+  "sheet_thickness": {},
+  "bom_made": "../docs/bom/*made*.csv",
+  "bom_columns": {
+    "part": "품번",
+    "qty": "수량",
+    "material": "재질"
+  },
+  "modules": []
+}

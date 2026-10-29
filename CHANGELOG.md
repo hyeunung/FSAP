@@ -15,8 +15,12 @@ This project follows Semantic Versioning.
 - 자료대기 목록 `docs/waiting-list.md`(D-01~D-15).
 - 벤치마크·특허 조사 `docs/benchmark.md`(R375X·R375A, Richpeace, 만료 특허 7건).
 - 엔진 기본 배치 폴더: `docs/reports/`, `tools/`, `purchased-step/`, `fea/cases/`, `fea/results/`, `deliverables/`.
+- CAD를 SolidCraft로 정함(결정로그 C-09): `tools/config.json`(cad·doc), 설계 파일 폴더 `cad/`, 자료대기 D-16(이 컴퓨터 실행 준비).
 
 ## Changed
+
+- 요구서 8-2(설계 파일 이름·버전 규칙, v0.0.0 시작), 8-5(버전이 바뀔 때만 커밋·푸시), 8-6(CAD SolidCraft). 자료대기 D-15 해결.
+- 빈 설계 `cad/MAT-RS-001_v0.0.0.sc`(단위 mm) 추가.
 
 - 저장소를 MAT-RS-001 기구 개발 폴더로 바꿨다(결정로그 C-07). 기구 모델링은 MechDesign_Engine으로 한다.
 - `README.md`, `CLAUDE.md`를 기구 개발용으로 다시 썼다(한글).
