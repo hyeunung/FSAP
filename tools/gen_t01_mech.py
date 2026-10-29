@@ -1,16 +1,20 @@
-# T01 매트 잡기·회전 유닛 모델 생성기 (구동부 모델링, v0.1.0 -> v0.2.0).
+# T01 매트 잡기·회전 유닛 모델 생성기 (구동부 모델링, v0.1.0 -> v0.2.1).
+# 수정 1회차(2026-10-30, mech_T01_model1.md): v0.2.0과 다른 곳은 둘뿐이다.
+#   (1) 동작 연구 키: motion.list는 회전 조인트 값을 rad로 주고 motion.study는 deg로 받는다 -> 회전 조인트 점 값만 math.degrees.
+#   (2) P_T01_RING2 t3 -> t5(윗면 -2 유지, Z -7~-2). 띠 Z -12~-7, 링2 샤프트·로드 윗끝 -10 -> -12(띠 밑면에 붙음).
 # 원본: tools/out/mech_T01/select/gen_probe.py (선정 지시서 형상). 차이:
 #   - 베드·기둥 프로브(P_BED*, P_COL*)는 저장 스크립트에 넣지 않는다(검사 스크립트에만, chk_*.json).
 #   - P_T01_POST R20~R30, P_T01_HUB R20~R150 (지시서 값. 프로브는 R12~30 / R32~150이었다).
 #   - 스파이더 ㄷ은 웹+다리를 한 바디로(다리를 웹 윗면 -85까지 올려 join).
 #   - 재질 지정, 조인트 한계, 컴포넌트 속성(부품별 재질·만드는 법), 대기 0단계로 두고 저장.
 # 쓰는 법: python -B tools/gen_t01_mech.py  -> tools/out/mech_T01/model/build.json, chk_*.json
-#   build: solidcraft-cli run build.json --in 3D_Modeling/FSAP_v0.1.0.sc --save 3D_Modeling/FSAP_v0.2.0.sc
+#   build: solidcraft-cli run build.json --in 3D_Modeling/FSAP_v0.1.0.sc --save 3D_Modeling/FSAP_v0.2.1.sc
+#   결과 폴더 tools/out/mech_T01/model1 (v0.1.0 기준 자료 a0_out.json은 tools/out/mech_T01/model 것을 읽는다)
 import json, math, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, 'tools', 'out', 'mech_T01', 'model')
+OUT = os.path.join(ROOT, 'tools', 'out', 'mech_T01', 'model1')
 os.makedirs(OUT, exist_ok=True)
-A0 = json.load(open(os.path.join(OUT, 'a0_out.json'), encoding='utf-8'))  # v0.1.0: [document.inspect, joint.list, motion.list, material.list]
+A0 = json.load(open(os.path.join(ROOT, 'tools', 'out', 'mech_T01', 'model', 'a0_out.json'), encoding='utf-8'))  # v0.1.0: [document.inspect, joint.list, motion.list, material.list]
 AX = (0.0, -700.0)
 S = []
 C = lambda c, p: S.append({"command": c, "params": p})
@@ -137,17 +141,17 @@ for nm in ("RING1", "RING2"):
             cyl(2.5, 190, th, -85, -10.5, b2)
             reg(nm, b1, "Steel"); reg(nm, b2, "Steel")
     else:
-        annulus(310, 520, -5, -2, "P_T01_RING2")
-        reg(nm, "P_T01_RING2", "A5052", "A5052 / 레이저 평판 / 받침 링 R310~R520 t3")
+        annulus(310, 520, -7, -2, "P_T01_RING2")
+        reg(nm, "P_T01_RING2", "A5052", "A5052 / 레이저 평판 / 받침 링 R310~R520 t5")
         for i, th in enumerate(TH6):
             b = "P_T01_RING2_STRAP_%d" % (i + 1)
-            prism([quad(320, 515, -20, 20, th)], -10, -5, b, "SK_STRAP_%d" % (i + 1))
+            prism([quad(320, 515, -20, 20, th)], -12, -7, b, "SK_STRAP_%d" % (i + 1))
             reg(nm, b, "A5052", "A5052 / 레이저 평판 / 띠 40×195 t5")
         for i, th in enumerate(TH3):
             b1 = "STEP대기_PSFJ16-150_R2_%d" % (i + 1)
             b2 = "STEP대기_CJ2B16-60S_ROD_R2_%d" % (i + 1)
-            cyl(8, 460, th, -160, -10, b1)
-            cyl(2.5, 410, th, -85, -10, b2)
+            cyl(8, 460, th, -162, -12, b1)
+            cyl(2.5, 410, th, -85, -12, b2)
             reg(nm, b1, "Steel"); reg(nm, b2, "Steel")
     C("component.activate", {"component": "root"})
     C("joint.create", {"type": "slider", "a": {"occurrence": "MAT_ROT:1", "point": [AX[0], AX[1], 0], "z": [0, 0, 1]},
@@ -222,6 +226,7 @@ C("joint.limits", {"joint": "J_MAT_Y", "min": -860, "max": 40})
 
 # ---------- 동작 연구에 링 키를 더한다(motion.study 편집은 키를 통째로 바꾸므로 기존 키를 그대로 다시 넣음) ----------
 jn = {j['id']: j['name'] for j in A0[1]['joints']}
+REV = {j['name'] for j in A0[1]['joints'] if j['type'] == 'revolute'}   # motion.list rad -> motion.study deg
 RK = {
     '대기': ([[0, 0], [1, 0]], [[0, 0], [1, 0]]),
     '사이클_큰매트': ([[0, 0], [540, 0]], [[0, 0], [540, 0]]),
@@ -235,7 +240,9 @@ studies = {s['name']: s for s in A0[2]['studies']}
 assert set(RK) == set(studies), (set(RK), set(studies))
 for nm, (k1, k2) in RK.items():
     s = studies[nm]
-    keys = [{"joint": jn[kk['joint']], "points": kk['points']} for kk in s['keys']]
+    keys = [{"joint": jn[kk['joint']],
+             "points": [[a, round(math.degrees(v), 9)] for a, v in kk['points']] if jn[kk['joint']] in REV else kk['points']}
+            for kk in s['keys']]
     keys += [{"joint": "J_RING1", "points": k1}, {"joint": "J_RING2", "points": k2}]
     C("motion.study", {"study": nm, "steps": s['steps'], "keys": keys})
 std = {jn[kk['joint']]: kk['points'][0][1] for kk in studies['대기']['keys']}
@@ -245,7 +252,7 @@ rw += [{"joint": "J_MAT_ROT", "points": [[0, -360], [72, 0]]},
 C("motion.study", {"name": "되감기", "steps": 72, "keys": rw})
 
 # ---------- 문서 설명, 저장 자세 ----------
-C("document.metadata.set", {"values": {"description": "T01 mechanism: vacuum disc + 2 vacuum/support rings on DGM200R rotary, X/Y rails (STEP placeholders)"}})
+C("document.metadata.set", {"values": {"description": "T01 mechanism rev1: vacuum disc + 2 vacuum/support rings on DGM200R rotary, X/Y rails (STEP placeholders); rotary keys in deg, ring2 t5"}})
 C("motion.play", {"study": "대기", "step": 0})
 json.dump(S, open(os.path.join(OUT, 'build.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 json.dump({"material": MAT, "props": PROP}, open(os.path.join(OUT, 'parts.json'), 'w', encoding='utf-8'),
@@ -297,18 +304,26 @@ st.append({"command": "motion.play", "params": {"study": "사이클_작은매트
 for o in ("RING1:1", "RING2:1"):
     st.append({"command": "occurrence.properties", "params": {"occurrence": o, "descendants": False}})
 st.append({"command": "motion.play", "params": {"study": "대기", "step": 0}})
-# 비워 둘 공간 프로브(지시서 6절): 대기 자세에서 무엇과 겹치는지
-st += [{"command": "component.create", "params": {"name": "P_VOID", "grounded": True, "activate": True}},
-       {"command": "solid.box", "params": {"length": 200, "width": 1560, "height": 120, "center": [0, -520, -320], "body_name": "VOID_Y"}},
-       {"command": "solid.box", "params": {"length": 2100, "width": 120, "height": 100, "center": [-100, -410, -530], "body_name": "VOID_X"}},
+# 비워 둘 공간 프로브(PM 예외 판정 T01-X01~X04): Y 묶음 공간은 MAT_X 안 X ±100 · Y -1300~+260 · Z -478~-356
+# (200×1560×122, 중심 (0,-520,-417)), X 묶음 공간은 바닥 고정 X -1150~950 · Y -470~-350 · Z -580~-480.
+# J_MAT_Y -860·0·+40에서 잰다(저장하지 않음).
+st += [{"command": "component.activate", "params": {"component": "MAT_X"}},
+       {"command": "solid.box", "params": {"length": 200, "width": 1560, "height": 122, "center": [0, -520, -417], "body_name": "VOID_Y"}},
        {"command": "component.activate", "params": {"component": "root"}},
-       {"command": "inspect.interference", "params": {"bodies": ["VOID_Y", "VOID_X"] + list(MAT), "budget_s": 600}}]
+       {"command": "component.create", "params": {"name": "P_VOID", "grounded": True, "activate": True}},
+       {"command": "solid.box", "params": {"length": 2100, "width": 120, "height": 100, "center": [-100, -410, -530], "body_name": "VOID_X"}},
+       {"command": "component.activate", "params": {"component": "root"}}]
+for yv in (-860, 0, 40):
+    st += [{"command": "joint.drive", "params": {"joint": "J_MAT_Y", "value": yv}},
+           {"command": "inspect.interference", "params": {"bodies": ["VOID_Y", "VOID_X"] + list(MAT), "budget_s": 600}}]
+st.append({"command": "motion.play", "params": {"study": "대기", "step": 0}})
 json.dump(st, open(os.path.join(OUT, 'chk_static.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 
 # 해석용 임시 STEP(E-06 예외): 새로 힘을 받는 가공품
 MADE = [b for b in MAT if b.startswith('P_T01_')]
+EXP = [b for b in MADE if b.startswith('P_T01_RING2')]   # 이번 회차에 두께·자리가 바뀐 하중 부품
 ex = [{"command": "file.export", "params": {"path": os.path.join(OUT, '..', 'stepout', b + '.step').replace('\\', '/'),
-                                            "format": "step", "bodies": [b]}} for b in MADE]
+                                            "format": "step", "bodies": [b]}} for b in EXP]
 json.dump(ex, open(os.path.join(OUT, 'export_step.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 json.dump(MADE, open(os.path.join(OUT, 'made.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 print(len(S), 'build commands;', len(MAT), 'bodies;', len(MADE), 'made')
