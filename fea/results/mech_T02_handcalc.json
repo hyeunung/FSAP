@@ -1,0 +1,724 @@
+{
+ "date": "2026-10-30",
+ "target": "3D_Modeling/FSAP_v0.3.0.sc",
+ "method": "손계산(해석 못 함 — 환경 없음, D-16), 교차 검증 없음",
+ "step": {
+  "P_T02_BINDER": {
+   "n_vert": 8,
+   "bbox": [
+    [
+     -34.0,
+     -10.0
+    ],
+    [
+     2.0,
+     40.0
+    ],
+    [
+     26.0,
+     60.0
+    ]
+   ],
+   "x_planes": [
+    -34.0,
+    -10.0
+   ],
+   "y_planes": [
+    2.0,
+    40.0
+   ],
+   "z_planes": [
+    26.0,
+    60.0
+   ],
+   "cylinders": []
+  },
+  "P_T02_FOOT": {
+   "n_vert": 22,
+   "bbox": [
+    [
+     -9.0,
+     9.0
+    ],
+    [
+     -26.0,
+     18.5
+    ],
+    [
+     16.5,
+     55.0
+    ]
+   ],
+   "x_planes": [
+    -9.0,
+    9.0
+   ],
+   "y_planes": [
+    -26.0,
+    -10.0,
+    18.5
+   ],
+   "z_planes": [
+    16.5,
+    21.05,
+    31.05,
+    55.0
+   ],
+   "cylinders": [
+    {
+     "r": 8.5,
+     "axis_xy": [
+      -0.0,
+      10.0
+     ],
+     "dir": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "r": 1.3,
+     "axis_xy": [
+      0.0,
+      0.0
+     ],
+     "dir": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ]
+  },
+  "P_T02_HEADPLATE": {
+   "n_vert": 8,
+   "bbox": [
+    [
+     -100.0,
+     100.0
+    ],
+    [
+     620.0,
+     860.0
+    ],
+    [
+     -140.0,
+     -134.0
+    ]
+   ],
+   "x_planes": [
+    -100.0,
+    100.0
+   ],
+   "y_planes": [
+    620.0,
+    860.0
+   ],
+   "z_planes": [
+    -140.0,
+    -134.0
+   ],
+   "cylinders": []
+  },
+  "P_T02_PLATE": {
+   "n_vert": 16,
+   "bbox": [
+    [
+     -40.0,
+     40.0
+    ],
+    [
+     -25.0,
+     25.0
+    ],
+    [
+     -4.05,
+     3.5
+    ]
+   ],
+   "x_planes": [
+    -40.0,
+    40.0
+   ],
+   "y_planes": [
+    -25.0,
+    25.0
+   ],
+   "z_planes": [
+    -4.05,
+    -1.05,
+    3.5
+   ],
+   "cylinders": [
+    {
+     "r": 1.0,
+     "axis_xy": [
+      0.0,
+      0.0
+     ],
+     "dir": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "r": 8.5,
+     "axis_xy": [
+      -0.0,
+      10.0
+     ],
+     "dir": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ]
+  }
+ },
+ "step_checks": [
+  {
+   "part": "P_T02_FOOT",
+   "what": "X 폭 bbox",
+   "step": 18.0,
+   "used": 18.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "Y 뒷면(자루 뒤)",
+   "step": -26.0,
+   "used": -26.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "Y 자루 앞면",
+   "step": -10.0,
+   "used": -10.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "Y 바닥 앞끝",
+   "step": 18.5,
+   "used": 18.5,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "Z 노즈 밑면(대기)",
+   "step": 16.5,
+   "used": 16.5,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "Z 바닥 밑면(대기)",
+   "step": 21.05,
+   "used": 21.05,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "Z 바닥 윗면(대기)",
+   "step": 31.05,
+   "used": 31.05,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "Z 자루 윗면(대기)",
+   "step": 55.0,
+   "used": 55.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "위 노즈 축 Y",
+   "step": 10.0,
+   "used": 10.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_FOOT",
+   "what": "바늘 구멍 축 Y",
+   "step": 0.0,
+   "used": 0.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_PLATE",
+   "what": "X 폭",
+   "step": 80.0,
+   "used": 80.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_PLATE",
+   "what": "Y 폭",
+   "step": 50.0,
+   "used": 50.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_PLATE",
+   "what": "Z 판 밑면",
+   "step": -4.05,
+   "used": -4.05,
+   "ok": true
+  },
+  {
+   "part": "P_T02_PLATE",
+   "what": "Z 판 윗면",
+   "step": -1.05,
+   "used": -1.05,
+   "ok": true
+  },
+  {
+   "part": "P_T02_PLATE",
+   "what": "Z 노즈 윗면",
+   "step": 3.5,
+   "used": 3.5,
+   "ok": true
+  },
+  {
+   "part": "P_T02_PLATE",
+   "what": "아래 노즈 축 Y",
+   "step": 10.0,
+   "used": 10.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_PLATE",
+   "what": "바늘 구멍 축 Y",
+   "step": 0.0,
+   "used": 0.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_BINDER",
+   "what": "X",
+   "step": -34.0,
+   "used": -34.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_BINDER",
+   "what": "X 끝",
+   "step": -10.0,
+   "used": -10.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_BINDER",
+   "what": "Y",
+   "step": 2.0,
+   "used": 2.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_BINDER",
+   "what": "Y 끝",
+   "step": 40.0,
+   "used": 40.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_BINDER",
+   "what": "Z 밑면",
+   "step": 26.0,
+   "used": 26.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_BINDER",
+   "what": "Z 윗면(머리 밑면에 닿음)",
+   "step": 60.0,
+   "used": 60.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_HEADPLATE",
+   "what": "X",
+   "step": -100.0,
+   "used": -100.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_HEADPLATE",
+   "what": "X 끝",
+   "step": 100.0,
+   "used": 100.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_HEADPLATE",
+   "what": "Y 앞",
+   "step": 620.0,
+   "used": 620.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_HEADPLATE",
+   "what": "Y 뒤",
+   "step": 860.0,
+   "used": 860.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_HEADPLATE",
+   "what": "Z 밑면(형재 윗면)",
+   "step": -140.0,
+   "used": -140.0,
+   "ok": true
+  },
+  {
+   "part": "P_T02_HEADPLATE",
+   "what": "Z 윗면(헤드 기둥 밑면)",
+   "step": -134.0,
+   "used": -134.0,
+   "ok": true
+  },
+  {
+   "part": "STEP대기_SEWHEAD",
+   "what": "부피(상자 계산 / CAD)",
+   "step": 21702943.18864426,
+   "used": 21702954.8,
+   "ok": true
+  }
+ ],
+ "step_checks_fail": 0,
+ "head": {
+  "mass_kg": 170.696,
+  "ycg": 570.8,
+  "ycg_head_only": 572.0,
+  "zcg_head_only": 57.9,
+  "W1": 1674.5,
+  "W3": 5023.6,
+  "volume_boxes": 21702943.2,
+  "volume_cad": 21702954.8
+ },
+ "loads": {
+  "F_PRESS": 50.0,
+  "F_DRAG": 20.0,
+  "F_NEEDLE": 30.0,
+  "F_TAPE": 10.0,
+  "F_MIS": 417.5,
+  "NG": 3.0,
+  "P_SUPPLY": 0.5,
+  "actuator": "T02에 공압 실린더 없음(노루발 들기·누름은 헤드 안, D-10)"
+ },
+ "criteria": {
+  "SF_REQ": 3.0,
+  "SF_REQ_MIS": 2.0,
+  "SF_BREAK": 1.2,
+  "over": 3.0
+ },
+ "materials": {
+  "Rigid10K": {
+   "E": 10000.0,
+   "nu": 0.3,
+   "allow": 65.0,
+   "src": "Formlabs Rigid 10K 후경화 인장강도 65 MPa·E 10 GPa(공개 데이터시트 기억값, 사본 없음 — 확인 못 함). 취성이라 인장강도 기준"
+  },
+  "S50C": {
+   "E": 205000.0,
+   "nu": 0.29,
+   "allow": 345.0,
+   "src": "자리값: 엔진 fea.py MAT S45C 항복 345 MPa를 보수로 씀(S50C 담금질 전 값보다 낮음)"
+  },
+  "SUS304": {
+   "E": 193000.0,
+   "nu": 0.29,
+   "allow": 205.0,
+   "src": "엔진 fea.py MAT"
+  },
+  "A6N01": {
+   "E": 69000.0,
+   "nu": 0.33,
+   "allow": 205.0,
+   "src": "엔진 fea.py MAT(MISUMI HFS 형재 A6N01SS-T5)"
+  },
+  "Steel": {
+   "E": 206000.0,
+   "nu": 0.3,
+   "allow": 345.0,
+   "src": "구매품 임시 형상(노루발대) 참고용"
+  }
+ },
+ "results": {
+  "FOOT_op_shank": {
+   "part": "P_T02_FOOT",
+   "mat": "Rigid10K",
+   "case": "운전: 누름 50 + 끌림 20 N + 3 g, 자루 윗면(Z 45)",
+   "sigma": 1.901,
+   "sf": 34.2,
+   "need": 3.0,
+   "verdict": "통과"
+  },
+  "FOOT_op_bottom": {
+   "part": "P_T02_FOOT",
+   "mat": "Rigid10K",
+   "case": "운전: 누름 50 N, 바닥 외팔 뿌리(Y −10)",
+   "sigma": 0.917,
+   "sf": 70.91,
+   "need": 3.0,
+   "verdict": "통과"
+  },
+  "FOOT_misX_shank_top": {
+   "part": "P_T02_FOOT",
+   "mat": "Rigid10K",
+   "case": "오조작 X 418 N, 자루 윗면(Z 45) 굽힘+비틀림",
+   "sigma": 26.918,
+   "sf": 2.41,
+   "need": 2.0,
+   "verdict": "통과",
+   "M": 15124,
+   "T": 11690,
+   "sigma_b": 17.5,
+   "tau": 11.81
+  },
+  "FOOT_misX_inner_corner": {
+   "part": "P_T02_FOOT",
+   "mat": "Rigid10K",
+   "case": "오조작 X, L자 안쪽 모서리(Z 21.05) Kt 2.5",
+   "sigma": 25.26,
+   "sf": 2.57,
+   "need": 2.0,
+   "verdict": "통과"
+  },
+  "FOOT_misX_bottom": {
+   "part": "P_T02_FOOT",
+   "mat": "Rigid10K",
+   "case": "오조작 X, 바닥 면 안 굽힘(Y −10) + 비틀림",
+   "sigma": 19.682,
+   "sf": 3.3,
+   "need": 2.0,
+   "verdict": "통과"
+  },
+  "FOOT_misX_nose_root": {
+   "part": "P_T02_FOOT",
+   "mat": "Rigid10K",
+   "case": "오조작, 위 노즈 뿌리(Z 11.05) r8.5",
+   "sigma": 4.682,
+   "sf": 13.88,
+   "need": 2.0,
+   "verdict": "통과"
+  },
+  "FOOT_misY_shank_top": {
+   "part": "P_T02_FOOT",
+   "mat": "Rigid10K",
+   "case": "오조작 Y 418 N, 자루 윗면(Z 45) 굽힘",
+   "sigma": 19.693,
+   "sf": 3.3,
+   "need": 2.0,
+   "verdict": "통과"
+  },
+  "FOOT_misY_bottom": {
+   "part": "P_T02_FOOT",
+   "mat": "Rigid10K",
+   "case": "오조작 Y, 바닥(Y −10) 축력 + 굽힘",
+   "sigma": 12.444,
+   "sf": 5.22,
+   "need": 2.0,
+   "verdict": "통과"
+  },
+  "PLATE_mis_nose_root": {
+   "part": "P_T02_PLATE",
+   "mat": "S50C",
+   "case": "오조작 418 N 아래 노즈 가운데, 뿌리(Z −1.05)",
+   "sigma": 4.682,
+   "sf": 73.69,
+   "need": 2.0,
+   "verdict": "통과"
+  },
+  "PLATE_op_nose": {
+   "part": "P_T02_PLATE",
+   "mat": "S50C",
+   "case": "운전: 끌림 20 N + 누름 50 + 관통 30 N 압축",
+   "sigma": 0.491,
+   "sf": 702.73,
+   "need": 3.0,
+   "verdict": "통과"
+  },
+  "PLATE_mis_pocket_bearing": {
+   "part": "P_T02_PLATE",
+   "mat": "S50C",
+   "case": "오조작 418 N 헤드 홈 벽 지압(t3 × 50)",
+   "sigma": 2.783,
+   "sf": 123.95,
+   "need": 2.0,
+   "verdict": "통과"
+  },
+  "BINDER_op_root": {
+   "part": "P_T02_BINDER",
+   "mat": "Rigid10K",
+   "case": "운전: 테이프 장력 10 N 출구(Z 26) +X, 윗면 뿌리",
+   "sigma": 0.095,
+   "sf": 685.26,
+   "need": 3.0,
+   "verdict": "통과"
+  },
+  "BINDER_mis_root": {
+   "part": "P_T02_BINDER",
+   "mat": "Rigid10K",
+   "case": "오조작: 테이프 걸림 418 N 출구, 윗면 뿌리",
+   "sigma": 4.069,
+   "sf": 15.97,
+   "need": 2.0,
+   "verdict": "통과"
+  },
+  "HEADPLATE_asmodel_3g": {
+   "part": "P_T02_HEADPLATE",
+   "mat": "SUS304",
+   "case": "모델대로 3 g: 겹친 자리 지압(앞 끝 최대)",
+   "sigma": 17.189,
+   "sf": 11.93,
+   "need": 3.0,
+   "verdict": "통과",
+   "rear_stress": -14.68,
+   "note": "뒤쪽이 인장(−) → 눌러 잡는 볼트 없이는 앞으로 넘어간다"
+  },
+  "HEADPLATE_footed_1g": {
+   "part": "P_T02_HEADPLATE",
+   "mat": "SUS304",
+   "case": "경계(가장자리 발 헤드) 1 g, 판 앞 외팔 Y 700, b 200",
+   "sigma": 129.299,
+   "sf": 1.59,
+   "need": 3.0,
+   "verdict": "기준 미달(디테일)"
+  },
+  "HEADPLATE_footed_3g": {
+   "part": "P_T02_HEADPLATE",
+   "mat": "SUS304",
+   "case": "경계(가장자리 발 헤드) 3 g, 판 앞 외팔 Y 700, b 200",
+   "sigma": 387.898,
+   "sf": 0.53,
+   "need": 3.0,
+   "verdict": "동작(SF<1.2)"
+  },
+  "POST_3g_ref": {
+   "part": "STEP대기_HFS8-4080-460_P1/P2",
+   "mat": "A6N01",
+   "case": "참고 3 g: 기둥 굽힘(I 80 cm4 자리값)",
+   "sigma": 21.244,
+   "sf": 9.65,
+   "need": 3.0,
+   "verdict": "통과"
+  },
+  "POST_mis_torsion_ref": {
+   "part": "STEP대기_HFS8-4080-460_P1/P2",
+   "mat": "A6N01",
+   "case": "참고 오조작 418 N X: 비틀림 짝힘 굽힘",
+   "sigma": 50.756,
+   "sf": 4.04,
+   "need": 2.0,
+   "verdict": "통과"
+  }
+ },
+ "overspec": [
+  {
+   "part": "P_T02_PLATE",
+   "sf": 73.7,
+   "need": 2.0,
+   "note": "과사양(필요 2의 3배 이상). 크기는 홈 띠 빈 원(노즈 r8.5)과 헤드 침판 홈(t3)이 정해 줄일 두께가 없다. 재질 S50C는 바늘 타격·마모 때문(강도 아님) — 강도만 보면 SS400·SUS304로도 SF > 50. 가격 미확인"
+  },
+  {
+   "part": "P_T02_BINDER",
+   "sf": 16.0,
+   "need": 2.0,
+   "note": "외형 상자 값이라 과사양 판정 의미 없음: 속 테이프 통로(요구서 7, 구매 여부 U-T02-2)가 없다. 통로를 그리면 벽 두께로 다시 푼다. 줄일 두께 없음(크기는 테이프 길이 정함)"
+  }
+ ],
+ "foot_overspec": {
+  "part": "P_T02_FOOT",
+  "governing": "오조작 X SF 2.41 (필요 2)",
+  "over": false
+ },
+ "foot_hole_disp": {
+  "op": {
+   "x": 0.014993571124635738,
+   "y": 0.0
+  },
+  "misX": {
+   "x": 0.31299079722677103,
+   "y": 0.0
+  },
+  "misY": {
+   "x": 0.0,
+   "y": 0.1746386912161292
+  }
+ },
+ "binder_bolt": {
+  "op": 17.0,
+  "mis": 709.8
+ },
+ "stand": {
+  "lever_front": 129.2,
+  "ahead_of_plate": 49.2,
+  "M_tip_1g_Nm": 216.3,
+  "M_tip_3g_Nm": 648.8,
+  "hold_down_total_1g": 3090,
+  "hold_down_total_3g": 9269,
+  "asmodel_rear_stress_3g": -14.68,
+  "footed_R_front_1g": 2069,
+  "plate_t_need_footed_3g": 14.3,
+  "bracket_moment_per_post_1g_Nm": 141.6,
+  "bracket_moment_per_post_3g_Nm": 424.9,
+  "post_tilt_1g": 0.0011802122562872962,
+  "sag_needle_1g": 0.873,
+  "sag_bedtip_1g": 0.909,
+  "post_top_shift_1g": 0.271,
+  "k_needle_X": 30.45,
+  "sway_drag": 0.657,
+  "sway_mis": 13.71,
+  "I_POST": 800000.0
+ },
+ "gaps": [
+  {
+   "where": "바늘 r0.6 ↔ 노루발 구멍 r1.3(내림)",
+   "cad_gap": 0.7,
+   "load": "운전 끌림 20 N",
+   "disp": 0.015,
+   "left": 0.685
+  },
+  {
+   "where": "〃",
+   "cad_gap": 0.7,
+   "load": "오조작 X 418 N",
+   "disp": 0.313,
+   "left": 0.387
+  },
+  {
+   "where": "〃",
+   "cad_gap": 0.7,
+   "load": "오조작 Y 418 N",
+   "disp": 0.175,
+   "left": 0.525
+  },
+  {
+   "where": "헤드 베드 밑면 −59 ↔ 링1 내림 윗면 −60.5(베드 끝 Y −30)",
+   "cad_gap": 1.5,
+   "load": "헤드 자중 1 g(받침 형재 굽힘만)",
+   "disp": 0.909,
+   "left": 0.591
+  },
+  {
+   "where": "〃",
+   "cad_gap": 1.5,
+   "load": "헤드 자중 3 g(강도용 계수, 실제 상태 아님)",
+   "disp": 2.726,
+   "left": -1.226
+  },
+  {
+   "where": "바늘점 봉제 방향(X) 흔들림 — 땀 위치(정밀 체인, 6-2 D-08)",
+   "cad_gap": null,
+   "load": "운전 끌림 20 N",
+   "disp": 0.657,
+   "left": null
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+헤드 묶음 질량 170.70 kg, 무게중심 Y 570.8 (헤드 임시 형상만 Y 572.0, Z 57.9), 1 g 1674.5 N
+FOOT_op_shank                      Rigid10K   운전: 누름 50 + 끌림 20 N + 3 g, 자루 윗면(Z 45)       σ    1.901 MPa  SF    34.20  필요 3  통과
+FOOT_op_bottom                     Rigid10K   운전: 누름 50 N, 바닥 외팔 뿌리(Y −10)                 σ    0.917 MPa  SF    70.91  필요 3  통과
+FOOT_misX_shank_top                Rigid10K   오조작 X 418 N, 자루 윗면(Z 45) 굽힘+비틀림              σ   26.918 MPa  SF     2.41  필요 2  통과
+FOOT_misX_inner_corner             Rigid10K   오조작 X, L자 안쪽 모서리(Z 21.05) Kt 2.5             σ   25.260 MPa  SF     2.57  필요 2  통과
+FOOT_misX_bottom                   Rigid10K   오조작 X, 바닥 면 안 굽힘(Y −10) + 비틀림                σ   19.682 MPa  SF     3.30  필요 2  통과
+FOOT_misX_nose_root                Rigid10K   오조작, 위 노즈 뿌리(Z 11.05) r8.5                   σ    4.682 MPa  SF    13.88  필요 2  통과
+FOOT_misY_shank_top                Rigid10K   오조작 Y 418 N, 자루 윗면(Z 45) 굽힘                  σ   19.693 MPa  SF     3.30  필요 2  통과
+FOOT_misY_bottom                   Rigid10K   오조작 Y, 바닥(Y −10) 축력 + 굽힘                     σ   12.444 MPa  SF     5.22  필요 2  통과
+노루발 구멍 이동: 운전 끌림 0.0150, 오조작 X 0.313, 오조작 Y 0.175 mm (틈 0.70)
+PLATE_mis_nose_root                S50C       오조작 418 N 아래 노즈 가운데, 뿌리(Z −1.05)             σ    4.682 MPa  SF    73.69  필요 2  통과
+PLATE_op_nose                      S50C       운전: 끌림 20 N + 누름 50 + 관통 30 N 압축             σ    0.491 MPa  SF   702.73  필요 3  통과
+PLATE_mis_pocket_bearing           S50C       오조작 418 N 헤드 홈 벽 지압(t3 × 50)                 σ    2.783 MPa  SF   123.95  필요 2  통과
+BINDER_op_root                     Rigid10K   운전: 테이프 장력 10 N 출구(Z 26) +X, 윗면 뿌리           σ    0.095 MPa  SF   685.26  필요 3  통과
+BINDER_mis_root                    Rigid10K   오조작: 테이프 걸림 418 N 출구, 윗면 뿌리                  σ    4.069 MPa  SF    15.97  필요 2  통과
+바인더 고정 볼트(X −30 하나 가정) 인장: 운전 17.0 N, 오조작 710 N
+무게중심이 형재 앞면 Y 700보다 129.2, 판 앞끝 Y 620보다 49.2 앞(−Y)
+HEADPLATE_asmodel_3g               SUS304     모델대로 3 g: 겹친 자리 지압(앞 끝 최대)                   σ   17.189 MPa  SF    11.93  필요 3  통과
+눌러 잡는 힘(형재 2개 합, 볼트 Y 770): 1 g 3090 N, 3 g 9269 N / 형재 하나 1545 / 4634 N
+HEADPLATE_footed_1g                SUS304     경계(가장자리 발 헤드) 1 g, 판 앞 외팔 Y 700, b 200       σ  129.299 MPa  SF     1.59  필요 3  기준 미달(디테일)
+HEADPLATE_footed_3g                SUS304     경계(가장자리 발 헤드) 3 g, 판 앞 외팔 Y 700, b 200       σ  387.898 MPa  SF     0.53  필요 3  동작(SF<1.2)
+경계 경우 3 g에서 SF 3에 필요한 판 두께 14.3 mm
+POST_3g_ref                        A6N01      참고 3 g: 기둥 굽힘(I 80 cm4 자리값)                  σ   21.244 MPa  SF     9.65  필요 3  통과
+받침 1 g: 기울기 1.18e-03 rad, 바늘점 내려감 0.873, 베드 끝(Y −30) 0.909, 기둥 끝 수평 0.271 mm (베드–링1 틈 1.5)
+POST_mis_torsion_ref               A6N01      참고 오조작 418 N X: 비틀림 짝힘 굽힘                    σ   50.756 MPa  SF     4.04  필요 2  통과
+받침 비틀림 강성(바늘점 X) 30.4 N/mm → 끌림 20 N 0.657 mm, 오조작 418 N 13.7 mm
+틈 {'where': '바늘 r0.6 ↔ 노루발 구멍 r1.3(내림)', 'cad_gap': 0.7, 'load': '운전 끌림 20 N', 'disp': 0.015, 'left': 0.685}
+틈 {'where': '〃', 'cad_gap': 0.7, 'load': '오조작 X 418 N', 'disp': 0.313, 'left': 0.387}
+틈 {'where': '〃', 'cad_gap': 0.7, 'load': '오조작 Y 418 N', 'disp': 0.175, 'left': 0.525}
+틈 {'where': '헤드 베드 밑면 −59 ↔ 링1 내림 윗면 −60.5(베드 끝 Y −30)', 'cad_gap': 1.5, 'load': '헤드 자중 1 g(받침 형재 굽힘만)', 'disp': 0.909, 'left': 0.591}
+틈 {'where': '〃', 'cad_gap': 1.5, 'load': '헤드 자중 3 g(강도용 계수, 실제 상태 아님)', 'disp': 2.726, 'left': -1.226}
+틈 {'where': '바늘점 봉제 방향(X) 흔들림 — 땀 위치(정밀 체인, 6-2 D-08)', 'cad_gap': None, 'load': '운전 끌림 20 N', 'disp': 0.657, 'left': None}

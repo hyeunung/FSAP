@@ -4,7 +4,7 @@
 
 ## 시작 전에 읽을 것 (순서대로)
 
-1. `README.md` — 무엇을 만드나, 폴더
+1. `README.md` — 무엇을 만드나, 폴더. 이어서 할 일은 `docs/HANDOFF.md`
 2. `docs/design-requirements.md` — 설계 요구서. 판정이 갈리면 이 문서를 따른다
 3. `docs/decision-log.md` — 정한 것과 이유
 4. `docs/waiting-list.md` — 아직 모르는 것
