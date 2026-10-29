@@ -1,6 +1,6 @@
 {
   "cad": "solidcraft",
-  "doc": "../3D_Modeling/FSAP_v0.0.0.sc",
+  "doc": "../3D_Modeling/FSAP_v0.1.0.sc",
   "out": "out",
   "step_dir": "../purchased-step",
   "made_prefix": "P",

@@ -10,6 +10,9 @@ This project follows Semantic Versioning.
 
 ## Added
 
+- 설계 v0.1.0 `3D_Modeling/FSAP_v0.1.0.sc`(준비부): 동작 검사 준비물 — 고정부 `BASE`, 조인트 6개(매트 X·Y 이송, 매트 회전, 헤드 회전, 노루발 들기, 바늘), 동작 연구 `대기`·사이클 3개(큰·작은·홈 매트)·꺾임 정밀 3개, 작업 대상 모형 3종과 가공 뒤 형상·떨어진 조각(임시값, 결정로그 P-01~P-06). 기계 부품은 아직 없음.
+- `tools/gen_motion_prep.py`(준비물 명령 스크립트 생성기), `tools/motion_states.json`(동작 연구 상태 → 단계 표).
+- 보고서 `docs/reports/mechanism/mech_prep_check.md`(준비 점검), `mech_prep.md`(준비).
 - 설계 요구서 초안 `docs/design-requirements.md`(엔진 양식, 과제 T01~T07).
 - 결정로그 `docs/decision-log.md`(대화 단계 C-01~C-08, 예전 ADR 목록).
 - 자료대기 목록 `docs/waiting-list.md`(D-01~D-15).
