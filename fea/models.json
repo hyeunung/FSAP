@@ -6,28 +6,100 @@
       "fixed": "자루 윗면(내림 Z 45)에서 헤드 노루발대 Ø10(Steel, 헤드 머리 밑면 Z 60에서 15 외팔)에 물림. 자루는 그 자리 고정 외팔, 바닥 판은 자루 앞면 Y −10에서 나온 외팔",
       "contact": "매트·침판과 접촉은 하중으로만(압축). 화이버 머리(주머니 안, 안 그림)는 하중 경로가 아님",
       "load": "운전: 누름 50 N(+Z, 바닥 밑면 Y −4.5) + 끌림 20 N(+X, 바닥 밑면) + 자중 ×3 g / 오조작: 417.5 N(= 835 N × 0.5, D-05·D-04)을 위 노즈 가운데(Y 10, 내림 Z 8.775)에 X 또는 ±Y",
-      "criteria": { "value": "Rigid 10K 인장강도 65 MPa 기준 SF 운전 3, 오조작 2(M-09 기본값), SF < 1.2 = 부러짐. 바늘 r0.6 ↔ 구멍 r1.3 틈 0.7 mm", "source": "요구서 6-1·6-2 비어 있음 → M-09. fea/results/mech_T02_handcalc.json · mech_T04_handcalc.json" }
+      "criteria": {
+        "value": "Rigid 10K 인장강도 65 MPa 기준 SF 운전 3, 오조작 2(M-09 기본값), SF < 1.2 = 부러짐. 바늘 r0.6 ↔ 구멍 r1.3 틈 0.7 mm",
+        "source": "요구서 6-1·6-2 비어 있음 → M-09. fea/results/mech_T02_handcalc.json · mech_T04_handcalc.json"
+      }
     },
     "P_T02_PLATE": {
       "case": "cases/mech_T02_handcalc.py",
       "fixed": "침판 판(Z −4.05~−1.05)이 헤드 베드에 앉음 — 아래 노즈 뿌리(Z −1.05) 고정 외팔",
       "contact": "매트 압축만",
       "load": "운전: 끌림 20 N + 누름 50 + 관통 30 N / 오조작 417.5 N 아래 노즈 가운데",
-      "criteria": { "value": "S50C 345 MPa(자리값), SF 운전 3·오조작 2", "source": "M-09, fea/results/mech_T02_handcalc.json" }
+      "criteria": {
+        "value": "S50C 345 MPa(자리값), SF 운전 3·오조작 2",
+        "source": "M-09, fea/results/mech_T02_handcalc.json"
+      }
     },
     "P_T02_BINDER": {
       "case": "cases/mech_T02_handcalc.py",
       "fixed": "바인더 외형 볼트 자리 고정",
       "contact": "테이프 접촉은 하중으로만",
       "load": "테이프 장력 10 N(D-06) / 오조작: 테이프가 걸려 출구에서 +X 417.5 N",
-      "criteria": { "value": "Rigid 10K 65 MPa, SF 운전 3·오조작 2", "source": "M-09, fea/results/mech_T02_handcalc.json" }
+      "criteria": {
+        "value": "Rigid 10K 65 MPa, SF 운전 3·오조작 2",
+        "source": "M-09, fea/results/mech_T02_handcalc.json"
+      }
     },
     "P_T02_HEADPLATE": {
       "case": "cases/mech_T02_handcalc.py",
       "fixed": "받침 형재(HFS8) 위 볼트 체결, 형재는 프레임에 고정",
       "contact": "헤드 바닥 면 압축",
       "load": "헤드 묶음 자중 170.70 kg × 3 g, 무게중심 Y 570.8",
-      "criteria": { "value": "SUS304 205 MPa, SF 3, 받침 처짐 ↔ 틈 1.5 mm", "source": "M-09, fea/results/mech_T02_handcalc.json" }
+      "criteria": {
+        "value": "SUS304 205 MPa, SF 3, 받침 처짐 ↔ 틈 1.5 mm",
+        "source": "M-09, fea/results/mech_T02_handcalc.json"
+      }
+    },
+    "P_T05_PLATE": {
+      "case": "cases/mech_T05_handcalc.py",
+      "fixed": "+X 면(X −75)이 기둥 −X 면에 맞댐, 볼트 6(뿌리 (640,45)·(840,45) CB5-12, 홀더 4 CB5-16)으로 기둥 탭. 혀 Y 560~620·Z 30~100은 기둥 모서리 Y 620에서 나온 외팔(판정 단면 Y 612~620, 폭 70)",
+      "contact": "안내 블록 등판 +X 면(X −78)과 면 맞댐(인서트 2 (570,50)·(600,80)), 기둥 면 압축만",
+      "load": "운전: 바인더 쪽 장력 31.9 N(2μF, μ0.4, 0.5 MPa)을 패드 자리 (−131, 572.5, 43.5)에 경간 방향 (0.193,−0.981,0) + 자중 ×3 g / 오조작A: 롤 걸림 장력 417.5 N의 막대 감김 합력 1.216T (80.7,−298.6,402.5) N at (−132.3, 600, 51) / 오조작B: 안내 블록 걸림 417.5 N 경간 방향 at 패드 자리",
+      "criteria": {
+        "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
+        "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T05_handcalc.json"
+      }
+    },
+    "P_T05_GUIDE": {
+      "case": "cases/mech_T05_handcalc.py",
+      "fixed": "등판 +X 면(X −78)이 평판 혀에 맞댐, M5 열압입 인서트 2(물림 8) — 피벗은 모멘트 방향의 모서리(Z 92/36, Y 553/612)",
+      "contact": "테이프·패드는 하중으로만. 실린더 장착 반력은 위판(Z 82~92), 패드 반력은 밑판(Z 36~42)",
+      "load": "운전: 실린더 밀기 39.27 N(Ø10 × 0.5 MPa) C틀 지렛대 43 + 장력 31.9 N / 오조작A: 막대 r8(B-스플라인 면, 단순 지지 37) 508 N / 오조작B: 앞벽 밑 모서리 417.5 N(외팔 37, 두 변 고정 추정 1/2)",
+      "criteria": {
+        "value": "PET-CF 30 MPa(층간 보수값), SF 운전 3·오조작 2",
+        "source": "M-09, mech_T05_select.md 4절과 같은 허용값. fea/results/mech_T05_handcalc.json"
+      }
+    },
+    "P_T05_PAD": {
+      "case": "cases/mech_T05_handcalc.py",
+      "fixed": "로드 끝 너트가 T홈에",
+      "contact": "밑면이 테이프·받침면에 압축(바닥 1.5는 받쳐짐)",
+      "load": "밀기 39.27 N / 걸렸을 때 당기기 32.99 N이 T홈 턱(돌출 1.5, 두께 2, 길이 18 ×2)",
+      "criteria": {
+        "value": "PET-CF 30 MPa, SF 3",
+        "source": "fea/results/mech_T05_handcalc.json"
+      }
+    },
+    "P_T05_HOLDER": {
+      "case": "cases/mech_T05_handcalc.py",
+      "fixed": "플랜지 56×56 CB5-16 4개가 평판을 지나 기둥 탭(물림 8.5, SS400 자리값 D-10)",
+      "contact": "축 Ø16 구멍 길이 30 면압",
+      "load": "운전: 롤+허브+캡 ×3 g 26 N at 롤 테이프 중심 X −130.5 / 오조작A: 417.5 N 같은 자리(허브 고착 시 비틀림 40.5 N·m는 클램프 미끄럼)",
+      "criteria": {
+        "value": "PET-CF 30 MPa, SF 운전 3·오조작 2",
+        "source": "fea/results/mech_T05_handcalc.json"
+      }
+    },
+    "STEP대기_PSFJ16-100": {
+      "case": "cases/mech_T05_handcalc.py",
+      "fixed": "홀더 −X 면 X −110에서 외팔",
+      "contact": "허브 구멍 Ø16.3",
+      "load": "홀더와 같음, 지렛대 20.5",
+      "criteria": {
+        "value": "Steel 345 MPa 자리값, SF 운전 3·오조작 2",
+        "source": "fea/results/mech_T05_handcalc.json"
+      }
+    },
+    "P_T05_HUB": {
+      "case": "cases/mech_T05_handcalc.py",
+      "fixed": "심 Ø76이 축에 얹힘(틈 0.15)",
+      "contact": "롤 심 안쪽",
+      "load": "운전 축 방향 하중 없음(정의 안 됨). 참고: 롤 자중 ×3 g를 플랜지 끝에(띠 60, 지렛대 62)",
+      "criteria": {
+        "value": "PET-CF 30 MPa, 참고값만",
+        "source": "fea/results/mech_T05_handcalc.json"
+      }
     }
   },
   "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
