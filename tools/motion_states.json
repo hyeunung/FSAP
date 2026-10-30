@@ -1,6 +1,6 @@
 {
- "doc": "../3D_Modeling/FSAP_v0.1.0.sc",
- "note": "준비부 2026-10-30. 동작 연구별 상태 -> 단계 표. 값은 임시(자료대기 D-01~D-07, D-10, D-13). 다시 만들기: tools/gen_motion_prep.py",
+ "doc": "../3D_Modeling/FSAP_v0.5.0.sc",
+ "note": "준비부 2026-10-30. 동작 연구별 상태 -> 단계 표. 값은 임시(자료대기 D-01~D-07, D-10, D-13). 다시 만들기: tools/gen_motion_prep.py | T06 모델링부 2026-10-31(v0.5.0): 사이클 3개 ④ 이음매 뒤에 ④-0~④-7(43단계) 넣음, SCRAP -> SEAM·TAIL, J_T06_KNIFE 추가. 다시 만들기: tools/gen_t06_mech.py",
  "reset": {
   "study": "대기",
   "step": 0
@@ -12,7 +12,8 @@
   "J_MAT_ROT": "MAT_Y-MAT_ROT 회전 Z, 도, 한계 없음",
   "J_HEAD_ROT": "BASE-HEAD 회전 Z, 도, -180~180, 모든 연구에서 0",
   "J_PRESSER": "HEAD-PRESSER 직선 Z, mm, 0 내림 ~ 10 들림",
-  "J_NEEDLE": "HEAD-NEEDLE 직선 Z, mm, 0 위 ~ -30 내림"
+  "J_NEEDLE": "HEAD-NEEDLE 직선 Z, mm, 0 위 ~ -30 내림",
+  "J_T06_KNIFE": "T06-T06_KNIFE 직선 Z, mm, 0 올림(대기·스프링) ~ -30 내림(절단·공기), 한계 -30~0"
  },
  "standby": {
   "x": 0.0,
@@ -20,7 +21,8 @@
   "rot": 0.0,
   "head": 0.0,
   "presser": 10.0,
-  "needle": 0.0
+  "needle": 0.0,
+  "knife": 0.0
  },
  "temp_values": {
   "T_MAT": 10.0,
@@ -55,15 +57,15 @@
    "label": "가장 좁은 홈 매트"
   }
  },
- "check_rule": "motion.interference: occurrences = 그 연구의 mat_occurrences(+움직이는 기구), against = 피해야 할 것. 다른 매트는 넣지 않는다(셋이 같은 자리에 겹쳐 있음, 정상 겹침). SCRAP은 ④ 이후만 유효. 사이클 연구는 budget_s를 주어야 끝까지 본다(기본 예산은 70~110 표본에서 끊김)",
+ "check_rule": "motion.interference: occurrences = 그 연구의 mat_occurrences(+움직이는 기구), against = 피해야 할 것. 다른 매트는 넣지 않는다(셋이 같은 자리에 겹쳐 있음, 정상 겹침). 매트 컴포넌트가 사슬로 중첩돼 있어(MAT_LARGE > _BOUND > _SEAM > MAT_SMALL > ... > MAT_GROOVE_SEAM) occurrence 단위 검사는 하위 매트 바디를 위 occurrence 이름으로 보고한다 -> 매트 판정은 바디 단위 inspect.clearance(그 매트 4바디만)로 한다(T06 모델링부 확인). SEAM(이음매 겹 층)은 사이클 연구의 ④-1a부터, TAIL(절단 꼬리)은 ④-6부터 유효, SCRAP은 없다(v0.5.0에서 지움). 상태_* 연구에서는 SEAM·TAIL을 빼고 본다. SEAM <-> 같은 매트 BOUND 748 mm³(아래 날개 Z -1~0이 겹침)는 테이프 겹(작업 대상 안)이다 — PM 판정 대기(T06 모델링 exception_request). 바늘 <-> 매트·BOUND·SEAM 겹침은 봉제 기능(바늘이 재료를 뚫음). 사이클 연구는 budget_s를 주어야 끝까지 본다(기본 예산은 70~110 표본에서 끊김), truncated를 확인",
  "studies": {
   "사이클_큰매트": {
    "mat_occurrences": [
     "MAT_LARGE",
     "MAT_LARGE_BOUND",
-    "MAT_LARGE_SCRAP"
+    "MAT_LARGE_SEAM"
    ],
-   "steps": 540,
+   "steps": 583,
    "states": [
     {
      "state": "0 대기",
@@ -131,19 +133,64 @@
      "to_step": 533
     },
     {
-     "state": "④ 시작·끝 이음매",
+     "state": "④ 시작·끝 이음매(겹쳐 박기 시작 자세)",
      "from_step": 534,
      "to_step": 534
     },
     {
-     "state": "④ 테이프·실 절단",
+     "state": "④-0 노루발 들기(겹 두께, J_PRESSER 0->2)",
      "from_step": 535,
      "to_step": 535
     },
     {
+     "state": "④-1a 가장자리 따라가기 목표 -1(J_MAT_Y Y4->Y4-1)",
+     "from_step": 536,
+     "to_step": 536
+    },
+    {
+     "state": "④-1 겹쳐 박기 L 30(J_MAT_X 0->30)",
+     "from_step": 537,
+     "to_step": 542
+    },
+    {
+     "state": "④-2 바늘 위·노루발 10, 헤드 실 절단(D-10)",
+     "from_step": 543,
+     "to_step": 543
+    },
+    {
+     "state": "④-3 끌어내기 D 30(J_MAT_X 30->60)",
+     "from_step": 544,
+     "to_step": 549
+    },
+    {
+     "state": "④-4 물러남 Δ 20(J_MAT_Y ->Y4-21)",
+     "from_step": 550,
+     "to_step": 553
+    },
+    {
+     "state": "④-5 T05 패드 P_hold(조인트 변화 없음)",
+     "from_step": 554,
+     "to_step": 554
+    },
+    {
+     "state": "④-6 칼 내림·절단(J_T06_KNIFE 0->-30)",
+     "from_step": 555,
+     "to_step": 560
+    },
+    {
+     "state": "④-7 칼 올림(J_T06_KNIFE -30->0)",
+     "from_step": 561,
+     "to_step": 566
+    },
+    {
+     "state": "④ X 되돌림(J_MAT_X 60->0, J_MAT_Y Y4-21, 옛 ④ 테이프·실 절단 자리)",
+     "from_step": 567,
+     "to_step": 578
+    },
+    {
      "state": "⑤ 배출",
-     "from_step": 540,
-     "to_step": 540
+     "from_step": 583,
+     "to_step": 583
     }
    ],
    "joint_extent": {
@@ -158,16 +205,31 @@
     "J_MAT_ROT": [
      -360.0,
      0.0
+    ],
+    "J_T06_KNIFE": [
+     -30.0,
+     0.0
     ]
-   }
+   },
+   "bodies": [
+    "MAT_LARGE",
+    "MAT_LARGE_BOUND",
+    "MAT_LARGE_SEAM",
+    "MAT_LARGE_TAIL"
+   ],
+   "valid_from": {
+    "MAT_LARGE_SEAM": 536,
+    "MAT_LARGE_TAIL": 555
+   },
+   "y4": -600.0
   },
   "사이클_작은매트": {
    "mat_occurrences": [
     "MAT_SMALL",
     "MAT_SMALL_BOUND",
-    "MAT_SMALL_SCRAP"
+    "MAT_SMALL_SEAM"
    ],
-   "steps": 255,
+   "steps": 298,
    "states": [
     {
      "state": "0 대기",
@@ -235,19 +297,64 @@
      "to_step": 223
     },
     {
-     "state": "④ 시작·끝 이음매",
+     "state": "④ 시작·끝 이음매(겹쳐 박기 시작 자세)",
      "from_step": 224,
      "to_step": 224
     },
     {
-     "state": "④ 테이프·실 절단",
+     "state": "④-0 노루발 들기(겹 두께, J_PRESSER 0->2)",
      "from_step": 225,
      "to_step": 225
     },
     {
+     "state": "④-1a 가장자리 따라가기 목표 -1(J_MAT_Y Y4->Y4-1)",
+     "from_step": 226,
+     "to_step": 226
+    },
+    {
+     "state": "④-1 겹쳐 박기 L 30(J_MAT_X 0->30)",
+     "from_step": 227,
+     "to_step": 232
+    },
+    {
+     "state": "④-2 바늘 위·노루발 10, 헤드 실 절단(D-10)",
+     "from_step": 233,
+     "to_step": 233
+    },
+    {
+     "state": "④-3 끌어내기 D 30(J_MAT_X 30->60)",
+     "from_step": 234,
+     "to_step": 239
+    },
+    {
+     "state": "④-4 물러남 Δ 20(J_MAT_Y ->Y4-21)",
+     "from_step": 240,
+     "to_step": 243
+    },
+    {
+     "state": "④-5 T05 패드 P_hold(조인트 변화 없음)",
+     "from_step": 244,
+     "to_step": 244
+    },
+    {
+     "state": "④-6 칼 내림·절단(J_T06_KNIFE 0->-30)",
+     "from_step": 245,
+     "to_step": 250
+    },
+    {
+     "state": "④-7 칼 올림(J_T06_KNIFE -30->0)",
+     "from_step": 251,
+     "to_step": 256
+    },
+    {
+     "state": "④ X 되돌림(J_MAT_X 60->0, J_MAT_Y Y4-21, 옛 ④ 테이프·실 절단 자리)",
+     "from_step": 257,
+     "to_step": 268
+    },
+    {
      "state": "⑤ 배출",
-     "from_step": 255,
-     "to_step": 255
+     "from_step": 298,
+     "to_step": 298
     }
    ],
    "joint_extent": {
@@ -262,16 +369,31 @@
     "J_MAT_ROT": [
      -360.0,
      0.0
+    ],
+    "J_T06_KNIFE": [
+     -30.0,
+     0.0
     ]
-   }
+   },
+   "bodies": [
+    "MAT_SMALL",
+    "MAT_SMALL_BOUND",
+    "MAT_SMALL_SEAM",
+    "MAT_SMALL_TAIL"
+   ],
+   "valid_from": {
+    "MAT_SMALL_SEAM": 226,
+    "MAT_SMALL_TAIL": 245
+   },
+   "y4": -100.0
   },
   "사이클_홈매트": {
    "mat_occurrences": [
     "MAT_GROOVE",
     "MAT_GROOVE_BOUND",
-    "MAT_GROOVE_SCRAP"
+    "MAT_GROOVE_SEAM"
    ],
-   "steps": 996,
+   "steps": 1039,
    "states": [
     {
      "state": "0 대기",
@@ -389,19 +511,64 @@
      "to_step": 989
     },
     {
-     "state": "④ 시작·끝 이음매",
+     "state": "④ 시작·끝 이음매(겹쳐 박기 시작 자세)",
      "from_step": 990,
      "to_step": 990
     },
     {
-     "state": "④ 테이프·실 절단",
+     "state": "④-0 노루발 들기(겹 두께, J_PRESSER 0->2)",
      "from_step": 991,
      "to_step": 991
     },
     {
+     "state": "④-1a 가장자리 따라가기 목표 -1(J_MAT_Y Y4->Y4-1)",
+     "from_step": 992,
+     "to_step": 992
+    },
+    {
+     "state": "④-1 겹쳐 박기 L 30(J_MAT_X 0->30)",
+     "from_step": 993,
+     "to_step": 998
+    },
+    {
+     "state": "④-2 바늘 위·노루발 10, 헤드 실 절단(D-10)",
+     "from_step": 999,
+     "to_step": 999
+    },
+    {
+     "state": "④-3 끌어내기 D 30(J_MAT_X 30->60)",
+     "from_step": 1000,
+     "to_step": 1005
+    },
+    {
+     "state": "④-4 물러남 Δ 20(J_MAT_Y ->Y4-21)",
+     "from_step": 1006,
+     "to_step": 1009
+    },
+    {
+     "state": "④-5 T05 패드 P_hold(조인트 변화 없음)",
+     "from_step": 1010,
+     "to_step": 1010
+    },
+    {
+     "state": "④-6 칼 내림·절단(J_T06_KNIFE 0->-30)",
+     "from_step": 1011,
+     "to_step": 1016
+    },
+    {
+     "state": "④-7 칼 올림(J_T06_KNIFE -30->0)",
+     "from_step": 1017,
+     "to_step": 1022
+    },
+    {
+     "state": "④ X 되돌림(J_MAT_X 60->0, J_MAT_Y Y4-21, 옛 ④ 테이프·실 절단 자리)",
+     "from_step": 1023,
+     "to_step": 1034
+    },
+    {
      "state": "⑤ 배출",
-     "from_step": 996,
-     "to_step": 996
+     "from_step": 1039,
+     "to_step": 1039
     }
    ],
    "joint_extent": {
@@ -416,14 +583,29 @@
     "J_MAT_ROT": [
      -360.0,
      0.0
+    ],
+    "J_T06_KNIFE": [
+     -30.0,
+     0.0
     ]
-   }
+   },
+   "bodies": [
+    "MAT_GROOVE",
+    "MAT_GROOVE_BOUND",
+    "MAT_GROOVE_SEAM",
+    "MAT_GROOVE_TAIL"
+   ],
+   "valid_from": {
+    "MAT_GROOVE_SEAM": 992,
+    "MAT_GROOVE_TAIL": 1011
+   },
+   "y4": -600.0
   },
   "상태_홈매트_홈": {
    "mat_occurrences": [
     "MAT_GROOVE",
     "MAT_GROOVE_BOUND",
-    "MAT_GROOVE_SCRAP"
+    "MAT_GROOVE_SEAM"
    ],
    "steps": 461,
    "states": [
@@ -476,13 +658,19 @@
      -270.0,
      -90.0
     ]
-   }
+   },
+   "bodies": [
+    "MAT_GROOVE",
+    "MAT_GROOVE_BOUND",
+    "MAT_GROOVE_SEAM",
+    "MAT_GROOVE_TAIL"
+   ]
   },
   "상태_홈매트_오목모서리": {
    "mat_occurrences": [
     "MAT_GROOVE",
     "MAT_GROOVE_BOUND",
-    "MAT_GROOVE_SCRAP"
+    "MAT_GROOVE_SEAM"
    ],
    "steps": 93,
    "states": [
@@ -515,13 +703,19 @@
      -90.0,
      0.0
     ]
-   }
+   },
+   "bodies": [
+    "MAT_GROOVE",
+    "MAT_GROOVE_BOUND",
+    "MAT_GROOVE_SEAM",
+    "MAT_GROOVE_TAIL"
+   ]
   },
   "상태_큰매트_볼록모서리": {
    "mat_occurrences": [
     "MAT_LARGE",
     "MAT_LARGE_BOUND",
-    "MAT_LARGE_SCRAP"
+    "MAT_LARGE_SEAM"
    ],
    "steps": 92,
    "states": [
@@ -554,7 +748,13 @@
      -90.0,
      0.0
     ]
-   }
+   },
+   "bodies": [
+    "MAT_LARGE",
+    "MAT_LARGE_BOUND",
+    "MAT_LARGE_SEAM",
+    "MAT_LARGE_TAIL"
+   ]
   }
  }
 }
