@@ -8,7 +8,8 @@
 |---|---|---|---|
 | 준비 | 완료: 매트 모형 3종(임시값), 조인트 골격, 동작 연구 7개 | `FSAP_v0.1.0.sc` | `mech_prep_check.md`, `mech_prep.md` |
 | T01 매트 잡기·회전 | **해결**: 동심 진공 원판 + 링1·링2, DGM200R 회전, X·Y 레일. 수정 1회(회전 키 단위, 링2 t3→t5) | `FSAP_v0.2.1.sc` | `mech_T01_*`, BOM `docs/bom/FSAP_v0.2.1_*.csv`, 설계검토서 `docs/review/FSAP_v0.2.1_review.md` |
-| T02 봉제 헤드 홈 진입 | **모델링 끝, 검증 중 멈춤**: 헤드 임시 형상, 침판·노루발 r8.5 노즈, SLA 바인더, 헤드 받침. 모델링 자체 검사 통과, 해석 통과. 검도·체결(검증)이 끝나지 않았다 | `FSAP_v0.3.0.sc`(최신, `tools/config.json` doc) | `mech_T02_measure·concept1~3·select·model·fea.md` |
+| T02 봉제 헤드 홈 진입 | **모델링 끝, 검증 중 멈춤**: 헤드 임시 형상, 침판·노루발 r8.5 노즈, SLA 바인더, 헤드 받침. 모델링 자체 검사 통과, 해석 통과. 검도·체결(검증)이 끝나지 않았다 | `FSAP_v0.3.0.sc` | `mech_T02_measure·concept1~3·select·model·fea.md` |
+| 구매품 STEP | **실물 교체**: HFS8 형재 10·LHFR16 6·PSFJ16-150 6(미스미 STEP). SV2R20·ZH10DS는 형번이 없어 다시 정해야 함, DGM200R·CJ2B16은 제조사 STEP 필요 | `FSAP_v0.3.1.sc`(최신, `tools/config.json` doc) | 결정로그 V031-01~05 |
 | T03~T07 | 시작 안 함 | — | — |
 
 - 결정은 `docs/decision-log.md`(C-01~C-09, P-01~P-06, T01-*, T02-*), 모르는 수치·STEP 대기는 `docs/waiting-list.md`(D-01~D-31).
