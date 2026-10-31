@@ -134,7 +134,8 @@ C("solid.chamfer", {"edges": [[25.15, -7.5, -1.05]], "distance": 0.5, "body": "P
 C("component.activate", {"component": "root"})
 
 # ================= 작업 대상: SCRAP 지우고 SEAM·TAIL(SCRAP이 있던 컴포넌트, 이름 MAT_*_SEAM) =================
-SEC = [(-10, -1), (2, -1), (2, 13), (-10, 13), (-10, 12), (1, 12), (1, 0), (-10, 0)]
+# T06-X03(v0.5.1): 아래 날개(Z -1~0) 없앤 ㄱ자 단면, 바디당 1,700 mm3, SEAM <-> 같은 매트 BOUND 겹침 0(T06-X01)
+SEC = [(1, -1), (2, -1), (2, 13), (-10, 13), (-10, 12), (1, 12)]
 for key, off in (('LARGE', -100.0), ('SMALL', -600.0), ('GROOVE', -100.0)):
     comp = 'MAT_%s_SCRAP' % key
     C("component.activate", {"component": comp})

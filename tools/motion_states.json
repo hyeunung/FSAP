@@ -57,7 +57,7 @@
    "label": "가장 좁은 홈 매트"
   }
  },
- "check_rule": "motion.interference: occurrences = 그 연구의 mat_occurrences(+움직이는 기구), against = 피해야 할 것. 다른 매트는 넣지 않는다(셋이 같은 자리에 겹쳐 있음, 정상 겹침). 매트 컴포넌트가 사슬로 중첩돼 있어(MAT_LARGE > _BOUND > _SEAM > MAT_SMALL > ... > MAT_GROOVE_SEAM) occurrence 단위 검사는 하위 매트 바디를 위 occurrence 이름으로 보고한다 -> 매트 판정은 바디 단위 inspect.clearance(그 매트 4바디만)로 한다(T06 모델링부 확인). SEAM(이음매 겹 층)은 사이클 연구의 ④-1a부터, TAIL(절단 꼬리)은 ④-6부터 유효, SCRAP은 없다(v0.5.0에서 지움). 상태_* 연구에서는 SEAM·TAIL을 빼고 본다. SEAM <-> 같은 매트 BOUND 748 mm³(아래 날개 Z -1~0이 겹침)는 테이프 겹(작업 대상 안)이다 — PM 판정 대기(T06 모델링 exception_request). 바늘 <-> 매트·BOUND·SEAM 겹침은 봉제 기능(바늘이 재료를 뚫음). 사이클 연구는 budget_s를 주어야 끝까지 본다(기본 예산은 70~110 표본에서 끊김), truncated를 확인",
+ "check_rule": "motion.interference: occurrences = 그 연구의 mat_occurrences(+움직이는 기구), against = 피해야 할 것. 다른 매트는 넣지 않는다(셋이 같은 자리에 겹쳐 있음, 정상 겹침). 매트 컴포넌트가 사슬로 중첩돼 있어(MAT_LARGE > _BOUND > _SEAM > MAT_SMALL > ... > MAT_GROOVE_SEAM) occurrence 단위 검사는 하위 매트 바디를 위 occurrence 이름으로 보고한다 -> 매트 판정은 바디 단위 inspect.clearance(그 매트 4바디만)로 한다(T06 모델링부 확인). SEAM(이음매 겹 층)은 사이클 연구의 ④-1a부터, TAIL(절단 꼬리)은 ④-6부터 유효, SCRAP은 없다(v0.5.0에서 지움). 상태_* 연구에서는 SEAM·TAIL을 빼고 본다. SEAM ↔ 같은 매트 BOUND 겹침 0(T06-X01). 바늘 <-> 매트·BOUND·SEAM 겹침은 봉제 기능(바늘이 재료를 뚫음). 사이클 연구는 budget_s를 주어야 끝까지 본다(기본 예산은 70~110 표본에서 끊김), truncated를 확인",
  "studies": {
   "사이클_큰매트": {
    "mat_occurrences": [
