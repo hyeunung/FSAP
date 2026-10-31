@@ -504,3 +504,10 @@ PM(원칙 감사). 측정 `mech_T07_measure.md`, 구상 `mech_T07_concept1~3.md`
 | id | 결정 | 이유 | 근거 |
 |---|---|---|---|
 | T07-M01 | T06-X03을 했다: v0.5.0을 열어 세 매트 `MAT_*_SEAM`을 YZ 단면 (1, −1) (2, −1) (2, 13) (−10, 13) (−10, 12) (1, 12), X −30~+38 68 밀기 한 스케치 한 바디로 다시 그렸다. 바디당 1,700.0 mm³(2,448 → 1,700), bbox 그대로(Y −110~−98 / −610~−598, Z −1~13). 대기 자세 SEAM ↔ 같은 매트 BOUND·매트 겹침 0(inspect.interference 3쌍씩). **v0.5.1**로 저장, config doc 변경, `tools/gen_t06_mech.py` 단면 같게, `motion_states.json` check_rule "SEAM ↔ 같은 매트 BOUND 겹침 0(T06-X01)" | T06-X01 기각 판정의 할 일 | T06-X01·X03, E-05(작은 형상 변경 → 수 +1) |
+| T07-M02 | T07을 지시서 B1~B9대로 그렸다: `BASE` 아래 `T07`(리지드 그룹 BASE:1 + T07:1, 새 조인트 0, 동작 연구 변경 0). 형재 8(실물 `HFS8-4080-460_GL/GR`, STEP대기 2850 ×2·680 ×2·1580 ×2), 캡 `HFC8-4080-B` ×4(끝 기둥 위·아래, 1580 형재 컴포넌트 아래, 형재 inseparable), 판 `P_T07_SKIRT_C/L/R`(SUS304 t2 레이저 평판, Y −1740 스케치 −Y 2 밀기, C 윗변 X 0 V홈 10×5). **v0.6.0** 저장 | 선정 T07-S01·S02·S07 | E-05(부품 묶음 신설 → 부 +1), M-07, U-19 |
+| T07-M03 | 지시서는 STEP을 root에 넣고 옮기라 했고, 형재 STEP이 없는 길이만 상자로 그리라 했다. `HFS8-4080-460`은 STEP이 있으므로(stepcheck '있음') 중간 기둥 2개는 실물 STEP으로 넣었다. 지시서 끝 'STEP 대기' 목록에 460이 없는 것과 맞다 | U-07 "구매품은 실제 STEP으로" | stepcheck, gen_v031_step.py 원점 규칙(길이 시작·단면 중심) |
+| T07-M04 | STEP대기 형재는 형재마다 컴포넌트(`HFS8-4080-<L>_<tag>`)를 만들고 바디 `STEP대기_HFS8-4080-<L>_<tag>`를 넣었다. part_number = 형번, bom_type purchased(캡을 품는 1580은 inseparable) | BOM이 형번으로 묶이게(안내서 '목록'), S01 캡 방식과 같게 | E-10, gen_s01_step.py |
+| T07-M05 | 캡 ↔ 1580 STEP대기 상자 4쌍은 불리언이 실패해 겹침을 못 쟀다(inspect.clearance unchecked 'boolean Intersect: no result'). 원인은 상자가 속이 차 있고 캡 끼움부 8이 그 안에 들어가기 때문이다. 실물 STEP이면 끼움부는 홈 안이다. 정상 겹침 후보로 기록하고 STEP 수령 뒤 다시 본다 | 임시 형상 한계 | E-10, M-08 "구매처 CAD끼리의 미세 겹침" |
+| T07-M06 | 검사 상자 `K_T07_*` 7개를 `tools/motion_states.json` `t07_zones`에 넣었다(바디 아님). 확인: 대기 정적 겹침 0, 사이클 3개·되감기 motion.interference 충돌 0(truncated false), 검출면 ↔ 매트 44.8 | 선정 T07-S03 | E-03, E-16 |
+| T07-M07 | 판 3장을 해석용 임시 STEP으로 냈다(`tools/out/mech_T07/stepout/`). 해석은 환경 없음(D-16) | 오조작(작업자가 기대어 밈) 하중을 받는 새 가공품 | E-06 예외(해석용), E-18 |
+
