@@ -1,0 +1,38 @@
+
+== 형상 대조: 33개, 같음 26, 다름 ['P_T01_RING2_STRAP_3', 'P_T01_RING2_STRAP_5', 'P_T01_SPIDER_2', 'P_T01_SPIDER_3'], 지난 STEP 없음 ['P_S01_XSPACER_2', 'P_S01_XSPACER_3', 'P_S01_XSPACER_4']
+  다름 P_T01_RING2_STRAP_3 mech_T01/stepout [[-456.003, -267.128], [-974.821, -842.679], [-12.0, -7.0]] → [[-456.003, -267.128], [-974.821, -842.679], [-12.0, -7.0]]
+  다름 P_T01_RING2_STRAP_5 mech_T01/stepout [[267.128, 456.003], [-974.821, -842.679], [-12.0, -7.0]] → [[267.128, 456.003], [-974.821, -842.679], [-12.0, -7.0]]
+  다름 P_T01_SPIDER_2 mech_T01/stepout [[-439.352, -71.602], [-970.981, -724.019], [-235.0, -85.0]] → [[-439.352, -71.603], [-970.981, -724.019], [-235.0, -95.5]]
+  다름 P_T01_SPIDER_3 mech_T01/stepout [[71.602, 439.352], [-970.981, -724.019], [-235.0, -85.0]] → [[71.603, 439.352], [-970.981, -724.019], [-235.0, -95.5]]
+  what-if {'t': 3.0, 'Fx_arm': 91.1, 'Fy_arm': 190.4, 'tau': 86.4, 'sigma_b': 75.2, 'sf': 1.22, 'jam_sf': 1.67, 'shear_gap_op': 0.041, 'gap_xp': 0.4, 'hole_bend_need': 6.0}
+  what-if {'t': 4.0, 'Fx_arm': 185.0, 'Fy_arm': 190.4, 'tau': 50.2, 'sigma_b': 85.9, 'sf': 1.68, 'jam_sf': 2.97, 'shear_gap_op': 0.0779, 'gap_xp': 0.4, 'hole_bend_need': 8.0}
+  what-if {'t': 5.0, 'Fx_arm': 292.3, 'Fy_arm': 190.4, 'tau': 33.3, 'sigma_b': 86.9, 'sf': 1.97, 'jam_sf': 4.64, 'shear_gap_op': 0.091, 'gap_xp': 0.4, 'hole_bend_need': 10.0}
+  what-if {'t': 6.0, 'Fx_arm': 371.5, 'Fy_arm': 190.4, 'tau': 24.0, 'sigma_b': 76.7, 'sf': 2.35, 'jam_sf': 6.68, 'shear_gap_op': 0.0968, 'gap_xp': 0.4, 'hole_bend_need': 12.0}
+  what-if {'t': 3.0, 'Fx_arm': 56.9, 'Fy_arm': 190.4, 'tau': 86.4, 'sigma_b': 47.0, 'sf': 1.31, 'jam_sf': 1.67, 'shear_gap_op': 0.041, 'gap_xp': 0.25, 'hole_bend_need': 6.0}
+  what-if {'t': 4.0, 'Fx_arm': 115.6, 'Fy_arm': 190.4, 'tau': 50.2, 'sigma_b': 53.7, 'sf': 2.01, 'jam_sf': 2.97, 'shear_gap_op': 0.0779, 'gap_xp': 0.25, 'hole_bend_need': 8.0}
+  what-if {'t': 5.0, 'Fx_arm': 182.7, 'Fy_arm': 190.4, 'tau': 33.3, 'sigma_b': 54.3, 'sf': 2.59, 'jam_sf': 4.64, 'shear_gap_op': 0.091, 'gap_xp': 0.25, 'hole_bend_need': 10.0}
+  what-if {'t': 6.0, 'Fx_arm': 245.8, 'Fy_arm': 190.4, 'tau': 24.0, 'sigma_b': 50.7, 'sf': 3.13, 'jam_sf': 6.68, 'shear_gap_op': 0.0968, 'gap_xp': 0.25, 'hole_bend_need': 12.0}
+  what-if {'t': 3.0, 'Fx_arm': 22.8, 'Fy_arm': 190.4, 'tau': 86.4, 'sigma_b': 18.8, 'sf': 1.36, 'jam_sf': 1.67, 'shear_gap_op': 0.041, 'gap_xp': 0.1, 'hole_bend_need': 6.0}
+  what-if {'t': 4.0, 'Fx_arm': 46.2, 'Fy_arm': 190.4, 'tau': 50.2, 'sigma_b': 21.5, 'sf': 2.29, 'jam_sf': 2.97, 'shear_gap_op': 0.0779, 'gap_xp': 0.1, 'hole_bend_need': 8.0}
+  what-if {'t': 5.0, 'Fx_arm': 73.1, 'Fy_arm': 190.4, 'tau': 33.3, 'sigma_b': 21.7, 'sf': 3.33, 'jam_sf': 4.64, 'shear_gap_op': 0.091, 'gap_xp': 0.1, 'hole_bend_need': 10.0}
+  what-if {'t': 6.0, 'Fx_arm': 98.3, 'Fy_arm': 190.4, 'tau': 24.0, 'sigma_b': 20.3, 'sf': 4.44, 'jam_sf': 6.68, 'shear_gap_op': 0.0968, 'gap_xp': 0.1, 'hole_bend_need': 12.0}
+  칼 막힘 handcalc.beam t3~6: [{'t': 3.0, 'sf': 1.67, 'defl': 0.3255, 'thin': True}, {'t': 4.0, 'sf': 2.97, 'defl': 0.1373, 'thin': True}, {'t': 5.0, 'sf': 4.64, 'defl': 0.0703, 'thin': False}, {'t': 6.0, 'sf': 6.68, 'defl': 0.0407, 'thin': False}]
+  팔 질량(전개 110.54×21): {3: 55.2, 4: 73.6, 5: 92.0, 6: 110.4}
+
+== 체결 손계산 ==
+  [미달] KNIFE_ARM_M5_nut_jam: 하중 40.3 N, 물림 4.0, 토크 6.0 → worst 조임 암나사 전단 {'조임 볼트 응력': 2.34, '조임 좌면': 2.2, '조임 암나사 전단': 0.48}
+  [미달] KNIFE_ARM_M5_nut_T_t3: 하중 113.9 N, 물림 4.0, 토크 6.0 → worst 조임 암나사 전단 {'조임 볼트 응력': 2.34, '조임 좌면': 2.2, '조임 암나사 전단': 0.48}
+  [미달] KNIFE_ARM_M5_nut_T_t5: 하중 365.4 N, 물림 4.0, 토크 6.0 → worst 조임 암나사 전단 {'조임 볼트 응력': 2.34, '조임 좌면': 2.2, '조임 암나사 전단': 0.48}
+  [됨] SHAFT_ARM_M5_jam: 하중 845.6 N, 물림 7.5, 토크 6.0 → worst 조임 암나사 전단 {'조임 볼트 응력': 2.34, '조임 좌면': 3.46, '조임 암나사 전단': 1.52}
+  축–팔 비틀림 오조작 T: T 4950 N·mm vs 마찰 4838 → SF 0.98
+  [미달] ROD_ARM_NTJ_jam: 하중 80.5 N, 물림 4.0, 토크 3.0 → worst 조임 암나사 전단 {'조임 볼트 응력': 4.69, '조임 좌면': 2.93, '조임 암나사 전단': 0.97}
+  [미달] SKIRT_HNTT8-5_pull: 하중 50.0 N, 물림 4.0, 토크 4.0 → worst 조임 암나사 전단 {'조임 볼트 응력': 3.51, '조임 좌면': 4.04, '조임 암나사 전단': 0.87}
+저장 C:\Users\hyeun\OneDrive\Documents\workspace\FSAP\fea\results\detail_handcalc.json
+
+== 절삭 L 팔(가로 th, 세로 t3) what-if ==
+   {'th': 4.0, 'tv': 3.0, 'gap_xp': 0.4, 'Fx_arm': 164.5, 'Fy_arm': 190.4, 'tau': 50.2, 'sigma_b': 76.4, 'sf_T': 1.77, 'sf_jam': 2.97, 'sf_op': 6.55, 'shear_gap_op': 0.0803}
+   {'th': 4.0, 'tv': 3.0, 'gap_xp': 0.25, 'Fx_arm': 102.8, 'Fy_arm': 190.4, 'tau': 50.2, 'sigma_b': 47.7, 'sf_T': 2.07, 'sf_jam': 2.97, 'sf_op': 6.55, 'shear_gap_op': 0.0803}
+   {'th': 5.0, 'tv': 3.0, 'gap_xp': 0.4, 'Fx_arm': 230.7, 'Fy_arm': 190.4, 'tau': 33.3, 'sigma_b': 68.6, 'sf_T': 2.29, 'sf_jam': 4.64, 'sf_op': 10.23, 'shear_gap_op': 0.0943}
+   {'th': 5.0, 'tv': 3.0, 'gap_xp': 0.25, 'Fx_arm': 144.2, 'Fy_arm': 190.4, 'tau': 33.3, 'sigma_b': 42.8, 'sf_T': 2.85, 'sf_jam': 4.64, 'sf_op': 10.23, 'shear_gap_op': 0.0943}
+   {'th': 6.0, 'tv': 3.0, 'gap_xp': 0.4, 'Fx_arm': 280.7, 'Fy_arm': 190.4, 'tau': 24.0, 'sigma_b': 57.9, 'sf_T': 2.88, 'sf_jam': 6.68, 'sf_op': 14.74, 'shear_gap_op': 0.1005}
+   {'th': 6.0, 'tv': 3.0, 'gap_xp': 0.25, 'Fx_arm': 175.4, 'Fy_arm': 190.4, 'tau': 24.0, 'sigma_b': 36.2, 'sf_T': 3.72, 'sf_jam': 6.68, 'sf_op': 14.74, 'shear_gap_op': 0.1005}

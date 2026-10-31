@@ -109,7 +109,8 @@
       "criteria": {
         "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작). 맞날 틈 0.1(정밀 체인, 디테일)",
         "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T06_handcalc.json"
-      }
+      },
+      "_디테일링 2026-10-31": "모델(고정·접촉·하중)은 그대로. what-if만 더함: 판금 t3~t6, 절삭 L(가로 다리 th 4~6 · 세로 다리 t3), 홈 +X 틈 0.4·0.25·0.1. 축–팔 M5 1개 체결의 마찰(축 둘레 회전)·벌림 인장 손계산 추가. fea/results/detail_handcalc.json"
     },
     "P_T06_KNIFE": {
       "case": "cases/mech_T06_handcalc.py (v0.5.0)",
@@ -139,7 +140,8 @@
       "criteria": {
         "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형. 처짐은 6-2 한도 없음 → 판 뒤 움직이는 바디 틈(매트 bbox 89.22)",
         "source": "요구서 6-1 기본값 M-09, D-38, fea/results/mech_T07_handcalc.json"
-      }
+      },
+      "_디테일링 2026-10-31": "둘레 볼트 HNTT8-5 + CB5 몫 손계산(무릎 200 N을 가까운 4개가 받음, 당김 쪽 보수): fea/results/detail_handcalc.json bolts.SKIRT_HNTT8-5_pull"
     },
     "P_T07_SKIRT_L": {
       "case": "cases/mech_T07_handcalc.py (L·R 거울 대칭 → L 하나, E-19)",
@@ -159,6 +161,16 @@
       "criteria": {
         "value": "같음",
         "source": "같음"
+      }
+    },
+    "P_T01_HUB": {
+      "case": "cases/mech_T01_fea1_handcalc.py hub_case(v0.2.1) · cases/detail_hub_r85.py(디테일링, 받침 r85)",
+      "fixed": "허브 밑면(Z −241)이 DGM200R-AZAC 출력 테이블 윗면에 앉음. 받침 끝 = 테이블 바깥 반지름 r85(실물 STEP Ø170, mech_S01_measure.md). 옛 모델 r100(임시 형상)·r50(가정)은 비교용",
+      "contact": "스파이더 다리 밑 r150 누름·r100 들림(= 다리–허브 볼트 인장)",
+      "load": "운전 회전 묶음 자중 ×3 g + 링 받침 모멘트 / 오조작 실린더 막힘(T01 2회차 값, mech_T01_fea1_handcalc.json에서 V·M 역산)",
+      "criteria": {
+        "value": "SUS304 205 MPa, SF 운전 3·오조작 2",
+        "source": "요구서 6-1 → M-09. fea/results/detail_hub_r85.json"
       }
     }
   },
