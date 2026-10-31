@@ -78,6 +78,31 @@ def insert(pn, nm, M, par, body0, desc, bt="purchased"):
 
 HO, GU, PA, CA, HEADB = "P_T05_HOLDER", "P_T05_GUIDE", "P_T05_PAD", "P_T05_CAP", "STEP대기_SEWHEAD"
 
+# ================= 수정 2회차(fix2): v0.6.9 -> v0.6.10 — P_T05_HUB 구멍 위상 표시(플랜지 테두리 홈 x4) =================
+# 검증 DP-3 1회차 미완: 구멍 위상 표시. 허브 플랜지 Ø200 t3(X -113.5~-110.5) 테두리(r100)에 폭 1.2 · 깊이 0.8 홈 x4.
+# 자리: 허브 0°·90°·180°·270°(Y 750/850, Z 300/200 …) = 렌치 구멍 4개(45° 간격 사이)의 가운데.
+# 구멍이 볼트에 맞으면 위 홈(Y 750, Z 300)이 홀더 위 클램프 틈(Y 749.25~750.75, Z 229) 바로 위에 온다 -> 위에서 보고 맞춘다.
+# 재료를 덜어낼 뿐이라 새 겹침이 생길 수 없다. 롤(r97)·테이프 길과 닿지 않는 r99.2~100 띠.
+# 쓰는 법: python -B tools/gen_dp3_detail.py fix2 -> build_fix2.json
+#   solidcraft-cli run tools/out/detail/DP-3/build_fix2.json --in 3D_Modeling/FSAP_v0.6.9.sc --save 3D_Modeling/FSAP_v0.6.10.sc
+if VARIANT == 'fix2':
+    HUB = "P_T05_HUB"
+    C("motion.play", {"study": "대기", "step": 0, "quiet": True})
+    C("component.activate", {"component": "T05"})
+    W, DP = 1.2, 0.8
+    box(-113.8, -110.2, 750 - W / 2, 750 + W / 2, 300 - DP, 300.5, op="cut", targets=[HUB])   # 위
+    box(-113.8, -110.2, 750 - W / 2, 750 + W / 2, 99.5, 100 + DP, op="cut", targets=[HUB])    # 아래
+    box(-113.8, -110.2, 850 - DP, 850.5, 200 - W / 2, 200 + W / 2, op="cut", targets=[HUB])   # +Y
+    box(-113.8, -110.2, 649.5, 650 + DP, 200 - W / 2, 200 + W / 2, op="cut", targets=[HUB])   # -Y
+    C("component.activate", {"component": "root"})
+    C("component.metadata.set", {"component": "T05", "properties": {
+        HUB: "PET-CF / FDM H2C / 플랜지 + 심 Ø76, 축 구멍 Ø16.3, 렌치 구멍 Ø9 x4 깊이 10(+X 면, 홀더 CB5-16 x4와 같은 축, r28.28 45°간격), 위상 표시 홈 1.2 x 0.8 x4(플랜지 테두리 0°·90°·180°·270°) — 롤을 손으로 돌려 테두리 홈을 홀더 위 클램프 틈에 맞추면 구멍이 볼트에 맞는다. 육각 렌치 4로 푼다 (DP-3 fix2)"}})
+    C("document.metadata.set", {"values": {"description": "DP-3 fix2: T05 hub phase marks (rim notches 1.2 x 0.8 x4 at 0/90/180/270 deg) to align wrench holes with holder bolts; rest as v0.6.9"}})
+    C("motion.play", {"study": "대기", "step": 0})
+    json.dump(S, open(os.path.join(OUT, 'build_fix2.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    print(len(S), 'steps', VARIANT)
+    sys.exit(0)
+
 # ================= 수정 1회차(fix1): v0.6.8 -> v0.6.9 — P_T05_HUB 렌치 구멍 Ø9 x4 =================
 # 검증 DP-3: HD_1~4 렌치 프로브 Ø8.5x30(X -87.5 -> -117.5)이 허브 플랜지(X -110.5)에 막힘(M-01·M-02). PM 판정 DP3-X01·X02.
 # 허브 X -150~-110.5, 심 Ø76, 축 구멍 Ø16.3. 구멍 축 = 볼트 축(Y 730·770, Z 180·220) = 축(Y750,Z200) 기준 r 28.28, 45°·135°·225°·315°.
