@@ -164,13 +164,13 @@
       }
     },
     "P_T01_HUB": {
-      "case": "cases/mech_T01_fea1_handcalc.py hub_case(v0.2.1) · cases/detail_hub_r85.py(디테일링, 받침 r85)",
+      "case": "cases/mech_T01_fea1_handcalc.py hub_case(v0.2.1) · cases/detail_hub_r85.py(디테일링, 받침 r85) · cases/detail_DP-2_handcalc.py(DP-2, SUS304 t8, 발 볼트)",
       "fixed": "허브 밑면(Z −241)이 DGM200R-AZAC 출력 테이블 윗면에 앉음. 받침 끝 = 테이블 바깥 반지름 r85(실물 STEP Ø170, mech_S01_measure.md). 옛 모델 r100(임시 형상)·r50(가정)은 비교용",
-      "contact": "스파이더 다리 밑 r150 누름·r100 들림(= 다리–허브 볼트 인장)",
+      "contact": "DP-2(v0.6.6)부터: 스파이더 발(A5052 t3, 옆 ±30~52)이 허브 윗면 −233에 앉고 발마다 CB5-12 2개(축 방향 110·135, 옆 ±44, 허브 관통 탭 물림 8). 피벗 = 발 줄의 허브 끝 r150(축 방향 143.4), 볼트 힘은 Σd² 선형 분포. 허브 판 r85 굽힘은 정역학상 옛 모델(r150 누름·r100 들림)과 같다. 옛 모델은 비교용",
       "load": "운전 회전 묶음 자중 ×3 g + 링 받침 모멘트 / 오조작 실린더 막힘(T01 2회차 값, mech_T01_fea1_handcalc.json에서 V·M 역산)",
       "criteria": {
         "value": "SUS304 205 MPa, SF 운전 3·오조작 2",
-        "source": "요구서 6-1 → M-09. fea/results/detail_hub_r85.json"
+        "source": "요구서 6-1 → M-09. fea/results/detail_hub_r85.json · fea/results/detail_DP-2_handcalc.json"
       }
     },
     "STEP대기_MS3-8_T06": {
@@ -181,6 +181,66 @@
       "criteria": {
         "value": "전단 허용 0.6 × 1000 MPa(보수, 실물 SUJ2 58HRC~), 지압 SUS304 Sy 205(항복)·1.5Sy(관례 지압 허용), 축 S45C 345 보수. SF 오조작 2(M-09)",
         "source": "M-09, 미스미 MS3-8 상품 페이지 외형도(SUJ2 58HRC~, DL-D30), fea/results/detail_DP-1_pin.json"
+      }
+    },
+    "P_T01_SPIDER_1~3": {
+      "case": "cases/detail_DP-2_handcalc.py(v0.6.6 A5052 t3 판금 모자형). 옛 SUS304 ㄷ은 cases/mech_T01_fea1_handcalc.py",
+      "fixed": "발(Z −233~−230, 옆 ±30~52)이 허브 윗면에 CB5-12 4개로 체결. 외팔 뿌리 = 발 볼트 줄의 허브 끝(축 방향 143.4). 옛 모델 r150 끝면은 비교용",
+      "contact": "발–허브 면 접촉(예압). 발 국부: 다리(x 30, 평평한 곳 x 33)가 발을 들고 볼트(x 44)가 누름 — 예압 무시 외팔 레버 11·폭 25(보수) + 편심 이음 열림 하중(핵 19/6)",
+      "load": "운전: 링 받침 반력·회전 반력(T01 2회차 링 곡선보) + 실린더·부시 임시 질량 + 자중, ×3 g / 막힘: 실린더 추력 100.5 N × 2(r190·r410) + 1 g / 옆: DG 최대 토크 50 N·m ÷ 3 at r240",
+      "criteria": {
+        "value": "A5052 Rp 175(판금 H32 가정 보수), SF 운전 3·오조작 2, SF < 1.2 = 영구 변형",
+        "source": "M-09. fea/results/detail_DP-2_handcalc.json"
+      }
+    },
+    "P_T01_POST": {
+      "case": "cases/detail_DP-2_handcalc.py(v0.6.6 플랜지 일체) · 옛 cases/mech_T01_fea1_handcalc.py",
+      "fixed": "밑 플랜지 Ø120 t8.5가 허브 윗면 −233에 CB5-16 3개(r50) — 볼트 힘 = 기울임 모멘트 Σd²(피벗 플랜지 끝 r60)",
+      "contact": "플랜지–허브 면 압축, 위 플랜지 Ø100 t8이 원판 밑면을 받침(인서트 3, r45)",
+      "load": "운전: 끌림 20 N + 이송 가속 / 오조작: 작은 매트가 부딪쳐 마찰 한계 275.6 N at 원판 윗면(Z −0.5). 플랜지 굽힘: 볼트 r50 ← 관 바깥 r30, 레버 15.75, 유효 폭 40",
+      "criteria": {
+        "value": "PET-CF 20 MPa(층간 자리값, 플랜지 면내 강도 미확인이라 보수로 같이 씀), SF 운전 3·오조작 2",
+        "source": "M-09. fea/results/detail_DP-2_handcalc.json"
+      }
+    },
+    "P_T01_DISC": {
+      "case": "cases/detail_DP-2_handcalc.py",
+      "fixed": "밑면이 기둥 위 플랜지 Ø100(r50)에 앉음, MBIS5-6.5-8 인서트 3(r45) + CB5-16 밑에서",
+      "contact": "매트 압축만. 인서트 위 살 3(Z −3.5~−0.5)",
+      "load": "3 g 자중 + 작은 매트, 진공 58 kPa(인서트 위 살), 인서트 빠짐 = 조임 예압 1,500 N(1.5 N·m)",
+      "criteria": {
+        "value": "Rigid 10K 65 MPa(자리값), SF 3. 인서트 빠짐 강도 자료 없음",
+        "source": "fea/results/detail_DP-2_handcalc.json"
+      }
+    },
+    "P_T01_RING1": {
+      "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
+      "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
+      "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
+      "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
+      "criteria": {
+        "value": "A5052 175 MPa, SF 운전 3·오조작 2",
+        "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
+      }
+    },
+    "P_T01_RING2": {
+      "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
+      "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
+      "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
+      "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
+      "criteria": {
+        "value": "A5052 175 MPa, SF 운전 3·오조작 2",
+        "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
+      }
+    },
+    "P_T01_RING2_STRAP_1~6": {
+      "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
+      "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
+      "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
+      "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
+      "criteria": {
+        "value": "A5052 175 MPa, SF 운전 3·오조작 2",
+        "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
       }
     }
   },
