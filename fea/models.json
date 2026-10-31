@@ -12,10 +12,10 @@
       }
     },
     "P_T02_PLATE": {
-      "case": "cases/mech_T02_handcalc.py",
+      "case": "cases/mech_T02_handcalc.py (노즈) · cases/mech_T06_handcalc.py (v0.5.0 칼 받이 홈: 홈 단면 남은 폭, 절단 가장자리 지압, 오조작 T 홈 벽 지압)",
       "fixed": "침판 판(Z −4.05~−1.05)이 헤드 베드에 앉음 — 아래 노즈 뿌리(Z −1.05) 고정 외팔",
       "contact": "매트 압축만",
-      "load": "운전: 끌림 20 N + 누름 50 + 관통 30 N / 오조작 417.5 N 아래 노즈 가운데",
+      "load": "운전: 끌림 20 N + 누름 50 + 관통 30 N / 오조작 417.5 N 아래 노즈 가운데 / v0.5.0: 절단 30 N 홈 가장자리 지압, 오조작 T 홈 +X 벽 280 N 지압",
       "criteria": {
         "value": "S50C 345 MPa(자리값), SF 운전 3·오조작 2",
         "source": "M-09, fea/results/mech_T02_handcalc.json"
@@ -99,6 +99,36 @@
       "criteria": {
         "value": "PET-CF 30 MPa, 참고값만",
         "source": "fea/results/mech_T05_fea1_handcalc.json"
+      }
+    },
+    "P_T06_ARM": {
+      "case": "cases/mech_T06_handcalc.py (v0.5.0)",
+      "fixed": "가로 다리가 안내축 PSFJ16-100(X 72, LHFR16 부시)에 물려 그 자리 고정 외팔 — 축–팔 체결은 형번 대기 D-37 (2)(우력 전달을 전제). 로드(X 108, 구멍 Ø6 ±0.5)는 Z 힘만",
+      "contact": "칼(세로 다리 +X 면, M5 ×2 + 너트)과 면 맞댐. 절단 자세에서 칼 끝은 침판 홈 안(틈 −X 0.1·+X 0.4·−Y 0.5) — 틈이 닫히면 홈 벽이 받침",
+      "load": "운전: 절단 저항 30 N(D-06) +Z at 칼 X 24 + 자중 ×3 g / 오조작 칼 막힘: 실린더 0.5 MPa × Ø16 − 스프링 20(D-36) = 80.5 N / 오조작 T: 칼이 내려간 채 매트가 움직여 테이프가 줄 방향 (0.890, −0.456)으로 417.5 N(D-05·D-04) at Z −0.5(절단 자세), 틈 닫힐 때까지 팔 몫",
+      "criteria": {
+        "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작). 맞날 틈 0.1(정밀 체인, 디테일)",
+        "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T06_handcalc.json"
+      }
+    },
+    "P_T06_KNIFE": {
+      "case": "cases/mech_T06_handcalc.py (v0.5.0)",
+      "fixed": "볼트 줄 Z 42(절단 자세 12)에서 아래로 외팔(테이프 Z −0.5까지 12.5)",
+      "contact": "테이프·침판 홈 벽은 하중으로만",
+      "load": "운전 옆힘 0.3 × 30 N(선정 가정) / 오조작 칼 막힘 옆힘 0.3 × 80.5 N, 볼트 구멍 지압 80.5 N / 오조작 T 팔 몫 Fx",
+      "criteria": {
+        "value": "SK85 풀림 항복 390 MPa 보수값(열처리 조건 미확인), SF 운전 3·오조작 2",
+        "source": "M-09, fea/results/mech_T06_handcalc.json"
+      }
+    },
+    "P_T06_BRACKET": {
+      "case": "cases/mech_T06_handcalc.py (v0.5.0)",
+      "fixed": "세로 다리 X 40 면이 헤드 +X 면에 맞댐, M5 ×2(Z 130, 헤드 탭 SS400 자리값 D-10). 지렛점은 아래 모서리 Z 73",
+      "contact": "가로 판 윗면 Z 77에 실린더 어깨·LHFR16 플랜지가 앉음",
+      "load": "실린더 반력 +Z F at X 108 + 부시 우력 F·84 at X 72(등가: X 24 선 위 +Z F). 운전 F 30 N + 고정 묶음 자중 ×3 g / 오조작 F 80.5 N. 보수 비교로 선정 모델(우력 무시, 64F 전폭)도 함께",
+      "criteria": {
+        "value": "SUS304 205 MPa, SF 운전 3·오조작 2, 과사양 = 지배 경우 SF ≥ 필요 × 3",
+        "source": "M-09, fea/results/mech_T06_handcalc.json"
       }
     }
   },

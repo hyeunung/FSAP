@@ -1,0 +1,822 @@
+{
+ "checks": [
+  {
+   "part": "KNIFE",
+   "what": "X 시작",
+   "step": 23.25,
+   "used": 23.25,
+   "ok": true
+  },
+  {
+   "part": "KNIFE",
+   "what": "X 끝",
+   "step": 24.75,
+   "used": 24.75,
+   "ok": true
+  },
+  {
+   "part": "KNIFE",
+   "what": "Y 앞",
+   "step": -18.0,
+   "used": -18.0,
+   "ok": true
+  },
+  {
+   "part": "KNIFE",
+   "what": "Y 뒤",
+   "step": 3.0,
+   "used": 3.0,
+   "ok": true
+  },
+  {
+   "part": "KNIFE",
+   "what": "Z 날 끝(대기)",
+   "step": 27.5,
+   "used": 27.5,
+   "ok": true
+  },
+  {
+   "part": "KNIFE",
+   "what": "Z 위",
+   "step": 52.5,
+   "used": 52.5,
+   "ok": true
+  },
+  {
+   "part": "KNIFE",
+   "what": "볼트 구멍 r",
+   "step": 2.75,
+   "used": 2.75,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "X 시작",
+   "step": 24.75,
+   "used": 24.75,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "X 끝",
+   "step": 120.0,
+   "used": 120.0,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "Y 앞",
+   "step": -18.0,
+   "used": -18.0,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "Y 뒤",
+   "step": 3.0,
+   "used": 3.0,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "Z 세로 다리 밑",
+   "step": 36.5,
+   "used": 36.5,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "Z 윗면",
+   "step": 57.0,
+   "used": 57.0,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "가로 다리 밑면 Z 54",
+   "step": 54.0,
+   "used": 54.0,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "세로 다리 안면 X 27.75",
+   "step": 27.75,
+   "used": 27.75,
+   "ok": true
+  },
+  {
+   "part": "ARM",
+   "what": "굽힘 안쪽 R3",
+   "step": 3.0,
+   "used": 3.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "X 시작(헤드 면)",
+   "step": 40.0,
+   "used": 40.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "X 끝",
+   "step": 122.0,
+   "used": 122.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "Y 앞",
+   "step": -34.0,
+   "used": -34.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "Y 뒤",
+   "step": 19.0,
+   "used": 19.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "Z 밑",
+   "step": 73.0,
+   "used": 73.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "Z 위",
+   "step": 140.0,
+   "used": 140.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "가로 판 윗면 Z 77",
+   "step": 77.0,
+   "used": 77.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "세로 다리 안면 X 44",
+   "step": 44.0,
+   "used": 44.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "축 구멍 r9",
+   "step": 9.0,
+   "used": 9.0,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "보스 구멍 r5.25",
+   "step": 5.25,
+   "used": 5.25,
+   "ok": true
+  },
+  {
+   "part": "BRACKET",
+   "what": "부시 구멍 r2.25",
+   "step": 2.25,
+   "used": 2.25,
+   "ok": true
+  },
+  {
+   "part": "PLATE",
+   "what": "X",
+   "step": -40.0,
+   "used": -40.0,
+   "ok": true
+  },
+  {
+   "part": "PLATE",
+   "what": "X 끝",
+   "step": 40.0,
+   "used": 40.0,
+   "ok": true
+  },
+  {
+   "part": "PLATE",
+   "what": "판 밑 Z −4.05",
+   "step": -4.05,
+   "used": -4.05,
+   "ok": true
+  },
+  {
+   "part": "PLATE",
+   "what": "판 위 Z −1.05",
+   "step": -1.05,
+   "used": -1.05,
+   "ok": true
+  },
+  {
+   "part": "PLATE",
+   "what": "홈 −X 벽 X 23.15",
+   "step": 23.15,
+   "used": 23.15,
+   "ok": true
+  },
+  {
+   "part": "PLATE",
+   "what": "홈 +X 벽 X 25.15",
+   "step": 25.15,
+   "used": 25.15,
+   "ok": true
+  },
+  {
+   "part": "PLATE",
+   "what": "홈 −Y 끝 Y −18.5",
+   "step": -18.5,
+   "used": -18.5,
+   "ok": true
+  },
+  {
+   "part": "PLATE",
+   "what": "홈 +Y 끝 Y 3.5",
+   "step": 3.5,
+   "used": 3.5,
+   "ok": true
+  }
+ ],
+ "step": {
+  "P_T02_PLATE": {
+   "bbox": [
+    [
+     -40.0,
+     40.0
+    ],
+    [
+     -25.0,
+     25.0
+    ],
+    [
+     -4.05,
+     3.5
+    ]
+   ],
+   "x_planes": [
+    -40.0,
+    23.15,
+    25.15,
+    40.0
+   ],
+   "y_planes": [
+    -25.0,
+    -18.5,
+    3.5,
+    25.0
+   ],
+   "z_planes": [
+    -4.05,
+    -1.05,
+    3.5
+   ],
+   "cyl_r": [
+    1.0,
+    8.5
+   ]
+  },
+  "P_T06_ARM": {
+   "bbox": [
+    [
+     24.75,
+     120.0
+    ],
+    [
+     -18.0,
+     3.0
+    ],
+    [
+     36.5,
+     57.0
+    ]
+   ],
+   "x_planes": [
+    24.75,
+    27.75,
+    120.0
+   ],
+   "y_planes": [
+    -18.0,
+    3.0
+   ],
+   "z_planes": [
+    36.5,
+    54.0,
+    57.0
+   ],
+   "cyl_r": [
+    2.75,
+    3.0,
+    6.0
+   ]
+  },
+  "P_T06_BRACKET": {
+   "bbox": [
+    [
+     40.0,
+     122.0
+    ],
+    [
+     -34.0,
+     19.0
+    ],
+    [
+     73.0,
+     140.0
+    ]
+   ],
+   "x_planes": [
+    40.0,
+    44.0,
+    122.0
+   ],
+   "y_planes": [
+    -34.0,
+    19.0
+   ],
+   "z_planes": [
+    73.0,
+    77.0,
+    140.0
+   ],
+   "cyl_r": [
+    2.25,
+    2.75,
+    4.0,
+    5.25,
+    8.0,
+    9.0
+   ]
+  },
+  "P_T06_KNIFE": {
+   "bbox": [
+    [
+     23.25,
+     24.75
+    ],
+    [
+     -18.0,
+     3.0
+    ],
+    [
+     27.5,
+     52.5
+    ]
+   ],
+   "x_planes": [
+    23.25,
+    24.75
+   ],
+   "y_planes": [
+    -18.0,
+    3.0
+   ],
+   "z_planes": [
+    52.5
+   ],
+   "cyl_r": [
+    2.75
+   ]
+  }
+ },
+ "cases": [
+  {
+   "name": "ARM_op_cut",
+   "part": "P_T06_ARM",
+   "mat": "SUS304",
+   "desc": "운전: 절단 저항 30.0 N + 자중 3 g, 외팔 48.0",
+   "stress_MPa": 55.64,
+   "allow_MPa": 205.0,
+   "sf": 3.68,
+   "need": 3.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "ARM_mis_jam",
+   "part": "P_T06_ARM",
+   "mat": "SUS304",
+   "desc": "오조작: 칼이 막힘 → 실린더 최대 80.5 N, 외팔 48.0",
+   "stress_MPa": 122.71,
+   "allow_MPa": 205.0,
+   "sf": 1.67,
+   "need": 2.0,
+   "verdict": "디테일",
+   "near": false
+  },
+  {
+   "name": "KNIFE_op_side",
+   "part": "P_T06_KNIFE",
+   "mat": "SK85",
+   "desc": "운전: 옆힘 9 N, 외팔 12.5",
+   "stress_MPa": 14.29,
+   "allow_MPa": 390.0,
+   "sf": 27.3,
+   "need": 3.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "KNIFE_mis_side",
+   "part": "P_T06_KNIFE",
+   "mat": "SK85",
+   "desc": "오조작: 칼 막힘 옆힘 24.2 N, 외팔 12.5",
+   "stress_MPa": 38.35,
+   "allow_MPa": 390.0,
+   "sf": 10.17,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "KNIFE_mis_bearing",
+   "part": "P_T06_KNIFE",
+   "mat": "SK85",
+   "desc": "오조작: 80.5 N 볼트 구멍 지압 2 × Ø5 × t1.5",
+   "stress_MPa": 5.37,
+   "allow_MPa": 390.0,
+   "sf": 72.64,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "ARM_mis_tape_pull",
+   "part": "P_T06_ARM",
+   "mat": "SUS304",
+   "desc": "오조작 T: 줄 방향 417.5 N 중 팔 몫 Fy 190·Fx 91 N, 가로 다리 비틀림 τ 86.4 + 굽힘 75.2",
+   "stress_MPa": 167.4,
+   "allow_MPa": 205.0,
+   "sf": 1.22,
+   "need": 2.0,
+   "verdict": "디테일",
+   "near": false,
+   "tau": 86.36,
+   "sigma_b": 75.16,
+   "Fy_arm": 190.4,
+   "Fx_arm": 91.1
+  },
+  {
+   "name": "PLATE_mis_wall_x",
+   "part": "P_T02_PLATE",
+   "mat": "S50C",
+   "desc": "오조작 T: 홈 +X 벽 지압 280 N / 삼각 10.0 mm²",
+   "stress_MPa": 27.95,
+   "allow_MPa": 345.0,
+   "sf": 12.34,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "PLATE_mis_end_y",
+   "part": "P_T02_PLATE",
+   "mat": "S50C",
+   "desc": "오조작 T: 홈 −Y 끝 지압 0 N / 2.17 mm² (칼 쪽도 같은 면적)",
+   "stress_MPa": 0.0,
+   "allow_MPa": 345.0,
+   "sf": Infinity,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "KNIFE_mis_tape_pull",
+   "part": "P_T06_KNIFE",
+   "mat": "SK85",
+   "desc": "오조작 T: 칼 옆 굽힘 팔 몫 Fx 91 N, 외팔 12.5(벽 닿은 뒤는 홈 벽이 받침)",
+   "stress_MPa": 144.54,
+   "allow_MPa": 390.0,
+   "sf": 2.7,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "BRACKET_운전_x72",
+   "part": "P_T06_BRACKET",
+   "mat": "SUS304",
+   "desc": "운전: 30.0 N, X 72 −쪽 M 1440 N·mm, 순폭 35(축 구멍 Ø18) — 부시 플랜지 Ø48이 덮는 자리라 보수",
+   "stress_MPa": 19.44,
+   "allow_MPa": 205.0,
+   "sf": 10.55,
+   "need": 3.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "BRACKET_운전_sel_model",
+   "part": "P_T06_BRACKET",
+   "mat": "SUS304",
+   "desc": "운전: 선정 모델(우력 무시) M = 30.0 × 64, 전폭 53",
+   "stress_MPa": 13.58,
+   "allow_MPa": 205.0,
+   "sf": 15.09,
+   "need": 3.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "BRACKET_오조작_칼막힘_x72",
+   "part": "P_T06_BRACKET",
+   "mat": "SUS304",
+   "desc": "오조작_칼막힘: 80.5 N, X 72 −쪽 M 3865 N·mm, 순폭 35(축 구멍 Ø18) — 부시 플랜지 Ø48이 덮는 자리라 보수",
+   "stress_MPa": 41.42,
+   "allow_MPa": 205.0,
+   "sf": 4.95,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "BRACKET_오조작_칼막힘_sel_model",
+   "part": "P_T06_BRACKET",
+   "mat": "SUS304",
+   "desc": "오조작_칼막힘: 선정 모델(우력 무시) M = 80.5 × 64, 전폭 53",
+   "stress_MPa": 36.47,
+   "allow_MPa": 205.0,
+   "sf": 5.62,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "SHAFT_mis_jam",
+   "part": "PSFJ16-100_T06",
+   "mat": "Steel",
+   "desc": "오조작: 우력 6765 N·mm, Ø16",
+   "stress_MPa": 16.82,
+   "allow_MPa": 345.0,
+   "sf": 20.51,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "PLATE_mis_X_lig",
+   "part": "P_T02_PLATE",
+   "mat": "S50C",
+   "desc": "옛 오조작 417.5 N +X 지압 경로가 홈 단면을 지남: 남은 폭 28.0 × t3 압축",
+   "stress_MPa": 4.97,
+   "allow_MPa": 345.0,
+   "sf": 69.41,
+   "need": 2.0,
+   "verdict": "됨",
+   "near": false
+  },
+  {
+   "name": "PLATE_op_cut_edge",
+   "part": "P_T02_PLATE",
+   "mat": "S50C",
+   "desc": "운전: 절단 30.0 N이 홈 두 가장자리(길이 22 × 접촉 0.5 × 2)를 누름, 판은 베드에 앉음",
+   "stress_MPa": 1.36,
+   "allow_MPa": 345.0,
+   "sf": 253.0,
+   "need": 3.0,
+   "verdict": "됨",
+   "near": false
+  }
+ ],
+ "bolts": {
+  "bracket_M5_운전": {
+   "tension_each_N": 30.0,
+   "model_tension": 7.1,
+   "shear_each_N": 25.1,
+   "hc": {
+    "inputs": {
+     "d": 5,
+     "le": 8.0,
+     "load_N": 29.96361842105263,
+     "torque_Nm": 6.0,
+     "bolt": "12.9",
+     "base": "SS400",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 6000.0,
+    "engage_ratio": 1.6,
+    "sf_operating": {
+     "나사 인장": 521.3,
+     "암나사 전단": 231.19,
+     "분리(예압/외력)": 200.24
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 2.34,
+     "조임 좌면": 2.69,
+     "조임 암나사 전단": 1.15
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  },
+  "bracket_M5_오조작": {
+   "tension_each_N": 48.0,
+   "model_tension": 11.3,
+   "shear_each_N": 40.3,
+   "hc": {
+    "inputs": {
+     "d": 5,
+     "le": 8.0,
+     "load_N": 48.03601415974904,
+     "torque_Nm": 6.0,
+     "bolt": "12.9",
+     "base": "SS400",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 6000.0,
+    "engage_ratio": 1.6,
+    "sf_operating": {
+     "나사 인장": 325.17,
+     "암나사 전단": 144.21,
+     "분리(예압/외력)": 124.91
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 2.34,
+     "조임 좌면": 2.69,
+     "조임 암나사 전단": 1.15
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  },
+  "bushing_M4": {
+   "tension_each_N": 83.7,
+   "hc": {
+    "inputs": {
+     "d": 4,
+     "le": 6.0,
+     "load_N": 83.68575672150092,
+     "torque_Nm": 2.5,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 7.0,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 3125.0,
+    "engage_ratio": 1.5,
+    "sf_operating": {
+     "나사 인장": 115.41,
+     "암나사 전단": 41.56,
+     "분리(예압/외력)": 37.34
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 2.78,
+     "조임 좌면": 2.89,
+     "조임 암나사 전단": 1.11
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "note": "너트 체결(LBNR4 표준 너트, 물림은 너트 높이 — le 6은 너트를 표준 강도로 본 자리값). 좌면은 자리파기 Ø7.5 안 Ø7"
+  },
+  "knife_M5": {
+   "shear_each_N": 40.3,
+   "preload_N": 6000.0,
+   "slip_sf": 22.4,
+   "shank_tau": 2.05
+  }
+ },
+ "stiffness": {
+  "knife_x": {
+   "k_N_mm": 227.7,
+   "c_knife": 0.0005350935771647746,
+   "c_vleg": 0.0004661567563121967,
+   "c_hleg": 0.0033913973188584587,
+   "op_side_N": 9.0,
+   "op_dx_mm": 0.0395,
+   "jam_side_N": 24.16,
+   "jam_dx_mm": 0.1061,
+   "gap_shear": 0.1,
+   "gap_op": 0.14
+  },
+  "shear_gap_운전": {
+   "tilt_minus_x": 0.0985,
+   "side_plus_x": 0.0395,
+   "gap_after": 0.041
+  },
+  "shear_gap_칼 막힘": {
+   "tilt_minus_x": 0.2645,
+   "side_plus_x": 0.1061,
+   "gap_after": -0.0584
+  },
+  "bracket_tilt_jam_rad": 0.0014052964353607291,
+  "bracket_tip_dx_jam": 0.1089,
+  "bracket_tip_dx_op": 0.0406
+ },
+ "over": [],
+ "geom": {
+  "t_arm": 3.0,
+  "b_arm": 21.0,
+  "x_knife": 24.0,
+  "L_knife": 12.5,
+  "L_vleg": 12.0,
+  "H_arm": 26.0,
+  "L_hleg": 45.75,
+  "gap_xp": 0.4,
+  "gap_xm": 0.1,
+  "gap_ym": 0.5,
+  "y_in_groove": -4.16
+ },
+ "arm_beam_jam": {
+  "inputs": {
+   "t": 3.0,
+   "b": 21.0,
+   "L": 48.0,
+   "E": 193000.0,
+   "Rp": 205.0,
+   "end": "cantilever",
+   "sf_min": 2.0
+  },
+  "force_N": 80.531,
+  "deflection_mm": 0.3255,
+  "stiffness_N_mm": 247.3755,
+  "stress_MPa": 122.71,
+  "sf": 1.67,
+  "thin": true,
+  "ok": false,
+  "needs_fea": false
+ },
+ "arm_t_need_jam": 3.28,
+ "whatif_arm_t": [
+  {
+   "t": 3.0,
+   "Fx_arm": 91.1,
+   "Fy_arm": 190.4,
+   "tau": 86.4,
+   "sigma_b": 75.2,
+   "sf": 1.22,
+   "jam_sf": 1.67,
+   "shear_gap_op": 0.041
+  },
+  {
+   "t": 4.0,
+   "Fx_arm": 185.0,
+   "Fy_arm": 190.4,
+   "tau": 50.2,
+   "sigma_b": 85.9,
+   "sf": 1.68,
+   "jam_sf": 2.97,
+   "shear_gap_op": 0.0779
+  },
+  {
+   "t": 5.0,
+   "Fx_arm": 292.3,
+   "Fy_arm": 190.4,
+   "tau": 33.3,
+   "sigma_b": 86.9,
+   "sf": 1.97,
+   "jam_sf": 4.64,
+   "shear_gap_op": 0.091
+  }
+ ],
+ "ref_plusY_417": {
+  "tau": 189.3,
+  "sf": 0.63,
+  "note": "+Y 417.5 N은 하중 출처가 없다: 바인더 쪽 테이프는 T05 장력(운전 31.9 N)이고, 롤 걸림이면 양쪽 장력이 같아 칼 위 수평 합력이 상쇄된다. 참고값"
+ },
+ "bush_radial": {
+  "jam_N": 182.8,
+  "op_N": 68.1,
+  "allow": "미확인 D-37 (6)"
+ },
+ "shaft_free_cut": 50.0,
+ "over_cases": [
+  "KNIFE_op_side",
+  "KNIFE_mis_side",
+  "KNIFE_mis_bearing",
+  "BRACKET_운전_x72",
+  "BRACKET_운전_sel_model"
+ ],
+ "summary": {
+  "n_cases": 16,
+  "motion": [],
+  "detail": [
+   "ARM_mis_jam",
+   "ARM_mis_tape_pull"
+  ],
+  "near": [],
+  "step_mismatch": 0
+ }
+}
