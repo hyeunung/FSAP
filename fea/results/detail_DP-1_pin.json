@@ -1,0 +1,188 @@
+{
+ "case": "detail_DP-1_pin",
+ "fea": "해석 못 함 — 환경 없음(자료대기 D-16)",
+ "step": "tools\\out\\detail\\DP-1\\stepout\\STEP대기_MS3-8_T06_v065.step",
+ "surfaces_v065": [
+  {
+   "type": "PLANE",
+   "origin": [
+    78.2321,
+    -6.2552,
+    62.0
+   ],
+   "args": []
+  },
+  {
+   "type": "CONICAL_SURFACE",
+   "origin": [
+    77.0,
+    -7.5,
+    61.3574
+   ],
+   "args": [
+    1.4042,
+    0.2618
+   ]
+  },
+  {
+   "type": "CYLINDRICAL_SURFACE",
+   "origin": [
+    77.0,
+    -7.5,
+    57.0
+   ],
+   "args": [
+    1.5
+   ]
+  },
+  {
+   "type": "SPHERICAL_SURFACE",
+   "origin": [
+    77.0,
+    -7.5,
+    57.0
+   ],
+   "args": [
+    3.0
+   ]
+  },
+  {
+   "type": "CYLINDRICAL_SURFACE",
+   "origin": [
+    77.0,
+    -7.5,
+    54.0
+   ],
+   "args": [
+    1.5
+   ]
+  }
+ ],
+ "surfaces_v064": [
+  {
+   "type": "CONICAL_SURFACE",
+   "origin": [
+    77.0,
+    -7.5,
+    61.7384
+   ],
+   "args": [
+    1.4616,
+    0.7854
+   ]
+  },
+  {
+   "type": "CONICAL_SURFACE",
+   "origin": [
+    77.0,
+    -7.5,
+    54.2616
+   ],
+   "args": [
+    1.4616,
+    0.7854
+   ]
+  },
+  {
+   "type": "PLANE",
+   "origin": [
+    78.5145,
+    -5.8416,
+    62.0
+   ],
+   "args": []
+  },
+  {
+   "type": "CYLINDRICAL_SURFACE",
+   "origin": [
+    77.0,
+    -7.5,
+    54.0
+   ],
+   "args": [
+    1.5
+   ]
+  },
+  {
+   "type": "PLANE",
+   "origin": [
+    78.5145,
+    -5.8416,
+    54.0
+   ],
+   "args": []
+  }
+ ],
+ "geometry": {
+  "crown_full_dia_from_Z": 54.402,
+  "shear_plane_Z": 57.0,
+  "shear_plane_full_cylinder": true,
+  "L_bear_arm_v065": 2.598,
+  "L_bear_arm_v064(C0.3)": 2.7,
+  "L_bear_shaft_v065": 4.0
+ },
+ "shear": {
+  "Tz_Nmm": 9139,
+  "F_pin_N": 1828,
+  "A_mm2": 7.069,
+  "tau_MPa": 258.6,
+  "allow_MPa": 600.0,
+  "SF": 2.32,
+  "with_friction": {
+   "F_pin_N": 856,
+   "SF": 4.96
+  },
+  "SUJ2_real_ref": {
+   "allow_MPa(0.6×2000)": 1200,
+   "SF": 4.64
+  }
+ },
+ "bearing": {
+  "arm_v065_no_friction": {
+   "L_mm": 2.598,
+   "sigma_MPa": 234.5,
+   "SF_yield": 0.87,
+   "SF_1.5Sy": 1.31
+  },
+  "arm_v064_no_friction": {
+   "L_mm": 2.7,
+   "sigma_MPa": 225.7,
+   "SF_yield": 0.91,
+   "SF_1.5Sy": 1.36
+  },
+  "arm_v065_friction": {
+   "L_mm": 2.598,
+   "sigma_MPa": 109.8,
+   "SF_yield": 1.87,
+   "SF_1.5Sy": 2.8
+  },
+  "shaft_v065_no_friction": {
+   "L_mm": 4.0,
+   "sigma_MPa": 152.3,
+   "SF_yield": 2.26,
+   "SF_1.5Sy": 3.4
+  },
+  "arm_pin_D4_no_friction": {
+   "note": "참고: MS4 (R=D 끝) 이면",
+   "L_mm": 2.464,
+   "sigma_MPa": 185.4,
+   "SF_yield": 1.11,
+   "SF_1.5Sy": 1.66
+  }
+ },
+ "arm_reuse": {
+  "from": "fea/results/detail_handcalc.json machined_L th5 tv3 gap0.4",
+  "th": 5.0,
+  "tv": 3.0,
+  "gap_xp": 0.4,
+  "Fx_arm": 230.7,
+  "Fy_arm": 190.4,
+  "tau": 33.3,
+  "sigma_b": 68.6,
+  "sf_T": 2.29,
+  "sf_jam": 4.64,
+  "sf_op": 10.23,
+  "shear_gap_op": 0.0943,
+  "shear_gap_after_bracket_tilt": 0.053
+ }
+}
