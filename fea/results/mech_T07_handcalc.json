@@ -1,0 +1,370 @@
+{
+  "case": "mech_T07_handcalc",
+  "target": "FSAP_v0.6.0",
+  "fea": "해석 못 함 — 환경 없음(자료대기 D-16)",
+  "material": {
+    "name": "SUS304",
+    "E": 193000.0,
+    "Sy": 205.0,
+    "nu": 0.3
+  },
+  "criteria": {
+    "sf_op": 3.0,
+    "sf_mis": 2.0,
+    "sf_break": 1.2,
+    "source": "요구서 6-1 기본값 M-09, 6-2 미정(변위 기본값 없음)"
+  },
+  "step": {
+    "C": {
+      "n_vert": 14,
+      "bbox": [
+        [
+          -909.5,
+          909.5
+        ],
+        [
+          -1742.0,
+          -1740.0
+        ],
+        [
+          -680.0,
+          -60.0
+        ]
+      ],
+      "y_planes": [
+        -1742.0,
+        -1740.0
+      ],
+      "thickness": 2.0,
+      "n_front_vert": 7,
+      "notch_pts": [
+        [
+          -5.0,
+          -1742.0,
+          -60.0
+        ],
+        [
+          0.0,
+          -1742.0,
+          -65.0
+        ],
+        [
+          5.0,
+          -1742.0,
+          -60.0
+        ]
+      ]
+    },
+    "L": {
+      "n_vert": 8,
+      "bbox": [
+        [
+          -1505.0,
+          -910.5
+        ],
+        [
+          -1742.0,
+          -1740.0
+        ],
+        [
+          -680.0,
+          -60.0
+        ]
+      ],
+      "y_planes": [
+        -1742.0,
+        -1740.0
+      ],
+      "thickness": 2.0,
+      "n_front_vert": 4,
+      "notch_pts": []
+    },
+    "R": {
+      "n_vert": 8,
+      "bbox": [
+        [
+          910.5,
+          1505.0
+        ],
+        [
+          -1742.0,
+          -1740.0
+        ],
+        [
+          -680.0,
+          -60.0
+        ]
+      ],
+      "y_planes": [
+        -1742.0,
+        -1740.0
+      ],
+      "thickness": 2.0,
+      "n_front_vert": 4,
+      "notch_pts": []
+    }
+  },
+  "mass": {
+    "C": {
+      "vol_mm3": 2255510.0,
+      "mass_kg": 17.886
+    },
+    "L": {
+      "vol_mm3": 737180.0,
+      "mass_kg": 5.846
+    },
+    "R": {
+      "vol_mm3": 737180.0,
+      "mass_kg": 5.846
+    }
+  },
+  "mass_model_kg": {
+    "C": 17.8862,
+    "L": 5.8458,
+    "R": 5.8458
+  },
+  "groups": {
+    "L_R_mirror": true,
+    "rep": "L"
+  },
+  "panels": {
+    "C": {
+      "x": [
+        -870.0,
+        870.0
+      ],
+      "z": [
+        -600.0,
+        -140.0
+      ],
+      "src": "중간 기둥 안쪽 ±870, G1 윗면 −600, G4 밑면 −140"
+    },
+    "L": {
+      "x": [
+        -1425.0,
+        -950.0
+      ],
+      "z": [
+        -600.0,
+        -140.0
+      ],
+      "src": "끝 기둥 안쪽 −1425 ~ 중간 기둥 바깥 −950"
+    }
+  },
+  "plate_cases": [
+    {
+      "panel": "C",
+      "a": 1740.0,
+      "b": 460.0,
+      "a_b": 3.783,
+      "t": 2.0,
+      "W": 200.0,
+      "r0": 50.0,
+      "simply_supported": {
+        "sigma": 68.35,
+        "sf": 3.0,
+        "defl": 5.07
+      },
+      "clamped": {
+        "sigma_center": 56.46,
+        "sigma_edge": 50.4,
+        "sf": 3.63,
+        "defl": 2.17
+      },
+      "sf_req": 2.0,
+      "governing_sf": 3.0,
+      "ok": true,
+      "near": false,
+      "defl_over_t": 2.53,
+      "load_case": "오조작 무릎 200 N r0 50"
+    },
+    {
+      "panel": "C",
+      "a": 1740.0,
+      "b": 460.0,
+      "a_b": 3.783,
+      "t": 2.0,
+      "W": 200.0,
+      "r0": 50.0,
+      "simply_supported": {
+        "sigma": 68.35,
+        "sf": 3.0,
+        "defl": 5.07
+      },
+      "clamped": {
+        "sigma_center": 56.46,
+        "sigma_edge": 50.4,
+        "sf": 3.63,
+        "defl": 2.17
+      },
+      "sf_req": 3.0,
+      "governing_sf": 3.0,
+      "ok": true,
+      "near": true,
+      "defl_over_t": 2.53,
+      "load_case": "운전 기준으로 같은 200 N r0 50(보수)"
+    },
+    {
+      "panel": "C",
+      "a": 1740.0,
+      "b": 460.0,
+      "a_b": 3.783,
+      "t": 2.0,
+      "W": 200.0,
+      "r0": 25.0,
+      "simply_supported": {
+        "sigma": 89.86,
+        "sf": 2.28,
+        "defl": 5.07
+      },
+      "clamped": {
+        "sigma_center": 77.97,
+        "sigma_edge": 50.4,
+        "sf": 2.63,
+        "defl": 2.17
+      },
+      "sf_req": 2.0,
+      "governing_sf": 2.28,
+      "ok": true,
+      "near": false,
+      "defl_over_t": 2.53,
+      "load_case": "민감도: 오조작 접촉 r0 25(발끝·무릎 모서리)"
+    },
+    {
+      "panel": "L",
+      "a": 475.0,
+      "b": 460.0,
+      "a_b": 1.033,
+      "t": 2.0,
+      "W": 200.0,
+      "r0": 50.0,
+      "simply_supported": {
+        "sigma": 55.7,
+        "sf": 3.68,
+        "defl": 3.57
+      },
+      "clamped": {
+        "sigma_center": 49.8,
+        "sigma_edge": 38.85,
+        "sf": 4.12,
+        "defl": 1.72
+      },
+      "sf_req": 2.0,
+      "governing_sf": 3.68,
+      "ok": true,
+      "near": false,
+      "defl_over_t": 1.78,
+      "load_case": "오조작 무릎 200 N r0 50"
+    },
+    {
+      "panel": "L",
+      "a": 475.0,
+      "b": 460.0,
+      "a_b": 1.033,
+      "t": 2.0,
+      "W": 200.0,
+      "r0": 50.0,
+      "simply_supported": {
+        "sigma": 55.7,
+        "sf": 3.68,
+        "defl": 3.57
+      },
+      "clamped": {
+        "sigma_center": 49.8,
+        "sigma_edge": 38.85,
+        "sf": 4.12,
+        "defl": 1.72
+      },
+      "sf_req": 3.0,
+      "governing_sf": 3.68,
+      "ok": true,
+      "near": false,
+      "defl_over_t": 1.78,
+      "load_case": "운전 기준으로 같은 200 N r0 50(보수)"
+    },
+    {
+      "panel": "L",
+      "a": 475.0,
+      "b": 460.0,
+      "a_b": 1.033,
+      "t": 2.0,
+      "W": 200.0,
+      "r0": 25.0,
+      "simply_supported": {
+        "sigma": 77.22,
+        "sf": 2.65,
+        "defl": 3.57
+      },
+      "clamped": {
+        "sigma_center": 71.31,
+        "sigma_edge": 38.85,
+        "sf": 2.87,
+        "defl": 1.72
+      },
+      "sf_req": 2.0,
+      "governing_sf": 2.65,
+      "ok": true,
+      "near": false,
+      "defl_over_t": 1.78,
+      "load_case": "민감도: 오조작 접촉 r0 25(발끝·무릎 모서리)"
+    }
+  ],
+  "beam_first": {
+    "inputs": {
+      "t": 2.0,
+      "b": 100.0,
+      "L": 230.0,
+      "E": 193000.0,
+      "Rp": 205.0,
+      "end": "guided",
+      "sf_min": 2.0
+    },
+    "force_N": 100.0,
+    "deflection_mm": 7.8802,
+    "stiffness_N_mm": 12.6901,
+    "stress_MPa": 172.5,
+    "sf": 1.19,
+    "thin": true,
+    "ok": false,
+    "needs_fea": false
+  },
+  "deflection_check": {
+    "max_defl_ss": 5.07,
+    "nearest_moving_bbox_gap": 89.22,
+    "gap_to_BASE_front": 720.0,
+    "ok": true,
+    "note": "6-2 변위 한도 없음 → 동작 판정은 뒤 바디와의 틈으로만"
+  },
+  "self_weight": {
+    "C": {
+      "W3g_N": 526.4,
+      "sigma_inplane": 0.145,
+      "bolts_top_two_lines": 16,
+      "per_bolt_N": 32.9
+    },
+    "L": {
+      "W3g_N": 172.0,
+      "sigma_inplane": 0.145,
+      "bolts_top_two_lines": 6,
+      "per_bolt_N": 28.7
+    }
+  },
+  "oversize": {
+    "governing_panel": "C",
+    "sf": 3.0,
+    "limit_oversize": 6.0,
+    "oversize": false,
+    "sf_if_t1_5": 1.69
+  },
+  "problems_motion": [],
+  "problems_detail": [],
+  "near_limit": [
+    {
+      "panel": "C",
+      "case": "운전 기준으로 같은 200 N r0 50(보수)",
+      "sf": 3.0,
+      "req": 3.0
+    }
+  ],
+  "pass": true
+}

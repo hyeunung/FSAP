@@ -10,6 +10,7 @@ This project follows Semantic Versioning.
 
 ## Added
 
+- v0.6.0 구동 T07 결과: 설계검토서 v0.6.0 검도·해석·디테일(T07-D01~D04)·예외 판정 요약, 결정로그 "구동 T07 결과", 요구서 T07 해결, 자료대기 D-41(1580 상자 캡 끼움 자리 비움 T07-X02, STEP 수령 뒤 교체·재판정), T07 검도·해석(손계산) 보고서
 - 설계 v0.6.0 `3D_Modeling/FSAP_v0.6.0.sc`(T07 로딩·배출, 부품 묶음 신설): `BASE` 아래 `T07`(BASE와 리지드, 새 조인트 0, 동작 연구 변경 0) — 작업자 쪽 고정 가드틀. 형재 `HFS8-4080-460_GL/GR`(실물 STEP), `STEP대기_HFS8-4080-2850_G1/G4`·`-680_SL/SR`·`-1580_PL/PR`(D-41), 마감캡 `HFC8-4080-B` ×4(끝 기둥 위·아래), SUS304 t2 평판 `P_T07_SKIRT_C`(윗변 V홈 로딩 기준)·`_L`·`_R`. 커튼·버튼·자동 배출 자리는 `tools/motion_states.json` `t07_zones` 검사 상자. 8개 연구 새 겹침 0. 브래킷 HBLFSN8 24·판 체결은 안 그림. 생성기 `tools/gen_t07_mech.py`, BOM `docs/bom/FSAP_v0.6.0_*.csv`, 설계검토서 `docs/review/FSAP_v0.6.0_review.md`(제어 순서 제약 T07-Q1~Q8), 결정로그 T07-M02~M07, 자료대기 D-13·D-38~D-41, 보고서 `mech_T07_model.md`
 - 설계 v0.5.1 `3D_Modeling/FSAP_v0.5.1.sc`(T06-X03): 세 매트 `MAT_*_SEAM` 아래 날개 없앤 ㄱ자 단면으로 다시 그림(바디당 2,448 → 1,700 mm³), SEAM ↔ BOUND 겹침 748 → 0. `tools/gen_t06_mech.py` 단면, `tools/motion_states.json` check_rule, 결정로그 T07-M01. 함께: T07 측정·구상·선정 보고서(`mech_T07_*`), 결정로그 T07-S01~S10, 자료대기 D-38~D-41
 - v0.5.0 구동 T06 결과: 설계검토서 `docs/review/FSAP_v0.5.0_review.md`, 결정로그 "구동 T06 결과"(디테일 T06-D01~D08), 요구서 T06 해결·7절 이음매 마감 시제품 항목, 자료대기 D-07·D-37 갱신, BOM v0.5.0 비고, T06 검도·해석(손계산) 보고서. 예외 판정 T06-X01~X03(SEAM 단면 수정 → v0.5.1 대기)

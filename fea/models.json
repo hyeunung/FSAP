@@ -130,6 +130,36 @@
         "value": "SUS304 205 MPa, SF 운전 3·오조작 2, 과사양 = 지배 경우 SF ≥ 필요 × 3",
         "source": "M-09, fea/results/mech_T06_handcalc.json"
       }
+    },
+    "P_T07_SKIRT_C": {
+      "case": "cases/mech_T07_handcalc.py (Roark 직사각 평판 표 11.4 1d 단순 지지·8b 고정, v0.6.0)",
+      "fixed": "판 둘레가 형재 앞면(Y −1740)에 볼트(CB5 + 8 시리즈 M5 T너트, 피치 ≤ 300, 아직 안 그림 T07-S06)로 붙음. 자유 칸 X −870~870(중간 기둥 460 안쪽) × Z −600~−140(G1 윗면 ~ G4 밑면) = 1740 × 460. 판정은 단순 지지(보수), 고정은 상한 비교",
+      "contact": "형재 앞면과 면 맞댐(압축만). V홈(X 0, Z −60~−65)은 G4 앞면 위라 하중 경로 밖",
+      "load": "오조작: 무릎 200 N(D-38 임시값) r0 50 칸 가운데 +Y(기계 안쪽) / 운전: 요구서에 없음 → 같은 200 N을 SF 3으로 보수 확인 / 민감도 r0 25 / 자중 ×3 g는 판 면 안(−Z)",
+      "criteria": {
+        "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형. 처짐은 6-2 한도 없음 → 판 뒤 움직이는 바디 틈(매트 bbox 89.22)",
+        "source": "요구서 6-1 기본값 M-09, D-38, fea/results/mech_T07_handcalc.json"
+      }
+    },
+    "P_T07_SKIRT_L": {
+      "case": "cases/mech_T07_handcalc.py (L·R 거울 대칭 → L 하나, E-19)",
+      "fixed": "P_T07_SKIRT_C와 같은 방식. 자유 칸 X −1425~−950(끝 기둥 1580 안쪽 ~ 중간 기둥 바깥) × Z −600~−140 = 475 × 460. R은 X 거울",
+      "contact": "형재 앞면 압축만",
+      "load": "P_T07_SKIRT_C와 같음",
+      "criteria": {
+        "value": "SUS304 205 MPa, SF 운전 3·오조작 2",
+        "source": "M-09, D-38, fea/results/mech_T07_handcalc.json"
+      }
+    },
+    "P_T07_SKIRT_R": {
+      "case": "P_T07_SKIRT_L과 같음(거울 대칭, STEP bbox 치수·질량 같음)",
+      "fixed": "X 거울",
+      "contact": "같음",
+      "load": "같음",
+      "criteria": {
+        "value": "같음",
+        "source": "같음"
+      }
     }
   },
   "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
