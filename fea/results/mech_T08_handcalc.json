@@ -1,0 +1,283 @@
+{
+ "model": "v0.6.11",
+ "fea": "해석 못 함 — 환경 없음(D-16)",
+ "parts": {},
+ "geometry": {
+  "P_T08_XPLATE_F": {
+   "min": [
+    -230.0,
+    -1024.0,
+    -572.0
+   ],
+   "max": [
+    230.0,
+    -937.0,
+    -558.0
+   ],
+   "vertices": 72
+  },
+  "P_T08_XPLATE_B": {
+   "min": [
+    -230.0,
+    156.0,
+    -572.0
+   ],
+   "max": [
+    230.0,
+    243.0,
+    -558.0
+   ],
+   "vertices": 72
+  }
+ },
+ "cases": {
+  "A_3g": {
+   "P_block_N": 1428.0
+  },
+  "B_1g_ax2": {
+   "P_block_max_N": 618.8,
+   "P_block_min_N": 333.1,
+   "h_mm": 435.0,
+   "a_x": 2.0
+  }
+ },
+ "A_3g": {
+  "plate": {
+   "b_eff": 88.0,
+   "sigma_edge": 10.93,
+   "sigma_net": 15.04,
+   "SF": 11.64,
+   "deflect_mm": 0.0036,
+   "handcalc_beam": {
+    "inputs": {
+     "t": 14.0,
+     "b": 88.0,
+     "L": 22.0,
+     "E": 70000.0,
+     "Rp": 175.0,
+     "end": "cantilever",
+     "sf_min": 3.0
+    },
+    "force_N": 1427.981,
+    "deflection_mm": 0.0036,
+    "stiffness_N_mm": 396859.5041,
+    "stress_MPa": 10.93,
+    "sf": 16.01,
+    "thin": false,
+    "ok": true,
+    "needs_fea": true
+   }
+  },
+  "block": {
+   "P": 1428.0,
+   "M_roll_Nm": 61.4,
+   "P_C0": 0.118,
+   "M_MC": 0.4548,
+   "SF": 1.75
+  },
+  "block_bolt": {
+   "F_bolt_N": 1204.9,
+   "A5052_conservative": {
+    "inputs": {
+     "d": 5,
+     "le": 7.5,
+     "load_N": 1204.8586623900956,
+     "torque_Nm": 2.0,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 2000.0,
+    "engage_ratio": 1.5,
+    "sf_operating": {
+     "나사 인장": 12.96,
+     "암나사 전단": 4.29,
+     "분리(예압/외력)": 1.66
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 7.03,
+     "조임 좌면": 3.46,
+     "조임 암나사 전단": 2.58
+    },
+    "worst": "분리(예압/외력)",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "SS400": {
+    "inputs": {
+     "d": 5,
+     "le": 7.5,
+     "load_N": 1204.8586623900956,
+     "torque_Nm": 2.0,
+     "bolt": "12.9",
+     "base": "SS400",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 2000.0,
+    "engage_ratio": 1.5,
+    "sf_operating": {
+     "나사 인장": 12.96,
+     "암나사 전단": 5.39,
+     "분리(예압/외력)": 1.66
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 7.03,
+     "조임 좌면": 8.08,
+     "조임 암나사 전단": 3.25
+    },
+    "worst": "분리(예압/외력)",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  }
+ },
+ "B_1g_ax2": {
+  "plate": {
+   "b_eff": 88.0,
+   "sigma_edge": 4.74,
+   "sigma_net": 6.52,
+   "SF": 26.86,
+   "deflect_mm": 0.00156,
+   "handcalc_beam": {
+    "inputs": {
+     "t": 14.0,
+     "b": 88.0,
+     "L": 22.0,
+     "E": 70000.0,
+     "Rp": 175.0,
+     "end": "cantilever",
+     "sf_min": 3.0
+    },
+    "force_N": 618.839,
+    "deflection_mm": 0.0016,
+    "stiffness_N_mm": 396859.5041,
+    "stress_MPa": 4.74,
+    "sf": 36.95,
+    "thin": false,
+    "ok": true,
+    "needs_fea": true
+   }
+  },
+  "block": {
+   "P": 618.8,
+   "M_roll_Nm": 26.61,
+   "P_C0": 0.0511,
+   "M_MC": 0.1971,
+   "SF": 4.03
+  },
+  "block_bolt": {
+   "F_bolt_N": 522.1,
+   "A5052_conservative": {
+    "inputs": {
+     "d": 5,
+     "le": 7.5,
+     "load_N": 522.1452103675049,
+     "torque_Nm": 2.0,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 2000.0,
+    "engage_ratio": 1.5,
+    "sf_operating": {
+     "나사 인장": 29.92,
+     "암나사 전단": 9.9,
+     "분리(예압/외력)": 3.83
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 7.03,
+     "조임 좌면": 3.46,
+     "조임 암나사 전단": 2.58
+    },
+    "worst": "분리(예압/외력)",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "SS400": {
+    "inputs": {
+     "d": 5,
+     "le": 7.5,
+     "load_N": 522.1452103675049,
+     "torque_Nm": 2.0,
+     "bolt": "12.9",
+     "base": "SS400",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 2000.0,
+    "engage_ratio": 1.5,
+    "sf_operating": {
+     "나사 인장": 29.92,
+     "암나사 전단": 12.44,
+     "분리(예압/외력)": 3.83
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 7.03,
+     "조임 좌면": 8.08,
+     "조임 암나사 전단": 3.25
+    },
+    "worst": "분리(예압/외력)",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  }
+ },
+ "plate_to_460": {
+  "Fx_N": 582.3,
+  "friction_weight_N": 190.4,
+  "preload_need_per_bolt_N": 489.8,
+  "handcalc_2Nm": {
+   "inputs": {
+    "d": 5,
+    "le": 5.0,
+    "load_N": 0.0,
+    "torque_Nm": 2.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 2000.0,
+   "engage_ratio": 1.0,
+   "sf_operating": {
+    "나사 인장": Infinity,
+    "암나사 전단": Infinity,
+    "분리(예압/외력)": Infinity
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 7.03,
+    "조임 좌면": 8.08,
+    "조임 암나사 전단": 2.16
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "summary": {
+  "plate_SF_min": 11.64,
+  "plate_overspec": true,
+  "block_SF_A": 1.75,
+  "block_SF_B": 4.03,
+  "block_bolt_SF_min": 1.66,
+  "uplift": false
+ }
+}
