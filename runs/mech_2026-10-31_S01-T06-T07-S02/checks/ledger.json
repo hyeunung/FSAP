@@ -1,0 +1,4219 @@
+{
+ "doc": "3D_Modeling/FSAP_v0.6.1.sc",
+ "date": "2026-10-31",
+ "parts": {
+  "BASE:1/P_T02_HEADPLATE": {
+   "name": "P_T02_HEADPLATE",
+   "unit": "BASE:1",
+   "bbox": [
+    -100.0,
+    100.0,
+    620.0,
+    860.0,
+    -140.0,
+    -134.0
+   ],
+   "volume": 288000.0,
+   "mass": 2283.84,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFS8-4080-1900_F": {
+   "name": "HFS8-4080-1900_F",
+   "unit": "BASE:1",
+   "bbox": [
+    -1425.0010000000002,
+    1425.0010000000002,
+    -1020.0,
+    -980.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 2129069.7157020136,
+   "mass": 5748.488232395436,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFS8-4080-1900_B": {
+   "name": "HFS8-4080-1900_B",
+   "unit": "BASE:1",
+   "bbox": [
+    -1425.0010000000002,
+    1425.0010000000002,
+    160.0,
+    200.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 2129069.7157020154,
+   "mass": 5748.4882323954425,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFS8-4080-460_P1": {
+   "name": "HFS8-4080-460_P1",
+   "unit": "BASE:1",
+   "bbox": [
+    -90.0,
+    -49.99999999999999,
+    700.0,
+    780.0,
+    -600.0000000000001,
+    -139.99999999999994
+   ],
+   "volume": 513009.987922904,
+   "mass": 1385.126967391841,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFS8-4080-460_P2": {
+   "name": "HFS8-4080-460_P2",
+   "unit": "BASE:1",
+   "bbox": [
+    49.999999999999986,
+    90.0,
+    700.0,
+    780.0,
+    -600.0000000000001,
+    -139.99999999999994
+   ],
+   "volume": 513009.9879229044,
+   "mass": 1385.1269673918418,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFS8-4080-580_T1": {
+   "name": "HFS8-4080-580_T1",
+   "unit": "BASE:1",
+   "bbox": [
+    -90.0,
+    -49.999999999999986,
+    199.9999999999999,
+    780.0000000000001,
+    -680.0,
+    -600.0
+   ],
+   "volume": 646867.1609236166,
+   "mass": 1746.541334493765,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFS8-4080-580_T2": {
+   "name": "HFS8-4080-580_T2",
+   "unit": "BASE:1",
+   "bbox": [
+    49.99999999999999,
+    90.0,
+    199.9999999999999,
+    780.0000000000001,
+    -680.0,
+    -600.0
+   ],
+   "volume": 646867.1609236165,
+   "mass": 1746.5413344937647,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/P_T07_SKIRT_C": {
+   "name": "P_T07_SKIRT_C",
+   "unit": "BASE:1",
+   "bbox": [
+    -909.5,
+    909.5,
+    -1742.0,
+    -1740.0,
+    -680.0,
+    -60.0
+   ],
+   "volume": 2255510.0,
+   "mass": 17886.1943,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/P_T07_SKIRT_L": {
+   "name": "P_T07_SKIRT_L",
+   "unit": "BASE:1",
+   "bbox": [
+    -1505.0,
+    -910.5,
+    -1742.0,
+    -1740.0,
+    -680.0,
+    -60.0
+   ],
+   "volume": 737180.0,
+   "mass": 5845.837399999999,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/P_T07_SKIRT_R": {
+   "name": "P_T07_SKIRT_R",
+   "unit": "BASE:1",
+   "bbox": [
+    910.5,
+    1505.0,
+    -1742.0,
+    -1740.0,
+    -680.0,
+    -60.0
+   ],
+   "volume": 737180.0,
+   "mass": 5845.837399999999,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFS8-4080-460_GL": {
+   "name": "HFS8-4080-460_GL",
+   "unit": "BASE:1",
+   "bbox": [
+    -950.0,
+    -870.0,
+    -1740.0,
+    -1700.0,
+    -600.0000000000001,
+    -139.99999999999994
+   ],
+   "volume": 513009.9879229038,
+   "mass": 1385.1269673918405,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFS8-4080-460_GR": {
+   "name": "HFS8-4080-460_GR",
+   "unit": "BASE:1",
+   "bbox": [
+    870.0,
+    950.0,
+    -1740.0,
+    -1700.0,
+    -600.0000000000001,
+    -139.99999999999994
+   ],
+   "volume": 513009.98792290385,
+   "mass": 1385.1269673918405,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/STEP대기_HFS8-4080-2850_G1": {
+   "name": "STEP대기_HFS8-4080-2850_G1",
+   "unit": "BASE:1",
+   "bbox": [
+    -1425.0,
+    1425.0,
+    -1740.0,
+    -1700.0,
+    -680.0,
+    -599.9999999999999
+   ],
+   "volume": 9119999.999999998,
+   "mass": 24623.999999999996,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/STEP대기_HFS8-4080-2850_G4": {
+   "name": "STEP대기_HFS8-4080-2850_G4",
+   "unit": "BASE:1",
+   "bbox": [
+    -1425.0,
+    1425.0,
+    -1740.0,
+    -1700.0,
+    -140.0,
+    -59.99999999999997
+   ],
+   "volume": 9119999.999999998,
+   "mass": 24623.999999999996,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/STEP대기_HFS8-4080-680_SL": {
+   "name": "STEP대기_HFS8-4080-680_SL",
+   "unit": "BASE:1",
+   "bbox": [
+    -930.0,
+    -890.0,
+    -1700.0,
+    -1020.0,
+    -680.0,
+    -599.9999999999999
+   ],
+   "volume": 2176000.0,
+   "mass": 5875.2,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/STEP대기_HFS8-4080-680_SR": {
+   "name": "STEP대기_HFS8-4080-680_SR",
+   "unit": "BASE:1",
+   "bbox": [
+    890.0,
+    930.0,
+    -1700.0,
+    -1020.0,
+    -680.0,
+    -599.9999999999999
+   ],
+   "volume": 2176000.0,
+   "mass": 5875.2,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/STEP대기_HFS8-4080-1580_PL": {
+   "name": "STEP대기_HFS8-4080-1580_PL",
+   "unit": "BASE:1",
+   "bbox": [
+    -1505.0,
+    -1425.0,
+    -1740.0,
+    -1700.0,
+    -672.0,
+    892.0
+   ],
+   "volume": 5004800.0,
+   "mass": 13512.96,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/STEP대기_HFS8-4080-1580_PR": {
+   "name": "STEP대기_HFS8-4080-1580_PR",
+   "unit": "BASE:1",
+   "bbox": [
+    1425.0,
+    1505.0,
+    -1740.0,
+    -1700.0,
+    -672.0,
+    892.0
+   ],
+   "volume": 5004800.0,
+   "mass": 13512.96,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_1580_PR_ZP": {
+   "name": "HFC8-4080-B_1580_PR_ZP",
+   "unit": "BASE:1",
+   "bbox": [
+    1425.0,
+    1505.0,
+    -1740.0,
+    -1700.0,
+    892.0,
+    903.0
+   ],
+   "volume": 6346.159473166771,
+   "mass": 7.234621799410118,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_1580_PR_ZM": {
+   "name": "HFC8-4080-B_1580_PR_ZM",
+   "unit": "BASE:1",
+   "bbox": [
+    1425.0,
+    1505.0,
+    -1740.0,
+    -1700.0,
+    -683.0,
+    -672.0
+   ],
+   "volume": 6346.159473166769,
+   "mass": 7.2346217994101165,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_1580_PL_ZP": {
+   "name": "HFC8-4080-B_1580_PL_ZP",
+   "unit": "BASE:1",
+   "bbox": [
+    -1505.0,
+    -1425.0,
+    -1740.0,
+    -1700.0,
+    892.0,
+    903.0
+   ],
+   "volume": 6346.159468237261,
+   "mass": 7.234621793790477,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_1580_PL_ZM": {
+   "name": "HFC8-4080-B_1580_PL_ZM",
+   "unit": "BASE:1",
+   "bbox": [
+    -1505.0,
+    -1425.0,
+    -1740.0,
+    -1700.0,
+    -683.0,
+    -672.0
+   ],
+   "volume": 6346.159468237259,
+   "mass": 7.234621793790475,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/ZH10DSA-06-06-08_T2_BODY": {
+   "name": "ZH10DSA-06-06-08_T2_BODY",
+   "unit": "BASE:1",
+   "bbox": [
+    33.39999999999999,
+    47.400000000000006,
+    299.99999999999994,
+    361.70000000000005,
+    -672.0000000000001,
+    -647.0
+   ],
+   "volume": 5128.9678477961,
+   "mass": 40.26239760519938,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/ZH10DSA-06-06-08_T2_BRACKET": {
+   "name": "ZH10DSA-06-06-08_T2_BRACKET",
+   "unit": "BASE:1",
+   "bbox": [
+    34.9,
+    50.00000000000006,
+    322.29999999999995,
+    331.3,
+    -667.6,
+    -639.6
+   ],
+   "volume": 1327.729719090543,
+   "mass": 10.422678294860763,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/ZH10DSA-06-06-08_T1_BODY": {
+   "name": "ZH10DSA-06-06-08_T1_BODY",
+   "unit": "BASE:1",
+   "bbox": [
+    -47.400000000000006,
+    -33.39999999999999,
+    299.99999999999994,
+    361.70000000000005,
+    -672.0000000000001,
+    -647.0
+   ],
+   "volume": 5128.979002458446,
+   "mass": 40.2624851692988,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/ZH10DSA-06-06-08_T1_BRACKET": {
+   "name": "ZH10DSA-06-06-08_T1_BRACKET",
+   "unit": "BASE:1",
+   "bbox": [
+    -50.00000000000006,
+    -34.9,
+    330.4,
+    339.40000000000003,
+    -667.6,
+    -639.6
+   ],
+   "volume": 1327.7297190905397,
+   "mass": 10.422678294860736,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/SV2RL28-1800_B_RAIL": {
+   "name": "SV2RL28-1800_B_RAIL",
+   "unit": "BASE:1",
+   "bbox": [
+    -900.0,
+    900.0,
+    170.0,
+    190.0,
+    -600.0,
+    -584.5
+   ],
+   "volume": 501288.167687288,
+   "mass": 3935.112116345211,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/SV2RL28-1800_F_RAIL": {
+   "name": "SV2RL28-1800_F_RAIL",
+   "unit": "BASE:1",
+   "bbox": [
+    -900.0,
+    900.0,
+    -1010.0,
+    -990.0,
+    -600.0,
+    -584.5
+   ],
+   "volume": 501288.1977598146,
+   "mass": 3935.1123524145446,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_580_T2_YP": {
+   "name": "HFC8-4080-B_580_T2_YP",
+   "unit": "BASE:1",
+   "bbox": [
+    50.0,
+    90.00000000000001,
+    772.0,
+    783.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159490591835,
+   "mass": 7.234621819274691,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_580_T1_YP": {
+   "name": "HFC8-4080-B_580_T1_YP",
+   "unit": "BASE:1",
+   "bbox": [
+    -90.0,
+    -49.999999999999986,
+    772.0,
+    783.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159490591836,
+   "mass": 7.234621819274693,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_1900_B_XM": {
+   "name": "HFC8-4080-B_1900_B_XM",
+   "unit": "BASE:1",
+   "bbox": [
+    -953.0,
+    -942.0,
+    160.0,
+    200.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159490591836,
+   "mass": 7.234621819274693,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_1900_B_XP": {
+   "name": "HFC8-4080-B_1900_B_XP",
+   "unit": "BASE:1",
+   "bbox": [
+    942.0,
+    953.0,
+    160.0,
+    200.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159490591836,
+   "mass": 7.234621819274693,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_1900_F_XM": {
+   "name": "HFC8-4080-B_1900_F_XM",
+   "unit": "BASE:1",
+   "bbox": [
+    -953.0,
+    -942.0,
+    -1020.0,
+    -980.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159544032821,
+   "mass": 7.234621880197415,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "BASE:1/HFC8-4080-B_1900_F_XP": {
+   "name": "HFC8-4080-B_1900_F_XP",
+   "unit": "BASE:1",
+   "bbox": [
+    942.0,
+    953.0,
+    -1020.0,
+    -980.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159544032828,
+   "mass": 7.234621880197424,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/P_S01_XSPACER_1": {
+   "name": "P_S01_XSPACER_1",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -230.0,
+    -130.0,
+    -1021.0,
+    -979.0,
+    -572.0,
+    -558.0
+   ],
+   "volume": 58800.0,
+   "mass": 157.584,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/P_S01_XSPACER_2": {
+   "name": "P_S01_XSPACER_2",
+   "unit": "MAT_X:1",
+   "bbox": [
+    130.0,
+    230.0,
+    -1021.0,
+    -979.0,
+    -572.0,
+    -558.0
+   ],
+   "volume": 58800.0,
+   "mass": 157.584,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/P_S01_XSPACER_3": {
+   "name": "P_S01_XSPACER_3",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -230.0,
+    -130.0,
+    159.0,
+    201.0,
+    -572.0,
+    -558.0
+   ],
+   "volume": 58800.0,
+   "mass": 157.584,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/P_S01_XSPACER_4": {
+   "name": "P_S01_XSPACER_4",
+   "unit": "MAT_X:1",
+   "bbox": [
+    130.0,
+    230.0,
+    159.0,
+    201.0,
+    -572.0,
+    -558.0
+   ],
+   "volume": 58800.0,
+   "mass": 157.584,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFS8-4080-1300_L": {
+   "name": "HFS8-4080-1300_L",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -170.0,
+    -130.0,
+    -1060.0,
+    240.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 1450015.4472744458,
+   "mass": 3915.041707641004,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFS8-4080-1300_R": {
+   "name": "HFS8-4080-1300_R",
+   "unit": "MAT_X:1",
+   "bbox": [
+    130.0,
+    170.0,
+    -1060.0,
+    240.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 1450015.4472744456,
+   "mass": 3915.041707641003,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFS8-4080-460_F": {
+   "name": "HFS8-4080-460_F",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -230.0000000000001,
+    230.00000000000006,
+    -1020.0,
+    -980.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 513009.987922902,
+   "mass": 1385.1269673918355,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFS8-4080-460_B": {
+   "name": "HFS8-4080-460_B",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -230.0000000000001,
+    230.00000000000006,
+    160.0,
+    200.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 513009.98792290123,
+   "mass": 1385.1269673918334,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/SV2RL28-1800_F_BLOCK": {
+   "name": "SV2RL28-1800_F_BLOCK",
+   "unit": "MAT_X:1",
+   "bbox": [
+    150.00000004994897,
+    210.000000049949,
+    -1021.0,
+    -979.0,
+    -594.5,
+    -571.9999999999999
+   ],
+   "volume": 34995.6650185032,
+   "mass": 274.71597039525005,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/SV2RL28-1800_B_BLOCK": {
+   "name": "SV2RL28-1800_B_BLOCK",
+   "unit": "MAT_X:1",
+   "bbox": [
+    150.00000004994897,
+    210.000000049949,
+    159.0,
+    201.0,
+    -594.5,
+    -571.9999999999999
+   ],
+   "volume": 34995.66495358964,
+   "mass": 274.71596988567865,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/SV2RL28-1300_R_RAIL": {
+   "name": "SV2RL28-1300_R_RAIL",
+   "unit": "MAT_X:1",
+   "bbox": [
+    140.0,
+    160.0,
+    -1060.0,
+    240.0,
+    -398.0,
+    -382.5
+   ],
+   "volume": 361716.13011718704,
+   "mass": 2839.4716214199184,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/SV2RL28-1300_L_RAIL": {
+   "name": "SV2RL28-1300_L_RAIL",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -160.0,
+    -140.0,
+    -1060.0,
+    240.0,
+    -398.0,
+    -382.5
+   ],
+   "volume": 361716.1301171871,
+   "mass": 2839.471621419919,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFC8-4080-B_460_B_XM": {
+   "name": "HFC8-4080-B_460_B_XM",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -233.0,
+    -222.0,
+    160.0,
+    200.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 6346.159447518564,
+   "mass": 7.234621770171162,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFC8-4080-B_460_B_XP": {
+   "name": "HFC8-4080-B_460_B_XP",
+   "unit": "MAT_X:1",
+   "bbox": [
+    222.0,
+    233.0,
+    160.0,
+    200.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 6346.159447518567,
+   "mass": 7.234621770171166,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFC8-4080-B_460_F_XM": {
+   "name": "HFC8-4080-B_460_F_XM",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -233.0,
+    -222.0,
+    -1020.0,
+    -980.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 6346.159540123316,
+   "mass": 7.234621875740579,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFC8-4080-B_460_F_XP": {
+   "name": "HFC8-4080-B_460_F_XP",
+   "unit": "MAT_X:1",
+   "bbox": [
+    222.0,
+    233.0,
+    -1020.0,
+    -980.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 6346.159540123318,
+   "mass": 7.234621875740582,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFC8-4080-B_1300_R_YM": {
+   "name": "HFC8-4080-B_1300_R_YM",
+   "unit": "MAT_X:1",
+   "bbox": [
+    130.0,
+    170.0,
+    -1063.0,
+    -1052.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 6346.159486641346,
+   "mass": 7.234621814771134,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFC8-4080-B_1300_R_YP": {
+   "name": "HFC8-4080-B_1300_R_YP",
+   "unit": "MAT_X:1",
+   "bbox": [
+    130.0,
+    170.0,
+    232.0,
+    243.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 6346.159486641329,
+   "mass": 7.234621814771114,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFC8-4080-B_1300_L_YM": {
+   "name": "HFC8-4080-B_1300_L_YM",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -170.0,
+    -130.0,
+    -1063.0,
+    -1052.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 6346.159486641351,
+   "mass": 7.234621814771139,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_X:1/HFC8-4080-B_1300_L_YP": {
+   "name": "HFC8-4080-B_1300_L_YP",
+   "unit": "MAT_X:1",
+   "bbox": [
+    -170.0,
+    -130.0,
+    232.0,
+    243.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 6346.159486641328,
+   "mass": 7.234621814771113,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_Y:1/P_T01_YPLATE": {
+   "name": "P_T01_YPLATE",
+   "unit": "MAT_Y:1",
+   "bbox": [
+    -200.0,
+    200.0,
+    -950.0,
+    -450.0,
+    -370.0,
+    -355.0
+   ],
+   "volume": 2707875.0,
+   "mass": 7257.105,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_Y:1/P_S01_DGSPACER": {
+   "name": "P_S01_DGSPACER",
+   "unit": "MAT_Y:1",
+   "bbox": [
+    -100.0000000000002,
+    100.0,
+    -837.5,
+    -600.0,
+    -355.0,
+    -305.0000000000001
+   ],
+   "volume": 1551086.4048768247,
+   "mass": 4156.9115650698905,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_Y:1/SV2RL28-1300_L_BLOCK": {
+   "name": "SV2RL28-1300_L_BLOCK",
+   "unit": "MAT_Y:1",
+   "bbox": [
+    -171.0,
+    -129.0,
+    -569.9999999500512,
+    -509.99999995005106,
+    -392.5,
+    -369.99999999999994
+   ],
+   "volume": 34995.66499105383,
+   "mass": 274.71597017977257,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_Y:1/SV2RL28-1300_R_BLOCK": {
+   "name": "SV2RL28-1300_R_BLOCK",
+   "unit": "MAT_Y:1",
+   "bbox": [
+    129.0,
+    171.0,
+    -569.9999999500512,
+    -509.99999995005106,
+    -392.5,
+    -369.99999999999994
+   ],
+   "volume": 34995.66494280478,
+   "mass": 274.71596980101754,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_Y:1/DGM200R-AZAC_T01_HOUSING": {
+   "name": "DGM200R-AZAC_T01_HOUSING",
+   "unit": "MAT_Y:1",
+   "bbox": [
+    -100.00000000000006,
+    100.00000000000003,
+    -837.5,
+    -600.0,
+    -305.0,
+    -244.5
+   ],
+   "volume": 1239865.6460767637,
+   "mass": 9732.945321702597,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_Y:1/DGM200R-AZAC_T01_MOTOR": {
+   "name": "DGM200R-AZAC_T01_MOTOR",
+   "unit": "MAT_Y:1",
+   "bbox": [
+    -42.50000000016148,
+    42.50000000017135,
+    -865.3524675295912,
+    -752.4999999999966,
+    -419.0000000000002,
+    -305.0
+   ],
+   "volume": 754662.1835615142,
+   "mass": 5924.098140957886,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/P_T01_DISC": {
+   "name": "P_T01_DISC",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -54.99915059172809,
+    54.999150591728096,
+    -754.9987010388503,
+    -645.0012989611497,
+    -12.500000000000009,
+    -0.4999999999999984
+   ],
+   "volume": 114032.7921618718,
+   "mass": 188.15410706708846,
+   "material": "Rigid 10K",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/P_T01_POST": {
+   "name": "P_T01_POST",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -29.99953668639798,
+    29.99953668639715,
+    -729.9991940122198,
+    -670.0008059877807,
+    -235.00000000000182,
+    -12.499999999999966
+   ],
+   "volume": 349472.349469728,
+   "mass": 450.8193308159491,
+   "material": "PET-CF",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/P_T01_HUB": {
+   "name": "P_T01_HUB",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -149.99768343198568,
+    149.9976834319857,
+    -849.9964573786825,
+    -550.0035426213175,
+    -241.0000000000008,
+    -234.9999999999999
+   ],
+   "volume": 416564.4737530938,
+   "mass": 3303.3562768620336,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/P_T01_SPIDER_1": {
+   "name": "P_T01_SPIDER_1",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -30.0,
+    30.0,
+    -600.0,
+    -210.0,
+    -234.99999999999997,
+    -95.50000000000004
+   ],
+   "volume": 385127.91509957664,
+   "mass": 3054.064366739643,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/P_T01_SPIDER_2": {
+   "name": "P_T01_SPIDER_2",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -439.3524074941481,
+    -71.60250000280024,
+    -970.9807620787469,
+    -724.0192378848146,
+    -235.0,
+    -95.49999999999994
+   ],
+   "volume": 385127.9455876684,
+   "mass": 3054.0646085102103,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/P_T01_SPIDER_3": {
+   "name": "P_T01_SPIDER_3",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    71.60250000280023,
+    439.352407494164,
+    -970.9807620787485,
+    -724.0192378848501,
+    -235.00000000000256,
+    -95.5
+   ],
+   "volume": 385127.9455875959,
+   "mass": 3054.0646085096355,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/LHFR16_R1_1": {
+   "name": "LHFR16_R1_1",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -24.0,
+    24.0,
+    -484.0,
+    -436.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.07022597432,
+   "mass": 169.2465512738984,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/LHFR16_R1_2": {
+   "name": "LHFR16_R1_2",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -231.8461,
+    -183.8461,
+    -844.0,
+    -796.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.07059286573,
+   "mass": 169.24655415399596,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/LHFR16_R1_3": {
+   "name": "LHFR16_R1_3",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    183.8461,
+    231.8461,
+    -844.0,
+    -796.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.070323907486,
+   "mass": 169.24655204267376,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/LHFR16_R2_1": {
+   "name": "LHFR16_R2_1",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -24.0,
+    24.0,
+    -264.0,
+    -216.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.070971613575,
+   "mass": 169.24655712716657,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/LHFR16_R2_2": {
+   "name": "LHFR16_R2_2",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -422.3717,
+    -374.3717,
+    -954.0,
+    -906.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.07029908273,
+   "mass": 169.24655184779942,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/LHFR16_R2_3": {
+   "name": "LHFR16_R2_3",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    374.3717,
+    422.3717,
+    -954.0,
+    -906.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.070687917494,
+   "mass": 169.24655490015232,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/DGM200R-AZAC_T01_TABLE": {
+   "name": "DGM200R-AZAC_T01_TABLE",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -85.0,
+    85.0,
+    -785.0,
+    -615.0,
+    -263.0,
+    -240.99999999999997
+   ],
+   "volume": 267391.70874034317,
+   "mass": 2099.0249136116936,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R2_3_BODY": {
+   "name": "CJ2B16-60SZ_R2_3_BODY",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    345.0705688460056,
+    365.0702311539944,
+    -914.9998311539945,
+    -895.0001688460055,
+    -236.50000000000003,
+    -90.49999999999999
+   ],
+   "volume": 20843.785345538403,
+   "mass": 163.62371496247647,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R2_3_SNJ": {
+   "name": "CJ2B16-60SZ_R2_3_SNJ",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    348.0697174578366,
+    362.0710825421635,
+    -913.0829037686548,
+    -896.9170962313452,
+    -95.50000000000006,
+    -91.49999999999994
+   ],
+   "volume": 414.6492723480057,
+   "mass": 3.254996787931845,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R2_2_BODY": {
+   "name": "CJ2B16-60SZ_R2_2_BODY",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -365.0702311539944,
+    -345.0705688460056,
+    -914.9998311539944,
+    -895.0001688460056,
+    -236.50000000000003,
+    -90.49999999999999
+   ],
+   "volume": 20843.787111027646,
+   "mass": 163.62372882156703,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R2_2_SNJ": {
+   "name": "CJ2B16-60SZ_R2_2_SNJ",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -362.0710825421634,
+    -348.0697174578366,
+    -913.0829037686549,
+    -896.9170962313449,
+    -95.50000000000006,
+    -91.49999999999994
+   ],
+   "volume": 414.6492855473336,
+   "mass": 3.2549968915465683,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R2_1_BODY": {
+   "name": "CJ2B16-60SZ_R2_1_BODY",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -9.15,
+    9.15,
+    -299.15,
+    -280.84999999999997,
+    -236.50000000000003,
+    -90.49999999999999
+   ],
+   "volume": 20843.78755654801,
+   "mass": 163.62373231890186,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R2_1_SNJ": {
+   "name": "CJ2B16-60SZ_R2_1_SNJ",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -7.000000000000027,
+    7.000000000000028,
+    -298.0829037686548,
+    -281.9170962313452,
+    -95.50000000000001,
+    -91.5
+   ],
+   "volume": 414.6492078299952,
+   "mass": 3.2549962814654623,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R1_3_BODY": {
+   "name": "CJ2B16-60SZ_R1_3_BODY",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    154.54496884600562,
+    174.54463115399443,
+    -804.9998311539945,
+    -785.0001688460055,
+    -236.50000000000003,
+    -90.49999999999999
+   ],
+   "volume": 20843.788970064237,
+   "mass": 163.62374341500424,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R1_3_SNJ": {
+   "name": "CJ2B16-60SZ_R1_3_SNJ",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    157.54411745783653,
+    171.54548254216343,
+    -803.0829037686548,
+    -786.9170962313452,
+    -95.50000000000006,
+    -91.49999999999994
+   ],
+   "volume": 414.6493067526912,
+   "mass": 3.2549970580086254,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R1_2_BODY": {
+   "name": "CJ2B16-60SZ_R1_2_BODY",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -174.54463115399443,
+    -154.54496884600556,
+    -804.9998311539944,
+    -785.0001688460056,
+    -236.50000000000003,
+    -90.49999999999999
+   ],
+   "volume": 20843.803385687545,
+   "mass": 163.62385657764722,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R1_2_SNJ": {
+   "name": "CJ2B16-60SZ_R1_2_SNJ",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -171.54548254216343,
+    -157.54411745783656,
+    -803.082903768655,
+    -786.917096231345,
+    -95.50000000000006,
+    -91.49999999999994
+   ],
+   "volume": 414.6492923223673,
+   "mass": 3.254996944730583,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R1_1_BODY": {
+   "name": "CJ2B16-60SZ_R1_1_BODY",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -9.15,
+    9.15,
+    -519.15,
+    -500.84999999999997,
+    -236.50000000000003,
+    -90.49999999999999
+   ],
+   "volume": 20843.822207765043,
+   "mass": 163.62400433095556,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_ROT:1/CJ2B16-60SZ_R1_1_SNJ": {
+   "name": "CJ2B16-60SZ_R1_1_SNJ",
+   "unit": "MAT_ROT:1",
+   "bbox": [
+    -7.000000060222318,
+    7.000000060222305,
+    -518.0829037686548,
+    -501.9170962313452,
+    -95.50000000000001,
+    -91.49999999999999
+   ],
+   "volume": 414.64931240025686,
+   "mass": 3.254997102342016,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "HEAD:1/STEP대기_SEWHEAD": {
+   "name": "STEP대기_SEWHEAD",
+   "unit": "HEAD:1",
+   "bbox": [
+    -75.0,
+    75.0,
+    -40.00000000000001,
+    860.0,
+    -134.0,
+    250.0
+   ],
+   "volume": 21702954.78993061,
+   "mass": 170368.19510095532,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "HEAD:1/P_T02_PLATE": {
+   "name": "P_T02_PLATE",
+   "unit": "HEAD:1",
+   "bbox": [
+    -40.0,
+    40.0,
+    -25.0,
+    25.0,
+    -4.050000000000005,
+    3.500000000000002
+   ],
+   "volume": 12888.554252170914,
+   "mass": 101.17515087954168,
+   "material": "S50C",
+   "bolt": false,
+   "spec": null
+  },
+  "HEAD:1/P_T02_BINDER": {
+   "name": "P_T02_BINDER",
+   "unit": "HEAD:1",
+   "bbox": [
+    -34.0,
+    -10.0,
+    2.0,
+    40.0,
+    26.0,
+    60.0
+   ],
+   "volume": 31008.0,
+   "mass": 51.163199999999996,
+   "material": "Rigid 10K",
+   "bolt": false,
+   "spec": null
+  },
+  "PRESSER:1/P_T02_FOOT": {
+   "name": "P_T02_FOOT",
+   "unit": "PRESSER:1",
+   "bbox": [
+    -9.0,
+    9.001243156493688,
+    -26.000000000000163,
+    18.50000000000035,
+    16.500000000000014,
+    55.00000000000008
+   ],
+   "volume": 15481.373054760441,
+   "mass": 25.544265540354726,
+   "material": "Rigid 10K",
+   "bolt": false,
+   "spec": null
+  },
+  "PRESSER:1/STEP대기_SEWHEAD_PRESSERBAR": {
+   "name": "STEP대기_SEWHEAD_PRESSERBAR",
+   "unit": "PRESSER:1",
+   "bbox": [
+    -4.999922781066191,
+    4.999922781066192,
+    -22.999865668703215,
+    -13.000134331296785,
+    54.99999999999994,
+    210.0000000000001
+   ],
+   "volume": 12171.649440940775,
+   "mass": 95.54744811138508,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "NEEDLE:1/STEP대기_SEWHEAD_NEEDLEBAR": {
+   "name": "STEP대기_SEWHEAD_NEEDLEBAR",
+   "unit": "NEEDLE:1",
+   "bbox": [
+    -3.999938224852951,
+    3.999938224854346,
+    -3.999892534962573,
+    3.999892534962572,
+    67.9999999999999,
+    200.00000000000003
+   ],
+   "volume": 6599.674570386702,
+   "mass": 51.80744537753561,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "NEEDLE:1/STEP대기_NEEDLE": {
+   "name": "STEP대기_NEEDLE",
+   "unit": "NEEDLE:1",
+   "bbox": [
+    -0.9999845562132377,
+    0.9999845562135306,
+    -0.9999731337406423,
+    0.9999731337407766,
+    19.999999999999975,
+    77.99999999999999
+   ],
+   "volume": 115.83474581453844,
+   "mass": 0.9093027546441267,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_LARGE": {
+   "name": "MAT_LARGE",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -600.0000000000001,
+    600.0000000000002,
+    -1300.0000000000002,
+    -99.99999999999987,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 14392269.267915972,
+   "mass": 18566.027355611604,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_LARGE_BOUND": {
+   "name": "MAT_LARGE_BOUND",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0,
+    -98.99999999999989,
+    -1.0000000000003324,
+    11.000000000000005
+   ],
+   "volume": 151362.20061685442,
+   "mass": 195.2572387957422,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_LARGE_TAIL": {
+   "name": "MAT_LARGE_TAIL",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_LARGE_SEAM": {
+   "name": "MAT_LARGE_SEAM",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_SMALL": {
+   "name": "MAT_SMALL",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -150.00000000000003,
+    150.00000000000003,
+    -800.0000000000001,
+    -600.0,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 592269.2679159747,
+   "mass": 764.0273556116074,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_SMALL_BOUND": {
+   "name": "MAT_SMALL_BOUND",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -151.0,
+    151.0,
+    -801.0000000000001,
+    -599.0,
+    -1.0000000000000329,
+    11.000000000000004
+   ],
+   "volume": 29760.88490378868,
+   "mass": 38.3915415258874,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_SMALL_TAIL": {
+   "name": "MAT_SMALL_TAIL",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -598.0,
+    -595.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_SMALL_SEAM": {
+   "name": "MAT_SMALL_SEAM",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -610.0,
+    -598.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_GROOVE": {
+   "name": "MAT_GROOVE",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -600.0,
+    600.0000000000002,
+    -1300.0000000000002,
+    -99.99999999999987,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 14145982.674606234,
+   "mass": 18248.317650242043,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_GROOVE_BOUND": {
+   "name": "MAT_GROOVE_BOUND",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0000000000002,
+    -98.99999999999989,
+    -1.0000000000000027,
+    11.000000000000007
+   ],
+   "volume": 156851.82594136448,
+   "mass": 202.3388554643602,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_LARGE:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_LARGE_BOUND": {
+   "name": "MAT_LARGE_BOUND",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0,
+    -98.99999999999989,
+    -1.0000000000003324,
+    11.000000000000005
+   ],
+   "volume": 151362.20061685442,
+   "mass": 195.2572387957422,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_LARGE_TAIL": {
+   "name": "MAT_LARGE_TAIL",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_LARGE_SEAM": {
+   "name": "MAT_LARGE_SEAM",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_SMALL": {
+   "name": "MAT_SMALL",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -150.00000000000003,
+    150.00000000000003,
+    -800.0000000000001,
+    -600.0,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 592269.2679159747,
+   "mass": 764.0273556116074,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_SMALL_BOUND": {
+   "name": "MAT_SMALL_BOUND",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -151.0,
+    151.0,
+    -801.0000000000001,
+    -599.0,
+    -1.0000000000000329,
+    11.000000000000004
+   ],
+   "volume": 29760.88490378868,
+   "mass": 38.3915415258874,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_SMALL_TAIL": {
+   "name": "MAT_SMALL_TAIL",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -598.0,
+    -595.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_SMALL_SEAM": {
+   "name": "MAT_SMALL_SEAM",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -610.0,
+    -598.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_GROOVE": {
+   "name": "MAT_GROOVE",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -600.0,
+    600.0000000000002,
+    -1300.0000000000002,
+    -99.99999999999987,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 14145982.674606234,
+   "mass": 18248.317650242043,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_GROOVE_BOUND": {
+   "name": "MAT_GROOVE_BOUND",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0000000000002,
+    -98.99999999999989,
+    -1.0000000000000027,
+    11.000000000000007
+   ],
+   "volume": 156851.82594136448,
+   "mass": 202.3388554643602,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_BOUND:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_LARGE_BOUND:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_LARGE_TAIL": {
+   "name": "MAT_LARGE_TAIL",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_LARGE_SEAM": {
+   "name": "MAT_LARGE_SEAM",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_SMALL": {
+   "name": "MAT_SMALL",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -150.00000000000003,
+    150.00000000000003,
+    -800.0000000000001,
+    -600.0,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 592269.2679159747,
+   "mass": 764.0273556116074,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_SMALL_BOUND": {
+   "name": "MAT_SMALL_BOUND",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -151.0,
+    151.0,
+    -801.0000000000001,
+    -599.0,
+    -1.0000000000000329,
+    11.000000000000004
+   ],
+   "volume": 29760.88490378868,
+   "mass": 38.3915415258874,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_SMALL_TAIL": {
+   "name": "MAT_SMALL_TAIL",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -598.0,
+    -595.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_SMALL_SEAM": {
+   "name": "MAT_SMALL_SEAM",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -610.0,
+    -598.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_GROOVE": {
+   "name": "MAT_GROOVE",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -600.0,
+    600.0000000000002,
+    -1300.0000000000002,
+    -99.99999999999987,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 14145982.674606234,
+   "mass": 18248.317650242043,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_GROOVE_BOUND": {
+   "name": "MAT_GROOVE_BOUND",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0000000000002,
+    -98.99999999999989,
+    -1.0000000000000027,
+    11.000000000000007
+   ],
+   "volume": 156851.82594136448,
+   "mass": 202.3388554643602,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_LARGE_SEAM:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_LARGE_SEAM:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL:1/MAT_SMALL": {
+   "name": "MAT_SMALL",
+   "unit": "MAT_SMALL:1",
+   "bbox": [
+    -150.00000000000003,
+    150.00000000000003,
+    -800.0000000000001,
+    -600.0,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 592269.2679159747,
+   "mass": 764.0273556116074,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL:1/MAT_SMALL_BOUND": {
+   "name": "MAT_SMALL_BOUND",
+   "unit": "MAT_SMALL:1",
+   "bbox": [
+    -151.0,
+    151.0,
+    -801.0000000000001,
+    -599.0,
+    -1.0000000000000329,
+    11.000000000000004
+   ],
+   "volume": 29760.88490378868,
+   "mass": 38.3915415258874,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL:1/MAT_SMALL_TAIL": {
+   "name": "MAT_SMALL_TAIL",
+   "unit": "MAT_SMALL:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -598.0,
+    -595.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL:1/MAT_SMALL_SEAM": {
+   "name": "MAT_SMALL_SEAM",
+   "unit": "MAT_SMALL:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -610.0,
+    -598.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL:1/MAT_GROOVE": {
+   "name": "MAT_GROOVE",
+   "unit": "MAT_SMALL:1",
+   "bbox": [
+    -600.0,
+    600.0000000000002,
+    -1300.0000000000002,
+    -99.99999999999987,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 14145982.674606234,
+   "mass": 18248.317650242043,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL:1/MAT_GROOVE_BOUND": {
+   "name": "MAT_GROOVE_BOUND",
+   "unit": "MAT_SMALL:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0000000000002,
+    -98.99999999999989,
+    -1.0000000000000027,
+    11.000000000000007
+   ],
+   "volume": 156851.82594136448,
+   "mass": 202.3388554643602,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_SMALL:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_SMALL:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_BOUND:1/MAT_SMALL_BOUND": {
+   "name": "MAT_SMALL_BOUND",
+   "unit": "MAT_SMALL_BOUND:1",
+   "bbox": [
+    -151.0,
+    151.0,
+    -801.0000000000001,
+    -599.0,
+    -1.0000000000000329,
+    11.000000000000004
+   ],
+   "volume": 29760.88490378868,
+   "mass": 38.3915415258874,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_BOUND:1/MAT_SMALL_TAIL": {
+   "name": "MAT_SMALL_TAIL",
+   "unit": "MAT_SMALL_BOUND:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -598.0,
+    -595.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_BOUND:1/MAT_SMALL_SEAM": {
+   "name": "MAT_SMALL_SEAM",
+   "unit": "MAT_SMALL_BOUND:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -610.0,
+    -598.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_BOUND:1/MAT_GROOVE": {
+   "name": "MAT_GROOVE",
+   "unit": "MAT_SMALL_BOUND:1",
+   "bbox": [
+    -600.0,
+    600.0000000000002,
+    -1300.0000000000002,
+    -99.99999999999987,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 14145982.674606234,
+   "mass": 18248.317650242043,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_BOUND:1/MAT_GROOVE_BOUND": {
+   "name": "MAT_GROOVE_BOUND",
+   "unit": "MAT_SMALL_BOUND:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0000000000002,
+    -98.99999999999989,
+    -1.0000000000000027,
+    11.000000000000007
+   ],
+   "volume": 156851.82594136448,
+   "mass": 202.3388554643602,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_BOUND:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_SMALL_BOUND:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_BOUND:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_SMALL_BOUND:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_SEAM:1/MAT_SMALL_TAIL": {
+   "name": "MAT_SMALL_TAIL",
+   "unit": "MAT_SMALL_SEAM:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -598.0,
+    -595.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_SEAM:1/MAT_SMALL_SEAM": {
+   "name": "MAT_SMALL_SEAM",
+   "unit": "MAT_SMALL_SEAM:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -610.0,
+    -598.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_SEAM:1/MAT_GROOVE": {
+   "name": "MAT_GROOVE",
+   "unit": "MAT_SMALL_SEAM:1",
+   "bbox": [
+    -600.0,
+    600.0000000000002,
+    -1300.0000000000002,
+    -99.99999999999987,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 14145982.674606234,
+   "mass": 18248.317650242043,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_SEAM:1/MAT_GROOVE_BOUND": {
+   "name": "MAT_GROOVE_BOUND",
+   "unit": "MAT_SMALL_SEAM:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0000000000002,
+    -98.99999999999989,
+    -1.0000000000000027,
+    11.000000000000007
+   ],
+   "volume": 156851.82594136448,
+   "mass": 202.3388554643602,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_SEAM:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_SMALL_SEAM:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_SMALL_SEAM:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_SMALL_SEAM:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE:1/MAT_GROOVE": {
+   "name": "MAT_GROOVE",
+   "unit": "MAT_GROOVE:1",
+   "bbox": [
+    -600.0,
+    600.0000000000002,
+    -1300.0000000000002,
+    -99.99999999999987,
+    0.0,
+    10.000000000000007
+   ],
+   "volume": 14145982.674606234,
+   "mass": 18248.317650242043,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE:1/MAT_GROOVE_BOUND": {
+   "name": "MAT_GROOVE_BOUND",
+   "unit": "MAT_GROOVE:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0000000000002,
+    -98.99999999999989,
+    -1.0000000000000027,
+    11.000000000000007
+   ],
+   "volume": 156851.82594136448,
+   "mass": 202.3388554643602,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_GROOVE:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_GROOVE:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE_BOUND:1/MAT_GROOVE_BOUND": {
+   "name": "MAT_GROOVE_BOUND",
+   "unit": "MAT_GROOVE_BOUND:1",
+   "bbox": [
+    -601.0000000000005,
+    601.0000000000001,
+    -1301.0000000000002,
+    -98.99999999999989,
+    -1.0000000000000027,
+    11.000000000000007
+   ],
+   "volume": 156851.82594136448,
+   "mass": 202.3388554643602,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE_BOUND:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_GROOVE_BOUND:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE_BOUND:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_GROOVE_BOUND:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE_SEAM:1/MAT_GROOVE_TAIL": {
+   "name": "MAT_GROOVE_TAIL",
+   "unit": "MAT_GROOVE_SEAM:1",
+   "bbox": [
+    -34.5,
+    -30.0,
+    -98.0,
+    -95.0,
+    4.5,
+    5.5
+   ],
+   "volume": 13.5,
+   "mass": 0.017415,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "MAT_GROOVE_SEAM:1/MAT_GROOVE_SEAM": {
+   "name": "MAT_GROOVE_SEAM",
+   "unit": "MAT_GROOVE_SEAM:1",
+   "bbox": [
+    -30.0,
+    38.0,
+    -110.0,
+    -98.0,
+    -1.0,
+    13.0
+   ],
+   "volume": 1700.0,
+   "mass": 2.193,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/P_T01_RING1": {
+   "name": "P_T01_RING1",
+   "unit": "RING1:1",
+   "bbox": [
+    -299.99536686397136,
+    299.99536686397147,
+    -999.9929147573649,
+    -400.0070852426349,
+    -10.500000000000018,
+    -0.4999999999999991
+   ],
+   "volume": 2650630.7283149376,
+   "mass": 7103.690351884034,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/PSFJ16-150_R1_1": {
+   "name": "PSFJ16-150_R1_1",
+   "unit": "RING1:1",
+   "bbox": [
+    -8.000000000000002,
+    8.000000000000004,
+    -468.0,
+    -452.0,
+    -160.5,
+    -10.5
+   ],
+   "volume": 30143.948751442793,
+   "mass": 236.6299976988259,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/PSFJ16-150_R1_2": {
+   "name": "PSFJ16-150_R1_2",
+   "unit": "RING1:1",
+   "bbox": [
+    -215.8461,
+    -199.8461,
+    -828.0,
+    -812.0,
+    -160.5,
+    -10.5
+   ],
+   "volume": 30143.94548446654,
+   "mass": 236.62997205306235,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/PSFJ16-150_R1_3": {
+   "name": "PSFJ16-150_R1_3",
+   "unit": "RING1:1",
+   "bbox": [
+    199.8461,
+    215.8461,
+    -828.0,
+    -812.0,
+    -160.5,
+    -10.5
+   ],
+   "volume": 30143.945315319987,
+   "mass": 236.6299707252619,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/CJ2B16-60SZ_R1_1_ROD": {
+   "name": "CJ2B16-60SZ_R1_1_ROD",
+   "unit": "RING1:1",
+   "bbox": [
+    -7.99999999999999,
+    7.99999999999999,
+    -518.0,
+    -502.0,
+    -108.3,
+    -10.5
+   ],
+   "volume": 2816.1028518976905,
+   "mass": 22.10640738739687,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/CJ2B16-60SZ_R1_1_NTJ": {
+   "name": "CJ2B16-60SZ_R1_1_NTJ",
+   "unit": "RING1:1",
+   "bbox": [
+    -4.0006746884294815,
+    4.000674688429475,
+    -514.618802153517,
+    -505.38119784648296,
+    -18.0,
+    -14.0
+   ],
+   "volume": 156.60049026837962,
+   "mass": 1.2293138486067798,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/CJ2B16-60SZ_R1_2_ROD": {
+   "name": "CJ2B16-60SZ_R1_2_ROD",
+   "unit": "RING1:1",
+   "bbox": [
+    -172.54472439967415,
+    -156.5448056852231,
+    -802.9999243996742,
+    -787.0000155343562,
+    -108.3,
+    -10.499999999999945
+   ],
+   "volume": 2816.1028186053495,
+   "mass": 22.10640712605199,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/CJ2B16-60SZ_R1_2_NTJ": {
+   "name": "CJ2B16-60SZ_R1_2_NTJ",
+   "unit": "RING1:1",
+   "bbox": [
+    -168.54547056696455,
+    -160.54412943421906,
+    -799.6188021535171,
+    -790.381197846483,
+    -18.000000000000014,
+    -13.999999999999975
+   ],
+   "volume": 156.60060160855113,
+   "mass": 1.2293147226271262,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/CJ2B16-60SZ_R1_3_ROD": {
+   "name": "CJ2B16-60SZ_R1_3_ROD",
+   "unit": "RING1:1",
+   "bbox": [
+    156.54487560032592,
+    172.54479093310152,
+    -802.9999243996741,
+    -787.0000078631352,
+    -108.3,
+    -10.499999999999945
+   ],
+   "volume": 2816.1028434620534,
+   "mass": 22.106407321177116,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING1:1/CJ2B16-60SZ_R1_3_NTJ": {
+   "name": "CJ2B16-60SZ_R1_3_NTJ",
+   "unit": "RING1:1",
+   "bbox": [
+    160.54412943421906,
+    168.545470565781,
+    -799.6188021535171,
+    -790.3811978464829,
+    -18.000000000000057,
+    -13.999999999999943
+   ],
+   "volume": 156.60063111001625,
+   "mass": 1.2293149542136275,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/P_T01_RING2": {
+   "name": "P_T01_RING2",
+   "unit": "RING2:1",
+   "bbox": [
+    -519.9919692308839,
+    519.9919692308838,
+    -1219.9877189127662,
+    -180.0122810872338,
+    -7.000000000000009,
+    -2.0
+   ],
+   "volume": 2737806.823817885,
+   "mass": 7337.322287831932,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/P_T01_RING2_STRAP_1": {
+   "name": "P_T01_RING2_STRAP_1",
+   "unit": "RING2:1",
+   "bbox": [
+    -20.0,
+    20.0,
+    -380.0,
+    -185.0,
+    -12.000000000000007,
+    -7.0
+   ],
+   "volume": 38957.59658596291,
+   "mass": 104.4063588503806,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/P_T01_RING2_STRAP_2": {
+   "name": "P_T01_RING2_STRAP_2",
+   "unit": "RING2:1",
+   "bbox": [
+    -456.0031,
+    -267.1281,
+    -557.3205,
+    -425.1795,
+    -12.0,
+    -7.0
+   ],
+   "volume": 38999.99437500002,
+   "mass": 104.51998492500006,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/P_T01_RING2_STRAP_3": {
+   "name": "P_T01_RING2_STRAP_3",
+   "unit": "RING2:1",
+   "bbox": [
+    -456.0031,
+    -267.1281,
+    -974.8205000000002,
+    -842.6795,
+    -12.000000000000005,
+    -7.0
+   ],
+   "volume": 38957.59277916802,
+   "mass": 104.4063486481703,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/P_T01_RING2_STRAP_4": {
+   "name": "P_T01_RING2_STRAP_4",
+   "unit": "RING2:1",
+   "bbox": [
+    -20.0,
+    20.0,
+    -1215.0,
+    -1020.0,
+    -12.0,
+    -7.0
+   ],
+   "volume": 39000.0,
+   "mass": 104.52,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/P_T01_RING2_STRAP_5": {
+   "name": "P_T01_RING2_STRAP_5",
+   "unit": "RING2:1",
+   "bbox": [
+    267.1281,
+    456.0031,
+    -974.8205000000002,
+    -842.6795,
+    -12.000000000000007,
+    -7.0
+   ],
+   "volume": 38957.592779169514,
+   "mass": 104.4063486481743,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/P_T01_RING2_STRAP_6": {
+   "name": "P_T01_RING2_STRAP_6",
+   "unit": "RING2:1",
+   "bbox": [
+    267.1281,
+    456.0031,
+    -557.3205,
+    -425.1795,
+    -12.0,
+    -7.0
+   ],
+   "volume": 38999.99437500002,
+   "mass": 104.51998492500006,
+   "material": "A5052",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/PSFJ16-150_R2_1": {
+   "name": "PSFJ16-150_R2_1",
+   "unit": "RING2:1",
+   "bbox": [
+    -8.000000000000004,
+    8.000000000000004,
+    -248.0,
+    -232.0,
+    -162.0,
+    -12.0
+   ],
+   "volume": 30143.926401652294,
+   "mass": 236.6298222529705,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/PSFJ16-150_R2_2": {
+   "name": "PSFJ16-150_R2_2",
+   "unit": "RING2:1",
+   "bbox": [
+    -406.3717,
+    -390.3717,
+    -938.0,
+    -922.0,
+    -162.0,
+    -12.0
+   ],
+   "volume": 30143.94534439386,
+   "mass": 236.62997095349178,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/PSFJ16-150_R2_3": {
+   "name": "PSFJ16-150_R2_3",
+   "unit": "RING2:1",
+   "bbox": [
+    390.3717,
+    406.3717,
+    -938.0,
+    -922.0,
+    -162.0,
+    -12.0
+   ],
+   "volume": 30143.945513540122,
+   "mass": 236.62997228128995,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/CJ2B16-60SZ_R2_1_ROD": {
+   "name": "CJ2B16-60SZ_R2_1_ROD",
+   "unit": "RING2:1",
+   "bbox": [
+    -7.99999999999999,
+    7.99999999999999,
+    -298.0,
+    -282.0,
+    -108.3,
+    -10.5
+   ],
+   "volume": 2816.1028267419847,
+   "mass": 22.106407189924578,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/CJ2B16-60SZ_R2_1_NTJ": {
+   "name": "CJ2B16-60SZ_R2_1_NTJ",
+   "unit": "RING2:1",
+   "bbox": [
+    -4.000674688429481,
+    4.000674688429481,
+    -294.61880215351704,
+    -285.38119784648296,
+    -18.0,
+    -14.0
+   ],
+   "volume": 156.60053661372865,
+   "mass": 1.2293142124177698,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/CJ2B16-60SZ_R2_2_ROD": {
+   "name": "CJ2B16-60SZ_R2_2_ROD",
+   "unit": "RING2:1",
+   "bbox": [
+    -363.07039808197294,
+    -347.0704756003259,
+    -912.9999409349086,
+    -897.0000185469075,
+    -108.3,
+    -10.499999999999945
+   ],
+   "volume": 2816.103003676743,
+   "mass": 22.106408578862432,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/CJ2B16-60SZ_R2_2_NTJ": {
+   "name": "CJ2B16-60SZ_R2_2_NTJ",
+   "unit": "RING2:1",
+   "bbox": [
+    -359.0710705669646,
+    -351.06972943303543,
+    -909.6188021535171,
+    -900.381197846483,
+    -18.000000000000014,
+    -13.999999999999975
+   ],
+   "volume": 156.6006279811137,
+   "mass": 1.2293149296517425,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/CJ2B16-60SZ_R2_3_ROD": {
+   "name": "CJ2B16-60SZ_R2_3_ROD",
+   "unit": "RING2:1",
+   "bbox": [
+    347.07040434521736,
+    363.0703897748842,
+    -912.9999243996741,
+    -897.0000756003259,
+    -108.3,
+    -10.499999999999945
+   ],
+   "volume": 2816.1027359377154,
+   "mass": 22.106406477111065,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "RING2:1/CJ2B16-60SZ_R2_3_NTJ": {
+   "name": "CJ2B16-60SZ_R2_3_NTJ",
+   "unit": "RING2:1",
+   "bbox": [
+    351.06972943455133,
+    359.071070565781,
+    -909.6188021535171,
+    -900.3811978464829,
+    -18.000000000000057,
+    -13.999999999999943
+   ],
+   "volume": 156.60065765327107,
+   "mass": 1.229315162578178,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1300_L:1/HFS8-4080-1300_L": {
+   "name": "HFS8-4080-1300_L",
+   "unit": "HFS8-4080-1300_L:1",
+   "bbox": [
+    -170.0,
+    -130.0,
+    -1060.0,
+    240.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 1450015.4472744458,
+   "mass": 3915.041707641004,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1300_L:1/HFC8-4080-B_1300_L_YM": {
+   "name": "HFC8-4080-B_1300_L_YM",
+   "unit": "HFS8-4080-1300_L:1",
+   "bbox": [
+    -170.0,
+    -130.0,
+    -1063.0,
+    -1052.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 6346.159486641351,
+   "mass": 7.234621814771139,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1300_L:1/HFC8-4080-B_1300_L_YP": {
+   "name": "HFC8-4080-B_1300_L_YP",
+   "unit": "HFS8-4080-1300_L:1",
+   "bbox": [
+    -170.0,
+    -130.0,
+    232.0,
+    243.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 6346.159486641328,
+   "mass": 7.234621814771113,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1300_R:1/HFS8-4080-1300_R": {
+   "name": "HFS8-4080-1300_R",
+   "unit": "HFS8-4080-1300_R:1",
+   "bbox": [
+    130.0,
+    170.0,
+    -1060.0,
+    240.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 1450015.4472744456,
+   "mass": 3915.041707641003,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1300_R:1/HFC8-4080-B_1300_R_YM": {
+   "name": "HFC8-4080-B_1300_R_YM",
+   "unit": "HFS8-4080-1300_R:1",
+   "bbox": [
+    130.0,
+    170.0,
+    -1063.0,
+    -1052.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 6346.159486641346,
+   "mass": 7.234621814771134,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1300_R:1/HFC8-4080-B_1300_R_YP": {
+   "name": "HFC8-4080-B_1300_R_YP",
+   "unit": "HFS8-4080-1300_R:1",
+   "bbox": [
+    130.0,
+    170.0,
+    232.0,
+    243.0,
+    -478.0,
+    -398.0
+   ],
+   "volume": 6346.159486641329,
+   "mass": 7.234621814771114,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-460_F:1/HFS8-4080-460_F": {
+   "name": "HFS8-4080-460_F",
+   "unit": "HFS8-4080-460_F:1",
+   "bbox": [
+    -230.0000000000001,
+    230.00000000000006,
+    -1020.0,
+    -980.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 513009.987922902,
+   "mass": 1385.1269673918355,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-460_F:1/HFC8-4080-B_460_F_XM": {
+   "name": "HFC8-4080-B_460_F_XM",
+   "unit": "HFS8-4080-460_F:1",
+   "bbox": [
+    -233.0,
+    -222.0,
+    -1020.0,
+    -980.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 6346.159540123316,
+   "mass": 7.234621875740579,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-460_F:1/HFC8-4080-B_460_F_XP": {
+   "name": "HFC8-4080-B_460_F_XP",
+   "unit": "HFS8-4080-460_F:1",
+   "bbox": [
+    222.0,
+    233.0,
+    -1020.0,
+    -980.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 6346.159540123318,
+   "mass": 7.234621875740582,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1900_F:1/HFS8-4080-1900_F": {
+   "name": "HFS8-4080-1900_F",
+   "unit": "HFS8-4080-1900_F:1",
+   "bbox": [
+    -1425.0010000000002,
+    1425.0010000000002,
+    -1020.0,
+    -980.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 2129069.7157020136,
+   "mass": 5748.488232395436,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1900_F:1/HFC8-4080-B_1900_F_XM": {
+   "name": "HFC8-4080-B_1900_F_XM",
+   "unit": "HFS8-4080-1900_F:1",
+   "bbox": [
+    -953.0,
+    -942.0,
+    -1020.0,
+    -980.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159544032821,
+   "mass": 7.234621880197415,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1900_F:1/HFC8-4080-B_1900_F_XP": {
+   "name": "HFC8-4080-B_1900_F_XP",
+   "unit": "HFS8-4080-1900_F:1",
+   "bbox": [
+    942.0,
+    953.0,
+    -1020.0,
+    -980.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159544032828,
+   "mass": 7.234621880197424,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-460_B:1/HFS8-4080-460_B": {
+   "name": "HFS8-4080-460_B",
+   "unit": "HFS8-4080-460_B:1",
+   "bbox": [
+    -230.0000000000001,
+    230.00000000000006,
+    160.0,
+    200.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 513009.98792290123,
+   "mass": 1385.1269673918334,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-460_B:1/HFC8-4080-B_460_B_XM": {
+   "name": "HFC8-4080-B_460_B_XM",
+   "unit": "HFS8-4080-460_B:1",
+   "bbox": [
+    -233.0,
+    -222.0,
+    160.0,
+    200.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 6346.159447518564,
+   "mass": 7.234621770171162,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-460_B:1/HFC8-4080-B_460_B_XP": {
+   "name": "HFC8-4080-B_460_B_XP",
+   "unit": "HFS8-4080-460_B:1",
+   "bbox": [
+    222.0,
+    233.0,
+    160.0,
+    200.0,
+    -558.0,
+    -478.0
+   ],
+   "volume": 6346.159447518567,
+   "mass": 7.234621770171166,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1900_B:1/HFS8-4080-1900_B": {
+   "name": "HFS8-4080-1900_B",
+   "unit": "HFS8-4080-1900_B:1",
+   "bbox": [
+    -1425.0010000000002,
+    1425.0010000000002,
+    160.0,
+    200.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 2129069.7157020154,
+   "mass": 5748.4882323954425,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1900_B:1/HFC8-4080-B_1900_B_XM": {
+   "name": "HFC8-4080-B_1900_B_XM",
+   "unit": "HFS8-4080-1900_B:1",
+   "bbox": [
+    -953.0,
+    -942.0,
+    160.0,
+    200.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159490591836,
+   "mass": 7.234621819274693,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-1900_B:1/HFC8-4080-B_1900_B_XP": {
+   "name": "HFC8-4080-B_1900_B_XP",
+   "unit": "HFS8-4080-1900_B:1",
+   "bbox": [
+    942.0,
+    953.0,
+    160.0,
+    200.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159490591836,
+   "mass": 7.234621819274693,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-460_P1:1/HFS8-4080-460_P1": {
+   "name": "HFS8-4080-460_P1",
+   "unit": "HFS8-4080-460_P1:1",
+   "bbox": [
+    -90.0,
+    -49.99999999999999,
+    700.0,
+    780.0,
+    -600.0000000000001,
+    -139.99999999999994
+   ],
+   "volume": 513009.987922904,
+   "mass": 1385.126967391841,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-460_P2:1/HFS8-4080-460_P2": {
+   "name": "HFS8-4080-460_P2",
+   "unit": "HFS8-4080-460_P2:1",
+   "bbox": [
+    49.999999999999986,
+    90.0,
+    700.0,
+    780.0,
+    -600.0000000000001,
+    -139.99999999999994
+   ],
+   "volume": 513009.9879229044,
+   "mass": 1385.1269673918418,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-580_T1:1/HFS8-4080-580_T1": {
+   "name": "HFS8-4080-580_T1",
+   "unit": "HFS8-4080-580_T1:1",
+   "bbox": [
+    -90.0,
+    -49.999999999999986,
+    199.9999999999999,
+    780.0000000000001,
+    -680.0,
+    -600.0
+   ],
+   "volume": 646867.1609236166,
+   "mass": 1746.541334493765,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-580_T1:1/HFC8-4080-B_580_T1_YP": {
+   "name": "HFC8-4080-B_580_T1_YP",
+   "unit": "HFS8-4080-580_T1:1",
+   "bbox": [
+    -90.0,
+    -49.999999999999986,
+    772.0,
+    783.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159490591836,
+   "mass": 7.234621819274693,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-580_T2:1/HFS8-4080-580_T2": {
+   "name": "HFS8-4080-580_T2",
+   "unit": "HFS8-4080-580_T2:1",
+   "bbox": [
+    49.99999999999999,
+    90.0,
+    199.9999999999999,
+    780.0000000000001,
+    -680.0,
+    -600.0
+   ],
+   "volume": 646867.1609236165,
+   "mass": 1746.5413344937647,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "HFS8-4080-580_T2:1/HFC8-4080-B_580_T2_YP": {
+   "name": "HFC8-4080-B_580_T2_YP",
+   "unit": "HFS8-4080-580_T2:1",
+   "bbox": [
+    50.0,
+    90.00000000000001,
+    772.0,
+    783.0,
+    -680.0,
+    -600.0
+   ],
+   "volume": 6346.159490591835,
+   "mass": 7.234621819274691,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "LHFR16_R1_1:1/LHFR16_R1_1": {
+   "name": "LHFR16_R1_1",
+   "unit": "LHFR16_R1_1:1",
+   "bbox": [
+    -24.0,
+    24.0,
+    -484.0,
+    -436.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.07022597432,
+   "mass": 169.2465512738984,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "PSFJ16-150_R1_1:1/PSFJ16-150_R1_1": {
+   "name": "PSFJ16-150_R1_1",
+   "unit": "PSFJ16-150_R1_1:1",
+   "bbox": [
+    -8.000000000000002,
+    8.000000000000004,
+    -468.0,
+    -452.0,
+    -160.5,
+    -10.5
+   ],
+   "volume": 30143.948751442793,
+   "mass": 236.6299976988259,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "LHFR16_R1_2:1/LHFR16_R1_2": {
+   "name": "LHFR16_R1_2",
+   "unit": "LHFR16_R1_2:1",
+   "bbox": [
+    -231.8461,
+    -183.8461,
+    -844.0,
+    -796.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.07059286573,
+   "mass": 169.24655415399596,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "PSFJ16-150_R1_2:1/PSFJ16-150_R1_2": {
+   "name": "PSFJ16-150_R1_2",
+   "unit": "PSFJ16-150_R1_2:1",
+   "bbox": [
+    -215.8461,
+    -199.8461,
+    -828.0,
+    -812.0,
+    -160.5,
+    -10.5
+   ],
+   "volume": 30143.94548446654,
+   "mass": 236.62997205306235,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "LHFR16_R1_3:1/LHFR16_R1_3": {
+   "name": "LHFR16_R1_3",
+   "unit": "LHFR16_R1_3:1",
+   "bbox": [
+    183.8461,
+    231.8461,
+    -844.0,
+    -796.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.070323907486,
+   "mass": 169.24655204267376,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "PSFJ16-150_R1_3:1/PSFJ16-150_R1_3": {
+   "name": "PSFJ16-150_R1_3",
+   "unit": "PSFJ16-150_R1_3:1",
+   "bbox": [
+    199.8461,
+    215.8461,
+    -828.0,
+    -812.0,
+    -160.5,
+    -10.5
+   ],
+   "volume": 30143.945315319987,
+   "mass": 236.6299707252619,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "LHFR16_R2_1:1/LHFR16_R2_1": {
+   "name": "LHFR16_R2_1",
+   "unit": "LHFR16_R2_1:1",
+   "bbox": [
+    -24.0,
+    24.0,
+    -264.0,
+    -216.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.070971613575,
+   "mass": 169.24655712716657,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "PSFJ16-150_R2_1:1/PSFJ16-150_R2_1": {
+   "name": "PSFJ16-150_R2_1",
+   "unit": "PSFJ16-150_R2_1:1",
+   "bbox": [
+    -8.000000000000004,
+    8.000000000000004,
+    -248.0,
+    -232.0,
+    -162.0,
+    -12.0
+   ],
+   "volume": 30143.926401652294,
+   "mass": 236.6298222529705,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "LHFR16_R2_2:1/LHFR16_R2_2": {
+   "name": "LHFR16_R2_2",
+   "unit": "LHFR16_R2_2:1",
+   "bbox": [
+    -422.3717,
+    -374.3717,
+    -954.0,
+    -906.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.07029908273,
+   "mass": 169.24655184779942,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "PSFJ16-150_R2_2:1/PSFJ16-150_R2_2": {
+   "name": "PSFJ16-150_R2_2",
+   "unit": "PSFJ16-150_R2_2:1",
+   "bbox": [
+    -406.3717,
+    -390.3717,
+    -938.0,
+    -922.0,
+    -162.0,
+    -12.0
+   ],
+   "volume": 30143.94534439386,
+   "mass": 236.62997095349178,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "LHFR16_R2_3:1/LHFR16_R2_3": {
+   "name": "LHFR16_R2_3",
+   "unit": "LHFR16_R2_3:1",
+   "bbox": [
+    374.3717,
+    422.3717,
+    -954.0,
+    -906.0,
+    -126.5,
+    -89.5
+   ],
+   "volume": 21560.070687917494,
+   "mass": 169.24655490015232,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "PSFJ16-150_R2_3:1/PSFJ16-150_R2_3": {
+   "name": "PSFJ16-150_R2_3",
+   "unit": "PSFJ16-150_R2_3:1",
+   "bbox": [
+    390.3717,
+    406.3717,
+    -938.0,
+    -922.0,
+    -162.0,
+    -12.0
+   ],
+   "volume": 30143.945513540122,
+   "mass": 236.62997228128995,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "T05:1/P_T05_PLATE": {
+   "name": "P_T05_PLATE",
+   "unit": "T05:1",
+   "bbox": [
+    -80.00000000000006,
+    -74.99999999999994,
+    559.9999999999999,
+    850.0000000000001,
+    29.999999999999982,
+    245.00000000000003
+   ],
+   "volume": 267192.637260553,
+   "mass": 2118.8376134761857,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "T05:1/P_T05_HOLDER": {
+   "name": "P_T05_HOLDER",
+   "unit": "T05:1",
+   "bbox": [
+    -109.99999999825083,
+    -80.00000000020805,
+    721.9999999999633,
+    778.0000000000055,
+    171.9999999999949,
+    227.99999999999494
+   ],
+   "volume": 43228.53411421611,
+   "mass": 55.76480900733878,
+   "material": "PET-CF",
+   "bolt": false,
+   "spec": null
+  },
+  "T05:1/P_T05_HUB": {
+   "name": "P_T05_HUB",
+   "unit": "T05:1",
+   "bbox": [
+    -149.9999999999993,
+    -110.49999999995924,
+    650.0015443786759,
+    849.9984556213238,
+    100.00000243679253,
+    299.999997563208
+   ],
+   "volume": 251580.00239296493,
+   "mass": 324.5382030869248,
+   "material": "PET-CF",
+   "bolt": false,
+   "spec": null
+  },
+  "T05:1/P_T05_CAP": {
+   "name": "P_T05_CAP",
+   "unit": "T05:1",
+   "bbox": [
+    -165.99999999998215,
+    -150.00000000000682,
+    705.000008212682,
+    794.9999917873167,
+    155.0000010965565,
+    244.9999989034435
+   ],
+   "volume": 44099.55251506466,
+   "mass": 56.88842274443341,
+   "material": "PET-CF",
+   "bolt": false,
+   "spec": null
+  },
+  "T05:1/P_T05_GUIDE": {
+   "name": "P_T05_GUIDE",
+   "unit": "T05:1",
+   "bbox": [
+    -152.0,
+    -79.99999999999996,
+    552.9999999992558,
+    612.0000000003563,
+    35.99999999999999,
+    89.50000000000004
+   ],
+   "volume": 92687.44209407574,
+   "mass": 119.56680030135772,
+   "material": "PET-CF",
+   "bolt": false,
+   "spec": null
+  },
+  "T05_PAD:1/P_T05_PAD": {
+   "name": "P_T05_PAD",
+   "unit": "T05_PAD:1",
+   "bbox": [
+    -145.0,
+    -117.0,
+    562.5,
+    582.5,
+    43.0,
+    49.0
+   ],
+   "volume": 2868.600000000001,
+   "mass": 3.700494000000001,
+   "material": "PET-CF",
+   "bolt": false,
+   "spec": null
+  },
+  "T05_TAPE:1/MAT_TAPE_ROLL": {
+   "name": "MAT_TAPE_ROLL",
+   "unit": "T05_TAPE:1",
+   "bbox": [
+    -146.5000000000143,
+    -114.49999999999989,
+    653.0014980473157,
+    846.9985019526843,
+    103.00229089511859,
+    296.9977091048814
+   ],
+   "volume": 800690.6676322795,
+   "mass": 1032.8909612456405,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "T05_TAPE:1/MAT_TAPE_PATH": {
+   "name": "MAT_TAPE_PATH",
+   "unit": "T05_TAPE:1",
+   "bbox": [
+    -146.5,
+    -21.28667792136722,
+    40.05715045829923,
+    653.5992121816338,
+    26.97924773752115,
+    211.80418360465023
+   ],
+   "volume": 21902.344001991984,
+   "mass": 28.254023762569663,
+   "material": "Default",
+   "bolt": false,
+   "spec": null
+  },
+  "T06:1/P_T06_BRACKET": {
+   "name": "P_T06_BRACKET",
+   "unit": "T06:1",
+   "bbox": [
+    39.999999999999964,
+    122.0,
+    -34.00000000000002,
+    19.00000000000002,
+    72.99999999999994,
+    140.0
+   ],
+   "volume": 28385.234251093014,
+   "mass": 225.09490761116757,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "T06:1/STEP대기_CJ2B16-30SZ": {
+   "name": "STEP대기_CJ2B16-30SZ",
+   "unit": "T06:1",
+   "bbox": [
+    98.85014131064882,
+    117.14999675250083,
+    -16.64978390009966,
+    1.649783900099643,
+    68.99999999999996,
+    215.00000000000009
+   ],
+   "volume": 37354.37146073683,
+   "mass": 293.23181596678415,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "T06_KNIFE:1/P_T06_KNIFE": {
+   "name": "P_T06_KNIFE",
+   "unit": "T06_KNIFE:1",
+   "bbox": [
+    23.249999999999897,
+    24.75000000000002,
+    -18.0,
+    3.0,
+    27.5,
+    52.5
+   ],
+   "volume": 681.5869556923718,
+   "mass": 5.350457602185119,
+   "material": "SK85",
+   "bolt": false,
+   "spec": null
+  },
+  "T06_KNIFE:1/P_T06_ARM": {
+   "name": "P_T06_ARM",
+   "unit": "T06_KNIFE:1",
+   "bbox": [
+    24.749999999999975,
+    120.0,
+    -18.00000000000001,
+    3.0000000000000036,
+    36.5,
+    57.00000000000003
+   ],
+   "volume": 6754.190802077726,
+   "mass": 53.56073306047637,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "T06_KNIFE:1/STEP대기_CJ2B16-30SZ_ROD": {
+   "name": "STEP대기_CJ2B16-30SZ_ROD",
+   "unit": "T06_KNIFE:1",
+   "bbox": [
+    103.38007135029483,
+    112.61992864970519,
+    -12.119875877881784,
+    -2.8801241221182265,
+    48.999999999999964,
+    69.00000000000003
+   ],
+   "volume": 582.2984576619035,
+   "mass": 4.571042892645942,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "LHFR16_T06:1/LHFR16_T06": {
+   "name": "LHFR16_T06",
+   "unit": "LHFR16_T06:1",
+   "bbox": [
+    48.00000000000001,
+    96.00000000000001,
+    -31.5,
+    16.499999999999996,
+    77.0,
+    114.0
+   ],
+   "volume": 21560.070978725485,
+   "mass": 169.24655718299505,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "PSFJ16-100_T06:1/PSFJ16-100_T06": {
+   "name": "PSFJ16-100_T06",
+   "unit": "PSFJ16-100_T06:1",
+   "bbox": [
+    64.0,
+    80.0,
+    -15.5,
+    0.5000000000000018,
+    57.0,
+    157.0
+   ],
+   "volume": 20091.863596491734,
+   "mass": 157.7211292324601,
+   "material": "Steel",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/P_T07_SKIRT_C": {
+   "name": "P_T07_SKIRT_C",
+   "unit": "T07:1",
+   "bbox": [
+    -909.5,
+    909.5,
+    -1742.0,
+    -1740.0,
+    -680.0,
+    -60.0
+   ],
+   "volume": 2255510.0,
+   "mass": 17886.1943,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/P_T07_SKIRT_L": {
+   "name": "P_T07_SKIRT_L",
+   "unit": "T07:1",
+   "bbox": [
+    -1505.0,
+    -910.5,
+    -1742.0,
+    -1740.0,
+    -680.0,
+    -60.0
+   ],
+   "volume": 737180.0,
+   "mass": 5845.837399999999,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/P_T07_SKIRT_R": {
+   "name": "P_T07_SKIRT_R",
+   "unit": "T07:1",
+   "bbox": [
+    910.5,
+    1505.0,
+    -1742.0,
+    -1740.0,
+    -680.0,
+    -60.0
+   ],
+   "volume": 737180.0,
+   "mass": 5845.837399999999,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/HFS8-4080-460_GL": {
+   "name": "HFS8-4080-460_GL",
+   "unit": "T07:1",
+   "bbox": [
+    -950.0,
+    -870.0,
+    -1740.0,
+    -1700.0,
+    -600.0000000000001,
+    -139.99999999999994
+   ],
+   "volume": 513009.9879229038,
+   "mass": 1385.1269673918405,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/HFS8-4080-460_GR": {
+   "name": "HFS8-4080-460_GR",
+   "unit": "T07:1",
+   "bbox": [
+    870.0,
+    950.0,
+    -1740.0,
+    -1700.0,
+    -600.0000000000001,
+    -139.99999999999994
+   ],
+   "volume": 513009.98792290385,
+   "mass": 1385.1269673918405,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/STEP대기_HFS8-4080-2850_G1": {
+   "name": "STEP대기_HFS8-4080-2850_G1",
+   "unit": "T07:1",
+   "bbox": [
+    -1425.0,
+    1425.0,
+    -1740.0,
+    -1700.0,
+    -680.0,
+    -599.9999999999999
+   ],
+   "volume": 9119999.999999998,
+   "mass": 24623.999999999996,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/STEP대기_HFS8-4080-2850_G4": {
+   "name": "STEP대기_HFS8-4080-2850_G4",
+   "unit": "T07:1",
+   "bbox": [
+    -1425.0,
+    1425.0,
+    -1740.0,
+    -1700.0,
+    -140.0,
+    -59.99999999999997
+   ],
+   "volume": 9119999.999999998,
+   "mass": 24623.999999999996,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/STEP대기_HFS8-4080-680_SL": {
+   "name": "STEP대기_HFS8-4080-680_SL",
+   "unit": "T07:1",
+   "bbox": [
+    -930.0,
+    -890.0,
+    -1700.0,
+    -1020.0,
+    -680.0,
+    -599.9999999999999
+   ],
+   "volume": 2176000.0,
+   "mass": 5875.2,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/STEP대기_HFS8-4080-680_SR": {
+   "name": "STEP대기_HFS8-4080-680_SR",
+   "unit": "T07:1",
+   "bbox": [
+    890.0,
+    930.0,
+    -1700.0,
+    -1020.0,
+    -680.0,
+    -599.9999999999999
+   ],
+   "volume": 2176000.0,
+   "mass": 5875.2,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/STEP대기_HFS8-4080-1580_PL": {
+   "name": "STEP대기_HFS8-4080-1580_PL",
+   "unit": "T07:1",
+   "bbox": [
+    -1505.0,
+    -1425.0,
+    -1740.0,
+    -1700.0,
+    -672.0,
+    892.0
+   ],
+   "volume": 5004800.0,
+   "mass": 13512.96,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/STEP대기_HFS8-4080-1580_PR": {
+   "name": "STEP대기_HFS8-4080-1580_PR",
+   "unit": "T07:1",
+   "bbox": [
+    1425.0,
+    1505.0,
+    -1740.0,
+    -1700.0,
+    -672.0,
+    892.0
+   ],
+   "volume": 5004800.0,
+   "mass": 13512.96,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/HFC8-4080-B_1580_PR_ZP": {
+   "name": "HFC8-4080-B_1580_PR_ZP",
+   "unit": "T07:1",
+   "bbox": [
+    1425.0,
+    1505.0,
+    -1740.0,
+    -1700.0,
+    892.0,
+    903.0
+   ],
+   "volume": 6346.159473166771,
+   "mass": 7.234621799410118,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/HFC8-4080-B_1580_PR_ZM": {
+   "name": "HFC8-4080-B_1580_PR_ZM",
+   "unit": "T07:1",
+   "bbox": [
+    1425.0,
+    1505.0,
+    -1740.0,
+    -1700.0,
+    -683.0,
+    -672.0
+   ],
+   "volume": 6346.159473166769,
+   "mass": 7.2346217994101165,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/HFC8-4080-B_1580_PL_ZP": {
+   "name": "HFC8-4080-B_1580_PL_ZP",
+   "unit": "T07:1",
+   "bbox": [
+    -1505.0,
+    -1425.0,
+    -1740.0,
+    -1700.0,
+    892.0,
+    903.0
+   ],
+   "volume": 6346.159468237261,
+   "mass": 7.234621793790477,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  },
+  "T07:1/HFC8-4080-B_1580_PL_ZM": {
+   "name": "HFC8-4080-B_1580_PL_ZM",
+   "unit": "T07:1",
+   "bbox": [
+    -1505.0,
+    -1425.0,
+    -1740.0,
+    -1700.0,
+    -683.0,
+    -672.0
+   ],
+   "volume": 6346.159468237259,
+   "mass": 7.234621793790475,
+   "material": "Nylon",
+   "bolt": false,
+   "spec": null
+  }
+ },
+ "passed": {
+  "regression:v0.6.1:8studies-all-steps": {
+   "date": "2026-10-31",
+   "doc": "3D_Modeling/FSAP_v0.6.1.sc"
+  },
+  "regression:v0.6.1:joint-full-stroke": {
+   "date": "2026-10-31",
+   "doc": "3D_Modeling/FSAP_v0.6.1.sc"
+  },
+  "regression:v0.6.1:static-M08": {
+   "date": "2026-10-31",
+   "doc": "3D_Modeling/FSAP_v0.6.1.sc"
+  }
+ }
+}

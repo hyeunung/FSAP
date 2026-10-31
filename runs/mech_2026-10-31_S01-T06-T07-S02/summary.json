@@ -1,0 +1,1032 @@
+{
+ "run": "mech_2026-10-31_S01-T06-T07-S02",
+ "status": "완료",
+ "engine": "v3.2.1",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-10-31",
+ "journal": "wf_25cc53fa-175",
+ "totals": {
+  "agents": 44,
+  "agent_sec": 50785,
+  "input": 17835363,
+  "cache_read": 230386173,
+  "output": 2242984,
+  "tools": 1659,
+  "wall_sec": 44145
+ },
+ "phases": {
+  "준비": {
+   "sec": 111,
+   "agents": 1,
+   "output": 11495
+  },
+  "S01 · 측정": {
+   "sec": 952,
+   "agents": 1,
+   "output": 55381
+  },
+  "S01 · 구상": {
+   "sec": 2108,
+   "agents": 3,
+   "output": 199367
+  },
+  "S01 · 선정": {
+   "sec": 1466,
+   "agents": 1,
+   "output": 120988
+  },
+  "S01 · 모델링": {
+   "sec": 9674,
+   "agents": 2,
+   "output": 166237
+  },
+  "S01 · 문서": {
+   "sec": 141,
+   "agents": 1,
+   "output": 9991
+  },
+  "T06 · 측정": {
+   "sec": 1139,
+   "agents": 1,
+   "output": 56447
+  },
+  "T06 · 구상": {
+   "sec": 3778,
+   "agents": 3,
+   "output": 337540
+  },
+  "T06 · 선정": {
+   "sec": 1958,
+   "agents": 1,
+   "output": 156847
+  },
+  "T06 · 구매품": {
+   "sec": 277,
+   "agents": 1,
+   "output": 13266
+  },
+  "T06 · 모델링": {
+   "sec": 2303,
+   "agents": 1,
+   "output": 116640
+  },
+  "T06 · 검증": {
+   "sec": 4597,
+   "agents": 3,
+   "output": 123230
+  },
+  "T06 · 문서": {
+   "sec": 173,
+   "agents": 1,
+   "output": 15206
+  },
+  "T07 · 측정": {
+   "sec": 5171,
+   "agents": 1,
+   "output": 91017
+  },
+  "T07 · 구상": {
+   "sec": 2286,
+   "agents": 3,
+   "output": 207306
+  },
+  "T07 · 선정": {
+   "sec": 966,
+   "agents": 1,
+   "output": 75454
+  },
+  "T07 · 구매품": {
+   "sec": 72,
+   "agents": 1,
+   "output": 3947
+  },
+  "T07 · 모델링": {
+   "sec": 1075,
+   "agents": 1,
+   "output": 71349
+  },
+  "T07 · 검증": {
+   "sec": 1598,
+   "agents": 3,
+   "output": 82364
+  },
+  "T07 · 문서": {
+   "sec": 74,
+   "agents": 1,
+   "output": 6479
+  },
+  "S02 · 측정": {
+   "sec": 456,
+   "agents": 1,
+   "output": 27115
+  },
+  "S02 · 구상": {
+   "sec": 952,
+   "agents": 3,
+   "output": 88850
+  },
+  "S02 · 선정": {
+   "sec": 810,
+   "agents": 1,
+   "output": 55046
+  },
+  "S02 · 구매품": {
+   "sec": 81,
+   "agents": 1,
+   "output": 4779
+  },
+  "S02 · 모델링": {
+   "sec": 593,
+   "agents": 2,
+   "output": 37056
+  },
+  "S02 · 문서": {
+   "sec": 42,
+   "agents": 1,
+   "output": 3125
+  },
+  "전체 회귀": {
+   "sec": 7700,
+   "agents": 1,
+   "output": 81982
+  },
+  "최종 보고": {
+   "sec": 70,
+   "agents": 1,
+   "output": 5651
+  },
+  "회고": {
+   "sec": 73,
+   "agents": 1,
+   "output": 6171
+  },
+  "기록": {
+   "sec": 89,
+   "agents": 1,
+   "output": 12658
+  }
+ },
+ "agents": [
+  {
+   "label": "준비 점검부",
+   "phase": "준비",
+   "status": "done",
+   "sec": 111,
+   "tokens": {
+    "input": 96730,
+    "cache_read": 678323,
+    "output": 11495
+   },
+   "tools": 10,
+   "turns": 10
+  },
+  {
+   "label": "S01 측정부",
+   "phase": "S01 · 측정",
+   "status": "done",
+   "sec": 952,
+   "tokens": {
+    "input": 422535,
+    "cache_read": 5620092,
+    "output": 55381
+   },
+   "tools": 40,
+   "turns": 36
+  },
+  {
+   "label": "S01 기구설계부 1",
+   "phase": "S01 · 구상",
+   "status": "done",
+   "sec": 601,
+   "tokens": {
+    "input": 166510,
+    "cache_read": 1601382,
+    "output": 57406
+   },
+   "tools": 19,
+   "turns": 16
+  },
+  {
+   "label": "S01 기구설계부 2",
+   "phase": "S01 · 구상",
+   "status": "done",
+   "sec": 790,
+   "tokens": {
+    "input": 154983,
+    "cache_read": 2786060,
+    "output": 75761
+   },
+   "tools": 30,
+   "turns": 24
+  },
+  {
+   "label": "S01 기구설계부 3",
+   "phase": "S01 · 구상",
+   "status": "done",
+   "sec": 717,
+   "tokens": {
+    "input": 117969,
+    "cache_read": 2606682,
+    "output": 66200
+   },
+   "tools": 24,
+   "turns": 24
+  },
+  {
+   "label": "S01 PM·감사 선정",
+   "phase": "S01 · 선정",
+   "status": "done",
+   "sec": 1466,
+   "tokens": {
+    "input": 313998,
+    "cache_read": 9888078,
+    "output": 120988
+   },
+   "tools": 60,
+   "turns": 48
+  },
+  {
+   "label": "S01 모델링부",
+   "phase": "S01 · 모델링",
+   "status": "done",
+   "sec": 6036,
+   "tokens": {
+    "input": 3366326,
+    "cache_read": 38774169,
+    "output": 144965
+   },
+   "tools": 163,
+   "turns": 136
+  },
+  {
+   "label": "S01 모델링부 수정1",
+   "phase": "S01 · 모델링",
+   "status": "done",
+   "sec": 3638,
+   "tokens": {
+    "input": 631264,
+    "cache_read": 4209208,
+    "output": 21272
+   },
+   "tools": 49,
+   "turns": 46
+  },
+  {
+   "label": "S01 문서·커밋",
+   "phase": "S01 · 문서",
+   "status": "done",
+   "sec": 141,
+   "tokens": {
+    "input": 96492,
+    "cache_read": 1067656,
+    "output": 9991
+   },
+   "tools": 14,
+   "turns": 14
+  },
+  {
+   "label": "T06 측정부",
+   "phase": "T06 · 측정",
+   "status": "done",
+   "sec": 1139,
+   "tokens": {
+    "input": 462156,
+    "cache_read": 5279623,
+    "output": 56447
+   },
+   "tools": 47,
+   "turns": 35
+  },
+  {
+   "label": "T06 기구설계부 1",
+   "phase": "T06 · 구상",
+   "status": "done",
+   "sec": 1149,
+   "tokens": {
+    "input": 404761,
+    "cache_read": 1337061,
+    "output": 103988
+   },
+   "tools": 18,
+   "turns": 13
+  },
+  {
+   "label": "T06 기구설계부 2",
+   "phase": "T06 · 구상",
+   "status": "done",
+   "sec": 1168,
+   "tokens": {
+    "input": 277508,
+    "cache_read": 2082752,
+    "output": 103180
+   },
+   "tools": 23,
+   "turns": 17
+  },
+  {
+   "label": "T06 기구설계부 3",
+   "phase": "T06 · 구상",
+   "status": "done",
+   "sec": 1461,
+   "tokens": {
+    "input": 244103,
+    "cache_read": 2779085,
+    "output": 130372
+   },
+   "tools": 23,
+   "turns": 20
+  },
+  {
+   "label": "T06 PM·감사 선정",
+   "phase": "T06 · 선정",
+   "status": "done",
+   "sec": 1958,
+   "tokens": {
+    "input": 371130,
+    "cache_read": 12369647,
+    "output": 156847
+   },
+   "tools": 60,
+   "turns": 54
+  },
+  {
+   "label": "T06 구매부 STEP",
+   "phase": "T06 · 구매품",
+   "status": "done",
+   "sec": 277,
+   "tokens": {
+    "input": 134641,
+    "cache_read": 3558462,
+    "output": 13266
+   },
+   "tools": 57,
+   "turns": 35
+  },
+  {
+   "label": "T06 모델링부",
+   "phase": "T06 · 모델링",
+   "status": "done",
+   "sec": 2303,
+   "tokens": {
+    "input": 365140,
+    "cache_read": 23312105,
+    "output": 116640
+   },
+   "tools": 100,
+   "turns": 96
+  },
+  {
+   "label": "T06 검도·체결",
+   "phase": "T06 · 검증",
+   "status": "done",
+   "sec": 3783,
+   "tokens": {
+    "input": 1243898,
+    "cache_read": 9802723,
+    "output": 52886
+   },
+   "tools": 68,
+   "turns": 65
+  },
+  {
+   "label": "T06 해석",
+   "phase": "T06 · 검증",
+   "status": "done",
+   "sec": 691,
+   "tokens": {
+    "input": 200625,
+    "cache_read": 2697482,
+    "output": 58498
+   },
+   "tools": 32,
+   "turns": 19
+  },
+  {
+   "label": "T06 예외 판정",
+   "phase": "T06 · 검증",
+   "status": "done",
+   "sec": 123,
+   "tokens": {
+    "input": 98044,
+    "cache_read": 645329,
+    "output": 11846
+   },
+   "tools": 12,
+   "turns": 9
+  },
+  {
+   "label": "T06 문서·커밋",
+   "phase": "T06 · 문서",
+   "status": "done",
+   "sec": 173,
+   "tokens": {
+    "input": 117814,
+    "cache_read": 1422825,
+    "output": 15206
+   },
+   "tools": 16,
+   "turns": 16
+  },
+  {
+   "label": "T07 측정부",
+   "phase": "T07 · 측정",
+   "status": "done",
+   "sec": 5171,
+   "tokens": {
+    "input": 2058938,
+    "cache_read": 16547418,
+    "output": 91017
+   },
+   "tools": 111,
+   "turns": 94
+  },
+  {
+   "label": "T07 기구설계부 1",
+   "phase": "T07 · 구상",
+   "status": "done",
+   "sec": 878,
+   "tokens": {
+    "input": 209201,
+    "cache_read": 2805380,
+    "output": 79326
+   },
+   "tools": 29,
+   "turns": 22
+  },
+  {
+   "label": "T07 기구설계부 2",
+   "phase": "T07 · 구상",
+   "status": "done",
+   "sec": 467,
+   "tokens": {
+    "input": 114207,
+    "cache_read": 1086770,
+    "output": 42122
+   },
+   "tools": 14,
+   "turns": 11
+  },
+  {
+   "label": "T07 기구설계부 3",
+   "phase": "T07 · 구상",
+   "status": "done",
+   "sec": 941,
+   "tokens": {
+    "input": 253045,
+    "cache_read": 2568764,
+    "output": 85858
+   },
+   "tools": 25,
+   "turns": 22
+  },
+  {
+   "label": "T07 PM·감사 선정",
+   "phase": "T07 · 선정",
+   "status": "done",
+   "sec": 966,
+   "tokens": {
+    "input": 242400,
+    "cache_read": 5930313,
+    "output": 75454
+   },
+   "tools": 37,
+   "turns": 37
+  },
+  {
+   "label": "T07 구매부 STEP",
+   "phase": "T07 · 구매품",
+   "status": "done",
+   "sec": 72,
+   "tokens": {
+    "input": 86594,
+    "cache_read": 927377,
+    "output": 3947
+   },
+   "tools": 20,
+   "turns": 13
+  },
+  {
+   "label": "T07 모델링부",
+   "phase": "T07 · 모델링",
+   "status": "done",
+   "sec": 1075,
+   "tokens": {
+    "input": 277973,
+    "cache_read": 15852938,
+    "output": 71349
+   },
+   "tools": 95,
+   "turns": 86
+  },
+  {
+   "label": "T07 검도·체결",
+   "phase": "T07 · 검증",
+   "status": "done",
+   "sec": 1221,
+   "tokens": {
+    "input": 238223,
+    "cache_read": 9692516,
+    "output": 47055
+   },
+   "tools": 64,
+   "turns": 57
+  },
+  {
+   "label": "T07 해석",
+   "phase": "T07 · 검증",
+   "status": "done",
+   "sec": 258,
+   "tokens": {
+    "input": 91033,
+    "cache_read": 1774375,
+    "output": 24585
+   },
+   "tools": 19,
+   "turns": 18
+  },
+  {
+   "label": "T07 예외 판정",
+   "phase": "T07 · 검증",
+   "status": "done",
+   "sec": 119,
+   "tokens": {
+    "input": 117829,
+    "cache_read": 928403,
+    "output": 10724
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "T07 문서·커밋",
+   "phase": "T07 · 문서",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 94062,
+    "cache_read": 646652,
+    "output": 6479
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "S02 측정부",
+   "phase": "S02 · 측정",
+   "status": "done",
+   "sec": 456,
+   "tokens": {
+    "input": 134521,
+    "cache_read": 3430937,
+    "output": 27115
+   },
+   "tools": 41,
+   "turns": 37
+  },
+  {
+   "label": "S02 기구설계부 1",
+   "phase": "S02 · 구상",
+   "status": "done",
+   "sec": 197,
+   "tokens": {
+    "input": 104028,
+    "cache_read": 569277,
+    "output": 19632
+   },
+   "tools": 8,
+   "turns": 8
+  },
+  {
+   "label": "S02 기구설계부 2",
+   "phase": "S02 · 구상",
+   "status": "done",
+   "sec": 136,
+   "tokens": {
+    "input": 49069,
+    "cache_read": 492753,
+    "output": 13468
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "S02 기구설계부 3",
+   "phase": "S02 · 구상",
+   "status": "done",
+   "sec": 619,
+   "tokens": {
+    "input": 115149,
+    "cache_read": 2162413,
+    "output": 55750
+   },
+   "tools": 23,
+   "turns": 20
+  },
+  {
+   "label": "S02 PM·감사 선정",
+   "phase": "S02 · 선정",
+   "status": "done",
+   "sec": 810,
+   "tokens": {
+    "input": 212003,
+    "cache_read": 5981440,
+    "output": 55046
+   },
+   "tools": 44,
+   "turns": 38
+  },
+  {
+   "label": "S02 구매부 STEP",
+   "phase": "S02 · 구매품",
+   "status": "done",
+   "sec": 81,
+   "tokens": {
+    "input": 90484,
+    "cache_read": 881252,
+    "output": 4779
+   },
+   "tools": 21,
+   "turns": 12
+  },
+  {
+   "label": "S02 모델링부",
+   "phase": "S02 · 모델링",
+   "status": "done",
+   "sec": 521,
+   "tokens": {
+    "input": 152182,
+    "cache_read": 5120658,
+    "output": 31696
+   },
+   "tools": 51,
+   "turns": 48
+  },
+  {
+   "label": "S02 모델링부 수정1",
+   "phase": "S02 · 모델링",
+   "status": "done",
+   "sec": 72,
+   "tokens": {
+    "input": 46295,
+    "cache_read": 754896,
+    "output": 5360
+   },
+   "tools": 14,
+   "turns": 10
+  },
+  {
+   "label": "S02 문서·커밋",
+   "phase": "S02 · 문서",
+   "status": "done",
+   "sec": 42,
+   "tokens": {
+    "input": 73435,
+    "cache_read": 413520,
+    "output": 3125
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "전체 회귀",
+   "status": "done",
+   "sec": 7700,
+   "tokens": {
+    "input": 3564146,
+    "cache_read": 18140878,
+    "output": 81982
+   },
+   "tools": 118,
+   "turns": 106
+  },
+  {
+   "label": "최종 보고",
+   "phase": "최종 보고",
+   "status": "done",
+   "sec": 70,
+   "tokens": {
+    "input": 89366,
+    "cache_read": 464034,
+    "output": 5651
+   },
+   "tools": 13,
+   "turns": 7
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "회고",
+   "status": "done",
+   "sec": 73,
+   "tokens": {
+    "input": 94883,
+    "cache_read": 587454,
+    "output": 6171
+   },
+   "tools": 8,
+   "turns": 8
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "기록",
+   "status": "running",
+   "sec": 89,
+   "tokens": {
+    "input": 39670,
+    "cache_read": 107011,
+    "output": 12658
+   },
+   "tools": 5,
+   "turns": 2
+  }
+ ],
+ "fix_agents": [
+  "S01 모델링부 수정1",
+  "S02 모델링부 수정1"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "S01",
+    "status": "모델 반영·문제 남음",
+    "chosen": "S01-C2",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v0.4.2.sc",
+    "empty_save": false,
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "동작 연구 4개(사이클_큰매트 540, 사이클_작은매트 255, 사이클_홈매트 996, 상태_홈매트_홈 461단계)의 전 단계 motion.interference는 끝내지 못했다. 이 4개는 유닛 사이 쌍만 표본 61개로 봤고 새 겹침 0이다(truncated false). 바뀐 부품 대 전체로 돌리면 단계당 약 20 s, 유닛 사이 쌍만으로도 단계·명령당 약 1.2 s라 996단계 연구 하나에 약 3시간이 든다. 나머지 4개(대기, 상태_홈매트_오목모서리, 상태_큰매트_볼록모서리, 되감기)는 전 단계에서 새 겹침 0이다.",
+      "where": "모델링 미완",
+      "evidence": "모델링부 unfinished",
+      "fix": "이번 회차에 끝낸다"
+     }
+    ],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": []
+   },
+   {
+    "id": "T06",
+    "status": "완료",
+    "chosen": "T06-C1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v0.5.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "STEP대기_CJ2B16-30SZ_ROD 임시 형상에 튜브 안 길이가 없다. 칼을 −30으로 내리면 실린더 밑과 로드 사이가 30 비어 보인다",
+      "where": "T06_KNIFE / STEP대기_CJ2B16-30SZ_ROD, X 108 · Y −7.5 · Z 39~69(칼 −30)",
+      "evidence": "칼 −30에서 로드 Z 19~39, 실린더 몸통 Z 69부터. 빈 구간 Ø9.24×30 프로브 ↔ 전 바디 겹침 0(d2_out.json)이라 간섭을 숨기지는 않는다",
+      "fix": "로드 바디를 Z 49~99(노출 20 + 행정 30)로 늘려 튜브 안에 들어가게 그린다. CJ2B16-30SZ 실물 STEP(D-37)을 받으면 바꿔 끼운다"
+     },
+     {
+      "kind": "디테일",
+      "what": "새 체결 15자리가 구멍만 있다. M-01 '빈 구멍 0'을 아직 못 맞춘다",
+      "where": "P_T06_KNIFE–P_T06_ARM M5×2·너트, P_T06_BRACKET–헤드 M5×2, LHFR16_T06 M4×4·너트×4, 로드 너트, 축–팔 M5",
+      "evidence": "새로 넣은 볼트 0개, 빈 구멍 15(선정 지시 T06-S05 '볼트·너트는 구멍만')",
+      "fix": "디테일링에서 CB5·CB4-16·M4/M5 육각 너트를 D-37 형번으로 넣는다. 삽입 경로, 렌치 접근 max(30, L+5), 물림 1.5d를 판정한다"
+     },
+     {
+      "kind": "디테일",
+      "what": "칼 팔 t3의 칼 걸림(오조작) SF가 기준 아래다",
+      "where": "P_T06_ARM(SUS304 t3)",
+      "evidence": "모델링부 손계산 SF 1.67 < 2(M-09), T06-SD1. FEA는 환경이 없어 못 했다(D-16)",
+      "fix": "판을 t4로 바꾸면 SF 3.0(선정 값). 해석 환경이 생기면 FEA로 확인한다"
+     },
+     {
+      "kind": "디테일",
+      "what": "칼과 침판 홈 사이가 맞날 틈 0.1이다. 칼 안내 정밀에 달려 있다",
+      "where": "P_T06_KNIFE ↔ P_T02_PLATE 홈(칼 −30)",
+      "evidence": "joint.sweep 0→−30에서 최소 틈 0.1, 겹침 0",
+      "fix": "시제품에서 맞날 틈과 LHFR16–PSFJ16 끼움 흔들림을 확인해 요구서 7에 기록한다"
+     },
+     {
+      "kind": "디테일",
+      "what": "칼이 막혔을 때(오조작) 칼 팔의 SF가 기준에 못 미친다",
+      "where": "P_T06_ARM 가로 다리(축 X 72 → 칼 X 24 외팔 48, SUS304 t3×21)",
+      "evidence": "실린더 0.5 MPa×Ø16 − 스프링 20(D-36) = 80.5 N, M 3,865 N·mm, σ 122.7 MPa, SF 1.67 < 2(M-09), handcalc.beam 처짐 0.326 mm (fea/results/mech_T06_handcalc.json ARM_mis_jam)",
+      "fix": "판금 t3 → t4(SF 2.97). 굽힘 R와 구멍–굽힘 거리 2t(8)를 다시 확인한다"
+     },
+     {
+      "kind": "디테일",
+      "what": "오조작 T: 칼이 내려간 채 매트가 움직이면 테이프가 칼을 끌어 팔 가로 다리가 비틀리고 굽는다. SF가 기준에 못 미친다",
+      "where": "P_T06_ARM 가로 다리(X 27.75~72), 절단 자세 하중 Z −0.5",
+      "evidence": "417.5 N(D-05·D-04)을 줄 방향 (0.890, −0.456)으로 준다. Y 틈 0.5를 닫으려면 213 N이 필요해 팔이 Fy 190 N을 다 받는다. X는 틈 0.4가 닫힐 때까지 91 N을 받고, 나머지 280 N은 침판 홈 벽이 받는다. τ 86.4 + σ 75.2 → σeq 167.4 MPa, SF 1.22 < 2(동작 경계 1.2와 +2 %)",
+      "fix": "팔 t5(what-if SF 1.97, t4는 1.68)로 한다. 함께 칼 올라감 확인 센서 자리(U-09)를 남기고, PLC 순서 제약 '칼 올라감 확인 전 매트 X·Y·회전 금지'를 설계검토서에 적는다. 해석 환경이 생기면(D-16) 팔+칼+축 고체 FEA를 가장 먼저 한다"
+     },
+     {
+      "kind": "디테일",
+      "what": "맞날 틈 0.1 정밀 체인: 절단 하중이 팔 끝을 기울여 칼이 홈 −X 벽 쪽으로 간다",
+      "where": "P_T06_KNIFE −X 면 ↔ P_T02_PLATE 홈 −X 벽 X 23.15",
+      "evidence": "운전 30 N에서 기울기 −X 0.0985, 옆힘 +X 0.0395 → 틈 0.041이고, 브래킷 기울기 ±0.041은 따로다. 칼 막힘 80.5 N에서는 −0.058로 벽에 닿아 문지른다",
+      "fix": "팔을 t4·t5로 하면 운전 틈이 0.078·0.091이 된다. 또는 축을 칼 쪽으로 옮겨 외팔 48을 줄인다(구동 배치 변경이라 구동 과제 후보). 절단 품질은 요구서 7 시제품 항목이다"
+     },
+     {
+      "kind": "디테일",
+      "what": "LHFR16 부시의 허용 하중을 확인하지 못했다(M-06)",
+      "where": "LHFR16_T06(X 72)",
+      "evidence": "반경 하중(우력/길이 37)은 운전 68 N, 칼 막힘 183 N이다. 카탈로그 허용치는 미확인(D-37 (6))",
+      "fix": "카탈로그 값이 오면 대조한다. 넘으면 부시 길이가 긴 형번(더블)으로 바꾼다"
+     }
+    ],
+    "exception_requests": [
+     {
+      "rule": "E-03 · M-08(정상 겹침)",
+      "where": "MAT_*_SEAM ↔ 같은 매트 MAT_*_BOUND(큰·작은·홈 매트 3쌍)",
+      "why": "지시 단면에서 SEAM 아래 날개(Y −10~2, Z −1~0)가 BOUND 아래 날개(Z −1~0)와 겹친다. 11 × 68 × 1 = 748.0 mm³이고 ④-1a부터 끝까지 일정하다. 기계 부품과의 겹침이 아니라 작업 대상 안의 테이프 겹이다.",
+      "proposal": "T06-S04 '겹 구간은 가장자리 1 들림으로 그린다' 범위의 정상 겹침(작업 대상 유연 거동, 요구서 7)으로 판정하고 검도 필터에 넣는다(motion_states.json check_rule에 적어 둠). 아니면 SEAM 아래 날개를 지우는 단면으로 지시한다."
+     },
+     {
+      "rule": "E-03·M-08(정상 겹침)",
+      "where": "MAT_*_SEAM ↔ 같은 매트 MAT_*_BOUND(사이클 3개, ④-1a부터 끝까지)",
+      "why": "748.0 mm³로 일정하다(아래 날개 Z −1~0, 11×68×1). 기계 부품이 아니라 작업 대상 안 테이프 두 겹이다. 모델링부가 올린 요청이 아직 PM 판정 대기다",
+      "proposal": "작업 대상 안의 겹(요구서 7 유연 거동)으로 정상 판정하고 검도 필터에 넣는다. 아니면 SEAM 아래 날개를 BOUND 밑으로 1 내리는 단면을 지시한다"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "E-03 · M-08(정상 겹침)",
+      "where": "MAT_*_SEAM ↔ 같은 매트 MAT_*_BOUND(큰·작은·홈 매트 3쌍), 사이클 3개 ④-1a부터 끝까지 748.0 mm³",
+      "decision": "기각",
+      "reason": "M-08 원문은 정상 겹침을 셋으로 정한다: \"볼트 나사부의 탭 물림(채움률 < 0.5), 구매처 CAD끼리의 미세 겹침, 설계상 압입\". 작업 대상 안 테이프 겹은 이 목록에 없어서, 넣으면 원문보다 넓게 해석하게 된다(WF-019, E-14). T02-X01(바늘 관통)은 봉제 기능 그 자체라 피할 수 없어서 인정했고 '목록을 넓히지 않는다'고 적었다. 이 겹침은 모델 안에서 고칠 수 있다. E-12는 \"수렴·완료 판정은 모델 안에서 고칠 수 있는 결함으로만 한다\"라고 하므로 요구서 7(유연 거동)로 넘길 대상이 아니다. SEAM 아래 날개(Y −10~1, Z −1~0, 11×68×1)는 같은 매트 BOUND 아래 날개 안에 통째로 들어 있다. 그래서 지워도 작업 대상이 차지하는 공간의 합은 같고, 기계 ↔ 작업 대상 판정(침판 0.05 등)은 바뀌지 않는다. 테이프 두 겹(두께 2)이 실제로 그 자리에 어떻게 앉는지는 요구서 7 '봉제 품질: … 이음매 마감' 시제품 항목으로 기록만 한다. 결정로그 T06-X01.",
+      "instruction": "SEAM 아래 날개를 지운 단면으로 다시 그린다. (1) FSAP_v0.5.0.sc를 연다. 세 매트 MAT_*_SEAM의 YZ 단면을 (Y, Z) = (1, −1) (2, −1) (2, 13) (−10, 13) (−10, 12) (1, 12)로 바꾸고 X −30~+38로 68 민다(한 스케치 한 바디). 바디마다 1,700 mm³(2,448에서 줄어듦)다. Y 이동(−100 / −600)과 유효 단계 ④-1a는 그대로 두고, tools/gen_t06_mech.py도 같은 단면으로 고친다. (2) 저장 전에 대기 연구 motion.play step 0으로 둔다. 3D_Modeling/FSAP_v0.5.1.sc로 새 이름 저장하고(E-05 작은 형상 변경, 수 +1) tools/config.json doc를 바꾼다. (3) tools/motion_states.json check_rule의 'SEAM <-> 같은 매트 BOUND 748 mm³ … PM 판정 대기' 문장을 'SEAM ↔ 같은 매트 BOUND 겹침 0(T06-X01)'로 바꾼다. 검도 필터에는 넣지 않는다. (4) 검사 범위(E-17): 바뀐 것은 SEAM 3바디뿐이고 부피가 줄기만 했다. 사이클 3개 ④-1a부터 끝까지 바디 단위 inspect.clearance로 다음을 확인한다: SEAM ↔ 같은 매트 BOUND·TAIL 겹침 0, SEAM ↔ 기계 바디 새 겹침 0, 바늘 ↔ SEAM ≤ 15.83 mm³(T06-S04), 칼 ↔ SEAM 바깥면 1.0 유지. 다른 연구와 기계끼리 쌍은 다시 돌리지 않는다. (5) 커밋·푸시는 요구서 8-5대로 v0.5.1 커밋에 같이 넣는다. 보고서에 요구서 7 '이음매 마감'의 시제품 확인 항목(겹 구간 테이프 두 겹, 매트 가장자리 들뜸)을 적는다."
+     },
+     {
+      "rule": "E-03·M-08(정상 겹침)",
+      "where": "MAT_*_SEAM ↔ 같은 매트 MAT_*_BOUND(사이클 3개, ④-1a부터 끝까지), 검증부 요청",
+      "decision": "기각",
+      "reason": "모델링부 요청과 같은 겹침이라 위 판정(T06-X01)을 그대로 적용한다. 정상 판정은 M-08 목록(탭 물림·구매처 CAD 미세 겹침·설계상 압입)에 없어 원문보다 넓다. 검증부 대안 'SEAM 아래 날개를 BOUND 밑으로 1 내리기'도 받지 않는다. 겹 층 아래 날개와 침판 사이 틈이 0.05라(선정 측정) 1 내리면 침판과 약 0.95 겹친다. 이는 기계 ↔ 작업 대상 새 겹침이고, E-03 \"작업 대상·떨어진 조각·이웃 유닛과 겹치지 않고\"와 rules/README '판정이 갈릴 때' 1 \"어떤 다른 이유로도 새 겹침·행정 부족을 만들지 않는다\"에 어긋난다. 결정로그 T06-X02.",
+      "instruction": "아래 날개를 내리지 않는다. 첫 번째 판정의 instruction(T06-X01·T06-X03)대로 SEAM 아래 날개를 지운 L 단면으로 v0.5.1을 만든다. 검증부는 v0.5.1에서 사이클 3개 ④-1a부터 끝까지 바디 단위로 SEAM ↔ BOUND 겹침이 0인지 확인한다. 이 겹침을 pass 판정 필터에 넣지 않는다."
+     }
+    ],
+    "step_placeholders": [
+     "CJ2B16-30SZ — 미스미 로그인 풀림(login: false). 화면 머리에 '로그인 / 회원가입'이 떠 있고, CAD 데이터 다운로드를 누르면 로그인 창이 떠서 창을 닫았다. SMC 파트커뮤니티에 직접 들어가도 로그인을 요구해서 받지 않았다. 사양 확인: SMC CJ2 단동(압출), Ø16, 행정 30, 기본형, 러버 쿠션, 18,770원(VAT 별도), 출하 25일째",
+     "CB4-16 — 로그인 풀림으로 STEP을 못 받음. 261원, 재고품 1일째",
+     "M4 육각 너트 — 미스미 형번 LBNR4(SWCH 상당, 3가 크로메이트, 맞변 7·두께 3.2). 로그인 풀림으로 STEP을 못 받았고 가격은 로그인해야 보여서 미확인",
+     "M5 육각 너트 — 미스미 형번 LBNR5(맞변 8·두께 4). 로그인 풀림으로 STEP을 못 받았고 가격은 미확인",
+     "한쪽 끝 암나사 축 Ø16 L100 — 미스미 표기 PSFJT16-100-M□('샤프트 편단 암나사 타입', g6, 나사 M4·M5·M6·M8·M10 중 선택). 나사 호칭은 모델링에서 정함. 로그인 풀림으로 STEP을 못 받았고 가격은 미확인",
+     "CJ2B16 로드 끝 너트 추가 1 — SMC NTJ-015C, 190원, 출하 31일째. 따로 STEP은 못 받았지만 이미 받은 purchased-step/CJ2B16-60SZ/CJ2B16-60SZ.stp(S01에서 NTJ-015C 포함)의 너트 형상을 복사해 쓸 수 있음"
+    ]
+   },
+   {
+    "id": "T07",
+    "status": "완료",
+    "chosen": "T07-C1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v0.6.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "캡 ↔ 1580 STEP대기 임시 상자 겹침 판정 못 함(불리언 실패)",
+      "where": "HFC8-4080-B_1580_P{L,R}_Z{P,M} ↔ STEP대기_HFS8-4080-1580_P{L,R}",
+      "evidence": "inspect.clearance·inspect.interference 모두 unchecked 'boolean Intersect: no result' 4쌍. 캡 끼움부 8이 속 찬 상자 안에 있음(ZP Z 892~900, ZM −680~−672). 고정 부품끼리라 동작과 무관",
+      "fix": "HFS8-4080-1580 STEP 수령(D-41) 뒤 상자를 바꾸고 다시 잰다. 그 전에 다시 재야 하면 상자 끝 8 mm를 캡 끼움부 단면만큼 비운다"
+     },
+     {
+      "kind": "디테일",
+      "what": "옆이 열려 있을 때 고정 SL/SR ↔ X 대차 틈이 손 끼임 범위다(앞면은 판·커튼으로 막혀 해당 없음)",
+      "where": "STEP대기_HFS8-4080-680_SL/SR(X ±890~930, Z −680~−600) ↔ P_S01_XSPACER_1/2·HFS8-4080-460_F·HFC8-4080-B_460_F_X*(MAT_X, J_MAT_X 끝)",
+      "evidence": "최소 66.14(상태_홈매트_홈 91·371단계), 71.19, 73.23. 참고 ISO 13854 손 100·손가락 25(우리 사양 아님)",
+      "fix": "옆·뒤 커버(U-T07-1 사용자 결정)를 정할 때 함께 정한다. 커버를 X ±1505 면까지 두거나, 열어 두면 틈을 100 이상 두거나 25 이하로 좁힌다. 기준은 D-38"
+     },
+     {
+      "kind": "디테일",
+      "what": "스커트 판 3장이 형재에 맞대기만 했고 체결·구멍이 없다",
+      "where": "P_T07_SKIRT_C/L/R ↔ G1·G4·GL/GR·PL/PR 앞면 Y −1740",
+      "evidence": "맞닿음 0.0, 볼트 0, 구멍 0(지시 T07-S06대로)",
+      "fix": "디테일링에서 M5 T너트(HNTT8-5 표기 확인, D-41) + CB5-12로 G1·G4에 체결하고 판 구멍을 낸다"
+     },
+     {
+      "kind": "디테일",
+      "what": "아래 캡이 받침면 밑으로 3 나온다",
+      "where": "HFC8-4080-B_1580_P*_ZM Z −683 ↔ BASE·G1 밑면 Z −680",
+      "evidence": "3.0 mm",
+      "fix": "다리·조절발(D-39)을 정할 때 캡 자리에 조절발을 달거나 받침을 −683에 맞춘다"
+     }
+    ],
+    "exception_requests": [
+     {
+      "rule": "M-08(정상 겹침) / E-10(STEP대기 임시 형상)",
+      "where": "HFC8-4080-B_1580_PL_ZP·_ZM, HFC8-4080-B_1580_PR_ZP·_ZM ↔ STEP대기_HFS8-4080-1580_PL·_PR",
+      "why": "inspect.clearance가 4쌍을 unchecked로 냈다('boolean Intersect: no result'). 캡 끼움부 8 mm가 속 찬 40×80 임시 상자 안에 들어간다(캡 ZP Z 892~903 ↔ 상자 Z −680~900, ZM Z −683~−672 ↔ 상자 Z −680~900). 실물 형재 STEP이면 끼움부는 홈 안이다.",
+      "proposal": "STEP 대기 동안은 구매처 CAD끼리의 끼움(정상 겹침 후보)으로 기록만 하고, HFS8-4080-1580 STEP을 받아 바디를 바꾼 뒤 다시 판정한다(D-41). 또는 STEP대기 상자에 캡 끼움 자리(깊이 8)를 비울지 PM이 정한다."
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "M-08(정상 겹침) / E-10(STEP대기 임시 형상) — 첫 번째 안: STEP 대기 동안 정상 겹침 후보로 기록만",
+      "where": "HFC8-4080-B_1580_PL_ZP·_ZM, HFC8-4080-B_1580_PR_ZP·_ZM ↔ STEP대기_HFS8-4080-1580_PL·_PR (4쌍, inspect.clearance·inspect.interference unchecked 'boolean Intersect: no result')",
+      "decision": "기각",
+      "reason": "M-08 원문의 정상 겹침은 셋뿐이다: \"볼트 나사부의 탭 물림(채움률 < 0.5), 구매처 CAD끼리의 미세 겹침, 설계상 압입\". STEP대기 상자는 구매처 CAD가 아니라 우리가 그린 E-10 임시 형상이다. 겹침 부피를 재지 못했으니 '미세'인지도 모른다. 그래서 정상 겹침에 넣으면 원문보다 넓게 해석하게 된다(WF-019). E-10 원문 \"검도·체결부는 임시 형상도 다른 부품처럼 간섭·볼트를 판정한다\"도 임시 형상을 판정 밖에 두지 않는다. 안내서 solidcraft.md 66행은 unchecked에 대해 \"0을 '겹침 없음'으로 읽지 않는다\"고 한다. E-03 원문 \"합격의 첫 조건은 작업 대상을 넣은 전 구간 동작과 간섭 0\"에 따라, 판정하지 못한 것을 0으로 둘 수 없다. 결정로그 T07-X01.",
+      "instruction": "4쌍을 정상 겹침이나 판정 기억(judged.json)에 넣지 않는다. 두 번째 안(T07-X02)대로 상자를 고쳐 수치로 판정되게 한다. 실물 HFS8-4080-1580 STEP을 받은 뒤(D-41) 실물 STEP끼리 남는 끼움 미세 겹침만 S01-D1(1.2 mm³)처럼 M-08 '구매처 CAD끼리의 미세 겹침'으로 판정한다."
+     },
+     {
+      "rule": "E-10(임시 형상: 장착면은 카탈로그 값에 맞춰 STEP으로 바꿔 끼워도 주변을 고치지 않게) / E-03 / E-05 — 두 번째 안: STEP대기 상자에 캡 끼움 자리(깊이 8)를 비움",
+      "where": "STEP대기_HFS8-4080-1580_PL·_PR 상자 두 끝(Z 892~900 위 캡 끼움, Z −680~−672 아래 캡 끼움)",
+      "decision": "승인",
+      "reason": "E-10 원문 \"장착면·볼트 구멍은 카탈로그 값에 맞춰, 나중에 STEP으로 바꿔 끼워도 주변을 고치지 않게 한다\". 실물 형재는 캡 끼움 자리가 홈과 중심 구멍으로 비어 있다. 그래서 임시 형상을 실물 쪽으로 맞추는 것이다. 비우는 치수는 이미 받은 실물 캡 STEP(purchased-step/HFC8-4080-B/)에서 오므로 지어내지 않는다. 바뀌는 것은 고정 바디 2개의 끝 8 mm뿐이다. 40×80 외곽·길이 1580·조인트·동작 연구는 그대로다. 구조 변경도 아니고 돈이 드는 선택도 아니라 사용자 결정이 아니다(요구서 8-4, E-01). 결정로그 T07-X02·X03.",
+      "instruction": "(1) open 3D_Modeling/FSAP_v0.6.0.sc → inspect_design로 dirty 확인. dirty면 멈추고 보고하며 버리지 않는다. (2) STEP대기_HFS8-4080-1580_PL·_PR 각 바디에서 같은 형재 컴포넌트의 캡 _ZP·_ZM 끼움부를 빼기 한다. 먼저 캡 바디 사본을 공구로 써서 상자에서 빼기(공구 유지)를 해 본다. 캡 원본과 그 위치는 그대로 둔다. 이 방법이 안 되면 캡 STEP 끼움부 단면 외곽을 body_topology에서 직접 읽어 그리고 깊이 8로 잘라낸다. 위 끝은 Z 900에서 −Z로, 아래 끝은 Z −680에서 +Z로 자른다. sketch.offset은 쓰지 않는다(추가 규칙 8). 상자 외곽 40×80, Z −680~900, 이름, part_number, bom_type inseparable은 그대로 둔다. (3) 저장 전 자기 점검(E-22, 검증부와 같은 도구). 4쌍 inspect.clearance가 unchecked가 아니고 겹침 0(맞닿음 0.0 허용)인지 본다. 바뀐 두 상자 ↔ 이웃(G1·G4·SL·SR·P_T07_SKIRT_L/R·캡)에 새 겹침이 0인지 본다. 상자 부피 감소가 캡 끼움부 부피와 ±1 mm³ 안에서 같은지 수치로 적는다. 그래도 unchecked이면 판정 났다고 쓰지 말고 unfinished에 적는다. (4) 대기 포즈(motion.play step 0) 뒤 save {path: 3D_Modeling/FSAP_v0.6.1.sc}로 저장한다(작은 형상 변경, 수 +1, E-05). save {}는 쓰지 않는다. 이어서 tools/config.json doc를 v0.6.1로 바꾸고 tools/gen_t07_mech.py도 같게 고친다. CHANGELOG.md와 자료대기 D-41 '쓰는 곳'에 '1580 상자 캡 끼움 자리 비움(T07-X02), STEP 수령 뒤 상자 교체·재판정'을 덧붙인다. (5) 검사 범위(E-17)는 바뀐 고정 바디 2개뿐이므로 parts_only다. 바뀐 2바디와 bbox 이웃만 정적 전수로 보고, 사이클 3개와 되감기는 전 단계에서 바뀐 쌍만 다시 계산한다. motion.interference는 budget_s를 넉넉히 주고 truncated를 확인한다. (6) 커밋은 새 버전 저장 뒤 modeling/mat-rs-001 브랜치에서만 한다(요구서 8-5). 이번 결정로그 절(T07-X01~X03)도 그 커밋에 함께 넣는다."
+     }
+    ],
+    "step_placeholders": [
+     "HFS8-4080-2850 — 미스미 로그인 풀림(login: false). 검색 결과 HFS8-4080 길이 지정 상품 1건, 형번 표기 맞음. 받지 않음",
+     "HFS8-4080-680 — 미스미 로그인 풀림(login: false), 받지 않음",
+     "HFS8-4080-1580 — 미스미 로그인 풀림(login: false), 받지 않음",
+     "HNTT8-5 — 미스미 로그인 풀림(login: false), 받지 않음. 미스미 표기 확인도 못 함"
+    ]
+   },
+   {
+    "id": "S02",
+    "status": "모델 반영·문제 남음",
+    "chosen": "S02-C1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v0.6.1.sc",
+    "empty_save": false,
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "완료 판정 '형번이 정해진 구매품 중 STEP대기_ 0' 미충족 — CJ2B16-30SZ(STEP대기_CJ2B16-30SZ·_ROD, D-37, login:false·SMC CAD 회원 전용)",
+      "where": "모델링 미완",
+      "evidence": "모델링부 unfinished",
+      "fix": "이번 회차에 끝낸다"
+     },
+     {
+      "kind": "동작",
+      "what": "HFS8-4080-2850(STEP대기_G1·G4, D-41, login:false)",
+      "where": "모델링 미완",
+      "evidence": "모델링부 unfinished",
+      "fix": "이번 회차에 끝낸다"
+     },
+     {
+      "kind": "동작",
+      "what": "HFS8-4080-680(STEP대기_SL·SR, D-41, login:false)",
+      "where": "모델링 미완",
+      "evidence": "모델링부 unfinished",
+      "fix": "이번 회차에 끝낸다"
+     },
+     {
+      "kind": "동작",
+      "what": "HFS8-4080-1580(STEP대기_PL·PR, Z −672~892로 줄여 유지, D-41, login:false)",
+      "where": "모델링 미완",
+      "evidence": "모델링부 unfinished",
+      "fix": "이번 회차에 끝낸다"
+     },
+     {
+      "kind": "동작",
+      "what": "갈래 A 확인 항목(끝면 프로브 0.5, 실물 캡 S02-S04 판정, J_T06_KNIFE 0→−30 sweep, 30SZ↔LHFR16 재측정)은 STEP을 받은 뒤에 한다",
+      "where": "모델링 미완",
+      "evidence": "모델링부 unfinished",
+      "fix": "이번 회차에 끝낸다"
+     }
+    ],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "CJ2B16-30SZ — 미스미 로그인 풀림(login: false, 검색 화면 머리에 '로그인 / 회원가입'). 재로그인·비밀번호 입력 안 함. SMC 웹카탈로그(smcworld.com 형번 확인 화면)의 2D/3D CAD도 '등록 회원 전용 — 로그인'이라 받지 않음 → STEP대기_CJ2B16-30SZ·_ROD 임시 형상 유지(D-37)",
+     "HFS8-4080-2850 — 미스미 로그인 풀림(login: false). 미스미 전용 형재라 제조사 대체 사이트 없음 → STEP대기_HFS8-4080-2850_G1·_G4 유지(D-41)",
+     "HFS8-4080-680 — 미스미 로그인 풀림(login: false) → STEP대기_HFS8-4080-680_SL·_SR 유지(D-41)",
+     "HFS8-4080-1580 — 미스미 로그인 풀림(login: false) → STEP대기_HFS8-4080-1580_PL·_PR 유지(S02-S03대로 Z −672~892 줄인 상자, D-41)"
+    ]
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false
+  }
+ },
+ "retro": {
+  "new_ids": [
+   "WF-084",
+   "WF-085",
+   "WF-086",
+   "WF-087",
+   "WF-088",
+   "WF-089",
+   "WF-090",
+   "WF-091"
+  ],
+  "repeat_ids": [
+   "WF-080",
+   "WF-082",
+   "WF-083"
+  ],
+  "one_line": "엔진 파일은 고치지 않았습니다(읽기만 함). 개선후보는 FSAP의 docs/reports/engine-candidates.md에 적었습니다. 새 후보 8건은 로그인 풀림인데도 돈 수정 회차, cp1252 인코딩, machine.json 없음, 표본 상한 1000, gmsh 없음, bbox 과대, 예외 승인 전 CAD 미확인, ledger commit 빠짐입니다. 반복 3건은 WF-080·082·083입니다. 최종 보고서에 '## 워크플로우 개선 후보' 절을 붙였습니다. 커밋 917c55d에는 최종 보고서와 함께 개선후보 파일도 넣었고(지시는 최종 보고서만), 설계 버전이 바뀌지 않아 푸시하지 않았습니다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 44,
+  "시간 h": 14.1,
+  "출력 토큰": 2242984,
+  "실패": 0
+ }
+}
