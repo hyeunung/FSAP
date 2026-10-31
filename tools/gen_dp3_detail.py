@@ -10,6 +10,8 @@
 # 쓰는 법(Git Bash, 프로젝트 루트):
 #   python -B tools/gen_dp3_detail.py  -> tools/out/detail/DP-3/build.json
 #   solidcraft-cli run tools/out/detail/DP-3/build.json --in 3D_Modeling/FSAP_v0.6.7.sc --save 3D_Modeling/FSAP_v0.6.8.sc
+#   수정 1회차: python -B tools/gen_dp3_detail.py fix1 -> build_fix1.json
+#   solidcraft-cli run tools/out/detail/DP-3/build_fix1.json --in 3D_Modeling/FSAP_v0.6.8.sc --save 3D_Modeling/FSAP_v0.6.9.sc
 import json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'tools', 'out', 'detail', 'DP-3')
@@ -75,6 +77,25 @@ def insert(pn, nm, M, par, body0, desc, bt="purchased"):
 
 
 HO, GU, PA, CA, HEADB = "P_T05_HOLDER", "P_T05_GUIDE", "P_T05_PAD", "P_T05_CAP", "STEP대기_SEWHEAD"
+
+# ================= 수정 1회차(fix1): v0.6.8 -> v0.6.9 — P_T05_HUB 렌치 구멍 Ø9 x4 =================
+# 검증 DP-3: HD_1~4 렌치 프로브 Ø8.5x30(X -87.5 -> -117.5)이 허브 플랜지(X -110.5)에 막힘(M-01·M-02). PM 판정 DP3-X01·X02.
+# 허브 X -150~-110.5, 심 Ø76, 축 구멍 Ø16.3. 구멍 축 = 볼트 축(Y 730·770, Z 180·220) = 축(Y750,Z200) 기준 r 28.28, 45°·135°·225°·315°.
+# +X 면에서 막힌 깊이 10(X -120.5~-110.5). 살: 심 바깥 38 - 32.78 = 5.22, 축 구멍 23.78 - 8.15 = 15.63(M-03 >= 2.5).
+if VARIANT == 'fix1':
+    HUB = "P_T05_HUB"
+    C("motion.play", {"study": "대기", "step": 0, "quiet": True})
+    C("component.activate", {"component": "T05"})
+    for (y, z) in ((730, 180), (770, 180), (730, 220), (770, 220)):
+        cylx(9, -120.5, -110.2, y, z, op="cut", targets=[HUB])            # 렌치 구멍 Ø9 깊이 10(+X 면 X -110.5에서)
+    C("component.activate", {"component": "root"})
+    C("component.metadata.set", {"component": "T05", "properties": {
+        HUB: "PET-CF / FDM H2C / 플랜지 + 심 Ø76, 축 구멍 Ø16.3, 렌치 구멍 Ø9 x4 깊이 10(+X 면, 홀더 CB5-16 x4와 같은 축, r28.28 45°간격) — 롤을 손으로 돌려 구멍을 볼트에 맞추고 육각 렌치 4로 푼다 (DP-3 fix1)"}})
+    C("document.metadata.set", {"values": {"description": "DP-3 fix1: T05 hub wrench access holes D9 x4 depth 10 on the +X face, coaxial with holder bolts CB5-16 x4 (M-01 wrench access); rest as v0.6.8"}})
+    C("motion.play", {"study": "대기", "step": 0})
+    json.dump(S, open(os.path.join(OUT, 'build_fix1.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    print(len(S), 'steps', VARIANT)
+    sys.exit(0)
 
 C("motion.play", {"study": "대기", "step": 0, "quiet": True})
 

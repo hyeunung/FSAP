@@ -1,0 +1,495 @@
+{
+ "env": "해석 못 함 — 환경 없음(자료대기 D-16)",
+ "step_dir": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\tools\\out\\detail\\DP-3\\stepout",
+ "checks": [
+  {
+   "part": "P_T05_GUIDE",
+   "what": "y=553.0",
+   "ok": true
+  },
+  {
+   "part": "P_T05_GUIDE",
+   "what": "y=562.2",
+   "ok": true
+  },
+  {
+   "part": "P_T05_GUIDE",
+   "what": "z=45.0",
+   "ok": true
+  },
+  {
+   "part": "P_T05_GUIDE",
+   "what": "z=85.5",
+   "ok": true
+  },
+  {
+   "part": "P_T05_GUIDE",
+   "what": "x=-147.0",
+   "ok": true
+  },
+  {
+   "part": "P_T05_GUIDE",
+   "what": "x=-88.0",
+   "ok": true
+  },
+  {
+   "part": "P_T05_PAD",
+   "what": "z=43.0",
+   "ok": true
+  },
+  {
+   "part": "P_T05_PAD",
+   "what": "z=49.0",
+   "ok": true
+  },
+  {
+   "part": "P_T05_PAD",
+   "what": "z=53.1",
+   "ok": true
+  },
+  {
+   "part": "P_T05_PAD",
+   "what": "z=60.4",
+   "ok": true
+  },
+  {
+   "part": "P_T05_PAD",
+   "what": "z=63.0",
+   "ok": true
+  },
+  {
+   "part": "P_T05_PAD",
+   "what": "y=570.3",
+   "ok": true
+  },
+  {
+   "part": "P_T05_PAD",
+   "what": "y=574.7",
+   "ok": true
+  }
+ ],
+ "A_guide_front_wall": {
+  "실측_L40.5": {
+   "cantilever": {
+    "inputs": {
+     "t": 9.200000000000045,
+     "b": 59.0,
+     "L": 40.5,
+     "E": 6000.0,
+     "Rp": 30.0,
+     "end": "cantilever",
+     "sf_min": 2.0
+    },
+    "force_N": 417.5,
+    "deflection_mm": 0.4025,
+    "stiffness_N_mm": 1037.3891,
+    "stress_MPa": 20.32,
+    "sf": 1.48,
+    "thin": false,
+    "ok": false,
+    "needs_fea": true
+   },
+   "sf_cantilever": 1.48,
+   "sf_two_edge_est": 2.96
+  },
+  "옛식_L37": {
+   "cantilever": {
+    "inputs": {
+     "t": 9.200000000000045,
+     "b": 59.0,
+     "L": 37.0,
+     "E": 6000.0,
+     "Rp": 30.0,
+     "end": "cantilever",
+     "sf_min": 2.0
+    },
+    "force_N": 417.5,
+    "deflection_mm": 0.3069,
+    "stiffness_N_mm": 1360.5095,
+    "stress_MPa": 18.56,
+    "sf": 1.62,
+    "thin": false,
+    "ok": false,
+    "needs_fea": true
+   },
+   "sf_cantilever": 1.62,
+   "sf_two_edge_est": 3.24
+  },
+  "항복선_모서리": {
+   "w": 59.0,
+   "h": 40.5,
+   "coef": 2.975,
+   "P_elastic_m_N": 1259.2,
+   "sf_elastic_m": 3.02,
+   "P_plastic_m_N": 1888.7,
+   "sf_plastic_m": 4.52,
+   "note": "상계(항복선)라 참고. 위·+X 고정변 음의 항복선은 이 삼각형 기구에 안 들어감. 점하중이 모서리 한 점이면 coef 2.0(최악)"
+  },
+  "항복선_점하중_모서리": {
+   "P_elastic_m_N": 846.4,
+   "sf_elastic_m": 2.03,
+   "sf_plastic_m": 3.04
+  },
+  "뿌리R3_Kt": {
+   "Kt": 1.3,
+   "sf_cantilever_with_Kt": 1.14,
+   "note": "PET-CF(FDM) 노치 민감도 불확실. 두 변 판 거동에서는 뿌리 최대 응력 자리가 바뀌어 근사로만 적음"
+  }
+ },
+ "B_holder_flange": {
+  "bolt_T_misA_N": 234.8,
+  "counterbore_edge_wall_mm": 2.5,
+  "볼트": {
+   "inputs": {
+    "d": 5,
+    "le": 8.5,
+    "load_N": 234.8,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.7,
+   "sf_operating": {
+    "나사 인장": 66.52,
+    "암나사 전단": 31.35,
+    "분리(예압/외력)": 6.39
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 10.78,
+    "조임 암나사 전단": 4.91
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "좌면_와셔없음": {
+   "inputs": {
+    "d": 5,
+    "le": 8.5,
+    "load_N": 234.8,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "PET-CF",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.7,
+   "sf_operating": {
+    "나사 인장": 66.52,
+    "암나사 전단": 7.68,
+    "분리(예압/외력)": 6.39
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 1.32,
+    "조임 암나사 전단": 1.2
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "좌면_와셔Ø10": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 234.8,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "PET-CF",
+    "dw": 10.0,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 66.52,
+    "암나사 전단": 6.77,
+    "분리(예압/외력)": 6.39
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 2.19,
+    "조임 암나사 전단": 1.06
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": true,
+   "near_limit": [
+    "조임 암나사 전단"
+   ]
+  }
+ },
+ "C_root_bolt": {
+  "운전": {
+   "inputs": {
+    "d": 5,
+    "le": 11.0,
+    "load_N": 98.2,
+    "torque_Nm": 6.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 6000.0,
+   "engage_ratio": 2.2,
+   "sf_operating": {
+    "나사 인장": 159.06,
+    "암나사 전단": 97.0,
+    "분리(예압/외력)": 61.1
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.34,
+    "조임 좌면": 2.69,
+    "조임 암나사 전단": 1.59
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": [],
+   "seat_SUS304": 2.2
+  },
+  "오조작A_롤걸림": {
+   "inputs": {
+    "d": 5,
+    "le": 11.0,
+    "load_N": 899.0,
+    "torque_Nm": 6.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 6000.0,
+   "engage_ratio": 2.2,
+   "sf_operating": {
+    "나사 인장": 17.37,
+    "암나사 전단": 10.6,
+    "분리(예압/외력)": 6.67
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.34,
+    "조임 좌면": 2.69,
+    "조임 암나사 전단": 1.59
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": [],
+   "seat_SUS304": 2.2
+  },
+  "오조작B_안내걸림": {
+   "inputs": {
+    "d": 5,
+    "le": 11.0,
+    "load_N": 1287.4,
+    "torque_Nm": 6.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 6000.0,
+   "engage_ratio": 2.2,
+   "sf_operating": {
+    "나사 인장": 12.13,
+    "암나사 전단": 7.4,
+    "분리(예압/외력)": 4.66
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.34,
+    "조임 좌면": 2.69,
+    "조임 암나사 전단": 1.59
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": [],
+   "seat_SUS304": 2.2
+  }
+ },
+ "D_guide_inserts": {
+  "운전": {
+   "inputs": {
+    "d": 5,
+    "le": 8.0,
+    "load_N": 42.4,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "PET-CF",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 368.4,
+    "암나사 전단": 40.01,
+    "분리(예압/외력)": 35.38
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 8.8,
+    "조임 암나사 전단": 1.13
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "오조작A_롤걸림": {
+   "inputs": {
+    "d": 5,
+    "le": 8.0,
+    "load_N": 536.9,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "PET-CF",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 29.09,
+    "암나사 전단": 3.16,
+    "분리(예압/외력)": 2.79
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 8.8,
+    "조임 암나사 전단": 1.13
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "오조작B_안내걸림": {
+   "inputs": {
+    "d": 5,
+    "le": 8.0,
+    "load_N": 442.4,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "PET-CF",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 35.31,
+    "암나사 전단": 3.83,
+    "분리(예압/외력)": 3.39
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 8.8,
+    "조임 암나사 전단": 1.13
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "note": "PET-CF 직접 나사로 본 보수값(인서트 외경 6.8 널링 면적이 더 큼). 인서트 끌어냄 카탈로그 값은 D-41"
+ },
+ "E_clamp": {
+  "홀더귀": {
+   "le": 7.5,
+   "preload_N": 1500.0,
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 1.32,
+    "조임 암나사 전단": 1.06
+   },
+   "m01_ok": true
+  },
+  "캡": {
+   "le": 8.0,
+   "preload_N": 1500.0,
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 1.32,
+    "조임 암나사 전단": 1.13
+   },
+   "m01_ok": true
+  },
+  "클램프_미끄럼토크_Nmm": 7200.0,
+  "운전_롤끌림토크_Nmm": 291.0,
+  "sf_slip_op": 24.7
+ },
+ "F_pad": {
+  "neck": 4.400000000000091,
+  "pocket": 7.4,
+  "lip_overhang": 1.4999999999999547,
+  "lip_t": 2.6000000000000014,
+  "lip_len": 18.25,
+  "F_pull": 32.99,
+  "s_lip": 1.2,
+  "sf_lip": 24.9,
+  "tau_lip": 0.348,
+  "F_push": 39.27,
+  "p_rod_end": 3.12,
+  "sf_rod_end": 9.6,
+  "p_mat_kPa": 70.1,
+  "note": "턱 = 너트 위 Z 60.4~63(t2.6), 돌출 1.5, 길이 = 열린 끝 X -145 → 주머니 끝 -126.75. 밀기는 로드 끝 Ø4가 Z 49 면을 누름"
+ },
+ "summary": {
+  "front_wall_two_edge_real": 2.96,
+  "front_wall_two_edge_L37": 3.24,
+  "front_wall_cantilever_real": 1.48,
+  "front_wall_cantilever_L37": 1.62,
+  "yield_line_line_load_el": 3.02,
+  "yield_line_point_el": 2.03,
+  "holder_seat_no_washer": 1.32,
+  "holder_seat_washer10": 2.19,
+  "root_bolt_misB_worst": {
+   "나사 인장": 12.13,
+   "암나사 전단": 7.4,
+   "분리(예압/외력)": 4.66
+  },
+  "insert_misA": {
+   "나사 인장": 29.09,
+   "암나사 전단": 3.16,
+   "분리(예압/외력)": 2.79
+  },
+  "insert_tight": {
+   "조임 볼트 응력": 9.37,
+   "조임 좌면": 8.8,
+   "조임 암나사 전단": 1.13
+  },
+  "clamp": {
+   "조임 볼트 응력": 9.37,
+   "조임 좌면": 1.32,
+   "조임 암나사 전단": 1.06
+  },
+  "pad_lip": 24.9
+ }
+}

@@ -52,28 +52,28 @@
       }
     },
     "P_T05_GUIDE": {
-      "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
+      "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
       "fixed": "등판 +X 면(X −80, 등판 t8 X −88~−80)이 평판 혀에 맞댐, M5 열압입 인서트 2(물림 8) — 피벗은 모멘트 방향의 모서리(Z 92/36, Y 553/612)",
       "contact": "테이프·패드는 하중으로만. 실린더 장착 반력은 위판(Z 82~92), 패드 반력은 밑판(Z 36~42)",
-      "load": "운전: 실린더 밀기 39.27 N(Ø10 × 0.5 MPa) C틀 지렛대 43 + 장력 31.9 N / 오조작A: 막대 r8(B-스플라인 면, 단순 지지 37) 508 N / 오조작B: 앞벽 밑 모서리 417.5 N(외팔 37, 두 변 고정 추정 1/2)",
+      "load": "운전: 실린더 밀기 39.27 N(Ø10 × 0.5 MPa) C틀 지렛대 43 + 장력 31.9 N / 오조작A: 막대 r8(B-스플라인 면, 단순 지지 37) 508 N / 오조작B: 앞벽 밑 모서리 417.5 N(외팔 37, 두 변 고정 추정 1/2) / DP-3(v0.6.8): 앞벽 t9.2(Y 553~562.2), 실측 늘어짐 Z 45~85.5 = 40.5(옛 37), 폭 X −147~−88 = 59, 뿌리 R3. 외팔·두 변(1/2) 추정 + 항복선 교차 확인(테이프 폭 32 선하중, D-06)",
       "criteria": {
         "value": "PET-CF 30 MPa(층간 보수값), SF 운전 3·오조작 2",
         "source": "M-09, mech_T05_select.md 4절과 같은 허용값. fea/results/mech_T05_fea1_handcalc.json"
       }
     },
     "P_T05_PAD": {
-      "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
-      "fixed": "로드 끝 너트가 T홈에",
+      "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
+      "fixed": "로드 끝 NTJ-010C가 −X로 열린 T홈 주머니(7.4 × Z 53.1~60.4)에, 목 4.4(Z 49~63). DP-3(v0.6.8) Z 43~63 한 덩어리",
       "contact": "밑면이 테이프·받침면에 압축(바닥 1.5는 받쳐짐)",
-      "load": "밀기 39.27 N / 걸렸을 때 당기기 32.99 N이 T홈 턱(돌출 1.5, 두께 2, 길이 18 ×2)",
+      "load": "밀기 39.27 N(로드 끝 Ø4가 Z 49 면을 누름) / 당기기 32.99 N이 너트 위 턱(돌출 1.5, t2.6, 길이 18.25 ×2)",
       "criteria": {
         "value": "PET-CF 30 MPa, SF 3",
         "source": "fea/results/mech_T05_fea1_handcalc.json"
       }
     },
     "P_T05_HOLDER": {
-      "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
-      "fixed": "플랜지 56×56 CB5-16 4개가 평판을 지나 기둥 탭(물림 8.5, SS400 자리값 D-10) — v0.4.1 플랜지 t8(X −88~−80), CB5-16 머리는 PET-CF 카운터보어 바닥 X −82.5(밑 살 2.5)에 앉음 → 조임 좌면은 PET-CF로 본다. 플랜지 볼트 지렛대는 평판·기둥 맞댐 X −75 → 롤 중심 55.5(보수)",
+      "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
+      "fixed": "플랜지 56×56 CB5-16 4개가 평판을 지나 기둥 탭(물림 8.5, SS400 자리값 D-10) — v0.4.1 플랜지 t8(X −88~−80), CB5-16 머리는 PET-CF 카운터보어 바닥 X −82.5(밑 살 2.5)에 앉음 → 조임 좌면은 PET-CF로 본다. 플랜지 볼트 지렛대는 평판·기둥 맞댐 X −75 → 롤 중심 55.5(보수) / DP-3: 카운터보어 Ø11(와셔 Ø10 자리, D-43 미정이라 안 그림), 1.5 N·m. 좌면 = 머리 Ø8.5/구멍 Ø5.5(와셔 들어오면 Ø10)",
       "contact": "축 Ø16 구멍 길이 30 면압",
       "load": "운전: 롤+허브+캡 ×3 g 26 N at 롤 테이프 중심 X −130.5 / 오조작A: 417.5 N 같은 자리(허브 고착 시 비틀림 40.5 N·m는 클램프 미끄럼)",
       "criteria": {
@@ -263,6 +263,16 @@
       "criteria": {
         "value": "A5052 Rp 175, SF 3. 탭 물림 ≥ 1.5d(M-01)",
         "source": "M-09, M-01, fea/results/detail_DP-2_fea1_handcalc.json"
+      }
+    },
+    "P_T05_CAP": {
+      "case": "cases/detail_DP-3_handcalc.py (v0.6.8)",
+      "fixed": "허브 위 캡, 슬릿 클램프 CB5-20 → MBIS5-6.5-8(보스 안 Y 754~762, 물림 8)",
+      "contact": "축 Ø16 클램프 면 마찰(μ0.3 자리값)",
+      "load": "클램프 예압 1.5 N·m(1.5 kN) 조임만. 운전 롤 끌림 3 N × r97(D-06 임시)",
+      "criteria": {
+        "value": "PET-CF 좌면 한계면압 60(handcalc BASE), 조임 SF ≥ 1.0, 미끄럼 SF ≥ 3",
+        "source": "M-09, fea/results/detail_DP-3_handcalc.json"
       }
     }
   },
