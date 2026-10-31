@@ -191,17 +191,19 @@
       "criteria": {
         "value": "A5052 Rp 175(판금 H32 가정 보수), SF 운전 3·오조작 2, SF < 1.2 = 영구 변형",
         "source": "M-09. fea/results/detail_DP-2_handcalc.json"
-      }
+      },
+      "_v0.6.7": "발 국부: 누름판이 생겨 외팔 레버 11 → 2(다리 평평한 곳 x 33 → 누름판 접촉 x 35). 예압 이음 열림 하중은 접촉 x 35~52(핵 17/6)로. 나머지 모델 그대로"
     },
     "P_T01_POST": {
-      "case": "cases/detail_DP-2_handcalc.py(v0.6.6 플랜지 일체) · 옛 cases/mech_T01_fea1_handcalc.py",
+      "case": "cases/detail_DP-2_handcalc.py(v0.6.6 플랜지 일체) · 옛 cases/mech_T01_fea1_handcalc.py · cases/detail_DP-2_fea1_handcalc.py(v0.6.7 밑 플랜지 t12 + 카운터보어 Ø9.5×3.5)",
       "fixed": "밑 플랜지 Ø120 t8.5가 허브 윗면 −233에 CB5-16 3개(r50) — 볼트 힘 = 기울임 모멘트 Σd²(피벗 플랜지 끝 r60)",
       "contact": "플랜지–허브 면 압축, 위 플랜지 Ø100 t8이 원판 밑면을 받침(인서트 3, r45)",
       "load": "운전: 끌림 20 N + 이송 가속 / 오조작: 작은 매트가 부딪쳐 마찰 한계 275.6 N at 원판 윗면(Z −0.5). 플랜지 굽힘: 볼트 r50 ← 관 바깥 r30, 레버 15.75, 유효 폭 40",
       "criteria": {
         "value": "PET-CF 20 MPa(층간 자리값, 플랜지 면내 강도 미확인이라 보수로 같이 씀), SF 운전 3·오조작 2",
         "source": "M-09. fea/results/detail_DP-2_handcalc.json"
-      }
+      },
+      "_v0.6.7": "밑 플랜지 Z −233~−221(t12), 볼트 r50 카운터보어 바닥 −224.5(t8.5 고리, 바로 밑이 허브 윗면 → 압축만). 판정 단면 = 관 뿌리 r30 t12, 레버 = 머리 끝(r45.75) → 관 15.75, 유효 폭 40. 모델(경계조건) 자체는 그대로"
     },
     "P_T01_DISC": {
       "case": "cases/detail_DP-2_handcalc.py",
@@ -241,6 +243,26 @@
       "criteria": {
         "value": "A5052 175 MPa, SF 운전 3·오조작 2",
         "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
+      }
+    },
+    "P_T01_FOOTPLATE_*": {
+      "case": "cases/detail_DP-2_fea1_handcalc.py (v0.6.7)",
+      "fixed": "누름판(A5052 t6, 스파이더 옆 x 34~52 × 축 방향 45, Z −230~−224)이 스파이더 발 윗면에 앉고 STEP대기_CB5-18 2개(r110·r135, x 44)로 허브 SUS304 탭(물림 8)에 체결. 머리 Ø8.5 가장자리(x 39.75)를 고정단으로 봄",
+      "contact": "판 밑면–발 윗면 면 접촉(예압 4 N·m로 닫힘). 다리가 발을 드는 힘이 판 안쪽 끝(x 34, 밑 모서리 C1 → 35)에 걸림. 판 바깥 끝 x 52 지렛대(prying)는 예압이 이음을 닫는 동안 없음(열림 하중 4 N·m 809 N)",
+      "load": "발 볼트 최대 힘(스파이더 볼트 4개 Σd² 분포, 피벗 143.4) 3 g 705.8 N · 막힘 678.6 N를 볼트 하나 몫 폭 22.5에",
+      "criteria": {
+        "value": "A5052 Rp 175(H32 가정 보수), SF 운전 3·오조작 2",
+        "source": "M-09, fea/results/detail_DP-2_fea1_handcalc.json"
+      }
+    },
+    "P_T01_NUTPLATE_*": {
+      "case": "cases/detail_DP-2_fea1_handcalc.py (v0.6.7)",
+      "fixed": "너트판(A5052 t6 □40, Z −104.5~−98.5)이 스파이더 웹 밑면에 면으로 앉음. CB4-16 4개(PCD 38)가 LHFR16 플랜지 카운터보어에서 웹을 지나 판 M4 탭(물림 6)에",
+      "contact": "판–웹 밑면 면 접촉. 볼트 당김은 웹이 받음. 최악 가정으로 웹 구멍 Ø28.4 가장자리 받침 외팔 4.8",
+      "load": "부시 기울기 모멘트 max(3 g·Mrot2, 실린더 막힘 F_CYL × 50) ÷ 대각 줄 간격 2 × 26.87 → 볼트당 93.5 N",
+      "criteria": {
+        "value": "A5052 Rp 175, SF 3. 탭 물림 ≥ 1.5d(M-01)",
+        "source": "M-09, M-01, fea/results/detail_DP-2_fea1_handcalc.json"
       }
     }
   },

@@ -1,0 +1,999 @@
+{
+ "method": "손계산(표준 라이브러리 + 엔진 handcalc). 해석 못 함 — 환경 없음(D-16)",
+ "step": [
+  {
+   "part": "P_T01_NUTPLATE_R1_1",
+   "what": "Z 밑",
+   "step": -104.5,
+   "used": -104.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_1",
+   "what": "Z 위",
+   "step": -98.5,
+   "used": -98.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_1",
+   "what": "M4 탭 기초 구멍 Ø3.3 수",
+   "step": 4,
+   "used": 4,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_1",
+   "what": "가운데 Ø28.4 수",
+   "step": 1,
+   "used": 1,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_1",
+   "what": "M4 탭 PCD/2",
+   "step": 19.01,
+   "used": 19.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_2",
+   "what": "Z 밑",
+   "step": -104.5,
+   "used": -104.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_2",
+   "what": "Z 위",
+   "step": -98.5,
+   "used": -98.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_2",
+   "what": "M4 탭 기초 구멍 Ø3.3 수",
+   "step": 4,
+   "used": 4,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_2",
+   "what": "가운데 Ø28.4 수",
+   "step": 1,
+   "used": 1,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_2",
+   "what": "M4 탭 PCD/2",
+   "step": 19.01,
+   "used": 19.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_3",
+   "what": "Z 밑",
+   "step": -104.5,
+   "used": -104.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_3",
+   "what": "Z 위",
+   "step": -98.5,
+   "used": -98.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_3",
+   "what": "M4 탭 기초 구멍 Ø3.3 수",
+   "step": 4,
+   "used": 4,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_3",
+   "what": "가운데 Ø28.4 수",
+   "step": 1,
+   "used": 1,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R1_3",
+   "what": "M4 탭 PCD/2",
+   "step": 19.01,
+   "used": 19.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_1",
+   "what": "Z 밑",
+   "step": -104.5,
+   "used": -104.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_1",
+   "what": "Z 위",
+   "step": -98.5,
+   "used": -98.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_1",
+   "what": "M4 탭 기초 구멍 Ø3.3 수",
+   "step": 4,
+   "used": 4,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_1",
+   "what": "가운데 Ø28.4 수",
+   "step": 1,
+   "used": 1,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_1",
+   "what": "M4 탭 PCD/2",
+   "step": 19.01,
+   "used": 19.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_2",
+   "what": "Z 밑",
+   "step": -104.5,
+   "used": -104.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_2",
+   "what": "Z 위",
+   "step": -98.5,
+   "used": -98.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_2",
+   "what": "M4 탭 기초 구멍 Ø3.3 수",
+   "step": 4,
+   "used": 4,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_2",
+   "what": "가운데 Ø28.4 수",
+   "step": 1,
+   "used": 1,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_2",
+   "what": "M4 탭 PCD/2",
+   "step": 19.0,
+   "used": 19.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_3",
+   "what": "Z 밑",
+   "step": -104.5,
+   "used": -104.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_3",
+   "what": "Z 위",
+   "step": -98.5,
+   "used": -98.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_3",
+   "what": "M4 탭 기초 구멍 Ø3.3 수",
+   "step": 4,
+   "used": 4,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_3",
+   "what": "가운데 Ø28.4 수",
+   "step": 1,
+   "used": 1,
+   "ok": true
+  },
+  {
+   "part": "P_T01_NUTPLATE_R2_3",
+   "what": "M4 탭 PCD/2",
+   "step": 19.0,
+   "used": 19.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_1_N",
+   "what": "Z 밑",
+   "step": -230.0,
+   "used": -230.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_1_N",
+   "what": "Z 위",
+   "step": -224.0,
+   "used": -224.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_1_N",
+   "what": "Ø5.5 구멍 수",
+   "step": 2,
+   "used": 2,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_1_N",
+   "what": "구멍 간격(축 방향 135−110)",
+   "step": 25.0,
+   "used": 25.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_1_P",
+   "what": "Z 밑",
+   "step": -230.0,
+   "used": -230.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_1_P",
+   "what": "Z 위",
+   "step": -224.0,
+   "used": -224.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_1_P",
+   "what": "Ø5.5 구멍 수",
+   "step": 2,
+   "used": 2,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_1_P",
+   "what": "구멍 간격(축 방향 135−110)",
+   "step": 25.0,
+   "used": 25.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_2_N",
+   "what": "Z 밑",
+   "step": -230.0,
+   "used": -230.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_2_N",
+   "what": "Z 위",
+   "step": -224.0,
+   "used": -224.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_2_N",
+   "what": "Ø5.5 구멍 수",
+   "step": 2,
+   "used": 2,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_2_N",
+   "what": "구멍 간격(축 방향 135−110)",
+   "step": 25.0,
+   "used": 25.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_2_P",
+   "what": "Z 밑",
+   "step": -230.0,
+   "used": -230.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_2_P",
+   "what": "Z 위",
+   "step": -224.0,
+   "used": -224.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_2_P",
+   "what": "Ø5.5 구멍 수",
+   "step": 2,
+   "used": 2,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_2_P",
+   "what": "구멍 간격(축 방향 135−110)",
+   "step": 25.0,
+   "used": 25.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_3_N",
+   "what": "Z 밑",
+   "step": -230.0,
+   "used": -230.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_3_N",
+   "what": "Z 위",
+   "step": -224.0,
+   "used": -224.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_3_N",
+   "what": "Ø5.5 구멍 수",
+   "step": 2,
+   "used": 2,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_3_N",
+   "what": "구멍 간격(축 방향 135−110)",
+   "step": 25.0,
+   "used": 25.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_3_P",
+   "what": "Z 밑",
+   "step": -230.0,
+   "used": -230.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_3_P",
+   "what": "Z 위",
+   "step": -224.0,
+   "used": -224.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_3_P",
+   "what": "Ø5.5 구멍 수",
+   "step": 2,
+   "used": 2,
+   "ok": true
+  },
+  {
+   "part": "P_T01_FOOTPLATE_3_P",
+   "what": "구멍 간격(축 방향 135−110)",
+   "step": 25.0,
+   "used": 25.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "Z 밑",
+   "step": -233.0,
+   "used": -233.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "카운터보어 바닥",
+   "step": -224.5,
+   "used": -224.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "밑 플랜지 윗면(t12)",
+   "step": -221.0,
+   "used": -221.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "카운터보어 Ø9.5 수",
+   "step": 3,
+   "used": 3,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "카운터보어 r",
+   "step": 50.0,
+   "used": 50.0,
+   "ok": true
+  }
+ ],
+ "groups": {
+  "NUTPLATE": {
+   "members": [
+    "P_T01_NUTPLATE_R1_1",
+    "P_T01_NUTPLATE_R1_2",
+    "P_T01_NUTPLATE_R1_3",
+    "P_T01_NUTPLATE_R2_1",
+    "P_T01_NUTPLATE_R2_2",
+    "P_T01_NUTPLATE_R2_3"
+   ],
+   "signatures": {
+    "P_T01_NUTPLATE_R1_1": "((40.0, 40.0), 6.0, (1.65, 14.2))",
+    "P_T01_NUTPLATE_R1_2": "((54.1, 54.1), 6.0, (1.65, 14.2))",
+    "P_T01_NUTPLATE_R1_3": "((54.1, 54.1), 6.0, (1.65, 14.2))",
+    "P_T01_NUTPLATE_R2_1": "((40.0, 40.0), 6.0, (1.65, 14.2))",
+    "P_T01_NUTPLATE_R2_2": "((54.1, 54.1), 6.0, (1.65, 14.2))",
+    "P_T01_NUTPLATE_R2_3": "((54.1, 54.1), 6.0, (1.65, 14.2))"
+   },
+   "same": false,
+   "same_thickness_holes": true
+  },
+  "FOOTPLATE": {
+   "members": [
+    "P_T01_FOOTPLATE_1_N",
+    "P_T01_FOOTPLATE_1_P",
+    "P_T01_FOOTPLATE_2_N",
+    "P_T01_FOOTPLATE_2_P",
+    "P_T01_FOOTPLATE_3_N",
+    "P_T01_FOOTPLATE_3_P"
+   ],
+   "signatures": {
+    "P_T01_FOOTPLATE_1_N": "((18.0, 45.0), 6.0, (2.75,))",
+    "P_T01_FOOTPLATE_1_P": "((18.0, 45.0), 6.0, (2.75,))",
+    "P_T01_FOOTPLATE_2_N": "((38.1, 48.0), 6.0, (2.75,))",
+    "P_T01_FOOTPLATE_2_P": "((38.1, 48.0), 6.0, (2.75,))",
+    "P_T01_FOOTPLATE_3_N": "((38.1, 48.0), 6.0, (2.75,))",
+    "P_T01_FOOTPLATE_3_P": "((38.1, 48.0), 6.0, (2.75,))"
+   },
+   "same": false,
+   "same_thickness_holes": true
+  }
+ },
+ "parts": {
+  "P_T01_HUB": {
+   "op_3g": {
+    "M_hub": 66232.2,
+    "sigma": 34.88,
+    "SF": 5.88
+   },
+   "jam": {
+    "M_hub": 65305.7,
+    "sigma": 34.39,
+    "SF": 5.96
+   },
+   "prev": {
+    "SF_3g": 5.9,
+    "SF_jam": 5.97,
+    "DP1_target": 4.97
+   },
+   "mass_g": 4378.4,
+   "mass_target_g": 4404,
+   "note": "형상 그대로(v0.6.6 STEP). 하중만 너트판·누름판·CB5-18 질량을 더함"
+  },
+  "P_T01_FOOTPLATE_*": {
+   "지난 회차 식: 볼트 중심 레버 10, 폭 22.5(총단면)": {
+    "sigma": 52.28,
+    "SF": 3.35
+   },
+   "보수 하한: 볼트 중심 순단면 17, 레버 10": {
+    "sigma": 69.2,
+    "SF": 2.53
+   },
+   "판정: 머리 가장자리 단면, 레버 5.75, 폭 22.5": {
+    "sigma": 30.06,
+    "SF": 5.82
+   },
+   "beam_handcalc(판정 단면)": {
+    "inputs": {
+     "t": 6.0,
+     "b": 22.5,
+     "L": 5.75,
+     "E": 70300.0,
+     "Rp": 175.0,
+     "end": "cantilever",
+     "sf_min": 3.0
+    },
+    "force_N": 705.827,
+    "deflection_mm": 0.0016,
+    "stiffness_N_mm": 449291.3619,
+    "stress_MPa": 30.06,
+    "sf": 5.82,
+    "thin": false,
+    "ok": true,
+    "needs_fea": true
+   },
+   "F_bolt_max": 705.8,
+   "joint_open_load_N": {
+    "4 N·m": 809.5,
+    "5 N·m": 1011.9
+   },
+   "joint_closed_margin_3g": {
+    "4 N·m": 1.15,
+    "5 N·m": 1.43
+   },
+   "note": "6장 같은 형상(N·P 거울). 하중 최대 볼트(r110, 704 N 계열) 자리 하나로 판정(E-19). 판 밑면은 발 윗면에 평평히 앉고 예압으로 닫힘"
+  },
+  "P_T01_SPIDER_1~3 발 국부(누름판 뒤)": {
+   "판정: 레버 2(33→35), 폭 25": {
+    "sigma": 37.64,
+    "SF": 4.65
+   },
+   "레버 1(33→34, C1 무시)": {
+    "sigma": 18.82,
+    "SF": 9.3
+   },
+   "상한: 레버 5(다리 바깥면 30→35), 폭 25": {
+    "sigma": 94.11,
+    "SF": 1.86
+   },
+   "상한 레버 5, 폭 45(누름판 길이)": {
+    "sigma": 52.28,
+    "SF": 3.35
+   },
+   "prev_lever11_SF": 0.8
+  },
+  "P_T01_NUTPLATE_*": {
+   "F_m4": 93.5,
+   "plate_bending_worst_sigma": 2.78,
+   "SF_plate": 62.8,
+   "ligament_tap_to_center_mm": 2.8,
+   "ligament_tap_to_edge_mm": 4.57,
+   "note": "6장 같은 형상(E-19). 판은 웹 밑면에 면 접촉, 볼트 당김은 웹이 받는다. 탭 물림 6 = 1.5d(M-01)"
+  },
+  "P_T01_POST": {
+   "tube_root_sigma_mis": 3.57,
+   "SF_tube_mis": 5.6,
+   "prev_SF_tube_mis": 5.51,
+   "판정: 관 뿌리 단면 t12, 레버 15.75(머리 끝 → 관 r30), 폭 40": {
+    "sigma": 7.95,
+    "SF": 2.52
+   },
+   "상한: 레버 20(볼트 중심 → 관), t12": {
+    "sigma": 10.09,
+    "SF": 1.98
+   },
+   "참고: 카운터보어 바닥 t8.5가 판정 단면이라 볼 때(레버 15.75)": {
+    "sigma": 15.84,
+    "SF": 1.26
+   },
+   "counterbore_outer_wall_mm": 5.25,
+   "counterbore_to_tube_mm": 15.25,
+   "bolt_F_mis": 484.4,
+   "prev_SF_flange_mis_t8.5": 1.26,
+   "mass_g": 627.5
+  }
+ },
+ "bolts": {
+  "LHFR16 → 너트판 CB4-16 (A5052 탭 물림 6, 좌면 LHFR16 플랜지 카운터보어 — 강, SS400 자리값)": [
+   {
+    "inputs": {
+     "d": 4,
+     "le": 6.0,
+     "load_N": 93.53457844703514,
+     "torque_Nm": 1.5,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 6.3,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 1875.0,
+    "engage_ratio": 1.5,
+    "sf_operating": {
+     "나사 인장": 103.26,
+     "암나사 전단": 35.37,
+     "분리(예압/외력)": 20.05
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 4.64,
+     "조임 좌면": 1.71,
+     "조임 암나사 전단": 1.76
+    },
+    "worst": "조임 좌면",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   {
+    "inputs": {
+     "d": 4,
+     "le": 6.0,
+     "load_N": 93.53457844703514,
+     "torque_Nm": 2.0,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 6.3,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 2500.0,
+    "engage_ratio": 1.5,
+    "sf_operating": {
+     "나사 인장": 103.26,
+     "암나사 전단": 35.37,
+     "분리(예압/외력)": 26.73
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 3.48,
+     "조임 좌면": 1.28,
+     "조임 암나사 전단": 1.32
+    },
+    "worst": "조임 좌면",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   {
+    "inputs": {
+     "d": 4,
+     "le": 6.0,
+     "load_N": 93.53457844703514,
+     "torque_Nm": 2.5,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 6.3,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 3125.0,
+    "engage_ratio": 1.5,
+    "sf_operating": {
+     "나사 인장": 103.26,
+     "암나사 전단": 35.37,
+     "분리(예압/외력)": 33.41
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 2.78,
+     "조임 좌면": 1.03,
+     "조임 암나사 전단": 1.06
+    },
+    "worst": "조임 좌면",
+    "ok": true,
+    "needs_fea": true,
+    "near_limit": [
+     "조임 좌면",
+     "조임 암나사 전단"
+    ]
+   }
+  ],
+  "LHFR16 좌면(SS400 자리값)": {
+   "inputs": {
+    "d": 4,
+    "le": 6.0,
+    "load_N": 93.53457844703514,
+    "torque_Nm": 2.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 6.3,
+    "dh": 4.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 2500.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 103.26,
+    "암나사 전단": 44.44,
+    "분리(예압/외력)": 26.73
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.48,
+    "조임 좌면": 2.99,
+    "조임 암나사 전단": 1.66
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "스파이더 발 → 허브 STEP대기_CB5-18 (SUS304 탭 물림 8, 좌면 누름판 A5052 t6)": [
+   {
+    "inputs": {
+     "d": 5,
+     "le": 8.0,
+     "load_N": 705.8270883908452,
+     "torque_Nm": 4.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 4000.0,
+    "engage_ratio": 1.6,
+    "sf_operating": {
+     "나사 인장": 22.13,
+     "암나사 전단": 8.21,
+     "분리(예압/외력)": 5.67
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 3.51,
+     "조임 좌면": 3.3,
+     "조임 암나사 전단": 1.45
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   {
+    "inputs": {
+     "d": 5,
+     "le": 8.0,
+     "load_N": 705.8270883908452,
+     "torque_Nm": 5.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 5000.0,
+    "engage_ratio": 1.6,
+    "sf_operating": {
+     "나사 인장": 22.13,
+     "암나사 전단": 8.21,
+     "분리(예압/외력)": 7.08
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 2.81,
+     "조임 좌면": 2.64,
+     "조임 암나사 전단": 1.16
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  ],
+  "누름판 좌면 A5052": [
+   {
+    "inputs": {
+     "d": 5,
+     "le": 8.0,
+     "load_N": 705.8270883908452,
+     "torque_Nm": 4.0,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 4000.0,
+    "engage_ratio": 1.6,
+    "sf_operating": {
+     "나사 인장": 22.13,
+     "암나사 전단": 7.81,
+     "분리(예압/외력)": 5.67
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 3.51,
+     "조임 좌면": 1.73,
+     "조임 암나사 전단": 1.38
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   {
+    "inputs": {
+     "d": 5,
+     "le": 8.0,
+     "load_N": 705.8270883908452,
+     "torque_Nm": 5.0,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 5000.0,
+    "engage_ratio": 1.6,
+    "sf_operating": {
+     "나사 인장": 22.13,
+     "암나사 전단": 7.81,
+     "분리(예압/외력)": 7.08
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 2.81,
+     "조임 좌면": 1.39,
+     "조임 암나사 전단": 1.1
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  ],
+  "기둥 밑 → 허브 CB5-16 (SUS304 탭 물림 7.5, 좌면 PET-CF 카운터보어 바닥)": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 484.4,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "SUS304",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 32.25,
+    "암나사 전단": 11.22,
+    "분리(예압/외력)": 3.1
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 8.8,
+    "조임 암나사 전단": 3.62
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "기둥 밑 좌면 PET-CF(와셔 없음, 1.5 N·m)": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 484.4,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "PET-CF",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 32.25,
+    "암나사 전단": 3.28,
+    "분리(예압/외력)": 3.1
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 1.32,
+    "조임 암나사 전단": 1.06
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": true,
+   "near_limit": [
+    "조임 암나사 전단"
+   ]
+  },
+  "기둥 밑 좌면 PET-CF(M5 와셔 Ø10, D-43 (2)) — 카운터보어 Ø9.5에 와셔 Ø10은 안 들어감": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 484.4,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "PET-CF",
+    "dw": 9.4,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1500.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 32.25,
+    "암나사 전단": 3.28,
+    "분리(예압/외력)": 3.1
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.37,
+    "조임 좌면": 1.83,
+    "조임 암나사 전단": 1.06
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": true,
+   "near_limit": [
+    "조임 암나사 전단"
+   ]
+  }
+ },
+ "notes": [],
+ "step_ok": true,
+ "loads": {
+  "spider_V_1g_old": 91.513,
+  "spider_V_1g_new": 91.774,
+  "M_root_1g_old": 16657.6,
+  "M_root_1g_new": 16711.5,
+  "foot_bolt_F_3g": 705.8,
+  "foot_bolt_F_jam": 678.6,
+  "prev_foot_bolt_F_3g": 703.6,
+  "mass_change_per_bush_kg": 0.0133,
+  "foot_set_per_spider_kg": 0.0278
+ },
+ "mass": {
+  "spider_body_kg": 1.132,
+  "spider_with_plates_kg": 1.186,
+  "nutplate_g": 14.9,
+  "footplate_g": 12.1,
+  "post_g": 627.5,
+  "hub_g": 4378.4,
+  "added_rotating_kg": 0.2005
+ },
+ "judge": [
+  {
+   "item": "허브 t8 운전 3 g",
+   "value": 5.88,
+   "required": 3.0,
+   "status": "ok",
+   "needs_fea": false
+  },
+  {
+   "item": "허브 t8 막힘",
+   "value": 5.96,
+   "required": 2.0,
+   "status": "ok",
+   "needs_fea": false
+  },
+  {
+   "item": "누름판 t6 (판정 단면)",
+   "value": 5.82,
+   "required": 3.0,
+   "status": "ok",
+   "needs_fea": false
+  },
+  {
+   "item": "누름판 t6 (지난 회차 식)",
+   "value": 3.35,
+   "required": 3.0,
+   "status": "ok",
+   "needs_fea": false
+  },
+  {
+   "item": "스파이더 발 국부(누름판 뒤, 레버 2)",
+   "value": 4.65,
+   "required": 3.0,
+   "status": "ok",
+   "needs_fea": false
+  },
+  {
+   "item": "너트판 굽힘(최악)",
+   "value": 62.8,
+   "required": 3.0,
+   "status": "ok",
+   "needs_fea": false
+  },
+  {
+   "item": "기둥 관 오조작",
+   "value": 5.6,
+   "required": 2.0,
+   "status": "ok",
+   "needs_fea": false
+  },
+  {
+   "item": "기둥 밑 플랜지 t12 오조작",
+   "value": 2.52,
+   "required": 2.0,
+   "status": "ok",
+   "needs_fea": false
+  }
+ ]
+}
