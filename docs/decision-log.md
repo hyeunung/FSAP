@@ -1202,3 +1202,21 @@ PM(원칙 감사), 2026-11-02. 대상 `3D_Modeling/FSAP_v0.8.0.sc`(config doc, T
 | T15-M02 | 행정 점검은 joint.sweep 대신 drive 10자세 + clearance로 함(전부 겹침 0, 패드 틈 0.3, 받침면 0.0) | joint.sweep이 접촉 예산 초과로 거부(T05 STEP 하위 바디) | T03 선례(`tools/out/mech_T03/gen_s.py`), E-15 |
 | T15-M03 | 앞벽 오조작B 두 변 SF 3.80(외팔 1.90), 데크 운전 3.95·오조작 2.17 — 손계산, 해석 못 함(D-16) | 하중 점 Z 45 → 천장 밑면 76.5, 늘어짐 31.5 | `fea/cases/mech_T15_handcalc.py`, M-09 |
 
+
+## 구동 T15 결과 (2026-11-01)
+
+문서 담당. 설계검토서 `docs/review/FSAP_v0.8.1_review.md`, BOM `docs/bom/FSAP_v0.8.1_*.csv`.
+
+| id | 결과 | 내용 | 근거 |
+|---|---|---|---|
+| T15-R01 | 적용 | `P_T05_GUIDE` 천장 Z76.5~80.5 + 너트 틈 Z80.5~85.5, `P_T05_PAD` C2 ×2. 스패너 21×4 겹침 0, 패드 틈 0.3/0.3/0.0, T05 간섭 0 | `mech_T15_model.md` 3절 |
+| T15-R02 | 적용 | 앞벽 오조작B 두 변 SF 3.80 ≥ 2(손계산, 해석 못 함 — 환경 없음 D-16) | `fea/cases/mech_T15_handcalc.py` |
+| T15-R03 | 남은 동작 문제 | 최종 판정 미합격: joint.sweep J_T05_PAD 결과 없음. 수정 1회차에서 임시 분리 sweep으로 −12.5→0 막힘 없음(최소 0.30) 확인, 판정 재확인 필요 | `mech_T15_model1.md` |
+
+디테일 과제(E-02, 구동 확정 뒤 처리)
+
+| id | 내용 | 출처 |
+|---|---|---|
+| (없음) | 최종 판정 details 0건. 모델링부 기록 d1~d4는 `mech_T15_model.md` 5절 | — |
+
+예외 판정 0건.
