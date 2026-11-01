@@ -1,0 +1,436 @@
+{
+ "method": "손계산(표준 라이브러리). 해석 못 함 — 환경 없음(D-16). 모델 = fea/models.json 그대로",
+ "checks": [
+  {
+   "part": "P_T01_POST",
+   "what": "관 바깥 R(점 최빈)",
+   "step": 30.0,
+   "used": 30.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "속 R(장공 높이 다시 깎음, 점 최빈)",
+   "step": 20.1,
+   "used": 20.1,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "속 Ø40.2 Z 밑",
+   "step": -212.0,
+   "used": -212.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "속 Ø40.2 Z 위",
+   "step": -194.0,
+   "used": -194.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "장공 Z 밑",
+   "step": -208.0,
+   "used": -208.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "장공 Z 위",
+   "step": -198.0,
+   "used": -198.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "장공 330° 폭(r30 호)",
+   "step": 5.51,
+   "used": 5.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "장공 210° 폭(r30 호)",
+   "step": 5.51,
+   "used": 5.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "장공 90° 폭(r30 호)",
+   "step": 5.51,
+   "used": 5.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_SPIDER_1",
+   "what": "결속 구멍 Z 위",
+   "step": -197.5,
+   "used": -197.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_SPIDER_1",
+   "what": "결속 구멍 Z 밑",
+   "step": -208.5,
+   "used": -208.5,
+   "ok": true
+  },
+  {
+   "part": "P_T01_YPLATE",
+   "what": "결속 구멍 수(위치)",
+   "step": 2,
+   "used": 2,
+   "ok": true
+  }
+ ],
+ "parts": {
+  "P_T01_POST": {
+   "material": "PET-CF(층간 자리값 20 MPa)",
+   "gross_Z_root": 17017.0,
+   "net_by_dir": [
+    {
+     "load_dir_deg": 0,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 5,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 10,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 15,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 20,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 25,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 30,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 35,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 40,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 45,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 50,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 55,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 60,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 65,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 70,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 75,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 80,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 85,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 90,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 95,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 100,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 105,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 110,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    },
+    {
+     "load_dir_deg": 115,
+     "A": 1394.8,
+     "I": 455925.0,
+     "y_max": 30.0,
+     "Z_net": 15198.0
+    }
+   ],
+   "worst_load_dir_deg": 30,
+   "Z_net_min": 15198.0,
+   "A_net": 1394.8,
+   "lever_slot": 207.5,
+   "M_mis_slot": 57184.0,
+   "sigma_nom_net_mis": 3.76,
+   "SF_nom_net_mis": 5.32,
+   "Kt": 3.0,
+   "sigma_peak_gross_mis": 10.08,
+   "SF_peak_gross_mis": 1.98,
+   "sigma_peak_net_mis": 11.29,
+   "SF_peak_net_mis": 1.77,
+   "root_sigma_mis_v0614": 3.57,
+   "SF_root_v0614": 5.6,
+   "root_sigma_mis_after": 3.57,
+   "note": "관 뿌리(Z -221) 단면은 그대로(장공은 Z -208~-198, 뿌리 위 13). 속 Ø40.2 다시 깎기는 Z -212~-194만",
+   "F_op": 20.8564,
+   "sigma_peak_net_op": 0.854,
+   "SF_peak_net_op": 23.4,
+   "ligament_outer_arc_mm": 57.33,
+   "ligament_inner_arc_mm": 36.6,
+   "slot_to_flange_top_mm": 13.0,
+   "tie_bearing_MPa": 0.92
+  },
+  "P_T01_SPIDER_1~3": {
+   "material": "A5052 t3",
+   "z_NA": -161.32,
+   "holes": {
+    "운전 3 g Z-208.5": {
+     "y_from_NA": 47.18,
+     "sigma_nom": 0.949,
+     "sigma_peak_Kt3": 2.846,
+     "SF": 61.5,
+     "bound_Kt3_x_max_fiber_SF": 41.3
+    },
+    "운전 3 g Z-197.5": {
+     "y_from_NA": 36.18,
+     "sigma_nom": 0.721,
+     "sigma_peak_Kt3": 2.163,
+     "SF": 80.9,
+     "bound_Kt3_x_max_fiber_SF": 41.3
+    },
+    "막힘 Z-208.5": {
+     "y_from_NA": 47.18,
+     "sigma_nom": 0.914,
+     "sigma_peak_Kt3": 2.741,
+     "SF": 63.8,
+     "bound_Kt3_x_max_fiber_SF": 42.9
+    },
+    "막힘 Z-197.5": {
+     "y_from_NA": 36.18,
+     "sigma_nom": 0.695,
+     "sigma_peak_Kt3": 2.084,
+     "SF": 84.0,
+     "bound_Kt3_x_max_fiber_SF": 42.9
+    }
+   },
+   "note": "구멍 r 140(Y -560)은 발 볼트 줄(외팔 뿌리 r143.4) 안 — 발이 허브에 눌린 자리라 굽힘이 더 작다. r 300(Y -400)은 외팔 안. 보수로 뿌리 모멘트를 둘 다에 씀",
+   "edge_to_foot_bend_mm": 19.5,
+   "prev_SF_3g": 124.0,
+   "lateral_bound_SF": 154.3
+  },
+  "P_T01_YPLATE": {
+   "material": "A5052 t15",
+   "prev_sigma_3g": 12.28,
+   "prev_sigma_hit": 11.46,
+   "bound_Kt3_x_max_3g": {
+    "sigma": 36.85,
+    "SF": 4.75,
+    "req": 3.0
+   },
+   "bound_Kt3_x_max_hit": {
+    "sigma": 34.38,
+    "SF": 5.09,
+    "req": 2.0
+   },
+   "note": "구멍 (±10, -590)은 판 가운데 줄기(|x| < 47.5), DG 바닥(±100, -800~-600) 밖 10 — 판정 띠(DG 모서리 → 블록 (±150, -860/-540), 폭 100)에서 x 90 이상 떨어짐. 보수 상한으로 최대 응력 × Kt 3을 써도 기준 넘음"
+  }
+ },
+ "step_bbox": {
+  "P_T01_POST": [
+   [
+    -60.58,
+    60.58
+   ],
+   [
+    -766.334,
+    0.0
+   ],
+   [
+    -233.0,
+    0.0
+   ]
+  ],
+  "P_T01_SPIDER_1": [
+   [
+    -52.0,
+    52.0
+   ],
+   [
+    -600.0,
+    0.0
+   ],
+   [
+    -233.0,
+    0.0
+   ]
+  ],
+  "P_T01_YPLATE": [
+   [
+    -200.0,
+    200.0
+   ],
+   [
+    -950.0,
+    0.0
+   ],
+   [
+    -370.0,
+    0.0
+   ]
+  ]
+ },
+ "post_point_radius_top": [
+  [
+   20.1,
+   2963
+  ],
+  [
+   30.0,
+   2946
+  ],
+  [
+   20.0,
+   60
+  ],
+  [
+   29.9,
+   29
+  ]
+ ],
+ "post_slot_points_by_sector": {
+  "2": 386,
+  "1": 1197,
+  "0": 1386
+ },
+ "post_slot_half_angle_deg_r30": {
+  "330": 5.26,
+  "210": 5.26,
+  "90": 5.26
+ },
+ "spider_holes": {
+  "n_cyl_faces": 4,
+  "z": [
+   -208.5,
+   -197.5
+  ],
+  "y": [
+   -560.0,
+   -400.0
+  ]
+ },
+ "yplate_holes": [
+  [
+   -10.0,
+   -590.0
+  ],
+  [
+   10.0,
+   -590.0
+  ]
+ ],
+ "all_checks_ok": true
+}

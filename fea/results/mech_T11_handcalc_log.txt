@@ -1,0 +1,7 @@
+checks ok True []
+post [(20.1, 2963), (30.0, 2946), (20.0, 60), (29.9, 29)] {330: 5.26, 210: 5.26, 90: 5.26}
+POST worst dir 30 Znet 15198.0 gross 17017.0
+POST mis nom 3.76 5.32 peak gross 10.08 1.98 peak net 11.29 1.77
+POST op 20.8564 23.4 root 5.6
+SPIDER holes {'n_cyl_faces': 4, 'z': [-208.5, -197.5], 'y': [-560.0, -400.0]} {"운전 3 g Z-208.5": {"y_from_NA": 47.18, "sigma_nom": 0.949, "sigma_peak_Kt3": 2.846, "SF": 61.5, "bound_Kt3_x_max_fiber_SF": 41.3}, "운전 3 g Z-197.5": {"y_from_NA": 36.18, "sigma_nom": 0.721, "sigma_peak_Kt3": 2.163, "SF": 80.9, "bound_Kt3_x_max_fiber_SF": 41.3}, "막힘 Z-208.5": {"y_from_NA": 47.18, "sigma_nom": 0.914, "sigma_peak_Kt3": 2.741, "SF": 63.8, "bound_Kt3_x_max_fiber_SF": 42.9}, "막힘 Z-197.5": {"y_from_NA": 36.18, "sigma_nom": 0.695, "sigma_peak_Kt3": 2.084, "SF": 84.0, "bound_Kt3_x_max_fiber_SF": 42.9}}
+YPLATE [(-10.0, -590.0), (10.0, -590.0)] {'sigma': 36.85, 'SF': 4.75, 'req': 3.0} {'sigma': 34.38, 'SF': 5.09, 'req': 2.0}
