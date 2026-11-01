@@ -10,6 +10,7 @@ This project follows Semantic Versioning.
 
 ## Added
 
+- 설계 v0.6.14 구동 T10 결과: 수정 1회차로 패드 28자세·동작 연구 8개 간섭 0 확인, T10 해결. BOM·설계검토서 v0.6.14(`docs/review/FSAP_v0.6.14_review.md`).
 - 설계 v0.6.14 `3D_Modeling/FSAP_v0.6.14.sc`(구동 T10 T05 패드 위치, 작은 변경): CJ2B10-15Z 몸통·SNJ·로드·NTJ ×2·`P_T05_PAD` X +4.10(패드 중심 −126.90, 테이프 중심과 차 0.0025). `P_T05_GUIDE` 위판 Ø8.2 구멍 (−135.0→−126.90, 572.5)(옛 구멍 face.delete heal). 작업 대상 외피 `MAT_TAPE_PATH` 끝 Y 552.5~600 자름(외피 겹침 1.842→0). `J_T05_PAD` 새 축에 다시 만듦. 새 과제 T15(SNJ 스패너 자리). 보고서 `docs/reports/mechanism/mech_T10_model.md`.
 - 구동 T09 결과(v0.6.13, 문서): 모델링 수정 2회차(형상 변경 0)로 3사이클 전 단계·칼 행정 0.5 mm 61자세 간섭 0 확인. T09 해결 — 맞날 틈 0.097, 오조작 T SF 2.26·칼 막힘 SF 8.17. BOM `docs/bom/FSAP_v0.6.13_*.csv`, 설계검토서 `docs/review/FSAP_v0.6.13_review.md`, 결정로그 '구동 T09 결과'(디테일 T09-D1~D5), 요구서 5절 T09 해결, 자료대기 D-37·D-43·D-44 갱신. 보고서 `docs/reports/mechanism/mech_T09_model2.md`
 - 설계 v0.6.13 `3D_Modeling/FSAP_v0.6.13.sc`(구동 T09 수정 1회차, 작은 변경): `J_T06_KNIFE` 원점 (72, −7.5, 57) → (24, −62.5, 45)(다시 만들고 8개 연구 키 그대로 다시 넣음, T09-M10). `P_T09_GBASE`·`P_T09_ARM` 남은 날카로운 모서리를 스케치 띠로 안 R1·바깥 C0.5 마감(GBASE 64 233.1 → 64 237.0 mm³, ARM 18 925.9 → 18 903.8 mm³, T09-M11·M12). 조인트 floating 0. 해석용 임시 STEP `tools/out/mech_T09/stepout/P_T09_ARM.step`·`P_T09_GBASE.step` 다시 냄. 보고서 `docs/reports/mechanism/mech_T09_model1.md`
