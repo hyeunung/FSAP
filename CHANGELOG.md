@@ -10,6 +10,7 @@ This project follows Semantic Versioning.
 
 ## Added
 
+- 설계 v0.6.15 `3D_Modeling/FSAP_v0.6.15.sc`(구동 T11 링 실린더 배관 길, 작은 변경): `P_T01_POST` 세로 장공 5.5×10 ×3(90·210·330°, Z −208~−198) + 장공 높이 속 Ø40.2 다시 깎음(330° 조각 면 정리, DEV-2), `P_T01_SPIDER_1~3` 결속 구멍 Ø4 ×4씩(판금 블랭크 구멍), `P_T01_YPLATE` 결속 구멍 Ø4.5 ×2 (±10, −590). 새 E-10 임시 형상 `STEP대기_KQ2L04-M5A_R2_1~3`·`_R1_1~3`(10×16×11, 출구 +Z, 미스미 로그인 풀림). `J_MAT_ROT` 한계 −360~0(8개 연구 끝 단계 안). 관·결속 밴드 경로 상자 `tools/motion_states.json` `t11_routes`. 정적 겹침 0, 동작 연구 4개 clear(truncated false), floating 0, matcheck 불일치 0. 생성기 `tools/gen_t11_mech.py`, 보고서 `docs/reports/mechanism/mech_T11_*`
 - 설계 v0.6.14 구동 T10 결과: 수정 1회차로 패드 28자세·동작 연구 8개 간섭 0 확인, T10 해결. BOM·설계검토서 v0.6.14(`docs/review/FSAP_v0.6.14_review.md`).
 - 설계 v0.6.14 `3D_Modeling/FSAP_v0.6.14.sc`(구동 T10 T05 패드 위치, 작은 변경): CJ2B10-15Z 몸통·SNJ·로드·NTJ ×2·`P_T05_PAD` X +4.10(패드 중심 −126.90, 테이프 중심과 차 0.0025). `P_T05_GUIDE` 위판 Ø8.2 구멍 (−135.0→−126.90, 572.5)(옛 구멍 face.delete heal). 작업 대상 외피 `MAT_TAPE_PATH` 끝 Y 552.5~600 자름(외피 겹침 1.842→0). `J_T05_PAD` 새 축에 다시 만듦. 새 과제 T15(SNJ 스패너 자리). 보고서 `docs/reports/mechanism/mech_T10_model.md`.
 - 구동 T09 결과(v0.6.13, 문서): 모델링 수정 2회차(형상 변경 0)로 3사이클 전 단계·칼 행정 0.5 mm 61자세 간섭 0 확인. T09 해결 — 맞날 틈 0.097, 오조작 T SF 2.26·칼 막힘 SF 8.17. BOM `docs/bom/FSAP_v0.6.13_*.csv`, 설계검토서 `docs/review/FSAP_v0.6.13_review.md`, 결정로그 '구동 T09 결과'(디테일 T09-D1~D5), 요구서 5절 T09 해결, 자료대기 D-37·D-43·D-44 갱신. 보고서 `docs/reports/mechanism/mech_T09_model2.md`
