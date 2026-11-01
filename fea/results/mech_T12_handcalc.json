@@ -1,0 +1,645 @@
+{
+ "case": "mech_T12_handcalc",
+ "target": "FSAP_v0.7.0",
+ "fea": "해석 못 함 — 환경 없음(자료대기 D-16)",
+ "material": {
+  "name": "SUS304",
+  "E": 193000.0,
+  "Sy": 205.0,
+  "nu": 0.3
+ },
+ "criteria": {
+  "sf_op": 3.0,
+  "sf_mis": 2.0,
+  "sf_break": 1.2,
+  "source": "요구서 6-1 비어 있음 → M-09, D-38 임시"
+ },
+ "step": {
+  "SU_RF": {
+   "n_vert": 8,
+   "bbox": [
+    [
+     1505.0,
+     1507.0
+    ],
+    [
+     -1742.0,
+     -50.5
+    ],
+    [
+     -179.5,
+     900.0
+    ]
+   ],
+   "plane_levels": {
+    "Z": [
+     -179.5,
+     900.0
+    ],
+    "X": [
+     1505.0,
+     1507.0
+    ],
+    "Y": [
+     -1742.0,
+     -50.5
+    ]
+   }
+  },
+  "SL_RF": {
+   "n_vert": 8,
+   "bbox": [
+    [
+     1505.0,
+     1507.0
+    ],
+    [
+     -1742.0,
+     -50.5
+    ],
+    [
+     -680.0,
+     -180.5
+    ]
+   ],
+   "plane_levels": {
+    "Z": [
+     -680.0,
+     -180.5
+    ],
+    "X": [
+     1505.0,
+     1507.0
+    ],
+    "Y": [
+     -1742.0,
+     -50.5
+    ]
+   }
+  },
+  "BK_R": {
+   "n_vert": 8,
+   "bbox": [
+    [
+     460.0,
+     1505.0
+    ],
+    [
+     940.0,
+     942.0
+    ],
+    [
+     -680.0,
+     900.0
+    ]
+   ],
+   "plane_levels": {
+    "Z": [
+     -680.0,
+     900.0
+    ],
+    "X": [
+     460.0,
+     1505.0
+    ],
+    "Y": [
+     940.0,
+     942.0
+    ]
+   }
+  },
+  "DOOR": {
+   "n_vert": 56,
+   "bbox": [
+    [
+     -458.5,
+     458.5
+    ],
+    [
+     920.0,
+     942.0
+    ],
+    [
+     -598.5,
+     818.5
+    ]
+   ],
+   "plane_levels": {
+    "Z": [
+     -598.5,
+     -596.5,
+     -595.086,
+     -594.5,
+     814.5,
+     815.086,
+     816.5,
+     818.5
+    ],
+    "X": [
+     -458.5,
+     -456.5,
+     -455.086,
+     -454.5,
+     454.5,
+     455.086,
+     456.5,
+     458.5
+    ],
+    "Y": [
+     920.0,
+     938.0,
+     940.0,
+     942.0
+    ]
+   }
+  }
+ },
+ "beam_check_SU": {
+  "inputs": {
+   "t": 2.0,
+   "b": 100.0,
+   "L": 480.0,
+   "E": 193000.0,
+   "Rp": 205.0,
+   "end": "cantilever",
+   "sf_min": 2.0
+  },
+  "force_N": 100.0,
+  "deflection_mm": 286.5078,
+  "stiffness_N_mm": 0.349,
+  "stress_MPa": 720.0,
+  "sf": 0.28,
+  "thin": true,
+  "ok": false,
+  "needs_fea": false
+ },
+ "plates": [
+  {
+   "panel": "SU_RF 무릎 200 N 오조작",
+   "a": 1610,
+   "b": 960,
+   "a_b": 1.677,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 50.0,
+   "sigma": 99.1,
+   "sf": 2.07,
+   "sf_req": 2.0,
+   "defl_linear": 20.7,
+   "defl_over_t": 10.4,
+   "ok": true,
+   "near": true,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 150.7,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SU_RF 무릎 200 N r0 25 민감도",
+   "a": 1610,
+   "b": 960,
+   "a_b": 1.677,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 25.0,
+   "sigma": 120.6,
+   "sf": 1.7,
+   "sf_req": 2.0,
+   "defl_linear": 20.7,
+   "defl_over_t": 10.4,
+   "ok": false,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 150.7,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SU_RF 기댐 100 N 운전",
+   "a": 1610,
+   "b": 960,
+   "a_b": 1.677,
+   "t": 2.0,
+   "W": 100.0,
+   "r0": 50.0,
+   "sigma": 49.5,
+   "sf": 4.14,
+   "sf_req": 3.0,
+   "defl_linear": 10.4,
+   "defl_over_t": 5.2,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 161.0,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SU_RR 무릎 200 N 오조작",
+   "a": 960,
+   "b": 910,
+   "a_b": 1.055,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 50.0,
+   "sigma": 87.8,
+   "sf": 2.33,
+   "sf_req": 2.0,
+   "defl_linear": 14.2,
+   "defl_over_t": 7.1,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 157.2,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SU_RR 무릎 200 N r0 25 민감도",
+   "a": 960,
+   "b": 910,
+   "a_b": 1.055,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 25.0,
+   "sigma": 109.3,
+   "sf": 1.87,
+   "sf_req": 2.0,
+   "defl_linear": 14.2,
+   "defl_over_t": 7.1,
+   "ok": false,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 157.2,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SU_RR 기댐 100 N 운전",
+   "a": 960,
+   "b": 910,
+   "a_b": 1.055,
+   "t": 2.0,
+   "W": 100.0,
+   "r0": 50.0,
+   "sigma": 43.9,
+   "sf": 4.67,
+   "sf_req": 3.0,
+   "defl_linear": 7.1,
+   "defl_over_t": 3.6,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 164.3,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SL_RF 무릎 200 N 오조작",
+   "a": 1610,
+   "b": 380,
+   "a_b": 4.237,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 50.0,
+   "sigma": 72.8,
+   "sf": 2.82,
+   "sf_req": 2.0,
+   "defl_linear": 3.5,
+   "defl_over_t": 1.7,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 167.9,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SL_RF 무릎 200 N r0 25 민감도",
+   "a": 1610,
+   "b": 380,
+   "a_b": 4.237,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 25.0,
+   "sigma": 94.3,
+   "sf": 2.17,
+   "sf_req": 2.0,
+   "defl_linear": 3.5,
+   "defl_over_t": 1.7,
+   "ok": true,
+   "near": true,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 167.9,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SL_RF 기댐 100 N 운전",
+   "a": 1610,
+   "b": 380,
+   "a_b": 4.237,
+   "t": 2.0,
+   "W": 100.0,
+   "r0": 50.0,
+   "sigma": 36.4,
+   "sf": 5.63,
+   "sf_req": 3.0,
+   "defl_linear": 1.7,
+   "defl_over_t": 0.9,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 169.7,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SL_RR 무릎 200 N 오조작",
+   "a": 910,
+   "b": 380,
+   "a_b": 2.395,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 50.0,
+   "sigma": 72.0,
+   "sf": 2.85,
+   "sf_req": 2.0,
+   "defl_linear": 3.4,
+   "defl_over_t": 1.7,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 168.0,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SL_RR 무릎 200 N r0 25 민감도",
+   "a": 910,
+   "b": 380,
+   "a_b": 2.395,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 25.0,
+   "sigma": 93.5,
+   "sf": 2.19,
+   "sf_req": 2.0,
+   "defl_linear": 3.4,
+   "defl_over_t": 1.7,
+   "ok": true,
+   "near": true,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 168.0,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "SL_RR 기댐 100 N 운전",
+   "a": 910,
+   "b": 380,
+   "a_b": 2.395,
+   "t": 2.0,
+   "W": 100.0,
+   "r0": 50.0,
+   "sigma": 36.0,
+   "sf": 5.69,
+   "sf_req": 3.0,
+   "defl_linear": 1.7,
+   "defl_over_t": 0.8,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 171.4,
+   "gap_after_defl": 169.7,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "BK_R 무릎 200 N 오조작",
+   "a": 1420,
+   "b": 885,
+   "a_b": 1.605,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 50.0,
+   "sigma": 96.1,
+   "sf": 2.13,
+   "sf_req": 2.0,
+   "defl_linear": 17.4,
+   "defl_over_t": 8.7,
+   "ok": true,
+   "near": true,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 329.0,
+   "gap_after_defl": 311.6,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "BK_R 무릎 200 N r0 25 민감도",
+   "a": 1420,
+   "b": 885,
+   "a_b": 1.605,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 25.0,
+   "sigma": 117.6,
+   "sf": 1.74,
+   "sf_req": 2.0,
+   "defl_linear": 17.4,
+   "defl_over_t": 8.7,
+   "ok": false,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 329.0,
+   "gap_after_defl": 311.6,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "BK_R 기댐 100 N 운전",
+   "a": 1420,
+   "b": 885,
+   "a_b": 1.605,
+   "t": 2.0,
+   "W": 100.0,
+   "r0": 50.0,
+   "sigma": 48.0,
+   "sf": 4.27,
+   "sf_req": 3.0,
+   "defl_linear": 8.7,
+   "defl_over_t": 4.4,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 329.0,
+   "gap_after_defl": 320.3,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "DOOR 판 무릎 200 N 오조작(접힘 안쪽, 단순 지지)",
+   "a": 1413.0,
+   "b": 913.0,
+   "a_b": 1.548,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 50.0,
+   "sigma": 96.5,
+   "sf": 2.12,
+   "sf_req": 2.0,
+   "defl_linear": 18.3,
+   "defl_over_t": 9.1,
+   "ok": true,
+   "near": true,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 329.0,
+   "gap_after_defl": 310.7,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "DOOR 판 무릎 200 N r0 25 민감도",
+   "a": 1413.0,
+   "b": 913.0,
+   "a_b": 1.548,
+   "t": 2.0,
+   "W": 200.0,
+   "r0": 25.0,
+   "sigma": 118.0,
+   "sf": 1.74,
+   "sf_req": 2.0,
+   "defl_linear": 18.3,
+   "defl_over_t": 9.1,
+   "ok": false,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 329.0,
+   "gap_after_defl": 310.7,
+   "gap_band_25_100": false
+  },
+  {
+   "panel": "DOOR 판 기댐 100 N 운전",
+   "a": 1413.0,
+   "b": 913.0,
+   "a_b": 1.548,
+   "t": 2.0,
+   "W": 100.0,
+   "r0": 50.0,
+   "sigma": 48.2,
+   "sf": 4.25,
+   "sf_req": 3.0,
+   "defl_linear": 9.1,
+   "defl_over_t": 4.6,
+   "ok": true,
+   "near": false,
+   "break": false,
+   "overspec": false,
+   "gap_to_moving": 329.0,
+   "gap_after_defl": 319.9,
+   "gap_band_25_100": false
+  }
+ ],
+ "door": {
+  "mass_kg": 21.98,
+  "weight_N": 215.6,
+  "I_section": 13029.0,
+  "c": 20.7,
+  "closed_knee_global": {
+   "M": 45850,
+   "sigma": 72.8,
+   "sf": 2.81,
+   "defl": 1.28,
+   "latch_N": 100.0,
+   "hinge_each_N": 50.0
+  },
+  "hinge_pull": {
+   "h700": {
+    "self_1g": 141.4,
+    "self_3g": 424.3,
+    "open_lean200": 403.4
+   },
+   "h1200": {
+    "self_1g": 82.5,
+    "self_3g": 247.5,
+    "open_lean200": 235.3
+   }
+  },
+  "open_push": {
+   "정지가 경첩 안(내장 정지)_100N": {
+    "M": 91700,
+    "sigma": 145.7,
+    "sf": 1.41
+   },
+   "정지가 경첩 안(내장 정지)_200N": {
+    "M": 183400,
+    "sigma": 291.4,
+    "sf": 0.7
+   },
+   "스테이 450_100N": {
+    "M": 46700,
+    "sigma": 74.2,
+    "sf": 2.76
+   },
+   "스테이 450_200N": {
+    "M": 93400,
+    "sigma": 148.4,
+    "sf": 1.38
+   },
+   "스테이 600_100N": {
+    "M": 31700,
+    "sigma": 50.4,
+    "sf": 4.07
+   },
+   "스테이 600_200N": {
+    "M": 63400,
+    "sigma": 100.7,
+    "sf": 2.04
+   },
+   "끝 받침 880_100N": {
+    "M": 3700,
+    "sigma": 5.9,
+    "sf": 34.88
+   },
+   "끝 받침 880_200N": {
+    "M": 7400,
+    "sigma": 11.8,
+    "sf": 17.44
+   }
+  },
+  "open_push50_defl_free": 5.11
+ },
+ "self_weight_3g_SU_RF": {
+  "N": 852.3,
+  "sigma_inplane": 0.252
+ },
+ "beams": [
+  {
+   "name": "SLT 가로대 약축 I=200000(가정)",
+   "M": 40250.0,
+   "sigma": 4.03,
+   "sf_6063T5_145": 36.0,
+   "defl": 0.63
+  },
+  {
+   "name": "SLT 가로대 약축 I=100000(가정)",
+   "M": 40250.0,
+   "sigma": 8.05,
+   "sf_6063T5_145": 18.0,
+   "defl": 1.26
+  }
+ ]
+}
