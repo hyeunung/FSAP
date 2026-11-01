@@ -288,15 +288,26 @@
    }
   },
   "P_T01_YPLATE": {
-   "case": "cases/mech_T01_fea1_handcalc.py(판 띠 손계산) · cases/mech_T11_handcalc.py(v0.6.15 결속 구멍 Ø4.5 ×2)",
-   "fixed": "블록 4개(±150, −860/−540) 위에 판 t15",
-   "contact": "DG 임시 형상 바닥(±100, −800~−600)이 판 윗면에 얹힘",
+   "case": "cases/mech_T01_fea1_handcalc.py(판 띠 손계산) · cases/mech_T11_handcalc.py(v0.6.15 결속 구멍 Ø4.5 ×2) · cases/mech_T14_fea_handcalc.py(v0.8.2 t10, 같은 모델 + X 띠 교차 + YNB 국부 굽힘)",
+   "fixed": "블록 4개(±150, −860/−540) 위에 판 t10(v0.8.2, Z −370~−360; v0.8.1까지 t15)",
+   "contact": "DG 받침 P_S01_DGSPACER 바닥(X ±100, Y −837.5~−600, Z −360)이 판 윗면에 얹힘. YNB(CB5-16 ×2, 관통 탭 물림 8)가 판 밑에 매달림",
    "load": "운전: 얹힌 질량 ×3 g, DG 바닥 모서리 → 블록 중심 외팔 띠(폭 100) / 오조작: 서보 충돌 1,080 N × 높이 341",
    "criteria": {
     "value": "A5052 Rp 175(H32 가정 보수), SF 운전 3·오조작 2(M-09)",
     "source": "M-09, fea/results/mech_T01_fea1_handcalc.json"
    },
-   "_v0.6.15": "결속 구멍 (±10, −590)은 판정 띠 밖. 보수 상한으로 판 최대 응력 × Kt 3을 구멍에 씀. 모델 그대로"
+   "_v0.6.15": "결속 구멍 (±10, −590)은 판정 띠 밖. 보수 상한으로 판 최대 응력 × Kt 3을 구멍에 씀. 모델 그대로",
+   "_v0.8.2": "T14: 두께만 t15→t10. 고정·접촉·하중 모델은 그대로(바꾸지 않음). 더한 검사: X 방향 띠(팔 50, 폭 100), YNB 볼트 당김 2×1319 N 국부 굽힘(고정 원판 a60, Roark 집중하중). 결과 fea/results/mech_T14_fea_handcalc.json"
+  },
+  "P_S01_DGSPACER": {
+   "case": "cases/mech_T14_fea_handcalc.py (v0.8.2, H55) — 해석 못 함 — 환경 없음(D-16)",
+   "fixed": "받침 밑면(Z −360)이 Y판 윗면에 앉음(받침↔판 체결은 모델에 없음, DP-4 디테일). 보수로 밑면 고정 외팔 기둥",
+   "contact": "윗면(Z −305)에 DGM200R-AZAC 바닥, Ø8.5 ×4 (±85, −785/−615)",
+   "load": "오조작 서보 1,080 N 옆힘 × 팔 360(매트면 Z 0 → 받침 밑 −360) + 압축 3 g 자중·오조작 짝힘",
+   "criteria": {
+    "value": "A5052 Rp 175(H32 가정 보수), SF 운전 3·오조작 2(M-09)",
+    "source": "M-09, fea/results/mech_T14_fea_handcalc.json"
+   }
   },
   "P_T12_SU_RF/RR, SL_RF/RR (L 거울)": {
    "case": "cases/mech_T12_handcalc.py (Roark 표 11.4 1d 단순 지지, β 0.435~1.000, v0.7.0)",
