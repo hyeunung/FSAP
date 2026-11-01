@@ -1,303 +1,393 @@
 {
-  "_설명": "부품별 해석 모델 표(엔진 templates/fea-models.json 틀, E-18). 2026-10-31 T04 해석부가 처음 만들었다. 지금까지 푼 부품은 T01·T02 손계산(해석 환경 없음, D-16)에서 쓴 경계조건을 옮겨 적었다. '_'로 시작하는 칸은 설명이다.",
-  "parts": {
-    "P_T02_FOOT": {
-      "case": "cases/mech_T04_handcalc.py (바닥 판 단면 수치 적분, v0.3.2) · cases/mech_T02_handcalc.py (자루·노즈, v0.3.0)",
-      "fixed": "자루 윗면(내림 Z 45)에서 헤드 노루발대 Ø10(Steel, 헤드 머리 밑면 Z 60에서 15 외팔)에 물림. 자루는 그 자리 고정 외팔, 바닥 판은 자루 앞면 Y −10에서 나온 외팔",
-      "contact": "매트·침판과 접촉은 하중으로만(압축). 화이버 머리(주머니 안, 안 그림)는 하중 경로가 아님",
-      "load": "운전: 누름 50 N(+Z, 바닥 밑면 Y −4.5) + 끌림 20 N(+X, 바닥 밑면) + 자중 ×3 g / 오조작: 417.5 N(= 835 N × 0.5, D-05·D-04)을 위 노즈 가운데(Y 10, 내림 Z 8.775)에 X 또는 ±Y",
-      "criteria": {
-        "value": "Rigid 10K 인장강도 65 MPa 기준 SF 운전 3, 오조작 2(M-09 기본값), SF < 1.2 = 부러짐. 바늘 r0.6 ↔ 구멍 r1.3 틈 0.7 mm",
-        "source": "요구서 6-1·6-2 비어 있음 → M-09. fea/results/mech_T02_handcalc.json · mech_T04_handcalc.json"
-      }
-    },
-    "P_T02_PLATE": {
-      "case": "cases/mech_T02_handcalc.py (노즈) · cases/mech_T06_handcalc.py (v0.5.0 칼 받이 홈: 홈 단면 남은 폭, 절단 가장자리 지압, 오조작 T 홈 벽 지압)",
-      "fixed": "침판 판(Z −4.05~−1.05)이 헤드 베드에 앉음 — 아래 노즈 뿌리(Z −1.05) 고정 외팔",
-      "contact": "매트 압축만",
-      "load": "운전: 끌림 20 N + 누름 50 + 관통 30 N / 오조작 417.5 N 아래 노즈 가운데 / v0.5.0: 절단 30 N 홈 가장자리 지압, 오조작 T 홈 +X 벽 280 N 지압",
-      "criteria": {
-        "value": "S50C 345 MPa(자리값), SF 운전 3·오조작 2",
-        "source": "M-09, fea/results/mech_T02_handcalc.json"
-      }
-    },
-    "P_T02_BINDER": {
-      "case": "cases/mech_T02_handcalc.py",
-      "fixed": "바인더 외형 볼트 자리 고정",
-      "contact": "테이프 접촉은 하중으로만",
-      "load": "테이프 장력 10 N(D-06) / 오조작: 테이프가 걸려 출구에서 +X 417.5 N",
-      "criteria": {
-        "value": "Rigid 10K 65 MPa, SF 운전 3·오조작 2",
-        "source": "M-09, fea/results/mech_T02_handcalc.json"
-      }
-    },
-    "P_T02_HEADPLATE": {
-      "case": "cases/mech_T02_handcalc.py",
-      "fixed": "받침 형재(HFS8) 위 볼트 체결, 형재는 프레임에 고정",
-      "contact": "헤드 바닥 면 압축",
-      "load": "헤드 묶음 자중 170.70 kg × 3 g, 무게중심 Y 570.8",
-      "criteria": {
-        "value": "SUS304 205 MPa, SF 3, 받침 처짐 ↔ 틈 1.5 mm",
-        "source": "M-09, fea/results/mech_T02_handcalc.json"
-      }
-    },
-    "P_T05_PLATE": {
-      "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
-      "fixed": "+X 면(X −75)이 기둥 −X 면에 맞댐, 볼트 6(뿌리 (640,45)·(840,45) CB5-14, 홀더 4 CB5-16)으로 기둥 탭. 혀 Y 560~620·Z 30~100은 기둥 모서리 Y 620에서 나온 외팔(판정 단면 Y 612~620, 폭 70) — v0.4.1 t5(X −80~−75), 판정 단면 중심 X −77.5",
-      "contact": "안내 블록 등판 +X 면(X −80)과 면 맞댐(인서트 2 (570,50)·(600,80)), 기둥 면 압축만",
-      "load": "운전: 바인더 쪽 장력 31.9 N(2μF, μ0.4, 0.5 MPa)을 패드 자리 (−131, 572.5, 43.5)에 경간 방향 (0.193,−0.981,0) + 자중 ×3 g / 오조작A: 롤 걸림 장력 417.5 N의 막대 감김 합력 1.216T (80.7,−298.6,402.5) N at (−132.3, 600, 51) / 오조작B: 안내 블록 걸림 417.5 N 경간 방향 at 패드 자리",
-      "criteria": {
-        "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
-        "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T05_fea1_handcalc.json"
-      }
-    },
-    "P_T05_GUIDE": {
-      "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
-      "fixed": "등판 +X 면(X −80, 등판 t8 X −88~−80)이 평판 혀에 맞댐, M5 열압입 인서트 2(물림 8) — 피벗은 모멘트 방향의 모서리(Z 92/36, Y 553/612)",
-      "contact": "테이프·패드는 하중으로만. 실린더 장착 반력은 위판(Z 82~92), 패드 반력은 밑판(Z 36~42)",
-      "load": "운전: 실린더 밀기 39.27 N(Ø10 × 0.5 MPa) C틀 지렛대 43 + 장력 31.9 N / 오조작A: 막대 r8(B-스플라인 면, 단순 지지 37) 508 N / 오조작B: 앞벽 밑 모서리 417.5 N(외팔 37, 두 변 고정 추정 1/2) / DP-3(v0.6.8): 앞벽 t9.2(Y 553~562.2), 실측 늘어짐 Z 45~85.5 = 40.5(옛 37), 폭 X −147~−88 = 59, 뿌리 R3. 외팔·두 변(1/2) 추정 + 항복선 교차 확인(테이프 폭 32 선하중, D-06)",
-      "criteria": {
-        "value": "PET-CF 30 MPa(층간 보수값), SF 운전 3·오조작 2",
-        "source": "M-09, mech_T05_select.md 4절과 같은 허용값. fea/results/mech_T05_fea1_handcalc.json"
-      }
-    },
-    "P_T05_PAD": {
-      "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
-      "fixed": "로드 끝 NTJ-010C가 −X로 열린 T홈 주머니(7.4 × Z 53.1~60.4)에, 목 4.4(Z 49~63). DP-3(v0.6.8) Z 43~63 한 덩어리",
-      "contact": "밑면이 테이프·받침면에 압축(바닥 1.5는 받쳐짐)",
-      "load": "밀기 39.27 N(로드 끝 Ø4가 Z 49 면을 누름) / 당기기 32.99 N이 너트 위 턱(돌출 1.5, t2.6, 길이 18.25 ×2)",
-      "criteria": {
-        "value": "PET-CF 30 MPa, SF 3",
-        "source": "fea/results/mech_T05_fea1_handcalc.json"
-      }
-    },
-    "P_T05_HOLDER": {
-      "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
-      "fixed": "플랜지 56×56 CB5-16 4개가 평판을 지나 기둥 탭(물림 8.5, SS400 자리값 D-10) — v0.4.1 플랜지 t8(X −88~−80), CB5-16 머리는 PET-CF 카운터보어 바닥 X −82.5(밑 살 2.5)에 앉음 → 조임 좌면은 PET-CF로 본다. 플랜지 볼트 지렛대는 평판·기둥 맞댐 X −75 → 롤 중심 55.5(보수) / DP-3: 카운터보어 Ø11(와셔 Ø10 자리, D-43 미정이라 안 그림), 1.5 N·m. 좌면 = 머리 Ø8.5/구멍 Ø5.5(와셔 들어오면 Ø10)",
-      "contact": "축 Ø16 구멍 길이 30 면압",
-      "load": "운전: 롤+허브+캡 ×3 g 26 N at 롤 테이프 중심 X −130.5 / 오조작A: 417.5 N 같은 자리(허브 고착 시 비틀림 40.5 N·m는 클램프 미끄럼)",
-      "criteria": {
-        "value": "PET-CF 30 MPa, SF 운전 3·오조작 2",
-        "source": "fea/results/mech_T05_fea1_handcalc.json"
-      }
-    },
-    "STEP대기_PSFJ16-100": {
-      "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
-      "fixed": "홀더 −X 면 X −110에서 외팔",
-      "contact": "허브 구멍 Ø16.3",
-      "load": "홀더와 같음, 지렛대 20.5",
-      "criteria": {
-        "value": "Steel 345 MPa 자리값, SF 운전 3·오조작 2",
-        "source": "fea/results/mech_T05_fea1_handcalc.json"
-      }
-    },
-    "P_T05_HUB": {
-      "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
-      "fixed": "심 Ø76이 축에 얹힘(틈 0.15)",
-      "contact": "롤 심 안쪽",
-      "load": "운전 축 방향 하중 없음(정의 안 됨). 참고: 롤 자중 ×3 g를 플랜지 끝에(띠 60, 지렛대 62)",
-      "criteria": {
-        "value": "PET-CF 30 MPa, 참고값만",
-        "source": "fea/results/mech_T05_fea1_handcalc.json"
-      }
-    },
-    "P_T06_ARM": {
-      "case": "cases/mech_T06_handcalc.py (v0.5.0)",
-      "fixed": "가로 다리가 안내축 PSFJ16-100(X 72, LHFR16 부시)에 물려 그 자리 고정 외팔 — 축–팔 체결은 형번 대기 D-37 (2)(우력 전달을 전제). 로드(X 108, 구멍 Ø6 ±0.5)는 Z 힘만",
-      "contact": "칼(세로 다리 +X 면, M5 ×2 + 너트)과 면 맞댐. 절단 자세에서 칼 끝은 침판 홈 안(틈 −X 0.1·+X 0.4·−Y 0.5) — 틈이 닫히면 홈 벽이 받침",
-      "load": "운전: 절단 저항 30 N(D-06) +Z at 칼 X 24 + 자중 ×3 g / 오조작 칼 막힘: 실린더 0.5 MPa × Ø16 − 스프링 20(D-36) = 80.5 N / 오조작 T: 칼이 내려간 채 매트가 움직여 테이프가 줄 방향 (0.890, −0.456)으로 417.5 N(D-05·D-04) at Z −0.5(절단 자세), 틈 닫힐 때까지 팔 몫",
-      "criteria": {
-        "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작). 맞날 틈 0.1(정밀 체인, 디테일)",
-        "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T06_handcalc.json"
-      },
-      "_디테일링 2026-10-31": "모델(고정·접촉·하중)은 그대로. what-if만 더함: 판금 t3~t6, 절삭 L(가로 다리 th 4~6 · 세로 다리 t3), 홈 +X 틈 0.4·0.25·0.1. 축–팔 M5 1개 체결의 마찰(축 둘레 회전)·벌림 인장 손계산 추가. fea/results/detail_handcalc.json"
-    },
-    "P_T06_KNIFE": {
-      "case": "cases/mech_T06_handcalc.py (v0.5.0)",
-      "fixed": "볼트 줄 Z 42(절단 자세 12)에서 아래로 외팔(테이프 Z −0.5까지 12.5)",
-      "contact": "테이프·침판 홈 벽은 하중으로만",
-      "load": "운전 옆힘 0.3 × 30 N(선정 가정) / 오조작 칼 막힘 옆힘 0.3 × 80.5 N, 볼트 구멍 지압 80.5 N / 오조작 T 팔 몫 Fx",
-      "criteria": {
-        "value": "SK85 풀림 항복 390 MPa 보수값(열처리 조건 미확인), SF 운전 3·오조작 2",
-        "source": "M-09, fea/results/mech_T06_handcalc.json"
-      }
-    },
-    "P_T06_BRACKET": {
-      "case": "cases/mech_T06_handcalc.py (v0.5.0)",
-      "fixed": "세로 다리 X 40 면이 헤드 +X 면에 맞댐, M5 ×2(Z 130, 헤드 탭 SS400 자리값 D-10). 지렛점은 아래 모서리 Z 73",
-      "contact": "가로 판 윗면 Z 77에 실린더 어깨·LHFR16 플랜지가 앉음",
-      "load": "실린더 반력 +Z F at X 108 + 부시 우력 F·84 at X 72(등가: X 24 선 위 +Z F). 운전 F 30 N + 고정 묶음 자중 ×3 g / 오조작 F 80.5 N. 보수 비교로 선정 모델(우력 무시, 64F 전폭)도 함께",
-      "criteria": {
-        "value": "SUS304 205 MPa, SF 운전 3·오조작 2, 과사양 = 지배 경우 SF ≥ 필요 × 3",
-        "source": "M-09, fea/results/mech_T06_handcalc.json"
-      }
-    },
-    "P_T07_SKIRT_C": {
-      "case": "cases/mech_T07_handcalc.py (Roark 직사각 평판 표 11.4 1d 단순 지지·8b 고정, v0.6.0)",
-      "fixed": "판 둘레가 형재 앞면(Y −1740)에 볼트(CB5 + 8 시리즈 M5 T너트, 피치 ≤ 300, 아직 안 그림 T07-S06)로 붙음. 자유 칸 X −870~870(중간 기둥 460 안쪽) × Z −600~−140(G1 윗면 ~ G4 밑면) = 1740 × 460. 판정은 단순 지지(보수), 고정은 상한 비교",
-      "contact": "형재 앞면과 면 맞댐(압축만). V홈(X 0, Z −60~−65)은 G4 앞면 위라 하중 경로 밖",
-      "load": "오조작: 무릎 200 N(D-38 임시값) r0 50 칸 가운데 +Y(기계 안쪽) / 운전: 요구서에 없음 → 같은 200 N을 SF 3으로 보수 확인 / 민감도 r0 25 / 자중 ×3 g는 판 면 안(−Z)",
-      "criteria": {
-        "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형. 처짐은 6-2 한도 없음 → 판 뒤 움직이는 바디 틈(매트 bbox 89.22)",
-        "source": "요구서 6-1 기본값 M-09, D-38, fea/results/mech_T07_handcalc.json"
-      },
-      "_디테일링 2026-10-31": "둘레 볼트 HNTT8-5 + CB5 몫 손계산(무릎 200 N을 가까운 4개가 받음, 당김 쪽 보수): fea/results/detail_handcalc.json bolts.SKIRT_HNTT8-5_pull"
-    },
-    "P_T07_SKIRT_L": {
-      "case": "cases/mech_T07_handcalc.py (L·R 거울 대칭 → L 하나, E-19)",
-      "fixed": "P_T07_SKIRT_C와 같은 방식. 자유 칸 X −1425~−950(끝 기둥 1580 안쪽 ~ 중간 기둥 바깥) × Z −600~−140 = 475 × 460. R은 X 거울",
-      "contact": "형재 앞면 압축만",
-      "load": "P_T07_SKIRT_C와 같음",
-      "criteria": {
-        "value": "SUS304 205 MPa, SF 운전 3·오조작 2",
-        "source": "M-09, D-38, fea/results/mech_T07_handcalc.json"
-      }
-    },
-    "P_T07_SKIRT_R": {
-      "case": "P_T07_SKIRT_L과 같음(거울 대칭, STEP bbox 치수·질량 같음)",
-      "fixed": "X 거울",
-      "contact": "같음",
-      "load": "같음",
-      "criteria": {
-        "value": "같음",
-        "source": "같음"
-      }
-    },
-    "P_T01_HUB": {
-      "case": "cases/mech_T01_fea1_handcalc.py hub_case(v0.2.1) · cases/detail_hub_r85.py(디테일링, 받침 r85) · cases/detail_DP-2_handcalc.py(DP-2, SUS304 t8, 발 볼트)",
-      "fixed": "허브 밑면(Z −241)이 DGM200R-AZAC 출력 테이블 윗면에 앉음. 받침 끝 = 테이블 바깥 반지름 r85(실물 STEP Ø170, mech_S01_measure.md). 옛 모델 r100(임시 형상)·r50(가정)은 비교용",
-      "contact": "DP-2(v0.6.6)부터: 스파이더 발(A5052 t3, 옆 ±30~52)이 허브 윗면 −233에 앉고 발마다 CB5-12 2개(축 방향 110·135, 옆 ±44, 허브 관통 탭 물림 8). 피벗 = 발 줄의 허브 끝 r150(축 방향 143.4), 볼트 힘은 Σd² 선형 분포. 허브 판 r85 굽힘은 정역학상 옛 모델(r150 누름·r100 들림)과 같다. 옛 모델은 비교용",
-      "load": "운전 회전 묶음 자중 ×3 g + 링 받침 모멘트 / 오조작 실린더 막힘(T01 2회차 값, mech_T01_fea1_handcalc.json에서 V·M 역산)",
-      "criteria": {
-        "value": "SUS304 205 MPa, SF 운전 3·오조작 2",
-        "source": "요구서 6-1 → M-09. fea/results/detail_hub_r85.json · fea/results/detail_DP-2_handcalc.json"
-      }
-    },
-    "STEP대기_MS3-8_T06": {
-      "case": "cases/detail_DP-1_pin.py (v0.6.5, 2026-10-31 디테일링 DP-1 해석부 2회차)",
-      "fixed": "축 PSFJT16 끝 Ø3 막힌 구멍(Z57~63, 15° 끝 Z61~62 쪽)과 팔 SUS304 밑살 Z54~57 관통 구멍. 전단면 = 팔–축 맞댐 Z57(핀 원통 전체 단면)",
-      "contact": "핀 ↔ 팔 구멍 지압(원통 물림 2.598 = Z54.402~57, R=D 끝 높이 0.40 뺌), 핀 ↔ 축 구멍 지압(Z57~61, 4.0). 축 끝 M5 예압 마찰은 기본 판정에서 무시(보수), 참고로 분담 계산",
-      "load": "오조작 T 축 둘레 토크 Fy 190.4 N × 48 = 9,139 N·mm를 핀 r5가 받음 → 1,828 N(마찰 분담 시 856 N)",
-      "criteria": {
-        "value": "전단 허용 0.6 × 1000 MPa(보수, 실물 SUJ2 58HRC~), 지압 SUS304 Sy 205(항복)·1.5Sy(관례 지압 허용), 축 S45C 345 보수. SF 오조작 2(M-09)",
-        "source": "M-09, 미스미 MS3-8 상품 페이지 외형도(SUJ2 58HRC~, DL-D30), fea/results/detail_DP-1_pin.json"
-      }
-    },
-    "P_T01_SPIDER_1~3": {
-      "case": "cases/detail_DP-2_handcalc.py(v0.6.6 A5052 t3 판금 모자형). 옛 SUS304 ㄷ은 cases/mech_T01_fea1_handcalc.py",
-      "fixed": "발(Z −233~−230, 옆 ±30~52)이 허브 윗면에 CB5-12 4개로 체결. 외팔 뿌리 = 발 볼트 줄의 허브 끝(축 방향 143.4). 옛 모델 r150 끝면은 비교용",
-      "contact": "발–허브 면 접촉(예압). 발 국부: 다리(x 30, 평평한 곳 x 33)가 발을 들고 볼트(x 44)가 누름 — 예압 무시 외팔 레버 11·폭 25(보수) + 편심 이음 열림 하중(핵 19/6)",
-      "load": "운전: 링 받침 반력·회전 반력(T01 2회차 링 곡선보) + 실린더·부시 임시 질량 + 자중, ×3 g / 막힘: 실린더 추력 100.5 N × 2(r190·r410) + 1 g / 옆: DG 최대 토크 50 N·m ÷ 3 at r240",
-      "criteria": {
-        "value": "A5052 Rp 175(판금 H32 가정 보수), SF 운전 3·오조작 2, SF < 1.2 = 영구 변형",
-        "source": "M-09. fea/results/detail_DP-2_handcalc.json"
-      },
-      "_v0.6.7": "발 국부: 누름판이 생겨 외팔 레버 11 → 2(다리 평평한 곳 x 33 → 누름판 접촉 x 35). 예압 이음 열림 하중은 접촉 x 35~52(핵 17/6)로. 나머지 모델 그대로",
-      "_v0.6.15": "T11 결속 구멍 Ø4 ×4(양 벽 Z −197.5·−208.5, r140·r300). 모델 그대로, 구멍 단면은 뿌리 모멘트 × 중립축 거리 / (I − 구멍 몫) × Kt 3(보수). cases/mech_T11_handcalc.py"
-    },
-    "P_T01_POST": {
-      "case": "cases/detail_DP-2_handcalc.py(v0.6.6 플랜지 일체) · 옛 cases/mech_T01_fea1_handcalc.py · cases/detail_DP-2_fea1_handcalc.py(v0.6.7 밑 플랜지 t12 + 카운터보어 Ø9.5×3.5)",
-      "fixed": "밑 플랜지 Ø120 t8.5가 허브 윗면 −233에 CB5-16 3개(r50) — 볼트 힘 = 기울임 모멘트 Σd²(피벗 플랜지 끝 r60)",
-      "contact": "플랜지–허브 면 압축, 위 플랜지 Ø100 t8이 원판 밑면을 받침(인서트 3, r45)",
-      "load": "운전: 끌림 20 N + 이송 가속 / 오조작: 작은 매트가 부딪쳐 마찰 한계 275.6 N at 원판 윗면(Z −0.5). 플랜지 굽힘: 볼트 r50 ← 관 바깥 r30, 레버 15.75, 유효 폭 40",
-      "criteria": {
-        "value": "PET-CF 20 MPa(층간 자리값, 플랜지 면내 강도 미확인이라 보수로 같이 씀), SF 운전 3·오조작 2",
-        "source": "M-09. fea/results/detail_DP-2_handcalc.json"
-      },
-      "_v0.6.7": "밑 플랜지 Z −233~−221(t12), 볼트 r50 카운터보어 바닥 −224.5(t8.5 고리, 바로 밑이 허브 윗면 → 압축만). 판정 단면 = 관 뿌리 r30 t12, 레버 = 머리 끝(r45.75) → 관 15.75, 유효 폭 40. 모델(경계조건) 자체는 그대로",
-      "_v0.6.15": "T11 세로 장공 5.5×10 ×3(90·210·330°, Z −208~−198), 장공 높이 속 Ø40.2(Z −212~−194). 모델(경계조건·하중) 그대로, 판정 단면에 장공 밑끝 Z −208 순단면(하중 방향 0~120° 중 최소 Z)을 더함, 레버 207.5, Kt 3(보수 상한) · 2.4~2.5(축 방향 장공·관 횡구멍 참고). cases/mech_T11_handcalc.py"
-    },
-    "P_T01_DISC": {
-      "case": "cases/detail_DP-2_handcalc.py",
-      "fixed": "밑면이 기둥 위 플랜지 Ø100(r50)에 앉음, MBIS5-6.5-8 인서트 3(r45) + CB5-16 밑에서",
-      "contact": "매트 압축만. 인서트 위 살 3(Z −3.5~−0.5)",
-      "load": "3 g 자중 + 작은 매트, 진공 58 kPa(인서트 위 살), 인서트 빠짐 = 조임 예압 1,500 N(1.5 N·m)",
-      "criteria": {
-        "value": "Rigid 10K 65 MPa(자리값), SF 3. 인서트 빠짐 강도 자료 없음",
-        "source": "fea/results/detail_DP-2_handcalc.json"
-      }
-    },
-    "P_T01_RING1": {
-      "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
-      "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
-      "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
-      "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
-      "criteria": {
-        "value": "A5052 175 MPa, SF 운전 3·오조작 2",
-        "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
-      }
-    },
-    "P_T01_RING2": {
-      "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
-      "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
-      "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
-      "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
-      "criteria": {
-        "value": "A5052 175 MPa, SF 운전 3·오조작 2",
-        "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
-      }
-    },
-    "P_T01_RING2_STRAP_1~6": {
-      "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
-      "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
-      "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
-      "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
-      "criteria": {
-        "value": "A5052 175 MPa, SF 운전 3·오조작 2",
-        "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
-      }
-    },
-    "P_T01_FOOTPLATE_*": {
-      "case": "cases/detail_DP-2_fea1_handcalc.py (v0.6.7)",
-      "fixed": "누름판(A5052 t6, 스파이더 옆 x 34~52 × 축 방향 45, Z −230~−224)이 스파이더 발 윗면에 앉고 STEP대기_CB5-18 2개(r110·r135, x 44)로 허브 SUS304 탭(물림 8)에 체결. 머리 Ø8.5 가장자리(x 39.75)를 고정단으로 봄",
-      "contact": "판 밑면–발 윗면 면 접촉(예압 4 N·m로 닫힘). 다리가 발을 드는 힘이 판 안쪽 끝(x 34, 밑 모서리 C1 → 35)에 걸림. 판 바깥 끝 x 52 지렛대(prying)는 예압이 이음을 닫는 동안 없음(열림 하중 4 N·m 809 N)",
-      "load": "발 볼트 최대 힘(스파이더 볼트 4개 Σd² 분포, 피벗 143.4) 3 g 705.8 N · 막힘 678.6 N를 볼트 하나 몫 폭 22.5에",
-      "criteria": {
-        "value": "A5052 Rp 175(H32 가정 보수), SF 운전 3·오조작 2",
-        "source": "M-09, fea/results/detail_DP-2_fea1_handcalc.json"
-      }
-    },
-    "P_T01_NUTPLATE_*": {
-      "case": "cases/detail_DP-2_fea1_handcalc.py (v0.6.7)",
-      "fixed": "너트판(A5052 t6 □40, Z −104.5~−98.5)이 스파이더 웹 밑면에 면으로 앉음. CB4-16 4개(PCD 38)가 LHFR16 플랜지 카운터보어에서 웹을 지나 판 M4 탭(물림 6)에",
-      "contact": "판–웹 밑면 면 접촉. 볼트 당김은 웹이 받음. 최악 가정으로 웹 구멍 Ø28.4 가장자리 받침 외팔 4.8",
-      "load": "부시 기울기 모멘트 max(3 g·Mrot2, 실린더 막힘 F_CYL × 50) ÷ 대각 줄 간격 2 × 26.87 → 볼트당 93.5 N",
-      "criteria": {
-        "value": "A5052 Rp 175, SF 3. 탭 물림 ≥ 1.5d(M-01)",
-        "source": "M-09, M-01, fea/results/detail_DP-2_fea1_handcalc.json"
-      }
-    },
-    "P_T05_CAP": {
-      "case": "cases/detail_DP-3_handcalc.py (v0.6.8)",
-      "fixed": "허브 위 캡, 슬릿 클램프 CB5-20 → MBIS5-6.5-8(보스 안 Y 754~762, 물림 8)",
-      "contact": "축 Ø16 클램프 면 마찰(μ0.3 자리값)",
-      "load": "클램프 예압 1.5 N·m(1.5 kN) 조임만. 운전 롤 끌림 3 N × r97(D-06 임시)",
-      "criteria": {
-        "value": "PET-CF 좌면 한계면압 60(handcalc BASE), 조임 SF ≥ 1.0, 미끄럼 SF ≥ 3",
-        "source": "M-09, fea/results/detail_DP-3_handcalc.json"
-      }
-    },
-    "P_T08_XPLATE_F/_B": {
-      "case": "cases/mech_T08_handcalc.py (v0.6.11) — 해석 못 함 — 환경 없음(D-16), 보 + 단면 손계산",
-      "fixed": "판 밑면이 SV2RL28-1800 블록 윗면(X ±150~210, Y −1021~−979 / 159~201, Z −572)에 앉고 CB5-16 2개/블록(Y −1016·−984 / 164·196)으로 블록 탭(물림 7.5)에 체결. 블록 윗면 끝(Y −979 / 201)을 외팔 고정단으로, 보수 단면은 가까운 볼트 줄(−984, Ø9.5 카운터보어 뺀 순단면)",
-      "contact": "460 밑면 ↔ 판 윗면 면 접촉(Y −977~−937 / 203~243), CB5-20 + HNTT8-5 ×4/판. 1300 형재는 460 위에 얹힘(교차부 체결 없음, T08-S05) → 1300 단순보 반력이 460 중심(Y −957 / 223)에 걸림. 블록 유효 폭 = 블록 길이 60 + 2t(45° 퍼짐) = 88",
-      "load": "A 자중 ×3 g: Y 이동 묶음 95.89 kg(무게중심 Y ≈ J_MAT_Y, −860에서 앞 몫 0.918) + MAT_X 18.07/2 → 앞 판 97.0 kg, 블록당 1428 N, 롤 편심 43. B 운전 1 g + X 가속 2 m/s²(D-12 자리값), 무게중심 높이 435(매트면, 보수)",
-      "criteria": {
-        "value": "A5052 Rp 175(H32 가정 보수), SF 일반 3(M-09). 블록 C0 12,100 N·MC 135 N·m(미스미 페이지 2026-11-01), 합성 P/C0 + M/MC",
-        "source": "M-09, M-06, fea/results/mech_T08_handcalc.json"
-      }
-    },
-    "P_T01_YPLATE": {
-      "case": "cases/mech_T01_fea1_handcalc.py(판 띠 손계산) · cases/mech_T11_handcalc.py(v0.6.15 결속 구멍 Ø4.5 ×2)",
-      "fixed": "블록 4개(±150, −860/−540) 위에 판 t15",
-      "contact": "DG 임시 형상 바닥(±100, −800~−600)이 판 윗면에 얹힘",
-      "load": "운전: 얹힌 질량 ×3 g, DG 바닥 모서리 → 블록 중심 외팔 띠(폭 100) / 오조작: 서보 충돌 1,080 N × 높이 341",
-      "criteria": {
-        "value": "A5052 Rp 175(H32 가정 보수), SF 운전 3·오조작 2(M-09)",
-        "source": "M-09, fea/results/mech_T01_fea1_handcalc.json"
-      },
-      "_v0.6.15": "결속 구멍 (±10, −590)은 판정 띠 밖. 보수 상한으로 판 최대 응력 × Kt 3을 구멍에 씀. 모델 그대로"
-    }
+ "_설명": "부품별 해석 모델 표(엔진 templates/fea-models.json 틀, E-18). 2026-10-31 T04 해석부가 처음 만들었다. 지금까지 푼 부품은 T01·T02 손계산(해석 환경 없음, D-16)에서 쓴 경계조건을 옮겨 적었다. '_'로 시작하는 칸은 설명이다.",
+ "parts": {
+  "P_T02_FOOT": {
+   "case": "cases/mech_T04_handcalc.py (바닥 판 단면 수치 적분, v0.3.2) · cases/mech_T02_handcalc.py (자루·노즈, v0.3.0)",
+   "fixed": "자루 윗면(내림 Z 45)에서 헤드 노루발대 Ø10(Steel, 헤드 머리 밑면 Z 60에서 15 외팔)에 물림. 자루는 그 자리 고정 외팔, 바닥 판은 자루 앞면 Y −10에서 나온 외팔",
+   "contact": "매트·침판과 접촉은 하중으로만(압축). 화이버 머리(주머니 안, 안 그림)는 하중 경로가 아님",
+   "load": "운전: 누름 50 N(+Z, 바닥 밑면 Y −4.5) + 끌림 20 N(+X, 바닥 밑면) + 자중 ×3 g / 오조작: 417.5 N(= 835 N × 0.5, D-05·D-04)을 위 노즈 가운데(Y 10, 내림 Z 8.775)에 X 또는 ±Y",
+   "criteria": {
+    "value": "Rigid 10K 인장강도 65 MPa 기준 SF 운전 3, 오조작 2(M-09 기본값), SF < 1.2 = 부러짐. 바늘 r0.6 ↔ 구멍 r1.3 틈 0.7 mm",
+    "source": "요구서 6-1·6-2 비어 있음 → M-09. fea/results/mech_T02_handcalc.json · mech_T04_handcalc.json"
+   }
   },
-  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
+  "P_T02_PLATE": {
+   "case": "cases/mech_T02_handcalc.py (노즈) · cases/mech_T06_handcalc.py (v0.5.0 칼 받이 홈: 홈 단면 남은 폭, 절단 가장자리 지압, 오조작 T 홈 벽 지압)",
+   "fixed": "침판 판(Z −4.05~−1.05)이 헤드 베드에 앉음 — 아래 노즈 뿌리(Z −1.05) 고정 외팔",
+   "contact": "매트 압축만",
+   "load": "운전: 끌림 20 N + 누름 50 + 관통 30 N / 오조작 417.5 N 아래 노즈 가운데 / v0.5.0: 절단 30 N 홈 가장자리 지압, 오조작 T 홈 +X 벽 280 N 지압",
+   "criteria": {
+    "value": "S50C 345 MPa(자리값), SF 운전 3·오조작 2",
+    "source": "M-09, fea/results/mech_T02_handcalc.json"
+   }
+  },
+  "P_T02_BINDER": {
+   "case": "cases/mech_T02_handcalc.py",
+   "fixed": "바인더 외형 볼트 자리 고정",
+   "contact": "테이프 접촉은 하중으로만",
+   "load": "테이프 장력 10 N(D-06) / 오조작: 테이프가 걸려 출구에서 +X 417.5 N",
+   "criteria": {
+    "value": "Rigid 10K 65 MPa, SF 운전 3·오조작 2",
+    "source": "M-09, fea/results/mech_T02_handcalc.json"
+   }
+  },
+  "P_T02_HEADPLATE": {
+   "case": "cases/mech_T02_handcalc.py",
+   "fixed": "받침 형재(HFS8) 위 볼트 체결, 형재는 프레임에 고정",
+   "contact": "헤드 바닥 면 압축",
+   "load": "헤드 묶음 자중 170.70 kg × 3 g, 무게중심 Y 570.8",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 3, 받침 처짐 ↔ 틈 1.5 mm",
+    "source": "M-09, fea/results/mech_T02_handcalc.json"
+   }
+  },
+  "P_T05_PLATE": {
+   "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
+   "fixed": "+X 면(X −75)이 기둥 −X 면에 맞댐, 볼트 6(뿌리 (640,45)·(840,45) CB5-14, 홀더 4 CB5-16)으로 기둥 탭. 혀 Y 560~620·Z 30~100은 기둥 모서리 Y 620에서 나온 외팔(판정 단면 Y 612~620, 폭 70) — v0.4.1 t5(X −80~−75), 판정 단면 중심 X −77.5",
+   "contact": "안내 블록 등판 +X 면(X −80)과 면 맞댐(인서트 2 (570,50)·(600,80)), 기둥 면 압축만",
+   "load": "운전: 바인더 쪽 장력 31.9 N(2μF, μ0.4, 0.5 MPa)을 패드 자리 (−131, 572.5, 43.5)에 경간 방향 (0.193,−0.981,0) + 자중 ×3 g / 오조작A: 롤 걸림 장력 417.5 N의 막대 감김 합력 1.216T (80.7,−298.6,402.5) N at (−132.3, 600, 51) / 오조작B: 안내 블록 걸림 417.5 N 경간 방향 at 패드 자리",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
+    "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T05_fea1_handcalc.json"
+   }
+  },
+  "P_T05_GUIDE": {
+   "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
+   "fixed": "등판 +X 면(X −80, 등판 t8 X −88~−80)이 평판 혀에 맞댐, M5 열압입 인서트 2(물림 8) — 피벗은 모멘트 방향의 모서리(Z 92/36, Y 553/612)",
+   "contact": "테이프·패드는 하중으로만. 실린더 장착 반력은 위판(Z 82~92), 패드 반력은 밑판(Z 36~42)",
+   "load": "운전: 실린더 밀기 39.27 N(Ø10 × 0.5 MPa) C틀 지렛대 43 + 장력 31.9 N / 오조작A: 막대 r8(B-스플라인 면, 단순 지지 37) 508 N / 오조작B: 앞벽 밑 모서리 417.5 N(외팔 37, 두 변 고정 추정 1/2) / DP-3(v0.6.8): 앞벽 t9.2(Y 553~562.2), 실측 늘어짐 Z 45~85.5 = 40.5(옛 37), 폭 X −147~−88 = 59, 뿌리 R3. 외팔·두 변(1/2) 추정 + 항복선 교차 확인(테이프 폭 32 선하중, D-06)",
+   "criteria": {
+    "value": "PET-CF 30 MPa(층간 보수값), SF 운전 3·오조작 2",
+    "source": "M-09, mech_T05_select.md 4절과 같은 허용값. fea/results/mech_T05_fea1_handcalc.json"
+   }
+  },
+  "P_T05_PAD": {
+   "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
+   "fixed": "로드 끝 NTJ-010C가 −X로 열린 T홈 주머니(7.4 × Z 53.1~60.4)에, 목 4.4(Z 49~63). DP-3(v0.6.8) Z 43~63 한 덩어리",
+   "contact": "밑면이 테이프·받침면에 압축(바닥 1.5는 받쳐짐)",
+   "load": "밀기 39.27 N(로드 끝 Ø4가 Z 49 면을 누름) / 당기기 32.99 N이 너트 위 턱(돌출 1.5, t2.6, 길이 18.25 ×2)",
+   "criteria": {
+    "value": "PET-CF 30 MPa, SF 3",
+    "source": "fea/results/mech_T05_fea1_handcalc.json"
+   }
+  },
+  "P_T05_HOLDER": {
+   "case": "cases/detail_DP-3_handcalc.py (v0.6.8, DP-3) · 이전 cases/mech_T05_fea1_handcalc.py (v0.4.1)",
+   "fixed": "플랜지 56×56 CB5-16 4개가 평판을 지나 기둥 탭(물림 8.5, SS400 자리값 D-10) — v0.4.1 플랜지 t8(X −88~−80), CB5-16 머리는 PET-CF 카운터보어 바닥 X −82.5(밑 살 2.5)에 앉음 → 조임 좌면은 PET-CF로 본다. 플랜지 볼트 지렛대는 평판·기둥 맞댐 X −75 → 롤 중심 55.5(보수) / DP-3: 카운터보어 Ø11(와셔 Ø10 자리, D-43 미정이라 안 그림), 1.5 N·m. 좌면 = 머리 Ø8.5/구멍 Ø5.5(와셔 들어오면 Ø10)",
+   "contact": "축 Ø16 구멍 길이 30 면압",
+   "load": "운전: 롤+허브+캡 ×3 g 26 N at 롤 테이프 중심 X −130.5 / 오조작A: 417.5 N 같은 자리(허브 고착 시 비틀림 40.5 N·m는 클램프 미끄럼)",
+   "criteria": {
+    "value": "PET-CF 30 MPa, SF 운전 3·오조작 2",
+    "source": "fea/results/mech_T05_fea1_handcalc.json"
+   }
+  },
+  "STEP대기_PSFJ16-100": {
+   "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
+   "fixed": "홀더 −X 면 X −110에서 외팔",
+   "contact": "허브 구멍 Ø16.3",
+   "load": "홀더와 같음, 지렛대 20.5",
+   "criteria": {
+    "value": "Steel 345 MPa 자리값, SF 운전 3·오조작 2",
+    "source": "fea/results/mech_T05_fea1_handcalc.json"
+   }
+  },
+  "P_T05_HUB": {
+   "case": "cases/mech_T05_fea1_handcalc.py (v0.4.1; v0.4.0은 cases/mech_T05_handcalc.py)",
+   "fixed": "심 Ø76이 축에 얹힘(틈 0.15)",
+   "contact": "롤 심 안쪽",
+   "load": "운전 축 방향 하중 없음(정의 안 됨). 참고: 롤 자중 ×3 g를 플랜지 끝에(띠 60, 지렛대 62)",
+   "criteria": {
+    "value": "PET-CF 30 MPa, 참고값만",
+    "source": "fea/results/mech_T05_fea1_handcalc.json"
+   }
+  },
+  "P_T06_ARM": {
+   "case": "cases/mech_T06_handcalc.py (v0.5.0)",
+   "fixed": "가로 다리가 안내축 PSFJ16-100(X 72, LHFR16 부시)에 물려 그 자리 고정 외팔 — 축–팔 체결은 형번 대기 D-37 (2)(우력 전달을 전제). 로드(X 108, 구멍 Ø6 ±0.5)는 Z 힘만",
+   "contact": "칼(세로 다리 +X 면, M5 ×2 + 너트)과 면 맞댐. 절단 자세에서 칼 끝은 침판 홈 안(틈 −X 0.1·+X 0.4·−Y 0.5) — 틈이 닫히면 홈 벽이 받침",
+   "load": "운전: 절단 저항 30 N(D-06) +Z at 칼 X 24 + 자중 ×3 g / 오조작 칼 막힘: 실린더 0.5 MPa × Ø16 − 스프링 20(D-36) = 80.5 N / 오조작 T: 칼이 내려간 채 매트가 움직여 테이프가 줄 방향 (0.890, −0.456)으로 417.5 N(D-05·D-04) at Z −0.5(절단 자세), 틈 닫힐 때까지 팔 몫",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작). 맞날 틈 0.1(정밀 체인, 디테일)",
+    "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T06_handcalc.json"
+   },
+   "_디테일링 2026-10-31": "모델(고정·접촉·하중)은 그대로. what-if만 더함: 판금 t3~t6, 절삭 L(가로 다리 th 4~6 · 세로 다리 t3), 홈 +X 틈 0.4·0.25·0.1. 축–팔 M5 1개 체결의 마찰(축 둘레 회전)·벌림 인장 손계산 추가. fea/results/detail_handcalc.json"
+  },
+  "P_T06_KNIFE": {
+   "case": "cases/mech_T06_handcalc.py (v0.5.0)",
+   "fixed": "볼트 줄 Z 42(절단 자세 12)에서 아래로 외팔(테이프 Z −0.5까지 12.5)",
+   "contact": "테이프·침판 홈 벽은 하중으로만",
+   "load": "운전 옆힘 0.3 × 30 N(선정 가정) / 오조작 칼 막힘 옆힘 0.3 × 80.5 N, 볼트 구멍 지압 80.5 N / 오조작 T 팔 몫 Fx",
+   "criteria": {
+    "value": "SK85 풀림 항복 390 MPa 보수값(열처리 조건 미확인), SF 운전 3·오조작 2",
+    "source": "M-09, fea/results/mech_T06_handcalc.json"
+   }
+  },
+  "P_T06_BRACKET": {
+   "case": "cases/mech_T06_handcalc.py (v0.5.0)",
+   "fixed": "세로 다리 X 40 면이 헤드 +X 면에 맞댐, M5 ×2(Z 130, 헤드 탭 SS400 자리값 D-10). 지렛점은 아래 모서리 Z 73",
+   "contact": "가로 판 윗면 Z 77에 실린더 어깨·LHFR16 플랜지가 앉음",
+   "load": "실린더 반력 +Z F at X 108 + 부시 우력 F·84 at X 72(등가: X 24 선 위 +Z F). 운전 F 30 N + 고정 묶음 자중 ×3 g / 오조작 F 80.5 N. 보수 비교로 선정 모델(우력 무시, 64F 전폭)도 함께",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, 과사양 = 지배 경우 SF ≥ 필요 × 3",
+    "source": "M-09, fea/results/mech_T06_handcalc.json"
+   }
+  },
+  "P_T07_SKIRT_C": {
+   "case": "cases/mech_T07_handcalc.py (Roark 직사각 평판 표 11.4 1d 단순 지지·8b 고정, v0.6.0)",
+   "fixed": "판 둘레가 형재 앞면(Y −1740)에 볼트(CB5 + 8 시리즈 M5 T너트, 피치 ≤ 300, 아직 안 그림 T07-S06)로 붙음. 자유 칸 X −870~870(중간 기둥 460 안쪽) × Z −600~−140(G1 윗면 ~ G4 밑면) = 1740 × 460. 판정은 단순 지지(보수), 고정은 상한 비교",
+   "contact": "형재 앞면과 면 맞댐(압축만). V홈(X 0, Z −60~−65)은 G4 앞면 위라 하중 경로 밖",
+   "load": "오조작: 무릎 200 N(D-38 임시값) r0 50 칸 가운데 +Y(기계 안쪽) / 운전: 요구서에 없음 → 같은 200 N을 SF 3으로 보수 확인 / 민감도 r0 25 / 자중 ×3 g는 판 면 안(−Z)",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형. 처짐은 6-2 한도 없음 → 판 뒤 움직이는 바디 틈(매트 bbox 89.22)",
+    "source": "요구서 6-1 기본값 M-09, D-38, fea/results/mech_T07_handcalc.json"
+   },
+   "_디테일링 2026-10-31": "둘레 볼트 HNTT8-5 + CB5 몫 손계산(무릎 200 N을 가까운 4개가 받음, 당김 쪽 보수): fea/results/detail_handcalc.json bolts.SKIRT_HNTT8-5_pull"
+  },
+  "P_T07_SKIRT_L": {
+   "case": "cases/mech_T07_handcalc.py (L·R 거울 대칭 → L 하나, E-19)",
+   "fixed": "P_T07_SKIRT_C와 같은 방식. 자유 칸 X −1425~−950(끝 기둥 1580 안쪽 ~ 중간 기둥 바깥) × Z −600~−140 = 475 × 460. R은 X 거울",
+   "contact": "형재 앞면 압축만",
+   "load": "P_T07_SKIRT_C와 같음",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2",
+    "source": "M-09, D-38, fea/results/mech_T07_handcalc.json"
+   }
+  },
+  "P_T07_SKIRT_R": {
+   "case": "P_T07_SKIRT_L과 같음(거울 대칭, STEP bbox 치수·질량 같음)",
+   "fixed": "X 거울",
+   "contact": "같음",
+   "load": "같음",
+   "criteria": {
+    "value": "같음",
+    "source": "같음"
+   }
+  },
+  "P_T01_HUB": {
+   "case": "cases/mech_T01_fea1_handcalc.py hub_case(v0.2.1) · cases/detail_hub_r85.py(디테일링, 받침 r85) · cases/detail_DP-2_handcalc.py(DP-2, SUS304 t8, 발 볼트)",
+   "fixed": "허브 밑면(Z −241)이 DGM200R-AZAC 출력 테이블 윗면에 앉음. 받침 끝 = 테이블 바깥 반지름 r85(실물 STEP Ø170, mech_S01_measure.md). 옛 모델 r100(임시 형상)·r50(가정)은 비교용",
+   "contact": "DP-2(v0.6.6)부터: 스파이더 발(A5052 t3, 옆 ±30~52)이 허브 윗면 −233에 앉고 발마다 CB5-12 2개(축 방향 110·135, 옆 ±44, 허브 관통 탭 물림 8). 피벗 = 발 줄의 허브 끝 r150(축 방향 143.4), 볼트 힘은 Σd² 선형 분포. 허브 판 r85 굽힘은 정역학상 옛 모델(r150 누름·r100 들림)과 같다. 옛 모델은 비교용",
+   "load": "운전 회전 묶음 자중 ×3 g + 링 받침 모멘트 / 오조작 실린더 막힘(T01 2회차 값, mech_T01_fea1_handcalc.json에서 V·M 역산)",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2",
+    "source": "요구서 6-1 → M-09. fea/results/detail_hub_r85.json · fea/results/detail_DP-2_handcalc.json"
+   }
+  },
+  "STEP대기_MS3-8_T06": {
+   "case": "cases/detail_DP-1_pin.py (v0.6.5, 2026-10-31 디테일링 DP-1 해석부 2회차)",
+   "fixed": "축 PSFJT16 끝 Ø3 막힌 구멍(Z57~63, 15° 끝 Z61~62 쪽)과 팔 SUS304 밑살 Z54~57 관통 구멍. 전단면 = 팔–축 맞댐 Z57(핀 원통 전체 단면)",
+   "contact": "핀 ↔ 팔 구멍 지압(원통 물림 2.598 = Z54.402~57, R=D 끝 높이 0.40 뺌), 핀 ↔ 축 구멍 지압(Z57~61, 4.0). 축 끝 M5 예압 마찰은 기본 판정에서 무시(보수), 참고로 분담 계산",
+   "load": "오조작 T 축 둘레 토크 Fy 190.4 N × 48 = 9,139 N·mm를 핀 r5가 받음 → 1,828 N(마찰 분담 시 856 N)",
+   "criteria": {
+    "value": "전단 허용 0.6 × 1000 MPa(보수, 실물 SUJ2 58HRC~), 지압 SUS304 Sy 205(항복)·1.5Sy(관례 지압 허용), 축 S45C 345 보수. SF 오조작 2(M-09)",
+    "source": "M-09, 미스미 MS3-8 상품 페이지 외형도(SUJ2 58HRC~, DL-D30), fea/results/detail_DP-1_pin.json"
+   }
+  },
+  "P_T01_SPIDER_1~3": {
+   "case": "cases/detail_DP-2_handcalc.py(v0.6.6 A5052 t3 판금 모자형). 옛 SUS304 ㄷ은 cases/mech_T01_fea1_handcalc.py",
+   "fixed": "발(Z −233~−230, 옆 ±30~52)이 허브 윗면에 CB5-12 4개로 체결. 외팔 뿌리 = 발 볼트 줄의 허브 끝(축 방향 143.4). 옛 모델 r150 끝면은 비교용",
+   "contact": "발–허브 면 접촉(예압). 발 국부: 다리(x 30, 평평한 곳 x 33)가 발을 들고 볼트(x 44)가 누름 — 예압 무시 외팔 레버 11·폭 25(보수) + 편심 이음 열림 하중(핵 19/6)",
+   "load": "운전: 링 받침 반력·회전 반력(T01 2회차 링 곡선보) + 실린더·부시 임시 질량 + 자중, ×3 g / 막힘: 실린더 추력 100.5 N × 2(r190·r410) + 1 g / 옆: DG 최대 토크 50 N·m ÷ 3 at r240",
+   "criteria": {
+    "value": "A5052 Rp 175(판금 H32 가정 보수), SF 운전 3·오조작 2, SF < 1.2 = 영구 변형",
+    "source": "M-09. fea/results/detail_DP-2_handcalc.json"
+   },
+   "_v0.6.7": "발 국부: 누름판이 생겨 외팔 레버 11 → 2(다리 평평한 곳 x 33 → 누름판 접촉 x 35). 예압 이음 열림 하중은 접촉 x 35~52(핵 17/6)로. 나머지 모델 그대로",
+   "_v0.6.15": "T11 결속 구멍 Ø4 ×4(양 벽 Z −197.5·−208.5, r140·r300). 모델 그대로, 구멍 단면은 뿌리 모멘트 × 중립축 거리 / (I − 구멍 몫) × Kt 3(보수). cases/mech_T11_handcalc.py"
+  },
+  "P_T01_POST": {
+   "case": "cases/detail_DP-2_handcalc.py(v0.6.6 플랜지 일체) · 옛 cases/mech_T01_fea1_handcalc.py · cases/detail_DP-2_fea1_handcalc.py(v0.6.7 밑 플랜지 t12 + 카운터보어 Ø9.5×3.5)",
+   "fixed": "밑 플랜지 Ø120 t8.5가 허브 윗면 −233에 CB5-16 3개(r50) — 볼트 힘 = 기울임 모멘트 Σd²(피벗 플랜지 끝 r60)",
+   "contact": "플랜지–허브 면 압축, 위 플랜지 Ø100 t8이 원판 밑면을 받침(인서트 3, r45)",
+   "load": "운전: 끌림 20 N + 이송 가속 / 오조작: 작은 매트가 부딪쳐 마찰 한계 275.6 N at 원판 윗면(Z −0.5). 플랜지 굽힘: 볼트 r50 ← 관 바깥 r30, 레버 15.75, 유효 폭 40",
+   "criteria": {
+    "value": "PET-CF 20 MPa(층간 자리값, 플랜지 면내 강도 미확인이라 보수로 같이 씀), SF 운전 3·오조작 2",
+    "source": "M-09. fea/results/detail_DP-2_handcalc.json"
+   },
+   "_v0.6.7": "밑 플랜지 Z −233~−221(t12), 볼트 r50 카운터보어 바닥 −224.5(t8.5 고리, 바로 밑이 허브 윗면 → 압축만). 판정 단면 = 관 뿌리 r30 t12, 레버 = 머리 끝(r45.75) → 관 15.75, 유효 폭 40. 모델(경계조건) 자체는 그대로",
+   "_v0.6.15": "T11 세로 장공 5.5×10 ×3(90·210·330°, Z −208~−198), 장공 높이 속 Ø40.2(Z −212~−194). 모델(경계조건·하중) 그대로, 판정 단면에 장공 밑끝 Z −208 순단면(하중 방향 0~120° 중 최소 Z)을 더함, 레버 207.5, Kt 3(보수 상한) · 2.4~2.5(축 방향 장공·관 횡구멍 참고). cases/mech_T11_handcalc.py"
+  },
+  "P_T01_DISC": {
+   "case": "cases/detail_DP-2_handcalc.py",
+   "fixed": "밑면이 기둥 위 플랜지 Ø100(r50)에 앉음, MBIS5-6.5-8 인서트 3(r45) + CB5-16 밑에서",
+   "contact": "매트 압축만. 인서트 위 살 3(Z −3.5~−0.5)",
+   "load": "3 g 자중 + 작은 매트, 진공 58 kPa(인서트 위 살), 인서트 빠짐 = 조임 예압 1,500 N(1.5 N·m)",
+   "criteria": {
+    "value": "Rigid 10K 65 MPa(자리값), SF 3. 인서트 빠짐 강도 자료 없음",
+    "source": "fea/results/detail_DP-2_handcalc.json"
+   }
+  },
+  "P_T01_RING1": {
+   "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
+   "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
+   "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
+   "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
+   "criteria": {
+    "value": "A5052 175 MPa, SF 운전 3·오조작 2",
+    "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
+   }
+  },
+  "P_T01_RING2": {
+   "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
+   "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
+   "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
+   "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
+   "criteria": {
+    "value": "A5052 175 MPa, SF 운전 3·오조작 2",
+    "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
+   }
+  },
+  "P_T01_RING2_STRAP_1~6": {
+   "case": "cases/mech_T01_fea1_handcalc.py ring_case(곡선보) + cases/detail_DP-2_handcalc.py(받침 자리 구멍 순단면, 링–축 체결)",
+   "fixed": "샤프트 PSFJT16-150-M5 끝(회전 스프링 EI/L)에 볼트 체결(링1 CB5-12 r240, 링2 띠 CB5-16 r460), 로드 r190·r410 수직 받침",
+   "contact": "축 끝면 Ø15(C0.5) — 회전 반력은 끝면 가장자리 지렛대 7.5로 볼트 인장",
+   "load": "3 g 자중 + 매트 / 막힘: 실린더 3개 추력, 축 모멘트 상한 F_CYL × 50",
+   "criteria": {
+    "value": "A5052 175 MPa, SF 운전 3·오조작 2",
+    "source": "fea/results/mech_T01_fea1_handcalc.json · detail_DP-2_handcalc.json"
+   }
+  },
+  "P_T01_FOOTPLATE_*": {
+   "case": "cases/detail_DP-2_fea1_handcalc.py (v0.6.7)",
+   "fixed": "누름판(A5052 t6, 스파이더 옆 x 34~52 × 축 방향 45, Z −230~−224)이 스파이더 발 윗면에 앉고 STEP대기_CB5-18 2개(r110·r135, x 44)로 허브 SUS304 탭(물림 8)에 체결. 머리 Ø8.5 가장자리(x 39.75)를 고정단으로 봄",
+   "contact": "판 밑면–발 윗면 면 접촉(예압 4 N·m로 닫힘). 다리가 발을 드는 힘이 판 안쪽 끝(x 34, 밑 모서리 C1 → 35)에 걸림. 판 바깥 끝 x 52 지렛대(prying)는 예압이 이음을 닫는 동안 없음(열림 하중 4 N·m 809 N)",
+   "load": "발 볼트 최대 힘(스파이더 볼트 4개 Σd² 분포, 피벗 143.4) 3 g 705.8 N · 막힘 678.6 N를 볼트 하나 몫 폭 22.5에",
+   "criteria": {
+    "value": "A5052 Rp 175(H32 가정 보수), SF 운전 3·오조작 2",
+    "source": "M-09, fea/results/detail_DP-2_fea1_handcalc.json"
+   }
+  },
+  "P_T01_NUTPLATE_*": {
+   "case": "cases/detail_DP-2_fea1_handcalc.py (v0.6.7)",
+   "fixed": "너트판(A5052 t6 □40, Z −104.5~−98.5)이 스파이더 웹 밑면에 면으로 앉음. CB4-16 4개(PCD 38)가 LHFR16 플랜지 카운터보어에서 웹을 지나 판 M4 탭(물림 6)에",
+   "contact": "판–웹 밑면 면 접촉. 볼트 당김은 웹이 받음. 최악 가정으로 웹 구멍 Ø28.4 가장자리 받침 외팔 4.8",
+   "load": "부시 기울기 모멘트 max(3 g·Mrot2, 실린더 막힘 F_CYL × 50) ÷ 대각 줄 간격 2 × 26.87 → 볼트당 93.5 N",
+   "criteria": {
+    "value": "A5052 Rp 175, SF 3. 탭 물림 ≥ 1.5d(M-01)",
+    "source": "M-09, M-01, fea/results/detail_DP-2_fea1_handcalc.json"
+   }
+  },
+  "P_T05_CAP": {
+   "case": "cases/detail_DP-3_handcalc.py (v0.6.8)",
+   "fixed": "허브 위 캡, 슬릿 클램프 CB5-20 → MBIS5-6.5-8(보스 안 Y 754~762, 물림 8)",
+   "contact": "축 Ø16 클램프 면 마찰(μ0.3 자리값)",
+   "load": "클램프 예압 1.5 N·m(1.5 kN) 조임만. 운전 롤 끌림 3 N × r97(D-06 임시)",
+   "criteria": {
+    "value": "PET-CF 좌면 한계면압 60(handcalc BASE), 조임 SF ≥ 1.0, 미끄럼 SF ≥ 3",
+    "source": "M-09, fea/results/detail_DP-3_handcalc.json"
+   }
+  },
+  "P_T08_XPLATE_F/_B": {
+   "case": "cases/mech_T08_handcalc.py (v0.6.11) — 해석 못 함 — 환경 없음(D-16), 보 + 단면 손계산",
+   "fixed": "판 밑면이 SV2RL28-1800 블록 윗면(X ±150~210, Y −1021~−979 / 159~201, Z −572)에 앉고 CB5-16 2개/블록(Y −1016·−984 / 164·196)으로 블록 탭(물림 7.5)에 체결. 블록 윗면 끝(Y −979 / 201)을 외팔 고정단으로, 보수 단면은 가까운 볼트 줄(−984, Ø9.5 카운터보어 뺀 순단면)",
+   "contact": "460 밑면 ↔ 판 윗면 면 접촉(Y −977~−937 / 203~243), CB5-20 + HNTT8-5 ×4/판. 1300 형재는 460 위에 얹힘(교차부 체결 없음, T08-S05) → 1300 단순보 반력이 460 중심(Y −957 / 223)에 걸림. 블록 유효 폭 = 블록 길이 60 + 2t(45° 퍼짐) = 88",
+   "load": "A 자중 ×3 g: Y 이동 묶음 95.89 kg(무게중심 Y ≈ J_MAT_Y, −860에서 앞 몫 0.918) + MAT_X 18.07/2 → 앞 판 97.0 kg, 블록당 1428 N, 롤 편심 43. B 운전 1 g + X 가속 2 m/s²(D-12 자리값), 무게중심 높이 435(매트면, 보수)",
+   "criteria": {
+    "value": "A5052 Rp 175(H32 가정 보수), SF 일반 3(M-09). 블록 C0 12,100 N·MC 135 N·m(미스미 페이지 2026-11-01), 합성 P/C0 + M/MC",
+    "source": "M-09, M-06, fea/results/mech_T08_handcalc.json"
+   }
+  },
+  "P_T01_YPLATE": {
+   "case": "cases/mech_T01_fea1_handcalc.py(판 띠 손계산) · cases/mech_T11_handcalc.py(v0.6.15 결속 구멍 Ø4.5 ×2)",
+   "fixed": "블록 4개(±150, −860/−540) 위에 판 t15",
+   "contact": "DG 임시 형상 바닥(±100, −800~−600)이 판 윗면에 얹힘",
+   "load": "운전: 얹힌 질량 ×3 g, DG 바닥 모서리 → 블록 중심 외팔 띠(폭 100) / 오조작: 서보 충돌 1,080 N × 높이 341",
+   "criteria": {
+    "value": "A5052 Rp 175(H32 가정 보수), SF 운전 3·오조작 2(M-09)",
+    "source": "M-09, fea/results/mech_T01_fea1_handcalc.json"
+   },
+   "_v0.6.15": "결속 구멍 (±10, −590)은 판정 띠 밖. 보수 상한으로 판 최대 응력 × Kt 3을 구멍에 씀. 모델 그대로"
+  },
+  "P_T12_SU_RF/RR, SL_RF/RR (L 거울)": {
+   "case": "cases/mech_T12_handcalc.py (Roark 표 11.4 1d 단순 지지, β 0.435~1.000, v0.7.0)",
+   "fixed": "판(X 1505~1507)이 형재 바깥면 X 1505에 볼트(아직 안 그림, 디테일). 자유 칸: 앞 칸 Y −1700(1580_PR 뒷면)~−90(SPU/SPL 앞면), 뒤 칸 Y −10~900(Q 앞면) / 위 칸 Z −140(SLM 윗면)~820(SLT 밑면), 아래 칸 Z −600~−220. 단순 지지(보수)",
+   "contact": "형재 면 맞댐(압축만)",
+   "load": "오조작 무릎 200 N r0 50(민감도 25) 칸 가운데 −X(안쪽) / 운전 기댐 100 N / 자중 ×3 g 판 면 안(무시)",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3(기댐 100 N)·오조작 2(무릎 200 N), SF < 1.2 = 영구 변형. 처짐은 6-2 한도 없음 → 판 뒤 움직이는 바디 틈(옆 171.4, 뒤 329)이 처짐 뒤에도 25~100 밖인지",
+    "source": "요구서 6-1 비어 있음 → M-09, D-38 임시, fea/results/mech_T12_handcalc.json"
+   }
+  },
+  "P_T12_BK_R/L": {
+   "case": "cases/mech_T12_handcalc.py",
+   "fixed": "판(Y 940~942)이 형재 뒷면 Y 940에 볼트. 자유 칸 X 540(D_R)~1425(Q_R) × Z −600(BB)~820(BT) = 885 × 1420, 단순 지지",
+   "contact": "형재 면 맞댐",
+   "load": "같음(−Y 안쪽)",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3(기댐 100 N)·오조작 2(무릎 200 N), SF < 1.2 = 영구 변형. 처짐은 6-2 한도 없음 → 판 뒤 움직이는 바디 틈(옆 171.4, 뒤 329)이 처짐 뒤에도 25~100 밖인지",
+    "source": "요구서 6-1 비어 있음 → M-09, D-38 임시, fea/results/mech_T12_handcalc.json"
+   }
+  },
+  "P_T12_DOOR": {
+   "case": "cases/mech_T12_handcalc.py",
+   "fixed": "경첩 축 X −459.25(J_T12_DOOR, 경첩 2개 간격 미정 700·1200 두 값), 걸쇠는 X +458.5 변. 닫힘: 판은 4변 접힘 22 안쪽 단순 지지, 문 전체는 경첩 변 ↔ 걸쇠 변 경간 917 단순보(단면 판 1417×2 + 접힘 22×2 ×2, I 13 029). 열림: 경첩 변 외팔(정지 자리에 따라 뿌리 이동)",
+   "contact": "문틀 기둥과 X 틈 1.5(받침면 없음) → 닫힌 문 안쪽 밀기는 경첩·걸쇠만 받음",
+   "load": "닫힘 무릎 200 N·기댐 100 N 가운데 / 자중 21.98 kg ×1·×3 g 경첩 당김 / 연 문 끝 수직 기댐 200 N / 연 문 끝 옆 밀기 100·200 N(정지: 경첩 내장·스테이 450·600·끝 받침)",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3(기댐 100 N)·오조작 2(무릎 200 N), SF < 1.2 = 영구 변형. 처짐은 6-2 한도 없음 → 판 뒤 움직이는 바디 틈(옆 171.4, 뒤 329)이 처짐 뒤에도 25~100 밖인지",
+    "source": "요구서 6-1 비어 있음 → M-09, D-38 임시, fea/results/mech_T12_handcalc.json"
+   }
+  },
+  "P_T18_YNB": {
+   "case": "cases/mech_T18_handcalc.py (v0.8.0, 손계산 - 해석 환경 없음 D-16)",
+   "fixed": "윗다리(Z −378~−370)를 Y판 밑면에 CB5-16 ×2(Y −640). 웹은 굽힘 끝 Z −378에서 고정한 외팔, 곡선보 Ki 1.29(안 R8)",
+   "contact": "윗다리–Y판 면 맞댐(압축만), 들림 지렛점 다리 끝 Y −610",
+   "load": "Y 축력을 너트 축선 Z −448(팔 70)에 ±Y. 운전: 축력 m·a(a 2 m/s² D-12, Y 76·X 96 kg) / 오조작: 행정 끝·걸림 축력 2π·T_lim·η/l = 1131 N(드라이버 토크 제한 4 N·m T18-Q2, η 0.9, 리드 20) / 참고: 서보 최대 8.36 N·m → 2364 N / 자중 ×3 g",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
+    "source": "요구서 6-1 빈칸 -> M-09. fea/results/mech_T18_handcalc.json"
+   }
+  },
+  "P_T18_XNP": {
+   "case": "cases/mech_T18_handcalc.py (v0.8.0, 손계산 - 해석 환경 없음 D-16)",
+   "fixed": "1300_R 바깥 옆면 X 170에 CB5-20 ×4(Y −440·−380, Z −458·−418) + HNTT8-5. 당김: 아래 볼트 열 머리 자리 끝 고정(순폭 89), 밂: 형재 밑 모서리 Z −478 고정",
+   "contact": "판–형재 옆면 압축만, 당김 지렛점 판 윗끝 Z −408",
+   "load": "X 축력을 축선 Z −555에 ±X. 운전: 축력 m·a(a 2 m/s² D-12, Y 76·X 96 kg) / 오조작: 행정 끝·걸림 축력 2π·T_lim·η/l = 1131 N(드라이버 토크 제한 4 N·m T18-Q2, η 0.9, 리드 20) / 참고: 서보 최대 8.36 N·m → 2364 N / 자중 ×3 g",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
+    "source": "요구서 6-1 빈칸 -> M-09. fea/results/mech_T18_handcalc.json"
+   }
+  },
+  "P_T18_XBP": {
+   "case": "cases/mech_T18_handcalc.py (v0.8.0, 손계산 - 해석 환경 없음 D-16)",
+   "fixed": "가로대 윗면 Z −600에 CB5-20 ×4 + HNTT8-5(마찰, 조임 4 N·m·μ 0.15 임시 D-54)",
+   "contact": "판–가로대 면 맞댐, 넘어짐 지렛점 판 끝 X −527/−607",
+   "load": "BSW20 추력을 축선 Z −555(판 접면에서 45)에. 운전: 축력 m·a(a 2 m/s² D-12, Y 76·X 96 kg) / 오조작: 행정 끝·걸림 축력 2π·T_lim·η/l = 1131 N(드라이버 토크 제한 4 N·m T18-Q2, η 0.9, 리드 20) / 참고: 서보 최대 8.36 N·m → 2364 N / 자중 ×3 g",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
+    "source": "요구서 6-1 빈칸 -> M-09. fea/results/mech_T18_handcalc.json"
+   }
+  },
+  "P_T18_XSP": {
+   "case": "cases/mech_T18_handcalc.py (v0.8.0, 손계산 - 해석 환경 없음 D-16)",
+   "fixed": "가로대 윗면 CB5-20 ×4",
+   "contact": "면 맞댐",
+   "load": "BUN20 지지측(축 방향 자유) — 축 자중 절반 ×3 g만",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
+    "source": "요구서 6-1 빈칸 -> M-09. fea/results/mech_T18_handcalc.json"
+   }
+  },
+  "P_T18_XMB": {
+   "case": "cases/mech_T18_handcalc.py (v0.8.0, 손계산 - 해석 환경 없음 D-16)",
+   "fixed": "발(Z −648~−640)을 가로대 밑면에 CB5-20 ×2(X −587·−547, Y −410) + HNTT8-5, 지렛점 발 끝 X −540",
+   "contact": "발–가로대 밑면 압축만",
+   "load": "서보 2.3 kg ×3 g(무게중심 판에서 70) / 반력 토크 4 N·m(참고 8.36) 축 X 둘레",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
+    "source": "요구서 6-1 빈칸 -> M-09. fea/results/mech_T18_handcalc.json"
+   }
+  },
+  "P_T18_YMB": {
+   "case": "cases/mech_T18_handcalc.py (v0.8.0, 손계산 - 해석 환경 없음 D-16)",
+   "fixed": "탭(Y 243~251)을 460_B 뒷면에 CB5-20 ×4(X 2·168, Z −538·−498) + HNTT8-5, 지렛점 탭 밑끝 Z −558",
+   "contact": "탭–460_B 면 압축만",
+   "load": "서보 2.3 kg ×3 g(무게중심 Y 378) / X 충돌 감속 1131/96 = 11.8 m/s² 옆 하중 / 반력 토크 4 N·m(참고 8.36) 축 Y 둘레",
+   "criteria": {
+    "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
+    "source": "요구서 6-1 빈칸 -> M-09. fea/results/mech_T18_handcalc.json"
+   }
+  }
+ },
+ "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
 }
