@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v1.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03 작성. 움직임은 설계 파일 3D_Modeling/FSAP_v1.0.1.sc의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 작업면 Z 0, 매트 이송 +Y(작업자 반대), 작업자 -Y(요구서 0-8-3). 생성기 tools/gen_v1_prep.py. N00 모델링부(2026-11-03) 유닛 상자 반영, 생성기 tools/gen_v1_n00.py.",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v1.0.6.sc",
+ "doc": "../3D_Modeling/FSAP_v1.0.7.sc",
  "joints": {
   "J_U4_X": {
    "cad": "J_U4_X",
@@ -193,13 +193,14 @@
     "STEP대기_HTPA20S5M150",
     "STEP대기_HTBN635S5M",
     "STEP대기_JIS-P25",
-    "STEP대기_KQ2H06",
+    "STEP대기_KQ2L06",
+    "TU0604_N02",
     "ZH10DSA",
     "CB5-12_N02Y",
     "CB5-20_N02Y"
    ],
    "moving": true,
-   "_note": "U4_Y_CARR + N02 조향 고정자: 틀(SPCC t4 ㄷ) + 하우징·누름 링·씰 슬리브(A5052) + CRBH5013 + O링 P25×2 + KQ2H06 + ZH10DSA(실물) + 모터 받침(SPCC t4 Z) + AZM66AC-PS25 + 모터 풀리 20T + 벨트(STEP대기_) + CB5-12×14·CB5-20×3"
+   "_note": "U4_Y_CARR + N02 조향 고정자: 틀(SPCC t4 ㄷ) + 하우징·누름 링·씰 슬리브(A5052) + CRBH5013 + O링 P25×2 + KQ2L06 엘보 + 진공 관 TU0604(Ø6 R15, 씰 포트 -> 벽 구멍 -> ZH 진공 포트) + ZH10DSA(실물) + 모터 받침(SPCC t4 Z) + AZM66AC-PS25 + 모터 풀리 20T + 벨트(STEP대기_) + CB5-12×14·CB5-20×3"
   },
   "U5_AIRTABLE": {
    "parts": [
@@ -857,9 +858,15 @@
    "_n02": true
   },
   {
-   "a": "STEP대기_KQ2H06",
+   "a": "STEP대기_KQ2L06",
    "b": "P_N02_SEAL",
    "reason": "나사 끝 Y 28 = 포트 자리면 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "TU0604_N02",
+   "b": "STEP대기_KQ2L06·ZH10DSA-06-06-08",
+   "reason": "관 끝 = 엘보 소켓 끝면(X -882.5)·진공 포트 윗면(Z -190) 맞닿음(관 꽂음)",
    "_n02": true
   },
   {
