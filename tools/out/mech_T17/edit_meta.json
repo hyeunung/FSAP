@@ -1,0 +1,11 @@
+{
+ "base": "3D_Modeling/FSAP_v0.8.5.sc",
+ "result": "3D_Modeling/FSAP_v0.8.6.sc",
+ "generator": "tools/gen_t17_mech_r1.py",
+ "stages": [
+  "tools/out/mech_T17/model/stage_g.json",
+  "tools/out/mech_T17/model/stage_h.json",
+  "tools/out/mech_T17/model/stage_i.json"
+ ],
+ "note": "T17 수정 1회차. MCP batch로 g·h·i를 보냄. 실제 세션에서는 불 연산 'no result' 실패로 시도한 피처를 timeline.delete로 지우고 다시 냄(위 뿌리 자르개 5.23 join 실패, 밑 뿌리 5.25 join 실패). 기록은 최종 결과를 만든 명령만, 실제 순서대로. v0.8.4→v0.8.5 기록은 tools/gen_t17_mech.py stage a~f."
+}

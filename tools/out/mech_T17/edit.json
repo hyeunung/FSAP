@@ -1,0 +1,622 @@
+[
+{
+"command": "component.activate",
+"params": {
+"component": "MAT_ROT"
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": {
+"origin": [
+0,
+0,
+-145.0
+],
+"x_dir": [
+1,
+0,
+0
+],
+"y_dir": [
+0,
+1,
+0
+]
+},
+"name": "SK_T17_RIBROOT_V"
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+5.25,
+-731.1679
+],
+[
+5.0,
+-731.1679
+],
+[
+5.0,
+-729.0
+],
+[
+6.6,
+-728.8
+],
+[
+6.7969,
+-729.2199
+]
+],
+"closed": false
+}
+},
+{
+"command": "sketch.arc.three_point",
+"params": {
+"start": [
+6.7969,
+-729.2199
+],
+"end": [
+5.25,
+-731.1679
+],
+"through": [
+5.6838,
+-729.9242
+]
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+-5.25,
+-731.1679
+],
+[
+-5.0,
+-731.1679
+],
+[
+-5.0,
+-729.0
+],
+[
+-6.6,
+-728.8
+],
+[
+-6.7969,
+-729.2199
+]
+],
+"closed": false
+}
+},
+{
+"command": "sketch.arc.three_point",
+"params": {
+"start": [
+-6.7969,
+-729.2199
+],
+"end": [
+-5.25,
+-731.1679
+],
+"through": [
+-5.6838,
+-729.9242
+]
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.extrude",
+"params": {
+"sketch": "SK_T17_RIBROOT_V",
+"profiles": "all",
+"distance": 27.0,
+"operation": "join",
+"targets": [
+"P_T01_POST"
+]
+}
+},
+{
+"command": "component.activate",
+"params": {
+"component": "MAT_ROT"
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": {
+"origin": [
+0,
+-700.0,
+0
+],
+"x_dir": [
+0,
+-1,
+0
+],
+"y_dir": [
+0,
+0,
+1
+]
+},
+"name": "SK_T17_RIBROOT_BOT"
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+32.0,
+-145.0
+],
+[
+32.0,
+-144.6
+],
+[
+29.6,
+-144.6
+],
+[
+29.6,
+-147.0
+],
+[
+30.0,
+-147.0
+]
+],
+"closed": false
+}
+},
+{
+"command": "sketch.arc.three_point",
+"params": {
+"start": [
+30.0,
+-147.0
+],
+"end": [
+32.0,
+-145.0
+],
+"through": [
+30.5858,
+-145.5858
+]
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.revolve",
+"params": {
+"sketch": "SK_T17_RIBROOT_BOT",
+"profiles": "all",
+"axis": "y",
+"angle": "30 deg",
+"direction": "symmetric",
+"operation": "new",
+"body_name": "T17_RR_BOT"
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": {
+"origin": [
+0,
+0,
+-148.0
+],
+"x_dir": [
+1,
+0,
+0
+],
+"y_dir": [
+0,
+1,
+0
+]
+},
+"name": "SK_T17_RIBROOT_CLIP"
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+-5.23,
+-731.1679
+],
+[
+-5.23,
+-760
+],
+[
+5.23,
+-760
+],
+[
+5.23,
+-731.1679
+]
+],
+"closed": false
+}
+},
+{
+"command": "sketch.arc.three_point",
+"params": {
+"start": [
+5.23,
+-731.1679
+],
+"end": [
+6.7923,
+-729.2004
+],
+"through": [
+5.6681,
+-729.9117
+]
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+6.7923,
+-729.2004
+],
+[
+6.7923,
+-722
+],
+[
+-6.7923,
+-722
+],
+[
+-6.7923,
+-729.2004
+]
+],
+"closed": false
+}
+},
+{
+"command": "sketch.arc.three_point",
+"params": {
+"start": [
+-6.7923,
+-729.2004
+],
+"end": [
+-5.23,
+-731.1679
+],
+"through": [
+-5.6681,
+-729.9117
+]
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.extrude",
+"params": {
+"sketch": "SK_T17_RIBROOT_CLIP",
+"profiles": "all",
+"distance": 33.0,
+"operation": "new",
+"body_name": "T17_RR_CLIP_BOT"
+}
+},
+{
+"command": "solid.combine",
+"params": {
+"target": "T17_RR_BOT",
+"tools": [
+"T17_RR_CLIP_BOT"
+],
+"operation": "intersect",
+"keep_tools": false
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": {
+"origin": [
+0,
+-700.0,
+0
+],
+"x_dir": [
+0,
+-1,
+0
+],
+"y_dir": [
+0,
+0,
+1
+]
+},
+"name": "SK_T17_RIBROOT_TOP"
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+32.0,
+-118.0
+],
+[
+32.0,
+-118.4
+],
+[
+29.6,
+-118.4
+],
+[
+29.6,
+-116.0
+],
+[
+30.0,
+-116.0
+]
+],
+"closed": false
+}
+},
+{
+"command": "sketch.arc.three_point",
+"params": {
+"start": [
+30.0,
+-116.0
+],
+"end": [
+32.0,
+-118.0
+],
+"through": [
+30.5858,
+-117.4142
+]
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.revolve",
+"params": {
+"sketch": "SK_T17_RIBROOT_TOP",
+"profiles": "all",
+"axis": "y",
+"angle": "30 deg",
+"direction": "symmetric",
+"operation": "new",
+"body_name": "T17_RR_TOP"
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": {
+"origin": [
+0,
+0,
+-121.0
+],
+"x_dir": [
+1,
+0,
+0
+],
+"y_dir": [
+0,
+1,
+0
+]
+},
+"name": "SK_T17_RIBROOT_CLIP_T"
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+-5.25,
+-731.1679
+],
+[
+-5.25,
+-760
+],
+[
+5.25,
+-760
+],
+[
+5.25,
+-731.1679
+]
+],
+"closed": false
+}
+},
+{
+"command": "sketch.arc.three_point",
+"params": {
+"start": [
+5.25,
+-731.1679
+],
+"end": [
+6.7969,
+-729.2199
+],
+"through": [
+5.6838,
+-729.9242
+]
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+6.7969,
+-729.2199
+],
+[
+6.7969,
+-722
+],
+[
+-6.7969,
+-722
+],
+[
+-6.7969,
+-729.2199
+]
+],
+"closed": false
+}
+},
+{
+"command": "sketch.arc.three_point",
+"params": {
+"start": [
+-6.7969,
+-729.2199
+],
+"end": [
+-5.25,
+-731.1679
+],
+"through": [
+-5.6838,
+-729.9242
+]
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.extrude",
+"params": {
+"sketch": "SK_T17_RIBROOT_CLIP_T",
+"profiles": "all",
+"distance": 6.0,
+"operation": "new",
+"body_name": "T17_RR_CLIP_TOP"
+}
+},
+{
+"command": "solid.combine",
+"params": {
+"target": "T17_RR_TOP",
+"tools": [
+"T17_RR_CLIP_TOP"
+],
+"operation": "intersect",
+"keep_tools": false
+}
+},
+{
+"command": "solid.combine",
+"params": {
+"target": "P_T01_POST",
+"tools": [
+"T17_RR_TOP"
+],
+"operation": "join",
+"keep_tools": false
+}
+},
+{
+"command": "solid.combine",
+"params": {
+"target": "P_T01_POST",
+"tools": [
+"T17_RR_BOT"
+],
+"operation": "join",
+"keep_tools": false
+}
+},
+{
+"command": "component.activate",
+"params": {
+"component": "root"
+}
+},
+{
+"command": "component.rename",
+"params": {
+"component": "root",
+"name": "FSAP_v0.8.6"
+}
+},
+{
+"command": "document.metadata.set",
+"params": {
+"values": {
+"description": "T17 rev1: post theta270 rib root R2 (cylinder-plane) built as exact blend geometry joined to P_T01_POST (vertical x2 extruded, top/bottom x2 revolved and clipped)"
+}
+}
+},
+{
+"command": "motion.play",
+"params": {
+"study": "대기",
+"step": 0,
+"quiet": true
+}
+}
+]
