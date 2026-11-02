@@ -1,0 +1,137 @@
+{
+ "model": "mech_DC-05 handcalc v1.0.3",
+ "fea": "해석 못 함 — 환경 없음(D-16)",
+ "cases": {
+  "LINK_run": {
+   "Pv_N": 200.1,
+   "Mv_Nm": 142.9,
+   "Mh_Nm": 53.0,
+   "T_Nm": 9.0,
+   "sigma_MPa": 8.4,
+   "tau_MPa": 0.23,
+   "vm_MPa": 8.41,
+   "SF": 29.1,
+   "sf_min": 3.0,
+   "defl_v_mm": 0.0926,
+   "defl_h_mm": 0.0193,
+   "twist_rad": 4.62e-05,
+   "twist_at_needle_mm": 0.0042
+  },
+  "LINK_mis": {
+   "Pv_N": 300.1,
+   "Mv_Nm": 195.9,
+   "Mh_Nm": 53.0,
+   "T_Nm": 9.0,
+   "sigma_MPa": 10.82,
+   "tau_MPa": 0.23,
+   "vm_MPa": 10.82,
+   "SF": 22.6,
+   "sf_min": 2.0,
+   "defl_v_mm": 0.1294,
+   "defl_h_mm": 0.0193,
+   "twist_rad": 4.62e-05,
+   "twist_at_needle_mm": 0.0042
+  },
+  "LINK_press_var": {
+   "dP_N": 50,
+   "defl_v_mm": 0.0184
+  },
+  "STAND_closed_80x80_t4_run": {
+   "N_N": 398.1,
+   "M_vert_Nm": 146.6,
+   "M_drag_Nm": 38.0,
+   "T_Nm": 57.0,
+   "sigma_MPa": 6.62,
+   "tau_MPa": 1.23,
+   "vm_MPa": 6.95,
+   "SF": 35.2,
+   "sf_min": 3.0,
+   "twist_rad": 0.0001068,
+   "lateral_at_needle_mm": 0.0609
+  },
+  "STAND_closed_80x80_t4_mis": {
+   "N_N": 498.1,
+   "M_vert_Nm": 203.6,
+   "M_drag_Nm": 38.0,
+   "T_Nm": 57.0,
+   "sigma_MPa": 8.64,
+   "tau_MPa": 1.23,
+   "vm_MPa": 8.9,
+   "SF": 27.5,
+   "sf_min": 2.0,
+   "twist_rad": 0.0001068,
+   "lateral_at_needle_mm": 0.0609
+  },
+  "STAND_solid_80x80_model_run": {
+   "N_N": 398.1,
+   "M_vert_Nm": 146.6,
+   "M_drag_Nm": 38.0,
+   "T_Nm": 57.0,
+   "sigma_MPa": 2.23,
+   "tau_MPa": 0.54,
+   "vm_MPa": 2.41,
+   "SF": 101.6,
+   "sf_min": 3.0,
+   "twist_rad": 3.26e-05,
+   "lateral_at_needle_mm": 0.0186
+  },
+  "STAND_solid_80x80_model_mis": {
+   "N_N": 498.1,
+   "M_vert_Nm": 203.6,
+   "M_drag_Nm": 38.0,
+   "T_Nm": 57.0,
+   "sigma_MPa": 2.91,
+   "tau_MPa": 0.54,
+   "vm_MPa": 3.05,
+   "SF": 80.3,
+   "sf_min": 2.0,
+   "twist_rad": 3.26e-05,
+   "lateral_at_needle_mm": 0.0186
+  },
+  "STAND_open_channel_t4_run": {
+   "J_mm4": 5120.0,
+   "T_Nm": 57.0,
+   "tau_MPa": 44.5,
+   "SF_shear": 3.18,
+   "twist_rad": 0.03664,
+   "twist_deg": 2.1,
+   "lateral_at_needle_mm": 20.88
+  },
+  "DRIVE_plate_servo_weight": {
+   "M_Nmm": 1942.4,
+   "strip": {
+    "inputs": {
+     "t": 4,
+     "b": 60,
+     "L": 4.0,
+     "E": 205000.0,
+     "Rp": 245.0,
+     "end": "cantilever",
+     "sf_min": 3.0
+    },
+    "force_N": 64.746,
+    "deflection_mm": 0.0,
+    "stiffness_N_mm": 3075000.0,
+    "stress_MPa": 1.62,
+    "sf": 151.36,
+    "thin": false,
+    "ok": true,
+    "needs_fea": true
+   }
+  },
+  "DRIVE_plate_torque": {
+   "T_Nm": 3.8,
+   "tau_MPa": 0.099,
+   "SF": 1434.0
+  }
+ },
+ "section_LINK": {
+  "Iy": 659178.7,
+  "Iz": 1255738.7,
+  "Zy": 21972.6,
+  "Zz": 27905.3,
+  "Am": 4816,
+  "J": 1306696.1,
+  "A": 1136
+ }
+}
