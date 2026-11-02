@@ -1,0 +1,14 @@
+{
+  "root": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP",
+  "date": "2026-11-03",
+  "machine": "FSAP MAT-RS-001",
+  "cad": "solidcraft",
+  "engineRoot": "C:/Users/hyeun/OneDrive/Documents/workspace/MechDesign_Engine",
+  "hostPy": "python -B",
+  "feaPy": "(없음: 이 컴퓨터에 엔진 해석 환경 engine/fea/.venv가 설치돼 있지 않다. 설치하지 않는다. 강도는 손계산으로 하고 해석은 '해석 못 함 — 환경 없음(자료대기 D-16)'으로 기록한다)",
+  "tmpAscii": "C:/Users/hyeun/AppData/Local/Temp/mechdesign",
+  "rulesFile": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/run-rules.md",
+  "parallel": true,
+  "detailing": { "exportStep": false },
+  "shellNote": "[이번 실행 — v1.0 첫 실행, 2026-11-03] (a) v1.0은 빈 설계에서 새로 시작한다(실행 규칙 17). 과제는 요구서 5절 N00~N08, 첫 라운드는 N00 전체 골격 하나부터(순서 C-22). v0.x(archive_v0/)는 읽기 참고만. (b) SolidCraft 앱(--control 27878)이 켜져 있고 옛 v0.8.2 문서가 열려 있을 수 있다. 그 문서는 저장하지 않는다. N00은 new_design으로 새 문서를 만들어 3D_Modeling/FSAP_v1.0.0.sc로 저장하고 문서 이름도 FSAP_v1.0.0으로. (c) 미스미 로그인은 확인 안 됨 — 풀려 있으면 기다리지 말고 STEP대기_ 임시 형상(실행 규칙 10). 봇 확인 페이지는 넘기지 않는다. (d) 속도가 중요하다: 엔진 v3.7.0대로(전체 회귀 regrun 30분 상한, 과제 범위 검사, 파일 한 번 열기). (e) 보고서·커밋은 한글."
+}

@@ -8,6 +8,12 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+## v1.0 준비 — 2026-11-03 (개념 재수립)
+
+- 요구서 0-8 전체 구동 개념 **확립**(사용자 동의 2026-11-03): 헤드 자체 이송(Dürkopp 867-392342 개조, 기둥 없음), 가운데 진공 원판 + 에어 테이블, X·Y 따라가기, 벤치마크 거의 그대로(결정로그 C-12~C-24, `docs/concept/v1-drive-concept-discussion.md`).
+- v0.x(v0.0.0~v0.10.1) 모델·BOM·설계검토서·보고서·생성기·해석을 `archive_v0/`로 동결. 과제 목록을 N00~N08로 새로.
+- 엔진 v3.7.0 맞춤(전체 회귀 상한·벤치마크 칸), 실행 규칙 17(v1.0 새 시작), 실행 인자 `tools/full-run-args.json`.
+
 ## Added
 
 - 설계 v0.10.1 `3D_Modeling/FSAP_v0.10.1.sc`(구동 T13 헤드 받침 강성·배치, 작은 변경, T13-S): BASE 아래 새 컴포넌트 `T13` — `P_T13_SLEEVE`(SUS304 t2 판금: 앞판 Y 620~622, 옆판 X ±(90~92)·Y 620~780, 치마 Y 470~780·Z −679~−600, 굽힘 2 R2, 해방 홈 2, Ø5.5 16), `P_T13_REAR`(SUS304 t2 평판 Y 780~782·Z −598~−140, Ø5.5 6), `P_T13_FBL_T1/_T2`(SUS304 t2 판금 L, 580 앞끝 ↔ 1900_B, Ø5.5 4씩), 체결 CB5-12 ×30·HNTT8-5 ×30(실물 STEP, 물림 7.5). 기둥·580·T19 다리·헤드판·조인트 변경 0, 새 STEP대기_ 0, 새 마감캡 0. 정적 겹침 0, J_MAT_X·J_MAT_Y 9자세 겹침 0, 렌치 프로브 30 결함 0, floating 0. 흔들림 보수 0.290 ≤ 0.657(D-08 임시, 선정 손계산). 헤드판–기둥 체결은 DL-X06대로 안 그림. 루트 이름 FSAP_v0.10.1. 생성기 `tools/gen_t13_mech.py`(stage a~e), 결정로그 T13-M01~M05, 보고서 `docs/reports/mechanism/mech_T13_model.md`

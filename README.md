@@ -8,7 +8,7 @@
 
 ## 지금 상태 (2026-10-30)
 
-- **구동부 모델링 중.** T01 매트 잡기·회전 해결(v0.2.1), T02 봉제 헤드 홈 진입 모델링(v0.3.0, 검증 중 멈춤), T03~T07 남음. **이어가기는 [`docs/HANDOFF.md`](docs/HANDOFF.md)**(워크플로우 인자 `tools/workflow-args.json`).
+- **v1.0 새 시작(2026-11-03).** 요구서 0-8 전체 구동 개념 확립, v0.x는 `archive_v0/`에 동결. 과제 N00(전체 골격)부터. **이어가기는 [`docs/HANDOFF.md`](docs/HANDOFF.md)**(실행 인자 `tools/full-run-args.json`).
 - 모르는 치수(홈 폭·반경, 매트 크기, 테이프 폭 등)는 임시값으로 진행 중이고 [자료대기](docs/waiting-list.md)에 있다.
 - 기술 방향·결정은 [결정로그](docs/decision-log.md).
 - CAD는 **SolidCraft**(C-09). 실행 준비(MCP 연결·해석 환경)는 자료대기 D-16.
