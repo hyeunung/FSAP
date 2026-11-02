@@ -1,0 +1,21 @@
+{
+ "adjuster_M16_SF": 3.1910141042823406,
+ "leg_compress_MPa": 2.6115,
+ "leg_compress_SF": 42.121386176526904,
+ "leg_buckling_Pcr_N": 2234964.764739438,
+ "leg_buckling_SF": 713.180408685761,
+ "plate_M16_thread_shear_SF": 19.788863854838667,
+ "plate_bearing_MPa": 2.6115,
+ "plate_bearing_SF": 78.4989469653456,
+ "lateral_per_leg_N": 39.93896250000001,
+ "lateral_bracket_force_N": 183.71922750000004,
+ "bracket_SF": 8.164632632150598,
+ "CB8_16_engage_mm": {
+  "horizontal": 4.5,
+  "vertical": 5.300000000000001,
+  "need_1.5d": 12
+ },
+ "CB8_25_engage_mm": 16,
+ "min_SF": 3.1910141042823406,
+ "pass_SF2": true
+}
