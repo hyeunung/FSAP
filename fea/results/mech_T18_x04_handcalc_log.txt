@@ -1,0 +1,17 @@
+오조작 축력 F = 2363.7 N
+P_T18_YNB bbox [20.0, -670.0, -476.0] ~ [120.0, -610.0, -370.0] vertex 68 match True
+P_T18_XNP bbox [130.0, -530.0, -590.0] ~ [178.0, -290.0, -408.0] vertex 102 match True
+P_T01_YPLATE bbox [-200.0, -950.0, -370.0] ~ [200.0, -450.0, -360.0] vertex 40 match None
+YNB 고리 {'model': '고리를 cap 밑면 Z −422에서 고정한 외팔, 축력 F를 너트 축선 Z −448에 ±Y(팔 26). 단면 = 폭 70 − Ø48 현 − 같은 높이 M5 탭 2개, 두께 t12', 'root_nominal': {'sigma_MPa': 36.6, 'Kt_R3': 1.5, 'sigma_peak_MPa': 54.9, 'SF_nominal': 6.56, 'SF_peak': 4.37}, 'worst_net_section': {'z': -433.18, 'b_net': 23.85, 'arm': 14.82, 'sigma_MPa': 61.2, 'SF': 3.92}, 'SF': 3.92, 'verdict': '됨', 'deflect_at_axis_mm': 0.0199}
+YNB cap {'model': '축력 F가 접면 Z −370 아래 78에 걸린 모멘트를 볼트 4개가 강체 지렛점(cap 끝 Y −610 또는 −670) 둘레로 선형 분배. 줄 2개씩 팔 47·13', 'M_Nmm': 184371, 'T_max_per_bolt_N': 1822.0, 'V_per_bolt_N': 590.9, 'cap_body_sigma_MPa': 2.6, 'cap_body_SF': 92.5}
+Y판 국부 {'model': 'X 30 볼트 2개 당김 합 P를 고정 원판(a 60, 블록·받침까지 보수) 중심 집중하중으로(Roark 11.2 case 16, r0 보정). T14 검사와 같은 모델', 'P_N': 3644.0, 'sigma_center_MPa': 59.4, 'SF': 2.95, 'verdict': '됨'}
+XNP 고리 {'model': '고리를 밑판 밑면 Z −490에서 고정한 외팔, 축력 F를 축선 Z −555에 ±X(팔 65). 단면 = 폭 100 − Ø54 현 − 같은 높이 M8 탭 2, 두께 t17', 'root_nominal': {'sigma_MPa': 31.9, 'Kt_R3': 1.6, 'sigma_peak_MPa': 51.0, 'SF_nominal': 7.52, 'SF_peak': 4.7}, 'worst_net_section': {'z': -490.0, 'b_net': 100, 'arm': 65.0, 'sigma_MPa': 31.9, 'SF': 7.52}, 'SF': 4.7, 'verdict': '됨', 'deflect_at_axis_mm': 0.0767}
+XNP 밑판 {'model': '밑판을 옆판 모서리에서 고정, 고리 쪽 모멘트 F·71', 'M_Nmm': 167825, 'cases': {'폭 240 전폭': {'sigma_MPa': 29.1, 'SF': 8.24}, '고리 폭 100 + 45° 퍼짐 2×15': {'sigma_MPa': 53.8, 'SF': 4.46}, '고리 폭 100만(하한)': {'sigma_MPa': 69.9, 'SF': 3.43}}, 'SF': 4.46, 'verdict': '됨'}
+XNP 옆판 {'model': '옆판(t8, 높이 82)을 지렛점(윗끝 −408)과 볼트 줄 사이 보로 봄. 볼트 예압 4 kN ≫ 최대 당김이면 접면이 안 벌어져 이 값은 상한', 'T_row_lower_N': 954.6, 'T_row_upper_N': 190.9, 'pivot_R_N': 5654.8, 'T_push_max_N': 254.6, 'M_max_Nmm': 229282, 'cases': {'전폭 240, 구멍 7': {'b_net': 201.5, 'sigma_MPa': 106.68, 'SF': 2.25, 'thin': False, 'needs_fea': True}, '고리 폭 100 + 밑판 퍼짐 2×32 = 164, 구멍 5': {'b_net': 136.5, 'sigma_MPa': 157.47, 'SF': 1.52, 'thin': False, 'needs_fea': True}}, 'SF': 2.25, 'SF_lower_bound': 1.52, 'separation_SF': 4.19, 'verdict': '됨'}
+YNB→Y판 CB5-16 (A5052 탭 Le 8) op {'나사 인장': 8.57, '암나사 전단': 3.03, '분리(예압/외력)': 2.2} tight {'조임 볼트 응력': 3.51, '조임 좌면': 1.73, '조임 암나사 전단': 1.38} ok True near ['분리(예압/외력)']
+YNB→Y판 CB5-20 (cap A6061 탭 Le 10) op {'나사 인장': 8.57, '암나사 전단': 4.66, '분리(예압/외력)': 2.2} tight {'조임 볼트 응력': 3.51, '조임 좌면': 2.39, '조임 암나사 전단': 2.12} ok True near ['분리(예압/외력)']
+YNUT CB5-20 ×4 → 고리 (A6061 Le 11.5) op {'나사 인장': 26.43, '암나사 전단': 16.51, '분리(예압/외력)': 6.77} tight {'조임 볼트 응력': 3.51, '조임 좌면': 2.39, '조임 암나사 전단': 2.44} ok True near []
+XNUT CB8-25 ×4 → 고리 (A6061 Le 17) op {'나사 인장': 68.13, '암나사 전단': 39.04, '분리(예압/외력)': 10.58} tight {'조임 볼트 응력': 5.8, '조임 좌면': 3.53, '조임 암나사 전단': 3.69} ok True near []
+XNP→1300_R CB5-20 + HNTT8-5 ×14 (볼트 쪽) op {'나사 인장': 16.36, '암나사 전단': 4.54, '분리(예압/외력)': 4.19} tight {'조임 볼트 응력': 3.51, '조임 좌면': 4.04, '조임 암나사 전단': 1.08} ok False near ['조임 암나사 전단']
+추가 {'YNB cap 볼트 전단 SF (마찰 무시)': 15.9, 'YNB cap 미끄럼 SF (예압 4 kN×4, μ 0.15, D-54)': 1.02, 'HNTT8-5 립 뽑힘 SF (허용 2.0 kN/개 임시, D-54)': 2.1, 'XNP 옆판 분리 SF (예압 4 kN / 최대 당김)': 4.19}
+물림 {'YNUT CB5-20': {'Le': 11.5, 'need': 7.5, 'ok': True}, 'XNUT CB8-25': {'Le': 17.0, 'need': 12.0, 'ok': True}, 'CB5-16_T18_YNB → Y판': {'Le': 8.0, 'need': 7.5, 'ok': True}, 'CB5-20_T18_YNB → cap': {'Le': 10.0, 'need': 7.5, 'ok': True}}
