@@ -425,6 +425,66 @@
     "value": "SUS304 205 MPa, SF 운전 3·오조작 2, SF < 1.2 = 영구 변형(동작)",
     "source": "요구서 6-1 빈칸 -> M-09. fea/results/mech_T18_handcalc.json"
    }
+  },
+  "P_T16_XMEND": {
+   "case": "cases/mech_T16_handcalc.py (v0.9.1, 손계산 — 해석 못 함, 환경 없음 D-16)",
+   "fixed": "날개(X 131~168, Z −481~−478)가 1300_R 밑면에 CB5-12+HNTT8-5 ×2 (150, −275/−251). 세움 팔 X 128~131 × 폭 46은 굽힘 안쪽 Z −481에서 나온 외팔(굽힘 R3, Kt 1.5)",
+   "contact": "1300_R 밑면 압축만. 날개 지렛대 = 볼트 X 150 ↔ 날개 끝 X 168 = 18",
+   "load": "X 캐리어 이동 줄+반 고리(전체의 0.6) × (가감속 + μ0.3 g)를 아래 볼트 (Y −262, Z −588)에 ±X, 외팔 107. 걸림(오조작)은 하중 미정 → 견디는 힘으로 기록",
+   "criteria": {
+    "value": "A5052 Rp 175(판금 H32 가정 보수), SF 운전 3·비상 감속 2, SF < 1.2 = 영구 변형",
+    "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T16_handcalc.json"
+   }
+  },
+  "P_T16_YMEND": {
+   "case": "cases/mech_T16_handcalc.py (v0.9.1, 손계산 — 해석 못 함, 환경 없음 D-16)",
+   "fixed": "Y판 밑면(Z −370)에 CB5-16 ×2 (−192/−180, L84)",
+   "contact": "Y판 면 압축",
+   "load": "Y 윗줄 반 무게 ×3 g를 캐리어 볼트 (L105)에 아래로(외팔 21) + 비상 끌림 × 높이 10",
+   "criteria": {
+    "value": "A5052 Rp 175(판금 H32 가정 보수), SF 운전 3·비상 감속 2, SF < 1.2 = 영구 변형",
+    "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T16_handcalc.json"
+   }
+  },
+  "P_T16_YCLIP": {
+   "case": "cases/mech_T16_handcalc.py (v0.9.1, 손계산 — 해석 못 함, 환경 없음 D-16)",
+   "fixed": "CB5-12 ×2 (−112, L62/L85)로 Y판 밑면. 벽 2개(폭 6·7 × 높이 9)가 외팔 64",
+   "contact": "윗면 Y판 덮개(하중 경로 아님)",
+   "load": "케이블 150 mm ×3 g 바깥 끝",
+   "criteria": {
+    "value": "PET-CF 30 MPa(층간 보수값), SF 운전 3·비상 2",
+    "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T16_handcalc.json"
+   }
+  },
+  "P_T16_TEEHOLD": {
+   "case": "cases/mech_T16_handcalc.py (v0.9.1, 손계산 — 해석 못 함, 환경 없음 D-16)",
+   "fixed": "CB5-12 ×2 (0, −575/−510) 가운데 칸막이로 Y판 밑면",
+   "contact": "분기 4개는 홈에 끼움(잡는 힘 근거 없음)",
+   "load": "관 당김 5 N/분기(T17 안전쪽 가정) 아래·수평, 높이 15",
+   "criteria": {
+    "value": "PET-CF 30 MPa(층간 보수값), SF 운전 3·비상 2",
+    "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T16_handcalc.json"
+   }
+  },
+  "P_T16_YTRAY": {
+   "case": "cases/mech_T16_handcalc.py (v0.9.1, 손계산 — 해석 못 함, 환경 없음 D-16)",
+   "fixed": "날개 X −170~−132가 1300_L 밑면에 CB5-12+HNTT8-5 ×3 (−150, −290/−80/120)",
+   "contact": "세움 X −172~−170 위 끝이 지렛대 받침",
+   "load": "Y 아랫줄 최대 456 + 반 고리 ×3 g 를 캐리어 중심 X −195.5(바닥 외팔 23.5), 고정단 끌림 비상",
+   "criteria": {
+    "value": "A5052 Rp 175(판금 H32 가정 보수), SF 운전 3·비상 감속 2, SF < 1.2 = 영구 변형",
+    "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T16_handcalc.json"
+   }
+  },
+  "P_T16_XGLIDE": {
+   "case": "cases/mech_T16_handcalc.py (v0.9.1, 손계산 — 해석 못 함, 환경 없음 D-16)",
+   "fixed": "윗판이 1140_XM·XP 윗면에 얹힘 + CB5-12+HNTT8-5 ×4, 맑은 지간 1,323 단순 지지",
+   "contact": "캐리어 미끄럼면",
+   "load": "자중 ×3 g 등분포 + X 캐리어 전체 ×3 g 가운데 집중",
+   "criteria": {
+    "value": "A5052 Rp 175(판금 H32 가정 보수), SF 운전 3·비상 감속 2, SF < 1.2 = 영구 변형",
+    "source": "요구서 6-1 비어 있음 → M-09. fea/results/mech_T16_handcalc.json"
+   }
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
