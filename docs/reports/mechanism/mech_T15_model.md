@@ -1,4 +1,75 @@
-# 구동 T15 모델링 — T05 SNJ 스패너 자리 (v0.8.0 → v0.8.1)
+# 구동 T15 모델링 — J_T05_PAD 최종 판정 재확인 (v0.8.4 그대로, 2026-11-02, 엔진 v3.4.0)
+
+요약(10줄)
+- 바뀐 부품 0, 지운 부품 0, 조인트·행정 변경 0, 새 버전 저장 없음(선정 지시서 "모델 변경 없음 … 저장·새 버전 없음"). 판정만 다시 냄.
+- 기준 문서: `tools/config.json` doc = `3D_Modeling/FSAP_v0.8.4.sc`(지시문 메모 (a)의 v0.8.2 뒤 v0.8.3·v0.8.4가 나옴. T05 영역은 그 뒤 변경 없음).
+- J_T05_PAD −12.5→0 joint.sweep(상대 `P_T05_GUIDE:1` 임시 분리, 2 mm 구간 6개): **막힘 0**(stopped_by null 전부), 최소 틈 0.300(J 0에서 메시 0.2947, 메시 오차 0.107 안) → 정확값 inspect.clearance **0.300**.
+- 스패너 판 21×4 0°·±15°·±30°·±45°, 23×4 ±30°, 손잡이 ±Y: SNJ(물리는 너트)·BODY·ROD(너트를 지나는 실린더)를 뺀 상대와 **겹침 0**(위판 밑면 Z 85.5 맞닿음 0.0001만). 포트 상자 0.5.
+- 패드 안내 틈 J −12.5 / 0 / −13.5: **0.300 / 0.300 / 0.000**(받침면 Z 42 = 행정 끝 스토퍼).
+- T05 영역 정적 간섭 17바디: **count 0**, truncated false, budget_exceeded false, unchecked 8쌍 = 기준선(나사 물림·STEP 하위)과 같음.
+- 강도: 형상 변경 없음 → v0.8.1 손계산 앞벽 오조작B 두 변 SF 3.80 그대로(해석 못 함 — 환경 없음, D-16).
+- 판정: 완료 판정 다섯 항목 모두 충족 → **pass**. 요구서 T15를 '해결'로 올림.
+- 통로 MCP(앱 실행 중, inspect dirty false). 미완 0.
+
+## 1. 통로·문서
+
+- `running` 응답 정상(빈 큐), `document.inspect` dirty false·이름 FSAP_v0.8.4·path null → MCP.
+- `open 3D_Modeling/FSAP_v0.8.4.sc` errors 0, features 1699.
+- `edit.checkpoint` → `motion.play {study:"대기", step:0}` → 임시 분리 `component.from_bodies [P_T05_GUIDE]` → sweep 6구간 → `undo`("Create Components from Bodies") → checkpoint 67 → 스패너 프로브 컴포넌트 `T15SEL`·clearance·drive·interference → `edit.restore_checkpoint 67` → `motion.play 대기 0` + `joint.drive J_T05_PAD −12.5`(저장 상태 대기값).
+- 끝 상태: dirty false, features 1699, `P_T05_GUIDE:1`·`T15SEL:1` occurrence 없음. 파일 FSAP_v0.8.4.sc 수정 시각 11:57:52 그대로(이번 작업 전). `save` 안 함.
+- 참고: 첫 checkpoint(63)는 from_bodies 뒤 `restore_checkpoint`가 "no checkpoint 63"으로 거부 → undo로 되돌리고 확인(위 끝 상태).
+
+## 2. joint.sweep J_T05_PAD (상대 P_T05_GUIDE:1, refine 0.01, report_gaps)
+
+| 구간 | step | stopped_by | 최소 틈 mm |
+|---|---|---|---|
+| −12.5 → −10.5 | 0.25 | 없음 | 0.300 |
+| −10.5 → −8.5 | 0.25 | 없음 | 0.300 |
+| −8.5 → −6.5 | 0.25 | 없음 | 0.300 |
+| −6.5 → −4.5 | 0.25 | 없음 | 0.300 |
+| −4.5 → −2.5 | 0.25 | 없음 | 0.300 |
+| −2.5 → 0 | 0.1 | 없음 | 0.300, J 0 메시 0.2947(gap_tolerance 0.107) |
+
+정확값(inspect.clearance, B-rep): J 0 GUIDE↔PAD 0.300 at (−140.9, 562.2, 73.5). 완료 판정 "최소 틈 ≥ 0.30" 충족. 호출 시간 합 0.65 s.
+움직인 집합 `T05_PAD:1` = P_T05_PAD + ROD + NTJ ×2(mech_T15_model1.md 확인 그대로).
+
+## 3. 스패너·패드·간섭 (v0.8.4, 앱에서, 프로브는 checkpoint로 지움)
+
+| 항목 | 기준 | 결과 |
+|---|---|---|
+| 스패너 21×4, 축 (−126.9, 572.5), Z 81.5~85.5, 7각도 | 겹침 0 | **0**(상대 33바디 중 SNJ·BODY·ROD 제외 판정. SNJ 겹침 259.2 mm³ = 프로브가 이빨 없는 판이라 물리는 너트 자체, BODY·ROD는 unchecked = 너트를 지나는 실린더 — v0.8.1 판정과 같은 정의) |
+| 23×4 ±30°, 손잡이 ±Y | 겹침 0 | 0 |
+| 포트 상자 35×12 Z 90~150.5 | 겹침 0 | 0, GUIDE 0.5·BODY 0.35 |
+| 패드 ↔ 안내 J −12.5 / 0 / −13.5 | 0.3 / 0.3 / 0.0 | 0.300 / 0.300 / 0.000, NTJ 0.2, ROD 0.0(체결) |
+| T05 정적 간섭 17바디 | 0 | count 0, truncated false, 68 s, unchecked 8 = 기준선 |
+
+결과 파일: `tools/out/mech_T15/v084_judge.json`, 명령 `tools/out/mech_T15/t15_v084_chk.json`.
+
+## 4. 완료 판정
+
+| 항목 | 결과 |
+|---|---|
+| J_T05_PAD −12.5→0 막힘 0, 최소 ≥ 0.30 | 충족(0.300) |
+| 스패너 21×4 겹침 0 | 충족 |
+| 패드 안내 틈 0.3/0.3/0.0 | 충족 |
+| 과제 범위 간섭 0 | 충족 |
+| 판정 | **pass** |
+
+- 요구서 5절 T15: 일부 → 해결. 결정로그 T15-R04에 기록.
+- 다시 실행 재료(E-25): `tools/out/mech_T15/edit.json` = `[]`(모델 변경 명령 없음), `edit_meta.json` {base = result = v0.8.4}.
+- 측정 표(sigpatch): 바뀐·지운 바디 0 → 고칠 것 없음, 돌리지 않음.
+- 임시 STEP: 새로 힘을 받는 가공품 0 → 없음.
+- 디테일 d1~d4: 아래 부록(v0.8.1 기록) 5절 그대로, 기록만.
+
+## 워크플로우 메모
+
+- `edit.restore_checkpoint`가 `component.from_bodies` 뒤에 앞 checkpoint를 못 찾았다("no checkpoint 63"). 컴포넌트 구조를 바꾸는 명령 뒤에는 undo로 되돌리고 occurrence 없음·features 수로 확인하는 편이 안전하다.
+- 스패너 프로브를 상자로 만들면 물리는 너트(SNJ)와 실린더 몸통은 늘 겹친다. 상대 목록에서 처음부터 빼는 게 판정이 깔끔하다(v0.8.1도 뺐음).
+
+---
+
+# 부록 — 이전 판(v0.8.0 → v0.8.1 모델링 기록, 결정로그 T15-R01 '3절'·d1~d4 '5절'은 이 부록의 절 번호)
+
 
 요약(10줄)
 - 바뀐 부품: `P_T05_GUIDE`(PET-CF FDM, 천장 Z 76.5~80.5 + 너트 틈 Z 80.5~85.5 + 외팔 위판), `P_T05_PAD`(윗 긴 모서리 C2 ×2). 지운 부품 0, 새 부품·구매품·볼트 0, 조인트·행정 변경 0.

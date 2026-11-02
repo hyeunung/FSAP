@@ -1,0 +1,44 @@
+{
+ "clamp_column": {
+  "F_N": 5.0,
+  "L_mm": 19.5,
+  "sigma_MPa": 0.229,
+  "PETCF_yield_MPa": 50.0,
+  "SF": 218.8
+ },
+ "clamp_arm": {
+  "L_mm": 16.95,
+  "sigma_MPa": 0.565,
+  "SF": 88.5
+ },
+ "cb5_12": {
+  "engage_mm": 8.0,
+  "min_1p5d": 7.5,
+  "ok": true,
+  "wrench_path_mm": {
+   "(±54,-724) 아래": 38.0,
+   "(±54,-698) 아래": 41.0
+  },
+  "need": 17
+ },
+ "yplate_web": {
+  "tap_edge_to_window_mm": 4.4,
+  "M03_min": 2.5,
+  "phi10_edge_to_DG_side_mm": 4.6
+ },
+ "ejector_mount": {
+  "mass_kg": 0.0507,
+  "F_N_5G": 2.49,
+  "taps": "M3 x2 깊이 8 (디테일 T17-D1 볼트)"
+ },
+ "twist": {
+  "L_mm": 198,
+  "stretch_mm": 8.36,
+  "need_mm": 10.36,
+  "sag_h15_spare_mm": 11.87,
+  "ok": true,
+  "min_bend_R_mm": 18,
+  "TU0604_R_provisional": 15,
+  "D46_R10": 10
+ }
+}
