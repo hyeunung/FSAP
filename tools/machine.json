@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v1.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03 작성. 움직임은 설계 파일 3D_Modeling/FSAP_v1.0.1.sc의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 작업면 Z 0, 매트 이송 +Y(작업자 반대), 작업자 -Y(요구서 0-8-3). 생성기 tools/gen_v1_prep.py. N00 모델링부(2026-11-03) 유닛 상자 반영, 생성기 tools/gen_v1_n00.py.",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v1.0.5.sc",
+ "doc": "../3D_Modeling/FSAP_v1.0.6.sc",
  "joints": {
   "J_U4_X": {
    "cad": "J_U4_X",
@@ -19,9 +19,9 @@
    ],
    "rest": 0,
    "min": -200,
-   "max": 1250,
+   "max": 1217.5,
    "stopper": "",
-   "_note": "원판 중심 X = -900 + 값. 쓰는 범위 -160.7 ~ +1212.5(큰 매트 모서리 -1060.7, 홈 바닥 뒤 +312.5)"
+   "_note": "원판 중심 X = -900 + 값. 쓰는 범위 -160.7 ~ +1212.5(큰 매트 모서리 -1060.7, 홈 바닥 뒤 +312.5) N02: 상한 1250 -> 1217.5(바늘 홈 닿기 시작 1222.5 - 5, mech_N02_select.md)"
   },
   "J_U4_Y": {
    "cad": "J_U4_Y",
@@ -157,10 +157,14 @@
   },
   "U3_ROT": {
    "parts": [
-    "U3_"
+    "P_N02_PLATE",
+    "P_N02_SHAFT",
+    "P_N02_COLLAR",
+    "STEP대기_HTPA60S5M150",
+    "CB5-20_N02P"
    ],
    "moving": true,
-   "_note": "진공 원판 U3_PLATE r60·축 U3_COLUMN r50(N00). 매트 6바디가 리지드로 붙어 있다. 조향 구동 고정자 U3_DRIVE는 U4_Y 소속"
+   "_note": "N02: 진공 원판 P_N02_PLATE(A5052 Ø120 t15, 동심·방사 홈) + 축 P_N02_SHAFT(S45C, 속 Ø8 진공 길) + 내륜 칼라 + 축 풀리 60T(STEP대기_) + CB5-20×4. 매트 6바디가 리지드로 붙어 있다"
   },
   "U4_FIX": {
    "parts": [
@@ -179,10 +183,23 @@
   "U4_Y": {
    "parts": [
     "U4_Y",
-    "U3_DRIVE"
+    "P_N02_FRAME",
+    "P_N02_HOUSING",
+    "P_N02_RETAINER",
+    "P_N02_SEAL",
+    "P_N02_MBKT",
+    "STEP대기_CRBH5013",
+    "STEP대기_AZM66AC",
+    "STEP대기_HTPA20S5M150",
+    "STEP대기_HTBN635S5M",
+    "STEP대기_JIS-P25",
+    "STEP대기_KQ2H06",
+    "ZH10DSA",
+    "CB5-12_N02Y",
+    "CB5-20_N02Y"
    ],
    "moving": true,
-   "_note": "U4_Y_CARR + U3_DRIVE(조향 구동 고정자 자리, U4_Y 컴포넌트 소속)"
+   "_note": "U4_Y_CARR + N02 조향 고정자: 틀(SPCC t4 ㄷ) + 하우징·누름 링·씰 슬리브(A5052) + CRBH5013 + O링 P25×2 + KQ2H06 + ZH10DSA(실물) + 모터 받침(SPCC t4 Z) + AZM66AC-PS25 + 모터 풀리 20T + 벨트(STEP대기_) + CB5-12×14·CB5-20×3"
   },
   "U5_AIRTABLE": {
    "parts": [
@@ -233,10 +250,12 @@
     "P_DC04_HANGER",
     "STEP대기_SSEB13-560_RAIL",
     "STEP대기_IXP-M8",
-    "CB5-12_"
+    "CB5-12_1",
+    "CB5-12_2",
+    "CB5-12_3"
    ],
    "moving": false,
-   "_note": "DC-04: 카세트 인출 안내(걸이 판금 SUS304 t3 + 레일 + 인덱스 플런저 + CB5-12×3, UPPER 밑면 고정). REF_GROUND와 리지드"
+   "_note": "DC-04: 카세트 인출 안내(걸이 판금 SUS304 t3 + 레일 + 인덱스 플런저 + CB5-12×3, UPPER 밑면 고정). REF_GROUND와 리지드 N02: 볼트 접두 CB5-12_를 이름 3개로(새 CB5-12_N02Y_*와 겹치지 않게)"
   }
  },
  "studies": {
@@ -689,7 +708,7 @@
    "reason": "바늘이 매트를 꿰뚫는 의도된 겹침(M-08). N01이 바늘 바디를 넣으면 겹침 부피를 기준선으로 적는다"
   },
   {
-   "a": "U3_ROT 원판 윗면",
+   "a": "P_N02_PLATE 윗면",
    "b": "WP_MAT_* 뒷면",
    "reason": "진공 흡착 면 접촉(Z 0) — N02가 원판을 넣을 때 맞닿음 0 확인"
   },
@@ -713,7 +732,7 @@
   },
   {
    "a": "WP_MAT_*",
-   "b": "U5_TABLE·U3_PLATE·STEP대기_867-392342_LOWER",
+   "b": "U5_TABLE·P_N02_PLATE·STEP대기_867-392342_LOWER",
    "reason": "작업면 Z 0 맞닿음",
    "_n00": true
   },
@@ -733,12 +752,6 @@
    "a": "U5_POST_*",
    "b": "U4_X_BEAM",
    "reason": "맞닿음 Z -260",
-   "_n00": true
-  },
-  {
-   "a": "U3_COLUMN",
-   "b": "U3_DRIVE",
-   "reason": "맞닿음 Z -130",
    "_n00": true
   },
   {
@@ -776,6 +789,90 @@
    "b": "STEP대기_867-392342_NOSE 구멍 Ø7",
    "reason": "틈 0.5(Ø6 대가 Ø7 구멍 안에서 Z로 움직임)",
    "_n01": true
+  },
+  {
+   "a": "P_N02_SHAFT",
+   "b": "STEP대기_CRBH5013",
+   "reason": "베어링 자리 Ø50 = 내륜 Ø50 맞닿음(Z -155~-142)",
+   "_n02": true
+  },
+  {
+   "a": "STEP대기_CRBH5013",
+   "b": "P_N02_HOUSING·P_N02_RETAINER",
+   "reason": "외륜 Ø80 = 하우징 구멍 Ø80, 윗면 Z -142·밑면 Z -155 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "P_N02_COLLAR",
+   "b": "P_N02_SHAFT·STEP대기_CRBH5013·STEP대기_HTPA60S5M150",
+   "reason": "칼라 Ø30 구멍 = 축 Ø30, 윗면 -155 내륜, 밑면 -165 풀리 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "STEP대기_HTPA60S5M150",
+   "b": "P_N02_SHAFT",
+   "reason": "풀리 구멍 Ø30 = 축 Ø30 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "P_N02_SHAFT",
+   "b": "P_N02_SEAL",
+   "reason": "축 Ø25 = 씰 구멍 Ø25 맞닿음(h8/H8)",
+   "_n02": true
+  },
+  {
+   "a": "STEP대기_JIS-P25_*",
+   "b": "P_N02_SHAFT·P_N02_SEAL",
+   "reason": "O링 임시 외형(사각 단면)이 홈을 채움: 안 Ø25 = 축, 밖 Ø30.4 = 홈 바닥 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "P_N02_PLATE",
+   "b": "P_N02_SHAFT",
+   "reason": "원판 밑면 Z -15 = 플랜지 윗면 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "P_N02_HOUSING·P_N02_RETAINER",
+   "b": "P_N02_FRAME",
+   "reason": "벽 안쪽 Y ±71 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "P_N02_SEAL",
+   "b": "P_N02_FRAME",
+   "reason": "씰 플랜지 밑면 Z -226 = 웹 윗면 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "P_N02_FRAME·P_N02_MBKT",
+   "b": "U4_Y_CARR",
+   "reason": "웹·아래 날개 밑면 Z -230 = 캐리지 윗면 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "STEP대기_AZM66AC",
+   "b": "P_N02_MBKT·STEP대기_HTPA20S5M150",
+   "reason": "모터 플랜지 윗면 Z -199 = 윗 날개 밑면, 출력축 Ø12 = 풀리 구멍 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "STEP대기_KQ2H06",
+   "b": "P_N02_SEAL",
+   "reason": "나사 끝 Y 28 = 포트 자리면 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "ZH10DSA-06-06-08_BKT",
+   "b": "P_N02_FRAME",
+   "reason": "브래킷 자리면 Y 75 = +Y 벽 바깥면 맞닿음",
+   "_n02": true
+  },
+  {
+   "a": "CB5-*_N02*",
+   "b": "탭·자리면 부품",
+   "reason": "볼트 나사↔탭(Ø4.2) 물림과 머리 자리면 맞닿음(M-08)",
+   "_n02": true
   }
  ],
  "workpiece_module": "",
@@ -784,7 +881,7 @@
  "path_parts": [
   "WP_",
   "U1_",
-  "U3_",
+  "P_N02_PLATE",
   "U5_",
   "U6_",
   "U8_",
