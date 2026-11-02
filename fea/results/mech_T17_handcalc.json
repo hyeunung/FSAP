@@ -1,0 +1,254 @@
+{
+ "method": "손계산(표준 라이브러리). 해석 못 함 — 환경 없음(D-16). 모델 = fea/models.json 그대로(바꾸지 않음)",
+ "checks": [
+  {
+   "part": "P_T01_POST",
+   "what": "Z -100 관 바깥 R(점 최빈)",
+   "step": 30.0,
+   "used": 30.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "Z -100 관 속 R(점 최빈)",
+   "step": 20.0,
+   "used": 20.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "벽 Ø8 반폭(X 최대)",
+   "step": 4.079,
+   "used": 4.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "벽 Ø8 Z 가운데",
+   "step": -99.96,
+   "used": -100.0,
+   "ok": true
+  },
+  {
+   "part": "P_T01_POST",
+   "what": "리브 Y 끝(-756.25, 꼭짓점)",
+   "step": -756.25,
+   "used": -756.25,
+   "ok": true
+  }
+ ],
+ "parts": {
+  "P_T01_POST": {
+   "material": "PET-CF(층간 자리값 20 MPa)",
+   "section_Z": -100,
+   "gross_Z": 17017.0,
+   "worst_load_dir_deg": 90,
+   "Z_net_min": 14726.0,
+   "A_net": 1490.5,
+   "lever_mm": 99.5,
+   "M_mis_Nmm": 27421.0,
+   "sigma_nom_mis": 1.86,
+   "Kt": 3.0,
+   "sigma_peak_mis": 5.59,
+   "SF_peak_mis": 3.58,
+   "sigma_peak_op": 0.423,
+   "SF_peak_op": 47.3,
+   "net_by_dir": [
+    {
+     "load_dir_deg": 0,
+     "A": 1490.5,
+     "Z_net": 17001.0
+    },
+    {
+     "load_dir_deg": 15,
+     "A": 1490.5,
+     "Z_net": 16690.0
+    },
+    {
+     "load_dir_deg": 30,
+     "A": 1490.5,
+     "Z_net": 16200.0
+    },
+    {
+     "load_dir_deg": 45,
+     "A": 1490.5,
+     "Z_net": 15630.0
+    },
+    {
+     "load_dir_deg": 60,
+     "A": 1490.5,
+     "Z_net": 15100.0
+    },
+    {
+     "load_dir_deg": 75,
+     "A": 1490.5,
+     "Z_net": 14728.0
+    },
+    {
+     "load_dir_deg": 90,
+     "A": 1490.5,
+     "Z_net": 14726.0
+    },
+    {
+     "load_dir_deg": 105,
+     "A": 1490.5,
+     "Z_net": 14728.0
+    },
+    {
+     "load_dir_deg": 120,
+     "A": 1490.5,
+     "Z_net": 15100.0
+    },
+    {
+     "load_dir_deg": 135,
+     "A": 1490.5,
+     "Z_net": 15630.0
+    },
+    {
+     "load_dir_deg": 150,
+     "A": 1490.5,
+     "Z_net": 16200.0
+    },
+    {
+     "load_dir_deg": 165,
+     "A": 1490.5,
+     "Z_net": 16690.0
+    },
+    {
+     "load_dir_deg": 180,
+     "A": 1490.5,
+     "Z_net": 17001.0
+    },
+    {
+     "load_dir_deg": 195,
+     "A": 1490.5,
+     "Z_net": 16690.0
+    },
+    {
+     "load_dir_deg": 210,
+     "A": 1490.5,
+     "Z_net": 16200.0
+    },
+    {
+     "load_dir_deg": 225,
+     "A": 1490.5,
+     "Z_net": 15630.0
+    },
+    {
+     "load_dir_deg": 240,
+     "A": 1490.5,
+     "Z_net": 15100.0
+    },
+    {
+     "load_dir_deg": 255,
+     "A": 1490.5,
+     "Z_net": 14728.0
+    },
+    {
+     "load_dir_deg": 270,
+     "A": 1490.5,
+     "Z_net": 14726.0
+    },
+    {
+     "load_dir_deg": 285,
+     "A": 1490.5,
+     "Z_net": 14728.0
+    },
+    {
+     "load_dir_deg": 300,
+     "A": 1490.5,
+     "Z_net": 15100.0
+    },
+    {
+     "load_dir_deg": 315,
+     "A": 1490.5,
+     "Z_net": 15630.0
+    },
+    {
+     "load_dir_deg": 330,
+     "A": 1490.5,
+     "Z_net": 16200.0
+    },
+    {
+     "load_dir_deg": 345,
+     "A": 1490.5,
+     "Z_net": 16690.0
+    }
+   ],
+   "governing_unchanged": {
+    "where": "장공 밑끝 Z -208(T11, v0.6.15)",
+    "SF_peak_net_mis": 1.77,
+    "SF_root_Z221": 5.6,
+    "note": "T17은 Z -192 위만 바꿈(갈래 Z -192~-182, 리브 -145~-118, 벽 Ø8 -100). 장공·뿌리 단면 그대로"
+   },
+   "added_material": "안내 갈래·리브·뿌리 R2는 관 바깥에 붙은 살(하중 안 받음, 판정에서 빼서 보수)"
+  },
+  "P_T01_RING1": {
+   "material": "A5052 Rp 175",
+   "hole": "M5 탭 Ø4.2 Z -10.5~-4.5 + Ø3 -4.5~-0.5 at r100",
+   "method": "링 최대 응력(막힘·강체 받침, 위치 무관 상한) x Kt 3 x 순폭 보정(폭 225 / 220.8)",
+   "sigma": 30.76,
+   "SF": 5.7,
+   "need": 2.0
+  },
+  "P_T01_DISC": {
+   "material": "Rigid 10K 65 MPa",
+   "load": "진공 58 kPa on r20(기둥 속 위)",
+   "sigma_t12": 0.121,
+   "sigma_upper_t4_Kt3": 3.26,
+   "SF_upper": 19.9,
+   "insert": "MBIS5 + KQ2H06-M5A: 관 당김 < 5 N(진공 = 관 안쪽, 피팅에 축력 없음), 조임 지시는 디테일(T17-D)"
+  },
+  "P_T01_YPLATE": {
+   "A_op3g": {
+    "sigma_at_hole": 17.57,
+    "SF": 9.96,
+    "need": 3.0
+   },
+   "A_mis": {
+    "sigma_at_hole": 33.14,
+    "SF": 5.28,
+    "need": 2.0
+   },
+   "taps_M5": "(±54, -724/-698)는 DG 받침 밑(X ±100 안) — 판이 받침과 블록 사이 압축만, 굽힘 띠 밖",
+   "method": "T14 띠 최대 응력 x (구멍 먼 끝 14.6 / 띠 길이 78.1) x 순폭 100/90 x Kt 3"
+  },
+  "clips": {
+   "기둥 안내 갈래 150°/30°": {
+    "h": 2.55,
+    "Rm": 4.225,
+    "k_clip_N_per_mm": 48.6,
+    "k_tube_N_per_mm": 14.3,
+    "open_share_mm": 0.34,
+    "strain_pct": 0.52,
+    "strain_pct_rigid_tube": 2.27,
+    "SF_strain": 3.87,
+    "SF_strain_rigid_tube": 0.88,
+    "insert_force_N": 17.0
+   },
+   "TCLAMP C클립": {
+    "h": 2.25,
+    "Rm": 4.375,
+    "k_clip_N_per_mm": 30.1,
+    "k_tube_N_per_mm": 14.3,
+    "open_share_mm": 0.48,
+    "strain_pct": 0.6,
+    "strain_pct_rigid_tube": 1.87,
+    "SF_strain": 3.31,
+    "SF_strain_rigid_tube": 1.07,
+    "insert_force_N": 15.0
+   },
+   "리브 연속 C홈": {
+    "k_lip_N_per_mm": 3149.0,
+    "k_tube_N_per_mm": 38.7,
+    "lip_defl_mm": 0.0091,
+    "strain_pct": 0.223,
+    "insert_force_N": 58.0,
+    "note": "관이 거의 다 눌림 -> 한 번에 밀지 말고 끝에서부터 굴려 넣음(작업 지시)"
+   }
+  }
+ },
+ "problems": [],
+ "clip_note": "PU 관 E 40 MPa 임시. 관 강성이 클립보다 작아 관이 주로 눌린다. 관이 단단하다고 둔 상한도 같이 적음. 끼움 손맛·빠짐은 시제품 확인(요구서 7절)",
+ "pass": true
+}

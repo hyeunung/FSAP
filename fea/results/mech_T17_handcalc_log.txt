@@ -1,0 +1,7 @@
+checks [('Z -100 관 바깥 R(점 최빈)', 30.0, True), ('Z -100 관 속 R(점 최빈)', 20.0, True), ('벽 Ø8 반폭(X 최대)', 4.079, True), ('벽 Ø8 Z 가운데', -99.96, True), ('리브 Y 끝(-756.25, 꼭짓점)', -756.25, True)]
+POST {'worst_load_dir_deg': 90, 'Z_net_min': 14726.0, 'gross_Z': 17017.0, 'sigma_peak_mis': 5.59, 'SF_peak_mis': 3.58, 'SF_peak_op': 47.3} gov 1.77
+RING1 5.7 DISC 19.9 YPLATE {'sigma_at_hole': 17.57, 'SF': 9.96, 'need': 3.0} {'sigma_at_hole': 33.14, 'SF': 5.28, 'need': 2.0}
+기둥 안내 갈래 150°/30° {'h': 2.55, 'Rm': 4.225, 'k_clip_N_per_mm': 48.6, 'k_tube_N_per_mm': 14.3, 'open_share_mm': 0.34, 'strain_pct': 0.52, 'strain_pct_rigid_tube': 2.27, 'SF_strain': 3.87, 'SF_strain_rigid_tube': 0.88, 'insert_force_N': 17.0}
+TCLAMP C클립 {'h': 2.25, 'Rm': 4.375, 'k_clip_N_per_mm': 30.1, 'k_tube_N_per_mm': 14.3, 'open_share_mm': 0.48, 'strain_pct': 0.6, 'strain_pct_rigid_tube': 1.87, 'SF_strain': 3.31, 'SF_strain_rigid_tube': 1.07, 'insert_force_N': 15.0}
+리브 연속 C홈 {'k_lip_N_per_mm': 3149.0, 'k_tube_N_per_mm': 38.7, 'lip_defl_mm': 0.0091, 'strain_pct': 0.223, 'insert_force_N': 58.0, 'note': '관이 거의 다 눌림 -> 한 번에 밀지 말고 끝에서부터 굴려 넣음(작업 지시)'}
+problems [] pass True
