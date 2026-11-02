@@ -1,0 +1,5 @@
+box sway 0.0068 total 0.29 xslip 0.46 ok True
+corner per bolt 39.0 slip sf 18.0 open-if-slipped 36.9
+buckling sf 984.0
+FBL per bolt 3g 695.0 slip sf 1g/3g 2.95 1.01 bearing sf 4.42 leg sf 10.6
+bbox {"P_T13_SLEEVE": [[-92.0, 92.0], [470.0, 780.0], [-679.0, -140.0]], "P_T13_REAR": [[-92.0, 92.0], [780.0, 782.0], [-598.0, -140.0]], "P_T13_FBL_T1": [[-135.0, -90.0], [200.0, 245.0], [-676.0, -604.0]], "P_T13_FBL_T2": [[90.0, 135.0], [200.0, 245.0], [-676.0, -604.0]]}

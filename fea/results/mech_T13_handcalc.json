@@ -1,0 +1,125 @@
+{
+ "note": "T13 해석부 손계산 v0.10.1. 해석 못 함 — 환경 없음(D-16). 자리값: I 80 cm4(D-27), 끌림 20 N(D-10), 무게 모멘트(D-31), 조임력 3.5 kN·마찰 0.2(디테일 확인)",
+ "step_bbox": {
+  "P_T13_SLEEVE": [
+   [
+    -92.0,
+    92.0
+   ],
+   [
+    470.0,
+    780.0
+   ],
+   [
+    -679.0,
+    -140.0
+   ]
+  ],
+  "P_T13_REAR": [
+   [
+    -92.0,
+    92.0
+   ],
+   [
+    780.0,
+    782.0
+   ],
+   [
+    -598.0,
+    -140.0
+   ]
+  ],
+  "P_T13_FBL_T1": [
+   [
+    -135.0,
+    -90.0
+   ],
+   [
+    200.0,
+    245.0
+   ],
+   [
+    -676.0,
+    -604.0
+   ]
+  ],
+  "P_T13_FBL_T2": [
+   [
+    90.0,
+    135.0
+   ],
+   [
+    200.0,
+    245.0
+   ],
+   [
+    -676.0,
+    -604.0
+   ]
+  ]
+ },
+ "box": {
+  "bx": 182.0,
+  "by": 160.0,
+  "H": 460.0,
+  "A": 29120.0,
+  "J_mm4": 9917829,
+  "sway_mm": 0.0068,
+  "q_N_per_mm": 0.2541,
+  "tau_MPa": 0.1271
+ },
+ "corner": {
+  "corner_shear_N": 116.9,
+  "per_bolt_N": 39.0,
+  "slip_sf": 18.0,
+  "open_section_sway_mm_if_slipped": 36.9,
+  "note": "닫힌 단면은 뒤 모서리 볼트가 미끄러지지 않는 것이 전제. 미끄럼 SF가 커서 성립"
+ },
+ "buckling": {
+  "front_tau_cr_MPa": 125.1,
+  "side_tau_cr_MPa": 158.0,
+  "tau_MPa": 0.1271,
+  "sf": 984.0
+ },
+ "sway": {
+  "box": 0.0068,
+  "rail580_axial": 0.0078,
+  "rail580_bend": 0.0503,
+  "judge": 0.0649,
+  "judge_x2": 0.13,
+  "common": 0.16,
+  "total_conservative": 0.29,
+  "xslip_upper": 0.46,
+  "limit": 0.657,
+  "ok": true
+ },
+ "front_butt_L": {
+  "R1_N": 262.2,
+  "R3_N": 786.9,
+  "ecc_mm": [
+   29.0,
+   29.0
+  ],
+  "per_bolt_1g_N": 236.9,
+  "per_bolt_3g_N": 695.0,
+  "slip_sf_1g": 2.95,
+  "slip_sf_3g": 1.01,
+  "bearing_MPa_3g": 69.5,
+  "bearing_sf_3g": 4.42,
+  "bolt_shear_MPa_3g": 48.9,
+  "bolt_shear_sf_3g": 13.2,
+  "selection_per_bolt_3g_N": 397.0,
+  "leg_h": 72.0,
+  "leg_sigma_MPa": 13.2,
+  "leg_tau_MPa": 8.2,
+  "leg_vm_MPa": 19.4,
+  "leg_sf": 10.6,
+  "edge_min_mm": 15.0,
+  "edge_ratio": 3.0
+ },
+ "selfweight": {
+  "load_3g_N": 168.7,
+  "per_bolt_N": 12.0,
+  "note": "옆 8 + 뒤 6 볼트 미끄럼 저항 700 N/개에 비해 작다"
+ }
+}

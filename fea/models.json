@@ -505,6 +505,46 @@
     "value": "A6063-T5 110 MPa, 단면적 STEP 실측 1,115 mm2, 약축 I 25e4 근사",
     "source": "M-09, catalog.md"
    }
+  },
+  "P_T13_SLEEVE": {
+   "case": "cases/mech_T13_handcalc.py (v0.10.1, 손계산 — 해석 못 함, 환경 없음 D-16; 선정 tools/out/mech_T13/select_calc.py와 같은 계열)",
+   "fixed": "치마(Y 470~780, Z -679~-600)가 580_T1/T2 바깥면에 CB5-12+HNTT8-5 x8로, 옆판이 기둥 460_P1/P2 바깥면에 x8로 묶임. 아래 끝 Z -600을 고정으로 봄",
+   "contact": "앞판 밑끝–580 윗면, 옆판–기둥 면 맞닿음. 뒤 모서리(옆판–뒤판)는 선 맞닿음 — 전단 흐름은 기둥·볼트로 넘어감(닫힌 단면 전제, 미끄럼 SF로 확인)",
+   "load": "끌림 20 N x 팔 740 = 비틀림 14.8 N*m를 머리 Z -140에서(헤드판–기둥 체결 DL-X06 전제), 닫힌 단면 Bredt 식. 자중 3 g",
+   "criteria": {
+    "value": "바늘점 X 흔들림 <= 0.657(D-08 임시, 580 굽힘 포함), SUS304 205 MPa, M-09",
+    "source": "T13 완료 판정, fea/results/mech_T13_handcalc.json"
+   }
+  },
+  "P_T13_REAR": {
+   "case": "cases/mech_T13_handcalc.py",
+   "fixed": "기둥 뒷면(40 면) 홈 X ±70에 CB5-12 x6",
+   "contact": "기둥 뒷면 맞닿음, 옆판 끝과 선 맞닿음",
+   "load": "닫힌 상자 전단 흐름 q = T/(2A), 모서리 전단 q*H를 볼트 한 줄 3개가 받음",
+   "criteria": {
+    "value": "미끄럼 SF(조임력 3.5 kN x 0.2), 전단 좌굴 4변 단순 지지",
+    "source": "M-09"
+   }
+  },
+  "P_T13_FBL_T1": {
+   "case": "cases/mech_T13_handcalc.py",
+   "fixed": "다리 B(Y 200~202)가 1900_B 뒷면에 CB5-12 x2(X ∓120, Z -660·-620)",
+   "contact": "다리 A가 580 바깥면, 다리 B가 1900_B 뒷면",
+   "load": "580 앞끝 세로 반력 R = 기둥 무게 모멘트 / 540 (1 g 262 N, 3 g 787 N) + 축력 짝 105.7 N, 편심 29 x 29를 볼트 짝(Z 40)이 면 안에서 받음",
+   "criteria": {
+    "value": "1 g 미끄럼 SF >= 2, 3 g 지압 SF >= 2, SUS304 205",
+    "source": "M-09, 선정 T13-S"
+   }
+  },
+  "P_T13_FBL_T2": {
+   "case": "cases/mech_T13_handcalc.py",
+   "fixed": "P_T13_FBL_T1의 X 거울",
+   "contact": "같음",
+   "load": "같음",
+   "criteria": {
+    "value": "같음",
+    "source": "같음"
+   }
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
