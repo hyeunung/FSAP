@@ -1,0 +1,619 @@
+{
+ "_설명": "FSAP MAT-RS-001 v1.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03 작성. 움직임은 설계 파일 3D_Modeling/FSAP_v1.0.0.sc의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 작업면 Z 0, 매트 이송 +Y(작업자 반대), 작업자 -Y(요구서 0-8-3). 생성기 tools/gen_v1_prep.py.",
+ "cad": "solidcraft",
+ "doc": "../3D_Modeling/FSAP_v1.0.0.sc",
+ "joints": {
+  "J_U4_X": {
+   "cad": "J_U4_X",
+   "type": "slide",
+   "unit": "U4_X",
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "origin": [
+    -900,
+    -400,
+    0
+   ],
+   "rest": 0,
+   "min": -200,
+   "max": 1250,
+   "stopper": "",
+   "_note": "원판 중심 X = -900 + 값. 쓰는 범위 -160.7 ~ +1212.5(큰 매트 모서리 -1060.7, 홈 바닥 뒤 +312.5)"
+  },
+  "J_U4_Y": {
+   "cad": "J_U4_Y",
+   "type": "slide",
+   "unit": "U4_Y",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "origin": [
+    -900,
+    -400,
+    0
+   ],
+   "rest": 0,
+   "min": -400,
+   "max": 1200,
+   "stopper": "",
+   "_note": "원판 중심 Y = -400 + 값. 쓰는 범위 -350 ~ +1150"
+  },
+  "J_U3_ROT": {
+   "cad": "J_U3_ROT",
+   "type": "rotate",
+   "unit": "U3_ROT",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": "원판 중심(U4_Y와 함께 움직임), 대기 때 (-900,-400,0)",
+   "rest": 0,
+   "min": -360,
+   "max": 720,
+   "_note": "쓰는 범위 -90 ~ 360"
+  },
+  "J_U1_PRESSER": {
+   "cad": "J_U1_PRESSER",
+   "type": "slide",
+   "unit": "U1_PRESSER",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "rest": 20,
+   "min": 0,
+   "max": 20,
+   "_note": "0 = 내림(봉제), 20 = 들림(0-8-5 867 공식 PDF). 컴포넌트는 비어 있음 — N00/N01이 노루발 바디를 값 0(내림) 자세 좌표로 넣는다(대기 20에서 그리면 20 위로 뜬다)"
+  },
+  "J_U1_NEEDLE": {
+   "cad": "J_U1_NEEDLE",
+   "type": "slide",
+   "unit": "U1_NEEDLE",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "rest": 0,
+   "min": -30,
+   "max": 0,
+   "_note": "0 = 바늘 위, -30 = 꽂음(D-10 v0.1.0 자리값 '바늘 내림 30', 근거 없음 — 867 바늘대 행정이 오면 바꾼다). 컴포넌트는 비어 있음 — N01이 바늘 바디를 값 0 자세로 넣는다"
+  }
+ },
+ "units": {
+  "REF": {
+   "parts": [
+    "REF_"
+   ],
+   "moving": false,
+   "_note": "고정부(REF_GROUND, 바닥 고정). U2 틀이 생기면 REF_GROUND에 리지드로 묶는다"
+  },
+  "U1_HEAD": {
+   "parts": [
+    "U1_HEAD"
+   ],
+   "moving": false,
+   "_note": "N00/N01이 만든다"
+  },
+  "U1_PRESSER": {
+   "parts": [
+    "U1_PRESSER"
+   ],
+   "moving": true
+  },
+  "U1_NEEDLE": {
+   "parts": [
+    "U1_NEEDLE"
+   ],
+   "moving": true
+  },
+  "U2_BRIDGE": {
+   "parts": [
+    "U2_"
+   ],
+   "moving": false,
+   "_note": "N00/N07"
+  },
+  "U3_ROT": {
+   "parts": [
+    "U3_"
+   ],
+   "moving": true,
+   "_note": "진공 원판(N02). 매트 6바디가 리지드로 붙어 있다"
+  },
+  "U4_X": {
+   "parts": [
+    "U4_X"
+   ],
+   "moving": true
+  },
+  "U4_Y": {
+   "parts": [
+    "U4_Y"
+   ],
+   "moving": true
+  },
+  "U5_AIRTABLE": {
+   "parts": [
+    "U5_"
+   ],
+   "moving": false
+  },
+  "U6_SENSOR": {
+   "parts": [
+    "U6_"
+   ],
+   "moving": false
+  },
+  "U7_TAPE": {
+   "parts": [
+    "U7_"
+   ],
+   "moving": false
+  },
+  "U8_CASSETTE": {
+   "parts": [
+    "U8_"
+   ],
+   "moving": false
+  },
+  "U9_LOAD": {
+   "parts": [
+    "U9_"
+   ],
+   "moving": false
+  },
+  "WORKPIECE": {
+   "parts": [
+    "WP_"
+   ],
+   "moving": true,
+   "_note": "작업 대상 모형. 연구마다 해당 매트만 검사에 넣는다(아래 studies)"
+  }
+ },
+ "studies": {
+  "REST": {
+   "steps": 1,
+   "_note": "대기 포즈(동작 상태 초기화 = motion.play REST step 0)"
+  },
+  "CYCLE_L": {
+   "steps": 659,
+   "workpiece": [
+    "WP_MAT_L:1",
+    "WP_TAPE_L:1"
+   ],
+   "mat": "1500x1500"
+  },
+  "CYCLE_S": {
+   "steps": 491,
+   "workpiece": [
+    "WP_MAT_S:1",
+    "WP_TAPE_S:1"
+   ],
+   "mat": "300x200"
+  },
+  "CYCLE_G1": {
+   "steps": 478,
+   "workpiece": [
+    "WP_MAT_G:1",
+    "WP_TAPE_G:1"
+   ],
+   "mat": "1200x1200 U홈 25x150 R12.5",
+   "_note": "① ~ 두 번째 홈 입구 회전 끝"
+  },
+  "CYCLE_G2": {
+   "steps": 597,
+   "workpiece": [
+    "WP_MAT_G:1",
+    "WP_TAPE_G:1"
+   ],
+   "mat": "1200x1200 U홈",
+   "_note": "G1 끝 자세 ~ ⑥(1000단계 표본 상한 WF-126 때문에 둘로 나눔)"
+  },
+  "REWIND_EMPTY": {
+   "steps": 72,
+   "workpiece": [],
+   "_note": "배출 뒤 빈 원판 360→0. 검사에서 WP_ 전부 뺀다"
+  }
+ },
+ "workpiece_stages": {
+  "_note": "SolidCraft는 작업 대상을 설계 안 바디로 둔다(안내서 '동작 검사'). WP_MAT_* = 가공 전 매트, WP_TAPE_* = 가공 뒤 형상(테이프 감긴 외곽 띠 TAPE_* + 이음매 겹 SEAM_*). 상태의 stage: before = MAT만, sewing = MAT(+바늘 앞까지 TAPE은 보수적으로 넣어도 됨), after_seam·after = MAT + TAPE",
+  "fragments": "떨어지는 조각 없음 — 0-8-4 ⑤ 절단은 바인더 앞 한 번(앞끝은 바인더에 남고 US4688499, 끝은 접어 넣음 US6044783A). 실 끝은 헤드 내장 사절이라 모형 없음. 조각이 생기는 방식으로 바뀌면 N05가 모형을 넣는다(D-07)"
+ },
+ "states": [
+  {
+   "name": "대기",
+   "study": "REST",
+   "step": 0,
+   "joints": {
+    "J_U4_X": 0,
+    "J_U4_Y": 0,
+    "J_U3_ROT": 0,
+    "J_U1_PRESSER": 20,
+    "J_U1_NEEDLE": 0
+   },
+   "phase": "① 대기·로딩",
+   "workpiece": {
+    "stage": "none_or_any",
+    "_note": "로딩 자리. 매트 3장 모두 이 자리(원판 중심 C0)에 겹쳐 있다"
+   }
+  },
+  {
+   "name": "큰 매트 시작점(직선, 노루발 내림)",
+   "study": "CYCLE_L",
+   "step": 20,
+   "joints": {
+    "J_U4_X": 150.0,
+    "J_U4_Y": 400.0,
+    "J_U3_ROT": 0.0,
+    "J_U1_PRESSER": 0.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "② 노루발 내림",
+   "workpiece": {
+    "mat": "WP_MAT_L:1",
+    "tape": "WP_TAPE_L:1",
+    "stage": "before"
+   }
+  },
+  {
+   "name": "큰 매트 직선 봉제 가운데",
+   "study": "CYCLE_L",
+   "step": 621,
+   "joints": {
+    "J_U4_X": 150.0,
+    "J_U4_Y": 25.0,
+    "J_U3_ROT": 360.0,
+    "J_U1_PRESSER": 0.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "③ 봉제 직선",
+   "workpiece": {
+    "mat": "WP_MAT_L:1",
+    "tape": "WP_TAPE_L:1",
+    "stage": "sewing"
+   }
+  },
+  {
+   "name": "큰 매트 볼록 모서리 45°",
+   "study": "CYCLE_L",
+   "step": 97,
+   "joints": {
+    "J_U4_X": -160.66,
+    "J_U4_Y": 400.0,
+    "J_U3_ROT": 45.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": -30.0
+   },
+   "phase": "④ 볼록 모서리 1",
+   "workpiece": {
+    "mat": "WP_MAT_L:1",
+    "tape": "WP_TAPE_L:1",
+    "stage": "sewing"
+   }
+  },
+  {
+   "name": "큰 매트 이음매 겹침 끝",
+   "study": "CYCLE_L",
+   "step": 638,
+   "joints": {
+    "J_U4_X": 150.0,
+    "J_U4_Y": 430.0,
+    "J_U3_ROT": 360.0,
+    "J_U1_PRESSER": 0.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "⑤ 이음매 겹침",
+   "workpiece": {
+    "mat": "WP_MAT_L:1",
+    "tape": "WP_TAPE_L:1",
+    "stage": "after_seam"
+   }
+  },
+  {
+   "name": "큰 매트 배출 자리",
+   "study": "CYCLE_L",
+   "step": 659,
+   "joints": {
+    "J_U4_X": 0.0,
+    "J_U4_Y": 0.0,
+    "J_U3_ROT": 360.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "⑥ 배출 자리로",
+   "workpiece": {
+    "mat": "WP_MAT_L:1",
+    "tape": "WP_TAPE_L:1",
+    "stage": "after"
+   }
+  },
+  {
+   "name": "작은 매트 시작점(직선, 노루발 내림)",
+   "study": "CYCLE_S",
+   "step": 36,
+   "joints": {
+    "J_U4_X": 750.0,
+    "J_U4_Y": 400.0,
+    "J_U3_ROT": 0.0,
+    "J_U1_PRESSER": 0.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "② 노루발 내림",
+   "workpiece": {
+    "mat": "WP_MAT_S:1",
+    "tape": "WP_TAPE_S:1",
+    "stage": "before"
+   }
+  },
+  {
+   "name": "작은 매트 직선 봉제 가운데",
+   "study": "CYCLE_S",
+   "step": 450,
+   "joints": {
+    "J_U4_X": 750.0,
+    "J_U4_Y": 350.0,
+    "J_U3_ROT": 360.0,
+    "J_U1_PRESSER": 0.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "③ 봉제 직선",
+   "workpiece": {
+    "mat": "WP_MAT_S:1",
+    "tape": "WP_TAPE_S:1",
+    "stage": "sewing"
+   }
+  },
+  {
+   "name": "작은 매트 볼록 모서리 45°",
+   "study": "CYCLE_S",
+   "step": 87,
+   "joints": {
+    "J_U4_X": 723.223,
+    "J_U4_Y": 364.645,
+    "J_U3_ROT": 45.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": -30.0
+   },
+   "phase": "④ 볼록 모서리 1",
+   "workpiece": {
+    "mat": "WP_MAT_S:1",
+    "tape": "WP_TAPE_S:1",
+    "stage": "sewing"
+   }
+  },
+  {
+   "name": "작은 매트 이음매 겹침 끝",
+   "study": "CYCLE_S",
+   "step": 454,
+   "joints": {
+    "J_U4_X": 750.0,
+    "J_U4_Y": 430.0,
+    "J_U3_ROT": 360.0,
+    "J_U1_PRESSER": 0.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "⑤ 이음매 겹침",
+   "workpiece": {
+    "mat": "WP_MAT_S:1",
+    "tape": "WP_TAPE_S:1",
+    "stage": "after_seam"
+   }
+  },
+  {
+   "name": "작은 매트 배출 자리",
+   "study": "CYCLE_S",
+   "step": 491,
+   "joints": {
+    "J_U4_X": 0.0,
+    "J_U4_Y": 0.0,
+    "J_U3_ROT": 360.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "⑥ 배출 자리로",
+   "workpiece": {
+    "mat": "WP_MAT_S:1",
+    "tape": "WP_TAPE_S:1",
+    "stage": "after"
+   }
+  },
+  {
+   "name": "홈 매트 홈 입구 회전 45°",
+   "study": "CYCLE_G1",
+   "step": 97,
+   "joints": {
+    "J_U4_X": 272.443,
+    "J_U4_Y": 179.029,
+    "J_U3_ROT": 45.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": -30.0
+   },
+   "phase": "④ 홈 입구(볼록)",
+   "workpiece": {
+    "mat": "WP_MAT_G:1",
+    "tape": "WP_TAPE_G:1",
+    "stage": "sewing"
+   }
+  },
+  {
+   "name": "홈 매트 홈 안 벽 가운데",
+   "study": "CYCLE_G1",
+   "step": 158,
+   "joints": {
+    "J_U4_X": 612.5,
+    "J_U4_Y": -131.25,
+    "J_U3_ROT": 90.0,
+    "J_U1_PRESSER": 0.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "③ 홈 안 벽",
+   "workpiece": {
+    "mat": "WP_MAT_G:1",
+    "tape": "WP_TAPE_G:1",
+    "stage": "sewing"
+   }
+  },
+  {
+   "name": "홈 매트 홈 바닥 꺾임 가운데(가장 깊은 점)",
+   "study": "CYCLE_G1",
+   "step": 264,
+   "joints": {
+    "J_U4_X": 450.0,
+    "J_U4_Y": 700.0,
+    "J_U3_ROT": 0.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": -30.0
+   },
+   "phase": "④ 홈 바닥 꺾임",
+   "workpiece": {
+    "mat": "WP_MAT_G:1",
+    "tape": "WP_TAPE_G:1",
+    "stage": "sewing"
+   }
+  },
+  {
+   "name": "홈 매트 홈 바닥 꺾임 끝(원판 중심 X +312.5)",
+   "study": "CYCLE_G1",
+   "step": 354,
+   "joints": {
+    "J_U4_X": 1212.5,
+    "J_U4_Y": 862.5,
+    "J_U3_ROT": -90.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": -30.0
+   },
+   "phase": "④ 홈 바닥 꺾임",
+   "workpiece": {
+    "mat": "WP_MAT_G:1",
+    "tape": "WP_TAPE_G:1",
+    "stage": "sewing"
+   },
+   "_note": "홈 건너편 매트 몸통이 바늘 +X 쪽(헤드 밑)으로 넘어간다"
+  },
+  {
+   "name": "홈 매트 두 번째 홈 입구 회전 45°",
+   "study": "CYCLE_G1",
+   "step": 431,
+   "joints": {
+    "J_U4_X": 696.707,
+    "J_U4_Y": 1045.235,
+    "J_U3_ROT": -45.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": -30.0
+   },
+   "phase": "④ 홈 입구(볼록)",
+   "workpiece": {
+    "mat": "WP_MAT_G:1",
+    "tape": "WP_TAPE_G:1",
+    "stage": "sewing"
+   }
+  },
+  {
+   "name": "홈 매트 이음매 겹침 끝",
+   "study": "CYCLE_G2",
+   "step": 574,
+   "joints": {
+    "J_U4_X": 300.0,
+    "J_U4_Y": 430.0,
+    "J_U3_ROT": 360.0,
+    "J_U1_PRESSER": 0.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "⑤ 이음매 겹침",
+   "workpiece": {
+    "mat": "WP_MAT_G:1",
+    "tape": "WP_TAPE_G:1",
+    "stage": "after_seam"
+   }
+  },
+  {
+   "name": "홈 매트 배출 자리",
+   "study": "CYCLE_G2",
+   "step": 597,
+   "joints": {
+    "J_U4_X": 0.0,
+    "J_U4_Y": 0.0,
+    "J_U3_ROT": 360.0,
+    "J_U1_PRESSER": 20.0,
+    "J_U1_NEEDLE": 0.0
+   },
+   "phase": "⑥ 배출 자리로",
+   "workpiece": {
+    "mat": "WP_MAT_G:1",
+    "tape": "WP_TAPE_G:1",
+    "stage": "after"
+   }
+  },
+  {
+   "name": "되감기(빈 원판)",
+   "study": "REWIND_EMPTY",
+   "step": 36,
+   "joints": {
+    "J_U4_X": 0,
+    "J_U4_Y": 0,
+    "J_U3_ROT": 180,
+    "J_U1_PRESSER": 20,
+    "J_U1_NEEDLE": 0
+   },
+   "phase": "⑥ 뒤 되감기",
+   "workpiece": {
+    "stage": "none",
+    "_note": "작업자가 매트를 꺼낸 뒤. 검사에서 WP_ 전부 뺀다"
+   }
+  }
+ ],
+ "_states_note": "상태 목록은 요구서 0-3(0-8-4) ①~⑥과 6-4(직선, 볼록 모서리, 오목 모서리, 홈 입구, 홈 바닥 꺾임, 시작·끝 이음매)를 따른다. 6-4 '오목 모서리'(계단형 sharp 오목)는 매트 모형에 없다 — 홈 바닥 오목 반원(왼쪽 꺾임 180°)만 있다(mech_prep.md '못 한 것'). 검사 간격: 연구 단계 = 이송 25 mm, 홈 안·홈 입구 앞뒤 50 mm 5 mm, 회전 1°, 노루발·바늘 양 끝 + 가운데(요구서 6-4).",
+ "baseline_overlaps": [
+  {
+   "a": "WP_MAT_*",
+   "b": "WP_TAPE_* (같은 매트)",
+   "reason": "테이프 띠가 매트 가장자리 10 mm를 덮는 모형(같이 움직임)"
+  },
+  {
+   "a": "WP_MAT_*",
+   "b": "다른 WP_MAT_*·WP_TAPE_*",
+   "reason": "매트 3장이 한 원판에 겹쳐 있다. 연구마다 한 장만 검사"
+  },
+  {
+   "a": "U1_NEEDLE",
+   "b": "WP_* (바늘점 둘레)",
+   "reason": "바늘이 매트를 꿰뚫는 의도된 겹침(M-08). N01이 바늘 바디를 넣으면 겹침 부피를 기준선으로 적는다"
+  },
+  {
+   "a": "U3_ROT 원판 윗면",
+   "b": "WP_MAT_* 뒷면",
+   "reason": "진공 흡착 면 접촉(Z 0) — N02가 원판을 넣을 때 맞닿음 0 확인"
+  }
+ ],
+ "workpiece_module": "",
+ "_workpiece_note": "SolidCraft: 작업 대상은 설계 안 바디(WP_)라 프로젝트 모듈이 필요 없다. 치수를 바꾸면 tools/gen_v1_prep.py를 고쳐 다시 만든다",
+ "state_hook": "",
+ "path_parts": [
+  "WP_",
+  "U1_",
+  "U3_",
+  "U5_",
+  "U6_",
+  "U8_",
+  "U9_"
+ ],
+ "_path_note": "작업 대상(매트·테이프)이 지나가거나 닿는 부품 접두. 헤드 묶음·원판·에어 테이블·센서·카세트·로딩"
+}

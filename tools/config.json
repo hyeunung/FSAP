@@ -28,5 +28,6 @@
     "qty": "수량",
     "material": "재질"
   },
-  "modules": []
+  "modules": [],
+  "machine": "machine.json"
 }
