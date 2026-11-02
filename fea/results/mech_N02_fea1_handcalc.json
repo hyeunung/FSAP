@@ -1,0 +1,163 @@
+{
+ "shape": {
+  "wall_X": [
+   -955.0,
+   -845.0
+  ],
+  "wall_t": 4.0,
+  "hole_new": [
+   -855.0,
+   -170.0,
+   10.0
+  ],
+  "hole_old": [
+   -920.0,
+   -210.0,
+   10.0
+  ]
+ },
+ "sheet_rules": {
+  "edge_to_free_end_mm": 5.0,
+  "edge_rule_min": 2.5,
+  "edge_ok": true,
+  "hole_to_bend_mm": 47.0,
+  "bend_rule_min": 8.0,
+  "bend_ok": true,
+  "old_hole_to_bend_mm": 7.0,
+  "old_bend_ok": false,
+  "hole_to_housing_bolt_hole_edge_mm": 21.0
+ },
+ "net_section_Z-170": {
+  "A_mm2": 400.0,
+  "xc": -904.5,
+  "I_mm4": 354233,
+  "I_gross_mm4": 443667,
+  "I_ratio": 0.798
+ },
+ "FRAME_hole_outplane_run": {
+  "stress_MPa": 15.19,
+  "sf": 13.5,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "motion_break": false,
+  "M_Nmm": 1350.0,
+  "Kt": 3.0
+ },
+ "FRAME_root_outplane_run": {
+  "inputs": {
+   "t": 4,
+   "b": 110,
+   "L": 83,
+   "E": 205000.0,
+   "Rp": 205.0,
+   "end": "cantilever",
+   "sf_min": 3.0
+  },
+  "force_N": 50.0,
+  "deflection_mm": 0.0792,
+  "stiffness_N_mm": 631.0042,
+  "stress_MPa": 14.15,
+  "sf": 14.49,
+  "thin": true,
+  "ok": true,
+  "needs_fea": false
+ },
+ "FRAME_hole_inplane_half_run": {
+  "stress_MPa": 5.49,
+  "sf": 37.34,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "motion_break": false,
+  "M_Nmm": 5955.5,
+  "s_hole_Kt_MPa": 2.75,
+  "s_free_edge_MPa": 1.0,
+  "tau_Kt_MPa": 3.12
+ },
+ "FRAME_hole_inplane_all_run": {
+  "stress_MPa": 10.98,
+  "sf": 18.67,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "motion_break": false,
+  "M_Nmm": 11911.0,
+  "s_hole_Kt_MPa": 5.5,
+  "s_free_edge_MPa": 2.0,
+  "tau_Kt_MPa": 6.23
+ },
+ "FRAME_ligament_upper_bound_run": {
+  "stress_MPa": 58.55,
+  "sf": 3.5,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "motion_break": false,
+  "Fc_N": 390.3,
+  "note": "물리적으로 Fc는 Z -226 뿌리(구멍 아래 51)에서 생기고 띠까지 오며 퍼진다. 상한 참고"
+ },
+ "FRAME_hole_outplane_mis": {
+  "stress_MPa": 30.38,
+  "sf": 6.75,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "motion_break": false,
+  "M_Nmm": 2700.0,
+  "Kt": 3.0
+ },
+ "FRAME_root_outplane_mis": {
+  "inputs": {
+   "t": 4,
+   "b": 110,
+   "L": 83,
+   "E": 205000.0,
+   "Rp": 205.0,
+   "end": "cantilever",
+   "sf_min": 2.0
+  },
+  "force_N": 100.0,
+  "deflection_mm": 0.1585,
+  "stiffness_N_mm": 631.0042,
+  "stress_MPa": 28.3,
+  "sf": 7.24,
+  "thin": true,
+  "ok": true,
+  "needs_fea": false
+ },
+ "FRAME_hole_inplane_half_mis": {
+  "stress_MPa": 9.94,
+  "sf": 20.63,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "motion_break": false,
+  "M_Nmm": 10778.7,
+  "s_hole_Kt_MPa": 4.98,
+  "s_free_edge_MPa": 1.81,
+  "tau_Kt_MPa": 5.64
+ },
+ "FRAME_hole_inplane_all_mis": {
+  "stress_MPa": 19.87,
+  "sf": 10.32,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "motion_break": false,
+  "M_Nmm": 21557.4,
+  "s_hole_Kt_MPa": 9.95,
+  "s_free_edge_MPa": 3.62,
+  "tau_Kt_MPa": 11.28
+ },
+ "FRAME_ligament_upper_bound_mis": {
+  "stress_MPa": 105.96,
+  "sf": 1.93,
+  "sf_min": 2.0,
+  "ok": false,
+  "near_10pct": false,
+  "motion_break": false,
+  "Fc_N": 706.4,
+  "note": "물리적으로 Fc는 Z -226 뿌리(구멍 아래 51)에서 생기고 띠까지 오며 퍼진다. 상한 참고"
+ }
+}
