@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v1.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03 작성. 움직임은 설계 파일 3D_Modeling/FSAP_v1.0.1.sc의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 작업면 Z 0, 매트 이송 +Y(작업자 반대), 작업자 -Y(요구서 0-8-3). 생성기 tools/gen_v1_prep.py. N00 모델링부(2026-11-03) 유닛 상자 반영, 생성기 tools/gen_v1_n00.py.",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v1.0.3.sc",
+ "doc": "../3D_Modeling/FSAP_v1.0.5.sc",
  "joints": {
   "J_U4_X": {
    "cad": "J_U4_X",
@@ -95,6 +95,26 @@
    "min": -30,
    "max": 0,
    "_note": "0 = 바늘 위, -30 = 꽂음(D-10 v0.1.0 자리값 '바늘 내림 30', 근거 없음 — 867 바늘대 행정이 오면 바꾼다). 컴포넌트는 비어 있음 — N01이 바늘 바디를 값 0 자세로 넣는다"
+  },
+  "J_U8_PULL": {
+   "cad": "J_U8_PULL",
+   "type": "slide",
+   "unit": "U8_CASSETTE",
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "origin": [
+    0,
+    -50,
+    100
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 511,
+   "stopper": "P_DC04_HANGER 끝 탭 -X 면 X 531(캐리어 +X 면이 닿음)",
+   "_note": "DC-04: 카세트 +X 미끄럼 인출(손, 액추에이터 없음). 0 = 운전 자리(플런저 IXP-M8 핀이 캐리어 러그 Ø6H7에 걸림), 511 = 카세트 X 500~522로 UPPER 밖. 고정 쪽 U8_GUIDE"
   }
  },
  "units": {
@@ -187,10 +207,12 @@
   },
   "U8_CASSETTE": {
    "parts": [
-    "U8_"
+    "U8_",
+    "P_DC04_CARRIER",
+    "STEP대기_SSEB13-560_BLOCK"
    ],
-   "moving": false,
-   "_note": "N00 차지 공간 상자. REF_GROUND와 리지드"
+   "moving": true,
+   "_note": "DC-04: J_U8_PULL로 +X 인출. U8_CASSETTE_BOX + 캐리어 P_DC04_CARRIER(SUS304 t4 판금) + 블록 STEP대기_SSEB13-560_BLOCK. REF_GROUND 리지드(Rigid Group 2:108)는 지움"
   },
   "U9_LOAD": {
    "parts": [
@@ -205,12 +227,22 @@
    ],
    "moving": true,
    "_note": "작업 대상 모형. 연구마다 해당 매트만 검사에 넣는다(아래 studies)"
+  },
+  "U8_GUIDE": {
+   "parts": [
+    "P_DC04_HANGER",
+    "STEP대기_SSEB13-560_RAIL",
+    "STEP대기_IXP-M8",
+    "CB5-12_"
+   ],
+   "moving": false,
+   "_note": "DC-04: 카세트 인출 안내(걸이 판금 SUS304 t3 + 레일 + 인덱스 플런저 + CB5-12×3, UPPER 밑면 고정). REF_GROUND와 리지드"
   }
  },
  "studies": {
   "REST": {
    "steps": 1,
-   "_note": "대기 포즈(동작 상태 초기화 = motion.play REST step 0)"
+   "_note": "대기 포즈(동작 상태 초기화 = motion.play REST step 0). DC-04: J_U8_PULL 0 키 추가"
   },
   "CYCLE_L": {
    "steps": 659,
@@ -250,6 +282,10 @@
    "steps": 72,
    "workpiece": [],
    "_note": "배출 뒤 빈 원판 360→0. 검사에서 WP_ 전부 뺀다"
+  },
+  "MAINT": {
+   "steps": 21,
+   "_note": "DC-04 정비 자세: J_U4_X -200, Y 0, 회전 0, 노루발 20, 바늘 0, J_U8_PULL 0→511(step 0 = MAINT, step 21 = MAINT_CAS)"
   }
  },
  "workpiece_stages": {
@@ -266,7 +302,8 @@
     "J_U4_Y": 0,
     "J_U3_ROT": 0,
     "J_U1_PRESSER": 20,
-    "J_U1_NEEDLE": 0
+    "J_U1_NEEDLE": 0,
+    "J_U8_PULL": 0
    },
    "phase": "① 대기·로딩",
    "workpiece": {
@@ -596,6 +633,41 @@
    "workpiece": {
     "stage": "none",
     "_note": "작업자가 매트를 꺼낸 뒤. 검사에서 WP_ 전부 뺀다"
+   }
+  },
+  {
+   "name": "MAINT",
+   "study": "MAINT",
+   "step": 0,
+   "joints": {
+    "J_U4_X": -200,
+    "J_U4_Y": 0,
+    "J_U3_ROT": 0,
+    "J_U1_PRESSER": 20,
+    "J_U1_NEEDLE": 0,
+    "J_U8_PULL": 0
+   },
+   "phase": "정비(DC-04)",
+   "workpiece": {
+    "stage": "none_or_any",
+    "_note": "사람이 포켓(X 500~975·Y 60~700)에 선다. 제어 제약 DC04-Q1~Q3"
+   }
+  },
+  {
+   "name": "MAINT_CAS",
+   "study": "MAINT",
+   "step": 21,
+   "joints": {
+    "J_U4_X": -200,
+    "J_U4_Y": 0,
+    "J_U3_ROT": 0,
+    "J_U1_PRESSER": 20,
+    "J_U1_NEEDLE": 0,
+    "J_U8_PULL": 511
+   },
+   "phase": "정비 카세트 인출(DC-04)",
+   "workpiece": {
+    "stage": "none_or_any"
    }
   }
  ],
