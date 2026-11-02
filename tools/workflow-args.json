@@ -1,7 +1,8 @@
 {
   "mode": "mechanism",
   "root": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP",
-  "date": "2026-10-31",
+  "date": "2026-11-02",
+  "parallel": true,
   "machine": "FSAP MAT-RS-001",
   "cad": "solidcraft",
   "engineRoot": "C:/Users/hyeun/OneDrive/Documents/workspace/MechDesign_Engine",

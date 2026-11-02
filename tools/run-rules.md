@@ -7,9 +7,18 @@
 2. **CAD 통로.** 엔진대로 나눈다(L1-engine '부서 지시문', 안내서 '연결').
    - 모델링부(고치고 저장하는 유일한 부서)는 SolidCraft MCP(`mcp__solidcraft__*`)로 그린다. 사용자가 앱 창에서 실시간으로 본다(사용자 2026-10-31 "T06부터 MCP로").
      - 순서: `open {path: tools/config.json doc의 이전 버전 .sc}` → `inspect_design`로 dirty 확인(dirty면 멈추고 보고하고, 버리지 않는다) → `batch`·`execute`로 그림 → 저장 전 대기 포즈(`motion.play` step 0) → `save {path: 새 번호 .sc}`.
+     - 저장 전에 문서 이름(앱 제목에 보이는 이름)을 새 버전 이름(예: `FSAP_v0.8.3`)으로 바꾼다. 명령은 `list_commands`로 찾는다(`document.` 계열). v0.7.1을 v0.6.15에서 복사한 뒤로 v0.8.2까지 제목이 'FSAP_v0.6.15'로 남아 사용자가 헷갈렸다(2026-11-02).
      - `save {}`(덮어쓰기)는 쓰지 않는다. 모델링부는 `solidcraft-cli run --save`로 모델링하지 않는다.
-     - 예외: MCP 서버 안내의 Backend가 headless이거나 MCP 도구가 없으면 모델링부도 CLI로 하고, 그 사실을 보고서에 적는다.
-   - 그 밖의 부서(측정·구상·선정의 CAD 확인·점검·검도·체결·해석 등 읽기만 하는 부서와 동시에 도는 부서)는 MCP를 쓰지 않는다. CLI로 저장본에 대고 잰다.
+     - 연결은 서버 안내문(Backend 줄)이 아니라 실제 연결 상태(`running`·`inspect_design` 응답)로 판정한다. 앱이 꺼져 있거나 MCP 호출이 실제로 실패할 때만 CLI로 하고 이유를 보고서에 적는다(엔진 WF-121).
+     - 예외: 동시 과제 묶음(엔진 E-25)의 측정·선정·모델링·검도는 앱 세션이 하나라 MCP를 쓰지 않고 CLI로 한다. 모델링도 같은 기준 복사본(`tools/out/<과제>/base.sc`)에 명령 기록(`edit.json`)을 `solidcraft-cli run edit.json --in base.sc --save <후보.sc>`로 돌린다. 버전 번호는 합치기부가 합친 결과에만 준다.
+   - **혼자 도는 읽기 부서도 MCP로 잰다**(사용자 2026-11-02 "되게 중요한부분인데 mcp로 해라고 해도 계속 cli로 하는구나"). 측정부·검도·최종 회귀처럼 그 시각에 CAD를 쓰는 부서가 하나뿐인 단계는 MCP로 `open {path: 저장본}` 한 번 하고 그 세션에서 연속으로 잰다. CLI로 호출마다 큰 파일을 다시 여는 것보다 빠르다. 저장은 하지 않는다(`save` 금지, 끝나면 `motion.play` step 0).
+   - **오래 걸리는 동작 간섭 검사(`motion.interference` 전 구간, 수 분 넘는 것)는 앱(MCP)에서 돌리지 않는다**(2026-11-02 T14 모델링부가 MCP로 42분 넘게 돌려 앱이 멈췄고, 사용자가 앱을 껐다). 저장한 새 번호 파일에 대고 CLI로, 필요하면 occurrences를 나눠 병렬로 돌린다. 앱은 그리기·저장·짧은 확인에만 쓴다.
+   - **짧은 계산과 긴 계산의 경계는 엔진 안내서(`engine/cad/solidcraft.md` '연결')를 따른다.** 실측 정리는 `docs/reports/solidcraft-mcp-cli-timing.md`.
+     - 앱(MCP)에서 할 것: 짧은 정적 확인, 근처로 좁힌 `inspect.clearance`, 100단계 안팎의 연구.
+     - CLI로 보낼 것: 100단계 넘는 연구, 약 190바디 넘는 검사, 133 KB 넘는 인자.
+     - 12 MB 넘는 파일의 긴 검사는 4~5묶음으로 나눠 병렬로 돌린다(14 MB에서 5~8병렬은 실행마다 30~60분으로 늘었다, mech_T18_verify.md).
+   - **원복 주의.** 같은 경로를 다시 `open`해도 디스크에서 다시 읽지 않는다(mech_T14_model.md, mech_T15_model1.md). 편집·포즈 변경 전에 `edit.checkpoint`, 끝나면 `edit.restore_checkpoint`. 저장(`save {path}`) 뒤에는 편집하지 않는다(mech_T09_model1.md: 저장 뒤 편집이 다시 열었을 때 들어 있었다).
+   - 동시에 도는 부서(구상 3안, 선정과 겹치는 문서·체결·해석 job)만 MCP를 쓰지 않는다. 앱 세션 하나를 여럿이 쓰면 열린 문서가 엉킨다. 이 부서들은 CLI로 저장본에 대고 재되, 잴 것을 **스크립트 하나로 묶어 한 번만 불러온다**. 같은 저장본을 여러 번 다시 열지 않는다.
      - 명령 목록과 인자: `solidcraft-cli commands`(JSON, id·params). 설명: `solidcraft-cli exec engine.describe`.
      - 편집: 명령 스크립트 JSON 배열 `[{"command":"<id>","params":{...}}]`를 만들어 `solidcraft-cli run <script.json> --in <이전 버전.sc> --save <새 버전.sc>`로 새 번호 파일에 저장한다. 실패한 단계가 있으면 아무것도 저장되지 않는다.
      - 읽기·검사: `solidcraft-cli eval <script.json> --in <저장본.sc> --json-out <파일>`. 저장본을 바꾸지 않는다.
@@ -74,3 +83,9 @@
     - 옆·뒤 커버, 가드 판넬, 외장 판금, 정비 문은 구동 과제·구동 후보로 만들지 않는다. 과제 정리부는 요구서 5절에서 종류가 '구동 아님(외장·안전)'인 행을 넣지 않는다.
     - 그런 것이 필요해 보이면 결정로그 '외장 단계 과제' 표에 적기만 한다. 납품처 안전 기준(D-38)이 정해진 뒤 사용자가 시킬 때 한다.
     - 구동 과제는 기구가 움직이고 작업 대상(매트·테이프)을 다루는 데 필요한 것뿐이다: 구동 유닛, 그 받침·안내, 배관·배선 길, 공구 접근, 높이 사슬, 구매품 실물 교체.
+
+15. **동시 과제 첫 실행**(엔진 v3.4.0 E-25, 실행 인자 `parallel` 기본 true).
+    - 처음 동시 과제를 돌릴 때는 재실행 확인부가 끝난 과제 하나(예: T18 v0.7.2 → v0.8.0의 `tools/out/mech_T18/model/stage_*.json`)를 기준 버전에 다시 실행해 결과가 같은지부터 본다. 결과는 `tools/out/replay_check.json`에 남긴다.
+    - 확인 전에는 그 라운드를 직렬로 돈다.
+    - 생성기 stage 파일(`tools/out/*/model/stage_*.json`, `tools/gen_*.py`)은 지우지 않는다.
+    - 측정 표(서명): `tools/out/signatures.json`에 파일 해시가 없으므로 v3.4.0의 첫 측정은 한 번 전수로 잰다. 잰 뒤 `ledger.py sigpatch`로 해시를 찍으면 그다음부터는 바뀐 바디만 다시 잰다.

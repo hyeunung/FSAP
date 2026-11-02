@@ -10,6 +10,7 @@ This project follows Semantic Versioning.
 
 ## Added
 
+- 설계 v0.8.3 `3D_Modeling/FSAP_v0.8.3.sc`(STEPSWAP 구매품 실물 교체, 작은 변경): `STEP대기_HNTT8-5_T08_1~8` → 실물 STEP `HNTT8-5_T08_1~8`(MAT_X 아래, 460_F·B 밑 홈 Z −555.5~−546.5, 17×17×9, 1,896.0 mm³/개). 정적 겹침 0(460 턱 안면 Z −552.5 맞닿음), J_MAT_X −620·620·J_MAT_Y 40에서 같이 움직임, floating 0. CB5-20_T08_XN 물림 8.5 ≥ 7.5(1.5d). 문서 이름(루트 컴포넌트) 'FSAP_v0.6.15' → 'FSAP_v0.8.3'. 조인트·연구 변경 0. 생성기 `tools/gen_stepswap_mech.py`, BOM `docs/bom/FSAP_v0.8.3_*.csv`, 자료대기 D-41, 결정로그 STEPSWAP-M01~M02, 보고서 `docs/reports/mechanism/mech_STEPSWAP_model.md`
 - 설계 v0.8.2 `3D_Modeling/FSAP_v0.8.2.sc`(구동 T14 회전부 높이 사슬, 작은 변경): `P_T01_YPLATE` t15 → t10(Z −370~−360, 1,804,655.3 mm³ / 4,836.5 g, M5 탭 Ø4.2 ×2 관통 — 탭 관통 + 상자 자르기), `P_S01_DGSPACER` 50 → 55(Z −360~−305, 1,706,648.9 mm³ / 4,573.8 g). 매트 밑면 Z 0·진공 면·DG 테이블 그대로, MAT_Y −2.0 kg. 정적 겹침 0, YNB 볼트 끝 ↔ 받침 2.0, 손계산 Y판 SF 6.21/3.29. 새 부품·볼트·조인트 0. 생성기 `tools/gen_t14_mech.py`, 손계산 `fea/cases/mech_T14_model_handcalc.py`, BOM `docs/bom/FSAP_v0.8.2_*.csv`, 결정로그 T14-S01~S06·T14-M01~M04, 보고서 `docs/reports/mechanism/mech_T14_*`
 - 설계 v0.8.1 `3D_Modeling/FSAP_v0.8.1.sc`(구동 T15 T05 SNJ 스패너 자리, 작은 변경): `P_T05_GUIDE` 주머니 천장 Z 76.5~80.5(t4, 로드 구멍 Ø6, 앞 뿌리 R3) + 너트 틈 Z 80.5~85.5(X ≤ −114, −X·±Y 트임, 안 모서리 R1) + 위판 X −114 탑에서 외팔(97,979.7 → 103,027.8 mm³), `P_T05_PAD` 윗 긴 모서리 C2 ×2(9,624.6 mm³). 스패너 21×4 0°·±15/30/45° 겹침 0, 포트 0.5, 패드 틈 0.3/0.3/0.0, T05 정적 간섭 0(truncated false), 앞벽 오조작B 두 변 SF 3.80. 새 부품·볼트·조인트 0. 생성기 `tools/gen_t15_mech.py`, 손계산 `fea/cases/mech_T15_handcalc.py`, 결정로그 T15-S01~S09·T15-M01~M03, 자료대기 D-57, 보고서 `docs/reports/mechanism/mech_T15_*`
 - 구동 T18 결과(v0.8.0, 문서): BOM `docs/bom/FSAP_v0.8.0_made.csv`(P_T18_* 6, P_T01_YPLATE 탭)·`_purchased.csv`(BSS2020-1240·BSS2520-1443·BSW15·BUN15·BSW20·BUN20·SCXW46 ×2·MHMF082L1U2M ×2·HFS8-4080-1140 ×2·HBLFSN8 ×8·HNTT8-8·CB8-45/35/25 신설, CB5-20 +30·CB5-16 +2·HNTT8-5 +18, BSS2020-1100·-1450 뺌), 설계검토서 `docs/review/FSAP_v0.8.0_review.md`, 결정로그 T18-R01~R05·디테일 과제 14, 자료대기 D-55·D-56 신설·D-24·D-25 대체·D-50·D-53 갱신, 요구서 5절 T18 일부(오조작 2364 N 강화 T18-X04 남음), 해석 손계산 `fea/cases/mech_T18_handcalc.py`
@@ -61,6 +62,7 @@ This project follows Semantic Versioning.
 
 ## Changed
 
+- 엔진 v3.4.0(실행 속도)에 맞춤: `tools/run-rules.md` 2번 — 연결은 실제 응답으로 판정(WF-121), 동시 과제 묶음(E-25)은 CLI·`base.sc`+`edit.json`→후보 .sc, 짧은/긴 계산 경계(안내서 '연결'), 원복 주의(checkpoint, 저장 뒤 편집 금지). 15번 신설 — 동시 과제 첫 실행 재실행 확인(`tools/out/replay_check.json`), 서명 해시 첫 전수 측정. `tools/workflow-args.json` `parallel: true`·date 2026-11-02. 결정로그 '외장 단계 과제' 표(X-01 T12 커버·문, X-02 T07 가드틀). `docs/reports/engine-candidates.md` WF-131·WF-132 반영 표시. 실측 정리 `docs/reports/solidcraft-mcp-cli-timing.md`.
 - 요구서 8-2(설계 파일 이름·버전 규칙, v0.0.0 시작), 8-5(버전이 바뀔 때만 커밋·푸시), 8-6(CAD SolidCraft). 자료대기 D-15 해결.
 - 시작 설계 `3D_Modeling/FSAP_v0.0.0.sc`(사용자가 앱에서 만든 빈 설계).
 
