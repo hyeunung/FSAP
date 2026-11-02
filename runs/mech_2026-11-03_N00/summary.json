@@ -1,0 +1,704 @@
+{
+ "run": "mech_2026-11-03_N00",
+ "status": "완료",
+ "engine": "v3.7.1",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-03",
+ "journal": "wf_c1650ec4-9a6",
+ "totals": {
+  "agents": 23,
+  "agent_sec": 6944,
+  "input": 2856344,
+  "cache_read": 46150317,
+  "output": 613468,
+  "tools": 460,
+  "wall_sec": 5580
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 152,
+   "agents": 3,
+   "output": 18199
+  },
+  "▸ modeling-round": {
+   "sec": 6792,
+   "agents": 20,
+   "output": 595269
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 63,
+   "tokens": {
+    "input": 31065,
+    "cache_read": 159992,
+    "output": 8453
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 36,
+   "tokens": {
+    "input": 33964,
+    "cache_read": 170527,
+    "output": 4572
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 53,
+   "tokens": {
+    "input": 47641,
+    "cache_read": 445047,
+    "output": 5174
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 61,
+   "tokens": {
+    "input": 22780,
+    "cache_read": 95871,
+    "output": 8398
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 46,
+   "tokens": {
+    "input": 75580,
+    "cache_read": 353868,
+    "output": 3341
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "준비부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1115,
+   "tokens": {
+    "input": 331369,
+    "cache_read": 11905743,
+    "output": 104027
+   },
+   "tools": 73,
+   "turns": 55
+  },
+  {
+   "label": "준비 점검부 다시",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 73,
+   "tokens": {
+    "input": 98566,
+    "cache_read": 1094666,
+    "output": 7170
+   },
+   "tools": 17,
+   "turns": 14
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 21,
+   "tokens": {
+    "input": 71521,
+    "cache_read": 418526,
+    "output": 2003
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "N00 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 287,
+   "tokens": {
+    "input": 156170,
+    "cache_read": 3039658,
+    "output": 29563
+   },
+   "tools": 33,
+   "turns": 27
+  },
+  {
+   "label": "N00 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 31,
+   "tokens": {
+    "input": 76469,
+    "cache_read": 143412,
+    "output": 3076
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "N00 기구설계부 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 754,
+   "tokens": {
+    "input": 201543,
+    "cache_read": 3130840,
+    "output": 69469
+   },
+   "tools": 31,
+   "turns": 22
+  },
+  {
+   "label": "N00 기구설계부 2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 965,
+   "tokens": {
+    "input": 262974,
+    "cache_read": 1548409,
+    "output": 89515
+   },
+   "tools": 22,
+   "turns": 13
+  },
+  {
+   "label": "N00 기구설계부 3",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 611,
+   "tokens": {
+    "input": 184069,
+    "cache_read": 1299288,
+    "output": 55469
+   },
+   "tools": 15,
+   "turns": 12
+  },
+  {
+   "label": "N00 PM·감사 선정",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1004,
+   "tokens": {
+    "input": 254927,
+    "cache_read": 6611668,
+    "output": 84829
+   },
+   "tools": 43,
+   "turns": 37
+  },
+  {
+   "label": "N00 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 39,
+   "tokens": {
+    "input": 78791,
+    "cache_read": 449030,
+    "output": 2486
+   },
+   "tools": 11,
+   "turns": 7
+  },
+  {
+   "label": "N00 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 316,
+   "tokens": {
+    "input": 178915,
+    "cache_read": 5142372,
+    "output": 32308
+   },
+   "tools": 51,
+   "turns": 39
+  },
+  {
+   "label": "N00 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 262,
+   "tokens": {
+    "input": 168173,
+    "cache_read": 3769956,
+    "output": 23633
+   },
+   "tools": 45,
+   "turns": 32
+  },
+  {
+   "label": "N00 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 78,
+   "tokens": {
+    "input": 97704,
+    "cache_read": 689881,
+    "output": 7279
+   },
+   "tools": 17,
+   "turns": 9
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 471,
+   "tokens": {
+    "input": 128789,
+    "cache_read": 2646720,
+    "output": 20263
+   },
+   "tools": 29,
+   "turns": 26
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 515,
+   "tokens": {
+    "input": 166515,
+    "cache_read": 2388363,
+    "output": 39704
+   },
+   "tools": 33,
+   "turns": 21
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 77,
+   "tokens": {
+    "input": 85239,
+    "cache_read": 310006,
+    "output": 6521
+   },
+   "tools": 4,
+   "turns": 5
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 43,
+   "tokens": {
+    "input": 78196,
+    "cache_read": 295236,
+    "output": 2948
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 23,
+   "tokens": {
+    "input": 25384,
+    "cache_read": 41238,
+    "output": 3267
+   },
+   "tools": 1,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "N00",
+    "size": "L",
+    "status": "완료",
+    "chosen": "N00-C1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v1.0.1.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "기계 정의 U3_ROT parts 접두어 'U3_'가 U4_Y 소속 U3_DRIVE까지 잡는다",
+      "where": "tools/machine.json units.U3_ROT",
+      "evidence": "U3_ 바디 3개(U3_PLATE·U3_COLUMN·U3_DRIVE) 중 U3_DRIVE는 U4_Y 컴포넌트 소속(모델링 보고서 2절)",
+      "fix": "U3_ROT parts를 [\"U3_PLATE\",\"U3_COLUMN\"]으로, U4_Y parts에 U3_DRIVE를 명시",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "DGM130R-AZAC",
+     "DGM85R-AZAC",
+     "CRBH7013",
+     "MHMF042L1U2M",
+     "MHMF082L1U2M",
+     "HFS8-4080-3150"
+    ],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2307,
+    "estimate_s": 33.2,
+    "actual_s": 231.2,
+    "chunk_times": [
+     {
+      "id": "L(trial 0-19)",
+      "elapsed_s": 2,
+      "status": "ok"
+     },
+     {
+      "id": "SWP",
+      "elapsed_s": 2,
+      "status": "ok"
+     },
+     {
+      "id": "RW",
+      "elapsed_s": 6,
+      "status": "ok"
+     },
+     {
+      "id": "S",
+      "elapsed_s": 122.1,
+      "status": "ok"
+     },
+     {
+      "id": "G2",
+      "elapsed_s": 180.1,
+      "status": "ok"
+     },
+     {
+      "id": "G1",
+      "elapsed_s": 186.1,
+      "status": "ok"
+     },
+     {
+      "id": "L(20-659)",
+      "elapsed_s": 228.2,
+      "status": "ok"
+     },
+     {
+      "id": "SWX(보충 X 스윕)",
+      "elapsed_s": 1,
+      "status": "ok"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "CYCLE_L 앞 20단계 2.0 s, 단계당 0.086 s, 오류 없음",
+    "reduced": "",
+    "seen": [
+     "CYCLE_L 0-659",
+     "CYCLE_S 0-491",
+     "CYCLE_G1 0-478",
+     "CYCLE_G2 0-597",
+     "REWIND_EMPTY 0-72",
+     "스윕 J_U4_X −200~864.99(Y 0 접촉에서 멈춤)",
+     "스윕 J_U4_Y −400~1200",
+     "스윕 J_U3_ROT −360~720",
+     "스윕 J_U1_PRESSER 0~20",
+     "스윕 J_U1_NEEDLE −30~0"
+    ],
+    "unseen": []
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "준비부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1085,
+     "cad_calls": 20,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "준비 점검부 다시",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 5,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 2,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "N00 측정부",
+    "phase": "N00 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 280,
+     "cad_calls": 7,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "N00 카탈로그부",
+    "phase": "N00 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "N00 기구설계부 3",
+    "phase": "N00 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "N00 기구설계부 1",
+    "phase": "N00 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 720,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "N00 기구설계부 2",
+    "phase": "N00 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 911,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "N00 PM·감사 선정",
+    "phase": "N00 · 선정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 960,
+     "cad_calls": 2,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "N00 구매부 STEP",
+    "phase": "N00 · 구매품",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 5,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "N00 모델링부",
+    "phase": "N00 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1500,
+     "cad_calls": 13,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "N00 검도·체결",
+    "phase": "N00 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 253,
+     "cad_calls": 9,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "N00 문서·커밋",
+    "phase": "N00 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 480,
+     "cad_calls": 11,
+     "file_opens": 62,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 482,
+     "cad_calls": 6,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": []
+ },
+ "retro": {
+  "new_ids": [
+   "WF-170",
+   "WF-171",
+   "WF-172",
+   "WF-173"
+  ],
+  "repeat_ids": [],
+  "one_line": "회고 mech_2026-11-03_N00(엔진 v3.7.1): WF-170~173 추가(docs/reports/engine-candidates.md), 최종 보고서에 개선 후보 절 추가, 커밋 52fe5b7(푸시 안 함). 고친 엔진 파일 없음."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 23,
+  "시간 h": 1.9,
+  "출력 토큰": 613468,
+  "실패": 0
+ }
+}
