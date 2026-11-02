@@ -1,0 +1,520 @@
+{
+ "model": "mech_DC-04 handcalc v1.0.5",
+ "fea": "해석 못 함 — 환경 없음(D-16)",
+ "loads": {
+  "W_run_N": 97.1,
+  "W_mis_N": 132.4
+ },
+ "cases": {
+  "bolt_CB5-12_run_A5052": {
+   "inputs": {
+    "d": 5,
+    "le": 9.0,
+    "load_N": 922.6305000000001,
+    "torque_Nm": 4.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 4000.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 16.93,
+    "암나사 전단": 6.72,
+    "분리(예압/외력)": 4.34
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.51,
+    "조임 좌면": 1.73,
+    "조임 암나사 전단": 1.55
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "bolt_CB5-12_run_SS400": {
+   "inputs": {
+    "d": 5,
+    "le": 9.0,
+    "load_N": 922.6305000000001,
+    "torque_Nm": 4.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 4000.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 16.93,
+    "암나사 전단": 8.45,
+    "분리(예압/외력)": 4.34
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.51,
+    "조임 좌면": 4.04,
+    "조임 암나사 전단": 1.95
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "flange_run": {
+   "inputs": {
+    "t": 3.0,
+    "b": 78.5,
+    "L": 6.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 3.0
+   },
+   "force_N": 825.512,
+   "deflection_mm": 0.0017,
+   "stiffness_N_mm": 473453.125,
+   "stress_MPa": 42.06,
+   "sf": 4.87,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "leg_run": {
+   "inputs": {
+    "t": 3.0,
+    "b": 60.0,
+    "L": 40.5,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 3.0
+   },
+   "force_N": 97.119,
+   "deflection_mm": 0.0825,
+   "stiffness_N_mm": 1176.6499,
+   "stress_MPa": 43.7,
+   "sf": 4.69,
+   "thin": true,
+   "ok": true,
+   "needs_fea": false,
+   "cassette_drop_mm": 0.098
+  },
+  "rail_M3_run": {
+   "inputs": {
+    "d": 3,
+    "le": 3.0,
+    "load_N": 291.357,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "SUS304",
+    "dw": 5.300000000000001,
+    "dh": 3.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.0,
+   "sf_operating": {
+    "나사 인장": 18.99,
+    "암나사 전단": 4.48
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "block_MC_run": {
+   "M_Nm": 3.4,
+   "allow_Nm_tmp": 20.0,
+   "sf": 5.88,
+   "sf_min": 3.0
+  },
+  "carrier_run": {
+   "inputs": {
+    "t": 4.0,
+    "b": 32.0,
+    "L": 17.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 3.0
+   },
+   "force_N": 97.119,
+   "deflection_mm": 0.0048,
+   "stiffness_N_mm": 20113.1691,
+   "stress_MPa": 19.35,
+   "sf": 10.6,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "bolt_CB5-12_mis_A5052": {
+   "inputs": {
+    "d": 5,
+    "le": 9.0,
+    "load_N": 1522.2894999999999,
+    "torque_Nm": 4.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4000.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 10.26,
+    "암나사 전단": 4.07,
+    "분리(예압/외력)": 2.63
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.51,
+    "조임 좌면": 1.73,
+    "조임 암나사 전단": 1.55
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "bolt_CB5-12_mis_SS400": {
+   "inputs": {
+    "d": 5,
+    "le": 9.0,
+    "load_N": 1522.2894999999999,
+    "torque_Nm": 4.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4000.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 10.26,
+    "암나사 전단": 5.12,
+    "분리(예압/외력)": 2.63
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.51,
+    "조임 좌면": 4.04,
+    "조임 암나사 전단": 1.95
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "flange_mis": {
+   "inputs": {
+    "t": 3.0,
+    "b": 78.5,
+    "L": 6.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 1389.916,
+   "deflection_mm": 0.0029,
+   "stiffness_N_mm": 473453.125,
+   "stress_MPa": 70.82,
+   "sf": 2.89,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "leg_mis": {
+   "inputs": {
+    "t": 3.0,
+    "b": 60.0,
+    "L": 52.5,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 132.373,
+   "deflection_mm": 0.2451,
+   "stiffness_N_mm": 540.1749,
+   "stress_MPa": 77.22,
+   "sf": 2.65,
+   "thin": true,
+   "ok": true,
+   "needs_fea": false,
+   "cassette_drop_mm": 0.224
+  },
+  "rail_M3_mis": {
+   "inputs": {
+    "d": 3,
+    "le": 3.0,
+    "load_N": 519.3094615384615,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "SUS304",
+    "dw": 5.300000000000001,
+    "dh": 3.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.0,
+   "sf_operating": {
+    "나사 인장": 10.65,
+    "암나사 전단": 2.51
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "block_MC_mis": {
+   "M_Nm": 6.22,
+   "allow_Nm_tmp": 20.0,
+   "sf": 3.21,
+   "sf_min": 2.0
+  },
+  "carrier_mis": {
+   "inputs": {
+    "t": 4.0,
+    "b": 32.0,
+    "L": 29.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 132.373,
+   "deflection_mm": 0.0327,
+   "stiffness_N_mm": 4051.6626,
+   "stress_MPa": 44.99,
+   "sf": 4.56,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "front_tab_run": {
+   "inputs": {
+    "t": 3.0,
+    "b": 55.0,
+    "L": 36.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 3.0
+   },
+   "force_N": 50.0,
+   "deflection_mm": 0.0326,
+   "stiffness_N_mm": 1535.735,
+   "stress_MPa": 21.82,
+   "sf": 9.4,
+   "thin": true,
+   "ok": true,
+   "needs_fea": false
+  },
+  "end_tab_run": {
+   "inputs": {
+    "t": 3.0,
+    "b": 28.0,
+    "L": 22.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 3.0
+   },
+   "force_N": 50.0,
+   "deflection_mm": 0.0146,
+   "stiffness_N_mm": 3425.7137,
+   "stress_MPa": 26.19,
+   "sf": 7.83,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "pin_run": {
+   "tau_MPa": 1.77,
+   "sigma_b_MPa": 7.07,
+   "sf_vs_SUS304": 26.6,
+   "sf_min": 3.0
+  },
+  "lug_bearing_run": {
+   "p_MPa": 2.08,
+   "sf": 98.4,
+   "sf_min": 3.0
+  },
+  "front_tab_mis": {
+   "inputs": {
+    "t": 3.0,
+    "b": 55.0,
+    "L": 36.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 100.0,
+   "deflection_mm": 0.0651,
+   "stiffness_N_mm": 1535.735,
+   "stress_MPa": 43.64,
+   "sf": 4.7,
+   "thin": true,
+   "ok": true,
+   "needs_fea": false
+  },
+  "end_tab_mis": {
+   "inputs": {
+    "t": 3.0,
+    "b": 28.0,
+    "L": 22.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 100.0,
+   "deflection_mm": 0.0292,
+   "stiffness_N_mm": 3425.7137,
+   "stress_MPa": 52.38,
+   "sf": 3.91,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "pin_mis": {
+   "tau_MPa": 3.54,
+   "sigma_b_MPa": 14.15,
+   "sf_vs_SUS304": 13.3,
+   "sf_min": 2.0
+  },
+  "lug_bearing_mis": {
+   "p_MPa": 4.17,
+   "sf": 49.2,
+   "sf_min": 2.0
+  },
+  "end_tab_impact_ref": {
+   "inputs": {
+    "t": 3.0,
+    "b": 28.0,
+    "L": 22.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 1.2
+   },
+   "force_N": 412.5,
+   "deflection_mm": 0.1204,
+   "stiffness_N_mm": 3425.7137,
+   "stress_MPa": 216.07,
+   "sf": 0.95,
+   "thin": false,
+   "ok": false,
+   "needs_fea": true,
+   "F_equiv_N": 412.5
+  }
+ },
+ "summary": {
+  "bolt_CB5-12_run_A5052": {
+   "sf": 4.34,
+   "sf_min": 3.0
+  },
+  "bolt_CB5-12_run_SS400": {
+   "sf": 4.34,
+   "sf_min": 3.0
+  },
+  "flange_run": {
+   "sf": 4.87,
+   "sf_min": 3.0
+  },
+  "leg_run": {
+   "sf": 4.69,
+   "sf_min": 3.0
+  },
+  "rail_M3_run": {
+   "sf": 4.48,
+   "sf_min": 3.0
+  },
+  "block_MC_run": {
+   "sf": 5.88,
+   "sf_min": 3.0
+  },
+  "carrier_run": {
+   "sf": 10.6,
+   "sf_min": 3.0
+  },
+  "bolt_CB5-12_mis_A5052": {
+   "sf": 2.63,
+   "sf_min": 2.0
+  },
+  "bolt_CB5-12_mis_SS400": {
+   "sf": 2.63,
+   "sf_min": 2.0
+  },
+  "flange_mis": {
+   "sf": 2.89,
+   "sf_min": 2.0
+  },
+  "leg_mis": {
+   "sf": 2.65,
+   "sf_min": 2.0
+  },
+  "rail_M3_mis": {
+   "sf": 2.51,
+   "sf_min": 2.0
+  },
+  "block_MC_mis": {
+   "sf": 3.21,
+   "sf_min": 2.0
+  },
+  "carrier_mis": {
+   "sf": 4.56,
+   "sf_min": 2.0
+  },
+  "front_tab_run": {
+   "sf": 9.4,
+   "sf_min": 3.0
+  },
+  "end_tab_run": {
+   "sf": 7.83,
+   "sf_min": 3.0
+  },
+  "pin_run": {
+   "sf": 26.6,
+   "sf_min": 3.0
+  },
+  "lug_bearing_run": {
+   "sf": 98.4,
+   "sf_min": 3.0
+  },
+  "front_tab_mis": {
+   "sf": 4.7,
+   "sf_min": 2.0
+  },
+  "end_tab_mis": {
+   "sf": 3.91,
+   "sf_min": 2.0
+  },
+  "pin_mis": {
+   "sf": 13.3,
+   "sf_min": 2.0
+  },
+  "lug_bearing_mis": {
+   "sf": 49.2,
+   "sf_min": 2.0
+  },
+  "end_tab_impact_ref": {
+   "sf": 0.95,
+   "sf_min": 1.2
+  }
+ }
+}
