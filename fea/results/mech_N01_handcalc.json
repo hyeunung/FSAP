@@ -1,0 +1,153 @@
+{
+ "sole_run_selectbasis_b13_L12": {
+  "inputs": {
+   "t": 2,
+   "b": 13,
+   "L": 12,
+   "E": 205000.0,
+   "Rp": 345.0,
+   "end": "cantilever",
+   "sf_min": 3
+  },
+  "force_N": 50.512,
+  "deflection_mm": 0.0164,
+  "stiffness_N_mm": 3084.4907,
+  "stress_MPa": 69.94,
+  "sf": 4.93,
+  "thin": false,
+  "ok": true,
+  "needs_fea": true
+ },
+ "sole_run_b6_Ltip": {
+  "inputs": {
+   "t": 2,
+   "b": 6,
+   "L": 9.04,
+   "E": 205000.0,
+   "Rp": 345.0,
+   "end": "cantilever",
+   "sf_min": 3
+  },
+  "force_N": 50.512,
+  "deflection_mm": 0.0152,
+  "stiffness_N_mm": 3329.8895,
+  "stress_MPa": 114.16,
+  "sf": 3.02,
+  "thin": false,
+  "ok": true,
+  "needs_fea": true
+ },
+ "sole_mis_b6_Ltip": {
+  "inputs": {
+   "t": 2,
+   "b": 6,
+   "L": 9.04,
+   "E": 205000.0,
+   "Rp": 345.0,
+   "end": "cantilever",
+   "sf_min": 2
+  },
+  "force_N": 150.512,
+  "deflection_mm": 0.0452,
+  "stiffness_N_mm": 3329.8895,
+  "stress_MPa": 340.16,
+  "sf": 1.01,
+  "thin": false,
+  "ok": false,
+  "needs_fea": true
+ },
+ "sole_run_bhalfper_Ltip": {
+  "inputs": {
+   "t": 2,
+   "b": 9.42,
+   "L": 9.04,
+   "E": 205000.0,
+   "Rp": 345.0,
+   "end": "cantilever",
+   "sf_min": 3
+  },
+  "force_N": 50.512,
+  "deflection_mm": 0.0097,
+  "stiffness_N_mm": 5227.9264,
+  "stress_MPa": 72.71,
+  "sf": 4.74,
+  "thin": false,
+  "ok": true,
+  "needs_fea": true
+ },
+ "sole_mis_bhalfper_Ltip": {
+  "inputs": {
+   "t": 2,
+   "b": 9.42,
+   "L": 9.04,
+   "E": 205000.0,
+   "Rp": 345.0,
+   "end": "cantilever",
+   "sf_min": 2
+  },
+  "force_N": 150.512,
+  "deflection_mm": 0.0288,
+  "stiffness_N_mm": 5227.9264,
+  "stress_MPa": 216.66,
+  "sf": 1.59,
+  "thin": false,
+  "ok": false,
+  "needs_fea": true
+ },
+ "fix_t3_mis_b6_Ltip": {
+  "inputs": {
+   "t": 3,
+   "b": 6,
+   "L": 9.04,
+   "E": 205000.0,
+   "Rp": 345.0,
+   "end": "cantilever",
+   "sf_min": 2
+  },
+  "force_N": 150.512,
+  "deflection_mm": 0.0134,
+  "stiffness_N_mm": 11238.3769,
+  "stress_MPa": 151.18,
+  "sf": 2.28,
+  "thin": false,
+  "ok": true,
+  "needs_fea": true
+ },
+ "bar_drag_run": {
+  "F_N": 30.0,
+  "lever_mm": 33.0,
+  "stress_MPa": 46.7,
+  "sf": 7.39,
+  "sf_min": 3,
+  "ok": true,
+  "near_10pct": false,
+  "deflection_mm": 0.028,
+  "gap_needle_foot_mm": 0.7,
+  "motion_ok": true
+ },
+ "bar_drag_mis": {
+  "F_N": 100.0,
+  "lever_mm": 33.0,
+  "stress_MPa": 155.6,
+  "sf": 2.22,
+  "sf_min": 2,
+  "ok": true,
+  "near_10pct": false,
+  "deflection_mm": 0.092,
+  "gap_needle_foot_mm": 0.7,
+  "motion_ok": true
+ },
+ "bar_buckle_mis": {
+  "Pcr_N": 29549,
+  "F_N": 150,
+  "sf": 197.0
+ },
+ "bar_root_shear_mis": {
+  "tau_MPa": 3.54,
+  "sf": 56.3
+ },
+ "oversize_note": {
+  "bar_buckle_mis": 197.0,
+  "bar_root_shear_mis": 56.3
+ }
+}

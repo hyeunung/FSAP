@@ -1,0 +1,3 @@
+﻿품번,이름,컴포넌트,수량,재질,만드는 법,가공법,형상,질량 g(1개),가격,비고
+P_N01_FOOT,노루발(좁은 홈용 임시),U1_PRESSER,1,S45C,가공,밀링,"발바닥 t2(Z 12~14) X −10~3·Y −8~6, 바늘 구멍 Ø3 (0,0), 노루발대 Ø6 축 (−5,−3) Z 14~80",17.39,미확인,"N01: 새로(U1_PRESSER_BOX 대신). 867 순정 노루발 확정(D-10) 때 대조. 디테일 N01-F1 발바닥 t3 검토"
+(없음),유닛 차지 공간 상자(부품 아님),U2_BRIDGE·U4_FIX·U6_SENSOR·U7_TAPE·U8_CASSETTE·U9_LOAD·U4_X·U5_AIRTABLE·U4_Y·U3_ROT·U1_HEAD(LOWER_DRIVE)·바늘,24,-,-,-,"상자 24개(N00 26에서 U1_BUNDLE·U1_PRESSER_BOX 지움, U1_UPPER·U1_LOWER_POD는 STEP대기_로 이름 바꿈). U8_CASSETTE_BOX X ±15 → ±11",-,미확인,"N00: v1.0.1 신설. N01: U1_BUNDLE·U1_PRESSER_BOX 지움, U8_CASSETTE_BOX 좁힘(묶음 폭 22 < 25, D-02 임시)"
