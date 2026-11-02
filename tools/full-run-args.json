@@ -9,6 +9,8 @@
   "tmpAscii": "C:/Users/hyeun/AppData/Local/Temp/mechdesign",
   "rulesFile": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/run-rules.md",
   "parallel": true,
-  "detailing": { "exportStep": false },
-  "shellNote": "[이번 실행 — v1.0 첫 실행, 2026-11-03] (a) v1.0은 빈 설계에서 새로 시작한다(실행 규칙 17). 과제는 요구서 5절 N00~N08, 첫 라운드는 N00 전체 골격 하나부터(순서 C-22). v0.x(archive_v0/)는 읽기 참고만. (b) SolidCraft 앱(--control 27878)이 켜져 있고 옛 v0.8.2 문서가 열려 있을 수 있다. 그 문서는 저장하지 않는다. N00은 new_design으로 새 문서를 만들어 3D_Modeling/FSAP_v1.0.0.sc로 저장하고 문서 이름도 FSAP_v1.0.0으로. (c) 미스미 로그인은 확인 안 됨 — 풀려 있으면 기다리지 말고 STEP대기_ 임시 형상(실행 규칙 10). 봇 확인 페이지는 넘기지 않는다. (d) 속도가 중요하다: 엔진 v3.7.0대로(전체 회귀 regrun 30분 상한, 과제 범위 검사, 파일 한 번 열기). (e) 보고서·커밋은 한글."
+  "detailing": {
+    "exportStep": false
+  },
+  "shellNote": "[이번 실행 — v1.0 두 번째 실행, 엔진 v3.7.2, 2026-11-03] (a) 첫 실행(엔진 v3.7.1)에서 N00 전체 골격이 끝나 v1.0.1로 커밋됐다(1cea18a). 이번 실행은 요구서 5절 상태를 보고 N01부터 이어 간다(순서 C-22: N00 → N01 → N02·N03·N04 → N05 → N06 → N07·N08). v0.x(archive_v0/)는 읽기 참고만. (b) 첫 실행이 2라운드를 막 시작한 직후 멈췄다. 3D_Modeling/.~FSAP_v1.0.1.sc.lock 과 .~FSAP_v0.7.0.sc.lock 은 남은 잠금 파일이니 지우지 말고 무시한다. 작업 트리에 첫 실행이 남긴 커밋 안 된 docs/decision-log.md 변경과 docs/reports/mechanism/mech_drive_check.md·mech_regression.md 가 있다 — 1라운드 결과물이니 그대로 두고 이어서 쓴다. (c) SolidCraft 앱(--control 27878)이 켜져 있다. 설계는 config.json doc(FSAP_v1.0.1.sc)에서 이어 간다. (d) 미스미 로그인은 확인 안 됨 — 풀려 있으면 기다리지 말고 STEP대기_ 임시 형상(실행 규칙 10). 봇 확인 페이지는 넘기지 않는다. (e) 속도가 중요하다: 엔진 v3.7.2대로(전체 회귀 regrun 30분 상한, 과제 범위 검사, 파일 한 번 열기). (f) 보고서·커밋은 한글."
 }

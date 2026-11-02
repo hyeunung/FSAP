@@ -107,17 +107,15 @@
   },
   "U1_HEAD": {
    "parts": [
-    "U1_UPPER",
-    "U1_BUNDLE",
-    "U1_LOWER_POD",
+    "STEP대기_867-392342_",
     "U1_LOWER_DRIVE"
    ],
    "moving": false,
-   "_note": "N00 차지 공간 상자. REF_GROUND와 리지드. 받침 ±30·±45와 구동 자리는 D-10 임시"
+   "_note": "N01: 867-392342 임시 형상(STEP대기_ UPPER·NOSE·LOWER, D-10·D-80) + 아랫축 구동 자리 상자(DC-05). REF_GROUND와 리지드"
   },
   "U1_PRESSER": {
    "parts": [
-    "U1_PRESSER"
+    "P_N01_FOOT"
    ],
    "moving": true
   },
@@ -228,13 +226,13 @@
    "mat": "300x200"
   },
   "CYCLE_G1": {
-   "steps": 478,
+   "steps": 528,
    "workpiece": [
     "WP_MAT_G:1",
     "WP_TAPE_G:1"
    ],
    "mat": "1200x1200 U홈 25x150 R12.5",
-   "_note": "① ~ 두 번째 홈 입구 회전 끝"
+   "_note": "① ~ 두 번째 홈 입구 회전 끝. 홈 바닥 땀 피벗 10×18°(N01-S02), 홈 바닥 173~406"
   },
   "CYCLE_G2": {
    "steps": 597,
@@ -640,7 +638,7 @@
   },
   {
    "a": "WP_MAT_*",
-   "b": "U5_TABLE·U3_PLATE·U1_LOWER_POD",
+   "b": "U5_TABLE·U3_PLATE·STEP대기_867-392342_LOWER",
    "reason": "작업면 Z 0 맞닿음",
    "_n00": true
   },
@@ -670,13 +668,13 @@
   },
   {
    "a": "U1_LOWER_DRIVE",
-   "b": "U1_LOWER_POD·U2_COLUMN",
+   "b": "STEP대기_867-392342_LOWER·U2_COLUMN",
    "reason": "맞닿음 X 30·X 500",
    "_n00": true
   },
   {
    "a": "U2_BOOM",
-   "b": "U2_COLUMN·U1_UPPER",
+   "b": "U2_COLUMN·STEP대기_867-392342_UPPER",
    "reason": "맞닿음 Z 560",
    "_n00": true
   },
@@ -685,6 +683,24 @@
    "b": "U2_BASE",
    "reason": "맞닿음 Y -1555",
    "_n00": true
+  },
+  {
+   "a": "P_N01_FOOT",
+   "b": "SEAM_*",
+   "reason": "맞닿음 Z 12(노루발 0일 때 발바닥 밑면 = 이음매 윗면, 겹침 0)",
+   "_n01": true
+  },
+  {
+   "a": "STEP대기_867-392342_NOSE",
+   "b": "STEP대기_867-392342_UPPER",
+   "reason": "맞닿음 Z 125(join 안 함)",
+   "_n01": true
+  },
+  {
+   "a": "P_N01_FOOT 노루발대",
+   "b": "STEP대기_867-392342_NOSE 구멍 Ø7",
+   "reason": "틈 0.5(Ø6 대가 Ø7 구멍 안에서 Z로 움직임)",
+   "_n01": true
   }
  ],
  "workpiece_module": "",
