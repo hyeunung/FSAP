@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.0.2.sc",
+ "doc": "../3D_Modeling/FSAP_v2.1.0.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -43,22 +43,22 @@
   },
   "J_U4_PRESS": {
    "cad": "J_U4_PRESS",
-   "type": "slide",
+   "type": "rotate",
    "unit": "U4_WHEEL_N",
    "axis": [
     0,
-    0,
-    1
+    -1,
+    0
    ],
    "origin": [
-    -100.0,
+    -300.0,
     0,
     70.0
    ],
-   "rest": 30.0,
-   "min": 0,
-   "max": 30.0,
-   "_note": "바늘 옆 바퀴 누름·들기. 0 = 내림(바퀴 밑 = 매트 윗면 Z 10), 30 = 들림(D-104 임시). 실제는 핀 스윙 암 + 세로 실린더(D-99) — 준비부는 세로 슬라이더로 둠, M02가 스윙 암으로 바꿀 수 있다"
+   "rest": 8.626,
+   "min": -1.867,
+   "max": 8.626,
+   "_note": "M02(v2.1.0) 핀 스윙 레버(U4_PRESS) 회전, + = 들림. 0 = 바퀴 밑 Z 10(매트 윗면), 8.626 = 들림 끝(조인트 한계; 실린더 후퇴 끝 8.6265가 스토퍼, 바퀴 밑 38.8; 연구 키 8.627은 한계로 잘림), -1.867 = 실린더 나옴 끝(바퀴 밑 3.1). 작동(접촉 추종): theta = asin((z_top-10)/187.5) [deg], 187.5 = 레버 200 - 바퀴 반폭 12.5, 소수 셋째 자리 올림 — 매트 10 -> 0, 테이프 11 -> 0.306, 이음매 12 -> 0.611. 실린더 CDM2C20-25Z(J_U4_CYL_PIN·J_U4_CYL_ROD·J_U4_ROD_PIN 닫힌 고리)가 따라감"
   },
   "J_U4_WHEEL_ROT": {
    "cad": "J_U4_WHEEL_ROT",
@@ -77,7 +77,7 @@
    "rest": 0,
    "min": -72000,
    "max": 72000,
-   "_note": "서보 바퀴 회전(+X 축, + = 바퀴 밑이 +Y로). 연구 값 = 바퀴 밑 매트 점의 Y 변위 / r 60(속도 v + w·d1). 형상이 바뀌지 않는 회전이라 간섭 검사에는 영향 없음"
+   "_note": "서보 바퀴 회전(+X 축, + = 바퀴 밑이 +Y로). 연구 값 = 바퀴 밑 매트 점의 Y 변위 / r 60(속도 v + w·d1). 형상이 바뀌지 않는 회전이라 간섭 검사에는 영향 없음 M02: 바퀴 P_M02_WHEEL(+TREAD), 원점 = 바퀴 중심(J_U4_PRESS 0에서 (-100, 0, 70)), U4_PRESS를 따라 돈다"
   },
   "J_U5_X": {
    "cad": "J_U5_X",
@@ -311,6 +311,50 @@
    "max": 720,
    "model_only": true,
    "_note": "작업 대상 모형 조인트(볼 위 평면 운동, 기계 축 아님 — 실행 규칙 20). 매트 중심 = 대기 중심 (-600.0, -300.0) + (X, Y), 회전은 그 중심"
+  },
+  "J_U4_DISK": {
+   "cad": "J_U4_DISK",
+   "type": "rotate",
+   "unit": "U4_WHEEL_N",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -175.0,
+    0,
+    0
+   ],
+   "rest": 0,
+   "min": -72000,
+   "max": 72000,
+   "follower": true,
+   "_note": "M02 밑 자유 회전 원판 P_M02_DISK Ø250(6004ZZ ×2). 구동 없음 — 형상이 회전 대칭이라 간섭 검사에 영향 없음"
+  },
+  "J_U4_CYL_PIN": {
+   "cad": "J_U4_CYL_PIN",
+   "type": "rotate",
+   "unit": "U4_WHEEL_N",
+   "follower": true,
+   "_note": "M02 닫힌 고리 따라감(키 없음, M-07). 실린더 위 핀(U4_WHEEL_N ↔ U4_CYL, 축 Y)"
+  },
+  "J_U4_CYL_ROD": {
+   "cad": "J_U4_CYL_ROD",
+   "type": "slide",
+   "unit": "U4_WHEEL_N",
+   "follower": true,
+   "_note": "M02 닫힌 고리 따라감(키 없음, M-07). 실린더 로드 슬라이더(U4_CYL ↔ U4_ROD, 0~25 = 로드 나옴)",
+   "min": 0,
+   "max": 25.0,
+   "rest": 0.0
+  },
+  "J_U4_ROD_PIN": {
+   "cad": "J_U4_ROD_PIN",
+   "type": "rotate",
+   "unit": "U4_WHEEL_N",
+   "follower": true,
+   "_note": "M02 닫힌 고리 따라감(키 없음, M-07). 로드 끝 핀(U4_ROD ↔ U4_PRESS, 고리 닫음)"
   }
  },
  "units": {
@@ -350,15 +394,28 @@
   },
   "U4_WHEEL_N": {
    "parts": [
-    "U4_"
+    "U4_",
+    "P_M02_",
+    "STEP대기_MHMF022L1U2M",
+    "STEP대기_VRXF-PB-60-10",
+    "CDM2C20-25Z_",
+    "I-020B_M02",
+    "6004ZZ_M02_",
+    "E32-D36P1_2M_M02",
+    "CB5-16_M02",
+    "CB5-20_M02",
+    "CB5-12_M02"
    ],
    "moving": true,
    "components": [
     "U4_WHEEL_N",
     "U4_PRESS",
-    "U4_WHEEL"
+    "U4_WHEEL",
+    "U4_DISK",
+    "U4_CYL",
+    "U4_ROD"
    ],
-   "_note": "상자 U4_MOUNT·U4_DISK(Ø250 중심 X -175, M00-D04)·U4_DISK_BRG, U4_DRIVE·U4_HOLDER(U4_PRESS)"
+   "_note": "M02(v2.1.0): 고정 U4_WHEEL_N = P_M02_BASE(SUS304 t8 L, U1_BEAM 밑)·P_M02_CYLBRKT(SUS304 t4 용접)·P_M02_DISK_BASE·P_M02_DISK_HSG·6004ZZ ×2. U4_PRESS(레버) = ARM_SIDE_N/P·FRONT·ARM_TIE·SNS_BRKT·STEP대기_VRXF-PB-60-10·STEP대기_MHMF022L1U2M·E32-D36P1_2M. U4_WHEEL = P_M02_WHEEL·P_M02_WHEEL_TREAD. U4_DISK = P_M02_DISK·P_M02_DISK_SHAFT. U4_CYL·U4_ROD = CDM2C20-25Z + I-020B. 볼트 CB5-16_M02_1~23·CB5-20_M02_1~4·CB5-12_M02_1~2"
   },
   "U5_WHEEL_F": {
    "parts": [
@@ -479,7 +536,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0,
-    "J_U4_PRESS": 30.0,
+    "J_U4_PRESS": 8.626,
     "J_U4_WHEEL_ROT": 0,
     "J_U5_X": 0,
     "J_U5_LIFT": 30.0,
@@ -507,7 +564,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0.0,
-    "J_U4_PRESS": 30.0,
+    "J_U4_PRESS": 8.626,
     "J_U4_WHEEL_ROT": 0.0,
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
@@ -599,7 +656,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": -30.0,
-    "J_U4_PRESS": 0.0,
+    "J_U4_PRESS": 0.306,
     "J_U4_WHEEL_ROT": 566.205,
     "J_U5_X": 800.0,
     "J_U5_LIFT": 0.0,
@@ -645,7 +702,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0.0,
-    "J_U4_PRESS": 30.0,
+    "J_U4_PRESS": 8.626,
     "J_U4_WHEEL_ROT": 5158.256,
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
@@ -760,7 +817,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0.0,
-    "J_U4_PRESS": 30.0,
+    "J_U4_PRESS": 8.626,
     "J_U4_WHEEL_ROT": 383.608,
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
@@ -783,7 +840,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": -30.0,
-    "J_U4_PRESS": 30.0,
+    "J_U4_PRESS": 8.626,
     "J_U4_WHEEL_ROT": 260.218,
     "J_U5_X": 1000.0,
     "J_U5_LIFT": 0.0,
@@ -968,7 +1025,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0.0,
-    "J_U4_PRESS": 30.0,
+    "J_U4_PRESS": 8.626,
     "J_U4_WHEEL_ROT": 4286.589,
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
@@ -1051,6 +1108,21 @@
    "a": "U3_NEEDLE_PIN(-30)",
    "b": "MAT_*·TAPE_*",
    "reason": "바늘 꽂음 의도 겹침(위 U3_NEEDLE 줄과 같음)"
+  },
+  {
+   "a": "U4_WHEEL(P_M02_WHEEL_TREAD)",
+   "b": "WP_TAPE_*·SEAM_*",
+   "reason": "M02 수정 1회차: 접촉 추종 키(테이프 0.306°, 이음매 0.611°)로 바퀴 밑 11.002·12.003 — 겹침 0이어야 한다. 남으면 키 0.310·0.615"
+  },
+  {
+   "a": "CB5-*_M02_*",
+   "b": "탭 구멍 부품",
+   "reason": "나사 물림(Ø5 축 ↔ Ø4.2 탭) 의도된 겹침(M-08)"
+  },
+  {
+   "a": "U4_ROD(CDM2C20-25Z_ROD)",
+   "b": "I-020B_M02",
+   "reason": "로드 끝 나사 물림(같은 리지드 묶음)"
   }
  ],
  "workpiece_module": "",
