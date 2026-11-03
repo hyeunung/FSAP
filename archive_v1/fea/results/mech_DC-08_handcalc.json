@@ -1,0 +1,86 @@
+{
+ "model": "mech_DC-08 handcalc v1.0.18",
+ "fea": "해석 못 함 — 환경 없음(D-16)",
+ "step_bbox": [
+  -1220.0,
+  -1150.0,
+  1107.64,
+  1178.36,
+  -85.0,
+  0.0
+ ],
+ "nipple": {
+  "A": 226.2,
+  "W": 1934.6
+ },
+ "bond": {
+  "A": 2186.5,
+  "W": 27394.3
+ },
+ "F_press_N": 24.93,
+ "cases": {
+  "run_side": {
+   "kind": "run",
+   "F_side_N": 24.41,
+   "F_axial_N": 29.34,
+   "nipple_sigma_MPa": 0.635,
+   "hoop_MPa": 0.128,
+   "SF_nipple": 70.9,
+   "bond_peel_MPa": 0.054,
+   "bond_shear_MPa": 0.0112,
+   "SF_bond": 36.6,
+   "flange_shear_MPa": 0.049,
+   "SF_flange": 528.5,
+   "SF_min_req": 3.0,
+   "ok": true
+  },
+  "mis_side": {
+   "kind": "mis",
+   "F_side_N": 101.47,
+   "F_axial_N": 24.93,
+   "nipple_sigma_MPa": 2.208,
+   "hoop_MPa": 0.128,
+   "SF_nipple": 20.4,
+   "bond_peel_MPa": 0.178,
+   "bond_shear_MPa": 0.0464,
+   "SF_bond": 10.9,
+   "flange_shear_MPa": 0.042,
+   "SF_flange": 622.1,
+   "SF_min_req": 2.0,
+   "ok": true
+  },
+  "mis_axial": {
+   "kind": "mis",
+   "F_side_N": 20.0,
+   "F_axial_N": 126.4,
+   "nipple_sigma_MPa": 0.972,
+   "hoop_MPa": 0.128,
+   "SF_nipple": 46.3,
+   "bond_peel_MPa": 0.091,
+   "bond_shear_MPa": 0.0091,
+   "SF_bond": 21.9,
+   "flange_shear_MPa": 0.212,
+   "SF_flange": 122.7,
+   "SF_min_req": 2.0,
+   "ok": true
+  }
+ },
+ "panel": {
+  "change": "밑 표피 Ø46 구멍 위치만, 하중 경로·두께·재질 그대로(부피 변화 0)",
+  "cantilever_L_mm": 960,
+  "hole_from_root_mm": 135,
+  "moment_ratio_at_hole_vs_root": 0.739,
+  "run": {
+   "skin_at_hole_MPa": 21.3,
+   "SF": 8.2,
+   "SF_min_req": 3.0,
+   "ok": true
+  },
+  "mis": {
+   "skin_at_hole_MPa": 38.1,
+   "SF": 4.6,
+   "SF_min_req": 2.0,
+   "ok": true
+  }
+ }
+}

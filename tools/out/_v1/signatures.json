@@ -1,7 +1,7 @@
 {
  "pose": "REST step 0",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v1.0.17.sc",
- "doc_hash": "80ab059486d7f7c2",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v1.0.18.sc",
+ "doc_hash": "5af1a8938ed82def",
  "parts": {
   "REF_GROUND/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -4502,8 +4502,8 @@
     -40.0,
     0.0
    ],
-   "volume": 254174808.301,
-   "mass": 48293.26,
+   "volume": 254174808.3,
+   "mass": 48293.21,
    "material": "A5052_HC",
    "bolt": false,
    "spec": ""
@@ -4818,15 +4818,15 @@
    "name": "P_N04_INLET",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -1046.0,
-    -1000.0,
-    1017.001,
-    1062.999,
-    -55.0,
+    -1220.0,
+    -1150.0,
+    1108.0,
+    1178.0,
+    -85.0,
     -39.0
    ],
-   "volume": 8444.8,
-   "mass": 8.53,
+   "volume": 24444.0,
+   "mass": 24.69,
    "material": "PA12",
    "bolt": false,
    "spec": ""
