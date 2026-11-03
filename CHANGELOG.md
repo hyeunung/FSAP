@@ -343,3 +343,4 @@ When a new version is released:
 4. Keep versions in reverse chronological order.
 
 ---
+- v2.1.1 문서: BOM·설계검토서 v2.1.1, 결정로그 DC2-06 결과·디테일 D1·D2, 요구서 DC2-06 해결, 자료대기 D-10 쓰는 곳
