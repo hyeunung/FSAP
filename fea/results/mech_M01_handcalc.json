@@ -1,0 +1,432 @@
+{
+ "step_bbox": {
+  "P_M01_HANGER": [
+   [
+    0.0,
+    400.0
+   ],
+   [
+    -90.0,
+    120.0
+   ],
+   [
+    0.0,
+    650.0
+   ]
+  ],
+  "P_M01_FOOT": [
+   [
+    -10.0,
+    3.5
+   ],
+   [
+    -8.0,
+    6.0
+   ],
+   [
+    0.0,
+    100.0
+   ]
+  ]
+ },
+ "hanger": {
+  "bend_root_run": {
+   "M_Nmm": 221273,
+   "stress_MPa": 51.9,
+   "stress_curved_MPa": 67.4,
+   "sf": 3.95,
+   "sf_curved": 3.04,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false
+  },
+  "bend_root_mis": {
+   "M_Nmm": 259633,
+   "stress_MPa": 60.9,
+   "stress_curved_MPa": 79.1,
+   "sf": 3.37,
+   "sf_curved": 2.59,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false
+  },
+  "design_basis_50kg_x2": {
+   "stress_MPa": 25.8,
+   "sf": 7.96
+  },
+  "tilt_static_1g": {
+   "M_Nmm": 68278,
+   "theta_mrad": 1.078,
+   "needle_shift_mm": 0.591
+  },
+  "tilt_drag_run_30N": {
+   "M_Nmm": 16440,
+   "theta_mrad": 0.26,
+   "needle_shift_mm": 0.142
+  },
+  "tilt_drag_mis_100N": {
+   "M_Nmm": 54800,
+   "theta_mrad": 0.865,
+   "needle_shift_mm": 0.474
+  },
+  "rock_freq": {
+   "k_theta_Nm_rad": 63344,
+   "J_kgm2": 4.859,
+   "f_Hz": 18.2,
+   "stitch_Hz_at_1500_3000spm": [
+    25,
+    50
+   ]
+  }
+ },
+ "bolts": {
+  "upright_run_le8_SS400": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 922.0,
+    "torque_Nm": 7.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 7000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 16.94,
+    "암나사 전단": 7.51,
+    "분리(예압/외력)": 7.59
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.01,
+    "조임 좌면": 2.31,
+    "조임 암나사 전단": 0.99
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "upright_run_le6_tube_t6": {
+   "inputs": {
+    "d": 5,
+    "le": 6,
+    "load_N": 922.0,
+    "torque_Nm": 7.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 7000.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 16.94,
+    "암나사 전단": 5.63,
+    "분리(예압/외력)": 7.59
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.01,
+    "조임 좌면": 2.31,
+    "조임 암나사 전단": 0.74
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "shelf_run_le8": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 330.5,
+    "torque_Nm": 7.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 7000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 47.26,
+    "암나사 전단": 20.96,
+    "분리(예압/외력)": 21.18
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.01,
+    "조임 좌면": 2.31,
+    "조임 암나사 전단": 0.99
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "upright_mis_le8_SS400": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 1081.8,
+    "torque_Nm": 7.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 7000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 14.44,
+    "암나사 전단": 6.4,
+    "분리(예압/외력)": 6.47
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.01,
+    "조임 좌면": 2.31,
+    "조임 암나사 전단": 0.99
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "upright_mis_le6_tube_t6": {
+   "inputs": {
+    "d": 5,
+    "le": 6,
+    "load_N": 1081.8,
+    "torque_Nm": 7.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 7000.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 14.44,
+    "암나사 전단": 4.8,
+    "분리(예압/외력)": 6.47
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.01,
+    "조임 좌면": 2.31,
+    "조임 암나사 전단": 0.74
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "shelf_mis_le8": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 414.9,
+    "torque_Nm": 7.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 7000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 37.65,
+    "암나사 전단": 16.7,
+    "분리(예압/외력)": 16.87
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.01,
+    "조임 좌면": 2.31,
+    "조임 암나사 전단": 0.99
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "upright_slip": {
+   "friction_N": 4200,
+   "shear_N": 1866,
+   "sf": 2.25
+  },
+  "upright_slip_5Nm": {
+   "friction_N": 3000,
+   "shear_N": 1866,
+   "sf": 1.61
+  },
+  "upright_le6_5Nm": {
+   "inputs": {
+    "d": 5,
+    "le": 6,
+    "load_N": 1081.8,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 14.44,
+    "암나사 전단": 4.8,
+    "분리(예압/외력)": 4.62
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 3.23,
+    "조임 암나사 전단": 1.04
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": true,
+   "near_limit": [
+    "조임 암나사 전단"
+   ]
+  }
+ },
+ "foot": {
+  "sole_run_b6_Ltip": {
+   "inputs": {
+    "t": 2,
+    "b": 6,
+    "L": 9.04,
+    "E": 205000.0,
+    "Rp": 345.0,
+    "end": "cantilever",
+    "sf_min": 3
+   },
+   "force_N": 50.506,
+   "deflection_mm": 0.0152,
+   "stiffness_N_mm": 3329.8895,
+   "stress_MPa": 114.14,
+   "sf": 3.02,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "sole_mis_b6_Ltip": {
+   "inputs": {
+    "t": 2,
+    "b": 6,
+    "L": 9.04,
+    "E": 205000.0,
+    "Rp": 345.0,
+    "end": "cantilever",
+    "sf_min": 2
+   },
+   "force_N": 150.506,
+   "deflection_mm": 0.0452,
+   "stiffness_N_mm": 3329.8895,
+   "stress_MPa": 340.14,
+   "sf": 1.01,
+   "thin": false,
+   "ok": false,
+   "needs_fea": true
+  },
+  "sole_run_bhalfper_Ltip": {
+   "inputs": {
+    "t": 2,
+    "b": 9.42,
+    "L": 9.04,
+    "E": 205000.0,
+    "Rp": 345.0,
+    "end": "cantilever",
+    "sf_min": 3
+   },
+   "force_N": 50.506,
+   "deflection_mm": 0.0097,
+   "stiffness_N_mm": 5227.9264,
+   "stress_MPa": 72.7,
+   "sf": 4.75,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "sole_mis_bhalfper_Ltip": {
+   "inputs": {
+    "t": 2,
+    "b": 9.42,
+    "L": 9.04,
+    "E": 205000.0,
+    "Rp": 345.0,
+    "end": "cantilever",
+    "sf_min": 2
+   },
+   "force_N": 150.506,
+   "deflection_mm": 0.0288,
+   "stiffness_N_mm": 5227.9264,
+   "stress_MPa": 216.65,
+   "sf": 1.59,
+   "thin": false,
+   "ok": false,
+   "needs_fea": true
+  },
+  "fix_t3_mis_b6_Ltip": {
+   "inputs": {
+    "t": 3,
+    "b": 6,
+    "L": 9.04,
+    "E": 205000.0,
+    "Rp": 345.0,
+    "end": "cantilever",
+    "sf_min": 2
+   },
+   "force_N": 150.506,
+   "deflection_mm": 0.0134,
+   "stiffness_N_mm": 11238.3769,
+   "stress_MPa": 151.18,
+   "sf": 2.28,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "bar_drag_run": {
+   "F_N": 30.0,
+   "lever_mm": 33.0,
+   "stress_MPa": 46.7,
+   "sf": 7.39,
+   "sf_min": 3,
+   "ok": true,
+   "near_10pct": false,
+   "deflection_mm": 0.028,
+   "gap_min_mm": 0.5,
+   "motion_ok": true
+  },
+  "bar_drag_mis": {
+   "F_N": 100.0,
+   "lever_mm": 33.0,
+   "stress_MPa": 155.6,
+   "sf": 2.22,
+   "sf_min": 2,
+   "ok": true,
+   "near_10pct": false,
+   "deflection_mm": 0.092,
+   "gap_min_mm": 0.5,
+   "motion_ok": true
+  },
+  "bar_buckle_mis": {
+   "Pcr_N": 29549,
+   "F_N": 150,
+   "sf": 197.0
+  }
+ }
+}
