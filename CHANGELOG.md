@@ -16,6 +16,7 @@ This project follows Semantic Versioning.
 - `3D_Modeling/FSAP_v2.1.2.sc`(210바디): U5 차지 상자 6개를 지우고 SV2RL28-1800 레일(보 앞면 Y 120, Z 300)·블록 2(U5_CAR), X 구동(P_M03_DRV_BRKT, 서보·감속기 임시, S5M 60T 풀리 2, 6200ZZ 임시, 벨트 임시 띠, 아이들러 브래킷·축), 대차판(A5052 t12)·벨트 클램프(PET-CF)·MGPM25-40Z 임시·체인 팔, 승강부(LIFT_TOP·옆판·U4 바퀴 묶음 X −1700 복사·E32), igus 2400.05.075.0(약 22링크로 자름)·끝 브래킷 임시, 볼트 46을 넣었다. 유닛 컴포넌트 변화 없음.
 - 조인트: J_U5_LIFT 0~30 → −10~30. 동작 연구 CYCLE_L·G1·G2 J_U5_LIFT 테이프 위 1.0 구간(모서리마다). 과제 범위 간섭 0(X 5점 × LIFT 2점, 4연구 U5 ↔ 매트·테이프 clear).
 - `tools/machine.json`·`tools/config.json` doc → v2.1.2, 생성기 `tools/gen_v2_m03.py`. 보고서 `docs/reports/mechanism/mech_M03_{measure,design,donecheck,model}.md`.
+- v2.1.2 문서: BOM(가공품 +14·구매품 +16행)·설계검토서 v2.1.2, 결정로그 M03 결과·디테일 M03-V1~V7, 요구서 M03 해결, 자료대기 D-114·D-115·D-95 쓰는 곳. 보고서 mech_M03_verify·fea, 해석 손계산 `fea/cases/mech_M03_handcalc.py`.
 
 ## v2.1.1 — 2026-11-04 (DC2-06 바늘 옆 바퀴 ↔ 머리판 탈착 길)
 
