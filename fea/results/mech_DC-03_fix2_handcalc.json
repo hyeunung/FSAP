@@ -1,0 +1,135 @@
+{
+ "case": "mech_DC-03_fix2_handcalc",
+ "part": "P_DC03_YMOV (fix2, v1.0.11)",
+ "mass_kg": 0.573,
+ "M_Nmm": {
+  "run": 5144,
+  "mis": 26915
+ },
+ "section": {
+  "I_channel_mm4": 6682,
+  "c_mm": 13.5,
+  "I_net_mm4": 6319,
+  "c_net_mm": 13.08
+ },
+ "results": [
+  {
+   "part": "Z -258~-170 ㄷ 단면(옆판 다리 아래 끝까지)",
+   "case": "run",
+   "sigma_vm_MPa": 10.4,
+   "sf": 19.73,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": true,
+   "I_mm4": 6682,
+   "c_mm": 13.5
+  },
+  {
+   "part": "Z -258~-170 ㄷ 단면(옆판 다리 아래 끝까지)",
+   "case": "mis",
+   "sigma_vm_MPa": 54.4,
+   "sf": 3.77,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": false
+  },
+  {
+   "part": "볼트 구멍 자리 Z -245 순단면(웹 -11), 모멘트 전부 가정(안전 쪽)",
+   "case": "run",
+   "sigma_vm_MPa": 10.6,
+   "sf": 19.25,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": true,
+   "I_mm4": 6319,
+   "c_mm": 13.08
+  },
+  {
+   "part": "볼트 구멍 자리 Z -245 순단면(웹 -11), 모멘트 전부 가정(안전 쪽)",
+   "case": "mis",
+   "sigma_vm_MPa": 55.7,
+   "sf": 3.68,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": false
+  },
+  {
+   "part": "2회차 위험 띠 Z -239~-230(이제 ㄷ)",
+   "case": "mis",
+   "sigma_vm_MPa": 54.4,
+   "sf": 3.77,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": false,
+   "was_sf": 0.69
+  }
+ ],
+ "weld": {
+  "q_N_per_mm": 8.54,
+  "fillet_a2_tau_MPa": 3.05,
+  "sf": 38.8
+ },
+ "bolt": {
+  "mis": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 1035.1785096153847,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 15.09,
+    "암나사 전단": 5.99
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "run": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 197.84322115384614,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 78.95,
+    "암나사 전단": 31.35
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "tip_defl_from_leg_mis_mm": 0.363
+}
