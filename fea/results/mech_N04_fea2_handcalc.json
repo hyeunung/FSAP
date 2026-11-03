@@ -1,0 +1,272 @@
+{
+ "_note": "N04 해석 3회차 손계산(FEA 환경 없음 D-16). 단위 mm·N·MPa",
+ "items": [
+  {
+   "part": "CDJ2B16-110 로드(구매품, 참고 M-06)",
+   "where": "로드 Ø5 편심 굽힘(패드 힘선 편심 e)",
+   "case": "run",
+   "stress_MPa": 109.8,
+   "mat": "SUS304",
+   "sf": 1.87,
+   "sf_min": 3.0,
+   "judge": "디테일",
+   "note": "편심 모멘트 1347 Nmm. 끝 옆 힘으로 바꾸면 약 10.0 N(가이드 길이 12 가정) - SMC 허용치(D-89)와 비교 필요"
+  },
+  {
+   "part": "CDJ2B16-110 로드(구매품, 참고 M-06)",
+   "where": "로드 Ø5 편심 굽힘(패드 힘선 편심 e)",
+   "case": "mis",
+   "stress_MPa": 153.7,
+   "mat": "SUS304",
+   "sf": 1.33,
+   "sf_min": 2.0,
+   "judge": "디테일",
+   "note": "편심 모멘트 1886 Nmm. 끝 옆 힘으로 바꾸면 약 14.0 N(가이드 길이 12 가정) - SMC 허용치(D-89)와 비교 필요"
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "세운 판 뿌리 Z -44(24 x t4, 힘선 팔 33.0)",
+   "case": "run",
+   "stress_MPa": 51.8,
+   "mat": "SUS304",
+   "sf": 3.95,
+   "sf_min": 3.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "세운 판 뿌리 비틀림(X 편심 10.75)",
+   "case": "run",
+   "stress_MPa": 17.3,
+   "mat": "SUS304",
+   "sf": 11.86,
+   "sf_min": 3.0,
+   "judge": "됨",
+   "note": "등가 sqrt3 tau"
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "세운 판 뿌리 Z -44(24 x t4, 힘선 팔 33.0)",
+   "case": "mis",
+   "stress_MPa": 72.6,
+   "mat": "SUS304",
+   "sf": 2.82,
+   "sf_min": 2.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "세운 판 뿌리 비틀림(X 편심 10.75)",
+   "case": "mis",
+   "stress_MPa": 24.2,
+   "mat": "SUS304",
+   "sf": 8.47,
+   "sf_min": 2.0,
+   "judge": "됨",
+   "note": "등가 sqrt3 tau"
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "날개 굽힘(24 x t4, 인서트까지 M)",
+   "case": "run",
+   "stress_MPa": 58.1,
+   "mat": "SUS304",
+   "sf": 3.53,
+   "sf_min": 3.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "날개 굽힘(24 x t4, 인서트까지 M)",
+   "case": "mis",
+   "stress_MPa": 81.4,
+   "mat": "SUS304",
+   "sf": 2.52,
+   "sf_min": 2.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "바닥 -X 꺾임(외팔 띠 137, +X 벽이 위층 홈으로 떨어짐)",
+   "case": "run",
+   "stress_MPa": 58.7,
+   "mat": "SUS304",
+   "sf": 3.49,
+   "sf_min": 3.0,
+   "judge": "됨",
+   "note": "양쪽 벽 지지였던 2회차 14.6(운전)의 약 4배"
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "-X 옆벽 위 끝 Z -40(같은 m)",
+   "case": "run",
+   "stress_MPa": 58.7,
+   "mat": "SUS304",
+   "sf": 3.49,
+   "sf_min": 3.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "바닥 -X 꺾임(외팔 띠 137, +X 벽이 위층 홈으로 떨어짐)",
+   "case": "mis",
+   "stress_MPa": 19.6,
+   "mat": "SUS304",
+   "sf": 10.48,
+   "sf_min": 2.0,
+   "judge": "됨",
+   "note": "양쪽 벽 지지였던 2회차 14.6(운전)의 약 4배"
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "-X 옆벽 위 끝 Z -40(같은 m)",
+   "case": "mis",
+   "stress_MPa": 19.6,
+   "mat": "SUS304",
+   "sf": 10.48,
+   "sf_min": 2.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "끝벽 Y 1528.5~1530(137 x 83.5, 네 변 지지, 2F 고르게)",
+   "case": "run",
+   "stress_MPa": 26.5,
+   "mat": "SUS304",
+   "sf": 7.73,
+   "sf_min": 3.0,
+   "judge": "됨",
+   "note": "U턴 받이 힘의 실제 값은 사슬 마찰 수준. 막힘(안장 Y 축 밀어 넣기)은 서보 토크 제한으로 막는다(U-09 제어 제약)"
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "끝벽 Y 1528.5~1530(137 x 83.5, 네 변 지지, 2F 고르게)",
+   "case": "mis",
+   "stress_MPa": 37.1,
+   "mat": "SUS304",
+   "sf": 5.52,
+   "sf_min": 2.0,
+   "judge": "됨",
+   "note": "U턴 받이 힘의 실제 값은 사슬 마찰 수준. 막힘(안장 Y 축 밀어 넣기)은 서보 토크 제한으로 막는다(U-09 제어 제약)"
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "위층 턱 X 10 x t1.5(Y 930~1430)",
+   "case": "run",
+   "stress_MPa": 2.6,
+   "mat": "SUS304",
+   "sf": 80.37,
+   "sf_min": 3.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "위층 턱 X 10 x t1.5(Y 930~1430)",
+   "case": "mis",
+   "stress_MPa": 0.9,
+   "mat": "SUS304",
+   "sf": 241.12,
+   "sf_min": 2.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_CHAIN_NP/PN_BAR",
+   "where": "막대 가운데 굽힘(지지 132, 10 x t3, 손바닥 몫 10 N)",
+   "case": "run",
+   "stress_MPa": 13.7,
+   "mat": "A6063",
+   "sf": 8.05,
+   "sf_min": 3.0,
+   "judge": "됨",
+   "note": ""
+  },
+  {
+   "part": "P_N04_CHAIN_NP/PN_BAR",
+   "where": "막대 가운데 굽힘(지지 132, 10 x t3, 손바닥 몫 30 N)",
+   "case": "mis",
+   "stress_MPa": 41.0,
+   "mat": "A6063",
+   "sf": 2.68,
+   "sf_min": 2.0,
+   "judge": "됨",
+   "note": ""
+  }
+ ],
+ "other": {
+  "line_of_force": {
+   "rod_axis": [
+    -818.0,
+    -69.0
+   ],
+   "lug": [
+    -828.75,
+    -77.0
+   ],
+   "ex": 10.75,
+   "ez": 8.0,
+   "e": 13.4
+  },
+  "insert_pull_N": {
+   "now(날개 -Y, 지렛대 4)": {
+    "run": 930,
+    "mis": 1302
+   },
+   "fix(날개 +Y Y 775~795, 발꿈치 775, 인서트 789, 지렛대 14)": {
+    "run": 266,
+    "mis": 372
+   },
+   "M_panel_Nmm": {
+    "run": 3720,
+    "mis": 5208
+   }
+  },
+  "cylbkt_tip_deflection_mm": {
+   "run": 0.049,
+   "mis": 0.068
+  },
+  "pad_lug_bearing_MPa": {
+   "run": 22.3,
+   "mis": 31.3
+  },
+  "store_plusX_edge_drop": {
+   "run": {
+    "q_MPa": 0.00234,
+    "bottom_mm": 1.73,
+    "wall_rot_mm": 4.3,
+    "plusX_edge_drop_mm": 6.03
+   },
+   "mis": {
+    "q_MPa": 0.00078,
+    "bottom_mm": 0.58,
+    "wall_rot_mm": 1.43,
+    "plusX_edge_drop_mm": 2.01
+   }
+  },
+  "store_plusX_edge_drop_note": "+X 벽 아래쪽(Y 933~1528.5)은 위층 홈 Z -79.5~-75.5로 위쪽과 떨어지고 Y 930~933(3)과 끝벽에만 이어진다. 끝벽·앞 3 폭 이음의 도움은 무시(긴 쪽 596 ≫ 137). 오조작 열은 x1 g(정지 처짐)",
+  "bar_deflection_mm": {
+   "run": 0.31,
+   "mis": 0.93
+  },
+  "bar_point300_ref": {
+   "stress_MPa": 660,
+   "note": "300 N 한 점은 폭 10 막대에 맞지 않는 하중(사슬 칸도 같은 폭)이라 참고만. 판정은 손바닥 모델(작은 받침 규칙)"
+  },
+  "bar_lug_allow_N_NP": {
+   "run": 165.0,
+   "mis": 247.5
+  },
+  "bar_lug_allow_N_PN": {
+   "run": 110.0,
+   "mis": 165.0
+  },
+  "bar_lug_note": "정하중 스프링 형번 미정(바디 없음). 물림 X 1 mm는 막대 X 놀이가 1을 넘으면 빠진다(정밀 체인, 검도 몫)"
+ }
+}
