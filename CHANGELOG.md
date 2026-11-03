@@ -16,7 +16,7 @@ This project follows Semantic Versioning.
 - `3D_Modeling/FSAP_v2.0.1.sc`: 유닛 차지 공간 상자 32개(U1 보·기둥·바닥틀, U2 볼 테이블, U3 윗헤드·아랫유닛·노루발·바늘, U4 바늘 옆 바퀴 자리·원판 Ø250, U5 레일·체인·대차·승강, U6 슈·센서, U7 바인더·테이프 길·롤, U8 레귤레이터·라이트 커튼·HMI·경광등)를 기존 컴포넌트에 넣음. `J_U5_X` 한계 0~1380(d₂ 420~1800).
 - 기계 크기 3750 × 3165 × 1900, 보 밑면 Z 250, 볼 테이블 3150 × 3115 윗면 Z 0, 작업면 높이 900, 작업자 포켓 +X·−Y.
 - 과제 범위 간섭 0. `tools/machine.json` doc·J_U5_X·units·temp_values·baseline 고침, 생성기 `tools/gen_v2_m00.py`, 설계검토서 `docs/review/FSAP_v2.0.1_review.md`(제어 순서 M00-Q1~Q3), 결정로그 M00-D01~D10·M00-M01~M03, 자료대기 D-105 고침·D-107.
-- 보고서 `docs/reports/mechanism/mech_M00_{measure,design,model}.md`.
+- 보고서 `docs/reports/mechanism/mech_M00_{measure,design,model,verify}.md`. 문서: BOM `docs/bom/FSAP_v2.0.1_*.csv`(머리줄만, 부품 0), 설계검토서 변경 표·디테일 M00-X6, 결정로그 "구동 M00 결과", 요구서 M00 해결.
 
 ## v2.0.0 — 2026-11-03 (준비부: 빈 설계 골격)
 
