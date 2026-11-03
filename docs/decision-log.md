@@ -2196,3 +2196,14 @@ v1.0.15 → v1.0.16. 라운드 끝 전체 회귀(`mech_regression_2.md`) 동작 
 |---|---|---|---|
 | N04-D13 | (갱신) 멈춤 물림이 작다: NP 이 X 1 × Z 2, PN 러그 X 2 × Z 1.5. PN 러그–몸 잇는 면 0.5 × 9. PIN_3/4 X 1폭 | P_N04_PANEL 이 2, P_N04_CHAIN_PN_BAR 러그, P_N04_PIN_3/4 | 이·러그를 나사 고정 SUS 블록으로, PN 몸을 러그 위로 덮는 L 단면 1 피스, 정하중 스프링 형번 정한 뒤 지압 손계산 |
 | N04-D17 | 루트 컴포넌트 피처가 움직이는 바디를 고치는 다른 곳이 남았는지 전수 확인 안 함 | 타임라인 전체 | 피처별 component 확인, 있으면 그 컴포넌트로 옮김 |
+
+## 구동 전체 회귀 수정 (2026-11-03)
+
+v1.0.16 결과 문서. 보고서 `docs/reports/mechanism/mech_regfix.md`, 다시 돌린 회귀 `docs/reports/mechanism/mech_regression2.md`, BOM `docs/bom/FSAP_v1.0.16_made.csv`·`_purchased.csv`, 설계검토서 `docs/review/FSAP_v1.0.16_review.md`.
+
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| RF-04 | v1.0.16 회귀 수정을 받아들인다. 형상은 RF-02대로 두고 더 고치지 않는다 | 다시 돌린 전체 회귀가 본 범위 1,881단계에서 도달 상태 새 겹침 0, 통로 막힘 0(pass). P1·P2는 CYCLE_L·S 전 단계와 MAINT에서 0 | `tools/out/mech_regrun_3/summary.json`, mech_regression2.md |
+| RF-05 | 자세 321~324(J_U4_X 1217.5, J_U4_Y 220~295) 14쌍 겹침(최대 30,294 mm³)은 기구 문제가 아니라 디테일로 남긴다. 제어(U-09)에서 N03 소프트 리밋과 N04-Q2 인터록(\|Yc\| ≥ 200일 때만 J_U4_X > 800)을 필수로 넣는다 | 제어 금지 구역(xy_forbidden [2]) 안이고 실제 연구 7개는 이 구역에 오지 않는다 | summary.json new_overlaps grp 'P:Y선 X1217.5:금지' |
+| RF-06 | 저장본의 막대 NP가 REST 자리가 아니라 J_N04_BAR_NP 0 자리(Y 57~67)에 있다 → 다음 저장 전 `motion.play REST step 0`으로 확인한다(디테일) | 저장 대기 자세 규칙(요구서 8-6) | cmp/v1.0.16.json bbox Y 57~67, 서명 REST Y −481~−471 |
+| RF-07 | 완료 기준(실행 규칙 13)은 아직 아니다. 못 본 범위 CYCLE_G1 180~528, CYCLE_G2 0~597, 자세 325~349, 사슬 길 프로브 PRB는 다음 라운드 전체 회귀가 먼저 본다 | regrun 전체 상한 30분(요구서 6-4)에 걸렸다 | mech_regression2.md coverage.unseen |

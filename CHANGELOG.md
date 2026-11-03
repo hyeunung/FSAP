@@ -8,6 +8,8 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v1.0.16 결과 문서: BOM·설계검토서(FSAP_v1.0.16), 결정로그 RF-04~07, 다시 돌린 전체 회귀 본 범위 새 겹침 0(못 본 범위 G1 뒤·G2·자세 325~349·PRB 남음).
+
 ## v1.0 준비 — 2026-11-03 (개념 재수립)
 
 - 요구서 0-8 전체 구동 개념 **확립**(사용자 동의 2026-11-03): 헤드 자체 이송(Dürkopp 867-392342 개조, 기둥 없음), 가운데 진공 원판 + 에어 테이블, X·Y 따라가기, 벤치마크 거의 그대로(결정로그 C-12~C-24, `docs/concept/v1-drive-concept-discussion.md`).
