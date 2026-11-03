@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.1.2.sc",
+ "doc": "../3D_Modeling/FSAP_v2.1.3.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -368,10 +368,19 @@
   },
   "U2_TABLE": {
    "parts": [
-    "U2_"
+    "U2_",
+    "P_M04_",
+    "HFS8-4080-",
+    "HFC8-4080-B_M04",
+    "HBLFSN8_M04",
+    "HNTT8-8_M04",
+    "HNTT8-5_M04",
+    "STEP대기_CB8-16_M04",
+    "STEP대기_FHS-M5-10_M04",
+    "STEP대기_LEVELER_M8_M04"
    ],
    "moving": false,
-   "_note": "고정. 볼 테이블 상자 U2_PLATE(윗면 Z 0)·U2_SUB(M00)"
+   "_note": "고정. M04(v2.1.3): 센터판 P_M04_INSERT(A5052, 윗면 Z 0) + SUS304 t4 타공 패널 6장(Z -12~-8, 압입 구멍 Ø36 2,624) + HFS8-4080 틀(레일 Z -92~-12, 침목 -172~-92, 가로대) + 레벨러 36(U1_BASE Z -250). 볼 트랜스퍼 바디는 이번 저장에 없음(보고서 mech_M04_model.md 3절)"
   },
   "U3_HEAD": {
    "parts": [
