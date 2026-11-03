@@ -1,0 +1,599 @@
+{
+ "run": "mech_2026-11-03_M00",
+ "status": "완료",
+ "engine": "v3.8.1",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-03",
+ "journal": "wf_972346a5-09f",
+ "totals": {
+  "agents": 20,
+  "agent_sec": 4374,
+  "input": 2535309,
+  "cache_read": 42620274,
+  "output": 410785,
+  "tools": 348,
+  "wall_sec": 4372
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 203,
+   "agents": 3,
+   "output": 22888
+  },
+  "▸ modeling-round": {
+   "sec": 4171,
+   "agents": 17,
+   "output": 387897
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 78,
+   "tokens": {
+    "input": 67451,
+    "cache_read": 54606,
+    "output": 10805
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 54,
+   "tokens": {
+    "input": 81401,
+    "cache_read": 134506,
+    "output": 5898
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 71,
+   "tokens": {
+    "input": 102957,
+    "cache_read": 345789,
+    "output": 6185
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 75,
+   "tokens": {
+    "input": 26532,
+    "cache_read": 95567,
+    "output": 10823
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 40,
+   "tokens": {
+    "input": 81412,
+    "cache_read": 223187,
+    "output": 2944
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "준비부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 956,
+   "tokens": {
+    "input": 357680,
+    "cache_read": 12752962,
+    "output": 107661
+   },
+   "tools": 75,
+   "turns": 56
+  },
+  {
+   "label": "준비 점검부 다시",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 84,
+   "tokens": {
+    "input": 120148,
+    "cache_read": 1308350,
+    "output": 7394
+   },
+   "tools": 15,
+   "turns": 15
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 16,
+   "tokens": {
+    "input": 73676,
+    "cache_read": 216566,
+    "output": 1229
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "M00 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 253,
+   "tokens": {
+    "input": 158229,
+    "cache_read": 2624906,
+    "output": 23560
+   },
+   "tools": 24,
+   "turns": 24
+  },
+  {
+   "label": "M00 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 28,
+   "tokens": {
+    "input": 79388,
+    "cache_read": 149567,
+    "output": 2786
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "M00 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 827,
+   "tokens": {
+    "input": 266048,
+    "cache_read": 6864084,
+    "output": 83081
+   },
+   "tools": 43,
+   "turns": 37
+  },
+  {
+   "label": "M00 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 100,
+   "tokens": {
+    "input": 103399,
+    "cache_read": 432864,
+    "output": 8803
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "M00 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 456,
+   "tokens": {
+    "input": 211268,
+    "cache_read": 5988503,
+    "output": 35435
+   },
+   "tools": 50,
+   "turns": 40
+  },
+  {
+   "label": "M00 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 379,
+   "tokens": {
+    "input": 216586,
+    "cache_read": 5344349,
+    "output": 35611
+   },
+   "tools": 49,
+   "turns": 37
+  },
+  {
+   "label": "M00 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 68,
+   "tokens": {
+    "input": 97408,
+    "cache_read": 513615,
+    "output": 6899
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 475,
+   "tokens": {
+    "input": 139711,
+    "cache_read": 3097433,
+    "output": 21286
+   },
+   "tools": 28,
+   "turns": 28
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 298,
+   "tokens": {
+    "input": 149687,
+    "cache_read": 1631342,
+    "output": 27801
+   },
+   "tools": 16,
+   "turns": 16
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 61,
+   "tokens": {
+    "input": 93160,
+    "cache_read": 424841,
+    "output": 6538
+   },
+   "tools": 5,
+   "turns": 6
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 34,
+   "tokens": {
+    "input": 81144,
+    "cache_read": 376438,
+    "output": 3002
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 21,
+   "tokens": {
+    "input": 28024,
+    "cache_read": 40799,
+    "output": 3044
+   },
+   "tools": 1,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "M00",
+    "size": "L",
+    "status": "완료",
+    "chosen": "M00-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.0.1.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "machine.json 기준선에는 바퀴↔WP_TAPE_* 접촉이 '깊이 1.0 mm, 부피 0'으로 적혀 있는데, 실측 겹침은 0이 아니고 이음매(SEAM)까지 닿는다",
+      "where": "machine.json baseline_overlaps의 U4_WHEEL_TIRE↔TAPE_S·SEAM_S(CYCLE_S 112·337단계)와 U5_WHEEL_TIRE↔TAPE_G(CYCLE_G2 315단계)",
+      "evidence": "inspect.interference 실측: 234.3 / 150.0 / 149.4 / 87.3 mm³, 깊이 최대 2 mm(이음매 Z 11~12). 의도된 접촉 후보로 보고 paircache judged.json에 12쌍을 남겼다",
+      "fix": "M02·M03에서 J_U4_PRESS·J_U5_LIFT 내림 값이 밑에 있는 것의 윗면(Z 10/11/12)을 따르게 접촉 추종으로 바꾼다. 아니면 기준선에 쌍·부피(≤250 mm³)·깊이(≤2 mm)·이음매 포함을 고쳐 적는다",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2484,
+    "estimate_s": 44.2,
+    "actual_s": 245.3,
+    "chunk_times": [
+     {
+      "id": "POSE_5_170",
+      "elapsed_s": 15.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L_20_716",
+      "elapsed_s": 172.2,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1_0_514",
+      "elapsed_s": 189.2,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G2_0_630",
+      "elapsed_s": 200.2,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S_0_450",
+      "elapsed_s": 243.2,
+      "status": "ok"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "자세 5점 1.0 s(점당 0.143 s), 연구 20단계 2.0 s(단계당 0.085 s), 오류 없음",
+    "per_step_s": {
+     "study": 0.0853,
+     "pose": 0.1429
+    },
+    "pose_steps": 171,
+    "reduced": "",
+    "seen": [
+     "CYCLE_L 0~716",
+     "CYCLE_S 0~450",
+     "CYCLE_G1 0~514",
+     "CYCLE_G2 0~630",
+     "POSE 0~170 (J_U5_X 0~1380 25 mm × LIFT·PRESS·PRESSER·NEEDLE 내림·가운데·들림)"
+    ],
+    "unseen": []
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "준비부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 940,
+     "cad_calls": 24,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "준비 점검부 다시",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 5,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 1,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M00 측정부",
+    "phase": "M00 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 5,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "M00 카탈로그부",
+    "phase": "M00 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "M00 기구설계부",
+    "phase": "M00 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 759,
+     "cad_calls": 3,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "M00 완료 판정 확인",
+    "phase": "M00 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 160,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M00 모델링부",
+    "phase": "M00 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 450,
+     "cad_calls": 13,
+     "file_opens": 4,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "M00 검도·체결",
+    "phase": "M00 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 400,
+     "cad_calls": 12,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "M00 문서·커밋",
+    "phase": "M00 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 10,
+     "file_opens": 9,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 4,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": []
+ },
+ "retro": {
+  "new_ids": [
+   "WF-176",
+   "WF-177"
+  ],
+  "repeat_ids": [
+   "WF-170",
+   "WF-172"
+  ],
+  "one_line": "회고 완료: docs/reports/engine-candidates.md에 WF-176(motion.play·clearance 결과가 MCP 응답 한도를 넘음)과 WF-177(기계 정의 기준선 겹침을 실측 없이 적음)을 새로 넣고, WF-170·WF-172는 반복 수를 올렸다. 최종 보고서에 개선 후보 절을 붙였고 커밋 2f3dd20은 푸시하지 않았다. 고친 엔진 파일은 없다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 20,
+  "시간 h": 1.2,
+  "출력 토큰": 410785,
+  "실패": 0
+ }
+}

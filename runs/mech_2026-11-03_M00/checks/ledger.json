@@ -1,0 +1,824 @@
+{
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.0.1.sc",
+ "date": "2026-11-03",
+ "parts": {
+  "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
+   "name": "REF_NEEDLE_AXIS_MARK",
+   "unit": "U1_FRAME",
+   "component": "U1_FRAME",
+   "bbox": [
+    -1.0,
+    1.0,
+    -1.0,
+    1.0,
+    -301.0,
+    -300.0
+   ],
+   "volume": 3.141,
+   "mass": 0.004,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_WHEEL/U4_WHEEL_TIRE": {
+   "name": "U4_WHEEL_TIRE",
+   "unit": "U4_WHEEL_N",
+   "component": "U4_WHEEL",
+   "bbox": [
+    -112.5,
+    -87.5,
+    -59.999,
+    59.999,
+    40.001,
+    159.999
+   ],
+   "volume": 282725.461,
+   "mass": 364.716,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_WHEEL/U5_WHEEL_TIRE": {
+   "name": "U5_WHEEL_TIRE",
+   "unit": "U5_WHEEL_F",
+   "component": "U5_WHEEL",
+   "bbox": [
+    -1812.5,
+    -1787.5,
+    -59.999,
+    59.999,
+    40.001,
+    159.999
+   ],
+   "volume": 282725.461,
+   "mass": 364.716,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_MAT_L/MAT_L": {
+   "name": "MAT_L",
+   "unit": "WP",
+   "component": "WP_MAT_L",
+   "bbox": [
+    -1500.0,
+    0.0,
+    -1050.0,
+    450.0,
+    0.0,
+    10.0
+   ],
+   "volume": 22500000.0,
+   "mass": 29025.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TAPE_L/TAPE_L": {
+   "name": "TAPE_L",
+   "unit": "WP",
+   "component": "WP_TAPE_L",
+   "bbox": [
+    -1501.0,
+    1.0,
+    -1051.0,
+    451.0,
+    0.0,
+    11.0
+   ],
+   "volume": 721644.0,
+   "mass": 930.921,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TAPE_L/SEAM_L": {
+   "name": "SEAM_L",
+   "unit": "WP",
+   "component": "WP_TAPE_L",
+   "bbox": [
+    -10.0,
+    2.0,
+    -330.0,
+    -300.0,
+    11.0,
+    12.0
+   ],
+   "volume": 360.0,
+   "mass": 0.464,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_MAT_S/MAT_S": {
+   "name": "MAT_S",
+   "unit": "WP",
+   "component": "WP_MAT_S",
+   "bbox": [
+    -300.0,
+    0.0,
+    -400.0,
+    -200.0,
+    0.0,
+    10.0
+   ],
+   "volume": 600000.0,
+   "mass": 774.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TAPE_S/TAPE_S": {
+   "name": "TAPE_S",
+   "unit": "WP",
+   "component": "WP_TAPE_S",
+   "bbox": [
+    -301.0,
+    1.0,
+    -401.0,
+    -199.0,
+    0.0,
+    11.0
+   ],
+   "volume": 116644.0,
+   "mass": 150.471,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TAPE_S/SEAM_S": {
+   "name": "SEAM_S",
+   "unit": "WP",
+   "component": "WP_TAPE_S",
+   "bbox": [
+    -10.0,
+    2.0,
+    -330.0,
+    -300.0,
+    11.0,
+    12.0
+   ],
+   "volume": 360.0,
+   "mass": 0.464,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_MAT_G/MAT_G": {
+   "name": "MAT_G",
+   "unit": "WP",
+   "component": "WP_MAT_G",
+   "bbox": [
+    -1200.0,
+    0.0,
+    -900.0,
+    300.0,
+    0.0,
+    10.0
+   ],
+   "volume": 14363172.023,
+   "mass": 18528.492,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TAPE_G/TAPE_G": {
+   "name": "TAPE_G",
+   "unit": "WP",
+   "component": "WP_TAPE_G",
+   "bbox": [
+    -1201.0,
+    1.0,
+    -901.0,
+    301.0,
+    0.0,
+    11.0
+   ],
+   "volume": 610978.328,
+   "mass": 788.162,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TAPE_G/SEAM_G": {
+   "name": "SEAM_G",
+   "unit": "WP",
+   "component": "WP_TAPE_G",
+   "bbox": [
+    -10.0,
+    2.0,
+    -330.0,
+    -300.0,
+    11.0,
+    12.0
+   ],
+   "volume": 360.0,
+   "mass": 0.464,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U1_FRAME/U1_BEAM": {
+   "name": "U1_BEAM",
+   "unit": "U1_FRAME",
+   "component": "U1_FRAME",
+   "bbox": [
+    -2300.0,
+    1150.0,
+    120.0,
+    420.0,
+    250.0,
+    650.0
+   ],
+   "volume": 414000000.0,
+   "mass": 534060.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U1_FRAME/U1_COL_NX": {
+   "name": "U1_COL_NX",
+   "unit": "U1_FRAME",
+   "component": "U1_FRAME",
+   "bbox": [
+    -2450.0,
+    -2300.0,
+    120.0,
+    420.0,
+    -900.0,
+    650.0
+   ],
+   "volume": 69750000.0,
+   "mass": 89977.5,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U1_FRAME/U1_COL_PX": {
+   "name": "U1_COL_PX",
+   "unit": "U1_FRAME",
+   "component": "U1_FRAME",
+   "bbox": [
+    1150.0,
+    1300.0,
+    120.0,
+    420.0,
+    -900.0,
+    650.0
+   ],
+   "volume": 69750000.0,
+   "mass": 89977.5,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U1_FRAME/U1_BASE": {
+   "name": "U1_BASE",
+   "unit": "U1_FRAME",
+   "component": "U1_FRAME",
+   "bbox": [
+    -2300.0,
+    1150.0,
+    -1555.0,
+    1560.0,
+    -900.0,
+    -250.0
+   ],
+   "volume": 6349200000.0,
+   "mass": 8190468.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U2_TABLE/U2_PLATE": {
+   "name": "U2_PLATE",
+   "unit": "U2_TABLE",
+   "component": "U2_TABLE",
+   "bbox": [
+    -2175.0,
+    975.0,
+    -1555.0,
+    1560.0,
+    -40.0,
+    0.0
+   ],
+   "volume": 359726925.002,
+   "mass": 464047.733,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U2_TABLE/U2_SUB": {
+   "name": "U2_SUB",
+   "unit": "U2_TABLE",
+   "component": "U2_TABLE",
+   "bbox": [
+    -2175.0,
+    975.0,
+    -1555.0,
+    1560.0,
+    -250.0,
+    -40.0
+   ],
+   "volume": 1832433750.0,
+   "mass": 2363839.538,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U3_HEAD/U3_UPPER": {
+   "name": "U3_UPPER",
+   "unit": "U3_HEAD",
+   "component": "U3_HEAD",
+   "bbox": [
+    -80.0,
+    500.0,
+    -90.0,
+    90.0,
+    125.0,
+    560.0
+   ],
+   "volume": 45414000.0,
+   "mass": 58584.06,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U3_HEAD/U3_HANGER": {
+   "name": "U3_HANGER",
+   "unit": "U3_HEAD",
+   "component": "U3_HEAD",
+   "bbox": [
+    0.0,
+    400.0,
+    90.0,
+    120.0,
+    300.0,
+    650.0
+   ],
+   "volume": 4200000.0,
+   "mass": 5418.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U3_HEAD/U3_LOWER_POD": {
+   "name": "U3_LOWER_POD",
+   "unit": "U3_HEAD",
+   "component": "U3_HEAD",
+   "bbox": [
+    -40.0,
+    40.0,
+    -60.0,
+    60.0,
+    -200.0,
+    0.0
+   ],
+   "volume": 1919497.572,
+   "mass": 2476.152,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U3_HEAD/U3_LOWER_DRIVE": {
+   "name": "U3_LOWER_DRIVE",
+   "unit": "U3_HEAD",
+   "component": "U3_HEAD",
+   "bbox": [
+    40.0,
+    500.0,
+    -60.0,
+    60.0,
+    -200.0,
+    -60.0
+   ],
+   "volume": 7728000.0,
+   "mass": 9969.12,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U3_PRESSER/U3_PRESSER_BOX": {
+   "name": "U3_PRESSER_BOX",
+   "unit": "U3_HEAD",
+   "component": "U3_PRESSER",
+   "bbox": [
+    -8.0,
+    8.0,
+    -20.0,
+    15.0,
+    32.5,
+    120.0
+   ],
+   "volume": 47900.625,
+   "mass": 61.792,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U3_NEEDLE/U3_NEEDLE_PIN": {
+   "name": "U3_NEEDLE_PIN",
+   "unit": "U3_HEAD",
+   "component": "U3_NEEDLE",
+   "bbox": [
+    -0.8,
+    0.8,
+    -0.8,
+    0.8,
+    13.0,
+    110.0
+   ],
+   "volume": 194.942,
+   "mass": 0.251,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_WHEEL_N/U4_MOUNT": {
+   "name": "U4_MOUNT",
+   "unit": "U4_WHEEL_N",
+   "component": "U4_WHEEL_N",
+   "bbox": [
+    -380.0,
+    -90.0,
+    -60.0,
+    120.0,
+    210.0,
+    380.0
+   ],
+   "volume": 8874000.0,
+   "mass": 11447.46,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_WHEEL_N/U4_DISK": {
+   "name": "U4_DISK",
+   "unit": "U4_WHEEL_N",
+   "component": "U4_WHEEL_N",
+   "bbox": [
+    -299.998,
+    -50.002,
+    -124.997,
+    124.997,
+    -12.0,
+    0.0
+   ],
+   "volume": 589012.356,
+   "mass": 759.826,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_WHEEL_N/U4_DISK_BRG": {
+   "name": "U4_DISK_BRG",
+   "unit": "U4_WHEEL_N",
+   "component": "U4_WHEEL_N",
+   "bbox": [
+    -234.999,
+    -115.001,
+    -59.998,
+    59.998,
+    -60.0,
+    -12.0
+   ],
+   "volume": 542829.006,
+   "mass": 700.249,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_PRESS/U4_DRIVE": {
+   "name": "U4_DRIVE",
+   "unit": "U4_WHEEL_N",
+   "component": "U4_PRESS",
+   "bbox": [
+    -380.0,
+    -115.0,
+    -45.0,
+    45.0,
+    60.0,
+    145.0
+   ],
+   "volume": 2027250.0,
+   "mass": 2615.153,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_PRESS/U4_HOLDER": {
+   "name": "U4_HOLDER",
+   "unit": "U4_WHEEL_N",
+   "component": "U4_PRESS",
+   "bbox": [
+    -380.0,
+    -87.5,
+    -45.0,
+    45.0,
+    165.0,
+    200.0
+   ],
+   "volume": 921375.0,
+   "mass": 1188.574,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_WHEEL_F/U5_RAIL": {
+   "name": "U5_RAIL",
+   "unit": "U5_WHEEL_F",
+   "component": "U5_WHEEL_F",
+   "bbox": [
+    -2140.0,
+    -340.0,
+    100.0,
+    120.0,
+    400.0,
+    480.0
+   ],
+   "volume": 2880000.0,
+   "mass": 3715.2,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_WHEEL_F/U5_CHAIN": {
+   "name": "U5_CHAIN",
+   "unit": "U5_WHEEL_F",
+   "component": "U5_WHEEL_F",
+   "bbox": [
+    -2200.0,
+    -300.0,
+    150.0,
+    390.0,
+    650.0,
+    750.0
+   ],
+   "volume": 45600000.0,
+   "mass": 58824.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_CAR/U5_CARRIAGE": {
+   "name": "U5_CARRIAGE",
+   "unit": "U5_WHEEL_F",
+   "component": "U5_CAR",
+   "bbox": [
+    -2072.5,
+    -1787.5,
+    50.0,
+    98.0,
+    220.0,
+    500.0
+   ],
+   "volume": 3830400.0,
+   "mass": 4941.216,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_LIFT/U5_DRIVE": {
+   "name": "U5_DRIVE",
+   "unit": "U5_WHEEL_F",
+   "component": "U5_LIFT",
+   "bbox": [
+    -2072.5,
+    -1815.0,
+    -45.0,
+    45.0,
+    60.0,
+    145.0
+   ],
+   "volume": 1969875.0,
+   "mass": 2541.139,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_LIFT/U5_HOLDER": {
+   "name": "U5_HOLDER",
+   "unit": "U5_WHEEL_F",
+   "component": "U5_LIFT",
+   "bbox": [
+    -2072.5,
+    -1787.5,
+    -45.0,
+    45.0,
+    165.0,
+    210.0
+   ],
+   "volume": 1154250.0,
+   "mass": 1488.983,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U6_SENSOR/U6_SHOE_SENSOR": {
+   "name": "U6_SHOE_SENSOR",
+   "unit": "U6_SENSOR",
+   "component": "U6_SENSOR",
+   "bbox": [
+    -85.0,
+    10.0,
+    -200.0,
+    -100.0,
+    12.5,
+    90.0
+   ],
+   "volume": 736250.0,
+   "mass": 949.763,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U7_TAPE/U7_BINDER": {
+   "name": "U7_BINDER",
+   "unit": "U7_TAPE",
+   "component": "U7_TAPE",
+   "bbox": [
+    -15.0,
+    30.0,
+    -95.0,
+    -25.0,
+    12.5,
+    60.0
+   ],
+   "volume": 149625.0,
+   "mass": 193.016,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U7_TAPE/U7_PATH_V": {
+   "name": "U7_PATH_V",
+   "unit": "U7_TAPE",
+   "component": "U7_TAPE",
+   "bbox": [
+    30.0,
+    110.0,
+    -135.0,
+    -95.0,
+    12.5,
+    250.0
+   ],
+   "volume": 760000.0,
+   "mass": 980.4,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U7_TAPE/U7_PATH_H": {
+   "name": "U7_PATH_H",
+   "unit": "U7_TAPE",
+   "component": "U7_TAPE",
+   "bbox": [
+    110.0,
+    520.0,
+    -135.0,
+    -95.0,
+    200.0,
+    250.0
+   ],
+   "volume": 820000.0,
+   "mass": 1057.8,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U7_TAPE/U7_ROLL": {
+   "name": "U7_ROLL",
+   "unit": "U7_TAPE",
+   "component": "U7_TAPE",
+   "bbox": [
+    520.0,
+    820.0,
+    -220.0,
+    20.0,
+    250.0,
+    550.0
+   ],
+   "volume": 21600000.0,
+   "mass": 27864.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U8_PNEU/U8_REG": {
+   "name": "U8_REG",
+   "unit": "U8_PNEU",
+   "component": "U8_PNEU",
+   "bbox": [
+    600.0,
+    1000.0,
+    40.0,
+    120.0,
+    300.0,
+    600.0
+   ],
+   "volume": 9600000.0,
+   "mass": 12384.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U8_PNEU/U8_LC_L": {
+   "name": "U8_LC_L",
+   "unit": "U8_PNEU",
+   "component": "U8_PNEU",
+   "bbox": [
+    -2350.0,
+    -2300.0,
+    -1605.0,
+    -1555.0,
+    -900.0,
+    1000.0
+   ],
+   "volume": 4750000.0,
+   "mass": 6127.5,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U8_PNEU/U8_LC_R": {
+   "name": "U8_LC_R",
+   "unit": "U8_PNEU",
+   "component": "U8_PNEU",
+   "bbox": [
+    350.0,
+    400.0,
+    -1605.0,
+    -1555.0,
+    -900.0,
+    1000.0
+   ],
+   "volume": 4750000.0,
+   "mass": 6127.5,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U8_PNEU/U8_HMI": {
+   "name": "U8_HMI",
+   "unit": "U8_PNEU",
+   "component": "U8_PNEU",
+   "bbox": [
+    1150.0,
+    1300.0,
+    -900.0,
+    -700.0,
+    -900.0,
+    500.0
+   ],
+   "volume": 42000000.0,
+   "mass": 54180.0,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U8_PNEU/U8_LAMP": {
+   "name": "U8_LAMP",
+   "unit": "U8_PNEU",
+   "component": "U8_PNEU",
+   "bbox": [
+    1195.0,
+    1255.0,
+    240.001,
+    299.999,
+    650.0,
+    1000.0
+   ],
+   "volume": 989437.309,
+   "mass": 1276.374,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  }
+ },
+ "passed": {
+  "regression": {
+   "date": "2026-11-03",
+   "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.0.1.sc"
+  },
+  "state:CYCLE_L:0-716": {
+   "date": "2026-11-03",
+   "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.0.1.sc"
+  },
+  "state:CYCLE_S:0-450": {
+   "date": "2026-11-03",
+   "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.0.1.sc"
+  },
+  "state:CYCLE_G1:0-514": {
+   "date": "2026-11-03",
+   "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.0.1.sc"
+  },
+  "state:CYCLE_G2:0-630": {
+   "date": "2026-11-03",
+   "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.0.1.sc"
+  },
+  "pose:J_U5_X_0-1380x3": {
+   "date": "2026-11-03",
+   "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.0.1.sc"
+  }
+ }
+}
