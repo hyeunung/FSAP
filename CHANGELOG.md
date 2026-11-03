@@ -11,6 +11,11 @@ This project follows Semantic Versioning.
 - 대화 결정(문서만, 모델 변경 없음): 결정로그 C-25 재봉 헤드는 사양으로 정하고 867·Juki LU-2810·썬스타를 견적 비교, C-26 3D프린터식(패턴 재봉기 모양) 기각·R375X 방식 유지. 자료대기 D-10에 견적 비교·치수 재확인 조건 추가.
 - v1.0.16 결과 문서: BOM·설계검토서(FSAP_v1.0.16), 결정로그 RF-04~07, 다시 돌린 전체 회귀 본 범위 새 겹침 0(못 본 범위 G1 뒤·G2·자세 325~349·PRB 남음).
 
+## v2.1.1 — 2026-11-04 (DC2-06 바늘 옆 바퀴 ↔ 머리판 탈착 길)
+
+- `3D_Modeling/FSAP_v2.1.1.sc`(105바디, 형상·부품·볼트·조인트 변경 없음): 동작 연구 `MAINT_HEAD`(step 0 = REST, step 1 = J_U4_PRESS −1.867 실린더 전진 끝)를 더했다. step 1에서 U4 가동 17바디 대 전체 겹침 0, 머리판 통로(X −140~−80 · Y ±90 · Z 125~560) 겹침 0(트레드 틈 1.14), 바퀴 밑 Z 3.11, d₁ 100 유지.
+- `tools/machine.json` 상태 "정비: 머리판 탈착(매트 없음, U4 내림 끝·공급 차단)"과 연구 MAINT_HEAD를 더했고, `tools/config.json`·`tools/machine.json` doc → v2.1.1로 바꿨다. 생성기 `tools/gen_v2_dc206.py`. 보고서 `docs/reports/mechanism/mech_DC2-06_design.md`·`_measure.md`·`_model.md`.
+
 ## v2.1.0 — 2026-11-04 (M02 U4 바늘 옆 바퀴)
 
 - 결과 문서: BOM·설계검토서(FSAP_v2.1.0), 결정로그 "구동 M02 결과", 요구서 M02 해결, 자료대기 D-112·D-113, 검도·해석 보고서·손계산.

@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.1.0.sc",
+ "doc": "../3D_Modeling/FSAP_v2.1.1.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -522,6 +522,10 @@
    "mat": "1200x1200 U홈",
    "d2": 800.0,
    "_note": "G1 끝 자세 ~ ⑤(1000단계 표본 상한 WF-126 때문에 둘로 나눔)"
+  },
+  "MAINT_HEAD": {
+   "steps": 1,
+   "_note": "DC2-06(v2.1.1) 정비: 머리판 탈착. step 0 = REST, step 1 = J_U4_PRESS -1.867(실린더 전진 끝, 바퀴 밑 Z 3.11, 트레드 윗끝 Z 123.86). 매트 없음·바퀴 서보 OFF·노루발 들림·U5 REST, U4 공급 차단·배기. 봉제 사이클 아님(전체 회귀 대상은 정적 자세 1점)"
   }
  },
  "workpiece_stages": {
@@ -1039,6 +1043,34 @@
     "mat": "WP_MAT_G:1",
     "tape": "WP_TAPE_G:1",
     "stage": "after"
+   }
+  },
+  {
+   "name": "정비: 머리판 탈착(매트 없음, U4 내림 끝·공급 차단)",
+   "study": "MAINT_HEAD",
+   "step": 1,
+   "joints": {
+    "J_U3_PRESSER": 20.0,
+    "J_U3_NEEDLE": 0,
+    "J_U4_PRESS": -1.867,
+    "J_U4_WHEEL_ROT": 0,
+    "J_U5_X": 0,
+    "J_U5_LIFT": 30.0,
+    "J_U5_WHEEL_ROT": 0,
+    "J_WP_L_X": 0,
+    "J_WP_L_Y": 0,
+    "J_WP_L_ROT": 0,
+    "J_WP_S_X": 0,
+    "J_WP_S_Y": 0,
+    "J_WP_S_ROT": 0,
+    "J_WP_G_X": 0,
+    "J_WP_G_Y": 0,
+    "J_WP_G_ROT": 0
+   },
+   "phase": "정비",
+   "workpiece": {
+    "stage": "none",
+    "_note": "매트 없음(E32-D36P1 OFF가 진입 조건). 모형 매트 3장은 REST 로딩 자리 그대로"
    }
   }
  ],
