@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.0.0.sc",
+ "doc": "../3D_Modeling/FSAP_v2.0.1.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -95,8 +95,8 @@
    ],
    "rest": 0,
    "min": 0,
-   "max": 1500.0,
-   "_note": "먼 쪽 대차 X. d2(바늘–먼 쪽 바퀴) = 1800 - 값. 0 = 대기(d2 1800), 1500 = d2 300(D-105 임시: d2 ≥ 2·d1 + 바퀴 묶음 폭 100). 큰 매트 d2 1000(값 800), 홈 매트 d2 800(값 1000), 작은 매트 내리지 않음"
+   "max": 1380.0,
+   "_note": "먼 쪽 대차 X. d2(바늘–먼 쪽 바퀴) = 1800 - 값. 0 = 대기(d2 1800), 1380 = d2 420(M00-D05: d2 300이면 U4·U5 서보 묶음 겹침 4쌍). 큰 매트 d2 1000(값 800), 홈 매트 d2 800(값 1000), 작은 매트 내리지 않음. d2 420~1800(M00-D05)"
   },
   "J_U5_LIFT": {
    "cad": "J_U5_LIFT",
@@ -320,13 +320,14 @@
     "REF_"
    ],
    "moving": false,
-   "_note": "고정(접지). M00이 전폭 보·기둥 상자를 넣는다"
+   "_note": "고정(접지). 상자 U1_BEAM·U1_COL_NX·U1_COL_PX·U1_BASE(M00)"
   },
   "U2_TABLE": {
    "parts": [
     "U2_"
    ],
-   "moving": false
+   "moving": false,
+   "_note": "고정. 볼 테이블 상자 U2_PLATE(윗면 Z 0)·U2_SUB(M00)"
   },
   "U3_HEAD": {
    "parts": [
@@ -337,7 +338,8 @@
     "U3_HEAD",
     "U3_PRESSER",
     "U3_NEEDLE"
-   ]
+   ],
+   "_note": "상자 U3_UPPER·U3_HANGER·U3_LOWER_POD·U3_LOWER_DRIVE(고정 몸체), U3_PRESSER_BOX(U3_PRESSER), U3_NEEDLE_PIN(U3_NEEDLE)"
   },
   "U4_WHEEL_N": {
    "parts": [
@@ -348,7 +350,8 @@
     "U4_WHEEL_N",
     "U4_PRESS",
     "U4_WHEEL"
-   ]
+   ],
+   "_note": "상자 U4_MOUNT·U4_DISK(Ø250 중심 X -175, M00-D04)·U4_DISK_BRG, U4_DRIVE·U4_HOLDER(U4_PRESS)"
   },
   "U5_WHEEL_F": {
    "parts": [
@@ -360,26 +363,29 @@
     "U5_CAR",
     "U5_LIFT",
     "U5_WHEEL"
-   ]
+   ],
+   "_note": "상자 U5_RAIL·U5_CHAIN(고정), U5_CARRIAGE(U5_CAR), U5_DRIVE·U5_HOLDER(U5_LIFT)"
   },
   "U6_SENSOR": {
    "parts": [
     "U6_"
    ],
    "moving": false,
-   "_note": "슈 비키는 실린더 조인트는 M06"
+   "_note": "상자 U6_SHOE_SENSOR(바늘 -Y, M00-D08). 슈 비키는 실린더 조인트는 M06"
   },
   "U7_TAPE": {
    "parts": [
     "U7_"
    ],
-   "moving": false
+   "moving": false,
+   "_note": "상자 U7_BINDER·U7_PATH_V·U7_PATH_H·U7_ROLL(M00-D09)"
   },
   "U8_PNEU": {
    "parts": [
     "U8_"
    ],
-   "moving": false
+   "moving": false,
+   "_note": "상자 U8_REG·U8_LC_L·U8_LC_R·U8_HMI·U8_LAMP(자리만, M08·D-38)"
   },
   "WP_L": {
    "parts": [
@@ -1003,6 +1009,11 @@
    "a": "REF_NEEDLE_AXIS_MARK",
    "b": "-",
    "reason": "Ø2×1 표시점(Z -301). 점검에서 REF 건너뜀(config skip_tops)"
+  },
+  {
+   "a": "U2_PLATE·U3_LOWER_POD·U4_DISK ↔ WP_* 밑면 Z 0 맞닿음(부피 0)",
+   "b": "WP_MAT_*·WP_TAPE_*",
+   "reason": "볼 윗면 = 바늘판 윗면 = 원판 윗면 Z 0에 매트 밑면이 얹힘(M00, 겹침 부피 0)"
   }
  ],
  "workpiece_module": "",
@@ -1027,7 +1038,8 @@
   "D-93": "바퀴 Ø120×25",
   "D-99": "d1 100",
   "D-104": "바퀴 들림 30, 접촉 길이 ±10(새)",
-  "D-105": "대차 d2 300~1800, 대기 1800, 큰 매트 d2 1000·홈 매트 800·작은 매트 안 내림(새)",
-  "D-106": "로딩: 시작점에서 -Y 300 자리에 올려 +Y로 밀어 맞춤, 배출: 끝 자세에서 -Y 300(새)"
+  "D-105": "대차 d2 420~1800(M00-D05, 옛 300~1800), 대기 1800, 큰 매트 d2 1000·홈 매트 800·작은 매트 안 내림",
+  "D-106": "로딩: 시작점에서 -Y 300 자리에 올려 +Y로 밀어 맞춤, 배출: 끝 자세에서 -Y 300(새)",
+  "D-107": "M00 골격 임시값: 작업면 높이 900, 보 Z 250~650, 기둥 150x300, 윗헤드 몸체 X -80~500 Z 125~560, 원판 중심 X -175, 서보 묶음 길이 265, 포켓 X 400~1160 Y <= -250"
  }
 }
