@@ -659,8 +659,79 @@ def fix1():
     print("balls", len(BALLS), "resin", len(RESIN_BALLS), "heavy", len(FAR_ROW), FAR_ROW[0], FAR_ROW[-1], "cmds", len(allc))
 
 
+# ======================================================================
+# 수정 2회차 (v2.1.4 -> v2.1.5, 2026-11-04) — 보고서 mech_M04_model2.md
+#  1) HNTT8-8·HNTT8-5 너트를 홈 바깥쪽(겉면 쪽)으로 3.0 옮김: STEP 목(높이 3, 폭 9.8)이 홈 입구에 들고
+#     어깨가 윗턱 밑면(겉면에서 5.5)에 닿는 조인 자리. 바닥 살과의 2 mm 묻힘을 없앰(검도 V2).
+#  2) 센터판 CB8-20 ×8 -> CB8-15 ×8(축 끝 Z -24, 홈 바닥 살 Z -24.5와 0.5 띄움, 검도 V1).
+#  python -X utf8 -B tools/gen_v2_m04.py fix2  -> tools/out/mech_M04/model/stage_fix2_*.json, edit.json
+# ======================================================================
+NUT_SHIFT = 3.0
+NUT_OUT = {"PY": (0, 1, 0), "NY": (0, -1, 0), "PZ": (0, 0, 1), "NZ": (0, 0, -1), "PX": (1, 0, 0)}
+CB15 = "STEP대기_CB8-15_M04"
+
+
+def nut_counts():
+    _, _, nuts, _ = bracket_lists()
+    nuts["-Z"] = [(x, y, -172.0 + LIP) for x, y in LEVELERS]
+    n = {d.replace("+", "P").replace("-", "N"): len(pl) for d, pl in nuts.items() if pl}
+    n["PZ"] += len(CB20_PTS)   # 센터판 너트 :73~:80 (수정 1회차에 PZ:1 복사)
+    n5 = sum(1 for k in PANELS for x, y, kd in screw_pts(k) if kd == "slot")
+    return n, n5
+
+
+def stage_fix2_nuts():
+    n, n5 = nut_counts()
+    s = [C("motion.play", study="REST", step=0, quiet=True)]
+    for g, cnt in n.items():
+        v = [NUT_SHIFT * a for a in NUT_OUT[g]]
+        s += [C("occurrence.move", occurrence="HNTT8-8_M04_%s:%d" % (g, i), space="world", translate=v) for i in range(1, cnt + 1)]
+    s += [C("occurrence.move", occurrence="HNTT8-5_M04:%d" % i, space="world", translate=[0, 0, NUT_SHIFT]) for i in range(1, n5 + 1)]
+    # 침목(Y 방향 형재) 홈의 너트는 목의 긴 쪽(17)이 홈 폭 방향으로 놓여 홈 입구 턱을 240 mm³ 파고들었다
+    # (fix2 검사 chk1). 너트 중심을 지나는 세계 Z축으로 90° 돌려 목 긴 쪽을 홈 길이(Y) 방향으로 맞춘다.
+    _, _, nuts, _ = bracket_lists()
+    for i, (x, y, z) in enumerate(nuts["+Z"], 1):          # PZ:1~72 침목 윗면 홈(브래킷 다리 B)
+        s.append(C("occurrence.move", occurrence="HNTT8-8_M04_PZ:%d" % i, space="world", axis=[0, 0, 1], angle="90 deg",
+                   origin=[x, y, z + NUT_SHIFT]))
+    for i, (x, y) in enumerate(LEVELERS, 1):                # NZ:1~36 침목 밑면 홈(레벨러)
+        s.append(C("occurrence.move", occurrence="HNTT8-8_M04_NZ:%d" % i, space="world", axis=[0, 0, 1], angle="90 deg",
+                   origin=[x, y, -172.0 + LIP - NUT_SHIFT]))
+    return s
+
+
+def stage_fix2_bolts():
+    # component.delete만으로는 바디가 하나 남았다(첫 시도 body_count 3,646). 바디를 먼저 지우고 컴포넌트를 지운다.
+    s = [C("solid.remove", bodies=[CB20]), C("component.delete", component=CB20)]
+    s += tmp_comp(CB15, lambda p: cb8_cmds(CB15, p, "-Z", 15), CB15, [(x, y, -9.0) for x, y in CB20_PTS], "CB8-15",
+                  "placeholder JIS B1176 M8x15 (head 13x8)", "SCM435")
+    return s
+
+
+def stage_fix2_final():
+    return [C("motion.play", study="REST", step=0, quiet=True),
+            C("browser.visibility", visible=False, folder="joints"),
+            C("document.metadata.set", key="description",
+              value="M04 mechanism fix2: T-nuts HNTT8-8/8-5 raised 3.0 to seat neck in slot, center plate bolts CB8-20 to CB8-15")]
+
+
+def fix2():
+    os.makedirs(OUT, exist_ok=True)
+    stages = [("fix2_1_nuts", stage_fix2_nuts()), ("fix2_2_bolts", stage_fix2_bolts()), ("fix2_3_final", stage_fix2_final())]
+    allc = []
+    for nm, st in stages:
+        json.dump(st, open(os.path.join(OUT, "stage_%s.json" % nm), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+        allc += st
+        print(nm, len(st))
+    json.dump(allc, open(os.path.join(ROOT, "out", "mech_M04", "edit.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    json.dump({"base": "3D_Modeling/FSAP_v2.1.4.sc", "result": "3D_Modeling/FSAP_v2.1.5.sc", "generator": "tools/gen_v2_m04.py fix2"},
+              open(os.path.join(ROOT, "out", "mech_M04", "edit_meta.json"), "w", encoding="utf-8"))
+    print("nuts", nut_counts(), "cmds", len(allc))
+
+
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "fix1":
+    if len(sys.argv) > 1 and sys.argv[1] == "fix2":
+        fix2()
+    elif len(sys.argv) > 1 and sys.argv[1] == "fix1":
         fix1()
     else:
         main()
