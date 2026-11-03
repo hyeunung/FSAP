@@ -1,4 +1,5 @@
 {
- "base": "3D_Modeling/FSAP_v1.0.12.sc",
- "result": "3D_Modeling/FSAP_v1.0.14.sc"
+ "base": "3D_Modeling/FSAP_v1.0.14.sc",
+ "result": "3D_Modeling/FSAP_v1.0.15.sc",
+ "generator": "tools/gen_v1_n04_fix2.py + tools/gen_N04_chain_keys.py"
 }

@@ -1,0 +1,1165 @@
+{
+ "_note": "N04 해석 2회차 손계산(FEA 환경 없음 D-16). 단위 mm·N·MPa",
+ "bodies": {
+  "STEP대기_CDJ2B16-110_P": {
+   "file": "P_N04_CYLBKT",
+   "bbox": [
+    [
+     -910.1,
+     -889.9
+    ],
+    [
+     1393.0,
+     1533.0
+    ],
+    [
+     -123.06,
+     -100.94
+    ]
+   ],
+   "uniq": [
+    [
+     -910.1,
+     -909.8,
+     -908.2,
+     -906.3,
+     -903.0,
+     -902.5,
+     -901.9,
+     -901.7,
+     -900.5,
+     -900.0,
+     -899.5,
+     -898.3,
+     -898.1,
+     -897.5,
+     -897.0,
+     -893.7,
+     -891.8,
+     -890.2,
+     -889.9
+    ],
+    [
+     1393.0,
+     1505.0,
+     1533.0
+    ],
+    [
+     -123.1,
+     -120.5,
+     -117.8,
+     -117.3,
+     -115.3,
+     -115.0,
+     -114.5,
+     -113.7,
+     -113.6,
+     -112.9,
+     -112.0,
+     -111.1,
+     -110.4,
+     -110.3,
+     -109.5,
+     -109.0,
+     -108.7,
+     -106.7,
+     -106.2,
+     -103.5,
+     -100.9
+    ]
+   ]
+  },
+  "STEP대기_CDJ2B16-110_N": {
+   "file": "P_N04_CYLBKT",
+   "bbox": [
+    [
+     -910.1,
+     -889.9
+    ],
+    [
+     -1533.0,
+     -1393.0
+    ],
+    [
+     -123.06,
+     -100.94
+    ]
+   ],
+   "uniq": [
+    [
+     -910.1,
+     -909.8,
+     -908.2,
+     -906.3,
+     -903.0,
+     -902.5,
+     -901.9,
+     -901.7,
+     -900.5,
+     -900.0,
+     -899.5,
+     -898.3,
+     -898.1,
+     -897.5,
+     -897.0,
+     -893.7,
+     -891.8,
+     -890.2,
+     -889.9
+    ],
+    [
+     -1533.0,
+     -1505.0,
+     -1393.0
+    ],
+    [
+     -123.1,
+     -120.5,
+     -117.8,
+     -117.3,
+     -115.3,
+     -115.0,
+     -114.5,
+     -113.7,
+     -113.6,
+     -112.9,
+     -112.0,
+     -111.1,
+     -110.4,
+     -110.3,
+     -109.5,
+     -109.0,
+     -108.7,
+     -106.7,
+     -106.2,
+     -103.5,
+     -100.9
+    ]
+   ]
+  },
+  "STEP대기_CDJ2B16-150_A": {
+   "file": "P_N04_CYLBKT",
+   "bbox": [
+    [
+     -2000.0,
+     -1820.0
+    ],
+    [
+     -10.1,
+     10.1
+    ],
+    [
+     -191.06,
+     -168.94
+    ]
+   ],
+   "uniq": [
+    [
+     -2000.0,
+     -1972.0,
+     -1820.0
+    ],
+    [
+     -10.1,
+     -9.8,
+     -8.2,
+     -6.3,
+     -3.0,
+     -2.5,
+     -1.9,
+     -1.7,
+     -0.5,
+     0.0,
+     0.5,
+     1.7,
+     1.9,
+     2.5,
+     3.0,
+     6.3,
+     8.2,
+     9.8,
+     10.1
+    ],
+    [
+     -191.1,
+     -188.5,
+     -185.8,
+     -185.3,
+     -183.3,
+     -183.0,
+     -182.5,
+     -181.7,
+     -181.6,
+     -180.9,
+     -180.0,
+     -179.1,
+     -178.4,
+     -178.3,
+     -177.5,
+     -177.0,
+     -176.7,
+     -174.7,
+     -174.2,
+     -171.5,
+     -168.9
+    ]
+   ]
+  },
+  "P_N04_CYLBKT_P": {
+   "file": "P_N04_CYLBKT",
+   "bbox": [
+    [
+     -925.0,
+     -875.0
+    ],
+    [
+     1533.0,
+     1545.0
+    ],
+    [
+     -125.0,
+     -40.0
+    ]
+   ],
+   "uniq": [
+    [
+     -925.0,
+     -875.0
+    ],
+    [
+     1533.0,
+     1537.0,
+     1545.0
+    ],
+    [
+     -125.0,
+     -44.0,
+     -40.0
+    ]
+   ]
+  },
+  "P_N04_CYLBKT_N": {
+   "file": "P_N04_CYLBKT",
+   "bbox": [
+    [
+     -925.0,
+     -875.0
+    ],
+    [
+     -1545.0,
+     -1533.0
+    ],
+    [
+     -125.0,
+     -40.0
+    ]
+   ],
+   "uniq": [
+    [
+     -925.0,
+     -875.0
+    ],
+    [
+     -1545.0,
+     -1537.0,
+     -1533.0
+    ],
+    [
+     -125.0,
+     -44.0,
+     -40.0
+    ]
+   ]
+  },
+  "P_N04_CYLBKT_A": {
+   "file": "P_N04_CYLBKT",
+   "bbox": [
+    [
+     -2010.0,
+     -1950.0
+    ],
+    [
+     -20.0,
+     20.0
+    ],
+    [
+     -192.0,
+     -40.0
+    ]
+   ],
+   "uniq": [
+    [
+     -2010.0,
+     -2008.0,
+     -2000.0,
+     -1950.0
+    ],
+    [
+     -20.0,
+     20.0
+    ],
+    [
+     -192.0,
+     -44.0,
+     -40.0
+    ]
+   ]
+  },
+  "P_N04_SADDLE": {
+   "file": "P_N04_SADDLE",
+   "bbox": [
+    [
+     -966.0,
+     -834.0
+    ],
+    [
+     -470.0,
+     -330.0
+    ],
+    [
+     -131.0,
+     0.0
+    ]
+   ],
+   "uniq": [
+    [
+     -966.0,
+     -963.6,
+     -962.0,
+     -951.5,
+     -950.0,
+     -939.4,
+     -910.5,
+     -900.0,
+     -889.5,
+     -860.6,
+     -850.0,
+     -848.5,
+     -838.0,
+     -836.4,
+     -834.0
+    ],
+    [
+     -470.0,
+     -469.7,
+     -466.0,
+     -453.4,
+     -436.3,
+     -433.4,
+     -419.1,
+     -400.0,
+     -380.9,
+     -366.6,
+     -363.7,
+     -346.6,
+     -334.0,
+     -330.3,
+     -330.0
+    ],
+    [
+     -131.0,
+     -2.0,
+     0.0
+    ]
+   ]
+  },
+  "P_N04_STORE_P": {
+   "file": "P_N04_STORE",
+   "bbox": [
+    [
+     -970.0,
+     -830.0
+    ],
+    [
+     930.0,
+     1530.0
+    ],
+    [
+     -125.0,
+     -40.0
+    ]
+   ],
+   "uniq": [
+    [
+     -970.0,
+     -968.5,
+     -958.5,
+     -841.5,
+     -831.5,
+     -830.0
+    ],
+    [
+     930.0,
+     1530.0
+    ],
+    [
+     -125.0,
+     -123.5,
+     -81.5,
+     -80.0,
+     -40.0
+    ]
+   ]
+  },
+  "P_N04_STORE_N": {
+   "file": "P_N04_STORE",
+   "bbox": [
+    [
+     -970.0,
+     -830.0
+    ],
+    [
+     -1530.0,
+     -930.0
+    ],
+    [
+     -125.0,
+     -40.0
+    ]
+   ],
+   "uniq": [
+    [
+     -970.0,
+     -968.5,
+     -958.5,
+     -841.5,
+     -831.5,
+     -830.0
+    ],
+    [
+     -1530.0,
+     -930.0
+    ],
+    [
+     -125.0,
+     -123.5,
+     -81.5,
+     -80.0,
+     -40.0
+    ]
+   ]
+  },
+  "P_N04_STORE_A": {
+   "file": "P_N04_STORE",
+   "bbox": [
+    [
+     -2000.0,
+     -1272.5
+    ],
+    [
+     -56.0,
+     56.0
+    ],
+    [
+     -200.0,
+     -40.0
+    ]
+   ],
+   "uniq": [
+    [
+     -2000.0,
+     -1278.0,
+     -1272.5
+    ],
+    [
+     -56.0,
+     -54.5,
+     -44.5,
+     44.5,
+     54.5,
+     56.0
+    ],
+    [
+     -200.0,
+     -198.5,
+     -172.0,
+     -123.5,
+     -122.0,
+     -40.0
+    ]
+   ]
+  },
+  "P_N04_PANEL": {
+   "file": "P_N04_PANEL",
+   "bbox": [
+    [
+     -2010.0,
+     210.0
+    ],
+    [
+     -1545.0,
+     1560.0
+    ],
+    [
+     -40.0,
+     0.0
+    ]
+   ]
+  },
+  "P_N04_CHAIN_P_HEAD": {
+   "file": "P_N04_CHAIN_HEAD",
+   "bbox": [
+    [
+     -966.0,
+     -834.0
+    ],
+    [
+     -55.0,
+     37.5
+    ],
+    [
+     -5.0,
+     0.0
+    ]
+   ],
+   "uniq": [
+    [
+     -966.0,
+     -834.0
+    ],
+    [
+     -55.0,
+     37.5
+    ],
+    [
+     -5.0,
+     0.0
+    ]
+   ]
+  },
+  "P_N04_CHAIN_N_HEAD": {
+   "file": "P_N04_CHAIN_HEAD",
+   "bbox": [
+    [
+     -966.0,
+     -834.0
+    ],
+    [
+     -563.0,
+     -470.5
+    ],
+    [
+     -5.0,
+     0.0
+    ]
+   ],
+   "uniq": [
+    [
+     -966.0,
+     -834.0
+    ],
+    [
+     -563.0,
+     -470.5
+    ],
+    [
+     -5.0,
+     0.0
+    ]
+   ]
+  },
+  "P_N04_CHAIN_A_HEAD": {
+   "file": "P_N04_CHAIN_HEAD",
+   "bbox": [
+    [
+     -1012.0,
+     -970.0
+    ],
+    [
+     -54.0,
+     54.0
+    ],
+    [
+     -5.0,
+     0.0
+    ]
+   ],
+   "uniq": [
+    [
+     -1012.0,
+     -970.0
+    ],
+    [
+     -54.0,
+     54.0
+    ],
+    [
+     -5.0,
+     0.0
+    ]
+   ]
+  }
+ },
+ "items": [
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "세운 판 뿌리 Z −44(50×t4, 팔 68)",
+   "case": "run",
+   "stress_MPa": 51.27,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 4.0,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false,
+   "M_Nmm": 6836
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "날개 뿌리 Y 1537(50×t4, 같은 M)",
+   "case": "run",
+   "stress_MPa": 51.27,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 4.0,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "세운 판 뿌리 Z −44(50×t4, 팔 68)",
+   "case": "mis",
+   "stress_MPa": 71.78,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 2.86,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false,
+   "M_Nmm": 9571
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "날개 뿌리 Y 1537(50×t4, 같은 M)",
+   "case": "mis",
+   "stress_MPa": 71.78,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 2.86,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_CYLBKT_A",
+   "where": "블록 뿌리 Z −44(40×t8, 팔 136) — 옛 모델(뿌리 고정)",
+   "case": "run",
+   "stress_MPa": 34.99,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 5.86,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false,
+   "M_Nmm": 14928
+  },
+  {
+   "part": "P_N04_CYLBKT_A",
+   "where": "받침판 X −2000 단면(40×t4) — 새 모델(발꿈치 −2010, 당김 줄 −1955)",
+   "case": "run",
+   "stress_MPa": 114.51,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 1.79,
+   "sf_min": 3.0,
+   "ok": false,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false,
+   "M_plate_Nmm": 12214,
+   "insert_pull_N": 271
+  },
+  {
+   "part": "P_N04_CYLBKT_A(받침판 t8 안)",
+   "where": "받침판 X −2000 단면(40×t8)",
+   "case": "run",
+   "stress_MPa": 28.63,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 7.16,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_CYLBKT_A",
+   "where": "블록 뿌리 Z −44(40×t8, 팔 136) — 옛 모델(뿌리 고정)",
+   "case": "mis",
+   "stress_MPa": 45.84,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 4.47,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false,
+   "M_Nmm": 19560
+  },
+  {
+   "part": "P_N04_CYLBKT_A",
+   "where": "받침판 X −2000 단면(40×t4) — 새 모델(발꿈치 −2010, 당김 줄 −1955)",
+   "case": "mis",
+   "stress_MPa": 150.03,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 1.37,
+   "sf_min": 2.0,
+   "ok": false,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false,
+   "M_plate_Nmm": 16003,
+   "insert_pull_N": 356
+  },
+  {
+   "part": "P_N04_CYLBKT_A(받침판 t8 안)",
+   "where": "받침판 X −2000 단면(40×t8)",
+   "case": "mis",
+   "stress_MPa": 37.51,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 5.47,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_SADDLE",
+   "where": "윗판 날개 뿌리 X −950(띠 폭 63.3, t2, 외팔 16)",
+   "case": "run",
+   "stress_MPa": 3.4,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 60.31,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false,
+   "flap_area_mm2": 1560,
+   "F_N": 15.6
+  },
+  {
+   "part": "P_N04_SADDLE",
+   "where": "다리 뿌리 면 밖 굽힘(100×t4 ×2, 팔 129)",
+   "case": "run",
+   "stress_MPa": 7.26,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 28.25,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_SADDLE",
+   "where": "다리 압축(2 × 100×t4)",
+   "case": "run",
+   "stress_MPa": 0.12,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 1640.0,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_SADDLE",
+   "where": "윗판 날개 뿌리 X −950(띠 폭 63.3, t2, 외팔 16)",
+   "case": "mis",
+   "stress_MPa": 10.2,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 20.1,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false,
+   "flap_area_mm2": 1560,
+   "F_N": 46.81
+  },
+  {
+   "part": "P_N04_SADDLE",
+   "where": "다리 뿌리 면 밖 굽힘(100×t4 ×2, 팔 129)",
+   "case": "mis",
+   "stress_MPa": 24.19,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 8.48,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_SADDLE",
+   "where": "다리 압축(2 × 100×t4)",
+   "case": "mis",
+   "stress_MPa": 0.38,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 546.67,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "바닥판 가운데(폭 137 단순, t1.5)",
+   "case": "run",
+   "stress_MPa": 14.56,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 14.08,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "턱 뿌리(외팔 10, t1.5)",
+   "case": "run",
+   "stress_MPa": 4.25,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 48.22,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "옆벽 매달림 인장(2 × t1.5)",
+   "case": "run",
+   "stress_MPa": 0.11,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 1928.96,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "바닥판 가운데(폭 137 단순, t1.5)",
+   "case": "mis",
+   "stress_MPa": 4.85,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 42.24,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "턱 뿌리(외팔 10, t1.5)",
+   "case": "mis",
+   "stress_MPa": 1.42,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 144.67,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_P/_N",
+   "where": "옆벽 매달림 인장(2 × t1.5)",
+   "case": "mis",
+   "stress_MPa": 0.04,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 5786.87,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_A",
+   "where": "바닥판 가운데(폭 109 단순, t1.5)",
+   "case": "run",
+   "stress_MPa": 9.55,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 21.46,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_A",
+   "where": "턱 뿌리(외팔 10, t1.5)",
+   "case": "run",
+   "stress_MPa": 3.51,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 58.47,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_A",
+   "where": "옆벽 매달림 인장(2 × t1.5)",
+   "case": "run",
+   "stress_MPa": 0.09,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 2338.86,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_A",
+   "where": "바닥판 가운데(폭 109 단순, t1.5)",
+   "case": "mis",
+   "stress_MPa": 3.18,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 64.37,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_A",
+   "where": "턱 뿌리(외팔 10, t1.5)",
+   "case": "mis",
+   "stress_MPa": 1.17,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 175.41,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_STORE_A",
+   "where": "옆벽 매달림 인장(2 × t1.5)",
+   "case": "mis",
+   "stress_MPa": 0.03,
+   "mat": "SUS304",
+   "shear": false,
+   "sf": 7016.58,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_CHAIN_P/N_HEAD",
+   "where": "단순 받침 가운데(지지 130, 폭 92.5, t5)",
+   "case": "run",
+   "stress_MPa": 4.8,
+   "mat": "A6063",
+   "shear": false,
+   "sf": 22.92,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false,
+   "P_N": 92.5
+  },
+  {
+   "part": "P_N04_CHAIN_P/N_HEAD",
+   "where": "단순 받침 가운데(지지 130, 폭 92.5, t5)",
+   "case": "mis",
+   "stress_MPa": 14.4,
+   "mat": "A6063",
+   "shear": false,
+   "sf": 7.64,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false,
+   "P_N": 277.5
+  },
+  {
+   "part": "P_N04_CHAIN_A_HEAD",
+   "where": "단순 받침 가운데(지지 105, 폭 42, t5)",
+   "case": "run",
+   "stress_MPa": 3.3,
+   "mat": "A6063",
+   "shear": false,
+   "sf": 33.33,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false,
+   "P_N": 42.0
+  },
+  {
+   "part": "P_N04_CHAIN_A_HEAD",
+   "where": "단순 받침 가운데(지지 105, 폭 42, t5)",
+   "case": "mis",
+   "stress_MPa": 9.9,
+   "mat": "A6063",
+   "shear": false,
+   "sf": 11.11,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": true,
+   "motion_break": false,
+   "P_N": 126.0
+  },
+  {
+   "part": "P_N04_CHAIN_P/N_HEAD(300 N 한 점 보수)",
+   "where": "단순 받침 가운데 집중",
+   "case": "mis",
+   "stress_MPa": 25.3,
+   "mat": "A6063",
+   "shear": false,
+   "sf": 4.35,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false
+  },
+  {
+   "part": "P_N04_CHAIN_A_HEAD(300 N 한 점 보수)",
+   "where": "단순 받침 가운데 집중",
+   "case": "mis",
+   "stress_MPa": 45.0,
+   "mat": "A6063",
+   "shear": false,
+   "sf": 2.44,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "oversize_3x": false,
+   "motion_break": false
+  }
+ ],
+ "old_vs_new": {
+  "CYLBKT_A run": {
+   "old_block_root_sf": 5.86,
+   "new_plate_sf": 1.79
+  },
+  "CYLBKT_A mis": {
+   "old_block_root_sf": 4.47,
+   "new_plate_sf": 1.37
+  }
+ },
+ "axis_z": {
+  "P/N": -112.0,
+  "A": -180.0
+ },
+ "insert_pull_N": {
+  "CYLBKT_P/_N 날개 가운데 인서트(발꿈치 1545까지 4) run": 1709,
+  "CYLBKT_P/_N 안쪽 날개 안(뿌리 1533에서 12) run": 427,
+  "CYLBKT_P/_N 날개 가운데 인서트(발꿈치 1545까지 4) mis": 2393,
+  "CYLBKT_P/_N 안쪽 날개 안(뿌리 1533에서 12) mis": 598,
+  "CYLBKT_A 당김 줄 −1955 run": 271,
+  "CYLBKT_A 당김 줄 −1955 mis": 356
+ },
+ "cylbkt_pn_beam": {
+  "inputs": {
+   "t": 4.0,
+   "b": 50.0,
+   "L": 68.0,
+   "E": 193000.0,
+   "Rp": 205.0,
+   "end": "cantilever",
+   "sf_min": 3.0
+  },
+  "force_N": 100.531,
+  "deflection_mm": 0.2047,
+  "stiffness_N_mm": 491.0442,
+  "stress_MPa": 51.27,
+  "sf": 4.0,
+  "thin": true,
+  "ok": true,
+  "needs_fea": false
+ },
+ "cylbkt_a_stop_shift_run_mm": {
+  "block_bend": 0.256,
+  "plate_rotation": 0.934,
+  "total": 1.19,
+  "plate_t8_total": 0.376
+ },
+ "rod_buckling_ref": {
+  "CDJ2B16-110 로드(내밂 끝 자유 길이 약 123)": {
+   "Pcr_N": 966,
+   "sf_vs_mis_thrust": 6.86
+  },
+  "CDJ2B16-150 로드(약 163)": {
+   "Pcr_N": 550,
+   "sf_vs_mis_thrust": 3.91
+  }
+ },
+ "stop_pad_bearing_MPa": 0.7,
+ "saddle_leg_buckling": {
+  "Pcr_N_per_leg": 15262,
+  "sf_vs_mis_300N": 101.7
+ },
+ "store_a_notch": "옆벽 끝 5.5 mm 구간 높이 160 → 132. 매달림 인장만 받는 끝이라 응력 변화 없음",
+ "head_deflect_mm": {
+  "P_N04_CHAIN_P/N_HEAD run": 0.064,
+  "P_N04_CHAIN_P/N_HEAD mis": 0.191,
+  "P_N04_CHAIN_A_HEAD run": 0.034,
+  "P_N04_CHAIN_A_HEAD mis": 0.101
+ },
+ "head_lip_bearing_MPa": {
+  "P_N04_CHAIN_P/N_HEAD": 0.81,
+  "P_N04_CHAIN_A_HEAD": 1.19
+ },
+ "panel_change": {
+  "removed_lip_mm3": 5600,
+  "section_width_loss_pct_at_X-1282": 0.26,
+  "note": "판 전체(폭 3105) 단면 손실 0.26 %. 1회차 PANEL 값(±X 외팔 운전 18.3·오조작 10.2)에 변화 없음. 매다는 무게 증가(STORE_A 690→727.5, CYLBKT_A 452 g)는 0.1 kg 미만"
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "poses": 154,
+ "overlaps": [
+  [
+   "CYCLE_G1",
+   65,
+   "PR_N_TOP",
+   "P_N04_PIN_4",
+   0.0
+  ],
+  [
+   [
+    1217.5,
+    300
+   ],
+   null,
+   "PR_A_TOP",
+   "STEP대기_867-392342_LOWER",
+   26937.2
+  ],
+  [
+   [
+    1217.5,
+    300
+   ],
+   null,
+   "PR_A_TOP",
+   "P_N04_TAIL",
+   56916.0
+  ],
+  [
+   [
+    1217.5,
+    300
+   ],
+   null,
+   "PR_A_TOP",
+   "P_N04_TAIL_BKT",
+   23280.0
+  ]
+ ],
+ "pairs": {
+  "PR_N_TOP | P_N04_PIN_4": 1,
+  "PR_A_TOP | STEP대기_867-392342_LOWER": 1,
+  "PR_A_TOP | P_N04_TAIL": 1,
+  "PR_A_TOP | P_N04_TAIL_BKT": 1
+ }
+}

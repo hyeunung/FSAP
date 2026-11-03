@@ -1,7 +1,7 @@
 {
  "pose": "REST step 0",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v1.0.14.sc",
- "doc_hash": "99d677b3ea3bb44c",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v1.0.15.sc",
+ "doc_hash": "a9463e12d3353f86",
  "parts": {
   "REF_GROUND/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -4502,8 +4502,8 @@
     -40.0,
     0.0
    ],
-   "volume": 254174738.9,
-   "mass": 48293.2,
+   "volume": 254169242.9,
+   "mass": 48292.2,
    "material": "A5052_HC",
    "bolt": false,
    "spec": ""
@@ -4519,8 +4519,8 @@
     -39.0,
     -1.0
    ],
-   "volume": 359100.0,
-   "mass": 969.57,
+   "volume": 358680.0,
+   "mass": 968.4,
    "material": "A6061",
    "bolt": false,
    "spec": ""
@@ -4604,8 +4604,8 @@
     -125.0,
     -40.0
    ],
-   "volume": 294300.0,
-   "mass": 2333.8,
+   "volume": 300403.1,
+   "mass": 2382.2,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4621,8 +4621,8 @@
     -125.0,
     -40.0
    ],
-   "volume": 294300.0,
-   "mass": 2333.8,
+   "volume": 300403.1,
+   "mass": 2382.2,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4648,15 +4648,15 @@
    "name": "STEP대기_CDJ2B16-110_P",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -910.0,
-    -890.0,
-    1393.0,
-    1533.0,
-    -122.0,
-    -102.0
+    -828.0,
+    -808.0,
+    779.0,
+    919.0,
+    -79.0,
+    -59.0
    ],
-   "volume": 40813.8,
-   "mass": 326.51,
+   "volume": 40785.5,
+   "mass": 326.3,
    "material": "Stainless Steel",
    "bolt": false,
    "spec": ""
@@ -4665,15 +4665,15 @@
    "name": "STEP대기_CDJ2B16-110_N",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -910.0,
-    -890.0,
-    -1533.0,
-    -1393.0,
-    -122.0,
-    -102.0
+    -828.0,
+    -808.0,
+    -919.0,
+    -779.0,
+    -79.0,
+    -59.0
    ],
-   "volume": 40813.8,
-   "mass": 326.51,
+   "volume": 40785.5,
+   "mass": 326.3,
    "material": "Stainless Steel",
    "bolt": false,
    "spec": ""
@@ -4699,15 +4699,15 @@
    "name": "P_N04_CYLBKT_P",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -925.0,
-    -875.0,
-    1533.0,
-    1545.0,
-    -125.0,
+    -830.0,
+    -806.0,
+    767.0,
+    779.0,
+    -81.0,
     -40.0
    ],
-   "volume": 18600.0,
-   "mass": 147.5,
+   "volume": 4704.0,
+   "mass": 37.3,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4716,15 +4716,15 @@
    "name": "P_N04_CYLBKT_N",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -925.0,
-    -875.0,
-    -1545.0,
-    -1533.0,
-    -125.0,
+    -830.0,
+    -806.0,
+    -779.0,
+    -767.0,
+    -81.0,
     -40.0
    ],
-   "volume": 18600.0,
-   "mass": 147.5,
+   "volume": 4704.0,
+   "mass": 37.3,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4785,14 +4785,14 @@
    "unit": "U5_AIRTABLE",
    "bbox": [
     -834.0,
-    -830.0,
+    -832.0,
     57.0,
     67.0,
     -5.0,
     -3.0
    ],
-   "volume": 80.0,
-   "mass": 0.63,
+   "volume": 40.0,
+   "mass": 0.3,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4802,14 +4802,14 @@
    "unit": "U5_AIRTABLE",
    "bbox": [
     -834.0,
-    -830.0,
+    -832.0,
     -67.0,
     -57.0,
     -5.0,
     -3.0
    ],
-   "volume": 80.0,
-   "mass": 0.63,
+   "volume": 40.0,
+   "mass": 0.3,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -5025,12 +5025,12 @@
     -966.0,
     -834.0,
     -55.0,
-    37.5,
+    21.5,
     -5.0,
     0.0
    ],
-   "volume": 61050.0,
-   "mass": 164.22,
+   "volume": 50490.0,
+   "mass": 135.8,
    "material": "A6063",
    "bolt": false,
    "spec": ""
@@ -5041,13 +5041,13 @@
    "bbox": [
     -966.0,
     -834.0,
-    -563.0,
-    -470.5,
+    -558.0,
+    -481.5,
     -5.0,
     0.0
    ],
-   "volume": 61050.0,
-   "mass": 164.22,
+   "volume": 50490.0,
+   "mass": 135.8,
    "material": "A6063",
    "bolt": false,
    "spec": ""
@@ -5073,15 +5073,15 @@
    "name": "STEP대기_CDJ2B16-110_P_ROD",
    "unit": "U5_STOP_P",
    "bbox": [
-    -902.5,
-    -897.5,
-    1381.0,
-    1504.0,
-    -114.5,
-    -109.5
+    -820.5,
+    -815.5,
+    809.0,
+    932.0,
+    -71.5,
+    -66.5
    ],
    "volume": 2414.7,
-   "mass": 19.32,
+   "mass": 19.3,
    "material": "Stainless Steel",
    "bolt": false,
    "spec": ""
@@ -5090,15 +5090,15 @@
    "name": "P_N04_STOP_PAD_P",
    "unit": "U5_STOP_P",
    "bbox": [
-    -908.0,
-    -892.0,
-    1378.0,
-    1381.0,
-    -120.0,
-    -104.0
+    -829.5,
+    -813.0,
+    932.0,
+    936.0,
+    -79.0,
+    -63.0
    ],
-   "volume": 603.1,
-   "mass": 4.78,
+   "volume": 1056.0,
+   "mass": 8.4,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -5107,15 +5107,15 @@
    "name": "STEP대기_CDJ2B16-110_N_ROD",
    "unit": "U5_STOP_N",
    "bbox": [
-    -902.5,
-    -897.5,
-    -1504.0,
-    -1381.0,
-    -114.5,
-    -109.5
+    -820.5,
+    -815.5,
+    -932.0,
+    -809.0,
+    -71.5,
+    -66.5
    ],
    "volume": 2414.7,
-   "mass": 19.32,
+   "mass": 19.3,
    "material": "Stainless Steel",
    "bolt": false,
    "spec": ""
@@ -5124,15 +5124,15 @@
    "name": "P_N04_STOP_PAD_N",
    "unit": "U5_STOP_N",
    "bbox": [
-    -908.0,
-    -892.0,
-    -1381.0,
-    -1378.0,
-    -120.0,
-    -104.0
+    -829.5,
+    -813.0,
+    -936.0,
+    -932.0,
+    -79.0,
+    -63.0
    ],
-   "volume": 603.1,
-   "mass": 4.78,
+   "volume": 1056.0,
+   "mass": 8.4,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -5168,6 +5168,40 @@
    "volume": 603.1,
    "mass": 4.78,
    "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_BAR_NP/P_N04_CHAIN_NP_BAR": {
+   "name": "P_N04_CHAIN_NP_BAR",
+   "unit": "U5_BAR_NP",
+   "bbox": [
+    -969.0,
+    -829.0,
+    -481.0,
+    -471.0,
+    -3.0,
+    0.0
+   ],
+   "volume": 4200.0,
+   "mass": 11.3,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_BAR_PN/P_N04_CHAIN_PN_BAR": {
+   "name": "P_N04_CHAIN_PN_BAR",
+   "unit": "U5_BAR_PN",
+   "bbox": [
+    -969.0,
+    -829.0,
+    -67.0,
+    -57.0,
+    -5.0,
+    0.0
+   ],
+   "volume": 4185.0,
+   "mass": 11.3,
+   "material": "A6063",
    "bolt": false,
    "spec": ""
   }

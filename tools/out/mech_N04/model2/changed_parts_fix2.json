@@ -1,0 +1,310 @@
+{
+ "parts": {
+  "U5_AIRTABLE/P_N04_NECK": {
+   "name": "P_N04_NECK",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -830.0,
+    -762.5,
+    -530.0,
+    -390.0,
+    -39.0,
+    -1.0
+   ],
+   "volume": 358680.0,
+   "mass": 968.4,
+   "material": "A6061",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/P_N04_PANEL": {
+   "name": "P_N04_PANEL",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -2010.0,
+    210.0,
+    -1545.0,
+    1560.0,
+    -40.0,
+    0.0
+   ],
+   "volume": 254169242.9,
+   "mass": 48292.2,
+   "material": "A5052_HC",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/P_N04_STORE_P": {
+   "name": "P_N04_STORE_P",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -970.0,
+    -830.0,
+    930.0,
+    1530.0,
+    -125.0,
+    -40.0
+   ],
+   "volume": 300403.1,
+   "mass": 2382.2,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/P_N04_STORE_N": {
+   "name": "P_N04_STORE_N",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -970.0,
+    -830.0,
+    -1530.0,
+    -930.0,
+    -125.0,
+    -40.0
+   ],
+   "volume": 300403.1,
+   "mass": 2382.2,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/STEP대기_CDJ2B16-110_P": {
+   "name": "STEP대기_CDJ2B16-110_P",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -828.0,
+    -808.0,
+    779.0,
+    919.0,
+    -79.0,
+    -59.0
+   ],
+   "volume": 40785.5,
+   "mass": 326.3,
+   "material": "Stainless Steel",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/P_N04_CYLBKT_P": {
+   "name": "P_N04_CYLBKT_P",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -830.0,
+    -806.0,
+    767.0,
+    779.0,
+    -81.0,
+    -40.0
+   ],
+   "volume": 4704.0,
+   "mass": 37.3,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/STEP대기_CDJ2B16-110_N": {
+   "name": "STEP대기_CDJ2B16-110_N",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -828.0,
+    -808.0,
+    -919.0,
+    -779.0,
+    -79.0,
+    -59.0
+   ],
+   "volume": 40785.5,
+   "mass": 326.3,
+   "material": "Stainless Steel",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/P_N04_CYLBKT_N": {
+   "name": "P_N04_CYLBKT_N",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -830.0,
+    -806.0,
+    -779.0,
+    -767.0,
+    -81.0,
+    -40.0
+   ],
+   "volume": 4704.0,
+   "mass": 37.3,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/P_N04_PIN_3": {
+   "name": "P_N04_PIN_3",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -834.0,
+    -832.0,
+    57.0,
+    67.0,
+    -5.0,
+    -3.0
+   ],
+   "volume": 40.0,
+   "mass": 0.3,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_AIRTABLE/P_N04_PIN_4": {
+   "name": "P_N04_PIN_4",
+   "unit": "U5_AIRTABLE",
+   "bbox": [
+    -834.0,
+    -832.0,
+    -67.0,
+    -57.0,
+    -5.0,
+    -3.0
+   ],
+   "volume": 40.0,
+   "mass": 0.3,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_CHAIN_P/P_N04_CHAIN_P_HEAD": {
+   "name": "P_N04_CHAIN_P_HEAD",
+   "unit": "U5_CHAIN_P",
+   "bbox": [
+    -966.0,
+    -834.0,
+    -55.0,
+    21.5,
+    -5.0,
+    0.0
+   ],
+   "volume": 50490.0,
+   "mass": 135.8,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_CHAIN_N/P_N04_CHAIN_N_HEAD": {
+   "name": "P_N04_CHAIN_N_HEAD",
+   "unit": "U5_CHAIN_N",
+   "bbox": [
+    -966.0,
+    -834.0,
+    -558.0,
+    -481.5,
+    -5.0,
+    0.0
+   ],
+   "volume": 50490.0,
+   "mass": 135.8,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_P/STEP대기_CDJ2B16-110_P_ROD": {
+   "name": "STEP대기_CDJ2B16-110_P_ROD",
+   "unit": "U5_STOP_P",
+   "bbox": [
+    -820.5,
+    -815.5,
+    809.0,
+    932.0,
+    -71.5,
+    -66.5
+   ],
+   "volume": 2414.7,
+   "mass": 19.3,
+   "material": "Stainless Steel",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_P/P_N04_STOP_PAD_P": {
+   "name": "P_N04_STOP_PAD_P",
+   "unit": "U5_STOP_P",
+   "bbox": [
+    -829.5,
+    -813.0,
+    932.0,
+    936.0,
+    -79.0,
+    -63.0
+   ],
+   "volume": 1056.0,
+   "mass": 8.4,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_N/STEP대기_CDJ2B16-110_N_ROD": {
+   "name": "STEP대기_CDJ2B16-110_N_ROD",
+   "unit": "U5_STOP_N",
+   "bbox": [
+    -820.5,
+    -815.5,
+    -932.0,
+    -809.0,
+    -71.5,
+    -66.5
+   ],
+   "volume": 2414.7,
+   "mass": 19.3,
+   "material": "Stainless Steel",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_N/P_N04_STOP_PAD_N": {
+   "name": "P_N04_STOP_PAD_N",
+   "unit": "U5_STOP_N",
+   "bbox": [
+    -829.5,
+    -813.0,
+    -936.0,
+    -932.0,
+    -79.0,
+    -63.0
+   ],
+   "volume": 1056.0,
+   "mass": 8.4,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_BAR_NP/P_N04_CHAIN_NP_BAR": {
+   "name": "P_N04_CHAIN_NP_BAR",
+   "unit": "U5_BAR_NP",
+   "bbox": [
+    -969.0,
+    -829.0,
+    -481.0,
+    -471.0,
+    -3.0,
+    0.0
+   ],
+   "volume": 4200.0,
+   "mass": 11.3,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_BAR_PN/P_N04_CHAIN_PN_BAR": {
+   "name": "P_N04_CHAIN_PN_BAR",
+   "unit": "U5_BAR_PN",
+   "bbox": [
+    -969.0,
+    -829.0,
+    -67.0,
+    -57.0,
+    -5.0,
+    0.0
+   ],
+   "volume": 4185.0,
+   "mass": 11.3,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  }
+ }
+}

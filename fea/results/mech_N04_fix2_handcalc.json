@@ -1,0 +1,36 @@
+{
+ "_note": "N04 수정 2회차 손계산(모델링부, D-16). 단위 mm·N·MPa",
+ "items": [
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "세운 판 뿌리 Z -44 (24×t4, 팔 25)",
+   "case": "run",
+   "M_Nmm": 2513,
+   "stress_MPa": 39.27,
+   "sf": 5.22,
+   "sf_min": 3.0,
+   "ok": true
+  },
+  {
+   "part": "P_N04_CYLBKT_P/_N",
+   "where": "세운 판 뿌리 Z -44 (24×t4, 팔 25)",
+   "case": "mis",
+   "M_Nmm": 3518,
+   "stress_MPa": 54.98,
+   "sf": 3.73,
+   "sf_min": 2.0,
+   "ok": true
+  }
+ ],
+ "cylbkt_deflection_run_mm": 0.0212,
+ "pad_lug_bearing_MPa": {
+  "run": 16.8,
+  "mis": 23.5
+ },
+ "pad_lug_note": "러그 재질·형상은 사슬(구매품/디테일) 쪽. 지압 23 MPa(오조작)는 SUS304·POM 러그 모두 견딤. 러그 치수는 요구서 7절 N04-T2·디테일 N04-D7",
+ "bar_lug_contact_mm2": {
+  "NP(Z -3~0, X -830~-829 홈 안 1 × 높이 3)": 3.0,
+  "PN(Z -5~-3, X -830~-829 × 2)": 2.0
+ },
+ "bar_lug_note": "정하중 스프링 형번 미정(바디 없음). 힘 10 N이면 지압 3.3·5 MPa로 문제없음. 스프링 형번이 정해지면 다시 본다(디테일)"
+}

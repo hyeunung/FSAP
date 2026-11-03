@@ -21,14 +21,17 @@ import json, os
 from gen_N04_chain_keys import interp, phase, fronts
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-M1 = os.path.join(ROOT, "out", "mech_N04", "model1")
+M1 = os.path.join(ROOT, "out", "mech_N04", "model1")  # motion_list·new_bodies (조인트 J_U4 키는 그대로)
 OUTD = os.path.join(ROOT, "out", "probes")
-K = json.load(open(os.path.join(M1, "chain_keys.json"), encoding="utf-8"))
+M2 = os.path.join(ROOT, "out", "mech_N04", "model2")
+K = json.load(open(os.path.join(M2, "chain_keys.json"), encoding="utf-8"))  # 수정 2회차 식
 ML = json.load(open(os.path.join(M1, "motion_list_v1.0.12.json"), encoding="utf-8"))
 LP, LN, LA = K["L_f"]["P"], K["L_f"]["N"], K["L_f"]["A"]
 CHK = json.load(open(os.path.join(ROOT, "out", "mech_N04", "model", "check_sets.json"), encoding="utf-8"))
 NB = json.load(open(os.path.join(M1, "new_bodies.json"), encoding="utf-8"))
-AGAINST = list(dict.fromkeys(CHK["new"] + sum(NB["bodies"].values(), []) + CHK["against"]))
+AGAINST = list(dict.fromkeys(CHK["new"] + sum(NB["bodies"].values(), []) + CHK["against"]
+                              + ["P_N04_CHAIN_NP_BAR", "P_N04_CHAIN_PN_BAR", "P_N04_STOP_PAD_P", "P_N04_STOP_PAD_N",
+                                 "STEP대기_CDJ2B16-110_P_ROD", "STEP대기_CDJ2B16-110_N_ROD"]))
 
 
 def C(c, **p):
@@ -46,17 +49,32 @@ def boxes(jx, jy, op):
         b.append(("PR_N_TOP", -966, -834, -913, fN - LN, -5, 0))
     if fA - LA > -1290.5:
         b.append(("PR_A_TOP", -1290.5, fA - LA, -54, 54, -5, 0))
-    # (b) 바깥 P·N 꺾임·보관
-    for s_, f, tag in ((1, fP + 55, "P"), (-1, 470.5 - 525.5 + (55 - fN), "N")):
-        s = f if tag == "P" else (55 - fN)
-        # 꺾임: 판 통로 안(Y 905~913, Z -40~-6, 사슬 두께 5 + 꺾임 R 여유 3) + 판 밑에서 위층까지 내려감(Y 905~928, Z -79~-41)
-        b.append(("PR_%s_BEND" % tag, -966, -834) + tuple(sorted((s_ * 905, s_ * 913))) + (-40, -6))
-        b.append(("PR_%s_DROP" % tag, -966, -834) + tuple(sorted((s_ * 905, s_ * 928))) + (-79, -41))
-        up = min(max(s, 0), 596)
+    # (b) 바깥 P·N 꺾임·보관 (수정 2회차: U턴 2층, 꼬리 = 앞끝 + 사슬 길이, 닫힘에서 꼬리 러그가 보관 입구 안 10)
+    #   s' = 앞끝 + 55 + 10 (보관 경로 길이, 위층 Y 932 -> 1528 = 596, U턴 반원 R 21.75 = 68.3, 아래층 1528 -> 932)
+    UP, UT = 596.0, 68.3
+    for s_, f, tag in ((1, fP + 55, "P"), (-1, 55 - fN, "N")):
+        sp = f + 10
+        def yy(a, b):
+            return tuple(sorted((s_ * a, s_ * b)))
+        b.append(("PR_%s_BEND" % tag, -966, -834) + yy(905, 913) + (-40, -6))
+        b.append(("PR_%s_DROP" % tag, -966, -834) + yy(905, 928) + (-79, -41))
+        up = min(max(sp, 0), UP)
         if up > 0.5:
-            b.append(("PR_%s_STORE" % tag, -966, -834) + tuple(sorted((s_ * 932, s_ * (932 + up)))) + (-79, -56))
-        if s > 596.5:
-            b.append(("PR_%s_OVERFLOW" % tag, -966, -834) + tuple(sorted((s_ * 1528, s_ * (1528 + s - 596)))) + (-79, -56))
+            b.append(("PR_%s_STORE" % tag, -966, -834) + yy(932, 932 + up) + (-79, -56))
+        if sp > UP:
+            b.append(("PR_%s_UTURN" % tag, -966, -834) + yy(1480, 1528) + (-122, -76))
+        lo = sp - UP - UT
+        if lo > 0.5:
+            b.append(("PR_%s_LOWER" % tag, -966, -834) + yy(1528 - min(lo, UP), 1528) + (-122, -117))
+        if lo > UP:
+            b.append(("PR_%s_OVERFLOW" % tag, -966, -834) + yy(932 - (lo - UP), 932) + (-122, -117))
+        # 꼬리 러그(+X 쪽, 옆벽 홈으로 나와 멈춤 패드에 닿는 것): X -834~-828
+        if sp <= UP:
+            b.append(("PR_%s_LUG" % tag, -834, -828) + yy(932 + sp - 6, 932 + sp) + (-79, -76))
+        elif lo <= 0:
+            b.append(("PR_%s_LUG" % tag, -834, -828) + yy(1500, 1528) + (-123, -76))
+        else:
+            b.append(("PR_%s_LUG" % tag, -834, -828) + yy(1528 - lo, 1528 - lo + 6) + (-122.5, -119.5))
     # (b) A
     b.append(("PR_A_DROP", -1292, -1273, -54, 54, -117, -6))
     sA = -831 - fA
