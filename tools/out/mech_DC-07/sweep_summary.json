@@ -1,0 +1,32 @@
+{
+ "poses": 58,
+ "overlaps": [],
+ "truncated": false,
+ "unchecked": 0,
+ "min_near": [
+  [
+   "SV2RL28-1800_N03X_B",
+   "SV2RL28-1800_N03X_B_BLK",
+   0.0,
+   -200
+  ],
+  [
+   "SV2RL28-1800_N03X_B",
+   "SV2RL28-1800_N03X_B_BLK (U4_X:1/BLOCK_SV2RL28-1800:2)",
+   0.0,
+   -200
+  ],
+  [
+   "SV2RL28-1800_N03X_A",
+   "SV2RL28-1800_N03X_A_BLK",
+   0.0,
+   -200
+  ],
+  [
+   "SV2RL28-1800_N03X_A",
+   "SV2RL28-1800_N03X_A_BLK (U4_X:1/BLOCK_SV2RL28-1800:2)",
+   0.0,
+   -200
+  ]
+ ]
+}

@@ -1,0 +1,514 @@
+[
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0,
+   "quiet": true
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 10,
+   "base": [
+    -1012.0,
+    -991.0,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "new",
+   "body_name": "STEP대기_MSSF5-10_1"
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": {
+    "origin": [
+     0,
+     -991.0,
+     0
+    ],
+    "x_dir": [
+     1,
+     0,
+     0
+    ],
+    "y_dir": [
+     0,
+     0,
+     1
+    ]
+   },
+   "name": "SK_DC07_SS1"
+  }
+ },
+ {
+  "command": "sketch.polygon.circumscribed",
+  "params": {
+   "center": [
+    -1012.0,
+    -360.0
+   ],
+   "radius": 1.25,
+   "sides": 6
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.extrude",
+  "params": {
+   "distance": 3,
+   "operation": "cut",
+   "targets": [
+    "STEP대기_MSSF5-10_1"
+   ],
+   "direction": "negative"
+  }
+ },
+ {
+  "command": "solid.chamfer",
+  "params": {
+   "edges": [
+    [
+     -1009.5,
+     -981.0,
+     -360.0
+    ]
+   ],
+   "distance": 0.75,
+   "body": "STEP대기_MSSF5-10_1"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 10,
+   "base": [
+    -1000.0,
+    -991.0,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "new",
+   "body_name": "STEP대기_MSSF5-10_2"
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": {
+    "origin": [
+     0,
+     -991.0,
+     0
+    ],
+    "x_dir": [
+     1,
+     0,
+     0
+    ],
+    "y_dir": [
+     0,
+     0,
+     1
+    ]
+   },
+   "name": "SK_DC07_SS2"
+  }
+ },
+ {
+  "command": "sketch.polygon.circumscribed",
+  "params": {
+   "center": [
+    -1000.0,
+    -360.0
+   ],
+   "radius": 1.25,
+   "sides": 6
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.extrude",
+  "params": {
+   "distance": 3,
+   "operation": "cut",
+   "targets": [
+    "STEP대기_MSSF5-10_2"
+   ],
+   "direction": "negative"
+  }
+ },
+ {
+  "command": "solid.chamfer",
+  "params": {
+   "edges": [
+    [
+     -997.5,
+     -981.0,
+     -360.0
+    ]
+   ],
+   "distance": 0.75,
+   "body": "STEP대기_MSSF5-10_2"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 10,
+   "base": [
+    -988.0,
+    -991.0,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "new",
+   "body_name": "STEP대기_MSSF5-10_3"
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": {
+    "origin": [
+     0,
+     -991.0,
+     0
+    ],
+    "x_dir": [
+     1,
+     0,
+     0
+    ],
+    "y_dir": [
+     0,
+     0,
+     1
+    ]
+   },
+   "name": "SK_DC07_SS3"
+  }
+ },
+ {
+  "command": "sketch.polygon.circumscribed",
+  "params": {
+   "center": [
+    -988.0,
+    -360.0
+   ],
+   "radius": 1.25,
+   "sides": 6
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.extrude",
+  "params": {
+   "distance": 3,
+   "operation": "cut",
+   "targets": [
+    "STEP대기_MSSF5-10_3"
+   ],
+   "direction": "negative"
+  }
+ },
+ {
+  "command": "solid.chamfer",
+  "params": {
+   "edges": [
+    [
+     -985.5,
+     -981.0,
+     -360.0
+    ]
+   ],
+   "distance": 0.75,
+   "body": "STEP대기_MSSF5-10_3"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 10,
+   "base": [
+    -822.0,
+    -991.0,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "new",
+   "body_name": "STEP대기_MSSF5-10_4"
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": {
+    "origin": [
+     0,
+     -991.0,
+     0
+    ],
+    "x_dir": [
+     1,
+     0,
+     0
+    ],
+    "y_dir": [
+     0,
+     0,
+     1
+    ]
+   },
+   "name": "SK_DC07_SS4"
+  }
+ },
+ {
+  "command": "sketch.polygon.circumscribed",
+  "params": {
+   "center": [
+    -822.0,
+    -360.0
+   ],
+   "radius": 1.25,
+   "sides": 6
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.extrude",
+  "params": {
+   "distance": 3,
+   "operation": "cut",
+   "targets": [
+    "STEP대기_MSSF5-10_4"
+   ],
+   "direction": "negative"
+  }
+ },
+ {
+  "command": "solid.chamfer",
+  "params": {
+   "edges": [
+    [
+     -819.5,
+     -981.0,
+     -360.0
+    ]
+   ],
+   "distance": 0.75,
+   "body": "STEP대기_MSSF5-10_4"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 10,
+   "base": [
+    -810.0,
+    -991.0,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "new",
+   "body_name": "STEP대기_MSSF5-10_5"
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": {
+    "origin": [
+     0,
+     -991.0,
+     0
+    ],
+    "x_dir": [
+     1,
+     0,
+     0
+    ],
+    "y_dir": [
+     0,
+     0,
+     1
+    ]
+   },
+   "name": "SK_DC07_SS5"
+  }
+ },
+ {
+  "command": "sketch.polygon.circumscribed",
+  "params": {
+   "center": [
+    -810.0,
+    -360.0
+   ],
+   "radius": 1.25,
+   "sides": 6
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.extrude",
+  "params": {
+   "distance": 3,
+   "operation": "cut",
+   "targets": [
+    "STEP대기_MSSF5-10_5"
+   ],
+   "direction": "negative"
+  }
+ },
+ {
+  "command": "solid.chamfer",
+  "params": {
+   "edges": [
+    [
+     -807.5,
+     -981.0,
+     -360.0
+    ]
+   ],
+   "distance": 0.75,
+   "body": "STEP대기_MSSF5-10_5"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 10,
+   "base": [
+    -798.0,
+    -991.0,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "new",
+   "body_name": "STEP대기_MSSF5-10_6"
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": {
+    "origin": [
+     0,
+     -991.0,
+     0
+    ],
+    "x_dir": [
+     1,
+     0,
+     0
+    ],
+    "y_dir": [
+     0,
+     0,
+     1
+    ]
+   },
+   "name": "SK_DC07_SS6"
+  }
+ },
+ {
+  "command": "sketch.polygon.circumscribed",
+  "params": {
+   "center": [
+    -798.0,
+    -360.0
+   ],
+   "radius": 1.25,
+   "sides": 6
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.extrude",
+  "params": {
+   "distance": 3,
+   "operation": "cut",
+   "targets": [
+    "STEP대기_MSSF5-10_6"
+   ],
+   "direction": "negative"
+  }
+ },
+ {
+  "command": "solid.chamfer",
+  "params": {
+   "edges": [
+    [
+     -795.5,
+     -981.0,
+     -360.0
+    ]
+   ],
+   "distance": 0.75,
+   "body": "STEP대기_MSSF5-10_6"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "STEP대기_MSSF5-10_1",
+    "STEP대기_MSSF5-10_2",
+    "STEP대기_MSSF5-10_3",
+    "STEP대기_MSSF5-10_4",
+    "STEP대기_MSSF5-10_5",
+    "STEP대기_MSSF5-10_6"
+   ],
+   "material": "Steel"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "STEP대기_MSSF5-10_1",
+    "STEP대기_MSSF5-10_2",
+    "STEP대기_MSSF5-10_3",
+    "STEP대기_MSSF5-10_4",
+    "STEP대기_MSSF5-10_5",
+    "STEP대기_MSSF5-10_6"
+   ],
+   "component": "U4_X"
+  }
+ },
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0,
+   "quiet": true
+  }
+ }
+]

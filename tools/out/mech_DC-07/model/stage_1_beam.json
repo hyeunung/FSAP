@@ -1,0 +1,400 @@
+[
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0,
+   "quiet": true
+  }
+ },
+ {
+  "command": "timeline.roll_to",
+  "params": {
+   "feature": "Cylinder89"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 62.0,
+   "width": 8.0,
+   "height": 13.1,
+   "corner": [
+    -1031.0,
+    -939.0,
+    -365.0
+   ],
+   "operation": "join",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 62.0,
+   "width": 10.0,
+   "height": 13.1,
+   "corner": [
+    -1031.0,
+    -992.0,
+    -365.0
+   ],
+   "operation": "join",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 62.0,
+   "width": 8.0,
+   "height": 13.1,
+   "corner": [
+    -841.0,
+    -939.0,
+    -365.0
+   ],
+   "operation": "join",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 62.0,
+   "width": 10.0,
+   "height": 13.1,
+   "corner": [
+    -841.0,
+    -992.0,
+    -365.0
+   ],
+   "operation": "join",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.1,
+   "height": 11,
+   "base": [
+    -1012.0,
+    -992.5,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "cut",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.1,
+   "height": 11,
+   "base": [
+    -1000.0,
+    -992.5,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "cut",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.1,
+   "height": 11,
+   "base": [
+    -988.0,
+    -992.5,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "cut",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.1,
+   "height": 11,
+   "base": [
+    -822.0,
+    -992.5,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "cut",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.1,
+   "height": 11,
+   "base": [
+    -810.0,
+    -992.5,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "cut",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.1,
+   "height": 11,
+   "base": [
+    -798.0,
+    -992.5,
+    -360.0
+   ],
+   "axis": "Y",
+   "operation": "cut",
+   "targets": [
+    "U4_X_BEAM"
+   ]
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder72",
+   "set": {
+    "base": [
+     -993.5,
+     -976.0,
+     -340.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder73",
+   "set": {
+    "base": [
+     -993.5,
+     -976.0,
+     -353.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder74",
+   "set": {
+    "base": [
+     -993.5,
+     -944.0,
+     -340.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder75",
+   "set": {
+    "base": [
+     -993.5,
+     -944.0,
+     -353.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder76",
+   "set": {
+    "base": [
+     -816.5,
+     -976.0,
+     -340.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder77",
+   "set": {
+    "base": [
+     -816.5,
+     -976.0,
+     -353.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder78",
+   "set": {
+    "base": [
+     -816.5,
+     -944.0,
+     -340.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder79",
+   "set": {
+    "base": [
+     -816.5,
+     -944.0,
+     -353.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder80",
+   "set": {
+    "base": [
+     -993.5,
+     944.0,
+     -340.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder81",
+   "set": {
+    "base": [
+     -993.5,
+     944.0,
+     -353.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder82",
+   "set": {
+    "base": [
+     -993.5,
+     976.0,
+     -340.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder83",
+   "set": {
+    "base": [
+     -993.5,
+     976.0,
+     -353.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder84",
+   "set": {
+    "base": [
+     -816.5,
+     944.0,
+     -340.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder85",
+   "set": {
+    "base": [
+     -816.5,
+     944.0,
+     -353.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder86",
+   "set": {
+    "base": [
+     -816.5,
+     976.0,
+     -340.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.edit",
+  "params": {
+   "feature": "Cylinder87",
+   "set": {
+    "base": [
+     -816.5,
+     976.0,
+     -353.0
+    ]
+   }
+  }
+ },
+ {
+  "command": "timeline.rollback",
+  "params": {
+   "position": "end"
+  }
+ }
+]

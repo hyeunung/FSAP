@@ -1,0 +1,325 @@
+{
+ "U4_X/U4_X_BEAM": {
+  "name": "U4_X_BEAM",
+  "unit": "U4_X",
+  "bbox": [
+   -1050.0,
+   -760.0,
+   -1000.0,
+   1000.0,
+   -365.0,
+   -288.0
+  ],
+  "volume": 16457291.0,
+  "mass": 44105.54,
+  "material": "A5052",
+  "bolt": false,
+  "spec": ""
+ },
+ "U4_X/SV2RL28-1800_N03X_A_BLK": {
+  "name": "SV2RL28-1800_N03X_A_BLK",
+  "unit": "U4_X",
+  "bbox": [
+   -1030.0,
+   -970.0,
+   -981.0,
+   -939.0,
+   -374.5,
+   -352.0
+  ],
+  "volume": 34995.7,
+  "mass": 274.72,
+  "material": "Steel",
+  "bolt": false,
+  "spec": ""
+ },
+ "U4_X/SV2RL28-1800_N03X_B_BLK": {
+  "name": "SV2RL28-1800_N03X_B_BLK",
+  "unit": "U4_X",
+  "bbox": [
+   -1030.0,
+   -970.0,
+   939.0,
+   981.0,
+   -374.5,
+   -352.0
+  ],
+  "volume": 34995.7,
+  "mass": 274.72,
+  "material": "Steel",
+  "bolt": false,
+  "spec": ""
+ },
+ "U4_X/SV2RL28-1800_N03X_A_BLK:2": {
+  "name": "SV2RL28-1800_N03X_A_BLK",
+  "unit": "U4_X",
+  "bbox": [
+   -840.0,
+   -780.0,
+   -981.0,
+   -939.0,
+   -374.5,
+   -352.0
+  ],
+  "volume": 34995.7,
+  "mass": 274.72,
+  "material": "Steel",
+  "bolt": false,
+  "spec": ""
+ },
+ "U4_X/SV2RL28-1800_N03X_B_BLK:2": {
+  "name": "SV2RL28-1800_N03X_B_BLK",
+  "unit": "U4_X",
+  "bbox": [
+   -840.0,
+   -780.0,
+   939.0,
+   981.0,
+   -374.5,
+   -352.0
+  ],
+  "volume": 34995.7,
+  "mass": 274.72,
+  "material": "Steel",
+  "bolt": false,
+  "spec": ""
+ },
+ "U4_X/CB5-20_N03XB": {
+  "name": "CB5-20_N03XB",
+  "unit": "U4_X",
+  "bbox": [
+   -997.75,
+   -989.25,
+   -980.25,
+   -971.75,
+   -360.0,
+   -335.0
+  ],
+  "volume": 633.3,
+  "mass": 4.97,
+  "material": "SCM435",
+  "bolt": true,
+  "spec": "CB5-20"
+ },
+ "U4_X/CB5-20_N03XB:2": {
+  "name": "CB5-20_N03XB",
+  "unit": "U4_X",
+  "bbox": [
+   -997.75,
+   -989.25,
+   -948.25,
+   -939.75,
+   -360.0,
+   -335.0
+  ],
+  "volume": 633.3,
+  "mass": 4.97,
+  "material": "SCM435",
+  "bolt": true,
+  "spec": "CB5-20"
+ },
+ "U4_X/CB5-20_N03XB:3": {
+  "name": "CB5-20_N03XB",
+  "unit": "U4_X",
+  "bbox": [
+   -820.75,
+   -812.25,
+   -980.25,
+   -971.75,
+   -360.0,
+   -335.0
+  ],
+  "volume": 633.3,
+  "mass": 4.97,
+  "material": "SCM435",
+  "bolt": true,
+  "spec": "CB5-20"
+ },
+ "U4_X/CB5-20_N03XB:4": {
+  "name": "CB5-20_N03XB",
+  "unit": "U4_X",
+  "bbox": [
+   -820.75,
+   -812.25,
+   -948.25,
+   -939.75,
+   -360.0,
+   -335.0
+  ],
+  "volume": 633.3,
+  "mass": 4.97,
+  "material": "SCM435",
+  "bolt": true,
+  "spec": "CB5-20"
+ },
+ "U4_X/CB5-20_N03XB:5": {
+  "name": "CB5-20_N03XB",
+  "unit": "U4_X",
+  "bbox": [
+   -997.75,
+   -989.25,
+   939.75,
+   948.25,
+   -360.0,
+   -335.0
+  ],
+  "volume": 633.3,
+  "mass": 4.97,
+  "material": "SCM435",
+  "bolt": true,
+  "spec": "CB5-20"
+ },
+ "U4_X/CB5-20_N03XB:6": {
+  "name": "CB5-20_N03XB",
+  "unit": "U4_X",
+  "bbox": [
+   -997.75,
+   -989.25,
+   971.75,
+   980.25,
+   -360.0,
+   -335.0
+  ],
+  "volume": 633.3,
+  "mass": 4.97,
+  "material": "SCM435",
+  "bolt": true,
+  "spec": "CB5-20"
+ },
+ "U4_X/CB5-20_N03XB:7": {
+  "name": "CB5-20_N03XB",
+  "unit": "U4_X",
+  "bbox": [
+   -820.75,
+   -812.25,
+   939.75,
+   948.25,
+   -360.0,
+   -335.0
+  ],
+  "volume": 633.3,
+  "mass": 4.97,
+  "material": "SCM435",
+  "bolt": true,
+  "spec": "CB5-20"
+ },
+ "U4_X/CB5-20_N03XB:8": {
+  "name": "CB5-20_N03XB",
+  "unit": "U4_X",
+  "bbox": [
+   -820.75,
+   -812.25,
+   971.75,
+   980.25,
+   -360.0,
+   -335.0
+  ],
+  "volume": 633.3,
+  "mass": 4.97,
+  "material": "SCM435",
+  "bolt": true,
+  "spec": "CB5-20"
+ },
+ "U4_X/STEP대기_MSSF5-10_1": {
+  "name": "STEP대기_MSSF5-10_1",
+  "unit": "U4_X",
+  "bbox": [
+   -1014.5,
+   -1009.5,
+   -991.0,
+   -981.0,
+   -362.5,
+   -357.5
+  ],
+  "volume": 176.11,
+  "mass": 1.38,
+  "material": "Steel",
+  "bolt": false,
+  "spec": "MSSF5-10"
+ },
+ "U4_X/STEP대기_MSSF5-10_2": {
+  "name": "STEP대기_MSSF5-10_2",
+  "unit": "U4_X",
+  "bbox": [
+   -1002.5,
+   -997.5,
+   -991.0,
+   -981.0,
+   -362.5,
+   -357.5
+  ],
+  "volume": 176.11,
+  "mass": 1.38,
+  "material": "Steel",
+  "bolt": false,
+  "spec": "MSSF5-10"
+ },
+ "U4_X/STEP대기_MSSF5-10_3": {
+  "name": "STEP대기_MSSF5-10_3",
+  "unit": "U4_X",
+  "bbox": [
+   -990.5,
+   -985.5,
+   -991.0,
+   -981.0,
+   -362.5,
+   -357.5
+  ],
+  "volume": 176.11,
+  "mass": 1.38,
+  "material": "Steel",
+  "bolt": false,
+  "spec": "MSSF5-10"
+ },
+ "U4_X/STEP대기_MSSF5-10_4": {
+  "name": "STEP대기_MSSF5-10_4",
+  "unit": "U4_X",
+  "bbox": [
+   -824.5,
+   -819.5,
+   -991.0,
+   -981.0,
+   -362.5,
+   -357.5
+  ],
+  "volume": 176.11,
+  "mass": 1.38,
+  "material": "Steel",
+  "bolt": false,
+  "spec": "MSSF5-10"
+ },
+ "U4_X/STEP대기_MSSF5-10_5": {
+  "name": "STEP대기_MSSF5-10_5",
+  "unit": "U4_X",
+  "bbox": [
+   -812.5,
+   -807.5,
+   -991.0,
+   -981.0,
+   -362.5,
+   -357.5
+  ],
+  "volume": 176.11,
+  "mass": 1.38,
+  "material": "Steel",
+  "bolt": false,
+  "spec": "MSSF5-10"
+ },
+ "U4_X/STEP대기_MSSF5-10_6": {
+  "name": "STEP대기_MSSF5-10_6",
+  "unit": "U4_X",
+  "bbox": [
+   -800.5,
+   -795.5,
+   -991.0,
+   -981.0,
+   -362.5,
+   -357.5
+  ],
+  "volume": 176.11,
+  "mass": 1.38,
+  "material": "Steel",
+  "bolt": false,
+  "spec": "MSSF5-10"
+ }
+}
