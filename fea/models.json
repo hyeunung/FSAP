@@ -140,6 +140,86 @@
         "value": "운전 SF 3, 오조작 SF 2 (S45C 345, A5052-H34 175, SPCC 205, CB 12.9 1098). 벨트 장력 유지(풀리 밀림 ≪ 장공 조정 ±5)",
         "source": "요구서 6-1(M-09 기본값)"
       }
+    },
+    "U4_X_BEAM": {
+      "case": "cases/mech_N03_handcalc.py",
+      "fixed": "X 블록 4개(X −935·−865, Y ±960 레일 중심) 위에 얹혀 CB5-20 ×8 체결 — 경간 1920 단순 지지(블록 모멘트 무시, 보수)",
+      "contact": "윗면에 Y 레일 2줄·U5_POST 4개, −Y 끝면에 X 벨트 물림, +Y 끝면에 Y 모터 L",
+      "load": "자중 44 kg + 보 위 나머지 87 kg(m_x 167 가정 − 보 − 블록 − m_y) 고른 하중 ×3 g + m_y 35 kg·큰 매트 9 kg 가운데 집중 ×3 g. 오조작 1 g + 손 짚음 300 N 가운데. 평면: 벨트 F_eff X 283 N(운전)·375 N(서보 최대 토크 멈춤)이 −Y 끝에서",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
+        "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
+      }
+    },
+    "P_N03_XMBKT": {
+      "case": "cases/mech_N03_handcalc.py",
+      "fixed": "밑판 Z −380이 U2_BASE 윗면에 얹힘(체결 미작도 N03-D4) — 세움판(Y −1140~−1136, 폭 100) 굽에서 외팔",
+      "contact": "세움판 소켓 Ø70에 MHMF082 플랜지 PCD 90 볼트 4",
+      "load": "모터+풀리 5.8 kg ×3 g(무게 중심 세움판 −Y 56) + 풀리 반경 2·T0 150 + F_eff = 583 N(운전)/675 N(오조작) X 방향, 세움판 +Y 18·밑판 위 50",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
+        "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
+      }
+    },
+    "P_N03_YMBKT": {
+      "case": "cases/mech_N03_handcalc.py",
+      "fixed": "보 +Y 끝면(Y 1000)에 붙은 다리 굽에서 모터판(X −884~−880, Y 1004~1075, 높이 67) 외팔",
+      "contact": "소켓 Ø52에 MHMF042 플랜지 PCD 49.5 볼트 4",
+      "load": "모터+풀리 2.8 kg ×3 g(팔 X 48) + 반경 2·T0 100 + F_eff = 275 N(운전)/424 N(오조작) −Y, 판에서 X 18",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
+        "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
+      }
+    },
+    "P_N03_XIBKT": {
+      "case": "cases/mech_N03_handcalc.py",
+      "fixed": "밑판 Z −380이 U2_BASE에 장공 2로(볼트 미작도 N03-D4)",
+      "contact": "옆판 2장(Y −1145·−1095)에 아이들러 축(미작도 N03-D7) Z −330",
+      "load": "반경 583/675 N −X, 옆판 둘이 나눔. 축 Ø8/Ø10 S45C 양 옆판 46 사이 가운데 하중",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
+        "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
+      }
+    },
+    "P_N03_YIBKT": {
+      "case": "cases/mech_N03_handcalc.py",
+      "fixed": "옆판 Y −1000 끝이 보 −Y 끝면에 붙음(부착 귀 미작도 N03-D6)",
+      "contact": "옆판 축 장공(Y ±8)에 Y 아이들러 축",
+      "load": "반경 275/424 N +Y(옆판 면 안 압축). 축 Ø8 옆판 42 사이",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
+        "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
+      }
+    },
+    "P_N03_XCLAMP": {
+      "case": "cases/mech_N03_handcalc.py",
+      "fixed": "세움판(Y −1004~−1000, Z −316~−296)이 보 −Y 끝면에 CB5-16 ×2(X −1035·−1005, Z −310) — 맞닿는 끝 X −990 지레",
+      "contact": "수평판 Y −1120에 벨트·물림판",
+      "load": "F_eff 283/375 N X 방향, 굽에서 팔 116 → 평면 굽힘 + 세움판 면 밖 굽힘·볼트 지레",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
+        "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
+      }
+    },
+    "P_N03_XCLAMP_PLATE": {
+      "case": "cases/mech_N03_handcalc.py",
+      "fixed": "L 수평판에 치형 물림(조임 볼트 미작도 N03-D4)",
+      "contact": "벨트 치면",
+      "load": "F_eff 283/375 N 전단(35×8.2)",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
+        "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
+      }
+    },
+    "P_N03_YCLAMP": {
+      "case": "cases/mech_N03_handcalc.py",
+      "fixed": "대차 밑면 Z −260에 CB5-12 ×2(Y −415·−385, 물림 8 A5052 탭)",
+      "contact": "벨트 통로 Z −271",
+      "load": "F_eff 75/224 N Y, 팔 11 → 볼트 지레(간격 30)·몸체 굽힘. 조임 4.5 N·m",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
+        "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
+      }
     }
   },
   "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다. 867 순정 노루발 STEP·누름힘(D-10)이 오면 하중·형상을 바꾼다."

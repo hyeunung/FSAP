@@ -1,0 +1,587 @@
+{
+ "loads": {
+  "F_eff_N": {
+   "X": {
+    "run": 282.7,
+    "mis": 375.2
+   },
+   "Y": {
+    "run": 75.3,
+    "mis": 224.1
+   }
+  },
+  "T0_N": {
+   "X": 150.0,
+   "Y": 100.0
+  },
+  "radial_N": {
+   "X": {
+    "run": 582.7,
+    "mis": 675.2
+   },
+   "Y": {
+    "run": 275.3,
+    "mis": 424.1
+   }
+  }
+ },
+ "BEAM_section": {
+  "I_mm4": 2353579,
+  "z_bar_mm": 44.12,
+  "Z_bot_mm3": 53342,
+  "Z_top_mm3": 118402,
+  "span_mm": 1920.0
+ },
+ "BEAM_mid_run": {
+  "stress_vm_MPa": 28.99,
+  "sf": 6.04,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "M_Nmm": 1546134,
+  "W_udl_N": 3852.4,
+  "P_mid_N": 1294.9
+ },
+ "BEAM_mid_mis": {
+  "stress_vm_MPa": 12.36,
+  "sf": 14.16,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "M_Nmm": 659378,
+  "W_udl_N": 1284.1,
+  "P_mid_N": 731.6
+ },
+ "BEAM_deflection_1g": {
+  "mm": 1.105,
+  "min_motion_gap_mm": 5.0,
+  "motion_ok": true,
+  "note": "보 위 유닛이 같이 처짐(원판·테이블 모두 보 위) → 상대 틈 변화는 더 작음. 정밀 한도 6-2 미정(D-08) → 디테일 N03-D1"
+ },
+ "BEAM_inplane_run": {
+  "stress_vm_MPa": 1.34,
+  "sf": 130.15,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "M_Nmm": 282700
+ },
+ "BEAM_inplane_mis": {
+  "stress_vm_MPa": 1.78,
+  "sf": 98.06,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "M_Nmm": 375224
+ },
+ "XBLOCK_yaw_lateral_N": {
+  "follow": 596.9,
+  "run": 2748.3,
+  "mis": 3647.8,
+  "arm_mm": 1361.0
+ },
+ "XBLOCK_C0_SF": {
+  "run": 4.4,
+  "mis": 3.32
+ },
+ "FOLLOW_recheck": {
+  "X_N": 73.3,
+  "Y_N": 29.9,
+  "extra_roll_yaw_N": 11.9,
+  "vector_N": 79.2,
+  "limit_D79_N": 100.0,
+  "ok": true
+ },
+ "XB_CB5-20_run": {
+  "shear_per_bolt_N": 1374.1,
+  "calc": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 6870.7103293413165,
+    "torque_Nm": 6.0,
+    "bolt": "12.9",
+    "base": "S45C",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 6000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 2.27,
+    "암나사 전단": 1.42,
+    "분리(예압/외력)": 0.87
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.34,
+    "조임 좌면": 3.46,
+    "조임 암나사 전단": 1.63
+   },
+   "worst": "분리(예압/외력)",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "XB_CB5-20_mis": {
+  "shear_per_bolt_N": 1823.9,
+  "calc": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 9119.413775680236,
+    "torque_Nm": 6.0,
+    "bolt": "12.9",
+    "base": "S45C",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 6000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 1.71,
+    "암나사 전단": 1.07,
+    "분리(예압/외력)": 0.66
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.34,
+    "조임 좌면": 3.46,
+    "조임 암나사 전단": 1.63
+   },
+   "worst": "분리(예압/외력)",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "XMBKT_root_run": {
+  "stress_vm_MPa": 52.77,
+  "sf": 3.88,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "Mx_Nmm": 9582,
+  "Mz_Nmm": 10489
+ },
+ "XMBKT_ligament_even_run": {
+  "stress_vm_MPa": 62.72,
+  "sf": 3.27,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": true,
+  "oversize_3x": false,
+  "motion_break": false,
+  "ligament_mm": 15
+ },
+ "XMBKT_ligament_one_run": {
+  "stress_vm_MPa": 125.44,
+  "sf": 1.63,
+  "sf_min": 3.0,
+  "ok": false,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "ligament_mm": 15,
+  "note": "한쪽 띠가 위 볼트 하중을 다 받음(위 띠 10 무시)"
+ },
+ "XMBKT_root_mis": {
+  "stress_vm_MPa": 42.99,
+  "sf": 4.77,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "Mx_Nmm": 3194,
+  "Mz_Nmm": 12154
+ },
+ "XMBKT_ligament_even_mis": {
+  "stress_vm_MPa": 47.96,
+  "sf": 4.27,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "ligament_mm": 15
+ },
+ "XMBKT_ligament_one_mis": {
+  "stress_vm_MPa": 95.93,
+  "sf": 2.14,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": true,
+  "oversize_3x": false,
+  "motion_break": false,
+  "ligament_mm": 15,
+  "note": "한쪽 띠가 위 볼트 하중을 다 받음(위 띠 10 무시)"
+ },
+ "YMBKT_root_run": {
+  "stress_vm_MPa": 34.59,
+  "sf": 5.93,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "My_Nmm": 3974,
+  "Mz_Nmm": 4955
+ },
+ "YMBKT_ligament_run": {
+  "stress_vm_MPa": 128.79,
+  "sf": 1.59,
+  "sf_min": 3.0,
+  "ok": false,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "ligament_mm": 6.5,
+  "note": "모터 플랜지 강성 무시(보수)"
+ },
+ "YMBKT_root_mis": {
+  "stress_vm_MPa": 43.54,
+  "sf": 4.71,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "My_Nmm": 1325,
+  "Mz_Nmm": 7634
+ },
+ "YMBKT_ligament_mis": {
+  "stress_vm_MPa": 129.21,
+  "sf": 1.59,
+  "sf_min": 2.0,
+  "ok": false,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "ligament_mm": 6.5,
+  "note": "모터 플랜지 강성 무시(보수)"
+ },
+ "XIBKT_side_inplane_run": {
+  "stress_vm_MPa": 8.08,
+  "sf": 25.37,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "net_width_mm": 52,
+  "bearing_MPa": 9.1
+ },
+ "XIDLER_axle_D8_run": {
+  "stress_vm_MPa": 133.31,
+  "sf": 2.59,
+  "sf_min": 3.0,
+  "ok": false,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false
+ },
+ "XIDLER_axle_D10_run": {
+  "stress_vm_MPa": 68.26,
+  "sf": 5.05,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false
+ },
+ "XIBKT_side_inplane_mis": {
+  "stress_vm_MPa": 9.36,
+  "sf": 21.89,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "net_width_mm": 52,
+  "bearing_MPa": 10.6
+ },
+ "XIDLER_axle_D8_mis": {
+  "stress_vm_MPa": 154.48,
+  "sf": 2.23,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false
+ },
+ "XIDLER_axle_D10_mis": {
+  "stress_vm_MPa": 79.09,
+  "sf": 4.36,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false
+ },
+ "YIBKT_side_run": {
+  "stress_vm_MPa": 0.63,
+  "sf": 327.64,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "note": "힘 +Y가 옆판 면 안 압축. 보 끝면 부착 귀 미작도(N03-D6)"
+ },
+ "YIDLER_axle_D8_run": {
+  "stress_vm_MPa": 57.51,
+  "sf": 6.0,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false
+ },
+ "YIBKT_side_mis": {
+  "stress_vm_MPa": 0.96,
+  "sf": 212.68,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "note": "힘 +Y가 옆판 면 안 압축. 보 끝면 부착 귀 미작도(N03-D6)"
+ },
+ "YIDLER_axle_D8_mis": {
+  "stress_vm_MPa": 88.59,
+  "sf": 3.89,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false
+ },
+ "XCLAMP_horiz_inplane_run": {
+  "stress_vm_MPa": 13.66,
+  "sf": 15.0,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "Mz_Nmm": 32793
+ },
+ "XCLAMP_vert_outplane_run": {
+  "stress_vm_MPa": 102.48,
+  "sf": 2.0,
+  "sf_min": 3.0,
+  "ok": false,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "F_pair_N": 819.8,
+  "eff_width_mm": 30
+ },
+ "XC_CB5-16_run": {
+  "tension_max_N": 655.9,
+  "shear_per_bolt_N": 141.3,
+  "calc": {
+   "inputs": {
+    "d": 5,
+    "le": 12,
+    "load_N": 1362.6139999999998,
+    "torque_Nm": 6.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 6000.0,
+   "engage_ratio": 2.4,
+   "sf_operating": {
+    "나사 인장": 11.46,
+    "암나사 전단": 6.07,
+    "분리(예압/외력)": 4.4
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.34,
+    "조임 좌면": 1.15,
+    "조임 암나사 전단": 1.38
+   },
+   "worst": "조임 좌면",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "XCLAMP_horiz_inplane_mis": {
+  "stress_vm_MPa": 18.14,
+  "sf": 11.3,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false,
+  "Mz_Nmm": 43526
+ },
+ "XCLAMP_vert_outplane_mis": {
+  "stress_vm_MPa": 136.02,
+  "sf": 1.51,
+  "sf_min": 2.0,
+  "ok": false,
+  "near_10pct": false,
+  "oversize_3x": false,
+  "motion_break": false,
+  "F_pair_N": 1088.2,
+  "eff_width_mm": 30
+ },
+ "XC_CB5-16_mis": {
+  "tension_max_N": 870.5,
+  "shear_per_bolt_N": 187.6,
+  "calc": {
+   "inputs": {
+    "d": 5,
+    "le": 12,
+    "load_N": 1808.581687612208,
+    "torque_Nm": 6.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 6000.0,
+   "engage_ratio": 2.4,
+   "sf_operating": {
+    "나사 인장": 8.64,
+    "암나사 전단": 4.57,
+    "분리(예압/외력)": 3.32
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.34,
+    "조임 좌면": 1.15,
+    "조임 암나사 전단": 1.38
+   },
+   "worst": "조임 좌면",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "XPLATE_shear_run": {
+  "stress_vm_MPa": 1.71,
+  "sf": 102.57,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false
+ },
+ "XPLATE_shear_mis": {
+  "stress_vm_MPa": 2.26,
+  "sf": 77.28,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false
+ },
+ "YCLAMP_body_run": {
+  "stress_vm_MPa": 0.95,
+  "sf": 184.64,
+  "sf_min": 3.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false
+ },
+ "YC_CB5-12_run": {
+  "tension_N": 28.1,
+  "shear_per_bolt_N": 38.4,
+  "calc": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 220.0783,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 70.97,
+    "암나사 전단": 25.05,
+    "분리(예압/외력)": 20.45
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 1.54,
+    "조임 암나사 전단": 1.23
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "YCLAMP_body_mis": {
+  "stress_vm_MPa": 2.77,
+  "sf": 63.11,
+  "sf_min": 2.0,
+  "ok": true,
+  "near_10pct": false,
+  "oversize_3x": true,
+  "motion_break": false
+ },
+ "YC_CB5-12_mis": {
+  "tension_N": 82.4,
+  "shear_per_bolt_N": 112.3,
+  "calc": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 643.8851619765494,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 24.26,
+    "암나사 전단": 8.56,
+    "분리(예압/외력)": 6.99
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 1.54,
+    "조임 암나사 전단": 1.23
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ }
+}
