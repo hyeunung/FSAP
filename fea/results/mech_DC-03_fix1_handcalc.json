@@ -1,0 +1,171 @@
+{
+ "case": "mech_DC-03_fix1_handcalc",
+ "part": "P_DC03_YMOV (fix1, v1.0.10)",
+ "M_Nmm": {
+  "run": 5070,
+  "mis": 26890
+ },
+ "section": {
+  "Z_web_mm3": 90.0,
+  "I_channel_mm4": 6682,
+  "c_mm": 13.5,
+  "yc_mm": 4.5
+ },
+ "results": [
+  {
+   "part": "옛 모델 Z -230 ㄷ 단면",
+   "case": "run",
+   "sigma_vm_MPa": 10.2,
+   "sf": 20.01,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": true,
+   "model": "old",
+   "I_mm4": 6682
+  },
+  {
+   "part": "옛 모델 Z -230 ㄷ 단면",
+   "case": "mis",
+   "sigma_vm_MPa": 54.3,
+   "sf": 3.77,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": false,
+   "model": "old"
+  },
+  {
+   "part": "새 모델 Z -239~-230 웹만 띠(볼트 조임 끝 ~ 옆판 시작)",
+   "case": "run",
+   "sigma_vm_MPa": 56.3,
+   "sf": 3.64,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": false,
+   "model": "new",
+   "Z_mm3": 90.0
+  },
+  {
+   "part": "새 모델 Z -239~-230 웹만 띠(볼트 조임 끝 ~ 옆판 시작)",
+   "case": "mis",
+   "sigma_vm_MPa": 298.8,
+   "sf": 0.69,
+   "sf_min": 2.0,
+   "ok": false,
+   "near_10pct": false,
+   "motion_break": true,
+   "oversize_3x": false,
+   "model": "new",
+   "defl_tip_from_band_mm": 2.34
+  },
+  {
+   "part": "새 모델 Z -230 위 ㄷ 단면",
+   "case": "mis",
+   "sigma_vm_MPa": 54.3,
+   "sf": 3.77,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": false,
+   "model": "new"
+  }
+ ],
+ "fix": [
+  {
+   "part": "고친 안 A2 옆판 Z -258까지(볼트 자리도 ㄷ)",
+   "case": "mis",
+   "sigma_vm_MPa": 54.3,
+   "sf": 3.77,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": false
+  },
+  {
+   "part": "고친 안 A2 옆판 Z -258까지(볼트 자리도 ㄷ)",
+   "case": "run",
+   "sigma_vm_MPa": 10.2,
+   "sf": 20.01,
+   "sf_min": 3.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": true
+  },
+  {
+   "part": "고친 안 B2 누름 띠판 t6(볼트 길이 +6, CB5-16)",
+   "case": "mis",
+   "sigma_vm_MPa": 36.4,
+   "sf": 5.63,
+   "sf_min": 2.0,
+   "ok": true,
+   "near_10pct": false,
+   "motion_break": false,
+   "oversize_3x": false
+  }
+ ],
+ "weld": {
+  "q_N_per_mm": 8.52,
+  "fillet_a2_tau_MPa": 3.04,
+  "sf": 38.9
+ },
+ "bolt": {
+  "mis": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 1034.2352403846153,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 15.1,
+    "암나사 전단": 6.0
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "run": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 195.01341346153848,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 80.1,
+    "암나사 전단": 31.81
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ }
+}

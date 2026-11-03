@@ -1,0 +1,110 @@
+[
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": {
+    "origin": [
+     0,
+     0,
+     -258
+    ],
+    "x_dir": [
+     1,
+     0,
+     0
+    ],
+    "y_dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "name": "SK_DC03_YMOV_SIDE1_LOW"
+  }
+ },
+ {
+  "command": "sketch.rectangle.two_point",
+  "params": {
+   "p0": [
+    -1043,
+    -340
+   ],
+   "p1": [
+    -1028,
+    -337
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.extrude",
+  "params": {
+   "distance": 28,
+   "operation": "join",
+   "targets": [
+    "P_DC03_YMOV"
+   ]
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": {
+    "origin": [
+     0,
+     0,
+     -258
+    ],
+    "x_dir": [
+     1,
+     0,
+     0
+    ],
+    "y_dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "name": "SK_DC03_YMOV_SIDE2_LOW"
+  }
+ },
+ {
+  "command": "sketch.rectangle.two_point",
+  "params": {
+   "p0": [
+    -1043,
+    -283
+   ],
+   "p1": [
+    -1028,
+    -280
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.extrude",
+  "params": {
+   "distance": 28,
+   "operation": "join",
+   "targets": [
+    "P_DC03_YMOV"
+   ]
+  }
+ },
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0,
+   "quiet": true
+  }
+ }
+]

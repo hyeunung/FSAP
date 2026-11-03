@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""DC-03 X·Y 케이블 베어 자리 생성기 — v1.0.8 -> v1.0.9, 수정 1회차 --fix1 v1.0.9 -> v1.0.10 (모델링부 2026-11-03, 엔진 v3.7.2)
+"""DC-03 X·Y 케이블 베어 자리 생성기 — v1.0.8 -> v1.0.9, 수정 1회차 --fix1 v1.0.9 -> v1.0.10, 수정 2회차 --fix2 v1.0.10 -> v1.0.11 (모델링부 2026-11-03, 엔진 v3.7.2)
 선정 지시서 docs/reports/mechanism/mech_DC-03_select.md(DC-03-S, C3 고친 안)를 그린다.
 python -B tools/gen_dc03.py -> tools/out/mech_DC-03/model/stage_*.json (MCP batch로 차례로 보냄), edit.json, edit_meta.json
 좌표: 바늘점 원점 월드 mm, J_U4_X·J_U4_Y 0(REST)에서 그린다.
@@ -244,9 +244,35 @@ def main_fix1():
     print("stage_8_fix1", len(s))
 
 
+# ---------------- 수정 2회차(v1.0.10 -> v1.0.11): YMOV 옆판을 다리 아래 끝 Z -258까지 ----------------
+# 검증 문제(verify1): 옆판이 Z -230에서 끝나 볼트 조임 끝(Z -239)과 사이 9 mm가 웹(60x3)만 남음 -> 오조작 SF 0.69.
+# 고친 안 A2: 옆판 2장(X -1043~-1028, Y -340~-337·-283~-280)을 Z -258~-230에 이어 붙여 다리 전 높이 ㄷ 단면.
+# 스케치 2개(옆판마다), 각 28 mm join. 첫 압출에서 커널 boolean 재시도 경고(0.00055 mm 이동)가 났고 결과 bbox Z -258.0004.
+def stage_fix2():
+    st = []
+    for nm, (y0, y1) in (("SK_DC03_YMOV_SIDE1_LOW", (-340, -337)), ("SK_DC03_YMOV_SIDE2_LOW", (-283, -280))):
+        st += [plane([0, 0, -258], [1, 0, 0], [0, 1, 0], nm),
+               C("sketch.rectangle.two_point", p0=[-1043, y0], p1=[-1028, y1]),
+               C("sketch.finish"),
+               C("solid.extrude", distance=28, operation="join", targets=[YM])]
+    st.append(C("motion.play", study="REST", step=0, quiet=True))
+    return st
+
+
+def main_fix2():
+    s = stage_fix2()
+    json.dump(s, open(os.path.join(OUT, "model", "stage_9_fix2.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(s, open(os.path.join(OUT, "edit.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({"base": "3D_Modeling/FSAP_v1.0.10.sc", "result": "3D_Modeling/FSAP_v1.0.11.sc"},
+              open(os.path.join(OUT, "edit_meta.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("stage_9_fix2", len(s))
+
+
 if __name__ == "__main__":
     import sys
-    if "--fix1" in sys.argv:
+    if "--fix2" in sys.argv:
+        main_fix2()      # v1.0.10 -> v1.0.11
+    elif "--fix1" in sys.argv:
         main_fix1()      # v1.0.9 -> v1.0.10 (edit.json = 이 회차 명령만; v1.0.9 전체는 model/edit_v1.0.9.json)
     else:
         main()
