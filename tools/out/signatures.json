@@ -1,7 +1,7 @@
 {
  "pose": "REST step 0",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v1.0.12.sc",
- "doc_hash": "a62d2aee1a8a3aca",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v1.0.14.sc",
+ "doc_hash": "99d677b3ea3bb44c",
  "parts": {
   "REF_GROUND/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -4502,8 +4502,8 @@
     -40.0,
     0.0
    ],
-   "volume": 254180338.9,
-   "mass": 48294.26,
+   "volume": 254174738.9,
+   "mass": 48293.2,
    "material": "A5052_HC",
    "bolt": false,
    "spec": ""
@@ -4597,15 +4597,15 @@
    "name": "P_N04_STORE_P",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -966.0,
-    -834.0,
+    -970.0,
+    -830.0,
     930.0,
     1530.0,
     -125.0,
     -40.0
    ],
-   "volume": 287100.0,
-   "mass": 2276.7,
+   "volume": 294300.0,
+   "mass": 2333.8,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4614,15 +4614,15 @@
    "name": "P_N04_STORE_N",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -966.0,
-    -834.0,
+    -970.0,
+    -830.0,
     -1530.0,
     -930.0,
     -125.0,
     -40.0
    ],
-   "volume": 287100.0,
-   "mass": 2276.7,
+   "volume": 294300.0,
+   "mass": 2333.8,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4632,14 +4632,14 @@
    "unit": "U5_AIRTABLE",
    "bbox": [
     -2000.0,
-    -1310.0,
+    -1272.5,
     -56.0,
     56.0,
     -200.0,
     -40.0
    ],
-   "volume": 464715.0,
-   "mass": 3685.19,
+   "volume": 488610.0,
+   "mass": 3874.68,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4650,13 +4650,13 @@
    "bbox": [
     -910.0,
     -890.0,
-    1381.0,
+    1393.0,
     1533.0,
     -122.0,
     -102.0
    ],
-   "volume": 44216.0,
-   "mass": 353.73,
+   "volume": 40813.8,
+   "mass": 326.51,
    "material": "Stainless Steel",
    "bolt": false,
    "spec": ""
@@ -4668,12 +4668,12 @@
     -910.0,
     -890.0,
     -1533.0,
-    -1381.0,
+    -1393.0,
     -122.0,
     -102.0
    ],
-   "volume": 44216.0,
-   "mass": 353.73,
+   "volume": 40813.8,
+   "mass": 326.51,
    "material": "Stainless Steel",
    "bolt": false,
    "spec": ""
@@ -4683,14 +4683,14 @@
    "unit": "U5_AIRTABLE",
    "bbox": [
     -2000.0,
-    -1808.0,
+    -1820.0,
     -10.0,
     10.0,
     -190.0,
     -170.0
    ],
-   "volume": 56780.9,
-   "mass": 454.25,
+   "volume": 52248.7,
+   "mass": 417.99,
    "material": "Stainless Steel",
    "bolt": false,
    "spec": ""
@@ -4706,8 +4706,8 @@
     -125.0,
     -40.0
    ],
-   "volume": 9500.0,
-   "mass": 75.33,
+   "volume": 18600.0,
+   "mass": 147.5,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4723,8 +4723,8 @@
     -125.0,
     -40.0
    ],
-   "volume": 9500.0,
-   "mass": 75.33,
+   "volume": 18600.0,
+   "mass": 147.5,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4734,14 +4734,14 @@
    "unit": "U5_AIRTABLE",
    "bbox": [
     -2010.0,
-    -2000.0,
+    -1950.0,
     -20.0,
     20.0,
     -192.0,
     -40.0
    ],
-   "volume": 12800.0,
-   "mass": 101.5,
+   "volume": 56960.0,
+   "mass": 451.69,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4751,14 +4751,14 @@
    "unit": "U5_AIRTABLE",
    "bbox": [
     -970.0,
-    -964.0,
+    -966.0,
     57.0,
     67.0,
     -5.0,
     -3.0
    ],
-   "volume": 120.0,
-   "mass": 0.95,
+   "volume": 80.0,
+   "mass": 0.63,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4768,14 +4768,14 @@
    "unit": "U5_AIRTABLE",
    "bbox": [
     -970.0,
-    -964.0,
+    -966.0,
     -67.0,
     -57.0,
     -5.0,
     -3.0
    ],
-   "volume": 120.0,
-   "mass": 0.95,
+   "volume": 80.0,
+   "mass": 0.63,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4784,15 +4784,15 @@
    "name": "P_N04_PIN_3",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -836.0,
+    -834.0,
     -830.0,
     57.0,
     67.0,
     -5.0,
     -3.0
    ],
-   "volume": 120.0,
-   "mass": 0.95,
+   "volume": 80.0,
+   "mass": 0.63,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4801,15 +4801,15 @@
    "name": "P_N04_PIN_4",
    "unit": "U5_AIRTABLE",
    "bbox": [
-    -836.0,
+    -834.0,
     -830.0,
     -67.0,
     -57.0,
     -5.0,
     -3.0
    ],
-   "volume": 120.0,
-   "mass": 0.95,
+   "volume": 80.0,
+   "mass": 0.63,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4842,8 +4842,8 @@
     -131.0,
     0.0
    ],
-   "volume": 42984.9,
-   "mass": 340.87,
+   "volume": 115224.9,
+   "mass": 913.73,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -4981,6 +4981,193 @@
    "volume": 336600.0,
    "mass": 2642.31,
    "material": "SS400",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_Y/P_N04_CHAIN_NP_TAIL": {
+   "name": "P_N04_CHAIN_NP_TAIL",
+   "unit": "U4_Y",
+   "bbox": [
+    -962.0,
+    -838.0,
+    -510.0,
+    -471.0,
+    -45.0,
+    -40.0
+   ],
+   "volume": 24180.0,
+   "mass": 65.04,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_Y/P_N04_CHAIN_PN_TAIL": {
+   "name": "P_N04_CHAIN_PN_TAIL",
+   "unit": "U4_Y",
+   "bbox": [
+    -962.0,
+    -838.0,
+    -329.0,
+    -290.0,
+    -45.0,
+    -40.0
+   ],
+   "volume": 24180.0,
+   "mass": 65.04,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_CHAIN_P/P_N04_CHAIN_P_HEAD": {
+   "name": "P_N04_CHAIN_P_HEAD",
+   "unit": "U5_CHAIN_P",
+   "bbox": [
+    -966.0,
+    -834.0,
+    -55.0,
+    37.5,
+    -5.0,
+    0.0
+   ],
+   "volume": 61050.0,
+   "mass": 164.22,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_CHAIN_N/P_N04_CHAIN_N_HEAD": {
+   "name": "P_N04_CHAIN_N_HEAD",
+   "unit": "U5_CHAIN_N",
+   "bbox": [
+    -966.0,
+    -834.0,
+    -563.0,
+    -470.5,
+    -5.0,
+    0.0
+   ],
+   "volume": 61050.0,
+   "mass": 164.22,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_CHAIN_A/P_N04_CHAIN_A_HEAD": {
+   "name": "P_N04_CHAIN_A_HEAD",
+   "unit": "U5_CHAIN_A",
+   "bbox": [
+    -1012.0,
+    -970.0,
+    -54.0,
+    54.0,
+    -5.0,
+    0.0
+   ],
+   "volume": 22680.0,
+   "mass": 61.01,
+   "material": "A6063",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_P/STEP대기_CDJ2B16-110_P_ROD": {
+   "name": "STEP대기_CDJ2B16-110_P_ROD",
+   "unit": "U5_STOP_P",
+   "bbox": [
+    -902.5,
+    -897.5,
+    1381.0,
+    1504.0,
+    -114.5,
+    -109.5
+   ],
+   "volume": 2414.7,
+   "mass": 19.32,
+   "material": "Stainless Steel",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_P/P_N04_STOP_PAD_P": {
+   "name": "P_N04_STOP_PAD_P",
+   "unit": "U5_STOP_P",
+   "bbox": [
+    -908.0,
+    -892.0,
+    1378.0,
+    1381.0,
+    -120.0,
+    -104.0
+   ],
+   "volume": 603.1,
+   "mass": 4.78,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_N/STEP대기_CDJ2B16-110_N_ROD": {
+   "name": "STEP대기_CDJ2B16-110_N_ROD",
+   "unit": "U5_STOP_N",
+   "bbox": [
+    -902.5,
+    -897.5,
+    -1504.0,
+    -1381.0,
+    -114.5,
+    -109.5
+   ],
+   "volume": 2414.7,
+   "mass": 19.32,
+   "material": "Stainless Steel",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_N/P_N04_STOP_PAD_N": {
+   "name": "P_N04_STOP_PAD_N",
+   "unit": "U5_STOP_N",
+   "bbox": [
+    -908.0,
+    -892.0,
+    -1381.0,
+    -1378.0,
+    -120.0,
+    -104.0
+   ],
+   "volume": 603.1,
+   "mass": 4.78,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_A/STEP대기_CDJ2B16-150_A_ROD": {
+   "name": "STEP대기_CDJ2B16-150_A_ROD",
+   "unit": "U5_STOP_A",
+   "bbox": [
+    -1821.0,
+    -1658.0,
+    -2.5,
+    2.5,
+    -182.5,
+    -177.5
+   ],
+   "volume": 3199.9,
+   "mass": 25.6,
+   "material": "Stainless Steel",
+   "bolt": false,
+   "spec": ""
+  },
+  "U5_STOP_A/P_N04_STOP_PAD_A": {
+   "name": "P_N04_STOP_PAD_A",
+   "unit": "U5_STOP_A",
+   "bbox": [
+    -1658.0,
+    -1655.0,
+    -8.0,
+    8.0,
+    -188.0,
+    -172.0
+   ],
+   "volume": 603.1,
+   "mass": 4.78,
+   "material": "SUS304",
    "bolt": false,
    "spec": ""
   }

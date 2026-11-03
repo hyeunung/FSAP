@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v1.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03 작성. 움직임은 설계 파일 3D_Modeling/FSAP_v1.0.1.sc의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 작업면 Z 0, 매트 이송 +Y(작업자 반대), 작업자 -Y(요구서 0-8-3). 생성기 tools/gen_v1_prep.py. N00 모델링부(2026-11-03) 유닛 상자 반영, 생성기 tools/gen_v1_n00.py.",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v1.0.12.sc",
+ "doc": "../3D_Modeling/FSAP_v1.0.14.sc",
  "joints": {
   "J_U4_X": {
    "cad": "J_U4_X",
@@ -115,6 +115,132 @@
    "max": 511,
    "stopper": "P_DC04_HANGER 끝 탭 -X 면 X 531(캐리어 +X 면이 닿음)",
    "_note": "DC-04: 카세트 +X 미끄럼 인출(손, 액추에이터 없음). 0 = 운전 자리(플런저 IXP-M8 핀이 캐리어 러그 Ø6H7에 걸림), 511 = 카세트 X 500~522로 UPPER 밖. 고정 쪽 U8_GUIDE"
+  },
+  "J_N04_CH_P": {
+   "cad": "J_N04_CH_P",
+   "type": "slide",
+   "unit": "U5_CHAIN_P",
+   "parent": "U5_AIRTABLE",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "origin": [
+    -900,
+    -55,
+    -5
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 875.5,
+   "stopper": "닫힘 멈춤(꼬리 멈춤 STOP_P 0) 앞끝 Y -55 / 꺾임 Y 913 앞 L_f 92.5",
+   "_note": "종속: 값은 tools/gen_N04_chain_keys.py가 연구 키로 씀(모션 링크 아님, 결정로그 N04-E01·E03). 식 = max(Yc+70.5, sP) + 55, Yc = -400 + J_U4_Y, sP = -55(닫힘) / +57(열림: 국면 L이고 원판이 -Y 쪽). 앞끝 바디 P_N04_CHAIN_P_HEAD X -966~-834·Y -55~37.5·Z -5~0(REST)"
+  },
+  "J_N04_CH_N": {
+   "cad": "J_N04_CH_N",
+   "type": "slide",
+   "unit": "U5_CHAIN_N",
+   "parent": "U5_AIRTABLE",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "origin": [
+    -900,
+    -470.5,
+    -5
+   ],
+   "rest": 0,
+   "min": -350,
+   "max": 525.5,
+   "stopper": "닫힘 멈춤 앞끝 Y +55(값 525.5) / 꺾임 Y -913 앞 L_f",
+   "_note": "종속: 값은 tools/gen_N04_chain_keys.py가 연구 키로 씀(모션 링크 아님, 결정로그 N04-E01·E03). 식 = min(Yc-70.5, sN) + 470.5, sN = +55(닫힘) / -57(열림: 국면 L이고 원판이 +Y 쪽). REST 앞끝 = 안장 -Y 끝 -470 - 0.5"
+  },
+  "J_N04_CH_A": {
+   "cad": "J_N04_CH_A",
+   "type": "slide",
+   "unit": "U5_CHAIN_A",
+   "parent": "U5_AIRTABLE",
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "origin": [
+    -970,
+    0,
+    -5
+   ],
+   "rest": 0,
+   "min": -278.5,
+   "max": 139,
+   "stopper": "멈춤 -970(값 0) / 따라감 상한 -831(139, C +X 끝 -830과 1) / 판 통로 X -1292.5 앞 L_f 42(하드 리밋 J_U4_X 1217.5 포함)",
+   "_note": "종속: 값은 tools/gen_N04_chain_keys.py가 연구 키로 씀(모션 링크 아님, 결정로그 N04-E01·E03). 식 = (열림이면 min(-831, -31 - J_U4_X), 아니면 -970) + 970. 열림 = 국면 L(J_U4_X>800, |Yc|>=200) 단계와 그 앞뒤 단계(N04-Q2: 800 넘기 전 열고 800 아래로 온 뒤 닫음)"
+  },
+  "J_N04_STOP_P": {
+   "cad": "J_N04_STOP_P",
+   "type": "slide",
+   "unit": "U5_STOP_P",
+   "parent": "U5_AIRTABLE",
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "origin": [
+    -900,
+    1381,
+    -112
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 110,
+   "stopper": "실린더 행정 끝(CDJ2B16-110 카탈로그 행정 110)",
+   "_note": "종속: 값은 tools/gen_N04_chain_keys.py가 연구 키로 씀(모션 링크 아님, 결정로그 N04-E01·E03). 0 = 닫힘(로드 13 돌출), 110 = 열림(로드가 -Y로 110 내밀어 꼬리를 밂). 원판이 -Y 쪽인 국면 L에서만 110"
+  },
+  "J_N04_STOP_N": {
+   "cad": "J_N04_STOP_N",
+   "type": "slide",
+   "unit": "U5_STOP_N",
+   "parent": "U5_AIRTABLE",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "origin": [
+    -900,
+    -1381,
+    -112
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 110,
+   "stopper": "실린더 행정 끝(CDJ2B16-110 카탈로그 행정 110)",
+   "_note": "종속: 값은 tools/gen_N04_chain_keys.py가 연구 키로 씀(모션 링크 아님, 결정로그 N04-E01·E03). P의 거울(+Y로 내밂). 원판이 +Y 쪽인 국면 L에서 110(CYCLE_G1 단계 348.5~473.5)"
+  },
+  "J_N04_STOP_A": {
+   "cad": "J_N04_STOP_A",
+   "type": "slide",
+   "unit": "U5_STOP_A",
+   "parent": "U5_AIRTABLE",
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "origin": [
+    -1808,
+    0,
+    -180
+   ],
+   "rest": 150,
+   "min": 0,
+   "max": 150,
+   "stopper": "실린더 행정 끝(CDJ2B16-150 카탈로그 행정 150)",
+   "_note": "종속: 값은 tools/gen_N04_chain_keys.py가 연구 키로 씀(모션 링크 아님, 결정로그 N04-E01·E03). 식 = 150 - clamp(A 앞끝 + 970, 0, 150). 150 = 멈춤(로드 내밀어 꼬리 붙잡음, REST), 따라감 = 로드가 꼬리를 따라 물러남"
   }
  },
  "units": {
@@ -237,25 +363,29 @@
     "P_DC03_YMOV",
     "CB5-12_DC03YM",
     "P_N04_SADDLE",
-    "P_N04_WIND"
+    "P_N04_WIND",
+    "P_N04_CHAIN_NP_TAIL",
+    "P_N04_CHAIN_PN_TAIL"
    ],
    "moving": true,
    "_note": "U4_Y_CARR + N02 조향 고정자: 틀(SPCC t4 ㄷ) + 하우징·누름 링·씰 슬리브(A5052) + CRBH5013 + O링 P25×2 + KQ2L06 엘보 + 진공 관 TU0604(Ø6 R15, 씰 포트 -> 벽 구멍 -> ZH 진공 포트) + ZH10DSA(실물) + 모터 받침(SPCC t4 Z) + AZM66AC-PS25 + 모터 풀리 20T + 벨트(STEP대기_) + CB5-12×14·CB5-20×3 N03: Y 블록 4(SV2RL28-1800 블록) + Y 벨트 물림 P_N03_YCLAMP(A5052) + CB5-20 ×8(대차→블록)·CB5-12 ×2(물림→대차) DC-03: Y 베어 움직이는 끝 P_DC03_YMOV(SUS304 t3, 대차 -X 면) + CB5-12 ×2"
   },
   "U5_AIRTABLE": {
    "parts": [
-    "U5_",
+    "U5_AIRTABLE",
     "P_N04_PANEL",
     "P_N04_NECK",
     "STEP대기_HFS8-4080-248",
     "P_N04_STORE",
     "P_N04_CYLBKT",
-    "STEP대기_CDJ2B16",
+    "STEP대기_CDJ2B16-110_P",
+    "STEP대기_CDJ2B16-110_N",
+    "STEP대기_CDJ2B16-150_A",
     "P_N04_PIN",
     "P_N04_INLET"
    ],
    "moving": true,
-   "_note": "J_U4_X와 리지드(U4_X:1과 joint.rigid_group). N04: 허니컴 판 P_N04_PANEL(A5052_HC, 홈 3·솔 주머니 4·목 주머니) + 목 인서트 P_N04_NECK(A6061) + 기둥 STEP대기_HFS8-4080-248 ×4 + 사슬 보관 P_N04_STORE_P/N/A(SUS304) + 꼬리 멈춤 STEP대기_CDJ2B16-110 ×2·-150 + 받침 P_N04_CYLBKT_P/N/A + 끝 막대 멈춤 P_N04_PIN ×4 + 송풍 입구 P_N04_INLET(PA12). 사슬 슬랫·솔 털은 바디 없음(cov_hybrid.py로 판정)"
+   "_note": "J_U4_X와 리지드(U4_X:1과 joint.rigid_group). N04: 허니컴 판 P_N04_PANEL(A5052_HC, 홈 3·솔 주머니 4·목 주머니) + 목 인서트 P_N04_NECK(A6061) + 기둥 STEP대기_HFS8-4080-248 ×4 + 사슬 보관 P_N04_STORE_P/N/A(SUS304) + 꼬리 멈춤 STEP대기_CDJ2B16-110 ×2·-150 + 받침 P_N04_CYLBKT_P/N/A + 끝 막대 멈춤 P_N04_PIN ×4 + 송풍 입구 P_N04_INLET(PA12). 사슬 슬랫·솔 털은 바디 없음(cov_hybrid.py로 판정) | N04 수정 1회차: 실린더 3은 몸만(로드 구멍 Ø6), 로드·패드는 U5_STOP_*. 'STEP대기_CDJ2B16-…_P' 같은 이름은 정확히 그 바디(…_ROD는 U5_STOP_*)."
   },
   "U6_SENSOR": {
    "parts": [
@@ -305,6 +435,63 @@
    ],
    "moving": false,
    "_note": "DC-04: 카세트 인출 안내(걸이 판금 SUS304 t3 + 레일 + 인덱스 플런저 + CB5-12×3, UPPER 밑면 고정). REF_GROUND와 리지드 N02: 볼트 접두 CB5-12_를 이름 3개로(새 CB5-12_N02Y_*와 겹치지 않게)"
+  },
+  "U5_CHAIN_P": {
+   "parts": [
+    "P_N04_CHAIN_P_HEAD"
+   ],
+   "moving": true,
+   "parent": "U5_AIRTABLE",
+   "joint": "J_N04_CH_P",
+   "_note": "N04 수정 1회차(N04-E01·E03): U5_AIRTABLE에 붙은 슬라이더 J_N04_CH_P. 값은 연구 키(gen_N04_chain_keys.py)"
+  },
+  "U5_CHAIN_N": {
+   "parts": [
+    "P_N04_CHAIN_N_HEAD"
+   ],
+   "moving": true,
+   "parent": "U5_AIRTABLE",
+   "joint": "J_N04_CH_N",
+   "_note": "N04 수정 1회차(N04-E01·E03): U5_AIRTABLE에 붙은 슬라이더 J_N04_CH_N. 값은 연구 키(gen_N04_chain_keys.py)"
+  },
+  "U5_CHAIN_A": {
+   "parts": [
+    "P_N04_CHAIN_A_HEAD"
+   ],
+   "moving": true,
+   "parent": "U5_AIRTABLE",
+   "joint": "J_N04_CH_A",
+   "_note": "N04 수정 1회차(N04-E01·E03): U5_AIRTABLE에 붙은 슬라이더 J_N04_CH_A. 값은 연구 키(gen_N04_chain_keys.py)"
+  },
+  "U5_STOP_P": {
+   "parts": [
+    "STEP대기_CDJ2B16-110_P_ROD",
+    "P_N04_STOP_PAD_P"
+   ],
+   "moving": true,
+   "parent": "U5_AIRTABLE",
+   "joint": "J_N04_STOP_P",
+   "_note": "N04 수정 1회차(N04-E01·E03): U5_AIRTABLE에 붙은 슬라이더 J_N04_STOP_P. 값은 연구 키(gen_N04_chain_keys.py)"
+  },
+  "U5_STOP_N": {
+   "parts": [
+    "STEP대기_CDJ2B16-110_N_ROD",
+    "P_N04_STOP_PAD_N"
+   ],
+   "moving": true,
+   "parent": "U5_AIRTABLE",
+   "joint": "J_N04_STOP_N",
+   "_note": "N04 수정 1회차(N04-E01·E03): U5_AIRTABLE에 붙은 슬라이더 J_N04_STOP_N. 값은 연구 키(gen_N04_chain_keys.py)"
+  },
+  "U5_STOP_A": {
+   "parts": [
+    "STEP대기_CDJ2B16-150_A_ROD",
+    "P_N04_STOP_PAD_A"
+   ],
+   "moving": true,
+   "parent": "U5_AIRTABLE",
+   "joint": "J_N04_STOP_A",
+   "_note": "N04 수정 1회차(N04-E01·E03): U5_AIRTABLE에 붙은 슬라이더 J_N04_STOP_A. 값은 연구 키(gen_N04_chain_keys.py)"
   }
  },
  "studies": {
@@ -1030,7 +1217,10 @@
   "U5_",
   "U6_",
   "U8_",
-  "U9_"
+  "U9_",
+  "P_N04_CHAIN",
+  "P_N04_SADDLE",
+  "P_N04_TAIL"
  ],
  "_path_note": "작업 대상(매트·테이프)이 지나가거나 닿는 부품 접두. 헤드 묶음·원판·에어 테이블·센서·카세트·로딩",
  "xy_forbidden": [
@@ -1067,5 +1257,9 @@
    ],
    "reason": "N04 안장(Yc±70, Z -131~0)·감개(Yc±145, Z -131~-45) ↔ 867 LOWER·U1_LOWER_LINK·P_N04_TAIL. 제어 N04-Q2(|Yc| ≥ 200일 때만 J_U4_X > 800), 연구 7개 모두 이 범위에 들지 않음(mech_N04_model.md 5절)"
   }
- ]
+ ],
+ "probe_sets": [
+  "out/probes/N04_chain_probe.json"
+ ],
+ "_probe_note": "N04-E02(결정로그 2026-11-03): 사슬의 길이가 변하는 구간(앞끝 바디 뒤 -> 꺾임 -> 보관, 안쪽 사슬 멈춤 블록 <-> 드럼)은 바디 없이 고정 프로브로 검사. 생성기 tools/gen_N04_chain_probe.py. 검도·라운드 끝 전체 회귀가 매번 돌리고 coverage '본 범위'에 적는다. 드럼 감김·슬랫 꺾임·사슬 처짐은 모델 판정 안 함(요구서 7절 N04-T2)"
 }
