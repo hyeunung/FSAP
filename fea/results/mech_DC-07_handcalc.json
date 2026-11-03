@@ -1,0 +1,228 @@
+{
+ "model": "mech_DC-07 handcalc v1.0.17",
+ "fea": "해석 못 함 — 환경 없음(D-16)",
+ "arm_mm": 1361.0,
+ "cases": {
+  "run": {
+   "yaw_station_N": 2369.3,
+   "y_reaction_per_block_N": 44.1,
+   "F_block_N": 2413.4,
+   "setscrew_bearing_3": {
+    "sf": 4.13,
+    "sf_min": 3.0,
+    "ok": true,
+    "near_10pct": false,
+    "motion_break": false,
+    "p_MPa": 83.6,
+    "per_screw_N": 804.5
+   },
+   "setscrew_bearing_2": {
+    "sf": 2.75,
+    "sf_min": 3.0,
+    "ok": false,
+    "near_10pct": false,
+    "motion_break": false,
+    "p_MPa": 125.4,
+    "per_screw_N": 1206.7
+   },
+   "setscrew_female_thread": {
+    "sf": 4.35,
+    "calc": {
+     "inputs": {
+      "d": 5,
+      "le": 9,
+      "load_N": 804.4535715411281,
+      "torque_Nm": 1.0,
+      "bolt": "12.9",
+      "base": "A5052-H112",
+      "dw": 5.0,
+      "dh": 4.2,
+      "K": 0.2,
+      "sf_min": 3.0
+     },
+     "preload_N": 1000.0,
+     "engage_ratio": 1.8,
+     "sf_operating": {
+      "나사 인장": 19.42,
+      "암나사 전단": 4.35,
+      "분리(예압/외력)": 1.24
+     },
+     "sf_tightening": {
+      "조임 볼트 응력": 14.06,
+      "조임 좌면": 1.04,
+      "조임 암나사 전단": 3.5
+     },
+     "worst": "분리(예압/외력)",
+     "ok": false,
+     "needs_fea": true,
+     "near_limit": [
+      "조임 좌면"
+     ]
+    }
+   },
+   "inner_shoulder": {
+    "sf": 4.37,
+    "sf_min": 3.0,
+    "ok": true,
+    "near_10pct": false,
+    "motion_break": false,
+    "sigma_MPa": 23.7,
+    "tau_MPa": 4.9,
+    "vm_MPa": 25.2
+   },
+   "outer_shoulder": {
+    "sf": 5.54,
+    "sf_min": 3.0,
+    "ok": true,
+    "near_10pct": false,
+    "motion_break": false,
+    "sigma_MPa": 18.7,
+    "tau_MPa": 3.9,
+    "vm_MPa": 19.9
+   },
+   "bolt_separation": {
+    "sf": 8.37,
+    "sf_min": 3.0,
+    "ok": true,
+    "near_10pct": false,
+    "motion_break": false,
+    "dF_N": 716.5
+   },
+   "block_C0": {
+    "sf": 5.01,
+    "before": 4.4,
+    "ok": true
+   },
+   "railB_friction_ref": {
+    "share_half_N": 1206.7,
+    "cap_N": 2400.0,
+    "sf": 1.99,
+    "note": "레일 A 두 자리가 Y 양방향으로 잠겨 보가 돌거나 Y로 갈 수 없으므로 레일 B 이음은 전체 미끄럼이 일어나지 않는다. 미세 미끄럼이 나도 힘이 레일 A로 넘어갈 뿐 — 판정 대상 아님(기록)"
+   },
+   "old_sp70_friction_sf": 0.75
+  },
+  "mis": {
+   "yaw_station_N": 3144.8,
+   "y_reaction_per_block_N": 112.1,
+   "F_block_N": 3256.8,
+   "setscrew_bearing_3": {
+    "sf": 3.06,
+    "sf_min": 2.0,
+    "ok": true,
+    "near_10pct": false,
+    "motion_break": false,
+    "p_MPa": 112.8,
+    "per_screw_N": 1085.6
+   },
+   "setscrew_bearing_2": {
+    "sf": 2.04,
+    "sf_min": 2.0,
+    "ok": true,
+    "near_10pct": true,
+    "motion_break": false,
+    "p_MPa": 169.3,
+    "per_screw_N": 1628.4
+   },
+   "setscrew_female_thread": {
+    "sf": 3.22,
+    "calc": {
+     "inputs": {
+      "d": 5,
+      "le": 9,
+      "load_N": 1085.6060488929845,
+      "torque_Nm": 1.0,
+      "bolt": "12.9",
+      "base": "A5052-H112",
+      "dw": 5.0,
+      "dh": 4.2,
+      "K": 0.2,
+      "sf_min": 2.0
+     },
+     "preload_N": 1000.0,
+     "engage_ratio": 1.8,
+     "sf_operating": {
+      "나사 인장": 14.39,
+      "암나사 전단": 3.22,
+      "분리(예압/외력)": 0.92
+     },
+     "sf_tightening": {
+      "조임 볼트 응력": 14.06,
+      "조임 좌면": 1.04,
+      "조임 암나사 전단": 3.5
+     },
+     "worst": "분리(예압/외력)",
+     "ok": false,
+     "needs_fea": true,
+     "near_limit": [
+      "조임 좌면"
+     ]
+    }
+   },
+   "inner_shoulder": {
+    "sf": 3.24,
+    "sf_min": 2.0,
+    "ok": true,
+    "near_10pct": false,
+    "motion_break": false,
+    "sigma_MPa": 32.0,
+    "tau_MPa": 6.6,
+    "vm_MPa": 34.0
+   },
+   "outer_shoulder": {
+    "sf": 4.1,
+    "sf_min": 2.0,
+    "ok": true,
+    "near_10pct": false,
+    "motion_break": false,
+    "sigma_MPa": 25.2,
+    "tau_MPa": 5.3,
+    "vm_MPa": 26.8
+   },
+   "bolt_separation": {
+    "sf": 6.21,
+    "sf_min": 2.0,
+    "ok": true,
+    "near_10pct": false,
+    "motion_break": false,
+    "dF_N": 966.9
+   },
+   "block_C0": {
+    "sf": 3.72,
+    "before": 3.32,
+    "ok": true
+   },
+   "railB_friction_ref": {
+    "share_half_N": 1628.4,
+    "cap_N": 2400.0,
+    "sf": 1.47,
+    "note": "레일 A 두 자리가 Y 양방향으로 잠겨 보가 돌거나 Y로 갈 수 없으므로 레일 B 이음은 전체 미끄럼이 일어나지 않는다. 미세 미끄럼이 나도 힘이 레일 A로 넘어갈 뿐 — 판정 대상 아님(기록)"
+   },
+   "old_sp70_friction_sf": 0.56
+  }
+ },
+ "worst": [
+  {
+   "case": "run",
+   "item": "setscrew_bearing_3",
+   "sf": 4.13,
+   "ratio": 1.38
+  },
+  {
+   "case": "run",
+   "item": "inner_shoulder",
+   "sf": 4.37,
+   "ratio": 1.46
+  },
+  {
+   "case": "mis",
+   "item": "setscrew_bearing_3",
+   "sf": 3.06,
+   "ratio": 1.53
+  }
+ ],
+ "completion": {
+  "joint_slip_or_separation": true,
+  "female_thread": true,
+  "block_C0": true
+ }
+}
