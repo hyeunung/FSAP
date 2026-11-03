@@ -11,6 +11,11 @@ This project follows Semantic Versioning.
 - 대화 결정(문서만, 모델 변경 없음): 결정로그 C-25 재봉 헤드는 사양으로 정하고 867·Juki LU-2810·썬스타를 견적 비교, C-26 3D프린터식(패턴 재봉기 모양) 기각·R375X 방식 유지. 자료대기 D-10에 견적 비교·치수 재확인 조건 추가.
 - v1.0.16 결과 문서: BOM·설계검토서(FSAP_v1.0.16), 결정로그 RF-04~07, 다시 돌린 전체 회귀 본 범위 새 겹침 0(못 본 범위 G1 뒤·G2·자세 325~349·PRB 남음).
 
+## v2.0.2 — 2026-11-04 (M01 U3 헤드 개조 + 좁은 홈 묶음)
+
+- `3D_Modeling/FSAP_v2.0.2.sc`(55바디): U3_UPPER·U3_LOWER_POD → `STEP대기_867-392342_UPPER`(윗면 M5 탭 6)·`_LOWER`(이름만), `STEP대기_867-392342_NOSE` 새로, U3_PRESSER_BOX → `P_M01_FOOT`(S45C, 발바닥 t2 + 코 + 노루발대 Ø6), U3_HANGER → `P_M01_HANGER`(SUS304 t8 L 판금, 헤드 윗면 위 선반 + 보 앞면 세운 판, 장공 10), CB5-16 ×10(실물 STEP, U3_HEAD 리지드), U1_BEAM 앞면 M5 탭 4, U7_BINDER·U7_PATH_V(바닥 Z 22)·U6_SHOE_SENSOR 모양 고침.
+- 조인트·행정 그대로(J_U3_PRESSER 0~20, J_U3_NEEDLE −30~0). 과제 범위 간섭 0(홈 매트 CYCLE_G1 17자세 + G2 574, 노루발×바늘 9자세). `tools/machine.json`·`tools/config.json` doc → v2.0.2, 생성기 `tools/gen_v2_m01.py`. 보고서 `docs/reports/mechanism/mech_M01_model.md`.
+
 ## v2.0.1 — 2026-11-03 (M00 전체 골격)
 
 - `3D_Modeling/FSAP_v2.0.1.sc`: 유닛 차지 공간 상자 32개(U1 보·기둥·바닥틀, U2 볼 테이블, U3 윗헤드·아랫유닛·노루발·바늘, U4 바늘 옆 바퀴 자리·원판 Ø250, U5 레일·체인·대차·승강, U6 슈·센서, U7 바인더·테이프 길·롤, U8 레귤레이터·라이트 커튼·HMI·경광등)를 기존 컴포넌트에 넣음. `J_U5_X` 한계 0~1380(d₂ 420~1800).

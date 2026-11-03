@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.0.1.sc",
+ "doc": "../3D_Modeling/FSAP_v2.0.2.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -20,7 +20,7 @@
    "rest": 20.0,
    "min": 0,
    "max": 20.0,
-   "_note": "0 = 내림(봉제), 20 = 들림(0-8-5 867 공식 PDF, 임시 C-25). 컴포넌트 U3_PRESSER는 비어 있음 — M00/M01이 노루발 바디를 값 0(내림) 자세 좌표로 넣는다"
+   "_note": "0 = 내림(봉제, 발바닥 Z 12), 20 = 들림(867 공식 PDF, 임시 C-25). 컴포넌트 U3_PRESSER = P_M01_FOOT(M01, v2.0.2)"
   },
   "J_U3_NEEDLE": {
    "cad": "J_U3_NEEDLE",
@@ -39,7 +39,7 @@
    "rest": 0,
    "min": -30.0,
    "max": 0,
-   "_note": "0 = 바늘 위, -30 = 꽂음(D-10 자리값 '바늘 내림 30', 근거 없음). 컴포넌트 U3_NEEDLE 비어 있음 — M01이 값 0 자세로 넣는다"
+   "_note": "0 = 바늘 위(끝 Z 13), -30 = 꽂음(끝 Z -17, D-10 자리값). 컴포넌트 U3_NEEDLE = U3_NEEDLE_PIN"
   },
   "J_U4_PRESS": {
    "cad": "J_U4_PRESS",
@@ -331,7 +331,11 @@
   },
   "U3_HEAD": {
    "parts": [
-    "U3_"
+    "U3_",
+    "STEP대기_867-392342_",
+    "P_M01_HANGER",
+    "P_M01_FOOT",
+    "CB5-16_M01"
    ],
    "moving": true,
    "components": [
@@ -339,7 +343,10 @@
     "U3_PRESSER",
     "U3_NEEDLE"
    ],
-   "_note": "상자 U3_UPPER·U3_HANGER·U3_LOWER_POD·U3_LOWER_DRIVE(고정 몸체), U3_PRESSER_BOX(U3_PRESSER), U3_NEEDLE_PIN(U3_NEEDLE)"
+   "_note": "M01(v2.0.2): 고정 몸체 STEP대기_867-392342_UPPER(옛 U3_UPPER, 윗면 M5 탭 6)·STEP대기_867-392342_NOSE(새)·STEP대기_867-392342_LOWER(옛 U3_LOWER_POD)·U3_LOWER_DRIVE, 매달기 P_M01_HANGER(SUS304 t8 L 판금, 옛 U3_HANGER)·CB5-16_M01_1~10(U3_HEAD 리지드). U3_PRESSER = P_M01_FOOT(옛 U3_PRESSER_BOX), U3_NEEDLE = U3_NEEDLE_PIN",
+   "presser_parts": [
+    "P_M01_FOOT"
+   ]
   },
   "U4_WHEEL_N": {
    "parts": [
@@ -371,14 +378,14 @@
     "U6_"
    ],
    "moving": false,
-   "_note": "상자 U6_SHOE_SENSOR(바늘 -Y, M00-D08). 슈 비키는 실린더 조인트는 M06"
+   "_note": "U6_SHOE_SENSOR(M01 모양 고침: XZ 단면 슈 바닥 X -22~1 Z 12.5~30, 센서 머리 X 1~10 Z 30~90, Y -200~-100). 슈 비키는 실린더 조인트는 M06"
   },
   "U7_TAPE": {
    "parts": [
     "U7_"
    ],
    "moving": false,
-   "_note": "상자 U7_BINDER·U7_PATH_V·U7_PATH_H·U7_ROLL(M00-D09)"
+   "_note": "U7_BINDER(M01: 끝 X -10.5~1 Y -30~-9 Z 13~22, 몸통 X -11~40 Y -95~-10.5 Z 22~60)·U7_PATH_V(M01: 바닥 Z 22)·U7_PATH_H·U7_ROLL"
   },
   "U8_PNEU": {
    "parts": [
@@ -1003,7 +1010,7 @@
   {
    "a": "U3_NEEDLE",
    "b": "WP_* (바늘점 둘레)",
-   "reason": "바늘이 매트를 꿰뚫는 의도된 겹침(M-08). M01이 바늘 바디를 넣으면 부피를 적는다"
+   "reason": "바늘이 매트를 꿰뚫는 의도된 겹침(M-08). M01 실측(J_U3_NEEDLE -30): U3_NEEDLE_PIN↔MAT_G 5.0~10.2 mm³, ↔TAPE_G 22.1 mm³"
   },
   {
    "a": "REF_NEEDLE_AXIS_MARK",
@@ -1011,9 +1018,39 @@
    "reason": "Ø2×1 표시점(Z -301). 점검에서 REF 건너뜀(config skip_tops)"
   },
   {
-   "a": "U2_PLATE·U3_LOWER_POD·U4_DISK ↔ WP_* 밑면 Z 0 맞닿음(부피 0)",
+   "a": "U2_PLATE·STEP대기_867-392342_LOWER·U4_DISK ↔ WP_* 밑면 Z 0 맞닿음(부피 0)",
    "b": "WP_MAT_*·WP_TAPE_*",
    "reason": "볼 윗면 = 바늘판 윗면 = 원판 윗면 Z 0에 매트 밑면이 얹힘(M00, 겹침 부피 0)"
+  },
+  {
+   "a": "STEP대기_867-392342_NOSE",
+   "b": "STEP대기_867-392342_UPPER",
+   "reason": "M01 노즈 윗면 Z 125 = UPPER 밑면 맞닿음(join 안 함, 부피 0)"
+  },
+  {
+   "a": "P_M01_HANGER",
+   "b": "U1_BEAM·STEP대기_867-392342_UPPER",
+   "reason": "M01 매달기 세운 판 뒷면 Y 120 = 보 앞면, 선반 밑면 Z 560 = UPPER 윗면 맞닿음(부피 0)"
+  },
+  {
+   "a": "P_M01_FOOT",
+   "b": "SEAM_*",
+   "reason": "노루발 0(발바닥 Z 12) = 이음매 윗면 Z 12 맞닿음(CYCLE_G2 574 거리 0, 부피 0). 실제는 스프링으로 재료에 앉음(7절)"
+  },
+  {
+   "a": "CB5-16_M01_1~6",
+   "b": "STEP대기_867-392342_UPPER(탭 Ø4.2 깊이 12)",
+   "reason": "볼트 나사부 ↔ 탭 구멍 물림 8 mm(의도된 겹침, inspect.interference는 이 쌍을 unchecked로 냄)"
+  },
+  {
+   "a": "CB5-16_M01_7~10",
+   "b": "U1_BEAM(탭 Ø4.2 깊이 12)",
+   "reason": "볼트 나사부 ↔ 탭 구멍 물림 8 mm(의도된 겹침, unchecked)"
+  },
+  {
+   "a": "U3_NEEDLE_PIN(-30)",
+   "b": "MAT_*·TAPE_*",
+   "reason": "바늘 꽂음 의도 겹침(위 U3_NEEDLE 줄과 같음)"
   }
  ],
  "workpiece_module": "",
