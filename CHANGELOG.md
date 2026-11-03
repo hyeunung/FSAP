@@ -13,6 +13,8 @@ This project follows Semantic Versioning.
 
 ## v2.1.0 — 2026-11-04 (M02 U4 바늘 옆 바퀴)
 
+- 결과 문서: BOM·설계검토서(FSAP_v2.1.0), 결정로그 "구동 M02 결과", 요구서 M02 해결, 자료대기 D-112·D-113, 검도·해석 보고서·손계산.
+
 - `3D_Modeling/FSAP_v2.1.0.sc`(105바디): U4 차지 상자 6개(U4_MOUNT·HOLDER·DRIVE·WHEEL_TIRE·DISK·DISK_BRG)를 지우고 P_M02_BASE(SUS304 t8 L, 보 밑 ±5° 원호 장공)·CYLBRKT(t4 용접)·ARM_SIDE_N/P(t6)·FRONT(t12)·ARM_TIE·WHEEL(A6061)+WHEEL_TREAD(우레탄)·SNS_BRKT·DISK(Ø250)·DISK_SHAFT·DISK_HSG·DISK_BASE, 임시 형상 STEP대기_MHMF022L1U2M·STEP대기_VRXF-PB-60-10, 실물 STEP CDM2C20-25Z·I-020B·6004ZZ ×2·E32-D36P1_2M·CB5-16 ×21·CB5-20 ×4·CB5-12 ×2. U1_BEAM·U2_PLATE 밑면 M5 탭 4씩. 새 컴포넌트 U4_DISK·U4_CYL·U4_ROD.
 - 조인트: J_U4_PRESS 슬라이더 → 회전(−1.867~8.626°, 피벗 (−300, 70)), 실린더 닫힌 고리 J_U4_CYL_PIN·J_U4_CYL_ROD·J_U4_ROD_PIN, J_U4_DISK. 동작 연구 5개 J_U4_PRESS 키 접촉 추종(0·0.306·0.611·8.627). 매트 3장 4연구 전 단계 U4 충돌 0.
 - `tools/machine.json`·`tools/config.json` doc → v2.1.0, 생성기 `tools/gen_v2_m02.py`. 보고서 `docs/reports/mechanism/mech_M02_model.md`, 결정로그 M02-M1~M4, 자료대기 D-111 고침.
