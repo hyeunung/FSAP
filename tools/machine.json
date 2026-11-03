@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v1.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03 작성. 움직임은 설계 파일 3D_Modeling/FSAP_v1.0.1.sc의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 작업면 Z 0, 매트 이송 +Y(작업자 반대), 작업자 -Y(요구서 0-8-3). 생성기 tools/gen_v1_prep.py. N00 모델링부(2026-11-03) 유닛 상자 반영, 생성기 tools/gen_v1_n00.py.",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v1.0.8.sc",
+ "doc": "../3D_Modeling/FSAP_v1.0.9.sc",
  "joints": {
   "J_U4_X": {
    "cad": "J_U4_X",
@@ -175,10 +175,13 @@
     "STEP대기_HTPA28S5M250-A-N19",
     "P_N03_XIBKT",
     "STEP대기_S5M250-OPEN",
-    "CB5-20_N03XR"
+    "CB5-20_N03XR",
+    "P_DC03_XTROUGH",
+    "STEP대기_E4.56.10.150.0",
+    "CB5-12_DC03XT"
    ],
    "moving": false,
-   "_note": "N03: X 레일 SV2RL28-1800 ×2(레일 몸, 블록은 U4_X) + X 서보 MHMF082(STEP대기_) + 모터 브래킷 L(SPCC t4) + 풀리 28T ×2(구동·아이들러) + 아이들러 ㄷ(SPCC t4) + X 벨트 S5M 25폭 고리(공간 고정 모양) + CB5-20 ×60(레일→U2_BASE). U4_RAIL_A·B 지움. REF_GROUND와 리지드"
+   "_note": "N03: X 레일 SV2RL28-1800 ×2(레일 몸, 블록은 U4_X) + X 서보 MHMF082(STEP대기_) + 모터 브래킷 L(SPCC t4) + 풀리 28T ×2(구동·아이들러) + 아이들러 ㄷ(SPCC t4) + X 벨트 S5M 25폭 고리(공간 고정 모양) + CB5-20 ×60(레일→U2_BASE). U4_RAIL_A·B 지움. REF_GROUND와 리지드 DC-03: X 케이블 베어 홈통 P_DC03_XTROUGH(SUS304 t2 판금, U2_BASE 윗면) + X 베어 임시 STEP대기_E4.56.10.150.0(눕힌 고리 차지 띠, 고정) + CB5-12 ×6(→U2_BASE 탭)"
   },
   "U4_X": {
    "parts": [
@@ -195,10 +198,15 @@
     "P_N03_XCLAMP",
     "CB5-20_N03YR",
     "CB5-20_N03XB",
-    "CB5-16_N03XC"
+    "CB5-16_N03XC",
+    "P_DC03_XMOV",
+    "P_DC03_YTRAY",
+    "STEP대기_2400.05.075.0",
+    "CB5-12_DC03XM",
+    "CB5-12_DC03YT"
    ],
    "moving": true,
-   "_note": "N03: U4_X_BEAM(A5052 밀링 리브 보 X -1050~-760·Y ±1000·Z -352~-288, 밑 포켓 4·슬롯 X -911~-889) + X 블록 4 + Y 레일 2 + Y 서보 MHMF042(STEP대기_) + 브래킷 L + 풀리 25T ×2 + 아이들러 ㄷ + Y 벨트 S5M 15폭 고리(공간 고정 모양) + X 벨트 물림(L SPCC + 물림판 A5052) + CB5-20 ×68·CB5-16 ×2. U5_AIRTABLE이 리지드로 함께 움직인다"
+   "_note": "N03: U4_X_BEAM(A5052 밀링 리브 보 X -1050~-760·Y ±1000·Z -352~-288, 밑 포켓 4·슬롯 X -911~-889) + X 블록 4 + Y 레일 2 + Y 서보 MHMF042(STEP대기_) + 브래킷 L + 풀리 25T ×2 + 아이들러 ㄷ + Y 벨트 S5M 15폭 고리(공간 고정 모양) + X 벨트 물림(L SPCC + 물림판 A5052) + CB5-20 ×68·CB5-16 ×2. U5_AIRTABLE이 리지드로 함께 움직인다 DC-03: X 베어 움직이는 끝 P_DC03_XMOV(SUS304 t3 U, 보 +Y 끝면) + Y 홈통 P_DC03_YTRAY(SUS304 t2, 걸이 탭 일체, 보 -X 면) + Y 베어 임시 STEP대기_2400.05.075.0(세운 고리 차지 상자) + CB5-12 ×6"
   },
   "U4_Y": {
    "parts": [
@@ -222,10 +230,12 @@
     "SV2RL28-1800_N03Y_2_BLK",
     "P_N03_YCLAMP",
     "CB5-20_N03YB",
-    "CB5-12_N03YC"
+    "CB5-12_N03YC",
+    "P_DC03_YMOV",
+    "CB5-12_DC03YM"
    ],
    "moving": true,
-   "_note": "U4_Y_CARR + N02 조향 고정자: 틀(SPCC t4 ㄷ) + 하우징·누름 링·씰 슬리브(A5052) + CRBH5013 + O링 P25×2 + KQ2L06 엘보 + 진공 관 TU0604(Ø6 R15, 씰 포트 -> 벽 구멍 -> ZH 진공 포트) + ZH10DSA(실물) + 모터 받침(SPCC t4 Z) + AZM66AC-PS25 + 모터 풀리 20T + 벨트(STEP대기_) + CB5-12×14·CB5-20×3 N03: Y 블록 4(SV2RL28-1800 블록) + Y 벨트 물림 P_N03_YCLAMP(A5052) + CB5-20 ×8(대차→블록)·CB5-12 ×2(물림→대차)"
+   "_note": "U4_Y_CARR + N02 조향 고정자: 틀(SPCC t4 ㄷ) + 하우징·누름 링·씰 슬리브(A5052) + CRBH5013 + O링 P25×2 + KQ2L06 엘보 + 진공 관 TU0604(Ø6 R15, 씰 포트 -> 벽 구멍 -> ZH 진공 포트) + ZH10DSA(실물) + 모터 받침(SPCC t4 Z) + AZM66AC-PS25 + 모터 풀리 20T + 벨트(STEP대기_) + CB5-12×14·CB5-20×3 N03: Y 블록 4(SV2RL28-1800 블록) + Y 벨트 물림 P_N03_YCLAMP(A5052) + CB5-20 ×8(대차→블록)·CB5-12 ×2(물림→대차) DC-03: Y 베어 움직이는 끝 P_DC03_YMOV(SUS304 t3, 대차 -X 면) + CB5-12 ×2"
   },
   "U5_AIRTABLE": {
    "parts": [
