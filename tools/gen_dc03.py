@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""DC-03 X·Y 케이블 베어 자리 생성기 — v1.0.8 -> v1.0.9 (모델링부 2026-11-03, 엔진 v3.7.2)
+"""DC-03 X·Y 케이블 베어 자리 생성기 — v1.0.8 -> v1.0.9, 수정 1회차 --fix1 v1.0.9 -> v1.0.10 (모델링부 2026-11-03, 엔진 v3.7.2)
 선정 지시서 docs/reports/mechanism/mech_DC-03_select.md(DC-03-S, C3 고친 안)를 그린다.
 python -B tools/gen_dc03.py -> tools/out/mech_DC-03/model/stage_*.json (MCP batch로 차례로 보냄), edit.json, edit_meta.json
 좌표: 바늘점 원점 월드 mm, J_U4_X·J_U4_Y 0(REST)에서 그린다.
@@ -184,6 +184,26 @@ def stage_bolts():
     return st
 
 
+# ---------------- 수정 1회차(v1.0.9 -> v1.0.10): YMOV 다리 ㄷ 보강 ----------------
+# 검증 문제: 다리 Z -230~-170 받침 없는 띠(60x3, Z 90 mm3)가 오조작 손 100 N(팔 끝 X -1277)+1 g에서 SF 0.69.
+# 고친 안 A: 다리 양 옆 Y -340~-337·-283~-280에 -X 15 옆판(X -1043~-1028, Z -230~), +Y 쪽은 다리 릴리프(Y -285.12~-280)를
+# 메우고 보강 플랜지와 모서리 용접(릴리프 12 대신). 옆판 1은 팔 밑 Z -173까지, 옆판 2는 보강 플랜지 굽힘 밑 Z -176까지.
+# 판금 edge flange는 가장자리 전체에만 서므로(부분 길이 불가) 용접 옆판을 extrude join으로 그린다(전개는 DC-03-D9).
+def stage_fix1():
+    Y2 = -285.12132034355966   # 다리 +Y 가장자리(corner relief 끝)
+    return [
+        plane([0, 0, -230], [1, 0, 0], [0, 1, 0], "SK_DC03_YMOV_SIDE1"),
+        C("sketch.rectangle.two_point", p0=[-1043, -340], p1=[-1028, -337]),
+        C("sketch.finish"),
+        C("solid.extrude", distance=57, operation="join", targets=[YM]),
+        plane([0, 0, -230], [1, 0, 0], [0, 1, 0], "SK_DC03_YMOV_SIDE2"),
+        C("sketch.line", points=[[-1043, -283], [-1028, -283], [-1028, Y2], [-1025, Y2], [-1025, -280], [-1043, -280]], closed=True),
+        C("sketch.finish"),
+        C("solid.extrude", distance=54, operation="join", targets=[YM]),
+        C("motion.play", study="REST", step=0, quiet=True),
+    ]
+
+
 STAGES = [("sheet", stage_sheet), ("holes", stage_holes), ("taps", stage_taps), ("bear", stage_bear),
           ("assign", stage_assign), ("bolts", stage_bolts)]
 
@@ -215,5 +235,18 @@ def main():
     print("total", len(allc), "bolts", len(bl))
 
 
+def main_fix1():
+    s = stage_fix1()
+    json.dump(s, open(os.path.join(OUT, "model", "stage_8_fix1.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(s, open(os.path.join(OUT, "edit.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({"base": "3D_Modeling/FSAP_v1.0.9.sc", "result": "3D_Modeling/FSAP_v1.0.10.sc"},
+              open(os.path.join(OUT, "edit_meta.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("stage_8_fix1", len(s))
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--fix1" in sys.argv:
+        main_fix1()      # v1.0.9 -> v1.0.10 (edit.json = 이 회차 명령만; v1.0.9 전체는 model/edit_v1.0.9.json)
+    else:
+        main()

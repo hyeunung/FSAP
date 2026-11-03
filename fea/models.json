@@ -220,6 +220,46 @@
         "value": "운전 SF 3, 오조작 SF 2(A5052 Rp0.2 175 / SPCC 205). 처짐은 동작 최소 틈 5.0 mm와 비교(6-2 미정, D-08)",
         "source": "요구서 6-1(M-09 기본값), 틈은 mech_N03_model.md 5절"
       }
+    },
+    "P_DC03_XTROUGH": {
+      "case": "cases/mech_DC-03_handcalc.py",
+      "fixed": "바닥 Z -380이 U2_BASE 윗면에 전면 앉음(CB5-12 x6). 바깥 벽 Y 1485~1487 높이 80은 바닥 굽힘에서 외팔",
+      "contact": "눕힌 X 베어 E4.56(STEP대기)이 바닥 위를 미끄러지며 벽에 닿음",
+      "load": "운전: 베어 밀기 10.3 N 벽 위 끝(유효 폭 2h 160). 오조작: 손 100 N 벽 위 끝 / 창(X -590~-510) 위 띠 12 가운데",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2(SUS304 Rp0.2 205)",
+        "source": "요구서 6-1(M-09 기본값), 하중 출처 mech_DC-03_select.md 6절·hand_n03.json"
+      }
+    },
+    "P_DC03_XMOV": {
+      "case": "cases/mech_DC-03_handcalc.py",
+      "fixed": "A면 Y 1000~1003이 U4_X_BEAM +Y 끝면에 CB5-12 x2(X -1030·-970, Z -320)",
+      "contact": "C면 Y 1098~1101에 X 베어 움직이는 끝",
+      "load": "운전: X 밀기 10.3 N(판 면 안). 오조작: 손 100 N C면 위 끝 X·Y·Z 중 불리한 쪽 + 1 g. what-if: 베어 걸림 X 서보 최대 375 N",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2",
+        "source": "요구서 6-1(M-09 기본값), 하중 출처 mech_DC-03_select.md 6절·hand_n03.json"
+      }
+    },
+    "P_DC03_YTRAY": {
+      "case": "cases/mech_DC-03_handcalc.py",
+      "fixed": "양 끝 플랜지 X -1050이 U4_X_BEAM -X 면에 CB5-12 x2/끝(Z -325) — 홈통은 받침 사이 1835 단순 받침, 끝 탭은 팔 194 외팔(지렛대 35)",
+      "contact": "바닥 Z -358에 Y 베어 2400.05 아래 줄",
+      "load": "운전: (베어 2.2 + 홈통 4.52 kg) x3 g 등분포. 오조작: 손 100 N 가운데 / 탭 옆 바깥 모서리 + 1 g",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2. 처짐 < 위 여유 48",
+        "source": "요구서 6-1(M-09 기본값), 하중 출처 mech_DC-03_select.md 6절·hand_n03.json"
+      }
+    },
+    "P_DC03_YMOV": {
+      "case": "cases/mech_DC-03_handcalc.py",
+      "fixed": "다리 X -1028~-1025가 U4_Y_CARR -X 면(Z -260~-230)에 CB5-12 x2(Y -325·-295, Z -245). 다리 Z -230~-170은 받침 없는 띠(면 밖 굽힘)",
+      "contact": "팔 밑면이 Y 베어 움직이는 끝(위 줄 윗면)에 맞닿음",
+      "load": "운전: 위 줄 반 무게 4.6 N(X -1245, 팔 220) + 판금 0.51 kg x3 g. 오조작: 손 100 N 팔 끝 X -1277 아래로 + 1 g. what-if: 베어 걸림 Y 서보 최대 224 N",
+      "criteria": {
+        "value": "운전 SF 3, 오조작 SF 2",
+        "source": "요구서 6-1(M-09 기본값), 하중 출처 mech_DC-03_select.md 6절·hand_n03.json"
+      }
     }
   },
   "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다. 867 순정 노루발 STEP·누름힘(D-10)이 오면 하중·형상을 바꾼다."
