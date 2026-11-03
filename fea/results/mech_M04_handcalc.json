@@ -1,0 +1,351 @@
+{
+ "step_bbox": {
+  "P_M04_INSERT": {
+   "n_pts": 796,
+   "min": [
+    -400.0,
+    -308.0,
+    -40.0
+   ],
+   "max": [
+    125.0,
+    308.0,
+    0.0
+   ],
+   "holes_d36_circles": 0
+  },
+  "P_M04_PANEL_W1": {
+   "n_pts": 15620,
+   "min": [
+    -2175.0,
+    -1555.0,
+    -12.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "holes_d36_circles": 0
+  },
+  "P_M04_PANEL_W2": {
+   "n_pts": 7782,
+   "min": [
+    -2175.0,
+    -300.0,
+    -12.0
+   ],
+   "max": [
+    0.0,
+    300.0,
+    0.0
+   ],
+   "holes_d36_circles": 0
+  },
+  "P_M04_PANEL_W3": {
+   "n_pts": 15567,
+   "min": [
+    -2175.0,
+    0.0,
+    -12.0
+   ],
+   "max": [
+    0.0,
+    1560.0,
+    0.0
+   ],
+   "holes_d36_circles": 0
+  },
+  "P_M04_PANEL_E1": {
+   "n_pts": 6888,
+   "min": [
+    -400.0,
+    -1555.0,
+    -12.0
+   ],
+   "max": [
+    400.0,
+    0.0,
+    0.0
+   ],
+   "holes_d36_circles": 0
+  },
+  "P_M04_PANEL_E2": {
+   "n_pts": 3586,
+   "min": [
+    0.0,
+    -300.0,
+    -12.0
+   ],
+   "max": [
+    975.0,
+    300.0,
+    0.0
+   ],
+   "holes_d36_circles": 0
+  },
+  "P_M04_PANEL_E3": {
+   "n_pts": 11854,
+   "min": [
+    -400.0,
+    0.0,
+    -12.0
+   ],
+   "max": [
+    975.0,
+    1560.0,
+    0.0
+   ],
+   "holes_d36_circles": 0
+  }
+ },
+ "area_load": {
+  "q_plate_1g": 0.00018447890469082206,
+  "q_ball_1g": 5.886e-05,
+  "q_mat": 4.09e-05,
+  "q_1g_total": 0.00028423890469082207,
+  "q_3g_total": 0.000770916714072466,
+  "eta": 0.28,
+  "k_lig": 3.571
+ },
+ "W2_wheel_path": {
+  "A 보수: 경간 200(레일 중심)·r0 18(구멍) | 기준100N(완료판정)": {
+   "W_N": 100.0,
+   "sigma_nominal": 11.1,
+   "sigma_ligament": 39.7,
+   "SF": 5.17,
+   "SF_req": 3.0,
+   "defl_point_mm": 0.3,
+   "defl_uniform_1g_mm": 0.029,
+   "defl_total_mm": 0.328
+  },
+  "A 보수: 경간 200(레일 중심)·r0 18(구멍) | 운전": {
+   "W_N": 238.6,
+   "sigma_nominal": 26.7,
+   "sigma_ligament": 95.3,
+   "SF": 2.15,
+   "SF_req": 3.0,
+   "defl_point_mm": 0.715,
+   "defl_uniform_1g_mm": 0.029,
+   "defl_total_mm": 0.744
+  },
+  "A 보수: 경간 200(레일 중심)·r0 18(구멍) | 오조작": {
+   "W_N": 453.3,
+   "sigma_nominal": 49.4,
+   "sigma_ligament": 176.3,
+   "SF": 1.16,
+   "SF_req": 2.0,
+   "defl_point_mm": 1.359,
+   "defl_uniform_1g_mm": 0.029,
+   "defl_total_mm": 1.387
+  },
+  "B 실형: 맑은 경간 160(레일 면)·r0 20(테 O44/O36 중간) | 기준100N(완료판정)": {
+   "W_N": 100.0,
+   "sigma_nominal": 9.6,
+   "sigma_ligament": 34.4,
+   "SF": 5.95,
+   "SF_req": 3.0,
+   "defl_point_mm": 0.192,
+   "defl_uniform_1g_mm": 0.012,
+   "defl_total_mm": 0.204
+  },
+  "B 실형: 맑은 경간 160(레일 면)·r0 20(테 O44/O36 중간) | 운전": {
+   "W_N": 238.6,
+   "sigma_nominal": 23.1,
+   "sigma_ligament": 82.5,
+   "SF": 2.48,
+   "SF_req": 3.0,
+   "defl_point_mm": 0.458,
+   "defl_uniform_1g_mm": 0.012,
+   "defl_total_mm": 0.469
+  },
+  "B 실형: 맑은 경간 160(레일 면)·r0 20(테 O44/O36 중간) | 오조작": {
+   "W_N": 453.3,
+   "sigma_nominal": 43.1,
+   "sigma_ligament": 153.9,
+   "SF": 1.33,
+   "SF_req": 2.0,
+   "defl_point_mm": 0.869,
+   "defl_uniform_1g_mm": 0.012,
+   "defl_total_mm": 0.881
+  },
+  "옛 모델(design_check, 정사각 판 가정) | 100 N": {
+   "defl_point_mm": 0.205,
+   "sigma_nominal": 8.9,
+   "note": "W2는 1795 x 600 판을 레일 +-100이 200 띠로 나눔 -> a/b ~ 9, 긴 판 계수가 맞다(새 모델)"
+  }
+ },
+ "general_span300_100N_ref": {
+  "sigma_ligament": 55.0,
+  "SF": 3.73,
+  "defl_mm": 0.82
+ },
+ "E2_strip440_selfweight": {
+  "sigma_ligament_3g": 25.0,
+  "SF": 8.2,
+  "defl_1g_mm": 0.674,
+  "note": "아랫유닛 칸 위, 바퀴 안 지나감. 설계안 0.10(정사각 판·매트만)보다 큼"
+ },
+ "E2_pocket_edge_worker100N": {
+  "beam": {
+   "inputs": {
+    "t": 4.0,
+    "b": 300.0,
+    "L": 150.0,
+    "E": 38600.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 3.0
+   },
+   "force_N": 100.0,
+   "deflection_mm": 1.8216,
+   "stiffness_N_mm": 54.8978,
+   "stress_MPa": 18.75,
+   "sf": 10.93,
+   "thin": true,
+   "ok": true,
+   "needs_fea": false
+  },
+  "note": "가장자리 36 안에는 구멍 없음 -> 리거먼트 계수 안 씀. 기록만(M04-X3)"
+ },
+ "ball_single": {
+  "기준100N(완료판정)": {
+   "load_N": 100.0,
+   "SF_vs_rating": 1.0
+  },
+  "운전": {
+   "load_N": 238.6,
+   "SF_vs_rating": 0.42
+  },
+  "오조작": {
+   "load_N": 453.3,
+   "SF_vs_rating": 0.22
+  },
+  "_note": "바퀴 폭 25 < 피치 50 -> 바퀴 밑 볼 0~1개(design_check far_wheel_row_Y0 28개). 정격 100 N은 catalog.md 임시값(D-96)",
+  "_rating_needed_N": {
+   "운전 SF3 기준": 716.0,
+   "오조작 SF 1.2(영구 변형 경계)": 544.0,
+   "운전 정격 그대로(SF 1)": 238.6
+  }
+ },
+ "insert": {
+  "운전": {
+   "P_N": 301.0,
+   "M_Nmm": 98117.0,
+   "sigma": 1.44,
+   "SF": 135.1,
+   "SF_req": 3.0,
+   "defl_mm": 0.0351
+  },
+  "오조작": {
+   "P_N": 338.1,
+   "M_Nmm": 103682.0,
+   "sigma": 1.52,
+   "SF": 127.9,
+   "SF_req": 2.0,
+   "defl_mm": 0.0368
+  },
+  "ledge_shear_오조작": {
+   "V_N": 522.2,
+   "tau": 0.083,
+   "SF": 1357.0
+  },
+  "_note": "구멍 O270 단면을 보 폭 255로 본 보수식. 볼트(CB8-20) 없이 얹힘: 위로 드는 힘 없음, Y는 몸통(Y +-280)이 레일 안쪽 면에, X는 윗면 턱 단차(X -380·105)가 패널 끝에 걸림 -> 바퀴 접선 95.5 N(M02 오조작)은 맞닿음으로 받는다(마찰 0.2 x 426 N = 85 N에 기대지 않음)"
+ },
+ "insert_tap_M5": {
+  "per_bolt_오조작_N": 84.5,
+  "calc": {
+   "inputs": {
+    "d": 5,
+    "le": 10.0,
+    "load_N": 84.5125,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 2.0,
+   "sf_operating": {
+    "나사 인장": 184.82,
+    "암나사 전단": 81.55
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "note": "조임 토크 기록 없음 -> 조임 상태 점검 생략(체결 바뀐 것만 보는 체결부 몫). 물림 10 = 2d(M-01 1.5d 이상)"
+ },
+ "frame": {
+  "운전": {
+   "P_N": 119.3,
+   "sigma": 1.29,
+   "SF": 112.6,
+   "defl_mm": 0.0087
+  },
+  "오조작": {
+   "P_N": 226.65,
+   "sigma": 2.01,
+   "SF": 72.3,
+   "defl_mm": 0.0165
+  },
+  "sleeper_오조작": {
+   "R_rail_N": 372.6,
+   "sigma": 3.59,
+   "SF": 40.4
+  }
+ },
+ "leveler_M8": {
+  "F_N": 845.7,
+  "thread_compress_MPa": 23.1,
+  "tnut_calc": {
+   "inputs": {
+    "d": 8,
+    "le": 6.0,
+    "load_N": 845.7,
+    "torque_Nm": 0.0,
+    "bolt": "4.8",
+    "base": "SS400",
+    "dw": 13.3,
+    "dh": 8.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 0.75,
+   "sf_operating": {
+    "나사 인장": 14.71,
+    "암나사 전단": 9.83
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "note": "HNTT8-8 나사 길이 6 가정(1.5d 미만 -> 너트 + 고정 너트로 받는 구조, 기록). 레벨러 정격은 STEP대기·형번 미정"
+ },
+ "summary": {
+  "완료판정3_처짐(매트+바퀴100N)": {
+   "A 보수: 경간 200(레일 중심)·r0 18(구멍) | 기준100N(완료판정)": 0.328,
+   "B 실형: 맑은 경간 160(레일 면)·r0 20(테 O44/O36 중간) | 기준100N(완료판정)": 0.204
+  },
+  "W2_운전_SF": {
+   "A 보수: 경간 200(레일 중심)·r0 18(구멍) | 운전": 2.15,
+   "B 실형: 맑은 경간 160(레일 면)·r0 20(테 O44/O36 중간) | 운전": 2.48
+  },
+  "W2_오조작_SF": {
+   "A 보수: 경간 200(레일 중심)·r0 18(구멍) | 오조작": 1.16,
+   "B 실형: 맑은 경간 160(레일 면)·r0 20(테 O44/O36 중간) | 오조작": 1.33
+  },
+  "ball_SF_운전": 0.42,
+  "ball_SF_오조작": 0.22,
+  "insert_SF_오조작": 127.9,
+  "rail_SF_오조작": 72.3
+ }
+}

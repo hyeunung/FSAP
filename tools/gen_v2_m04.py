@@ -567,5 +567,100 @@ def main():
     print(json.dumps(lists, ensure_ascii=False))
 
 
+# ======================================================================
+# 수정 1회차 (v2.1.3 -> v2.1.4, 2026-11-04) — 보고서 mech_M04_model1.md
+#  1) 볼 2,624개를 occurrence로 넣음(PM 예외 판정 1항: 결합·볼 층 금지). 먼 쪽 바퀴 줄 Y 0 28개는 고하중 강구형(동작 M04-F1).
+#  2) 센터판 Y ±315로 다시 만들고 CB8-20 ×8 + HNTT8-8 ×8을 레일 Y ±300 윗면 T홈에(PM 판정 3항). E1·E3 홈.
+#  python -X utf8 -B tools/gen_v2_m04.py fix1  -> tools/out/mech_M04/model/stage_fix1_*.json, edit.json
+# ======================================================================
+FAR_ROW = [p for p in BALLS if p[1] == 0.0 and -1812.5 - 12.7 <= p[0] <= -407.5 + 12.7]
+RESIN_BALLS = [p for p in BALLS if p not in FAR_ROW]
+BALL_R = "STEP대기_BALL_D25_M04"
+BALL_H = "STEP대기_BALL_D25H_M04"
+CB20 = "STEP대기_CB8-20_M04"
+CB20_PTS = [(x, y) for y in (300.0, -300.0) for x in (-340.0, -150.0, 0.0, 90.0)]
+W = 315.0
+LEDGE_TOP = -12.05   # 윗면 턱: 패널 밑면 Z -12와 면 맞닿음 오차를 없애려 0.05 더 팜(PM 판정 3항)
+
+
+def ball_body(nm):
+    def f(p):
+        x, y = p[0], p[1]
+        return [cz(22.0, x, y, -8.0, -6.0, "new", None, nm),
+                cz(18.0, x, y, -30.0, -6.0, "join", [nm]),
+                C("solid.sphere", radius=12.7, center=[x, y, -12.7], operation="join", targets=[nm])]
+    return f
+
+
+def stage_fix1_plate():
+    P = INS
+    s = [C("motion.play", study="REST", step=0, quiet=True),
+         C("solid.remove", bodies=[P]),
+         box(P, -400, 125, -W, W, -40, 0),
+         cz(135.0, -175, 0, -41, 1, "cut", [P]),
+         box(None, -45, 45, -65, 65, -41, 1, "cut", [P])]
+    s += [cz(2.1, x, y, -40.0, -30.0, "cut", [P]) for x, y in DB_B]
+    s += [box(None, -401, -380, -W - 1, W + 1, LEDGE_TOP, 1, "cut", [P]),
+          box(None, 105, 126, -W - 1, W + 1, LEDGE_TOP, 1, "cut", [P]),
+          box(None, -401, 126, 280, W + 1, -41, -12, "cut", [P]),
+          box(None, -401, 126, -W - 1, -280, -41, -12, "cut", [P])]
+    s += [cz(2.1, x, y, -22.0, LEDGE_TOP, "cut", [P]) for x in (-390, 115) for y in LEDGE_TAP_Y]
+    for x, y in CB20_PTS:  # CB8-20 자리파기 Ø14×9 + 관통 Ø9
+        s += [cz(7.0, x, y, -9.0, 0.5, "cut", [P]), cz(4.5, x, y, -13.0, -8.5, "cut", [P])]
+    s += [C("solid.chamfer", edges=[[-251, W, 0], [-251, -W, 0], [-380, 151, 0], [105, 151, 0],
+                                    [11, 65, 0], [11, -65, 0], [45, 21, 0]], distance=1.0, body=P),
+          C("solid.chamfer", edges=[[-310, 0, 0]], distance=0.5, body=P),
+          mat_assign([P], "A5052"),
+          C("component.move_bodies", bodies=[P], component=U2),
+          box(None, -380.5, 105.5, 300, 315.5, -13, -7, "cut", [pname("E3")]),
+          box(None, -380.5, 105.5, -315.5, -300, -13, -7, "cut", [pname("E1")]),
+          # E2 끝면 X 105 ↔ 센터판 벽 X 105 면 맞닿음 오차(2.41 mm³, 두께 0.0016)를 없애려 E2 끝을 0.05 물림
+          box(None, 104, 105.05, -301, 301, -13, -7, "cut", [pname("E2")])]
+    return s
+
+
+def stage_fix1_fasteners():
+    _, _, nuts, _ = bracket_lists()
+    p0 = nuts["+Z"][0]   # HNTT8-8_M04_PZ:1 자리(침목 윗면 홈)
+    s = [copy("HNTT8-8_M04_PZ:1", [x - p0[0], y - p0[1], (-12.0 - LIP) - p0[2]]) for x, y in CB20_PTS]
+    s += tmp_comp(CB20, lambda p: cb8_cmds(CB20, p, "-Z", 20), CB20, [(x, y, -9.0) for x, y in CB20_PTS], "CB8-20",
+                  "placeholder JIS B1176 M8x20 (head 13x8)", "SCM435")
+    return s
+
+
+def stage_fix1_balls(kind):
+    if kind == "H":
+        pts, nm, pn, desc, mat = FAR_ROW, BALL_H, "BALL-D25.4-HL(D-96)",             "placeholder heavy-load ball transfer, steel ball 25.4 press-fit, rating >= 550 N required (D-96, M04-F1); same envelope as resin unit", "Steel"
+    else:
+        pts, nm, pn, desc, mat = RESIN_BALLS, BALL_R, "BALL-D25.4(D-96)",             "placeholder resin ball transfer 25.4 press-fit (D-96 temp: flange 44x2, body 36, ball top Z 0)", "Nylon"
+    return tmp_comp(nm, ball_body(nm), nm, [(x, y, 0.0) for x, y in pts], pn, desc, mat)
+
+
+def stage_fix1_final():
+    return [C("motion.play", study="REST", step=0, quiet=True),
+            C("browser.visibility", visible=False, folder="joints"),
+            C("document.metadata.set", key="description",
+              value="M04 mechanism fix1: 2624 ball transfers as occurrences (28 heavy-load on far wheel row), center plate CB8-20 x8")]
+
+
+def fix1():
+    os.makedirs(OUT, exist_ok=True)
+    stages = [("fix1_1_plate", stage_fix1_plate()), ("fix1_2_fasteners", stage_fix1_fasteners()),
+              ("fix1_3_balls_resin", stage_fix1_balls("R")), ("fix1_4_balls_heavy", stage_fix1_balls("H")),
+              ("fix1_5_final", stage_fix1_final())]
+    allc = []
+    for nm, st in stages:
+        json.dump(st, open(os.path.join(OUT, "stage_%s.json" % nm), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+        allc += st
+        print(nm, len(st))
+    json.dump(allc, open(os.path.join(ROOT, "out", "mech_M04", "edit.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    json.dump({"base": "3D_Modeling/FSAP_v2.1.3.sc", "result": "3D_Modeling/FSAP_v2.1.4.sc", "generator": "tools/gen_v2_m04.py fix1"},
+              open(os.path.join(ROOT, "out", "mech_M04", "edit_meta.json"), "w", encoding="utf-8"))
+    print("balls", len(BALLS), "resin", len(RESIN_BALLS), "heavy", len(FAR_ROW), FAR_ROW[0], FAR_ROW[-1], "cmds", len(allc))
+
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "fix1":
+        fix1()
+    else:
+        main()
