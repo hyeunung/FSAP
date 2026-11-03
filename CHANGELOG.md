@@ -16,6 +16,7 @@ This project follows Semantic Versioning.
 - 침목 홈 너트 PZ:1~72·NZ:1~36은 목 긴 쪽이 홈 폭 방향이라 턱을 240 mm³ 파고들었음 → 너트 축 둘레 90° 돌림
 - 센터판 볼트 CB8-20 ×8 → `STEP대기_CB8-15_M04` ×8(끝 Z −24, 홈 바닥 살 Z −24.5와 0.5, 물림 9)(검도 V1). CB8-20 바디 잔재까지 지움
 - 검사: 너트 316 ↔ 형재 겹침 0(boolean 다 됨), 탐침 100개 겹침 0, 동작 6자세 새 겹침 0. 보고서 `docs/reports/mechanism/mech_M04_model2.md`
+- 문서(M04 결과): BOM `docs/bom/FSAP_v2.1.5_{made,purchased}.csv`(v2.1.2 + 가공품 7·구매품 19행), 설계검토서 `docs/review/FSAP_v2.1.5_review.md`(v2.1.3~v2.1.5 묶음), 결정로그 "구동 M04 결과", 요구서 5절 M04 해결, 자료대기 D-116~D-119. 해석 손계산 `fea/cases/mech_M04_fea2_handcalc.py`.
 
 ## v2.1.4 — 2026-11-04 (M04 수정 1회차: 볼 트랜스퍼·센터판 체결)
 - 볼 트랜스퍼 2,624개를 occurrence로 넣음: 수지 `STEP대기_BALL_D25_M04` 2,596(Nylon) + 먼 쪽 바퀴 줄 Y 0 고하중 `STEP대기_BALL_D25H_M04` 28(Steel, 필요 정격 ≥ 550 N, 동작 M04-F1)
