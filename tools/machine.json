@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v1.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03 작성. 움직임은 설계 파일 3D_Modeling/FSAP_v1.0.1.sc의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 작업면 Z 0, 매트 이송 +Y(작업자 반대), 작업자 -Y(요구서 0-8-3). 생성기 tools/gen_v1_prep.py. N00 모델링부(2026-11-03) 유닛 상자 반영, 생성기 tools/gen_v1_n00.py.",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v1.0.11.sc",
+ "doc": "../3D_Modeling/FSAP_v1.0.12.sc",
  "joints": {
   "J_U4_X": {
    "cad": "J_U4_X",
@@ -131,7 +131,8 @@
     "U1_LOWER_DRIVE",
     "U1_LOWER_LINK",
     "U1_LOWER_STAND",
-    "STEP대기_MHMF042L1U2M"
+    "STEP대기_MHMF042L1U2M",
+    "P_N04_TAIL"
    ],
    "moving": false,
    "_note": "N01: 867-392342 임시 형상(STEP대기_ UPPER·NOSE·LOWER, D-10·D-80). DC-05: 아랫축 각관 U1_LOWER_LINK(X 30~650) + 받침 U1_LOWER_STAND(X 530~610) + 서보 끝판 U1_LOWER_DRIVE(X 650~654) + 서보 임시 STEP대기_MHMF042L1U2M(D-81). REF_GROUND와 리지드"
@@ -150,7 +151,9 @@
   },
   "U2_BRIDGE": {
    "parts": [
-    "U2_"
+    "U2_",
+    "STEP대기_VB-004-E2",
+    "P_N04_BLOWER_BASE"
    ],
    "moving": false,
    "_note": "N00: 바닥틀 U2_BASE·기둥 U2_COLUMN(+X·-Y 모서리)·보 U2_BOOM. REF_GROUND와 리지드"
@@ -232,17 +235,27 @@
     "CB5-20_N03YB",
     "CB5-12_N03YC",
     "P_DC03_YMOV",
-    "CB5-12_DC03YM"
+    "CB5-12_DC03YM",
+    "P_N04_SADDLE",
+    "P_N04_WIND"
    ],
    "moving": true,
    "_note": "U4_Y_CARR + N02 조향 고정자: 틀(SPCC t4 ㄷ) + 하우징·누름 링·씰 슬리브(A5052) + CRBH5013 + O링 P25×2 + KQ2L06 엘보 + 진공 관 TU0604(Ø6 R15, 씰 포트 -> 벽 구멍 -> ZH 진공 포트) + ZH10DSA(실물) + 모터 받침(SPCC t4 Z) + AZM66AC-PS25 + 모터 풀리 20T + 벨트(STEP대기_) + CB5-12×14·CB5-20×3 N03: Y 블록 4(SV2RL28-1800 블록) + Y 벨트 물림 P_N03_YCLAMP(A5052) + CB5-20 ×8(대차→블록)·CB5-12 ×2(물림→대차) DC-03: Y 베어 움직이는 끝 P_DC03_YMOV(SUS304 t3, 대차 -X 면) + CB5-12 ×2"
   },
   "U5_AIRTABLE": {
    "parts": [
-    "U5_"
+    "U5_",
+    "P_N04_PANEL",
+    "P_N04_NECK",
+    "STEP대기_HFS8-4080-248",
+    "P_N04_STORE",
+    "P_N04_CYLBKT",
+    "STEP대기_CDJ2B16",
+    "P_N04_PIN",
+    "P_N04_INLET"
    ],
    "moving": true,
-   "_note": "J_U4_X와 리지드(U4_X:1과 joint.rigid_group). U5_TABLE(홈 3: 원판·바늘·기둥) + U5_POST_1~4"
+   "_note": "J_U4_X와 리지드(U4_X:1과 joint.rigid_group). N04: 허니컴 판 P_N04_PANEL(A5052_HC, 홈 3·솔 주머니 4·목 주머니) + 목 인서트 P_N04_NECK(A6061) + 기둥 STEP대기_HFS8-4080-248 ×4 + 사슬 보관 P_N04_STORE_P/N/A(SUS304) + 꼬리 멈춤 STEP대기_CDJ2B16-110 ×2·-150 + 받침 P_N04_CYLBKT_P/N/A + 끝 막대 멈춤 P_N04_PIN ×4 + 송풍 입구 P_N04_INLET(PA12). 사슬 슬랫·솔 털은 바디 없음(cov_hybrid.py로 판정)"
   },
   "U6_SENSOR": {
    "parts": [
@@ -1042,6 +1055,17 @@
     105
    ],
    "reason": "DC-05-D1 867 LOWER, N03 소프트 리밋"
+  },
+  {
+   "plate_center_x": [
+    -96,
+    716
+   ],
+   "plate_center_y": [
+    -190,
+    190
+   ],
+   "reason": "N04 안장(Yc±70, Z -131~0)·감개(Yc±145, Z -131~-45) ↔ 867 LOWER·U1_LOWER_LINK·P_N04_TAIL. 제어 N04-Q2(|Yc| ≥ 200일 때만 J_U4_X > 800), 연구 7개 모두 이 범위에 들지 않음(mech_N04_model.md 5절)"
   }
  ]
 }

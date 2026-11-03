@@ -1,0 +1,2358 @@
+[
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0,
+   "quiet": true
+  }
+ },
+ {
+  "command": "solid.remove",
+  "params": {
+   "bodies": [
+    "U5_TABLE",
+    "U5_POST_1",
+    "U5_POST_2",
+    "U5_POST_3",
+    "U5_POST_4"
+   ]
+  }
+ },
+ {
+  "command": "material.create",
+  "params": {
+   "name": "A5052_HC",
+   "density_g_cm3": 0.19,
+   "color": "#c2c6cc"
+  }
+ },
+ {
+  "command": "material.create",
+  "params": {
+   "name": "A6061",
+   "density_g_cm3": 2.7,
+   "color": "#cfd3d8"
+  }
+ },
+ {
+  "command": "material.create",
+  "params": {
+   "name": "A6063",
+   "density_g_cm3": 2.69,
+   "color": "#d8dbe0"
+  }
+ },
+ {
+  "command": "material.create",
+  "params": {
+   "name": "PA12",
+   "density_g_cm3": 1.01,
+   "color": "#4a4a4a"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 2220,
+   "width": 3105,
+   "height": 40,
+   "corner": [
+    -2010,
+    -1545,
+    -40
+   ],
+   "operation": "new",
+   "body_name": "P_N04_PANEL"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 140,
+   "width": 1830,
+   "height": 6,
+   "corner": [
+    -970,
+    -915,
+    -5
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 128,
+   "width": 1790,
+   "height": 36,
+   "corner": [
+    -964,
+    -895,
+    -41
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 140,
+   "width": 20,
+   "height": 36,
+   "corner": [
+    -970,
+    895,
+    -41
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 140,
+   "width": 20,
+   "height": 36,
+   "corner": [
+    -970,
+    -915,
+    -41
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 1503.5,
+   "width": 110,
+   "height": 6,
+   "corner": [
+    -1292.5,
+    -55,
+    -5
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 1181,
+   "width": 110,
+   "height": 36,
+   "corner": [
+    -970,
+    -55,
+    -41
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 322.5,
+   "width": 102,
+   "height": 36,
+   "corner": [
+    -1292.5,
+    -51,
+    -41
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 973.5,
+   "width": 140,
+   "height": 42,
+   "corner": [
+    -762.5,
+    -530,
+    -41
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 1041,
+   "width": 9,
+   "height": 9,
+   "corner": [
+    -830,
+    55,
+    -8
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 1041,
+   "width": 9,
+   "height": 9,
+   "corner": [
+    -830,
+    -64,
+    -8
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 973.5,
+   "width": 9,
+   "height": 9,
+   "corner": [
+    -762.5,
+    -539,
+    -8
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 973.5,
+   "width": 9,
+   "height": 9,
+   "corner": [
+    -762.5,
+    -390,
+    -8
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 67.5,
+   "width": 140,
+   "height": 38,
+   "corner": [
+    -830,
+    -530,
+    -39
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 23,
+   "height": 2,
+   "base": [
+    -1023,
+    1040,
+    -41
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "P_N04_PANEL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 67.5,
+   "width": 140,
+   "height": 38,
+   "corner": [
+    -830,
+    -530,
+    -39
+   ],
+   "operation": "new",
+   "body_name": "P_N04_NECK"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 40,
+   "width": 80,
+   "height": 248,
+   "corner": [
+    -1050,
+    900,
+    -288
+   ],
+   "operation": "new",
+   "body_name": "STEP대기_HFS8-4080-248_1"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -1051,
+    916,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -1047.5,
+    912,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -1051,
+    956,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -1047.5,
+    952,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -1012.5,
+    916,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -1019.5,
+    912,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -1012.5,
+    956,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -1019.5,
+    952,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 8,
+   "width": 3.5,
+   "height": 250,
+   "corner": [
+    -1034,
+    899,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 16,
+   "width": 7.0,
+   "height": 250,
+   "corner": [
+    -1038,
+    902.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 8,
+   "width": 3.5,
+   "height": 250,
+   "corner": [
+    -1034,
+    977.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 16,
+   "width": 7.0,
+   "height": 250,
+   "corner": [
+    -1038,
+    970.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 3.5,
+   "height": 250,
+   "base": [
+    -1030,
+    920,
+    -289
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 3.5,
+   "height": 250,
+   "base": [
+    -1030,
+    960,
+    -289
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_1"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 40,
+   "width": 80,
+   "height": 248,
+   "corner": [
+    -790,
+    900,
+    -288
+   ],
+   "operation": "new",
+   "body_name": "STEP대기_HFS8-4080-248_2"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -791,
+    916,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -787.5,
+    912,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -791,
+    956,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -787.5,
+    952,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -752.5,
+    916,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -759.5,
+    912,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -752.5,
+    956,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -759.5,
+    952,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 8,
+   "width": 3.5,
+   "height": 250,
+   "corner": [
+    -774,
+    899,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 16,
+   "width": 7.0,
+   "height": 250,
+   "corner": [
+    -778,
+    902.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 8,
+   "width": 3.5,
+   "height": 250,
+   "corner": [
+    -774,
+    977.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 16,
+   "width": 7.0,
+   "height": 250,
+   "corner": [
+    -778,
+    970.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 3.5,
+   "height": 250,
+   "base": [
+    -770,
+    920,
+    -289
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 3.5,
+   "height": 250,
+   "base": [
+    -770,
+    960,
+    -289
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_2"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 40,
+   "width": 80,
+   "height": 248,
+   "corner": [
+    -1050,
+    -980,
+    -288
+   ],
+   "operation": "new",
+   "body_name": "STEP대기_HFS8-4080-248_3"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -1051,
+    -964,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -1047.5,
+    -968,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -1051,
+    -924,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -1047.5,
+    -928,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -1012.5,
+    -964,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -1019.5,
+    -968,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -1012.5,
+    -924,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -1019.5,
+    -928,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 8,
+   "width": 3.5,
+   "height": 250,
+   "corner": [
+    -1034,
+    -981,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 16,
+   "width": 7.0,
+   "height": 250,
+   "corner": [
+    -1038,
+    -977.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 8,
+   "width": 3.5,
+   "height": 250,
+   "corner": [
+    -1034,
+    -902.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 16,
+   "width": 7.0,
+   "height": 250,
+   "corner": [
+    -1038,
+    -909.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 3.5,
+   "height": 250,
+   "base": [
+    -1030,
+    -960,
+    -289
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 3.5,
+   "height": 250,
+   "base": [
+    -1030,
+    -920,
+    -289
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_3"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 40,
+   "width": 80,
+   "height": 248,
+   "corner": [
+    -790,
+    -980,
+    -288
+   ],
+   "operation": "new",
+   "body_name": "STEP대기_HFS8-4080-248_4"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -791,
+    -964,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -787.5,
+    -968,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -791,
+    -924,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -787.5,
+    -928,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -752.5,
+    -964,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -759.5,
+    -968,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 3.5,
+   "width": 8,
+   "height": 250,
+   "corner": [
+    -752.5,
+    -924,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 7.0,
+   "width": 16,
+   "height": 250,
+   "corner": [
+    -759.5,
+    -928,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 8,
+   "width": 3.5,
+   "height": 250,
+   "corner": [
+    -774,
+    -981,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 16,
+   "width": 7.0,
+   "height": 250,
+   "corner": [
+    -778,
+    -977.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 8,
+   "width": 3.5,
+   "height": 250,
+   "corner": [
+    -774,
+    -902.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 16,
+   "width": 7.0,
+   "height": 250,
+   "corner": [
+    -778,
+    -909.5,
+    -289
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 3.5,
+   "height": 250,
+   "base": [
+    -770,
+    -960,
+    -289
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 3.5,
+   "height": 250,
+   "base": [
+    -770,
+    -920,
+    -289
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "STEP대기_HFS8-4080-248_4"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 132,
+   "width": 600,
+   "height": 85,
+   "corner": [
+    -966,
+    930,
+    -125
+   ],
+   "operation": "new",
+   "body_name": "P_N04_STORE_P"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 109.0,
+   "width": 602,
+   "height": 84.5,
+   "corner": [
+    -954.5,
+    929,
+    -123.5
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_P"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 129.0,
+   "width": 602,
+   "height": 42.0,
+   "corner": [
+    -964.5,
+    929,
+    -123.5
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_P"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 129.0,
+   "width": 602,
+   "height": 41,
+   "corner": [
+    -964.5,
+    929,
+    -80
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_P"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 132,
+   "width": 600,
+   "height": 85,
+   "corner": [
+    -966,
+    -1530,
+    -125
+   ],
+   "operation": "new",
+   "body_name": "P_N04_STORE_N"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 109.0,
+   "width": 602,
+   "height": 84.5,
+   "corner": [
+    -954.5,
+    -1531,
+    -123.5
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_N"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 129.0,
+   "width": 602,
+   "height": 42.0,
+   "corner": [
+    -964.5,
+    -1531,
+    -123.5
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_N"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 129.0,
+   "width": 602,
+   "height": 41,
+   "corner": [
+    -964.5,
+    -1531,
+    -80
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_N"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 690,
+   "width": 112,
+   "height": 160,
+   "corner": [
+    -2000,
+    -56,
+    -200
+   ],
+   "operation": "new",
+   "body_name": "P_N04_STORE_A"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 692,
+   "width": 89.0,
+   "height": 159.5,
+   "corner": [
+    -2001,
+    -44.5,
+    -198.5
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_A"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 692,
+   "width": 109.0,
+   "height": 75.0,
+   "corner": [
+    -2001,
+    -54.5,
+    -198.5
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_A"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 692,
+   "width": 109.0,
+   "height": 83,
+   "corner": [
+    -2001,
+    -54.5,
+    -122
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_STORE_A"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 10,
+   "height": 140,
+   "base": [
+    -900,
+    1393,
+    -112
+   ],
+   "axis": "Y",
+   "operation": "new",
+   "body_name": "STEP대기_CDJ2B16-110_P"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 13,
+   "base": [
+    -900,
+    1381,
+    -112
+   ],
+   "axis": "Y",
+   "operation": "join",
+   "targets": [
+    "STEP대기_CDJ2B16-110_P"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 10,
+   "height": 140,
+   "base": [
+    -900,
+    -1533,
+    -112
+   ],
+   "axis": "Y",
+   "operation": "new",
+   "body_name": "STEP대기_CDJ2B16-110_N"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 13,
+   "base": [
+    -900,
+    -1394,
+    -112
+   ],
+   "axis": "Y",
+   "operation": "join",
+   "targets": [
+    "STEP대기_CDJ2B16-110_N"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 10,
+   "height": 180,
+   "base": [
+    -2000,
+    0,
+    -180
+   ],
+   "axis": "X",
+   "operation": "new",
+   "body_name": "STEP대기_CDJ2B16-150_A"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.5,
+   "height": 13,
+   "base": [
+    -1821,
+    0,
+    -180
+   ],
+   "axis": "X",
+   "operation": "join",
+   "targets": [
+    "STEP대기_CDJ2B16-150_A"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 50,
+   "width": 12,
+   "height": 85,
+   "corner": [
+    -925,
+    1533,
+    -125
+   ],
+   "operation": "new",
+   "body_name": "P_N04_CYLBKT_P"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 52,
+   "width": 11,
+   "height": 84,
+   "corner": [
+    -926,
+    1535,
+    -126
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_CYLBKT_P"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 50,
+   "width": 12,
+   "height": 85,
+   "corner": [
+    -925,
+    -1545,
+    -125
+   ],
+   "operation": "new",
+   "body_name": "P_N04_CYLBKT_N"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 52,
+   "width": 11,
+   "height": 84,
+   "corner": [
+    -926,
+    -1546,
+    -126
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_CYLBKT_N"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 10,
+   "width": 40,
+   "height": 152,
+   "corner": [
+    -2010,
+    -20,
+    -192
+   ],
+   "operation": "new",
+   "body_name": "P_N04_CYLBKT_A"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 9,
+   "width": 42,
+   "height": 151,
+   "corner": [
+    -2011,
+    -21,
+    -193
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_CYLBKT_A"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 6,
+   "width": 10,
+   "height": 2,
+   "corner": [
+    -970,
+    57,
+    -5
+   ],
+   "operation": "new",
+   "body_name": "P_N04_PIN_1"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 6,
+   "width": 10,
+   "height": 2,
+   "corner": [
+    -970,
+    -67,
+    -5
+   ],
+   "operation": "new",
+   "body_name": "P_N04_PIN_2"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 6,
+   "width": 10,
+   "height": 2,
+   "corner": [
+    -836,
+    57,
+    -5
+   ],
+   "operation": "new",
+   "body_name": "P_N04_PIN_3"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 6,
+   "width": 10,
+   "height": 2,
+   "corner": [
+    -836,
+    -67,
+    -5
+   ],
+   "operation": "new",
+   "body_name": "P_N04_PIN_4"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 23,
+   "height": 16,
+   "base": [
+    -1023,
+    1040,
+    -55
+   ],
+   "axis": "Z",
+   "operation": "new",
+   "body_name": "P_N04_INLET"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 19,
+   "height": 18,
+   "base": [
+    -1023,
+    1040,
+    -56
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "P_N04_INLET"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 132,
+   "width": 140,
+   "height": 131,
+   "corner": [
+    -966,
+    -470,
+    -131
+   ],
+   "operation": "new",
+   "body_name": "P_N04_SADDLE"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 134,
+   "width": 132,
+   "height": 130,
+   "corner": [
+    -967,
+    -466,
+    -132
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_SADDLE"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 52,
+   "width": 142,
+   "height": 130,
+   "corner": [
+    -967,
+    -471,
+    -132
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_SADDLE"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 52,
+   "width": 142,
+   "height": 130,
+   "corner": [
+    -885,
+    -471,
+    -132
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_SADDLE"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 63,
+   "height": 4,
+   "base": [
+    -900,
+    -400,
+    -3
+   ],
+   "axis": "Z",
+   "operation": "cut",
+   "targets": [
+    "P_N04_SADDLE"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 35,
+   "height": 124,
+   "base": [
+    -962,
+    -510,
+    -80
+   ],
+   "axis": "X",
+   "operation": "new",
+   "body_name": "P_N04_WIND_N_DRUM"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 32,
+   "height": 126,
+   "base": [
+    -963,
+    -510,
+    -80
+   ],
+   "axis": "X",
+   "operation": "cut",
+   "targets": [
+    "P_N04_WIND_N_DRUM"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 120,
+   "width": 3.5,
+   "height": 1.5,
+   "corner": [
+    -960,
+    -475,
+    -131
+   ],
+   "operation": "new",
+   "body_name": "P_N04_WIND_N_BKT"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 126,
+   "width": 1.5,
+   "height": 80,
+   "corner": [
+    -963,
+    -473.5,
+    -130
+   ],
+   "operation": "join",
+   "targets": [
+    "P_N04_WIND_N_BKT"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 1.5,
+   "width": 72.5,
+   "height": 70,
+   "corner": [
+    -964,
+    -545,
+    -115
+   ],
+   "operation": "join",
+   "targets": [
+    "P_N04_WIND_N_BKT"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 1.5,
+   "width": 72.5,
+   "height": 70,
+   "corner": [
+    -837.5,
+    -545,
+    -115
+   ],
+   "operation": "join",
+   "targets": [
+    "P_N04_WIND_N_BKT"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 35,
+   "height": 124,
+   "base": [
+    -962,
+    -290,
+    -80
+   ],
+   "axis": "X",
+   "operation": "new",
+   "body_name": "P_N04_WIND_P_DRUM"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 32,
+   "height": 126,
+   "base": [
+    -963,
+    -290,
+    -80
+   ],
+   "axis": "X",
+   "operation": "cut",
+   "targets": [
+    "P_N04_WIND_P_DRUM"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 120,
+   "width": 3.5,
+   "height": 1.5,
+   "corner": [
+    -960,
+    -328.5,
+    -131
+   ],
+   "operation": "new",
+   "body_name": "P_N04_WIND_P_BKT"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 126,
+   "width": 1.5,
+   "height": 80,
+   "corner": [
+    -963,
+    -328,
+    -130
+   ],
+   "operation": "join",
+   "targets": [
+    "P_N04_WIND_P_BKT"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 1.5,
+   "width": 72.5,
+   "height": 70,
+   "corner": [
+    -964,
+    -327.5,
+    -115
+   ],
+   "operation": "join",
+   "targets": [
+    "P_N04_WIND_P_BKT"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 1.5,
+   "width": 72.5,
+   "height": 70,
+   "corner": [
+    -837.5,
+    -327.5,
+    -115
+   ],
+   "operation": "join",
+   "targets": [
+    "P_N04_WIND_P_BKT"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 415,
+   "width": 104,
+   "height": 3,
+   "corner": [
+    -30,
+    -52,
+    -3
+   ],
+   "operation": "new",
+   "body_name": "P_N04_TAIL"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 61,
+   "width": 92,
+   "height": 5,
+   "corner": [
+    -31,
+    -46,
+    -4
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_TAIL"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 300,
+   "width": 80,
+   "height": 57,
+   "corner": [
+    60,
+    -40,
+    -60
+   ],
+   "operation": "new",
+   "body_name": "P_N04_TAIL_BKT"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 302,
+   "width": 74,
+   "height": 55,
+   "corner": [
+    59,
+    -37,
+    -61
+   ],
+   "operation": "cut",
+   "targets": [
+    "P_N04_TAIL_BKT"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 300,
+   "width": 290,
+   "height": 290,
+   "corner": [
+    -600,
+    1600,
+    -900
+   ],
+   "operation": "new",
+   "body_name": "STEP대기_VB-004-E2"
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "length": 340,
+   "width": 330,
+   "height": 3,
+   "corner": [
+    -620,
+    1580,
+    -903
+   ],
+   "operation": "new",
+   "body_name": "P_N04_BLOWER_BASE"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "P_N04_PANEL"
+   ],
+   "material": "A5052_HC"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "P_N04_NECK"
+   ],
+   "material": "A6061"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "STEP대기_HFS8-4080-248_1",
+    "STEP대기_HFS8-4080-248_2",
+    "STEP대기_HFS8-4080-248_3",
+    "STEP대기_HFS8-4080-248_4",
+    "P_N04_WIND_N_DRUM",
+    "P_N04_WIND_P_DRUM"
+   ],
+   "material": "A6063"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "P_N04_STORE_P",
+    "P_N04_STORE_N",
+    "P_N04_STORE_A",
+    "P_N04_CYLBKT_P",
+    "P_N04_CYLBKT_N",
+    "P_N04_CYLBKT_A",
+    "P_N04_SADDLE",
+    "P_N04_WIND_N_BKT",
+    "P_N04_WIND_P_BKT",
+    "P_N04_TAIL",
+    "P_N04_TAIL_BKT",
+    "P_N04_PIN_1",
+    "P_N04_PIN_2",
+    "P_N04_PIN_3",
+    "P_N04_PIN_4"
+   ],
+   "material": "SUS304"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "STEP대기_CDJ2B16-110_P",
+    "STEP대기_CDJ2B16-110_N",
+    "STEP대기_CDJ2B16-150_A"
+   ],
+   "material": "Stainless Steel"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "P_N04_INLET"
+   ],
+   "material": "PA12"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "STEP대기_VB-004-E2"
+   ],
+   "material": "Aluminum"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "P_N04_BLOWER_BASE"
+   ],
+   "material": "SS400"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "P_N04_PANEL",
+    "P_N04_NECK",
+    "STEP대기_HFS8-4080-248_1",
+    "STEP대기_HFS8-4080-248_2",
+    "STEP대기_HFS8-4080-248_3",
+    "STEP대기_HFS8-4080-248_4",
+    "P_N04_STORE_P",
+    "P_N04_STORE_N",
+    "P_N04_STORE_A",
+    "STEP대기_CDJ2B16-110_P",
+    "STEP대기_CDJ2B16-110_N",
+    "STEP대기_CDJ2B16-150_A",
+    "P_N04_CYLBKT_P",
+    "P_N04_CYLBKT_N",
+    "P_N04_CYLBKT_A",
+    "P_N04_PIN_1",
+    "P_N04_PIN_2",
+    "P_N04_PIN_3",
+    "P_N04_PIN_4",
+    "P_N04_INLET"
+   ],
+   "component": "U5_AIRTABLE"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "P_N04_SADDLE",
+    "P_N04_WIND_N_DRUM",
+    "P_N04_WIND_P_DRUM",
+    "P_N04_WIND_N_BKT",
+    "P_N04_WIND_P_BKT"
+   ],
+   "component": "U4_Y"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "P_N04_TAIL",
+    "P_N04_TAIL_BKT"
+   ],
+   "component": "U1_HEAD"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "STEP대기_VB-004-E2",
+    "P_N04_BLOWER_BASE"
+   ],
+   "component": "U2_BRIDGE"
+  }
+ },
+ {
+  "command": "document.metadata.set",
+  "params": {
+   "key": "description",
+   "value": "N04 mechanism: U5 air table, honeycomb panel 3 grooves, chain stores, CDJ2B16 tail stops x3, saddle, tail plate, ring blower"
+  }
+ },
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0,
+   "quiet": true
+  }
+ }
+]
