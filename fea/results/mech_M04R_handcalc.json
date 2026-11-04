@@ -1,0 +1,247 @@
+{
+ "assumptions": {
+  "ball_rating_N": "D-96 임시 200 (형번 미확인)",
+  "panel_lig": "p/(p-d) 1.5625, E*/E 0.5 (보수)",
+  "hfs8_4080_I": "I 하한 1.5e5 mm4 (설계부 값, 카탈로그 미확인 — 실제는 더 큼)",
+  "nut_material": "HNTT8 T너트 강(SS400 근사), 물림 5.5(M5)·5.3(M8) 모델링부 값",
+  "torque": "M5 4 N·m, M8 10 N·m 임시(시방 없음)"
+ },
+ "step_bbox": {
+  "P_M04R_DB_SHIM_A": {
+   "min": [
+    -305.0,
+    -135.0,
+    -52.0
+   ],
+   "max": [
+    0.0,
+    135.0,
+    0.0
+   ]
+  },
+  "P_M04R_DB_SHIM_B": {
+   "min": [
+    -85.0,
+    -135.0,
+    -52.0
+   ],
+   "max": [
+    0.0,
+    135.0,
+    0.0
+   ]
+  },
+  "P_M04_PANEL_E2": {
+   "min": [
+    -410.0,
+    -300.0,
+    -12.0
+   ],
+   "max": [
+    975.0,
+    300.0,
+    0.0
+   ]
+  },
+  "P_M04_PANEL_W2": {
+   "min": [
+    -2175.0,
+    -300.0,
+    -12.0
+   ],
+   "max": [
+    0.0,
+    300.0,
+    0.0
+   ]
+  },
+  "HFS8-4080-560_M04": {
+   "min": [
+    -420.0,
+    -280.0,
+    -92.0
+   ],
+   "max": [
+    0.0,
+    1620.0,
+    0.0
+   ]
+  }
+ },
+ "ball_single": {
+  "count": 827,
+  "balls_under_U5_wheel_path": 0,
+  "balls_in_disk_hole": 0,
+  "rating_N": 200.0,
+  "cases": {
+   "매트 자중 x3 g (운전)": {
+    "F": 1.227,
+    "sf_min": 3.0,
+    "sf": 163.0,
+    "ok": true,
+    "near": false
+   },
+   "D-92 누름 최대 100 N이 볼 하나에 (바퀴가 띠·원판을 벗어난 가정, 오조작)": {
+    "F": 101.227,
+    "sf_min": 2.0,
+    "sf": 1.98,
+    "ok": false,
+    "near": false
+   },
+   "작업자 손 100 N 볼 하나에 몰림 (오조작)": {
+    "F": 101.227,
+    "sf_min": 2.0,
+    "sf": 1.98,
+    "ok": false,
+    "near": false
+   }
+  },
+  "need_rating_for_sf2_N": 202.5,
+  "note": "실제 바퀴 누름(U4 원판, U5 띠)은 볼 몫 0 — 바퀴 길에 볼 0개. 판정은 손·D-92 100 N 몰림 오조작 SF 2"
+ },
+ "panels": {
+  "E2 가운데 칸 X 45~545 경간 600 손 100 N (오조작)": {
+   "sigma_MPa": 21.96,
+   "sf": 9.33,
+   "sf_min": 2.0,
+   "deflection_mm": 1.079,
+   "ok": true,
+   "near": false
+  },
+  "E2 원판 구멍 가장자리 외팔 170 손 100 N (오조작)": {
+   "sigma_MPa": 29.3,
+   "sf": 7.0,
+   "sf_min": 2.0,
+   "deflection_mm": 0.936,
+   "ok": true,
+   "near": false
+  },
+  "W2 레일 +-100 사이 경간 160 손 100 N (오조작)": {
+   "sigma_MPa": 13.95,
+   "sf": 14.69,
+   "sf_min": 2.0,
+   "deflection_mm": 0.077,
+   "ok": true,
+   "near": false
+  },
+  "E2 자중+매트 x3 g 경간 600 (운전)": {
+   "sigma_MPa": 23.13,
+   "sf": 8.86,
+   "sf_min": 3.0,
+   "deflection_mm": 2.876,
+   "note": "보 단순지지(판 2방향·막 효과 무시, 보수). 1 g 처짐은 1/3",
+   "ok": true,
+   "near": false
+  },
+  "E2 가운데 칸 2방향 판 자중 1 g 처짐 (높이 사슬)": {
+   "sigma_MPa": 0.0,
+   "sf": 999.0,
+   "sf_min": 3.0,
+   "deflection_mm": 0.185,
+   "note": "볼 꼭대기가 원판 윗면보다 이만큼 낮아짐(높이 공차 비교용)",
+   "ok": true,
+   "near": false
+  }
+ },
+ "cross_members": {
+  "CM_A·CM_B 원판 받침 (오조작)": {
+   "P_each_N": 159.1,
+   "M_Nm": 25.45,
+   "sigma_MPa": 6.79,
+   "sf": 21.36,
+   "sf_min": 2.0,
+   "deflection_mm": 0.0859,
+   "ok": true,
+   "over_spec": true
+  },
+  "CM1 판 받침 자중 x3 g + 손 100 N (오조작)": {
+   "W_N": 847.6,
+   "M_Nm": 73.33,
+   "sigma_MPa": 19.55,
+   "sf": 7.42,
+   "sf_min": 2.0,
+   "deflection_mm": 0.2226,
+   "ok": true,
+   "over_spec": false
+  }
+ },
+ "shim": {
+  "F_N": 318.1,
+  "contact_mm2_min": 3200,
+  "bearing_MPa": 0.099,
+  "sf_vs_pG400": 4023.3,
+  "note": "전면 받침이라 굽힘 없음(얇은 판이지만 보 아님 — 경간 0). 압축만"
+ },
+ "bolts": {
+  "CB5-20 x4 (DISK_BASE, 접선 오조작 95.5 N/4 축 환산 보수)": {
+   "inputs": {
+    "d": 5,
+    "le": 5.5,
+    "load_N": 23.875,
+    "torque_Nm": 4.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4000.0,
+   "engage_ratio": 1.1,
+   "sf_operating": {
+    "나사 인장": 654.24,
+    "암나사 전단": 199.47,
+    "분리(예압/외력)": 167.54
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.51,
+    "조임 좌면": 4.04,
+    "조임 암나사 전단": 1.19
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "CB5-20 미끄럼": {
+   "friction_N": 2400.0,
+   "tangential_N": 95.5,
+   "sf": 25.1
+  },
+  "CB8-16 (HBLFSN8, CM1 끝 반력 축 환산 보수)": {
+   "inputs": {
+    "d": 8,
+    "le": 5.3,
+    "load_N": 473.79200000000003,
+    "torque_Nm": 10.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 13.3,
+    "dh": 8.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 6250.0,
+   "engage_ratio": 0.66,
+   "sf_operating": {
+    "나사 인장": 84.97,
+    "암나사 전단": 15.5,
+    "분리(예압/외력)": 13.19
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 5.8,
+    "조임 좌면": 6.44,
+    "조임 암나사 전단": 1.17
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "CB8-16 미끄럼 (브래킷 다리 하나 1개, 반력 전부)": {
+   "friction_N": 937.5,
+   "shear_N": 473.8,
+   "sf": 1.98
+  }
+ }
+}
