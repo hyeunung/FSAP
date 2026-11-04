@@ -494,6 +494,106 @@
    "step": "tools/out/mech_M05/stepout/P_M05_CUT_BLADE.step",
    "version": "v2.2.0",
    "note": "상세는 tools/out/M05/docs/fea-models.md"
+  },
+  "P_M06_BASE": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "붙임면(X -80~-22, Y -93~-90, Z 151~195)이 UPPER -Y 면에 CB5-12 x2(X -70/-32, Z 180), 받침 Z 151 모서리",
+   "contact": "날개 윗면-캐리지 윗턱 미끄럼(압축만), 실린더 탭에 장착 너트",
+   "load": "CJ2B16 0.5 MPa 밀기 100.5 N(로드 막힘, 스프링 몫 안 뺌, D-111 임시) / 손 오조작 100 N / 자중 0.35 kg x3 g. 탭 팔 12(축 Z 136->굽힘 148), 날개 편심 13.5, 날개 외팔 Z 팔 49.5",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_CARR": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "C턱이 BASE 날개에 걸림(외팔 뿌리 = 아랫턱 Z 124)",
+   "contact": "로드 너트가 -X 면 누름, 슈 볼트 M5 인서트 x2",
+   "load": "CJ2B16 0.5 MPa 밀기 100.5 N(로드 막힘, 스프링 몫 안 뺌, D-111 임시) / 손 오조작 100 N / 자중 0.35 kg x3 g. 다리 X 팔 111.5",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_SHOE": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "세운 벽 장공 CB5-12 x2(Y -175/-135, Z 32.5) -> 다리 인서트",
+   "contact": "바닥 밑면-매트(누르지 않음, Z 12.5)",
+   "load": "손 100 N Z: (a) 손바닥 선하중 X 1 (b) 입술 모서리 점하중(X 1, Y -205, 유효 폭 31 보수). 운전 매트 말림 걸림 5 N",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_ROLL_SHAFT": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "플랜지 Ø50 t8 면 Y 102가 기둥에 CB5-16 x3 PCD 36(받침 플랜지 바깥 아래 모서리)",
+   "contact": "6004ZZ x2(Y -136, -86)",
+   "load": "롤 3 kg x3 g = 88.3 N(D-124) + 장력 5 N 운전 / 손 100 N 축 앞끝(Y -142) 오조작. 뿌리 팔 212(롤 가운데)·244(앞끝)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_ROLL_HUB": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "6004ZZ 바깥륜",
+   "contact": "심 Ø76 안쪽",
+   "load": "롤 3 kg x3 g = 88.3 N(D-124) + 장력 5 N 운전 / 손 100 N 축 앞끝(Y -142) 오조작 — 베어링 자리 면압",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_ROLL_POST": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "보 앞면 Y 120에 CB5-20 x2(Z 615/640), 밑 모서리 Z 605 지렛대 받침",
+   "contact": "+Y 면-보 앞면 압축만",
+   "load": "롤 3 kg x3 g = 88.3 N(D-124) + 장력 5 N 운전 / 손 100 N 축 앞끝(Y -142) 오조작. 축 모멘트가 판 면 밖 굽힘(Z 640~750 일정 모멘트)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_G1_BRKT": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "발 Z 560~563이 UPPER 윗면에 CB5-12 x2(X 465/485, Y -74), 받침 발 +Y 끝 Y -60",
+   "contact": "핀 턱 Ø14가 세운 판 -Y 면 누름",
+   "load": "운전 장력 5 N 90° 감김 합 7.1 N / 손 100 N 핀 축(Y -109.5) 팔 23(세운 판)·24.5(발 굽힘)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_TOP_BRKT": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "발 Z 568~571이 HANGER 선반 위 CB5-20 x2(X 28/52, Y -74) -> UPPER 탭 물림 9",
+   "contact": "핀 턱 Ø14",
+   "load": "G1과 같음(폭 50)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_G1_PIN": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "턱 Ø14가 세운 판에 닿고 +Y에서 CB5-12 당김(자루 뿌리 Y -91.5 외팔)",
+   "contact": "롤러 PET-CF Ø30 안쪽",
+   "load": "손 100 N 머리 쪽 Y -127.5 팔 36 / 운전 7.1 N 롤러 가운데 팔 18",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_M06_TOP_PIN": {
+   "case": "cases/mech_M06_handcalc.py",
+   "fixed": "G1_PIN과 같음",
+   "contact": "같음",
+   "load": "같음",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
