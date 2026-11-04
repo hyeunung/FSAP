@@ -15,6 +15,11 @@ This project follows Semantic Versioning.
 - 대화 결정(문서만, 모델 변경 없음): 결정로그 C-25 재봉 헤드는 사양으로 정하고 867·Juki LU-2810·썬스타를 견적 비교, C-26 3D프린터식(패턴 재봉기 모양) 기각·R375X 방식 유지. 자료대기 D-10에 견적 비교·치수 재확인 조건 추가.
 - v1.0.16 결과 문서: BOM·설계검토서(FSAP_v1.0.16), 결정로그 RF-04~07, 다시 돌린 전체 회귀 본 범위 새 겹침 0(못 본 범위 G1 뒤·G2·자세 325~349·PRB 남음).
 
+## v2.3.2 — 2026-11-04 (DC2-04 수정 1회차: U7 걸이 장공 미는 볼트)
+- `P_M05_HOLDER` 날개 A 장공의 Z 미끄럼(손 오조작 짝힘 SF 1.18) 고침: 받침 블록 `P_DC204_PUSH_BLK`(SUS304 절삭, UPPER −Y 면 CB5-12 ×2 + 새 M5 탭 2) + 미는 볼트 M4×25 ×2(X 14·42, U7_FIXED)·잠금 너트 M4 ×2
+- 장공 볼트 `CB5-12_M05_11·12` 밑 평 와셔 M5 SUS t1, 볼트 −Y 1
+- 새 구매품 임시 형상 STEP대기 멈춤나사·너트·와셔(자료대기 D-127). machine.json 유닛 부품·J_U7_HGT 메모. 생성기 `tools/gen_v2_dc204_fix1.py`. 보고서 `docs/reports/mechanism/mech_DC2-04_model1.md`
+
 ## v2.3.1 — 2026-11-04 (DC2-04 매트 두께 높이 사슬)
 - D-04 임시 두께 범위 6~16을 h = 두께 − 10 하나로: `P_M06_BASE` 붙임면·`P_M05_HOLDER` 날개 A 구멍 Ø5.5 ×2 → 세로 장공(높이 −4~+6)
 - 새 손 조정 조인트 `J_U6_HGT`(U3_HEAD ↔ U6_SENSOR)·`J_U7_HGT`(U3_HEAD ↔ U7_FIXED) slide +Z −4~6, 값 0. 지운 리지드 U1_FRAME↔U6_SENSOR·U3_HEAD↔U7_FIXED. 장공 볼트 CB5-12 ×4는 U3_HEAD로

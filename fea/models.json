@@ -453,7 +453,17 @@
    "status": "손계산(fea/results/mech_M05_*handcalc.json). FEA 못 함 — 환경 없음(D-16)",
    "step": "tools/out/mech_M05/stepout/P_M05_HOLDER.step",
    "version": "v2.2.0",
-   "note": "상세는 tools/out/M05/docs/fea-models.md"
+   "note": "상세는 tools/out/M05/docs/fea-models.md",
+   "case_DC2-04": "cases/mech_DC2-04_handcalc.py",
+   "step_DC2-04": "tools/out/mech_DC2-04/stepout/P_M05_HOLDER.step",
+   "version_DC2-04": "v2.3.1",
+   "fixed": "날개 A(XZ 면, X 10~46, Z 285~334)가 UPPER에 CB5-12 x2(X 18/36, Z 310), 아래 끝 Z 285 떼짐 받침. v2.3.1부터 세로 장공(중심선 Z 304~314, 폭 5.5) -> Z는 마찰만",
+   "load_DC2-04": "U7 움직이는 묶음 2.5 kg x3 g, 테이프 장력 X 10 @ Z 20(운전), 손 X 100 @ 손 구멍 Z 220(오조작, 짝힘 M/18 가장 불리), CDJ2B16 막힘 Z 100.5, 봉제 반력 떼짐 T(M05 식)",
+   "criteria": {
+    "value": "미끄럼 SF 운전 3, 오조작 2(마찰 mu 0.15 보수). 좌면 p_G SUS304 400 기준 1.0. SF < 1.2 = 동작",
+    "source": "요구서 6-1(M-09 기본값), handcalc 조임 기준"
+   },
+   "status_DC2-04": "손계산 fea/results/mech_DC2-04_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
   },
   "P_M05_CYL_BRKT": {
    "case": "cases/mech_M05_handcalc.py",
@@ -503,7 +513,13 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "case_DC2-04": "cases/mech_DC2-04_handcalc.py",
+   "step_DC2-04": "tools/out/mech_DC2-04/stepout/P_M06_BASE.step",
+   "version_DC2-04": "v2.3.1",
+   "fixed_DC2-04": "붙임면 구멍 -> 세로 장공(X -70/-32, 중심선 Z 174~184, 폭 5.5). Z 방향은 볼트 몸 받침 없음 -> CB5-12 x2 조임 마찰만(예압 4,500 N, mu 0.15 보수 / 0.2 참고). 받침 Z 151 모서리는 Y 지렛대만",
+   "load_DC2-04": "장공 방향 Z 힘 = 자중 1.0 kg x3 g + Z 외력 + 축 Y 면 안 비틀림 짝힘 M/38. 오조작: 막힘 추력 100.5 @ Z 136, 손 X 100 @ 슈 끝 Z 12.5(가장 불리), 손 Z 100",
+   "status_DC2-04": "손계산 fea/results/mech_DC2-04_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
   },
   "P_M06_CARR": {
    "case": "cases/mech_M06_handcalc.py",

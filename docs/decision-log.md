@@ -2746,3 +2746,10 @@ STEP 대기(E-10): CB8-16·CB8-15(D-116), 접시 M5×10(D-117), 볼 트랜스퍼
 | 근거 | `docs/reports/mechanism/mech_DC2-04_design.md`, `tools/out/mech_DC2-04/design_chk_summary.json`, 측정 `mech_DC2-04_measure.md`, 요구서 0-8-1·0-8-3·5절 DC2-04 |
 
 디테일(E-02, 기록만): DC2-04-X1 높이 조정 미는 볼트·눈금(M-02, UPPER 실물 D-10 뒤), DC2-04-X2 HOLDER 날개 A 구멍–굽힘선 7.25 < 2t 8(M05부터 있던 X 자리). 넘김: U6·U7 높이 같은 눈금은 제어 순서 제약(U-09), 헤드 바늘 위 끝·노루발 봉제 높이 8~18은 헤드 사양 조건(D-10).
+
+| 수정 · 고친 곳 · 이유 | 내용 |
+|---|---|
+| DC2-04-F1 수정 1회차(v2.3.2) | `P_M05_HOLDER` 날개 A 장공은 조임 마찰로만 Z를 버텨 손 오조작 X 100 N @ Z 220 짝힘에 미끄럼 SF 1.18(μ 0.15, 기준 2) → **날개 A 아래 끝(Z 285 + h) 밑 X 14·42에 미는 볼트 M4×25 ×2 + 잠금 너트 M4**(받침 블록 `P_DC204_PUSH_BLK` SUS304 절삭 X 8~48 · Y −98~−90 · Z 250~276, UPPER −Y 면 CB5-12 ×2 자리파기), 장공 볼트 `CB5-12_M05_11·12` 밑 **평 와셔 M5 SUS t1**(볼트 −Y 1, 물림 8 → 7). DC2-04-X1의 U7 쪽 미는 볼트를 구동 단계로 당김(1개 → 2개). U6 BASE 쪽 X1(미는 볼트·눈금)은 지적이 없어 디테일로 그대로 |
+| 고친 곳 | 날개 A(형상 그대로) 밑 고정 받침 + 와셔. 미는 볼트는 U7_FIXED에 둠(제품 교체 때 J_U7_HGT를 맞춘 뒤 끝을 날개 아래 끝에 대고 잠금 → 위치 = J_U7_HGT) |
+| 이유 | 짝힘이 한 끝을 내리면 그 끝의 미는 볼트가 받음(어느 쪽으로 돌든 한 끝이 내려감) → 마찰과 무관하게 막힘. 손계산: 짝힘 9,000 N·mm / 간격 28 = 321 N + 자중 몫 10 → 미는 볼트 하나 약 331 N(M4 응력 단면 8.78 mm² 38 MPa), 날개 끝 맞닿음 약 6.1 mm²(폭 1.9) 54 MPa(SUS304 205 → SF 3.8), 블록 CB5-12 ×2 전단 각 331 N(23 MPa). 해석부가 다시 본다 |
+| 근거 | `fea/results/mech_DC2-04_handcalc.json` U7_HOLDER_slot_misuse_hand_X_220, `docs/reports/mechanism/mech_DC2-04_verify.md`, `docs/reports/mechanism/mech_DC2-04_model1.md`, 생성기 `tools/gen_v2_dc204_fix1.py` |

@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.3.1.sc",
+ "doc": "../3D_Modeling/FSAP_v2.3.2.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -537,7 +537,7 @@
    "max": 6,
    "rest": 0,
    "setup": true,
-   "_note": "DC2-04(v2.3.1) 제품 교체 때 손 조정, 값 = 매트 두께 - 10, 두 조인트(J_U6_HGT·J_U7_HGT)는 같은 값, 기계 축 아님, 사이클 연구에서 움직이지 않음. U7_FIXED 통째(걸이 P_M05_HOLDER + 카세트 묶음)가 U3_HEAD에 대해 +Z. 날개 A 세로 장공 5.5(중심선 Z 304~314) + CB5-12_M05_11·12(U3_HEAD 쪽, UPPER 탭). 행정 끝 = 장공 끝(조인트 한계)"
+   "_note": "DC2-04(v2.3.1) 제품 교체 때 손 조정, 값 = 매트 두께 - 10, 두 조인트(J_U6_HGT·J_U7_HGT)는 같은 값, 기계 축 아님, 사이클 연구에서 움직이지 않음. U7_FIXED 통째(걸이 P_M05_HOLDER + 카세트 묶음)가 U3_HEAD에 대해 +Z. 날개 A 세로 장공 5.5(중심선 Z 304~314) + CB5-12_M05_11·12(U3_HEAD 쪽, UPPER 탭). 행정 끝 = 장공 끝(조인트 한계) / 수정 1(v2.3.2): 맞춘 뒤 미는 볼트 M4 ×2를 날개 A 아래 끝(Z 285 + h)에 대고 잠금 너트로 잠근다(장공 마찰만으로 버티지 않음)"
   }
  },
  "units": {
@@ -574,7 +574,11 @@
     "CB5-16_M01",
     "CB5-12_M06_",
     "CB5-12_M05_11",
-    "CB5-12_M05_12"
+    "CB5-12_M05_12",
+    "P_DC204_PUSH_BLK",
+    "STEP대기_NUT_M4_DC204",
+    "STEP대기_WASHER_M5_DC204",
+    "CB5-12_DC204"
    ],
    "moving": true,
    "components": [
@@ -674,7 +678,8 @@
     "CB5-16_M05",
     "STEP대기_MSTH6-20_M05",
     "STEP대기_KC-40340_M05",
-    "STEP대기_S-M5-2_M05"
+    "STEP대기_S-M5-2_M05",
+    "STEP대기_SETSCREW_M4x25_DC204"
    ],
    "moving": true,
    "_note": "U7_BINDER(M01: 끝 X -10.5~1 Y -30~-9 Z 13~22, 몸통 X -11~40 Y -95~-10.5 Z 22~60)·U7_PATH_V(M01: 바닥 Z 22)·U7_PATH_H·U7_ROLL M05(cand): U7_PATH_V 지움. 툴 카세트 U7_CASSETTE(판 P_M05_CST_PLATE·안내 P_M05_GUIDE·고정날·바인더 브래킷·실린더 브래킷·보내기 브래킷·핀·걸쇠·U7_BINDER) + 자식 U7_CUT(칼)·U7_TUCK(접기)·U7_FEED(앞끝 보내기)·U7_LATCH(걸쇠 갈고리), 고정 걸이 U7_FIXED(P_M05_HOLDER, U3_HEAD 리지드). 탈착 U7_FIXED → U7_CST_STAGE(+X) → U7_CASSETTE(-Y) DC2-04(v2.3.1): U7_FIXED↔U3_HEAD 리지드 지움 -> J_U7_HGT(Z 손 조정). CB5-12_M05_11·12는 U3_HEAD로",
@@ -690,7 +695,8 @@
    ],
    "joints_setup": [
     "J_U7_HGT"
-   ]
+   ],
+   "_note_DC204_fix1": "DC2-04 수정 1(v2.3.2): 날개 A 아래 끝 미는 볼트 M4x25 ×2(X 14·42, Y -94.1)는 U7_FIXED에 둔다 — 제품 교체 때 J_U7_HGT를 맞춘 뒤 끝을 날개 아래 끝에 대고 잠그므로 위치 = J_U7_HGT. 받침 블록·잠금 너트·와셔는 U3_HEAD(UPPER)"
   },
   "U8_PNEU": {
    "parts": [
