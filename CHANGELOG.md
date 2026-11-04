@@ -439,3 +439,7 @@ When a new version is released:
 - 경광등 `STEP대기_CB4-12_M08` ×3, 다관 커넥터 CB5-12 ×2, 보 윗면 관 빗 `P_M08_TUBE_COMB_ML_1~4` + CB5-16 ×4
 - 판금 10개 `sheet.convert`(규칙 SUS304_t4·t6 새로), HMI 판 T → L(날개 팔 −X 면, 볼트·너트 옮김)
 - 수정 회차 → 끝 자리(E-05). 새 조인트 0. 보고서 `docs/reports/mechanism/mech_M08_model1.md`
+
+## v2.5.2 — 2026-11-05 (M08 수정 2: 움직인 자세 측정)
+- 형상 변경 없음(설명 메타만). v2.5.1을 다른 이름으로 저장(E-05)
+- U4 누름 4점·U7 작동 4점·카세트 뺌 6점에서 새 관·이음·플러그 간섭 측정 — 새 겹침 0(맞닿음 0.0 두 곳, 기준선 쌍은 손계산). 보고서 `docs/reports/mechanism/mech_M08_model2.md`
