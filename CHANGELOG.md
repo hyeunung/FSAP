@@ -13,6 +13,13 @@ This project follows Semantic Versioning.
 - 대화 결정(문서만, 모델 변경 없음): 결정로그 C-25 재봉 헤드는 사양으로 정하고 867·Juki LU-2810·썬스타를 견적 비교, C-26 3D프린터식(패턴 재봉기 모양) 기각·R375X 방식 유지. 자료대기 D-10에 견적 비교·치수 재확인 조건 추가.
 - v1.0.16 결과 문서: BOM·설계검토서(FSAP_v1.0.16), 결정로그 RF-04~07, 다시 돌린 전체 회귀 본 범위 새 겹침 0(못 본 범위 G1 뒤·G2·자세 325~349·PRB 남음).
 
+## v2.3.0 — 2026-11-04 (M06 U6 센서 + 슈, U7 롤 걸이)
+- 새 컴포넌트 U6_SHOE(J_U6_SHIFT slide +X −60~0, 대기 −60 비킴)·U7_ROLL_MOUNT(U1_FRAME 리지드). 지움: 차지 상자 U6_SHOE_SENSOR·U7_ROLL·U7_PATH_H
+- U6 고정: P_M06_BASE(SUS304 t3 판금, 날개·붙임면·실린더 탭), CJ2B16-60SZ 실물 STEP(몸·장착 너트), KQ2L06-M5A, CB5-12 ×2(UPPER −Y 면 새 M5 탭)
+- U6 움직임: P_M06_CARR(PET-CF), P_M06_SHOE(SUS304 t2 판금, 바닥 Z 12.5·입술 20°·장공), E32-D36P1_2M 머리, CJ2B16 로드 묶음, MBIS5-6.5-8 ×3, CB5-12 ×2, STEP대기 CB3-10 ×2·M3 인서트 ×2
+- U7: 롤 기둥 A5052 t10·축 S45C·허브 PET-CF + 6004ZZ ×2·와셔, 안내 롤러 G1·꼭대기 롤러(판금 L·핀·롤러), 차지 U7_TAPE_ROLL·U7_TAPEWAY_H/V, CB5-12 ×5·CB5-16 ×3·CB5-20 ×4(UPPER 윗면 탭 4·HANGER 선반 구멍 2·보 앞면 탭 2)
+- 연구 8개 모두 J_U6_SHIFT 키, machine.json(M05 조인트·연구도 들임). 생성기 `tools/gen_v2_m06.py`. 보고서 `docs/reports/mechanism/mech_M06_model.md`
+
 ## v2.2.0 — 2026-11-04 (동시 과제 합치기: DC2-05 먼 쪽 바퀴 받침 + M05 U7 테이프 툴 카세트)
 - DC2-05: 먼 쪽 바퀴 줄 고하중 볼 `STEP대기_BALL_D25H_M04` 28을 지우고 A5052 받침 띠 P_DC205_STRIP + SUS304 누름판 P_DC205_DISC_1~8 + CB5-12_DC205 ×8(조임 0.6 N·m·중강도 나사 고정제)
 - M05: U7 테이프 툴 카세트(U7_FIXED·U7_CST_STAGE·U7_CASSETTE·U7_CUT·U7_TUCK·U7_FEED·U7_LATCH) — 바인더·안내·절단 CJ2B10-15Z·접기 CJ2B10-15Z·리드 끝 보내기 CDJ2B16-150AZ-B·위치 핀·걸쇠, 조인트 6·연구 SEAM_U7·MAINT_U7. 수정 2회차 CB5-12_M05_5 → CB5-16_M05_10(조임 2.5 N·m)
