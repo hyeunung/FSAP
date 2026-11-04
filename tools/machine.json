@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.3.0.sc",
+ "doc": "../3D_Modeling/FSAP_v2.3.1.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -18,9 +18,9 @@
     0
    ],
    "rest": 20.0,
-   "min": 0,
+   "min": -4,
    "max": 20.0,
-   "_note": "0 = 내림(봉제, 발바닥 Z 12), 20 = 들림(867 공식 PDF, 임시 C-25). 컴포넌트 U3_PRESSER = P_M01_FOOT(M01, v2.0.2)"
+   "_note": "0 = 발바닥 Z 12(두께 10 이음매), 봉제 값 = h(매트 두께 - 10): -4 = Z 8(두께 6 이음매), 6 = Z 18(두께 16 이음매), 20 = 들림(867 공식 PDF, 임시 C-25). DC2-04(v2.3.1) 하한 0 -> -4. 컴포넌트 U3_PRESSER = P_M01_FOOT(M01, v2.0.2). 실제 헤드가 봉제 높이 8~18을 받는지는 D-10"
   },
   "J_U3_NEEDLE": {
    "cad": "J_U3_NEEDLE",
@@ -37,9 +37,9 @@
     0
    ],
    "rest": 0,
-   "min": -30.0,
+   "min": -36,
    "max": 0,
-   "_note": "0 = 바늘 위(끝 Z 13), -30 = 꽂음(끝 Z -17, D-10 자리값). 컴포넌트 U3_NEEDLE = U3_NEEDLE_PIN"
+   "_note": "DC2-04(v2.3.1) 바늘 형상 +6(U3_NEEDLE_PIN Z 19~116): 0 = 위 끝(바늘 끝 Z 19, 두께 16 이음매 18 위 1), -36 = 아래 끝(끝 Z -17, 예전과 같음). 지금 연구의 -30 키는 끝 Z -11(테이블 밑, 매트를 꿰뚫음)이라 그대로. 컴포넌트 U3_NEEDLE = U3_NEEDLE_PIN. 바늘대 위 끝·행정은 헤드 사양(D-10)"
   },
   "J_U4_PRESS": {
    "cad": "J_U4_PRESS",
@@ -58,7 +58,17 @@
    "rest": 8.626,
    "min": -1.867,
    "max": 8.626,
-   "_note": "M02(v2.1.0) 핀 스윙 레버(U4_PRESS) 회전, + = 들림. 0 = 바퀴 밑 Z 10(매트 윗면), 8.626 = 들림 끝(조인트 한계; 실린더 후퇴 끝 8.6265가 스토퍼, 바퀴 밑 38.8; 연구 키 8.627은 한계로 잘림), -1.867 = 실린더 나옴 끝(바퀴 밑 3.1). 작동(접촉 추종): theta = asin((z_top-10)/187.5) [deg], 187.5 = 레버 200 - 바퀴 반폭 12.5, 소수 셋째 자리 올림 — 매트 10 -> 0, 테이프 11 -> 0.306, 이음매 12 -> 0.611. 실린더 CDM2C20-25Z(J_U4_CYL_PIN·J_U4_CYL_ROD·J_U4_ROD_PIN 닫힌 고리)가 따라감"
+   "_note": "M02(v2.1.0) 핀 스윙 레버(U4_PRESS) 회전, + = 들림. 8.626 = 들림 끝(조인트 한계; 실린더 후퇴 끝 8.6265가 스토퍼, 바퀴 밑 38.8), -1.867 = 실린더 나옴 끝(바퀴 밑 3.11). 작동(접촉 추종, DC2-04 바로잡음): 바퀴 밑 z = 70 + 200·sinθ − 60·cosθ − 12.5·|sinθ| (레버 핀 (-300, 0, 70), 바퀴 중심 반지름 200, 바퀴 r 60, 반폭 12.5) — 0 = z 10. 키 표 keys_z(목표 z -> θ°). 실린더 CDM2C20-25Z(J_U4_CYL_PIN·J_U4_CYL_ROD·J_U4_ROD_PIN 닫힌 고리)가 따라감",
+   "keys_z": {
+    "6": -1.0815,
+    "7": -0.8105,
+    "8": -0.54,
+    "11": 0.3053,
+    "12": 0.6101,
+    "16": 1.8245,
+    "17": 2.1269,
+    "18": 2.4289
+   }
   },
   "J_U4_WHEEL_ROT": {
    "cad": "J_U4_WHEEL_ROT",
@@ -488,6 +498,46 @@
    "min": -60,
    "max": 0,
    "_note": "M06(v2.3.0) 슈·센서 비킴. CJ2B16-60SZ 단동 스프링 복귀(축선 Y -130 · Z 136, 로드 +X). 0 = 작동(공기, 슈 바닥 X -20~1 · 센서 머리 X -17.5~17.5 바늘 앞), -60 = 비킴(스프링, 행정 끝 = 조인트 한계). 연구: 로딩 -60 -> 노루발 내림(14)에서 0 -> 봉제 0 -> 사절·노루발 들기 뒤 -60"
+  },
+  "J_U6_HGT": {
+   "cad": "J_U6_HGT",
+   "type": "slide",
+   "unit": "U6_SHOE",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -51,
+    -90,
+    180
+   ],
+   "min": -4,
+   "max": 6,
+   "rest": 0,
+   "setup": true,
+   "_note": "DC2-04(v2.3.1) 제품 교체 때 손 조정, 값 = 매트 두께 - 10, 두 조인트(J_U6_HGT·J_U7_HGT)는 같은 값, 기계 축 아님, 사이클 연구에서 움직이지 않음. U6_SENSOR 통째(BASE·실린더·캐리지·슈·센서)가 U3_HEAD(UPPER -Y 면)에 대해 +Z. P_M06_BASE 붙임면 세로 장공 5.5(중심선 Z 174~184) + CB5-12_M06_1·2(U3_HEAD 쪽, UPPER 탭). 행정 끝 = 장공 끝(조인트 한계)"
+  },
+  "J_U7_HGT": {
+   "cad": "J_U7_HGT",
+   "type": "slide",
+   "unit": "U7_TAPE",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    27,
+    -90,
+    310
+   ],
+   "min": -4,
+   "max": 6,
+   "rest": 0,
+   "setup": true,
+   "_note": "DC2-04(v2.3.1) 제품 교체 때 손 조정, 값 = 매트 두께 - 10, 두 조인트(J_U6_HGT·J_U7_HGT)는 같은 값, 기계 축 아님, 사이클 연구에서 움직이지 않음. U7_FIXED 통째(걸이 P_M05_HOLDER + 카세트 묶음)가 U3_HEAD에 대해 +Z. 날개 A 세로 장공 5.5(중심선 Z 304~314) + CB5-12_M05_11·12(U3_HEAD 쪽, UPPER 탭). 행정 끝 = 장공 끝(조인트 한계)"
   }
  },
  "units": {
@@ -521,7 +571,10 @@
     "STEP대기_867-392342_",
     "P_M01_HANGER",
     "P_M01_FOOT",
-    "CB5-16_M01"
+    "CB5-16_M01",
+    "CB5-12_M06_",
+    "CB5-12_M05_11",
+    "CB5-12_M05_12"
    ],
    "moving": true,
    "components": [
@@ -529,7 +582,7 @@
     "U3_PRESSER",
     "U3_NEEDLE"
    ],
-   "_note": "M01(v2.0.2): 고정 몸체 STEP대기_867-392342_UPPER(옛 U3_UPPER, 윗면 M5 탭 6)·STEP대기_867-392342_NOSE(새)·STEP대기_867-392342_LOWER(옛 U3_LOWER_POD)·U3_LOWER_DRIVE, 매달기 P_M01_HANGER(SUS304 t8 L 판금, 옛 U3_HANGER)·CB5-16_M01_1~10(U3_HEAD 리지드). U3_PRESSER = P_M01_FOOT(옛 U3_PRESSER_BOX), U3_NEEDLE = U3_NEEDLE_PIN",
+   "_note": "M01(v2.0.2): 고정 몸체 STEP대기_867-392342_UPPER(옛 U3_UPPER, 윗면 M5 탭 6)·STEP대기_867-392342_NOSE(새)·STEP대기_867-392342_LOWER(옛 U3_LOWER_POD)·U3_LOWER_DRIVE, 매달기 P_M01_HANGER(SUS304 t8 L 판금, 옛 U3_HANGER)·CB5-16_M01_1~10(U3_HEAD 리지드). U3_PRESSER = P_M01_FOOT(옛 U3_PRESSER_BOX), U3_NEEDLE = U3_NEEDLE_PIN DC2-04(v2.3.1): 높이 조절 장공 볼트 CB5-12_M06_1·2·CB5-12_M05_11·12를 U3_HEAD로(UPPER 탭에 물림)",
    "presser_parts": [
     "P_M01_FOOT"
    ]
@@ -593,19 +646,18 @@
    "parts": [
     "P_M06_BASE",
     "CJ2B16-60SZ_M06",
-    "KQ2L06-M5A_M06",
-    "CB5-12_M06_1",
-    "CB5-12_M06_2"
+    "KQ2L06-M5A_M06"
    ],
-   "moving": false,
+   "moving": true,
    "components": [
     "U6_SENSOR",
     "CJ2B16-60SZ_M06",
-    "KQ2L06-M5A_M06",
-    "CB5-12_M06_1",
-    "CB5-12_M06_2"
+    "KQ2L06-M5A_M06"
    ],
-   "_note": "M06(v2.3.0): 고정 판금 P_M06_BASE(SUS304 t3, UPPER -Y 면 CB5-12 ×2) + 실린더 몸 CJ2B16-60SZ_M06(+장착 너트) + 피팅 KQ2L06-M5A_M06. 옛 상자 U6_SHOE_SENSOR 지움. U1_FRAME 리지드"
+   "_note": "M06(v2.3.0): 고정 판금 P_M06_BASE(SUS304 t3, UPPER -Y 면 CB5-12 ×2) + 실린더 몸 CJ2B16-60SZ_M06(+장착 너트) + 피팅 KQ2L06-M5A_M06. 옛 상자 U6_SHOE_SENSOR 지움.  DC2-04(v2.3.1): U1_FRAME 리지드 지움 -> J_U6_HGT(U3_HEAD에 대해 Z, 손 조정). CB5-12_M06_1·2는 U3_HEAD로 옮김",
+   "joints": [
+    "J_U6_HGT"
+   ]
   },
   "U7_TAPE": {
    "parts": [
@@ -625,7 +677,7 @@
     "STEP대기_S-M5-2_M05"
    ],
    "moving": true,
-   "_note": "U7_BINDER(M01: 끝 X -10.5~1 Y -30~-9 Z 13~22, 몸통 X -11~40 Y -95~-10.5 Z 22~60)·U7_PATH_V(M01: 바닥 Z 22)·U7_PATH_H·U7_ROLL M05(cand): U7_PATH_V 지움. 툴 카세트 U7_CASSETTE(판 P_M05_CST_PLATE·안내 P_M05_GUIDE·고정날·바인더 브래킷·실린더 브래킷·보내기 브래킷·핀·걸쇠·U7_BINDER) + 자식 U7_CUT(칼)·U7_TUCK(접기)·U7_FEED(앞끝 보내기)·U7_LATCH(걸쇠 갈고리), 고정 걸이 U7_FIXED(P_M05_HOLDER, U3_HEAD 리지드). 탈착 U7_FIXED → U7_CST_STAGE(+X) → U7_CASSETTE(-Y)",
+   "_note": "U7_BINDER(M01: 끝 X -10.5~1 Y -30~-9 Z 13~22, 몸통 X -11~40 Y -95~-10.5 Z 22~60)·U7_PATH_V(M01: 바닥 Z 22)·U7_PATH_H·U7_ROLL M05(cand): U7_PATH_V 지움. 툴 카세트 U7_CASSETTE(판 P_M05_CST_PLATE·안내 P_M05_GUIDE·고정날·바인더 브래킷·실린더 브래킷·보내기 브래킷·핀·걸쇠·U7_BINDER) + 자식 U7_CUT(칼)·U7_TUCK(접기)·U7_FEED(앞끝 보내기)·U7_LATCH(걸쇠 갈고리), 고정 걸이 U7_FIXED(P_M05_HOLDER, U3_HEAD 리지드). 탈착 U7_FIXED → U7_CST_STAGE(+X) → U7_CASSETTE(-Y) DC2-04(v2.3.1): U7_FIXED↔U3_HEAD 리지드 지움 -> J_U7_HGT(Z 손 조정). CB5-12_M05_11·12는 U3_HEAD로",
    "components": [
     "U7_TAPE",
     "U7_FIXED",
@@ -635,6 +687,9 @@
     "U7_TUCK",
     "U7_FEED",
     "U7_LATCH"
+   ],
+   "joints_setup": [
+    "J_U7_HGT"
    ]
   },
   "U8_PNEU": {
@@ -941,7 +996,9 @@
     "J_U7_TUCK": 0,
     "J_U7_FEED": 0,
     "J_U7_LATCH": 0,
-    "J_U6_SHIFT": -60.0
+    "J_U6_SHIFT": -60.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "① 대기·로딩",
    "workpiece": {
@@ -964,7 +1021,9 @@
     "J_WP_L_X": 0.0,
     "J_WP_L_Y": 300.0,
     "J_WP_L_ROT": 0.0,
-    "J_U6_SHIFT": -60.0
+    "J_U6_SHIFT": -60.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "① 작업자가 가장자리를 노루발 표시에 맞춤",
    "workpiece": {
@@ -988,7 +1047,9 @@
     "J_WP_L_X": 0.0,
     "J_WP_L_Y": 300.0,
     "J_WP_L_ROT": 0.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "② 먼 쪽 바퀴 내림",
    "workpiece": {
@@ -1012,7 +1073,9 @@
     "J_WP_L_X": 0.0,
     "J_WP_L_Y": 675.0,
     "J_WP_L_ROT": 0.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 봉제 직선",
    "workpiece": {
@@ -1036,7 +1099,9 @@
     "J_WP_L_X": -310.6602,
     "J_WP_L_Y": 300.0,
     "J_WP_L_ROT": 45.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1060,7 +1125,9 @@
     "J_WP_L_X": 0.0,
     "J_WP_L_Y": -450.0,
     "J_WP_L_ROT": 90.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1085,7 +1152,9 @@
     "J_WP_L_X": 0.0,
     "J_WP_L_Y": 330.0,
     "J_WP_L_ROT": 360.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "④ 시작·끝 이음매 겹침",
    "workpiece": {
@@ -1109,7 +1178,9 @@
     "J_WP_L_X": 0.0,
     "J_WP_L_Y": 30.0,
     "J_WP_L_ROT": 360.0,
-    "J_U6_SHIFT": -60.0
+    "J_U6_SHIFT": -60.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
    "workpiece": {
@@ -1133,7 +1204,9 @@
     "J_WP_S_X": 0.0,
     "J_WP_S_Y": 300.0,
     "J_WP_S_ROT": 0.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "② 바늘 옆 바퀴 내림",
    "workpiece": {
@@ -1157,7 +1230,9 @@
     "J_WP_S_X": 0.0,
     "J_WP_S_Y": 350.0,
     "J_WP_S_ROT": 0.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 봉제 직선",
    "workpiece": {
@@ -1181,7 +1256,9 @@
     "J_WP_S_X": -26.7767,
     "J_WP_S_Y": 264.6447,
     "J_WP_S_ROT": 45.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1205,7 +1282,9 @@
     "J_WP_S_X": 0.0,
     "J_WP_S_Y": 330.0,
     "J_WP_S_ROT": 360.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "④ 시작·끝 이음매 겹침",
    "workpiece": {
@@ -1229,7 +1308,9 @@
     "J_WP_S_X": 0.0,
     "J_WP_S_Y": 30.0,
     "J_WP_S_ROT": 360.0,
-    "J_U6_SHIFT": -60.0
+    "J_U6_SHIFT": -60.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
    "workpiece": {
@@ -1253,7 +1334,9 @@
     "J_WP_G_X": -9.6681,
     "J_WP_G_Y": 566.3852,
     "J_WP_G_ROT": 2.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 홈 입구(볼록) (바늘 옆 바퀴 들림)",
    "workpiece": {
@@ -1277,7 +1360,9 @@
     "J_WP_G_X": -27.5573,
     "J_WP_G_Y": 79.0291,
     "J_WP_G_ROT": 45.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 홈 입구(볼록)",
    "workpiece": {
@@ -1301,7 +1386,9 @@
     "J_WP_G_X": 312.5,
     "J_WP_G_Y": -226.3393,
     "J_WP_G_ROT": 90.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 홈 안 벽",
    "workpiece": {
@@ -1325,7 +1412,9 @@
     "J_WP_G_X": 150.0,
     "J_WP_G_Y": 600.0,
     "J_WP_G_ROT": 0.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 홈 바닥 꺾임(오목)",
    "workpiece": {
@@ -1349,7 +1438,9 @@
     "J_WP_G_X": 912.5,
     "J_WP_G_Y": 762.5,
     "J_WP_G_ROT": -90.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 홈 바닥 꺾임(오목) (먼 쪽 바퀴 들림)",
    "workpiece": {
@@ -1374,7 +1465,9 @@
     "J_WP_G_X": 396.7068,
     "J_WP_G_Y": 945.2349,
     "J_WP_G_ROT": -45.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 홈 입구(볼록) (먼 쪽 바퀴 들림)",
    "workpiece": {
@@ -1398,7 +1491,9 @@
     "J_WP_G_X": -248.5281,
     "J_WP_G_Y": 300.0,
     "J_WP_G_ROT": 45.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1422,7 +1517,9 @@
     "J_WP_G_X": 0.0,
     "J_WP_G_Y": 330.0,
     "J_WP_G_ROT": 360.0,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "④ 시작·끝 이음매 겹침",
    "workpiece": {
@@ -1446,7 +1543,9 @@
     "J_WP_G_X": 0.0,
     "J_WP_G_Y": 30.0,
     "J_WP_G_ROT": 360.0,
-    "J_U6_SHIFT": -60.0
+    "J_U6_SHIFT": -60.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
    "workpiece": {
@@ -1476,7 +1575,9 @@
     "J_WP_G_X": 0,
     "J_WP_G_Y": 0,
     "J_WP_G_ROT": 0,
-    "J_U6_SHIFT": -60.0
+    "J_U6_SHIFT": -60.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "정비",
    "workpiece": {
@@ -1492,7 +1593,9 @@
     "J_U5_X": 1000.0,
     "J_U5_LIFT": 1.0,
     "J_U5_WHEEL_ROT": 116.666,
-    "J_U6_SHIFT": 0.0
+    "J_U6_SHIFT": 0.0,
+    "J_U6_HGT": 0,
+    "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1501,6 +1604,80 @@
     "stage": "sewing"
    },
    "_m03": "모서리 끝 테이프 위 1.0(M03). 다른 조인트 값은 연구 CYCLE_G2 315단계를 따른다"
+  },
+  {
+   "name": "THICK_6",
+   "study": "REST",
+   "step": 0,
+   "joints": {
+    "J_U3_PRESSER": -4,
+    "J_U3_NEEDLE": 0,
+    "J_U4_PRESS": -0.54,
+    "J_U4_WHEEL_ROT": 0,
+    "J_U5_X": 800,
+    "J_U5_LIFT": -2,
+    "J_U5_WHEEL_ROT": 0,
+    "J_WP_L_X": 0,
+    "J_WP_L_Y": 0,
+    "J_WP_L_ROT": 0,
+    "J_WP_S_X": 0,
+    "J_WP_S_Y": 0,
+    "J_WP_S_ROT": 0,
+    "J_WP_G_X": 0,
+    "J_WP_G_Y": 0,
+    "J_WP_G_ROT": 0,
+    "J_U7_CST_X": 0,
+    "J_U7_CST_Y": 0,
+    "J_U7_CUT": 0,
+    "J_U7_TUCK": 0,
+    "J_U7_FEED": 0,
+    "J_U7_LATCH": 0,
+    "J_U6_SHIFT": 0,
+    "J_U6_HGT": -4,
+    "J_U7_HGT": -4
+   },
+   "phase": "DC2-04 두께 범위 끝 봉제 자세",
+   "workpiece": {
+    "stage": "band",
+    "_note": "이음매 윗면 접촉 봉제 자세: 두께 6 매트 띠 Z 0~8(이음매 윗면) 위에 노루발·두 바퀴 접촉, 슈 작동. 모형은 두께 10 그대로 — 검사는 띠를 만들어 잼(저장 안 함)"
+   }
+  },
+  {
+   "name": "THICK_16",
+   "study": "REST",
+   "step": 0,
+   "joints": {
+    "J_U3_PRESSER": 6,
+    "J_U3_NEEDLE": 0,
+    "J_U4_PRESS": 2.4289,
+    "J_U4_WHEEL_ROT": 0,
+    "J_U5_X": 800,
+    "J_U5_LIFT": 8,
+    "J_U5_WHEEL_ROT": 0,
+    "J_WP_L_X": 0,
+    "J_WP_L_Y": 0,
+    "J_WP_L_ROT": 0,
+    "J_WP_S_X": 0,
+    "J_WP_S_Y": 0,
+    "J_WP_S_ROT": 0,
+    "J_WP_G_X": 0,
+    "J_WP_G_Y": 0,
+    "J_WP_G_ROT": 0,
+    "J_U7_CST_X": 0,
+    "J_U7_CST_Y": 0,
+    "J_U7_CUT": 0,
+    "J_U7_TUCK": 0,
+    "J_U7_FEED": 0,
+    "J_U7_LATCH": 0,
+    "J_U6_SHIFT": 0,
+    "J_U6_HGT": 6,
+    "J_U7_HGT": 6
+   },
+   "phase": "DC2-04 두께 범위 끝 봉제 자세",
+   "workpiece": {
+    "stage": "band",
+    "_note": "이음매 윗면 접촉 봉제 자세: 두께 16 매트 띠 Z 0~18(이음매 윗면) 위에 노루발·두 바퀴 접촉, 슈 작동. 모형은 두께 10 그대로 — 검사는 띠를 만들어 잼(저장 안 함)"
+   }
   }
  ],
  "_states_note": "요구서 0-3 ①~⑤(0-8-4)와 6-4(직선, 볼록 모서리, 오목 모서리, 홈 입구, 홈 바닥 꺾임, 시작·끝 이음매)에 대응. 6-4 '오목 모서리'(계단형 날카로운 오목)는 매트 모형에 없다 — 홈 바닥 오목 반원(180° 왼쪽 꺾임)만 있다(mech_prep.md '못 한 것'). 연구 간격: 이송 25 mm, 홈 안·홈 입구 앞뒤 50 mm는 5 mm, 회전 1°, 노루발·바늘·바퀴 승강은 양 끝 + 가운데(요구서 6-4).",
@@ -1523,7 +1700,7 @@
   {
    "a": "U4_WHEEL·U5_WHEEL",
    "b": "WP_TAPE_* 띠(Z 10~11)",
-   "reason": "바퀴가 이미 박은 테이프 띠·이음매 위를 지날 때 깊이 1.0 mm(테이프 두께) 겹침, 부피 0 — CYCLE_S 8구간, CYCLE_G1 바늘 옆 5구간·먼 쪽 177~183. 모서리 회전 때 바퀴가 다음 변 띠 위에 온다. 의도된 접촉 후보 — M02·M03가 판정(바퀴가 테이프 위를 눌러도 되는지 7절)"
+   "reason": "접촉 추종(J_U4_PRESS θ(z) 식, J_U5_LIFT = z − 10)으로 겹침 0, 맞닿음(부피 0)만 허용 — DC2-04 측정 6자세 최소 틈 0.002~0.134 (M00-X6 정리, 옛 '깊이 1.0 mm, 부피 0' 줄)"
   },
   {
    "a": "U3_NEEDLE",
@@ -1573,7 +1750,7 @@
   {
    "a": "U4_WHEEL(P_M02_WHEEL_TREAD)",
    "b": "WP_TAPE_*·SEAM_*",
-   "reason": "M02 수정 1회차: 접촉 추종 키(테이프 0.306°, 이음매 0.611°)로 바퀴 밑 11.002·12.003 — 겹침 0이어야 한다. 남으면 키 0.310·0.615"
+   "reason": "접촉 추종(J_U4_PRESS θ(z) 식, J_U5_LIFT = z − 10)으로 겹침 0, 맞닿음(부피 0)만 허용 — DC2-04 측정 6자세 최소 틈 0.002~0.134 (M00-X6 정리, 옛 '남으면 키 0.310' 줄)"
   },
   {
    "a": "CB5-*_M02_*",
@@ -1617,7 +1794,7 @@
  "temp_values": {
   "D-01": "매트 300×200 ~ 1500×1500",
   "D-02·D-03": "U홈 폭 25·깊이 150·바닥 R12.5, 홈 매트 외곽 1200, 홈 자리 시작 변 가운데에서 300",
-  "D-04": "매트 두께 10",
+  "D-04": "매트 두께 범위 6~16(임시, DC2-04 — 근거 없음, 승용차 카펫 매트 통상 범위 자리값). 모형은 두께 10",
   "D-06·D-07": "테이프 두께 1·날개 10, 이음매 겹침 30",
   "D-10": "노루발 들림 20, 바늘 내림 30",
   "D-93": "바퀴 Ø120×25",

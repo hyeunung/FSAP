@@ -15,6 +15,12 @@ This project follows Semantic Versioning.
 - 대화 결정(문서만, 모델 변경 없음): 결정로그 C-25 재봉 헤드는 사양으로 정하고 867·Juki LU-2810·썬스타를 견적 비교, C-26 3D프린터식(패턴 재봉기 모양) 기각·R375X 방식 유지. 자료대기 D-10에 견적 비교·치수 재확인 조건 추가.
 - v1.0.16 결과 문서: BOM·설계검토서(FSAP_v1.0.16), 결정로그 RF-04~07, 다시 돌린 전체 회귀 본 범위 새 겹침 0(못 본 범위 G1 뒤·G2·자세 325~349·PRB 남음).
 
+## v2.3.1 — 2026-11-04 (DC2-04 매트 두께 높이 사슬)
+- D-04 임시 두께 범위 6~16을 h = 두께 − 10 하나로: `P_M06_BASE` 붙임면·`P_M05_HOLDER` 날개 A 구멍 Ø5.5 ×2 → 세로 장공(높이 −4~+6)
+- 새 손 조정 조인트 `J_U6_HGT`(U3_HEAD ↔ U6_SENSOR)·`J_U7_HGT`(U3_HEAD ↔ U7_FIXED) slide +Z −4~6, 값 0. 지운 리지드 U1_FRAME↔U6_SENSOR·U3_HEAD↔U7_FIXED. 장공 볼트 CB5-12 ×4는 U3_HEAD로
+- `J_U3_PRESSER` 하한 −4, 바늘 `U3_NEEDLE_PIN` +6(위 끝 Z 19)·`J_U3_NEEDLE` −36~0
+- machine.json: 새 조인트·THICK_6·THICK_16 상태·U4 높이 식 키 표·D-04 임시값·바퀴↔테이프 기준선 정리(M00-X6). 생성기 `tools/gen_v2_dc204.py`. 보고서 `docs/reports/mechanism/mech_DC2-04_model.md`
+
 ## v2.3.0 — 2026-11-04 (M06 U6 센서 + 슈, U7 롤 걸이)
 - 새 컴포넌트 U6_SHOE(J_U6_SHIFT slide +X −60~0, 대기 −60 비킴)·U7_ROLL_MOUNT(U1_FRAME 리지드). 지움: 차지 상자 U6_SHOE_SENSOR·U7_ROLL·U7_PATH_H
 - U6 고정: P_M06_BASE(SUS304 t3 판금, 날개·붙임면·실린더 탭), CJ2B16-60SZ 실물 STEP(몸·장착 너트), KQ2L06-M5A, CB5-12 ×2(UPPER −Y 면 새 M5 탭)
