@@ -1,0 +1,164 @@
+{
+ "assume": {
+  "torque_set_Nm": 0.6,
+  "K": 0.2,
+  "scatter": 0.3,
+  "mu_strip_max": 0.3,
+  "case_misuse_N": 453.3,
+  "note": "형상은 앞 회차와 같음(모델링부 model1: 바뀐 단계 component.metadata.set 하나)"
+ },
+ "step": {
+  "P_DC205_STRIP": {
+   "sha1": "3e970a0c0a5b",
+   "min": [
+    -1826.0,
+    -25.0,
+    -11.8
+   ]
+  },
+  "P_DC205_DISC": {
+   "sha1": "0decbdbe007e",
+   "min": [
+    -1775.24,
+    -27.64,
+    -16.0
+   ]
+  }
+ },
+ "results": {
+  "DISC_torque_set": {
+   "torque_Nm": 0.6,
+   "preload_N": 600.0,
+   "sigma_formula": 51.5,
+   "sigma_timoshenko": 82.5,
+   "SF_min": 2.48,
+   "w_mm": 0.0087,
+   "gap_mm": 0.2,
+   "verdict_op": "디테일",
+   "yield": false
+  },
+  "BOLT_torque_set": {
+   "inputs": {
+    "d": 5,
+    "le": 7.8,
+    "load_N": 136.0,
+    "torque_Nm": 0.6,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 600.0,
+   "engage_ratio": 1.56,
+   "sf_operating": {
+    "나사 인장": 114.85,
+    "암나사 전단": 39.53,
+    "분리(예압/외력)": 4.41
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 23.43,
+    "조임 좌면": 11.55,
+    "조임 암나사 전단": 8.96
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "DISC_torque_upper": {
+   "torque_Nm": 0.78,
+   "preload_N": 780.0,
+   "sigma_formula": 67.0,
+   "sigma_timoshenko": 107.3,
+   "SF_min": 1.91,
+   "w_mm": 0.0113,
+   "gap_mm": 0.2,
+   "verdict_op": "디테일",
+   "yield": false
+  },
+  "BOLT_torque_upper": {
+   "inputs": {
+    "d": 5,
+    "le": 7.8,
+    "load_N": 136.0,
+    "torque_Nm": 0.78,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 780.0,
+   "engage_ratio": 1.56,
+   "sf_operating": {
+    "나사 인장": 114.85,
+    "암나사 전단": 39.53,
+    "분리(예압/외력)": 5.74
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 18.02,
+    "조임 좌면": 8.88,
+    "조임 암나사 전단": 6.89
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "DISC_torque_lower": {
+   "torque_Nm": 0.42,
+   "preload_N": 420.0,
+   "sigma_formula": 36.1,
+   "sigma_timoshenko": 57.8,
+   "SF_min": 3.55,
+   "w_mm": 0.0061,
+   "gap_mm": 0.2,
+   "verdict_op": "됨",
+   "yield": false
+  },
+  "BOLT_torque_lower": {
+   "inputs": {
+    "d": 5,
+    "le": 7.8,
+    "load_N": 136.0,
+    "torque_Nm": 0.42,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 420.0,
+   "engage_ratio": 1.56,
+   "sf_operating": {
+    "나사 인장": 114.85,
+    "암나사 전단": 39.53,
+    "분리(예압/외력)": 3.09
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 33.47,
+    "조임 좌면": 16.49,
+    "조임 암나사 전단": 12.8
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "STRIP_slip": {
+   "clamp_total_N": 3360.0,
+   "friction_N": 504.0,
+   "drag_N": 136.0,
+   "SF": 3.71,
+   "note": "흩어짐 아래쪽에서도 마찰로 버팀. 넘어도 보스 D35.6 ↔ 구멍 D36(틈 0.2)이 받음"
+  },
+  "BOSS_bearing": {
+   "p_MPa": 2.01,
+   "SF": 97.0
+  }
+ }
+}

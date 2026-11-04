@@ -1,0 +1,122 @@
+{
+ "assume": {
+  "P_MPa": 0.5,
+  "nut_base": "SS400 대용(압입 너트 강재, 형번 임시 S-M5-2)",
+  "torque_Nm": 4.5
+ },
+ "step_bbox": {
+  "P_M05_CYL_BRKT": {
+   "n_pts": 119,
+   "min": [
+    14.0,
+    -204.0,
+    34.0
+   ],
+   "max": [
+    50.0,
+    -171.0,
+    110.0
+   ]
+  },
+  "P_M05_CST_PLATE": {
+   "n_pts": 459,
+   "min": [
+    50.0,
+    -200.0,
+    20.0
+   ],
+   "max": [
+    58.0,
+    -40.0,
+    328.0
+   ]
+  }
+ },
+ "R": {
+  "bolt_load_N": 78.5,
+  "CB5-12_nut_le3.2": {
+   "inputs": {
+    "d": 5,
+    "le": 3.2,
+    "load_N": 78.5,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 0.64,
+   "sf_operating": {
+    "나사 인장": 198.98,
+    "암나사 전단": 35.3,
+    "분리(예압/외력)": 57.32
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 3.59,
+    "조임 암나사 전단": 0.62
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "CB5-15_nut_le6.0": {
+   "inputs": {
+    "d": 5,
+    "le": 6.0,
+    "load_N": 78.5,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 198.98,
+    "암나사 전단": 66.18,
+    "분리(예압/외력)": 57.32
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 3.59,
+    "조임 암나사 전단": 1.15
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "le_over_d_now": 0.64,
+  "CB5-15_tip_X": 43,
+  "nut_end_X": 43.19,
+  "head_bearing_A5052": {
+   "preload_N": 4500.0,
+   "A_mm2": 33.0,
+   "p_MPa": 136.0,
+   "limit_A5052_pG": "handcalc 표 값(calc 결과 안 head/bearing)"
+  },
+  "nut_flange_bearing_SUS304": {
+   "A_mm2": 34.3,
+   "p_MPa": 133.0,
+   "SF_vs_Rp": 1.54,
+   "note": "조임력이 플랜지 좌면으로 날개를 판에 누름(판-날개-플랜지 샌드위치). 면압 한계 p_G 400(SUS304)과 비교",
+   "SF_vs_pG": 3.0
+  },
+  "plate_net_section_change_pct": 0.81,
+  "wing_edge_distance": {
+   "e_mm": 6,
+   "e_over_D": 0.84,
+   "shear_out_MPa": 5.4,
+   "SF": 21.9,
+   "verdict": "과사양 note"
+  }
+ }
+}

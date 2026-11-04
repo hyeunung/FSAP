@@ -1,0 +1,76 @@
+{
+ "assume": {
+  "P_MPa": 0.5,
+  "nut_base": "SS400 대용(압입 너트 강재, 형번 임시 S-M5-2)",
+  "bolt_load_N": 78.5
+ },
+ "bolt": "CB5-16_M05_10",
+ "head_seat_X": 58,
+ "tip_X": 42,
+ "nut_thread_X": [
+  43.19,
+  49.2
+ ],
+ "le_mm": 6.01,
+ "protrude_past_nut_mm": 1.19,
+ "T2.5": {
+  "inputs": {
+   "d": 5,
+   "le": 6.01,
+   "load_N": 78.5,
+   "torque_Nm": 2.5,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 2500.0,
+  "engage_ratio": 1.2,
+  "sf_operating": {
+   "나사 인장": 198.98,
+   "암나사 전단": 66.29,
+   "분리(예압/외력)": 31.85
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 5.62,
+   "조임 좌면": 6.47,
+   "조임 암나사 전단": 2.08
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "T4.5": {
+  "inputs": {
+   "d": 5,
+   "le": 6.01,
+   "load_N": 78.5,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.2,
+  "sf_operating": {
+   "나사 인장": 198.98,
+   "암나사 전단": 66.29,
+   "분리(예압/외력)": 57.32
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 3.59,
+   "조임 암나사 전단": 1.16
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ }
+}

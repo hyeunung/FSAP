@@ -1,0 +1,207 @@
+{
+ "assume": {
+  "wheel_run_N": 90.0,
+  "case_op_N": 238.6,
+  "case_misuse_N": 453.3,
+  "mu_strip_max": 0.3,
+  "torque_std_Nm": 4.5,
+  "K": 0.2,
+  "strip_kg": 1.614
+ },
+ "step_bbox": {
+  "P_DC205_STRIP": {
+   "n_pts": 1524,
+   "min": [
+    -1826.0,
+    -25.0,
+    -11.8
+   ],
+   "max": [
+    0.0,
+    25.0,
+    0.0
+   ]
+  },
+  "P_DC205_DISC": {
+   "n_pts": 53,
+   "min": [
+    -1775.24,
+    -27.64,
+    -16.0
+   ],
+   "max": [
+    0.0,
+    27.64,
+    0.0
+   ]
+  }
+ },
+ "results": {
+  "STRIP_over_hole_run": {
+   "P_N": 90.0,
+   "a": 18.0,
+   "t": 8.0,
+   "r0": 5.0,
+   "sigma": 1.79,
+   "w_mm": 0.00045,
+   "SF": 109.0,
+   "need": 3.0,
+   "verdict": "과사양 note"
+  },
+  "STRIP_over_hole_op": {
+   "P_N": 238.6,
+   "a": 18.0,
+   "t": 8.0,
+   "r0": 5.0,
+   "sigma": 4.74,
+   "w_mm": 0.00119,
+   "SF": 41.1,
+   "need": 3.0,
+   "verdict": "과사양 note"
+  },
+  "STRIP_over_hole_misuse": {
+   "P_N": 453.3,
+   "a": 18.0,
+   "t": 8.0,
+   "r0": 5.0,
+   "sigma": 9.01,
+   "w_mm": 0.00226,
+   "SF": 21.6,
+   "need": 2.0,
+   "verdict": "과사양 note"
+  },
+  "STRIP_over_hole_beam_check_misuse": {
+   "sigma": 7.65,
+   "SF": 25.5,
+   "w_mm": 0.00295,
+   "note": "원판보다 보수(둘레 받침 무시)"
+  },
+  "STRIP_contact_pressure": {
+   "run_MPa": 0.18,
+   "misuse_MPa": 0.907,
+   "note": "경질 알루마이트 허용 면압(수십 MPa)에 비해 아주 작음. 매트 눌림자국은 요구서 7절(시제품)"
+  },
+  "BOLT_CB5_le7.8_A5052_std_torque": {
+   "inputs": {
+    "d": 5,
+    "le": 7.8,
+    "load_N": 136.0,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.56,
+   "sf_operating": {
+    "나사 인장": 114.85,
+    "암나사 전단": 39.53,
+    "분리(예압/외력)": 33.09
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 1.54,
+    "조임 암나사 전단": 1.19
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "BOLT_note": {
+   "drag_N": 136.0,
+   "note": "끌림은 보스 8개 D35.6이 판 구멍 D36에 끼워 받음(틈 0.2). 볼트에 인장 외력 없음 -> 보수로 끌림 전부를 볼트 하나 외력으로 넣음"
+  },
+  "DISC_preload_std_torque": {
+   "torque_Nm": 4.5,
+   "preload_N": 4500.0,
+   "sigma_formula": 386.3,
+   "sigma_timoshenko_k2.2": 618.8,
+   "SF": 0.53,
+   "SF_timoshenko": 0.33,
+   "w_elastic_mm": 0.0651,
+   "F_to_close_gap0.2_N": 13826.0,
+   "plastic_collapse_N": 6115.0,
+   "verdict": "동작",
+   "note": "표준 토크로 조이면 누름판 가운데가 항복(접시꼴 영구 변형), 틈 0.2는 탄성으로 안 닫힘 -> 보스가 힘을 못 받음"
+  },
+  "DISC_fixA_torque_1.0": {
+   "preload_N": 1000.0,
+   "sigma_formula": 85.8,
+   "sigma_timoshenko": 137.5,
+   "SF": 2.39,
+   "SF_timoshenko": 1.49,
+   "w_mm": 0.0145,
+   "verdict": "디테일"
+  },
+  "DISC_fixA_torque_0.6": {
+   "preload_N": 600.0,
+   "sigma_formula": 51.5,
+   "sigma_timoshenko": 82.5,
+   "SF": 3.98,
+   "SF_timoshenko": 2.48,
+   "w_mm": 0.0087,
+   "verdict": "디테일"
+  },
+  "DISC_fixB_boss4.0_W2_thick+0.03": {
+   "F_bend_N": 2074.0,
+   "sigma_formula": 178.0,
+   "sigma_timoshenko": 285.2,
+   "SF": 1.15,
+   "SF_timoshenko": 0.72,
+   "verdict": "동작",
+   "note": "나머지 조임 힘은 보스 밑면 D35.6 접촉(면압 아주 작음). 판 W2는 띠 밑면과 누름판 사이에 0 틈으로 물림"
+  },
+  "DISC_fixB_boss4.0_W2_thick+0.05": {
+   "F_bend_N": 3457.0,
+   "sigma_formula": 296.7,
+   "sigma_timoshenko": 475.3,
+   "SF": 0.69,
+   "SF_timoshenko": 0.43,
+   "verdict": "동작",
+   "note": "나머지 조임 힘은 보스 밑면 D35.6 접촉(면압 아주 작음). 판 W2는 띠 밑면과 누름판 사이에 0 틈으로 물림"
+  },
+  "BOLT_fixA_torque_1.0": {
+   "inputs": {
+    "d": 5,
+    "le": 7.8,
+    "load_N": 136.0,
+    "torque_Nm": 1.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1000.0,
+   "engage_ratio": 1.56,
+   "sf_operating": {
+    "나사 인장": 114.85,
+    "암나사 전단": 39.53,
+    "분리(예압/외력)": 7.35
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 14.06,
+    "조임 좌면": 6.93,
+    "조임 암나사 전단": 5.38
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "STRIP_selfweight_3g": {
+   "N": 47.5,
+   "note": "판 W2 윗면 전면 받침 -> 응력 무시"
+  },
+  "thermal": {
+   "dL_mm": 0.148,
+   "radial_gap_x2_mm": 0.4,
+   "ok": true
+  }
+ }
+}
