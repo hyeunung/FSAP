@@ -420,6 +420,80 @@
     "value": "운전 SF 3, 오조작 SF 2, 조임 SF 1(SS400 245, A5052 195, SUS304 205, 12.9 Rp 1100, 10.9 Rp 940). SF < 1.2만 동작",
     "source": "요구서 6-1(M-09 기본값), M04 완료 판정"
    }
+  },
+  "P_DC205_STRIP": {
+   "case": "cases/mech_DC2-05_handcalc.py",
+   "fixed": "판 W2 윗면 받침, 보스 8자리 누름판+CB5-12",
+   "load": "바퀴 운전 90 / 238.6 / 오조작 453.3 N, 빈 구멍 Ø36 위 가운데",
+   "result": "오조작 σ 9.0 MPa SF 21.6, 처짐 0.002",
+   "status": "손계산. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_DC2-05/stepout/P_DC205_STRIP.step",
+   "version": "v2.2.0"
+  },
+  "P_DC205_DISC": {
+   "case": "cases/mech_DC2-05_fea1_handcalc.py",
+   "fixed": "바깥 r 18에서 W2 밑면 받침, 가운데 볼트 머리",
+   "load": "볼트 예압 T/(0.2d)",
+   "result": "0.6 N·m: SF 2.48~3.98(+30% 1.91), 표준 4.5 N·m는 항복(SF 0.33~0.53)",
+   "status": "손계산. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_DC2-05/stepout/P_DC205_DISC.step",
+   "version": "v2.2.0"
+  },
+  "P_M05_CST_PLATE": {
+   "case": "cases/mech_M05_handcalc.py",
+   "load": "카세트 약 2 kg + 칼 반력 약 39 N + 걸쇠 당김 약 1,500 N(임시)",
+   "status": "손계산(fea/results/mech_M05_*handcalc.json). FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_M05/stepout/P_M05_CST_PLATE.step",
+   "version": "v2.2.0",
+   "note": "상세는 tools/out/M05/docs/fea-models.md"
+  },
+  "P_M05_HOLDER": {
+   "case": "cases/mech_M05_handcalc.py",
+   "load": "걸쇠 당김 약 1,500 N, 핀 2 전단",
+   "status": "손계산(fea/results/mech_M05_*handcalc.json). FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_M05/stepout/P_M05_HOLDER.step",
+   "version": "v2.2.0",
+   "note": "상세는 tools/out/M05/docs/fea-models.md"
+  },
+  "P_M05_CYL_BRKT": {
+   "case": "cases/mech_M05_handcalc.py",
+   "load": "CJ2B10 ×2 추력 각 약 39 N",
+   "status": "손계산(fea/results/mech_M05_*handcalc.json). FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_M05/stepout/P_M05_CYL_BRKT.step",
+   "version": "v2.2.0",
+   "note": "상세는 tools/out/M05/docs/fea-models.md"
+  },
+  "P_M05_FEED_BRKT": {
+   "case": "cases/mech_M05_handcalc.py",
+   "load": "CDJ2B16 추력 약 100 N",
+   "status": "손계산(fea/results/mech_M05_*handcalc.json). FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_M05/stepout/P_M05_FEED_BRKT.step",
+   "version": "v2.2.0",
+   "note": "상세는 tools/out/M05/docs/fea-models.md"
+  },
+  "P_M05_BINDER_BRKT": {
+   "case": "cases/mech_M05_handcalc.py",
+   "load": "바인더 무게·테이프 장력",
+   "status": "손계산(fea/results/mech_M05_*handcalc.json). FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_M05/stepout/P_M05_BINDER_BRKT.step",
+   "version": "v2.2.0",
+   "note": "상세는 tools/out/M05/docs/fea-models.md"
+  },
+  "P_M05_GUIDE·CUT_HOLDER·TUCK_HOLDER·FEED_CARR": {
+   "case": "cases/mech_M05_handcalc.py",
+   "load": "칼·접기 반력, 발톱 휨(M-05)",
+   "status": "손계산(fea/results/mech_M05_*handcalc.json). FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_M05/stepout/P_M05_GUIDE.step",
+   "version": "v2.2.0",
+   "note": "상세는 tools/out/M05/docs/fea-models.md"
+  },
+  "P_M05_CUT_BLADE·CUT_FIX·TUCK_BLADE": {
+   "case": "cases/mech_M05_handcalc.py",
+   "load": "테이프 전단(M05-X1 여유 1.31)",
+   "status": "손계산(fea/results/mech_M05_*handcalc.json). FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_M05/stepout/P_M05_CUT_BLADE.step",
+   "version": "v2.2.0",
+   "note": "상세는 tools/out/M05/docs/fea-models.md"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
