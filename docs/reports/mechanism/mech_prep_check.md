@@ -1,56 +1,51 @@
-# 준비 점검 — v2.0 둘째 라운드 앞 (FSAP_v2.0.1) (2026-11-04)
+# 준비 점검 — 엔진 v3.9.2 다시 켬, M08·M04R·DC2-03 앞 (FSAP_v2.3.4) (2026-11-04)
 
 요약
-- 판정: **ready=true**. 대상 문서 `3D_Modeling/FSAP_v2.0.1.sc`(config doc·machine.json doc 일치, 앱에 문서 이름 FSAP_v2.0.1로 열려 있음, dirty false, undo 0, 바디 44)에 고정부·조인트·대기 연구·사이클 연구 4개·매트 모형 3장·가공 뒤 형상이 다 있다.
-- `joint.list`: floating **0**, conflicts 0, errors 0, fixed [0, 2](U1_FRAME 접지). 기계 조인트 7(J_U5_X 0~1380, M00-D05) + 매트 모형 9 + 리지드 묶음 10.
-- 동작 연구 5개 모두 `motion.play step 0` 성공: REST · CYCLE_L(716) · CYCLE_S(450) · CYCLE_G1(514) · CYCLE_G2(630). 단계 수는 M00 회귀(mech_regression.md)와 같음.
-- 동작 상태 초기화: 마지막에 `motion.play REST step 0`(moved true — 앞에서 CYCLE_G2 0단계로 옮겼다가 되돌림).
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.3.4.sc`(config doc·machine.json doc 일치, 2026-11-04 22:28 커밋)에 고정부·조인트·대기 연구·사이클 연구·매트 모형 3장·가공 뒤 형상이 다 있다.
+- 앱(127.0.0.1:27878, running 빈 큐)에 이전 실행의 'merged' 문서(dirty true, path 없음, 바디 451)가 열려 있었다. 지시 (b)대로 저장하지 않고 v2.3.4 저장본을 MCP `open` 한 번(errors 0, 피처 1319)으로 바꿨다.
+- `joint.list`: floating **0**, conflicts 0, errors 0, fixed [0, 2]. 조인트 181 = 리지드 152 + 슬라이더 20 + 회전 9. 기계·모형 조인트 29개가 machine.json joints 29개와 이름까지 같다.
+- 동작 연구 8개 모두 `motion.play step 0` 성공(conflicts 0): REST 1 · CYCLE_L 716 · CYCLE_S 450 · CYCLE_G1 514 · CYCLE_G2 630 · MAINT_HEAD 1 · SEAM_U7 32 · MAINT_U7 13 — machine.json studies 8개와 같다.
+- 동작 상태 초기화: 마지막에 `motion.play REST step 0`. 저장 0, 편집 0.
 - gmsh: **불러올 수 없음**(ModuleNotFoundError) — 구상은 gmsh 없이(WF-127).
-- 바뀐 부품: 없음(읽기만, save 0, 편집 0). 미완(막지 않음): 6-4 계단형 '오목 모서리' 매트 모형 없음, 0-3 ②의 센서 슈(U6)·바인더(U7) 동작 조인트 없음(M05·M06 몫).
+- 미완(막지 않음): 6-4 계단형 '오목 모서리' 매트 모형 없음(앞 점검과 같음). STEP대기_ 바디 56개(구매부·STEP 교체 몫, 이 점검의 준비물 아님).
 
 ## 1. 근거 규칙
-- 안내서 '동작 검사' 원문: "끝까지 고정부에 이어졌는지 `joint.list`의 `floating`", "사이클(요구서 0-3)을 동작 연구로", "작업 대상 모형(요구서 0-2 크기 양 끝, 가공 뒤 형상·조각)".
-- 안내서 '동작 상태 초기화' 원문: "설계 안에 \"대기\" 포즈를 0단계로 둔 동작 연구(motion study)를 만들어 두고 `motion.play {\"study\": \"<이름>\", \"step\": 0}`."
+- 안내서 '동작 검사': "끝까지 고정부에 이어졌는지 `joint.list`의 `floating`", "사이클(요구서 0-3)을 동작 연구로", "작업 대상 모형(요구서 0-2 크기 양 끝, 가공 뒤 형상·조각)".
+- 안내서 '동작 상태 초기화': "설계 안에 \"대기\" 포즈를 0단계로 둔 동작 연구(motion study)를 만들어 두고 `motion.play {\"study\": \"<이름>\", \"step\": 0}`."
 - 실행 규칙 7: "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다(ready=true …)"(WF-113).
-- 통로(실행 규칙 2 "혼자 도는 읽기 부서도 MCP로 잰다"): 앱(127.0.0.1:27878, running 빈 큐)에 이미 `FSAP_v2.0.1`이 dirty false·undo 0으로 열려 있어 다시 `open`하지 않았다(안내서 '원복': 같은 경로 재열기는 디스크를 다시 읽지 않음). 옛 v1.0 문서는 열려 있지 않았다. 저장하지 않았다.
+- 실행 규칙 2: "혼자 도는 읽기 부서도 MCP로 잰다 … `open {path: 저장본}` 한 번 … 저장은 하지 않는다(`save` 금지, 끝나면 `motion.play` step 0)."
 
 ## 2. 점검표
 
 | 항목 | 필요 | 있음 | 근거 |
 |---|---|---|---|
-| 고정부 | 접지 컴포넌트 | 있음 | joint.list fixed [0, 2], 유닛 컴포넌트 리지드 묶음 Rigid Group 2:6~2:18 |
-| 조인트, floating 없음 | 0-8 v2 구동 | 있음 | J_U3_PRESSER 0~20 · J_U3_NEEDLE −30~0 · J_U4_PRESS 0~30 · J_U4_WHEEL_ROT · J_U5_X 0~1380 · J_U5_LIFT 0~30 · J_U5_WHEEL_ROT, floating [] |
+| 고정부 | 접지 컴포넌트 | 있음 | joint.list fixed [0, 2], 리지드 152 |
+| 조인트, floating 없음 | 0-8 v2 구동 | 있음 | U3 노루발·바늘, U4 누름·바퀴·디스크·실린더 핀/로드, U5 X·승강·바퀴, U6 SHIFT·HGT, U7 카세트 X·Y·절단·접어넣기·공급·걸쇠·HGT; floating [] |
 | 대기 0단계 연구 | REST | 있음 | motion.play REST 0 ok |
-| 사이클 연구 | 0-3 ①~⑤ | 있음 | CYCLE_L 716 · CYCLE_S 450 · CYCLE_G1 514 + CYCLE_G2 630(홈 매트는 1000단계 상한으로 둘), play step 0 ok |
-| 기계 정의 | 유닛·상태·path_parts | 있음 | tools/machine.json: units 11, joints 16, studies 5, states 22, path_parts [U2_~U7_], baseline_overlaps 7, temp_values 11 |
-| 크기 범위 양 끝 | 0-2, D-01 | 있음(임시) | MAT_L 1500×1500, MAT_S 300×200 (D-01) |
-| 가장 좁은 홈 매트 | 6-4 | 있음(임시) | MAT_G, U홈 25 폭·R12.5 (D-02·D-03) |
-| 가공 뒤 형상 | 테이프 띠·이음매 | 있음(임시) | TAPE_L·S·G, SEAM_L·S·G (D-06·D-07), 매트와 리지드 묶음 |
-| 떨어진 조각 | 0-8-4 ⑤ | 해당 없음 | machine.json workpiece_stages.fragments: 절단 끝은 바인더에 남음 — 조각 없음(D-07, M05) |
+| 사이클 연구 | 0-3 ①~⑤ | 있음 | CYCLE_L·S·G1·G2, 정비 MAINT_HEAD·MAINT_U7, 이음매 SEAM_U7, 모두 step 0 ok |
+| 기계 정의 | 유닛·상태·path_parts | 있음 | tools/machine.json: units 13, joints 29, studies 8, states 26, path_parts [U2_~U7_], baseline_overlaps 19, temp_values 11 |
+| 크기 범위 양 끝 | 0-2, D-01 | 있음(임시) | MAT_L, MAT_S (D-01) |
+| 가장 좁은 홈 매트 | 6-4 | 있음(임시) | MAT_G (D-02·D-03) |
+| 가공 뒤 형상 | 테이프 띠·이음매 | 있음(임시) | TAPE_L·S·G, SEAM_L·S·G (D-06·D-07) |
+| 떨어진 조각 | 0-8-4 ⑤ | 해당 없음 | machine.json workpiece_stages.fragments: 조각 없음(D-07) |
 | 매트 평면 운동 모형 | 볼 위 X·Y·회전 | 있음 | J_WP_k_X·Y·ROT(k=L·S·G), 기계 축 아님(실행 규칙 20) |
 
 ## 3. 상태 목록 ↔ 요구서 0-3·6-4
-machine.json states 22개가 M00 준비 점검 때와 같다(연구 단계 번호 그대로, 연구 단계 수 변화 없음).
+machine.json states 26개(앞 점검 22개 + 정비 머리판 탈착, 홈 매트 모서리 끝 테이프 위, THICK_6, THICK_16).
 
-| 요구서 | 대응 상태(연구 단계) |
+| 요구서 | 대응 상태 |
 |---|---|
-| 0-3 ① 올리고 시작 | 대기(REST 0), 로딩 끝(L 12) |
-| 0-3 ② 시작점 찾기·바인더 물림 | 바퀴 내림(L 50, S 16) — 슈·바인더 조인트가 없어 바퀴 내림으로만 표현(M05·M06) |
-| 0-3 ③ 외곽 봉제·노루발 들고 회전 | 직선(L 65, S 18), 볼록 모서리(L 127·172, S 67, G2 75), 홈 입구(G1 90·133·467), 홈 안 벽(G1 195), 홈 바닥 꺾임(G1 300·390) |
-| 0-3 ④ 이음매·절단 | 이음매 겹침 끝(L 668, S 434, G2 574) |
-| 0-3 ⑤ 배출 | 배출(L 716, S 450, G2 630) |
-| 6-4 오목 모서리 | **계단형 오목 모서리 매트 모형 없음** — 홈 바닥 오목 반원(G1 300)만 |
+| 0-3 ① 올리고 시작 | 대기, 큰 매트 로딩 끝 |
+| 0-3 ② 시작점·바인더 물림 | 큰/작은 매트 바퀴 내림(+ SEAM_U7 연구) |
+| 0-3 ③ 외곽 봉제·회전 | 직선, 볼록 모서리 45°·90°, 홈 입구 회전, 홈 안 벽, 홈 바닥 꺾임(오목), 모서리 끝 테이프 위, THICK_6·16 |
+| 0-3 ④ 이음매·절단 | 이음매 겹침 끝(L·S·G) |
+| 0-3 ⑤ 배출 | 배출(L·S·G) |
+| 6-4 오목 모서리(계단형) | 없음 — 홈 바닥 오목 반원만(앞 점검과 같음, 막지 않음) |
 
-0-3 각 단계는 상태 하나 이상에 대응한다. 6-4의 7개 중 6개 대응, '오목 모서리(계단형)'만 부분 대응.
-
-## 4. 빠진 것 (동작 검사를 막지 않음, missing에 적음)
-1. 6-4 '오목 모서리'(계단형 날카로운 오목, 0-2) 매트 모형과 그 상태 — M01 또는 M02·M03이 매트 모형에 계단 오목을 더한다(D-01·D-02 임시).
-2. 0-3 ②의 센서 슈(U6)·바인더(U7) 동작 조인트 — M05·M06에서 넣는다.
-
-(M00 앞 점검의 3번 '유닛 차지 공간 상자 없음'은 v2.0.1에서 32개로 풀렸다.)
-
-## 5. 원복
-- 읽기만 했다. save 0, 편집 0. 끝에 `motion.play REST step 0`.
+## 4. 바뀐 부품
+없음(읽기만, save 0, 편집 0).
 
 ## 워크플로우 메모
-- `motion.list`·`motion.play` 응답이 포즈 전체(연구 5개 play 묶음 85,000자)를 돌려줘 MCP 출력 한도를 넘었다. 연구 이름·단계 수만 돌려주는 요약 인자가 있으면 좋다(M00 점검 메모와 같은 문제, 반복).
+- v2.3.4 저장본 문서 이름이 'merged'로 열린다(open 응답 name "merged"). 실행 규칙 2 "저장 전에 문서 이름을 새 버전 이름으로 바꾼다"가 합치기부 저장에서 빠졌다. 다음 모델링부가 저장 전 이름을 바꿔야 한다.
+- `joint.list`·`motion.play` 응답이 커서(수십만~1천5백만 자) MCP 응답이 파일로 넘어갔다. motion.play 8번 묶음이 15 MB를 돌려줬다 — 요약만 받는 옵션이 있으면 좋겠다.
+- 바디 이름(MAT_·TAPE_·SEAM_, STEP대기_ 56)은 열기 전 'merged' 문서의 document.inspect에서 셌다. 지시 (b)에 따르면 v2.3.4와 내용이 같다.

@@ -729,7 +729,11 @@ def fix2():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "fix2":
+    if len(sys.argv) > 1 and sys.argv[1] == "m04r":
+        # M04R 단계(2026-11-05, 보고서 mech_M04R_model.md)는 tools/gen_v2_m04r.py에 있다
+        from gen_v2_m04r import m04r
+        m04r()
+    elif len(sys.argv) > 1 and sys.argv[1] == "fix2":
         fix2()
     elif len(sys.argv) > 1 and sys.argv[1] == "fix1":
         fix1()
