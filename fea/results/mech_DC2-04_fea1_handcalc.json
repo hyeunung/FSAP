@@ -1,0 +1,209 @@
+{
+ "assume": {
+  "W7_N": 73.6,
+  "preload_N": 4500.0,
+  "mu": [
+   0.15,
+   0.2
+  ],
+  "hand_N": 100.0,
+  "X_CG": 27.0,
+  "screw_flat_point_dp": "2.5(JIS B 1177 M4 평끝 dp 최대) — 모델 STEP대기_ 는 끝 Ø4 그대로",
+  "block_bolt_torque": "4.5 N m(장공 볼트와 같은 값 가정, UPPER SS400 대용 D-10)"
+ },
+ "step_bbox": {
+  "P_DC204_PUSH_BLK": {
+   "n_pts": 169,
+   "min": [
+    0.0,
+    -98.28,
+    0.0
+   ],
+   "max": [
+    48.34,
+    0.0,
+    276.0
+   ]
+  }
+ },
+ "results": {
+  "holder_operating_tape": {
+   "pivot_X": 14.0,
+   "screw_force_N": 177.1,
+   "M_Nmm": 3856.0,
+   "fric_arms": [
+    4.0,
+    22.0
+   ],
+   "SF_pivot_mu0.15": 4.42,
+   "SF_pivot_mu0.2": 5.89,
+   "load": "테이프 장력 X 10 @ Z 20",
+   "need": 3.0,
+   "verdict_mu0.15": "됨",
+   "verdict_mu0.2": "됨",
+   "whatif": false
+  },
+  "holder_misuse_hand_X_220": {
+   "pivot_X": 14.0,
+   "screw_force_N": 395.0,
+   "M_Nmm": 9956.0,
+   "fric_arms": [
+    4.0,
+    22.0
+   ],
+   "SF_pivot_mu0.15": 1.71,
+   "SF_pivot_mu0.2": 2.28,
+   "load": "손 X 100 @ Z 220(M05 손 자리)",
+   "need": 2.0,
+   "verdict_mu0.15": "디테일",
+   "verdict_mu0.2": "됨",
+   "whatif": false
+  },
+  "holder_whatif_hand_X_12.5": {
+   "pivot_X": 14.0,
+   "screw_force_N": 1136.1,
+   "M_Nmm": 30706.0,
+   "fric_arms": [
+    4.0,
+    22.0
+   ],
+   "SF_pivot_mu0.15": 0.56,
+   "SF_pivot_mu0.2": 0.74,
+   "load": "what-if 기록만: 손 X 100 @ 카세트 바닥",
+   "need": 2.0,
+   "verdict_mu0.15": "동작",
+   "verdict_mu0.2": "동작",
+   "whatif": true
+  },
+  "setscrew_M4": {
+   "F_N": 395.0,
+   "sigma_axial_MPa": 45.0,
+   "ecc_mm": 0.58,
+   "sigma_bend_MPa": 75.9,
+   "SF_yield": 9.1,
+   "need": 2.0,
+   "free_len_mm": "너트 위 5.8(h 0) ~ 1.8(h -4) — 세장비 무시",
+   "A_tip_dp2.5_mm2": 2.2,
+   "A_tip_model_O4_mm2": 5.88,
+   "p_tip_MPa": 179.0,
+   "SF_pG_wing_SUS304": 2.23,
+   "SF_yield_wing": 1.14,
+   "p_tip_operating_MPa": 80.0,
+   "SF_pG_operating": 4.98,
+   "verdict": "됨",
+   "note": "축 Y -94.1이 날개(Y -94~-90) 바깥 끝에 있어 평끝 Ø2.5 중 1.15 mm 폭만 닿음. 면압 판정은 앞 회차와 같은 p_G(SUS304 400) 기준. 항복 205 기준이면 SF 1.14 — 국부 눌림(수 µm) 가능, 미는 볼트 축을 날개 가운데(Y -92) 쪽으로 옮기면 맞닿음 전폭"
+  },
+  "block_tap_M4": {
+   "le_min_mm": 10,
+   "A_shear_mm2": 76.4,
+   "tau_MPa": 5.2,
+   "SF": 23.8,
+   "need": 2.0,
+   "verdict": "됨"
+  },
+  "block_bolts_CB5-12_slip": {
+   "Mz_Nmm": 5530.0,
+   "Fx_each_N": 460.8,
+   "Fz_each_N": 197.5,
+   "F_res_each_N": 501.4,
+   "T_ext_max_N": 75.0,
+   "SF_slip_mu0.15": 1.32,
+   "SF_slip_mu0.2": 1.77,
+   "need": 2.0,
+   "verdict_mu0.15": "디테일",
+   "verdict_mu0.2": "디테일",
+   "after_slip": {
+    "rot_rad": 0.0417,
+    "tip_dz_mm": 0.58,
+    "shank_tau_MPa": 25.5,
+    "note": "미끄러지면 블록이 축 Y로 돌아 자루가 구멍 벽에 닿을 때(틈 0.25) 멈춤 — 미는 볼트 끝 높이가 약 0.58 mm 바뀐 채 남음. 자루 전단은 낮음(부러짐 아님)"
+   }
+  },
+  "block_bolts_CB5-12_bolt": {
+   "inputs": {
+    "d": 5,
+    "le": 9.4,
+    "load_N": 576.4,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.88,
+   "sf_operating": {
+    "나사 인장": 27.1,
+    "암나사 전단": 14.12,
+    "분리(예압/외력)": 7.81
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 3.59,
+    "조임 암나사 전단": 1.81
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "block_body": {
+   "inputs": {
+    "t": 26.0,
+    "b": 8.0,
+    "L": 14.0,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 395.0,
+   "deflection_mm": 0.0002,
+   "stiffness_N_mm": 2472425.656,
+   "stress_MPa": 6.14,
+   "sf": 33.41,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "slot_bolts_CB5-12_M05": {
+   "inputs": {
+    "d": 5,
+    "le": 7,
+    "load_N": 799.0,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 10.0,
+    "dh": 8.14,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.4,
+   "sf_operating": {
+    "나사 인장": 19.55,
+    "암나사 전단": 7.59,
+    "분리(예압/외력)": 5.63
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 2.89,
+    "조임 암나사 전단": 1.35
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "slot_washer": {
+   "A_washer_on_plate_mm2": 26.5,
+   "p_MPa": 170.0,
+   "SF_pG_SUS304": 2.35,
+   "before_no_washer_SF": 1.2,
+   "washer_t1_bend": "와셔 t1이 장공 폭 5.5를 건너 받침 — 굽힘은 머리 좌면 Ø8.5와 장공 사이 1.5 띠라 낮음(기록)"
+  }
+ }
+}
