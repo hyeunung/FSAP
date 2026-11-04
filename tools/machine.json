@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.3.2.sc",
+ "doc": "../3D_Modeling/FSAP_v2.3.3.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -543,11 +543,21 @@
  "units": {
   "U1_FRAME": {
    "parts": [
-    "U1_",
+    "P_M07_",
+    "STEP대기_HFS8-80160",
+    "STEP대기_HFC8-80160",
+    "HFS8-4080-",
+    "HFC8-4080-B_M07",
+    "HBLFSN8_M07",
+    "HNTT8-5_M07",
+    "CB5-12_M07",
+    "CB5-16_M07",
+    "CB5-20_M07",
+    "STEP대기_LEVELER_M8_M07",
     "REF_"
    ],
    "moving": false,
-   "_note": "고정(접지). 상자 U1_BEAM·U1_COL_NX·U1_COL_PX·U1_BASE(M00)"
+   "_note": "고정(접지). M07(v2.3.3): 보 P_M07_BEAM(STKR400 400x200x8, X -2300~1150·Y 120~320·Z 250~650), 기둥 80160(STEP대기)+4080 양쪽, 받침 L P_M07_SEAT_NX/PX(SS400 t9 판금)·뒤 이음판 P_M07_SPLICE_NX/PX(SS400 t6), 받침틀 HFS8-4080 X 3·Y 9·다리 9, 레벨링 풋 15(STEP대기), HBLFSN8 55, CB5-12/16/20 + HNTT8-5. 옛 상자 U1_BEAM(고쳐 이름 바꿈)·U1_COL_NX·U1_COL_PX·U1_BASE 지움. 새 조인트 0"
   },
   "U2_TABLE": {
    "parts": [
