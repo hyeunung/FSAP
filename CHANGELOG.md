@@ -430,3 +430,12 @@ When a new version is released:
 - 라이트 커튼 F3SG-4RA1520-14 ×2쌍(STEP대기) + 기둥 `HFS8-4080-2370_M08_FL`·`HFS8-4080-1900_M08_FR/_R`(실물 STEP) + 캡 6 + 이음판·판금 L 9, 경광등 LR6(STEP대기, 보 윗면), HMI 받침판·팔 `HFS8-4080-570_M08_HMI`·패널 받침·패널 자리
 - 다관 커넥터 KDM10-06 고정 반쪽(걸이 위) + 플러그(U7_CASSETTE), 관 TU0805 ×6·TU0604 ×11(3D 스케치 + pipe, 굽힘 호)
 - 새 컴포넌트 53개 → 가운데 자리(E-05). 새 조인트 0. 보고서 `docs/reports/mechanism/mech_M08_model.md`
+
+## v2.5.1 — 2026-11-05 (M08 수정 1: 미완 6건)
+- U4 실린더 CDM2C20 포트(Rc1/8 실측)에 `KQ2L06-01AS_M08_U4_1/2`(U4_CYL 아래), 관을 핀 축 이음점에서 고정 관 U4_A/B ↔ 실린더 쪽 관 `TU0604_M08_U4C_A/B`로 나눔
+- U5: 고정 관 U5_A/B를 베어 고정 끝(X -1262)까지, MGPM25 −X 면에 `KQ2L06-01AS_M08_U5_1/2` + 대차 쪽 관 `TU0604_M08_U5C_1/2`(U5_CAR)
+- 카세트 안 관 `TU0604_M08_U7C_1~6`(플러그 → FEED·CUT·TUCK 피팅, U7_CASSETTE)
+- 라이트 커튼 기본 금구 `STEP대기_F3SG-BRKT_M08_1E/1R/2R/2E` + CB5-12·HNTT8-5, 옆 투광 L 날개 −Y 3
+- 경광등 `STEP대기_CB4-12_M08` ×3, 다관 커넥터 CB5-12 ×2, 보 윗면 관 빗 `P_M08_TUBE_COMB_ML_1~4` + CB5-16 ×4
+- 판금 10개 `sheet.convert`(규칙 SUS304_t4·t6 새로), HMI 판 T → L(날개 팔 −X 면, 볼트·너트 옮김)
+- 수정 회차 → 끝 자리(E-05). 새 조인트 0. 보고서 `docs/reports/mechanism/mech_M08_model1.md`
