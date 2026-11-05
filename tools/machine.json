@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.6.3.sc",
+ "doc": "../3D_Modeling/FSAP_v2.6.4.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -1868,6 +1868,7 @@
   "2026-11-05 STEPSWAP r2 v2.5.9: STEP대기_CB6-16_M03 ×2·STEP대기_CB4-25_M08 ×4 -> 미스미 STEP CB6-16_M03_LIFT·CB4-25_M08(같은 자리, 조인트·행정·연구 변화 없음)",
   "2026-11-06 DC2-08 v2.6.1: KDM10 소켓 받침을 U7_FIXED로(소켓·받침·CB3-10 x4·새 CB5-12_M08_PZ_KDM x2), 옛 CB5-12_M08_NZ_KDM x2 지움. 조인트·행정·연구 변화 없음(묶음 소속만)",
   "2026-11-06 DC2-08 수정 1회차 v2.6.2: 형상·조인트 변경 없음(소켓 ↔ 밸브 쪽 관 HGT -4·+6 CAD 실측만), doc → v2.6.2",
-  "2026-11-06 REG-01 v2.6.3: 모든 동작 연구가 U7 조인트 6개(5004~5009)를 키로 잡게 함 — 연구 전환 때 U7 상태가 세션에 남지 않음(mech_regression_4 3절). 조인트·행정 변경 없음"
+  "2026-11-06 REG-01 v2.6.3: 모든 동작 연구가 U7 조인트 6개(5004~5009)를 키로 잡게 함 — 연구 전환 때 U7 상태가 세션에 남지 않음(mech_regression_4 3절). 조인트·행정 변경 없음",
+  "2026-11-06 STEPSWAP r3 v2.6.4: STEP대기_CB5-6_M08_PY_LC2F ×2 → CB5-6_M08_PY_LC2F(미스미 STEP), U8 리지드 그룹 9282·9283. 조인트·행정 변경 없음"
  ]
 }

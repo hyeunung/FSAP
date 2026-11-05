@@ -1,0 +1,145 @@
+[
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0
+  }
+ },
+ {
+  "command": "selection.delete",
+  "params": {
+   "occurrences": [
+    "STEP대기_CB5-6_M08_PY_LC2F:1",
+    "STEP대기_CB5-6_M08_PY_LC2F:2"
+   ]
+  }
+ },
+ {
+  "command": "solid.remove",
+  "params": {
+   "bodies": [
+    "STEP대기_CB5-6_M08_PY_LC2F"
+   ]
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": "U8_PNEU"
+  }
+ },
+ {
+  "command": "file.insert_step",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/CB5-6/CB5-6.stp",
+   "name": "CB5-6_M08_PY_LC2F",
+   "matrix": [
+    0,
+    -1,
+    0,
+    -2315.0,
+    1,
+    0,
+    0,
+    -1561.0,
+    0,
+    0,
+    1,
+    100.0
+   ]
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "Cut-Extrude1",
+   "name": "CB5-6_M08_PY_LC2F"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "CB5-6_M08_PY_LC2F",
+   "part_number": "CB5-6",
+   "bom_type": "purchased",
+   "description": "Misumi CB5-6 STEP: side emitter L wing -> 2E bracket M5 tap, end at curtain face Y -1555 (STEPSWAP r3)"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "CB5-6_M08_PY_LC2F"
+   ],
+   "material": "SCM435"
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "CB5-6_M08_PY_LC2F:1",
+   "in_place": true,
+   "translate": [
+    0,
+    0,
+    600.0
+   ]
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": 0
+  }
+ },
+ {
+  "command": "joint.rigid_group",
+  "params": {
+   "occurrences": [
+    "U8_PNEU:1",
+    "CB5-6_M08_PY_LC2F:1"
+   ],
+   "_note": "MCP used occurrence ids [18, 9279]"
+  }
+ },
+ {
+  "command": "joint.rigid_group",
+  "params": {
+   "occurrences": [
+    "U8_PNEU:1",
+    "CB5-6_M08_PY_LC2F:2"
+   ],
+   "_note": "MCP used occurrence ids [18, 9281]"
+  }
+ },
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0,
+   "quiet": true
+  }
+ },
+ {
+  "command": "browser.visibility",
+  "params": {
+   "visible": false,
+   "folder": "joints"
+  }
+ },
+ {
+  "command": "component.rename",
+  "params": {
+   "component": 0,
+   "name": "FSAP_v2.6.4"
+  }
+ },
+ {
+  "command": "document.metadata.set",
+  "params": {
+   "key": "description",
+   "value": "STEPSWAP mechanism: STEP-wait CB5-6 x2 (2E curtain bracket, U8) swapped to Misumi CB5-6 STEP"
+  }
+ }
+]
