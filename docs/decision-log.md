@@ -3036,3 +3036,11 @@ v2.5.2 → v2.5.3. 최종 판정 pass true, 동작 문제 0, below_done false. �
 |---|---|---|---|
 | SW-R11 | STEPSWAP **해결(v2.5.7)**: 지시 17형번의 `STEP대기_` 0, 교체 뒤 새 겹침 0(벨트 자른 뒤 대차 X 0·345·690·1035·1380 겹침 0). 실패 0, 남은 동작 문제 0. 예외 판정 0 | 완료 판정 "이 형번들의 STEP대기_ 0, 교체 뒤 전 구간 새 겹침 0" 충족(최종 판정 pass, below_done false) | mech_STEPSWAP_verify1.md, tools/out/mech_STEPSWAP/verify1/ |
 | SW-R12 | 남은 디테일(기록만, E-02): SW-D6 KDM 소켓 취부(CB3-10:3 ↔ 소켓 98.96 mm³, 나머지 3개 커널 실패로 못 잼, 외부 D-137), SW-D7 높이 조정 때 플러그 다시 꽂기, SW-D8 CB6-16·CB4-25 STEP | 구동 합격은 E-03 동작·간섭만 | 최종 판정 details |
+
+## 구동 DC2-07 확인 (2026-11-04)
+
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| DC2-07-C1 | DC2-07(U8 밸브 묶음 실물 포트 방향) **이미 해결 — 형상 변경 없음**(v2.5.7 그대로) | 지시서 전제(임시 STEP대기_SS5Y3 안에 밸브가 묻힘, 엘보 간격 30.5)는 STEPSWAP v2.5.6(SW-R1·SW-R4·SW-R5)에서 이미 바뀌었다: 매니폴드·밸브 실물 STEP, 매니폴드 바닥 보 앞면 Y 120, 밸브 길이 방향 Z 291.7~373.5, 엘보 A −Z·B +Z | mech_DC2-07_measure.md, mech_STEPSWAP_model.md, 검도 mech_STEPSWAP_verify1.md(SW-R11) |
+| DC2-07-C2 | 근거 수치: STEP대기_SS5Y3·SY3120 0, 22바디 interference count 0(truncated false), 피팅 틈 X 0.1·A/B Z 2.2, 관 끝 14개(TU0604 11 + TU0805 3) 어긋남 0.00 mm, 매니폴드 볼트 렌치 길 Ø7×35 ×4 겹침 0(최소 틈 1.02) | 완료 판정 동작·간섭 항목 충족. 남은 겹침은 나사 물림뿐(CB4-25↔보 62.77 mm³ ×4, 엘보 M5↔밸브 11쌍 커널 boolean 실패로 미측정) | mech_DC2-07_measure.md |
+| DC2-07-C3 | 판정 밖으로 남김: `STEP대기_CB4-25_M08` ×4 실물 교체(구매·STEP 받기), TU0805 3포트 의미·피팅(디테일 M08-X1) | 형상·동작과 무관한 구매품·디테일 | mech_DC2-07_measure.md 5절 |
