@@ -1,0 +1,1739 @@
+{
+ "run": "mech_2026-11-04_M04R-M08-M07-K1-DC2-03-STEPWAIT",
+ "status": "완료",
+ "engine": "v3.9.2",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-04",
+ "journal": "wf_e0381f55-c8d",
+ "totals": {
+  "agents": 50,
+  "agent_sec": 60664,
+  "input": 21632842,
+  "cache_read": 366984539,
+  "output": 1987728,
+  "tools": 1990,
+  "wall_sec": 59396
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 555,
+   "agents": 3,
+   "output": 33833
+  },
+  "▸ modeling-round": {
+   "sec": 60109,
+   "agents": 47,
+   "output": 1953895
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 73,
+   "tokens": {
+    "input": 67165,
+    "cache_read": 54320,
+    "output": 10823
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 47,
+   "tokens": {
+    "input": 81189,
+    "cache_read": 133934,
+    "output": 6285
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 435,
+   "tokens": {
+    "input": 120651,
+    "cache_read": 1451143,
+    "output": 16725
+   },
+   "tools": 17,
+   "turns": 16
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 73,
+   "tokens": {
+    "input": 67187,
+    "cache_read": 54342,
+    "output": 10805
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 81,
+   "tokens": {
+    "input": 90756,
+    "cache_read": 1062064,
+    "output": 7225
+   },
+   "tools": 17,
+   "turns": 14
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 54,
+   "tokens": {
+    "input": 84040,
+    "cache_read": 616723,
+    "output": 3956
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "M04R 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1379,
+   "tokens": {
+    "input": 564022,
+    "cache_read": 6921972,
+    "output": 46809
+   },
+   "tools": 52,
+   "turns": 49
+  },
+  {
+   "label": "M04R 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 59,
+   "tokens": {
+    "input": 93960,
+    "cache_read": 781710,
+    "output": 3534
+   },
+   "tools": 12,
+   "turns": 11
+  },
+  {
+   "label": "M04R 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1132,
+   "tokens": {
+    "input": 224905,
+    "cache_read": 4762549,
+    "output": 75988
+   },
+   "tools": 30,
+   "turns": 30
+  },
+  {
+   "label": "M04R 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 81,
+   "tokens": {
+    "input": 101016,
+    "cache_read": 725029,
+    "output": 6976
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "M04R 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 102,
+   "tokens": {
+    "input": 94206,
+    "cache_read": 1283625,
+    "output": 4935
+   },
+   "tools": 21,
+   "turns": 16
+  },
+  {
+   "label": "M04R 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 4819,
+   "tokens": {
+    "input": 772465,
+    "cache_read": 44480078,
+    "output": 185960
+   },
+   "tools": 173,
+   "turns": 145
+  },
+  {
+   "label": "M04R 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 765,
+   "tokens": {
+    "input": 213274,
+    "cache_read": 6487160,
+    "output": 58289
+   },
+   "tools": 48,
+   "turns": 45
+  },
+  {
+   "label": "M04R 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 341,
+   "tokens": {
+    "input": 127455,
+    "cache_read": 1489264,
+    "output": 24648
+   },
+   "tools": 15,
+   "turns": 15
+  },
+  {
+   "label": "M04R 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 131,
+   "tokens": {
+    "input": 117380,
+    "cache_read": 900295,
+    "output": 11184
+   },
+   "tools": 18,
+   "turns": 10
+  },
+  {
+   "label": "M08 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1788,
+   "tokens": {
+    "input": 356537,
+    "cache_read": 7702609,
+    "output": 56269
+   },
+   "tools": 61,
+   "turns": 55
+  },
+  {
+   "label": "M08 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 52,
+   "tokens": {
+    "input": 78426,
+    "cache_read": 452260,
+    "output": 2202
+   },
+   "tools": 10,
+   "turns": 7
+  },
+  {
+   "label": "M08 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1411,
+   "tokens": {
+    "input": 259926,
+    "cache_read": 12262109,
+    "output": 115809
+   },
+   "tools": 69,
+   "turns": 66
+  },
+  {
+   "label": "M08 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 174,
+   "tokens": {
+    "input": 114698,
+    "cache_read": 454224,
+    "output": 16666
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "M08 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 404,
+   "tokens": {
+    "input": 80082,
+    "cache_read": 1155687,
+    "output": 19961
+   },
+   "tools": 18,
+   "turns": 12
+  },
+  {
+   "label": "M08 완료 판정 확인 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 85,
+   "tokens": {
+    "input": 95155,
+    "cache_read": 431566,
+    "output": 5750
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "M08 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 88,
+   "tokens": {
+    "input": 85539,
+    "cache_read": 1138325,
+    "output": 4194
+   },
+   "tools": 21,
+   "turns": 15
+  },
+  {
+   "label": "M08 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 8598,
+   "tokens": {
+    "input": 4167585,
+    "cache_read": 60485875,
+    "output": 212854
+   },
+   "tools": 202,
+   "turns": 186
+  },
+  {
+   "label": "M08 모델링부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 6934,
+   "tokens": {
+    "input": 3769189,
+    "cache_read": 52338395,
+    "output": 201561
+   },
+   "tools": 172,
+   "turns": 165
+  },
+  {
+   "label": "M08 모델링부 수정2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3019,
+   "tokens": {
+    "input": 729488,
+    "cache_read": 11023670,
+    "output": 45582
+   },
+   "tools": 85,
+   "turns": 77
+  },
+  {
+   "label": "M08 검도·체결 2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 135,
+   "tokens": {
+    "input": 105175,
+    "cache_read": 1470656,
+    "output": 10683
+   },
+   "tools": 20,
+   "turns": 17
+  },
+  {
+   "label": "M08 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 214,
+   "tokens": {
+    "input": 121408,
+    "cache_read": 1420855,
+    "output": 17995
+   },
+   "tools": 21,
+   "turns": 15
+  },
+  {
+   "label": "M07-K1 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 8431,
+   "tokens": {
+    "input": 2813768,
+    "cache_read": 70753997,
+    "output": 221974
+   },
+   "tools": 225,
+   "turns": 198
+  },
+  {
+   "label": "M07-K1 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1710,
+   "tokens": {
+    "input": 556148,
+    "cache_read": 3950019,
+    "output": 27121
+   },
+   "tools": 41,
+   "turns": 38
+  },
+  {
+   "label": "M07-K1 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 269,
+   "tokens": {
+    "input": 82023,
+    "cache_read": 1796049,
+    "output": 23529
+   },
+   "tools": 19,
+   "turns": 18
+  },
+  {
+   "label": "M07-K1 예외 판정",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 257,
+   "tokens": {
+    "input": 127818,
+    "cache_read": 1303180,
+    "output": 22032
+   },
+   "tools": 17,
+   "turns": 14
+  },
+  {
+   "label": "M07-K1 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 139,
+   "tokens": {
+    "input": 107936,
+    "cache_read": 750555,
+    "output": 10075
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "DC2-03 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3298,
+   "tokens": {
+    "input": 845277,
+    "cache_read": 13300910,
+    "output": 47924
+   },
+   "tools": 90,
+   "turns": 82
+  },
+  {
+   "label": "DC2-03 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 38,
+   "tokens": {
+    "input": 74196,
+    "cache_read": 143714,
+    "output": 1831
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "DC2-03 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 619,
+   "tokens": {
+    "input": 182340,
+    "cache_read": 4039316,
+    "output": 40447
+   },
+   "tools": 34,
+   "turns": 28
+  },
+  {
+   "label": "DC2-03 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 196,
+   "tokens": {
+    "input": 116474,
+    "cache_read": 757567,
+    "output": 17779
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "DC2-03 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1284,
+   "tokens": {
+    "input": 367302,
+    "cache_read": 2770221,
+    "output": 31868
+   },
+   "tools": 26,
+   "turns": 26
+  },
+  {
+   "label": "DC2-03 완료 판정 확인 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 71,
+   "tokens": {
+    "input": 90819,
+    "cache_read": 330685,
+    "output": 6351
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "DC2-03 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3401,
+   "tokens": {
+    "input": 759643,
+    "cache_read": 14988553,
+    "output": 79655
+   },
+   "tools": 91,
+   "turns": 76
+  },
+  {
+   "label": "DC2-03 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 930,
+   "tokens": {
+    "input": 301423,
+    "cache_read": 3743334,
+    "output": 25226
+   },
+   "tools": 38,
+   "turns": 31
+  },
+  {
+   "label": "DC2-03 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 291,
+   "tokens": {
+    "input": 80578,
+    "cache_read": 1102097,
+    "output": 26403
+   },
+   "tools": 12,
+   "turns": 12
+  },
+  {
+   "label": "DC2-03 모델링부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1464,
+   "tokens": {
+    "input": 218881,
+    "cache_read": 8084863,
+    "output": 53419
+   },
+   "tools": 68,
+   "turns": 51
+  },
+  {
+   "label": "DC2-03 검도·체결 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 429,
+   "tokens": {
+    "input": 117090,
+    "cache_read": 1581521,
+    "output": 15655
+   },
+   "tools": 17,
+   "turns": 17
+  },
+  {
+   "label": "DC2-03 해석 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 220,
+   "tokens": {
+    "input": 78644,
+    "cache_read": 1372498,
+    "output": 20269
+   },
+   "tools": 20,
+   "turns": 14
+  },
+  {
+   "label": "DC2-03 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 137,
+   "tokens": {
+    "input": 120854,
+    "cache_read": 1114710,
+    "output": 12526
+   },
+   "tools": 12,
+   "turns": 12
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 4125,
+   "tokens": {
+    "input": 1410036,
+    "cache_read": 10060728,
+    "output": 63573
+   },
+   "tools": 92,
+   "turns": 69
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 645,
+   "tokens": {
+    "input": 147030,
+    "cache_read": 2664215,
+    "output": 28683
+   },
+   "tools": 29,
+   "turns": 26
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 81,
+   "tokens": {
+    "input": 101374,
+    "cache_read": 374157,
+    "output": 7043
+   },
+   "tools": 4,
+   "turns": 5
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 28,
+   "tokens": {
+    "input": 85982,
+    "cache_read": 248703,
+    "output": 1986
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 127,
+   "tokens": {
+    "input": 64327,
+    "cache_read": 212508,
+    "output": 18691
+   },
+   "tools": 6,
+   "turns": 3
+  }
+ ],
+ "fix_agents": [
+  "M08 기구설계부 수정1",
+  "M08 모델링부 수정1",
+  "M08 모델링부 수정2",
+  "DC2-03 기구설계부 수정1",
+  "DC2-03 모델링부 수정1"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "M04R",
+    "size": "M",
+    "status": "완료",
+    "chosen": "M04R-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.4.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "새 M8 볼트가 T너트에 물리는 길이가 짧다(M-01 물림). CB8-16 NY·PY 4.5 mm, NX 5.3 mm로 0.8d 6.4 mm보다 짧다",
+      "where": "CB8-16_M04R_NY·PY ×6, CB8-16_M04R_NX ×6 (HBLFSN8 → HNTT8-8)",
+      "evidence": "저장본 bbox. NY: 머리 밑 Y -271, 끝 -287, 너트 -282.5~-291.5. NX: 끝 X -387.8, 너트 -382.5~-391.5",
+      "external": false,
+      "fix": "CB8-20으로 바꾼다. NY·PY는 끝 ∓291(너트 끝 ∓291.5 안쪽, 물림 8.5 mm), NX는 끝 -391.8(가로대 홈 안 빈 곳, 물림 9.0 mm). 먼저 stepcheck로 purchased-step/CB8-20이 있는지 확인한다"
+     },
+     {
+      "kind": "디테일",
+      "what": "새 접시 M5가 T너트에 물리는 길이 3.5 mm가 0.8d 4.0 mm보다 짧다",
+      "where": "STEP대기_FHS-M5-10_M04R ×6 (판 E1·E2 이음 X -400 → CM1 윗홈 HNTT8-5:97~102)",
+      "evidence": "머리 윗면 Z -8, 끝 -18, 너트 윗면 -14.5",
+      "external": false,
+      "fix": "FHS-M5-12(미스미 SFB5-12)로 바꾼다. 끝 -20, 물림 5.5 mm. 기존 접시 96개는 디테일링 때 같은 기준으로 본다"
+     },
+     {
+      "kind": "디테일",
+      "what": "판 E2 원판 둘레에 손 100 N이 걸리면 2.19 mm 처진다(일시 탄성). 모델링부 손계산 M04R-F1",
+      "where": "P_M04_PANEL_E2",
+      "evidence": "tools/out/mech_M04R/design/handcalc.json panel_C_hand deflection 2.19 mm, σ 28.1 MPa SF 7.3",
+      "external": false,
+      "fix": "처짐 기준이 정해지면 CM_A·CM_B 사이에 원판 둘레 받침 띠를 더한다"
+     },
+     {
+      "kind": "디테일",
+      "what": "볼 트랜스퍼 형번·STEP과 접시 M5 STEP이 없어 STEP대기_ 임시 형상으로 남아 있다",
+      "where": "STEP대기_BALL_D25_M04 ×827, STEP대기_FHS-M5-10_M04/M04R",
+      "evidence": "자료대기 D-96·D-118·D-117",
+      "external": true,
+      "fix": "D-96 형번(정격 ≥ 200 N)이 정해지면 실물 STEP으로 바꾼다. SFB5-10/12 STEP은 다음 STEP 재시도 때 받는다"
+     },
+     {
+      "kind": "디테일",
+      "what": "볼 하나에 손 또는 D-92 최대 100 N이 몰리고 매트 몫이 더해지는 오조작 가정에서 SF 1.98 < 2 (기준보다 1% 낮음)",
+      "where": "STEP대기_BALL_D25_M04 x827 (D-96 임시 정격 200 N)",
+      "evidence": "fea/results/mech_M04R_handcalc.json ball_single: 101.2 N / 200 N = 1.98. 실제 바퀴 누름은 원판·띠가 받아 바퀴 길과 원판 구멍 안에 볼 0개, 매트 3 g 1.23 N이면 SF 163",
+      "fix": "형번 고를 때 정격 ≥ 203 N (D-96에 적음), 또는 7절 시제품에서 매트의 하중 분산 확인",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "T너트 물림이 짧음(le < 1.5d), 조임 때 암나사 SF 1.17~1.19",
+      "where": "CB5-20_M04R x4 (HNTT8-5, le 5.5), CB8-16_M04R x12 (HNTT8-8, le 5.3)",
+      "evidence": "handcalc.calc: 조임 암나사 전단 1.19 / 1.17. 운전 SF는 15 이상, 미끄럼 SF 25 / 1.98(보수 하중). 기존 형재 T너트 체결과 같은 조건(M04 3회차)",
+      "fix": "도면에 조임 토크 시방 적기(M5 ≤ 4, M8 ≤ 10 N·m) — 디테일링에서 기존 체결과 함께",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "볼 트랜스퍼 수지 볼 Ø25.4 압입형 정격 ≥ 200 N (D-96 형번 미확정, 1안 미스미 볼롤러 압입형)",
+     "FHS-M5-10 (D-117, 미스미 표기 SFB5-10)"
+    ],
+    "external_blocks": [
+     "볼 트랜스퍼 Ø25.4 압입형: 형번이 아직 정해지지 않았고(D-96) STEP도 없다(D-118). 임시 형상 STEP대기_BALL_D25_M04 827개로 넣었다.",
+     "FHS-M5-10(미스미 표기 SFB5-10): STEP이 없다(D-117). 임시 형상 STEP대기_FHS-M5-10_M04 96개와 _M04R 6개로 넣었다."
+    ],
+    "regrade": null
+   },
+   {
+    "id": "M08",
+    "size": "M",
+    "status": "완료",
+    "chosen": "M08-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.5.2.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "M08-X7: 카세트 관 U7C_5·U7C_6 끝(Z 678, 밑 675)이 KDM10-06 고정 반쪽 윗면 모서리(Z 675)와 선 맞닿음 0.0(부피 0), 카세트 뺌 CST_X 0~25 구간. CST_Y 62.5부터 떨어짐",
+      "where": "U7_CASSETTE/TU0604_M08_U7C_5·6 ↔ U8_PNEU/STEP대기_KDM10-06_M08",
+      "evidence": "chk2_u7o0_out.json near 0.0 2건, chk2_u7o1_out.json 1건, overlaps 0",
+      "fix": "실물 KDM10-06 STEP(D-129) 넣을 때 관 최저층 Z +1(밑 676) 올리거나 플러그 포트 높이에 맞춰 관 끝 재배치, 목표 틈 ≥ 1"
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "IR1000-01BG",
+     "SS5Y3-20-06",
+     "SY3120-5LZD-M5",
+     "F3SG-4RA1520-14",
+     "LR6-302WJBW-RYG",
+     "KDM10-06",
+     "KQ2L08-01AS",
+     "HFS8-4080-2370",
+     "CB4-20",
+     "CB4-12"
+    ],
+    "external_blocks": [
+     "미스미 로그인 풀림(2026-11-05 07:00 확장 Chrome 'Browser 1' 머리에 '로그인 / 회원가입'): CB4-12, CB4-20, HFS8-4080-2370 STEP 못 받음",
+     "제조사 STEP 미수령(SMC·Omron·PATLITE): KQ2L08-01AS, IR1000-01BG, SS5Y3-20-06, SY3120-5LZD-M5, KDM10-06, F3SG-4RA1520-14, LR6-302WJBW-RYG — STEP대기_ 임시 형상 유지"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "M07-K1",
+    "size": "M",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.5.3.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "C형 판금 L 80개(M07 COL 8, M04 레일-침목 72) 구멍–굽힘 거리 미달(M-04 '구멍–굽힘선 거리 ≥ 2t', 표 '≥ 2t + R')",
+      "where": "P_M07_LBRKC_*·P_M04_LBRKC_* (SUS304 t6 R6, 구멍 구석에서 20)",
+      "evidence": "구멍 가장자리–굽힘 영역 끝 20 − 2.75 − 12 = 5.25 < 2t 12 < 2t+R 18",
+      "fix": "C형만 SUS304 t3 R3으로(11.25 ≥ 2t+R 9, 판 굽힘 100 MPa SF 2.05) + 볼트 CB5-12, 또는 t4 R4 + CB5-14(9.25, 2t 8 통과·2t+R 12 미달). 구멍 자리는 형재 홈이 정해 못 옮김",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "S형 60·T형 9의 구석 30 구멍이 M-04 표 '2t + R'(18)에 못 미침(첫 줄 2t 12는 통과). 굽힘선 정의(굽힘 영역 끝/안쪽 면)에 따라 판정이 갈림",
+      "where": "P_M07_LBRK_*, P_M07_LBRKT_*, P_M04_LBRK_*",
+      "evidence": "굽힘 영역 끝 기준 15.25(<18), 안쪽 면 기준 30 − 2.75 − 6 = 21.25(≥18)",
+      "fix": "M-04 굽힘선 기준 확인 뒤, 굽힘 영역 끝 기준이면 구멍을 구석에서 33(홈 자리 따라 다리 길이 50)로 옮기거나 t4 R4(19.25 ≥ 12)로 — T형은 t4면 판 SF 1.03이라 t6 유지·구멍 이동",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "T형 판금 L 옆힘 굽힘 SF 2.27(기준 2의 +13.5%), 두께/길이 ≥ 0.1이라 보 공식 한계 — FEA 권장이나 환경 없음(D-16)",
+      "where": "P_M07_LBRKT_PX_PZ / NX_PZ (M07 YM 9개)",
+      "evidence": "fea/results/mech_M07-K1_fea1_handcalc.json A_plate_bending T: 팔 43.75, 69.5 MPa × Kt 1.3 = 90.3 MPa, SF 2.27(옛 모델 2.32)",
+      "fix": "환경이 생기면 stepout/P_M07_LBRKT_PX_PZ.step 고체 FEA. 보강이 필요하면 다리 폭 30→40(SF 3.0) 또는 굽힘 구석 리브"
+     },
+     {
+      "kind": "디테일",
+      "what": "가로대 끝 수직 하중을 마찰만으로 보면 SF 1.27 — 하중이 홈과 수직이라 T너트 목 형상 물림이 받지만 홈 턱·T너트 허용 하중 카탈로그 값 없음",
+      "where": "P_M04_LBRK_* 가로대 끝 XB 16 + M04R 6 (CB5-16 + HNTT8-5)",
+      "evidence": "예압 4 kN × μ 0.15 = 600 N vs CM1 끝 반력 473.8 N; 형상 물림 기준 굽힘 SF 2.60·비틀림 2.62·지렛대 948 N 분리 SF 4.2",
+      "fix": "미스미 HNTT8-5 허용 하중 확인(D-54 쓰는 곳에 M07-K1 추가). 부족하면 가로대 끝 브래킷 2개(위·아래) 또는 가로대를 레일 밑 받침에 얹힘"
+     },
+     {
+      "kind": "디테일",
+      "what": "S·C형 옆힘 과사양(M-09 note)",
+      "where": "P_M07_LBRK_*·P_M07_LBRKC_*·P_M04_LBRKC_*",
+      "evidence": "SF 7.22(S)·26.5(C)",
+      "fix": "두께는 판금 규칙·구멍 자리로 정해져 유지, 다운사이징 안은 기록만(t4·폭 25)"
+     }
+    ],
+    "exception_requests": [
+     {
+      "rule": "M-04 (구멍–굽힘선 거리 ≥ 2t)",
+      "where": "C형 판금 L 80개: P_M07_LBRKC_* 8(기둥↔끝 Y 부재), P_M04_LBRKC_* 72(레일 옆면↔침목 윗면)",
+      "why": "구멍 가장자리 17.25 − (t + R) 12 = 5.25 < 2t 12. 구멍 자리는 형재 T홈이 정한다(Y 부재 40 면 홈 하나, 레일 위 홈은 볼 몸통이 렌치 길을 216.6 mm³ 막음)",
+      "proposal": "(a) t6 그대로 예외 인정, 또는 (b) C형만 SUS304 t4 R4로 바꿈(5.25 → 9.25 ≥ 2t 8, 판 SF 3.6) + 볼트 CB5-14(물림 7.5, STEP 없음 — 미스미에서 받아야 함)"
+     },
+     {
+      "rule": "M-04 '구멍–굽힘선 거리 ≥ 2t'",
+      "where": "C형 판금 L 80개 P_M07_LBRKC_*·P_M04_LBRKC_*",
+      "why": "구멍 자리를 형재 T홈(구석에서 20)이 정해 t6 R6에서 5.25 < 12. 모델링부 예외 요청과 같은 건",
+      "proposal": "(a) t6 그대로 예외 인정, 또는 (b) 디테일링에서 C형만 t3 R3 + CB5-12(11.25, SF 2.05)"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "M-04 (구멍–굽힘선 거리 ≥ 2t)",
+      "where": "C형 판금 L 80개: P_M07_LBRKC_* 8(기둥↔끝 Y 부재), P_M04_LBRKC_* 72(레일 옆면↔침목 윗면)",
+      "decision": "기각",
+      "reason": "M-04 원문은 첫 줄 \"구멍–굽힘선 거리 ≥ 2t\", 표 \"구멍–굽힘선 ≥ 2t + R\", 표 아래 \"위 표를 못 지키면 결함이다. 해법: 굽힘을 줄이거나 부품을 둘로 나눔, R·플랜지·릴리프 수정, 구멍 이동, 출력·가공으로 바꿈\"이다. 예외 조건이 없다. 같은 규칙 안의 두 값 중 더 엄한 표 값 2t + R를 굽힘 구역 끝(전개 bend_zones 경계)부터 재는 것으로 좁게 읽었다(WF-019). E-14 시험(빈 설계 CLI, 저장 없음, tools/out/mech_M07-K1_exc/trial_out.json): t6 R6이면 5.25로 2t 12와 2t+R 18 둘 다 못 넘는다. 안 (a) '그대로 예외'는 주지 않는다. 안 (b) t4 R4 + CB5-14는 9.25 < 2t+R 12라서 첫 줄 값만 넘는다. M-04는 이번 과제 완료 판정에 들지 않고, 워크플로우 범위는 \"판금 규칙은 디테일로 기록만 하고 수정 회차를 쓰지 않는다\"(E-02)이다. 그래서 이번 라운드 합격을 막지 않고 디테일 M07K-D4로 넘긴다. 실행 규칙 13에 따라 출시 완료 전에는 반드시 고친다. 워크플로우 메모(엔진 후보): M-04 첫 줄(2t)과 표(2t+R)의 값이 다르고, 안내서 '판금'은 flat_pattern의 bend line(굽힘 중심선)까지 재라고 한다. 측정 기준이 정해져 있지 않아 판정이 갈린다(중심선이면 t6 C형 12.04, 구역 끝이면 5.25). 같은 내용이 M07K-D1에도 있다.",
+      "instruction": "이번 구동 라운드(v2.5.3)에서는 C형·S·T형 형상과 CB5-16·HNTT8-5를 그대로 두고 수정 회차를 쓰지 않는다. 디테일 M07K-D4(디테일링 라운드): C형 80개만 SUS304 t3 R3(규칙 SUS304_t3: 두께 3, R 3, K 0.44)으로 바꾼다. 볼트는 CB5-14 ×160, 너트는 HNTT8-5 그대로다. 구멍 자리 20/30과 다리 바깥면은 그대로다. 시험 결과: 전개 됨, 구멍–굽힘 구역 끝 11.25 ≥ 2t+R 9, 최소 플랜지 39 ≥ 12, 구멍–판 끝 12.25. 물림 (14−3)−2.5 = 8.5 ≥ 1.5d 7.5, 홈 바닥까지 1.5(실물)/1.0(80160 임시) 남는다. 판 SF 8.19×(3/6)² = 2.05 ≥ 2(오조작). 고친 뒤 새 볼트 전수 빼는 길 max(30, L+5)×Ø8.5 겹침 0을 다시 잰다. M04 레일 옆 볼트는 머리가 Y로 3 옮겨지므로 STEP대기_BALL_D25_M04와 다시 확인한다. M-04 표 전체와 SF도 다시 보고, tools/gen_v2_m07k1.py에 반영한다. CB5-14 STEP은 PartsLibrary·purchased-step에 없다(CB5-12·16·20만 있음). 미스미 로그인이 살아 있는 지금 구매부·STEP 재시도가 받아 purchased-step/CB5-14/와 PartsLibrary(index.csv)에 넣는다. 못 받으면 STEP대기_CB5-14 임시 형상을 쓴다(실행 규칙 10). 같은 기준(U-13): S·T형 69개도 구멍 30 쪽이 15.25 < 2t+R 18이다. M07K-D1에 붙여 디테일링에서 함께 고친다. 안: S형은 t4 R4(19.25 ≥ 12, SF 2.23). T형 9개는 t5 R5로 하면 SF 1.60 < 2이므로 폭·외팔 길이를 같이 보거나 M-13 비교로 가공 L을 쓴다."
+     },
+     {
+      "rule": "M-04 '구멍–굽힘선 거리 ≥ 2t'",
+      "where": "C형 판금 L 80개 P_M07_LBRKC_*·P_M04_LBRKC_* (검증부 요청, 모델링부 요청과 같은 건 — E-19로 묶음)",
+      "decision": "기각",
+      "reason": "모델링부 요청과 같은 건이다. 안 (a) t6 그대로 예외는 앞 판정처럼 M-04 원문에 예외 조건이 없어 기각한다. 안 (b) 'C형만 t3 R3 + CB5-12'는 M-04는 통과한다(구멍–굽힘 구역 끝 11.25 ≥ 2t+R 9, E-14 시험으로 전개 확인). 그러나 M-01 원문 \"상대 부품의 탭 또는 너트가 실제로 있음, 물림 ≥ 1.5d\"에 어긋난다. CB5-12와 t3이면 끝이 형재 겉면 아래 9이고 HNTT8-5 나사 구간은 2.5~11.5라서 물림이 6.5 < 7.5다. CB5-16과 t3이면 끝이 13이 되어 홈 바닥 12.5에 닿는다. 그래서 볼트만 CB5-14로 바꾸면 M-01·M-04·M-09(SF 2.05)를 모두 지킨다. 이 판정은 디테일 처리로, 이번 구동 라운드 형상은 바꾸지 않는다(E-02).",
+      "instruction": "앞 판정의 instruction을 따른다. 디테일 M07K-D4에서 C형 80개를 SUS304 t3 R3 + CB5-14 + HNTT8-5로 바꾼다. CB5-12는 쓰지 않는다(물림 6.5 < 7.5). 이번 라운드는 형상 변경 없음. CB5-14 STEP은 미스미 로그인이 살아 있을 때 받는다. 못 받으면 STEP대기_CB5-14로 진행한다."
+     }
+    ],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "DC2-03",
+    "size": "M",
+    "status": "완료",
+    "chosen": "DC2-03-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.5.5.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "레일 윗면 볼트 CB5-16_M07K_NZ:14·:15가 받이 판 밑에 있어 받이 판을 얹기 전에 조여야 한다. 받이 판을 뗀 뒤에는 수직 68 mm와 L렌치 긴 팔 -Y 296 mm 길이 비어 있다",
+      "where": "U1_FRAME:1/CB5-16_M07K_NZ:14 (X 32), :15 (X -68), Z -319",
+      "evidence": "프로브 K_NZ14·K_NZ15·K_NZ14_ARM·K_NZ15_ARM 겹침 0, 위쪽 받이 판 밑면 Z -250",
+      "fix": "도면에 조립 순서 주기를 단다: 받침·브래킷 → 받이 판 → CB5-12",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "받침 HFS8-4080-300과 LBRKT의 강도를 어림 단면으로만 셈했다(σ 3.4 MPa, 브래킷 SF 2.4)",
+      "where": "HFS8-4080-300_DC203, P_M07_LBRKT_PX_PZ:9·NX_PZ:2",
+      "evidence": "모델링부 손계산(I ≈ 3e5 mm⁴ 어림). 해석 환경 없음(D-16)",
+      "fix": "HFS8-4080 카탈로그 Ix·Zx로 다시 셈한다",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "LBRKT 가로 다리 굽힘 SF 1.77 < 오조작 2 (손 100 N 전부 받침 -Y 끝, 하나 770 N, 팔 27 보수; 모델링부 팔 24면 2.00)",
+      "where": "P_M07_LBRKT_PX_PZ:9, P_M07_LBRKT_NX_PZ:2 (SUS304 t6, X -83~47 · Y ±15)",
+      "evidence": "fea/results/mech_DC2-03_fea1_handcalc.json cases 'LBRKT 가로 다리 굽힘' sigma 115.5 MPa, Sy 205",
+      "fix": "볼트를 세로 다리 쪽으로 옮겨 팔 ≤ 20(SF 2.4) 또는 t8(SF 3.1) 또는 받침 -Y 쪽에 레일까지 브래킷 하나 더해 외팔 256 줄임"
+     },
+     {
+      "kind": "디테일",
+      "what": "LBRKT 세로 다리 CB5-16 마찰 미끄럼 SF 0.78 (오조작 때만, 구멍 틈 0.5 안에서 볼트 전단 SF 11.6으로 받음, 위치 변화 ≤ 0.25)",
+      "where": "CB5-16_M07K_NX:37, CB5-16_M07K_PX:20 (받침 HFS8-4080-300_DC203 옆면, Z -270)",
+      "evidence": "예압 4 kN × μ 0.15 = 600 N < 전단 770 N (D-54 임시)",
+      "fix": "들림 힘 줄이기(디테일 1과 같음) 또는 CB6로 키움(디테일링 단계)"
+     },
+     {
+      "kind": "디테일",
+      "what": "북 떨어짐 판 국부 SF 1.99 < 운전 3 (칸 크기·두께 그대로, 지난 회차에서 이어짐)",
+      "where": "P_DC203_TRAY 바닥 칸 가운데",
+      "evidence": "Roark 고정 원판 a 118, r0 2, σ 103.2 MPa",
+      "fix": "D-108 북 질량·재질 확정 뒤 재계산, 고무 깔개 t1"
+     },
+     {
+      "kind": "디테일",
+      "what": "FEA 못 함 — 환경 없음(D-16), HFS8-4080 단면 성질 카탈로그 미확인(하한 I 1.0e5 mm^4 어림, 그래도 SF 11.8)",
+      "where": "P_DC203_TRAY, HFS8-4080-300_DC203",
+      "evidence": "engine/fea/.venv 없음",
+      "fix": "해석 환경 설치 뒤 FEA, 4080 카탈로그 단면 성질 확인"
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": {
+     "from": "M",
+     "to": "L",
+     "why": "실제 변경에 새 구매품이 들어갔다: 형재 4길이(HFS8-4080-2680·165·1740×2·730), 끝캡 HFC8-4080-B 2, S형 브래킷 7, CB5-16/HNTT8-5 각 14. 변경이 U1_FRAME·U3_HEAD 두 유닛에 걸친다(scope '여러 유닛에 걸친 변경'). 조인트 변화는 없다"
+    }
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "STATES 24-34 (THICK_6·THICK_16, SEAM_U7 3·10·17·24·32, MAINT_U7 1·13, J_U5_X 1380 모두 내림/들림) — 전체 상한",
+    "CYCLE_L 5-716 연속 — 어림 초과(시작 전)",
+    "CYCLE_S 0-450 연속 — 어림 초과",
+    "CYCLE_G1 0-514 연속 — 어림 초과",
+    "CYCLE_G2 0-630 연속 — 어림 초과",
+    "SEAM_U7 0-32, MAINT_U7 0-13, MAINT_HEAD 0-1 연속 — 어림 초과",
+    "POSE 0-182 (J_U5_X 0~1380 25 mm × 짧은 행정 3묶음 + 끝 교차) — 어림 초과",
+    "바디: 움직이는 체결 169, 관·이음 44(TU0604·TU0805·KQ2L, M08), 둘레 체결 29 — 비용 때문에 뺌"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2546,
+    "estimate_s": 3300,
+    "actual_s": 2400,
+    "chunk_times": [
+     {
+      "id": "try1 CYCLE_L 0-19 + POSE 0-4 (시험, 전 바디)",
+      "elapsed_s": 350.1,
+      "status": "timeout"
+     },
+     {
+      "id": "try2 CYCLE_L 0-4 (시험, 체결·관 뺌)",
+      "elapsed_s": 290.1,
+      "status": "ok"
+     },
+     {
+      "id": "try2 POSE 0-2 (시험)",
+      "elapsed_s": 350.1,
+      "status": "timeout"
+     },
+     {
+      "id": "try3 CYCLE_L 0-19 + POSE 0-1 (시험, 관 넣음)",
+      "elapsed_s": 430.1,
+      "status": "timeout"
+     },
+     {
+      "id": "try4 STATES 0-1 (시험, 관 넣음)",
+      "elapsed_s": 430.1,
+      "status": "timeout"
+     },
+     {
+      "id": "STATES 0-1 (시험)",
+      "elapsed_s": 105,
+      "status": "ok"
+     },
+     {
+      "id": "STATES 2-12",
+      "elapsed_s": 315.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES 13-23",
+      "elapsed_s": 315.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES 24-34",
+      "elapsed_s": 480.1,
+      "status": "timeout"
+     },
+     {
+      "id": "STATES 24-29",
+      "elapsed_s": 95,
+      "status": "cut"
+     },
+     {
+      "id": "STATES 30-34",
+      "elapsed_s": 95,
+      "status": "cut"
+     }
+    ],
+    "killed_calls": 7,
+    "skipped_steps": 0,
+    "trial": "연구(CYCLE_L 0~4, 체결·관 뺀 104+96바디): 단계당 12.0 s(첫 단계 34 s, 그 뒤 5.0 s), 오류 없음. 자세(상태 점 2): 점당 17.5 s, 오류 없음. 파일 열기 230 s. 연구 20단계 시험, 관을 넣은 시험, 전 바디 시험은 시간 초과(패닉 없음)",
+    "per_step_s": {
+     "study": 5.1,
+     "pose": 17.5
+    },
+    "pose_steps": 35,
+    "reduced": "어림 약 3,300 s가 상한 1,800 s를 넘었다(호출마다 여는 데 230 s). 그래서 시작 전에 연구 연속 단계 대신 machine.json 상태 목록 35점으로 줄였다. 바디도 움직이는 체결 169·관/이음 44·둘레 체결 29를 빼고, 움직이는 104 vs 둘레 96으로 봤다. 상태 24~34는 전체 상한에 끊겼다",
+    "seen": [
+     "STATES 0-23 (machine.json 상태 24점: 대기, CYCLE_L 12·50·65·127·172·668·716, CYCLE_S 16·18·67·434·450, CYCLE_G1 90·133·195·300·390·467, CYCLE_G2 75·574·630·315, MAINT_HEAD 1)",
+     "CYCLE_L 0-4 (연속 단계)"
+    ],
+    "unseen": [
+     "STATES 24-34 (THICK_6·THICK_16, SEAM_U7 3·10·17·24·32, MAINT_U7 1·13, J_U5_X 1380 모두 내림/들림) — 전체 상한",
+     "CYCLE_L 5-716 연속 — 어림 초과(시작 전)",
+     "CYCLE_S 0-450 연속 — 어림 초과",
+     "CYCLE_G1 0-514 연속 — 어림 초과",
+     "CYCLE_G2 0-630 연속 — 어림 초과",
+     "SEAM_U7 0-32, MAINT_U7 0-13, MAINT_HEAD 0-1 연속 — 어림 초과",
+     "POSE 0-182 (J_U5_X 0~1380 25 mm × 짧은 행정 3묶음 + 끝 교차) — 어림 초과",
+     "바디: 움직이는 체결 169, 관·이음 44(TU0604·TU0805·KQ2L, M08), 둘레 체결 29 — 비용 때문에 뺌"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 6,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 1,
+     "channel": "없음",
+     "browser_calls": 2,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M04R 카탈로그부",
+    "phase": "M04R · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 180,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 5,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "M04R 측정부",
+    "phase": "M04R · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1352,
+     "cad_calls": 2,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "M04R 기구설계부",
+    "phase": "M04R · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1050,
+     "cad_calls": 2,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "M04R 완료 판정 확인",
+    "phase": "M04R · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M04R 구매부 STEP",
+    "phase": "M04R · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 10,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "M04R 모델링부",
+    "phase": "M04R · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 4786,
+     "cad_calls": 34,
+     "file_opens": 4,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "M04R 해석",
+    "phase": "M04R · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 330,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "M04R 검도·체결",
+    "phase": "M04R · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 744,
+     "cad_calls": 11,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "M04R 문서·커밋",
+    "phase": "M04R · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "M08 카탈로그부",
+    "phase": "M08 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 3,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "M08 측정부",
+    "phase": "M08 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1763,
+     "cad_calls": 10,
+     "file_opens": 5,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "등급 M 측정의 예상은 20분이고 실제는 약 29분이라 2배 안이다. 앱에 저장 안 된 'merged' 문서가 열려 있어(dirty, path null) MCP로 open하지 않고 CLI로만 쟀다. 첫 CLI 한 묶음이 470초에 시간 초과로 끊겨 세 묶음 병렬로 다시 돌렸다."
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "M08 기구설계부",
+    "phase": "M08 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1330,
+     "cad_calls": 5,
+     "file_opens": 3,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "M08 완료 판정 확인",
+    "phase": "M08 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 160,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M08 기구설계부 수정1",
+    "phase": "M08 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 360,
+     "cad_calls": 1,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "M08 완료 판정 확인 1",
+    "phase": "M08 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M08 구매부 STEP",
+    "phase": "M08 · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 67,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 7,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "M08 모델링부",
+    "phase": "M08 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 8550,
+     "cad_calls": 38,
+     "file_opens": 13,
+     "channel": "MCP+CLI",
+     "browser_calls": 4,
+     "over_reason": "모델링 등급 M 예상 90분의 2배(180분)를 넘지 않았다(약 143분). 다만 앱이 멈춰 약 65분을 잃었다. 두 덩어리 바디에 join하는 명령이 60분 넘게 끝나지 않아 앱을 다시 켜고 처음부터 다시 그렸다"
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "M08 모델링부 수정1",
+    "phase": "M08 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 7320,
+     "cad_calls": 48,
+     "file_opens": 8,
+     "channel": "MCP+CLI",
+     "browser_calls": 5,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "M08 모델링부 수정2",
+    "phase": "M08 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3000,
+     "cad_calls": 22,
+     "file_opens": 13,
+     "channel": "MCP+CLI",
+     "browser_calls": 7,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "M08 검도·체결 2",
+    "phase": "M08 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "M08 문서·커밋",
+    "phase": "M08 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "M07-K1 모델링부",
+    "phase": "M07-K1 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 8400,
+     "cad_calls": 34,
+     "file_opens": 5,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "M07-K1 해석",
+    "phase": "M07-K1 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 560,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "M07-K1 검도·체결",
+    "phase": "M07-K1 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1660,
+     "cad_calls": 5,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "M07-K1 예외 판정",
+    "phase": "M07-K1 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 2,
+     "file_opens": 0,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M07-K1 문서·커밋",
+    "phase": "M07-K1 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "DC2-03 카탈로그부",
+    "phase": "DC2-03 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "DC2-03 측정부",
+    "phase": "DC2-03 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3275,
+     "cad_calls": 14,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "측정 M 예상 20분의 2배(40분)를 넘었다(약 55분). 형재 STEP과 면을 같이 쓰는 프로브는 boolean이 느렸다(쌍마다 60~90 s, CLI 290 s). 마지막 P1 서는 자리 검사는 앱에서 37분 넘게 끝나지 않아 기다리다 결과 없이 멈췄다. signatures bbox가 실제와 달라(레일 ±100) 거리 프로브로 다시 확인하는 데도 시간이 들었다."
+    },
+    "expect_min": 20,
+    "over": true
+   },
+   {
+    "label": "DC2-03 기구설계부",
+    "phase": "DC2-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 580,
+     "cad_calls": 2,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "DC2-03 완료 판정 확인",
+    "phase": "DC2-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "DC2-03 기구설계부 수정1",
+    "phase": "DC2-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1260,
+     "cad_calls": 2,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "DC2-03 완료 판정 확인 1",
+    "phase": "DC2-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "DC2-03 모델링부",
+    "phase": "DC2-03 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3480,
+     "cad_calls": 10,
+     "file_opens": 10,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "DC2-03 해석",
+    "phase": "DC2-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "DC2-03 검도·체결",
+    "phase": "DC2-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 911,
+     "cad_calls": 1,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "DC2-03 모델링부 수정1",
+    "phase": "DC2-03 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1900,
+     "cad_calls": 5,
+     "file_opens": 4,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "DC2-03 해석 1",
+    "phase": "DC2-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 200,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "DC2-03 검도·체결 1",
+    "phase": "DC2-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 2,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "DC2-03 문서·커밋",
+    "phase": "DC2-03 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 4100,
+     "cad_calls": 20,
+     "file_opens": 20,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "회귀 L 예상 90분 안(68분)이다. 다만 회귀 실행 시간 2,400 s가 상한 1,800 s를 넘었다. 파일을 열 때마다 230 s가 들었고(저장 캐시 거부), 체결·관 바디 때문에 시험 4번이 시간 초과로 1,560 s를 쓴 뒤 상태 점만 다시 돌렸다"
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 1,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "M08 측정부",
+    "what": "설계 파일을 5번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "M08 기구설계부",
+    "what": "설계 파일을 3번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "M07-K1 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 P_M07_LBRK_PY_PX, P_M07_LBRK_NY_PX, P_M07_LBRK_PY_NX, P_M07_LBRK_NY_NX, P_M07_LBRK_NZ_PX, P_M07_LBRK_NZ_NX, P_M07_LBRK_NZ_PY, P_M07_LBRK_NZ_NY, P_M07_LBRKT_PX_PZ, P_M07_LBRKT_NX_PZ, P_M07_LBRKC_PZ_PX, P_M07_LBRKC_NZ_PX, P_M07_LBRKC_PZ_NX, P_M07_LBRKC_NZ_NX, P_M04_LBRKC_PY_PZ, P_M04_LBRKC_NY_PZ, P_M04_LBRK_PY_PX, P_M04_LBRK_NY_PX, CB5-16_M07K_NX, CB5-16_M07K_NY, CB5-16_M07K_NZ, CB5-16_M07K_PX, CB5-16_M07K_PY, CB5-16_M07K_PZ, CB5-16_M04K_NX, CB5-16_M04K_NY, CB5-16_M04K_NZ, CB5-16_M04K_PY, HNTT8-5_M07K_PY_PX, HNTT8-5_M07K_PX_PY, HNTT8-5_M07K_NY_PX, HNTT8-5_M07K_NX_PY, HNTT8-5_M07K_PZ_PX, HNTT8-5_M07K_NZ_PX, HNTT8-5_M07K_PX_PZ, HNTT8-5_M07K_NZ_PY, HNTT8-5_M07K_PY_PZ, HNTT8-5_M07K_NY_PZ, HNTT8-5_M07K_NX_PZ, HNTT8-5_M07K_PZ_PY, HNTT8-5_M04K_PY_PX, HNTT8-5_M04K_NY_PX, HNTT8-5_M04K_PZ_PY, HNTT8-5_M04K_PX_PY, HBLFSN8_M07_* (12), HBLFSN8_M04_P, HBLFSN8_M04_N, HBLFSN8_M04_XP, HBLFSN8_M04_XN, HBLFSN8_M04R_XP, HBLFSN8_M04R_XN, CB5-12_M07_NX, CB5-12_M07_NY, CB5-12_M07_NZ, CB5-12_M07_PX, CB5-12_M07_PY, CB5-12_M07_PZ, HNTT8-8_M04_PY, HNTT8-8_M04_NY, HNTT8-8_M04_PZ, HNTT8-8_M04_PX, STEP대기_CB8-16_M04_NX, STEP대기_CB8-16_M04_NY, STEP대기_CB8-16_M04_NZ, STEP대기_CB8-16_M04_PY, CB8-16_M04R_NX, CB8-16_M04R_NY, CB8-16_M04R_PY이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "M07-K1 검도·체결",
+    "what": "설계 파일을 3번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "DC2-03 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 P_DC203_TRAY, CB5-12_DC203, HNTT8-5_DC203, HFS8-4080-2680_M07, HFS8-4080-165_M07, HFS8-4080-1740_M07, HFS8-4080-730_M07이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "전체 회귀",
+    "what": "전체 상한 30분을 넘김(40분)"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-178"
+  ],
+  "repeat_ids": [],
+  "one_line": "회고 결과 WF-178 하나를 새로 올렸습니다. 전체 회귀가 묶음마다 설계 파일을 다시 열어, 열기 230 s가 시간 상한을 먹는 문제입니다. 행은 docs/reports/engine-candidates.md에 넣었고 최종 보고서에 '## 워크플로우 개선 후보' 절을 붙여 커밋했습니다(02de563, 푸시 안 함). 엔진 파일은 고치지 않았습니다. engine-candidates.md 변경은 커밋하지 않았습니다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 50,
+  "시간 h": 16.9,
+  "출력 토큰": 1987728,
+  "실패": 0
+ }
+}
