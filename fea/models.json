@@ -716,6 +716,37 @@
     "source": "M-09"
    },
    "step": "tools/out/mech_M04R/stepout/HFS8-4080-560_M04.step"
+  },
+  "P_M07_LBRK·LBRKT·LBRKC(판금 L SUS304 t6, S·T·C)": {
+   "case": "cases/mech_M07-K1_fea1_handcalc.py",
+   "version": "v2.5.3",
+   "fixed": "다리 B 판이 형재 면에 CB5-16 + HNTT8-5로 눌림 -> 굽힘 구석(t+R = 12) 고정 외팔. 다리 A 볼트(구석에서 S 30·T 60·C 20)가 하중점, 팔 = 구멍 - 12 - 머리 반지름 4.25",
+   "contact": "두 다리 모두 형재 겉면 압축, 볼트 머리–판 좌면 Ø8.5/5.5. 부재끼리는 얹힘·레벨러로 자중 전달(M07 YX·YM·LEG·LEGY·COL, M04 레일-침목)",
+   "load": "옆힘·벌어짐 (오조작 손 500 + 대차 반력 71.5)/2 = 286 N/브래킷, 다리에 수직. 굽힘 구석 곡률보 Kt 1.3. 볼트 지렛대 2배 572 N",
+   "criteria": {
+    "value": "오조작 SF 2(SUS304 항복 205, 면압 p_G 400, CB5 12.9 Rp 1100, 조임 4 N·m 예압 4 kN μ 0.15 — D-54). SF < 1.2만 동작",
+    "source": "요구서 6-1(M-09 기본값), M07-K1 완료 판정"
+   },
+   "step": [
+    "tools/out/mech_M07-K1/stepout/P_M07_LBRK_PY_PX.step",
+    "tools/out/mech_M07-K1/stepout/P_M07_LBRKT_PX_PZ.step",
+    "tools/out/mech_M07-K1/stepout/P_M07_LBRKC_PZ_PX.step"
+   ],
+   "_변경": "2026-11-05 M07-K1 해석부: 모델링부 모델(볼트 머리 가장자리 고정, 팔 = 구멍 - 4.25, Kt 없음)에서 굽힘 구석 고정 + Kt 1.3으로. 같은 형상 옛 모델 T형 SF 2.32 ↔ 새 2.27"
+  },
+  "P_M04_LBRK·LBRKC + P_M04R 가로대 끝(판금 L SUS304 t6)": {
+   "case": "cases/mech_M07-K1_fea1_handcalc.py",
+   "version": "v2.5.3",
+   "fixed": "가로대 +X 옆면(홈 Y 방향) ↔ 레일 안쪽 면(홈 X 방향), 다리마다 CB5-16 + HNTT8-5 1개(구석에서 30). 레일-침목 C형 72는 얹힘이라 위 표의 옆힘 경우",
+   "contact": "가로대 무게(Z)가 두 홈 방향과 수직 -> T너트 목이 홈 턱에 닿아 형상으로 받음(마찰 아님). 판–형재 면 압축",
+   "load": "가로대 끝 반력 473.8 N(M04R CM1 자중 x3 g + 손 100 N, 가장 큰 것으로 묶음 E-19)이 브래킷 1개에 전부. 볼트 사이 편심 30 -> M 14.2 N·m를 한 다리 단면(30 x 6)이 굽힘·비틀림으로 전부(보수), 볼트 지렛대 당김 M/15 = 948 N",
+   "criteria": {
+    "value": "오조작 SF 2(SUS304 항복 205, 면압 p_G 400, CB5 12.9 Rp 1100, 조임 4 N·m 예압 4 kN μ 0.15 — D-54). SF < 1.2만 동작",
+    "source": "요구서 6-1(M-09 기본값), M07-K1 완료 판정"
+   },
+   "step": [
+    "tools/out/mech_M07-K1/stepout/P_M04_LBRKT_PY_PZ.step(첫 저장 T형, 지금 C형과 다름 — 판정은 S·C 형상)"
+   ]
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."

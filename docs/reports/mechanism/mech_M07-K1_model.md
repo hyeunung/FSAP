@@ -87,7 +87,8 @@
 
 - `ledger.py sigpatch`(모듈로 부름 — 없어진 경로 745개가 셸 인자 길이를 넘어서): 바뀜 745, 없어짐 745, 전체 2,574, `--bolts`(새 체결 298). 뒤 `sigcheck` = reuse.
 - 기록: `tools/out/mech_M07-K1/edit.json`(생성기 최종본 1,069 명령: M07 L → M04 L → 지움 → 너트·볼트 → 끝), `edit_meta.json` {base v2.5.2, result v2.5.3}. 실제로 앱에 보낸 것은 같은 단계 묶음 + 3절 고침 `model/stage_fixC.json`(150).
-- 스크린샷(사람용, 열어 보지 않음): `tools/out/mech_M07-K1/M07-K1_v253_iso.png`.
+- 스크린샷(사람용, 열어 보지 않음): `tools/out/mech_M07-K1/M07-K1_v253_iso.png`(CLI snapshot 백그라운드, 보고 시점에 아직 그리는 중).
+- 커밋 `1ecba07`(modeling/mat-rs-001, 푸시함).
 
 ## 8. 시간
 

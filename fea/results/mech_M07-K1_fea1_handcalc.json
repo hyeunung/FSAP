@@ -1,0 +1,204 @@
+{
+ "task": "M07-K1",
+ "dept": "해석부",
+ "date": "2026-11-05",
+ "version": "v2.5.3",
+ "fea": "해석 못 함 — 환경 없음(자료대기 D-16)",
+ "loads": {
+  "A_옆힘_벌어짐_N": 285.8,
+  "A_desc": "M07 YX·YM·LEG·LEGY·COL, M04 레일-침목: 부재끼리 얹힘/레벨러로 자중 전달 -> 브래킷은 옆힘·벌어짐만",
+  "B_가로대끝_수직_N": 473.8,
+  "B_desc": "M04 XB 16·M04R 6(S형, 가로대 +X 옆면 <-> 레일 안쪽 면): 가로대 무게가 브래킷으로만 감. 가장 큰 CM1 끝 반력으로 묶음(E-19)"
+ },
+ "A_plate_bending": {
+  "T(구멍 60)": {
+   "arm_mm": 43.75,
+   "sigma_nom_MPa": 69.47,
+   "Kt": 1.3,
+   "sigma_MPa": 90.3,
+   "sf": 2.27,
+   "sf_min": 2.0,
+   "ok": true,
+   "옛 모델(머리 가장자리 고정, 팔 55.75, Kt 없음) sf": 2.32,
+   "beam_tool": {
+    "inputs": {
+     "t": 6.0,
+     "b": 30.0,
+     "L": 43.75,
+     "E": 193000.0,
+     "Rp": 205.0,
+     "end": "cantilever",
+     "sf_min": 2.0
+    },
+    "force_N": 285.8,
+    "deflection_mm": 0.0765,
+    "stiffness_N_mm": 3733.6891,
+    "stress_MPa": 69.47,
+    "sf": 2.95,
+    "thin": false,
+    "ok": true,
+    "needs_fea": true
+   }
+  },
+  "S(구멍 30)": {
+   "arm_mm": 13.75,
+   "sigma_nom_MPa": 21.83,
+   "Kt": 1.3,
+   "sigma_MPa": 28.4,
+   "sf": 7.22,
+   "sf_min": 2.0,
+   "ok": true,
+   "옛 모델(머리 가장자리 고정, 팔 25.75, Kt 없음) sf": 5.01,
+   "beam_tool": {
+    "inputs": {
+     "t": 6.0,
+     "b": 30.0,
+     "L": 13.75,
+     "E": 193000.0,
+     "Rp": 205.0,
+     "end": "cantilever",
+     "sf_min": 2.0
+    },
+    "force_N": 285.8,
+    "deflection_mm": 0.0024,
+    "stiffness_N_mm": 120271.9159,
+    "stress_MPa": 21.83,
+    "sf": 9.39,
+    "thin": false,
+    "ok": true,
+    "needs_fea": true
+   }
+  },
+  "C(구멍 20)": {
+   "arm_mm": 3.75,
+   "sigma_nom_MPa": 5.95,
+   "Kt": 1.3,
+   "sigma_MPa": 7.7,
+   "sf": 26.5,
+   "sf_min": 2.0,
+   "ok": true,
+   "옛 모델(머리 가장자리 고정, 팔 15.75, Kt 없음) sf": 8.2,
+   "beam_tool": {
+    "inputs": {
+     "t": 6.0,
+     "b": 30.0,
+     "L": 3.75,
+     "E": 193000.0,
+     "Rp": 205.0,
+     "end": "cantilever",
+     "sf_min": 2.0
+    },
+    "force_N": 285.8,
+    "deflection_mm": 0.0,
+    "stiffness_N_mm": 5928960.0,
+    "stress_MPa": 5.95,
+    "sf": 34.43,
+    "thin": false,
+    "ok": true,
+    "needs_fea": true
+   }
+  }
+ },
+ "A_bolt_572": {
+  "inputs": {
+   "d": 5,
+   "le": 7.5,
+   "load_N": 571.6,
+   "torque_Nm": 4.0,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4000.0,
+  "engage_ratio": 1.5,
+  "sf_operating": {
+   "나사 인장": 27.33,
+   "암나사 전단": 11.36,
+   "분리(예압/외력)": 7.0
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.51,
+   "조임 좌면": 4.04,
+   "조임 암나사 전단": 1.62
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "B_crossbar_end": {
+  "M_Nmm": 14214,
+  "sigma_bend_MPa": 79.0,
+  "sf_bend": 2.6,
+  "tau_torsion_MPa": 45.2,
+  "sf_torsion": 2.62,
+  "bolt_shear_MPa": 33.4,
+  "sf_bolt_shear": 19.8,
+  "plate_bearing_MPa": 15.8,
+  "sf_bearing": 19.5,
+  "tnut_neck_bearing": "홈 방향과 수직(레일 홈 X·가로대 홈 Y, 하중 Z) -> T너트 목이 홈 턱에 닿아 형상으로 받음. 허용 하중 카탈로그 없음(D-54)",
+  "friction_only": {
+   "friction_N": 600.0,
+   "sf": 1.27,
+   "note": "마찰만 본 값(참고). 하중 방향이 홈과 수직이라 미끄러지지 않음 -> 판정에 쓰지 않음"
+  },
+  "bolt_pry_N": 948,
+  "bolt_pry": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 947.6,
+    "torque_Nm": 4.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4000.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 16.48,
+    "암나사 전단": 6.85,
+    "분리(예압/외력)": 4.22
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.51,
+    "조임 좌면": 4.04,
+    "조임 암나사 전단": 1.62
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "sf_min_case": 2.6
+ },
+ "seat_SUS304": {
+  "preload_N": 4000.0,
+  "area_mm2": 33.0,
+  "p_MPa": 121.3,
+  "sf_vs_pG400": 3.3
+ },
+ "engagement": {
+  "Le_mm": 7.5,
+  "1.5d_mm": 7.5,
+  "ok": true,
+  "source": "모델링부 저장본: 끝 = 형재 겉면 아래 10, 너트 나사 2.5~11.5"
+ },
+ "min_sf": 2.27,
+ "min_where": "A_T",
+ "sfs": {
+  "A_T": 2.27,
+  "A_S": 7.22,
+  "A_C": 26.5,
+  "B_bend": 2.6,
+  "B_torsion": 2.62,
+  "seat": 3.3
+ },
+ "verdict": "SF >= 2 전부 통과"
+}
