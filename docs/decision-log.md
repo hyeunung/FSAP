@@ -3158,3 +3158,16 @@ v2.6.2(`3D_Modeling/FSAP_v2.6.2.sc`, 형상은 v2.6.1). 최종 판정 pass, belo
 | REG-01-M1 | 적용(v2.6.3): 모든 동작 연구(8개)가 같은 조인트 23개를 키로 잡게 함. CYCLE_L·S·G1·G2·MAINT_HEAD에 J_U7 CST_X·CST_Y·CUT·TUCK·FEED·LATCH(5004~5009) 0 키, SEAM_U7에 CST_X·CST_Y·LATCH 0, MAINT_U7에 CUT·TUCK·FEED 0. 형상·조인트 정의 그대로 | 연구가 키로 안 잡은 조인트는 세션에서 앞 연구 값에 머물러 회귀의 U7 바디 결과가 무효였다(mech_regression_4 3절). 회귀 스크립트 쪽 보정(chunk5 joint.drive 6개 약 300 s) 대신 모델 쪽에서 없앰(WF-123 다른 방법) | mech_REG-01_model.md 2·3절 |
 | REG-01-M2 | 회귀: CYCLE_L 79~346 + 14단계(282단계) 기준선 밖 겹침 0, truncated 0. 남은 CYCLE_L 0~78·347~716 일부·G1·G2·S·STATES·MAINT·POSE는 못 본 범위로 다음 회귀가 먼저 본다 | 요구서 6-4 상한 30분, 단계당 46 s × 8병렬 | mech_REG-01_model.md 4·6절 |
 
+
+## 구동 REG-01 결과 (2026-11-06)
+
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| REG-01-R1 | 적용: v2.6.3 동작 연구 U7 조인트 키(대기값 0) 유지. 연구 전환 U7 넘어옴 0 | 모델 쪽에서 세션 잔류값 원인 제거 | mech_REG-01_model.md, mech_REG-01_model1.md |
+| REG-01-R2 | 회귀 본 범위: CYCLE_L 79~634 + 조각(282 + 311 = 593단계), 기준선 밖 겹침 0, truncated 0 | 요구서 6-4 상한 30분 회귀 2번 | mech_REG-01_model1.md 2절 |
+| REG-01-R3 | 실패(미합격): 못 본 범위 남음 — CYCLE_L 0~78·635~716 일부, CYCLE_G1·G2·S 전체, STATES 0~25·31~34, MAINT_HEAD 0~1, MAINT_U7 일부, POSE 0~182, F_STATES 0~34. 다음 라운드 회귀가 이 순서로 먼저 본다 | 약 1,750단계 × 41 s ÷ 8병렬 ≈ 2.5시간 > 상한 30분, 수정 회차로 못 줄임 | mech_REG-01_model1.md 3절 |
+
+- 남은 동작 문제: 못 본 범위(위 R3) 하나.
+
+### 디테일 과제(E-02, 구동 확정 뒤 처리)
+최종 판정 details 0건.
