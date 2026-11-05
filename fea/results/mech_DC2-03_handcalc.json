@@ -1,0 +1,175 @@
+{
+ "assume": {
+  "E": 193000.0,
+  "Sy": 205.0,
+  "t": 1.5,
+  "L_cant": 378.0,
+  "lever_pivot_bolt": 20.0,
+  "tray_kg": 1.3808,
+  "g_factor": 3,
+  "hand_misuse_N": 100.0,
+  "hand_ref_N": 50.0,
+  "bobbin_kg": 0.03,
+  "drop_h_mm": 208.5,
+  "preload_N": 4000.0,
+  "src": "형상 = 저장본 v2.5.4 측정(mech_DC2-03_model.md), 손 100 N = M-09 오조작 꼴(D-82·D-38 미정), 북 30 g = D-108 임시, 예압 D-54"
+ },
+ "step_bbox": {
+  "n_pts": 193,
+  "min": [
+   -38.0,
+   -276.0,
+   -250.0
+  ],
+  "max": [
+   378.0,
+   0.0,
+   0.0
+  ]
+ },
+ "section": {
+  "full_channel": {
+   "A": 399.0,
+   "zc": 1.68,
+   "I": 3627.5,
+   "Z": 244.8
+  },
+  "corner_L_30t": {
+   "b_eff": 45.0,
+   "A": 90.0,
+   "zc": 2.81,
+   "I": 1583.1,
+   "Z": 115.7
+  }
+ },
+ "cases": {
+  "운전: 자중x3g + 북 떨어짐(끝)": {
+   "F_drop_eq_N": 20.37,
+   "eta": 0.084,
+   "M_Nmm": 15379.0,
+   "sigma": 62.83,
+   "SF": 3.26,
+   "need": 3.0,
+   "tip_defl_mm": 0.916,
+   "verdict": "됨"
+  },
+  "운전: 북 떨어짐 판 국부(칸 가운데)": {
+   "k_plate_N_per_mm": 215.33,
+   "F_eq_N": 77.19,
+   "sigma": 104.0,
+   "SF": 1.97,
+   "need": 3.0,
+   "eta": 0.224,
+   "F_eq_no_mass_corr_N": 162.9,
+   "model": "Roark 고정 둘레 원판 가운데 하중(r0 2, 판 두께 보정 r0')",
+   "verdict": "디테일"
+  },
+  "오조작: 손 100 N 끝 가운데(전 폭 채널)": {
+   "M_Nmm": 45480.0,
+   "sigma": 185.8,
+   "SF": 1.1,
+   "need": 2.0,
+   "tip_defl_mm": 2.963,
+   "verdict": "동작"
+  },
+  "참고: 손 50 N 끝 가운데(설계안 값)": {
+   "M_Nmm": 26580.0,
+   "sigma": 108.59,
+   "SF": 1.89,
+   "need": 2.0,
+   "tip_defl_mm": 1.678,
+   "verdict": "디테일"
+  },
+  "오조작: 손 100 N 끝 모서리(테두리 + 30t, 보수)": {
+   "M_Nmm": 39313.0,
+   "sigma": 339.91,
+   "SF": 0.6,
+   "need": 2.0,
+   "tip_defl_mm": 5.89,
+   "note": "판 전체가 나눠 받으므로 실제는 가운데 값과 이 값 사이",
+   "verdict": "동작"
+  }
+ },
+ "bolt_CB5-12_HNTT8-5": {
+  "inputs": {
+   "d": 5,
+   "le": 7.5,
+   "load_N": 1137.0095604,
+   "torque_Nm": 4.0,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4000.0,
+  "engage_ratio": 1.5,
+  "sf_operating": {
+   "나사 인장": 13.74,
+   "암나사 전단": 5.71,
+   "분리(예압/외력)": 3.52
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.51,
+   "조임 좌면": 4.04,
+   "조임 암나사 전단": 1.62
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "plate_local": {
+  "bolt_tension_each_N": 1137.0,
+  "punch_tau": 28.4,
+  "SF_punch": 4.19,
+  "root_shear_V_N": 2274.0,
+  "web_tau": 50.5,
+  "SF_web_shear": 2.35,
+  "band_b": 160,
+  "band_sigma_pessimistic": 758.0,
+  "SF_band": 0.27,
+  "need": 2.0,
+  "note": "실제 뿌리 응력은 채널(낙관)과 띠(비관) 사이. 모서리 릴리프로 테두리끼리 이어지지 않아 판 안 전단 지연을 손계산으로 못 좁힘 -> FEA 대상(환경 없음 D-16)",
+  "verdict_punch": "됨",
+  "verdict_band": "동작"
+ },
+ "seat_pressure_MPa": {
+  "p": 121.3,
+  "pG_SUS304": 400,
+  "SF": 3.3
+ },
+ "slip_SF": 13.2,
+ "thin_plate_ratio_t_over_L": 0.004,
+ "beam_tool_check": {
+  "inputs": {
+   "t": 1.5,
+   "b": 236.0,
+   "L": 378.0,
+   "E": 193000.0,
+   "Rp": 205.0,
+   "end": "cantilever",
+   "sf_min": 2.0
+  },
+  "force_N": 100.0,
+  "deflection_mm": 140.5375,
+  "stiffness_N_mm": 0.7116,
+  "stress_MPa": 427.12,
+  "sf": 0.48,
+  "thin": true,
+  "ok": false,
+  "needs_fea": false
+ },
+ "fix_options": {
+  "A: -X 끝 받침 추가(양끝 받침, 가운데 손 100 N)": {
+   "sigma": 46.5,
+   "SF": 4.41
+  },
+  "B: t3 외팔 그대로(테두리 16.5, 낙관 채널)": {
+   "sigma": 112.2,
+   "SF": 1.83,
+   "note": "뿌리 전단 지연 그대로 — 권하지 않음"
+  }
+ }
+}
