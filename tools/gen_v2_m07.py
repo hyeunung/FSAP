@@ -437,7 +437,11 @@ def machine():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "machine":
+    if len(sys.argv) > 1 and sys.argv[1] == "k1":
+        # 구동 후보 M07-K1(2026-11-05, 받침틀 브래킷 판금 L + CB5-16, 보고서 mech_M07-K1_model.md)은 tools/gen_v2_m07k1.py에 있다
+        import gen_v2_m07k1
+        gen_v2_m07k1.main()
+    elif len(sys.argv) > 1 and sys.argv[1] == "machine":
         machine()
     else:
         main()

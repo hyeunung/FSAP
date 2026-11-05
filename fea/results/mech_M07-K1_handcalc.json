@@ -1,0 +1,123 @@
+{
+ "task": "M07-K1",
+ "date": "2026-11-05",
+ "load_case": {
+  "desc": "오조작 손 500 N + 대차 반력 71.5 N(M07 손계산 6_needle_sway Fx)을 한 이음의 브래킷 2개가 나눠 받음 -> 브래킷 하나 286 N. 받침틀 부재끼리는 맞닿아(얹힘) 자중은 면으로 전달되고 브래킷은 옆힘·벌어짐만 받는 것으로 봄",
+  "F_per_bracket_N": 286,
+  "bolt_tension_with_prying_N": 572
+ },
+ "plate_bending": {
+  "model": "다리 하나를 볼트 머리 가장자리에서 고정한 외팔보, 끝(굽힘선)에 F. 단면 30 x t6, SUS304 Rp0.2 205 MPa",
+  "T_type(구멍 60, 팔 55.75)": {
+   "inputs": {
+    "t": 6.0,
+    "b": 30.0,
+    "L": 55.75,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 286.0,
+   "deflection_mm": 0.1585,
+   "stiffness_N_mm": 1804.4203,
+   "stress_MPa": 88.58,
+   "sf": 2.31,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "S_type(구멍 30, 팔 25.75)": {
+   "inputs": {
+    "t": 6.0,
+    "b": 30.0,
+    "L": 25.75,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 286.0,
+   "deflection_mm": 0.0156,
+   "stiffness_N_mm": 18312.2042,
+   "stress_MPa": 40.91,
+   "sf": 5.01,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  },
+  "C_type(구멍 20, 팔 15.75)": {
+   "inputs": {
+    "t": 6.0,
+    "b": 30.0,
+    "L": 15.75,
+    "E": 193000.0,
+    "Rp": 205.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 286.0,
+   "deflection_mm": 0.0036,
+   "stiffness_N_mm": 80025.9151,
+   "stress_MPa": 25.02,
+   "sf": 8.19,
+   "thin": false,
+   "ok": true,
+   "needs_fea": true
+  }
+ },
+ "bolt_CB5-16_in_HNTT8-5": {
+  "Le_mm": 7.5,
+  "F_286": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 286.0,
+    "torque_Nm": 0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 54.62,
+    "암나사 전단": 22.71
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "F_572": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 572.0,
+    "torque_Nm": 0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 27.31,
+    "암나사 전단": 11.35
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "verdict": "모든 경우 SF >= 2(M-09). T형 판 굽힘 SF 2.31이 가장 작음. 두께/길이 >= 0.1이라 도구가 needs_fea -> 해석 못 함 — 환경 없음(D-16)"
+}
