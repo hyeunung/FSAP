@@ -1,0 +1,805 @@
+{
+ "run": "mech_2026-11-04_STEPWAIT-DC2-07-REG-01",
+ "status": "완료",
+ "engine": "v3.9.2",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-04",
+ "journal": "wf_e0381f55-c8d",
+ "totals": {
+  "agents": 24,
+  "agent_sec": 29340,
+  "input": 10350289,
+  "cache_read": 96629084,
+  "output": 661116,
+  "tools": 721,
+  "wall_sec": 29310
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 401,
+   "agents": 1,
+   "output": 12615
+  },
+  "▸ modeling-round #2": {
+   "sec": 28939,
+   "agents": 23,
+   "output": 648501
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 2",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 401,
+   "tokens": {
+    "input": 109425,
+    "cache_read": 934667,
+    "output": 12615
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 67885,
+    "cache_read": 54807,
+    "output": 11033
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 573,
+   "tokens": {
+    "input": 89233,
+    "cache_read": 726720,
+    "output": 6840
+   },
+   "tools": 13,
+   "turns": 10
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 56,
+   "tokens": {
+    "input": 86176,
+    "cache_read": 393353,
+    "output": 3682
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "STEPSWAP 모델링부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 8680,
+   "tokens": {
+    "input": 4009718,
+    "cache_read": 33951082,
+    "output": 183012
+   },
+   "tools": 143,
+   "turns": 140
+  },
+  {
+   "label": "STEPSWAP 모델링부 수정1",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 5382,
+   "tokens": {
+    "input": 1845852,
+    "cache_read": 18139335,
+    "output": 116150
+   },
+   "tools": 102,
+   "turns": 95
+  },
+  {
+   "label": "STEPSWAP 검도·체결 1",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 1192,
+   "tokens": {
+    "input": 251764,
+    "cache_read": 2806306,
+    "output": 17406
+   },
+   "tools": 31,
+   "turns": 28
+  },
+  {
+   "label": "STEPSWAP 문서·커밋",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 93098,
+    "cache_read": 747797,
+    "output": 6889
+   },
+   "tools": 13,
+   "turns": 10
+  },
+  {
+   "label": "DC2-07 측정부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 1517,
+   "tokens": {
+    "input": 297650,
+    "cache_read": 5179903,
+    "output": 40738
+   },
+   "tools": 48,
+   "turns": 42
+  },
+  {
+   "label": "DC2-07 카탈로그부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 33,
+   "tokens": {
+    "input": 83623,
+    "cache_read": 231560,
+    "output": 3216
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "DC2-07 문서·커밋",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 24,
+   "tokens": {
+    "input": 78924,
+    "cache_read": 147996,
+    "output": 2000
+   },
+   "tools": 2,
+   "turns": 3
+  },
+  {
+   "label": "REG-01 측정부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 5758,
+   "tokens": {
+    "input": 1541110,
+    "cache_read": 8911864,
+    "output": 57724
+   },
+   "tools": 83,
+   "turns": 70
+  },
+  {
+   "label": "REG-01 기구설계부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 544,
+   "tokens": {
+    "input": 146926,
+    "cache_read": 3789290,
+    "output": 27859
+   },
+   "tools": 35,
+   "turns": 35
+  },
+  {
+   "label": "REG-01 기구설계부 수정1",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 92,
+   "tokens": {
+    "input": 62469,
+    "cache_read": 513103,
+    "output": 8697
+   },
+   "tools": 9,
+   "turns": 6
+  },
+  {
+   "label": "REG-01 완료 판정 확인 1",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 66,
+   "tokens": {
+    "input": 86735,
+    "cache_read": 481531,
+    "output": 5793
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "REG-01 기구설계부 수정2",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 192,
+   "tokens": {
+    "input": 73250,
+    "cache_read": 1785628,
+    "output": 17584
+   },
+   "tools": 18,
+   "turns": 18
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 1999,
+   "tokens": {
+    "input": 438604,
+    "cache_read": 4831838,
+    "output": 32889
+   },
+   "tools": 45,
+   "turns": 42
+  },
+  {
+   "label": "모델링부 회귀 수정",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 269,
+   "tokens": {
+    "input": 141552,
+    "cache_read": 4649450,
+    "output": 23614
+   },
+   "tools": 52,
+   "turns": 43
+  },
+  {
+   "label": "전체 회귀 2",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 1936,
+   "tokens": {
+    "input": 392599,
+    "cache_read": 5026982,
+    "output": 35003
+   },
+   "tools": 49,
+   "turns": 43
+  },
+  {
+   "label": "문서·커밋 회귀 수정",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 29,
+   "tokens": {
+    "input": 81553,
+    "cache_read": 231430,
+    "output": 2426
+   },
+   "tools": 7,
+   "turns": 4
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 257,
+   "tokens": {
+    "input": 137328,
+    "cache_read": 2167169,
+    "output": 22518
+   },
+   "tools": 21,
+   "turns": 21
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 55,
+   "tokens": {
+    "input": 85514,
+    "cache_read": 242043,
+    "output": 6012
+   },
+   "tools": 3,
+   "turns": 4
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 31,
+   "tokens": {
+    "input": 82082,
+    "cache_read": 311780,
+    "output": 2455
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #2",
+   "status": "running",
+   "sec": 106,
+   "tokens": {
+    "input": 67219,
+    "cache_read": 373450,
+    "output": 14961
+   },
+   "tools": 12,
+   "turns": 5
+  }
+ ],
+ "fix_agents": [
+  "STEPSWAP 모델링부 수정1",
+  "REG-01 기구설계부 수정1",
+  "REG-01 기구설계부 수정2",
+  "모델링부 회귀 수정",
+  "문서·커밋 회귀 수정"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPSWAP",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.5.7.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "KDM10S-06 소켓 취부: STEP 귀가 구멍 없는 꽉 찬 자리라 CB3-10 ×4가 귀에 4 물리는 임시 그림(CB3-10:3 ↔ 소켓 98.96 mm³, 나머지 3개는 커널 실패로 못 잼)",
+      "where": "U8_PNEU, P_M08_KDM_BRKT·CB3-10_M08_PX_KDM:1~4·KDM10S-06_M08",
+      "evidence": "fix1/check_out.json REST 새 바디끼리 114쌍: 겹침 1(98.96 mm³), 못 잰 4",
+      "fix": "SMC KDM10 취부도로 귀 구멍·나사 크기 확정 뒤 받침판 Ø3.4 자리를 맞춘다(SW-D6, D-137)",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "J_U7_HGT 높이 조정 때 KDM 플러그를 다시 꽂아야 함(소켓은 U8 고정, 플러그는 U7 카세트)",
+      "where": "KDM10P-06_M08 ↔ KDM10S-06_M08",
+      "evidence": "SW-D7, HGT −4/+6에서 겹침 0",
+      "fix": "조정 절차에 다시 꽂기 넣음(기록만)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "CB6-16 ×2·CB4-25 ×4 STEP 미수령(지시 17형번 밖) — STEP대기_ 남음",
+      "where": "STEP대기_CB6-16_M03_1·2, STEP대기_CB4-25_M08",
+      "evidence": "미스미 머리 '로그인 / 회원가입'(모델링부 보고)",
+      "fix": "다음 STEP 재시도에서 받아 교체",
+      "external": true
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [
+     "CB6-16 ×2(STEP대기_CB6-16_M03)·CB4-25 ×4(STEP대기_CB4-25_M08) STEP — 미스미 로그인 풀림(Chrome 확장·앱 브라우저 둘 다 '로그인 / 회원가입'), PartsLibrary에도 없음",
+     "KDM10S-06 소켓 취부 방법(STEP 귀에 관통 구멍 없음) — SMC 카탈로그 취부도 확인 필요(D-137, SW-D6)"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "DC2-07",
+    "status": "이미 해결(확인)",
+    "evidence": "SS5Y3·SY3120은 실물이고 STEP대기_는 0이다. 22바디 interference는 count 0(truncated false)이다. 피팅 틈은 X 0.1, A/B Z 2.2다. 겹침은 나사 물림뿐이다: CB4-25↔보 62.77 mm³ ×4, 엘보 M5↔밸브 11쌍(커널 boolean 실패로 미측정). 관 끝 14개 어긋남은 0.00 mm다. 렌치 길 Ø7×35 ×4는 다른 바디와 겹침 0이고 틈은 1.02 이상이다. 판정 밖: CB4-25 STEP대기 ×4(구매), TU0805 포트 의미·피팅(M08-X1)."
+   },
+   {
+    "id": "REG-01",
+    "status": "설계 미달(수정 상한)",
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "못 본 범위 전부 간섭 0(또는 문제를 구동 후보로 등록)",
+      "where": "설계안",
+      "evidence": "본 932단계: 새 겹침 1건이 X1로 0이 됐다. 남은 1,655단계는 v2.5.8 저장 뒤 spec_v258_A1·A2 또는 B1~B6로 본다. 명세가 범위 1,655단계를 빠짐없이 덮는다. 이름만 바꾼 REG-01-X2 행은 지웠다. 간섭 결과는 회귀 실행 뒤에 나온다(이 부서는 저장 금지, 실행 1~2.5시간).",
+      "fix": "그 자리만 고친다"
+     }
+    ],
+    "design": {
+     "basis": "벤치마크 없음. 회귀 검사 과제다. X1 키는 M03 gen_v2_m03.py lift_keys 원리(테이프 위 1.0 = J_U5_LIFT z − 10, 앞뒤 1단계 여유)를 그대로 이어 쓴다.",
+     "revisions": [
+      {
+       "round": 1,
+       "where": "완료 판정 1(못 본 범위) / 요구서 5절 REG-01 행 아래",
+       "change": "회귀 계획만 있던 상태 → 못 본 범위 1,655단계를 구동 후보 REG-01-X2로 등록. X1 키와 회귀 계획은 그대로",
+       "why": "이 부서는 저장·전체 회귀를 하지 않아 못 본 범위를 직접 볼 수 없어서, 완료 판정 원문의 '또는 문제를 구동 후보로 등록'으로 채웠다."
+      },
+      {
+       "round": 2,
+       "where": "요구서 5절 REG-01-X2 행 / 회귀 묶음 계획",
+       "change": "REG-01-X2 행 삭제 → REG-01 하나로 되돌림(상태: 본 932, 남은 1,655는 v2.5.8 + spec_v258_*). 묶음 '연구 80~120단계' 어림 → 명세 파일 8개: A(열기 60 s, 6병렬, 연구 120·자세 40·체결 2·MAINT 1, 2회차 12.1·22.4분, 최대 호출 361 s), B(열기 300 s, 4병렬, 연구 60·자세 25·체결 1·MAINT 1, 6회차 20.6~26.4분, 최대 호출 450 s)",
+       "why": "이름만 바꾼 후보는 구동 후보 수를 줄이지 못한다(실행 규칙 13). 열기 254~420 s 때문에 호출이 480 s를 넘었으므로, 묶음을 (480 − 열기 − 여유) ÷ 2.5069 s/단계로 다시 셈했다."
+      }
+     ]
+    }
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": true,
+   "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.5.8.sc",
+   "unverified": false,
+   "unseen": [
+    "POSE 0~182, STATES 24·25·33·34 — 자세 시험 timeout",
+    "F_STATES 0~34 — 자세 시험 timeout",
+    "CYCLE_G2 0~610, CYCLE_S 0~450, CYCLE_L 137~690·695~716, SEAM_U7 0~32, MAINT_HEAD 0~1, MAINT_U7 0~1 — 어림 초과(시작 전)",
+    "CYCLE_G1 사이사이 145단계, CYCLE_L 34 등, STATES 3·4 — 전체 상한",
+    "STATES 0·1·5·26·27·30~32, CYCLE_G1 499·511, CYCLE_L 119·121·124·129·130·136 — 연결 오류(worker 죽음)",
+    "MAINT_U7 4~13 — 상한"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2596,
+    "estimate_s": 2036,
+    "actual_s": 1799,
+    "chunk_times": [
+     {
+      "id": "regrun1_trial(CYCLE_G2 611-630 study, PT 183-184 pose)",
+      "elapsed_s": 300,
+      "status": "trial_error"
+     },
+     {
+      "id": "regrun2_study(95 ok, 2 timeout, 251 연결오류, 1 cut)",
+      "elapsed_s": 603,
+      "status": "partial"
+     }
+    ],
+    "killed_calls": 254,
+    "skipped_steps": 16,
+    "trial": "연구 시험 20단계 12.3 s/단계(2차 5단계 6.0 s), 자세 시험 2점 300 s 초과 timeout. CAD 패닉 0, 연결 거부 251(worker 죽음)",
+    "per_step_s": {
+     "study": 6,
+     "pose": 135
+    },
+    "pose_steps": 222,
+    "reduced": "연구 어림 2,036 s > 상한 600 s(세션 열기·진단·1차 시험 뒤 남은 시간) → 시작 전에 앞 699단계만 돌렸다. 자세 222점은 시험 timeout으로 뺐다",
+    "seen": [
+     "CYCLE_G1 370/515 (277~350 연속, 316~324 포함 — REG-01-X1 0 확인)",
+     "CYCLE_L 0~29·33·49~135 일부·691~694 (100)",
+     "CYCLE_G2 611~630",
+     "STATES 2·6~23·28·29",
+     "MAINT_U7 2~3",
+     "자세 THICK_6 (POSE_TMP 183)"
+    ],
+    "unseen": [
+     "POSE 0~182, STATES 24·25·33·34 — 자세 시험 timeout",
+     "F_STATES 0~34 — 자세 시험 timeout",
+     "CYCLE_G2 0~610, CYCLE_S 0~450, CYCLE_L 137~690·695~716, SEAM_U7 0~32, MAINT_HEAD 0~1, MAINT_U7 0~1 — 어림 초과(시작 전)",
+     "CYCLE_G1 사이사이 145단계, CYCLE_L 34 등, STATES 3·4 — 전체 상한",
+     "STATES 0·1·5·26·27·30~32, CYCLE_G1 499·511, CYCLE_L 119·121·124·129·130·136 — 연결 오류(worker 죽음)",
+     "MAINT_U7 4~13 — 상한"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 3,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 모델링부",
+    "phase": "STEPSWAP · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 8700,
+     "cad_calls": 14,
+     "file_opens": 9,
+     "channel": "CLI",
+     "browser_calls": 5,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 모델링부 수정1",
+    "phase": "STEPSWAP · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 5900,
+     "cad_calls": 13,
+     "file_opens": 6,
+     "channel": "CLI",
+     "browser_calls": 7,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 검도·체결 1",
+    "phase": "STEPSWAP · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1200,
+     "cad_calls": 2,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 문서·커밋",
+    "phase": "STEPSWAP · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "DC2-07 카탈로그부",
+    "phase": "DC2-07 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "DC2-07 측정부",
+    "phase": "DC2-07 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1420,
+     "cad_calls": 5,
+     "file_opens": 5,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "REG-01 측정부",
+    "phase": "REG-01 · 측정",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 5664,
+     "cad_calls": 88,
+     "file_opens": 88,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "회귀 S 예상 30분의 3배다. 파일 열기가 호출마다 300~420 s 걸려 호출 상한 480 s를 거의 다 쓴다. 병렬 12에서는 고아 solidcraft-cli가 메모리를 먹어 두 물결 24호출이 모두 시간 초과했다. regrun 시험 경과가 open_s보다 짧아 단계당 0이 되면서 묶음이 나뉘지 않은 일도 있었다. 그래서 regrun을 네 번 다시 돌렸고, 죽은 호출의 결과는 harvest.py로 거뒀다."
+    },
+    "expect_min": 10,
+    "over": true
+   },
+   {
+    "label": "REG-01 기구설계부",
+    "phase": "REG-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 520,
+     "cad_calls": 2,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "REG-01 기구설계부 수정1",
+    "phase": "REG-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "REG-01 완료 판정 확인 1",
+    "phase": "REG-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "REG-01 기구설계부 수정2",
+    "phase": "REG-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 720,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1950,
+     "cad_calls": 2400,
+     "file_opens": 8,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "모델링부 회귀 수정",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 260,
+     "cad_calls": 14,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "전체 회귀 2",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1950,
+     "cad_calls": 360,
+     "file_opens": 8,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "문서·커밋 회귀 수정",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 260,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "STEPSWAP 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 HFS8-80160-1090_M07, HTPA60S5M150-A-N16_M03, 6200ZZ_M03, HTBO-S5M150-792_M03, HTBO-S5M150-792_M03_L, MGPM25-40Z_M03, CB6-20_M03_CAR, CB6-20_M03_LIFT, SFB5-10_M04, SFB5-10_M04R, MSTH6-20_M05, CB3-10_M06, KQ2L08-01AS_M08_PX, KQ2L08-01AS_M08_NX, SS5Y3-20-06_M08, SY3120-5LZD-M5_M08, KQ2L06-M5A_M08S_NZ, KQ2L06-M5A_M08S_PZ, STEP대기_CB4-25_M08, LR6-302WJBW-RYG_M08, CB4-20_M08_LAMP, TU0805_M08S_* x6, TU0604_M08S_* x11, STEP대기_HTPA60S5M150-A-N16, STEP대기_FHS-M5-10_M04, STEP대기_FHS-M5-10_M04R, STEP대기_KQ2L08-01AS_M08_PX, STEP대기_KQ2L08-01AS_M08_NX, STEP대기_SS5Y3-20-06_M08, STEP대기_SY3120-5LZD-M5_M08, STEP대기_CB4-20_M08, KQ2L06-M5A_M08_NZ, KQ2L06-M5A_M08_PZ, STEP대기_LR6-302WJBW-RYG_M08, STEP대기_CB4-12_M08, TU0805_M08_* x6, TU0604_M08_* x11이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "DC2-07 측정부",
+    "what": "설계 파일을 5번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "REG-01 측정부",
+    "what": "설계 파일을 88번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "전체 회귀",
+    "what": "자세 묶음을 따로 시험하지 않음(연구 시험값으로 자세를 어림, WF-178)"
+   },
+   {
+    "label": "전체 회귀 2",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-181"
+  ],
+  "repeat_ids": [
+   "WF-178"
+  ],
+  "one_line": "회고 완료: WF-178 반복 2(회귀 묶음 파일 열기 시간), WF-181 신규(저장 권한 없는 부서에 회귀 과제, 이름만 바꾼 후보 등록·삭제)를 docs/reports/engine-candidates.md에 적고, 최종 보고서에 개선 후보 절을 붙여 aacba2e로 커밋했다(푸시 안 함). 고친 엔진 파일 없음."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 24,
+  "시간 h": 8.2,
+  "출력 토큰": 661116,
+  "실패": 0
+ }
+}
