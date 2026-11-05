@@ -8,7 +8,10 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.5.9 STEPSWAP r2: STEP대기 CB6-16 ×2(U5 승강판 → MGP 끝판)·CB4-25 ×4(SS5Y3 베이스 → 보 앞벽) 미스미 실물 STEP으로 교체(같은 자리, 조인트·행정 변화 없음). 과제 안 검사 새 겹침 0. BOM FSAP_v2.5.9_*, 자료대기 D-115·D-129, 보고서 docs/reports/mechanism/mech_STEPSWAP_model.md
+
 - v2.5.8 회귀 수정 REG-01-X1: CYCLE_G1 J_U5_LIFT 키 [320,0] → [318,0],[319,1],[320,1](먼 쪽 바퀴 트레드가 320단계 테이프 윗면에 0.4 mm 들어가던 것). 형상 변경 없음, 318~321 겹침 0. 보고서 docs/reports/mechanism/mech_regfix.md
+- v2.5.8 전체 회귀 다시 돌림(문서만): pass, 새 겹침 0, 못 본 범위 약 1,900단계 디테일 기록. 설계검토서 docs/review/FSAP_v2.5.8_review.md, 결정로그 REG-02
 
 - v2.5.7 STEPSWAP 수정 1: KDM10-06 실물 STEP(소켓 U8 받침판 P_M08_KDM_BRKT + CB3-10 ×4, 플러그 U7_CASSETTE, 짝 방향 +X = CST_X), U7 관 12줄 다시(_M08K_), 벨트 HTBO 곧은 가닥 X −2220~−390으로 자름(v2.5.6에서 X 1740까지 뻗어 보 앞 공압과 겹침). 사본 125개 겹침 수치 확인. 보고서 docs/reports/mechanism/mech_STEPSWAP_model1.md
 - v2.5.6 STEPSWAP: STEP대기 16형번 실물 STEP 교체(풀리 N16·6200ZZ·벨트 HTBO-S5M150-792·MGPM25-40Z·CB6-20·SFB5-10 ×102·MSTH6-20·CB3-10·기둥 HFS8-80160-1090·KQ2L08·SS5Y3·SY3120·LR6·CB4-20), MGP 가운데 +20·대차판·승강판 구멍 다시, 공압 피팅·관 17줄 다시, 새 STEP대기 CB6-16 ×2·CB4-25 ×4, KDM10-06 남음. BOM FSAP_v2.5.6, 결정로그 SW-R1~R7·SW-D1~D5, 자료대기 D-115·117·120·126·128·129

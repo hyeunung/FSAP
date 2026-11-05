@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.5.7.sc",
+ "doc": "../3D_Modeling/FSAP_v2.5.9.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -645,7 +645,7 @@
     "MGPM25-40Z(0)_",
     "MGP-Z_PLUG_25",
     "CB6-20_M03",
-    "STEP대기_CB6-16_M03",
+    "CB6-16_M03_LIFT",
     "MBIS5-6.5-8_M03",
     "E32-D36P1_2M_M03",
     "CB5-16_M03",
@@ -723,7 +723,7 @@
     "KQ2L08-01AS_M08",
     "SS5Y3-20-06_M08",
     "SY3120-5LZD-M5_M08",
-    "STEP대기_CB4-25_M08",
+    "CB4-25_M08",
     "CB4-20_M08_LAMP",
     "KQ2L06-M5A_M08",
     "STEP대기_F3SG",
@@ -1855,6 +1855,7 @@
  },
  "_history": [
   "2026-11-05 STEPSWAP v2.5.6: STEP대기 실물 교체(조인트·행정·연구 변화 없음)",
-  "2026-11-05 STEPSWAP 수정 1 v2.5.7: KDM10-06 실물·관 12줄(조인트·행정·연구 변화 없음)"
+  "2026-11-05 STEPSWAP 수정 1 v2.5.7: KDM10-06 실물·관 12줄(조인트·행정·연구 변화 없음)",
+  "2026-11-05 STEPSWAP r2 v2.5.9: STEP대기_CB6-16_M03 ×2·STEP대기_CB4-25_M08 ×4 -> 미스미 STEP CB6-16_M03_LIFT·CB4-25_M08(같은 자리, 조인트·행정·연구 변화 없음)"
  ]
 }

@@ -1,98 +1,77 @@
-# 모델링부 STEPSWAP — STEP대기 실물 교체 (v2.5.5 → v2.5.6, 2026-11-05)
+# 모델링부 STEPSWAP r2 — CB4-25·CB6-16 실물 교체 (v2.5.8 → v2.5.9, 2026-11-05)
 
 요약
-- 저장: `3D_Modeling/FSAP_v2.5.6.sc`(마지막 자리 +1, 새 유닛 없음). `tools/config.json` doc·`tools/machine.json` doc 갱신. 통로 CLI(앱 MCP 막힘, 아래 1절).
-- 바꾼 16형번(실물 STEP): HTPA60S5M150-A-N16, 6200ZZ ×2, HTBO-S5M150-792(HTBNS5M150-3960 대체), MGPM25-40Z, CB6-20 ×6, SFB5-10 ×102, MSTH6-20 ×2, CB3-10 ×2, HFS8-80160-1090 ×2, KQ2L08-01AS ×6, SS5Y3-20-06, SY3120-5LZD-M5 ×6, LR6-302WJBW-RYG, CB4-20 ×3(CB4-12 ×3 대체). SFB5-12는 바꿀 임시 형상이 없다(디테일 M04R-V2).
-- 지시 형번의 `STEP대기_` 남은 것: **KDM10-06 1건**(실물 관 구멍 방향 때문에 배치 결정 필요 → 구동 후보 SW-R6). 새로 생긴 STEP대기: CB6-16 ×2, CB4-25 ×4(실물 맞춤으로 길이가 바뀜, 이번 실행 Chrome 미스미 탭 로그인 안 됨).
-- 실물 치수로 고친 곳: MGP 가운데 X −1940 → −1920, `P_M03_CAR_PLATE`(M6 탭 4 → Ø6.6 통과 4)·`P_M03_LIFT_TOP`(Ø6.6 4 자리)·`P_M03_LIFT_SIDE_P`(Ø6.6 2) 다시, 공압 피팅 KQ2L06-M5A ×11 옮김, 관 17줄 다시(`_M08S_`).
-- 과제 안 검사(관련 조인트 5자세 + REST, 첫 사본): 새 겹침 0(나사 물림 3종 제외), floating 0. 전체 모델 정적 간섭(작업 전·후)은 둘 다 시간 예산 초과 — 본 쌍 안 새 겹침 0, 사본 일부 못 봄(4-1).
-- 미완: KDM10-06 교체. 외부: CB6-16·CB4-25 STEP(로그인), D-10 등 기존.
+- 저장: `3D_Modeling/FSAP_v2.5.9.sc`(마지막 자리 +1, 새로 생기거나 없어진 유닛·부품 묶음 없음). `tools/config.json` doc·`tools/machine.json` doc·유닛 부품 갱신. 통로 **MCP**(앱 running 빈 목록, 막힘 없음).
+- 바꾼 것: `STEP대기_CB6-16_M03_1·_2` → `CB6-16_M03_LIFT:1·:2`(미스미 CB6-16 STEP), `STEP대기_CB4-25_M08:1~4` → `CB4-25_M08:1~4`(미스미 CB4-25 STEP). 실물 치수가 임시 형상과 같아 자리·물림 그대로(bbox 일치).
+- 지시 형번의 `STEP대기_` 남은 것 0(저장 문서 바디 이름 검색).
+- 과제 안 검사: CB6-16은 J_U5_LIFT −10·0·10·20·30(0~100 %) 다섯 점, CB4-25는 REST — 새 겹침 0. J_U5_X 345~1380 쓸린 상자 안 고정 바디 0(서명 bbox). floating 0.
+- 저장 1차본은 다시 열면 타임라인 실패(`Remove41: unknown body`) → 그 피처를 지우고 같은 번호로 다시 저장(3절). 1차본은 `tools/out/mech_STEPSWAP/r2/cand_v259_remove41_broken.sc`로 옮김(커밋 전, 사용자 안 봄).
+- 미완: 없음. 외부: 없음(두 STEP은 purchased-step·PartsLibrary에 이미 있음).
+- 지난 STEPSWAP 보고서(v2.5.6)는 같은 이름이라 `mech_STEPSWAP_model_v2.5.6.md`로 옮겨 남김.
 
-## 1. 통로·순서
+## 1. 통로·문서 확인
 
-- `mcp__solidcraft__running`: 다른 연결(71)의 `engine.batch`가 16,934 s(4.7시간) 돌고 있었고, 이 세션 요청은 대기열에서 나오지 못했다(`inspect_design` → "still running: an earlier request …"). 지시서 (b)의 dirty 문서 처리는 앱이 응답하지 않아 손대지 않았다(버리지도 저장하지도 않음).
-- 그래서 실행 규칙 2 "앱이 꺼져 있거나 MCP 호출이 실제로 실패할 때만 CLI"에 따라 CLI로 그렸다: `solidcraft-cli run edit.json --in base.sc(v2.5.5 복사) --save cand.sc` → 리지드 보정 `fix1.json` → `cand2.sc` → `3D_Modeling/FSAP_v2.5.6.sc` 복사.
-- 실패 2번(각 18분): ① 지운 바디 이름(`KQ2L06-M5A_M08_NZ`)은 Remove 피처가 잡고 있어 `body.rename` 대상이 될 수 없다 → 새 이름 `_M08S_`. ② STEP으로 넣은 컴포넌트(KQ2L06-M5A)의 바디를 `solid.remove`한 뒤 컴포넌트를 지우면 Remove가 바디를 못 찾아 타임라인 실패 → 지우기만.
-- 생성기 `tools/gen_v2_stepswap.py`(stage 7개, `tools/out/mech_STEPSWAP/model/stage_*.json`), 기록 `tools/out/mech_STEPSWAP/edit.json`(604 명령)·`edit_meta.json`. `python -X utf8 -B tools/gen_v2_stepswap.py --machine`이 machine.json을 고친다.
-- 문서 이름: 루트 컴포넌트 이름(앱 제목)을 `component.rename {component: 0}`로 'FSAP_v2.5.6'으로 바꿈(장난감 설계에서 확인, 4절 끝).
+- `running` → 빈 목록. 열린 문서는 이름 'FSAP_v2.5.8', `path: null`, `dirty: true`, **undo 0·redo 0**(그 세션에서 편집한 것이 없음). 이름·피처 수(1,978)가 v2.5.8과 같고 파일에 묶이지 않아 dirty로 보인 것이라, 버릴 사람 편집이 없다고 판정하고 저장본 `3D_Modeling/FSAP_v2.5.8.sc`를 `open`(오류 0, 피처 1,978). 지시서 (b)의 'merged' 문서는 이미 없었다.
+- `motion.play REST step 0` → `edit.checkpoint` → 그림(batch 2개, 6.1 s·22.2 s) → 검사 batch(82.6 s) → REST·조인트 글리프 숨김(규칙 19)·루트 이름 'FSAP_v2.5.9'·설명 'STEPSWAP mechanism: STEP-wait CB6-16 x2 (U5 lift top) and CB4-25 x4 (SS5Y3 base) swapped to Misumi STEP' → `save {path: v2.5.9}`.
+- 기록: `tools/out/mech_STEPSWAP/edit.json`(24 명령, `r2/stage_1_cb6.json` + `r2/stage_2_cb4.json` + 끝 단계 + Remove41 삭제), `edit_meta.json`(base v2.5.8 → result v2.5.9). 지난 회차 기록은 `edit_v2.5.7.json`·`edit_meta_v2.5.7.json`으로 남김.
 
-## 2. 만든·지운 부품과 좌표(세계, REST)
+## 2. 바꾼 부품과 좌표(세계, REST)
 
-| 새 부품 | 유닛 | 자리 | 지운 임시 형상 |
-|---|---|---|---|
-| `HFS8-80160-1090_M07` :1 NX·:2 PX | U1_FRAME | X −2380~−2300 / 1150~1230 · Y 120~280 · Z −840~250(로컬 X → +Z) | STEP대기_HFS8-80160-1090_M07_NX·PX |
-| `HTPA60S5M150-A-N16_M03`(바디 HUB·FLANGE1·2·SET1·2) | 루트 + U5_WHEEL_F 리지드 | (−2220, 95.5~117.5, 390), N30과 같은 틀 | 컴포넌트 STEP대기_HTPA60S5M150-A-N16 |
-| `6200ZZ_M03` :1·:2 | U5_WHEEL_F(리지드 추가) | (−390, Y 97~106·106~115, 390). 볼은 STEP에 없음 | STEP대기_6200ZZ_1·_2 |
-| `HTBO-S5M150-792_M03`(위 가닥 + WRAP_D·WRAP_I) / `_M03_L`(아래 가닥, bom reference) | U5_WHEEL_F | 위 Z 437.25~440.45, 아래 Z 339.55~342.75(X −2027~−2023 끊음), 반원 r 47.25~50.45, Y 98.5~113.5 | STEP대기_HTBNS5M150-3960 |
-| `MGPM25-40Z_M03`(BODY·PLUG ×2 U5_CAR, 하위 부품 ROD = 끝판+봉 → U5_LIFT) | U5_CAR / U5_LIFT | 가운데 X −1920 · Y 59, 몸 Z 180~257.5, 끝판 Z 164~180(REST) | STEP대기_MGPM25-40Z_BODY·_PLATE |
-| `P_M03_CAR_PLATE` 다시 | U5_CAR | 같은 외형, MGP 자리 Ø6.6 (−1937/−1903, Z 197/241) | 옛 바디(M6 탭 4) |
-| `P_M03_LIFT_TOP` 다시 | U5_LIFT | 같은 외형, Ø6.6 (−1959/−1881, Y 46/72) | 옛 바디 |
-| `P_M03_LIFT_SIDE_P` 구멍 | U5_LIFT | 플랜지 Ø6.6 (−1959/−1881, 46) | — |
-| `CB6-20_M03_CAR` :1~4 | U5_CAR | 머리 밑면 Y 92(대차판 뒷면), 축 −Y, 물림 8 | STEP대기_CB6-20_M03_1~4 |
-| `CB6-20_M03_LIFT` :1·:2 | U5_LIFT | 머리 밑면 세계 Z 150(플랜지 밑), Y 46, 물림 6 | STEP대기_CB6-20_M03_5~8 |
-| `STEP대기_CB6-16_M03_1·_2`(새 임시) | U5_LIFT | 머리 Z 150~156, Y 72, 물림 8 | — |
-| `SFB5-10_M04` ×96 · `SFB5-10_M04R` ×6 | U2_TABLE | 머리 윗면 Z −8(같은 자리, 같은 occurrence 이동값) | STEP대기_FHS-M5-10_M04·_M04R |
-| `MSTH6-20_M05` :1·:2 | U7_CASSETTE | X 38~58 · Y −190/−125 · Z 300 | STEP대기_MSTH6-20_M05_1·_2 |
-| `CB3-10_M06` :1·:2 | U6_SHOE | 로컬 (2.5, 머리 밑면 −112, 23.5/33.5) | STEP대기_CB3-10_M06_1·_2 |
-| `KQ2L08-01AS_M08_PX/NX` :1~3 | U8_PNEU | 포트 면(나사 끝에서 7.1) X 712.5/687.5 + 100k, Y 95.1, Z 511, 관 출구 X ±24.1 · Z 494.6 | STEP대기_KQ2L08-01AS_M08_PX·NX |
-| `SS5Y3-20-06_M08` | U8_PNEU | X 1035~1117 · Y 100~120 · Z 325.5~374.5 | STEP대기_SS5Y3-20-06_M08 |
-| `SY3120-5LZD-M5_M08` :1~6 | U8_PNEU | 스테이션 X 1049.75 + 10.5k, 붙는 면 Y 100, 포트 면 Y 76.5(A Z 345.9 · B Z 356.1), 솔레노이드 −Z | STEP대기_SY3120-5LZD-M5_M08 |
-| `KQ2L06-M5A_M08S_NZ` ×6 · `_PZ` ×5 | U8_PNEU | 포트 면 Y 76.5, 관 끝 (x, 63, 331.4)/(x, 63, 370.6) | KQ2L06-M5A_M08_NZ·PZ(옛 자리 Y 50) |
-| `STEP대기_CB4-25_M08` ×4(새 임시) | U8_PNEU | (1039.8/1112.2, 머리 Y 96~100, 343/359) | STEP대기_CB4-20_M08 ×2 |
-| `LR6-302WJBW-RYG_M08_1~5` | U8_PNEU | (1190, 270), 밑면 Z 650, 꼭대기 915.5, 180° 돌림(구멍 PCD 40 = LAMP_H) | STEP대기_LR6-302WJBW-RYG_M08 |
-| `CB4-20_M08_LAMP` :1~3 | U8_PNEU | 머리 밑면 Z 661.5(밑판 구멍 위), 물림 8 | STEP대기_CB4-12_M08 |
-| 관 `TU0805_M08S_REG_IN/OUT_1~3`, `TU0604_M08S_U4_A/B·U6·U5_A/B·U7_1~6` | U8_PNEU | 1절 결정로그 SW-R4 경로 | TU0805_M08_*·TU0604_M08_*(같은 17줄) |
+볼트 STEP 틀: 로컬 +X = 나사 축, 원점 = 머리 밑면(CB6-20과 같은 미스미 SolidWorks 2016 STEP, 바디 'Cut-Extrude1').
 
-- 컴포넌트 변화: 유닛 컴포넌트 생김·없어짐 0(구매품 STEP 자리만, M03 보고서와 같은 기준) → 마지막 자리 v2.5.6(E-05 "새 컴포넌트(유닛·부품 묶음)가 생기거나 없어졌으면 가운데 +1·마지막 0, 아니면 마지막 +1").
-- 조인트·행정·연구 변화 0. 리지드 묶음 4개 더함(HTPA–U5_WHEEL_F, MGP 몸·플러그–U5_CAR, MGP ROD–U5_LIFT, 6200ZZ–U5_WHEEL_F, 공압 STEP–U8_PNEU).
-- 재질: 볼트 SCM435, 형재 Aluminum, 다시 그린 판 A5052·SUS304(옛 것과 같음), 핀 Steel. 나머지 구매품 STEP은 Default(M08과 같은 방식).
+| 새 부품 | 유닛(부모) | 자리 | bbox | 부피·질량 | 지운 임시 형상 |
+|---|---|---|---|---|---|
+| `CB6-16_M03_LIFT:1·:2` | U5_LIFT(로컬 = 세계 −30 Z) | 머리 밑면 Z 156(승강판 `P_M03_LIFT_TOP` 밑면), 축 +Z, X −1959·−1881, Y 72. 물림 8(MGP 끝판 M6 탭 깊이 8.46) | X −1964~−1954 / −1886~−1876, Y 67~77, Z 150~172 | 843.3 mm³, 6.62 g, SCM435 | `STEP대기_CB6-16_M03_1·_2`(바디, Remove40) |
+| `CB4-25_M08:1~4` | U8_PNEU(항등) | 머리 밑면 Y 100(SS5Y3 베이스 윗면), 축 +Y, X 1039.8·1112.2 × Z 343·359. 물림 5(보 앞벽 M4) | X 1036.3~1043.3 / 1108.7~1115.7, Y 96~125, Z 339.5~346.5 / 355.5~362.5 | 448.6 mm³, 3.52 g, SCM435 | 컴포넌트 `STEP대기_CB4-25_M08`(:1~4, solid.remove + component.delete) |
 
-## 3. 임시값·치수 근거
+- 임시 형상과 bbox가 같다(CB6-16 Z 150~172, CB4-25 Y 96~125). 부피는 실물이 육각 구멍·모따기 몫만큼 작음(923.5 → 843.3, 468.0 → 448.6).
+- 부품 번호(part_number)·bom_type purchased·설명은 컴포넌트 metadata에. 조인트: 둘 다 그 유닛 컴포넌트의 하위 occurrence라 유닛을 따라 움직인다(새 조인트 없음). `joint.list` floating 0, conflicts 0.
+- 지운 것 잔재: 바디·컴포넌트 0. 빈 구멍 0(같은 자리에 같은 지름).
+- 조인트·행정·연구 변화 없음 → machine.json은 doc와 유닛 부품 이름만 바꿈(`STEP대기_CB6-16_M03` → `CB6-16_M03_LIFT`, `STEP대기_CB4-25_M08` → `CB4-25_M08`), `_history`에 한 줄.
 
-- STEP 구멍·면은 STEP 텍스트에서 직접 읽음(CYLINDRICAL_SURFACE·PLANE 범위, `tools/out/mech_STEPSWAP/stepmeas/` 로컬 bbox). MGP: 몸 관통 Ø5.4 + 자리 Ø9.5(앞)·M6 깊이 12(뒤) (raw Y ±17, Z −17/−61), 끝판 M6 깊이 8.46 (±13, ±39). SS5Y3: M4 관통 Ø4.5 ×4 (X −31.5/−15.5, Z −77.2/−4.8), 끝면 Rc1/8 (X −40/−23.5/−7, Y 12.5). SY3120: 포트 면 Y 23.5, A·B X ±5.1, 옆 돌기 ±5.8은 서로 엇갈림(이웃과 겹치지 않음, 0.2 띄움). KQ2L08: 나사 끝 Y −3.1, 포트 면(육각 밑) Y 4.0, 관 출구 X 16.4 · Y 15.6. LR6: 밑면 Z −12, 구멍 Ø4 PCD 40(0, −20)·(±17.32, 10), 구멍 위 Z −0.5.
-- 밸브 X0 = 베이스 X −23.5(가운데 P 줄), 스테이션 중심 = 베이스 길이 가운데에서 10.5 피치(베이스 윗면 스테이션 구멍은 STEP에 없음) — 임시, D-129.
-- CB6-16·CB4-25 임시 외형: JIS B 1176(머리 Ø10×6 / Ø7×4).
+## 3. 저장 확인 — 1차 저장본 실패와 고침
+
+- 1차 저장 뒤 CLI(`solidcraft-cli run r2/verify.json --in v2.5.9 --results`)가 "1 timeline feature(s) failed … Remove41: unknown body `STEP대기_CB4-25_M08`"로 끝났다. 앱 안에서는 오류 0이었다(다시 계산 안 함).
+- 원인: 임시 볼트 바디를 `solid.remove`(Remove41)한 뒤 컴포넌트를 `component.delete`하자 그 바디를 만든 피처(8914·8915)가 같이 지워져, 다시 열 때 Remove41이 지울 바디를 못 찾는다(v2.5.6 회차 실패 ②와 같은 종류).
+- 고침: `timeline.dependents Remove41`(딸린 것·깨질 것 0) → `timeline.delete Remove41` → REST → 1차본을 `tools/out/mech_STEPSWAP/r2/cand_v259_remove41_broken.sc`로 옮기고 같은 경로 `3D_Modeling/FSAP_v2.5.9.sc`에 다시 저장(3,599,851 B). 1차본은 이 세션 안에서만 있었고 커밋 전이다.
+- 다시 저장한 파일을 CLI로 다시 열어 확인: 4절 끝.
 
 ## 4. 검사(수치, E-16)
 
-과제 안 검사(`tools/out/mech_STEPSWAP/check.json` → `run_res.json` 604~631단계, 요약 `check_summary.txt`). 주변 = 작업 전 모델 세계 bbox 15 mm 안(`check_sets.json`).
+과제 안 검사(지시 6-1, 관련 조인트 0·25·50·75·100 %, `inspect.clearance` clearance 0.5, 전 사이클 motion.interference 돌리지 않음). 결과 원본 `tools/out/mech_STEPSWAP/r2/check_out.json`.
 
-| 묶음 | 자세 | 쌍 | 겹침 | 못 잰 쌍(이유) |
-|---|---|---|---|---|
-| 기둥 | REST | 13 | 0 | 0 |
-| U5 풀리·베어링·벨트 | REST | 53 | 0 | 1: N30 허브 ↔ WRAP_I 동심 0.03(커널) |
-| U5 MGP·판·볼트 | REST | 23 | 0 | 6: 기존 CB5-12 탭 물림(커널) |
-| 접시 SFB5-10 | REST | 5 | 0 | 3: 판 접시 자리 원뿔 맞닿음, T 너트 나사 |
-| 핀·CB3 | REST | 6 | 0 | 0 |
-| 공압·경광등 | REST | 113 | 3: 보 ↔ CB4-25 62.77(나사 물림, 전과 같음), IR1000 임시 N ↔ KQ2L08 PX·NX 530.81(R1/8 나사, 임시 몸에 포트 구멍 없음 SW-D3) | 1: 보 ↔ CB4-20 경광등(탭 물림) |
-| U5 묶음 vs 주변 124 | J_U5_X 345·690·1035·1380·0 / J_U5_LIFT 30·0·−10·15·−10 | 76 ×5 | 0 | 7(위와 같은 것) |
-| 핀·CB3 | J_U6_SHIFT 0, J_U7_CST_Y 250 · X 25 | 5 | 0 | 0 |
-| 공압 장난감 설계(공압만 따로) | — | 전부 | 0 | 피팅 나사 ↔ 밸브 포트, 관끼리 커널 실패 6(부피 4.5 이하로 어림) |
+| 자세 | 대상 | against | 겹침 | 가까움 | unchecked |
+|---|---|---|---|---|---|
+| REST | CB4-25_M08 | P_M07_BEAM·SS5Y3-20-06_M08·SY3120 ×6·관 8줄·HTBO 벨트 2 | 0 | SS5Y3 0.000(머리 자리 맞닿음) | P_M07_BEAM(나사 물림, boolean 실패) |
+| J_U5_LIFT −10 / 0 / 10 / 20 / 30 | CB6-16_M03_LIFT | MGPM25-40Z_M03_ROD·_BODY·P_M03_CAR_PLATE·P_M03_LIFT_TOP·P_M03_LIFT_SIDE_P | 0 | LIFT_TOP 0.000(머리 자리 맞닿음) | MGPM25-40Z_M03_ROD(끝판 탭 나사 물림) |
 
-- 관련 조인트 0·25·50·75·100 %: J_U5_X 0/345/690/1035/1380, J_U5_LIFT −10/0/15/30 섞어 5자세. 전 사이클 `motion.interference`는 돌리지 않음(지시).
-- 전체 모델 정적 간섭(REST) 작업 전 ↔ 후 비교: `tools/out/mech_STEPSWAP/int_diff.txt`(아래 4-1).
-- joint.list floating: 1차 저장 후보에서 `6200ZZ_M03`(STEP 안 리지드 묶음)이 떠 있었음 → 리지드 보정 뒤 0.
-- 타임라인: 오류 0, 경고 15(작업 전 14 + `6200ZZ Ball` 못 읽음 1, 6004ZZ와 같은 종류).
-- STEP대기_ 남은 이름(지시 형번 중): `STEP대기_KDM10-06_M08`·`_PLUG`. 새 임시: `STEP대기_CB6-16_M03_1·_2`, `STEP대기_CB4-25_M08`.
-- 숨김: 조인트 글리프만 숨김(실행 규칙 19). 바디 숨김 새로 0.
-- 볼트(새로 만들거나 옮긴 것): 물림 CB6-20 CAR 8(1.33d), CB6-20 LIFT 6(1.0d, SW-D1), CB6-16 8, CB4-25 5(전과 같음), CB4-20 8(2d), SFB5-10 3.5(전과 같음, M04-F5). 렌치 접근은 디테일(SW-D2).
-- 서명: `ledger.py sigpatch --parts changed_parts.json(193) --removed (175) --bolts changed_bolts.json(119)` → `sigcheck` reuse(2,637). 실측 `inspect.measure` 전체(`meas_out.json`).
-- 스크린샷: 앱이 막혀 찍지 않음(사람용, 외관은 사용자가 앱에서 본다).
-- 해석용 임시 STEP: 새로 힘을 받는 가공품은 다시 그린 `P_M03_CAR_PLATE`·`P_M03_LIFT_TOP`(외형·두께 같음, 구멍 자리만)뿐. 하중 경로(MGP ↔ 대차·승강)가 볼트 자리만 바뀌어 손계산 대상(E-18 체결만 바뀐 자리). FEA 환경 없음(D-16) → 내보내지 않음.
+- unchecked 2쌍은 나사부 ↔ 탭 구멍 물림(M-08 의도 겹침, 기준선 'CB5-*·STEP대기_CB6-20_M03_* ↔ 탭 구멍 부품'과 같은 종류). 실물이 임시 형상과 같은 자리·같은 지름이라 물림 길이(8·5)도 같다.
+- J_U5_X(0~1380): CB6-16은 U5 전체와 같이 움직인다. 쓸린 상자 X −1964~−496 · Y 67~77 · Z 110~172(승강 −10 포함)에 U5 밖 고정 바디 0(서명 bbox, `tools/out/signatures.json`).
+- CB4-25 둘레에 움직이는 부품 없음(U8 고정, 벨트 가닥은 X −2220~−390).
+- 숨김: 바디 9개(MAT·TAPE·SEAM 모형 ×3, C-31 '매트 모형 기본 숨김', 의도). occurrence 숨김 0. 조인트 글리프 숨김(규칙 19).
+- 재질: 새 바디 2종 SCM435(볼트, 기존 CB6-20·CB4-20과 같음). 가공품 변화 없음 → matcheck 대상 없음.
+- 볼트 검사(렌치 접근): 자리·방향이 임시 형상과 같아 이번 과제에서 새로 생긴 막힘 없음. 접근 프로브는 구동 단계 규칙상 디테일 기록(E-02) — 아래 6절.
+- 강도: 새로 힘을 받는 가공품 없음 → 임시 STEP 없음, FEA 없음(D-16 환경 없음과 무관).
+- 저장본 다시 열기: 4-1.
 
-### 4-1. 전체 정적 간섭 비교
+### 4-1. 저장본 확인(다시 연 파일)
 
-- `inspect.interference`(전체, budget 1,800 s) 작업 전·후 같은 조건: 둘 다 시간 예산을 다 써 끝나지 못했다 — 작업 전 확인 2,619바디·교차 5,548쌍·못 본 5,151쌍, 작업 후 2,636바디·5,671쌍·못 본 5,251쌍. 본 쌍 안의 겹침은 둘 다 3건으로 같았고 **새 겹침 0**. 새 못 본 쌍은 보(P_M07_BEAM)·판넬(P_M04_PANEL_*)과 새 부품 사본(SFB5-10 :2~, CB4-25 :2~4, CB4-20 :2·:3, 관 _M08S_ 등) — 시간 예산 탓(2,546 s 걸린 동축 쌍과 같은 종류, 안내서 '나눔 수').
-- 그래서 사본(occurrence :2 이후)의 겹침은 첫 사본과 같은 이동값으로 놓였다는 것(임시 형상과 같은 자리)만으로 보증되고 수치로는 다 못 봤다 → 미완(검증부 범위 검사 또는 라운드 끝 회귀 regrun에서 묶음 나눠 확인).
+`solidcraft-cli run r2/verify.json --in 3D_Modeling/FSAP_v2.5.9.sc --results`(다시 저장한 파일, 4분 54초): 타임라인 실패 0, 바디 2,641(전수 측정 목록), `CB6-16_M03_LIFT:1·:2`·`CB4-25_M08:1~4` bbox·부피가 앱 측정과 같음, 바꾸지 않은 `P_M03_LIFT_TOP`(X −1990~−1820 · Y −55~78 · Z 156~164, 179,342 mm³)·`SS5Y3-20-06_M08`이 서명과 같음, `joint.list` floating 0·conflicts 0. 바디 이름에 `STEP대기_CB4-25`·`STEP대기_CB6-16` 0. 서명은 이 파일 기준으로 sigpatch 다시(해시). 결과 `tools/out/mech_STEPSWAP/r2/verify_out.json`.
 
-## 5. 못 한 것
+## 5. 문서
 
-- 사본(SFB5-10 :2~102, CB4-25 :2~4, CB4-20 :2·:3, KQ2L08 :2·:3, SY3120 :2~6, KQ2L06 :2~, CB6-20 :2~) 전부의 겹침 수치 확인: 전체 간섭이 30분 예산을 넘음(4-1).
-- KDM10-06 실물 교체(SW-R6): 소켓 관 구멍이 짝 방향 아래로 나 있다. 걸이 윗판 구멍과 U7 관 6줄 길을 새로 정하는 배치 결정이라 구동 후보로 넘김.
-- CB6-16 ×2·CB4-25 ×4 STEP: 이번 Chrome 확장 탭에서 미스미 머리가 '로그인 / 회원가입'(실행 규칙 12 → 받지 않음). 임시 형상으로 진행(실행 규칙 10).
+- BOM `docs/bom/FSAP_v2.5.9_purchased.csv`(CB6-16·CB4-25 행: 모델 바디 실물 STEP, 자료대기 '-'), `FSAP_v2.5.9_made.csv`(v2.5.7과 같음, v2.5.8은 BOM 그대로).
+- 자료대기 D-115(CB6-16)·D-129(CB4-25)에 교체 기록.
+- 결정로그 '구동 STEPSWAP r2' SW2-01. CHANGELOG [Unreleased] 한 줄.
+- 서명: `ledger.py sigpatch --parts r2/changed_parts.json --removed <임시 6> --bolts r2/changed_bolts.json`(바뀜 6, 없어짐 6). `tools/out/bolts.json`의 옛 `STEP대기_CB4-25`·`STEP대기_CB6-16` 6줄은 sigpatch가 남겨 지움(워크플로우 메모).
+
+## 6. 디테일로 남김(E-02, 수정 회차 안 씀)
+
+- SW2-D1: CB6-16 머리(Z 150~156) 아래 육각 렌치 길(−Z), CB4-25 머리 앞(−Y, 밸브 줄 X 1044.5~1107.5 바깥) 렌치 길 프로브 확인.
 
 ## 워크플로우 메모
 
-- 앱이 다른 연결의 오래된 batch로 막혀 있으면 MCP 부서는 아무것도 못 한다. `running`으로 확인하고 CLI로 넘어갔다 — CLI는 603단계 기록이 한 번에 18분, 실패하면 처음부터라 2번 실패로 36분을 잃었다.
-- CLI 함정 두 개(엔진 후보): ① 지운 바디 이름은 `body.rename` 대상으로 다시 못 쓴다(`solid.box` 새 이름으로는 됨). ② 루트에서 그려 옮긴 바디는 컴포넌트를 지우면 루트로 돌아온다(먼저 `solid.remove`), STEP으로 넣은 컴포넌트는 반대로 `solid.remove` 뒤 지우면 타임라인 실패.
-- `inspect.clearance`에 정의 바디 이름만 주면 첫 occurrence만 잰 것으로 보인다(같은 레귤레이터 이음 :2·:3이 보고되지 않음). 사본 전부는 전체 `inspect.interference`로 봤다.
+- STEP으로 바꿀 때 임시 바디를 `solid.remove`한 뒤 그 컴포넌트를 `component.delete`하면 Remove 피처가 다시 열 때 실패한다(앱 안에서는 오류 0으로 보임). 임시 형상이 컴포넌트째면 `component.delete`만 쓰거나, 지운 뒤 `timeline.dependents`/저장본 CLI 다시 열기로 확인해야 한다. 이번 회차와 v2.5.6 회차 두 번 반복.
+- `ledger.py sigpatch --removed`는 서명 parts만 지우고 `bolts.json`의 같은 볼트 줄은 남긴다(이름이 바뀐 볼트는 두 줄이 됨).
+- `inspect.clearance`에 `bodies`만 주면 against가 비어 0쌍을 잰다(목록 안 쌍만). 주변은 늘 against로 준다.
+- 지시서 (b)의 dirty 'merged' 문서 설명이 실제(이름 FSAP_v2.5.8, path null, undo 0)와 달랐다.
