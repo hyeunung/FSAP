@@ -1,0 +1,1 @@
+{"base": "3D_Modeling/FSAP_v2.6.2.sc", "result": "3D_Modeling/FSAP_v2.6.3.sc", "note": "동작 연구 7개 키만 바꿈(형상·조인트 정의 변경 없음). 회전 조인트 값은 motion.list(라디안)를 도로 바꿔 보냄. edit.checkpoint 80과 시험 1회(MAINT_HEAD 키 1개 → undo)는 기록에서 뺌"}

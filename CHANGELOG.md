@@ -8,6 +8,8 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.6.3 REG-01: 동작 연구 키만 바꿈(형상·조인트 정의 변경 없음). CYCLE_L·S·G1·G2·MAINT_HEAD에 U7 조인트 6개(J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH) 대기값 0 키, SEAM_U7에 CST_X·CST_Y·LATCH 0, MAINT_U7에 CUT·TUCK·FEED 0 — 연구 전환 때 U7 상태 넘어옴 0(U7_BINDER 대기 상자 확인). 회귀 CYCLE_L 79~379 중 282단계 기준선 밖 겹침 0, 남은 약 2,100단계·자세 218점 못 본 범위. 보고서 docs/reports/mechanism/mech_REG-01_model.md
+
 - v2.6.2 DC2-08 수정 1회차: 형상 변경 없음(문서 이름·설명만). 소켓 KDM10S-06_M08 ↔ 밸브 쪽 관 TU0604_M08K_U7_1~6을 J_U7_HGT −4·0·+6에서 CAD 실측(검사 사본에서만 관 −X 0.02 떼어 같은 평면 맞닿음 제거) — 겹침 0, unchecked 0, truncated false. CB3-10 머리 ↔ 관 2.5 안 0. 보고서 docs/reports/mechanism/mech_DC2-08_model1.md
 
 - v2.6.1 DC2-08: KDM10 다관 커넥터 소켓 받침 `P_M08_KDM_BRKT` 새 형상(앞판+기둥+발, A5052)으로 걸이 `P_M05_HOLDER` 날개 C 위(M5 탭 2 새로)에 CB5-12_M08_PZ_KDM ×2로 고정, 소켓·CB3-10 ×4·받침을 U8_PNEU → U7_FIXED 리지드(J_U7_HGT 따라감). 옛 CB5-12_M08_NZ_KDM ×2 지움. HGT −4·0·+6 × CST_X 0·25에서 짝 축 어긋남 0, 과제 범위 겹침 0. 결정로그 DC2-08-M1~M4, 보고서 docs/reports/mechanism/mech_DC2-08_model.md
