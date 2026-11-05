@@ -8,6 +8,8 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.5.6 STEPSWAP: STEP대기 16형번 실물 STEP 교체(풀리 N16·6200ZZ·벨트 HTBO-S5M150-792·MGPM25-40Z·CB6-20·SFB5-10 ×102·MSTH6-20·CB3-10·기둥 HFS8-80160-1090·KQ2L08·SS5Y3·SY3120·LR6·CB4-20), MGP 가운데 +20·대차판·승강판 구멍 다시, 공압 피팅·관 17줄 다시, 새 STEP대기 CB6-16 ×2·CB4-25 ×4, KDM10-06 남음. BOM FSAP_v2.5.6, 결정로그 SW-R1~R7·SW-D1~D5, 자료대기 D-115·117·120·126·128·129
+
 - v2.5.5 DC2-03 결과 문서: BOM·설계검토서(FSAP_v2.5.5, v2.5.4 변경 포함), 결정로그 DC2-03 결과·디테일 DC203-D1~D6, 요구서 DC2-03 해결, 자료대기 D-82·D-108 쓰는 곳
 
 - v2.5.3 M07-K1 결과 문서: BOM·설계검토서(FSAP_v2.5.3), 결정로그 결과·디테일 M07K-D1~D5, 요구서 M07 행 갱신, 자료대기 D-54·D-116 갱신
