@@ -8,6 +8,8 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.6.0 M08R(C-32): 라이트 커튼 임시 F3SG-4RA1520-14 ×4 → Omron F3SG-4RA0800-14 실물 STEP 2세트(앞 1E·1R, 옆 2E·2R, Z −45~818). 기둥 HFS8-4080-2370 → 1650(FL), 1900 → 1175(FR·R), 위 캡 내림. 위 금구·LC2F 판·CB5-12 ×4·HNTT8-5 ×4 Z −700. 2E 금구 볼트 CB5-12 ×2 → STEP대기_CB5-6. 금구 8 → STEP대기_F39-LSGF(이름·형번). 금구 4 컴포넌트 U8 리지드 묶음. 과제 안 새 겹침 0. 컴포넌트 생김·없어짐으로 가운데 자리(E-05). 중간 파일 v2.5.10(같은 형상). 결정로그 M08R-M1~M4·S3, 보고서 docs/reports/mechanism/mech_M08R_model.md
+
 - v2.5.9 STEPSWAP r2: STEP대기 CB6-16 ×2(U5 승강판 → MGP 끝판)·CB4-25 ×4(SS5Y3 베이스 → 보 앞벽) 미스미 실물 STEP으로 교체(같은 자리, 조인트·행정 변화 없음). 과제 안 검사 새 겹침 0. BOM FSAP_v2.5.9_*, 자료대기 D-115·D-129, 보고서 docs/reports/mechanism/mech_STEPSWAP_model.md
 
 - v2.5.8 회귀 수정 REG-01-X1: CYCLE_G1 J_U5_LIFT 키 [320,0] → [318,0],[319,1],[320,1](먼 쪽 바퀴 트레드가 320단계 테이프 윗면에 0.4 mm 들어가던 것). 형상 변경 없음, 318~321 겹침 0. 보고서 docs/reports/mechanism/mech_regfix.md
