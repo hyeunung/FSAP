@@ -1,0 +1,474 @@
+{
+ "run": "mech_2026-11-04_STEPWAIT-REG-01",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-04",
+ "journal": "wf_e0381f55-c8d",
+ "totals": {
+  "agents": 13,
+  "agent_sec": 3564,
+  "input": 1518423,
+  "cache_read": 9774016,
+  "output": 105177,
+  "tools": 140,
+  "wall_sec": 3563
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 127,
+   "agents": 1,
+   "output": 11504
+  },
+  "▸ modeling-round #6": {
+   "sec": 3437,
+   "agents": 12,
+   "output": 93673
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 6",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 127,
+   "tokens": {
+    "input": 134662,
+    "cache_read": 726127,
+    "output": 11504
+   },
+   "tools": 8,
+   "turns": 8
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 86,
+   "tokens": {
+    "input": 67857,
+    "cache_read": 121964,
+    "output": 11244
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 103,
+   "tokens": {
+    "input": 87623,
+    "cache_read": 958294,
+    "output": 6685
+   },
+   "tools": 16,
+   "turns": 13
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 56,
+   "tokens": {
+    "input": 88201,
+    "cache_read": 562703,
+    "output": 3055
+   },
+   "tools": 11,
+   "turns": 8
+  },
+  {
+   "label": "REG-01 측정부",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 159,
+   "tokens": {
+    "input": 102609,
+    "cache_read": 1320886,
+    "output": 12705
+   },
+   "tools": 16,
+   "turns": 16
+  },
+  {
+   "label": "REG-01 기구설계부",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 413,
+   "tokens": {
+    "input": 108387,
+    "cache_read": 1273562,
+    "output": 13387
+   },
+   "tools": 18,
+   "turns": 14
+  },
+  {
+   "label": "REG-01 기구설계부 수정1",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 112,
+   "tokens": {
+    "input": 59143,
+    "cache_read": 892506,
+    "output": 8797
+   },
+   "tools": 11,
+   "turns": 10
+  },
+  {
+   "label": "REG-01 기구설계부 수정2",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 136,
+   "tokens": {
+    "input": 61911,
+    "cache_read": 800560,
+    "output": 12902
+   },
+   "tools": 10,
+   "turns": 9
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 2225,
+   "tokens": {
+    "input": 539709,
+    "cache_read": 2318936,
+    "output": 13269
+   },
+   "tools": 29,
+   "turns": 29
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 24,
+   "tokens": {
+    "input": 78170,
+    "cache_read": 226098,
+    "output": 1294
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 53,
+   "tokens": {
+    "input": 82126,
+    "cache_read": 227716,
+    "output": 4451
+   },
+   "tools": 8,
+   "turns": 4
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #6",
+   "status": "done",
+   "sec": 44,
+   "tokens": {
+    "input": 78631,
+    "cache_read": 303865,
+    "output": 2228
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #6",
+   "status": "running",
+   "sec": 26,
+   "tokens": {
+    "input": 29394,
+    "cache_read": 40799,
+    "output": 3656
+   },
+   "tools": 1,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [
+  "REG-01 기구설계부 수정1",
+  "REG-01 기구설계부 수정2"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "REG-01",
+    "status": "설계 미달(수정 상한)",
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "못 본 범위 기준선 밖 겹침 0",
+      "where": "설계안",
+      "evidence": "회귀 실행 결과 항목(E-17, 설계부는 회귀를 돌리지 않음). 판정: r4/judge.json bad = 0. r3 빈 시험 bad 0, 본 범위 누계 0",
+      "fix": "그 자리만 고친다"
+     },
+     {
+      "kind": "동작",
+      "what": "truncated 0",
+      "where": "설계안",
+      "evidence": "회귀 실행 결과 항목. judge.py가 truncated 단계를 본 것에서 빼 unseen에 넣음 — 겹침 0으로 셈되지 않음. r3 빈 시험 0",
+      "fix": "그 자리만 고친다"
+     },
+     {
+      "kind": "동작",
+      "what": "행정 막힘·unmoved 0",
+      "where": "설계안",
+      "evidence": "회귀 실행 결과 항목. judge.json unmoved·stopped = 0. r3 빈 시험 0, v2.6.4 본 범위 0",
+      "fix": "그 자리만 고친다"
+     }
+    ],
+    "design": {
+     "basis": "벤치마크 없음 — 검증 과제. 출발점은 r3 회귀 도구(tools/out/mech_REG-01/r3 worker.py·chunk7.py·sets.json·an.py)와 measure_remaining_plan.json. 이번에 r4로 복사·수정.",
+     "revisions": [
+      {
+       "round": 1,
+       "where": "설계보고서 판정 절(4절)·회귀 지시",
+       "change": "판정 '각 단계 clearance 겹침·truncated 0' → r4/an.py bad·truncated·unmoved·stopped 0 합격 규칙 + truncated 단계 유닛 묶음별 다시 재기(호출 ≤ 480 s), 다시 끊기면 못 본 범위",
+       "why": "안 되는 곳 '겹침 0'·'truncated 0'은 회귀 결과 항목이라 설계부가 채울 수 없음. 회귀 결과에서 바로 합불이 나도록 판정 파일·규칙을 못 박음. 범위·회차·도구 수정은 그대로"
+      },
+      {
+       "round": 2,
+       "where": "회귀 도구 tools/out/mech_REG-01/r4/(chunk7.py·judge.py)",
+       "change": "글로 된 규칙·지시 → 실행 도구: chunk7.py 0 몰기 튜플 (J_U6_HGT,J_U7_HGT) → (+J_U6_SHIFT) 2곳, POSE 점마다 REST → 묶음 첫 점만 REST; judge.py 새로(bad·truncated·unmoved·stopped·unseen, truncated 단계는 본 것에서 뺌, pass_all)",
+       "why": "세 결과 항목은 회귀 실행으로만 나므로 합불이 기계적으로 나게 도구까지 만듦. 빈 시험 범위 1,424단계가 측정과 일치, r3 결과 bad·truncated·unmoved·stopped 0"
+      }
+     ]
+    }
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "CYCLE_G1 129~514: 어림 초과(시작 전)",
+    "CYCLE_G2 0~630: 어림 초과(시작 전)",
+    "STATES 33·34, POSE 0~182: 자세 어림 초과(시작 전, 점당 300 s)",
+    "CYCLE_L 0~716, STATES 0~23·31~32, MAINT_HEAD 0~1, MAINT_U7 0~8·10~13: 어림 초과(v2.6.3에서 다 봤고 겹침 0, 차이는 U8 고정 볼트 2개뿐)",
+    "F_STATES 0~34: 명세에서 뺌(자세)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2201,
+    "estimate_s": 22049.1,
+    "actual_s": 1656.3,
+    "chunk_times": [
+     {
+      "id": "CYCLE_S 325~450 (40묶음)",
+      "elapsed_s": 4900,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1 0~128 (43묶음)",
+      "elapsed_s": 5500,
+      "status": "ok"
+     },
+     {
+      "id": "STATES 24 (자세)",
+      "elapsed_s": 300,
+      "status": "ok"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "연구 CYCLE_S 325 ok 60.0 s/단계, 자세 STATES 24 ok 300.0 s/점, 오류 없음",
+    "per_step_s": {
+     "study": 60.0217,
+     "pose": 300.0501
+    },
+    "pose_steps": 186,
+    "reduced": "어림 22049 s > 상한 1800 s → 시작 전에 앞 239단계(+자세 시험 1점)만 돌리고 뒤 1960단계는 못 본 범위",
+    "seen": [
+     "CYCLE_S 325·330·334~335·339~340·343~345·348~350·352~450 (v2.6.4 CYCLE_S 43~450 전부 봄)",
+     "CYCLE_G1 0~128",
+     "STATES 24 (THICK_6 자세)"
+    ],
+    "unseen": [
+     "CYCLE_G1 129~514: 어림 초과(시작 전)",
+     "CYCLE_G2 0~630: 어림 초과(시작 전)",
+     "STATES 33·34, POSE 0~182: 자세 어림 초과(시작 전, 점당 300 s)",
+     "CYCLE_L 0~716, STATES 0~23·31~32, MAINT_HEAD 0~1, MAINT_U7 0~8·10~13: 어림 초과(v2.6.3에서 다 봤고 겹침 0, 차이는 U8 고정 볼트 2개뿐)",
+     "F_STATES 0~34: 명세에서 뺌(자세)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 110,
+     "cad_calls": 4,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 3,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "REG-01 측정부",
+    "phase": "REG-01 · 측정",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 141,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "REG-01 기구설계부",
+    "phase": "REG-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 380,
+     "cad_calls": 1,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 240,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "REG-01 기구설계부 수정1",
+    "phase": "REG-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "REG-01 기구설계부 수정2",
+    "phase": "REG-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2700,
+     "cad_calls": 241,
+     "file_opens": 8,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 429,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 40,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-185",
+   "WF-186"
+  ],
+  "repeat_ids": [],
+  "one_line": "회고 커밋 141f39a: WF-185(검증 과제 설계부 판정에 회귀 결과 항목), WF-186(이전 실행 dirty 문서로 MCP 못 씀) 추가 — docs/reports/engine-candidates.md·최종 보고서 _3. 엔진 파일 고친 것 없음, 푸시 안 함."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 13,
+  "시간 h": 1.0,
+  "출력 토큰": 105177,
+  "실패": 0
+ }
+}
