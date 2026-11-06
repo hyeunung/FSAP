@@ -1,0 +1,674 @@
+{
+ "run": "mech_2026-11-06_LITE-STEPWAIT-REG-01",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-06",
+ "journal": "wf_1b5e622a-738",
+ "totals": {
+  "agents": 21,
+  "agent_sec": 14778,
+  "input": 4360685,
+  "cache_read": 35638511,
+  "output": 296097,
+  "tools": 403,
+  "wall_sec": 14780
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 282,
+   "agents": 3,
+   "output": 32273
+  },
+  "▸ modeling-round": {
+   "sec": 14496,
+   "agents": 18,
+   "output": 263824
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 76,
+   "tokens": {
+    "input": 67327,
+    "cache_read": 54490,
+    "output": 11063
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 41,
+   "tokens": {
+    "input": 85189,
+    "cache_read": 134732,
+    "output": 4895
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 165,
+   "tokens": {
+    "input": 120729,
+    "cache_read": 892469,
+    "output": 16315
+   },
+   "tools": 16,
+   "turns": 10
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 81,
+   "tokens": {
+    "input": 26650,
+    "cache_read": 95452,
+    "output": 11040
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 341,
+   "tokens": {
+    "input": 88240,
+    "cache_read": 972939,
+    "output": 7115
+   },
+   "tools": 19,
+   "turns": 13
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 20,
+   "tokens": {
+    "input": 75279,
+    "cache_read": 220231,
+    "output": 1535
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "LITE 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1009,
+   "tokens": {
+    "input": 333577,
+    "cache_read": 5278036,
+    "output": 31119
+   },
+   "tools": 56,
+   "turns": 44
+  },
+  {
+   "label": "LITE 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 19,
+   "tokens": {
+    "input": 74394,
+    "cache_read": 71870,
+    "output": 812
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "LITE 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1047,
+   "tokens": {
+    "input": 186881,
+    "cache_read": 5038625,
+    "output": 51134
+   },
+   "tools": 41,
+   "turns": 38
+  },
+  {
+   "label": "LITE 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 83,
+   "tokens": {
+    "input": 50729,
+    "cache_read": 307218,
+    "output": 7803
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "LITE 완료 판정 확인 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 119,
+   "tokens": {
+    "input": 105883,
+    "cache_read": 622334,
+    "output": 10705
+   },
+   "tools": 8,
+   "turns": 8
+  },
+  {
+   "label": "LITE 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2368,
+   "tokens": {
+    "input": 711972,
+    "cache_read": 7370896,
+    "output": 40438
+   },
+   "tools": 76,
+   "turns": 55
+  },
+  {
+   "label": "LITE 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 586,
+   "tokens": {
+    "input": 135400,
+    "cache_read": 2429182,
+    "output": 16238
+   },
+   "tools": 25,
+   "turns": 24
+  },
+  {
+   "label": "LITE 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 73,
+   "tokens": {
+    "input": 89758,
+    "cache_read": 659741,
+    "output": 5465
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "REG-01 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3301,
+   "tokens": {
+    "input": 788009,
+    "cache_read": 4461776,
+    "output": 25595
+   },
+   "tools": 47,
+   "turns": 43
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3868,
+   "tokens": {
+    "input": 786090,
+    "cache_read": 4171893,
+    "output": 21443
+   },
+   "tools": 45,
+   "turns": 42
+  },
+  {
+   "label": "모델링부 회귀 수정",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1383,
+   "tokens": {
+    "input": 328445,
+    "cache_read": 1266056,
+    "output": 13561
+   },
+   "tools": 19,
+   "turns": 16
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 64,
+   "tokens": {
+    "input": 94049,
+    "cache_read": 667734,
+    "output": 5770
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 56,
+   "tokens": {
+    "input": 91909,
+    "cache_read": 422048,
+    "output": 5692
+   },
+   "tools": 5,
+   "turns": 6
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 47,
+   "tokens": {
+    "input": 84833,
+    "cache_read": 389745,
+    "output": 4080
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 31,
+   "tokens": {
+    "input": 35342,
+    "cache_read": 111044,
+    "output": 4279
+   },
+   "tools": 5,
+   "turns": 2
+  }
+ ],
+ "fix_agents": [
+  "LITE 기구설계부 수정1",
+  "모델링부 회귀 수정"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "LITE",
+    "size": "M",
+    "status": "완료",
+    "chosen": "LITE-A1",
+    "doc": "3D_Modeling/FSAP_v2.6.5.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "REG-01",
+    "size": "S",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.6.5.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": false,
+   "problems": [
+    {
+     "kind": "동작",
+     "what": "POSE 8(J_U6_HGT +6, J_U7_HGT -4, 노루발 20) 자세에서 U7 카세트 안내 P_M05_GUIDE와 U6 캐리지 P_M06_CARR가 291.7 mm3 겹침(REG-01 r4에서 찾음, 이번 회귀 본 범위 밖이라 다시 보지 않았고 형상도 그대로). 두 HGT 값이 다른 맞춤 잘못 자세(machine.json '두 조인트는 같은 값' 밖)",
+     "where": "P_M05_GUIDE ↔ P_M06_CARR, X 12~18 · Y -107~-100 · Z 34~42, FSAP_v2.6.5",
+     "evidence": "tools/out/mech_REG-01/r4/an_runsB.json, docs/reports/mechanism/mech_REG-01_model.md 3절",
+     "fix": "사용자·선정부 결정: (가) POSE 8·9를 정의 밖 자세로 회귀 목록에서 빼기, 또는 (나) U6·U7 높이를 한 조정으로 묶거나 GUIDE↔CARR 틈을 10 mm 넘게 키우기",
+     "external": false
+    }
+   ],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "CYCLE_G2 254,258-259,263-264,268-269,273-274,278-279,283-284,288-289,293-294,297-299,301-422 (전체 상한)",
+    "CYCLE_G2 423-630 (어림 초과, 시작 전)",
+    "MAINT_U7 9 (어림 초과, 시작 전)",
+    "POSE 83-167,169-171,173-175,177-181 (어림 초과, 시작 전)",
+    "F_STATES 0-34 (어림 초과, 시작 전)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 919,
+    "estimate_s": 10388,
+    "actual_s": 1803,
+    "chunk_times": [
+     {
+      "id": "A(CYCLE_G1·G2·MAINT_U7, 12병렬)",
+      "elapsed_s": 1803.2,
+      "status": "partial"
+     },
+     {
+      "id": "B(POSE·F_STATES, 6병렬)",
+      "elapsed_s": 1267.2,
+      "status": "partial"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "연구 CYCLE_G1 392 ok 40.0 s/단계, 자세 POSE 40 ok 280.3 s/점, 오류 없음",
+    "per_step_s": {
+     "study": 40,
+     "pose": 280.3
+    },
+    "pose_steps": 170,
+    "reduced": "A 어림 2,494 s > 1,800 s → 시작 전 앞 539단계만(CYCLE_G2 423~630·MAINT_U7 9 못 본 범위); B 어림 7,894 s > 1,800 s → 앞 39점만(POSE 83~181 일부·F_STATES 못 본 범위)",
+    "seen": [
+     "CYCLE_G1 392,395-396,399-400,402-404,406-514",
+     "CYCLE_G2 0-253,255-257,260-262,265-267,270-272,275-277,280-282,285-287,290-292,295-296,300",
+     "POSE 40-53,55-57,59-61,63-67,69-82"
+    ],
+    "unseen": [
+     "CYCLE_G2 254,258-259,263-264,268-269,273-274,278-279,283-284,288-289,293-294,297-299,301-422 (전체 상한)",
+     "CYCLE_G2 423-630 (어림 초과, 시작 전)",
+     "MAINT_U7 9 (어림 초과, 시작 전)",
+     "POSE 83-167,169-171,173-175,177-181 (어림 초과, 시작 전)",
+     "F_STATES 0-34 (어림 초과, 시작 전)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 400,
+     "cad_calls": 3,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 242,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "LITE 측정부",
+    "phase": "LITE · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1000,
+     "cad_calls": 7,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 242,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "LITE 카탈로그부",
+    "phase": "LITE · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 30,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "LITE 기구설계부",
+    "phase": "LITE · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1000,
+     "cad_calls": 14,
+     "file_opens": 0,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "LITE 기구설계부 수정1",
+    "phase": "LITE · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "LITE 완료 판정 확인 1",
+    "phase": "LITE · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "LITE 모델링부",
+    "phase": "LITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2400,
+     "cad_calls": 14,
+     "file_opens": 4,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 242,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "LITE 검도·체결",
+    "phase": "LITE · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 560,
+     "cad_calls": 2,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 102,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "LITE 문서·커밋",
+    "phase": "LITE · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "REG-01 모델링부",
+    "phase": "REG-01 · 모델링",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 3300,
+     "cad_calls": 4,
+     "file_opens": 12,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 353,
+     "mcp_restarts": [],
+     "over_reason": "등급 S 모델링 예상 30분의 2배(60분) 안이다(약 55분). 회귀 상한 30분과 세션 12개 동시 열기 약 6분이 대부분이다"
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3900,
+     "cad_calls": 455,
+     "file_opens": 18,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 345,
+     "mcp_restarts": [],
+     "over_reason": "회귀 등급 상한 안(예상 M 60분 대비 약 65분, 2배 안). run.sh wait 버그로 약 10분 놀림"
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "모델링부 회귀 수정",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1330,
+     "cad_calls": 4,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 300,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-197",
+   "WF-198",
+   "WF-199",
+   "WF-200"
+  ],
+  "repeat_ids": [
+   "WF-186"
+  ],
+  "one_line": "회고 완료: 신규 WF-197~200, WF-186 반복 2. docs/reports/engine-candidates.md와 최종 보고서에 '## 워크플로우 개선 후보' 절을 기록하고 커밋 a9d1cab(푸시 안 함). 고친 엔진 파일 없음."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 21,
+  "시간 h": 4.1,
+  "출력 토큰": 296097,
+  "실패": 0
+ }
+}
