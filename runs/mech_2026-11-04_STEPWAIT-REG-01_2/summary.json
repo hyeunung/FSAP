@@ -1,0 +1,494 @@
+{
+ "run": "mech_2026-11-04_STEPWAIT-REG-01",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-04",
+ "journal": "wf_e0381f55-c8d",
+ "totals": {
+  "agents": 13,
+  "agent_sec": 6743,
+  "input": 2381161,
+  "cache_read": 25711764,
+  "output": 152458,
+  "tools": 279,
+  "wall_sec": 6743
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 135,
+   "agents": 1,
+   "output": 12345
+  },
+  "▸ modeling-round #5": {
+   "sec": 6608,
+   "agents": 12,
+   "output": 140113
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 5",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 135,
+   "tokens": {
+    "input": 129356,
+    "cache_read": 1081763,
+    "output": 12345
+   },
+   "tools": 14,
+   "turns": 11
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 76,
+   "tokens": {
+    "input": 67476,
+    "cache_read": 54398,
+    "output": 11035
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 72,
+   "tokens": {
+    "input": 88172,
+    "cache_read": 966931,
+    "output": 6428
+   },
+   "tools": 16,
+   "turns": 13
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 162,
+   "tokens": {
+    "input": 121360,
+    "cache_read": 2886865,
+    "output": 7140
+   },
+   "tools": 38,
+   "turns": 30
+  },
+  {
+   "label": "STEPSWAP 모델링부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 717,
+   "tokens": {
+    "input": 190955,
+    "cache_read": 8137156,
+    "output": 30414
+   },
+   "tools": 69,
+   "turns": 60
+  },
+  {
+   "label": "STEPSWAP 검도·체결",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 299,
+   "tokens": {
+    "input": 125219,
+    "cache_read": 3617769,
+    "output": 18955
+   },
+   "tools": 36,
+   "turns": 36
+  },
+  {
+   "label": "STEPSWAP 문서·커밋",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 56,
+   "tokens": {
+    "input": 88135,
+    "cache_read": 319243,
+    "output": 3894
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "REG-01 모델링부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 2531,
+   "tokens": {
+    "input": 668382,
+    "cache_read": 3868319,
+    "output": 24610
+   },
+   "tools": 39,
+   "turns": 39
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 2452,
+   "tokens": {
+    "input": 609798,
+    "cache_read": 3103918,
+    "output": 17707
+   },
+   "tools": 36,
+   "turns": 33
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 128,
+   "tokens": {
+    "input": 100967,
+    "cache_read": 867463,
+    "output": 9151
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 43,
+   "tokens": {
+    "input": 82618,
+    "cache_read": 309988,
+    "output": 4324
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 42,
+   "tokens": {
+    "input": 79481,
+    "cache_read": 457152,
+    "output": 2755
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #5",
+   "status": "running",
+   "sec": 30,
+   "tokens": {
+    "input": 29242,
+    "cache_read": 40799,
+    "output": 3700
+   },
+   "tools": 1,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPSWAP",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.6.4.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "M5 나사 물림 3 mm(0.6d)로 짧음 — 기존 M08R-D1, 이번 교체로 새로 생긴 것 아님",
+      "where": "CB5-6_M08_PY_LC2F:1·:2 ↔ STEP대기_F39-LSGF_M08_2E(_2) 탭 판 t3",
+      "evidence": "탐침 Ø4.2×2.8 겹침 0(탭 구멍 있음), Ø8 대조 101.9 mm³(판 있음), 판 Y −1558~−1555",
+      "fix": "동봉 2E 금구 실물 치수로 다시 본다. 탭 판이 t3이면 CB5-10 + M5 너트 뒤 체결로 바꾼다(기록만, E-02)",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "REG-01",
+    "size": "M",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.6.4.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "CYCLE_S 325·330·334~335·339~340·343~345·348~350·352~362: 전체 상한",
+    "CYCLE_S 363~450: 어림 초과(시작 전)",
+    "CYCLE_G1 0~514, CYCLE_G2 0~630: 어림 초과(시작 전)",
+    "STATES 24·33·34, POSE 0~182: 자세 어림 초과(시작 전, 점당 300 s)",
+    "CYCLE_L 0~716, STATES 0~23·31~32, MAINT_HEAD 0~1, MAINT_U7 0~8·10~13: v2.6.4에서 어림 초과(v2.6.3에서 다 봤고 겹침 0, 차이는 U8 고정 볼트 2개뿐)",
+    "F_STATES 0~34: 명세에서 뺌(자세)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2481,
+    "estimate_s": 20607.5,
+    "actual_s": 1801.2,
+    "chunk_times": [
+     {
+      "id": "CYCLE_S 43-44(trial)",
+      "elapsed_s": 95,
+      "status": "ok"
+     },
+     {
+      "id": "STATES 25(pose trial)",
+      "elapsed_s": 300,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S 49",
+      "elapsed_s": 50.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S 53-54",
+      "elapsed_s": 400.3,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S 58-74 조각",
+      "elapsed_s": 195.1,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_U7 9",
+      "elapsed_s": 195.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S 76-320(49묶음, 5단계씩)",
+      "elapsed_s": 200,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S 321-362(9묶음)",
+      "elapsed_s": 160.1,
+      "status": "cut"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "연구 CYCLE_S 43~44 ok 47.5 s/단계, 자세 STATES 25 ok 300 s/점, 오류 없음",
+    "per_step_s": {
+     "study": 47.517,
+     "pose": 300.047
+    },
+    "pose_steps": 187,
+    "reduced": "어림 20,607 s > 상한 1,800 s → 시작 전에 앞 303단계만 돌리고 뒤 2,178단계는 못 본 범위(어림 초과). 상한에 끊겨 실제 본 것은 283단계 + 자세 1점",
+    "seen": [
+     "CYCLE_S 43~44·49·53~54·58~59·62~64·67~69·71~74",
+     "CYCLE_S 76~324·326~329·331~333·336~338·341~342·346~347·351",
+     "MAINT_U7 9",
+     "STATES 25(THICK_16 자세)"
+    ],
+    "unseen": [
+     "CYCLE_S 325·330·334~335·339~340·343~345·348~350·352~362: 전체 상한",
+     "CYCLE_S 363~450: 어림 초과(시작 전)",
+     "CYCLE_G1 0~514, CYCLE_G2 0~630: 어림 초과(시작 전)",
+     "STATES 24·33·34, POSE 0~182: 자세 어림 초과(시작 전, 점당 300 s)",
+     "CYCLE_L 0~716, STATES 0~23·31~32, MAINT_HEAD 0~1, MAINT_U7 0~8·10~13: v2.6.4에서 어림 초과(v2.6.3에서 다 봤고 겹침 0, 차이는 U8 고정 볼트 2개뿐)",
+     "F_STATES 0~34: 명세에서 뺌(자세)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 6,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 16,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 모델링부",
+    "phase": "STEPSWAP · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 695,
+     "cad_calls": 21,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 297,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 검도·체결",
+    "phase": "STEPSWAP · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 12,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 문서·커밋",
+    "phase": "STEPSWAP · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "REG-01 모델링부",
+    "phase": "REG-01 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2800,
+     "cad_calls": 12,
+     "file_opens": 10,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 493,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2700,
+     "cad_calls": 293,
+     "file_opens": 8,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 431,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 110,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "STEPSWAP 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 CB5-6_M08_PY_LC2F, STEP대기_CB5-6_M08_PY_LC2F이면 가운데 자리(E-05)"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-184"
+  ],
+  "repeat_ids": [
+   "WF-178"
+  ],
+  "one_line": "회고를 커밋했다(1508c91, 푸시는 안 함). 고친 엔진 파일은 없다. WF-184를 새로 올렸다: 컴포넌트가 늘거나 줄었는데 버전을 마지막 자리로 올린 건이다. WF-178은 반복 수를 1 올렸다: REG-01 모델링부가 설계 파일을 10번 열었고, 전체 회귀는 2,481단계 중 283단계만 봤다. 바뀐 파일은 FSAP/docs/reports/engine-candidates.md와 final_mech_2026-11-04_STEPWAIT-REG-01_2.md다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 13,
+  "시간 h": 1.9,
+  "출력 토큰": 152458,
+  "실패": 0
+ }
+}
