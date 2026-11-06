@@ -8,6 +8,8 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.6.5 LITE(모델 무게 줄이기, WF-196): 형상·부품 수·BOM은 그대로 두고 피처 이력만 바꿈. P_M07_BEAM — Box16을 처음부터 X −2380~1230·Y 120~320으로, 구멍 묶음 HB·HK·HT를 R12·속 앞으로, 외곽 깎기 SK_M07_BEAM_OUT+Extrude51·끝 늘이기 OffsetFace20 지우고 Fillet1(R12 긴 모서리 4), 속 IN X −2381·3612(boolean retry 6 → 1). P_DC205_STRIP — Hole1~8 → SK_DC205_TAP+TAP_DC205 cut 한 번 + cosmetic 나사 M5 ×8. CLI 열기 242.1 s → 100.1 s(상한 240). BOM 125행/2,457 같음, 다른 바디 2,647개 bbox·무게중심 차 0, 모델 bbox 같음, 보 공칭 복귀(+27.8 g). 앱 문서 dirty라 CLI run --save. 생성기 gen_v2_m07·gen_v2_m07_fix1·gen_dc2_05 고침. 보고서 docs/reports/mechanism/mech_LITE_model.md
+
 - v2.6.4 STEPSWAP r3: STEP대기_CB5-6_M08_PY_LC2F ×2(옆 투광 L 날개 → 2E 금구 M5 탭) → 미스미 CB5-6 실물 STEP `CB5-6_M08_PY_LC2F:1·:2`(같은 자리·bbox, U8 리지드 9282·9283). 조인트·행정 변화 없음. 과제 안 새 겹침 0(나사 물림 unchecked 2는 M-08 의도). BOM FSAP_v2.6.4_*, 자료대기 D-135, 보고서 docs/reports/mechanism/mech_STEPSWAP_model.md
 
 - v2.6.3 REG-01: 동작 연구 키만 바꿈(형상·조인트 정의 변경 없음). CYCLE_L·S·G1·G2·MAINT_HEAD에 U7 조인트 6개(J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH) 대기값 0 키, SEAM_U7에 CST_X·CST_Y·LATCH 0, MAINT_U7에 CUT·TUCK·FEED 0 — 연구 전환 때 U7 상태 넘어옴 0(U7_BINDER 대기 상자 확인). 회귀 CYCLE_L 79~379 중 282단계 기준선 밖 겹침 0, 남은 약 2,100단계·자세 218점 못 본 범위. 보고서 docs/reports/mechanism/mech_REG-01_model.md

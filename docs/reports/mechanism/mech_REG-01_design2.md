@@ -1,52 +1,37 @@
-# REG-01 기구설계 수정 2회차 — 남은 1,655단계를 v2.5.8에 대고 실제로 돌릴 묶음 파일
+# REG-01 기구설계 수정 2회차 — 판정을 실행 가능한 도구로 (FSAP_v2.6.4, 2026-11-06)
 
-## 요약
-- 고친 곳 두 군데: (1) 못 본 범위를 REG-01-X2로 이름만 바꿔 올린 것을 되돌렸다. 요구서 5절 X2 행을 지우고 REG-01 하나로 남겼다. (2) 묶음 크기를 호출 480 s 안에 들도록 다시 셈해, 바로 돌릴 수 있는 regrun 명세 파일을 만들었다.
-- X1 키는 그대로 `[318,0],[319,1.0],[320,1.0],[321,30]`이다(CYCLE_G1 J_U5_LIFT). 모델링부가 이 키를 넣고 앱(MCP)에서 `save {path: 3D_Modeling/FSAP_v2.5.8.sc}` 한다.
-- 묶음 명세: `tools/out/mech_REG-01/design2/spec_v258_A1·A2.json`(캐시 들 때, 2회차 12.1·22.4분), `spec_v258_B1~B6.json`(캐시 안 들 때, 6회차 20.6~26.4분). 두 묶음 모두 1,655단계를 빠짐없이 덮는다.
-- 형상·조인트·구매품 변화 0, 부품 증감 0, 개념 충돌 없음. CAD 호출은 `running` 1번(앱이 비어 있는지 확인)뿐이고 파일은 열지 않았다.
-- 미완: 1,655단계 간섭 결과는 v2.5.8 저장 뒤 회귀 실행에서 나온다. 이 부서는 저장 금지이고, 실행에 1~2.5시간이 걸려 이 부서 시간 안에 못 본다.
+요약
+- **같은 안 REG-01-D1.** 형상·조인트·연구·구매품 변경 0, CAD 저장 0, 이번 회차 CAD 열기 0. 범위·회차(A1~A4)·세션 나누기는 `mech_REG-01_design.md`·`design1.md` 그대로.
+- **고친 곳:** 1회차의 '규칙(글)'을 회귀 담당이 그대로 돌리는 **도구 `tools/out/mech_REG-01/r4/`**로 바꿨다 — chunk7.py(J_U6_SHIFT 0 몰기·POSE 이어 몰기 실제 반영), judge.py(완료 판정 3항목 + 남은 못 본 범위 자동 계산).
+- **judge.py 빈 시험:** r3 결과(an_runsA·B)를 넣으면 bad 0·truncated 0·unmoved 0·stopped 0, 남은 못 본 범위 1,424단계(CYCLE_S 86·G1 509·G2 627·POSE 167·F_STATES 35) = 측정 보고서의 1,222 + 167 + 35와 정확히 같다.
+- **이 파일 이름의 2026-11-04 판(v2.5.8 묶음 계획)은 덮어썼다.** 옛 내용은 결정로그 '구동 REG-01 설계안' 수정 2(2026-11-04) 행에 남아 있다.
+- **미완:** 겹침·truncated·unmoved 실제 값은 회귀 실행 결과다. 이 부서는 회귀를 돌리지 않는다(E-17 "전체 사이클은 라운드 끝 전체 회귀가 한 번"). judge.json `pass_all`이 회귀 담당의 합불이다.
 
-## 1. 안 되는 곳과 고침
+## 1. 안 되는 곳과 고친 것
 
-| 항목 | 지난 안(수정 1) | 이번 회차 | 근거 |
-|---|---|---|---|
-| 못 본 범위 간섭 0(또는 문제를 구동 후보로 등록) | 범위를 REG-01-X2로 다시 올림 | X2 행 삭제, REG-01 상태 칸에 "본 932 / 남은 1,655, v2.5.8 + spec_v258_*로 본다" | 실행 규칙 13 "구동 과제와 구동 후보가 0이 될 때까지". 이름만 바꾸면 후보 수가 줄지 않는다(검토 지적) |
-| 묶음당 호출 8분 이내 | "연구 80~120단계" 어림만 있음 | 묶음마다 어림 호출 시간을 계산해 파일로 냄(2절). 최대 A 361 s, B 450 s | (480 − 열기 − 여유) ÷ 2.5069 s/단계 |
-
-## 2. 묶음 계산(design2/make_specs.py, 결과 design2/plan.txt)
-
-실측 기준값(mech_REG-01 runs4·regrun 출력):
-- 연구 단계당 2.5069 s: SEAM_U7 20~29 시험.
-- 열기: 단독 253.8 s(bench-open evaluate, 피처 1,978개 다시 계산). 8병렬일 때 300~420 s.
-- 체결 자세(F_STATES): 0~1 시험이 450 s에서 끊겼다. 열기를 빼면 1점에 약 150 s 넘게 걸린다고 보고 150 s로 어림했다.
-- 일반 자세(POSE): 열기 몫이 거의 전부라 1점 5 s로 어림했다.
-
-| 경우 | 조건 | 열기 어림 | 병렬 | 연구 묶음 | 자세 묶음 | 체결 묶음 | MAINT_U7 | 회차(각 ≤ 30분) |
-|---|---|---|---|---|---|---|---|---|
-| A | v2.5.8 bench-open adopted true | 60 s | 6 | 120단계 (480−60−60)/2.5 = 143 → 120 | 40점 | 2점 | 1단계 | A1 12.1분(연구 1,425), A2 22.4분(자세 183 + 체결 33 + MAINT 14) |
-| B | adopted false(캐시 안 듦) | 300 s | 4 | 60단계 (480−300−30)/2.5 = 60 | 25점 | 1점 | 1단계 | B1 22.3 · B2 23.8 · B3 26.4 · B4 25.7 · B5 20.6 · B6 20.6분 |
-
-단계 수 확인: A1 1,425 + A2 230 = 1,655. B1 703 + B2 722 + B3 193 + B4 15 + B5 11 + B6 11 = 1,655. 모두 못 본 범위 표(CYCLE_L 374~716 343, CYCLE_S 0~450 451, CYCLE_G2 0~630 631, POSE 0~182 183, F_STATES 2~34 33, MAINT_U7 0~13 14)와 같다.
-
-MAINT_U7은 0~13 한 묶음이 37분 넘게 끝나지 않았다. 그래서 1단계씩 14묶음으로 쪼갰다. 어느 단계가 무거운지는 regrun 결과의 timeout 칸으로 바로 드러난다.
-
-## 3. 실행 순서(모델링부 → 회귀 담당)
-1. 모델링부(MCP): 저장본 v2.5.7을 open → `inspect_design`로 dirty 확인 → `edit.checkpoint` → CYCLE_G1 J_U5_LIFT 키 바꿈(185~318 0, 319·320 1.0, 321 30) → 문서 이름을 `FSAP_v2.5.8`로 바꿈 → `browser.visibility {visible:false, folder:"joints"}` → `motion.play` step 0 → `save {path: 3D_Modeling/FSAP_v2.5.8.sc}`. 그다음 `tools/config.json` doc를 v2.5.8로 바꾼다.
-2. bench-open을 v2.5.8에 돌려 `saved_model`·`adopted`를 본다(design/bench_open.txt와 같은 방법).
-3. v2.5.8을 `tools/out/mech_REG-01/base.sc`로 복사한다. chunk.py는 base.sc를 연다.
-4. adopted true면 A1·A2를, false면 B1~B6을 차례로 돌린다: `python -B <engine>/engine/tools/regrun.py run --spec tools/out/mech_REG-01/design2/spec_v258_<n>.json --out tools/out/mech_REG-01/runs258_<n>`(호출 상한 480, 전체 상한 1800 기본값). 회차끼리 서로 기다리지 않아도 되지만, 앱 세션과 CPU를 함께 쓰므로 한 번에 한 회차씩 돌린다.
-5. 결과는 analyze.py·harvest.py로 거둔다. 새 겹침이 나오면 겹침마다 구동 후보(REG-01-Xn)로 올린다. 못 본 범위가 0이면 REG-01을 해결로 바꾼다.
-
-## 4. 규칙 자기 점검(이번 회차)
-| 규칙 | 원문 | 판정 |
+| 안 되는 곳 | 1회차 | 2회차(이번) |
 |---|---|---|
-| 실행 규칙 13 | "구동 과제와 구동 후보가 0이 될 때까지 구동 라운드만 거듭한다" | 이름만 바꾼 X2를 지우고 REG-01 하나로 남겼다 |
-| 실행 규칙 16 | 전체 회귀는 regrun(시험 20단계·호출 8분·전체 상한) | 모든 회차 어림 ≤ 30분, 모든 묶음 어림 ≤ 450 s |
-| 실행 규칙 2 | "오래 걸리는 동작 간섭 검사는 앱(MCP)에서 돌리지 않는다" | 회귀는 CLI(regrun)로 하고, 앱은 키 고치기와 저장에만 쓴다 |
-| E-03 | 합격은 동작·간섭 | 남은 1,655단계를 합격으로 꾸미지 않았다. done_check 1은 met false로 둔다 |
-| WF-176 | 같은 설계자가 그 자리만 고친다 | 후보 행과 묶음 계획만 고쳤다. X1 키는 그대로 |
+| 못 본 범위 기준선 밖 겹침 0 | 규칙: an.py `bad` 0 | `r4/judge.py`가 an_*.json을 모아 `bad` 수와 목록(≤50)을 judge.json에. 기준선은 an.py `base_ok`(MAT/TAPE/SEAM_L·S·G끼리, U3_NEEDLE_PIN↔MAT·TAPE) = machine.json baseline_overlaps(M-08) |
+| truncated 0 | 규칙: 끊긴 단계 유닛 묶음별 다시 재기, 남으면 못 본 범위 | judge.py가 **truncated 단계를 본 것에서 뺀다**(파일마다). 다시 잰 an 파일에 깨끗한 결과가 있으면 그때 본 것. 그래서 truncated는 자동으로 `unseen`에 들어가고 겹침 0으로 셈되지 않는다 |
+| 행정 막힘·unmoved 0 | 규칙: unmoved·stopped 0 | judge.py `unmoved`·`stopped` 수. chunk7은 joint.drive 결과 `unmoved`·`stopped_by_contact`·`stopped_by_loop`를 단계마다 모은다(r3 그대로) |
+| (도구) J_U6_SHIFT 0 몰기 | 지시만 | r4/chunk7.py 84·86줄 튜플 → `('J_U6_HGT','J_U7_HGT','J_U6_SHIFT')` 반영(2곳), py_compile 통과 |
+| (도구) POSE 이어 몰기 | 지시만 | 묶음 첫 점만 `motion.play REST 0`, 다음 점은 앞 점에만 있던 조인트를 0으로 되돌린 뒤 이 점 값으로 joint.drive. 자세 병목(REST 왕복, joint.drive 264.6 s 실측)을 줄임 |
+
+합격 = judge.json `pass_all` true(bad·unmoved·stopped 0 그리고 unseen 0). `pass_seen_range` true이고 unseen이 남으면(30분 상한에 끊김) 남은 단계를 다음 못 본 범위로 기록한다(완료 판정 "상한에 끊긴 범위는 다음 못 본 범위로 기록").
+
+## 2. 회귀 담당 실행 순서
+1. 도구는 `tools/out/mech_REG-01/r4/`(worker.py·ask.py·sets.json·states.json·poses.json은 r3 복사, 바뀐 것 chunk7.py·judge.py). 대상 저장본 v2.6.4. sets.json 검사 목록에 교체 바디 CB5-6_M08_PY_LC2F는 U8 고정 바디라 들지 않는다(측정 보고서, 옛 이름도 안 들었음) — 고칠 것 없음.
+2. 연구 세션 8개: A1~A4(약 300단계씩, 8병렬 5.9 s/단계), 자세 세션 2개(POSE 167·F_STATES 35, 시험 20점으로 어림). regrun 시험 20단계 → 어림 → 1,800 s 상한, 호출 ≤ 480 s, 커널 패닉 즉시 멈춤(E-17, 요구서 6-4).
+3. 회차마다 `python -B r4/an.py <runs폴더>` → an_<runs>.json. truncated 단계는 FAST_BY_UNIT 묶음별 다시 재서 별도 runs 폴더 → an.
+4. 끝에 `python -B r4/judge.py an_*.json` → judge.json. 보고서 표에 bad·truncated·unmoved·stopped·unseen_steps.
+5. 각 세션 `motion.play REST 0`, 저장 없음.
+
+## 3. 규칙 자기 점검
+- E-02: 개념·형상 그대로, concept_conflict 없음.
+- E-08 원복: CAD를 열지 않음(앱 세션·저장본 손대지 않음). 1회차 CLI 확인값(CB5-6_M08_PY_LC2F 2개, STEP대기_CB5-6 0, J_U6_SHIFT −60~0) 그대로.
+- E-17: 검사 범위 = 측정 보고서 measure_remaining_plan.json 그대로(judge.py가 같은 파일을 읽어 범위를 정함 — 손으로 다시 적지 않음).
+- E-18: 형상·하중 경로 변화 없음 → 손계산·FEA 없음. M-06·U-14·U-12·M-04·U-10·U-07/E-10·U-01·M-01·M-02: 새 부품·볼트 없음.
+- 실행 규칙 1: 엔진 폴더 손대지 않음(도구는 프로젝트 tools/out 안).
 
 ## 워크플로우 메모
-- 회귀 과제의 완료 판정("못 본 범위 전부 간섭 0")을 설계 부서 단계에서 매기면 매번 못 맞춘다. 설계 부서는 저장할 수 없고, 1,655단계는 1~2.5시간이 걸린다. 설계 단계에서는 "회귀 명세가 범위를 빠짐없이 덮고 호출 어림이 480 s 안"을 판정하고, 간섭 0은 회귀 담당이 판정하게 나누면 수정 회차가 줄어든다.
-- CLI `--save`로 만든 저장본에는 저장 모델 캐시가 없다(saved_model false). 그래서 파일을 열 때마다 254 s가 들고, 이것이 회귀 시간을 4배로 늘린다. 회귀할 저장본은 앱에서 저장하게 하는 것이 좋다.
+- 검증 과제(등급 S)의 기구설계부 완료 판정이 회귀 결과 항목이라 수정 회차로 met을 만들 수 없다(2회째 반복). 설계부 판정을 '판정 도구가 돌고 범위가 측정과 같은가'로, 결과 항목은 회귀 담당으로 나누면 회차를 아낀다(1회차 메모와 같은 문제, 반복 2).

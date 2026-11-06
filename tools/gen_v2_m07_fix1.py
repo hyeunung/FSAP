@@ -47,8 +47,8 @@ def stage_columns():
 def stage_beam():
     """보 끝면을 80씩 늘여 X -2380~1230(3610), 끝 속은 1 mm 들인 끝판 t8로 막는다(용접, 보 바디에 합침)."""
     # 두 끝면을 따로 offset하면 두 번째가 "a corner whose faces don't meet the same way" 로 거부돼 한 번에 둘을 민다
-    return [C("solid.offset_face", faces=[[-2300.0, 124.0, 450.0], [1150.0, 124.0, 450.0]], distance=80, body=BEAM),
-            box(None, -2379.0, -2371.0, 127.0, 313.0, 257.0, 643.0, "join", [BEAM]),
+    # v2.6.5 LITE: 끝 늘이기 offset_face 80은 없앴다 — 보 상자를 gen_v2_m07.stage_beam에서 처음부터 X -2380~1230으로 둔다.
+    return [box(None, -2379.0, -2371.0, 127.0, 313.0, 257.0, 643.0, "join", [BEAM]),
             box(None, 1221.0, 1229.0, 127.0, 313.0, 257.0, 643.0, "join", [BEAM])]
 
 

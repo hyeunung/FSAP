@@ -1,0 +1,448 @@
+[
+{
+"command": "timeline.delete",
+"params": {
+"feature": "OffsetFace20"
+}
+},
+{
+"command": "timeline.delete",
+"params": {
+"feature": "SK_M07_BEAM_OUT"
+}
+},
+{
+"command": "timeline.edit",
+"params": {
+"feature": "Box16",
+"set": {
+"corner": [
+-2380.0,
+120.0,
+250.0
+],
+"length": "3610",
+"width": "200"
+}
+}
+},
+{
+"command": "timeline.reorder_many",
+"params": {
+"features": [
+"SK_M07_BEAM_HB",
+"Extrude53",
+"SK_M07_BEAM_HK",
+"Extrude54",
+"SK_M07_BEAM_HT",
+"Extrude55"
+],
+"position": 1140
+}
+},
+{
+"command": "timeline.roll_to",
+"params": {
+"feature": "Extrude55"
+}
+},
+{
+"command": "solid.fillet",
+"params": {
+"edges": [
+[
+0,
+120,
+250
+],
+[
+0,
+320,
+250
+],
+[
+0,
+320,
+650
+],
+[
+0,
+120,
+650
+]
+],
+"radius": "12",
+"body": "P_M07_BEAM"
+}
+},
+{
+"command": "timeline.roll_to",
+"params": {}
+},
+{
+"command": "timeline.edit",
+"params": {
+"feature": "SK_M07_BEAM_IN",
+"set": {
+"plane.plane.origin": [
+-2381.0,
+0.0,
+0.0
+]
+}
+}
+},
+{
+"command": "timeline.edit",
+"params": {
+"feature": "Extrude52",
+"set": {
+"extent.distance": "3612"
+}
+}
+},
+{
+"command": "timeline.delete",
+"params": {
+"features": [
+"Hole1",
+"Hole2",
+"Hole3",
+"Hole4",
+"Hole5",
+"Hole6",
+"Hole7",
+"Hole8"
+]
+}
+},
+{
+"command": "timeline.roll_to",
+"params": {
+"feature": "Cylinder332"
+}
+},
+{
+"command": "timeline.add",
+"params": {
+"feature": {
+"id": 95001,
+"name": "SK_DC205_TAP",
+"plane": {
+"plane": {
+"origin": [
+0.0,
+0.0,
+-12.8
+],
+"x_dir": [
+1.0,
+0.0,
+0.0
+],
+"y_dir": [
+0.0,
+1.0,
+0.0
+]
+},
+"type": "custom"
+},
+"sketch": {
+"constraints": [],
+"counters": {
+"c": 8
+},
+"curves": [
+{
+"c": 1,
+"construction": false,
+"id": "c1",
+"r": 2.1,
+"type": "circle"
+},
+{
+"c": 2,
+"construction": false,
+"id": "c2",
+"r": 2.1,
+"type": "circle"
+},
+{
+"c": 3,
+"construction": false,
+"id": "c3",
+"r": 2.1,
+"type": "circle"
+},
+{
+"c": 4,
+"construction": false,
+"id": "c4",
+"r": 2.1,
+"type": "circle"
+},
+{
+"c": 5,
+"construction": false,
+"id": "c5",
+"r": 2.1,
+"type": "circle"
+},
+{
+"c": 6,
+"construction": false,
+"id": "c6",
+"r": 2.1,
+"type": "circle"
+},
+{
+"c": 7,
+"construction": false,
+"id": "c7",
+"r": 2.1,
+"type": "circle"
+},
+{
+"c": 8,
+"construction": false,
+"id": "c8",
+"r": 2.1,
+"type": "circle"
+}
+],
+"points": [
+{
+"fixed": true,
+"id": "origin",
+"pos": [
+0.0,
+0.0
+]
+},
+{
+"fixed": false,
+"id": "c1.center",
+"pos": [
+-1750.0,
+0.0
+]
+},
+{
+"fixed": false,
+"id": "c2.center",
+"pos": [
+-1600.0,
+0.0
+]
+},
+{
+"fixed": false,
+"id": "c3.center",
+"pos": [
+-1400.0,
+0.0
+]
+},
+{
+"fixed": false,
+"id": "c4.center",
+"pos": [
+-1250.0,
+0.0
+]
+},
+{
+"fixed": false,
+"id": "c5.center",
+"pos": [
+-1000.0,
+0.0
+]
+},
+{
+"fixed": false,
+"id": "c6.center",
+"pos": [
+-800.0,
+0.0
+]
+},
+{
+"fixed": false,
+"id": "c7.center",
+"pos": [
+-600.0,
+0.0
+]
+},
+{
+"fixed": false,
+"id": "c8.center",
+"pos": [
+-450.0,
+0.0
+]
+}
+]
+},
+"suppressed": false,
+"type": "sketch"
+}
+}
+},
+{
+"command": "timeline.add",
+"params": {
+"feature": {
+"type": "extrude",
+"id": 95002,
+"name": "TAP_DC205",
+"extent": {
+"convention": "total_distance",
+"direction": "positive",
+"distance": "9.8"
+},
+"operation": "cut",
+"profiles": {
+"type": "all"
+},
+"sketch": 95001,
+"suppressed": false,
+"targets": [
+"P_DC205_STRIP"
+]
+}
+}
+},
+{
+"command": "solid.thread",
+"params": {
+"face": [
+-1747.9,
+0,
+-6.0
+],
+"designation": "M5",
+"length": "8.3",
+"modeled": false
+}
+},
+{
+"command": "solid.thread",
+"params": {
+"face": [
+-1597.9,
+0,
+-6.0
+],
+"designation": "M5",
+"length": "8.3",
+"modeled": false
+}
+},
+{
+"command": "solid.thread",
+"params": {
+"face": [
+-1397.9,
+0,
+-6.0
+],
+"designation": "M5",
+"length": "8.3",
+"modeled": false
+}
+},
+{
+"command": "solid.thread",
+"params": {
+"face": [
+-1247.9,
+0,
+-6.0
+],
+"designation": "M5",
+"length": "8.3",
+"modeled": false
+}
+},
+{
+"command": "solid.thread",
+"params": {
+"face": [
+-997.9,
+0,
+-6.0
+],
+"designation": "M5",
+"length": "8.3",
+"modeled": false
+}
+},
+{
+"command": "solid.thread",
+"params": {
+"face": [
+-797.9,
+0,
+-6.0
+],
+"designation": "M5",
+"length": "8.3",
+"modeled": false
+}
+},
+{
+"command": "solid.thread",
+"params": {
+"face": [
+-597.9,
+0,
+-6.0
+],
+"designation": "M5",
+"length": "8.3",
+"modeled": false
+}
+},
+{
+"command": "solid.thread",
+"params": {
+"face": [
+-447.9,
+0,
+-6.0
+],
+"designation": "M5",
+"length": "8.3",
+"modeled": false
+}
+},
+{
+"command": "timeline.roll_to",
+"params": {}
+},
+{
+"command": "motion.play",
+"params": {
+"study": "REST",
+"step": 0,
+"quiet": true
+}
+},
+{
+"command": "browser.visibility",
+"params": {
+"visible": false,
+"folder": "joints"
+}
+},
+{
+"command": "document.metadata.set",
+"params": {
+"key": "description",
+"value": "LITE mechanism: M07 beam history reorder (box, holes, R12 fillet, core) and DC205 strip tap holes as one cut"
+}
+}
+]

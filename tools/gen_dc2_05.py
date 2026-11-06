@@ -62,9 +62,16 @@ def build(bolt_body):
     for x in XS:
         e.append(c("solid.cylinder", radius=17.8, height=3.9, base=[x, 0, -11.8], axis="Z",
                    operation="join", targets=[STRIP]))
+    # v2.6.5 LITE: Hole 8개(깎기 8번, 큰 모델에서 171 s) → 스케치 하나 원 8개 cut 한 번 + cosmetic 나사 M5 ×8.
+    # 보스 밑면 Z -11.8보다 1 mm 밖(Z -12.8)에서 +Z 9.8 → 바닥 Z -3.0(옛 깊이 8.8과 같음). 같은 평면 boolean 피함.
+    e.append(c("sketch.create", plane={"origin": [0, 0, -12.8], "x_dir": [1, 0, 0], "y_dir": [0, 1, 0]},
+               name="SK_DC205_TAP"))
     for x in XS:
-        e.append(c("solid.hole", position=[x, 0, -11.8], thread="M5", depth=8.8, thread_depth=8.3,
-                   targets=[STRIP]))
+        e.append(c("sketch.circle.center", center=[x, 0], radius=2.1))
+    e.append(c("sketch.finish"))
+    e.append(c("solid.extrude", sketch="SK_DC205_TAP", distance=9.8, operation="cut", targets=[STRIP]))
+    for x in XS:
+        e.append(c("solid.thread", face=[x + 2.1, 0, -6.0], designation="M5", length="8.3", modeled=False))
     # 4) 누름판 Ø50 t4, Z -16~-12, 구멍 Ø5.5
     discs = []
     for i, x in enumerate(XS, 1):

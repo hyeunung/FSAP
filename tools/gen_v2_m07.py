@@ -114,22 +114,21 @@ def hole_cut(name, pl, centers, r, dist, body):
 # ====================================================================== A. 보
 def stage_beam():
     s = []
-    # 바깥: 큰 사각(Y 110~430, Z 240~660)과 둥근 사각(Y 120~320, Z 250~650, R12) 사이 띠를 잘라냄 = Y 320~420 띠 + 바깥 R12
-    s += [C("sketch.create", plane=YZ(-2301), name="SK_M07_BEAM_OUT"),
-          C("sketch.rectangle.two_point", p0=[110, 240], p1=[430, 660]),
-          C("sketch.rectangle.rounded", p0=[120, 250], p1=[320, 650], radius=12),
-          C("sketch.finish"),
-          C("solid.extrude", sketch="SK_M07_BEAM_OUT", distance=3452, operation="cut", targets=[BEAM_OLD],
-            profiles=[{"point": [115, 450]}])]
-    # 속: Y 128~312, Z 258~642, 안 R4, 양 끝 열림
-    s += [C("sketch.create", plane=YZ(-2301), name="SK_M07_BEAM_IN"),
-          C("sketch.rectangle.rounded", p0=[128, 258], p1=[312, 642], radius=4),
-          C("sketch.finish"),
-          C("solid.extrude", sketch="SK_M07_BEAM_IN", distance=3452, operation="cut", targets=[BEAM_OLD])]
+    # v2.6.5 LITE(mech_LITE_design1.md 2-1): 상자 Box16을 처음부터 제 길이·폭(X -2380~1230, Y 120~320, Z 250~650)으로 고치고,
+    # 꽉 찬 상자에 구멍을 먼저 깎은 뒤 바깥 R12는 fillet, 속은 IN 한 번. 옛 외곽 깎기(SK_M07_BEAM_OUT, 같은 평면 boolean의
+    # nudge 0.007 mm가 뒤 피처로 번져 열기 80 s)와 fix1의 끝 늘이기(offset_face 80)는 없앴다.
+    s += [C("timeline.edit", feature="Box16", set={"corner": [-2380.0, 120.0, 250.0], "length": "3610", "width": "200"})]
     # 새 M5 탭 Ø4.2 관통·공구 구멍 Ø10 — 큰 문서에서 원기둥 자르기 하나가 4~6 s라 면마다 스케치 한 번으로 자른다
     s += hole_cut("SK_M07_BEAM_HB", XY(249.9), [(x, y) for x in (-2265, -2225, 1075, 1115) for y in (160, 280)], 2.1, 8.2, BEAM_OLD)
     s += hole_cut("SK_M07_BEAM_HK", XZ(320.1), [(x, z) for x in (-2260, -2220, 1070, 1110) for z in (300, 600)], 2.1, 8.2, BEAM_OLD)
     s += hole_cut("SK_M07_BEAM_HT", XZ(128.1), [(-2244.75, 365.25), (-2244.75, 414.75), (-2195.25, 365.25), (-2195.25, 414.75)], 5.0, 8.2, BEAM_OLD)
+    # 바깥 R12: 긴 모서리 4개(X 0에는 구멍 없음)
+    s += [C("solid.fillet", edges=[[0, 120, 250], [0, 320, 250], [0, 320, 650], [0, 120, 650]], radius="12", body=BEAM_OLD)]
+    # 속: Y 128~312, Z 258~642, 안 R4, 양 끝 열림(X -2381~1231)
+    s += [C("sketch.create", plane=YZ(-2381), name="SK_M07_BEAM_IN"),
+          C("sketch.rectangle.rounded", p0=[128, 258], p1=[312, 642], radius=4),
+          C("sketch.finish"),
+          C("solid.extrude", sketch="SK_M07_BEAM_IN", distance=3612, operation="cut", targets=[BEAM_OLD])]
     s += [C("body.rename", body=BEAM_OLD, name=BEAM), mat_assign([BEAM], "Steel")]
     return s
 

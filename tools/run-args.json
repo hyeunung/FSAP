@@ -1,6 +1,6 @@
 {
   "root": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP",
-  "date": "2026-11-04",
+  "date": "2026-11-06",
   "machine": "FSAP MAT-RS-001",
   "cad": "solidcraft",
   "engineRoot": "C:/Users/hyeun/OneDrive/Documents/workspace/MechDesign_Engine",
@@ -12,5 +12,5 @@
   "detailing": {
     "exportStep": false
   },
-  "shellNote": "[이번 실행 — 엔진 v3.9.2로 다시 켬, 2026-11-04] (a) v2.0 이어서: M00~M07 해결(최신 3D_Modeling/FSAP_v2.3.4.sc). 이전 실행(엔진 v3.8.x)은 M08 도중 사용자 요청으로 멈췄다 — tools/out/mech_M08 은 끝나지 않은 중간 산출물이니 참고만 하고 M08은 처음부터 다시. 남은 과제: M08, M04R(새, 요구서 5절·결정로그 C-31 — 볼 테이블 사진대로: 볼 수백 개로 줄임 임시 피치 100, 사각 센터판 P_M04_INSERT 뺌, 바퀴 길 받침 띠 유지, 매트 모형 기본 숨김), DC2-03(다음 라운드 직렬). (b) SolidCraft 앱(--control 27878)이 켜져 있고 이전 실행의 'merged' 문서가 열려 저장 안 된 상태(dirty)다. 그 문서는 이미 v2.3.4로 저장·커밋된 내용이니 저장하지 말고 버린 뒤 저장본을 open 한다. (c) 미스미: 2026-11-04 23시 로그인 확인됨. 같은 시각 별도 작업이 HTPA60S5M150-A-N16·6200ZZ·HTBNS5M150-3960·MGPM25-40Z·CB6-20·CB8-16·CB8-15·CB3-10·MSTH6-20·HFS8-80160-1090 STEP을 PartsLibrary·purchased-step 에 받고 있다 — 구매부·STEP대기 교체는 PartsLibrary를 먼저 보고, 들어와 있으면 STEP대기_ 바디를 실물로 바꾼다. 로그인이 풀려 있으면 기다리지 말고 STEP대기_ 임시 형상(실행 규칙 10). 봇 확인 페이지는 넘기지 않는다. (d) 속도가 중요하다: 엔진대로(전체 회귀 regrun 상한, 과제 범위 검사, 파일 한 번 열기). (e) 보고서·커밋은 한글."
+  "shellNote": "[이번 실행 — 엔진 v3.9.3으로 다시 켬, 2026-11-06] (a) 이어서: 최신 3D_Modeling/FSAP_v2.6.4.sc. 이전 실행(v3.9.2)은 '미완 — REG-01·STEPWAIT 진전 없음'으로 끝났다(docs/reports/final_full_2026-11-04.md). 열린 구동 과제 0, 남은 것은 REG-01(못 본 범위 회귀)·STEPWAIT. (b) SolidCraft 앱(--control 27878)이 켜져 있다. 앱이 막히면 엔진 v3.9.3 규칙대로 강제 종료·재시작해도 된다(solidcraft-cli 프로세스는 다른 부서 것이니 건드리지 않는다). (c) 미스미: 2026-11-06 사용자가 로그인해 둠. 받기 전 PartsLibrary/index.csv 먼저. 로그인이 풀려 있으면 기다리지 말고 STEP대기_ 임시 형상(실행 규칙 10). 봇 확인 페이지는 넘기지 않는다. (d) 결정로그 C-33: 2000보다 긴 HFS8-4080 형재는 4000 정척을 사서 자른다 — 형상은 지금처럼 실물 STEP 끝면 늘이고 줄인 것 그대로, STEP 다시 받지 않는다. (e) 서보 MHMF022L1U2M·MHMF042L1U2M: 회원가입 없이 받을 STEP 없음(파나소닉 CADENAS 가입 필요, 미스미에 MHMF 없음). 미스미 MSMF로 바꿀지 사용자 결정 대기 — 결정 전엔 STEP대기_ 임시 형상 유지, 이 때문에 멈추지 않는다. (f) 속도가 중요하다: 엔진대로(전체 회귀 regrun 상한, 과제 범위 검사, 파일 한 번 열기). (g) 보고서·커밋은 한글."
 }
