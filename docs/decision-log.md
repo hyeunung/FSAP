@@ -3201,3 +3201,13 @@ v2.6.4(`3D_Modeling/FSAP_v2.6.4.sc`). 최종 판정 pass, below_done false, 동�
 |---|---|---|
 | 출발점: 벤치마크 없음(모델 표현 과제, 안내서 '연결' 모델 무게 WF-196). 사본 묶기는 이미 됨(볼 정의 1, 볼트·너트 occurrence) — 바꾸지 않음. 무거운 두 바디 피처 이력만 바꿈, 형상·이름·컴포넌트·재질·조인트 그대로, 부품 순 0. ① P_M07_BEAM: Box16을 (−2380,120,250) 3610×200×400으로, 구멍 묶음 HB·HK·HT(Extrude53~55)를 R12·속 빼기 앞으로, SK_M07_BEAM_OUT+Extrude51 → `solid.fillet` R12 긴 모서리 4, IN 평면 X −2381·cut 3612, OffsetFace20 지움, 끝판 Box147·148 그대로. 빈 설계 재현 79.6 s → 10.5 s, bbox 공칭 120/320/250/650(M07-D9 nudge 제거, 부피 +0.010 %). ② P_DC205_STRIP: Hole1~8 → 스케치 1(r2.1 ×8, Z −12.8) cut 9.8 한 번 + cosmetic M5 나사 8, 13.9 s → 1.8 s, 부피 +2.3 mm³. 열기 어림 242 s → 90~130 s | - | 측정: 재계산 369.9 s 중 두 바디 261 s(70 %). 원인은 외곽 cut 윤곽이 상자 면과 같은 평면(실행 규칙 8 같은 뿌리) → nudge 0.007 mm → 뒤 피처 연쇄 retry. mech_LITE_design.md 1절, tools/out/mech_LITE/design/ |
 | 수정 1회차: 첫 안 그대로(두 바디 이력만, 부품 순 0) | 완료 판정 '새 번호 v2.6.5 저장' → 설계부 판정에서 빼고 모델링부 지시서 D(대기 포즈 → 조인트 숨김 → 문서 이름 FSAP_v2.6.5 → save {path} → config.json doc → 열기 재기·lite_check after)로 넘김 | 설계부는 저장 금지(머리말 "읽기만, 저장 금지"), 저장은 실행 규칙 3·E-05의 모델링부 몫. mech_LITE_design1.md R1 |
+
+## 구동 LITE 결과 (2026-11-06)
+
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| LITE-R1 | 적용: P_M07_BEAM·P_DC205_STRIP 피처 이력만 바꿔 v2.6.5 저장. 열기 242.1 s → 약 100 s(상한 240 s) | 열기 시간의 70 %가 두 바디 재계산(같은 평면 nudge 연쇄 retry, 구멍 피처 8개). 형상·부품 수·BOM 그대로 | mech_LITE_model.md, mech_LITE_verify.md, tools/out/lite_check.json ok |
+| LITE-R2 | 사본 묶기(볼·볼트·너트 occurrence)는 바꾸지 않음 | 이미 정의 1개 + occurrence로 되어 있어 열기 차지가 작음 | mech_LITE_design.md 1절 |
+| LITE-R3 | 실패: 없음. 남은 동작 문제: 0(과제 안 14자세 겹침 0) | — | mech_LITE_verify.md 1~2절 |
+
+디테일 과제(E-02, 구동 확정 뒤 처리): 새로 0건(최종 판정 details 없음). 예외 판정 0건. 앱의 FSAP_v2.6.4 dirty(path null)는 사용자 확인 필요.
