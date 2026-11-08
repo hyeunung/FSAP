@@ -1,3 +1,20 @@
+# 준비 점검 — FSAP_v2.6.8 (2026-11-09, 엔진 v3.9.3, STEPSWAP 뒤)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.6.8.sc`(tools/config.json doc, 저장 11-09 01:54). 지시문의 "v2.6.5"보다 config가 최신이라 config를 따랐다(REG-02 → v2.6.6·v2.6.7, STEPSWAP → v2.6.8).
+- 통로: 없음(설계 파일 열지 않음). 사용자 "솔리드크래프트 꺼져있어", `running` 빈 목록. E-21 원문 "다시 부르면 이전 결과 파일부터 읽고 남은 것만"대로 v2.6.7 점검(아래 절)과 STEPSWAP 저장본 검증 결과를 썼다. CAD 호출 1(running), open·편집·저장 0.
+- v2.6.7 → v2.6.8 바뀐 것: 고정 유닛 U8 레귤레이터 IR1000-01BG ×3 실물 STEP 교체와 그 브래킷·볼트·KQ2L08·TU0805 관(mech_regression_14.md "고정 유닛 U8만 바뀌어 움직이는 바디의 형상·조인트 변화 0").
+- 조인트(v2.6.8 저장본 검증, `tools/out/mech_STEPSWAP/r4/verify_joint_list.json`·`jl.json`): 324개(v2.6.7의 317 + 새 부품 rigid 7), 고정부 2(occ 0·2), **floating 0**, errors 0, conflicts 0. 움직이는 조인트 28 = machine.json joints 28. 저장본·앱 바디 2666 같음, 타임라인 2064 오류 0, `STEP대기_IR` 남음 0, dirty False, 이름 FSAP_v2.6.8(`r4/verify_summary.txt`).
+- 동작 연구 8(REST 대기 포즈 step 0, CYCLE_S·L·G1·G2, MAINT_HEAD, SEAM_U7, MAINT_U7): STEPSWAP은 연구를 고치지 않았다(움직이는 조인트 변화 0) → v2.6.7 판정(step 0 conflicts 0, unmoved 0) 그대로.
+- machine.json(11-09 01:55): `doc` = v2.6.8, joints 28, units 13, studies 8, states 26, path_parts 6, temp_values 11. J_U6_HGT는 주석·이력에만 남음(조인트 정의 0) → C-34 "한 높이 조정"·"어긋난 자세는 회귀 자세 정의에서 뺀다" 충족(THICK_6 −4 · THICK_16 +6).
+- 요구서(11-09 02:36, 커밋 안 됨): 5절 MOT-01 행 고침과 COLOR-01 행 추가뿐. 0-2·0-3·6-4 칸 그대로 → 작업 대상 모형(WP_L 1500×1500·WP_S 300×200·WP_G 좁은 홈, 떨어지는 조각 없음 D-07)과 상태 대응 판정 그대로.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError, 다시 확인함).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+근거: E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 결정로그 C-34.
+
+---
+
 # 준비 점검 — FSAP_v2.6.7 다시 확인 (2026-11-09, 엔진 v3.9.3, 재실행)
 
 요약
