@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.6.6.sc",
+ "doc": "../3D_Modeling/FSAP_v2.6.7.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -518,7 +518,7 @@
    "rest": 0,
    "setup": true,
    "_note": "DC2-04(v2.3.1) 제품 교체 때 손 조정, 값 = 매트 두께 - 10, 두 조인트(J_U6_HGT·J_U7_HGT)는 같은 값, 기계 축 아님, 사이클 연구에서 움직이지 않음. U7_FIXED 통째(걸이 P_M05_HOLDER + 카세트 묶음)가 U3_HEAD에 대해 +Z. 날개 A 세로 장공 5.5(중심선 Z 304~314) + CB5-12_M05_11·12(U3_HEAD 쪽, UPPER 탭). 행정 끝 = 장공 끝(조인트 한계) / 수정 1(v2.3.2): 맞춘 뒤 미는 볼트 M4 ×2를 날개 A 아래 끝(Z 285 + h)에 대고 잠금 너트로 잠근다(장공 마찰만으로 버티지 않음)",
-   "_note_REG02": "REG-02(v2.6.6, C-34): 높이 조정 하나. J_U6_HGT를 지우고 U6_SENSOR를 U7_FIXED에 리지드 조인트 J_U6_ON_U7FIX로 붙임 -> U6 센서 묶음·U7 카세트 걸이가 J_U7_HGT 하나(값 = 매트 두께 - 10, -4~+6)를 함께 탄다. 공통 높이 판 P_REG02_HGT_PLATE(SUS304 t5 절삭, X -80~44 · Y -99~-94(BASE 쪽 패드 -93) · Z 157~330)이 P_M06_BASE 붙임면과 P_M05_HOLDER 날개 A 앞을 덮고 압입 스터드 FH4-M4-15 x4 + M4 너트로 둘에 묶임. 장공 볼트 CB5-16_REG02_1~4(U3_HEAD, 기존 CB5-12_M06_1·2·M05_11·12 자리)가 판+판금 장공을 함께 조임. 미는 볼트 M4 x2(날개 A 아래 끝)·잠금 너트 한 벌이 두 묶음을 함께 받친다. 두 값이 다른 자세는 생길 수 없다(회귀 자세 정의에서 뺌)"
+   "_note_REG02": "REG-02(v2.6.6, C-34): 높이 조정 하나. J_U6_HGT를 지우고 U6_SENSOR를 U7_FIXED에 리지드 조인트 J_U6_ON_U7FIX로 붙임 -> U6 센서 묶음·U7 카세트 걸이가 J_U7_HGT 하나(값 = 매트 두께 - 10, -4~+6)를 함께 탄다. 공통 높이 판 P_REG02_HGT_PLATE(SUS304 t5 절삭, X -80~44 · Y -99~-94(BASE 쪽 패드 -93) · Z 157~330)이 P_M06_BASE 붙임면과 P_M05_HOLDER 날개 A 앞을 덮고 압입 스터드 FH4-M4-15 x4 + M4 너트로 둘에 묶임. 장공 볼트 CB5-20_REG02_1~4 + 와셔 M5 x4(U3_HEAD, v2.6.7 fix1: CB5-16 -> CB5-20 물림 10, 4번은 X 36 -> 33 렌치 길)가 판+판금 장공을 함께 조임. 미는 볼트 M4 x2(날개 A 아래 끝)·잠금 너트 한 벌이 두 묶음을 함께 받친다. 두 값이 다른 자세는 생길 수 없다(회귀 자세 정의에서 뺌)"
   }
  },
  "units": {
@@ -568,7 +568,8 @@
     "STEP대기_NUT_M4_DC204",
     "STEP대기_WASHER_M5_DC204",
     "CB5-12_DC204",
-    "CB5-16_REG02_"
+    "CB5-20_REG02_",
+    "STEP대기_WASHER_M5_REG02_"
    ],
    "moving": true,
    "components": [
@@ -1835,6 +1836,7 @@
   "2026-11-06 DC2-08 수정 1회차 v2.6.2: 형상·조인트 변경 없음(소켓 ↔ 밸브 쪽 관 HGT -4·+6 CAD 실측만), doc → v2.6.2",
   "2026-11-06 REG-01 v2.6.3: 모든 동작 연구가 U7 조인트 6개(5004~5009)를 키로 잡게 함 — 연구 전환 때 U7 상태가 세션에 남지 않음(mech_regression_4 3절). 조인트·행정 변경 없음",
   "2026-11-06 STEPSWAP r3 v2.6.4: STEP대기_CB5-6_M08_PY_LC2F ×2 → CB5-6_M08_PY_LC2F(미스미 STEP), U8 리지드 그룹 9282·9283. 조인트·행정 변경 없음",
-  "2026-11-08 REG-02 v2.6.6: J_U6_HGT 지움 -> U6_SENSOR를 U7_FIXED에 리지드(J_U6_ON_U7FIX), 높이 조정은 J_U7_HGT 하나. 공통 높이 판 P_REG02_HGT_PLATE + 스터드·너트 x4, 장공 볼트 CB5-12 x4 -> CB5-16_REG02_1~4. states 26개에서 J_U6_HGT 키 지움"
+  "2026-11-08 REG-02 v2.6.6: J_U6_HGT 지움 -> U6_SENSOR를 U7_FIXED에 리지드(J_U6_ON_U7FIX), 높이 조정은 J_U7_HGT 하나. 공통 높이 판 P_REG02_HGT_PLATE + 스터드·너트 x4, 장공 볼트 CB5-12 x4 -> CB5-16_REG02_1~4. states 26개에서 J_U6_HGT 키 지움",
+  "2026-11-08 REG-02 fix1 v2.6.7: 장공 볼트 CB5-16_REG02_1~4 -> CB5-20_REG02_1~4(UPPER 물림 10, 탭 3·4 깊이 10 -> 12), 1·2 밑 와셔 STEP대기_WASHER_M5_REG02_1·2 새로, 4번 볼트·판·날개 A 장공·UPPER 탭·와셔 DC204_2 X 36 -> 33(렌치 길이 카세트 핀 MSTH6-20_M05:2에서 비킴). 조인트·행정 그대로"
  ]
 }

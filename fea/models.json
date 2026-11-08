@@ -770,6 +770,19 @@
     "source": "요구서 6-1(M-09 기본값)"
    },
    "model_note": "4080 단면 성질 카탈로그 미확인 -> I 하한 1.0e5 mm^4 어림"
+  },
+  "P_REG02_HGT_PLATE": {
+   "case": "cases/mech_REG-02_handcalc.py",
+   "fixed": "CB5-16_REG02_1~4가 판 장공(X -70·-32 Z 174~184, X 18·36 Z 304~314, 폭 5.5)을 지나 BASE 붙임면·HOLDER 날개 A를 사이에 끼우고 UPPER -Y 면(Y -90) 탭에 조임. Z는 마찰만(예압 4,500 N, mu 0.15 보수)",
+   "contact": "판-BASE 패드(1 mm)·판-날개 A 압축, 압입 스터드 FH4-M4 x4가 판 구멍 Ø4.5(틈 0.25), 머리 1·2 판 장공 직접, 3·4 와셔 M5",
+   "load": "조여 있을 때: U6 1.0 + U7 2.5 + 판 0.3 kg x3 g, 손 X 100(슈 끝 Z 12.5 / Z 220), CJ2B16 막힘 100.5 @ Z 136, 테이프 X 10 @ Z 20 -> 4볼트 무리(탄성 무리법) + 묶음 하나 두 면 미끄럼. 높이 조정 중(볼트 풀림, 1 g): U6 무게 스터드 1·2 -> 판 -> 스터드 3·4 -> 미는 볼트 M4 x2",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, 좌면 p_G 400). SF < 1.2 = 동작",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_REG-02_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_REG-02/stepout/P_REG02_HGT_PLATE.step",
+   "version": "v2.6.6"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
