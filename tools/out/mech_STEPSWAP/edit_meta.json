@@ -1,5 +1,5 @@
 {
- "base": "3D_Modeling/FSAP_v2.6.3.sc",
- "result": "3D_Modeling/FSAP_v2.6.4.sc",
- "generator": "MCP batch (STEPSWAP r3)"
+ "base": "3D_Modeling/FSAP_v2.6.7.sc",
+ "result": "3D_Modeling/FSAP_v2.6.8.sc",
+ "generator": "tools/gen_v2_stepswap_r4.py (MCP batch, STEPSWAP r4)"
 }

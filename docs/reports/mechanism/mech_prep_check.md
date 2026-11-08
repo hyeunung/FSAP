@@ -1,3 +1,34 @@
+# 준비 점검 — FSAP_v2.6.7 다시 확인 (2026-11-09, 엔진 v3.9.3, 재실행)
+
+요약
+- 판정: **ready=true**(같은 날 00:26 MCP 점검 결과를 그대로 씀, E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만"). 결과 `tools/out/prep267/`.
+- 대상 `3D_Modeling/FSAP_v2.6.7.sc`(tools/config.json doc, 저장 11-08 22:25). 지시문의 "v2.6.5"보다 config가 최신이라 config를 따랐다.
+- 앞 점검 뒤 바뀐 것: 요구서(11-09 01:01, 커밋 c39db92) — 5절 REG-01 행 상태와 RGSEE 행 추가뿐. 0-2·0-3·6-4 칸, 설계 파일, `tools/machine.json`(11-08 22:25), 자료대기(11-08 22:45)는 그대로 → 동작 정의·작업 대상 모형·상태 대응 판정 그대로.
+- 앞 점검 결과(유지): 조인트 317, 고정부 2, floating 0, 움직이는 조인트 28(= machine.json). 동작 연구 8(REST 대기 포즈 step 0, CYCLE_S·L·G1·G2, MAINT_HEAD, SEAM_U7, MAINT_U7) step 0 conflicts 0. C-34대로 높이 조정은 J_U7_HGT 하나(J_U6_HGT 없음).
+- 앱: 다시 켠 빈 상태, `running` 빈 목록. open·편집·저장 0, 설계 파일 연 수 0, CAD 호출 1.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError, 다시 확인함).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+근거: E-21 원문 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다".
+
+---
+
+# 준비 점검 — FSAP_v2.6.7 (2026-11-09, 엔진 v3.9.3, REG-02 C-34 뒤)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.6.7.sc`(tools/config.json doc, 저장 11-08 22:25). 지시문의 "v2.6.5"보다 config가 최신이라 config를 따랐다(REG-02가 v2.6.6·v2.6.7을 냄).
+- 통로: MCP(혼자 도는 읽기 부서, 실행 규칙 2). `running` 빈 목록 → `open` 한 번(4초, 피처 2054, 오류 0) → `motion.list`·연구 8개 `motion.play step 0` → `joint.list` → 마지막 `REST` step 0(원복). 편집·저장 0. 결과 `tools/out/prep267/`(studies_batch.txt, joint_list.txt).
+- 조인트: 317개, 고정부 2(occ 0·2), **floating 0**, errors 0, conflicts 0. 움직이는 조인트 28(machine.json joints 28과 같음). **J_U6_HGT 없음**, `J_U6_ON_U7FIX`는 rigid → C-34대로 높이 조정은 J_U7_HGT 하나.
+- 동작 연구 8: REST(1단계)·CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630·MAINT_HEAD 1·SEAM_U7 32·MAINT_U7 13. 모두 step 0 재생 conflicts 0, unmoved 0.
+- machine.json(11-08 22:25): `doc` = v2.6.7(앞 점검의 'v2.6.4를 가리킴' 미완 해소). J_U6_HGT 참조 0. states 26 — 0-3 사이클 단계(로딩·바퀴 내림·직선·볼록·홈 입구/안/바닥·이음매·배출)와 정비·THICK_6(J_U7_HGT −4)·THICK_16(+6) 대응. 두 높이가 다른 자세는 더 만들 수 없다(C-34 "어긋난 자세는 회귀 자세 정의에서 뺀다" 충족).
+- 작업 대상 모형: WP_L·WP_S·WP_G(MAT·TAPE·SEAM) 조인트 9개 모두 풀림(errors 0). 떨어지는 조각 없음(workpiece_stages 주석, D-07). 요구서 0-2·0-3·6-4는 11-08 뒤 REG-01 행 한 줄만 바뀜 → 크기 범위 판정 그대로.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+근거: 실행 규칙 2 원문 "혼자 도는 읽기 부서도 MCP로 잰다", 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 결정로그 C-34.
+
+---
+
 # 준비 점검 — FSAP_v2.6.5 (2026-11-08, 엔진 v3.9.3, REG-02 C-34 실행)
 
 요약

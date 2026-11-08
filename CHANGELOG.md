@@ -8,6 +8,8 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.6.8 STEPSWAP r4: 레귤레이터 `STEP대기_IR1000-01BG_M08_N/F/S`(+_BRKT) → SMC 실물 STEP `IR1000-01BG_M08:1~3`(몸통·게이지 G33-2-01·세트 너트·브래킷 P36201023, X 700·800·900). 실물 치수대로 포트 Z 511 → 482(손잡이 윗면 Z 565 그대로), 몸 폭 ±12.5 → ±17.5, 브래킷 뒷면 Y 120 = 보 앞면. 브래킷 볼트 CB5-12_M08_PY ×6 → CB4-12_M08_REG ×6(열쇠 구멍 M4, X ±14 · Z 527.8). 이음 KQ2L08-01AS → `_M08R_PX/NX`(포트 면 X ±17.5 · Z 482), 관 TU0805 6줄 → `_M08T_REG_*`(매니폴드 쪽 끝 그대로). 조인트·행정 변화 없음. 과제 안 새 겹침 0. 게이지 시선 틈 3.2 → 약 17.9(손계산, M08-X6). BOM FSAP_v2.6.8_*, 자료대기 D-132, 보고서 docs/reports/mechanism/mech_STEPSWAP_model.md
+
 - v2.6.7 REG-02 수정 1회차: 장공 볼트 CB5-16_REG02_1~4 → CB5-20_REG02_1~4(미스미 실물 STEP, UPPER 물림 6·7 → 10, 조임 암나사 전단 SF 1.15 → 1.92), 1·2 밑 와셔 `STEP대기_WASHER_M5_REG02_1·2` 새로(네 볼트 같은 쌓임), UPPER 탭 3·4 깊이 10 → 12. 4번 볼트 자리 X 36 → 33(판 장공·HOLDER 날개 A 장공·Ø5.5 구멍·UPPER 탭·와셔 DC204_2 함께) — 렌치 길이 h +6·카세트 장착에서 핀 MSTH6-20_M05:2에 걸리던 것 0.75 비킴(날개 A 장공 가장자리 ↔ 굽힘선 7.25 → 10.25, DC2-04-X2도 풀림). 조인트·행정 그대로. 과제 범위 J_U7_HGT −4·−1.5·1·3.5·+6 × SHIFT 0(−4·+6은 −60도) 겹침 0, 렌치 프로브 4 겹침 0. 보고서 docs/reports/mechanism/mech_REG-02_model1.md
 
 - v2.6.6 REG-02(C-34): U6 센서 묶음·U7 카세트 걸이 높이 조정을 하나로. `J_U6_HGT` 지우고 U6_SENSOR를 U7_FIXED에 리지드 `J_U6_ON_U7FIX`(조정은 `J_U7_HGT` 하나, −4~+6). 공통 높이 판 `P_REG02_HGT_PLATE`(SUS304 t5) + 압입 스터드·너트 ×4(STEP대기, D-142), 장공 볼트 CB5-12 ×4 → CB5-16_REG02_1~4(실물 STEP), 와셔 −Y 5, BASE·HOLDER Ø4.0 구멍 각 2, 오류 피처 Move15·16 지움. 회귀 자세 183 → 181점(옛 POSE 8·9 뺌, `tools/gen_v2_poses.py`), machine.json states J_U6_HGT 키 지움. 과제 범위 겹침 0, KDM10 짝 축 0. 미완: GUIDE↔CARR 틈 2.0 < 10(예외 요청). 보고서 docs/reports/mechanism/mech_REG-02_model.md

@@ -1,71 +1,82 @@
-# 모델링부 STEPSWAP r3 — CB5-6 실물 교체 (v2.6.3 → v2.6.4, 2026-11-06)
+# 모델링부 STEPSWAP r4 — IR1000-01BG 실물 교체 (v2.6.7 → v2.6.8, 2026-11-09)
 
 요약
-- 저장: `3D_Modeling/FSAP_v2.6.4.sc`(마지막 자리 +1: 임시 컴포넌트 `STEP대기_CB5-6_M08_PY_LC2F`를 같은 부품의 실물 컴포넌트 `CB5-6_M08_PY_LC2F`로 바꾼 것뿐이라 유닛·부품 묶음이 새로 생기거나 없어지지 않음 — v2.5.9 r2와 같은 판정). `tools/config.json` doc·`tools/machine.json` doc·유닛 부품 이름 갱신. 통로 **MCP**(앱 running 빈 목록, 막힘 없음).
-- 바꾼 것: `STEP대기_CB5-6_M08_PY_LC2F:1·:2` → `CB5-6_M08_PY_LC2F:1·:2`(미스미 CB5-6 STEP, `purchased-step/CB5-6/CB5-6.stp`). 자리·bbox 임시와 같음.
-- 지시 형번의 `STEP대기_` 남은 것 0(다시 연 저장본 바디 2,649개 이름 검색).
-- 과제 안 검사(REST, J_U5_X 0·690·1380): 새 겹침 0, truncated false. unchecked 2쌍은 나사부 ↔ 2E 금구 M5 탭(M-08 의도 물림, M08R 때와 같음).
-- 리지드: 새 occurrence 2개 dof 6 → U8_PNEU와 리지드 그룹(9282·9283) → dof 0. floating 0, conflicts 0.
-- 저장본 다시 열기(CLI, 297 s): 타임라인 실패 0, bbox·부피 앱과 같음.
-- 미완: 없음. 외부: 없음.
-- 지난 STEPSWAP 보고서(v2.5.9)는 `mech_STEPSWAP_model_v2.5.9.md`로 옮김.
+- 저장: `3D_Modeling/FSAP_v2.6.8.sc`(마지막 자리 +1, E-05: 새 유닛·부품 묶음 없음 — 같은 레귤레이터·이음·관·볼트를 실물로 바꿔 이름만 바뀜). `tools/config.json` doc·`tools/machine.json` doc·U8 부품 목록·_history 고침. 통로 **MCP**(앱 running 빈 목록, 막힘 없음).
+- 바꾼 것: `STEP대기_IR1000-01BG_M08_N/F/S`(+`_BRKT`) → **`IR1000-01BG_M08:1~3`**(SMC STEP: 몸통·게이지 G33-2-01·세트 너트·브래킷 P36201023). 실물에 맞춰 브래킷 볼트 CB5-12_M08_PY ×6 → **CB4-12_M08_REG ×6**, 이음 KQ2L08-01AS → `_M08R_PX/NX` ×6, 관 TU0805 6줄 → `_M08T_REG_*`.
+- 핵심 수치: 포트·게이지 중심 Z 511 → **482**(손잡이 윗면 Z **565** 그대로, 롤 밑 약 601), 몸 X ±17.5(임시 ±12.5), 브래킷 뒷면 Y 120 = 보 앞면, 게이지 시선 틈 3.2 → 약 **17.9**(손계산).
+- 지시 형번 `STEP대기_IR1000` 남은 것 0(저장본 CLI 다시 열기 바디 이름 검색). 저장본 다시 열기: 타임라인 2,064 피처 오류 0, 바디 2,666 — 앱과 bbox·부피 모두 같음(바뀐 것 0).
+- 과제 안 검사: 새·바꾼 30바디 ↔ 주변 13바디·서로 inspect.clearance 겹침 0. floating 0, conflicts 0. U8은 고정 유닛(조인트 없음).
+- 미완: 없음. 외부: 없음(IR1000-01BG·CB4-12·KQ2L08-01AS STEP은 purchased-step·PartsLibrary에 이미 있음).
+- 지난 STEPSWAP 보고서(r3, v2.6.4)는 `mech_STEPSWAP_model_v2.6.4.md`로 옮겨 남김.
 
 ## 1. 통로·문서 확인
 
-- `running` → 빈 목록. 열린 문서는 이름 'FSAP_v2.6.3', `path: null`, `dirty: true`, **undo 0·redo 0**, 피처 1,998, 오류 0. 이 세션에서 편집한 것이 없어 버릴 사람 편집이 없다고 판정(r2와 같은 상태). 지시서 (b)의 'merged' 문서는 이미 없었다. 저장본 `3D_Modeling/FSAP_v2.6.3.sc`를 `open`(오류 0, 피처 1,998).
-- 경고 15건(6004ZZ 볼 면 못 읽음, Extrude30 Boolean retry 등)은 저장본에 원래 있던 것이고 이번 과제와 무관.
-- `motion.play REST step 0` → `edit.checkpoint` → 그림(batch 2개: 지우기 0.9 s, 넣기 8.0 s) → 리지드 그룹 → REST·조인트 글리프 숨김(규칙 19)·루트 이름 'FSAP_v2.6.4'·설명 'STEPSWAP mechanism: STEP-wait CB5-6 x2 (2E curtain bracket, U8) swapped to Misumi CB5-6 STEP' → `save {path: v2.6.4}`(4,428,487 B). 저장 뒤 편집 없음(스크린샷만).
-- 기록: `tools/out/mech_STEPSWAP/edit.json`(16 명령), `edit_meta.json`(base v2.6.3 → result v2.6.4). 지난 회차 기록은 `edit_v2.5.8.json`·`edit_meta_v2.5.8.json`으로 남김. 리지드 그룹은 MCP에서 occurrence id [18, 9279]·[18, 9281]로 보냈고 기록에는 이름(`U8_PNEU:1`, `CB5-6_M08_PY_LC2F:1·:2`)과 id 메모를 함께 적었다.
+- `running` → 빈 목록. 열린 문서: 이름 'FSAP_v2.6.7', path `3D_Modeling/FSAP_v2.6.7.sc`, **dirty true, undo 43**(REG-02 수정 1회차 모델링부가 그린 뒤 저장한 세션).
+- dirty 판정: 저장본을 CLI(`document.inspect`, 열기 150 s)로 열어 타임라인을 비교 — 피처 2,054개, id·이름·억제·롤백 모두 앱과 같음. 저장 뒤 형상 편집 없음(포즈·표시만 바뀐 dirty)으로 보고 버릴 사람 편집이 없다고 판정, 그대로 이어감. (안내서 '문서 확인': 같은 경로 open은 디스크를 다시 읽지 않으므로 다시 열지 않음.)
+- `edit.checkpoint` → `motion.play REST step 0` → 그림(batch 8개) → REST·조인트 글리프 숨김(규칙 19)·루트 이름 'FSAP_v2.6.8'·설명 'STEPSWAP mechanism: STEP-wait IR1000-01BG x3 swapped to SMC STEP (bracket keyhole CB4-12 x6, KQ2L08 elbows and TU0805 tubes re-placed)' → `save {path: v2.6.8}`(4,478,345 B). 저장 뒤 편집 없음.
+- 탐색 실수 1: 첫 `file.insert_step` 행렬을 열 기준으로 잘못 줘 손잡이 축이 −Z로 들어감 → `undo` 2번(Insert STEP·Play)으로 되돌림(undo 43 확인) 뒤 바른 행렬로 다시 넣음. 기록(edit.json)에는 바른 것만.
+- 기록: `tools/out/mech_STEPSWAP/edit.json`(140 명령, 생성기 `tools/gen_v2_stepswap_r4.py`), `edit_meta.json`(base v2.6.7 → result v2.6.8). 지난 회차 기록은 `edit_v2.6.4.json`·`edit_meta_v2.6.4.json`.
 
-## 2. 바꾼 부품과 좌표(세계, REST)
+## 2. 바꾼 부품과 좌표(세계, REST, U8_PNEU = 항등)
 
-볼트 STEP 틀: 로컬 +X = 나사 축, 원점 = 머리 밑면(미스미 SolidWorks 2016 STEP, 바디 'Cut-Extrude1' — CB4-25·CB6-16과 같음). 넣기 행렬 `[0,-1,0,-2315, 1,0,0,-1561, 0,0,1,100]`(로컬 X → 세계 +Y).
+IR1000 STEP 틀: 로컬 Y = 손잡이 축(+83 손잡이 끝), 로컬 +Z = 게이지 쪽, 포트 Rc1/8 = 로컬 X ±17.5 · Y 0 · Z 0. 넣은 행렬(row-major) `[1,0,0,700, 0,0,-1,95, 0,1,0,482]` — 로컬 Y → 세계 +Z, 로컬 Z → 세계 −Y.
 
-| 새 부품 | 유닛(부모) | 자리 | bbox | 부피·질량 | 지운 임시 형상 |
-|---|---|---|---|---|---|
-| `CB5-6_M08_PY_LC2F:1` | U8_PNEU(항등) | 머리 밑면 Y −1561(옆 투광 L 날개 바깥면), 축 +Y, X −2315, Z 100. 끝 Y −1555 = 커튼 면 | X −2319.25~−2310.75, Y −1566~−1555, Z 95.75~104.25 | 358.6 mm³, 2.82 g, SCM435 | `STEP대기_CB5-6_M08_PY_LC2F:1` |
-| `CB5-6_M08_PY_LC2F:2` | U8_PNEU | 같은 축, Z 700 | Z 695.75~704.25(나머지 같음) | 같음 | `STEP대기_CB5-6_M08_PY_LC2F:2` |
+| 새 부품 | 자리 | bbox(:1, X는 +100·+200이 :2·:3) | 부피·재질 | 지운 것 |
+|---|---|---|---|---|
+| `IR1000-01BG_M08:1~3` 몸 `_BODY` | 포트 중심 (700/800/900, 95, 482) | X 682.5~717.5, Y 77.5~113, Z 472.5~565 | 62,981 mm³, Aluminum(임시) | `STEP대기_IR1000-01BG_M08_N/F/S` 바디+컴포넌트 |
+| 게이지 `_GAUGE`(G33-2-01) | 앞(−Y), 중심 Z 482 | X 685~715, Y 51.5~81, Z 467~497 | 12,066 mm³, ABS(임시) | 〃 |
+| 세트 너트 `_SETNUT` | 브래킷 윗판 위 | X 689.5~710.5, Y 84.5~105.5, Z 536.3~541.5 | 929 mm³, Steel | 〃 |
+| 브래킷 `_BRKT`(P36201023, L t2) | 세운 판 Y 118~120(뒷면 = 보 앞면 Y 120), 윗판 Z 534.3~536.3. 열쇠 구멍 Ø8.5(Z 521.4) + 폭 4.5 홈 위 끝 Z 527.8, X ±14 | X 679~721, Y 86~120, Z 514.3~536.3 | 3,141 mm³, Steel | `…_BRKT` 3 |
+| `CB4-12_M08_REG:1~6` | 머리 밑면 Y 118(브래킷 앞면), 축 +Y, X 686·714 / 786·814 / 886·914, Z 527.8(홈 위 끝). 보 앞벽 STKR400 t8 물림 8 | X 682.5~689.5, Y 114~130, Z 524.3~531.3 | 285.3 mm³, SCM435 | `CB5-12_M08_PY:1~6`(occurrence 지움, :7~:10 커튼 금구 것은 그대로) |
+| `KQ2L08-01AS_M08R_PX/NX:1~3` | 포트 면 X x±17.5, Y 95, Z 482(STEP 원점 x±13.5), 관 출구 X x±29.1 · 밑 Z 465.6 | PX X 710.4~735.7, Y 88.4~101.6, Z 465.6~487.8 | 2,545.5 mm³, Default(전과 같음) | `KQ2L08-01AS_M08_PX/NX`(STEP 컴포넌트, 지우기만) |
+| `TU0805_M08T_REG_IN_1~3` | (x−29.1, 95, 465.6) → 아래 Z 305/315/325 → Y 50 → X 1140(매니폴드 입구, 전과 같음) | IN_1 X 666.9~1140, Y 46~99, Z 301~465.6 | 33,046 mm³ 등 | `TU0805_M08S_REG_IN_*`(solid.remove + component.delete) |
+| `TU0805_M08T_REG_OUT_1~3` | (x+29.1, 95, 465.6) → 아래 Z 334.5/351/367.5 → Y 107.5 → X 1035(매니폴드 −X 끝면 포트, 전과 같음) | OUT_1 X 725.1~1035, Y 91~111.6, Z 330.4~465.6 | 22,312 mm³ 등 | `TU0805_M08S_REG_OUT_*` |
 
-- 임시 형상과 bbox가 같다. 부피는 실물이 육각 구멍·모따기 몫만큼 작다(401.5 → 358.6).
-- 지운 순서: `selection.delete` 두 occurrence(옮김 피처 BodyTransfer199·리지드 9245가 같이 지워짐) → 원래 자리로 돌아온 임시 바디 `solid.remove`(Remove43). 임시 컴포넌트 정의도 남지 않음(`component.metadata` → 없음). r2의 Remove41 실패(지운 바디를 만든 피처가 component.delete로 같이 사라짐)와 달리 `component.delete`를 쓰지 않아, 다시 연 저장본에서 타임라인 실패 0.
-- 빈 구멍 0: 2E 금구 임시 판의 M5 탭(Ø4.2 깊이 3)과 L 날개 구멍을 같은 자리·같은 지름으로 그대로 쓴다.
-- 조인트: 새 조인트 없음. 리지드 그룹 9282·9283(U8_PNEU ↔ 볼트), 고정 유닛이라 행정 없음. machine.json은 doc·유닛 부품 이름(`STEP대기_CB5-6_M08_PY_LC2F` → `CB5-6_M08_PY_LC2F`)만 바꾸고 `_history`에 한 줄.
+- 부품 번호·bom_type purchased·설명은 컴포넌트 metadata에. 새 컴포넌트는 U8_PNEU 아래, U8 리지드 그룹(IR 95114~95116, CB4-12 95126~95131, KQ2L08 95142~95147). 관 컴포넌트는 U8_PNEU 하위(전과 같음).
+- 지운 것 잔재: 바디·컴포넌트 0(저장본에 `STEP대기_IR1000`·`KQ2L08-01AS_M08_`·`M08S_REG` 바디 0). 빈 구멍 0: 보 P_M07_BEAM에는 볼트 자리 구멍이 모델에 없다(옛 CB5-12 자리 면 확인 — 평면, 원통 없음. 탭 물림은 겹침으로 두는 기존 방식).
+- 리지드에 묶인 KQ2L08 occurrence는 `occurrence.move`가 거부("held in U8_PNEU by a rigid group") → 지우고 새 이름으로 다시 넣음.
+- 관 굽힘: 입구 줄 R 20, 출구 줄 R 6.25(구간이 짧아 줄어듦, 최소 20보다 작음 — 전과 같은 길, 디테일 SW4-D1).
+- 재질: 구매품 질량용 임시 지정(디테일 SW4-D2). 가공품 변경 없음 → matcheck 대상 없음.
+- 조인트·행정·연구 변화 없음 → machine.json은 doc·U8 부품 접두(`STEP대기_IR1000` → `IR1000-01BG_M08`, `CB4-12_M08_REG` 더함)·_history 한 줄.
+- BOM: `docs/bom/FSAP_v2.6.8_purchased.csv`(IR1000·KQ2L08·TU0805 행 고침, CB4-12 행 새로 6, CB5-12 첫 행 31 → 25), `FSAP_v2.6.8_made.csv`(v2.6.7과 같음).
 
-## 3. 검사(수치, E-16)
+## 3. 높이 정하기(지시 '실물 치수가 달라 생긴 높이 어긋남은 이 과제에서 고친다')
 
-과제 안 검사(지시 6-1). CB5-6은 고정 유닛 U8에 있어 직접 구동 조인트가 없다. 가장 가까운 가동부 U5(J_U5_X)를 M08R과 같이 0·690·1380(0·50·100 %)에서 보았다. 전 사이클 motion.interference는 돌리지 않았다.
+| 안 | 포트 Z | 손잡이 윗면 | 판정 |
+|---|---|---|---|
+| 포트 높이 유지 | 511 | 594(롤 밑 약 601에 7) | 결정 M08 수정 1(손잡이·게이지를 Z −25 내려 롤 밑을 비킴)을 거스름 |
+| **손잡이 윗면 유지(채택)** | **482** | **565** | 몸 밑 472.5, 이음 밑 465.6 — 아래 관 길과 겹침 0 |
 
-| 자세 | 대상 | against | 겹침 | 가까움 | unchecked |
-|---|---|---|---|---|---|
-| REST | CB5-6 :1 | P_M08_LC2F_BRKT_SM_1·F3SG-4RA0800-14_M08_2E·STEP대기_F39-LSGF_M08_2E | 0 | L 날개 0.000(머리 자리 맞닿음) | F39 2E 금구(나사 물림, boolean 실패) |
-| REST | CB5-6 :2 | P_M08_LC2F_BRKT_SM_2·F3SG 2E·STEP대기_F39-LSGF_M08_2E_2 | 0 | L 날개 0.000 | F39 2E_2 금구(나사 물림) |
-| J_U5_X 0·690·1380 | 둘 다 nearest 4 | 전체 | 0 | 서로 591.5 외 가까운 바디 없음 | 0 |
+게이지 시선(M08-X6, 손계산): 눈 (Y −400, Z 700) → 게이지 윗끝 (Y 51.5, Z 497). 기울기 −203/451.5 = −0.4496, Y −140에서 Z 583.1 → 롤 밑(약 601)과 틈 약 17.9(임시 형상 때 3.2). 롤 실제 윤곽으로 다시 잰 값은 아님(검도가 필요하면 잰다).
 
-- 커튼 F3SG 2E와는 따로 재도 겹침 0, 거리 0.5 안 0(끝 Y −1555가 커튼 면과 같은 평면, M08R과 같음).
-- unchecked 2쌍은 나사부 ↔ M5 탭 물림(M-08 의도 겹침, M08R 'CB5-6 ↔ 금구 M5 탭 17.3 mm³ ×2'와 같은 쌍). 실물이 같은 자리·같은 지름이라 물림 길이 3 그대로.
-- 숨김: 바디 9개(MAT·TAPE·SEAM 모형 ×3, C-31 의도). occurrence 숨김 0. 조인트 글리프 숨김(규칙 19).
-- 재질: 새 바디 SCM435(기존 CB 볼트와 같음). 가공품 변화 없음 → matcheck 대상 없음.
-- 볼트 검사: 자리·방향·길이가 임시와 같아 새 막힘 없음. 물림 3(0.6d)은 디테일 M08R-D1 그대로(기록만, E-02).
-- 강도: 새로 힘을 받는 가공품 없음 → 임시 STEP 없음, FEA 없음.
-- 원본: `tools/out/mech_STEPSWAP/r3/verify.json`·`verify_out.json`. 스크린샷(저장만) `tools/out/mech_STEPSWAP/r3/cb56_iso.png`.
+## 4. 검사(수치, E-16) — 앱 MCP
 
-### 3-1. 저장본 확인(다시 연 파일)
+| 검사 | 범위 | 결과 |
+|---|---|---|
+| inspect.clearance(clearance 2) 새·바꾼 30바디 ↔ 주변 13바디(보·롤 기둥·관 TU0604 11줄) | REST(U8 고정) | 겹침 0. 맞닿음 0.0: 브래킷 ↔ 보 앞면 ×3(의도, 붙임면). 0.81: TU0604_M08S_U5_A ↔ REG_IN_1 X 1059.8(매니폴드 쪽 가로 구간, 옛 관과 같은 길이라 전부터 있던 틈). unchecked 6: CB4-12 ↔ 보(커널 불리언 실패 = 탭 물림, 옛 CB5-12와 같음) |
+| inspect.clearance(clearance 1) 볼트·이음·관 18 ↔ 레귤레이터 12·이음 6 | REST | 겹침 0. 맞닿음: 볼트 머리 ↔ 브래킷 앞면 ×6, 관 끝 ↔ 이음 출구 ×6(의도). unchecked 6: 이음 R1/8 나사 ↔ 레귤레이터 포트(나사 물림, 전 SW-D3와 같은 종류) |
+| inspect.interference(전 사이) | 같은 43바디 | 240 s 예산 넘김(관 ↔ 몸 불리언 한 쌍 200 s 넘음) — 판정은 clearance로 함 |
+| joint.list | 전체 | floating 0, conflicts 0, errors 0 |
+| 숨김 | 전체 | 9(MAT/TAPE/SEAM 모형 — 의도, 전과 같음) |
+| 저장 확인(CLI `run --results`, 열기 약 150 s) | 저장본 v2.6.8 | 타임라인 오류 0(2,064), 바디 2,666 — 앱과 bbox·부피 차이 0, dirty false, 이름 FSAP_v2.6.8 |
 
-`solidcraft-cli run r3/verify.json --in 3D_Modeling/FSAP_v2.6.4.sc --results`(297 s): 오류 출력 없음(타임라인 실패 0), 바디 2,649(v2.6.3과 같음: 임시 2 빠지고 실물 2 들어옴), `CB5-6_M08_PY_LC2F`·`(…:2)` bbox·부피가 앱 측정과 같음, 바꾸지 않은 `P_M08_LC2F_BRKT_SM_1·_2`·`F3SG-4RA0800-14_M08_2E`의 bbox·부피가 서명과 같음, `joint.list` floating 0·conflicts 0, 새 occurrence 9279·9281 dof 0. 바디 이름에 `STEP대기_CB5-6` 0.
-- 서명: `ledger.py sigpatch`(바뀜 2, 없어짐 2, 전체 2,649), 볼트는 `r3/changed_bolts.json`.
+- 조인트 자기 점검: U8_PNEU는 움직이는 조인트가 없는 고정 유닛(REF_GROUND 리지드)이라 쓸기 없음. 새 부품은 U8 리지드 그룹에 묶임(floating 0).
+- 레귤레이터 STEP 안쪽 바디끼리(몸 ↔ 게이지·너트)는 커널 불리언 실패 — 제조사 조립 그대로라 검사 대상 아님.
+- 측정 표(서명): `ledger.py sigpatch` — 바뀜 34, 없어짐 24, 전체 2,666(`tools/out/mech_STEPSWAP/r4/changed_parts.json`·`removed.txt`·`changed_bolts.json`).
+- 임시 STEP: 없음(새로 힘을 받는 가공품 없음 — 브래킷은 구매품).
+- 스크린샷(사람용, 열어 보지 않음): `tools/out/mech_STEPSWAP/ir1000_v268_iso.png`(CLI snapshot).
 
-## 4. 문서
+## 5. 볼트(새로 만든 것만)
 
-- BOM: `docs/bom/FSAP_v2.6.4_purchased.csv`(CB5-6 행: 실물 STEP), `FSAP_v2.6.4_made.csv`(v2.6.3과 같음).
-- 자료대기 D-135: 2E 금구 볼트 CB5-6 해결로 적음. 남은 것은 금구 F39-LSGF ×8(원문 대조·STEP).
-- CHANGELOG v2.6.4 한 줄.
+CB4-12 ×6: M4 × 12, 브래킷 t2 + 보 앞벽 t8 → 물림 8(≥ 1.5d = 6). 하중은 레귤레이터 한 대 약 0.2 kg을 볼트 2개가 받음(전단 약 1 N/개) — 여유 큼. 열쇠 구멍 홈 폭 4.5 ↔ 나사 Ø4(틈 0.25), 머리 Ø7이 홈 위 끝에 걸림. 렌치 길: 머리 앞면 Y 114와 레귤레이터 몸 뒷면 Y 113 사이 1 — 몸을 단 채로는 머리에 렌치가 닿지 않는다. 조립 순서는 브래킷만 먼저 보에 CB4-12로 조이고(앞이 비어 육각 렌치 3 곧게 들어감), 그다음 레귤레이터 몸을 브래킷 윗판 구멍에 꽂아 세트 너트로 잡는다(SMC 브래킷 붙임 방식). 빼낼 때는 세트 너트를 풀어 몸을 먼저 뺀다. 디테일 단계 기록(E-02).
 
-## 5. 못 한 것
+## 6. 못 한 것
 
 - 없음.
 
-## 6. 근거 규칙
+## 워크플로우 메모
 
-- E-05 "형상이 바뀌면 새 번호로 저장": 마지막 자리 +1.
-- E-10 "STEP대기_ 임시 형상을 실물로 바꿀 수 있는지 본다", 실행 규칙 10 "받은 STEP은 purchased-step/<형번>/<형번>.stp".
-- E-11 숨김·리지드 누락 0, E-16 수치로만, M-08 나사 물림은 의도 겹침.
+- `inspect.measure`에 `body`를 주면 앱 batch·CLI 둘 다 전체 바디를 잰다(인자 이름이 다른 듯 — MCP `measure {body}`는 하나만). 큰 결과(앱 10 MB)가 나와 파일로 빠짐.
+- `inspect.interference`는 긴 관(3D pipe) ↔ STEP 몸 한 쌍이 200 s 넘게 걸려 과제 범위 검사도 예산을 넘김. `inspect.clearance`는 같은 쌍을 수십 ms에 끝냄 → 과제 안 정적 검사는 clearance로.
+- 리지드 그룹에 묶인 occurrence는 `occurrence.move`가 거부한다. STEP 구매품을 옮기려면 지우고 다시 넣는 것이 빠름(KQ2L08 넣기 1 s).
+- `component.delete` 한 번에 22~73 s(파일 4.4 MB) — 지울 컴포넌트가 많으면 batch를 3개씩 나눔.

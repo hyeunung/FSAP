@@ -3,24 +3,8 @@
   "command": "motion.play",
   "params": {
    "study": "REST",
-   "step": 0
-  }
- },
- {
-  "command": "selection.delete",
-  "params": {
-   "occurrences": [
-    "STEP대기_CB5-6_M08_PY_LC2F:1",
-    "STEP대기_CB5-6_M08_PY_LC2F:2"
-   ]
-  }
- },
- {
-  "command": "solid.remove",
-  "params": {
-   "bodies": [
-    "STEP대기_CB5-6_M08_PY_LC2F"
-   ]
+   "step": 0,
+   "quiet": true
   }
  },
  {
@@ -32,58 +16,123 @@
  {
   "command": "file.insert_step",
   "params": {
-   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/CB5-6/CB5-6.stp",
-   "name": "CB5-6_M08_PY_LC2F",
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/IR1000-01BG/IR1000-01BG.stp",
+   "name": "IR1000-01BG_M08_N",
    "matrix": [
+    1,
+    0,
+    0,
+    700,
+    0,
     0,
     -1,
-    0,
-    -2315.0,
-    1,
-    0,
-    0,
-    -1561.0,
-    0,
+    95,
     0,
     1,
-    100.0
+    0,
+    482
    ]
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": 0
+  }
+ },
+ {
+  "command": "component.rename",
+  "params": {
+   "component": "IR1000-01BG_M08_N",
+   "name": "IR1000-01BG_M08"
   }
  },
  {
   "command": "body.rename",
   "params": {
-   "body": "Cut-Extrude1",
-   "name": "CB5-6_M08_PY_LC2F"
+   "body": "IR1000-01BG(0)_BODY",
+   "name": "IR1000-01BG_M08_BODY"
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "G33-2-01_IR1000-BG",
+   "name": "IR1000-01BG_M08_GAUGE"
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "IR1000(0)_SETNUT",
+   "name": "IR1000-01BG_M08_SETNUT"
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "P36201023_IR",
+   "name": "IR1000-01BG_M08_BRKT"
   }
  },
  {
   "command": "component.metadata.set",
   "params": {
-   "component": "CB5-6_M08_PY_LC2F",
-   "part_number": "CB5-6",
+   "component": "IR1000-01BG_M08",
+   "part_number": "IR1000-01BG",
    "bom_type": "purchased",
-   "description": "Misumi CB5-6 STEP: side emitter L wing -> 2E bracket M5 tap, end at curtain face Y -1555 (STEPSWAP r3)"
+   "description": "SMC IR1000-01BG STEP (gauge G33-2-01, bracket P36201023, set nut): precision regulators N/F/S (:1~3) X 700/800/900, ports Z 482, knob top Z 565, bracket hung on beam front Y 120 (STEPSWAP r4)"
   }
  },
  {
   "command": "material.assign",
   "params": {
    "bodies": [
-    "CB5-6_M08_PY_LC2F"
+    "IR1000-01BG_M08_BODY"
    ],
-   "material": "SCM435"
+   "material": "Aluminum"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "IR1000-01BG_M08_GAUGE"
+   ],
+   "material": "ABS Plastic"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "IR1000-01BG_M08_SETNUT",
+    "IR1000-01BG_M08_BRKT"
+   ],
+   "material": "Steel"
   }
  },
  {
   "command": "occurrence.copy",
   "params": {
-   "occurrence": "CB5-6_M08_PY_LC2F:1",
+   "occurrence": "IR1000-01BG_M08:1",
    "in_place": true,
    "translate": [
+    100,
     0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "IR1000-01BG_M08:1",
+   "in_place": true,
+   "translate": [
+    200,
     0,
-    600.0
+    0
    ]
   }
  },
@@ -98,9 +147,8 @@
   "params": {
    "occurrences": [
     "U8_PNEU:1",
-    "CB5-6_M08_PY_LC2F:1"
-   ],
-   "_note": "MCP used occurrence ids [18, 9279]"
+    "IR1000-01BG_M08:1"
+   ]
   }
  },
  {
@@ -108,9 +156,1320 @@
   "params": {
    "occurrences": [
     "U8_PNEU:1",
-    "CB5-6_M08_PY_LC2F:2"
+    "IR1000-01BG_M08:2"
+   ]
+  }
+ },
+ {
+  "command": "joint.rigid_group",
+  "params": {
+   "occurrences": [
+    "U8_PNEU:1",
+    "IR1000-01BG_M08:3"
+   ]
+  }
+ },
+ {
+  "command": "solid.remove",
+  "params": {
+   "bodies": [
+    "STEP대기_IR1000-01BG_M08_N",
+    "STEP대기_IR1000-01BG_M08_N_BRKT",
+    "STEP대기_IR1000-01BG_M08_F",
+    "STEP대기_IR1000-01BG_M08_F_BRKT",
+    "STEP대기_IR1000-01BG_M08_S",
+    "STEP대기_IR1000-01BG_M08_S_BRKT"
+   ]
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "STEP대기_IR1000-01BG_M08_N"
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "STEP대기_IR1000-01BG_M08_F"
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "STEP대기_IR1000-01BG_M08_S"
+  }
+ },
+ {
+  "command": "selection.delete",
+  "params": {
+   "occurrences": [
+    "CB5-12_M08_PY:1",
+    "CB5-12_M08_PY:2",
+    "CB5-12_M08_PY:3",
+    "CB5-12_M08_PY:4",
+    "CB5-12_M08_PY:5",
+    "CB5-12_M08_PY:6"
+   ]
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": "U8_PNEU"
+  }
+ },
+ {
+  "command": "file.insert_step",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/CB4-12/CB4-12.stp",
+   "name": "CB4-12_M08_REG",
+   "matrix": [
+    0,
+    -1,
+    0,
+    686,
+    1,
+    0,
+    0,
+    118,
+    0,
+    0,
+    1,
+    527.8
+   ]
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": 0
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "Cut-Extrude1",
+   "name": "CB4-12_M08_REG"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "CB4-12_M08_REG",
+   "part_number": "CB4-12",
+   "bom_type": "purchased",
+   "description": "Misumi CB4-12 STEP: IR1000 bracket P36201023 keyhole slot top (Z 527.8) -> beam front wall M4 tap, engagement 8 of t8 (STEPSWAP r4, replaces CB5-12 x6)"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "CB4-12_M08_REG"
    ],
-   "_note": "MCP used occurrence ids [18, 9281]"
+   "material": "SCM435"
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "CB4-12_M08_REG:1",
+   "in_place": true,
+   "translate": [
+    28,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "CB4-12_M08_REG:1",
+   "in_place": true,
+   "translate": [
+    100,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "CB4-12_M08_REG:1",
+   "in_place": true,
+   "translate": [
+    128,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "CB4-12_M08_REG:1",
+   "in_place": true,
+   "translate": [
+    200,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "CB4-12_M08_REG:1",
+   "in_place": true,
+   "translate": [
+    228,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": 0
+  }
+ },
+ {
+  "command": "joint.rigid_group",
+  "params": {
+   "occurrences": [
+    "U8_PNEU:1",
+    "CB4-12_M08_REG:1",
+    "CB4-12_M08_REG:2",
+    "CB4-12_M08_REG:3",
+    "CB4-12_M08_REG:4",
+    "CB4-12_M08_REG:5",
+    "CB4-12_M08_REG:6"
+   ]
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "KQ2L08-01AS_M08_PX"
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "KQ2L08-01AS_M08_NX"
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": "U8_PNEU"
+  }
+ },
+ {
+  "command": "file.insert_step",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/KQ2L08-01AS/KQ2L08-01AS.stp",
+   "name": "KQ2L08-01AS_M08R_PX",
+   "matrix": [
+    0,
+    1,
+    0,
+    713.5,
+    0,
+    0,
+    -1,
+    95,
+    -1,
+    0,
+    0,
+    482
+   ]
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "KQ2L08-01AS",
+   "name": "KQ2L08-01AS_M08R_PX"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "KQ2L08-01AS_M08R_PX",
+   "part_number": "KQ2L08-01AS",
+   "bom_type": "purchased",
+   "description": "SMC KQ2L08-01AS elbow STEP, IR1000 OUT port (+X) face X+17.5, Z 482 (STEPSWAP r4)"
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "KQ2L08-01AS_M08R_PX:1",
+   "in_place": true,
+   "translate": [
+    100,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "KQ2L08-01AS_M08R_PX:1",
+   "in_place": true,
+   "translate": [
+    200,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": "U8_PNEU"
+  }
+ },
+ {
+  "command": "file.insert_step",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/KQ2L08-01AS/KQ2L08-01AS.stp",
+   "name": "KQ2L08-01AS_M08R_NX",
+   "matrix": [
+    0,
+    -1,
+    0,
+    686.5,
+    0,
+    0,
+    1,
+    95,
+    -1,
+    0,
+    0,
+    482
+   ]
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "KQ2L08-01AS",
+   "name": "KQ2L08-01AS_M08R_NX"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "KQ2L08-01AS_M08R_NX",
+   "part_number": "KQ2L08-01AS",
+   "bom_type": "purchased",
+   "description": "SMC KQ2L08-01AS elbow STEP, IR1000 IN port (-X) face X-17.5, Z 482 (STEPSWAP r4)"
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "KQ2L08-01AS_M08R_NX:1",
+   "in_place": true,
+   "translate": [
+    100,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "KQ2L08-01AS_M08R_NX:1",
+   "in_place": true,
+   "translate": [
+    200,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": 0
+  }
+ },
+ {
+  "command": "joint.rigid_group",
+  "params": {
+   "occurrences": [
+    "U8_PNEU:1",
+    "KQ2L08-01AS_M08R_PX:1",
+    "KQ2L08-01AS_M08R_PX:2",
+    "KQ2L08-01AS_M08R_PX:3",
+    "KQ2L08-01AS_M08R_NX:1",
+    "KQ2L08-01AS_M08R_NX:2",
+    "KQ2L08-01AS_M08R_NX:3"
+   ]
+  }
+ },
+ {
+  "command": "solid.remove",
+  "params": {
+   "bodies": [
+    "TU0805_M08S_REG_IN_1",
+    "TU0805_M08S_REG_IN_2",
+    "TU0805_M08S_REG_IN_3",
+    "TU0805_M08S_REG_OUT_1",
+    "TU0805_M08S_REG_OUT_2",
+    "TU0805_M08S_REG_OUT_3"
+   ]
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "TU0805_M08S_REG_IN_1"
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "TU0805_M08S_REG_IN_2"
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "TU0805_M08S_REG_IN_3"
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "TU0805_M08S_REG_OUT_1"
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "TU0805_M08S_REG_OUT_2"
+  }
+ },
+ {
+  "command": "component.delete",
+  "params": {
+   "component": "TU0805_M08S_REG_OUT_3"
+  }
+ },
+ {
+  "command": "component.activate",
+  "params": {
+   "component": 0
+  }
+ },
+ {
+  "command": "component.create",
+  "params": {
+   "name": "TU0805_M08T_REG_IN_1",
+   "parent": "U8_PNEU",
+   "activate": false
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": "XY",
+   "name": "SK_TU0805_M08T_REG_IN_1_SW"
+  }
+ },
+ {
+  "command": "sketch.options",
+  "params": {
+   "sketch_3d": true
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     670.9,
+     95.0,
+     465.6
+    ],
+    [
+     670.9,
+     95.0,
+     325.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    670.9,
+    95.0,
+    325.0
+   ],
+   "through": [
+    670.9,
+    89.1421,
+    310.8579
+   ],
+   "end": [
+    670.9,
+    75.0,
+    305.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     670.9,
+     75.0,
+     305.0
+    ],
+    [
+     670.9,
+     70.0,
+     305.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    670.9,
+    70.0,
+    305.0
+   ],
+   "through": [
+    676.7579,
+    55.8579,
+    305.0
+   ],
+   "end": [
+    690.9,
+    50.0,
+    305.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     690.9,
+     50.0,
+     305.0
+    ],
+    [
+     1140.0,
+     50.0,
+     305.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.pipe",
+  "params": {
+   "path_sketch": "SK_TU0805_M08T_REG_IN_1_SW",
+   "path": [
+    "w1",
+    "w2",
+    "w3",
+    "w4",
+    "w5"
+   ],
+   "diameter": 8.0,
+   "operation": "new",
+   "body_name": "TU0805_M08T_REG_IN_1"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_IN_1"
+   ],
+   "material": "Default"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_IN_1"
+   ],
+   "component": "TU0805_M08T_REG_IN_1"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "TU0805_M08T_REG_IN_1",
+   "part_number": "TU0805",
+   "bom_type": "purchased",
+   "description": "SMC TU0805 polyurethane tube, cut to length (IR1000 real port X+-29.1 outlet, Z 465.6, STEPSWAP r4)"
+  }
+ },
+ {
+  "command": "component.create",
+  "params": {
+   "name": "TU0805_M08T_REG_OUT_1",
+   "parent": "U8_PNEU",
+   "activate": false
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": "XY",
+   "name": "SK_TU0805_M08T_REG_OUT_1_SW"
+  }
+ },
+ {
+  "command": "sketch.options",
+  "params": {
+   "sketch_3d": true
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     729.1,
+     95.0,
+     465.6
+    ],
+    [
+     729.1,
+     95.0,
+     340.75
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    729.1,
+    95.0,
+    340.75
+   ],
+   "through": [
+    729.1,
+    96.8306,
+    336.3306
+   ],
+   "end": [
+    729.1,
+    101.25,
+    334.5
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    729.1,
+    101.25,
+    334.5
+   ],
+   "through": [
+    730.9306,
+    105.6694,
+    334.5
+   ],
+   "end": [
+    735.35,
+    107.5,
+    334.5
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     735.35,
+     107.5,
+     334.5
+    ],
+    [
+     1035.0,
+     107.5,
+     334.5
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.pipe",
+  "params": {
+   "path_sketch": "SK_TU0805_M08T_REG_OUT_1_SW",
+   "path": [
+    "w1",
+    "w2",
+    "w3",
+    "w4"
+   ],
+   "diameter": 8.0,
+   "operation": "new",
+   "body_name": "TU0805_M08T_REG_OUT_1"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_OUT_1"
+   ],
+   "material": "Default"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_OUT_1"
+   ],
+   "component": "TU0805_M08T_REG_OUT_1"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "TU0805_M08T_REG_OUT_1",
+   "part_number": "TU0805",
+   "bom_type": "purchased",
+   "description": "SMC TU0805 polyurethane tube, cut to length (IR1000 real port X+-29.1 outlet, Z 465.6, STEPSWAP r4)"
+  }
+ },
+ {
+  "command": "component.create",
+  "params": {
+   "name": "TU0805_M08T_REG_IN_2",
+   "parent": "U8_PNEU",
+   "activate": false
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": "XY",
+   "name": "SK_TU0805_M08T_REG_IN_2_SW"
+  }
+ },
+ {
+  "command": "sketch.options",
+  "params": {
+   "sketch_3d": true
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     770.9,
+     95.0,
+     465.6
+    ],
+    [
+     770.9,
+     95.0,
+     335.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    770.9,
+    95.0,
+    335.0
+   ],
+   "through": [
+    770.9,
+    89.1421,
+    320.8579
+   ],
+   "end": [
+    770.9,
+    75.0,
+    315.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     770.9,
+     75.0,
+     315.0
+    ],
+    [
+     770.9,
+     70.0,
+     315.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    770.9,
+    70.0,
+    315.0
+   ],
+   "through": [
+    776.7579,
+    55.8579,
+    315.0
+   ],
+   "end": [
+    790.9,
+    50.0,
+    315.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     790.9,
+     50.0,
+     315.0
+    ],
+    [
+     1140.0,
+     50.0,
+     315.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.pipe",
+  "params": {
+   "path_sketch": "SK_TU0805_M08T_REG_IN_2_SW",
+   "path": [
+    "w1",
+    "w2",
+    "w3",
+    "w4",
+    "w5"
+   ],
+   "diameter": 8.0,
+   "operation": "new",
+   "body_name": "TU0805_M08T_REG_IN_2"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_IN_2"
+   ],
+   "material": "Default"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_IN_2"
+   ],
+   "component": "TU0805_M08T_REG_IN_2"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "TU0805_M08T_REG_IN_2",
+   "part_number": "TU0805",
+   "bom_type": "purchased",
+   "description": "SMC TU0805 polyurethane tube, cut to length (IR1000 real port X+-29.1 outlet, Z 465.6, STEPSWAP r4)"
+  }
+ },
+ {
+  "command": "component.create",
+  "params": {
+   "name": "TU0805_M08T_REG_OUT_2",
+   "parent": "U8_PNEU",
+   "activate": false
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": "XY",
+   "name": "SK_TU0805_M08T_REG_OUT_2_SW"
+  }
+ },
+ {
+  "command": "sketch.options",
+  "params": {
+   "sketch_3d": true
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     829.1,
+     95.0,
+     465.6
+    ],
+    [
+     829.1,
+     95.0,
+     357.25
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    829.1,
+    95.0,
+    357.25
+   ],
+   "through": [
+    829.1,
+    96.8306,
+    352.8306
+   ],
+   "end": [
+    829.1,
+    101.25,
+    351.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    829.1,
+    101.25,
+    351.0
+   ],
+   "through": [
+    830.9306,
+    105.6694,
+    351.0
+   ],
+   "end": [
+    835.35,
+    107.5,
+    351.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     835.35,
+     107.5,
+     351.0
+    ],
+    [
+     1035.0,
+     107.5,
+     351.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.pipe",
+  "params": {
+   "path_sketch": "SK_TU0805_M08T_REG_OUT_2_SW",
+   "path": [
+    "w1",
+    "w2",
+    "w3",
+    "w4"
+   ],
+   "diameter": 8.0,
+   "operation": "new",
+   "body_name": "TU0805_M08T_REG_OUT_2"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_OUT_2"
+   ],
+   "material": "Default"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_OUT_2"
+   ],
+   "component": "TU0805_M08T_REG_OUT_2"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "TU0805_M08T_REG_OUT_2",
+   "part_number": "TU0805",
+   "bom_type": "purchased",
+   "description": "SMC TU0805 polyurethane tube, cut to length (IR1000 real port X+-29.1 outlet, Z 465.6, STEPSWAP r4)"
+  }
+ },
+ {
+  "command": "component.create",
+  "params": {
+   "name": "TU0805_M08T_REG_IN_3",
+   "parent": "U8_PNEU",
+   "activate": false
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": "XY",
+   "name": "SK_TU0805_M08T_REG_IN_3_SW"
+  }
+ },
+ {
+  "command": "sketch.options",
+  "params": {
+   "sketch_3d": true
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     870.9,
+     95.0,
+     465.6
+    ],
+    [
+     870.9,
+     95.0,
+     345.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    870.9,
+    95.0,
+    345.0
+   ],
+   "through": [
+    870.9,
+    89.1421,
+    330.8579
+   ],
+   "end": [
+    870.9,
+    75.0,
+    325.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     870.9,
+     75.0,
+     325.0
+    ],
+    [
+     870.9,
+     70.0,
+     325.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    870.9,
+    70.0,
+    325.0
+   ],
+   "through": [
+    876.7579,
+    55.8579,
+    325.0
+   ],
+   "end": [
+    890.9,
+    50.0,
+    325.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     890.9,
+     50.0,
+     325.0
+    ],
+    [
+     1140.0,
+     50.0,
+     325.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.pipe",
+  "params": {
+   "path_sketch": "SK_TU0805_M08T_REG_IN_3_SW",
+   "path": [
+    "w1",
+    "w2",
+    "w3",
+    "w4",
+    "w5"
+   ],
+   "diameter": 8.0,
+   "operation": "new",
+   "body_name": "TU0805_M08T_REG_IN_3"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_IN_3"
+   ],
+   "material": "Default"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_IN_3"
+   ],
+   "component": "TU0805_M08T_REG_IN_3"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "TU0805_M08T_REG_IN_3",
+   "part_number": "TU0805",
+   "bom_type": "purchased",
+   "description": "SMC TU0805 polyurethane tube, cut to length (IR1000 real port X+-29.1 outlet, Z 465.6, STEPSWAP r4)"
+  }
+ },
+ {
+  "command": "component.create",
+  "params": {
+   "name": "TU0805_M08T_REG_OUT_3",
+   "parent": "U8_PNEU",
+   "activate": false
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": "XY",
+   "name": "SK_TU0805_M08T_REG_OUT_3_SW"
+  }
+ },
+ {
+  "command": "sketch.options",
+  "params": {
+   "sketch_3d": true
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     929.1,
+     95.0,
+     465.6
+    ],
+    [
+     929.1,
+     95.0,
+     373.75
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    929.1,
+    95.0,
+    373.75
+   ],
+   "through": [
+    929.1,
+    96.8306,
+    369.3306
+   ],
+   "end": [
+    929.1,
+    101.25,
+    367.5
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    929.1,
+    101.25,
+    367.5
+   ],
+   "through": [
+    930.9306,
+    105.6694,
+    367.5
+   ],
+   "end": [
+    935.35,
+    107.5,
+    367.5
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     935.35,
+     107.5,
+     367.5
+    ],
+    [
+     1035.0,
+     107.5,
+     367.5
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.pipe",
+  "params": {
+   "path_sketch": "SK_TU0805_M08T_REG_OUT_3_SW",
+   "path": [
+    "w1",
+    "w2",
+    "w3",
+    "w4"
+   ],
+   "diameter": 8.0,
+   "operation": "new",
+   "body_name": "TU0805_M08T_REG_OUT_3"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_OUT_3"
+   ],
+   "material": "Default"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "TU0805_M08T_REG_OUT_3"
+   ],
+   "component": "TU0805_M08T_REG_OUT_3"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "TU0805_M08T_REG_OUT_3",
+   "part_number": "TU0805",
+   "bom_type": "purchased",
+   "description": "SMC TU0805 polyurethane tube, cut to length (IR1000 real port X+-29.1 outlet, Z 465.6, STEPSWAP r4)"
   }
  },
  {
@@ -132,14 +1491,14 @@
   "command": "component.rename",
   "params": {
    "component": 0,
-   "name": "FSAP_v2.6.4"
+   "name": "FSAP_v2.6.8"
   }
  },
  {
   "command": "document.metadata.set",
   "params": {
    "key": "description",
-   "value": "STEPSWAP mechanism: STEP-wait CB5-6 x2 (2E curtain bracket, U8) swapped to Misumi CB5-6 STEP"
+   "value": "STEPSWAP mechanism: STEP-wait IR1000-01BG x3 swapped to SMC STEP (bracket keyhole CB4-12 x6, KQ2L08 elbows and TU0805 tubes re-placed)"
   }
  }
 ]
