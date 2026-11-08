@@ -1,0 +1,338 @@
+{
+ "run": "mech_2026-11-08_RGSEE",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-08",
+ "journal": "wf_272c1368-764",
+ "totals": {
+  "agents": 11,
+  "agent_sec": 2628,
+  "input": 1285396,
+  "cache_read": 10982974,
+  "output": 83147,
+  "tools": 138,
+  "wall_sec": 2626
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 79,
+   "agents": 1,
+   "output": 7025
+  },
+  "▸ modeling-round #2": {
+   "sec": 2549,
+   "agents": 10,
+   "output": 76122
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 2",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 79,
+   "tokens": {
+    "input": 119347,
+    "cache_read": 597680,
+    "output": 7025
+   },
+   "tools": 10,
+   "turns": 7
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 75,
+   "tokens": {
+    "input": 66936,
+    "cache_read": 54603,
+    "output": 11007
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 142,
+   "tokens": {
+    "input": 97621,
+    "cache_read": 1382964,
+    "output": 7299
+   },
+   "tools": 26,
+   "turns": 17
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 44,
+   "tokens": {
+    "input": 91298,
+    "cache_read": 340162,
+    "output": 2596
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "RGSEE 측정부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 1955,
+   "tokens": {
+    "input": 491939,
+    "cache_read": 4871064,
+    "output": 32365
+   },
+   "tools": 41,
+   "turns": 41
+  },
+  {
+   "label": "RGSEE 문서·커밋",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 36,
+   "tokens": {
+    "input": 80789,
+    "cache_read": 227002,
+    "output": 2960
+   },
+   "tools": 3,
+   "turns": 4
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 152,
+   "tokens": {
+    "input": 109674,
+    "cache_read": 2297360,
+    "output": 10077
+   },
+   "tools": 30,
+   "turns": 24
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 23,
+   "tokens": {
+    "input": 80767,
+    "cache_read": 306336,
+    "output": 1513
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 51,
+   "tokens": {
+    "input": 38240,
+    "cache_read": 422297,
+    "output": 3374
+   },
+   "tools": 5,
+   "turns": 6
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 50,
+   "tokens": {
+    "input": 77332,
+    "cache_read": 373366,
+    "output": 2296
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #2",
+   "status": "running",
+   "sec": 21,
+   "tokens": {
+    "input": 31453,
+    "cache_read": 110140,
+    "output": 2635
+   },
+   "tools": 5,
+   "turns": 2
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "RGSEE",
+    "status": "이미 해결(확인)",
+    "evidence": "직접 잰 230점(POSE 전체 검사 0~7, F_STATES U6 12~34, U7 11~32·34): 기준선 밖 겹침 0 mm³, truncated 0, unmoved·stopped 0. unchecked는 기존 클레비스 핀 물림 쌍뿐이다. 나머지 못 본 범위는 v2.6.5 누계 겹침 0이고, 바뀐 19바디는 회귀 12에서 전 구간 겹침 0이다. 바뀌지 않은 바디의 bbox·부피·재질 변화 0, 대응 자세 181점·상태 26개에서 옛 U6_HGT = U7_HGT, 연구 정의 같음 → 쌍 같음(E-17). 한계: '라운드 끝 회귀 못 본 범위 0' 항목은 라운드 끝 회귀가 이 쌍 재사용을 본 범위로 세야 충족된다(측정 판정 밖)."
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "POSE 전체 검사 0-7·12-180",
+    "연구 전체 검사 CYCLE_L 23-716, CYCLE_S 0-450, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13",
+    "F_STATES U6_SENSOR·U6_SHOE·U7#0~#4/8 12-34, U7#5~#7/8 11-34",
+    "F_STATES U3_HEAD·U4_WHEEL_N 1-34, U5_WHEEL_F 0-34"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2853,
+    "estimate_s": 5000,
+    "actual_s": 0,
+    "chunk_times": [],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "시험 실행 전 중단(세션 열기 중)",
+    "per_step_s": {
+     "study": 0,
+     "pose": 0
+    },
+    "pose_steps": 176,
+    "reduced": "전체 미실행: 세션 열기 중 출력 요구로 중단",
+    "seen": [],
+    "unseen": [
+     "POSE 전체 검사 0-7·12-180",
+     "연구 전체 검사 CYCLE_L 23-716, CYCLE_S 0-450, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13",
+     "F_STATES U6_SENSOR·U6_SHOE·U7#0~#4/8 12-34, U7#5~#7/8 11-34",
+     "F_STATES U3_HEAD·U4_WHEEL_N 1-34, U5_WHEEL_F 0-34"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 130,
+     "cad_calls": 4,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 4,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RGSEE 측정부",
+    "phase": "RGSEE · 측정",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 2000,
+     "cad_calls": 3,
+     "file_opens": 8,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 256,
+     "mcp_restarts": [],
+     "over_reason": "측정 S 예상 10분의 2배를 넘었다(약 33분). 112바디 전체 검사 자세가 점당 약 170 s로 무겁고, 세션 8개를 여는 데 각 약 250 s가 들었다. regrun 1차가 자세 시험 상한 120 s에 걸려(trial_error) 시험 상한 400 s로 다시 돌렸다(20분)."
+    },
+    "expect_min": 10,
+    "over": true
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 84,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "RGSEE 측정부",
+    "what": "설계 파일을 8번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "전체 회귀",
+    "what": "자세 묶음을 따로 시험하지 않음(연구 시험값으로 자세를 어림, WF-178)"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-208"
+  ],
+  "repeat_ids": [
+   "WF-204"
+  ],
+  "one_line": "회고 mech_2026-11-08_RGSEE: WF-208 추가(전체 회귀 세션 열기 끊김 뒤 재시도 없음), WF-204 반복 3. docs/reports/engine-candidates.md 갱신, 최종 보고서 커밋 bfc874a(푸시 안 함). 고친 엔진 파일 없음."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 11,
+  "시간 h": 0.7,
+  "출력 토큰": 83147,
+  "실패": 0
+ }
+}
