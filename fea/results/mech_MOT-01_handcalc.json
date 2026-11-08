@@ -1,0 +1,505 @@
+{
+ "mass": {
+  "HG-KR23_model_kg": 2.012,
+  "HG-KR23_catalog_kg": 0.96,
+  "PGX62-H-10_model_kg": 1.474,
+  "HG-KR43_model_kg": 2.559,
+  "HG-KR43_catalog_kg": 1.4,
+  "note": "STEP 바디는 속이 찬 Steel이라 카탈로그보다 무겁다(HG-KR23 2.01 vs 0.96). 하중은 모델 질량(큰 쪽)으로 셈"
+ },
+ "U4_moving": {
+  "arm_motor_mm": 53.2,
+  "arm_reducer_mm": 142.6,
+  "dm_kg": 1.426,
+  "dM_kgmm": 93.6,
+  "m_new_kg": 6.058
+ },
+ "U4_cases": {
+  "run": {
+   "F_cyl_N": 97.8,
+   "F_wheel_N": 163.0,
+   "F_tan_Y_N": 58.3,
+   "W_N": 178.3,
+   "R_pivot_z_N": 113.1,
+   "sf_min": 3.0
+  },
+  "mis": {
+   "F_cyl_N": 157.1,
+   "F_wheel_N": 204.5,
+   "F_tan_Y_N": 102.2,
+   "W_N": 178.3,
+   "R_pivot_z_N": 130.9,
+   "sf_min": 2.0
+  },
+  "whatif_mu0.8": {
+   "F_cyl_N": 157.1,
+   "F_wheel_N": 204.5,
+   "F_tan_Y_N": 163.6,
+   "W_N": 178.3,
+   "R_pivot_z_N": 130.9,
+   "sf_min": 2.0
+  }
+ },
+ "U4_strength": {
+  "run": {
+   "P_M02_PIVOT_PIN": {
+    "M_root_Nmm": 14964,
+    "sigma_root_MPa": 88.2,
+    "sf_root": 3.91,
+    "M_tap_Nmm": 1106,
+    "sigma_tap_MPa": 6.7,
+    "sf_tap": 51.31,
+    "bush_force_max_N": 230.5,
+    "bush_p_MPa": 1.92,
+    "ok": true,
+    "near_10pct": false
+   },
+   "pivot_axial_end_bolt_N": 58.3,
+   "P_M02_ARM_SIDE_N": {
+    "groove_Z_mm3": 4381.2,
+    "M_each_Nmm": 4890,
+    "sigma_MPa": 1.12,
+    "sf": 183.67,
+    "pivot_hole_bearing_MPa": 2.13,
+    "pivot_tearout_MPa": 1.18,
+    "sf_tear(0.6Rp)": 104.4
+   },
+   "P_M02_BASE_upright(이웃)": {
+    "sigma_eq_MPa": 47.9,
+    "sf": 4.28,
+    "ok": true
+   }
+  },
+  "mis": {
+   "P_M02_PIVOT_PIN": {
+    "M_root_Nmm": 24191,
+    "sigma_root_MPa": 142.6,
+    "sf_root": 2.42,
+    "M_tap_Nmm": 1777,
+    "sigma_tap_MPa": 10.8,
+    "sf_tap": 31.94,
+    "bush_force_max_N": 370.3,
+    "bush_p_MPa": 3.09,
+    "ok": true,
+    "near_10pct": false
+   },
+   "pivot_axial_end_bolt_N": 102.2,
+   "P_M02_ARM_SIDE_N": {
+    "groove_Z_mm3": 4381.2,
+    "M_each_Nmm": 6135,
+    "sigma_MPa": 1.4,
+    "sf": 146.4,
+    "pivot_hole_bearing_MPa": 3.43,
+    "pivot_tearout_MPa": 1.89,
+    "sf_tear(0.6Rp)": 64.97
+   },
+   "P_M02_BASE_upright(이웃)": {
+    "sigma_eq_MPa": 77.2,
+    "sf": 2.65,
+    "ok": true
+   }
+  },
+  "whatif_mu0.8": {
+   "P_M02_PIVOT_PIN": {
+    "M_root_Nmm": 36700,
+    "sigma_root_MPa": 216.3,
+    "sf_root": 1.59,
+    "M_tap_Nmm": 2657,
+    "sigma_tap_MPa": 16.1,
+    "sf_tap": 21.37,
+    "bush_force_max_N": 553.5,
+    "bush_p_MPa": 4.61,
+    "ok": false,
+    "near_10pct": false
+   },
+   "pivot_axial_end_bolt_N": 163.6,
+   "P_M02_ARM_SIDE_N": {
+    "groove_Z_mm3": 4381.2,
+    "M_each_Nmm": 6135,
+    "sigma_MPa": 1.4,
+    "sf": 146.4,
+    "pivot_hole_bearing_MPa": 5.12,
+    "pivot_tearout_MPa": 2.83,
+    "sf_tear(0.6Rp)": 43.47
+   },
+   "P_M02_BASE_upright(이웃)": {
+    "sigma_eq_MPa": 116.1,
+    "sf": 1.77,
+    "ok": false
+   }
+  }
+ },
+ "U5X": {
+  "belt_N": {
+   "운전": 300.0,
+   "오조작": 414.7
+  },
+  "m_kg": 3.486,
+  "cg_y": 5.0,
+  "arm_from_web_mm": 77.0,
+  "W_3g_N": 102.6,
+  "cases": {
+   "운전": {
+    "P_M03_DRV_BRKT": {
+     "sigma_web_net_MPa": 8.9,
+     "sf": 23.02,
+     "sigma_web_hole_Kt2.4_MPa": 21.4,
+     "sf_with_Kt": 9.59,
+     "sigma_leg_MPa": 2.1
+    },
+    "reducer_bolt": {
+     "T_each_N": 146.4,
+     "V_each_N": 125.0,
+     "slip_sf(5kN x mu0.15 / V)": 6.0
+    },
+    "P_M03_IDLER_SHAFT(이웃, 고침)": {
+     "M_Nmm": 2850,
+     "sigma_MPa": 31.0,
+     "sf": 11.14,
+     "6200ZZ_each_N": 150.0,
+     "sf_C0r_2.38kN": 15.9
+    },
+    "PGX62_radial": {
+     "F_N": 300.0,
+     "allow_N": 1120,
+     "ratio": 3.73
+    }
+   },
+   "오조작": {
+    "P_M03_DRV_BRKT": {
+     "sigma_web_net_MPa": 10.3,
+     "sf": 19.93,
+     "sigma_web_hole_Kt2.4_MPa": 24.7,
+     "sf_with_Kt": 8.3,
+     "sigma_leg_MPa": 2.1
+    },
+    "reducer_bolt": {
+     "T_each_N": 171.9,
+     "V_each_N": 263.9,
+     "slip_sf(5kN x mu0.15 / V)": 2.84
+    },
+    "P_M03_IDLER_SHAFT(이웃, 고침)": {
+     "M_Nmm": 3939,
+     "sigma_MPa": 42.8,
+     "sf": 8.06,
+     "6200ZZ_each_N": 207.3,
+     "sf_C0r_2.38kN": 11.5
+    },
+    "PGX62_radial": {
+     "F_N": 414.7,
+     "allow_N": 1120,
+     "ratio": 2.7
+    }
+   }
+  }
+ },
+ "U3": {
+  "m_motor_coupling_kg": 2.747,
+  "x_cg": 470.7,
+  "m_brkt_kg": 0.937,
+  "cases": {
+   "운전": {
+    "M_root_Nmm": 6789,
+    "sigma_wall_MPa": 0.77,
+    "sf_wall": 312.0,
+    "sigma_base_plate_MPa": 1.11,
+    "sf_plate": 215.48,
+    "bolt_T_max_N": 50.9,
+    "bolt_V_N": 37.7,
+    "sf_min": 3.0
+   },
+   "오조작": {
+    "M_root_Nmm": 20489,
+    "sigma_wall_MPa": 1.4,
+    "sf_wall": 171.0,
+    "sigma_base_plate_MPa": 3.36,
+    "sf_plate": 71.4,
+    "bolt_T_max_N": 153.7,
+    "bolt_V_N": 58.3,
+    "sf_min": 2.0
+   }
+  }
+ },
+ "bolts": {
+  "U5X 감속기->DRV_BRKT 웨브 M5 관통탭 물림8 SUS304": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 263.9,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "SUS304",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 59.19,
+    "암나사 전단": 21.96,
+    "분리(예압/외력)": 18.95
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 2.64,
+    "조임 암나사 전단": 1.16
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "U4 감속기->FRONT M5 관통탭 물림8 SUS304": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 214.34185413047936,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "SUS304",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 72.87,
+    "암나사 전단": 27.04,
+    "분리(예압/외력)": 23.33
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 2.64,
+    "조임 암나사 전단": 1.16
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "U3 모터->브래킷 판 M5 탭 물림9 A6061": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 58.3,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "A6061-T6",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 267.92,
+    "암나사 전단": 130.94,
+    "분리(예압/외력)": 85.76
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 1.91,
+    "조임 암나사 전단": 1.53
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "U3 브래킷->4080 CB5-16 + HNTT8-5 물림5(강 너트)": {
+   "inputs": {
+    "d": 5,
+    "le": 5,
+    "load_N": 153.7,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.0,
+   "sf_operating": {
+    "나사 인장": 101.63,
+    "암나사 전단": 28.17,
+    "분리(예압/외력)": 32.53
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 3.23,
+    "조임 암나사 전단": 0.87
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "U3 브래킷->4080 CB5-20 바꿈안 물림9": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 153.7,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 101.63,
+    "암나사 전단": 50.7,
+    "분리(예압/외력)": 32.53
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 3.23,
+    "조임 암나사 전단": 1.56
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "피벗 끝 CB5-12 -> 핀 S45C 물림9 (축 방향 접선힘, what-if μ0.8)": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 163.6,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "S45C",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 95.48,
+    "암나사 전단": 67.08,
+    "분리(예압/외력)": 30.56
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 4.16,
+    "조임 암나사 전단": 2.19
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "피벗 머리 CB4-12 x2 -> BASE 다리 SUS304 물림7 (부시 마찰 토크)": {
+   "inputs": {
+    "d": 4,
+    "le": 7,
+    "load_N": 27.26666666666667,
+    "torque_Nm": 3.0,
+    "bolt": "12.9",
+    "base": "SUS304",
+    "dw": 7.0,
+    "dh": 4.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 3750.0,
+   "engage_ratio": 1.75,
+   "sf_operating": {
+    "나사 인장": 354.21,
+    "암나사 전단": 148.8,
+    "분리(예압/외력)": 137.53
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.32,
+    "조임 좌면": 2.41,
+    "조임 암나사 전단": 1.08
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": true,
+   "near_limit": [
+    "조임 암나사 전단"
+   ]
+  },
+  "아이들러 축 끝 CB5-12/SFB5-12 -> S45C 물림9": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 41.46000000000001,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "S45C",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 376.75,
+    "암나사 전단": 264.69,
+    "분리(예압/외력)": 120.6
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 4.16,
+    "조임 암나사 전단": 2.19
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "허브 끝 CB5-12 -> 감속기 축 끝 M5 물림8.5 S45C": {
+   "inputs": {
+    "d": 5,
+    "le": 8.5,
+    "load_N": 102.25,
+    "torque_Nm": 5.0,
+    "bolt": "12.9",
+    "base": "S45C",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 5000.0,
+   "engage_ratio": 1.7,
+   "sf_operating": {
+    "나사 인장": 152.76,
+    "암나사 전단": 101.36,
+    "분리(예압/외력)": 48.9
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 2.81,
+    "조임 좌면": 4.16,
+    "조임 암나사 전단": 2.07
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "key_PGX_out": {
+  "T_Nmm": 22000.0,
+  "L_mm": 16.0,
+  "tau_MPa": 34.4,
+  "p_hub_MPa": 68.8,
+  "sf_hub_p(A6061 240)": 3.49,
+  "reducer_rated_40Nm_ratio": 1.82
+ }
+}
