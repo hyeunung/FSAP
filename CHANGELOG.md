@@ -8,6 +8,8 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.6.6 REG-02(C-34): U6 센서 묶음·U7 카세트 걸이 높이 조정을 하나로. `J_U6_HGT` 지우고 U6_SENSOR를 U7_FIXED에 리지드 `J_U6_ON_U7FIX`(조정은 `J_U7_HGT` 하나, −4~+6). 공통 높이 판 `P_REG02_HGT_PLATE`(SUS304 t5) + 압입 스터드·너트 ×4(STEP대기, D-142), 장공 볼트 CB5-12 ×4 → CB5-16_REG02_1~4(실물 STEP), 와셔 −Y 5, BASE·HOLDER Ø4.0 구멍 각 2, 오류 피처 Move15·16 지움. 회귀 자세 183 → 181점(옛 POSE 8·9 뺌, `tools/gen_v2_poses.py`), machine.json states J_U6_HGT 키 지움. 과제 범위 겹침 0, KDM10 짝 축 0. 미완: GUIDE↔CARR 틈 2.0 < 10(예외 요청). 보고서 docs/reports/mechanism/mech_REG-02_model.md
+
 - v2.6.5 LITE(모델 무게 줄이기, WF-196): 형상·부품 수·BOM은 그대로 두고 피처 이력만 바꿈. P_M07_BEAM — Box16을 처음부터 X −2380~1230·Y 120~320으로, 구멍 묶음 HB·HK·HT를 R12·속 앞으로, 외곽 깎기 SK_M07_BEAM_OUT+Extrude51·끝 늘이기 OffsetFace20 지우고 Fillet1(R12 긴 모서리 4), 속 IN X −2381·3612(boolean retry 6 → 1). P_DC205_STRIP — Hole1~8 → SK_DC205_TAP+TAP_DC205 cut 한 번 + cosmetic 나사 M5 ×8. CLI 열기 242.1 s → 100.1 s(상한 240). BOM 125행/2,457 같음, 다른 바디 2,647개 bbox·무게중심 차 0, 모델 bbox 같음, 보 공칭 복귀(+27.8 g). 앱 문서 dirty라 CLI run --save. 생성기 gen_v2_m07·gen_v2_m07_fix1·gen_dc2_05 고침. 보고서 docs/reports/mechanism/mech_LITE_model.md
 
 - v2.6.4 STEPSWAP r3: STEP대기_CB5-6_M08_PY_LC2F ×2(옆 투광 L 날개 → 2E 금구 M5 탭) → 미스미 CB5-6 실물 STEP `CB5-6_M08_PY_LC2F:1·:2`(같은 자리·bbox, U8 리지드 9282·9283). 조인트·행정 변화 없음. 과제 안 새 겹침 0(나사 물림 unchecked 2는 M-08 의도). BOM FSAP_v2.6.4_*, 자료대기 D-135, 보고서 docs/reports/mechanism/mech_STEPSWAP_model.md

@@ -1,1 +1,1 @@
-{"base": "3D_Modeling/FSAP_v2.6.4.sc", "result": "3D_Modeling/FSAP_v2.6.4.sc", "note": "REG-01 r3: 검증만, 모델 변경·저장 없음(편집 명령 0). 회귀는 CLI 헤드리스 세션 10개(r3/)"}
+{"base": "3D_Modeling/FSAP_v2.6.5.sc", "result": "3D_Modeling/FSAP_v2.6.5.sc", "note": "REG-01 reg12: 읽기 전용 회귀(F_STATES 못 본 범위), 형상 변경·저장 없음"}

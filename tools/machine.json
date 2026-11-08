@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.6.4.sc",
+ "doc": "../3D_Modeling/FSAP_v2.6.6.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -499,26 +499,6 @@
    "max": 0,
    "_note": "M06(v2.3.0) 슈·센서 비킴. CJ2B16-60SZ 단동 스프링 복귀(축선 Y -130 · Z 136, 로드 +X). 0 = 작동(공기, 슈 바닥 X -20~1 · 센서 머리 X -17.5~17.5 바늘 앞), -60 = 비킴(스프링, 행정 끝 = 조인트 한계). 연구: 로딩 -60 -> 노루발 내림(14)에서 0 -> 봉제 0 -> 사절·노루발 들기 뒤 -60"
   },
-  "J_U6_HGT": {
-   "cad": "J_U6_HGT",
-   "type": "slide",
-   "unit": "U6_SHOE",
-   "axis": [
-    0,
-    0,
-    1
-   ],
-   "origin": [
-    -51,
-    -90,
-    180
-   ],
-   "min": -4,
-   "max": 6,
-   "rest": 0,
-   "setup": true,
-   "_note": "DC2-04(v2.3.1) 제품 교체 때 손 조정, 값 = 매트 두께 - 10, 두 조인트(J_U6_HGT·J_U7_HGT)는 같은 값, 기계 축 아님, 사이클 연구에서 움직이지 않음. U6_SENSOR 통째(BASE·실린더·캐리지·슈·센서)가 U3_HEAD(UPPER -Y 면)에 대해 +Z. P_M06_BASE 붙임면 세로 장공 5.5(중심선 Z 174~184) + CB5-12_M06_1·2(U3_HEAD 쪽, UPPER 탭). 행정 끝 = 장공 끝(조인트 한계)"
-  },
   "J_U7_HGT": {
    "cad": "J_U7_HGT",
    "type": "slide",
@@ -537,7 +517,8 @@
    "max": 6,
    "rest": 0,
    "setup": true,
-   "_note": "DC2-04(v2.3.1) 제품 교체 때 손 조정, 값 = 매트 두께 - 10, 두 조인트(J_U6_HGT·J_U7_HGT)는 같은 값, 기계 축 아님, 사이클 연구에서 움직이지 않음. U7_FIXED 통째(걸이 P_M05_HOLDER + 카세트 묶음)가 U3_HEAD에 대해 +Z. 날개 A 세로 장공 5.5(중심선 Z 304~314) + CB5-12_M05_11·12(U3_HEAD 쪽, UPPER 탭). 행정 끝 = 장공 끝(조인트 한계) / 수정 1(v2.3.2): 맞춘 뒤 미는 볼트 M4 ×2를 날개 A 아래 끝(Z 285 + h)에 대고 잠금 너트로 잠근다(장공 마찰만으로 버티지 않음)"
+   "_note": "DC2-04(v2.3.1) 제품 교체 때 손 조정, 값 = 매트 두께 - 10, 두 조인트(J_U6_HGT·J_U7_HGT)는 같은 값, 기계 축 아님, 사이클 연구에서 움직이지 않음. U7_FIXED 통째(걸이 P_M05_HOLDER + 카세트 묶음)가 U3_HEAD에 대해 +Z. 날개 A 세로 장공 5.5(중심선 Z 304~314) + CB5-12_M05_11·12(U3_HEAD 쪽, UPPER 탭). 행정 끝 = 장공 끝(조인트 한계) / 수정 1(v2.3.2): 맞춘 뒤 미는 볼트 M4 ×2를 날개 A 아래 끝(Z 285 + h)에 대고 잠금 너트로 잠근다(장공 마찰만으로 버티지 않음)",
+   "_note_REG02": "REG-02(v2.6.6, C-34): 높이 조정 하나. J_U6_HGT를 지우고 U6_SENSOR를 U7_FIXED에 리지드 조인트 J_U6_ON_U7FIX로 붙임 -> U6 센서 묶음·U7 카세트 걸이가 J_U7_HGT 하나(값 = 매트 두께 - 10, -4~+6)를 함께 탄다. 공통 높이 판 P_REG02_HGT_PLATE(SUS304 t5 절삭, X -80~44 · Y -99~-94(BASE 쪽 패드 -93) · Z 157~330)이 P_M06_BASE 붙임면과 P_M05_HOLDER 날개 A 앞을 덮고 압입 스터드 FH4-M4-15 x4 + M4 너트로 둘에 묶임. 장공 볼트 CB5-16_REG02_1~4(U3_HEAD, 기존 CB5-12_M06_1·2·M05_11·12 자리)가 판+판금 장공을 함께 조임. 미는 볼트 M4 x2(날개 A 아래 끝)·잠금 너트 한 벌이 두 묶음을 함께 받친다. 두 값이 다른 자세는 생길 수 없다(회귀 자세 정의에서 뺌)"
   }
  },
  "units": {
@@ -583,12 +564,11 @@
     "P_M01_FOOT",
     "CB5-16_M01",
     "CB5-12_M06_",
-    "CB5-12_M05_11",
-    "CB5-12_M05_12",
     "P_DC204_PUSH_BLK",
     "STEP대기_NUT_M4_DC204",
     "STEP대기_WASHER_M5_DC204",
-    "CB5-12_DC204"
+    "CB5-12_DC204",
+    "CB5-16_REG02_"
    ],
    "moving": true,
    "components": [
@@ -667,7 +647,11 @@
    "parts": [
     "P_M06_BASE",
     "CJ2B16-60SZ_M06",
-    "KQ2L06-M5A_M06"
+    "KQ2L06-M5A_M06",
+    "STEP대기_FH4-M4-15_REG02_1",
+    "STEP대기_FH4-M4-15_REG02_2",
+    "STEP대기_NUT_M4_REG02_1",
+    "STEP대기_NUT_M4_REG02_2"
    ],
    "moving": true,
    "components": [
@@ -677,8 +661,9 @@
    ],
    "_note": "M06(v2.3.0): 고정 판금 P_M06_BASE(SUS304 t3, UPPER -Y 면 CB5-12 ×2) + 실린더 몸 CJ2B16-60SZ_M06(+장착 너트) + 피팅 KQ2L06-M5A_M06. 옛 상자 U6_SHOE_SENSOR 지움.  DC2-04(v2.3.1): U1_FRAME 리지드 지움 -> J_U6_HGT(U3_HEAD에 대해 Z, 손 조정). CB5-12_M06_1·2는 U3_HEAD로 옮김",
    "joints": [
-    "J_U6_HGT"
-   ]
+    "J_U7_HGT"
+   ],
+   "_note_REG02": "REG-02(v2.6.6): J_U6_HGT 지움. U6_SENSOR는 리지드 J_U6_ON_U7FIX로 U7_FIXED에 붙어 J_U7_HGT를 따른다. BASE 붙임면 Ø4.0 구멍 2(X -58·-44, Z 179)에 압입 스터드"
   },
   "U7_TAPE": {
    "parts": [
@@ -703,7 +688,12 @@
     "KDM10S-06_M08",
     "P_M08_KDM_BRKT",
     "CB3-10_M08_PX_KDM",
-    "CB5-12_M08_PZ_KDM"
+    "CB5-12_M08_PZ_KDM",
+    "P_REG02_HGT_PLATE",
+    "STEP대기_FH4-M4-15_REG02_3",
+    "STEP대기_FH4-M4-15_REG02_4",
+    "STEP대기_NUT_M4_REG02_3",
+    "STEP대기_NUT_M4_REG02_4"
    ],
    "moving": true,
    "_note": "U7_BINDER(M01: 끝 X -10.5~1 Y -30~-9 Z 13~22, 몸통 X -11~40 Y -95~-10.5 Z 22~60)·U7_PATH_V(M01: 바닥 Z 22)·U7_PATH_H·U7_ROLL M05(cand): U7_PATH_V 지움. 툴 카세트 U7_CASSETTE(판 P_M05_CST_PLATE·안내 P_M05_GUIDE·고정날·바인더 브래킷·실린더 브래킷·보내기 브래킷·핀·걸쇠·U7_BINDER) + 자식 U7_CUT(칼)·U7_TUCK(접기)·U7_FEED(앞끝 보내기)·U7_LATCH(걸쇠 갈고리), 고정 걸이 U7_FIXED(P_M05_HOLDER, U3_HEAD 리지드). 탈착 U7_FIXED → U7_CST_STAGE(+X) → U7_CASSETTE(-Y) DC2-04(v2.3.1): U7_FIXED↔U3_HEAD 리지드 지움 -> J_U7_HGT(Z 손 조정). CB5-12_M05_11·12는 U3_HEAD로 M08 수정1(v2.5.1): 카세트 안 관 U7C_1~6(U7_CASSETTE 아래).",
@@ -721,7 +711,8 @@
     "J_U7_HGT"
    ],
    "_note_DC204_fix1": "DC2-04 수정 1(v2.3.2): 날개 A 아래 끝 미는 볼트 M4x25 ×2(X 14·42, Y -94.1)는 U7_FIXED에 둔다 — 제품 교체 때 J_U7_HGT를 맞춘 뒤 끝을 날개 아래 끝에 대고 잠그므로 위치 = J_U7_HGT. 받침 블록·잠금 너트·와셔는 U3_HEAD(UPPER)",
-   "_note_DC208": "DC2-08(v2.6.1): KDM10 소켓(KDM10-06_M08/KDM10S-06)·받침 P_M08_KDM_BRKT·CB3-10_M08_PX_KDM x4·CB5-12_M08_PZ_KDM x2를 U8_PNEU 리지드에서 빼 U7_FIXED 리지드 그룹으로(J_U7_HGT 자식). 받침 발은 P_M05_HOLDER 날개 C 윗면 Z 334에 CB5-12 x2. 플러그(U7_CASSETTE)와 같이 HGT를 따라가 짝 축 어긋남 0. 새 조인트 없음"
+   "_note_DC208": "DC2-08(v2.6.1): KDM10 소켓(KDM10-06_M08/KDM10S-06)·받침 P_M08_KDM_BRKT·CB3-10_M08_PX_KDM x4·CB5-12_M08_PZ_KDM x2를 U8_PNEU 리지드에서 빼 U7_FIXED 리지드 그룹으로(J_U7_HGT 자식). 받침 발은 P_M05_HOLDER 날개 C 윗면 Z 334에 CB5-12 x2. 플러그(U7_CASSETTE)와 같이 HGT를 따라가 짝 축 어긋남 0. 새 조인트 없음",
+   "_note_REG02": "REG-02(v2.6.6): 공통 높이 판 P_REG02_HGT_PLATE·스터드 3·4·너트 3·4는 U7_FIXED. HOLDER 날개 A Ø4.0 구멍 2(X 27, Z 293·325)"
   },
   "U8_PNEU": {
    "parts": [
@@ -1055,7 +1046,6 @@
     "J_U7_FEED": 0,
     "J_U7_LATCH": 0,
     "J_U6_SHIFT": -60.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "① 대기·로딩",
@@ -1080,7 +1070,6 @@
     "J_WP_L_Y": 300.0,
     "J_WP_L_ROT": 0.0,
     "J_U6_SHIFT": -60.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "① 작업자가 가장자리를 노루발 표시에 맞춤",
@@ -1106,7 +1095,6 @@
     "J_WP_L_Y": 300.0,
     "J_WP_L_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "② 먼 쪽 바퀴 내림",
@@ -1132,7 +1120,6 @@
     "J_WP_L_Y": 675.0,
     "J_WP_L_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 봉제 직선",
@@ -1158,7 +1145,6 @@
     "J_WP_L_Y": 300.0,
     "J_WP_L_ROT": 45.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
@@ -1184,7 +1170,6 @@
     "J_WP_L_Y": -450.0,
     "J_WP_L_ROT": 90.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
@@ -1211,7 +1196,6 @@
     "J_WP_L_Y": 330.0,
     "J_WP_L_ROT": 360.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "④ 시작·끝 이음매 겹침",
@@ -1237,7 +1221,6 @@
     "J_WP_L_Y": 30.0,
     "J_WP_L_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
@@ -1263,7 +1246,6 @@
     "J_WP_S_Y": 300.0,
     "J_WP_S_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "② 바늘 옆 바퀴 내림",
@@ -1289,7 +1271,6 @@
     "J_WP_S_Y": 350.0,
     "J_WP_S_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 봉제 직선",
@@ -1315,7 +1296,6 @@
     "J_WP_S_Y": 264.6447,
     "J_WP_S_ROT": 45.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
@@ -1341,7 +1321,6 @@
     "J_WP_S_Y": 330.0,
     "J_WP_S_ROT": 360.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "④ 시작·끝 이음매 겹침",
@@ -1367,7 +1346,6 @@
     "J_WP_S_Y": 30.0,
     "J_WP_S_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
@@ -1393,7 +1371,6 @@
     "J_WP_G_Y": 566.3852,
     "J_WP_G_ROT": 2.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 홈 입구(볼록) (바늘 옆 바퀴 들림)",
@@ -1419,7 +1396,6 @@
     "J_WP_G_Y": 79.0291,
     "J_WP_G_ROT": 45.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 홈 입구(볼록)",
@@ -1445,7 +1421,6 @@
     "J_WP_G_Y": -226.3393,
     "J_WP_G_ROT": 90.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 홈 안 벽",
@@ -1471,7 +1446,6 @@
     "J_WP_G_Y": 600.0,
     "J_WP_G_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 홈 바닥 꺾임(오목)",
@@ -1497,7 +1471,6 @@
     "J_WP_G_Y": 762.5,
     "J_WP_G_ROT": -90.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 홈 바닥 꺾임(오목) (먼 쪽 바퀴 들림)",
@@ -1524,7 +1497,6 @@
     "J_WP_G_Y": 945.2349,
     "J_WP_G_ROT": -45.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 홈 입구(볼록) (먼 쪽 바퀴 들림)",
@@ -1550,7 +1522,6 @@
     "J_WP_G_Y": 300.0,
     "J_WP_G_ROT": 45.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
@@ -1576,7 +1547,6 @@
     "J_WP_G_Y": 330.0,
     "J_WP_G_ROT": 360.0,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "④ 시작·끝 이음매 겹침",
@@ -1602,7 +1572,6 @@
     "J_WP_G_Y": 30.0,
     "J_WP_G_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
@@ -1634,7 +1603,6 @@
     "J_WP_G_Y": 0,
     "J_WP_G_ROT": 0,
     "J_U6_SHIFT": -60.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "정비",
@@ -1652,7 +1620,6 @@
     "J_U5_LIFT": 1.0,
     "J_U5_WHEEL_ROT": 116.666,
     "J_U6_SHIFT": 0.0,
-    "J_U6_HGT": 0,
     "J_U7_HGT": 0
    },
    "phase": "③ 볼록 모서리 1",
@@ -1691,7 +1658,6 @@
     "J_U7_FEED": 0,
     "J_U7_LATCH": 0,
     "J_U6_SHIFT": 0,
-    "J_U6_HGT": -4,
     "J_U7_HGT": -4
    },
    "phase": "DC2-04 두께 범위 끝 봉제 자세",
@@ -1728,7 +1694,6 @@
     "J_U7_FEED": 0,
     "J_U7_LATCH": 0,
     "J_U6_SHIFT": 0,
-    "J_U6_HGT": 6,
     "J_U7_HGT": 6
    },
    "phase": "DC2-04 두께 범위 끝 봉제 자세",
@@ -1869,6 +1834,7 @@
   "2026-11-06 DC2-08 v2.6.1: KDM10 소켓 받침을 U7_FIXED로(소켓·받침·CB3-10 x4·새 CB5-12_M08_PZ_KDM x2), 옛 CB5-12_M08_NZ_KDM x2 지움. 조인트·행정·연구 변화 없음(묶음 소속만)",
   "2026-11-06 DC2-08 수정 1회차 v2.6.2: 형상·조인트 변경 없음(소켓 ↔ 밸브 쪽 관 HGT -4·+6 CAD 실측만), doc → v2.6.2",
   "2026-11-06 REG-01 v2.6.3: 모든 동작 연구가 U7 조인트 6개(5004~5009)를 키로 잡게 함 — 연구 전환 때 U7 상태가 세션에 남지 않음(mech_regression_4 3절). 조인트·행정 변경 없음",
-  "2026-11-06 STEPSWAP r3 v2.6.4: STEP대기_CB5-6_M08_PY_LC2F ×2 → CB5-6_M08_PY_LC2F(미스미 STEP), U8 리지드 그룹 9282·9283. 조인트·행정 변경 없음"
+  "2026-11-06 STEPSWAP r3 v2.6.4: STEP대기_CB5-6_M08_PY_LC2F ×2 → CB5-6_M08_PY_LC2F(미스미 STEP), U8 리지드 그룹 9282·9283. 조인트·행정 변경 없음",
+  "2026-11-08 REG-02 v2.6.6: J_U6_HGT 지움 -> U6_SENSOR를 U7_FIXED에 리지드(J_U6_ON_U7FIX), 높이 조정은 J_U7_HGT 하나. 공통 높이 판 P_REG02_HGT_PLATE + 스터드·너트 x4, 장공 볼트 CB5-12 x4 -> CB5-16_REG02_1~4. states 26개에서 J_U6_HGT 키 지움"
  ]
 }
