@@ -474,7 +474,9 @@
     "value": "미끄럼 SF 운전 3, 오조작 2(마찰 mu 0.15 보수). 좌면 p_G SUS304 400 기준 1.0. SF < 1.2 = 동작",
     "source": "요구서 6-1(M-09 기본값), handcalc 조임 기준"
    },
-   "status_DC2-04": "손계산 fea/results/mech_DC2-04_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+   "status_DC2-04": "손계산 fea/results/mech_DC2-04_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step_REG-02_fix1": "tools/out/mech_REG-02/stepout/P_M05_HOLDER_fix1.step",
+   "note_REG-02_fix1": "v2.6.7: 날개 A 장공 X 36->33(굽힘선까지 10.25). 경계조건 그대로"
   },
   "P_M05_CYL_BRKT": {
    "case": "cases/mech_M05_handcalc.py",
@@ -782,7 +784,9 @@
    },
    "status": "손계산 fea/results/mech_REG-02_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
    "step": "tools/out/mech_REG-02/stepout/P_REG02_HGT_PLATE.step",
-   "version": "v2.6.6"
+   "version": "v2.6.6",
+   "step_fix1": "tools/out/mech_REG-02/stepout/P_REG02_HGT_PLATE_fix1.step",
+   "note_fix1": "v2.6.7: 4번 장공 X 36->33, 볼트 CB5-20+와셔 4개 같은 쌓임. 경계조건 그대로(모델 바꾸지 않음). 결과 fea/results/mech_REG-02_fix1_handcalc.json"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
