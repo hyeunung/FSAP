@@ -1,0 +1,716 @@
+{
+ "run": "mech_2026-11-08_STEPWAIT-REG-02-REG-01",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-08",
+ "journal": "wf_272c1368-764",
+ "totals": {
+  "agents": 21,
+  "agent_sec": 14110,
+  "input": 4021828,
+  "cache_read": 86859812,
+  "output": 539363,
+  "tools": 604,
+  "wall_sec": 13740
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 214,
+   "agents": 3,
+   "output": 27161
+  },
+  "▸ modeling-round": {
+   "sec": 13896,
+   "agents": 18,
+   "output": 512202
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 67133,
+    "cache_read": 54800,
+    "output": 11007
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 45,
+   "tokens": {
+    "input": 86148,
+    "cache_read": 134610,
+    "output": 6091
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 95,
+   "tokens": {
+    "input": 108721,
+    "cache_read": 538771,
+    "output": 10063
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 25903,
+    "cache_read": 96074,
+    "output": 11007
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 38,
+   "tokens": {
+    "input": 84172,
+    "cache_read": 393723,
+    "output": 3199
+   },
+   "tools": 7,
+   "turns": 6
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 19,
+   "tokens": {
+    "input": 75039,
+    "cache_read": 220091,
+    "output": 1453
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "REG-02 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2927,
+   "tokens": {
+    "input": 714786,
+    "cache_read": 27031141,
+    "output": 104653
+   },
+   "tools": 119,
+   "turns": 112
+  },
+  {
+   "label": "REG-02 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1414,
+   "tokens": {
+    "input": 245793,
+    "cache_read": 4889466,
+    "output": 39587
+   },
+   "tools": 44,
+   "turns": 40
+  },
+  {
+   "label": "REG-02 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 253,
+   "tokens": {
+    "input": 135955,
+    "cache_read": 1359162,
+    "output": 24162
+   },
+   "tools": 17,
+   "turns": 14
+  },
+  {
+   "label": "REG-02 예외 판정",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 130,
+   "tokens": {
+    "input": 112845,
+    "cache_read": 1015874,
+    "output": 11976
+   },
+   "tools": 12,
+   "turns": 12
+  },
+  {
+   "label": "REG-02 모델링부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2518,
+   "tokens": {
+    "input": 282748,
+    "cache_read": 21021958,
+    "output": 74714
+   },
+   "tools": 129,
+   "turns": 111
+  },
+  {
+   "label": "REG-02 검도·체결 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 521,
+   "tokens": {
+    "input": 135940,
+    "cache_read": 2285002,
+    "output": 18039
+   },
+   "tools": 25,
+   "turns": 22
+  },
+  {
+   "label": "REG-02 해석 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 118,
+   "tokens": {
+    "input": 68770,
+    "cache_read": 1274703,
+    "output": 9490
+   },
+   "tools": 14,
+   "turns": 14
+  },
+  {
+   "label": "REG-02 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 111,
+   "tokens": {
+    "input": 108209,
+    "cache_read": 760751,
+    "output": 9165
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "REG-01 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2345,
+   "tokens": {
+    "input": 515337,
+    "cache_read": 13217055,
+    "output": 103524
+   },
+   "tools": 91,
+   "turns": 78
+  },
+  {
+   "label": "REG-01 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 38,
+   "tokens": {
+    "input": 82575,
+    "cache_read": 311301,
+    "output": 2870
+   },
+   "tools": 4,
+   "turns": 5
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2977,
+   "tokens": {
+    "input": 831168,
+    "cache_read": 9726051,
+    "output": 57589
+   },
+   "tools": 75,
+   "turns": 66
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 141,
+   "tokens": {
+    "input": 114117,
+    "cache_read": 1243377,
+    "output": 10860
+   },
+   "tools": 14,
+   "turns": 14
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 91,
+   "tokens": {
+    "input": 91672,
+    "cache_read": 594082,
+    "output": 7505
+   },
+   "tools": 10,
+   "turns": 8
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 51,
+   "tokens": {
+    "input": 87745,
+    "cache_read": 413142,
+    "output": 4108
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 130,
+   "tokens": {
+    "input": 47052,
+    "cache_read": 278678,
+    "output": 18301
+   },
+   "tools": 10,
+   "turns": 4
+  }
+ ],
+ "fix_agents": [
+  "REG-02 모델링부 수정1"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "REG-02",
+    "size": "M",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.6.7.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [
+     {
+      "rule": "결정로그 C-34 완료 판정 '같은 값인 범위(−4·0·+6) 전부에서 P_M05_GUIDE ↔ P_M06_CARR 틈 ≥ 10'",
+      "where": "GUIDE 아래 끝(X 12~50, Z 38)과 CARR 센서 팔 위 끝(X ≤ 18, Z 36), Y −107~−100, J_U6_SHIFT 0 작동 자세",
+      "why": "실측 틈 2.0 mm(v2.6.5·v2.6.6 같음). 10은 두 조정이 10 mm 어긋날 수 있을 때의 몫이었는데, 이제 두 묶음은 한 판에 묶여 상대 Z가 0으로 고정되고 상대 움직임은 J_U6_SHIFT(−X로 멀어지는 쪽)뿐이다. 이 틈으로 지금까지 회귀 겹침 0(POSE 8 제외). 지시대로 상대 위치를 띄우면 U6 −Z(슈 바닥 12.5·센서 감지면 Z 21이 매트에서 뜸), U7 +Z(바인더 끝 Z 13이 뜸), X·Y 이동(센서가 바늘 앞에서 벗어남)이 되어 기능 기준선이 바뀐다",
+      "proposal": "① 틈 기준을 정적 최소 틈(예: ≥ 2, 공차·흔들림 몫)으로 바꾼다, 또는 ② P_M05_GUIDE 아래 끝 X 12~28 부분을 Z 46까지 8 mm 잘라 ≥ 10을 만든다(테이프 홈 31×2 아래 안내가 반쯤 짧아짐 — 테이프 거동은 요구서 7절 시제품 확인). 설계부·사용자 판단"
+     },
+     {
+      "rule": "결정로그 C-34 완료 판정 '같은 값인 범위(−4·0·+6) 전부에서 P_M05_GUIDE ↔ P_M06_CARR 틈 ≥ 10'",
+      "where": "P_M05_GUIDE 아래 끝 ↔ P_M06_CARR 센서 팔 위 끝, X 12 · Y −107 · Z 34~44",
+      "why": "실측 2.0(−4·+6 같음). 10은 두 손 조정이 최대 10 어긋날 때의 몫이었다. 이제 U6_SENSOR가 U7_FIXED에 리지드로 묶여(J_U6_ON_U7FIX) 두 묶음 사이 Z 상대 이동이 0이고, 남은 상대 움직임은 J_U6_SHIFT(−X로 멀어지는 쪽)뿐이다. SHIFT −60·0과 HGT −4·+6에서 겹침 0",
+      "proposal": "① 틈 기준을 정적 최소 틈 ≥ 2(공차·흔들림 몫)로 바꾼다(권장, 형상 그대로). ② 10을 지키려면 GUIDE 아래 X 12~28 구간을 Z 38 → 46으로 8 mm 자른다. 테이프 홈 아래 안내가 짧아지므로 요구서 7절 시제품 확인에 넣는다. 설계부·사용자가 고른다"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "결정로그 C-34 완료 판정 '같은 값인 범위(−4·0·+6) 전부에서 P_M05_GUIDE ↔ P_M06_CARR 틈 ≥ 10'",
+      "where": "P_M05_GUIDE 아래 끝(X 12~50, Z 38+h) ↔ P_M06_CARR 센서 팔 위 끝(X ≤ 18, Z 36+h), Y −107~−100, J_U6_SHIFT 0 작동 자세",
+      "decision": "승인",
+      "reason": "E-03 원문 '합격의 첫 조건은 … 전 구간 동작과 간섭 0'이 기준은 겹침 0이고, 엔진 L2·L3와 요구서 6절에 움직이는 부품 사이 최소 틈 기본값은 없다. 10이라는 수는 사용자 원문('너가 생각하는 가장 이상적인 방향으로 진행해')에 없다. 이 값은 옛 두 손 조정의 최대 어긋남(HGT −4~+6 폭 10)과 같다(POSE 8 겹침 Z 8 = 10 − 2.0). C-34 근거 칸의 목적은 '조정을 하나로 하면 잘못 맞출 수 없고'이다. v2.6.6에서 J_U6_HGT를 지우고, U6_SENSOR를 U7_FIXED에 리지드(J_U6_ON_U7FIX)로 붙이고, 공통 판에 압입 스터드로 묶었다. 그래서 두 묶음의 상대 Z가 0으로 고정돼 10이 막으려던 어긋남이 구조로 없어졌다. 남은 상대 움직임은 J_U6_SHIFT(X 슬라이더, −X로 멀어짐) 하나다. 방향이 틈(Z)과 직각이라 틈이 가장 작은 곳은 SHIFT 0이다. 카세트 빼는 길(+X 25 → −Y 250)도 멀어지는 쪽이다. 검도가 MCP로 잰 값은 2.0이고(−4·+6, mech_REG-02_verify.md), 겹침은 0이다. 이 기계에서 이미 받아들인 틈(갈고리 2.0 DC2-08, 머리판 1.14 DC2-06)과 같은 수준이다. 형상이 그대로라 E-14 그리기 시험 대상은 없다.",
+      "instruction": "형상은 그대로 둔다(P_M05_GUIDE·P_M06_CARR 손대지 않음). REG-02 완료 판정의 틈 항목은 'P_M05_GUIDE↔P_M06_CARR 정적 틈 ≥ 2(실측 2.0)이고 J_U7_HGT −4·0·+6 × J_U6_SHIFT 0~−60 전부 겹침 0'으로 판정한다. 근거는 결정로그 '구동 REG-02 예외 판정 (2026-11-08)' REG02-E01이다. C-34 행은 고치지 않는다(이 절이 이긴다). 요구서 5절 REG-02 완료 판정 칸의 'GUIDE↔CARR 틈 ≥ 10'은 문서 담당이 'GUIDE↔CARR 정적 틈 ≥ 2(REG02-E01)'로 고친다. 이 판정과 별개로 검도 미충족 2(CB5-16_REG02_4 렌치 길이 h +6에서 MSTH6-20_M05:2에 걸림, 완료 판정 '공통 판 체결 공구 막힘 0')가 남아 있다. 예외로 올라오지 않았으니 모델링부 수정 회차가 볼트 X 이동 등으로 고친다."
+     },
+     {
+      "rule": "결정로그 C-34 완료 판정 '같은 값인 범위(−4·0·+6) 전부에서 P_M05_GUIDE ↔ P_M06_CARR 틈 ≥ 10' — 안 ② GUIDE 아래 X 12~28을 Z 38 → 46으로 8 mm 자르기",
+      "where": "P_M05_GUIDE 아래 끝 X 12~28 · Y −107 · Z 34~44(테이프 홈 31×2 아래 안내)",
+      "decision": "기각",
+      "reason": "첫 요청과 같은 요청이라 E-19로 함께 판정했다. 10을 지키려고 자르면 바인더 바로 위의 테이프 홈 아래 안내가 짧아진다. 이 안내는 마감 품질(요구서 1-1 최우선)에 걸리는 기능 궤도다. L3 U-03 원문은 '단 U-01 핵심 정밀도와 물리 제약(대상의 길, 기능 궤도)은 존중한다'이다. 테이프 거동은 모델로 판정할 수 없다(요구서 7절). 막을 위험이 이미 없어진 몫(어긋남 10)을 위해 기능을 깎는 것은 사용자가 맡긴 '가장 이상적인 방향'이 아니다. 두 묶음 상대 위치를 띄우는 안도 쓰지 않는다. 슈 바닥 12.5·센서 감지면 Z 21·바인더 끝 Z 13 기준선이 바뀌기 때문이다.",
+      "instruction": "P_M05_GUIDE를 자르지 않는다. U6·U7 상대 위치(X·Y·Z)도 옮기지 않는다. 틈 판정은 첫 번째 판정(REG02-E01, 정적 틈 ≥ 2 + 겹침 0)을 따른다."
+     }
+    ],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "REG-01",
+    "status": "이미 해결(확인)",
+    "evidence": "F_STATES 35상태 모두에서 KDM10S-06_M08과 against 63바디(HTPA60 N30 4바디 포함)를 inspect.clearance(clearance 2)로 쟀다. 겹침 0, 2 mm 안 0, unchecked 0, truncated false. 63쌍 모두 상자 단계에서 걸러졌다(상자 틈 > 2 mm). 가장 가까운 틈은 HGT 0에서 9.34 mm, -4에서 5.42 mm, +6에서 15.27 mm다(모두 P_M06_TOP_ROLLER). 관 6줄은 HGT -4~+6 소켓 쓸린 공간 상자(X 11.72부터)로 쟀고 겹침 0, unchecked 0이다. 거리는 U7_1이 0.000, U7_2~6이 0.020이다. 남는 0.02 mm 판은 DC2-08 수정 1(v2.6.2)에서 같은 방법으로 HGT -4·0·+6 겹침 0을 낸 자리다. 그 뒤 형상과 상대 위치는 실측 bbox로 바뀌지 않았다. 나머지 정지 바디는 쓸린 상자 거리 100 mm 이상이다. 형상·부품 수 변경 0이고, 프로브는 체크포인트를 되돌려 지웠다."
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "POSE 전체 검사 0-7·12-180 (어림 초과)",
+    "연구 전체 검사 CYCLE_L 23-716, CYCLE_S 0-450, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13 (어림 초과)",
+    "F_STATES U6_SENSOR·U6_SHOE·U7#0~#4/8 12-34, U7#5~#7/8 11-34 (어림 초과)",
+    "F_STATES U3_HEAD·U4_WHEEL_N 1-34, U5_WHEEL_F 0-34 (어림 초과)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 5613,
+    "estimate_s": 12112.5,
+    "actual_s": 1788.1,
+    "chunk_times": [
+     {
+      "id": "D_STATES 3-19",
+      "elapsed_s": 10.1,
+      "status": "ok"
+     },
+     {
+      "id": "D_STATES 20-34",
+      "elapsed_s": 481.3,
+      "status": "timeout"
+     },
+     {
+      "id": "D_STATES 33 / 34 (재분할)",
+      "elapsed_s": 105,
+      "status": "ok"
+     },
+     {
+      "id": "STATES 23-27",
+      "elapsed_s": 466.2,
+      "status": "ok"
+     },
+     {
+      "id": "STATES 33-34",
+      "elapsed_s": 376.2,
+      "status": "ok"
+     },
+     {
+      "id": "D_CYCLE_L·S·G1 17단계 묶음(약 90개)",
+      "elapsed_s": 10,
+      "status": "ok"
+     },
+     {
+      "id": "B: D_MAINT_U7 0-13",
+      "elapsed_s": 481.3,
+      "status": "timeout"
+     },
+     {
+      "id": "B: D_POSE 0-7",
+      "elapsed_s": 481.3,
+      "status": "timeout"
+     },
+     {
+      "id": "B: D_POSE 10-180·D_CYCLE_G2 0-630·F_STATES U6/U7 0-11",
+      "elapsed_s": 1076.7,
+      "status": "ok"
+     }
+    ],
+    "killed_calls": 3,
+    "skipped_steps": 0,
+    "trial": "A: 연구(dstudy) 13.35 s/단계·study 36.7, 자세 pose 60.0 s/점·dpose 2.5, state 41.7, dstate 13.4, fchg 35.0, fslow 20.0 / B: dstudy 4.25, dpose 1.0, fchg 80.1, pose 92.5, study 12.5, fslow 135.1 — 오류 없음",
+    "per_step_s": {
+     "study": 36.68,
+     "pose": 60.04
+    },
+    "pose_steps": 181,
+    "reduced": "A 어림 12,112 s > 1,800 s → 앞 1,550단계만, B(남은 1,088 s) 어림 7,600 s → 앞 1,128단계만. 뒤는 시작 전에 못 본 범위로 정함(E-17 ②-2)",
+    "seen": [
+     "REG-02 바뀐 19바디 대 둘레 524바디: STATES 0-34, POSE 0-180, CYCLE_L 0-716, CYCLE_S 0-450, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13",
+     "STATES 0-34 전체 검사(움직이는 112바디)",
+     "POSE 8-11 전체 검사",
+     "CYCLE_L 0-22 전체 검사",
+     "F_STATES U6_SENSOR·U6_SHOE·U7#0~#4/8 0-11, U7#5~#7/8 0-10, U3_HEAD·U4_WHEEL_N 0",
+     "U7@26 KDM10S-06_M08 F_STATES 0-34는 REG-01 측정(v2.6.7)이 봄"
+    ],
+    "unseen": [
+     "POSE 전체 검사 0-7·12-180 (어림 초과)",
+     "연구 전체 검사 CYCLE_L 23-716, CYCLE_S 0-450, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13 (어림 초과)",
+     "F_STATES U6_SENSOR·U6_SHOE·U7#0~#4/8 12-34, U7#5~#7/8 11-34 (어림 초과)",
+     "F_STATES U3_HEAD·U4_WHEEL_N 1-34, U5_WHEEL_F 0-34 (어림 초과)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "REG-02 모델링부",
+    "phase": "REG-02 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2895,
+     "cad_calls": 33,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 120,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "REG-02 해석",
+    "phase": "REG-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 235,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "REG-02 검도·체결",
+    "phase": "REG-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1340,
+     "cad_calls": 14,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 2,
+     "mcp_restarts": [
+      "재시작 0. MCP batch 2건이 응답 제한 약 300 s에 걸려 결과를 잃었다(engine.batch 13단계 running_s 322 s, 4단계 307 s). 앱은 계속 돌아 끝났고 막힘이 아니어서 기다렸다. 버린 것은 HGT 25·50·75 % 중간점 결과. 원인은 J_U7_HGT·CST_X·CST_Y 한 번 구동이 75~85 s 걸리는 것"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "REG-02 예외 판정",
+    "phase": "REG-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "REG-02 모델링부 수정1",
+    "phase": "REG-02 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2500,
+     "cad_calls": 30,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 97,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "REG-02 해석 1",
+    "phase": "REG-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 230,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "REG-02 검도·체결 1",
+    "phase": "REG-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 560,
+     "cad_calls": 9,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "REG-02 문서·커밋",
+    "phase": "REG-02 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 100,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "REG-01 측정부",
+    "phase": "REG-01 · 측정",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 2250,
+     "cad_calls": 20,
+     "file_opens": 3,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 8,
+     "mcp_restarts": [
+      "1회: 이 부서의 batch(관 TU0604_M08K_U7_1~5 맞닿음 쌍이 든 clearance 5단계)가 running_s 383 s를 넘었고 앱 메모리가 11 GB였다. Stop-Process solidcraft로 끄고 --control 27878로 다시 켠 뒤 v2.6.7을 다시 열었다. 버린 것은 포즈뿐(편집 없음). 기다린 시간 약 1.5분.",
+      "2회: 이 부서의 batch(HGT를 여러 번 바꾸는 55단계, joint.drive J_U7_HGT 한 번 62~73 s)가 running_s 311 s를 넘었고 메모리가 6.7 GB였다. 앱을 다시 켜고 v2.6.7을 다시 열었다. 버린 것은 포즈뿐. 기다린 시간 약 1분."
+     ],
+     "over_reason": "측정 S 예상 10분의 2배를 넘었다. 이 부서가 보낸 무거운 요청 두 개로 앱이 막혀 두 번 다시 켜고 다시 열었다. 원인은 관↔소켓 같은 평면 맞닿음 쌍과, J_U7_HGT joint.drive 한 번에 62~73 s 걸리는 것이었다."
+    },
+    "expect_min": 10,
+    "over": true
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2900,
+     "cad_calls": 253,
+     "file_opens": 12,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 344.3,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 129,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "REG-02 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 CB5-16_REG02_1, CB5-16_REG02_2, CB5-16_REG02_3, CB5-16_REG02_4, CB5-12_M06_1, CB5-12_M06_2, CB5-12_M05_11, CB5-12_M05_12이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "REG-01 측정부",
+    "what": "설계 파일을 3번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-205",
+   "WF-206",
+   "WF-207"
+  ],
+  "repeat_ids": [
+   "WF-172",
+   "WF-184",
+   "WF-185",
+   "WF-201"
+  ],
+  "one_line": "회고: 개선 후보 3개를 추가했다(WF-205 MCP 응답 제한을 넘는 batch의 결과 유실, WF-206 출처 없는 완료 판정 수치 때문에 같은 예외 요청이 2건, WF-207 루트 타임라인 cut 구멍이 움직이는 부품을 따라가지 않음). 기존 4개는 반복 수를 올렸다(WF-172, WF-184, WF-185, WF-201). 쓴 곳은 C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/docs/reports/engine-candidates.md 이고, 최종 보고서 C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/docs/reports/mechanism/final_mech_2026-11-08_STEPWAIT-REG-02-REG-01.md 끝에 '워크플로우 개선 후보' 절을 붙였다. 커밋 9146bdf에는 최종 보고서만 넣었고 푸시하지 않았다. engine-candidates.md는 고쳤지만 커밋하지 않았다. 고친 엔진 파일은 없다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 21,
+  "시간 h": 3.9,
+  "출력 토큰": 539363,
+  "실패": 0
+ }
+}
