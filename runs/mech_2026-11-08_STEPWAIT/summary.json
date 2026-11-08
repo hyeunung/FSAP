@@ -1,0 +1,434 @@
+{
+ "run": "mech_2026-11-08_STEPWAIT",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-08",
+ "journal": "wf_272c1368-764",
+ "totals": {
+  "agents": 12,
+  "agent_sec": 7653,
+  "input": 2487270,
+  "cache_read": 36178179,
+  "output": 186715,
+  "tools": 273,
+  "wall_sec": 7652
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 99,
+   "agents": 1,
+   "output": 8132
+  },
+  "▸ modeling-round #3": {
+   "sec": 7554,
+   "agents": 11,
+   "output": 178583
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 3",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 99,
+   "tokens": {
+    "input": 109860,
+    "cache_read": 736353,
+    "output": 8132
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 85,
+   "tokens": {
+    "input": 67261,
+    "cache_read": 121549,
+    "output": 11295
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 36,
+   "tokens": {
+    "input": 79072,
+    "cache_read": 454277,
+    "output": 2526
+   },
+   "tools": 10,
+   "turns": 7
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 28,
+   "tokens": {
+    "input": 75022,
+    "cache_read": 218949,
+    "output": 1910
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "STEPSWAP 모델링부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 3011,
+   "tokens": {
+    "input": 607107,
+    "cache_read": 22239907,
+    "output": 86905
+   },
+   "tools": 117,
+   "turns": 110
+  },
+  {
+   "label": "STEPSWAP 검도·체결",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 1216,
+   "tokens": {
+    "input": 395275,
+    "cache_read": 5684817,
+    "output": 27391
+   },
+   "tools": 51,
+   "turns": 50
+  },
+  {
+   "label": "STEPSWAP 문서·커밋",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 55,
+   "tokens": {
+    "input": 94595,
+    "cache_read": 595352,
+    "output": 4780
+   },
+   "tools": 8,
+   "turns": 8
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 2856,
+   "tokens": {
+    "input": 754498,
+    "cache_read": 3956431,
+    "output": 21954
+   },
+   "tools": 41,
+   "turns": 37
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 143,
+   "tokens": {
+    "input": 106820,
+    "cache_read": 1087126,
+    "output": 11570
+   },
+   "tools": 13,
+   "turns": 13
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 64,
+   "tokens": {
+    "input": 90901,
+    "cache_read": 667476,
+    "output": 4921
+   },
+   "tools": 10,
+   "turns": 9
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 35,
+   "tokens": {
+    "input": 77801,
+    "cache_read": 374831,
+    "output": 1761
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #3",
+   "status": "running",
+   "sec": 25,
+   "tokens": {
+    "input": 29058,
+    "cache_read": 41111,
+    "output": 3570
+   },
+   "tools": 1,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPSWAP",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.6.8.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "출구 관 TU0805_M08T_REG_OUT_1~3 굽힘 R 6.25가 최소 굽힘 R 20보다 작다(지난 회차에서 넘어온 SW4-D1)",
+      "where": "U8_PNEU TU0805_M08T_REG_OUT_1~3, Y 107.5 가로 구간 앞뒤",
+      "evidence": "모델링부 기록 R 6.25 < 20. 검도 clearance에서 겹침은 0",
+      "fix": "디테일링에서 가로 구간 앞뒤 직선 길이를 각각 20 이상으로 다시 잡아 굽힘 R 20을 넣는다",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "구매품 재질이 질량용 임시값이다(SW4-D2)",
+      "where": "IR1000-01BG_M08:1~3 몸 Aluminum·게이지 ABS",
+      "evidence": "모델링부 기록",
+      "fix": "디테일링에서 SMC 카탈로그 질량값에 맞춰 재질·밀도를 고친다",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "POSE 전체 검사 124·126·127·130-133·135 (전체 상한) · 136-180 (어림 초과)",
+    "연구 전체 검사 CYCLE_L 26-716, CYCLE_S 0-450, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13 (어림 초과)",
+    "F_STATES U3_HEAD·U4_WHEEL_N·U5_WHEEL_F 1-34 (어림 초과)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2853,
+    "estimate_s": 14536.3,
+    "actual_s": 1800.8,
+    "chunk_times": [
+     {
+      "id": "regrun runsB(trial 120 s)",
+      "elapsed_s": 120.1,
+      "status": "trial_error"
+     },
+     {
+      "id": "regrun runsC(trial 300 s)",
+      "elapsed_s": 300.1,
+      "status": "trial_error"
+     },
+     {
+      "id": "regrun runs: 355 chunks ok",
+      "elapsed_s": 1800.8,
+      "status": "partial"
+     },
+     {
+      "id": "POSE 124,126,127,130-133,135",
+      "elapsed_s": 210.4,
+      "status": "cut"
+     }
+    ],
+    "killed_calls": 13,
+    "skipped_steps": 0,
+    "trial": "시험 상한 470 s에서 fchg 5.03 s/점, pose 155.05 s/점, study 55.02 s/단계, fslow 170.04 s/점, 오류 없음(앞 두 번은 시험 상한 120·300 s timeout으로 trial_error)",
+    "per_step_s": {
+     "study": 55.0193,
+     "pose": 155.0548
+    },
+    "pose_steps": 177,
+    "reduced": "어림 14536 s > 상한 1800 s → 시작 전에 앞 363단계만 돌리고 뒤 2485단계는 못 본 범위(regrun). 묶음 순서는 지난 못 본 범위 순서(U6·U7 빠른 검사 → POSE → 연구 → U3·U4·U5)",
+    "seen": [
+     "POSE 전체 검사 0-7·12-123·125·128-129·134",
+     "F_STATES U6_SENSOR·U6_SHOE·U7#0~#4/8 12-34",
+     "F_STATES U7#5~#7/8 11-34",
+     "F_STATES U5_WHEEL_F 0",
+     "CYCLE_L 23-25"
+    ],
+    "unseen": [
+     "POSE 전체 검사 124·126·127·130-133·135 (전체 상한) · 136-180 (어림 초과)",
+     "연구 전체 검사 CYCLE_L 26-716, CYCLE_S 0-450, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13 (어림 초과)",
+     "F_STATES U3_HEAD·U4_WHEEL_N·U5_WHEEL_F 1-34 (어림 초과)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 모델링부",
+    "phase": "STEPSWAP · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2990,
+     "cad_calls": 35,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 156,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 검도·체결",
+    "phase": "STEPSWAP · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1260,
+     "cad_calls": 10,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 문서·커밋",
+    "phase": "STEPSWAP · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2760,
+     "cad_calls": 365,
+     "file_opens": 12,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 370,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 140,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "STEPSWAP 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 IR1000-01BG_M08, CB4-12_M08_REG, KQ2L08-01AS_M08R_PX, KQ2L08-01AS_M08R_NX, TU0805_M08T_REG_IN_1, TU0805_M08T_REG_IN_2, TU0805_M08T_REG_IN_3, TU0805_M08T_REG_OUT_1, TU0805_M08T_REG_OUT_2, TU0805_M08T_REG_OUT_3, STEP대기_IR1000-01BG_M08_N, STEP대기_IR1000-01BG_M08_F, STEP대기_IR1000-01BG_M08_S, KQ2L08-01AS_M08_PX, KQ2L08-01AS_M08_NX, TU0805_M08S_REG_IN_1, TU0805_M08S_REG_IN_2, TU0805_M08S_REG_IN_3, TU0805_M08S_REG_OUT_1, TU0805_M08S_REG_OUT_2, TU0805_M08S_REG_OUT_3, CB5-12_M08_PY:1~6 (occurrences only; :7~:10 kept)이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [],
+  "repeat_ids": [
+   "WF-178"
+  ],
+  "one_line": "회고 mech_2026-11-08_STEPWAIT: 새 후보는 없고 WF-178의 반복 수만 5로 올렸다(전체 회귀에서 설계 파일을 12번 열고 open_s 370, 30분 상한 안에 361점만 봄). 개선 후보는 FSAP docs/reports/engine-candidates.md에 적었고 엔진 파일은 고치지 않았다. 최종 보고서는 커밋 befc783로 넣었고 푸시하지 않았다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 12,
+  "시간 h": 2.1,
+  "출력 토큰": 186715,
+  "실패": 0
+ }
+}
