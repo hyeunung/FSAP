@@ -171,7 +171,8 @@
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345). 구매품(LHFR16·PSCS16·멈춤나사)은 정격 기억값 비(D-146). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "_old": "옛 모델(v2.1.2, 옆판 플랜지 CB5-12 x4로 TOP 체결)은 FUNC-01에서 볼트를 지우고 플로트로 바꿔 경계가 없어짐 — 같은 하중 옛 식 결과는 fea/results/mech_FUNC-01_handcalc.json old_model_same_loads"
+   "_old": "옛 모델(v2.1.2, 옆판 플랜지 CB5-12 x4로 TOP 체결)은 FUNC-01에서 볼트를 지우고 플로트로 바꿔 경계가 없어짐 — 같은 하중 옛 식 결과는 fea/results/mech_FUNC-01_handcalc.json old_model_same_loads",
+   "_v281": "v2.8.1 축 여유 구멍 Ø16.5 Z 115~130(웨브 t6 -> 홈 바닥 3.75, 활꼴 현 11.3): 경계·하중 같고 웨브 단면만 띠 적분(I 0.894배, A 0.951배)으로 줄임 — cases/mech_FUNC-01_handcalc1.py"
   },
   "P_M03_LIFT_SIDE_P": {
    "case": "cases/mech_FUNC-01_handcalc.py",
@@ -181,7 +182,8 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345). 구매품(LHFR16·PSCS16·멈춤나사)은 정격 기억값 비(D-146). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "_v281": "v2.8.1 축 여유 구멍 Ø16.5 Z 115~130(웨브 t6 -> 홈 바닥 3.75, 활꼴 현 11.3): 경계·하중 같고 웨브 단면만 띠 적분(I 0.894배, A 0.951배)으로 줄임 — cases/mech_FUNC-01_handcalc1.py"
   },
   "P_M03_FRONT": {
    "case": "cases/mech_M03_handcalc.py",

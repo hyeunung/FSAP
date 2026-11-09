@@ -1,0 +1,92 @@
+{
+ "base_results": "fea/results/mech_FUNC-01_handcalc.json (v2.8.0, 하중·경계 같음)",
+ "step_radii": {
+  "P_M03_LIFT_SIDE_N": [
+   2.75,
+   2.85,
+   8.0,
+   8.25
+  ],
+  "P_M03_LIFT_SIDE_P": [
+   2.75,
+   2.85,
+   6.0,
+   8.0,
+   8.25
+  ]
+ },
+ "section": {
+  "cut_depth": 2.25,
+  "chord_X": 11.32,
+  "t_min": 3.75,
+  "I_ratio": 0.894,
+  "A_ratio": 0.951
+ },
+ "LIFT_SIDE": {
+  "운전_뜸": {
+   "Fy": 45.0,
+   "sigma_web_v280": 6.1,
+   "sigma_web_v281": 6.9,
+   "sigma_groove_bottom": 4.3,
+   "sigma_groove_x_Kt1.5(기록)": 6.5,
+   "sigma_flange": 0.0,
+   "SF_v280": 33.36,
+   "SF_v281": 29.85,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  "운전_닿음": {
+   "Fy": 45.0,
+   "sigma_web_v280": 6.1,
+   "sigma_web_v281": 6.9,
+   "sigma_groove_bottom": 4.3,
+   "sigma_groove_x_Kt1.5(기록)": 6.5,
+   "sigma_flange": 3.3,
+   "SF_v280": 33.36,
+   "SF_v281": 29.85,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  "오조작Y": {
+   "Fy": 246.6,
+   "sigma_web_v280": 33.4,
+   "sigma_web_v281": 37.3,
+   "sigma_groove_bottom": 23.5,
+   "sigma_groove_x_Kt1.5(기록)": 35.3,
+   "sigma_flange": 6.2,
+   "SF_v280": 6.14,
+   "SF_v281": 5.49,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  "오조작X": {
+   "Fy": 0.0,
+   "sigma_web_v280": 0.3,
+   "sigma_web_v281": 0.4,
+   "sigma_groove_bottom": 0.4,
+   "sigma_groove_x_Kt1.5(기록)": 0.5,
+   "sigma_flange": 6.2,
+   "SF_v280": 33.25,
+   "SF_v281": 33.06,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  "whatif_mu0.8": {
+   "Fy": 394.6,
+   "sigma_web_v280": 53.4,
+   "sigma_web_v281": 59.7,
+   "sigma_groove_bottom": 37.7,
+   "sigma_groove_x_Kt1.5(기록)": 56.5,
+   "sigma_flange": 6.2,
+   "SF_v280": 3.84,
+   "SF_v281": 3.43,
+   "req": null,
+   "ok": true,
+   "near(+10%)": false
+  }
+ }
+}
