@@ -1,0 +1,690 @@
+{
+ "run": "mech_2026-11-09_F01-C1-VGR-01-STEPWAIT",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-09",
+ "journal": "wf_385bd1c7-ab8",
+ "totals": {
+  "agents": 21,
+  "agent_sec": 9420,
+  "input": 3848591,
+  "cache_read": 57079288,
+  "output": 471037,
+  "tools": 478,
+  "wall_sec": 9421
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 230,
+   "agents": 3,
+   "output": 28006
+  },
+  "▸ modeling-round": {
+   "sec": 9190,
+   "agents": 18,
+   "output": 443031
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 77,
+   "tokens": {
+    "input": 67147,
+    "cache_read": 54706,
+    "output": 11146
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 48,
+   "tokens": {
+    "input": 89100,
+    "cache_read": 134639,
+    "output": 6196
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 105,
+   "tokens": {
+    "input": 122208,
+    "cache_read": 704099,
+    "output": 10664
+   },
+   "tools": 13,
+   "turns": 8
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 78,
+   "tokens": {
+    "input": 25917,
+    "cache_read": 95980,
+    "output": 11115
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 76,
+   "tokens": {
+    "input": 84996,
+    "cache_read": 633204,
+    "output": 4925
+   },
+   "tools": 12,
+   "turns": 9
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 29,
+   "tokens": {
+    "input": 75862,
+    "cache_read": 221815,
+    "output": 1508
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "F01-C1 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 633,
+   "tokens": {
+    "input": 232138,
+    "cache_read": 7629074,
+    "output": 59841
+   },
+   "tools": 58,
+   "turns": 51
+  },
+  {
+   "label": "F01-C1 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 9,
+   "tokens": {
+    "input": 73613,
+    "cache_read": 72083,
+    "output": 626
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "F01-C1 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 240,
+   "tokens": {
+    "input": 136842,
+    "cache_read": 1456999,
+    "output": 23488
+   },
+   "tools": 20,
+   "turns": 14
+  },
+  {
+   "label": "F01-C1 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 150,
+   "tokens": {
+    "input": 116575,
+    "cache_read": 865672,
+    "output": 13848
+   },
+   "tools": 10,
+   "turns": 10
+  },
+  {
+   "label": "F01-C1 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1329,
+   "tokens": {
+    "input": 568914,
+    "cache_read": 14863508,
+    "output": 92454
+   },
+   "tools": 93,
+   "turns": 80
+  },
+  {
+   "label": "F01-C1 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2035,
+   "tokens": {
+    "input": 565461,
+    "cache_read": 9905544,
+    "output": 55354
+   },
+   "tools": 81,
+   "turns": 70
+  },
+  {
+   "label": "F01-C1 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 54,
+   "tokens": {
+    "input": 84329,
+    "cache_read": 394709,
+    "output": 3691
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "VGR-01 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 735,
+   "tokens": {
+    "input": 242892,
+    "cache_read": 8918562,
+    "output": 62105
+   },
+   "tools": 69,
+   "turns": 52
+  },
+  {
+   "label": "VGR-01 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 13,
+   "tokens": {
+    "input": 74007,
+    "cache_read": 72026,
+    "output": 1013
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "VGR-01 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 713,
+   "tokens": {
+    "input": 202727,
+    "cache_read": 4368836,
+    "output": 61343
+   },
+   "tools": 30,
+   "turns": 30
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2846,
+   "tokens": {
+    "input": 790326,
+    "cache_read": 5072665,
+    "output": 29961
+   },
+   "tools": 49,
+   "turns": 43
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 108,
+   "tokens": {
+    "input": 100745,
+    "cache_read": 779531,
+    "output": 8270
+   },
+   "tools": 10,
+   "turns": 10
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 87,
+   "tokens": {
+    "input": 87388,
+    "cache_read": 570871,
+    "output": 6921
+   },
+   "tools": 7,
+   "turns": 8
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 22,
+   "tokens": {
+    "input": 76869,
+    "cache_read": 223654,
+    "output": 1589
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 33,
+   "tokens": {
+    "input": 30535,
+    "cache_read": 41111,
+    "output": 4979
+   },
+   "tools": 1,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "F01-C1",
+    "size": "M",
+    "status": "완료",
+    "chosen": "F01-C1-S1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.8.3.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "VGR-01",
+    "status": "개념 재검토",
+    "concept_conflict": "VGR-01-S1: 0-8-1·0-8-5는 큰 매트 회전을 먼 쪽 바퀴(U5, 바늘을 지나는 X선 위)에 맡긴다. 그런데 매트 끝에서 300 안의 홈에서는 회전 일부(V30 꼭짓점 ROT −40→−75 35°와 입구2 −75→−30 45°, U홈 CYCLE_G1 바닥 마지막 69°) 동안 X선이 매트 끝으로 빠진다. d₂ 420~1800 어디서도 U5가 매트 밖이고(d2scan), 매트가 있는 d₂ < 420 자리에는 U4 묶음(X −330~−50)이 있다. 그 구간은 U4 혼자 돌려야 한다. U4 40 N × μ 0.4 × d₁ 0.1 = 1.60 N·m이고 구름 저항만 2.80 N·m다(정적 SF 0.57). 자국 한도 51.6 N(폭 25, 100 kPa, C-03)까지 눌러도 2.06(0.74)이다. d₂ 440(개념 안)으로 구간을 줄일 수는 있지만 없애지는 못한다. 사용자 결정 D-154: (가) d₁ 100 → ≥ 175 — 치수는 개념 안이지만 U4 묶음 전체를 옮기는 구조 변경이다. (나) 먼 쪽 바퀴가 회전 중 X선 밖(Y로 비킨 자리)도 잡게 한다 — 0-8-1 '두 바퀴는 X선 위'를 바꾼다. (다) 볼 유닛 구름 저항 ≤ 0.02를 선정 조건으로 하고 회전 ≥ 6 s(SF 1.05~1.12, 실측 필요)."
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "MAINT_U7 3·6·9·12 — 오류(패닉 471 s, 4회 연속)",
+    "POSE 0·4·6·7·8·11~14 — 한 단계가 호출 상한을 넘김",
+    "POSE 2·10 — 오류 단계",
+    "POSE 16·17·20·45~129·131·134·141~153·156~180 — 전체 상한",
+    "F_STATES 0~34 전 유닛 — 명세에서 뺌(시작 전)",
+    "POSE 133·135·136·138·139·140·154·155 — 명세에서 뺌(v2.8.2에서 봄)",
+    "MAINT_U7 1·2·4·5·7·8·10·11·13 — 명세에서 뺌",
+    "연구 조밀(10단계 사이) CYCLE_L 644·S 405·G1 462·G2 567·SEAM_U7 24단계 — 명세에서 뺌"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 456,
+    "estimate_s": 358.2,
+    "actual_s": 1801.5,
+    "chunk_times": [
+     {
+      "id": "CYCLE_L/S/G1/G2/SEAM_U7 성기게(10간격)",
+      "elapsed_s": 900,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L.H%k/8 106",
+      "elapsed_s": 12,
+      "status": "ok"
+     },
+     {
+      "id": "POSE.H%k/8 130·132·137",
+      "elapsed_s": 3200,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_U7 3·6·9·12",
+      "elapsed_s": 471.7,
+      "status": "panic"
+     },
+     {
+      "id": "POSE 0·4·6·7·8·11~14",
+      "elapsed_s": 481.3,
+      "status": "timeout"
+     },
+     {
+      "id": "POSE 2·10",
+      "elapsed_s": 471.3,
+      "status": "panic"
+     },
+     {
+      "id": "POSE 16·17·20·45~51",
+      "elapsed_s": 461.3,
+      "status": "cut"
+     }
+    ],
+    "killed_calls": 15,
+    "skipped_steps": 15,
+    "trial": "연구 CYCLE_S 0 10.0 s/단계, 자세 POSE 9 5.0 s/점, 오류 없음(데운 세션 가벼운 점이라 과소 어림)",
+    "per_step_s": {
+     "study": 10.0181,
+     "pose": 5.0096
+    },
+    "pose_steps": 194,
+    "reduced": "명세에서 F_STATES 0~34 전부(첫 호출 305~460 s/점, 회귀 18 trial_error 실측, 작업 대상 바디 미사용), POSE 133·135·136·138·139·140·154·155(v2.8.2에서 봄), MAINT_U7 3간격 밖, 연구 10단계 사이를 시작 전에 뺐다 — 30분 상한 안에 바뀐 범위(작업 대상 연구)를 전부 보려고",
+    "seen": [
+     "CYCLE_L 0~716 10간격+716(106은 8조각 합) 73점",
+     "CYCLE_S 0~450 10간격 46점",
+     "CYCLE_G1 0~514 10간격+514 53점",
+     "CYCLE_G2 0~630 10간격 64점",
+     "SEAM_U7 0~32 4간격 9점",
+     "MAINT_HEAD 0·1, MAINT_U7 0",
+     "POSE 1·3·5·9·15·18·19·21~44",
+     "POSE 130·132·137(8조각 합)"
+    ],
+    "unseen": [
+     "MAINT_U7 3·6·9·12 — 오류(패닉 471 s, 4회 연속)",
+     "POSE 0·4·6·7·8·11~14 — 한 단계가 호출 상한을 넘김",
+     "POSE 2·10 — 오류 단계",
+     "POSE 16·17·20·45~129·131·134·141~153·156~180 — 전체 상한",
+     "F_STATES 0~34 전 유닛 — 명세에서 뺌(시작 전)",
+     "POSE 133·135·136·138·139·140·154·155 — 명세에서 뺌(v2.8.2에서 봄)",
+     "MAINT_U7 1·2·4·5·7·8·10·11·13 — 명세에서 뺌",
+     "연구 조밀(10단계 사이) CYCLE_L 644·S 405·G1 462·G2 567·SEAM_U7 24단계 — 명세에서 뺌"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 70,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "F01-C1 측정부",
+    "phase": "F01-C1 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 617,
+     "cad_calls": 15,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 60,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "F01-C1 카탈로그부",
+    "phase": "F01-C1 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 30,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "F01-C1 기구설계부",
+    "phase": "F01-C1 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 230,
+     "cad_calls": 3,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "F01-C1 완료 판정 확인",
+    "phase": "F01-C1 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "F01-C1 모델링부",
+    "phase": "F01-C1 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1300,
+     "cad_calls": 29,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 320,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "F01-C1 검도·체결",
+    "phase": "F01-C1 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1960,
+     "cad_calls": 25,
+     "file_opens": 3,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [
+      "1) 이 연결 engine.batch 87단계(J_U7_HGT joint.drive 포함) running_s 약 590 s, 약 5분 기다림 → 22:32 앱 강제 종료·재시작(--control 27878), v2.8.3 다시 open. 버린 것: 저장 안 한 포즈 변경뿐",
+      "2) 이 연결 engine.batch 27단계(J_U7_HGT 포함) running_s 307 s → 22:43 재시작, 첫 open unauthorized(토큰) 뒤 running 후 다시 open. 버린 것: 포즈 변경뿐. J_U7_HGT 행정 점은 못 잼(보고서 4절)"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "F01-C1 문서·커밋",
+    "phase": "F01-C1 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "VGR-01 측정부",
+    "phase": "VGR-01 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 716,
+     "cad_calls": 13,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "VGR-01 카탈로그부",
+    "phase": "VGR-01 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "mcp_restarts": [],
+     "open_s": 0
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "VGR-01 기구설계부",
+    "phase": "VGR-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 680,
+     "cad_calls": 3,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2830,
+     "cad_calls": 357,
+     "file_opens": 16,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 699,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 92,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "F01-C1 검도·체결",
+    "what": "설계 파일을 3번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-212"
+  ],
+  "repeat_ids": [],
+  "one_line": "WF-212(저장 전 보조 표시 숨김 확인 누락)을 docs/reports/engine-candidates.md에 추가하고, 최종 보고서 끝에 개선 후보 절을 붙여 커밋했다(234b115, 푸시 안 함). 엔진 파일은 고치지 않았다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 21,
+  "시간 h": 2.6,
+  "출력 토큰": 471037,
+  "실패": 0
+ }
+}
