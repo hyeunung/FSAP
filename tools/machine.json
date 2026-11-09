@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.8.1.sc",
+ "doc": "../3D_Modeling/FSAP_v2.8.2.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",

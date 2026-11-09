@@ -3386,3 +3386,16 @@ E-14 시험(WF-129): 안 ①은 형상을 그대로 두므로 그릴 것이 없�
 | F01-D8 | LHFR16 오조작 정적 비 1.55/1.68 < 2(C0 기억값 1180 N) | U5_FLOAT LHFR16 ×2 | C0 실값(D-146), 맞닿음 마찰 μ 0.15(→ 2.2), 또는 LHFR20 |
 
 예외 판정: 0건. STEP 대기: D-147 PSCS16, D-148 AS2201F-01-06SA, D-149 받침 스프링.
+
+## 구동 COLOR-01 설계안 (2026-11-08)
+근거 `docs/reports/mechanism/mech_COLOR-01_design.md`, 계획 `tools/out/mech_COLOR-01/color_plan.json`·`edit.json`(생성기 `color_plan.py`).
+
+| 설계안 | 고친 곳 | 이유 |
+|---|---|---|
+| **COLOR-S1: 색표 13칸, 재질 그대로 표시 색만.** 벤치마크 없음 — 요구서 5절 COLOR-01 예시 색표를 색 값으로. F 체결 #b4b9bf(볼트·너트·와셔·멈춤나사·T너트 전부, 흑색 금지) · AL 알루미늄 #ccd0d6 · SS SUS304 #c8ccd0 · ST 강철 #9ea4ac · RW 수지 흰색 #e8e4da(PA12·나일론 볼) · RG 수지 연회색 #d4d4d0(PET-CF·ABS·마감캡) · UR 우레탄 #d9a33a · PM 재질 미지정 구매·공압 기기 #8c9198 · PT 공압 관 #3d7fd1 불투명도 0.55 · SF 안전 #f2c200 · EV 차지 상자 #9fc3e6 0.35 · WP 매트 #5b6b7b · TP 테이프·봉제선·기준 #d0453a. 적용: material.edit 6(SCM435→F, A5052·A6061→AL, S45C·SK5→ST, PET-CF→RG) + appearance.assign 1,609 이름(F 547·RW 827·PM 109·RG 60·PT 25·SF 25·EV 6·TP 7·WP 3). 체결 1,198 전부 F, 구매품 STEP 원색 예외 0 | - | 사용자 2026-11-09 "컬러도 대부분 다 통일해서 넣어줘 볼트 그리고 흑색으로 하지마". 측정: 설계 외관 지정 0, 색은 재질 기본색에서만 → 재질 색 편집이 가장 적은 변경(SCM435 하나로 651). 재질 배정·밀도를 안 바꿔 질량·BOM 0. 흑색 기준 L* < 40, F L* 약 75. 마감캡 HFC8-4080-B 실물은 검정, 모델은 RG — 형번 -S로 바꿀지는 사용자(STEP-05). CAD 확인: material.edit·appearance.assign(복사본·@occ 이름) 동작 확인 뒤 checkpoint 원복 |
+
+## 구동 COLOR-01 모델링 결과 (2026-11-09, v2.8.2)
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| COLOR-M1 | COLOR-S1 색표를 v2.8.2에 적용: material.edit 6 + appearance.assign 9건(복사본 이름을 원본 바디로 합쳐 231 바디) | 지시서 1,609 이름과 지정 결과가 같고(assign이 복사본을 원본으로 풂, 충돌 0) 인자가 작다 | mech_COLOR-01_model.md, verify_color.json: 색표 밖 0/2,729, 체결 흑색 0/1,198, 피처·바디 변화 0 |
+| COLOR-M2 | 앞으로 새 바디는 색표 칸 외관으로 넣는다(체결은 재질 무관 COL_F #b4b9bf) | 색 통일 유지(사용자 2026-11-09) | 설계검토서 기록 대상 |
