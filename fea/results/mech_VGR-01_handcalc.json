@@ -1,0 +1,854 @@
+{
+ "mass_kg": 8.604,
+ "grid_mm": 2.5,
+ "pivots": {
+  "apex_mid": [
+   449.2274066103125,
+   -300.0
+  ],
+  "entrance_m2": [
+   593.5,
+   -345.18
+  ],
+  "entrance_m1": [
+   593.5,
+   -254.82
+  ]
+ },
+ "props": {
+  "apex_mid": {
+   "I": 4.594,
+   "Rg": 56.126
+  },
+  "entrance_m2": {
+   "I": 6.146,
+   "Rg": 65.894
+  },
+  "entrance_m1": {
+   "I": 5.678,
+   "Rg": 63.179
+  }
+ },
+ "extra": {
+  "W_disk_N": 2.89,
+  "T_disk_scrub": 0.0347,
+  "T_disk_brg": 0.0133,
+  "I_disk_eq": 0.0217
+ },
+ "A_criteria_as_stated": [
+  {
+   "seg": "입구1 0→75",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m1",
+   "alpha": 0.8378,
+   "T_roll": 1.264,
+   "T_acc": 4.757,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 6.02,
+   "have": 8.64,
+   "SF": 1.435,
+   "t_min_SF1": 2.01
+  },
+  {
+   "seg": "입구1 0→75 (m2 불리 쪽)",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.8378,
+   "T_roll": 1.318,
+   "T_acc": 5.149,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 6.467,
+   "have": 8.64,
+   "SF": 1.336,
+   "t_min_SF1": 2.1
+  },
+  {
+   "seg": "꼭짓점 75→50",
+   "theta_deg": 25,
+   "t_s": 1.2,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 1.212,
+   "T_roll": 1.123,
+   "T_acc": 5.569,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 6.691,
+   "have": 8.64,
+   "SF": 1.291,
+   "t_min_SF1": 1.03
+  },
+  {
+   "seg": "꼭짓점 -25→-35",
+   "theta_deg": 10,
+   "t_s": 1.0,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.6981,
+   "T_roll": 1.123,
+   "T_acc": 3.207,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 4.33,
+   "have": 8.64,
+   "SF": 1.995,
+   "t_min_SF1": 0.65
+  },
+  {
+   "seg": "꼭짓점 -35→-50 U4만",
+   "theta_deg": 15,
+   "t_s": 3.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0855,
+   "T_roll": 1.123,
+   "T_acc": 0.393,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 1.515,
+   "have": 1.6,
+   "SF": 1.056,
+   "t_min_SF1": 3.17
+  },
+  {
+   "seg": "꼭짓점 -50→-75 U4만",
+   "theta_deg": 25,
+   "t_s": 4.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0862,
+   "T_roll": 1.123,
+   "T_acc": 0.396,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 1.519,
+   "have": 1.6,
+   "SF": 1.054,
+   "t_min_SF1": 4.1
+  },
+  {
+   "seg": "입구2 -75→-30 U4만",
+   "theta_deg": 45,
+   "t_s": 9.0,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.0388,
+   "T_roll": 1.318,
+   "T_acc": 0.238,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 1.556,
+   "have": 1.6,
+   "SF": 1.028,
+   "t_min_SF1": 8.27
+  },
+  {
+   "seg": "입구2 -30→0",
+   "theta_deg": 30,
+   "t_s": 1.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.9308,
+   "T_roll": 1.318,
+   "T_acc": 5.721,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 7.039,
+   "have": 8.64,
+   "SF": 1.227,
+   "t_min_SF1": 1.33
+  }
+ ],
+ "B_with_disk": [
+  {
+   "seg": "입구1 0→75",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m1",
+   "alpha": 0.8378,
+   "T_roll": 1.264,
+   "T_acc": 4.775,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 6.086,
+   "have": 8.64,
+   "SF": 1.42,
+   "t_min_SF1": 2.02
+  },
+  {
+   "seg": "입구1 0→75 (m2 불리 쪽)",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.8378,
+   "T_roll": 1.318,
+   "T_acc": 5.167,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 6.533,
+   "have": 8.64,
+   "SF": 1.322,
+   "t_min_SF1": 2.11
+  },
+  {
+   "seg": "꼭짓점 75→50",
+   "theta_deg": 25,
+   "t_s": 1.2,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 1.212,
+   "T_roll": 1.123,
+   "T_acc": 5.595,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 6.765,
+   "have": 8.64,
+   "SF": 1.277,
+   "t_min_SF1": 1.04
+  },
+  {
+   "seg": "꼭짓점 -25→-35",
+   "theta_deg": 10,
+   "t_s": 1.0,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.6981,
+   "T_roll": 1.123,
+   "T_acc": 3.223,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 4.393,
+   "have": 8.64,
+   "SF": 1.967,
+   "t_min_SF1": 0.66
+  },
+  {
+   "seg": "꼭짓점 -35→-50 U4만",
+   "theta_deg": 15,
+   "t_s": 3.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0855,
+   "T_roll": 1.123,
+   "T_acc": 0.395,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.565,
+   "have": 1.6,
+   "SF": 1.022,
+   "t_min_SF1": 3.35
+  },
+  {
+   "seg": "꼭짓점 -50→-75 U4만",
+   "theta_deg": 25,
+   "t_s": 4.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0862,
+   "T_roll": 1.123,
+   "T_acc": 0.398,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.568,
+   "have": 1.6,
+   "SF": 1.02,
+   "t_min_SF1": 4.33
+  },
+  {
+   "seg": "입구2 -75→-30 U4만",
+   "theta_deg": 45,
+   "t_s": 9.0,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.0388,
+   "T_roll": 1.318,
+   "T_acc": 0.239,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.605,
+   "have": 1.6,
+   "SF": 0.997,
+   "t_min_SF1": 9.1
+  },
+  {
+   "seg": "입구2 -30→0",
+   "theta_deg": 30,
+   "t_s": 1.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.9308,
+   "T_roll": 1.318,
+   "T_acc": 5.741,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 7.107,
+   "have": 8.64,
+   "SF": 1.216,
+   "t_min_SF1": 1.33
+  }
+ ],
+ "C_strip_mu0.15": [
+  {
+   "seg": "입구1 0→75",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m1",
+   "alpha": 0.8378,
+   "T_roll": 1.264,
+   "T_acc": 4.775,
+   "T_extra": 0.048,
+   "T_strip": 2.64,
+   "need": 8.726,
+   "have": 8.64,
+   "SF": 0.99,
+   "t_min_SF1": 2.52
+  },
+  {
+   "seg": "입구1 0→75 (m2 불리 쪽)",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.8378,
+   "T_roll": 1.318,
+   "T_acc": 5.167,
+   "T_extra": 0.048,
+   "T_strip": 2.64,
+   "need": 9.173,
+   "have": 8.64,
+   "SF": 0.942,
+   "t_min_SF1": 2.64
+  },
+  {
+   "seg": "꼭짓점 75→50",
+   "theta_deg": 25,
+   "t_s": 1.2,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 1.212,
+   "T_roll": 1.123,
+   "T_acc": 5.595,
+   "T_extra": 0.048,
+   "T_strip": 2.64,
+   "need": 9.405,
+   "have": 8.64,
+   "SF": 0.919,
+   "t_min_SF1": 1.29
+  },
+  {
+   "seg": "꼭짓점 -25→-35",
+   "theta_deg": 10,
+   "t_s": 1.0,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.6981,
+   "T_roll": 1.123,
+   "T_acc": 3.223,
+   "T_extra": 0.048,
+   "T_strip": 2.64,
+   "need": 7.033,
+   "have": 8.64,
+   "SF": 1.228,
+   "t_min_SF1": 0.82
+  },
+  {
+   "seg": "꼭짓점 -35→-50 U4만",
+   "theta_deg": 15,
+   "t_s": 3.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0855,
+   "T_roll": 1.123,
+   "T_acc": 0.395,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.565,
+   "have": 1.6,
+   "SF": 1.022,
+   "t_min_SF1": 3.35
+  },
+  {
+   "seg": "꼭짓점 -50→-75 U4만",
+   "theta_deg": 25,
+   "t_s": 4.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0862,
+   "T_roll": 1.123,
+   "T_acc": 0.398,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.568,
+   "have": 1.6,
+   "SF": 1.02,
+   "t_min_SF1": 4.33
+  },
+  {
+   "seg": "입구2 -75→-30 U4만",
+   "theta_deg": 45,
+   "t_s": 9.0,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.0388,
+   "T_roll": 1.318,
+   "T_acc": 0.239,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.605,
+   "have": 1.6,
+   "SF": 0.997,
+   "t_min_SF1": 9.1
+  },
+  {
+   "seg": "입구2 -30→0",
+   "theta_deg": 30,
+   "t_s": 1.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.9308,
+   "T_roll": 1.318,
+   "T_acc": 5.741,
+   "T_extra": 0.048,
+   "T_strip": 2.64,
+   "need": 9.747,
+   "have": 8.64,
+   "SF": 0.886,
+   "t_min_SF1": 1.67
+  }
+ ],
+ "C_strip_mu0.30": [
+  {
+   "seg": "입구1 0→75",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m1",
+   "alpha": 0.8378,
+   "T_roll": 1.264,
+   "T_acc": 4.775,
+   "T_extra": 0.048,
+   "T_strip": 5.28,
+   "need": 11.366,
+   "have": 8.64,
+   "SF": 0.76,
+   "t_min_SF1": 3.82
+  },
+  {
+   "seg": "입구1 0→75 (m2 불리 쪽)",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.8378,
+   "T_roll": 1.318,
+   "T_acc": 5.167,
+   "T_extra": 0.048,
+   "T_strip": 5.28,
+   "need": 11.813,
+   "have": 8.64,
+   "SF": 0.731,
+   "t_min_SF1": 4.02
+  },
+  {
+   "seg": "꼭짓점 75→50",
+   "theta_deg": 25,
+   "t_s": 1.2,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 1.212,
+   "T_roll": 1.123,
+   "T_acc": 5.595,
+   "T_extra": 0.048,
+   "T_strip": 5.28,
+   "need": 12.045,
+   "have": 8.64,
+   "SF": 0.717,
+   "t_min_SF1": 1.92
+  },
+  {
+   "seg": "꼭짓점 -25→-35",
+   "theta_deg": 10,
+   "t_s": 1.0,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.6981,
+   "T_roll": 1.123,
+   "T_acc": 3.223,
+   "T_extra": 0.048,
+   "T_strip": 5.28,
+   "need": 9.673,
+   "have": 8.64,
+   "SF": 0.893,
+   "t_min_SF1": 1.21
+  },
+  {
+   "seg": "꼭짓점 -35→-50 U4만",
+   "theta_deg": 15,
+   "t_s": 3.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0855,
+   "T_roll": 1.123,
+   "T_acc": 0.395,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.565,
+   "have": 1.6,
+   "SF": 1.022,
+   "t_min_SF1": 3.35
+  },
+  {
+   "seg": "꼭짓점 -50→-75 U4만",
+   "theta_deg": 25,
+   "t_s": 4.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0862,
+   "T_roll": 1.123,
+   "T_acc": 0.398,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.568,
+   "have": 1.6,
+   "SF": 1.02,
+   "t_min_SF1": 4.33
+  },
+  {
+   "seg": "입구2 -75→-30 U4만",
+   "theta_deg": 45,
+   "t_s": 9.0,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.0388,
+   "T_roll": 1.318,
+   "T_acc": 0.239,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.605,
+   "have": 1.6,
+   "SF": 0.997,
+   "t_min_SF1": 9.1
+  },
+  {
+   "seg": "입구2 -30→0",
+   "theta_deg": 30,
+   "t_s": 1.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.9308,
+   "T_roll": 1.318,
+   "T_acc": 5.741,
+   "T_extra": 0.048,
+   "T_strip": 5.28,
+   "need": 12.387,
+   "have": 8.64,
+   "SF": 0.697,
+   "t_min_SF1": 2.55
+  }
+ ],
+ "D_roll0.05_whatif": [
+  {
+   "seg": "입구1 0→75",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m1",
+   "alpha": 0.8378,
+   "T_roll": 3.159,
+   "T_acc": 4.757,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 7.916,
+   "have": 8.64,
+   "SF": 1.092,
+   "t_min_SF1": 2.33
+  },
+  {
+   "seg": "입구1 0→75 (m2 불리 쪽)",
+   "theta_deg": 75,
+   "t_s": 2.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.8378,
+   "T_roll": 3.295,
+   "T_acc": 5.149,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 8.444,
+   "have": 8.64,
+   "SF": 1.023,
+   "t_min_SF1": 2.45
+  },
+  {
+   "seg": "꼭짓점 75→50",
+   "theta_deg": 25,
+   "t_s": 1.2,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 1.212,
+   "T_roll": 2.806,
+   "T_acc": 5.569,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 8.375,
+   "have": 8.64,
+   "SF": 1.032,
+   "t_min_SF1": 1.17
+  },
+  {
+   "seg": "꼭짓점 -25→-35",
+   "theta_deg": 10,
+   "t_s": 1.0,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.6981,
+   "T_roll": 2.806,
+   "T_acc": 3.207,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 6.014,
+   "have": 8.64,
+   "SF": 1.437,
+   "t_min_SF1": 0.74
+  },
+  {
+   "seg": "꼭짓점 -35→-50 U4만",
+   "theta_deg": 15,
+   "t_s": 3.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0855,
+   "T_roll": 2.806,
+   "T_acc": 0.393,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 3.199,
+   "have": 1.6,
+   "SF": 0.5,
+   "t_min_SF1": null
+  },
+  {
+   "seg": "꼭짓점 -50→-75 U4만",
+   "theta_deg": 25,
+   "t_s": 4.5,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0862,
+   "T_roll": 2.806,
+   "T_acc": 0.396,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 3.202,
+   "have": 1.6,
+   "SF": 0.5,
+   "t_min_SF1": null
+  },
+  {
+   "seg": "입구2 -75→-30 U4만",
+   "theta_deg": 45,
+   "t_s": 9.0,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.0388,
+   "T_roll": 3.295,
+   "T_acc": 0.238,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 3.533,
+   "have": 1.6,
+   "SF": 0.453,
+   "t_min_SF1": null
+  },
+  {
+   "seg": "입구2 -30→0",
+   "theta_deg": 30,
+   "t_s": 1.5,
+   "wheels": [
+    "U4",
+    "U5"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.9308,
+   "T_roll": 3.295,
+   "T_acc": 5.721,
+   "T_extra": 0.0,
+   "T_strip": 0.0,
+   "need": 9.016,
+   "have": 8.64,
+   "SF": 0.958,
+   "t_min_SF1": 1.55
+  }
+ ],
+ "U4_only_at_6s": [
+  {
+   "seg": "꼭짓점 -35→-50 U4만",
+   "theta_deg": 15,
+   "t_s": 6.0,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0291,
+   "T_roll": 1.123,
+   "T_acc": 0.134,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.305,
+   "have": 1.6,
+   "SF": 1.226,
+   "t_min_SF1": 3.35
+  },
+  {
+   "seg": "꼭짓점 -50→-75 U4만",
+   "theta_deg": 25,
+   "t_s": 6.0,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "apex_mid",
+   "alpha": 0.0485,
+   "T_roll": 1.123,
+   "T_acc": 0.224,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.394,
+   "have": 1.6,
+   "SF": 1.148,
+   "t_min_SF1": 4.33
+  },
+  {
+   "seg": "입구2 -75→-30 U4만",
+   "theta_deg": 45,
+   "t_s": 6.0,
+   "wheels": [
+    "U4"
+   ],
+   "pivot": "entrance_m2",
+   "alpha": 0.0873,
+   "T_roll": 1.318,
+   "T_acc": 0.538,
+   "T_extra": 0.048,
+   "T_strip": 0.0,
+   "need": 1.904,
+   "have": 1.6,
+   "SF": 0.84,
+   "t_min_SF1": 9.1
+  }
+ ],
+ "U4_wheel_load": {
+  "tangential_N": 16.0,
+  "wheel_torque_Nm": 0.96,
+  "envelope_case": "P_M02_* 운전 접선 58.3 N / 3.5 N·m"
+ }
+}
