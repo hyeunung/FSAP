@@ -1,3 +1,24 @@
+# 준비 점검 — FSAP_v2.8.3 (2026-11-10, 엔진 v3.9.3, VGR-01 이어서·PNEU-01·MOT-01·FUNC-01 실행 전)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.8.3.sc`(tools/config.json doc, 11-09 22:06 저장, F01-C1: 작업 대상 모형 원점 +6.5 X·연구 피벗 키 변경). 형상·조인트 원점이 바뀌어 v2.8.2 결과를 쓰지 않고 MCP로 다시 쟀다.
+- 앱: `running` 빈 목록 → MCP `open` 1회(오류 0, 피처 2303). 저장 0. 결과 파일 `tools/out/prep283/`(motion_list.txt, joints_studies.txt).
+- 조인트 372(rigid 343·slider 20·revolute 9), 고정부 2(occurrence 0·2), **floating 0**, conflicts 0, errors 0. 움직이는 조인트 29 = `tools/machine.json` joints 29(양쪽 차이 0). machine.json doc = v2.8.3, units 13, states 26, path_parts 6.
+- 연구 8개: REST(1단계, 대기 포즈 step 0), CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630, MAINT_HEAD 1, SEAM_U7 32, MAINT_U7 13. 모두 step 0 conflicts 0, unmoved 0. machine.json studies 8과 같다.
+- 상태 26이 요구서 0-3 ①~⑤에 대응: ① 대기·로딩 끝, ② 바퀴 내림(L·S), ③ 직선·볼록 45°/90°·홈 입구·안 벽·홈 바닥(오목)·두 번째 홈, ④ 이음매 겹침 끝(L·S·G)·SEAM_U7, ⑤ 배출(L·S·G). 정비 1, 두께 THICK_6·THICK_16(6-4). 요구서 11-10 00:29 변경은 5절 PNEU-01 행 고침·DC-01(VGR) 행 추가뿐(0-2·0-3·6-4 바뀜 없음).
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G 좁은 U홈(요구서 0-2 양 끝, 조인트 J_WP_L/S/G_X·Y·ROT 확인), 떨어지는 조각 없음(D-07).
+- 동작 상태 초기화: 끝에 `motion.play REST step 0`(conflicts 0, moved false). edit.checkpoint 12는 배치 안에서 만들어져 복원이 거부됐으나 편집은 하지 않았고 포즈만 바꿨다가 REST로 되돌렸다.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신), V홈 시험 매트는 VGR-01 몫.
+
+근거: 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 실행 규칙 2 "혼자 도는 읽기 부서도 MCP로 잰다", E-08 원복.
+
+## 워크플로우 메모
+- `edit.checkpoint`를 `batch` 안 단계로 두면 그 뒤 따로 부른 `edit.restore_checkpoint`가 "no checkpoint"로 거부됐다. 포즈만 바꾸는 읽기 부서는 REST step 0 재생으로 원복하는 것으로 충분했다.
+- `joint.list`·`motion.list` 결과가 39만~70만 자라 MCP 응답 한도를 넘어 파일로 떨어졌다. 그 파일을 tools/out에 복사해 파이썬으로 요약했다.
+
+---
+
 # 준비 점검 — FSAP_v2.8.2 스케치 숨김 재저장 뒤 (2026-11-09 밤, 엔진 v3.9.3, VGR-01·F01-C1 실행 전)
 
 요약

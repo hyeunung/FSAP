@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.8.3.sc",
+ "doc": "../3D_Modeling/FSAP_v2.8.4.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -538,6 +538,66 @@
    "min": 0.0,
    "max": 20.0,
    "_note": "FUNC-01(v2.8.0) 새 슬라이더 a = U5_LIFT, b = U5_FLOAT(옆판 2·앞판·센서 브래킷·E32·바퀴 서보·감속기·축 받침·축 PSFJ16-150 ×2·칼라·와셔). u = 플로트가 승강판에 대해 들린 양. 0 = 매달림 칼라가 LHFR16 부시 위에 얹힘(아래 멈춤), 20 = 옆판 위 플랜지가 승강판 밑면에 닿음(위 기계 정지). 누름 자세 = (J_U5_LIFT -10, u = 바퀴 밑 Z): 매트 10, 테이프 11, 이음매 12. 받침 스프링 k 0.2 ×2(STEP대기, D-146), 칼라는 두께마다 (t − 6) 내림(F01-Q2)"
+  },
+  "J_WP_V_X": {
+   "cad": "J_WP_V_X",
+   "type": "slide",
+   "unit": "WP_V",
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "origin": [
+    -593.5,
+    -300.0,
+    0
+   ],
+   "rest": 0,
+   "min": -3000,
+   "max": 3000,
+   "model_only": true,
+   "_note": "작업 대상 모형 조인트(볼 위 평면 운동, 기계 축 아님 — 실행 규칙 20). VGR-01(v2.8.4): 좁은 V홈 매트 WP_V(D-150 V 30° R_b 2 깊이 150, U홈과 같은 자리 y -300). 매트 중심 = 대기 중심 (-593.5, -300.0) + (X, Y), 회전은 그 중심(WP_G와 같은 대기 자리). 원점을 세계 -593.5로 바로 만들었다(G처럼 a 원점을 옮긴 것이 아님)"
+  },
+  "J_WP_V_Y": {
+   "cad": "J_WP_V_Y",
+   "type": "slide",
+   "unit": "WP_V",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "origin": [
+    -593.5,
+    -300.0,
+    0
+   ],
+   "rest": 0,
+   "min": -3000,
+   "max": 3000,
+   "model_only": true,
+   "_note": "작업 대상 모형 조인트(볼 위 평면 운동, 기계 축 아님 — 실행 규칙 20). VGR-01(v2.8.4): 좁은 V홈 매트 WP_V(D-150 V 30° R_b 2 깊이 150, U홈과 같은 자리 y -300). 매트 중심 = 대기 중심 (-593.5, -300.0) + (X, Y), 회전은 그 중심(WP_G와 같은 대기 자리). 원점을 세계 -593.5로 바로 만들었다(G처럼 a 원점을 옮긴 것이 아님)"
+  },
+  "J_WP_V_ROT": {
+   "cad": "J_WP_V_ROT",
+   "type": "rotate",
+   "unit": "WP_V",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -593.5,
+    -300.0,
+    0
+   ],
+   "rest": 0,
+   "min": -360,
+   "max": 720,
+   "model_only": true,
+   "_note": "작업 대상 모형 조인트(볼 위 평면 운동, 기계 축 아님 — 실행 규칙 20). VGR-01(v2.8.4): 좁은 V홈 매트 WP_V(D-150 V 30° R_b 2 깊이 150, U홈과 같은 자리 y -300). 매트 중심 = 대기 중심 (-593.5, -300.0) + (X, Y), 회전은 그 중심(WP_G와 같은 대기 자리). 원점을 세계 -593.5로 바로 만들었다(G처럼 a 원점을 옮긴 것이 아님)"
   }
  },
  "units": {
@@ -838,6 +898,16 @@
     "U7_ROLL_MOUNT"
    ],
    "_note": "M06(v2.3.0): 롤 기둥(보 앞면)·외팔 축·허브 + 6004ZZ ×2, 안내 롤러 G1(UPPER 윗면)·꼭대기 롤러(HANGER 선반), 차지 U7_TAPE_ROLL Ø300×60·U7_TAPEWAY_H/V. 옛 U7_ROLL·U7_PATH_H 지움. U1_FRAME 리지드. 테이프 롤은 회전 대칭이라 조인트 없음"
+  },
+  "WP_V": {
+   "parts": [
+    "MAT_V",
+    "TAPE_V",
+    "SEAM_V"
+   ],
+   "moving": true,
+   "workpiece": true,
+   "_note": "VGR-01(v2.8.4): 컴포넌트 WP_V_X·WP_V_Y·WP_MAT_V(MAT_V)·WP_TAPE_V(TAPE_V·SEAM_V), 리지드 WP_MAT_V:1+WP_TAPE_V:1. MAT_V 1200x1200x10 - V30_r2 빈 곳(꼭짓점 원 R2 중심 매트 좌표 (457.727, -300), 입구 반폭 40.19), TAPE_V 두께 1·날개 10, SEAM_V = SEAM_G. 표시 숨김(L·S·G와 같음)"
   }
  },
  "studies": {
@@ -854,7 +924,8 @@
      -60
     ]
    ],
-   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0"
+   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0",
+   "_keys_WP_V": "VGR-01(v2.8.4): J_WP_V_X·Y·ROT 0 키를 더함(연구 전환 때 V 매트 상태가 남지 않게, REG-01과 같은 방식)"
   },
   "CYCLE_L": {
    "steps": 716,
@@ -891,7 +962,8 @@
     ]
    ],
    "_keys_U7": "J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 대기값 0 (REG-01, v2.6.3)",
-   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0"
+   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0",
+   "_keys_WP_V": "VGR-01(v2.8.4): J_WP_V_X·Y·ROT 0 키를 더함(연구 전환 때 V 매트 상태가 남지 않게, REG-01과 같은 방식)"
   },
   "CYCLE_S": {
    "steps": 450,
@@ -929,7 +1001,8 @@
     ]
    ],
    "_keys_U7": "J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 대기값 0 (REG-01, v2.6.3)",
-   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0"
+   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0",
+   "_keys_WP_V": "VGR-01(v2.8.4): J_WP_V_X·Y·ROT 0 키를 더함(연구 전환 때 V 매트 상태가 남지 않게, REG-01과 같은 방식)"
   },
   "CYCLE_G1": {
    "steps": 514,
@@ -959,7 +1032,8 @@
     ]
    ],
    "_keys_U7": "J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 대기값 0 (REG-01, v2.6.3)",
-   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0"
+   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0",
+   "_keys_WP_V": "VGR-01(v2.8.4): J_WP_V_X·Y·ROT 0 키를 더함(연구 전환 때 V 매트 상태가 남지 않게, REG-01과 같은 방식)"
   },
   "CYCLE_G2": {
    "steps": 630,
@@ -989,7 +1063,8 @@
     ]
    ],
    "_keys_U7": "J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 대기값 0 (REG-01, v2.6.3)",
-   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0"
+   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0",
+   "_keys_WP_V": "VGR-01(v2.8.4): J_WP_V_X·Y·ROT 0 키를 더함(연구 전환 때 V 매트 상태가 남지 않게, REG-01과 같은 방식)"
   },
   "MAINT_HEAD": {
    "steps": 1,
@@ -1005,7 +1080,8 @@
     ]
    ],
    "_keys_U7": "J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 대기값 0 (REG-01, v2.6.3)",
-   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0"
+   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0",
+   "_keys_WP_V": "VGR-01(v2.8.4): J_WP_V_X·Y·ROT 0 키를 더함(연구 전환 때 V 매트 상태가 남지 않게, REG-01과 같은 방식)"
   },
   "SEAM_U7": {
    "steps": 32,
@@ -1029,7 +1105,8 @@
     ]
    ],
    "_keys_U7": "CUT·TUCK·FEED 기존 키 + CST_X·CST_Y·LATCH 0 (REG-01, v2.6.3)",
-   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0"
+   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0",
+   "_keys_WP_V": "VGR-01(v2.8.4): J_WP_V_X·Y·ROT 0 키를 더함(연구 전환 때 V 매트 상태가 남지 않게, REG-01과 같은 방식)"
   },
   "MAINT_U7": {
    "steps": 13,
@@ -1045,7 +1122,43 @@
     ]
    ],
    "_keys_U7": "CST_X·CST_Y·LATCH 기존 키 + CUT·TUCK·FEED 0 (REG-01, v2.6.3)",
-   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0"
+   "_keys_U5_FLOAT": "FUNC-01(v2.8.0): J_U5_LIFT 0/1/2 키 -> (-10, J_U5_FLOAT 10/11/12), 30·-10 -> FLOAT 0",
+   "_keys_WP_V": "VGR-01(v2.8.4): J_WP_V_X·Y·ROT 0 키를 더함(연구 전환 때 V 매트 상태가 남지 않게, REG-01과 같은 방식)"
+  },
+  "CYCLE_V": {
+   "steps": 486,
+   "workpiece": [
+    "WP_MAT_V:1",
+    "WP_TAPE_V:1"
+   ],
+   "mat": "1200x1200 V홈 30° R_b 2 깊이 150 (D-150)",
+   "d2": 440.0,
+   "_note": "VGR-01(v2.8.4, tools/gen_v2_vgr01.py). 내림 0~73 · 접근 봉제 74~100 · 입구1 피벗 103~177(0→75°) · 위 벽 180~208 · 꼭짓점 호 211~361(75→-75°, ROT -35 정지·U5 들기 321) · 아래 벽 364~392 · 입구2 피벗 395~470(-75→0°, ROT -30 정지·U5 내림 440) · 떠나기 473~482 · 들기 483~486. J_U5_X 1360(d2 440, D-152), J_U4_PRESS V 전 구간 0. 단계 간격 요구서 6-4(홈 안 5 mm, 회전 1°). 설계안 \"약 410단계\"보다 많은 것은 내림·대차 55단계·접근 봉제를 넣었기 때문",
+   "_keys_M06": [
+    [
+     0,
+     -60
+    ],
+    [
+     12,
+     -60
+    ],
+    [
+     14,
+     0
+    ],
+    [
+     484,
+     0
+    ],
+    [
+     486,
+     -60
+    ]
+   ],
+   "_keys_U7": "J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 대기값 0 (REG-01, v2.6.3)",
+   "_keys_U5_FLOAT": "J_U5_LIFT -10 + FLOAT 10(매트 윗면). U5는 V 구간에서 테이프 띠 위에 내리지 않으므로 FLOAT 11 없음",
+   "_u5_far_off": "지시서(design2 4-2)대로 ROT -35 들기·-30 내림을 직접 둠. gen_v2_prep far_off 판정(바퀴 밑 매트 유무만)은 쓰지 않았다 — 테이프 띠를 보지 않아 -37~-39에서 띠 1 mm 겹침(design2 2절)"
   }
  },
  "workpiece_stages": {
@@ -1082,7 +1195,10 @@
     "J_U7_LATCH": 0,
     "J_U6_SHIFT": -60.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "① 대기·로딩",
    "workpiece": {
@@ -1107,7 +1223,10 @@
     "J_WP_L_ROT": 0.0,
     "J_U6_SHIFT": -60.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "① 작업자가 가장자리를 노루발 표시에 맞춤",
    "workpiece": {
@@ -1133,7 +1252,10 @@
     "J_WP_L_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "② 먼 쪽 바퀴 내림",
    "workpiece": {
@@ -1159,7 +1281,10 @@
     "J_WP_L_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 봉제 직선",
    "workpiece": {
@@ -1185,7 +1310,10 @@
     "J_WP_L_ROT": 45.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1211,7 +1339,10 @@
     "J_WP_L_ROT": 90.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 11.0
+    "J_U5_FLOAT": 11.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1238,7 +1369,10 @@
     "J_WP_L_ROT": 360.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "④ 시작·끝 이음매 겹침",
    "workpiece": {
@@ -1264,7 +1398,10 @@
     "J_WP_L_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
    "workpiece": {
@@ -1290,7 +1427,10 @@
     "J_WP_S_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "② 바늘 옆 바퀴 내림",
    "workpiece": {
@@ -1316,7 +1456,10 @@
     "J_WP_S_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 봉제 직선",
    "workpiece": {
@@ -1342,7 +1485,10 @@
     "J_WP_S_ROT": 45.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1368,7 +1514,10 @@
     "J_WP_S_ROT": 360.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "④ 시작·끝 이음매 겹침",
    "workpiece": {
@@ -1394,7 +1543,10 @@
     "J_WP_S_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
    "workpiece": {
@@ -1420,7 +1572,10 @@
     "J_WP_G_ROT": 2.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 홈 입구(볼록) (바늘 옆 바퀴 들림)",
    "workpiece": {
@@ -1446,7 +1601,10 @@
     "J_WP_G_ROT": 45.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 홈 입구(볼록)",
    "workpiece": {
@@ -1472,7 +1630,10 @@
     "J_WP_G_ROT": 90.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 홈 안 벽",
    "workpiece": {
@@ -1498,7 +1659,10 @@
     "J_WP_G_ROT": 0.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 홈 바닥 꺾임(오목)",
    "workpiece": {
@@ -1524,7 +1688,10 @@
     "J_WP_G_ROT": -90.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 홈 바닥 꺾임(오목) (먼 쪽 바퀴 들림)",
    "workpiece": {
@@ -1551,7 +1718,10 @@
     "J_WP_G_ROT": -45.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 홈 입구(볼록) (먼 쪽 바퀴 들림)",
    "workpiece": {
@@ -1577,7 +1747,10 @@
     "J_WP_G_ROT": 45.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1603,7 +1776,10 @@
     "J_WP_G_ROT": 360.0,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 10.0
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "④ 시작·끝 이음매 겹침",
    "workpiece": {
@@ -1629,7 +1805,10 @@
     "J_WP_G_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "⑤ 배출(작업자가 꺼냄)",
    "workpiece": {
@@ -1661,7 +1840,10 @@
     "J_WP_G_ROT": 0,
     "J_U6_SHIFT": -60.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 0.0
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "정비",
    "workpiece": {
@@ -1679,7 +1861,10 @@
     "J_U5_WHEEL_ROT": 116.666,
     "J_U6_SHIFT": 0.0,
     "J_U7_HGT": 0,
-    "J_U5_FLOAT": 11.0
+    "J_U5_FLOAT": 11.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "③ 볼록 모서리 1",
    "workpiece": {
@@ -1718,7 +1903,10 @@
     "J_U7_LATCH": 0,
     "J_U6_SHIFT": 0,
     "J_U7_HGT": -4,
-    "J_U5_FLOAT": 8.0
+    "J_U5_FLOAT": 8.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "DC2-04 두께 범위 끝 봉제 자세",
    "workpiece": {
@@ -1755,12 +1943,175 @@
     "J_U7_LATCH": 0,
     "J_U6_SHIFT": 0,
     "J_U7_HGT": 6,
-    "J_U5_FLOAT": 18.0
+    "J_U5_FLOAT": 18.0,
+    "J_WP_V_X": 0.0,
+    "J_WP_V_Y": 0.0,
+    "J_WP_V_ROT": 0.0
    },
    "phase": "DC2-04 두께 범위 끝 봉제 자세",
    "workpiece": {
     "stage": "band",
     "_note": "이음매 윗면 접촉 봉제 자세: 두께 16 매트 띠 Z 0~18(이음매 윗면) 위에 노루발·두 바퀴 접촉, 슈 작동. 모형은 두께 10 그대로 — 검사는 띠를 만들어 잼(저장 안 함)"
+   }
+  },
+  {
+   "name": "V홈 매트 입구1 회전 45°",
+   "study": "CYCLE_V",
+   "step": 148,
+   "joints": {
+    "J_U3_PRESSER": 20.0,
+    "J_U3_NEEDLE": -30.0,
+    "J_U4_PRESS": 0.0,
+    "J_U4_WHEEL_ROT": 166.672,
+    "J_U5_X": 1360.0,
+    "J_U5_LIFT": -10.0,
+    "J_U5_WHEEL_ROT": -93.981,
+    "J_WP_L_X": 0,
+    "J_WP_L_Y": 0,
+    "J_WP_L_ROT": 0,
+    "J_WP_S_X": 0,
+    "J_WP_S_Y": 0,
+    "J_WP_S_ROT": 0,
+    "J_WP_G_X": 0,
+    "J_WP_G_Y": 0,
+    "J_WP_G_ROT": 0,
+    "J_U7_CST_X": 0,
+    "J_U7_CST_Y": 0,
+    "J_U7_CUT": 0,
+    "J_U7_TUCK": 0,
+    "J_U7_FEED": 0,
+    "J_U7_LATCH": 0,
+    "J_U6_SHIFT": 0.0,
+    "J_U7_HGT": 0,
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": -2.0819,
+    "J_WP_V_Y": 50.0847,
+    "J_WP_V_ROT": 46.0
+   },
+   "phase": "③ V 입구1 피벗",
+   "workpiece": {
+    "stage": "sewing",
+    "_note": "VGR-01 V홈 매트"
+   }
+  },
+  {
+   "name": "V홈 매트 꼭짓점 ROT -35(먼 쪽 바퀴 들기 직전)",
+   "study": "CYCLE_V",
+   "step": 320,
+   "joints": {
+    "J_U3_PRESSER": 20.0,
+    "J_U3_NEEDLE": -30.0,
+    "J_U4_PRESS": 0.0,
+    "J_U4_WHEEL_ROT": 453.65,
+    "J_U5_X": 1360.0,
+    "J_U5_LIFT": -10.0,
+    "J_U5_WHEEL_ROT": 651.973,
+    "J_WP_L_X": 0,
+    "J_WP_L_Y": 0,
+    "J_WP_L_ROT": 0,
+    "J_WP_S_X": 0,
+    "J_WP_S_Y": 0,
+    "J_WP_S_ROT": 0,
+    "J_WP_G_X": 0,
+    "J_WP_G_Y": 0,
+    "J_WP_G_ROT": 0,
+    "J_U7_CST_X": 0,
+    "J_U7_CST_Y": 0,
+    "J_U7_CUT": 0,
+    "J_U7_TUCK": 0,
+    "J_U7_FEED": 0,
+    "J_U7_LATCH": 0,
+    "J_U6_SHIFT": 0.0,
+    "J_U7_HGT": 0,
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 399.1246,
+    "J_WP_V_Y": 808.2872,
+    "J_WP_V_ROT": -35.0
+   },
+   "phase": "③ V 꼭짓점 호",
+   "workpiece": {
+    "stage": "sewing",
+    "_note": "VGR-01 V홈 매트"
+   }
+  },
+  {
+   "name": "V홈 매트 꼭짓점 ROT -36(먼 쪽 바퀴 들림)",
+   "study": "CYCLE_V",
+   "step": 322,
+   "joints": {
+    "J_U3_PRESSER": 20.0,
+    "J_U3_NEEDLE": -30.0,
+    "J_U4_PRESS": 0.0,
+    "J_U4_WHEEL_ROT": 455.458,
+    "J_U5_X": 1360.0,
+    "J_U5_LIFT": 30.0,
+    "J_U5_WHEEL_ROT": 651.973,
+    "J_WP_L_X": 0,
+    "J_WP_L_Y": 0,
+    "J_WP_L_ROT": 0,
+    "J_WP_S_X": 0,
+    "J_WP_S_Y": 0,
+    "J_WP_S_ROT": 0,
+    "J_WP_G_X": 0,
+    "J_WP_G_Y": 0,
+    "J_WP_G_ROT": 0,
+    "J_U7_CST_X": 0,
+    "J_U7_CST_Y": 0,
+    "J_U7_CUT": 0,
+    "J_U7_TUCK": 0,
+    "J_U7_FEED": 0,
+    "J_U7_LATCH": 0,
+    "J_U6_SHIFT": 0.0,
+    "J_U7_HGT": 0,
+    "J_U5_FLOAT": 0.0,
+    "J_WP_V_X": 408.0263,
+    "J_WP_V_Y": 811.7504,
+    "J_WP_V_ROT": -36.0
+   },
+   "phase": "③ V 꼭짓점 호",
+   "workpiece": {
+    "stage": "sewing",
+    "_note": "VGR-01 V홈 매트"
+   }
+  },
+  {
+   "name": "V홈 매트 입구2 ROT -30(먼 쪽 바퀴 내림)",
+   "study": "CYCLE_V",
+   "step": 440,
+   "joints": {
+    "J_U3_PRESSER": 20.0,
+    "J_U3_NEEDLE": -30.0,
+    "J_U4_PRESS": 0.0,
+    "J_U4_WHEEL_ROT": 587.385,
+    "J_U5_X": 1360.0,
+    "J_U5_LIFT": -10.0,
+    "J_U5_WHEEL_ROT": 651.973,
+    "J_WP_L_X": 0,
+    "J_WP_L_Y": 0,
+    "J_WP_L_ROT": 0,
+    "J_WP_S_X": 0,
+    "J_WP_S_Y": 0,
+    "J_WP_S_ROT": 0,
+    "J_WP_G_X": 0,
+    "J_WP_G_Y": 0,
+    "J_WP_G_ROT": 0,
+    "J_U7_CST_X": 0,
+    "J_U7_CST_Y": 0,
+    "J_U7_CUT": 0,
+    "J_U7_TUCK": 0,
+    "J_U7_FEED": 0,
+    "J_U7_LATCH": 0,
+    "J_U6_SHIFT": 0.0,
+    "J_U7_HGT": 0,
+    "J_U5_FLOAT": 10.0,
+    "J_WP_V_X": 252.1039,
+    "J_WP_V_Y": 895.6846,
+    "J_WP_V_ROT": -30.0
+   },
+   "phase": "③ V 입구2 피벗",
+   "workpiece": {
+    "stage": "sewing",
+    "_note": "VGR-01 V홈 매트"
    }
   }
  ],
@@ -1772,9 +2123,9 @@
    "reason": "테이프 띠가 매트 가장자리 10 mm를 덮는 모형(같이 움직임)"
   },
   {
-   "a": "WP_*_L·S·G",
+   "a": "WP_*_L·S·G·V",
    "b": "다른 WP_*",
-   "reason": "매트 3장이 로딩 자리에 겹쳐 있다. 연구마다 한 장만 검사"
+   "reason": "매트 3장이 로딩 자리에 겹쳐 있다. 연구마다 한 장만 검사 — VGR-01(v2.8.4): WP_V는 WP_G와 같은 대기 자리(-593.5, -300)"
   },
   {
    "a": "U4_WHEEL·U5_WHEEL",
@@ -1901,6 +2252,52 @@
   "2026-11-09 STEPSWAP r4 v2.6.8: STEP대기_IR1000-01BG_M08_N/F/S(+_BRKT) -> IR1000-01BG_M08:1~3(SMC STEP, U8 리지드 95114~95116), 브래킷 볼트 CB5-12_M08_PY:1~6 -> CB4-12_M08_REG:1~6, 이음 KQ2L08-01AS_M08_PX/NX -> _M08R_PX/NX(포트 Z 482), 관 TU0805_M08S_REG_* -> _M08T_REG_*. 조인트·행정·연구 변화 없음(U8 고정)",
   "2026-11-09 FUNC-01 v2.8.0: 새 조인트 J_U5_FLOAT(슬라이더 Z 0~20, a U5_LIFT·b U5_FLOAT), J_U5_WHEEL_ROT a -> U5_FLOAT. 연구 8개·states 26개의 J_U5_LIFT 0~2 -> (-10, FLOAT v+10). 바인더 U7_BINDER -> P_M05_BINDER(U7_CASSETTE). IR1000-01BG_M08:2 묶음 지움",
   "2026-11-09 FUNC-01 수정 1회차 v2.8.1: 옆판 P_M03_LIFT_SIDE_N/P 축 여유 구멍 Ø16.5 Z 115~130(REST). 조인트·행정·연구 변화 없음, doc → v2.8.1",
-  "2026-11-09 F01-C1 v2.8.3: 작업 대상 모형 땀–가장자리 거리 e 0 -> 6.5. J_WP_{L,S,G}_X a 원점 +6.5 X(사슬 전체·모형 +6.5), 세계 중심 (-743.5/-143.5/-593.5, -300). CYCLE_L·S·G1·G2의 J_WP_k_X·Y 피벗 단계 키(최대 6.5, newkeys.json), SEAM_U7 그대로. states 10값 고침. baseline U3_NEEDLE↔WP_* 수치 갱신"
- ]
+  "2026-11-09 F01-C1 v2.8.3: 작업 대상 모형 땀–가장자리 거리 e 0 -> 6.5. J_WP_{L,S,G}_X a 원점 +6.5 X(사슬 전체·모형 +6.5), 세계 중심 (-743.5/-143.5/-593.5, -300). CYCLE_L·S·G1·G2의 J_WP_k_X·Y 피벗 단계 키(최대 6.5, newkeys.json), SEAM_U7 그대로. states 10값 고침. baseline U3_NEEDLE↔WP_* 수치 갱신",
+  "2026-11-10 VGR-01 v2.8.4: 새 작업 대상 모형 WP_V(MAT_V·TAPE_V·SEAM_V, 컴포넌트 WP_V_X·WP_V_Y·WP_MAT_V·WP_TAPE_V), 조인트 J_WP_V_X·Y·ROT(model_only), 연구 CYCLE_V 486단계(U5 ROT -35 들기·-30 내림 정지 단계), 다른 연구 8개에 J_WP_V_* 0 키, states 4개 더함·전체에 J_WP_V_* 0, baseline WP_*_L·S·G·V, _timing 메모. 기계 부품 변경 없음"
+ ],
+ "_timing": {
+  "_note": "시간 메모(s). 동작 연구에는 쓰지 않는다(연구는 단계만). 땀 이송 시간은 따로. 근거 design1·design2(C-37 (다), D-96 구름 0.02·μ0.4·U4 40 N·d1 100)",
+  "CYCLE_V": {
+   "입구1_U4+U5": 2.5,
+   "꼭짓점_U4+U5": [
+    1.2,
+    1.2,
+    1.2,
+    1.2,
+    1.0
+   ],
+   "꼭짓점_ROT-35": "정지·U5 LIFT -10→30",
+   "꼭짓점_U4만": [
+    3.5,
+    4.5
+   ],
+   "입구2_U4만": 9.0,
+   "입구2_ROT-30": "정지·U5 30→-10",
+   "입구2_U4+U5": 1.5,
+   "U4혼자_합": {
+    "꼭짓점": "40° 8.0 s",
+    "입구2": "45° 9.0 s"
+   }
+  },
+  "CYCLE_G1_바닥": {
+   "U4+U5": "12° 피벗 0.8 ×9 + 3° 0.6",
+   "ROT-21": "정지·U5 들기",
+   "U4만": [
+    3.0,
+    3.4,
+    3.4,
+    3.4,
+    3.4,
+    3.4
+   ]
+  },
+  "한계": {
+   "U4혼자_alpha_rad_s2": {
+    "V꼭짓점": 0.1039,
+    "V입구2": 0.0459,
+    "G1": 0.0902
+   },
+   "omega_deg_s": 11.1
+  }
+ }
 }
