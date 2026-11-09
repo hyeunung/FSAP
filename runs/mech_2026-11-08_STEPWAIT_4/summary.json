@@ -1,0 +1,348 @@
+{
+ "run": "mech_2026-11-08_STEPWAIT",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-08",
+ "journal": "wf_272c1368-764",
+ "totals": {
+  "agents": 9,
+  "agent_sec": 4446,
+  "input": 1434542,
+  "cache_read": 7701392,
+  "output": 68268,
+  "tools": 100,
+  "wall_sec": 4447
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 97,
+   "agents": 1,
+   "output": 8109
+  },
+  "▸ modeling-round #7": {
+   "sec": 4349,
+   "agents": 8,
+   "output": 60159
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 7",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 97,
+   "tokens": {
+    "input": 112169,
+    "cache_read": 576001,
+    "output": 8109
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #7",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 66975,
+    "cache_read": 54642,
+    "output": 11007
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #7",
+   "status": "done",
+   "sec": 39,
+   "tokens": {
+    "input": 80328,
+    "cache_read": 305871,
+    "output": 2445
+   },
+   "tools": 8,
+   "turns": 5
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #7",
+   "status": "done",
+   "sec": 19,
+   "tokens": {
+    "input": 74935,
+    "cache_read": 219335,
+    "output": 1479
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #7",
+   "status": "done",
+   "sec": 4035,
+   "tokens": {
+    "input": 828586,
+    "cache_read": 5509969,
+    "output": 34064
+   },
+   "tools": 63,
+   "turns": 51
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #7",
+   "status": "done",
+   "sec": 18,
+   "tokens": {
+    "input": 81115,
+    "cache_read": 228959,
+    "output": 1361
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #7",
+   "status": "done",
+   "sec": 114,
+   "tokens": {
+    "input": 81940,
+    "cache_read": 462684,
+    "output": 4357
+   },
+   "tools": 6,
+   "turns": 7
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #7",
+   "status": "done",
+   "sec": 28,
+   "tokens": {
+    "input": 79836,
+    "cache_read": 302820,
+    "output": 2357
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #7",
+   "status": "running",
+   "sec": 22,
+   "tokens": {
+    "input": 28658,
+    "cache_read": 41111,
+    "output": 3089
+   },
+   "tools": 1,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "오류·호출 상한(데운 세션에서도 470 s 넘김): POSE.H 130 H0~H2, 132 H0~H2, 137 H1, CYCLE_L 106 H1, POSE 1, MAINT_U7 3, F_STATES.U7_TAPE#4/8 0",
+    "전체 상한·세션 부족: MAINT_U7 6·9·12·13, F_STATES 0~3 남은 칸(U7#0 1, #1 1·3, #2 1~3, #3 0·1·3, #4 0·2·3, #5 0·3, #6 1·3, #7 0·3, U3 2·3, U4 1~3, U5 2·3)",
+    "어림 초과(시작 전): F_STATES 4~34 전 유닛, MAINT_U7 1·2·4·5·7·8·10·11, POSE 15~21·23~41·43~123·125·128·129·134, 연구 조밀 CYCLE_L 646·CYCLE_S 426·G1 488·G2 598·SEAM_U7 24단계"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2795,
+    "estimate_s": 82346.2,
+    "actual_s": 1802.2,
+    "chunk_times": [
+     {
+      "id": "POSE(데우기 2~13, runsW)",
+      "elapsed_s": 590,
+      "status": "ok"
+     },
+     {
+      "id": "regrun1 trial POSE 1",
+      "elapsed_s": 471.1,
+      "status": "panic"
+     },
+     {
+      "id": "regrun1 trial CYCLE_S 1",
+      "elapsed_s": 10,
+      "status": "ok"
+     },
+     {
+      "id": "regrun1 trial F_STATES.U5_WHEEL_F 0",
+      "elapsed_s": 436.1,
+      "status": "ok"
+     },
+     {
+      "id": "POSE.H 133·135·137·139·140·154·155 조각 13",
+      "elapsed_s": 471,
+      "status": "ok"
+     },
+     {
+      "id": "POSE.H 130·132 H0~H2, 137 H1",
+      "elapsed_s": 471.1,
+      "status": "panic"
+     },
+     {
+      "id": "CYCLE_L.H 106 H0·H2·H3",
+      "elapsed_s": 470.9,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L.H 106 H1",
+      "elapsed_s": 470.9,
+      "status": "panic"
+     },
+     {
+      "id": "MAINT_U7 3",
+      "elapsed_s": 470.4,
+      "status": "panic"
+     },
+     {
+      "id": "MAINT_U7 9·12·13, F_STATES U7 0~1 일부",
+      "elapsed_s": 480.4,
+      "status": "timeout"
+     },
+     {
+      "id": "F_STATES 1~3 일부(21점)",
+      "elapsed_s": 395.4,
+      "status": "ok"
+     }
+    ],
+    "killed_calls": 22,
+    "skipped_steps": 11,
+    "trial": "1회: 연구 10.0 s ok, 자세 POSE 1 471 s panic(trial_error→그 점 빼고 다시), fchg 5.0, fslow 436.1. 2회: 연구 320.1, 자세 385.1(POSE 42), fchg 305.1, fslow 460.1 s/점 — 종류 첫 호출 비용이 섞임",
+    "per_step_s": {
+     "study": 320.1,
+     "pose": 385.1
+    },
+    "pose_steps": 134,
+    "reduced": "어림 82,346 s > 상한 1,800 s → 시작 전에 앞 59단계만 계획, 뒤 2,716단계는 못 본 범위(어림 초과). 데우기 자세로 POSE 2~13을 regrun 밖에서 봄",
+    "seen": [
+     "POSE 2~14·22·42",
+     "POSE 무거운 점 133·135·139·140·154·155 4조각 완료(회귀 17 조각과 합침)",
+     "POSE.H 조각 13개",
+     "CYCLE_L 106 H0·H2·H3",
+     "CYCLE_S 1",
+     "F_STATES U3_HEAD 1, U5_WHEEL_F 0, U6_SENSOR 1~3, U6_SHOE 1~3, U7_TAPE#0 2~3·#1 0·2·#2 0·#3 2·#4 1·#5 1~2·#6 0·2·#7 1~2",
+     "v2.8.2 누계 293점, 기준선 밖 새 겹침 0"
+    ],
+    "unseen": [
+     "오류·호출 상한(데운 세션에서도 470 s 넘김): POSE.H 130 H0~H2, 132 H0~H2, 137 H1, CYCLE_L 106 H1, POSE 1, MAINT_U7 3, F_STATES.U7_TAPE#4/8 0",
+     "전체 상한·세션 부족: MAINT_U7 6·9·12·13, F_STATES 0~3 남은 칸(U7#0 1, #1 1·3, #2 1~3, #3 0·1·3, #4 0·2·3, #5 0·3, #6 1·3, #7 0·3, U3 2·3, U4 1~3, U5 2·3)",
+     "어림 초과(시작 전): F_STATES 4~34 전 유닛, MAINT_U7 1·2·4·5·7·8·10·11, POSE 15~21·23~41·43~123·125·128·129·134, 연구 조밀 CYCLE_L 646·CYCLE_S 426·G1 488·G2 598·SEAM_U7 24단계"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 30,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 40,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3888,
+     "cad_calls": 94,
+     "file_opens": 23,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 760.9,
+     "mcp_restarts": [],
+     "over_reason": "회귀 L 90분 안(65분) — 2배 넘지 않음"
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-211"
+  ],
+  "repeat_ids": [
+   "WF-210",
+   "WF-203"
+  ],
+  "one_line": "회고 결과: WF-211을 새로 추가했고(이전 실행에서 이미 적용된 과제 REG-02가 지시문에 다시 실림), WF-210(무거운 자세가 호출 상한을 넘김)과 WF-203(최종 보고가 로그인 확인을 못 함)의 반복 수를 올렸다. 개선후보는 docs/reports/engine-candidates.md에 썼다. 최종 보고서 final_mech_2026-11-08_STEPWAIT_4.md만 커밋했고(b3292f1), 푸시는 하지 않았다. 고친 엔진 파일은 없다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 9,
+  "시간 h": 1.2,
+  "출력 토큰": 68268,
+  "실패": 0
+ }
+}
