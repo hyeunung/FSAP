@@ -1,0 +1,1385 @@
+{
+ "run": "mech_2026-11-08_MOT-01-FUNC-01-COLOR-01",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-08",
+ "journal": "wf_272c1368-764",
+ "totals": {
+  "agents": 40,
+  "agent_sec": 34816,
+  "input": 9927708,
+  "cache_read": 273311535,
+  "output": 1451696,
+  "tools": 1462,
+  "wall_sec": 33740
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 105,
+   "agents": 1,
+   "output": 8625
+  },
+  "▸ modeling-round #4": {
+   "sec": 34711,
+   "agents": 39,
+   "output": 1443071
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 4",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 105,
+   "tokens": {
+    "input": 110352,
+    "cache_read": 773204,
+    "output": 8625
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 66939,
+    "cache_read": 54606,
+    "output": 11007
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 66,
+   "tokens": {
+    "input": 86932,
+    "cache_read": 637996,
+    "output": 5190
+   },
+   "tools": 13,
+   "turns": 9
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 38,
+   "tokens": {
+    "input": 76303,
+    "cache_read": 219987,
+    "output": 2595
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "MOT-01 측정부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 1288,
+   "tokens": {
+    "input": 243631,
+    "cache_read": 7687310,
+    "output": 46778
+   },
+   "tools": 59,
+   "turns": 52
+  },
+  {
+   "label": "MOT-01 카탈로그부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 46,
+   "tokens": {
+    "input": 81836,
+    "cache_read": 302148,
+    "output": 4440
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "MOT-01 기구설계부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 1031,
+   "tokens": {
+    "input": 264613,
+    "cache_read": 8059642,
+    "output": 83572
+   },
+   "tools": 65,
+   "turns": 44
+  },
+  {
+   "label": "MOT-01 완료 판정 확인",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 361,
+   "tokens": {
+    "input": 129796,
+    "cache_read": 981221,
+    "output": 31896
+   },
+   "tools": 13,
+   "turns": 10
+  },
+  {
+   "label": "MOT-01 구매부 STEP",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 66,
+   "tokens": {
+    "input": 93178,
+    "cache_read": 849625,
+    "output": 2937
+   },
+   "tools": 17,
+   "turns": 11
+  },
+  {
+   "label": "MOT-01 모델링부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 7774,
+   "tokens": {
+    "input": 2100019,
+    "cache_read": 97087909,
+    "output": 225127
+   },
+   "tools": 263,
+   "turns": 239
+  },
+  {
+   "label": "MOT-01 검도·체결",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 1773,
+   "tokens": {
+    "input": 369940,
+    "cache_read": 11303920,
+    "output": 77073
+   },
+   "tools": 65,
+   "turns": 65
+  },
+  {
+   "label": "MOT-01 해석",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 413,
+   "tokens": {
+    "input": 116126,
+    "cache_read": 2640844,
+    "output": 39487
+   },
+   "tools": 23,
+   "turns": 23
+  },
+  {
+   "label": "MOT-01 문서·커밋",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 77,
+   "tokens": {
+    "input": 95093,
+    "cache_read": 524119,
+    "output": 5881
+   },
+   "tools": 10,
+   "turns": 7
+  },
+  {
+   "label": "FUNC-01 측정부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 1796,
+   "tokens": {
+    "input": 238951,
+    "cache_read": 7946477,
+    "output": 36527
+   },
+   "tools": 69,
+   "turns": 49
+  },
+  {
+   "label": "FUNC-01 카탈로그부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 13,
+   "tokens": {
+    "input": 73934,
+    "cache_read": 71989,
+    "output": 984
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "FUNC-01 기구설계부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 1879,
+   "tokens": {
+    "input": 558975,
+    "cache_read": 9418701,
+    "output": 169274
+   },
+   "tools": 47,
+   "turns": 43
+  },
+  {
+   "label": "FUNC-01 완료 판정 확인",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 155,
+   "tokens": {
+    "input": 109367,
+    "cache_read": 562595,
+    "output": 14739
+   },
+   "tools": 10,
+   "turns": 7
+  },
+  {
+   "label": "FUNC-01 기구설계부 수정1",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 763,
+   "tokens": {
+    "input": 145442,
+    "cache_read": 3753320,
+    "output": 69049
+   },
+   "tools": 27,
+   "turns": 27
+  },
+  {
+   "label": "FUNC-01 완료 판정 확인 1",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 212,
+   "tokens": {
+    "input": 116272,
+    "cache_read": 647085,
+    "output": 18908
+   },
+   "tools": 8,
+   "turns": 8
+  },
+  {
+   "label": "FUNC-01 기구설계부 수정2",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 332,
+   "tokens": {
+    "input": 96751,
+    "cache_read": 1316329,
+    "output": 31407
+   },
+   "tools": 12,
+   "turns": 12
+  },
+  {
+   "label": "FUNC-01 완료 판정 확인 2",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 94,
+   "tokens": {
+    "input": 97234,
+    "cache_read": 421573,
+    "output": 8976
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "FUNC-01 구매부 STEP",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 280,
+   "tokens": {
+    "input": 106830,
+    "cache_read": 2087567,
+    "output": 6234
+   },
+   "tools": 35,
+   "turns": 23
+  },
+  {
+   "label": "FUNC-01 모델링부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 5533,
+   "tokens": {
+    "input": 1732590,
+    "cache_read": 69111607,
+    "output": 198484
+   },
+   "tools": 216,
+   "turns": 195
+  },
+  {
+   "label": "FUNC-01 검도·체결",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 4078,
+   "tokens": {
+    "input": 544031,
+    "cache_read": 12387749,
+    "output": 63399
+   },
+   "tools": 87,
+   "turns": 78
+  },
+  {
+   "label": "FUNC-01 해석",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 497,
+   "tokens": {
+    "input": 118613,
+    "cache_read": 2380774,
+    "output": 46330
+   },
+   "tools": 26,
+   "turns": 20
+  },
+  {
+   "label": "FUNC-01 모델링부 수정1",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 947,
+   "tokens": {
+    "input": 182491,
+    "cache_read": 7875309,
+    "output": 39918
+   },
+   "tools": 71,
+   "turns": 56
+  },
+  {
+   "label": "FUNC-01 검도·체결 1",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 161,
+   "tokens": {
+    "input": 106984,
+    "cache_read": 1744196,
+    "output": 13580
+   },
+   "tools": 29,
+   "turns": 20
+  },
+  {
+   "label": "FUNC-01 해석 1",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 118,
+   "tokens": {
+    "input": 58999,
+    "cache_read": 931319,
+    "output": 9549
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "FUNC-01 문서·커밋",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 146,
+   "tokens": {
+    "input": 118029,
+    "cache_read": 1105569,
+    "output": 13129
+   },
+   "tools": 12,
+   "turns": 12
+  },
+  {
+   "label": "COLOR-01 측정부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 168,
+   "tokens": {
+    "input": 110206,
+    "cache_read": 1758482,
+    "output": 12499
+   },
+   "tools": 29,
+   "turns": 20
+  },
+  {
+   "label": "COLOR-01 기구설계부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 268,
+   "tokens": {
+    "input": 135508,
+    "cache_read": 2444541,
+    "output": 22887
+   },
+   "tools": 37,
+   "turns": 23
+  },
+  {
+   "label": "COLOR-01 완료 판정 확인",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 87,
+   "tokens": {
+    "input": 93088,
+    "cache_read": 491390,
+    "output": 6969
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "COLOR-01 모델링부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 392,
+   "tokens": {
+    "input": 176224,
+    "cache_read": 5589665,
+    "output": 26580
+   },
+   "tools": 53,
+   "turns": 44
+  },
+  {
+   "label": "COLOR-01 검도·체결",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 437,
+   "tokens": {
+    "input": 123026,
+    "cache_read": 2374742,
+    "output": 13199
+   },
+   "tools": 33,
+   "turns": 24
+  },
+  {
+   "label": "COLOR-01 문서·커밋",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 52,
+   "tokens": {
+    "input": 84072,
+    "cache_read": 468551,
+    "output": 4842
+   },
+   "tools": 10,
+   "turns": 7
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 2836,
+   "tokens": {
+    "input": 617570,
+    "cache_read": 4865291,
+    "output": 28892
+   },
+   "tools": 41,
+   "turns": 41
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 215,
+   "tokens": {
+    "input": 123826,
+    "cache_read": 1504123,
+    "output": 19045
+   },
+   "tools": 16,
+   "turns": 16
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 63,
+   "tokens": {
+    "input": 89460,
+    "cache_read": 251823,
+    "output": 7293
+   },
+   "tools": 3,
+   "turns": 4
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 31,
+   "tokens": {
+    "input": 82476,
+    "cache_read": 313076,
+    "output": 2383
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #4",
+   "status": "running",
+   "sec": 151,
+   "tokens": {
+    "input": 52001,
+    "cache_read": 365161,
+    "output": 22012
+   },
+   "tools": 12,
+   "turns": 5
+  }
+ ],
+ "fix_agents": [
+  "FUNC-01 기구설계부 수정1",
+  "FUNC-01 기구설계부 수정2",
+  "FUNC-01 모델링부 수정1"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "MOT-01",
+    "size": "M",
+    "status": "일부(완료 판정 미달)",
+    "chosen": "MOT-01-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.7.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "새로 넣은 아이들러 안쪽 접시 볼트 SFB5-12_M03_IDL을 완성 상태에서 렌치로 돌릴 수 없다. 머리 윗면 Y 118과 보 P_M07_BEAM 면 Y 120 사이가 2.0 mm이고, 보에 공구 구멍이 없다. 기준은 L+5 = 17 mm이므로 완료 판정 '체결 공구 닿음(막힘 0)'에 미달이다.",
+      "where": "U5_WHEEL_F 아이들러 (X -390, Y 115~120, Z 390): SFB5-12_M03_IDL ↔ P_M07_BEAM",
+      "evidence": "inspect.clearance clearance 40: P_M07_BEAM↔SFB5-12_M03_IDL 2.000 mm. 보 면 점 (-390, 120, 390)이 축 위에 있다(P_M07_BEAM↔CB5-12_M03_IDL 21.0 mm, 같은 축). 탐침 PRB_40(Ø9.8×30)과 PRB_40K(Ø3)는 보와의 boolean이 실패해 unchecked였고, 두 bbox는 겹친다.",
+      "fix": "권장안: SFB5-12_M03_IDL과 P_M03_IDLER_WASHER_I를 없앤다. P_M03_IDLER_SHAFT 끝 Y 112~115를 Ø20 턱으로 일체로 깎아 풀리 안쪽 받침으로 쓰고, 바깥 CB5-12_M03_IDL(Y 87, 접근 열림) 하나로 축을 브래킷 벽 Y 90~94에 당긴다. 보와의 틈은 5.0을 그대로 둔다. 대안: P_M07_BEAM의 (X -390, Z 390)에 Ø8 공구 구멍을 Y 120부터 관통으로 뚫는다.",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "U3 브래킷을 4080에 묶는 CB5-16이 HNTT8-5 T너트에 5 mm(1.0d)만 물린다. 엔진 체결 기준 1.5d에 못 미치고, handcalc의 조임 암나사 전단 판정도 실패한다(ok false). 완료 판정 항목 '물림 ≥ 엔진 체결 기준'이라 completion_met를 false로 둔다",
+      "where": "CB5-16_U3_BRKT:1~4 + HNTT8-5_U3_BRKT:1~4 (P_U3_LDRV_BRKT 바닥판 X 537 → 4080, 너트 X 548~557, 볼트 끝 X 553)",
+      "evidence": "fea/results/mech_MOT-01_handcalc.json bolts 'U3 브래킷->4080 CB5-16 + HNTT8-5 물림5': engage_ratio 1.0, worst 조임 암나사 전단, ok false. 운전 하중 SF는 28.2. 모델링부 MT-D2와 같은 자리",
+      "fix": "CB5-16을 CB5-20으로 바꾼다. 볼트 끝이 X 557로 너트 밑면과 같아지고 물림 9(1.8d). handcalc 통과(최소 SF 32.5)"
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "SCXW46-14-15"
+    ],
+    "external_blocks": [
+     "SCXW46-14-15 STEP 없음(stepcheck 없음, 아랫축 지름 D-10·D-143 대기) — STEP대기_SCXW46-14-15 임시 형상 유지"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "FUNC-01",
+    "size": "M",
+    "status": "일부(완료 판정 미달)",
+    "chosen": "F01-S1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.8.1.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "옆판 웹이 축 여유 구멍 때문에 t 6에서 3.75로 남음(Z 115~130 구간). 웹은 하중 경로가 아니다(축은 받침 블록 H7과 플랜지 H7이 받음)",
+      "where": "P_M03_LIFT_SIDE_N/P, (−1847, ±43, Z 115~130)",
+      "evidence": "면 39 r 8.25(옆판 P 위상), 웹 안쪽 Y 37 기준으로 2.25 깎임",
+      "fix": "디테일 단계에서 손계산으로 확인. 필요하면 웹을 t 8로 올린다(구멍 위치는 그대로)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "LHFR16 부시 오조작 정적 비가 기준 2에 못 미친다(v2.8.0에서 이어진 것, 이번 변경과 무관). 1.2보다 커서 부러짐·영구 변형은 아니다",
+      "where": "U5_FLOAT LHFR16 ×2(PSFJ16 축 부시)",
+      "evidence": "C0 1180 N(기억값 D-146) / 반경 하중: 오조작Y 1.55, 오조작X 1.68 < 2 (fea/results/mech_FUNC-01_handcalc.json)",
+      "fix": "C0 실값을 확인하거나(D-146), 위 정지 맞닿음 마찰 μ 0.15를 넣는다(넣으면 2.2). 안 되면 LHFR20으로 올린다",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "PSCS16",
+     "AS2201F-01-06SA",
+     "SPRING_d1.6_OD44_L132(형번 미정)"
+    ],
+    "external_blocks": [
+     "STEP 미수령으로 임시 형상 유지: PSCS16 ×4(STEP대기_), SPRING_d1.6_OD44_L132 ×2(형번 미정), AS2201F-01-06SA(STEP 없음, 지금 이음 자리)"
+    ],
+    "regrade": {
+     "from": "M",
+     "to": "L",
+     "why": "지시서는 M('새 조인트 없음')이었지만, 실제로는 새 조인트 J_U5_FLOAT, 새 구매품 LHFR16 ×2·PSFJ16-150 ×2(+ STEP대기 PSCS16 ×4·스프링 ×2), 유닛 4개(U3·U5·U7·U8)에 걸친 변경이 있다(E-18)"
+    }
+   },
+   {
+    "id": "COLOR-01",
+    "size": "S",
+    "status": "완료",
+    "chosen": "COLOR-S1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.8.2.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "STEP에서 가져온 면 칠 'Custom' #cad1ee가 147개 고유 바디의 151면에 남아 있음(복사본까지 640: 체결 634, 강 4, 알루 2). '구매품 STEP 원색 예외 목록'에 빠져 있음. appearance.chain으로 보면 active=material이라 화면 색은 색표 안이고 흑색도 아님",
+      "where": "CB5-16_M01_1 면 2, HFS8-80160-1090_M07 면 162·199·292·293, SV2RL28-1800_BLOCK 면 70·72, SFB5-10_M04 면 3 외. 목록은 tools/out/verify_COLOR-01/face_looks.json",
+      "evidence": "632 바디의 appearance.list {body} 결과(faces_out.json): 해석 색 13종 모두 색표 안, 면 칠 #cad1ee 151개. appearance.chain: face·body·component 단계 null, active material(#b4b9bf·#ccd0d6). L*는 약 83",
+      "fix": "결정로그 COLOR 색표에 'STEP 가져온 면 칠 #cad1ee, 재질 색에 가려 보이지 않음, 147 바디' 예외 줄을 더한다. 칠까지 없애려면 다음 버전에서 appearance.assign으로 바디 지정을 덮는다: 체결 #b4b9bf, 강 #9ea4ac, 알루 #ccd0d6(선택 사항, 보이는 색은 같음)",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "POSE 126·127·130·132·133·135-140 (오류 단계: 세션 응답 470 s 넘김)",
+    "POSE 154·155·161·163·165·168·177-180, CYCLE_L 46·106 (한 점이 호출 상한을 넘김)",
+    "CYCLE_L 206·226·286-716 간격 20, CYCLE_S 0-120 간격 20 (전체 상한)",
+    "CYCLE_L 0-25·27-715 중 본 9점 뺀 나머지, CYCLE_S 1-450 나머지, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13 (어림 초과)",
+    "F_STATES U3_HEAD·U4_WHEEL_N 0-34, U5_WHEEL_F 0·2-34, U6_SENSOR 1-34, U6_SHOE·U7_TAPE#0~#7/8 0-34 (어림 초과)",
+    "POSE 0-123·125·128·129·134 (어림 초과, v2.6.8에서 본 범위 — 바뀐 유닛 다시 보기)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 2999,
+    "estimate_s": 25532.5,
+    "actual_s": 1803.9,
+    "chunk_times": [
+     {
+      "id": "POSE 124 (시험)",
+      "elapsed_s": 345.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L 26 (시험)",
+      "elapsed_s": 85,
+      "status": "ok"
+     },
+     {
+      "id": "F_STATES.U5_WHEEL_F 1 (시험)",
+      "elapsed_s": 300.1,
+      "status": "ok"
+     },
+     {
+      "id": "F_STATES.U6_SENSOR 0 (시험)",
+      "elapsed_s": 35,
+      "status": "ok"
+     },
+     {
+      "id": "POSE 131·141-153·156-160·162·164·166-167·169-176 (31묶음)",
+      "elapsed_s": 470.8,
+      "status": "ok"
+     },
+     {
+      "id": "POSE 126·127·130·132·133·135-140 (11묶음)",
+      "elapsed_s": 471.4,
+      "status": "panic"
+     },
+     {
+      "id": "POSE 154·155·161·163·165·168·177-180 (10묶음)",
+      "elapsed_s": 481.7,
+      "status": "timeout"
+     },
+     {
+      "id": "CYCLE_L 66·86·126·146·166·186·246·266 (8묶음)",
+      "elapsed_s": 381.3,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L 46·106",
+      "elapsed_s": 481.5,
+      "status": "timeout"
+     },
+     {
+      "id": "CYCLE_L 206-466 간격 20 (13묶음)",
+      "elapsed_s": 180.2,
+      "status": "cut"
+     }
+    ],
+    "killed_calls": 23,
+    "skipped_steps": 23,
+    "trial": "종류별 시험 4개 모두 ok: 자세 345 s/점, 연구 85 s/단계, fslow 300 s/점, fchg 35 s/점, 오류 없음",
+    "per_step_s": {
+     "study": 85.03,
+     "pose": 345.08
+    },
+    "pose_steps": 181,
+    "reduced": "어림 25,532 s > 상한 1,800 s → 시작 전에 앞 94단계(지난 못 본 POSE 53점 + CYCLE_L·CYCLE_S 20단계 간격 41점)만 계획하고 뒤 2,901단계는 못 본 범위로 정함. 사이클 전 구간을 먼저 성기게 덮으려고 연구 못 본 범위를 20단계 간격으로 앞에 둠",
+    "seen": [
+     "POSE 124·131·141-153·156-160·162·164·166-167·169-176 (33점, 겹침 0)",
+     "CYCLE_L 26·66·86·126·146·166·186·246·266 (9점, 겹침 0)",
+     "F_STATES U5_WHEEL_F 1 (겹침 0)",
+     "F_STATES U6_SENSOR 0 (겹침 0)"
+    ],
+    "unseen": [
+     "POSE 126·127·130·132·133·135-140 (오류 단계: 세션 응답 470 s 넘김)",
+     "POSE 154·155·161·163·165·168·177-180, CYCLE_L 46·106 (한 점이 호출 상한을 넘김)",
+     "CYCLE_L 206·226·286-716 간격 20, CYCLE_S 0-120 간격 20 (전체 상한)",
+     "CYCLE_L 0-25·27-715 중 본 9점 뺀 나머지, CYCLE_S 1-450 나머지, CYCLE_G1 0-514, CYCLE_G2 0-630, SEAM_U7 0-32, MAINT_HEAD 0-1, MAINT_U7 0-13 (어림 초과)",
+     "F_STATES U3_HEAD·U4_WHEEL_N 0-34, U5_WHEEL_F 0·2-34, U6_SENSOR 1-34, U6_SHOE·U7_TAPE#0~#7/8 0-34 (어림 초과)",
+     "POSE 0-123·125·128·129·134 (어림 초과, v2.6.8에서 본 범위 — 바뀐 유닛 다시 보기)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "MOT-01 카탈로그부",
+    "phase": "MOT-01 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 180,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "MOT-01 측정부",
+    "phase": "MOT-01 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1267,
+     "cad_calls": 22,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 20,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "MOT-01 기구설계부",
+    "phase": "MOT-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 932,
+     "cad_calls": 19,
+     "file_opens": 4,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 10,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "MOT-01 완료 판정 확인",
+    "phase": "MOT-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 347,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "MOT-01 구매부 STEP",
+    "phase": "MOT-01 · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 6,
+     "over_reason": "",
+     "mcp_restarts": [],
+     "open_s": 0
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "MOT-01 모델링부",
+    "phase": "MOT-01 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 7740,
+     "cad_calls": 48,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 314,
+     "mcp_restarts": [
+      "2026-11-09 04:30 앱 재시작: 이 연결의 engine.batch(selection.delete 17 occurrence, 1단계)가 running_s 778에서도 끝나지 않음(지우기마다 전체 재계산 약 170 s). Stop-Process solidcraft → --control 27878로 다시 켬. 버린 것: 저장 안 한 시험 편집(볼트 2개 지움, 시험 STEP 7개). 다시 연 저장본 FSAP_v2.6.8.sc(dirty false)"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "MOT-01 해석",
+    "phase": "MOT-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 400,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "MOT-01 검도·체결",
+    "phase": "MOT-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1702,
+     "cad_calls": 30,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 30,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "MOT-01 문서·커밋",
+    "phase": "MOT-01 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 측정부",
+    "phase": "FUNC-01 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1774,
+     "cad_calls": 22,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 1,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 카탈로그부",
+    "phase": "FUNC-01 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 기구설계부",
+    "phase": "FUNC-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1819,
+     "cad_calls": 12,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 1,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 완료 판정 확인",
+    "phase": "FUNC-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 139,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 기구설계부 수정1",
+    "phase": "FUNC-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 7,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 20,
+     "mcp_restarts": []
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 완료 판정 확인 1",
+    "phase": "FUNC-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 기구설계부 수정2",
+    "phase": "FUNC-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 완료 판정 확인 2",
+    "phase": "FUNC-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 구매부 STEP",
+    "phase": "FUNC-01 · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 270,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 16,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 모델링부",
+    "phase": "FUNC-01 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 5800,
+     "cad_calls": 58,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 300,
+     "mcp_restarts": [],
+     "over_reason": "예상(모델링 M 90분)의 2배인 180분을 넘지 않음. 다만 selection.delete 호출 2번이 각각 약 5.5분과 17분, J_U7_HGT·REST 몰기가 각각 약 4~5분 걸렸다"
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 해석",
+    "phase": "FUNC-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 480,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 검도·체결",
+    "phase": "FUNC-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 4000,
+     "cad_calls": 22,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [],
+     "over_reason": "예상(검도 L 60분)보다 조금 넘었다. J_U7_HGT·J_U7_CST_X/Y의 joint.drive가 한 번에 약 250~275 s 걸렸다(6회, 약 27분). 첫 HGT 묶음은 MCP 응답이 끊겨 결과를 잃었고, 앱이 끝날 때까지 약 18분 기다린 뒤 같은 자세에서 다시 쟀다. 앱 재시작은 없었다."
+    },
+    "expect_min": 30,
+    "over": true
+   },
+   {
+    "label": "FUNC-01 모델링부 수정1",
+    "phase": "FUNC-01 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1500,
+     "cad_calls": 16,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 325,
+     "mcp_restarts": []
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 해석 1",
+    "phase": "FUNC-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 180,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 검도·체결 1",
+    "phase": "FUNC-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 9,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 60,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "FUNC-01 문서·커밋",
+    "phase": "FUNC-01 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 200,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "COLOR-01 측정부",
+    "phase": "COLOR-01 · 측정",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 7,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 60,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "COLOR-01 기구설계부",
+    "phase": "COLOR-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 260,
+     "cad_calls": 15,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "COLOR-01 완료 판정 확인",
+    "phase": "COLOR-01 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "COLOR-01 모델링부",
+    "phase": "COLOR-01 · 모델링",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 380,
+     "cad_calls": 14,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "COLOR-01 검도·체결",
+    "phase": "COLOR-01 · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 9,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 20,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "COLOR-01 문서·커밋",
+    "phase": "COLOR-01 · 문서",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2850,
+     "cad_calls": 43,
+     "file_opens": 18,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 711.2,
+     "mcp_restarts": [],
+     "over_reason": "예상 회귀 60분 안(약 47분). 세션 12개 동시 열기가 2,760바디 파일이라 646~711 s 걸렸다"
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "MOT-01 기구설계부",
+    "what": "설계 파일을 4번 엶(부서마다 한 번, E-04)"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-209"
+  ],
+  "repeat_ids": [
+   "WF-172",
+   "WF-175",
+   "WF-176"
+  ],
+  "one_line": "회고 커밋 c88ebc4(푸시 안 함): docs/reports/engine-candidates.md에 WF-209(unchecked 간격 쌍을 합격 처리)를 더했고, WF-172·175·176은 반복 수를 올렸다. 최종 보고서에 개선 후보 절을 붙였다. 엔진 파일은 고치지 않았다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 40,
+  "시간 h": 9.7,
+  "출력 토큰": 1451696,
+  "실패": 0
+ }
+}
