@@ -1,0 +1,850 @@
+{
+ "step": {
+  "P_F01_SHAFT_HLD_N": {
+   "min": [
+    -1861.0,
+    -55.09,
+    116.0
+   ],
+   "max": [
+    -1833.0,
+    -37.0,
+    130.0
+   ],
+   "cyl_radii": [
+    8.0
+   ]
+  },
+  "P_M03_LIFT_SIDE_N": {
+   "min": [
+    -1990.0,
+    -55.0,
+    59.0
+   ],
+   "max": [
+    -1820.0,
+    -30.0,
+    136.0
+   ],
+   "cyl_radii": [
+    2.75,
+    2.85,
+    8.0
+   ]
+  },
+  "P_M03_LIFT_SIDE_P": {
+   "min": [
+    -1990.0,
+    30.0,
+    59.0
+   ],
+   "max": [
+    -1820.0,
+    55.0,
+    136.0
+   ],
+   "cyl_radii": [
+    2.75,
+    2.85,
+    6.0,
+    8.0
+   ]
+  },
+  "P_M03_LIFT_TOP": {
+   "min": [
+    -1990.0,
+    -70.0,
+    156.0
+   ],
+   "max": [
+    -1820.0,
+    78.0,
+    164.0
+   ],
+   "cyl_radii": [
+    3.3,
+    8.25
+   ]
+  }
+ },
+ "loads": {
+  "W_float_N": 64.7,
+  "W_lift_N": 82.6,
+  "push_0.5MPa": 245.4,
+  "pull_0.5MPa": 206.2,
+  "cases": {
+   "운전_뜸": {
+    "state": "float",
+    "u": 0.0,
+    "N": 48.8,
+    "Fy": 45.0,
+    "Fx": 45.0,
+    "Wdyn": 194.1
+   },
+   "운전_닿음": {
+    "state": "stop",
+    "u": 20.0,
+    "N": 265.2,
+    "Fy": 45.0,
+    "Fx": 45.0,
+    "Wdyn": 0.0
+   },
+   "오조작Y": {
+    "state": "stop",
+    "u": 20.0,
+    "N": 493.2,
+    "Fy": 246.6,
+    "Fx": 0.0,
+    "Wdyn": 0.0
+   },
+   "오조작X": {
+    "state": "stop",
+    "u": 20.0,
+    "N": 493.2,
+    "Fy": 0.0,
+    "Fx": 246.6,
+    "Wdyn": 0.0
+   },
+   "whatif_mu0.8": {
+    "state": "stop",
+    "u": 20.0,
+    "N": 493.2,
+    "Fy": 394.6,
+    "Fx": 0.0,
+    "Wdyn": 0.0
+   }
+  }
+ },
+ "results": {
+  "운전_뜸": {
+   "shaft": {
+    "h_b": 124.0,
+    "M_Nmm": 7395,
+    "V_N": 52.2,
+    "sigma": 18.4,
+    "SF(S45C 345, 보수)": 18.76
+   },
+   "LHFR16": {
+    "F_radial_N": 385.3,
+    "C0_1180(기억값 D-146)/F": 3.06
+   },
+   "SHAFT_HLD": {
+    "M_root_Nmm": 6583,
+    "F_couple_N": 519.8,
+    "p_bearing": 4.6,
+    "sigma_ligament_t4": 19.5,
+    "SF": 10.52
+   },
+   "LIFT_SIDE": {
+    "sigma_web": 6.1,
+    "sigma_flange": 0.0,
+    "SF": 33.36
+   },
+   "LIFT_TOP": {
+    "sigma_bush_moment": 14.4,
+    "SF": 14.19
+   },
+   "bolt_M4_LHFR": {
+    "inputs": {
+     "d": 4,
+     "le": 8,
+     "load_N": 194.6004374512881,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 6.9,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 2.0,
+    "sf_operating": {
+     "나사 인장": 49.63,
+     "암나사 전단": 23.83
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "bolt_M5_HLD": {
+    "inputs": {
+     "d": 5,
+     "le": 6,
+     "load_N": 230.39693409472707,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 1.2,
+    "sf_operating": {
+     "나사 인장": 67.8,
+     "암나사 전단": 18.87
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  },
+  "운전_닿음": {
+   "shaft": {
+    "h_b": 104.0,
+    "M_Nmm": 3309,
+    "V_N": 52.2,
+    "sigma": 8.2,
+    "SF(S45C 345, 보수)": 41.92
+   },
+   "LHFR16": {
+    "F_radial_N": 201.3,
+    "C0_1180(기억값 D-146)/F": 5.86
+   },
+   "SHAFT_HLD": {
+    "M_root_Nmm": 3055,
+    "F_couple_N": 255.2,
+    "p_bearing": 2.3,
+    "sigma_ligament_t4": 9.6,
+    "SF": 21.42
+   },
+   "LIFT_SIDE": {
+    "sigma_web": 6.1,
+    "sigma_flange": 3.3,
+    "SF": 33.36
+   },
+   "LIFT_TOP": {
+    "arm_beam": {
+     "sigma": 21.6,
+     "defl_mm": 0.1212,
+     "thin": true
+    },
+    "bridge_vm": 18.8,
+    "arm_P": 16.5,
+    "SF": 9.49
+   },
+   "bolt_M4_LHFR": {
+    "inputs": {
+     "d": 4,
+     "le": 8,
+     "load_N": 87.08578252508008,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 6.9,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 2.0,
+    "sf_operating": {
+     "나사 인장": 110.9,
+     "암나사 전단": 53.25
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "bolt_M5_HLD": {
+    "inputs": {
+     "d": 5,
+     "le": 6,
+     "load_N": 106.91454531540599,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 1.2,
+    "sf_operating": {
+     "나사 인장": 146.1,
+     "암나사 전단": 40.66
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  },
+  "오조작Y": {
+   "shaft": {
+    "h_b": 104.0,
+    "M_Nmm": 12824,
+    "V_N": 182.7,
+    "sigma": 31.9,
+    "SF(S45C 345, 보수)": 10.82
+   },
+   "LHFR16": {
+    "F_radial_N": 760.3,
+    "C0_1180(기억값 D-146)/F": 1.55
+   },
+   "SHAFT_HLD": {
+    "M_root_Nmm": 11838,
+    "F_couple_N": 979.2,
+    "p_bearing": 8.7,
+    "sigma_ligament_t4": 36.7,
+    "SF": 5.58
+   },
+   "LIFT_SIDE": {
+    "sigma_web": 33.4,
+    "sigma_flange": 6.2,
+    "SF": 6.14
+   },
+   "LIFT_TOP": {
+    "arm_beam": {
+     "sigma": 40.17,
+     "defl_mm": 0.2254,
+     "thin": true
+    },
+    "bridge_vm": 35.0,
+    "arm_P": 30.7,
+    "SF": 5.1
+   },
+   "bolt_M4_LHFR": {
+    "inputs": {
+     "d": 4,
+     "le": 8,
+     "load_N": 337.4778967790597,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 6.9,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 2.0,
+    "sf_operating": {
+     "나사 인장": 28.62,
+     "암나사 전단": 13.74
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "bolt_M5_HLD": {
+    "inputs": {
+     "d": 5,
+     "le": 6,
+     "load_N": 414.31901789183013,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 1.2,
+    "sf_operating": {
+     "나사 인장": 37.7,
+     "암나사 전단": 10.49
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  },
+  "오조작X": {
+   "shaft": {
+    "h_b": 104.0,
+    "M_Nmm": 12824,
+    "V_N": 123.3,
+    "sigma": 31.9,
+    "SF(S45C 345, 보수)": 10.82
+   },
+   "LHFR16": {
+    "F_radial_N": 701.0,
+    "C0_1180(기억값 D-146)/F": 1.68
+   },
+   "SHAFT_HLD": {
+    "M_root_Nmm": 11838,
+    "F_couple_N": 949.5,
+    "p_bearing": 8.5,
+    "sigma_ligament_t4": 35.6,
+    "SF": 5.76
+   },
+   "LIFT_SIDE": {
+    "sigma_web": 0.3,
+    "sigma_flange": 6.2,
+    "SF": 33.25
+   },
+   "LIFT_TOP": {
+    "arm_beam": {
+     "sigma": 40.17,
+     "defl_mm": 0.2254,
+     "thin": true
+    },
+    "bridge_vm": 35.0,
+    "arm_P": 30.7,
+    "SF": 5.1
+   },
+   "bolt_M4_LHFR": {
+    "inputs": {
+     "d": 4,
+     "le": 8,
+     "load_N": 337.4778967790597,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 6.9,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 2.0,
+    "sf_operating": {
+     "나사 인장": 28.62,
+     "암나사 전단": 13.74
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "bolt_M5_HLD": {
+    "inputs": {
+     "d": 5,
+     "le": 6,
+     "load_N": 414.31901789183013,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 1.2,
+    "sf_operating": {
+     "나사 인장": 37.7,
+     "암나사 전단": 10.49
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  },
+  "whatif_mu0.8": {
+   "shaft": {
+    "h_b": 104.0,
+    "M_Nmm": 20519,
+    "V_N": 292.3,
+    "sigma": 51.0,
+    "SF(S45C 345, 보수)": 6.76
+   },
+   "LHFR16": {
+    "F_radial_N": 1216.5,
+    "C0_1180(기억값 D-146)/F": 0.97
+   },
+   "SHAFT_HLD": {
+    "M_root_Nmm": 18940,
+    "F_couple_N": 1566.7,
+    "p_bearing": 14.0,
+    "sigma_ligament_t4": 58.7,
+    "SF": 3.49
+   },
+   "LIFT_SIDE": {
+    "sigma_web": 53.4,
+    "sigma_flange": 6.2,
+    "SF": 3.84
+   },
+   "LIFT_TOP": {
+    "arm_beam": {
+     "sigma": 40.17,
+     "defl_mm": 0.2254,
+     "thin": true
+    },
+    "bridge_vm": 35.0,
+    "arm_P": 30.7,
+    "SF": 5.1
+   },
+   "bolt_M4_LHFR": {
+    "inputs": {
+     "d": 4,
+     "le": 8,
+     "load_N": 539.9646348464954,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 6.9,
+     "dh": 4.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 2.0,
+    "sf_operating": {
+     "나사 인장": 17.89,
+     "암나사 전단": 8.59
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "bolt_M5_HLD": {
+    "inputs": {
+     "d": 5,
+     "le": 6,
+     "load_N": 662.9104286269283,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "SUS304",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 1.2,
+    "sf_operating": {
+     "나사 인장": 23.56,
+     "암나사 전단": 6.56
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  },
+  "들기": {
+   "F_hang_per_shaft_N": 97.1,
+   "PSCS16_axial_hold(기억값 약 1000 N, D-146)/F": 10.3,
+   "M5_setscrew_hold(컵 끝 약 1000 N 기억값, D-146)/F": 10.3,
+   "shaft_tension_sigma": 0.48,
+   "LIFT_TOP_sigma": 14.0,
+   "LIFT_TOP_SF": 14.67,
+   "LHFR16_axial_bearing": "부시 몸이 칼라에 눌려 플랜지가 판을 누름(압축) — 볼트 인장 0"
+  }
+ },
+ "old_model_same_loads": {
+  "운전_닿음": {
+   "LIFT_TOP_SF_old_model": 7.72,
+   "LIFT_SIDE_SF_old_model": 39.54,
+   "note": "옛 모델의 경계(플랜지 볼트 CB5-12 x4, MGP 끝판 모서리 외팔)는 v2.8.0에 없음 — 볼트 지움·창 뚫음"
+  },
+  "오조작Y": {
+   "LIFT_TOP_SF_old_model": 3.13,
+   "LIFT_SIDE_SF_old_model": 12.49,
+   "note": "옛 모델의 경계(플랜지 볼트 CB5-12 x4, MGP 끝판 모서리 외팔)는 v2.8.0에 없음 — 볼트 지움·창 뚫음"
+  }
+ },
+ "summary": [
+  {
+   "case": "운전_뜸",
+   "part": "shaft",
+   "SF": 18.76,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_뜸",
+   "part": "LHFR16",
+   "SF": 3.06,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": true
+  },
+  {
+   "case": "운전_뜸",
+   "part": "SHAFT_HLD",
+   "SF": 10.52,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_뜸",
+   "part": "LIFT_SIDE",
+   "SF": 33.36,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_뜸",
+   "part": "LIFT_TOP",
+   "SF": 14.19,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_뜸",
+   "part": "bolt_M4_LHFR",
+   "SF": 23.83,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_뜸",
+   "part": "bolt_M5_HLD",
+   "SF": 18.87,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_닿음",
+   "part": "shaft",
+   "SF": 41.92,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_닿음",
+   "part": "LHFR16",
+   "SF": 5.86,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_닿음",
+   "part": "SHAFT_HLD",
+   "SF": 21.42,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_닿음",
+   "part": "LIFT_SIDE",
+   "SF": 33.36,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_닿음",
+   "part": "LIFT_TOP",
+   "SF": 9.49,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_닿음",
+   "part": "bolt_M4_LHFR",
+   "SF": 53.25,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "운전_닿음",
+   "part": "bolt_M5_HLD",
+   "SF": 40.66,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작Y",
+   "part": "shaft",
+   "SF": 10.82,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작Y",
+   "part": "LHFR16",
+   "SF": 1.55,
+   "req": 2.0,
+   "ok": false,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작Y",
+   "part": "SHAFT_HLD",
+   "SF": 5.58,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작Y",
+   "part": "LIFT_SIDE",
+   "SF": 6.14,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작Y",
+   "part": "LIFT_TOP",
+   "SF": 5.1,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작Y",
+   "part": "bolt_M4_LHFR",
+   "SF": 13.74,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작Y",
+   "part": "bolt_M5_HLD",
+   "SF": 10.49,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작X",
+   "part": "shaft",
+   "SF": 10.82,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작X",
+   "part": "LHFR16",
+   "SF": 1.68,
+   "req": 2.0,
+   "ok": false,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작X",
+   "part": "SHAFT_HLD",
+   "SF": 5.76,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작X",
+   "part": "LIFT_SIDE",
+   "SF": 33.25,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작X",
+   "part": "LIFT_TOP",
+   "SF": 5.1,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작X",
+   "part": "bolt_M4_LHFR",
+   "SF": 13.74,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "오조작X",
+   "part": "bolt_M5_HLD",
+   "SF": 10.49,
+   "req": 2.0,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "whatif_mu0.8",
+   "part": "shaft",
+   "SF": 6.76,
+   "req": null,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "whatif_mu0.8",
+   "part": "LHFR16",
+   "SF": 0.97,
+   "req": null,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "whatif_mu0.8",
+   "part": "SHAFT_HLD",
+   "SF": 3.49,
+   "req": null,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "whatif_mu0.8",
+   "part": "LIFT_SIDE",
+   "SF": 3.84,
+   "req": null,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "whatif_mu0.8",
+   "part": "LIFT_TOP",
+   "SF": 5.1,
+   "req": null,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "whatif_mu0.8",
+   "part": "bolt_M4_LHFR",
+   "SF": 8.59,
+   "req": null,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "whatif_mu0.8",
+   "part": "bolt_M5_HLD",
+   "SF": 6.56,
+   "req": null,
+   "ok": true,
+   "near(+10%)": false
+  },
+  {
+   "case": "들기",
+   "part": "LIFT_TOP",
+   "SF": 14.67,
+   "req": 3.0,
+   "ok": true,
+   "near(+10%)": false
+  }
+ ]
+}
