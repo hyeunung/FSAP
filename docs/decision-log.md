@@ -3399,3 +3399,16 @@ E-14 시험(WF-129): 안 ①은 형상을 그대로 두므로 그릴 것이 없�
 |---|---|---|---|
 | COLOR-M1 | COLOR-S1 색표를 v2.8.2에 적용: material.edit 6 + appearance.assign 9건(복사본 이름을 원본 바디로 합쳐 231 바디) | 지시서 1,609 이름과 지정 결과가 같고(assign이 복사본을 원본으로 풂, 충돌 0) 인자가 작다 | mech_COLOR-01_model.md, verify_color.json: 색표 밖 0/2,729, 체결 흑색 0/1,198, 피처·바디 변화 0 |
 | COLOR-M2 | 앞으로 새 바디는 색표 칸 외관으로 넣는다(체결은 재질 무관 COL_F #b4b9bf) | 색 통일 유지(사용자 2026-11-09) | 설계검토서 기록 대상 |
+
+## 구동 COLOR-01 결과 (2026-11-08)
+근거 `docs/reports/mechanism/mech_COLOR-01_verify.md`·`_donecheck.md`, 설계검토서 `docs/review/FSAP_v2.8.2_review.md`.
+
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| COLOR-R1 | 적용: v2.8.2에 색표 13칸(COLOR-S1) 적용 완료. 색표 밖 0/2,729, 체결 흑색 0/1,198, 형상·바디 수·BOM 변화 0. 실패 0, 남은 동작 문제 0. COLOR-01 해결 | 완료 판정 세 항목 충족, 최종 판정 pass | verify_color.json, ledger scope 0·sigcheck 같음 |
+| COLOR-R2 | 색표 예외 줄 추가: STEP 가져온 면 칠 #cad1ee — 147 고유 바디(복사 포함 640: 체결 634·강 4·알루 2), 재질 색에 가려 보이지 않음. 모델링 보고서의 '구매품 STEP 원색 예외 0'을 이 줄로 바로잡는다 | appearance.chain: 면·바디·컴포넌트 단계 null, 활성 = 재질 색(#b4b9bf·#ccd0d6, L* 약 83) | tools/out/verify_COLOR-01/face_looks.json |
+
+### 디테일 과제(E-02, 구동 확정 뒤 처리)
+| id | 내용 | 자리 | 처리안 |
+|---|---|---|---|
+| COLOR-D1 | STEP 면 칠 #cad1ee 151면이 남음(화면 색은 색표 안) | CB5-16_M01_1 면 2, HFS8-80160-1090_M07 면 162·199·292·293, SV2RL28-1800_BLOCK 면 70·72, SFB5-10_M04 면 3 외 | 다음 버전에서 appearance.assign으로 바디 지정을 덮음(F #b4b9bf·ST #9ea4ac·AL #ccd0d6). 선택 사항, 보이는 색 같음 |
