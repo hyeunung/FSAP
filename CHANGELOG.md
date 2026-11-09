@@ -8,6 +8,7 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.8.7 PNEU-01 수정 1회차: 공압 관 고정품 30개(빗·클램프·브래킷, A5052, 관 통구멍 Ø6.5/Ø8.5) + CB5-16 57개(기존 STEP occurrence 복사)·M5 탭, U5 체인 2400.05.075.0 23링크 행정 표시 모형(아래·위 가닥 17+17, 굽힘 5, 슬라이더 35 + J_U5_X motion link, 링크 안 관 토막·굽힘 관 R 81.5/69.5 — 체인 안 관 1,078.4·1,040.7 일정), 옛 체인 바디 22 지움, 체인 고정 끝 STEP대기 관 통로 ×2, CST_O SPCC·볼트 2, AIR_IN_BRKT 볼트 2. BOM `docs/bom/FSAP_v2.8.7_*`, 자료대기 D-155~D-161(PNEU-01 D-a~D-g), 생성기 `tools/gen_v2_pneu01_fix1.py`.
 - v2.8.6 PNEU-01(일부): 공압 관 25줄(직각 꺾기) → 26줄 접선 원호 굽힘(최소 R 16/40, 바디 35, TU0604 29.9 m·TU0805 0.8 m, `tools/gen_v2_pneu01.py`). 밸브 1·3 −Y 10 + 개별 급기 스페이서 STEP대기, 레귤 OUT KQ2L08 → KQ2L06-01AS 실물 STEP ×2, 새 이음·막음 STEP대기(KQ2E08·KQ2T08 ×2·KQ2H08·AN110 ×2·TPH-01 ×3·M-5P·KQ2P-06 ×8·AS2201F-01-06S ×2), 받침 P_M08_AIR_IN_BRKT, 카세트 빗판 P_M08_TUBE_BRKT_CST_O(수정 2 지시). 미완: U5 체인 다시 그리기·체인 안 관, 고정품 29·볼트 62, 움직이는 축 행정 검사(보고서 mech_PNEU-01_model.md).
 - v2.8.5 VGR-01 수정 1회차: 형상 변경 없음(문서 설명만). 검도 지적 — U5 바퀴 밑 고정 PTFE 띠(P_DC205_STRIP) 미끄럼 μs·40 N·0.44가 회전력 셈에 빠짐 → `tools/machine.json` `_timing` CYCLE_V U4+U5 키 μs 0.30 기준: 입구1 2.5→4.1 s, 꼭짓점 25° 1.2→2.0 s ×4, 10° 1.0→1.3 s, 입구2 30° 1.5→2.6 s, 입구2 U4 혼자 9.0→9.5 s(원판 끌림). 최저 SF 1.009(`tools/out/mech_VGR-01/fix1calc.json`). 자료대기 D-154·D-96·D-97, 결정로그 VGR-01-M5, 설계검토서 v2.8.5. 저장 전 조인트·스케치 숨김. 보고서 docs/reports/mechanism/mech_VGR-01_model1.md
 - VGR-01 완료 판정(2026-11-10): 해결. BOM v2.8.5(v2.8.4 그대로), 설계검토서 v2.8.5 완료 판정 절, 결정로그 "구동 VGR-01 결과", 요구서 VGR-01 해결.
