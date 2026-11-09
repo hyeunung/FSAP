@@ -31,6 +31,8 @@ LIFT = 30.0                    # D-104 바퀴 들림(근거 없음)
 D2_PARK, D2_MIN = 1800.0, 300.0  # D-105 대차: d2 300~1800(행정 1500, 0-8-3 '약 1.5 m'), 대기 1800
 D2 = {"L": 1000.0, "G": 800.0, "S": None}   # D-105 매트별 d2(임시 약 2/3 폭), 작은 매트는 내리지 않음
 PATCH_Y = 10.0                 # D-104 바퀴 접촉 길이 반(근거 없음, 매트 유무 판정용)
+E_EDGE = 6.5                   # D-78·D-144 땀–가장자리 거리 e(F01-C1 v2.8.3, 옛 0): 바늘 경로는 매트 가장자리 안쪽 e, 대기·시작 중심 +e X
+# F01-C1: 지금 설계의 연구 키는 뒤 과제(FUNC-01 등)가 고친 것이라, e 6.5 키의 정본은 tools/out/mech_F01-C1/design/newkeys.py(→ newkeys.json, 단계 번호 유지)다.
 
 STEP_FEED, STEP_FINE, STEP_DEG = 25.0, 5.0, 1.0   # 요구서 6-4
 
@@ -50,7 +52,7 @@ def center(p, th):
 
 
 def start_c(k):
-    return center((MATS[k][0] / 2, 0.0), 0.0)
+    return center((MATS[k][0] / 2 - E_EDGE, 0.0), 0.0)
 
 
 def park_c(k):
@@ -178,7 +180,7 @@ def begin(k):
 
 
 def finish(P, start, th, a):
-    P.sew_line(start, (a / 2, -OVERLAP), th, "④ 시작·끝 이음매 겹침")
+    P.sew_line(start, (a / 2 - E_EDGE, -OVERLAP), th, "④ 시작·끝 이음매 겹침")
     P.short("④ 사절·노루발 들기", pr=PRESSER_UP)
     P.short("⑤ 바퀴 들기", np=LIFT, fl=LIFT)
     if P.last["fx"] != 0.0:
@@ -191,8 +193,9 @@ def finish(P, start, th, a):
 def rect_cycle(k):
     a, b = MATS[k]
     P = begin(k)
-    start = (a / 2, 0.0)
-    corners = [(a / 2, -b / 2), (-a / 2, -b / 2), (-a / 2, b / 2), (a / 2, b / 2)]
+    e = E_EDGE
+    start = (a / 2 - e, 0.0)
+    corners = [(a / 2 - e, -b / 2 + e), (-a / 2 + e, -b / 2 + e), (-a / 2 + e, b / 2 - e), (a / 2 - e, b / 2 - e)]
     p, th = start, 0.0
     for i, q in enumerate(corners):
         P.sew_line(p, q, th, "③ 봉제 직선")
@@ -204,21 +207,22 @@ def rect_cycle(k):
 
 def groove_cycle():
     a = G_A
+    e = E_EDGE
     P = begin("G")
-    start = (a / 2, 0.0)
-    yN, yS = G_Y + G_R, G_Y - G_R
+    start = (a / 2 - e, 0.0)
+    yN, yS = G_Y + G_R + e, G_Y - G_R - e   # 홈 벽 안쪽 e
     xb = a / 2 - G_D + G_R
-    m1 = (a / 2, yN)
+    m1 = (a / 2 - e, yN)
     P.sew_line(start, m1, 0.0, "③ 봉제 직선", fine_ends=50.0)
     P.pivot(m1, 0.0, 90.0, "③ 홈 입구(볼록)")
     P.sew_line(m1, (xb, yN), 90.0, "③ 홈 안 벽", fine_ends=-1)
     P.short("③ 홈 바닥 노루발 들기·바늘 꽂음", pr=PRESSER_UP, nd=NEEDLE_DOWN)
-    P.arc((xb, G_Y), G_R, 90.0, 90.0, -180.0, "③ 홈 바닥 꺾임(오목)")
+    P.arc((xb, G_Y), G_R + e, 90.0, 90.0, -180.0, "③ 홈 바닥 꺾임(오목)")
     P.short("③ 홈 바닥 노루발 내림", pr=0.0, nd=0.0)
-    m2 = (a / 2, yS)
+    m2 = (a / 2 - e, yS)
     P.sew_line((xb, yS), m2, -90.0, "③ 홈 안 벽", fine_ends=-1)
     P.pivot(m2, -90.0, 0.0, "③ 홈 입구(볼록)")
-    corners = [(a / 2, -a / 2), (-a / 2, -a / 2), (-a / 2, a / 2), (a / 2, a / 2)]
+    corners = [(a / 2 - e, -a / 2 + e), (-a / 2 + e, -a / 2 + e), (-a / 2 + e, a / 2 - e), (a / 2 - e, a / 2 - e)]
     p, th = m2, 0.0
     for i, q in enumerate(corners):
         P.sew_line(p, q, th, "③ 봉제 직선", fine_ends=(50.0 if i == 0 else 0.0))

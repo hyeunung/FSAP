@@ -1,3 +1,75 @@
+# 준비 점검 — FSAP_v2.8.2 스케치 숨김 재저장 뒤 (2026-11-09 밤, 엔진 v3.9.3, VGR-01·F01-C1 실행 전)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.8.2.sc`(tools/config.json doc, 21:28 재저장 — 사용자 "스케치 쓸데없이 왜켜놔 숨겨", 실행 규칙 19).
+- 바뀐 것 확인(설계 파일은 열지 않음): 커밋본(HEAD)과 재저장본의 zip 내용을 비교. `container.json`·`blobs/` 같음, `document.json` 차이는 `visibility/hidden_sketches` 0 → 208 하나뿐. 수치 차이 최대 1.7e-13 mm(저장 반올림), 조인트 372·occurrence 2563 같음 → 형상·조인트·연구 변화 0.
+- 그래서 12:40 MCP 점검 결과 `tools/out/prep282/`를 그대로 씀(E-21 원문 "다시 부르면 이전 결과 파일부터 읽고 남은 것만"): 조인트 372, 고정부 2, floating 0, 움직이는 조인트 29 = machine.json(11:31, 바뀜 없음). 연구 8개(REST 대기 포즈 step 0, CYCLE_S·L·G1·G2, MAINT_HEAD, SEAM_U7, MAINT_U7) step 0 conflicts 0. states 26이 0-3 각 단계와 THICK_6·THICK_16에 대응.
+- 요구서 21:28 변경: 5절 VGR-01 행 하나 추가(0-2·0-3·6-4 바뀜 없음) → 대응 판정 그대로.
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G 좁은 U홈(요구서 0-2 양 끝), 떨어지는 조각 없음(D-07). V홈 시험 매트는 아직 없음 — VGR-01이 만들 것이라 준비 부족으로 보지 않음(막지 않음).
+- 앱: `running` 빈 목록(idle). open·편집·저장 0, CAD 호출 1(running). 동작 상태를 바꾸지 않아 초기화할 것 없음.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신), V홈 시험 매트 없음(VGR-01 몫).
+
+근거: E-21, 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 실행 규칙 19, 결정로그 C-34.
+
+## 워크플로우 메모
+- 표시만 바뀐 재저장은 .sc(zip)의 document.json을 비교하면 앱을 열지 않고 수 초에 '형상 변화 0'을 판정할 수 있었다.
+
+---
+
+# 준비 점검 — FSAP_v2.8.2 세 번째 확인 (2026-11-09 저녁, 엔진 v3.9.3, 미스미 재로그인·앱 재시작 뒤 재실행)
+
+요약
+- 판정: **ready=true**(12:40 MCP 점검 결과 `tools/out/prep282/`를 그대로 씀, E-21 원문 "다시 부르면 이전 결과 파일부터 읽고 남은 것만").
+- 대상 `3D_Modeling/FSAP_v2.8.2.sc`(tools/config.json doc, 저장 11-09 11:30). 지시문의 "v2.6.5"보다 config가 최신이라 config를 따랐다.
+- 12:40 뒤 바뀐 것 없음: 설계 파일 11:30, `tools/machine.json` 11:31, 요구서 11:41, 자료대기 11:17. 새 버전 .sc 없음(뒤 커밋 14:55~14:56은 보고·회고·실행 기록뿐).
+- 유지되는 결과: 조인트 372, 고정부 2, floating 0, 움직이는 조인트 29 = machine.json. 연구 8개(REST 대기 포즈 step 0, CYCLE_S·L·G1·G2, MAINT_HEAD, SEAM_U7, MAINT_U7) step 0 conflicts 0. states 26이 0-3 각 단계와 THICK_6·THICK_16에 대응. C-34대로 높이 조정은 J_U7_HGT 하나(J_U6_HGT 0, 어긋난 자세는 회귀 자세에서 뺌).
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G 좁은 홈(요구서 0-2 양 끝), 떨어지는 조각 없음(D-07).
+- 앱: 다시 켜져 있음, `running` 빈 목록. 바뀐 것이 없어 열지 않음 — open·편집·저장 0, CAD 호출 1(running). 동작 상태는 앱이 빈 상태라 초기화할 것 없음.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError, 다시 확인함).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+근거: E-21, 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 결정로그 C-34.
+
+---
+
+# 준비 점검 — FSAP_v2.8.2 다시 확인 (2026-11-09 오후, 엔진 v3.9.3, STEPWAIT·REG-01 뒤 재실행)
+
+요약
+- 판정: **ready=true**(같은 날 12:40 MCP 점검 결과 `tools/out/prep282/`를 그대로 씀, E-21 원문 "다시 부르면 이전 결과 파일부터 읽고 남은 것만").
+- 대상 `3D_Modeling/FSAP_v2.8.2.sc`(tools/config.json doc, 저장 11-09 11:30). 지시문의 "v2.6.5"보다 config가 최신이라 config를 따랐다.
+- 앞 점검(12:40) 뒤 바뀐 것 없음: 설계 파일 11:30, `tools/machine.json` 11:31, 요구서 11:41, 자료대기 11:17 — 모두 앞 점검보다 이르다. 새 버전 .sc 없음(최근 커밋은 보고·회고 기록뿐).
+- 유지되는 앞 점검 결과: 조인트 372, 고정부 2, floating 0, 움직이는 조인트 29(= machine.json). 연구 8개(REST 대기 포즈 step 0, CYCLE_S·L·G1·G2, MAINT_HEAD, SEAM_U7, MAINT_U7) step 0 conflicts 0. states 26이 0-3 각 단계와 THICK_6·THICK_16에 대응. C-34대로 높이 조정은 J_U7_HGT 하나(J_U6_HGT 0, 어긋난 자세는 회귀 자세에서 뺌).
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G 좁은 홈(요구서 0-2 양 끝), 떨어지는 조각 없음(D-07).
+- 앱: 사용자 "솔리드크래프트 꺼져있어", `running` 빈 목록. open·편집·저장 0, CAD 호출 1(running).
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError, 다시 확인함).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+근거: E-21, 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 결정로그 C-34.
+
+---
+
+# 준비 점검 — FSAP_v2.8.2 (2026-11-09, 엔진 v3.9.3, MOT-01·FUNC-01·COLOR-01 뒤)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.8.2.sc`(tools/config.json doc, 저장 11-09 11:30). 지시문의 "v2.6.5"보다 config가 최신이라 config를 따랐다.
+- 통로: MCP(혼자 도는 읽기 부서, 실행 규칙 2). `running` 빈 목록 → `open` 한 번(피처 2303, 오류 0, 이름 FSAP_v2.8.2) → `motion.list` → 연구 7개 `motion.play step 0` → 마지막 `REST` step 0(원복) → `joint.list`. 편집·저장 0. 결과 `tools/out/prep282/`(motion_list.txt, studies_play.txt, joint_list.txt).
+- 앞 점검(v2.6.8) 뒤 바뀐 것: FUNC-01이 새 조인트 **J_U5_FLOAT**(슬라이더 Z 0~20, U5_LIFT→U5_FLOAT)를 넣고 연구 8·states 26의 J_U5_LIFT 값을 (−10, FLOAT v+10)으로 바꿨다(machine.json _history). 그래서 이전 결과를 쓰지 않고 다시 쟀다(E-21).
+- 조인트: 372개(rigid 343, slider 20, revolute 9), 고정부 2(occ 0·2), **floating 0**, errors 0, conflicts 0. 움직이는 조인트 29 = machine.json joints 29(빠짐·남음 0). **J_U6_HGT 0** → C-34대로 높이 조정은 J_U7_HGT 하나.
+- 동작 연구 8: REST 1·CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630·MAINT_HEAD 1·SEAM_U7 32·MAINT_U7 13단계. 모두 step 0 재생 conflicts 0, unmoved 0, stopped_by_contact 없음(호출당 0.1~1.0 s).
+- machine.json: doc = v2.8.2, units 13, studies 8, states 26(0-3 사이클: 로딩·바퀴 내림·직선·볼록 45°/90°·홈 입구/안 벽/바닥 오목·이음매·배출, 정비 2, THICK_6·THICK_16), path_parts 6, temp_values 11.
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G 좁은 홈(조인트 J_WP_L/S/G_X·Y·ROT 있음, 요구서 0-2 양 끝). 떨어지는 조각 없음(D-07). 요구서는 앞 점검 뒤 5절 FUNC-01·COLOR-01 행만 바뀜 → 0-2·0-3·6-4 대응 판정 그대로.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신). `edit.checkpoint`(129)는 연구 재생 뒤 '이미 버려짐'으로 되돌리기 못 함 — 편집이 없고 REST step 0으로 대기 자세에 돌려 두어 영향 없음(저장 0).
+
+근거: E-03 동작 검사 준비, E-15 "움직임은 기계 정의의 조인트로만", E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만"(조인트가 바뀌어 다시 잼), 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 결정로그 C-34.
+
+## 워크플로우 메모
+- `edit.checkpoint` 뒤 `motion.play` 8번을 하면 체크포인트가 사라졌다("no checkpoint 129 ... only the last 16 are kept"). 읽기 부서의 원복은 REST step 0으로 충분했다.
+- `motion.list`·`motion.play`·`joint.list` 응답이 0.37~9.8 MB라 화면 한도를 넘는다. 요약만 돌려주는 인자가 있으면 좋다.
+
+---
+
 # 준비 점검 — FSAP_v2.6.8 (2026-11-09, 엔진 v3.9.3, STEPSWAP 뒤)
 
 요약
