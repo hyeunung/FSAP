@@ -102,7 +102,7 @@
 
 ## 5. 저장 확인
 - 앱: `save` 응답 5,165,442 B, 문서 이름 FSAP_v2.8.6. 저장 뒤 편집 없음(측정·export만).
-- CLI 저장 확인(`solidcraft-cli run savecheck.json --in FSAP_v2.8.6.sc --results`): 결과는 `tools/out/mech_PNEU-01/model/savecheck_out.json`(아래 6-3).
+- CLI 저장 확인(`solidcraft-cli run savecheck.json --in FSAP_v2.8.6.sc --results`, 391 s — 열기 포함): 바디 2,795, 새·바뀐 바디 61/61 있음·부피 차 0(앱 측정과 대조), 옛 관 바디 0, 바꾸지 않은 P_M08_TUBE_COMB_ML_1 부피 47,543.18 그대로. 원본 `tools/out/mech_PNEU-01/model/savecheck_out.json`.
 
 ## 6. 못 한 것
 ### 6-1. 완료 판정 대조
