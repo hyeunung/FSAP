@@ -1,0 +1,1600 @@
+{
+ "run": "mech_2026-11-10_VGR-01-PNEU-01-DC-01-STEPWAIT",
+ "status": "완료",
+ "engine": "v3.9.3",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-10",
+ "journal": "wf_e98ddca2-fc6",
+ "totals": {
+  "agents": 46,
+  "agent_sec": 44305,
+  "input": 13556626,
+  "cache_read": 392277387,
+  "output": 1766870,
+  "tools": 1862,
+  "wall_sec": 43081
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 299,
+   "agents": 3,
+   "output": 31406
+  },
+  "▸ modeling-round": {
+   "sec": 44006,
+   "agents": 43,
+   "output": 1735464
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 79,
+   "tokens": {
+    "input": 66999,
+    "cache_read": 54558,
+    "output": 11160
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 45,
+   "tokens": {
+    "input": 76858,
+    "cache_read": 208485,
+    "output": 5356
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 175,
+   "tokens": {
+    "input": 125745,
+    "cache_read": 1003815,
+    "output": 14890
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 85,
+   "tokens": {
+    "input": 36848,
+    "cache_read": 162849,
+    "output": 11251
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 150,
+   "tokens": {
+    "input": 94838,
+    "cache_read": 1603773,
+    "output": 7647
+   },
+   "tools": 23,
+   "turns": 20
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 71,
+   "tokens": {
+    "input": 94665,
+    "cache_read": 914648,
+    "output": 3921
+   },
+   "tools": 13,
+   "turns": 12
+  },
+  {
+   "label": "VGR-01 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 163,
+   "tokens": {
+    "input": 109858,
+    "cache_read": 1228375,
+    "output": 13672
+   },
+   "tools": 17,
+   "turns": 14
+  },
+  {
+   "label": "VGR-01 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 18,
+   "tokens": {
+    "input": 74539,
+    "cache_read": 72518,
+    "output": 1050
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "VGR-01 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 245,
+   "tokens": {
+    "input": 133683,
+    "cache_read": 2414417,
+    "output": 21454
+   },
+   "tools": 25,
+   "turns": 22
+  },
+  {
+   "label": "VGR-01 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 205,
+   "tokens": {
+    "input": 115570,
+    "cache_read": 855581,
+    "output": 17494
+   },
+   "tools": 10,
+   "turns": 10
+  },
+  {
+   "label": "VGR-01 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 279,
+   "tokens": {
+    "input": 95091,
+    "cache_read": 1816412,
+    "output": 25147
+   },
+   "tools": 20,
+   "turns": 17
+  },
+  {
+   "label": "VGR-01 기구설계부 수정2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 373,
+   "tokens": {
+    "input": 98261,
+    "cache_read": 2630182,
+    "output": 30924
+   },
+   "tools": 23,
+   "turns": 23
+  },
+  {
+   "label": "VGR-01 완료 판정 확인 2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 133,
+   "tokens": {
+    "input": 104287,
+    "cache_read": 803857,
+    "output": 9383
+   },
+   "tools": 10,
+   "turns": 10
+  },
+  {
+   "label": "VGR-01 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1457,
+   "tokens": {
+    "input": 438321,
+    "cache_read": 28063945,
+    "output": 144006
+   },
+   "tools": 116,
+   "turns": 98
+  },
+  {
+   "label": "VGR-01 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2595,
+   "tokens": {
+    "input": 753139,
+    "cache_read": 10439601,
+    "output": 53714
+   },
+   "tools": 74,
+   "turns": 73
+  },
+  {
+   "label": "VGR-01 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 349,
+   "tokens": {
+    "input": 97808,
+    "cache_read": 2356936,
+    "output": 28477
+   },
+   "tools": 22,
+   "turns": 22
+  },
+  {
+   "label": "VGR-01 모델링부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 928,
+   "tokens": {
+    "input": 284612,
+    "cache_read": 4148380,
+    "output": 25955
+   },
+   "tools": 42,
+   "turns": 36
+  },
+  {
+   "label": "VGR-01 검도·체결 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 158,
+   "tokens": {
+    "input": 103497,
+    "cache_read": 1401353,
+    "output": 8714
+   },
+   "tools": 19,
+   "turns": 16
+  },
+  {
+   "label": "VGR-01 해석 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 135,
+   "tokens": {
+    "input": 78583,
+    "cache_read": 1236797,
+    "output": 10635
+   },
+   "tools": 19,
+   "turns": 13
+  },
+  {
+   "label": "VGR-01 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 70,
+   "tokens": {
+    "input": 90631,
+    "cache_read": 506448,
+    "output": 4040
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "PNEU-01 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2854,
+   "tokens": {
+    "input": 436207,
+    "cache_read": 17549306,
+    "output": 50133
+   },
+   "tools": 110,
+   "turns": 94
+  },
+  {
+   "label": "PNEU-01 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 39,
+   "tokens": {
+    "input": 76563,
+    "cache_read": 146057,
+    "output": 3316
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "PNEU-01 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2132,
+   "tokens": {
+    "input": 603940,
+    "cache_read": 9201357,
+    "output": 195208
+   },
+   "tools": 49,
+   "turns": 42
+  },
+  {
+   "label": "PNEU-01 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 669,
+   "tokens": {
+    "input": 179797,
+    "cache_read": 2331155,
+    "output": 58463
+   },
+   "tools": 19,
+   "turns": 19
+  },
+  {
+   "label": "PNEU-01 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 600,
+   "tokens": {
+    "input": 165754,
+    "cache_read": 3859933,
+    "output": 52312
+   },
+   "tools": 36,
+   "turns": 30
+  },
+  {
+   "label": "PNEU-01 완료 판정 확인 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 279,
+   "tokens": {
+    "input": 131571,
+    "cache_read": 1811960,
+    "output": 24167
+   },
+   "tools": 18,
+   "turns": 18
+  },
+  {
+   "label": "PNEU-01 기구설계부 수정2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 195,
+   "tokens": {
+    "input": 110961,
+    "cache_read": 1060419,
+    "output": 19113
+   },
+   "tools": 19,
+   "turns": 12
+  },
+  {
+   "label": "PNEU-01 완료 판정 확인 2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 130,
+   "tokens": {
+    "input": 59199,
+    "cache_read": 657749,
+    "output": 10312
+   },
+   "tools": 9,
+   "turns": 8
+  },
+  {
+   "label": "PNEU-01 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 82,
+   "tokens": {
+    "input": 93830,
+    "cache_read": 1024525,
+    "output": 3481
+   },
+   "tools": 17,
+   "turns": 13
+  },
+  {
+   "label": "PNEU-01 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3032,
+   "tokens": {
+    "input": 991188,
+    "cache_read": 27569515,
+    "output": 150241
+   },
+   "tools": 98,
+   "turns": 86
+  },
+  {
+   "label": "PNEU-01 모델링부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 6297,
+   "tokens": {
+    "input": 2468615,
+    "cache_read": 170787750,
+    "output": 219545
+   },
+   "tools": 375,
+   "turns": 372
+  },
+  {
+   "label": "PNEU-01 검도·체결 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3354,
+   "tokens": {
+    "input": 423605,
+    "cache_read": 18821293,
+    "output": 72644
+   },
+   "tools": 119,
+   "turns": 106
+  },
+  {
+   "label": "PNEU-01 해석 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 434,
+   "tokens": {
+    "input": 144293,
+    "cache_read": 2351600,
+    "output": 36463
+   },
+   "tools": 25,
+   "turns": 22
+  },
+  {
+   "label": "PNEU-01 예외 판정",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 785,
+   "tokens": {
+    "input": 271673,
+    "cache_read": 1851220,
+    "output": 23676
+   },
+   "tools": 22,
+   "turns": 19
+  },
+  {
+   "label": "PNEU-01 모델링부 수정2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3819,
+   "tokens": {
+    "input": 1086009,
+    "cache_read": 34220210,
+    "output": 143846
+   },
+   "tools": 159,
+   "turns": 131
+  },
+  {
+   "label": "PNEU-01 검도·체결 2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1386,
+   "tokens": {
+    "input": 211857,
+    "cache_read": 8613089,
+    "output": 46025
+   },
+   "tools": 63,
+   "turns": 60
+  },
+  {
+   "label": "PNEU-01 해석 2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 268,
+   "tokens": {
+    "input": 128106,
+    "cache_read": 2146501,
+    "output": 22544
+   },
+   "tools": 28,
+   "turns": 22
+  },
+  {
+   "label": "PNEU-01 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 104,
+   "tokens": {
+    "input": 117894,
+    "cache_read": 821108,
+    "output": 9303
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "DC-01 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2206,
+   "tokens": {
+    "input": 532491,
+    "cache_read": 9118308,
+    "output": 44110
+   },
+   "tools": 71,
+   "turns": 65
+  },
+  {
+   "label": "DC-01 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 497,
+   "tokens": {
+    "input": 111357,
+    "cache_read": 1441281,
+    "output": 9703
+   },
+   "tools": 22,
+   "turns": 16
+  },
+  {
+   "label": "DC-01 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 83466,
+    "cache_read": 391791,
+    "output": 4519
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 6603,
+   "tokens": {
+    "input": 1607381,
+    "cache_read": 8467268,
+    "output": 47287
+   },
+   "tools": 63,
+   "turns": 63
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 483,
+   "tokens": {
+    "input": 183862,
+    "cache_read": 4592052,
+    "output": 40680
+   },
+   "tools": 39,
+   "turns": 36
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 77,
+   "tokens": {
+    "input": 105484,
+    "cache_read": 486744,
+    "output": 7686
+   },
+   "tools": 5,
+   "turns": 6
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 83,
+   "tokens": {
+    "input": 98519,
+    "cache_read": 908125,
+    "output": 6811
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 110,
+   "tokens": {
+    "input": 59171,
+    "cache_read": 124141,
+    "output": 16392
+   },
+   "tools": 5,
+   "turns": 2
+  }
+ ],
+ "fix_agents": [
+  "VGR-01 기구설계부 수정1",
+  "VGR-01 기구설계부 수정2",
+  "VGR-01 모델링부 수정1",
+  "PNEU-01 기구설계부 수정1",
+  "PNEU-01 기구설계부 수정2",
+  "PNEU-01 모델링부 수정1",
+  "PNEU-01 모델링부 수정2"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "VGR-01",
+    "size": "L",
+    "status": "완료",
+    "chosen": "VGR-01-S1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.8.5.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "PNEU-01",
+    "size": "L",
+    "status": "모델 반영·문제 남음",
+    "chosen": "PNEU-01-S1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.8.8.sc",
+    "empty_save": false,
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "관 굽힘(5.91°, R30)이 빗 상자 안에서 시작해 관이 구멍 벽과 겹친다(수정 1 그대로인 고정품, 검도 1회차가 경계로 남긴 쌍)",
+      "where": "P_M08_TUBE_COMB_U5_2 (X -1253~-1237) / TU0604_M08P_U5_A, 구멍 base (-1235.5,190,661) 축 -X h19 r3.25, 관 꼭짓점 (-1240,190,661)",
+      "evidence": "기하 정밀 계산 tools/out/mech_PNEU-01/verify2/fine2.json: 깊이 0.06 mm, 닿는 점 85. 원호 X -1238.4~-1241.6이 상자 안이고, +X 면에서 중심선이 구멍 축보다 약 0.31 떠서 구멍 벽 틈 0.25를 넘는다",
+      "fix": "그 구멍만 r 3.25 → 3.5(Ø7.0, base·h 그대로, 이웃 구멍과 중심 간격 14.4). 또는 U5_A 꼭짓점을 (-1234,190,661)로 옮겨 원호를 상자 밖(X ≥ -1235.6)에 둔다",
+      "external": false
+     },
+     {
+      "kind": "동작",
+      "what": "관 90° 굽힘(R30) 원호가 판 안 Z 400~404에서 시작해 관이 구멍 벽과 겹친다(수정 1 그대로인 고정품)",
+      "where": "P_M08_RISER_COMB_1 판 Z 396~404 / TU0604_M08P_U4_B, 구멍 (1049.75,53) 축 Z base Z394.5 h11 r3.25, 관 꼭짓점 Z 430",
+      "evidence": "verify2/fine2.json: 깊이 0.03 mm, 닿는 점 34(Z 403.68, 구멍 축 t 9.18)",
+      "fix": "그 구멍만 r 3.25 → 3.5(Ø7.0, 이웃 (1060.25,63)과 14.5). 또는 U4_B 꼭짓점 Z 430 → 435(원호 시작 Z 405, 판 윗면 404와 1 mm). 이 경우 관 길이 +10이고 이웃 관 틈을 다시 본다",
+      "external": false
+     }
+    ],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "B 관과 A 관이 1.45 mm로 가깝다(겹침 아님)",
+      "where": "TU0604_M08P_U7_4_B ↔ U7_4_A (-33.3,-52.7,773.5), 5_B 1.86, 6_B 2.23",
+      "evidence": "verify2/geo2.json tube_tube",
+      "fix": "다음에 손볼 때 B 꺾임 Z 781 → 779(틈 약 2.5)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "BOM 관 행 메모에 '굽힘 R 부족 — 디테일 M08-X5'가 남아 있으나 지금 최소 R은 TU0604 16, TU0805 40이다",
+      "where": "docs/bom/FSAP_v2.8.8_purchased.csv TU0604·TU0805 행",
+      "evidence": "tubelog 최소 R TU0604 16 ≥ 15, TU0805 40 ≥ 20",
+      "fix": "메모를 '최소 R 16 ≥ 15 / 40 ≥ 20'으로 고친다",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "옮긴 볼트 4 ↔ 보의 CAD 겹침 판정이 커널 실패로 안 된다",
+      "where": "CB5-16_M08_PY:18·19·46·47 ↔ P_M07_BEAM",
+      "evidence": "inspect.clearance unchecked 4건: boolean Intersect 'no result'. 탭은 생성기 stage_Z_taps.json에서 확인(r 2.1, 깊이 10·12)",
+      "fix": "라운드 끝 회귀에서 다시 보고, 안 되면 탭 축 ↔ 볼트 축 거리로 판정한다. 메움 원기둥이 각관 안으로 약 2.8 나온 것도 같이 본다",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "COMB_ML_1~4는 생성 명령 파일이 없어 관–구멍 기하 재검에서 빠졌다(수정 1·2에서 바뀌지 않음)",
+      "where": "P_M08_TUBE_COMB_ML_1~4 (X 250·650·-350·-950)",
+      "evidence": "verify2/geo2.py 'missing in gen'. ML_1 body_topology 구멍 축 -X r3.3",
+      "fix": "라운드 끝 회귀(regrun)에 관 ↔ ML_1~4를 넣는다",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "세움 띠 오조작 강도가 기준(M-09 오조작 SF 2)에 못 미친다",
+      "where": "P_M08_TUBE_BRKT_CST_V 띠 t4 폭 30(X58~62, Y-159~-129), 카세트 판 윗끝 Z328 위로 외팔 208(하중점 윗판 윗면 Z536)",
+      "evidence": "관 1줄 손 당김 50 N +X: σ 130 MPa, SF 1.50(handcalc.beam sf 1.50, needs_fea false), 항복이 시작되는 힘 75 N, 운전 SF 10.3. fea/results/mech_PNEU-01_fea2_handcalc.json",
+      "fix": "t5(SF 2.34) 또는 t6(SF 3.38). 아니면 t4에 +X쪽 굽힘 날개 10을 붙여 L 단면으로(판금 기능으로 다시 그리면 verify1 D3도 풀림). 폭 30은 이웃 볼트 때문에 그대로 둔다"
+     }
+    ],
+    "exception_requests": [
+     {
+      "rule": "수정 1 지시서 P_M08_TUBE_BRKT_CST_O '판금 굽힘 1'(M-04 판금)",
+      "where": "P_M08_TUBE_BRKT_CST_O",
+      "why": "지시 외곽대로면 붙임판(X 58~64, YZ면) → 팔 웹(Y −212~−206, XZ면) → YZ판(X 82~88)으로 면 방향이 두 번 바뀐다. 기하적으로 굽힘이 2번이고, 1번으로는 카세트 판 +X 면에 볼트로 붙일 수 없다",
+      "proposal": "굽힘 2(같은 쪽 90° 2번, 판금 t6 SPCC)를 인정한다. 아니면 만드는 법을 밀링 블록으로 바꾼다. 디테일 판금성 표에서 정한다"
+     },
+     {
+      "rule": "수정 1 지시서 CST_O 구멍 bbox ±0.5",
+      "where": "P_M08_TUBE_BRKT_CST_O 구멍 CUT_B·TUCK_A·TUCK_B",
+      "why": "지시대로 Ø6.5 원기둥을 관 축 따라 cut하면 자국 bbox가 지시 bbox와 0.5~0.8 mm 다르다. 지시 bbox는 관 OD 6(r 3.0) 자국 값으로 보인다. 구멍 중심은 지시와 0.2 mm 안에서 맞는다",
+      "proposal": "판정 기준을 'Ø6.5 구멍 중심 ±0.5'로 고치거나, bbox를 r 3.25 값(CUT_B Y −258.4~−230.7 등, 보고서 v2.8.6 4-2절)으로 고친다"
+     },
+     {
+      "rule": "설계안 수정 1 BOM: 쪼갠 뚜껑 클램프 15개 × CB5-20 30개",
+      "where": "P_M08_TUBE_CLAMP_F·L·SO·CAR",
+      "why": "관을 끼우는 통구멍 블록과 CB5-16만으로도 고정과 간격 ≤ 300을 같게 지킨다. 뚜껑 15부품과 CB5-20 30개가 빠진다(U-06·U-12)",
+      "proposal": "통구멍 블록 + CB5-16 2개씩으로 확정한다. 정비 때 관을 빼려면 이음을 풀어야 하므로, 쪼갠 뚜껑이 필요한지는 사용자 결정"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "수정 2 지시서 P_M08_TUBE_BRKT_CST_O '팔 + YZ판 굽힘 1' (L2 M-04 판금)",
+      "where": "P_M08_TUBE_BRKT_CST_O (v2.8.7, X 58~88 · Y −266~−185 · Z 92~216)",
+      "decision": "승인",
+      "reason": "범위를 좁힌 승인이다. '굽힘 1'은 규칙이 아니라 지시서에 적힌 말이다. 카세트 판 +X 면(YZ)에 붙는 판과 X 85의 YZ판이 평행이라 기하적으로 굽힘이 2번 있어야 한다. L2 M-04에는 굽힘 수 제한이 없지만 예외 조항도 없다. 원문은 \"위 표를 못 지키면 결함이다. 해법: 굽힘을 줄이거나 부품을 둘로 나눔 … 출력·가공으로 바꿈(M-13 비교, L3 U-05)\"이다. 판금으로 보면 세 항목이 미달이다. 판 안쪽 사이 18 < '굽힘 사이 ≥ 4t' 24, 구멍–판 끝 3.8 < 1.5t 9, 구멍 사이 6.24 < 2t 12. 판금 기능 바디도 아니다(검도 D3). 워크플로우 범위는 \"판금 규칙은 디테일로 기록만 하고 수정 회차를 쓰지 않는다\"(E-02)이다. 그래서 이미 그려진 형상(measure_new.json 단일 바디, 부피 58,244.26)을 이번 라운드에 그대로 두는 것만 승인한다. M-04 예외는 주지 않는다. E-14 형상 시험으로 저장본 사본 CLI 측정을 1회 돌렸지만 470 s 안에 열리지 않아 결과가 없다. 형상이 그려질 수 있다는 근거는 저장본 v2.8.7에 실제로 있는 형상과, 저장 뒤 측정·검도 MCP 측정이다.",
+      "instruction": "CST_O 형상·재질(SPCC)·볼트 CB5-16 ×2는 그대로 둔다. 이번 수정 회차에서 고치지 않는다. BOM 만드는 법 칸에는 다음을 적는다: '잠정: 판금 SPCC t6 굽힘 2 — M-04 미달(판 사이 18 < 24, 구멍–끝 3.8 < 9, 구멍 사이 6.24 < 12, 판금 기능 바디 아님), 디테일링 M-13 4가지 비교(밀링 블록·판 둘로 나눔·얇은 판 등)로 정함'. 검도 D3·D4는 디테일로 넘긴다. 결정로그 PNEU01-E01."
+     },
+     {
+      "rule": "수정 2 지시서 CST_O 구멍 '1-1 표 자국과 ±0.5로 bbox 확인'",
+      "where": "P_M08_TUBE_BRKT_CST_O 구멍 CUT_B·TUCK_A·TUCK_B",
+      "decision": "승인",
+      "reason": "규칙의 예외가 아니라 지시서 안 두 문장이 서로 맞지 않는 문제다. 지시서는 \"OD 6.5 원기둥으로 cut\"이라 하면서 비교 기준으로는 1-1 표(관 OD 6 자국, r 3.0)를 줬다. 관은 판 법선에서 62.8~74.5° 기울어 지난다. 그래서 반지름 차 0.25가 자국에서는 0.25/cosθ ≈ 0.5~0.9로 커진다. ±0.5를 넘는 것은 기하상 당연하다. 구멍 r = 관 r + 0.25는 다른 고정품 113구멍과 같은 기준이므로 Ø6.5를 따른다. 구멍 중심은 지시값과 0.2 안이다. r 3.25일 때 판 가장자리 살은 최소 3.8로, X 85 고정이 성립한다(완료 판정 2회차 ok, 26줄 자유 구간 ≤ 300 유지). 구멍–판 끝 1.5t 미달은 M-04 문제라 E01과 함께 디테일로 넘긴다.",
+      "instruction": "형상은 그대로 둔다. CST_O 구멍 판정 기준을 다음으로 바꾼다. Ø6.5 구멍 중심이 지시 (Y, Z)와 ±0.5 안이다. 구멍 자국 bbox가 r 3.25 값과 ±0.5 안이다: CUT_A Y −230.0~−211.8 · Z 191.9~212.2, CUT_B Y −258.4~−230.7 · Z 131.9~152.3, TUCK_A Y −235.9~−210.2 · Z 126.4~152.4, TUCK_B Y −262.0~−223.1 · Z 96.4~122.4. 판 가장자리 살이 0보다 크다. 검도·완료 판정도 이 기준으로 본다. 결정로그 PNEU01-E02."
+     },
+     {
+      "rule": "설계안 수정 1 BOM: 쪼갠 뚜껑 클램프 15개 × CB5-20 30개 (L2 M-02·M-12, L3 U-06, 요구서 5절 PNEU-01 ③)",
+      "where": "P_M08_TUBE_CLAMP_F·L·SO·CAR 및 빗·브래킷 통구멍 블록 전체",
+      "decision": "승인",
+      "reason": "조건을 붙인 승인이다. 사용자 결정으로 올리지 않는다. 구조 변경도, 큰 돈이 드는 선택도 아니고(부품 15개·볼트 30개가 줄어 돈이 준다) 규칙으로 정해지기 때문이다(E-01). M-02 원문은 \"한 부품을 정비하려고 관계없는 부품을 떼야 하면 결함\"이다. 통구멍 블록에서 관을 바꿀 때 푸는 것은 그 관 양 끝의 원터치 이음뿐이다. 이음은 관을 바꿀 때 원래 빼는 것이라 '관계없는 부품'이 아니다. 그래서 M-02는 충족한다. U-06 원문은 \"부품 수가 적고 조립·정렬이 쉬운 쪽\"이고, 통구멍 블록이 이 쪽이다. 다만 M-12 '끼우는 길'(\"부품마다 최종 자리까지 곧게 들어오는 방향이 하나 이상\")을 지켜야 한다. 관은 굽은 채로 곧은 구멍을 지나지 못한다. 그래서 블록 두께 전 구간에서 관이 곧은 구간이어야 한다. 지금 어긴 자리가 있다(verify1_hole.json에서 틈이 음수): COMB_KDM(두께 84, 꺾임 41.2° → −37.5), COMB_KDM_ARM −2.6~−4.7, CLAMP_SO_1 −2.6, CST_V_U·L −1.0·−0.9, CLAMP_F_5 깊이 1.7.",
+      "instruction": "BOM에서 쪼갠 뚜껑 15개와 CB5-20 30개를 빼고 통구멍 블록 + CB5-16 2개씩으로 확정한다(PNEU-01-M1 확정). 블록마다 지킬 조건이 있다. 블록 두께 전 구간에서 관이 곧은 구간(접선 원호 밖)이고, 구멍 축이 관 축과 같고, 벽 틈이 0.25 이상이다. 틈이 음수인 자리(COMB_KDM, COMB_KDM_ARM, CLAMP_SO_1, BRKT_CST_V_U·L, CLAMP_F_5)는 다음 순서로 고친다. (가) 블록을 곧은 구간으로 옮기고 간격 ≤ 300을 다시 센다. (나) 블록 두께를 곧은 길이 안으로 줄인다. (다) 관 원호를 블록 밖으로 옮긴다. 관의 굽은 길을 따라 파는 휜 터널 구멍은 쓰지 않는다. 셋 다 안 되는 자리 하나만 쪼갠 뚜껑(CB5-16)으로 하고 이유를 결정로그에 적는다. 조립 순서(블록 조임 → 관 꿰기 → 이음 꽂기)와 정비 순서(이음 2개 빼고 관을 당겨 뺌)를 보고서에 적는다. 요구서 7절에는 통구멍에서 관이 축 방향으로 밀려 여유 고리 길이(J_U4_PRESS·J_U7_HGT·U5 승강)가 바뀌는지를 시제품 확인 항목으로 기록한다. 모델로 판정하지 않는다. 결정로그 PNEU01-E03."
+     }
+    ],
+    "step_placeholders": [
+     "TU0604",
+     "TU0805",
+     "AS2201F-01-06SA",
+     "AS2201F-01-06S",
+     "TPH-01",
+     "KQ2E08-00A",
+     "KQ2H08-01AS",
+     "AN110-01",
+     "SY30M-38-1A-C6",
+     "KQ2P-06"
+    ],
+    "external_blocks": [
+     "STEP 미수령 구매품(TU0604, TU0805, AS2201F-01-06SA, KQ2E08-00A 등)은 STEP대기_ 임시 형상 그대로"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "DC-01",
+    "size": "M",
+    "status": "모델 반영·해석 못 함",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.8.9.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "D-96·C-37의 '필요 ≤ 0.0285'는 옛 구름 팔 56 N·m 기준. c37design 구름 팔 57.99 N·m로는 정적 한계 0.0276, 가속(20 s) 포함 약 0.0215라 선정 조건 0.02의 여유가 얇음(SF 1.057)",
+      "where": "docs/waiting-list.md D-96, 결정로그 C-37 문구",
+      "evidence": "1.60/57.99 = 0.0276; (1.60-0.352)/57.99 ≈ 0.0215",
+      "fix": "D-96 괄호를 '필요 ≤ 0.0276(정적), 가속 포함 ≤ 0.0215'로 고쳐 적음(형상·시간 키 변경 없음)",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "MAINT_U7 3 8조각: 470 s 넘음, 세션 사망 / MAINT_U7 6·9·12 못 돌림",
+    "POSE 0·CYCLE_V 20: 시험 timeout 470 s",
+    "CYCLE_V 1~486, CYCLE_L 0~716, CYCLE_S 0~450, CYCLE_G1 0~514, CYCLE_G2 0~630, SEAM_U7 0~32, MAINT_HEAD 0~1: 전체 상한",
+    "X_CYCLE_L·S·G1·G2·V, X_POSE(바뀐 관·체인·고정품 대 움직이는 것): 전체 상한",
+    "POSE 0~180(9 제외): 전체 상한",
+    "F_STATES 0~34 전부: 명세에서 뺌(첫 호출 305~460 s)",
+    "MAINT_U7 1·2·4·5·7·8·10·11·13, 연구 10단계 사이 조밀 범위: 명세에서 뺌",
+    "U7 묶음 움직임 판정(dump22): 1,500 s 끊김, 이름 규칙만 씀"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 608,
+    "estimate_s": 0,
+    "actual_s": 1365,
+    "chunk_times": [
+     {
+      "id": "CYCLE_V 0",
+      "elapsed_s": 260.3,
+      "status": "ok"
+     },
+     {
+      "id": "POSE 9",
+      "elapsed_s": 257.8,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_U7.H 3 (8조각)",
+      "elapsed_s": 470,
+      "status": "timeout"
+     },
+     {
+      "id": "run2 시험 POSE 0",
+      "elapsed_s": 470.1,
+      "status": "timeout"
+     },
+     {
+      "id": "run2 시험 CYCLE_V 20",
+      "elapsed_s": 470.1,
+      "status": "timeout"
+     }
+    ],
+    "killed_calls": 10,
+    "skipped_steps": 8,
+    "trial": "run1: 연구 CYCLE_V 0 260.3 s, 자세 POSE 9 257.8 s(세션 첫 호출, 데우기 없음). run2: 데운 세션에서 POSE 0·CYCLE_V 20 모두 470 s timeout → trial_error, 어림 못 냄",
+    "per_step_s": {
+     "study": 260.3,
+     "pose": 257.8
+    },
+    "pose_steps": 200,
+    "reduced": "run1에서 MAINT_U7 3 8조각이 세션 5개를 모두 죽인 뒤 run2 명세에서 MAINT_U7 조각을 빼고 지난 못 본 자세 중 0·2·4·6·7만 앞에 둠. run2 상한은 남은 몫 905 s. 시험 timeout으로 나머지 전부 못 본 범위",
+    "seen": [
+     "CYCLE_V 0 (겹침은 MAT_V↔TAPE_V 기준선뿐)",
+     "POSE 9 (겹침 0)",
+     "저장 전후 비교 v2.8.3→v2.8.9 REST 2,969바디(엉뚱한 이동 0)"
+    ],
+    "unseen": [
+     "MAINT_U7 3 8조각: 470 s 넘음, 세션 사망 / MAINT_U7 6·9·12 못 돌림",
+     "POSE 0·CYCLE_V 20: 시험 timeout 470 s",
+     "CYCLE_V 1~486, CYCLE_L 0~716, CYCLE_S 0~450, CYCLE_G1 0~514, CYCLE_G2 0~630, SEAM_U7 0~32, MAINT_HEAD 0~1: 전체 상한",
+     "X_CYCLE_L·S·G1·G2·V, X_POSE(바뀐 관·체인·고정품 대 움직이는 것): 전체 상한",
+     "POSE 0~180(9 제외): 전체 상한",
+     "F_STATES 0~34 전부: 명세에서 뺌(첫 호출 305~460 s)",
+     "MAINT_U7 1·2·4·5·7·8·10·11·13, 연구 10단계 사이 조밀 범위: 명세에서 뺌",
+     "U7 묶음 움직임 판정(dump22): 1,500 s 끊김, 이름 규칙만 씀"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 135,
+     "cad_calls": 8,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 10,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 4,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "VGR-01 측정부",
+    "phase": "VGR-01 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 2,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "VGR-01 카탈로그부",
+    "phase": "VGR-01 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "mcp_restarts": [],
+     "open_s": 0
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "VGR-01 기구설계부",
+    "phase": "VGR-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 260,
+     "cad_calls": 3,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "VGR-01 완료 판정 확인",
+    "phase": "VGR-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 184,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "VGR-01 기구설계부 수정1",
+    "phase": "VGR-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 230,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "VGR-01 기구설계부 수정2",
+    "phase": "VGR-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 480,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "VGR-01 완료 판정 확인 2",
+    "phase": "VGR-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "VGR-01 모델링부",
+    "phase": "VGR-01 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1440,
+     "cad_calls": 34,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 264,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "VGR-01 해석",
+    "phase": "VGR-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 330,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "VGR-01 검도·체결",
+    "phase": "VGR-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 2519,
+     "cad_calls": 36,
+     "file_opens": 22,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [
+      "이 연결 engine.batch(7단계: J_U5_FLOAT·J_U7_LATCH·J_U7_CST_X·J_U7_CST_Y drive + clearance) running_s 305.6 s에서 앱 무응답 → 약 5분 기다린 뒤 solidcraft 앱만 강제 종료·--control 27878 재시작, v2.8.4 다시 open. 버린 것: 저장 안 한 포즈 변경뿐(편집 없음)"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "VGR-01 모델링부 수정1",
+    "phase": "VGR-01 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 8,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 328,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "VGR-01 해석 1",
+    "phase": "VGR-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 160,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "VGR-01 검도·체결 1",
+    "phase": "VGR-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 143,
+     "cad_calls": 4,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "VGR-01 문서·커밋",
+    "phase": "VGR-01 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 카탈로그부",
+    "phase": "PNEU-01 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 측정부",
+    "phase": "PNEU-01 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 2832,
+     "cad_calls": 17,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 283,
+     "mcp_restarts": [
+      "Blocking request: this session's own engine.batch (20 steps, joint.drive ×8 + measure; connection 9, running_s 681 or more) and a resent 6-step batch (J_U7_HGT drive ×3; connection 12, about 15 min). The MCP response timed out each time and no result came back. The checkpoint was lost, and one undo took 235.8 s. Waited about 22 min in total. At 03:11:39 I killed only the solidcraft app process and restarted it with --control 27878. Discarded: only this department's pose (joint value) changes, no geometry edits. Reopened v2.8.5: dirty false, undo 0. Open took 283 s, over the model-weight limit of 240 s."
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 기구설계부",
+    "phase": "PNEU-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 2100,
+     "cad_calls": 6,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 완료 판정 확인",
+    "phase": "PNEU-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 700,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 기구설계부 수정1",
+    "phase": "PNEU-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 494,
+     "cad_calls": 4,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 완료 판정 확인 1",
+    "phase": "PNEU-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 260,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 기구설계부 수정2",
+    "phase": "PNEU-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 180,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 완료 판정 확인 2",
+    "phase": "PNEU-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 구매부 STEP",
+    "phase": "PNEU-01 · 구매품",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 5,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 모델링부",
+    "phase": "PNEU-01 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 10800,
+     "cad_calls": 28,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 391,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 모델링부 수정1",
+    "phase": "PNEU-01 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 6300,
+     "cad_calls": 33,
+     "file_opens": 5,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 660,
+     "mcp_restarts": [
+      "이 연결의 engine.batch(J_U7_HGT clearance 6단계, BRKT_KDM·CST_V·CST_O × 27)가 running_s 1,600 넘게 끝나지 않음(앱 11.9 GB). 약 27분 기다림. 그동안 CLI로 edit.json을 v2.8.6에 다시 돌려 replay_partial.sc를 만듦(14분 19초, 오류 0). 그 뒤 앱만 Stop-Process로 끄고 --control 27878로 다시 켬. 버린 것은 멈춘 세션의 저장 안 된 편집(replay 파일로 같은 형상 복구). replay_partial.sc를 다시 열어(약 660 s) v2.8.7로 저장"
+     ],
+     "over_reason": "예상(L 모델링 180분) 안이지만 지시 시간 예산 120분은 약 105분으로 넘었다. 원인: 앱 멈춤 27분, 재시작 뒤 열기 11분, 보에 탭을 내는 묶음 10분, CLI 검사 17분(결과 없이 멈춤)."
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 해석 1",
+    "phase": "PNEU-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 410,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 검도·체결 1",
+    "phase": "PNEU-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 3350,
+     "cad_calls": 22,
+     "file_opens": 7,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 700,
+     "mcp_restarts": [
+      "이 연결(16)의 batch(J_U7_HGT drive + 관 measure, 10단계)가 running_s 1,188에서도 끝나지 않았다. 약 15분 기다린 뒤 07:44에 앱만 재시작했다(Stop-Process solidcraft, --control 27878, solidcraft-cli는 건드리지 않음). 버린 것은 저장하지 않은 조인트 자세뿐이고 형상 편집은 없었다. v2.8.7을 다시 열었고(약 700 s) REST step 0으로 돌렸다"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 예외 판정",
+    "phase": "PNEU-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 740,
+     "cad_calls": 1,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 470,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 모델링부 수정2",
+    "phase": "PNEU-01 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 3800,
+     "cad_calls": 38,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 909,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 해석 2",
+    "phase": "PNEU-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 검도·체결 2",
+    "phase": "PNEU-01 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1360,
+     "cad_calls": 9,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 1,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "PNEU-01 문서·커밋",
+    "phase": "PNEU-01 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "DC-01 모델링부",
+    "phase": "DC-01 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2183,
+     "cad_calls": 15,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 969,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "DC-01 검도·체결",
+    "phase": "DC-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 520,
+     "cad_calls": 5,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 10,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "DC-01 문서·커밋",
+    "phase": "DC-01 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 6525,
+     "cad_calls": 14,
+     "file_opens": 16,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 1575,
+     "mcp_restarts": [],
+     "over_reason": "회귀 예상 L 90분 안(109분, 2배 안). 세션 열기가 1,145~2,470 s로 v2.8.3(606~699 s)보다 2~4배 길었고, 세션 5개 사망 뒤 대체 세션 열기에 20분 씀"
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 465,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "VGR-01 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 WP_V_X, WP_V_Y, WP_MAT_V, WP_TAPE_V이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "VGR-01 검도·체결",
+    "what": "설계 파일을 22번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "PNEU-01 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 TU0604_M08P_U4_A, TU0604_M08P_U6_L, TU0604_M08P_U7_4_A_L, TU0604_M08P_U7_4_B_L, TU0604_M08P_U7_5_A_L, TU0604_M08P_U7_5_B_L, TU0604_M08P_U7_6_A_L, TU0604_M08P_U7_6_B_L, TU0805_M08P_MAIN_2, TU0805_M08P_MAIN_3, TU0805_M08P_P, STEP대기_SY30M-38-1A-C6_1, STEP대기_SY30M-38-1A-C6_3, STEP대기_KQ2T08-00A_1, STEP대기_KQ2T08-00A_2, STEP대기_KQ2E08-00A_1, P_M08_AIR_IN_BRKT, STEP대기_KQ2H08-01AS_1, STEP대기_AN110-01_1, STEP대기_AN110-01_2, STEP대기_TPH-01_1, STEP대기_TPH-01_2, STEP대기_TPH-01_3, STEP대기_M-5P_1, STEP대기_KQ2P-06_1, STEP대기_KQ2P-06_2, STEP대기_KQ2P-06_3, STEP대기_KQ2P-06_4, STEP대기_KQ2P-06_5, STEP대기_KQ2P-06_6, STEP대기_KQ2P-06_7, STEP대기_KQ2P-06_8, P_M08_TUBE_BRKT_CST_O, KQ2L06-01AS_M08R_OUT_1, KQ2L06-01AS_M08R_OUT_3, TU0604_M08S_U4_A, KQ2L08-01AS_M08R_PX이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "PNEU-01 검도·체결 1",
+    "what": "설계 파일을 7번 엶(부서마다 한 번, E-04)"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-213",
+   "WF-214",
+   "WF-215"
+  ],
+  "repeat_ids": [
+   "WF-172",
+   "WF-184",
+   "WF-201",
+   "WF-205",
+   "WF-209",
+   "WF-210"
+  ],
+  "one_line": "회고를 마쳤다. 새 개선후보 3건(WF-213 큰 배관 과제 나누기, WF-214 비스듬한 구멍을 bbox로 판정하는 문제, WF-215 검도가 설계 파일을 여러 번 다시 여는 문제)을 넣었고, 기존 6건은 반복 수를 올렸다. 기록 파일은 C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/docs/reports/engine-candidates.md 이다. 최종 보고서 끝에는 '## 워크플로우 개선 후보' 절을 붙였다. 커밋 957b486은 했고 푸시는 하지 않았다. 고친 엔진 파일은 없다. 최종 보고서에는 '## 워크플로우 메모' 절이 없어서 각 회차 보고서의 메모를 근거로 썼다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 46,
+  "시간 h": 12.3,
+  "출력 토큰": 1766870,
+  "실패": 0
+ }
+}
