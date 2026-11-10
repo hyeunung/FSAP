@@ -8,6 +8,7 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.8.13 DC-04: 회전(피벗) 중 노루발 봉제 높이·낮은 누름(C-39). 동작 연구 CYCLE_L·S·G1·G2·V의 J_U3_PRESSER 키(회전 중 0, 들림 20은 로딩·배출만), machine.json states 13개·_timing 9곳(노루발 끌림 T_f 0.096 N·m 포함, 최저 SF 1.009, F4 ≤ 15.9 N, 바늘 옆힘 ≤ 9.8 N). 형상·조인트·구매품 변화 없음. 회전 자세 7점 겹침 0. 결정로그 DC-04-M01~M05, 보고서 docs/reports/mechanism/mech_DC-04_model.md
 - v2.8.12 PNEU-01R 수정 1회차: 체인 고정 끝 임시 형상 STEP대기_2400.05.12PZ_F의 관 통로 (Y 250, Z 661) 축 X만 r 3.25 → 3.75(Ø7.5). 검도 문제 12PZ_F ↔ TU0604_M08P_U5_A 3.648 mm³ → 0(최소 0.217 mm). 부피 −87.96 mm³, 이웃 통로 살 5.0. 관·조인트·볼트 변화 없음. 결정로그 PNEU-01-M15, 보고서 docs/reports/mechanism/mech_PNEU-01R_model1.md
 - v2.8.11 PNEU-01R: 공압 관–구멍 벽 겹침 2쌍 해소 — P_M08_TUBE_COMB_U5_2 구멍 (−1235.5, 190, 661) 축 −X, P_M08_RISER_COMB_1 구멍 (1049.75, 53) 축 Z만 r 3.25 → 3.5(Ø7.0, 높이 그대로). 부피 −84.8·−42.4 mm³, 관 ↔ 빗 최소 0.370·0.109 mm, 겹침 0, 이웃 구멍 살 7.67·7.75. 관 경로·조인트 변화 없음. 결정로그 PNEU-01-M13·M14, 보고서 docs/reports/mechanism/mech_PNEU-01R_model.md
 - v2.8.10 LITE: 모델 무게 줄이기(형상 변경 0). P_M07_BEAM 탭 37 + Cylinder989를 Box16 바로 뒤 스케치 3장 extrude cut으로, 필렛 띠 탭 4는 끝 Combine 하나로, 앞판 X 구멍 메움·다시 뚫기 16개 지우고 옛 cut r 2.1로(timeline.delete 63). CLI 열기 844.4 → 396.9 s(−53 %, 상한 240 s 미달 — 남은 무게 디테일). lite_check 바디 2,969·BOM 179행/2,616·모델 bbox 차 0, 보 부피 −2.6 mm³. 앱 문서 dirty라 CLI로 저장. 보고서 docs/reports/mechanism/mech_LITE_model.md

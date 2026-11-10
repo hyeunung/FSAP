@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.8.9.sc",
+ "doc": "../3D_Modeling/FSAP_v2.8.13.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -1298,7 +1298,7 @@
    "study": "CYCLE_L",
    "step": 127,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 641.201,
@@ -1327,7 +1327,7 @@
    "study": "CYCLE_L",
    "step": 172,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.306,
     "J_U4_WHEEL_ROT": 566.205,
@@ -1473,7 +1473,7 @@
    "study": "CYCLE_S",
    "step": 67,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 20.497,
@@ -1556,11 +1556,11 @@
    }
   },
   {
-   "name": "홈 매트 홈 입구 회전 시작(바늘 옆 바퀴 들림)",
+   "name": "홈 매트 홈 입구 회전 시작(바늘 옆 바퀴 들림, 노루발 봉제 높이)",
    "study": "CYCLE_G1",
    "step": 90,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 8.626,
     "J_U4_WHEEL_ROT": 260.218,
@@ -1589,7 +1589,7 @@
    "study": "CYCLE_G1",
    "step": 133,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 198.555,
@@ -1647,7 +1647,7 @@
    "study": "CYCLE_G1",
    "step": 300,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 423.603,
@@ -1676,7 +1676,7 @@
    "study": "CYCLE_G1",
    "step": 390,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 592.344,
@@ -1706,7 +1706,7 @@
    "study": "CYCLE_G1",
    "step": 467,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 648.651,
@@ -1735,7 +1735,7 @@
    "study": "CYCLE_G2",
    "step": 75,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 772.21,
@@ -1959,7 +1959,7 @@
    "study": "CYCLE_V",
    "step": 148,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 166.672,
@@ -1999,7 +1999,7 @@
    "study": "CYCLE_V",
    "step": 320,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 453.65,
@@ -2039,7 +2039,7 @@
    "study": "CYCLE_V",
    "step": 322,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 455.458,
@@ -2079,7 +2079,7 @@
    "study": "CYCLE_V",
    "step": 440,
    "joints": {
-    "J_U3_PRESSER": 20.0,
+    "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
     "J_U4_PRESS": 0.0,
     "J_U4_WHEEL_ROT": 587.385,
@@ -2253,12 +2253,13 @@
   "2026-11-09 FUNC-01 v2.8.0: 새 조인트 J_U5_FLOAT(슬라이더 Z 0~20, a U5_LIFT·b U5_FLOAT), J_U5_WHEEL_ROT a -> U5_FLOAT. 연구 8개·states 26개의 J_U5_LIFT 0~2 -> (-10, FLOAT v+10). 바인더 U7_BINDER -> P_M05_BINDER(U7_CASSETTE). IR1000-01BG_M08:2 묶음 지움",
   "2026-11-09 FUNC-01 수정 1회차 v2.8.1: 옆판 P_M03_LIFT_SIDE_N/P 축 여유 구멍 Ø16.5 Z 115~130(REST). 조인트·행정·연구 변화 없음, doc → v2.8.1",
   "2026-11-09 F01-C1 v2.8.3: 작업 대상 모형 땀–가장자리 거리 e 0 -> 6.5. J_WP_{L,S,G}_X a 원점 +6.5 X(사슬 전체·모형 +6.5), 세계 중심 (-743.5/-143.5/-593.5, -300). CYCLE_L·S·G1·G2의 J_WP_k_X·Y 피벗 단계 키(최대 6.5, newkeys.json), SEAM_U7 그대로. states 10값 고침. baseline U3_NEEDLE↔WP_* 수치 갱신",
-  "2026-11-10 VGR-01 v2.8.4: 새 작업 대상 모형 WP_V(MAT_V·TAPE_V·SEAM_V, 컴포넌트 WP_V_X·WP_V_Y·WP_MAT_V·WP_TAPE_V), 조인트 J_WP_V_X·Y·ROT(model_only), 연구 CYCLE_V 486단계(U5 ROT -35 들기·-30 내림 정지 단계), 다른 연구 8개에 J_WP_V_* 0 키, states 4개 더함·전체에 J_WP_V_* 0, baseline WP_*_L·S·G·V, _timing 메모. 기계 부품 변경 없음"
+  "2026-11-10 VGR-01 v2.8.4: 새 작업 대상 모형 WP_V(MAT_V·TAPE_V·SEAM_V, 컴포넌트 WP_V_X·WP_V_Y·WP_MAT_V·WP_TAPE_V), 조인트 J_WP_V_X·Y·ROT(model_only), 연구 CYCLE_V 486단계(U5 ROT -35 들기·-30 내림 정지 단계), 다른 연구 8개에 J_WP_V_* 0 키, states 4개 더함·전체에 J_WP_V_* 0, baseline WP_*_L·S·G·V, _timing 메모. 기계 부품 변경 없음",
+  "2026-11-11 DC-04 v2.8.13: 회전(피벗) 중 노루발 봉제 높이·낮은 누름(C-39). 동작 연구 CYCLE_L·S·G1·G2·V의 J_U3_PRESSER 키(회전 구간 20 → 0, 들림 20은 로딩 0~12·배출 끝만), states 13개 노루발 20 → 0, _timing 키(V 꼭짓점·입구1·입구2, G1 바닥, G1 출구·S 모서리 새로). 형상·조인트·행정 변화 없음"
  ],
  "_timing": {
-  "_note": "시간 메모(s). 동작 연구에는 쓰지 않는다(연구는 단계만). 땀 이송 시간은 따로. 근거 design1·design2(C-37 (다), D-96 구름 0.02·μ0.4·U4 40 N·d1 100) · 수정 1회차: U4+U5 구간에 U5 밑 띠 미끄럼 μs 0.30(D-97)·U4 밑 원판 끌림 포함",
+  "_note": "시간 메모(s). 동작 연구에는 쓰지 않는다(연구는 단계만). 땀 이송 시간은 따로. 근거 design1·design2(C-37 (다), D-96 구름 0.02·μ0.4·U4 40 N·d1 100) · 수정 1회차: U4+U5 구간에 U5 밑 띠 미끄럼 μs 0.30(D-97)·U4 밑 원판 끌림 포함 · DC-04(2026-11-11): 회전 중 노루발 봉제 높이(J_U3_PRESSER 0)·낮은 누름 끌림 T_f 0.096 N·m 포함",
   "CYCLE_V": {
-   "입구1_U4+U5": 4.1,
+   "입구1_U4+U5": 4.4,
    "꼭짓점_U4+U5": [
     2.0,
     2.0,
@@ -2268,32 +2269,32 @@
    ],
    "꼭짓점_ROT-35": "정지·U5 LIFT -10→30",
    "꼭짓점_U4만": [
-    3.5,
-    4.5
+    4.0,
+    5.2
    ],
-   "입구2_U4만": 9.5,
+   "입구2_U4만": 12.5,
    "입구2_ROT-30": "정지·U5 30→-10",
-   "입구2_U4+U5": 2.6,
+   "입구2_U4+U5": 2.7,
    "U4혼자_합": {
-    "꼭짓점": "40° 8.0 s",
-    "입구2": "45° 9.5 s"
+    "꼭짓점": "40° 9.2 s",
+    "입구2": "45° 12.5 s"
    },
-   "_근거": "VGR-01 수정 1회차(2026-11-10): U5 밑 PTFE 띠(P_DC205_STRIP) 미끄럼 μs 0.30(D-97 높은 쪽)·U4 밑 원판 끌림을 넣은 손계산 최저 SF 1.009(입구1 m2), tools/out/mech_VGR-01/fix1calc.json. 옛 키 입구1 2.5·꼭짓점 1.2×4·1.0·입구2 9.0·1.5"
+   "_근거": "VGR-01 수정 1회차(2026-11-10): U5 밑 PTFE 띠(P_DC205_STRIP) 미끄럼 μs 0.30(D-97 높은 쪽)·U4 밑 원판 끌림을 넣은 손계산 최저 SF 1.009(입구1 m2), tools/out/mech_VGR-01/fix1calc.json. 옛 키 입구1 2.5·꼭짓점 1.2×4·1.0·입구2 9.0·1.5 · DC-04 수정 1회차(2026-11-11, C-39): 노루발 끌림 T_f 0.096 N·m 포함(회전 중 노루발 봉제 높이·피벗 낮은 누름 Fp 20 N 임시 D-10), 최저 SF 1.009, tools/out/mech_DC-04/design/dc04design.json. 옛 키 꼭짓점_U4만 [3.5, 4.5]·입구2_U4만 9.5·입구1_U4+U5 4.1·입구2_U4+U5 2.6"
   },
   "CYCLE_G1_바닥": {
    "U4+U5": "12° 피벗 1.2 ×9 + 3° 0.6",
    "ROT-21": "정지·U5 들기",
    "U4만": [
-    3.0,
     3.4,
-    3.4,
-    3.4,
-    3.4,
-    3.4
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0
    ],
    "연구 단계": "CYCLE_G1 210~390 (ROT 1°/단계, 90→−90). U5 LIFT 321에서 30(들림)·493에서 −10. U4 혼자 = 321~390(−21→−90, 69°)",
-   "U4혼자_합": "69° 20.0 s (≥ 6 s, C-37)",
-   "_근거": "DC-01(2026-11-10): U4만 키 3.0+3.4×5 그대로 — 원판 끌림 포함 SF 1.024, 판정 조건(구름 0.02, 원판·띠 뺌) 1.057. U4+U5 키 0.8 → 1.2 s: U5 밑 PTFE 띠 μs 0.30(D-97)·원판 포함 SF 0.836 → 1.054. tools/out/mech_DC-01/g1calc.json. 옛 키 U4+U5 0.8 ×9 + 0.6"
+   "U4혼자_합": "69° 23.4 s (≥ 6 s, C-37)",
+   "_근거": "DC-01(2026-11-10): U4만 키 3.0+3.4×5 그대로 — 원판 끌림 포함 SF 1.024, 판정 조건(구름 0.02, 원판·띠 뺌) 1.057. U4+U5 키 0.8 → 1.2 s: U5 밑 PTFE 띠 μs 0.30(D-97)·원판 포함 SF 0.836 → 1.054. tools/out/mech_DC-01/g1calc.json. 옛 키 U4+U5 0.8 ×9 + 0.6 · DC-04 수정 1회차(2026-11-11, C-39): 노루발 끌림 T_f 0.096 N·m 포함, U4만 3.0+3.4×5 → 3.4+4.0×5(SF 1.019·1.025), 최저 SF 1.009, tools/out/mech_DC-04/design/dc04design.json"
   },
   "한계": {
    "U4혼자_alpha_rad_s2": {
@@ -2326,6 +2327,17 @@
    "모서리": 4,
    "U5": "LIFT −10 내내",
    "_근거": "DC-02(2026-11-10): DC-03(U4 혼자 12.0 s, U5 LIFT 30) 미반영 대비 키 — 띠 μs 0.30·구름 0.02·원판 포함 SF 1.045(SF1 4.04 s), tools/out/mech_DC-02/design/dc02design.json. 옛 3.0 s(SF 0.847). DC-03 G 안이 반영되면 그 키로 바꾸고 '띠 항 없음(U5 들림) — DC-02 닫음'"
+  },
+  "CYCLE_G1_출구": {
+   "U4만": 14.5,
+   "연구 단계": "CYCLE_G1 422~492 (ROT −90→−19, 71°, U5 LIFT 30 들림 → 493 −10)",
+   "_근거": "DC-04 수정 1회차(2026-11-11, C-39): 키 새로. 옛 11.0 s 가정 SF 0.949(끌림 포함) → 14.5 s SF 1.011, F4 15.83 N, 바늘 옆힘 9.77 N. 노루발 끌림 T_f 0.096 포함, 최저 SF 1.009, tools/out/mech_DC-04/design/dc04design.json"
+  },
+  "CYCLE_S_모서리": {
+   "U4만": 1.0,
+   "모서리": 4,
+   "연구 단계": "CYCLE_S 22~112·128~218·230~320·336~426 (90° ×4, U5 대기 LIFT 30)",
+   "_근거": "DC-04 수정 1회차(2026-11-11, C-39): 키 새로(옛 키 없음, 1.0 s 가정). SF 4.161, F4 3.85 N. 노루발 끌림 T_f 0.096 포함, 최저 SF 1.009, tools/out/mech_DC-04/design/dc04design.json"
   }
  }
 }
