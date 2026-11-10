@@ -3547,3 +3547,13 @@ PM(원칙 감사), 대상 `3D_Modeling/FSAP_v2.8.7.sc`(tools/config.json doc). �
 | PNEU-01-D6 | CST_O 판금 M-04 미달(PNEU01-E01) | P_M08_TUBE_BRKT_CST_O | M-13 4가지 비교 |
 
 STEP 대기 임시 형상 10종은 자료대기 D-162. 해석은 환경 없음(D-16), 손계산 `fea/results/mech_PNEU-01_fea2_handcalc.json`.
+
+## 구동 DC-01 모델링 결과 (2026-11-10)
+저장 `3D_Modeling/FSAP_v2.8.9.sc`(v2.8.8 다른 이름 저장, 형상 변경 0). 보고서 `docs/reports/mechanism/mech_DC-01_model.md`.
+
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| DC-01-M1 | C-37 (다) 그대로 확인: U홈 CYCLE_G1 바닥 U4 혼자 구간 = 연구 321~390단계(ROT −21 → −90, 69°, U5 LIFT 30). 시간 키 `_timing.CYCLE_G1_바닥.U4만` 3.0 + 3.4×5 = 20 s(≥ 6 s) 그대로 | 구름 0.02·μ 0.4·40 N·d₁ 100에서 가속 포함 최저 SF 1.057(피벗 점 φ −21), U4 밑 원판 끌림(0.048 N·m)·관성 넣어도 1.024. 구름 0.05면 0.49 → D-96 선정 조건 ≤ 0.02 필요 | `tools/out/mech_DC-01/g1calc.json`, 결정로그 C-37, VGR-01-S1 수정 1회차 |
+| DC-01-M2 | 같은 바닥 U4+U5 피벗 키 0.8 → 1.2 s(12° ×9, 3° 0.6 그대로). 바닥 피벗 합 27.8 → 31.4 s | 해석부 VGR-01-R3 지적(U5 밑 PTFE 띠 μs 미끄럼이 셈에 빠짐)이 같은 바닥 구간에 걸림. 띠 μs 0.30(D-97 높은 쪽)·원판 포함 SF 0.836 → 1.054. 시간 키 하나라 같이 고침. CYCLE_L·S·G 모서리는 이번 범위 밖(구동 후보 VGR-01-R3 그대로) | `g1calc.json` new.C_원판+띠μs0.30 |
+| DC-01-M3 | 연구 CYCLE_G1 단계·자세는 그대로(시간은 machine.json `_timing` 메모, 연구는 단계만). 과제 범위 5점(321·338·356·373·390) MAT_G·TAPE_G ↔ 바늘 둘레 23바디 새 겹침 0(바늘 기준선만) | E-03·E-17 과제 범위 검사 | `tools/out/mech_DC-01/clr_g1_steps.json` |
+| DC-01-M4 | FUNC-01 ⑥(U홈 바닥 U4 혼자)·⑦(홈 매트 64.2 → 92.8 s) 고쳐 적음. D-12 목표 미정이라 판정 대신 기록 | 옛 ⑥은 바닥 180°를 3 s·먼 쪽 바퀴 혼자로 셈 | `mech_FUNC-01_calc.md` |
