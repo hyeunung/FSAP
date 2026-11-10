@@ -1,3 +1,26 @@
+# 준비 점검 — FSAP_v2.8.9 (2026-11-10 오후, 엔진 v3.9.3, 사용자 "잘 도는데 긴것도 혼자" 실행 전)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.8.9.sc`(tools/config.json doc, 11-10 09:57 저장). 지시문의 "v2.8.3"보다 config가 최신이라 config를 따랐다. v2.8.3 뒤 VGR-01(WP_V·CYCLE_V)·PNEU-01(관·체인 23링크)·DC-01(시간 키)로 조인트·연구가 바뀌어 다시 쟀다.
+- 앱: `running` 빈 목록. 앱에 이미 v2.8.9가 열려 있었다(이름 FSAP_v2.8.9, path 같음, **dirty false**). 그래서 다시 열지 않았다(open 0, 원복 주의 — 같은 경로 open은 다시 읽지 않음). 저장 0, 편집 0. 결과 `tools/out/prep289/`(joints_studies.txt, joint_list_after.txt).
+- 조인트 410(rigid 344·slider 56·revolute 10), 고정부 2(occurrence 0·2), **floating 0**, conflicts 0, errors 0.
+- 움직이는 조인트 66 = machine.json joints 32 + 체인 링크 조인트 34(`J_U5_CHN_U01~U17·L02~L17·B`). 34개 모두 `links`로 J_U5_X에 묶여 따라 움직인다(links 34, a = J_U5_X). 독립 자유도가 아니라 machine.json에 없어도 빠진 것이 아니다.
+- 연구 9개: REST(1단계, 대기 포즈 step 0), CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630·CYCLE_V 486, MAINT_HEAD 1, SEAM_U7 32, MAINT_U7 13. machine.json studies 9와 단계 수까지 같다.
+- 기계 정의 `tools/machine.json`: doc v2.8.9, units 14(WP_V 포함), states 30, path_parts 6, workpiece_stages(가공 전·후, 조각 없음 D-07).
+- 상태 30이 요구서 0-3 ①~⑤에 대응: ① 대기·로딩 끝, ② 바퀴 내림(L·S), ③ 직선·볼록 45°/90°·홈 입구·안 벽·홈 바닥(오목)·두 번째 홈·V 입구1·꼭짓점·입구2, ④ 이음매 겹침 끝(L·S·G)·SEAM_U7, ⑤ 배출(L·S·G). 정비 1, 두께 THICK_6·THICK_16(6-4). 요구서 11-10 변경은 5절 행(PNEU-01·VGR-01·DC-01~03·PNEU-01R)뿐, 0-2·0-3·6-4 바뀜 없음.
+- 작업 대상 모형: MAT·TAPE·SEAM의 L(1500×1500)·S(300×200)·G(U홈)·V(V홈 30°) 12바디 있음(요구서 0-2 양 끝, 가공 뒤 형상). 떨어지는 조각 없음(D-07).
+- 동작 상태 초기화: 연구 8개 step 0 재생 + 마지막 `REST` step 0 배치를 보냈으나 앱이 응답 전에 연결이 끊겼고(os error 10060) 배치는 약 1,250 s 뒤 끝났다. 단계별 conflicts 결과는 받지 못했다. 끝난 뒤 `joint.list`로 확인: 모든 조인트가 machine.json '대기' 상태 값과 같다(차이 0), floating·conflicts 0. → 대기 포즈로 원복됨.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신). "긴것도 혼자"(DC-03)용 CYCLE_L U4 혼자 구간은 아직 연구에 없다 — 이번 실행의 모델링 몫이라 준비 부족으로 보지 않음.
+
+근거: 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 실행 규칙 2 "혼자 도는 읽기 부서도 MCP로 잰다", 실행 규칙 2 "같은 경로를 다시 `open`해도 디스크에서 다시 읽지 않는다", E-08 원복.
+
+## 워크플로우 메모
+- v2.8.9에서 `motion.play` step 0 아홉 개 배치가 약 1,250 s 걸렸다(v2.8.3에서는 수 초). 회귀 20의 "한 점 470 s 넘음"과 같은 무게 증가다. 준비 점검은 연구 존재·step 0 원복만 보면 되므로 다음부터는 `motion.play REST step 0` 하나만 부르고, 연구별 step 0 재생은 빼는 것이 좋다.
+- 배치가 오래 걸리면 MCP 연결이 10060으로 끊기고 결과가 사라진다. `running`으로 끝남을 확인하고 `joint.list` 값으로 포즈를 판정했다.
+
+---
+
 # 준비 점검 — FSAP_v2.8.3 (2026-11-10, 엔진 v3.9.3, VGR-01 이어서·PNEU-01·MOT-01·FUNC-01 실행 전)
 
 요약

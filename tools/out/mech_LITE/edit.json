@@ -2,426 +2,762 @@
 {
 "command": "timeline.delete",
 "params": {
-"feature": "OffsetFace20"
-}
-},
-{
-"command": "timeline.delete",
-"params": {
-"feature": "SK_M07_BEAM_OUT"
-}
-},
-{
-"command": "timeline.edit",
-"params": {
-"feature": "Box16",
-"set": {
-"corner": [
--2380.0,
-120.0,
-250.0
-],
-"length": "3610",
-"width": "200"
-}
-}
-},
-{
-"command": "timeline.reorder_many",
-"params": {
 "features": [
-"SK_M07_BEAM_HB",
-"Extrude53",
-"SK_M07_BEAM_HK",
-"Extrude54",
-"SK_M07_BEAM_HT",
-"Extrude55"
-],
-"position": 1140
-}
-},
-{
-"command": "timeline.roll_to",
-"params": {
-"feature": "Extrude55"
-}
-},
-{
-"command": "solid.fillet",
-"params": {
-"edges": [
-[
-0,
-120,
-250
-],
-[
-0,
-320,
-250
-],
-[
-0,
-320,
-650
-],
-[
-0,
-120,
-650
+"Combine40",
+"Cylinder1179",
+"Cylinder1180",
+"Cylinder1181",
+"Cylinder1182",
+"Cylinder1183",
+"Cylinder1184",
+"Cylinder1185",
+"Cylinder1186",
+"Cylinder1187",
+"Cylinder1188",
+"Cylinder1189",
+"Cylinder1190",
+"Cylinder1191",
+"Cylinder1192",
+"Cylinder1193",
+"Cylinder1194",
+"Cylinder1195",
+"Cylinder1196",
+"Cylinder1197",
+"Cylinder1198",
+"Cylinder1199",
+"Cylinder1200",
+"Cylinder1201",
+"Cylinder1202",
+"Cylinder1203",
+"Cylinder1204",
+"Cylinder1205",
+"Cylinder1206",
+"Cylinder1207",
+"Cylinder1208",
+"Cylinder1213",
+"Cylinder1214",
+"Cylinder1215",
+"Cylinder1216",
+"Cylinder1217",
+"Cylinder1218",
+"Cylinder1219",
+"Cylinder1220",
+"Cylinder1281",
+"Cylinder1283",
+"Cylinder1284",
+"Cylinder1285",
+"Cylinder1289",
+"Cylinder1290",
+"Cylinder1292",
+"Cylinder989",
+"Cylinder782",
+"Cylinder783",
+"Cylinder784",
+"Cylinder785",
+"Cylinder786",
+"Cylinder787",
+"Cylinder788",
+"Cylinder789",
+"Cylinder794",
+"Cylinder795",
+"Cylinder796",
+"Cylinder797",
+"Cylinder798",
+"Cylinder799",
+"Cylinder800",
+"Cylinder801"
 ]
-],
-"radius": "12",
-"body": "P_M07_BEAM"
 }
 },
 {
 "command": "timeline.roll_to",
-"params": {}
+"params": {
+"feature": "Cylinder221"
+}
 },
 {
 "command": "timeline.edit",
 "params": {
-"feature": "SK_M07_BEAM_IN",
+"feature": "Cylinder65",
 "set": {
-"plane.plane.origin": [
--2381.0,
-0.0,
-0.0
-]
+"radius": "2.1"
 }
 }
 },
 {
 "command": "timeline.edit",
 "params": {
-"feature": "Extrude52",
+"feature": "Cylinder66",
 "set": {
-"extent.distance": "3612"
+"radius": "2.1"
 }
 }
 },
 {
-"command": "timeline.delete",
+"command": "timeline.edit",
 "params": {
-"features": [
-"Hole1",
-"Hole2",
-"Hole3",
-"Hole4",
-"Hole5",
-"Hole6",
-"Hole7",
-"Hole8"
-]
+"feature": "Cylinder67",
+"set": {
+"radius": "2.1"
+}
+}
+},
+{
+"command": "timeline.edit",
+"params": {
+"feature": "Cylinder68",
+"set": {
+"radius": "2.1"
+}
+}
+},
+{
+"command": "timeline.edit",
+"params": {
+"feature": "Cylinder214",
+"set": {
+"radius": "2.1"
+}
+}
+},
+{
+"command": "timeline.edit",
+"params": {
+"feature": "Cylinder215",
+"set": {
+"radius": "2.1"
+}
+}
+},
+{
+"command": "timeline.edit",
+"params": {
+"feature": "Cylinder216",
+"set": {
+"radius": "2.1"
+}
+}
+},
+{
+"command": "timeline.edit",
+"params": {
+"feature": "Cylinder217",
+"set": {
+"radius": "2.1"
+}
 }
 },
 {
 "command": "timeline.roll_to",
 "params": {
-"feature": "Cylinder332"
+"feature": "Box16"
 }
 },
 {
-"command": "timeline.add",
+"command": "sketch.create",
 "params": {
-"feature": {
-"id": 95001,
-"name": "SK_DC205_TAP",
-"plane": {
 "plane": {
 "origin": [
-0.0,
-0.0,
--12.8
+0,
+119,
+0
 ],
 "x_dir": [
-1.0,
-0.0,
-0.0
+0,
+0,
+1
 ],
 "y_dir": [
-0.0,
-1.0,
-0.0
+1,
+0,
+0
 ]
-},
-"type": "custom"
-},
-"sketch": {
-"constraints": [],
-"counters": {
-"c": 8
-},
-"curves": [
-{
-"c": 1,
-"construction": false,
-"id": "c1",
-"r": 2.1,
-"type": "circle"
-},
-{
-"c": 2,
-"construction": false,
-"id": "c2",
-"r": 2.1,
-"type": "circle"
-},
-{
-"c": 3,
-"construction": false,
-"id": "c3",
-"r": 2.1,
-"type": "circle"
-},
-{
-"c": 4,
-"construction": false,
-"id": "c4",
-"r": 2.1,
-"type": "circle"
-},
-{
-"c": 5,
-"construction": false,
-"id": "c5",
-"r": 2.1,
-"type": "circle"
-},
-{
-"c": 6,
-"construction": false,
-"id": "c6",
-"r": 2.1,
-"type": "circle"
-},
-{
-"c": 7,
-"construction": false,
-"id": "c7",
-"r": 2.1,
-"type": "circle"
-},
-{
-"c": 8,
-"construction": false,
-"id": "c8",
-"r": 2.1,
-"type": "circle"
-}
-],
-"points": [
-{
-"fixed": true,
-"id": "origin",
-"pos": [
-0.0,
-0.0
-]
-},
-{
-"fixed": false,
-"id": "c1.center",
-"pos": [
--1750.0,
-0.0
-]
-},
-{
-"fixed": false,
-"id": "c2.center",
-"pos": [
--1600.0,
-0.0
-]
-},
-{
-"fixed": false,
-"id": "c3.center",
-"pos": [
--1400.0,
-0.0
-]
-},
-{
-"fixed": false,
-"id": "c4.center",
-"pos": [
--1250.0,
-0.0
-]
-},
-{
-"fixed": false,
-"id": "c5.center",
-"pos": [
--1000.0,
-0.0
-]
-},
-{
-"fixed": false,
-"id": "c6.center",
-"pos": [
--800.0,
-0.0
-]
-},
-{
-"fixed": false,
-"id": "c7.center",
-"pos": [
--600.0,
-0.0
-]
-},
-{
-"fixed": false,
-"id": "c8.center",
-"pos": [
--450.0,
-0.0
-]
-}
-]
-},
-"suppressed": false,
-"type": "sketch"
 }
 }
 },
 {
-"command": "timeline.add",
+"command": "sketch.circle.center",
 "params": {
-"feature": {
-"type": "extrude",
-"id": 95002,
-"name": "TAP_DC205",
-"extent": {
-"convention": "total_distance",
-"direction": "positive",
-"distance": "9.8"
+"center": [
+462.0,
+944.0
+],
+"radius": 2.1
+}
 },
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462.0,
+956.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462.0,
+644.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462.0,
+656.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462.0,
+344.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462.0,
+356.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462.0,
+44.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462.0,
+56.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462,
+-106
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+462,
+-94
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+296.0,
+1094.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+296.0,
+1106.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+296.0,
+794.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+296.0,
+806.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+276.0,
+494.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+276.0,
+506.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+276.0,
+194.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+276.0,
+206.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+276.0,
+-106.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+276.0,
+-94.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+276.0,
+-256.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+276.0,
+-244.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+422.0,
+1046.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+422.0,
+1106.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+314.0,
+715.1
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+314.0,
+743.1
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+314.0,
+913.94
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+314.0,
+941.94
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+632.0,
+-80.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+632.0,
+-16.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.extrude",
+"params": {
+"distance": "11",
 "operation": "cut",
-"profiles": {
-"type": "all"
-},
-"sketch": 95001,
-"suppressed": false,
 "targets": [
-"P_DC205_STRIP"
+"P_M07_BEAM"
+]
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": {
+"origin": [
+0,
+119,
+0
+],
+"x_dir": [
+0,
+0,
+1
+],
+"y_dir": [
+1,
+0,
+0
 ]
 }
 }
 },
 {
-"command": "solid.thread",
+"command": "sketch.circle.center",
 "params": {
-"face": [
--1747.9,
-0,
--6.0
+"center": [
+299,
+1159
 ],
-"designation": "M5",
-"length": "8.3",
-"modeled": false
+"radius": 2.1
 }
 },
 {
-"command": "solid.thread",
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.extrude",
 "params": {
-"face": [
--1597.9,
-0,
--6.0
-],
-"designation": "M5",
-"length": "8.3",
-"modeled": false
+"distance": "13",
+"operation": "cut",
+"targets": [
+"P_M07_BEAM"
+]
 }
 },
 {
-"command": "solid.thread",
+"command": "sketch.create",
 "params": {
-"face": [
--1397.9,
+"plane": {
+"origin": [
 0,
--6.0
+0,
+650.1
 ],
-"designation": "M5",
-"length": "8.3",
-"modeled": false
+"x_dir": [
+1,
+0,
+0
+],
+"y_dir": [
+0,
+-1,
+0
+]
+}
 }
 },
 {
-"command": "solid.thread",
+"command": "sketch.circle.center",
 "params": {
-"face": [
--1247.9,
-0,
--6.0
+"center": [
+950.0,
+-166.0
 ],
-"designation": "M5",
-"length": "8.3",
-"modeled": false
+"radius": 2.1
 }
 },
 {
-"command": "solid.thread",
+"command": "sketch.circle.center",
 "params": {
-"face": [
--997.9,
-0,
--6.0
+"center": [
+450.0,
+-166.0
 ],
-"designation": "M5",
-"length": "8.3",
-"modeled": false
+"radius": 2.1
 }
 },
 {
-"command": "solid.thread",
+"command": "sketch.circle.center",
 "params": {
-"face": [
--797.9,
-0,
--6.0
+"center": [
+50.0,
+-166.0
 ],
-"designation": "M5",
-"length": "8.3",
-"modeled": false
+"radius": 2.1
 }
 },
 {
-"command": "solid.thread",
+"command": "sketch.circle.center",
 "params": {
-"face": [
--597.9,
-0,
--6.0
+"center": [
+-650.0,
+-166.0
 ],
-"designation": "M5",
-"length": "8.3",
-"modeled": false
+"radius": 2.1
 }
 },
 {
-"command": "solid.thread",
+"command": "sketch.circle.center",
 "params": {
-"face": [
--447.9,
-0,
--6.0
+"center": [
+-100.0,
+-166.0
 ],
-"designation": "M5",
-"length": "8.3",
-"modeled": false
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+-1245.0,
+-166.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.circle.center",
+"params": {
+"center": [
+1000.0,
+-166.0
+],
+"radius": 2.1
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.extrude",
+"params": {
+"distance": "10",
+"operation": "cut",
+"targets": [
+"P_M07_BEAM"
+]
+}
+},
+{
+"command": "timeline.roll_to",
+"params": {
+"feature": "Extrude52"
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"base": [
+-126,
+124,
+462
+],
+"axis": [
+0,
+1,
+0
+],
+"radius": "2.4",
+"height": "6.5",
+"operation": "join",
+"targets": [
+"P_M07_BEAM"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"base": [
+-114,
+124,
+462
+],
+"axis": [
+0,
+1,
+0
+],
+"radius": "2.4",
+"height": "6.5",
+"operation": "join",
+"targets": [
+"P_M07_BEAM"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"base": [
+1159,
+124,
+273
+],
+"axis": [
+0,
+1,
+0
+],
+"radius": "2.4",
+"height": "8.5",
+"operation": "join",
+"targets": [
+"P_M07_BEAM"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"base": [
+1159,
+124,
+287
+],
+"axis": [
+0,
+1,
+0
+],
+"radius": "2.4",
+"height": "8.5",
+"operation": "join",
+"targets": [
+"P_M07_BEAM"
+]
 }
 },
 {
 "command": "timeline.roll_to",
 "params": {}
+},
+{
+"command": "solid.combine",
+"params": {
+"target": "P_M07_BEAM",
+"tools": [
+"TAP_P_M07_BEAM_32",
+"TAP_P_M07_BEAM_33",
+"TAP_P_M07_BEAM_34",
+"TAP_P_M07_BEAM_35"
+],
+"operation": "cut",
+"keep_tools": false
+}
+},
+{
+"command": "inspect.measure",
+"params": {
+"bodies": [
+"P_M07_BEAM",
+"P_M02_FRONT",
+"P_M03_FRONT"
+]
+}
 },
 {
 "command": "motion.play",
@@ -439,10 +775,17 @@
 }
 },
 {
+"command": "browser.visibility",
+"params": {
+"visible": false,
+"folder": "sketches"
+}
+},
+{
 "command": "document.metadata.set",
 "params": {
 "key": "description",
-"value": "LITE mechanism: M07 beam history reorder (box, holes, R12 fillet, core) and DC205 strip tap holes as one cut"
+"value": "LITE mechanism: beam taps moved to sketch cuts after Box16, front plate X holes simplified; geometry unchanged"
 }
 }
 ]
