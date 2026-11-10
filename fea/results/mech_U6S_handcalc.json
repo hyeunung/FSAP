@@ -1,0 +1,344 @@
+{
+ "_설명": "U6S 해석부 손계산, 입력 u6s_calc_model.json(모델링부) + STEP bbox",
+ "step_bbox": {
+  "P_M06_PCYL_BRKT": {
+   "n_pts": 98,
+   "min": [
+    -82.0,
+    -176.0,
+    74.3
+   ],
+   "max": [
+    -60.0,
+    -122.0,
+    94.0
+   ]
+  },
+  "P_M06_SHOE": {
+   "n_pts": 170,
+   "min": [
+    -82.0,
+    -205.0,
+    17.0
+   ],
+   "max": [
+    -59.0,
+    -115.0,
+    54.5
+   ]
+  },
+  "P_M06_SLIDE_COLLAR": {
+   "n_pts": 148,
+   "min": [
+    -82.0,
+    -181.06,
+    25.87
+   ],
+   "max": [
+    -78.4,
+    -128.94,
+    39.13
+   ]
+  }
+ },
+ "mark_winkler_tilt": {
+  "mu0.2_F_hi": {
+   "e_mm": 4.1,
+   "peak_factor": 1.273,
+   "p_avg_kPa": 14.33,
+   "p_max_kPa": 18.25,
+   "SF_avg": 2.09,
+   "SF_peak": 1.64
+  },
+  "mu0.2_F_nom": {
+   "e_mm": 4.1,
+   "peak_factor": 1.273,
+   "p_avg_kPa": 10.06,
+   "p_max_kPa": 12.8,
+   "SF_avg": 2.98,
+   "SF_peak": 2.34
+  },
+  "mu0.2_regmax": {
+   "e_mm": 4.1,
+   "peak_factor": 1.273,
+   "p_avg_kPa": 15.46,
+   "p_max_kPa": 19.68,
+   "SF_avg": 1.94,
+   "SF_peak": 1.52
+  },
+  "mu0.3_F_hi": {
+   "e_mm": 6.15,
+   "peak_factor": 1.41,
+   "p_avg_kPa": 14.33,
+   "p_max_kPa": 20.21,
+   "SF_avg": 2.09,
+   "SF_peak": 1.48
+  },
+  "mu0.3_F_nom": {
+   "e_mm": 6.15,
+   "peak_factor": 1.41,
+   "p_avg_kPa": 10.06,
+   "p_max_kPa": 14.18,
+   "SF_avg": 2.98,
+   "SF_peak": 2.12
+  },
+  "mu0.3_regmax": {
+   "e_mm": 6.15,
+   "peak_factor": 1.41,
+   "p_avg_kPa": 15.46,
+   "p_max_kPa": 21.8,
+   "SF_avg": 1.94,
+   "SF_peak": 1.38
+  },
+  "mu0.4_F_hi": {
+   "e_mm": 8.2,
+   "peak_factor": 1.547,
+   "p_avg_kPa": 14.33,
+   "p_max_kPa": 22.16,
+   "SF_avg": 2.09,
+   "SF_peak": 1.35
+  },
+  "mu0.4_F_nom": {
+   "e_mm": 8.2,
+   "peak_factor": 1.547,
+   "p_avg_kPa": 10.06,
+   "p_max_kPa": 15.55,
+   "SF_avg": 2.98,
+   "SF_peak": 1.93
+  },
+  "mu0.4_regmax": {
+   "e_mm": 8.2,
+   "peak_factor": 1.547,
+   "p_avg_kPa": 15.46,
+   "p_max_kPa": 23.91,
+   "SF_avg": 1.94,
+   "SF_peak": 1.25
+  }
+ },
+ "mark_fix": {
+  "b_eff_now_mm": 16.7,
+  "b_eff_need_mm(L 90, mu 0.4)": 24.7,
+  "L_need_mm(b now, mu 0.4)": 121.0,
+  "mu_need(형상 그대로)": 0.034,
+  "h_need_mm(형상 그대로, mu 0.4)": 1.75
+ },
+ "grip": {
+  "F_lo_N": 8.71,
+  "need_N": 6.48,
+  "ratio": 1.344,
+  "criterion": 1.2
+ },
+ "rotation": [
+  {
+   "seg": "U4혼자 V 입구2 12.5 s (SF 1.009)",
+   "shoe_drag_Nm_lifted": 0.0,
+   "SF_with_shoe_lifted": 1.009,
+   "SF_if_pressed_Flo_mu0.3": 0.795
+  },
+  {
+   "seg": "U4혼자 G1 출구 14.5 s (SF 1.011)",
+   "shoe_drag_Nm_lifted": 0.0,
+   "SF_with_shoe_lifted": 1.011,
+   "SF_if_pressed_Flo_mu0.3": 0.795
+  },
+  {
+   "seg": "U4혼자 V 꼭짓점 15° (SF 1.020)",
+   "shoe_drag_Nm_lifted": 0.0,
+   "SF_with_shoe_lifted": 1.02,
+   "SF_if_pressed_Flo_mu0.3": 0.803
+  },
+  {
+   "seg": "U4혼자 G1 바닥 12°x5 (SF 1.025)",
+   "shoe_drag_Nm_lifted": 0.0,
+   "SF_with_shoe_lifted": 1.025,
+   "SF_if_pressed_Flo_mu0.3": 0.812
+  },
+  {
+   "seg": "U4+U5 L 1500 모서리 7.5 s (SF 1.009)",
+   "shoe_drag_Nm_lifted": 0.0,
+   "SF_with_shoe_lifted": 1.009,
+   "SF_if_pressed_Flo_mu0.3": 0.984
+  },
+  {
+   "seg": "U4+U5 G1 바닥 1.2 s (SF 1.047)",
+   "shoe_drag_Nm_lifted": 0.0,
+   "SF_with_shoe_lifted": 1.047,
+   "SF_if_pressed_Flo_mu0.3": 1.016
+  },
+  {
+   "seg": "U4+U5 V 입구2 -30→0 2.7 s (SF 1.015)",
+   "shoe_drag_Nm_lifted": 0.0,
+   "SF_with_shoe_lifted": 1.015,
+   "SF_if_pressed_Flo_mu0.3": 0.967
+  },
+  {
+   "seg": "U4+U5 V 꼭짓점 75→50 2.0 s (SF 1.009)",
+   "shoe_drag_Nm_lifted": 0.0,
+   "SF_with_shoe_lifted": 1.009,
+   "SF_if_pressed_Flo_mu0.3": 0.963
+  }
+ ],
+ "rotation_min_SF_lifted": 1.009,
+ "rotation_min_SF_if_pressed": 0.795,
+ "PCYL_BRKT_plate": {
+  "운전_들기_0.5MPa": {
+   "F_N": 36.02,
+   "sigma_MPa": 14.5,
+   "SF": 14.15,
+   "criterion": 3.0
+  },
+  "운전_누름_멈춤_0.18MPa": {
+   "F_N": 17.17,
+   "sigma_MPa": 6.9,
+   "SF": 29.68,
+   "criterion": 3.0
+  },
+  "오조작_레귤레이터우회_0.5MPa": {
+   "F_N": 42.3,
+   "sigma_MPa": 17.0,
+   "SF": 12.04,
+   "criterion": 2.0
+  },
+  "오조작_손100N": {
+   "F_N": 103.03,
+   "sigma_MPa": 41.5,
+   "SF": 4.94,
+   "criterion": 2.0
+  }
+ },
+ "PCYL_BRKT_t2_note": {
+  "sigma_MPa": 93.3,
+  "SF": 2.2
+ },
+ "PCYL_BRKT_bolt": {
+  "T_up_per_bolt_N": 87.5,
+  "T_dn_per_bolt_N": 59.8,
+  "shear_per_bolt_N": 50.0,
+  "insert_pullout_N(임시, M06 해석과 같음)": 1000.0,
+  "SF_pullout": 11.4,
+  "calc_PETCF_thread": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 87.5,
+    "torque_Nm": 0,
+    "bolt": "12.9",
+    "base": "PET-CF",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 178.51,
+    "암나사 전단": 19.39
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "SHOE_tab": {
+  "운전_들기_0.5MPa": {
+   "F_N": 32.98,
+   "b_eff_mm": 29.0,
+   "sigma_MPa": 24.4,
+   "SF": 8.4,
+   "criterion": 3.0
+  },
+  "운전_누름_F_abs": {
+   "F_N": 23.29,
+   "b_eff_mm": 29.0,
+   "sigma_MPa": 17.2,
+   "SF": 11.9,
+   "criterion": 3.0
+  },
+  "오조작_레귤레이터우회": {
+   "F_N": 39.27,
+   "b_eff_mm": 29.0,
+   "sigma_MPa": 29.0,
+   "SF": 7.06,
+   "criterion": 2.0
+  },
+  "오조작_손100N": {
+   "F_N": 100.0,
+   "b_eff_mm": 29.0,
+   "sigma_MPa": 74.0,
+   "SF": 2.77,
+   "criterion": 2.0
+  }
+ },
+ "SHOE_tab_beam_check": {
+  "inputs": {
+   "t": 2.0,
+   "b": 29.0,
+   "L": 11.0,
+   "E": 193000,
+   "Rp": 205,
+   "end": "cantilever",
+   "sf_min": 2.0
+  },
+  "force_N": 100.0,
+  "deflection_mm": 0.0119,
+  "stiffness_N_mm": 8410.2179,
+  "stress_MPa": 56.9,
+  "sf": 3.6,
+  "thin": false,
+  "ok": true,
+  "needs_fea": true
+ },
+ "SLIDE_COLLAR": {
+  "A_shaft_annulus_mm2": 14.73,
+  "preload_1.0Nm": {
+   "Fv_N": 1000,
+   "sigma_MPa": 67.9,
+   "SF": 3.02
+  },
+  "preload_1.2Nm": {
+   "Fv_N": 1200,
+   "sigma_MPa": 81.5,
+   "SF": 2.52
+  },
+  "preload_2.0Nm": {
+   "Fv_N": 2000,
+   "sigma_MPa": 135.8,
+   "SF": 1.51
+  },
+  "preload_3.0Nm": {
+   "Fv_N": 3000,
+   "sigma_MPa": 203.7,
+   "SF": 1.01
+  },
+  "preload_4.5Nm": {
+   "Fv_N": 4500,
+   "sigma_MPa": 305.6,
+   "SF": 0.67
+  },
+  "운전_아래끝_0.18MPa": {
+   "per_collar_N": 7.6,
+   "bearing_shoe_t2_MPa": 0.54,
+   "shear_shaft_MPa": 0.51
+  },
+  "오조작_손100N": {
+   "per_collar_N": 50.0,
+   "bearing_shoe_t2_MPa": 3.57,
+   "shear_shaft_MPa": 3.4
+  },
+  "drag_side": {
+   "F_drag_N": 8.64,
+   "per_collar_N": 4.32,
+   "bearing_MPa": 0.31
+  },
+  "flange_note": "볼트 머리 Ø8.5가 축 Ø7보다 커서 예압은 턱을 거치지 않고 바로 축으로 감 -> 턱 굽힘 없음"
+ },
+ "COLLAR_bolt": {
+  "load_per_bolt_N(손100N 전단)": 50.0,
+  "insert_pullout_N(임시)": 1000.0,
+  "note": "예압으로 칼라 고정, 외력은 전단 50 N뿐(인서트 예압 1,000 N x mu 0.15 = 150 N 마찰 > 50)",
+  "SF_slip": 3.0
+ }
+}

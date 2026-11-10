@@ -556,7 +556,18 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "case_U6S": "cases/mech_U6S_handcalc.py",
+   "step_U6S": "tools/out/mech_U6S/stepout/P_M06_SHOE.step",
+   "version_U6S": "v2.9.0",
+   "fixed_U6S": "윗날개 탭(SUS304 t2, Z 48~50 @PRESS0)이 CJ2B10 로드 M4 너트 2개로 위아래 묶임, 장공 2개가 턱 칼라 위로 Z 미끄럼(J_U6_PRESS -5.0~+4.5). 탭 외팔: 벽 X -19 -> 로드 X -8 팔 11, 유효 폭 29(너트 7 + 45°)",
+   "contact_U6S": "바닥(유효 1,507 mm2, Y 길이 90)이 매트를 누름(Winkler 강체 판). 끌림 F_d = mu x F가 바닥 Z ~12, 칼라 Z 32.5가 옆힘 -> 모멘트 F_d x 20.5는 바닥 압력 기울기로만 받음(칼라 2개가 같은 Z, 장공이 Z로 열림)",
+   "load_U6S": "누름 띠 8.71~21.59 N(0.18 MPa), 레귤레이터 최대 23.29 N, 들기 0.5 MPa 33.0 N, 레귤레이터 우회 39.3 N, 손 100 N(오조작). 끌림 mu 0.2~0.4(D-165)",
+   "criteria_U6S": {
+    "value": "부품 운전 SF 3, 오조작 SF 2. 자국: 미끄럼 허용 30 kPa(D-165 임시)에 SF ≥ 2 — 평균이 아니라 Winkler 기울기 최대 압력 p_avg(1 + 6e/L), e = mu x 20.5",
+    "source": "요구서 6-1(M-09), 설계안 mech_U6S_design.md 'C-03 … 자국 SF ≥ 2', FUNC-01 ① Winkler"
+   },
+   "status_U6S": "손계산 fea/results/mech_U6S_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
   },
   "P_M06_ROLL_SHAFT": {
    "case": "cases/mech_M06_handcalc.py",
@@ -874,6 +885,32 @@
     "source": "요구서 6-1(M-09 기본값)"
    },
    "note_v288": "v2.8.8 바뀐 COMB_KDM(앞판 Y88~96 t8 폭 80 + 날개 Z620~626 t6 + 귀 Y112~120), CLAMP_SO_1(멍에 X904~920 + 블록 X981~997, 귀 t8), AIR_IN_BRKT(판 X1148~1152 t4 Z256~304 + 날개 X1152~1166 Y116~120 t4, CB5-16 x2 Z261·299 보 STKR400 벽 t8)도 같은 경계조건(귀–받침 면 압축만, 받침점 귀 끝 모서리). 케이스 cases/mech_PNEU-01_fea2_handcalc.py"
+  },
+  "P_M06_PCYL_BRKT": {
+   "case": "cases/mech_U6S_handcalc.py",
+   "fixed": "세운 벽(X -22~-19 @SHIFT0, Z 77~94)이 P_M06_CARR 다리 +X 면에 CB5-12 x2(Y -170·-128, Z 86) -> MBIS5 인서트(PET-CF). 받침: 위 힘이면 벽 윗끝 Z 94, 아래 힘이면 판 밑 Z 74.3 모서리(지렛대)",
+   "contact": "판(Z 74.3~77.3) Ø8.5 구멍에 CJ2B10 장착 너트, 실린더 축 X -8(벽 면에서 팔 11, 굽힘 R 포함 13)",
+   "load": "CJ2B10 로드 쪽 0.5 MPa 들기 33.0 N(행정 끝 안 멈춤을 보수로 브래킷이 받음) / 누름 0.18 MPa 14.1 N / 레귤레이터 우회 0.5 MPa 39.3 N(오조작) / 손 100 N Z(오조작) + 자중 x3 g. 유효 폭 28(너트 + 45° 퍼짐), 굽힘 계수 1.3",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_U6S_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_U6S/stepout/P_M06_PCYL_BRKT.step",
+   "version": "v2.9.0"
+  },
+  "P_M06_SLIDE_COLLAR": {
+   "case": "cases/mech_U6S_handcalc.py",
+   "fixed": "CB5-12_M06_3·_4 예압으로 턱 칼라 축 끝(Ø7/Ø5.5 링 14.7 mm2)이 CARR 다리 면(MBIS5 인서트 윗면)에 눌림",
+   "contact": "축 Ø7 x 2.1이 슈 벽 장공(7.1 x 17.1, t2) 안에서 Z 미끄럼(틈 ±0.05·축 길이 2.1 - 벽 2.0 = 0.1)",
+   "load": "볼트 예압(조임 토크별 T/(0.2 d)) 링 압축 / 장공 끝 멈춤 -5.0(누름 14.1 N + W, 손 100 N 오조작) 칼라 2개 / 끌림 옆힘 mu 0.4 x F_hi 8.6 N",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 조임 SF 1(예압 링 항복, 0.1 틈이 닫히면 슈가 묶임)",
+    "source": "요구서 6-1(M-09 기본값), 조임은 handcalc 'sf_tightening' 1.0과 같음"
+   },
+   "status": "손계산 fea/results/mech_U6S_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_U6S/stepout/P_M06_SLIDE_COLLAR.step",
+   "version": "v2.9.0"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
