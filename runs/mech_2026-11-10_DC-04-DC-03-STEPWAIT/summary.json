@@ -1,0 +1,872 @@
+{
+ "run": "mech_2026-11-10_DC-04-DC-03-STEPWAIT",
+ "status": "완료",
+ "engine": "v4.0.0",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-10",
+ "journal": "wf_a3590df8-8e2",
+ "totals": {
+  "agents": 25,
+  "agent_sec": 10794,
+  "input": 3712240,
+  "cache_read": 63819620,
+  "output": 431550,
+  "tools": 532,
+  "wall_sec": 10806
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 362,
+   "agents": 4,
+   "output": 37640
+  },
+  "▸ modeling-round": {
+   "sec": 10432,
+   "agents": 21,
+   "output": 393910
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 78,
+   "tokens": {
+    "input": 68218,
+    "cache_read": 54801,
+    "output": 11185
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 50,
+   "tokens": {
+    "input": 75400,
+    "cache_read": 135805,
+    "output": 6002
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "running",
+   "sec": 129,
+   "tokens": {
+    "input": 133326,
+    "cache_read": 1213595,
+    "output": 11164
+   },
+   "tools": 13,
+   "turns": 13
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 105,
+   "tokens": {
+    "input": 77493,
+    "cache_read": 1033006,
+    "output": 9289
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 81,
+   "tokens": {
+    "input": 68026,
+    "cache_read": 54828,
+    "output": 11220
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 560,
+   "tokens": {
+    "input": 220595,
+    "cache_read": 1649050,
+    "output": 9034
+   },
+   "tools": 23,
+   "turns": 19
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 88,
+   "tokens": {
+    "input": 92364,
+    "cache_read": 932401,
+    "output": 5049
+   },
+   "tools": 19,
+   "turns": 12
+  },
+  {
+   "label": "STEPLITE 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 636,
+   "tokens": {
+    "input": 215520,
+    "cache_read": 6437933,
+    "output": 44105
+   },
+   "tools": 54,
+   "turns": 45
+  },
+  {
+   "label": "DC-04 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2315,
+   "tokens": {
+    "input": 388310,
+    "cache_read": 7720656,
+    "output": 55768
+   },
+   "tools": 58,
+   "turns": 52
+  },
+  {
+   "label": "DC-04 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 20,
+   "tokens": {
+    "input": 75551,
+    "cache_read": 72792,
+    "output": 816
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "DC-04 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 218,
+   "tokens": {
+    "input": 143771,
+    "cache_read": 1748735,
+    "output": 19823
+   },
+   "tools": 16,
+   "turns": 16
+  },
+  {
+   "label": "DC-04 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 130,
+   "tokens": {
+    "input": 110398,
+    "cache_read": 1029416,
+    "output": 10972
+   },
+   "tools": 12,
+   "turns": 12
+  },
+  {
+   "label": "DC-04 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 111,
+   "tokens": {
+    "input": 70096,
+    "cache_read": 1275775,
+    "output": 10770
+   },
+   "tools": 13,
+   "turns": 13
+  },
+  {
+   "label": "DC-04 완료 판정 확인 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 161,
+   "tokens": {
+    "input": 80742,
+    "cache_read": 1590502,
+    "output": 13759
+   },
+   "tools": 17,
+   "turns": 17
+  },
+  {
+   "label": "DC-04 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2011,
+   "tokens": {
+    "input": 303342,
+    "cache_read": 21804006,
+    "output": 93581
+   },
+   "tools": 116,
+   "turns": 104
+  },
+  {
+   "label": "DC-04 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 657,
+   "tokens": {
+    "input": 171663,
+    "cache_read": 4337314,
+    "output": 24670
+   },
+   "tools": 45,
+   "turns": 39
+  },
+  {
+   "label": "DC-04 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 68,
+   "tokens": {
+    "input": 97955,
+    "cache_read": 538193,
+    "output": 3875
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "DC-03 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 231,
+   "tokens": {
+    "input": 147109,
+    "cache_read": 2435407,
+    "output": 21129
+   },
+   "tools": 21,
+   "turns": 21
+  },
+  {
+   "label": "DC-03 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 77,
+   "tokens": {
+    "input": 63637,
+    "cache_read": 693893,
+    "output": 6983
+   },
+   "tools": 9,
+   "turns": 8
+  },
+  {
+   "label": "DC-03 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 32,
+   "tokens": {
+    "input": 89796,
+    "cache_read": 333611,
+    "output": 2732
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2774,
+   "tokens": {
+    "input": 699940,
+    "cache_read": 6717248,
+    "output": 33761
+   },
+   "tools": 56,
+   "turns": 50
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 123,
+   "tokens": {
+    "input": 108726,
+    "cache_read": 1417634,
+    "output": 10343
+   },
+   "tools": 16,
+   "turns": 16
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 62,
+   "tokens": {
+    "input": 88082,
+    "cache_read": 246138,
+    "output": 6556
+   },
+   "tools": 3,
+   "turns": 4
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 31,
+   "tokens": {
+    "input": 81733,
+    "cache_read": 232171,
+    "output": 2629
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 46,
+   "tokens": {
+    "input": 40447,
+    "cache_read": 114710,
+    "output": 6335
+   },
+   "tools": 5,
+   "turns": 2
+  }
+ ],
+ "fix_agents": [
+  "DC-04 기구설계부 수정1"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPLITE",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.8.12.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "DC-04",
+    "size": "M",
+    "status": "모델 반영·해석 못 함",
+    "chosen": "DC-04-D1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.8.13.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "U4 혼자 회전 SF 최저 1.009로 여유가 얇다. 피벗 낮은 누름 실제값이 22.9 N를 넘거나 μ가 0.4보다 크면 SF < 1",
+      "where": "CYCLE_V 입구2 −75→−30(12.5 s), 노루발 P_M01_FOOT 피벗 누름(D-10 임시 Fp 20 N)",
+      "evidence": "need = 1.6/1.009 = 1.5857 N·m, 여유 0.0143 N·m, dT_f/dFp = 0.8×0.006 = 0.0048 N·m/N → Fp 한계 20 + 2.98 = 22.9 N (tools/out/mech_DC-04/design/dc04design.json)",
+      "fix": "헤드 견적 조건(D-10) 노루발 2단의 피벗 쪽을 ≤ 20 N(조정 하한 ≤ 15 N)으로 적고, 실측(7절 μ) 뒤 dc04design.py의 Fp·μ로 시간 키를 다시 셈",
+      "external": true
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [
+     "실제 피벗 노루발 누름값·바늘 굵기(D-10, 헤드 견적)",
+     "노루발–테이프·매트–바늘판 마찰계수(요구서 7절 시제품)"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "DC-03",
+    "size": "S",
+    "status": "모델 반영·해석 못 함",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.8.13.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "결정로그 id 중복: 새 DC-03-C1~C3이 v1.0 DC-03 방안 행(DC-03-C1~C3, 케이블 베어 안)과 같은 id",
+      "where": "docs/decision-log.md 줄 1974~1976 vs 3661~3664",
+      "evidence": "grep '^| DC-03-C[0-9] ' 결과 같은 id 3개가 두 번씩 나옴",
+      "fix": "새 행을 DC-03-K1~K4로 바꾸고 요구서·CHANGELOG·mech_DC-03_model.md에서 언급한 곳도 같이 바꾼다(형상과 무관)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "U4 혼자 구간이 성립하려면 7절 실측에서 구름 c ≤ 0.0202여야 함(여유 1 % 안팎)",
+      "where": "요구서 7절, D-95·D-96·D-145",
+      "evidence": "손계산 최저 SF 1.009(V 입구2), c_max 0.0202 (dc03close.json)",
+      "fix": "시제품에서 저울로 시험한다. 수정 회차는 쓰지 않는다",
+      "external": true
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [
+     "7절 실측 전에는 U4 혼자 구간 c ≤ c_max 판정 못 함 — 매트 면밀도 D-145, 바퀴 μ D-95, 볼 구름 c D-96",
+     "해석 못 함 — 환경 없음(D-16), 새로 힘을 받는 가공품 0이라 임시 STEP 없음"
+    ],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "전체 상한: H_CYCLE_S 0·225·450, H_CYCLE_G1 257",
+    "어림 초과: 연구 5개 40간격+끝(V 13·L 19·S 13·G1 14·G2 17, 새 노루발 키로 다시 볼 몫)",
+    "어림 초과: 연구 10단계 오프셋(V 24·L 36·S 23·G1 26·G2 32)",
+    "어림 초과: SEAM_U7 0·8·16·24·32, MAINT_HEAD 0~1",
+    "어림 초과: H_CYCLE_G1 514, H_CYCLE_G2 0·315·630",
+    "어림 초과: Y_ 연구 5×양 끝×2조각, Y_POSE 0~180 20간격×2조각",
+    "어림 초과: POSE 0~180(8·9 빼고)×4조각",
+    "어림 초과: B_CYCLE_V 0·B_CYCLE_L 358·B_CYCLE_G2 315×8조각",
+    "어림 초과: MAINT_U7 3·6·9·12×16조각",
+    "명세에서 뺌: F_STATES 0~34, MAINT_U7 나머지 단계"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 1166,
+    "estimate_s": 19560.3,
+    "actual_s": 1796.6,
+    "chunk_times": [
+     {
+      "id": "run1 trial CYCLE_V 20",
+      "elapsed_s": 160,
+      "status": "ok"
+     },
+     {
+      "id": "run1 trial POSE 9",
+      "elapsed_s": 15,
+      "status": "ok"
+     },
+     {
+      "id": "run1 CYCLE_L/S/G1/G2/V 20~340 (44점)",
+      "elapsed_s": 1040.7,
+      "status": "ok"
+     },
+     {
+      "id": "run2 trial CYCLE_G2 380",
+      "elapsed_s": 5,
+      "status": "ok"
+     },
+     {
+      "id": "run2 trial POSE 8",
+      "elapsed_s": 145.1,
+      "status": "ok"
+     },
+     {
+      "id": "run2 연구 380~700·SEAM_U7·H_ (35점)",
+      "elapsed_s": 755.9,
+      "status": "ok"
+     },
+     {
+      "id": "run2 H_CYCLE_S 0",
+      "elapsed_s": 85.2,
+      "status": "cut"
+     },
+     {
+      "id": "run2 H_CYCLE_S 225",
+      "elapsed_s": 75.1,
+      "status": "cut"
+     },
+     {
+      "id": "run2 H_CYCLE_S 450",
+      "elapsed_s": 20.1,
+      "status": "cut"
+     },
+     {
+      "id": "run2 H_CYCLE_G1 257",
+      "elapsed_s": 15,
+      "status": "cut"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "run1: 연구 CYCLE_V 20 160 s/단계, 자세 POSE 9 15 s/점, 오류 없음 / run2: 연구 CYCLE_G2 380 5 s, 자세 POSE 8 145 s, 오류 없음",
+    "per_step_s": {
+     "study": 160.05,
+     "pose": 15.01
+    },
+    "pose_steps": 746,
+    "reduced": "run1 어림 19,560 s > 상한 1,800 s → 시작 전에 앞 44단계만(시험값 160 s가 실제 평균 약 70 s보다 커서 1,041 s에 끝남). 남은 755 s로 run2: 어림 27,450 s → 앞 162단계만. 순서는 지난 못 본 범위이자 바뀐 노루발 키 연구의 20단계 오프셋 → SEAM_U7 오프셋 → H_ → 나머지",
+    "seen": [
+     "CYCLE_V 20~460 40간격(20단계 오프셋 12점)",
+     "CYCLE_L 20~700 40간격(18점)",
+     "CYCLE_S 20~420 40간격(11점)",
+     "CYCLE_G1 20~500 40간격(13점)",
+     "CYCLE_G2 20~620 40간격(16점)",
+     "SEAM_U7 4·12·20·28",
+     "H_CYCLE_L 0·358·716",
+     "H_CYCLE_V 0·243·486",
+     "H_CYCLE_G1 0",
+     "POSE 8·9"
+    ],
+    "unseen": [
+     "전체 상한: H_CYCLE_S 0·225·450, H_CYCLE_G1 257",
+     "어림 초과: 연구 5개 40간격+끝(V 13·L 19·S 13·G1 14·G2 17, 새 노루발 키로 다시 볼 몫)",
+     "어림 초과: 연구 10단계 오프셋(V 24·L 36·S 23·G1 26·G2 32)",
+     "어림 초과: SEAM_U7 0·8·16·24·32, MAINT_HEAD 0~1",
+     "어림 초과: H_CYCLE_G1 514, H_CYCLE_G2 0·315·630",
+     "어림 초과: Y_ 연구 5×양 끝×2조각, Y_POSE 0~180 20간격×2조각",
+     "어림 초과: POSE 0~180(8·9 빼고)×4조각",
+     "어림 초과: B_CYCLE_V 0·B_CYCLE_L 358·B_CYCLE_G2 315×8조각",
+     "어림 초과: MAINT_U7 3·6·9·12×16조각",
+     "명세에서 뺌: F_STATES 0~34, MAINT_U7 나머지 단계"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 550,
+     "cad_calls": 2,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 450,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 5,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPLITE 모델링부",
+    "phase": "STEPLITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3300,
+     "cad_calls": 15,
+     "file_opens": 9,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "DC-04 측정부",
+    "phase": "DC-04 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2298,
+     "cad_calls": 10,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 150,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "DC-04 카탈로그부",
+    "phase": "DC-04 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "DC-04 기구설계부",
+    "phase": "DC-04 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 720,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "DC-04 완료 판정 확인",
+    "phase": "DC-04 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 180,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "DC-04 기구설계부 수정1",
+    "phase": "DC-04 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "DC-04 완료 판정 확인 1",
+    "phase": "DC-04 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 153,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "DC-04 모델링부",
+    "phase": "DC-04 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1988,
+     "cad_calls": 25,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [
+      "재시작 없음. S·G2·REST를 넣은 batch 하나가 MCP 응답 끊김(os error 10060)으로 결과를 잃었고, 앱에서는 약 7분 계속 돌다 끝났다. 읽기 검사만 다시 보냈다"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "DC-04 검도·체결",
+    "phase": "DC-04 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 780,
+     "cad_calls": 9,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 5,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "DC-04 문서·커밋",
+    "phase": "DC-04 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "DC-03 모델링부",
+    "phase": "DC-03 · 모델링",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "DC-03 검도·체결",
+    "phase": "DC-03 · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 200,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "DC-03 문서·커밋",
+    "phase": "DC-03 · 문서",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3050,
+     "cad_calls": 90,
+     "file_opens": 5,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 707,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 200,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-217",
+   "WF-218"
+  ],
+  "repeat_ids": [
+   "WF-186",
+   "WF-088",
+   "WF-204"
+  ],
+  "one_line": "회고: 프로젝트 docs/reports/engine-candidates.md에 WF-217·WF-218 추가, WF-186·WF-088·WF-204 반복 +1, 최종 보고서에 개선 후보 절 추가 후 커밋 14e112d(푸시 안 함). 고친 엔진 파일 없음."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 25,
+  "시간 h": 3.0,
+  "출력 토큰": 431550,
+  "실패": 0
+ }
+}
