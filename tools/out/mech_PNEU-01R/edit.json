@@ -1,0 +1,6 @@
+[{"command": "solid.cylinder", "params": {"radius": 3.5, "height": 19.0, "base": [-1235.5, 190.0, 661.0], "axis": [-1.0, 0.0, 0.0], "operation": "cut", "targets": ["P_M08_TUBE_COMB_U5_2"]}},
+ {"command": "solid.cylinder", "params": {"radius": 3.5, "height": 11.0, "base": [1049.75, 53.0, 394.5], "axis": [0.0, 0.0, 1.0], "operation": "cut", "targets": ["P_M08_RISER_COMB_1"]}},
+ {"command": "document.metadata.set", "params": {"key": "description", "value": "PNEU-01R mechanism: tube hole r3.25->3.5 in COMB_U5_2 (-1235.5,190,661) and RISER_COMB_1 (1049.75,53)"}},
+ {"command": "motion.play", "params": {"study": "REST", "step": 0}},
+ {"command": "browser.visibility", "params": {"visible": false, "folder": "joints"}},
+ {"command": "browser.visibility", "params": {"visible": false, "folder": "sketches"}}]
