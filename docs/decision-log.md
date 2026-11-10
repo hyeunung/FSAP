@@ -3574,3 +3574,15 @@ STEP 대기 임시 형상 10종은 자료대기 D-162. 해석은 환경 없음(D
 |---|---|---|
 | 출발점: 벤치마크 없음(모델 표현, WF-196). v2.8.9 → v2.8.10, 형상 변경 0, 부품 순 0. ① P_M07_BEAM: Combine40(공구 42) 지우고 Extrude52 뒤에 탭 개별 cut 42(옛 16·17·42·43 공구 → 새 탭 자리), 메움 1281·1283·1284·1285·새 cut 1289~1292 지움, 속 잔여 핀 4 join(Y124 시작) 그대로. ② P_M02/M03_FRONT: X 옛 cut r2.75→r2.1, Y 옛 cut 공동 길이 2.6으로, 메움 16·다시 뚫기 8 지움. 열기 어림 844 → 약 202 s | - | 빈 설계 실측: 탭 42 Combine 46.4 s vs 개별 cut 2.8 s(같은 평면 가설 기각, Y119 Combine 66 s). mech_LITE_design.md, tools/out/mech_LITE/design2/ |
 | 수정 1회차: 보 탭 37 + Cylinder989를 Box16 바로 뒤 스케치 3장 extrude cut으로(Y 평면 (0,119,0) 깊이 11·13, Z 평면 (0,0,650.1) 깊이 10), 필렛 띠 탭 4(Z262·Z638)는 공구 그대로 이력 끝 4공구 Combine, 1159/Z261은 Cylinder1291 그대로, 핀 4는 1회째 그대로. 앞판은 X 구멍만 단순화하고 Y 탭 쪽 이력은 그대로. 열기 844 → 약 360~430 s | 1회째 'Extrude52 뒤 개별 cut 42 + 앞판 Y 메움 지움' → 'Box16 뒤 스케치 cut 3 + 끝 Combine 4, 앞판 Y 그대로'. 판정은 240 s 이하가 아니라 '줄인 만큼(−49~57 %, 전후 실측)' | 실모델 try(edit_lite2) step 26 첫 Y 탭 no result. 보 단독 재현: R12 필렛 뒤 Y120 면 boolean이 기존 구멍 있을 때 실패, Box16 뒤면 통과. try3: 앞판 Y 쪽 0.2 mm 겹침 실패. try4(edit_lite3) rc 0, 보 부피 −2.6 mm³·bbox 같음, 편집 뒤 재계산 432 s. mech_LITE_design1.md, tools/out/mech_LITE/design3/ |
+
+## 구동 LITE 결과 (2026-11-10)
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| LITE2-R1 | 적용: P_M07_BEAM 탭 38을 Box16 바로 뒤 스케치 cut 3으로, Combine40·공구 지움(timeline.delete 63), 필렛 띠 탭 4는 이력 끝 Combine. P_M02/M03_FRONT X 메움·다시 뚫기 지움. v2.8.10 저장(CLI run --save, 앱 문서 dirty라 건드리지 않음). 열기 844.4 → 396.9 s(−53 %) | VGR-01·PNEU-01 뒤 열기가 상한 240 s의 3.5배로 늘어 회귀·앱 막힘의 원인. 보의 앞쪽 Combine 46 s·뒤쪽 boolean 연쇄가 재계산 대부분 | mech_LITE_model.md, mech_LITE_verify.md, tools/out/lite_check.json ok |
+| LITE2-R2 | 판정: '240 s 이하' 대신 '줄인 만큼(전후 실측)'으로 통과. 바디 2,969·BOM 179행/2,616·bbox 차 0, 형상 변경 0 | 완료 판정 문구가 "또는 줄인 만큼"을 허용. 남은 무게는 형상을 바꿔야 줄어듦 | mech_LITE_design1.md, mech_LITE_verify.md 요약 |
+| LITE2-R3 | 실패: 1회차 안(Extrude52 뒤 개별 cut 42)은 실모델 step 26 no result로 버림. 남은 동작 문제 0 | R12 필렛 뒤 면 boolean이 기존 구멍 있을 때 실패 | mech_LITE_design1.md R1 |
+
+### 디테일 과제(E-02, 구동 확정 뒤 처리)
+| 무엇 | 어디 | 근거 | 할 일 |
+|---|---|---|---|
+| 보 상대 CAD 겹침 부피를 실측하지 못함(boolean 미완). 판정은 lite_check 전후 비교·손계산 | P_M07_BEAM ↔ 볼트 27종 / 이웃 76바디 | inspect.interference 420 s 안 26쌍 not checked·겹침 0, clearance 45분 넘어 중단. 새 탭 38/38 볼트 축 0.05 mm 안, 핀 메움–볼트 1.35 mm, 부피 차 −2.6 mm³·bbox 차 0 | 라운드 끝 전체 회귀(regrun)가 보 쌍을 다시 봄. 남은 무게(필렛 띠 탭 Combine 118 s 등, 형상 변경 필요)는 디테일 단계 |
