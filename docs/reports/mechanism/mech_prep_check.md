@@ -1,3 +1,49 @@
+# 준비 점검 — FSAP_v2.8.13 (2026-11-11, 엔진 v3.9.3, 사용자 "엔진 바꿨어" 뒤 재실행: MOT-01·FUNC-01·PNEU-01·STEPWAIT 남음)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.8.13.sc`(tools/config.json doc, 11-11 01:03 저장, DC-04). 지시문 (a)의 "v2.8.12"보다 config가 최신이라 config를 따랐다. v2.8.13은 연구 키(J_U3_PRESSER)만 바뀌었다(CHANGELOG "형상·조인트·구매품 변화 없음").
+- 통로: **MCP**. 앱 켜짐(solidcraft.exe, 포트 27878 열림), `running` 빈 목록. `open` 1회(FSAP_v2.8.13, features 3033, errors 0) → `joint.list`·`motion.list` → `motion.play REST step 0`. 저장 0, 편집 0. 결과 `tools/out/prep2813/`(joint_list.json, motion_list.json).
+- 조인트 410(rigid 344·slider 56·revolute 10), 고정부 2(occurrence 0·2), **floating 0**, conflicts 0, errors 0. 움직이는 조인트 66 = machine.json joints 32(설계에서 빠짐 0) + 체인 링크 34(`J_U5_CHN_*`, links 34 모두 a = J_U5_X(id 48)). v2.8.12와 같다.
+- 연구 9개, 단계 수 machine.json과 같음: REST 1(대기 포즈 step 0)·CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630·CYCLE_V 486·MAINT_HEAD 1·SEAM_U7 32·MAINT_U7 13, 연구마다 키 27개.
+- C-39 반영 확인: 사이클 연구 5개와 SEAM_U7의 J_U3_PRESSER 값이 {0, 20}(0 = 봉제·회전 중 낮은 누름, 20 = 로딩·배출 들림). REST·MAINT는 20. 요구서 0-3 ③ "노루발 낮은 누름으로 회전"에 대응.
+- 기계 정의 `tools/machine.json`: doc v2.8.13(지난 점검 메모의 doc 칸 문제 풀림), units 14, states 30, path_parts 6, workpiece_stages 2(가공 전·후, 조각 없음 D-07), temp_values 11.
+- 상태 30이 요구서 0-3 ①~⑤에 대응(v2.8.12 점검과 같음): ① 대기·로딩 끝, ② 바퀴 내림(L·S), ③ 직선·볼록 45°/90°·홈 입구·안 벽·홈 바닥(오목)·두 번째 홈·V 입구1·꼭짓점·입구2, ④ 이음매 겹침 끝(L·S·G)·SEAM_U7, ⑤ 배출(L·S·G). 정비 1, 두께 THICK_6·THICK_16(6-4).
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G U홈·WP_V V홈 30°(MAT·TAPE·SEAM, 요구서 0-2 양 끝, 가공 뒤 형상), 조인트 J_WP_L/S/G/V_X·Y·ROT 12개 joint.list에 있음. 떨어지는 조각 없음(D-07).
+- 동작 상태 초기화: `motion.play {study:"REST", step:0}` → moved false(이미 대기 포즈), conflicts 0, unmoved 0, values 27. 원복할 편집 없음(E-08).
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+근거: 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 실행 규칙 2 "혼자 도는 읽기 부서도 MCP로 잰다", E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", E-08 원복.
+
+## 워크플로우 메모
+- `joint.list`·`motion.list`·`motion.play` 결과가 각각 0.4~1 MB라 MCP 응답이 파일로 넘어간다. 요약만 돌려주는 옵션이 있으면 준비 점검이 가벼워진다.
+- 지시문 (a)가 v2.8.12를 가리켰으나 이미 v2.8.13이 저장돼 있었다(DC-04가 앞 실행에서 끝남). 지시문 대신 config doc을 기준으로 했다.
+
+---
+
+# 준비 점검 — FSAP_v2.8.12 (2026-11-10 2차, 엔진 v3.9.3, C-38·C-39 결정 뒤 DC-03 닫기·DC-04·MOT-01·FUNC-01·PNEU-01·STEPWAIT 실행 전)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.8.12.sc`(tools/config.json doc, 11-10 19:13 저장). v2.8.9 뒤 v2.8.10 LITE(형상 변경 0)·v2.8.11·12 PNEU-01R(구멍 지름만)·DC-02(시간 키) — 조인트·연구 구조 변화가 없을 것으로 보였으나 저장본에 대고 다시 쟀다.
+- 통로: **CLI**. SolidCraft 앱이 꺼져 있었다(`running` 빈 목록 + "app was not found, headless session", 포트 27878 닫힘, 프로세스는 solidcraft-cli 2개뿐 — 건드리지 않음). 실행 규칙 2 "앱이 꺼져 있거나 MCP 호출이 실제로 실패할 때만 CLI로 하고 이유를 보고서에 적는다". `joint.list`·`motion.list`를 스크립트 하나로 묶어 `solidcraft-cli run --results` 1회(열기 포함 450 s, 저장 없음). 결과 `tools/out/prep2812/results.json`.
+- 조인트 410(rigid 344·slider 56·revolute 10), 고정부 2(occurrence 0·2), **floating 0**, conflicts 0, errors 0. 움직이는 조인트 66 = machine.json joints 32(빠짐 0) + 체인 링크 34(`J_U5_CHN_*`, links 34 모두 a = J_U5_X(id 48)로 따라 움직임). v2.8.9와 같다.
+- 연구 9개, 단계 수 machine.json과 같음: REST 1(대기 포즈 step 0)·CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630·CYCLE_V 486·MAINT_HEAD 1·SEAM_U7 32·MAINT_U7 13. 연구마다 키 27개.
+- 기계 정의 `tools/machine.json`: units 14, states 30, path_parts 6, workpiece_stages(가공 전·후, 조각 없음 D-07). `doc` 칸이 아직 v2.8.9를 가리킨다(조인트·연구 같음, 막지 않음 — 모델링부가 다음 저장 때 고치면 됨).
+- 상태 30이 요구서 0-3 ①~⑤에 대응(v2.8.9 점검과 같음): ① 대기·로딩 끝, ② 바퀴 내림(L·S), ③ 직선·볼록 45°/90°·홈 입구·안 벽·홈 바닥(오목)·두 번째 홈·V 입구1·꼭짓점·입구2, ④ 이음매 겹침 끝(L·S·G)·SEAM_U7, ⑤ 배출(L·S·G). 정비 1, 두께 THICK_6·THICK_16(6-4).
+- 요구서 0-3 ③이 C-39로 "노루발을 낮은 누름으로 두고 회전"으로 바뀌었다. 지금 연구는 피벗 구간에서 J_U3_PRESSER 20(들림)이다(예: CYCLE_G1 88~178·210~390·422~512단계). 이 키 고침은 이번 실행 DC-04 모델링 몫(지시 (b) "연구 키(노루발 들기 값) 고침")이라 준비 부족으로 보지 않는다. 대응하는 상태(홈 입구·꼭짓점 회전)는 있다.
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G 좁은 U홈·WP_V V홈 30°(MAT·TAPE·SEAM, 요구서 0-2 양 끝, 가공 뒤 형상) — 조인트 J_WP_L/S/G/V_* 모두 joint.list에 있음. v2.8.10~12는 이 바디를 바꾸지 않았다(CHANGELOG). 떨어지는 조각 없음(D-07).
+- 동작 상태 초기화: CLI로만 읽어 앱 포즈를 바꾸지 않았으므로 할 것 없음(안내서 '원복' "읽기 부서가 CLI로만 쟀다면 원복할 것이 없다"). 저장 0, 편집 0.
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+근거: 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 실행 규칙 2(앱 꺼짐 → CLI), E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", E-08 원복.
+
+## 워크플로우 메모
+- 앱이 꺼진 채 워크플로우가 시작됐다. 준비 점검은 CLI 1회(450 s)로 끝났지만, 뒤의 모델링부는 실행 규칙 2상 MCP(앱)로 그려야 하므로 앱을 켜야 한다. 앱 켜짐 확인을 워크플로우 맨 앞에 두는 것이 좋다.
+- machine.json `doc` 칸이 형상만 바뀐 버전(LITE·PNEU-01R)에서 갱신되지 않아 v2.8.9로 남았다.
+
+---
+
 # 준비 점검 — FSAP_v2.8.9 (2026-11-10 오후, 엔진 v3.9.3, 사용자 "잘 도는데 긴것도 혼자" 실행 전)
 
 요약
