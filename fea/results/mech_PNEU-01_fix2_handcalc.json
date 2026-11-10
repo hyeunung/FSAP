@@ -1,0 +1,141 @@
+{
+ "CST_V_strip_X": {
+  "L_mm": 204.0,
+  "Z_mm3": 80.0,
+  "sigma_op_MPa": 18.57,
+  "SF_op": 10.5,
+  "sigma_mis_MPa": 127.5,
+  "SF_mis": 1.53,
+  "note": "띠 두께 방향(+X, 판에서 떨어지는 쪽), 윗판 Z532",
+  "defl_op_mm": 1.84,
+  "defl_mis_mm": 12.633
+ },
+ "CST_V_strip_Y": {
+  "L_mm": 204.0,
+  "Z_mm3": 600.0,
+  "sigma_op_MPa": 2.48,
+  "SF_op": 78.76,
+  "sigma_mis_MPa": 17.0,
+  "SF_mis": 11.47,
+  "note": "띠 폭 방향(Y)",
+  "defl_op_mm": 0.033,
+  "defl_mis_mm": 0.225
+ },
+ "CST_V_strip_Zload": {
+  "L_mm": 80.0,
+  "Z_mm3": 80.0,
+  "sigma_op_MPa": 7.28,
+  "SF_op": 26.78,
+  "sigma_mis_MPa": 50.0,
+  "SF_mis": 3.9,
+  "note": "가로판 끝 Z 하중 -> 띠 두께 방향 굽힘"
+ },
+ "CST_V_armL_Z": {
+  "L_mm": 80.0,
+  "Z_mm3": 64.0,
+  "sigma_op_MPa": 9.1,
+  "SF_op": 21.42,
+  "sigma_mis_MPa": 62.5,
+  "SF_mis": 3.12,
+  "note": "아래 가로판 뿌리 t4 폭 37 - 구멍 2"
+ },
+ "CST_V_armU_Z": {
+  "L_mm": 80.0,
+  "Z_mm3": 53.3,
+  "sigma_op_MPa": 10.92,
+  "SF_op": 17.85,
+  "sigma_mis_MPa": 75.0,
+  "SF_mis": 2.6,
+  "note": "윗 가로판 뿌리 t4 폭 33 - 구멍 2"
+ },
+ "KDM_plate_Y": {
+  "L_mm": 84.0,
+  "Z_mm3": 853.3,
+  "sigma_op_MPa": 0.72,
+  "SF_op": 272.04,
+  "sigma_mis_MPa": 4.92,
+  "SF_mis": 39.62,
+  "note": "앞판: 가장 높은 구멍 Z710에서 Y 당김, 뿌리 날개 윗면 Z626"
+ },
+ "KDM_flange_Y": {
+  "L_mm": 87.0,
+  "Z_mm3": 480.0,
+  "sigma_op_MPa": 1.32,
+  "SF_op": 147.75,
+  "sigma_mis_MPa": 9.06,
+  "SF_mis": 21.52,
+  "note": "날개 t6: 앞판 Y 하중 모멘트가 날개 단면(X80 x t6)을 굽힘"
+ },
+ "KDM_flange_Zload": {
+  "L_mm": 20.0,
+  "Z_mm3": 480.0,
+  "sigma_op_MPa": 0.3,
+  "SF_op": 642.71,
+  "sigma_mis_MPa": 2.08,
+  "SF_mis": 93.6,
+  "note": "날개: 앞판 Z 하중이 날개 길이 20(Y92->112)으로 굽힘"
+ },
+ "KDM_arm_X": {
+  "L_mm": 80.0,
+  "Z_mm3": 6165.3,
+  "sigma_op_MPa": 0.09,
+  "SF_op": 2063.8,
+  "sigma_mis_MPa": 0.65,
+  "SF_mis": 300.56,
+  "note": "팔 Y40(형상 같음, 웹 Y44~96으로 짧아짐)"
+ },
+ "SO1_yoke_Z": {
+  "L_mm": 30.0,
+  "Z_mm3": 1536.0,
+  "sigma_op_MPa": 0.13,
+  "SF_op": 1548.0,
+  "sigma_mis_MPa": 0.98,
+  "SF_mis": 199.68,
+  "note": "멍에: 관 Z 당김, 귀 앞면 Y112까지 30"
+ },
+ "SO1_yoke_X": {
+  "L_mm": 30.0,
+  "Z_mm3": 1024.0,
+  "sigma_op_MPa": 0.19,
+  "SF_op": 1032.0,
+  "sigma_mis_MPa": 1.46,
+  "SF_mis": 133.12,
+  "note": "멍에: 관 축(X) 당김"
+ },
+ "SO1_ear_Y": {
+  "L_mm": 32.0,
+  "Z_mm3": 213.3,
+  "sigma_op_MPa": 0.97,
+  "SF_op": 201.56,
+  "sigma_mis_MPa": 7.5,
+  "SF_mis": 26.0,
+  "note": "귀 t8 Z20: 멍에 Y 하중 -> 가까운 볼트 X944까지 32"
+ },
+ "SO1_block_Z": {
+  "L_mm": 59.0,
+  "Z_mm3": 3850.7,
+  "sigma_op_MPa": 0.1,
+  "SF_op": 1923.63,
+  "sigma_mis_MPa": 0.77,
+  "SF_mis": 254.54,
+  "note": "블록: U6 구멍 Y53 -> 귀 Y112 59 (수정 1과 같은 꼴, X 이동만)"
+ },
+ "AIR_plate_X": {
+  "L_mm": 8.0,
+  "Z_mm3": 92.8,
+  "sigma_op_MPa": 0.87,
+  "SF_op": 223.03,
+  "sigma_mis_MPa": 4.31,
+  "SF_mis": 45.24,
+  "note": "판 t4 Z48 - 구멍 Ø13.2: 관 축(X) 당김, 날개 Y116까지 8"
+ },
+ "AIR_flange_X": {
+  "L_mm": 7.0,
+  "Z_mm3": 128.0,
+  "sigma_op_MPa": 0.55,
+  "SF_op": 351.58,
+  "sigma_mis_MPa": 2.73,
+  "SF_mis": 71.31,
+  "note": "날개 t4 Z48: 판에서 볼트 X1159까지 7"
+ }
+}

@@ -1,0 +1,404 @@
+{
+ "_load": {
+  "w_TU0604_g_per_m": 18.8,
+  "w_TU0805_g_per_m": 36.8,
+  "F_press_TU0604_N": 6.28,
+  "F_press_TU0805_N": 9.82,
+  "F_misuse_N": 50.0
+ },
+ "bolt_CST_V_CB5-16_le8_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 8,
+   "load_N": 420.0,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 37.19,
+   "암나사 전단": 13.13,
+   "분리(예압/외력)": 10.71
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.23
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "bolt_RISER_CB5-16_le8_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 8,
+   "load_N": 122.1,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 127.93,
+   "암나사 전단": 45.16,
+   "분리(예압/외력)": 36.86
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.23
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "bolt_COMB_KDM_CB5-16_le8_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 8,
+   "load_N": 158.3,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 98.67,
+   "암나사 전단": 34.83,
+   "분리(예압/외력)": 28.43
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.23
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "bolt_BRKT_KDM_CB5-16_le8_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 8,
+   "load_N": 131.2,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 119.05,
+   "암나사 전단": 42.02,
+   "분리(예압/외력)": 34.3
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.23
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "bolt_SO_1_CB5-16_le8_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 8,
+   "load_N": 167.5,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 93.25,
+   "암나사 전단": 32.92,
+   "분리(예압/외력)": 26.87
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.23
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "bolt_ARM_1_CB5-16_le10_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 10,
+   "load_N": 125.0,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 2.0,
+  "sf_operating": {
+   "나사 인장": 124.96,
+   "암나사 전단": 57.96,
+   "분리(예압/외력)": 36.0
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 2.93,
+   "조임 암나사 전단": 1.61
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "bolt_COMB_ML_CB5-16_le9.9_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 9.9,
+   "load_N": 300.0,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.98,
+  "sf_operating": {
+   "나사 인장": 52.07,
+   "암나사 전단": 28.57,
+   "분리(예압/외력)": 15.0
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 3.59,
+   "조임 암나사 전단": 1.9
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "sections": {
+  "CST_V_strip_X": {
+   "sigma_op_MPa": 40.33,
+   "SF_op": 4.84,
+   "sigma_mis_MPa": 276.92,
+   "SF_mis": 0.7,
+   "note": "띠 뿌리 Z328, 하중 +X(판에서 떨어지는 쪽) 윗판 Z520",
+   "defl_op_mm": 3.54,
+   "k_N_per_mm": 2.06,
+   "F_yield_N": 35.2
+  },
+  "CST_V_strip_Y": {
+   "sigma_op_MPa": 12.41,
+   "SF_op": 15.71,
+   "sigma_mis_MPa": 85.21,
+   "SF_mis": 2.29,
+   "note": "띠 뿌리 Z328, 하중 Y"
+  },
+  "CST_V_strip_Zload": {
+   "sigma_op_MPa": 16.8,
+   "SF_op": 11.6,
+   "sigma_mis_MPa": 115.38,
+   "SF_mis": 1.69,
+   "note": "가로판 끝 Z 하중 -> 띠에 F x 80 굽힘(두께 방향)"
+  },
+  "CST_V_arm_Z": {
+   "sigma_op_MPa": 10.92,
+   "SF_op": 17.85,
+   "sigma_mis_MPa": 75.0,
+   "SF_mis": 2.6,
+   "note": "가로판 뿌리 t4 폭 33 - 구멍 2"
+  },
+  "CST_V_beam_tool": {
+   "inputs": {
+    "t": 4,
+    "b": 13,
+    "L": 192,
+    "E": 70000.0,
+    "Rp": 195.0,
+    "end": "cantilever",
+    "sf_min": 2.0
+   },
+   "force_N": 50.0,
+   "deflection_mm": 24.3059,
+   "stiffness_N_mm": 2.0571,
+   "stress_MPa": 276.92,
+   "sf": 0.7,
+   "thin": true,
+   "ok": false,
+   "needs_fea": false
+  },
+  "CST_V_fix_SF_mis": {
+   "t4_b33": 1.79,
+   "t5_b33": 2.79,
+   "t6_b33": 4.02,
+   "t4_b33_L15": 4.52
+  },
+  "CST_V_bolt_T_mis_N": 420.0,
+  "RISER_COMB_plate_Z": {
+   "sigma_op_MPa": 3.02,
+   "SF_op": 64.55,
+   "sigma_mis_MPa": 12.8,
+   "SF_mis": 15.23,
+   "note": "판 뿌리(귀 면 Y112), Z 하중 끝 Y-15"
+  },
+  "RISER_COMB_bolt_T_mis_N": 122.1,
+  "COMB_KDM_arm_Y": {
+   "sigma_op_MPa": 0.57,
+   "SF_op": 341.76,
+   "sigma_mis_MPa": 3.92,
+   "SF_mis": 49.77,
+   "note": "팔 뿌리 X-80, Y 하중 X-24"
+  },
+  "COMB_KDM_web_X": {
+   "sigma_op_MPa": 0.86,
+   "SF_op": 226.14,
+   "sigma_mis_MPa": 5.92,
+   "SF_mis": 32.93,
+   "note": "웹 뿌리 Y112, X 하중 Y40"
+  },
+  "COMB_KDM_bolt_T_mis_N": 158.3,
+  "BRKT_KDM_plate_Z": {
+   "sigma_op_MPa": 0.86,
+   "SF_op": 227.84,
+   "sigma_mis_MPa": 5.88,
+   "SF_mis": 33.18,
+   "note": "받침 끝 X14 단면, Z 하중 X-70"
+  },
+  "BRKT_KDM_bolt_T_mis_N": 131.2,
+  "CLAMP_SO_1_X": {
+   "sigma_op_MPa": 0.42,
+   "SF_op": 464.89,
+   "sigma_mis_MPa": 2.07,
+   "SF_mis": 94.38,
+   "note": "블록 뿌리 Y112, X 하중 Y50"
+  },
+  "CLAMP_SO_1_bolt_T_mis_N": 167.5,
+  "CLAMP_SO_2_Z": {
+   "sigma_op_MPa": 1.7,
+   "SF_op": 114.57,
+   "sigma_mis_MPa": 13.19,
+   "SF_mis": 14.78,
+   "note": "판 t8 폭 20 - 구멍, 외팔 38(보수: 구멍을 뿌리에)"
+  },
+  "CLAMP_CAR_Z": {
+   "sigma_op_MPa": 0.9,
+   "SF_op": 216.14,
+   "sigma_mis_MPa": 6.82,
+   "SF_mis": 28.6,
+   "note": "귀 면 Y80 단면, Z 하중 Y48"
+  },
+  "ARM_1_plate_Z": {
+   "sigma_op_MPa": 0.97,
+   "SF_op": 200.42,
+   "sigma_mis_MPa": 7.35,
+   "SF_mis": 26.52,
+   "note": "판 뿌리(귀 면 X-1956), Z 하중 X-1990"
+  },
+  "ARM_1_ear_X": {
+   "sigma_op_MPa": 0.55,
+   "SF_op": 353.69,
+   "sigma_mis_MPa": 4.17,
+   "SF_mis": 46.8,
+   "note": "귀 Y80 단면(체인 팔 끝), X 하중 Y60"
+  },
+  "ARM_1_ear_torsion": {
+   "tau_mis_MPa": 3.59,
+   "SF_mis": 31.38
+  },
+  "ARM_1_bolt_T_mis_N": 125.0,
+  "ARM_2_plate_Y": {
+   "sigma_op_MPa": 0.84,
+   "SF_op": 231.86,
+   "sigma_mis_MPa": 6.36,
+   "SF_mis": 30.68,
+   "note": "판 뿌리(귀 면), Y 하중 X-1985"
+  },
+  "BRKT_U6_ear": {
+   "sigma_op_MPa": 0.32,
+   "SF_op": 607.06,
+   "sigma_mis_MPa": 2.49,
+   "SF_mis": 78.31,
+   "note": "귀 블록 밑 Z252, Z 하중 X-347"
+  },
+  "COMB_ML_block_X": {
+   "sigma_op_MPa": 0.12,
+   "SF_op": 1661.73,
+   "sigma_mis_MPa": 0.77,
+   "SF_mis": 253.07,
+   "note": "보 윗면 뿌리 Z650, X 하중 윗끝"
+  },
+  "COMB_ML_bolt_T_mis_N": 300.0
+ },
+ "worst_mis": [
+  [
+   0.7,
+   "CST_V_strip_X"
+  ],
+  [
+   1.69,
+   "CST_V_strip_Zload"
+  ],
+  [
+   2.29,
+   "CST_V_strip_Y"
+  ],
+  [
+   2.6,
+   "CST_V_arm_Z"
+  ]
+ ],
+ "worst_op": [
+  [
+   4.84,
+   "CST_V_strip_X"
+  ],
+  [
+   11.6,
+   "CST_V_strip_Zload"
+  ],
+  [
+   15.71,
+   "CST_V_strip_Y"
+  ]
+ ]
+}
