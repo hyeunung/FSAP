@@ -1,0 +1,275 @@
+{
+ "_criteria": {
+  "SF_op": 3.0,
+  "SF_mis": 2.0,
+  "source": "fea/models.json = 요구서 6-1(M-09 기본값)"
+ },
+ "parts": {
+  "CST_V_strip_X": {
+   "L_mm": 208.0,
+   "Z_mm3": 80.0,
+   "sigma_op": 18.93,
+   "SF_op": 10.3,
+   "sigma_mis": 130.0,
+   "SF_mis": 1.5,
+   "note": "띠 두께 방향 +X, 뿌리 Z328 -> 하중점 Z536(윗판 윗면, 보수)",
+   "defl_op_mm": 1.95,
+   "k_N_mm": 3.734,
+   "judge": "디테일"
+  },
+  "CST_V_strip_Y": {
+   "L_mm": 208.0,
+   "Z_mm3": 600.0,
+   "sigma_op": 2.52,
+   "SF_op": 77.25,
+   "sigma_mis": 17.33,
+   "SF_mis": 11.25,
+   "note": "띠 폭 방향 Y",
+   "defl_op_mm": 0.03,
+   "k_N_mm": 210.025,
+   "judge": "됨"
+  },
+  "CST_V_strip_Zload": {
+   "L_mm": 84.0,
+   "Z_mm3": 80.0,
+   "sigma_op": 7.65,
+   "SF_op": 25.5,
+   "sigma_mis": 52.5,
+   "SF_mis": 3.71,
+   "note": "가로판 끝(X146) Z 하중 -> 띠 두께 방향 굽힘, 팔 84(보수: 끝 모서리)",
+   "judge": "됨"
+  },
+  "CST_V_armU_Z": {
+   "L_mm": 84.0,
+   "Z_mm3": 53.3,
+   "sigma_op": 11.47,
+   "SF_op": 17.0,
+   "sigma_mis": 78.75,
+   "SF_mis": 2.48,
+   "note": "윗 가로판 Y-160~-127(33) - 구멍 2, t4, 팔 84",
+   "judge": "됨"
+  },
+  "CST_V_armL_Z": {
+   "L_mm": 84.0,
+   "Z_mm3": 64.0,
+   "sigma_op": 9.56,
+   "SF_op": 20.4,
+   "sigma_mis": 65.62,
+   "SF_mis": 2.97,
+   "note": "아래 가로판 Y-164~-127(37) - 구멍 2, t4, 팔 84",
+   "judge": "됨"
+  },
+  "KDM_plate_Y": {
+   "L_mm": 110.0,
+   "Z_mm3": 853.3,
+   "sigma_op": 0.94,
+   "SF_op": 207.74,
+   "sigma_mis": 6.45,
+   "SF_mis": 30.25,
+   "note": "앞판 t8 폭 80: 가장 높은 꼭짓점 Z736(보수)에서 Y 당김, 뿌리 날개 윗면 Z626",
+   "judge": "됨"
+  },
+  "KDM_flange_Y": {
+   "L_mm": 116.0,
+   "Z_mm3": 480.0,
+   "sigma_op": 1.76,
+   "SF_op": 110.81,
+   "sigma_mis": 12.08,
+   "SF_mis": 16.14,
+   "note": "날개 t6 X80: 앞판 Y 하중 모멘트(팔 Z736->620)",
+   "judge": "됨"
+  },
+  "KDM_flange_Zload": {
+   "L_mm": 28.0,
+   "Z_mm3": 480.0,
+   "sigma_op": 0.42,
+   "SF_op": 459.08,
+   "sigma_mis": 2.92,
+   "SF_mis": 66.86,
+   "note": "날개: Z 하중, 앞판 가운데 Y92 -> 귀 끝 Y120 28",
+   "judge": "됨"
+  },
+  "KDM_arm_X": {
+   "L_mm": 80.0,
+   "Z_mm3": 6165.3,
+   "sigma_op": 0.09,
+   "SF_op": 2063.8,
+   "sigma_mis": 0.65,
+   "SF_mis": 300.56,
+   "note": "팔(t8, 높이 68) X 당김, 팔 80",
+   "judge": "됨"
+  },
+  "SO1_yoke_Z": {
+   "L_mm": 38.0,
+   "Z_mm3": 1536.0,
+   "sigma_op": 0.16,
+   "SF_op": 1222.11,
+   "sigma_mis": 1.24,
+   "SF_mis": 157.64,
+   "note": "멍에 16x24: 관(Y82) Z 당김, 받침 면 Y120까지 38(보수)",
+   "judge": "됨"
+  },
+  "SO1_yoke_X": {
+   "L_mm": 38.0,
+   "Z_mm3": 1024.0,
+   "sigma_op": 0.24,
+   "SF_op": 814.74,
+   "sigma_mis": 1.86,
+   "SF_mis": 105.09,
+   "note": "멍에: 관 축 X 당김, 38",
+   "judge": "됨"
+  },
+  "SO1_ear_Y": {
+   "L_mm": 40.0,
+   "Z_mm3": 213.3,
+   "sigma_op": 1.21,
+   "SF_op": 161.25,
+   "sigma_mis": 9.38,
+   "SF_mis": 20.8,
+   "note": "귀 t8 Z20: 멍에 끝 X904 -> 가까운 볼트 X944 40(보수)",
+   "judge": "됨"
+  },
+  "SO1_block_Z": {
+   "L_mm": 75.0,
+   "Z_mm3": 3850.7,
+   "sigma_op": 0.13,
+   "SF_op": 1513.25,
+   "sigma_mis": 0.97,
+   "SF_mis": 200.23,
+   "note": "블록 16x38: 끝 Y45 -> 받침 Y120 75(보수)",
+   "judge": "됨"
+  },
+  "AIR_plate_X": {
+   "L_mm": 20.0,
+   "Z_mm3": 92.8,
+   "sigma_op": 2.19,
+   "SF_op": 89.21,
+   "sigma_mis": 10.78,
+   "SF_mis": 18.1,
+   "note": "판 t4 Z48 - 구멍 Ø13.2: X 당김, 판 끝 Y96 -> 날개 Y116 20(보수)",
+   "judge": "됨"
+  },
+  "AIR_flange_X": {
+   "L_mm": 18.0,
+   "Z_mm3": 128.0,
+   "sigma_op": 1.43,
+   "SF_op": 136.73,
+   "sigma_mis": 7.03,
+   "SF_mis": 27.73,
+   "note": "날개 t4 Z48: 판 X1148 -> 날개 끝 X1166 18(보수)",
+   "judge": "됨"
+  }
+ },
+ "bolts": {
+  "CST_V_CB5-16_le8_A5052": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 450.0,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 34.71,
+    "암나사 전단": 12.25,
+    "분리(예압/외력)": 10.0
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 1.54,
+    "조임 암나사 전단": 1.23
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "F_5_CB5-16_le8_SS400": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 60.7,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 257.33,
+    "암나사 전단": 114.12,
+    "분리(예압/외력)": 74.14
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 3.59,
+    "조임 암나사 전단": 1.54
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "AIR_CB5-16_le8_SS400": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 135.7,
+    "torque_Nm": 4.5,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 4500.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 115.11,
+    "암나사 전단": 51.05,
+    "분리(예압/외력)": 33.16
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 3.12,
+    "조임 좌면": 3.59,
+    "조임 암나사 전단": 1.54
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "beam_CST_V": {
+  "inputs": {
+   "t": 4,
+   "b": 30,
+   "L": 208.0,
+   "E": 70000.0,
+   "Rp": 195.0,
+   "end": "cantilever",
+   "sf_min": 2.0
+  },
+  "force_N": 50.0,
+  "deflection_mm": 13.3912,
+  "stiffness_N_mm": 3.7338,
+  "stress_MPa": 130.0,
+  "sf": 1.5,
+  "thin": true,
+  "ok": false,
+  "needs_fea": false,
+  "F_yield_N": 75.0
+ }
+}
