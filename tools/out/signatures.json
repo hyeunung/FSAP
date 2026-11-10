@@ -1,8 +1,8 @@
 {
  "date": "2026-11-03",
  "pose": "REST step 0",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.8.11.sc",
- "doc_hash": "e1b88913c21b7061",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.8.12.sc",
+ "doc_hash": "76b9b9f2d8fc9444",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -1294,8 +1294,8 @@
     650.0,
     685.0
    ],
-   "volume": 28917.111,
-   "mass": 226.999,
+   "volume": 28829.154,
+   "mass": 226.309,
    "material": "Steel",
    "bolt": false,
    "spec": ""
