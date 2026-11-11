@@ -1,0 +1,735 @@
+{
+ "run": "mech_2026-11-11_M02R-SIM-01-STEPWAIT",
+ "status": "완료",
+ "engine": "v4.0.0",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-11",
+ "journal": "wf_8399bf07-f4f",
+ "totals": {
+  "agents": 23,
+  "agent_sec": 8272,
+  "input": 3248615,
+  "cache_read": 34924548,
+  "output": 421696,
+  "tools": 334,
+  "wall_sec": 8240
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 287,
+   "agents": 3,
+   "output": 30144
+  },
+  "▸ modeling-round": {
+   "sec": 7985,
+   "agents": 20,
+   "output": 391552
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 80,
+   "tokens": {
+    "input": 68018,
+    "cache_read": 54601,
+    "output": 11115
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 57,
+   "tokens": {
+    "input": 75828,
+    "cache_read": 273977,
+    "output": 6452
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 150,
+   "tokens": {
+    "input": 114369,
+    "cache_read": 857574,
+    "output": 12577
+   },
+   "tools": 13,
+   "turns": 10
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 82,
+   "tokens": {
+    "input": 26640,
+    "cache_read": 96023,
+    "output": 11115
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 96,
+   "tokens": {
+    "input": 100092,
+    "cache_read": 1162565,
+    "output": 7108
+   },
+   "tools": 20,
+   "turns": 14
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 33,
+   "tokens": {
+    "input": 77185,
+    "cache_read": 148176,
+    "output": 1659
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "STEPLITE 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 27,
+   "tokens": {
+    "input": 77242,
+    "cache_read": 0,
+    "output": 1587
+   },
+   "tools": 1,
+   "turns": 1
+  },
+  {
+   "label": "M02R 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1774,
+   "tokens": {
+    "input": 399443,
+    "cache_read": 8929094,
+    "output": 42157
+   },
+   "tools": 68,
+   "turns": 61
+  },
+  {
+   "label": "M02R 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 33,
+   "tokens": {
+    "input": 76023,
+    "cache_read": 72168,
+    "output": 2555
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "M02R 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1590,
+   "tokens": {
+    "input": 423805,
+    "cache_read": 7064804,
+    "output": 121502
+   },
+   "tools": 39,
+   "turns": 36
+  },
+  {
+   "label": "M02R 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 243,
+   "tokens": {
+    "input": 119841,
+    "cache_read": 805008,
+    "output": 18566
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "M02R 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 206,
+   "tokens": {
+    "input": 119988,
+    "cache_read": 611777,
+    "output": 20708
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "M02R 완료 판정 확인 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 199,
+   "tokens": {
+    "input": 85816,
+    "cache_read": 1119495,
+    "output": 16902
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "M02R 기구설계부 수정2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 201,
+   "tokens": {
+    "input": 85285,
+    "cache_read": 1620523,
+    "output": 22594
+   },
+   "tools": 16,
+   "turns": 16
+  },
+  {
+   "label": "M02R 완료 판정 확인 2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 150,
+   "tokens": {
+    "input": 70667,
+    "cache_read": 590556,
+    "output": 13983
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "SIM-01 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 125,
+   "tokens": {
+    "input": 110902,
+    "cache_read": 1108971,
+    "output": 11479
+   },
+   "tools": 18,
+   "turns": 13
+  },
+  {
+   "label": "SIM-01 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 8,
+   "tokens": {
+    "input": 75004,
+    "cache_read": 72251,
+    "output": 412
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "SIM-01 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 202,
+   "tokens": {
+    "input": 131729,
+    "cache_read": 1408557,
+    "output": 20027
+   },
+   "tools": 19,
+   "turns": 14
+  },
+  {
+   "label": "SIM-01 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2564,
+   "tokens": {
+    "input": 693872,
+    "cache_read": 5942451,
+    "output": 33050
+   },
+   "tools": 52,
+   "turns": 51
+  },
+  {
+   "label": "SIM-01 기구설계부 수정2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 275,
+   "tokens": {
+    "input": 102096,
+    "cache_read": 2238687,
+    "output": 24826
+   },
+   "tools": 21,
+   "turns": 20
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 47,
+   "tokens": {
+    "input": 84443,
+    "cache_read": 156212,
+    "output": 5094
+   },
+   "tools": 5,
+   "turns": 3
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 39,
+   "tokens": {
+    "input": 82747,
+    "cache_read": 317915,
+    "output": 2907
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 91,
+   "tokens": {
+    "input": 47580,
+    "cache_read": 273163,
+    "output": 13321
+   },
+   "tools": 7,
+   "turns": 4
+  }
+ ],
+ "fix_agents": [
+  "M02R 기구설계부 수정1",
+  "M02R 기구설계부 수정2",
+  "SIM-01 기구설계부 수정1",
+  "SIM-01 기구설계부 수정2"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPLITE",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "M02R",
+    "status": "설계 미달(수정 상한)",
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "기울기·접지점 이동을 넣은 회전 SF ≥ 1 (U4 혼자 회전 구간 포함)",
+      "where": "설계안",
+      "evidence": "두께 6의 회전 SF 1.001(여유 0.001)은 실린더 패킹 정지 마찰을 0으로 둔 값이다. 설계자는 수정 1(결정로그 M02R-D2 수정 1)에서 이 마찰을 상한 0.05 MPa×314 = 15.7 N(바퀴 환산 10.9 N), '내려앉으며 들어가면 힘을 줄임'이라고 적었다. 대기가 들림이라 누를 때마다 바퀴가 내려앉고, 그래서 N_land = N − 0.699f다. 0.129 MPa에서 회전 SF는 다음과 같다: f 1 N이면 0.983, f 2 N이면 0.966, f 15.7 N이면 0.727·0.762·0.823(두께 6·10·16). f 15.7 N에서 SF 1에 필요한 압력은 0.179 MPa이고, 그때 누름 SF는 1.12로 1.5보다 작다. 0.129 근처 한 값으로 회전 SF ≥ 1과 누름 SF ≥ 1.5를 함께 맞추려면 f ≤ 1.4 N이어야 하는데, 이 값의 카탈로그 근거는 없다.",
+      "fix": "설계안 2-3 식을 N_land = N_free + (N/MPa)·p − g·f로 바꾼다(g 0.699·0.692·0.667). f는 카탈로그(M-06) 값이나 D-번호 임시값으로 넣는다. 그다음 세 조건을 함께 맞춘다: (a) 두께 6에서 11.80 + 219.5p − 0.699f ≥ 40.08, (b) p ≤ 0.1333, (c) 두께 16 명목값 17.51 + 209.7p ≤ 51.6. p를 낮추려면 스프링 덜어 줌 S0(θ0 합 74.9 N)을 줄여 공기 0 바퀴 힘을 ΔN ≥ 0.699f − 0.99만큼 올린다(f 15.7이면 θ0 13 → 23 N 이상). (a)와 (c)를 같이 맞추려면 f ≤ 약 10 N(로드)이 필요하다. f 15.7이면 마찰이 작은 사양(φ20 최저 사용 압력 ≤ 0.03 MPa, ≤ 9.4 N)의 카탈로그 값으로 바꾼다. 같은 CDQ2 자리를 쓰고 외형은 바꾸지 않는다. 결과는 2절 표와 요구서 7절에 다시 적는다."
+     }
+    ],
+    "design": {
+     "basis": "요구서 0-8-3 U4의 벤치마크 R375X(서보 직결 바퀴, 핀 스윙 암, 공압 실린더)를 그대로 쓴다. 매다는 방식만 사용자 2026-11-11 정정(C-41)을 따른다: 보에 고정한 사각 실린더, 로드 Y, 그네. 기존 서보·감속기·바퀴 암 묶음은 그대로 쓴다.",
+     "revisions": [
+      {
+       "round": 1,
+       "where": "설계안 2-2 '낮은 누름(C-39 F4 ≤ 18 N)' 행, 4-6 제어 제약, 7절 M-06 행(글만, 형상 변경 0)",
+       "change": "낮은 누름 압력: θ0 0.023 MPa·두께 16 0.0072 MPa → 0(양 포트 배기), 바퀴 힘 8.7/11.8/13.0/17.5 N. 제어: '압력 2단' → '1번 밸브 3위치 배기 중립 또는 배기 밸브 1개, 진입은 B 짧게 → 배기'",
+       "why": "CDQ2A20-25DMZ 사용 압력은 0.05~1.0 MPa다(M-06). 0.05 MPa에서도 23.8·27.7 N > 18이다"
+      },
+      {
+       "round": 2,
+       "where": "설계안 2-2 낮은 누름 행·40 N 압력·누름 SF, 2-3 회전 SF 식·표, 4-6 제어 제약, 7절 M-06, 요약 줄. mech_M02R_design1.md 1·2절을 거둠(형상 변경 0)",
+       "change": "① 양 포트 배기·배기 중립·진입 순서 → 'U4 혼자 회전 구간도 봉제 누름 40 N 이상(A 급기, IR1000 설정 그대로). 낮은 누름(C-39) = 노루발 J_U3_PRESSER 피벗 높이 0. F4 ≤ μ0.4 × 40 = 16 N(DC-04 15.9) ≤ 18'. ② SF0 1.425 → 1.01(0.0202/0.02). ③ IR1000 0.124(두께별 0.107·0.129) → 한 값 0.129 MPa: 회전 SF 1.38·1.49 → 1.001·1.036·1.077, 자국 SF 1.32·1.29·1.18 → 1.286·1.258·1.158, 누름 SF 1.61 → 1.55",
+       "why": "수정 1회차는 C-39를 잘못 읽었다. 배기면 회전 SF 0.33~0.05이고, IR1000이 A 관에 있어 배기 중립으로는 압력이 갇힌다. 또 0.0285는 출처가 없고, U4 혼자 구간 판정선은 machine.json c_max 최소 0.0202다. 0.124 고정이면 두께 6 회전 SF 0.973 < 1이다"
+      }
+     ]
+    }
+   },
+   {
+    "id": "SIM-01",
+    "status": "설계 미달(수정 상한)",
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "영상 5연구 첨부",
+      "where": "설계안",
+      "evidence": "M02R 저장본이 없어(v2.10.3 이상 없음, M02R 완료 판정 3회차 불합격) 만들 수 없다. 옛 크랭크 U4 영상(anim2)은 틀린 그림이라 쓰지 않는다. 검도가 anim3/에 뽑는다",
+      "fix": "그 자리만 고친다"
+     }
+    ],
+    "design": {
+     "basis": "0-8-3 U7에서 그대로 가져오는 벤치마크는 R375X 테이프 유닛과 867 바인더다(US6044783A·US4688499). v2.10.0·v2.10.1에서 놓은 테이프 줄과 붙은 조각을 형상 변경 없이 그대로 쓴다.",
+     "revisions": [
+      {
+       "round": 1,
+       "where": "간섭 0 항목: 검사 범위",
+       "change": "M02R 저장본에서 5연구 × 전체 against를 다시 하던 것을 둘로 나눴다. U4 밖 against는 v2.10.2에서 지금 확인했다(겹침 0, truncated false, 기준선 ≤ 75.2). M02R 저장본에서는 U4 묶음 against만 한다(check4_tmpl).",
+       "why": "E-17 '검증 원장과 바뀐 범위로 검사 범위를 정한다'. M02R이 바꾸는 것은 U4뿐이다. v2.10.1 재검(check2)은 재부팅으로 끊겨 빈 결과였다."
+      },
+      {
+       "round": 1,
+       "where": "검사 스크립트의 occurrence 이름",
+       "change": "WP_TAPE_L:1/WP_TP_*:1을 루트 WP_TP_*:1로 바꾸고, L에 16B·26B·WP_TAPE_L:1을 넣었다(v2.10.2 실제 목록 131개).",
+       "why": "check2 이름으로 돌리자 CLI 오류 'no occurrence WP_TAPE_L:1/WP_TP_L_01:1'이 났다."
+      },
+      {
+       "round": 1,
+       "where": "영상 5연구 절차",
+       "change": "anim2를 쓰지 않고, M02R 저장본의 CYCLE_* 키로 TMP_A/B를 다시 만들어 anim3/에 둔다. 합격은 frames ≥ 150, bytes > 0, stopped null이다.",
+       "why": "anim2 TMP 연구에는 옛 크랭크의 J_U4_PRESS 키가 들어 있다."
+      },
+      {
+       "round": 2,
+       "where": "간섭 0 항목: U4 쌍 근거",
+       "change": "근거가 '검도에서 확인'뿐이던 것에 손계산을 더했다. 새 U4 부품 최저 Z 94.1(그네 판, −4.14°), 조각과 Z 틈 ≥ 83, X 틈 ≥ 139.5. 겹칠 수 있는 것은 트레드(≥ 0.033)와 원판(0.0 맞닿음)뿐이다.",
+       "why": "M02R 저장본이 아직 없어 CAD 판정을 할 수 없다. 설계 단계 근거는 M02R 3차 안 좌표로 낼 수 있다."
+      },
+      {
+       "round": 2,
+       "where": "검사 스크립트 against 이름",
+       "change": "고정 목록 [U4_PRESS:1, U4_WHEEL:1, U4_DISK:1, U4S_CYL:1, U4S_ROD:1]을 생성기 check4/mk_check4.py로 바꿨다. 저장본 이름에서 루트 U4*를 전부 넣고, 없는 이름이면 CLI 전에 멈춘다. budget_s는 450에서 600으로 올렸다.",
+       "why": "v2.10.2 루트는 U4_PRESS:1·U4_WHEEL_N:1뿐이고, U4_WHEEL:1·U4_DISK:1는 없다. M02R 피벗 브래킷·축·스프링 탭은 U4_WHEEL_N 바로 밑에 있어 빠졌을 것이다. check3 L은 이름 오류를 1,130 s 뒤에야 냈다."
+      }
+     ]
+    }
+   }
+  ],
+  "regression": null,
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 85,
+     "cad_calls": 5,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 3,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPLITE 모델링부",
+    "phase": "STEPLITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 30,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "M02R 카탈로그부",
+    "phase": "M02R · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "M02R 측정부",
+    "phase": "M02R · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1700,
+     "cad_calls": 16,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 1030,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "M02R 기구설계부",
+    "phase": "M02R · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1520,
+     "cad_calls": 11,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "M02R 완료 판정 확인",
+    "phase": "M02R · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 224,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M02R 기구설계부 수정1",
+    "phase": "M02R · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "M02R 완료 판정 확인 1",
+    "phase": "M02R · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 168,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "M02R 기구설계부 수정2",
+    "phase": "M02R · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "M02R 완료 판정 확인 2",
+    "phase": "M02R · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 180,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "SIM-01 측정부",
+    "phase": "SIM-01 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 130,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "SIM-01 카탈로그부",
+    "phase": "SIM-01 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 20,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "SIM-01 기구설계부",
+    "phase": "SIM-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "SIM-01 기구설계부 수정1",
+    "phase": "SIM-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 2900,
+     "cad_calls": 11,
+     "file_opens": 11,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 1000,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "SIM-01 기구설계부 수정2",
+    "phase": "SIM-01 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 720,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "SIM-01 기구설계부 수정1",
+    "what": "설계 파일을 11번 엶(부서마다 한 번, E-04)"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-219",
+   "WF-220"
+  ],
+  "repeat_ids": [
+   "WF-215"
+  ],
+  "one_line": "회고 결과: 기존 WF-215의 반복 수를 1 올렸고(설계 파일 11번 다시 열기), 새 후보 WF-219(1회차 점검표에 카탈로그 마찰 항목이 없음)와 WF-220(벤치마크 사진에서 읽은 배치를 사용자 확인 없이 모델링하고 커밋함)를 추가했습니다. 두 내용은 docs/reports/engine-candidates.md에 적었습니다. 최종 보고서는 커밋 cc37952이고 푸시는 하지 않았습니다. 고친 엔진 파일은 없습니다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 23,
+  "시간 h": 2.3,
+  "출력 토큰": 421696,
+  "실패": 0
+ }
+}
