@@ -1,0 +1,89 @@
+[
+ {
+  "command": "browser.visibility",
+  "params": {
+   "items": [
+    "MAT_L",
+    "SEAM_L",
+    "TP_L_01a",
+    "TP_L_02a",
+    "TP_L_03a",
+    "TP_L_04a",
+    "TP_L_05a",
+    "TP_L_06a",
+    "TP_L_07a",
+    "TP_L_08a",
+    "TP_L_09a",
+    "TP_L_10a",
+    "TP_L_11a",
+    "TP_L_12a",
+    "TP_L_13a",
+    "TP_L_14a",
+    "TP_L_15a",
+    "TP_L_16a",
+    "TP_L_17a",
+    "TP_L_18a",
+    "TP_L_19a",
+    "TP_L_20a",
+    "TP_L_21a",
+    "TP_L_22a",
+    "TP_L_23a",
+    "TP_L_24a",
+    "TP_L_25a",
+    "TP_L_26a",
+    "TP_L_27a",
+    "TP_L_28a",
+    "TP_L_29a",
+    "TP_L_30a",
+    "TP_L_31a",
+    "TP_L_32a",
+    "TP_L_33a",
+    "TP_L_34a",
+    "TP_L_35a",
+    "TP_L_36a",
+    "TP_L_37a",
+    "TP_L_38a",
+    "TP_L_39a",
+    "TP_L_40a",
+    "TP_L_41a",
+    "TP_L_06b",
+    "TP_L_16b",
+    "TP_L_16c",
+    "TP_L_26b",
+    "TP_L_26c",
+    "TP_L_36b",
+    "TP_L_36c"
+   ],
+   "visible": true
+  }
+ },
+ {
+  "command": "browser.visibility",
+  "params": {
+   "folder": "joints",
+   "visible": false
+  }
+ },
+ {
+  "command": "browser.visibility",
+  "params": {
+   "folder": "sketches",
+   "visible": false
+  }
+ },
+ {
+  "command": "motion.play",
+  "params": {
+   "study": "REST",
+   "step": 0,
+   "quiet": true
+  }
+ },
+ {
+  "command": "document.metadata.set",
+  "params": {
+   "key": "description",
+   "value": "SIM-01 mechanism: show L-cycle mat and tape pieces in saved view (no geometry change)"
+  }
+ }
+]
