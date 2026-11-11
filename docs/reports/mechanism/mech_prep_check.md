@@ -1,3 +1,27 @@
+# 준비 점검 — FSAP_v2.10.1 (2026-11-11, 엔진 v3.9.3, SIM-01 수정 1회차 뒤 재실행)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.10.1.sc`(tools/config.json doc, 11-11 13:01 저장, 깃 밖 새 파일). 지시문 (a)의 "v2.8.12"보다 config가 최신이라 config를 따랐다. v2.10.1 = SIM-01 수정 1회차(machine.json `_history` 끝 줄: "J_TP_L_16B·26B 더함, 조각 컴포넌트 부모 WP_TAPE_<M>, L 자름 고침"). CHANGELOG에는 아직 v2.10.1 줄이 없다(v2.10.0까지).
+- 통로: **MCP**. 앱 켜짐(solidcraft.exe, 포트 27878 LISTENING), `running` 빈 목록. `open` 1회(FSAP_v2.10.1, features 3368, errors 0) → `joint.list`·`motion.list` → `motion.play REST step 0`. 저장 0, 편집 0. 결과 `tools/out/prep2101/`(joint_list.json, motion_list.json, rest_play.json).
+- 조인트 537(rigid 346·slider 181·revolute 10), 고정부 2(occurrence 0·2), **floating 0**, conflicts 0, errors 0. 움직이는 조인트 191 = machine.json joints 157(설계에서 빠짐 0, SIM-01 J_TP_* 포함) + 체인 링크 34(`J_U5_CHN_*`, links 모두 a = J_U5_X(id 48)).
+- 연구 9개, 단계 수 machine.json과 같음: REST 1(대기 포즈 step 0, 키 152)·CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630·CYCLE_V 486·MAINT_HEAD 1·SEAM_U7 32·MAINT_U7 13.
+- C-39 반영 그대로: 사이클 5개·SEAM_U7의 J_U3_PRESSER 값 {0, 20}(0 = 봉제·회전 중 낮은 누름), REST·MAINT 20.
+- 기계 정의 `tools/machine.json`: units 16(U6_PRESS·U7_TAPE_LINE 더함), states 30, path_parts 6, workpiece_stages(가공 전·후 + sim_tape, 조각 없음 D-07), baseline_overlaps 23, temp_values 11. `doc` 칸은 v2.10.0을 가리킨다(조인트·연구 같은 구조, 막지 않음 — 모델링부가 다음 저장 때 고치면 됨).
+- 상태 30이 요구서 0-3 ①~⑤에 대응(앞 점검과 같음): ① 대기·로딩 끝, ② 바퀴 내림(L·S), ③ 직선·볼록 45°/90°·홈 입구·안 벽·홈 바닥(오목)·두 번째 홈·V 입구1·꼭짓점·입구2, ④ 이음매 겹침 끝(L·S·G)·SEAM_U7, ⑤ 배출(L·S·G). 정비 1, 두께 THICK_6·THICK_16(6-4).
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G U홈·WP_V V홈 30°(MAT·TAPE·SEAM, 요구서 0-2 양 끝, 가공 뒤 형상) + SIM-01 붙은 테이프 조각(J_TP_*, 땀 진행 키). 떨어지는 조각 없음(D-07).
+- 동작 상태 초기화: `motion.play {study:"REST", step:0}` → moved false(이미 대기 포즈), conflicts 0, unmoved 0, values 152. 원복할 편집 없음(E-08).
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음, 앞과 같음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+근거: 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 실행 규칙 2 "혼자 도는 읽기 부서도 MCP로 잰다", E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", E-08 원복.
+
+## 워크플로우 메모
+- 지시문 (a)가 계속 v2.8.12를 가리킨다. 실제 최신은 config doc v2.10.1(그 사이 DC-04·U6S·SIM-01이 저장됨). 지시문 대신 config doc을 기준으로 했다.
+- 이 실행을 부른 사용자 말은 질문("그럼 step lite를 진행하는게 의미가 없다는거야?")이다. 준비 점검은 그 답을 정하지 않는다 — 최종 보고 담당이 답할 몫으로 남긴다.
+- `motion.play` 결과가 1.1 MB(positions 2866)로 커졌다(SIM-01 조각 122개). 요약만 돌려주는 옵션이 있으면 준비 점검이 가벼워진다.
+
+---
+
 # 준비 점검 — FSAP_v2.8.13 (2026-11-11, 엔진 v3.9.3, 사용자 "엔진 바꿨어" 뒤 재실행: MOT-01·FUNC-01·PNEU-01·STEPWAIT 남음)
 
 요약

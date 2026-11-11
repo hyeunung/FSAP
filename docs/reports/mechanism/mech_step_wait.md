@@ -12,3 +12,6 @@
 
 ## 워크플로우 메모
 - 모델에서 직접 목록을 뽑지 않고 BOM으로 대신했다(BOM이 v2.8.13과 같다는 가정).
+
+## 재확인 v2.10.1 (2026-11-11)
+- purchased-step·PartsLibrary에 새 STEP 없음 -> swap 0, waiting 그대로, lite F3SG-4RA0800-14 그대로.
