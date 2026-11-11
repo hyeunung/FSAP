@@ -1,3 +1,49 @@
+# 준비 점검 — FSAP_v2.10.2 (2026-11-12, 3차 이어서 다시 부름: M02R 다시 C-41)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.10.2.sc`(tools/config.json doc, machine.json doc도 같음). 앞 점검(11-11 22:14)과 결과가 모두 같다.
+- 통로: **MCP**. 앱 켜짐(solidcraft.exe pid 28440, 포트 27878), `running` 빈 목록(막힘 없음, 앱 재시작 0). 지시문 (a)대로 앱에 남은 상태는 따지지 않고 `open` 1회로 v2.10.2를 다시 열었다(features 3453, errors 0). 저장 0, 편집 0. 결과 `tools/out/prep2102b/`(joint_list.json, motion_list.json, rest_play.json).
+- 조인트 544(rigid 353·slider 181·revolute 10), **floating 0**, conflicts 0, errors 0. machine.json joints 157 모두 설계에 있음(빠짐 0). U4: J_U4_PRESS·WHEEL_ROT·DISK + 걷어 낼 M02R 따라감 3개(J_U4_CYL_PIN·CYL_ROD·ROD_PIN).
+- 연구 9개: REST 1·CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630·CYCLE_V 486·MAINT_HEAD 1·SEAM_U7 32·MAINT_U7 13(machine.json과 같음).
+- 동작 상태 초기화: `motion.play {study:"REST", step:0}` → moved false(이미 대기 포즈), conflicts 0, unmoved 0, values 152, positions 2877. 원복할 편집 없음(E-08).
+- machine.json: units 16, states 30(요구서 0-3 ①~⑤ 대응, 앞 점검과 같음), path_parts 6. 작업 대상 모형 WP_L·WP_S·WP_G·WP_V(0-2 양 끝, 가공 뒤 형상) + SIM-01 테이프 조각. 떨어지는 조각 없음(D-07).
+- gmsh: 불러올 수 없음(ModuleNotFoundError).
+- 미완(막지 않음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+M02R에 넘길 것은 아래 앞 점검 절과 같다(조인트 3개 삭제 시 machine.json joints·_history 같이 고침, J_U4_PRESS 축·범위가 바뀌면 9개 연구 키 다시 맞춤).
+
+근거: E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", E-08 원복.
+
+## 워크플로우 메모
+- 사용자 말 "이거 안보이냐고;;"로 같은 준비 점검이 다시 불렸다. 저장본이 바뀌지 않았으면(같은 doc, 같은 mtime) 앞 점검 결과를 그대로 넘기는 지름길이 있으면 좋다.
+
+---
+
+# 준비 점검 — FSAP_v2.10.2 (2026-11-11 3차, 엔진 v3.9.3, 재부팅·사용자 정정 뒤 재실행: M02R 다시)
+
+요약
+- 판정: **ready=true**. 대상 `3D_Modeling/FSAP_v2.10.2.sc`(tools/config.json doc, 커밋 5bfc23e). machine.json `doc`도 v2.10.2(앞 점검 메모의 doc 칸 어긋남 풀림).
+- 통로: **MCP**. 앱 켜짐(solidcraft.exe pid 28440, 포트 27878 LISTENING), `running` 빈 목록(막힘 없음, 앱 재시작 0). 지시문 (a)대로 앱에 남은 상태는 따지지 않고 `open` 1회로 v2.10.2를 다시 열었다(features 3453, errors 0). 그 뒤 `joint.list`·`motion.list`·`motion.play REST step 0`. 저장 0, 편집 0. 결과 `tools/out/prep2102/`(joint_list.json, motion_list.json, rest_play.json).
+- 조인트 544(rigid 353·slider 181·revolute 10), 고정부 2(occurrence 0·2), **floating 0**, conflicts 0, errors 0. machine.json joints 157 모두 설계에 있음(빠짐 0). U4 조인트: J_U4_PRESS·WHEEL_ROT·DISK + M02R(v2.10.2) 따라감 3개 J_U4_CYL_PIN·CYL_ROD·ROD_PIN(키 없음, M-07 닫힌 고리).
+- 연구 9개, 단계 수 machine.json과 같음: REST 1(키 152)·CYCLE_S 450·CYCLE_L 716·CYCLE_G1 514·CYCLE_G2 630·CYCLE_V 486·MAINT_HEAD 1·SEAM_U7 32·MAINT_U7 13. 모든 연구에 J_U4_PRESS·J_U4_WHEEL_ROT·J_U3_PRESSER 키 있음.
+- 동작 상태 초기화: `motion.play {study:"REST", step:0}` → **moved true**(열린 직후 포즈가 대기와 달랐다 — 저장본 포즈가 REST와 어긋났거나 open이 앞 세션 포즈를 남겼다), conflicts 0, unmoved 0, values 152, positions 2877. 지금 대기 포즈. 원복할 편집 없음(E-08).
+- 기계 정의 `tools/machine.json`: units 16, states 30, path_parts 6, workpiece_stages 3(가공 전·후 + sim_tape), temp_values 11. 상태 30이 요구서 0-3 ①~⑤에 대응(앞 점검과 같음).
+- 작업 대상 모형: WP_L 1500×1500·WP_S 300×200·WP_G U홈·WP_V V홈 30°(요구서 0-2 양 끝, 가공 뒤 형상) + SIM-01 붙은 테이프 조각(J_TP_*). 떨어지는 조각 없음(D-07).
+- gmsh: 불러올 수 없음(`python -B -c "import gmsh"` → ModuleNotFoundError).
+- 미완(막지 않음): 6-4 계단형 오목 모서리 매트 모형 없음(홈 바닥 오목 반원으로 대신).
+
+## M02R 다시(C-41)에 넘길 것
+- 걷어 낼 조인트 3개(J_U4_CYL_PIN·J_U4_CYL_ROD·J_U4_ROD_PIN)는 설계·machine.json 양쪽에 있다. 모델링부가 지울 때 machine.json joints·_history도 같이 고쳐야 한다(연구 키에는 없음 — 따라감 조인트라 연구 수정 불필요).
+- J_U4_PRESS는 machine.json에서 rotate, axis [0,-1,0], origin [-300,0,70], rest 8.626, min -1.867 / max 8.626. 스윙 브래킷 그네 방식으로 바꾸면 축·범위가 바뀔 수 있으니 9개 연구의 J_U4_PRESS 키를 다시 맞춰야 한다.
+
+근거: 실행 규칙 7 "자료대기 D-번호 임시값으로 만든 준비물은 준비된 것으로 본다", 실행 규칙 2 "혼자 도는 읽기 부서도 MCP로 잰다", E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", E-08 원복.
+
+## 워크플로우 메모
+- 이 실행을 부른 사용자 말은 "이거 안보이냐고;;"(무엇을 가리키는지 지시문에 없음). 준비 점검은 그 답을 정하지 않는다 — 앞 실행의 사용자 정정(C-41, M02R 실린더 위치)을 가리키는 것으로 보이며, 최종 보고 담당이 확인할 몫.
+- `joint.list`(52만 자)·`motion.list`(52만 자)·`motion.play`(110만 자) 결과가 MCP 응답 상한을 넘어 파일로 떨어졌다. 요약만 돌려주는 옵션이 있으면 준비 점검이 가벼워진다(앞 점검 메모와 같은 문제, 반복).
+
+---
+
 # 준비 점검 — FSAP_v2.10.1 (2026-11-11, 엔진 v3.9.3, SIM-01 수정 1회차 뒤 재실행)
 
 요약

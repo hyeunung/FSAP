@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.10.2.sc",
+ "doc": "../3D_Modeling/FSAP_v2.10.3.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -46,19 +46,19 @@
    "type": "rotate",
    "unit": "U4_WHEEL_N",
    "axis": [
-    0,
     -1,
+    0,
     0
    ],
    "origin": [
-    -300.0,
-    0,
-    70.0
+    -240.0,
+    120.0,
+    140.0
    ],
-   "rest": 8.626,
-   "min": -1.867,
-   "max": 8.626,
-   "_note": "M02(v2.1.0) 핀 스윙 레버(U4_PRESS) 회전, + = 들림. 8.626 = 들림 끝(조인트 한계; 실린더 후퇴 끝 8.6265가 스토퍼, 바퀴 밑 38.8), -1.867 = 실린더 나옴 끝(바퀴 밑 3.11). 작동(접촉 추종, DC2-04 바로잡음): 바퀴 밑 z = 70 + 200·sinθ − 60·cosθ − 12.5·|sinθ| (레버 핀 (-300, 0, 70), 바퀴 중심 반지름 200, 바퀴 r 60, 반폭 12.5) — 0 = z 10. 키 표 keys_z(목표 z -> θ°). 실린더 CDM2C20-25Z(J_U4_CYL_PIN·J_U4_CYL_ROD·J_U4_ROD_PIN 닫힌 고리)가 따라감 / M02R(v2.10.2): 실린더를 모터 위 누운 CDM2C20-25Z + 크랭크로 바꿈(C-40). 들림 끝 8.626 = 실린더 전진 끝 24.97, 내림 끝 −1.867 = 후퇴 끝 0.",
+   "rest": 13.006,
+   "min": -4.11,
+   "max": 13.006,
+   "_note": "M02R 3회차(v2.10.3, C-41): 그네 브래킷 P_M02S_SWING(U4_PRESS) 축 X 피벗 (Y 120, Z 140), + = 들림. 13.006 = 들림 끝(실린더 후퇴 끝 = J_U4S_ROD 0 스토퍼, 바퀴 밑 38.8), −4.11 = 실린더 나옴 끝 근처(J_U4S_ROD 25). 0 = 봉제 θ0(바퀴 밑 Z 10). 값 환산(옛 축 Y 핀 −300,0,70 → 새): 8.626→13.006, 0→0, 0.306→0.477, 0.611→0.952, −1.867→−3.349, −0.54→−0.960, 2.4289→3.751 (바퀴 밑 높이 보존, tools/out/mech_M02R/design3/keymap.json). 바퀴 밑 z = 140 + 138.924·sin(atan2(−70,−120) − θ) − 60 (θ 도→rad, + = 들림). 실린더 STEP대기_CDQ2YA20-25DMZ(U4S_CYL)·로드 U4S_ROD가 닫힌 고리로 따라감(J_U4S_ROD·J_U4S_SLOT)",
    "keys_z": {
     "6": -1.0815,
     "7": -0.8105,
@@ -341,60 +341,6 @@
    "max": 72000,
    "follower": true,
    "_note": "M02 밑 자유 회전 원판 P_M02_DISK Ø250(6004ZZ ×2). 구동 없음 — 형상이 회전 대칭이라 간섭 검사에 영향 없음"
-  },
-  "J_U4_CYL_PIN": {
-   "cad": "J_U4_CYL_PIN",
-   "type": "rotate",
-   "unit": "U4_WHEEL_N",
-   "follower": true,
-   "_note": "M02R(v2.10.2) 닫힌 고리 따라감(키 없음, M-07). 누운 실린더 고정 클레비스 핀(U4_WHEEL_N ↔ U4_CYL, 축 Y, P_M02R_CYLBRKT). 실린더 각 REST −1.76° ~ 내림 끝 +0.31°",
-   "origin": [
-    -161.006,
-    0,
-    225.0
-   ],
-   "axis": [
-    0,
-    1,
-    0
-   ]
-  },
-  "J_U4_CYL_ROD": {
-   "cad": "J_U4_CYL_ROD",
-   "type": "slide",
-   "unit": "U4_WHEEL_N",
-   "follower": true,
-   "_note": "M02R(v2.10.2) 닫힌 고리 따라감(키 없음, M-07). 누운 실린더 로드 슬라이더(U4_CYL ↔ U4_ROD), 값 = 핀 사이 − 183.5, 0 = 후퇴 끝 = 내림 끝 θ −1.867(실측 −0.0003, 한계 −0.01), 24.97 = 들림 REST θ 8.626, θ0 4.516. 옛 M02(세로)와 방향 반대",
-   "min": -0.01,
-   "max": 25.0,
-   "rest": 24.97,
-   "origin": [
-    -161.006,
-    0,
-    225.0
-   ],
-   "axis": [
-    -0.9935,
-    0,
-    -0.1138
-   ]
-  },
-  "J_U4_ROD_PIN": {
-   "cad": "J_U4_ROD_PIN",
-   "type": "rotate",
-   "unit": "U4_WHEEL_N",
-   "follower": true,
-   "_note": "M02R(v2.10.2) 닫힌 고리 따라감(키 없음, M-07). 로드 끝 I-020B ↔ 크랭크 P_M02R_CRANK 핀(U4_ROD ↔ U4_PRESS), θ0 (−347.8, 203.6), REST (−367.30, 194.92)",
-   "origin": [
-    -347.8,
-    0,
-    203.6
-   ],
-   "axis": [
-    0,
-    1,
-    0
-   ]
   },
   "J_U7_CST_X": {
    "cad": "J_U7_CST_X",
@@ -3251,6 +3197,43 @@
    "model_only": true,
    "sim_stage": true,
    "_note": "SIM-01(v2.10.0): 붙은 테이프 단계 조인트(실제 구동 아님, M-07 예외 아님 — 작업 대상 모형). WP_MAT_V:1 ↔ WP_TP_V_SEAM:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 이음~이음 mm"
+  },
+  "J_U4S_ROD": {
+   "cad": "J_U4S_ROD",
+   "type": "slide",
+   "unit": "U4_WHEEL_N",
+   "follower": true,
+   "origin": [
+    -240.0,
+    177.93,
+    223.0
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "min": 0,
+   "max": 25,
+   "rest": 0.0,
+   "_note": "M02R 3회차(v2.10.3): 보 고정 실린더(U4S_CYL) ↔ 로드·너클(U4S_ROD) 슬라이더, 0 = 후퇴 끝(들림 스토퍼), θ0 18.94, 나옴 = −Y = 누름. 키 없음(닫힌 고리 따라감, M-07)"
+  },
+  "J_U4S_SLOT": {
+   "cad": "J_U4S_SLOT",
+   "type": "pin_slot",
+   "unit": "U4_WHEEL_N",
+   "follower": true,
+   "origin": [
+    -240.0,
+    112.99,
+    223.0
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "_note": "M02R 3회차(v2.10.3): 너클 핀(U4S_ROD) ↔ 그네 텅 장공(U4_PRESS, 폭 8.2, 반지름 82.8~84.1), 회전 축 X·미끄럼 텅 방향. 키 없음"
   }
  },
  "units": {
@@ -4335,7 +4318,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0,
-    "J_U4_PRESS": 8.626,
+    "J_U4_PRESS": 13.006,
     "J_U4_WHEEL_ROT": 0,
     "J_U5_X": 0,
     "J_U5_LIFT": 30.0,
@@ -4376,7 +4359,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0.0,
-    "J_U4_PRESS": 8.626,
+    "J_U4_PRESS": 13.006,
     "J_U4_WHEEL_ROT": 0.0,
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
@@ -4496,7 +4479,7 @@
    "joints": {
     "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
-    "J_U4_PRESS": 0.306,
+    "J_U4_PRESS": 0.477,
     "J_U4_WHEEL_ROT": 566.205,
     "J_U5_X": 800.0,
     "J_U5_LIFT": -10.0,
@@ -4557,7 +4540,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0.0,
-    "J_U4_PRESS": 8.626,
+    "J_U4_PRESS": 13.006,
     "J_U4_WHEEL_ROT": 5158.256,
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
@@ -4707,7 +4690,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0.0,
-    "J_U4_PRESS": 8.626,
+    "J_U4_PRESS": 13.006,
     "J_U4_WHEEL_ROT": 383.608,
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
@@ -4737,7 +4720,7 @@
    "joints": {
     "J_U3_PRESSER": 0.0,
     "J_U3_NEEDLE": -30.0,
-    "J_U4_PRESS": 8.626,
+    "J_U4_PRESS": 13.006,
     "J_U4_WHEEL_ROT": 260.218,
     "J_U5_X": 1000.0,
     "J_U5_LIFT": -10.0,
@@ -4978,7 +4961,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0.0,
-    "J_U4_PRESS": 8.626,
+    "J_U4_PRESS": 13.006,
     "J_U4_WHEEL_ROT": 4286.589,
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
@@ -5008,7 +4991,7 @@
    "joints": {
     "J_U3_PRESSER": 20.0,
     "J_U3_NEEDLE": 0,
-    "J_U4_PRESS": -1.867,
+    "J_U4_PRESS": -3.349,
     "J_U4_WHEEL_ROT": 0,
     "J_U5_X": 0,
     "J_U5_LIFT": 30.0,
@@ -5067,7 +5050,7 @@
    "joints": {
     "J_U3_PRESSER": -4,
     "J_U3_NEEDLE": 0,
-    "J_U4_PRESS": -0.54,
+    "J_U4_PRESS": -0.96,
     "J_U4_WHEEL_ROT": 0,
     "J_U5_X": 800,
     "J_U5_LIFT": -10.0,
@@ -5108,7 +5091,7 @@
    "joints": {
     "J_U3_PRESSER": 6,
     "J_U3_NEEDLE": 0,
-    "J_U4_PRESS": 2.4289,
+    "J_U4_PRESS": 3.751,
     "J_U4_WHEEL_ROT": 0,
     "J_U5_X": 800,
     "J_U5_LIFT": -10.0,
@@ -5385,11 +5368,6 @@
    "reason": "나사 물림(Ø5 축 ↔ Ø4.2 탭) 의도된 겹침(M-08)"
   },
   {
-   "a": "U4_ROD(CDM2C20-25Z_ROD)",
-   "b": "I-020B_M02",
-   "reason": "로드 끝 나사 물림(같은 리지드 묶음)"
-  },
-  {
    "a": "CB5-*_M03_*·STEP대기_CB6-20_M03_*",
    "b": "탭 구멍 부품·MBIS5 인서트",
    "reason": "나사 물림(Ø5 축 ↔ Ø4.2 탭, Ø6 ↔ Ø5) 의도된 겹침(M-08)"
@@ -5423,6 +5401,16 @@
    "a": "U3_NEEDLE(U3_NEEDLE_PIN)",
    "b": "WP_TP_*",
    "reason": "SIM-01: 바늘 꽂음 의도 겹침(M-08, 위 U3_NEEDLE 줄과 같음) — 조각이 붙는 단계에 바늘이 조각 끝에 있음"
+  },
+  {
+   "a": "U4_PRESS(MPFZ12-10_M02_N·_P)",
+   "b": "STEP대기_PSFJ12-200(축)",
+   "reason": "M02R 3회차: 무급유 부시 안지름 12 = 축 12 맞닿음(부피 0, 미끄럼 끼움)"
+  },
+  {
+   "a": "U4S_ROD(STEP대기_Y-020B_PIN)",
+   "b": "P_M02S_SWING 텅 장공",
+   "reason": "M02R 3회차: 핀 Ø8 ↔ 장공 폭 8.2(틈 0.1), 너클 안쪽 틈 10.4 ↔ 텅 t10(틈 0.2) — 맞닿음만 허용"
   }
  ],
  "workpiece_module": "",
@@ -5475,7 +5463,8 @@
    "change": "U7_TAPE_LINE·U7_TAPE_FEED 새로, U7_TAPEWAY_H·V 지움, TAPE_* → WP_TP_* 조각+J_TP_* 122개, 연구 CYCLE_*·REST 키 더함, P_M05_GUIDE 출구 R3"
   },
   "2026-11-11 SIM-01 수정 1회차 v2.10.1: J_TP_L_16B·26B 더함, 조각 컴포넌트 부모 WP_TAPE_<M>, L 자름 고침",
-  "2026-11-11 M02R v2.10.2: J_U4_CYL_PIN·J_U4_CYL_ROD·J_U4_ROD_PIN 다시(누운 실린더+크랭크), _reserved D-163 상자"
+  "2026-11-11 M02R v2.10.2: J_U4_CYL_PIN·J_U4_CYL_ROD·J_U4_ROD_PIN 다시(누운 실린더+크랭크), _reserved D-163 상자",
+  "2026-11-12 M02R 3회차(v2.10.3): J_U4_PRESS 축 X 그네, J_U4_CYL_PIN·CYL_ROD·ROD_PIN 지움, J_U4S_ROD·J_U4S_SLOT 새로, 상태 값 환산"
  ],
  "_timing": {
   "_note": "시간 메모(s). 동작 연구에는 쓰지 않는다(연구는 단계만). 땀 이송 시간은 따로. 근거 design1·design2(C-37 (다), D-96 구름 0.02·μ0.4·U4 40 N·d1 100) · 수정 1회차: U4+U5 구간에 U5 밑 띠 미끄럼 μs 0.30(D-97)·U4 밑 원판 끌림 포함 · DC-04(2026-11-11): 회전 중 노루발 봉제 높이(J_U3_PRESSER 0)·낮은 누름 끌림 T_f 0.096 N·m 포함",
