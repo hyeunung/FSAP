@@ -1,0 +1,36 @@
+[
+ {
+  "command": "file.insert_step",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/CB5-16/CB5-16.stp",
+   "name": "CB5-16",
+   "matrix": [
+    0,
+    0,
+    -1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "Cut-Extrude1",
+   "name": "CB5-16_RX08_TOP"
+  }
+ },
+ {
+  "command": "inspect.measure",
+  "params": {
+   "summary": true
+  }
+ }
+]

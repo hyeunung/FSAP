@@ -1,0 +1,1249 @@
+[
+ {
+  "command": "timeline.delete",
+  "params": {
+   "features": [
+    "SK_TU0604_M08P_RX08_A",
+    "SK_TU0604_M08P_RX08_B"
+   ]
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": "XY",
+   "name": "SK_TU0604_M08P_RX08_A"
+  }
+ },
+ {
+  "command": "sketch.options",
+  "params": {
+   "sketch_3d": true
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -264.5,
+     117.5,
+     92
+    ],
+    [
+     -267.0,
+     117.5,
+     92.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -267.0,
+    117.5,
+    92.0
+   ],
+   "through": [
+    -277.6066,
+    121.8934,
+    92.0
+   ],
+   "end": [
+    -282.0,
+    132.5,
+    92.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -282.0,
+     132.5,
+     92.0
+    ],
+    [
+     -282.0,
+     133.0,
+     92.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -282.0,
+    133.0,
+    92.0
+   ],
+   "through": [
+    -277.6066,
+    143.6066,
+    92.0
+   ],
+   "end": [
+    -267.0,
+    148.0,
+    92.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -267.0,
+     148.0,
+     92.0
+    ],
+    [
+     -231.5,
+     148.0,
+     92.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -231.5,
+    148.0,
+    92.0
+   ],
+   "through": [
+    -220.8934,
+    148.0,
+    96.3934
+   ],
+   "end": [
+    -216.5,
+    148.0,
+    107.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -216.5,
+     148.0,
+     107.0
+    ],
+    [
+     -216.5,
+     148.0,
+     193.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -216.5,
+    148.0,
+    193.0
+   ],
+   "through": [
+    -216.5,
+    143.6066,
+    203.6066
+   ],
+   "end": [
+    -216.5,
+    133.0,
+    208.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -216.5,
+     133.0,
+     208.0
+    ],
+    [
+     -216.5,
+     94.0,
+     208.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -216.5,
+    94.0,
+    208.0
+   ],
+   "through": [
+    -212.1066,
+    83.3934,
+    208.0
+   ],
+   "end": [
+    -201.5,
+    79.0,
+    208.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -201.5,
+     79.0,
+     208.0
+    ],
+    [
+     -184.0,
+     79.0,
+     208.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -184.0,
+    79.0,
+    208.0
+   ],
+   "through": [
+    -173.3934,
+    79.0,
+    212.3934
+   ],
+   "end": [
+    -169.0,
+    79.0,
+    223.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -169.0,
+     79.0,
+     223.0
+    ],
+    [
+     -169.0,
+     79.0,
+     267.7985
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -169.0,
+    79.0,
+    267.7985
+   ],
+   "through": [
+    -169.0,
+    79.159,
+    269.9767
+   ],
+   "end": [
+    -169.0,
+    79.6326,
+    272.1087
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -169.0,
+     79.6326,
+     272.1087
+    ],
+    [
+     -169.0,
+     87.3674,
+     297.8913
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -169.0,
+    87.3674,
+    297.8913
+   ],
+   "through": [
+    -169.0,
+    87.841,
+    300.0233
+   ],
+   "end": [
+    -169.0,
+    88.0,
+    302.2015
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -169.0,
+     88.0,
+     302.2015
+    ],
+    [
+     -169.0,
+     88.0,
+     376.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -169.0,
+    88.0,
+    376.0
+   ],
+   "through": [
+    -164.6066,
+    88.0,
+    386.6066
+   ],
+   "end": [
+    -154.0,
+    88.0,
+    391.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -154.0,
+     88.0,
+     391.0
+    ],
+    [
+     -113.2132,
+     88.0,
+     391.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -113.2132,
+    88.0,
+    391.0
+   ],
+   "through": [
+    -107.473,
+    89.1418,
+    391.0
+   ],
+   "end": [
+    -102.6066,
+    92.3934,
+    391.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -102.6066,
+     92.3934,
+     391.0
+    ],
+    [
+     -89.3934,
+     105.6066,
+     391.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -89.3934,
+    105.6066,
+    391.0
+   ],
+   "through": [
+    -84.527,
+    108.8582,
+    391.0
+   ],
+   "end": [
+    -78.7868,
+    110.0,
+    391.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -78.7868,
+     110.0,
+     391.0
+    ],
+    [
+     1108.25,
+     110.0,
+     391.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    1108.25,
+    110.0,
+    391.0
+   ],
+   "through": [
+    1118.8566,
+    105.6066,
+    391.0
+   ],
+   "end": [
+    1123.25,
+    95.0,
+    391.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     1123.25,
+     95.0,
+     391.0
+    ],
+    [
+     1123.25,
+     78.0,
+     391.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    1123.25,
+    78.0,
+    391.0
+   ],
+   "through": [
+    1123.25,
+    67.3934,
+    386.6066
+   ],
+   "end": [
+    1123.25,
+    63.0,
+    376.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     1123.25,
+     63.0,
+     376.0
+    ],
+    [
+     1123.25,
+     63,
+     370.6
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.pipe",
+  "params": {
+   "path_sketch": "SK_TU0604_M08P_RX08_A",
+   "path": [
+    "w1",
+    "w2",
+    "w3",
+    "w4",
+    "w5",
+    "w6",
+    "w7",
+    "w8",
+    "w9",
+    "w10",
+    "w11",
+    "w12",
+    "w13",
+    "w14",
+    "w15",
+    "w16",
+    "w17",
+    "w18",
+    "w19",
+    "w20",
+    "w21",
+    "w22",
+    "w23",
+    "w24",
+    "w25",
+    "w26",
+    "w27"
+   ],
+   "diameter": 6.0,
+   "operation": "new",
+   "body_name": "TU0604_M08P_RX08_A"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "TU0604_M08P_RX08_A"
+   ],
+   "material": "Default"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "TU0604_M08P_RX08_A"
+   ],
+   "component": "TU0604_M08P_RX08_A"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "TU0604_M08P_RX08_A",
+   "part_number": "TU0604",
+   "bom_type": "purchased",
+   "description": "SMC TU0604 OD6, RX-08 stopper cylinder head port (push = OFF) <-> valve 8 B (PZ). Riser (-216.5,148) -> under BASE Y 79 -> slot (-169,79) -> Y 88 -> Z 391 along Y 110 (below clamps F, comb)"
+  }
+ },
+ {
+  "command": "sketch.create",
+  "params": {
+   "plane": "XY",
+   "name": "SK_TU0604_M08P_RX08_B"
+  }
+ },
+ {
+  "command": "sketch.options",
+  "params": {
+   "sketch_3d": true
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -202.5,
+     117.5,
+     92
+    ],
+    [
+     -201.0,
+     117.5,
+     92.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -201.0,
+    117.5,
+    92.0
+   ],
+   "through": [
+    -190.3934,
+    121.8934,
+    92.0
+   ],
+   "end": [
+    -186.0,
+    132.5,
+    92.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -186.0,
+     132.5,
+     92.0
+    ],
+    [
+     -186.0,
+     141.0,
+     92.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -186.0,
+    141.0,
+    92.0
+   ],
+   "through": [
+    -190.3934,
+    151.6066,
+    92.0
+   ],
+   "end": [
+    -201.0,
+    156.0,
+    92.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -201.0,
+     156.0,
+     92.0
+    ],
+    [
+     -201.5,
+     156.0,
+     92.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -201.5,
+    156.0,
+    92.0
+   ],
+   "through": [
+    -212.1066,
+    156.0,
+    96.3934
+   ],
+   "end": [
+    -216.5,
+    156.0,
+    107.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -216.5,
+     156.0,
+     107.0
+    ],
+    [
+     -216.5,
+     156.0,
+     219.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -216.5,
+    156.0,
+    219.0
+   ],
+   "through": [
+    -216.5,
+    151.6066,
+    229.6066
+   ],
+   "end": [
+    -216.5,
+    141.0,
+    234.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -216.5,
+     141.0,
+     234.0
+    ],
+    [
+     -216.5,
+     85.0,
+     234.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -216.5,
+    85.0,
+    234.0
+   ],
+   "through": [
+    -212.1066,
+    74.3934,
+    234.0
+   ],
+   "end": [
+    -201.5,
+    70.0,
+    234.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -201.5,
+     70.0,
+     234.0
+    ],
+    [
+     -184.0,
+     70.0,
+     234.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -184.0,
+    70.0,
+    234.0
+   ],
+   "through": [
+    -173.3934,
+    70.0,
+    238.3934
+   ],
+   "end": [
+    -169.0,
+    70.0,
+    249.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -169.0,
+     70.0,
+     249.0
+    ],
+    [
+     -169.0,
+     70.0,
+     272.7985
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -169.0,
+    70.0,
+    272.7985
+   ],
+   "through": [
+    -169.0,
+    69.841,
+    274.9767
+   ],
+   "end": [
+    -169.0,
+    69.3674,
+    277.1087
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -169.0,
+     69.3674,
+     277.1087
+    ],
+    [
+     -169.0,
+     61.6326,
+     302.8913
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -169.0,
+    61.6326,
+    302.8913
+   ],
+   "through": [
+    -169.0,
+    61.159,
+    305.0233
+   ],
+   "end": [
+    -169.0,
+    61.0,
+    307.2015
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -169.0,
+     61.0,
+     307.2015
+    ],
+    [
+     -169.0,
+     61.0,
+     366.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -169.0,
+    61.0,
+    366.0
+   ],
+   "through": [
+    -164.6066,
+    61.0,
+    376.6066
+   ],
+   "end": [
+    -154.0,
+    61.0,
+    381.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -154.0,
+     61.0,
+     381.0
+    ],
+    [
+     -110.0,
+     61.0,
+     381.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -110.0,
+    61.0,
+    381.0
+   ],
+   "through": [
+    -99.3934,
+    65.3934,
+    381.0
+   ],
+   "end": [
+    -95.0,
+    76.0,
+    381.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -95.0,
+     76.0,
+     381.0
+    ],
+    [
+     -95.0,
+     95.0,
+     381.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    -95.0,
+    95.0,
+    381.0
+   ],
+   "through": [
+    -90.6066,
+    105.6066,
+    381.0
+   ],
+   "end": [
+    -80.0,
+    110.0,
+    381.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     -80.0,
+     110.0,
+     381.0
+    ],
+    [
+     1140.0,
+     110.0,
+     381.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    1140.0,
+    110.0,
+    381.0
+   ],
+   "through": [
+    1150.6066,
+    105.6066,
+    381.0
+   ],
+   "end": [
+    1155.0,
+    95.0,
+    381.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     1155.0,
+     95.0,
+     381.0
+    ],
+    [
+     1155.0,
+     78.0,
+     381.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    1155.0,
+    78.0,
+    381.0
+   ],
+   "through": [
+    1155.0,
+    67.3934,
+    376.6066
+   ],
+   "end": [
+    1155.0,
+    63.0,
+    366.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     1155.0,
+     63.0,
+     366.0
+    ],
+    [
+     1155.0,
+     63.0,
+     327.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    1155.0,
+    63.0,
+    327.0
+   ],
+   "through": [
+    1150.6066,
+    63.0,
+    316.3934
+   ],
+   "end": [
+    1140.0,
+    63.0,
+    312.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     1140.0,
+     63.0,
+     312.0
+    ],
+    [
+     1138.25,
+     63.0,
+     312.0
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.arc3d",
+  "params": {
+   "start": [
+    1138.25,
+    63.0,
+    312.0
+   ],
+   "through": [
+    1127.6434,
+    63.0,
+    316.3934
+   ],
+   "end": [
+    1123.25,
+    63.0,
+    327.0
+   ]
+  }
+ },
+ {
+  "command": "sketch.line3d",
+  "params": {
+   "points": [
+    [
+     1123.25,
+     63.0,
+     327.0
+    ],
+    [
+     1123.25,
+     63,
+     331.4
+    ]
+   ]
+  }
+ },
+ {
+  "command": "sketch.finish",
+  "params": {}
+ },
+ {
+  "command": "solid.pipe",
+  "params": {
+   "path_sketch": "SK_TU0604_M08P_RX08_B",
+   "path": [
+    "w1",
+    "w2",
+    "w3",
+    "w4",
+    "w5",
+    "w6",
+    "w7",
+    "w8",
+    "w9",
+    "w10",
+    "w11",
+    "w12",
+    "w13",
+    "w14",
+    "w15",
+    "w16",
+    "w17",
+    "w18",
+    "w19",
+    "w20",
+    "w21",
+    "w22",
+    "w23",
+    "w24",
+    "w25",
+    "w26",
+    "w27",
+    "w28",
+    "w29",
+    "w30",
+    "w31"
+   ],
+   "diameter": 6.0,
+   "operation": "new",
+   "body_name": "TU0604_M08P_RX08_B"
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "TU0604_M08P_RX08_B"
+   ],
+   "material": "Default"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "TU0604_M08P_RX08_B"
+   ],
+   "component": "TU0604_M08P_RX08_B"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "TU0604_M08P_RX08_B",
+   "part_number": "TU0604",
+   "bom_type": "purchased",
+   "description": "SMC TU0604 OD6, RX-08 stopper cylinder rod port (pull = ON) <-> valve 8 A (NZ). Riser (-216.5,156) -> under BASE Y 70 -> slot (-169,70) -> Y 61 -> Z 381 along Y 110 -> X 1155 -> up into NZ"
+  }
+ }
+]

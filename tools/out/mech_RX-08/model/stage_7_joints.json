@@ -1,0 +1,72 @@
+[
+ {
+  "command": "joint.create",
+  "params": {
+   "type": "slider",
+   "name": "J_U4_STOP",
+   "flip": true,
+   "limits": [
+    [
+     0,
+     20
+    ]
+   ],
+   "values": [
+    0
+   ],
+   "a": {
+    "occurrence": "STEP대기_CDQ2A25-20DMZ:1",
+    "point": [
+     -187,
+     84,
+     92
+    ],
+    "z": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "b": {
+    "occurrence": "U4_STOP:1",
+    "point": [
+     -187,
+     84,
+     92
+    ],
+    "z": [
+     -1,
+     0,
+     0
+    ]
+   }
+  }
+ },
+ {
+  "command": "joint.rigid_group",
+  "params": {
+   "occurrences": [
+    "U4_WHEEL_N:1",
+    "STEP대기_CDQ2A25-20DMZ:1",
+    "CB5-16_RX08_LIP:1",
+    "CB5-16_RX08_LIP:2",
+    "CB5-16_RX08_LIP:3",
+    "CB5-16_RX08_LIP:4",
+    "CB5-16_RX08_TOP:1",
+    "CB5-16_RX08_TOP:2",
+    "KQ2L06-M5A_RX08_HEAD:1",
+    "KQ2L06-M5A_RX08_ROD:1"
+   ]
+  }
+ },
+ {
+  "command": "joint.rigid_group",
+  "params": {
+   "occurrences": [
+    "U4_STOP:1",
+    "CB8-20_RX08:1",
+    "STEP대기_NUT-M8_RX08:1"
+   ]
+  }
+ }
+]

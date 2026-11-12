@@ -1,0 +1,188 @@
+[
+ {
+  "command": "component.create",
+  "params": {
+   "name": "U4_STOP",
+   "parent": "U4_WHEEL_N",
+   "activate": false
+  }
+ },
+ {
+  "command": "component.create",
+  "params": {
+   "name": "STEP대기_CDQ2A25-20DMZ",
+   "parent": "U4_WHEEL_N",
+   "activate": false
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5x.sc",
+   "name": "CB5-16_RX08_LIP",
+   "parent": "U4_WHEEL_N",
+   "translate": [
+    -268,
+    71,
+    79
+   ]
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5x.sc",
+   "name": "CB5-16_RX08_LIP",
+   "parent": "U4_WHEEL_N",
+   "translate": [
+    -268,
+    97,
+    79
+   ],
+   "reuse": true
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5x.sc",
+   "name": "CB5-16_RX08_LIP",
+   "parent": "U4_WHEEL_N",
+   "translate": [
+    -268,
+    71,
+    105
+   ],
+   "reuse": true
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5x.sc",
+   "name": "CB5-16_RX08_LIP",
+   "parent": "U4_WHEEL_N",
+   "translate": [
+    -268,
+    97,
+    105
+   ],
+   "reuse": true
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5z.sc",
+   "name": "CB5-16_RX08_TOP",
+   "parent": "U4_WHEEL_N",
+   "translate": [
+    -146,
+    69,
+    234
+   ]
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5z.sc",
+   "name": "CB5-16_RX08_TOP",
+   "parent": "U4_WHEEL_N",
+   "translate": [
+    -146,
+    79,
+    234
+   ],
+   "reuse": true
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb8.sc",
+   "name": "CB8-20_RX08",
+   "parent": "U4_STOP",
+   "translate": [
+    -150,
+    70,
+    133.72
+   ]
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_nut.sc",
+   "name": "STEP대기_NUT-M8_RX08",
+   "parent": "U4_STOP",
+   "translate": [
+    -150,
+    70,
+    124
+   ]
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_kqa.sc",
+   "name": "KQ2L06-M5A_RX08_HEAD",
+   "parent": "U4_WHEEL_N",
+   "translate": [
+    -250,
+    104,
+    92
+   ]
+  }
+ },
+ {
+  "command": "component.insert_design",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_kqb.sc",
+   "name": "KQ2L06-M5A_RX08_ROD",
+   "parent": "U4_WHEEL_N",
+   "translate": [
+    -217,
+    104,
+    92
+   ]
+  }
+ },
+ {
+  "command": "component.break_link",
+  "params": {
+   "component": "CB5-16_RX08_LIP"
+  }
+ },
+ {
+  "command": "component.break_link",
+  "params": {
+   "component": "CB5-16_RX08_TOP"
+  }
+ },
+ {
+  "command": "component.break_link",
+  "params": {
+   "component": "CB8-20_RX08"
+  }
+ },
+ {
+  "command": "component.break_link",
+  "params": {
+   "component": "STEP대기_NUT-M8_RX08"
+  }
+ },
+ {
+  "command": "component.break_link",
+  "params": {
+   "component": "KQ2L06-M5A_RX08_HEAD"
+  }
+ },
+ {
+  "command": "component.break_link",
+  "params": {
+   "component": "KQ2L06-M5A_RX08_ROD"
+  }
+ }
+]

@@ -1,0 +1,36 @@
+[
+ {
+  "command": "file.insert_step",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/KQ2L06-M5A/KQ2L06-M5A.stp",
+   "name": "KQ",
+   "matrix": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ]
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "KQ2L06-M5A",
+   "name": "KQ2L06-M5A_RX08_ROD"
+  }
+ },
+ {
+  "command": "inspect.measure",
+  "params": {
+   "summary": true
+  }
+ }
+]

@@ -1,0 +1,242 @@
+[
+ {
+  "command": "solid.remove",
+  "params": {
+   "bodies": [
+    "STEP대기_SS5Y3-20-07_M08"
+   ]
+  }
+ },
+ {
+  "command": "solid.box",
+  "params": {
+   "corner": [
+    1035,
+    100,
+    325.5
+   ],
+   "length": 103,
+   "width": 20,
+   "height": 49.0,
+   "operation": "new",
+   "body_name": "STEP대기_SS5Y3-20-08_M08"
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.25,
+   "height": 20.2,
+   "base": [
+    1039.8,
+    120.1,
+    343
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_SS5Y3-20-08_M08"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.25,
+   "height": 20.2,
+   "base": [
+    1039.8,
+    120.1,
+    359
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_SS5Y3-20-08_M08"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.25,
+   "height": 20.2,
+   "base": [
+    1133.2,
+    120.1,
+    343
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_SS5Y3-20-08_M08"
+   ]
+  }
+ },
+ {
+  "command": "solid.cylinder",
+  "params": {
+   "radius": 2.25,
+   "height": 20.2,
+   "base": [
+    1133.2,
+    120.1,
+    359
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "operation": "cut",
+   "targets": [
+    "STEP대기_SS5Y3-20-08_M08"
+   ]
+  }
+ },
+ {
+  "command": "material.assign",
+  "params": {
+   "bodies": [
+    "STEP대기_SS5Y3-20-08_M08"
+   ],
+   "material": "Aluminum"
+  }
+ },
+ {
+  "command": "component.move_bodies",
+  "params": {
+   "bodies": [
+    "STEP대기_SS5Y3-20-08_M08"
+   ],
+   "component": "STEP대기_SS5Y3-20-07_M08"
+  }
+ },
+ {
+  "command": "component.rename",
+  "params": {
+   "component": "STEP대기_SS5Y3-20-07_M08",
+   "name": "STEP대기_SS5Y3-20-08_M08"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "STEP대기_SS5Y3-20-08_M08",
+   "part_number": "SS5Y3-20-08",
+   "bom_type": "purchased",
+   "description": "STEP wait (E-10): SMC SY3000 bar manifold 8 stations (SS5Y3-20-08), temp box L 103 = 07 box 92.5 + one pitch 10.5, H 49, D 20, mount holes 4.5 at both ends (RX-08)"
+  }
+ },
+ {
+  "command": "occurrence.move",
+  "params": {
+   "occurrence": "STEP대기_TPH-01_1:1",
+   "space": "world",
+   "translate": [
+    10.5,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.move",
+  "params": {
+   "occurrence": "STEP대기_TPH-01_2:1",
+   "space": "world",
+   "translate": [
+    10.5,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.move",
+  "params": {
+   "occurrence": "STEP대기_TPH-01_3:1",
+   "space": "world",
+   "translate": [
+    10.5,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.move",
+  "params": {
+   "occurrence": "CB4-25_M08:3",
+   "space": "world",
+   "translate": [
+    10.5,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.move",
+  "params": {
+   "occurrence": "CB4-25_M08:4",
+   "space": "world",
+   "translate": [
+    10.5,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "SY3120-5LZD-M5_M08:7",
+   "parent": "U8_PNEU",
+   "in_place": true,
+   "translate": [
+    10.5,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "KQ2L06-M5A_M08S_NZ:7",
+   "parent": "U8_PNEU",
+   "in_place": true,
+   "translate": [
+    10.5,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "occurrence.copy",
+  "params": {
+   "occurrence": "KQ2L06-M5A_M08S_PZ:6",
+   "parent": "U8_PNEU",
+   "in_place": true,
+   "translate": [
+    10.5,
+    0,
+    0
+   ]
+  }
+ }
+]

@@ -1,0 +1,490 @@
+{
+"parts": {
+"U4_WHEEL_N/P_RX08_STOP_BRKT_밀링": {
+"name": "P_RX08_STOP_BRKT_밀링",
+"bbox": [
+-268.0,
+-140.0,
+64.0,
+104.0,
+60.0,
+242.0
+],
+"volume": 113894.017,
+"mass": 903.18,
+"material": "SUS304",
+"bolt": false,
+"spec": "",
+"unit": "U4_WHEEL_N",
+"component": "U4_WHEEL_N"
+},
+"U4_STOP/P_RX08_STOP_BLOCK_밀링": {
+"name": "P_RX08_STOP_BLOCK_밀링",
+"bbox": [
+-167.0,
+-143.5,
+64.0,
+104.0,
+69.2,
+124.0
+],
+"volume": 22666.801,
+"mass": 179.748,
+"material": "SUS304",
+"bolt": false,
+"spec": "",
+"unit": "U4_STOP",
+"component": "U4_STOP"
+},
+"STEP대기_CDQ2A25-20DMZ/STEP대기_CDQ2A25-20DMZ": {
+"name": "STEP대기_CDQ2A25-20DMZ",
+"bbox": [
+-257.5,
+-210.0,
+64.0,
+104.0,
+72.0,
+112.0
+],
+"volume": 72586.003,
+"mass": 195.982,
+"material": "Aluminum",
+"bolt": false,
+"spec": "",
+"unit": "U4_WHEEL_N",
+"component": "STEP대기_CDQ2A25-20DMZ"
+},
+"U4_STOP/STEP대기_CDQ2A25-20DMZ_ROD": {
+"name": "STEP대기_CDQ2A25-20DMZ_ROD",
+"bbox": [
+-210.0,
+-157.0,
+78.0,
+90.0,
+86.0,
+98.0
+],
+"volume": 5647.764,
+"mass": 44.335,
+"material": "S45C",
+"bolt": false,
+"spec": "",
+"unit": "U4_STOP",
+"component": "U4_STOP"
+},
+"CB8-20_RX08/CB8-20_RX08": {
+"name": "CB8-20_RX08",
+"bbox": [
+-156.5,
+-143.5,
+63.5,
+76.5,
+113.72,
+141.72
+],
+"volume": 1912.528,
+"mass": 2.467,
+"material": "Default",
+"bolt": true,
+"spec": "CB8-20",
+"unit": "U4_STOP",
+"component": "CB8-20_RX08"
+},
+"STEP대기_NUT-M8_RX08/STEP대기_NUT-M8_RX08": {
+"name": "STEP대기_NUT-M8_RX08",
+"bbox": [
+-157.506,
+-142.494,
+63.5,
+76.5,
+124.0,
+130.8
+],
+"volume": 653.466,
+"mass": 0.843,
+"material": "Default",
+"bolt": false,
+"spec": "",
+"unit": "U4_STOP",
+"component": "STEP대기_NUT-M8_RX08"
+},
+"CB5-16_RX08_LIP/CB5-16_RX08_LIP": {
+"name": "CB5-16_RX08_LIP",
+"bbox": [
+-273.0,
+-252.0,
+66.75,
+75.25,
+74.75,
+83.25
+],
+"volume": 554.945,
+"mass": 0.716,
+"material": "Default",
+"bolt": true,
+"spec": "CB5-16",
+"unit": "U4_WHEEL_N",
+"component": "CB5-16_RX08_LIP"
+},
+"CB5-16_RX08_LIP/CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:2)": {
+"name": "CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:2)",
+"bbox": [
+-273.0,
+-252.0,
+92.75,
+101.25,
+74.75,
+83.25
+],
+"volume": 554.945,
+"mass": 0.716,
+"material": "Default",
+"bolt": true,
+"spec": "CB5-16",
+"unit": "U4_WHEEL_N",
+"component": "CB5-16_RX08_LIP"
+},
+"CB5-16_RX08_LIP/CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:3)": {
+"name": "CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:3)",
+"bbox": [
+-273.0,
+-252.0,
+66.75,
+75.25,
+100.75,
+109.25
+],
+"volume": 554.945,
+"mass": 0.716,
+"material": "Default",
+"bolt": true,
+"spec": "CB5-16",
+"unit": "U4_WHEEL_N",
+"component": "CB5-16_RX08_LIP"
+},
+"CB5-16_RX08_LIP/CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:4)": {
+"name": "CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:4)",
+"bbox": [
+-273.0,
+-252.0,
+92.75,
+101.25,
+100.75,
+109.25
+],
+"volume": 554.945,
+"mass": 0.716,
+"material": "Default",
+"bolt": true,
+"spec": "CB5-16",
+"unit": "U4_WHEEL_N",
+"component": "CB5-16_RX08_LIP"
+},
+"CB5-16_RX08_TOP/CB5-16_RX08_TOP": {
+"name": "CB5-16_RX08_TOP",
+"bbox": [
+-150.25,
+-141.75,
+64.75,
+73.25,
+229.0,
+250.0
+],
+"volume": 554.945,
+"mass": 0.716,
+"material": "Default",
+"bolt": true,
+"spec": "CB5-16",
+"unit": "U4_WHEEL_N",
+"component": "CB5-16_RX08_TOP"
+},
+"CB5-16_RX08_TOP/CB5-16_RX08_TOP (U4_WHEEL_N:1/CB5-16_RX08_TOP:2)": {
+"name": "CB5-16_RX08_TOP (U4_WHEEL_N:1/CB5-16_RX08_TOP:2)",
+"bbox": [
+-150.25,
+-141.75,
+74.75,
+83.25,
+229.0,
+250.0
+],
+"volume": 554.945,
+"mass": 0.716,
+"material": "Default",
+"bolt": true,
+"spec": "CB5-16",
+"unit": "U4_WHEEL_N",
+"component": "CB5-16_RX08_TOP"
+},
+"KQ2L06-M5A_RX08_HEAD/KQ2L06-M5A_RX08_HEAD": {
+"name": "KQ2L06-M5A_RX08_HEAD",
+"bbox": [
+-264.5,
+-245.959,
+101.0,
+122.7,
+86.8,
+97.2
+],
+"volume": 1290.462,
+"mass": 1.665,
+"material": "Default",
+"bolt": false,
+"spec": "",
+"unit": "U4_WHEEL_N",
+"component": "KQ2L06-M5A_RX08_HEAD"
+},
+"KQ2L06-M5A_RX08_ROD/KQ2L06-M5A_RX08_ROD": {
+"name": "KQ2L06-M5A_RX08_ROD",
+"bbox": [
+-221.041,
+-202.5,
+101.0,
+122.7,
+86.8,
+97.2
+],
+"volume": 1290.462,
+"mass": 1.665,
+"material": "Default",
+"bolt": false,
+"spec": "",
+"unit": "U4_WHEEL_N",
+"component": "KQ2L06-M5A_RX08_ROD"
+},
+"TU0604_M08P_RX08_A/TU0604_M08P_RX08_A": {
+"name": "TU0604_M08P_RX08_A",
+"bbox": [
+-284.824,
+1126.731,
+59.724,
+151.431,
+88.792,
+394.271
+],
+"volume": 48616.239,
+"mass": 62.715,
+"material": "Default",
+"bolt": false,
+"spec": "",
+"unit": "U8_PNEU",
+"component": "TU0604_M08P_RX08_A"
+},
+"TU0604_M08P_RX08_B/TU0604_M08P_RX08_B": {
+"name": "TU0604_M08P_RX08_B",
+"bbox": [
+-219.948,
+1158.509,
+57.382,
+159.505,
+88.915,
+384.486
+],
+"volume": 49860.895,
+"mass": 64.321,
+"material": "Default",
+"bolt": false,
+"spec": "",
+"unit": "U8_PNEU",
+"component": "TU0604_M08P_RX08_B"
+},
+"STEP대기_SS5Y3-20-08_M08/STEP대기_SS5Y3-20-08_M08": {
+"name": "STEP대기_SS5Y3-20-08_M08",
+"bbox": [
+1035.0,
+1138.0,
+100.0,
+120.0,
+325.5,
+374.5
+],
+"volume": 99667.866,
+"mass": 269.103,
+"material": "Aluminum",
+"bolt": false,
+"spec": "",
+"unit": "U8_PNEU",
+"component": "STEP대기_SS5Y3-20-08_M08"
+},
+"SY3120-5LZD-M5_M08/SY3120-5LZD-M5_M08 (U8_PNEU:1/SY3120-5LZD-M5_M08:8/SY3120-5LZD-M5_B:1)": {
+"name": "SY3120-5LZD-M5_M08 (U8_PNEU:1/SY3120-5LZD-M5_M08:8/SY3120-5LZD-M5_B:1)",
+"bbox": [
+1117.45,
+1129.05,
+71.5,
+100.0,
+291.7,
+373.5
+],
+"volume": 15036.343,
+"mass": 19.397,
+"material": "Default",
+"bolt": false,
+"spec": "",
+"unit": "U8_PNEU",
+"component": "SY3120-5LZD-M5_M08"
+},
+"KQ2L06-M5A_M08S_NZ/KQ2L06-M5A_M08S_NZ (U8_PNEU:1/KQ2L06-M5A_M08S_NZ:8)": {
+"name": "KQ2L06-M5A_M08S_NZ (U8_PNEU:1/KQ2L06-M5A_M08S_NZ:8)",
+"bbox": [
+1118.05,
+1128.45,
+57.8,
+79.5,
+331.4,
+349.941
+],
+"volume": 1290.462,
+"mass": 1.665,
+"material": "Default",
+"bolt": false,
+"spec": "",
+"unit": "U8_PNEU",
+"component": "KQ2L06-M5A_M08S_NZ"
+},
+"KQ2L06-M5A_M08S_PZ/KQ2L06-M5A_M08S_PZ (U8_PNEU:1/KQ2L06-M5A_M08S_PZ:7)": {
+"name": "KQ2L06-M5A_M08S_PZ (U8_PNEU:1/KQ2L06-M5A_M08S_PZ:7)",
+"bbox": [
+1118.05,
+1128.45,
+57.8,
+79.5,
+352.059,
+370.6
+],
+"volume": 1290.462,
+"mass": 1.665,
+"material": "Default",
+"bolt": false,
+"spec": "",
+"unit": "U8_PNEU",
+"component": "KQ2L06-M5A_M08S_PZ"
+},
+"U8_PNEU/STEP대기_TPH-01_1": {
+"name": "STEP대기_TPH-01_1",
+"unit": "U8_PNEU",
+"component": "STEP대기_TPH-01_1",
+"bbox": [
+1133.6,
+1144.0,
+102.5,
+112.5,
+329.5,
+339.5
+],
+"volume": 692.328,
+"mass": 0.893,
+"material": "Default",
+"bolt": false,
+"spec": ""
+},
+"U8_PNEU/STEP대기_TPH-01_2": {
+"name": "STEP대기_TPH-01_2",
+"unit": "U8_PNEU",
+"component": "STEP대기_TPH-01_2",
+"bbox": [
+1133.6,
+1144.0,
+102.5,
+112.5,
+346.0,
+356.0
+],
+"volume": 692.328,
+"mass": 0.893,
+"material": "Default",
+"bolt": false,
+"spec": ""
+},
+"U8_PNEU/STEP대기_TPH-01_3": {
+"name": "STEP대기_TPH-01_3",
+"unit": "U8_PNEU",
+"component": "STEP대기_TPH-01_3",
+"bbox": [
+1133.6,
+1144.0,
+102.5,
+112.5,
+362.5,
+372.5
+],
+"volume": 692.328,
+"mass": 0.893,
+"material": "Default",
+"bolt": false,
+"spec": ""
+},
+"U8_PNEU/CB4-25_M08 (U8_PNEU:1/CB4-25_M08:3)": {
+"name": "CB4-25_M08 (U8_PNEU:1/CB4-25_M08:3)",
+"unit": "U8_PNEU",
+"component": "CB4-25_M08",
+"bbox": [
+1129.7,
+1136.7,
+96.0,
+125.0,
+339.5,
+346.5
+],
+"volume": 448.647,
+"mass": 3.522,
+"material": "SCM435",
+"bolt": true,
+"spec": "CB4-25"
+},
+"U8_PNEU/CB4-25_M08 (U8_PNEU:1/CB4-25_M08:4)": {
+"name": "CB4-25_M08 (U8_PNEU:1/CB4-25_M08:4)",
+"unit": "U8_PNEU",
+"component": "CB4-25_M08",
+"bbox": [
+1129.7,
+1136.7,
+96.0,
+125.0,
+355.5,
+362.5
+],
+"volume": 448.647,
+"mass": 3.522,
+"material": "SCM435",
+"bolt": true,
+"spec": "CB4-25"
+},
+"U4_WHEEL_N/P_M02_BASE": {
+"name": "P_M02_BASE",
+"unit": "U4_WHEEL_N",
+"component": "U4_WHEEL_N",
+"bbox": [
+-330.0,
+-140.0,
+-60.0,
+266.0,
+241.999,
+250.001
+],
+"volume": 380841.924,
+"mass": 3020.076,
+"material": "SUS304",
+"bolt": false,
+"spec": ""
+},
+"U4_XCAR/P_RX06_CARRIAGE": {
+"name": "P_RX06_CARRIAGE",
+"bbox": [
+-240.0,
+-125.0,
+45.0,
+107.0,
+250.0,
+565.0
+],
+"volume": 514612.34,
+"mass": 1379.161,
+"material": "A5052",
+"bolt": false,
+"spec": "",
+"unit": "U4_XCAR",
+"component": "U4_XCAR"
+}
+}
+}

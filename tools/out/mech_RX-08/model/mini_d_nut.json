@@ -1,0 +1,33 @@
+[
+ {
+  "command": "parts.insert",
+  "params": {
+   "family": "hex_nut",
+   "size": "M8",
+   "point": [
+    0,
+    0,
+    0
+   ],
+   "direction": [
+    0,
+    0,
+    1
+   ],
+   "name": "NUT"
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "Body1",
+   "name": "STEP대기_NUT-M8_RX08"
+  }
+ },
+ {
+  "command": "inspect.measure",
+  "params": {
+   "summary": true
+  }
+ }
+]

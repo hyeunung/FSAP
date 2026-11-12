@@ -1,0 +1,156 @@
+[
+ {
+  "name": "CB5-16_RX08_LIP",
+  "spec": "CB5-16",
+  "pos": [
+   -268,
+   71,
+   79
+  ],
+  "axis": [
+   1,
+   0,
+   0
+  ],
+  "unit": "U4_WHEEL_N",
+  "parts": [
+   "P_RX08_STOP_BRKT_밀링",
+   "STEP대기_CDQ2A25-20DMZ"
+  ],
+  "engage_mm": 5.5,
+  "tap": "실린더 머리 면 M5 탭(임시)",
+  "note": "RX-08 립 -> 실린더"
+ },
+ {
+  "name": "CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:2)",
+  "spec": "CB5-16",
+  "pos": [
+   -268,
+   97,
+   79
+  ],
+  "axis": [
+   1,
+   0,
+   0
+  ],
+  "unit": "U4_WHEEL_N",
+  "parts": [
+   "P_RX08_STOP_BRKT_밀링",
+   "STEP대기_CDQ2A25-20DMZ"
+  ],
+  "engage_mm": 5.5,
+  "tap": "실린더 머리 면 M5 탭(임시)",
+  "note": "RX-08 립 -> 실린더"
+ },
+ {
+  "name": "CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:3)",
+  "spec": "CB5-16",
+  "pos": [
+   -268,
+   71,
+   105
+  ],
+  "axis": [
+   1,
+   0,
+   0
+  ],
+  "unit": "U4_WHEEL_N",
+  "parts": [
+   "P_RX08_STOP_BRKT_밀링",
+   "STEP대기_CDQ2A25-20DMZ"
+  ],
+  "engage_mm": 5.5,
+  "tap": "실린더 머리 면 M5 탭(임시)",
+  "note": "RX-08 립 -> 실린더"
+ },
+ {
+  "name": "CB5-16_RX08_LIP (U4_WHEEL_N:1/CB5-16_RX08_LIP:4)",
+  "spec": "CB5-16",
+  "pos": [
+   -268,
+   97,
+   105
+  ],
+  "axis": [
+   1,
+   0,
+   0
+  ],
+  "unit": "U4_WHEEL_N",
+  "parts": [
+   "P_RX08_STOP_BRKT_밀링",
+   "STEP대기_CDQ2A25-20DMZ"
+  ],
+  "engage_mm": 5.5,
+  "tap": "실린더 머리 면 M5 탭(임시)",
+  "note": "RX-08 립 -> 실린더"
+ },
+ {
+  "name": "CB5-16_RX08_TOP",
+  "spec": "CB5-16",
+  "pos": [
+   -146,
+   69,
+   234
+  ],
+  "axis": [
+   0,
+   0,
+   1
+  ],
+  "unit": "U4_WHEEL_N",
+  "parts": [
+   "P_RX08_STOP_BRKT_밀링",
+   "P_M02_BASE"
+  ],
+  "engage_mm": 8,
+  "tap": "P_M02_BASE SUS304 M5 관통 탭 8",
+  "note": "RX-08 브래킷 윗판(Ø5.5) -> BASE, 밑에서"
+ },
+ {
+  "name": "CB5-16_RX08_TOP (U4_WHEEL_N:1/CB5-16_RX08_TOP:2)",
+  "spec": "CB5-16",
+  "pos": [
+   -146,
+   79,
+   234
+  ],
+  "axis": [
+   0,
+   0,
+   1
+  ],
+  "unit": "U4_WHEEL_N",
+  "parts": [
+   "P_RX08_STOP_BRKT_밀링",
+   "P_M02_BASE"
+  ],
+  "engage_mm": 8,
+  "tap": "P_M02_BASE SUS304 M5 관통 탭 8",
+  "note": "RX-08 브래킷 윗판(Ø5.5) -> BASE, 밑에서"
+ },
+ {
+  "name": "CB8-20_RX08",
+  "spec": "CB8-20",
+  "pos": [
+   -150,
+   70,
+   133.72
+  ],
+  "axis": [
+   0,
+   0,
+   -1
+  ],
+  "unit": "U4_STOP",
+  "parts": [
+   "P_RX08_STOP_BLOCK_밀링",
+   "STEP대기_NUT-M8_RX08"
+  ],
+  "engage_mm": 10.28,
+  "tap": "블록 M8 관통 탭",
+  "note": "RX-08 높이 조절 볼트, 머리 위 Z 141.72"
+ }
+]

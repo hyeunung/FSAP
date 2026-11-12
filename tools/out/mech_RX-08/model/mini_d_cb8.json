@@ -1,0 +1,36 @@
+[
+ {
+  "command": "file.insert_step",
+  "params": {
+   "path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/purchased-step/CB8-20/CB8-20.stp",
+   "name": "CB8-20",
+   "matrix": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    -1,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "command": "body.rename",
+  "params": {
+   "body": "Cut-Extrude1",
+   "name": "CB8-20_RX08"
+  }
+ },
+ {
+  "command": "inspect.measure",
+  "params": {
+   "summary": true
+  }
+ }
+]

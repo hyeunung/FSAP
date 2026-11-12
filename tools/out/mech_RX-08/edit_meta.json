@@ -1,0 +1,5 @@
+{
+ "base": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.11.1.sc",
+ "result": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.12.0.sc",
+ "note": "앱(MCP) 세션 순서. 첫 관 길(Z 460/470)은 클램프 F와 겹쳐 timeline.delete 후 다시 그림 - 기록에는 최종 길만. 검사용 프로브·회전 복사는 지워 기록에서 뺌. 작은 구매품 설계 d_*.sc는 mini_*.json으로 CLI에서 만듦"
+}

@@ -1,0 +1,4741 @@
+[
+{
+"command": "component.create",
+"params": {
+"name": "U4_STOP",
+"parent": "U4_WHEEL_N",
+"activate": false
+}
+},
+{
+"command": "component.create",
+"params": {
+"name": "STEP대기_CDQ2A25-20DMZ",
+"parent": "U4_WHEEL_N",
+"activate": false
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5x.sc",
+"name": "CB5-16_RX08_LIP",
+"parent": "U4_WHEEL_N",
+"translate": [
+-268,
+71,
+79
+]
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5x.sc",
+"name": "CB5-16_RX08_LIP",
+"parent": "U4_WHEEL_N",
+"translate": [
+-268,
+97,
+79
+],
+"reuse": true
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5x.sc",
+"name": "CB5-16_RX08_LIP",
+"parent": "U4_WHEEL_N",
+"translate": [
+-268,
+71,
+105
+],
+"reuse": true
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5x.sc",
+"name": "CB5-16_RX08_LIP",
+"parent": "U4_WHEEL_N",
+"translate": [
+-268,
+97,
+105
+],
+"reuse": true
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5z.sc",
+"name": "CB5-16_RX08_TOP",
+"parent": "U4_WHEEL_N",
+"translate": [
+-146,
+69,
+234
+]
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb5z.sc",
+"name": "CB5-16_RX08_TOP",
+"parent": "U4_WHEEL_N",
+"translate": [
+-146,
+79,
+234
+],
+"reuse": true
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_cb8.sc",
+"name": "CB8-20_RX08",
+"parent": "U4_STOP",
+"translate": [
+-150,
+70,
+133.72
+]
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_nut.sc",
+"name": "STEP대기_NUT-M8_RX08",
+"parent": "U4_STOP",
+"translate": [
+-150,
+70,
+124
+]
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_kqa.sc",
+"name": "KQ2L06-M5A_RX08_HEAD",
+"parent": "U4_WHEEL_N",
+"translate": [
+-250,
+104,
+92
+]
+}
+},
+{
+"command": "component.insert_design",
+"params": {
+"path": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-08/model/d_kqb.sc",
+"name": "KQ2L06-M5A_RX08_ROD",
+"parent": "U4_WHEEL_N",
+"translate": [
+-217,
+104,
+92
+]
+}
+},
+{
+"command": "component.break_link",
+"params": {
+"component": "CB5-16_RX08_LIP"
+}
+},
+{
+"command": "component.break_link",
+"params": {
+"component": "CB5-16_RX08_TOP"
+}
+},
+{
+"command": "component.break_link",
+"params": {
+"component": "CB8-20_RX08"
+}
+},
+{
+"command": "component.break_link",
+"params": {
+"component": "STEP대기_NUT-M8_RX08"
+}
+},
+{
+"command": "component.break_link",
+"params": {
+"component": "KQ2L06-M5A_RX08_HEAD"
+}
+},
+{
+"command": "component.break_link",
+"params": {
+"component": "KQ2L06-M5A_RX08_ROD"
+}
+},
+{
+"command": "component.activate",
+"params": {
+"component": "U4_WHEEL_N"
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": {
+"origin": [
+0,
+104,
+0
+],
+"x_dir": [
+1,
+0,
+0
+],
+"y_dir": [
+0,
+0,
+1
+]
+},
+"name": "SK_RX08_STOP_BRKT"
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+-268,
+60
+],
+[
+-140,
+60
+],
+[
+-140,
+242
+],
+[
+-152,
+242
+],
+[
+-152,
+72
+],
+[
+-257.5,
+72
+],
+[
+-257.5,
+112
+],
+[
+-268,
+112
+]
+],
+"closed": true
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.extrude",
+"params": {
+"sketch": "SK_RX08_STOP_BRKT",
+"distance": 40,
+"operation": "new",
+"body_name": "P_RX08_STOP_BRKT_밀링",
+"name": "EX_RX08_STOP_BRKT"
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+-153,
+63,
+72
+],
+"length": 14,
+"width": 23,
+"height": 162,
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BRKT_밀링"
+]
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+-200,
+79,
+69
+],
+"length": 61,
+"width": 10,
+"height": 3.01,
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BRKT_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.75,
+"height": 10.7,
+"base": [
+-268.1,
+71,
+79
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BRKT_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.75,
+"height": 10.7,
+"base": [
+-268.1,
+97,
+79
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BRKT_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.75,
+"height": 10.7,
+"base": [
+-268.1,
+71,
+105
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BRKT_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.75,
+"height": 10.7,
+"base": [
+-268.1,
+97,
+105
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BRKT_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.75,
+"height": 8.2,
+"base": [
+-146,
+69,
+233.9
+],
+"axis": [
+0,
+0,
+1
+],
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BRKT_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.1,
+"height": 8.2,
+"base": [
+-146,
+69,
+241.9
+],
+"axis": [
+0,
+0,
+1
+],
+"operation": "cut",
+"targets": [
+"P_M02_BASE"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.75,
+"height": 8.2,
+"base": [
+-146,
+79,
+233.9
+],
+"axis": [
+0,
+0,
+1
+],
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BRKT_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.1,
+"height": 8.2,
+"base": [
+-146,
+79,
+241.9
+],
+"axis": [
+0,
+0,
+1
+],
+"operation": "cut",
+"targets": [
+"P_M02_BASE"
+]
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+-175.5,
+66,
+241
+],
+"length": 10.6,
+"width": 18,
+"height": 10,
+"operation": "cut",
+"targets": [
+"P_M02_BASE"
+]
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+-257.5,
+64,
+72
+],
+"length": 47.5,
+"width": 40,
+"height": 40,
+"operation": "new",
+"body_name": "STEP대기_CDQ2A25-20DMZ"
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 6.2,
+"height": 22,
+"base": [
+-210,
+84,
+92
+],
+"axis": [
+-1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_CDQ2A25-20DMZ"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.5,
+"height": 8,
+"base": [
+-250,
+104,
+92
+],
+"axis": [
+0,
+-1,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_CDQ2A25-20DMZ"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.5,
+"height": 8,
+"base": [
+-217,
+104,
+92
+],
+"axis": [
+0,
+-1,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_CDQ2A25-20DMZ"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.1,
+"height": 8,
+"base": [
+-257.5,
+71,
+79
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_CDQ2A25-20DMZ"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.1,
+"height": 8,
+"base": [
+-257.5,
+97,
+79
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_CDQ2A25-20DMZ"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.1,
+"height": 8,
+"base": [
+-257.5,
+71,
+105
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_CDQ2A25-20DMZ"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.1,
+"height": 8,
+"base": [
+-257.5,
+97,
+105
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_CDQ2A25-20DMZ"
+]
+}
+},
+{
+"command": "material.assign",
+"params": {
+"bodies": [
+"P_RX08_STOP_BRKT_밀링"
+],
+"material": "SUS304"
+}
+},
+{
+"command": "material.assign",
+"params": {
+"bodies": [
+"STEP대기_CDQ2A25-20DMZ"
+],
+"material": "Aluminum"
+}
+},
+{
+"command": "component.move_bodies",
+"params": {
+"bodies": [
+"STEP대기_CDQ2A25-20DMZ"
+],
+"component": "STEP대기_CDQ2A25-20DMZ"
+}
+},
+{
+"command": "component.activate",
+"params": {
+"component": "U4_STOP"
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": {
+"origin": [
+0,
+104,
+0
+],
+"x_dir": [
+1,
+0,
+0
+],
+"y_dir": [
+0,
+0,
+1
+]
+},
+"name": "SK_RX08_STOP_BLOCK"
+}
+},
+{
+"command": "sketch.line",
+"params": {
+"points": [
+[
+-167,
+72
+],
+[
+-143.5,
+72
+],
+[
+-143.5,
+124
+],
+[
+-156.5,
+124
+],
+[
+-156.5,
+100
+],
+[
+-167,
+100
+]
+],
+"closed": true
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.extrude",
+"params": {
+"sketch": "SK_RX08_STOP_BLOCK",
+"distance": 40,
+"operation": "new",
+"body_name": "P_RX08_STOP_BLOCK_밀링",
+"name": "EX_RX08_STOP_BLOCK"
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+-153,
+80,
+71
+],
+"length": 10,
+"width": 25,
+"height": 54,
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BLOCK_밀링"
+]
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+-157,
+80,
+100
+],
+"length": 4.1,
+"width": 25,
+"height": 25,
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BLOCK_밀링"
+]
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+-166.5,
+79.1,
+69.2
+],
+"length": 13.0,
+"width": 9.8,
+"height": 2.9,
+"operation": "join",
+"targets": [
+"P_RX08_STOP_BLOCK_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 4.4,
+"height": 12,
+"base": [
+-167,
+84,
+92
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BLOCK_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 3.4,
+"height": 54,
+"base": [
+-150,
+70,
+71
+],
+"axis": [
+0,
+0,
+1
+],
+"operation": "cut",
+"targets": [
+"P_RX08_STOP_BLOCK_밀링"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 6,
+"height": 43,
+"base": [
+-210,
+84,
+92
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "new",
+"body_name": "STEP대기_CDQ2A25-20DMZ_ROD"
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 5,
+"height": 10,
+"base": [
+-167,
+84,
+92
+],
+"axis": [
+1,
+0,
+0
+],
+"operation": "join",
+"targets": [
+"STEP대기_CDQ2A25-20DMZ_ROD"
+]
+}
+},
+{
+"command": "material.assign",
+"params": {
+"bodies": [
+"P_RX08_STOP_BLOCK_밀링"
+],
+"material": "SUS304"
+}
+},
+{
+"command": "material.assign",
+"params": {
+"bodies": [
+"STEP대기_CDQ2A25-20DMZ_ROD"
+],
+"material": "S45C"
+}
+},
+{
+"command": "component.activate",
+"params": {
+"component": "U4_XCAR"
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+-174,
+66,
+249
+],
+"length": 9.1,
+"width": 18,
+"height": 14,
+"operation": "cut",
+"targets": [
+"P_RX06_CARRIAGE"
+]
+}
+},
+{
+"command": "component.activate",
+"params": {
+"component": "root"
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": "XY",
+"name": "SK_TU0604_M08P_RX08_A"
+}
+},
+{
+"command": "sketch.options",
+"params": {
+"sketch_3d": true
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-264.5,
+117.5,
+92
+],
+[
+-267.0,
+117.5,
+92.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-267.0,
+117.5,
+92.0
+],
+"through": [
+-277.6066,
+121.8934,
+92.0
+],
+"end": [
+-282.0,
+132.5,
+92.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-282.0,
+132.5,
+92.0
+],
+[
+-282.0,
+133.0,
+92.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-282.0,
+133.0,
+92.0
+],
+"through": [
+-277.6066,
+143.6066,
+92.0
+],
+"end": [
+-267.0,
+148.0,
+92.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-267.0,
+148.0,
+92.0
+],
+[
+-231.5,
+148.0,
+92.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-231.5,
+148.0,
+92.0
+],
+"through": [
+-220.8934,
+148.0,
+96.3934
+],
+"end": [
+-216.5,
+148.0,
+107.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-216.5,
+148.0,
+107.0
+],
+[
+-216.5,
+148.0,
+193.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-216.5,
+148.0,
+193.0
+],
+"through": [
+-216.5,
+143.6066,
+203.6066
+],
+"end": [
+-216.5,
+133.0,
+208.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-216.5,
+133.0,
+208.0
+],
+[
+-216.5,
+94.0,
+208.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-216.5,
+94.0,
+208.0
+],
+"through": [
+-212.1066,
+83.3934,
+208.0
+],
+"end": [
+-201.5,
+79.0,
+208.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-201.5,
+79.0,
+208.0
+],
+[
+-184.0,
+79.0,
+208.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-184.0,
+79.0,
+208.0
+],
+"through": [
+-173.3934,
+79.0,
+212.3934
+],
+"end": [
+-169.0,
+79.0,
+223.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-169.0,
+79.0,
+223.0
+],
+[
+-169.0,
+79.0,
+267.7985
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-169.0,
+79.0,
+267.7985
+],
+"through": [
+-169.0,
+79.159,
+269.9767
+],
+"end": [
+-169.0,
+79.6326,
+272.1087
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-169.0,
+79.6326,
+272.1087
+],
+[
+-169.0,
+87.3674,
+297.8913
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-169.0,
+87.3674,
+297.8913
+],
+"through": [
+-169.0,
+87.841,
+300.0233
+],
+"end": [
+-169.0,
+88.0,
+302.2015
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-169.0,
+88.0,
+302.2015
+],
+[
+-169.0,
+88.0,
+376.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-169.0,
+88.0,
+376.0
+],
+"through": [
+-164.6066,
+88.0,
+386.6066
+],
+"end": [
+-154.0,
+88.0,
+391.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-154.0,
+88.0,
+391.0
+],
+[
+-113.2132,
+88.0,
+391.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-113.2132,
+88.0,
+391.0
+],
+"through": [
+-107.473,
+89.1418,
+391.0
+],
+"end": [
+-102.6066,
+92.3934,
+391.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-102.6066,
+92.3934,
+391.0
+],
+[
+-89.3934,
+105.6066,
+391.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-89.3934,
+105.6066,
+391.0
+],
+"through": [
+-84.527,
+108.8582,
+391.0
+],
+"end": [
+-78.7868,
+110.0,
+391.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-78.7868,
+110.0,
+391.0
+],
+[
+1108.25,
+110.0,
+391.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+1108.25,
+110.0,
+391.0
+],
+"through": [
+1118.8566,
+105.6066,
+391.0
+],
+"end": [
+1123.25,
+95.0,
+391.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+1123.25,
+95.0,
+391.0
+],
+[
+1123.25,
+78.0,
+391.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+1123.25,
+78.0,
+391.0
+],
+"through": [
+1123.25,
+67.3934,
+386.6066
+],
+"end": [
+1123.25,
+63.0,
+376.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+1123.25,
+63.0,
+376.0
+],
+[
+1123.25,
+63,
+370.6
+]
+]
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.pipe",
+"params": {
+"path_sketch": "SK_TU0604_M08P_RX08_A",
+"path": [
+"w1",
+"w2",
+"w3",
+"w4",
+"w5",
+"w6",
+"w7",
+"w8",
+"w9",
+"w10",
+"w11",
+"w12",
+"w13",
+"w14",
+"w15",
+"w16",
+"w17",
+"w18",
+"w19",
+"w20",
+"w21",
+"w22",
+"w23",
+"w24",
+"w25",
+"w26",
+"w27"
+],
+"diameter": 6.0,
+"operation": "new",
+"body_name": "TU0604_M08P_RX08_A"
+}
+},
+{
+"command": "material.assign",
+"params": {
+"bodies": [
+"TU0604_M08P_RX08_A"
+],
+"material": "Default"
+}
+},
+{
+"command": "component.create",
+"params": {
+"name": "TU0604_M08P_RX08_A",
+"parent": "U8_PNEU",
+"activate": false
+}
+},
+{
+"command": "component.move_bodies",
+"params": {
+"bodies": [
+"TU0604_M08P_RX08_A"
+],
+"component": "TU0604_M08P_RX08_A"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "TU0604_M08P_RX08_A",
+"part_number": "TU0604",
+"bom_type": "purchased",
+"description": "SMC TU0604 OD6, RX-08 stopper cylinder head port (push = OFF) <-> valve 8 B (PZ)"
+}
+},
+{
+"command": "sketch.create",
+"params": {
+"plane": "XY",
+"name": "SK_TU0604_M08P_RX08_B"
+}
+},
+{
+"command": "sketch.options",
+"params": {
+"sketch_3d": true
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-202.5,
+117.5,
+92
+],
+[
+-201.0,
+117.5,
+92.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-201.0,
+117.5,
+92.0
+],
+"through": [
+-190.3934,
+121.8934,
+92.0
+],
+"end": [
+-186.0,
+132.5,
+92.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-186.0,
+132.5,
+92.0
+],
+[
+-186.0,
+141.0,
+92.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-186.0,
+141.0,
+92.0
+],
+"through": [
+-190.3934,
+151.6066,
+92.0
+],
+"end": [
+-201.0,
+156.0,
+92.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-201.0,
+156.0,
+92.0
+],
+[
+-201.5,
+156.0,
+92.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-201.5,
+156.0,
+92.0
+],
+"through": [
+-212.1066,
+156.0,
+96.3934
+],
+"end": [
+-216.5,
+156.0,
+107.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-216.5,
+156.0,
+107.0
+],
+[
+-216.5,
+156.0,
+219.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-216.5,
+156.0,
+219.0
+],
+"through": [
+-216.5,
+151.6066,
+229.6066
+],
+"end": [
+-216.5,
+141.0,
+234.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-216.5,
+141.0,
+234.0
+],
+[
+-216.5,
+85.0,
+234.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-216.5,
+85.0,
+234.0
+],
+"through": [
+-212.1066,
+74.3934,
+234.0
+],
+"end": [
+-201.5,
+70.0,
+234.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-201.5,
+70.0,
+234.0
+],
+[
+-184.0,
+70.0,
+234.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-184.0,
+70.0,
+234.0
+],
+"through": [
+-173.3934,
+70.0,
+238.3934
+],
+"end": [
+-169.0,
+70.0,
+249.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-169.0,
+70.0,
+249.0
+],
+[
+-169.0,
+70.0,
+272.7985
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-169.0,
+70.0,
+272.7985
+],
+"through": [
+-169.0,
+69.841,
+274.9767
+],
+"end": [
+-169.0,
+69.3674,
+277.1087
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-169.0,
+69.3674,
+277.1087
+],
+[
+-169.0,
+61.6326,
+302.8913
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-169.0,
+61.6326,
+302.8913
+],
+"through": [
+-169.0,
+61.159,
+305.0233
+],
+"end": [
+-169.0,
+61.0,
+307.2015
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-169.0,
+61.0,
+307.2015
+],
+[
+-169.0,
+61.0,
+366.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-169.0,
+61.0,
+366.0
+],
+"through": [
+-164.6066,
+61.0,
+376.6066
+],
+"end": [
+-154.0,
+61.0,
+381.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-154.0,
+61.0,
+381.0
+],
+[
+-110.0,
+61.0,
+381.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-110.0,
+61.0,
+381.0
+],
+"through": [
+-99.3934,
+65.3934,
+381.0
+],
+"end": [
+-95.0,
+76.0,
+381.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-95.0,
+76.0,
+381.0
+],
+[
+-95.0,
+95.0,
+381.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+-95.0,
+95.0,
+381.0
+],
+"through": [
+-90.6066,
+105.6066,
+381.0
+],
+"end": [
+-80.0,
+110.0,
+381.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+-80.0,
+110.0,
+381.0
+],
+[
+1140.0,
+110.0,
+381.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+1140.0,
+110.0,
+381.0
+],
+"through": [
+1150.6066,
+105.6066,
+381.0
+],
+"end": [
+1155.0,
+95.0,
+381.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+1155.0,
+95.0,
+381.0
+],
+[
+1155.0,
+78.0,
+381.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+1155.0,
+78.0,
+381.0
+],
+"through": [
+1155.0,
+67.3934,
+376.6066
+],
+"end": [
+1155.0,
+63.0,
+366.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+1155.0,
+63.0,
+366.0
+],
+[
+1155.0,
+63.0,
+327.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+1155.0,
+63.0,
+327.0
+],
+"through": [
+1150.6066,
+63.0,
+316.3934
+],
+"end": [
+1140.0,
+63.0,
+312.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+1140.0,
+63.0,
+312.0
+],
+[
+1138.25,
+63.0,
+312.0
+]
+]
+}
+},
+{
+"command": "sketch.arc3d",
+"params": {
+"start": [
+1138.25,
+63.0,
+312.0
+],
+"through": [
+1127.6434,
+63.0,
+316.3934
+],
+"end": [
+1123.25,
+63.0,
+327.0
+]
+}
+},
+{
+"command": "sketch.line3d",
+"params": {
+"points": [
+[
+1123.25,
+63.0,
+327.0
+],
+[
+1123.25,
+63,
+331.4
+]
+]
+}
+},
+{
+"command": "sketch.finish",
+"params": {}
+},
+{
+"command": "solid.pipe",
+"params": {
+"path_sketch": "SK_TU0604_M08P_RX08_B",
+"path": [
+"w1",
+"w2",
+"w3",
+"w4",
+"w5",
+"w6",
+"w7",
+"w8",
+"w9",
+"w10",
+"w11",
+"w12",
+"w13",
+"w14",
+"w15",
+"w16",
+"w17",
+"w18",
+"w19",
+"w20",
+"w21",
+"w22",
+"w23",
+"w24",
+"w25",
+"w26",
+"w27",
+"w28",
+"w29",
+"w30",
+"w31"
+],
+"diameter": 6.0,
+"operation": "new",
+"body_name": "TU0604_M08P_RX08_B"
+}
+},
+{
+"command": "material.assign",
+"params": {
+"bodies": [
+"TU0604_M08P_RX08_B"
+],
+"material": "Default"
+}
+},
+{
+"command": "component.create",
+"params": {
+"name": "TU0604_M08P_RX08_B",
+"parent": "U8_PNEU",
+"activate": false
+}
+},
+{
+"command": "component.move_bodies",
+"params": {
+"bodies": [
+"TU0604_M08P_RX08_B"
+],
+"component": "TU0604_M08P_RX08_B"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "TU0604_M08P_RX08_B",
+"part_number": "TU0604",
+"bom_type": "purchased",
+"description": "SMC TU0604 OD6, RX-08 stopper cylinder rod port (pull = ON) <-> valve 8 A (NZ)"
+}
+},
+{
+"command": "solid.remove",
+"params": {
+"bodies": [
+"STEP대기_SS5Y3-20-07_M08"
+]
+}
+},
+{
+"command": "solid.box",
+"params": {
+"corner": [
+1035,
+100,
+325.5
+],
+"length": 103,
+"width": 20,
+"height": 49.0,
+"operation": "new",
+"body_name": "STEP대기_SS5Y3-20-08_M08"
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.25,
+"height": 20.2,
+"base": [
+1039.8,
+120.1,
+343
+],
+"axis": [
+0,
+-1,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_SS5Y3-20-08_M08"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.25,
+"height": 20.2,
+"base": [
+1039.8,
+120.1,
+359
+],
+"axis": [
+0,
+-1,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_SS5Y3-20-08_M08"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.25,
+"height": 20.2,
+"base": [
+1133.2,
+120.1,
+343
+],
+"axis": [
+0,
+-1,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_SS5Y3-20-08_M08"
+]
+}
+},
+{
+"command": "solid.cylinder",
+"params": {
+"radius": 2.25,
+"height": 20.2,
+"base": [
+1133.2,
+120.1,
+359
+],
+"axis": [
+0,
+-1,
+0
+],
+"operation": "cut",
+"targets": [
+"STEP대기_SS5Y3-20-08_M08"
+]
+}
+},
+{
+"command": "material.assign",
+"params": {
+"bodies": [
+"STEP대기_SS5Y3-20-08_M08"
+],
+"material": "Aluminum"
+}
+},
+{
+"command": "component.move_bodies",
+"params": {
+"bodies": [
+"STEP대기_SS5Y3-20-08_M08"
+],
+"component": "STEP대기_SS5Y3-20-07_M08"
+}
+},
+{
+"command": "component.rename",
+"params": {
+"component": "STEP대기_SS5Y3-20-07_M08",
+"name": "STEP대기_SS5Y3-20-08_M08"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "STEP대기_SS5Y3-20-08_M08",
+"part_number": "SS5Y3-20-08",
+"bom_type": "purchased",
+"description": "STEP wait (E-10): SMC SY3000 bar manifold 8 stations (SS5Y3-20-08), temp box L 103 = 07 box 92.5 + one pitch 10.5, H 49, D 20, mount holes 4.5 at both ends (RX-08)"
+}
+},
+{
+"command": "occurrence.move",
+"params": {
+"occurrence": "STEP대기_TPH-01_1:1",
+"space": "world",
+"translate": [
+10.5,
+0,
+0
+]
+}
+},
+{
+"command": "occurrence.move",
+"params": {
+"occurrence": "STEP대기_TPH-01_2:1",
+"space": "world",
+"translate": [
+10.5,
+0,
+0
+]
+}
+},
+{
+"command": "occurrence.move",
+"params": {
+"occurrence": "STEP대기_TPH-01_3:1",
+"space": "world",
+"translate": [
+10.5,
+0,
+0
+]
+}
+},
+{
+"command": "occurrence.move",
+"params": {
+"occurrence": "CB4-25_M08:3",
+"space": "world",
+"translate": [
+10.5,
+0,
+0
+]
+}
+},
+{
+"command": "occurrence.move",
+"params": {
+"occurrence": "CB4-25_M08:4",
+"space": "world",
+"translate": [
+10.5,
+0,
+0
+]
+}
+},
+{
+"command": "occurrence.copy",
+"params": {
+"occurrence": "SY3120-5LZD-M5_M08:7",
+"parent": "U8_PNEU",
+"in_place": true,
+"translate": [
+10.5,
+0,
+0
+]
+}
+},
+{
+"command": "occurrence.copy",
+"params": {
+"occurrence": "KQ2L06-M5A_M08S_NZ:7",
+"parent": "U8_PNEU",
+"in_place": true,
+"translate": [
+10.5,
+0,
+0
+]
+}
+},
+{
+"command": "occurrence.copy",
+"params": {
+"occurrence": "KQ2L06-M5A_M08S_PZ:6",
+"parent": "U8_PNEU",
+"in_place": true,
+"translate": [
+10.5,
+0,
+0
+]
+}
+},
+{
+"command": "joint.create",
+"params": {
+"type": "slider",
+"name": "J_U4_STOP",
+"flip": true,
+"limits": [
+[
+0,
+20
+]
+],
+"values": [
+0
+],
+"a": {
+"occurrence": "STEP대기_CDQ2A25-20DMZ:1",
+"point": [
+-187,
+84,
+92
+],
+"z": [
+-1,
+0,
+0
+]
+},
+"b": {
+"occurrence": "U4_STOP:1",
+"point": [
+-187,
+84,
+92
+],
+"z": [
+-1,
+0,
+0
+]
+}
+}
+},
+{
+"command": "joint.rigid_group",
+"params": {
+"occurrences": [
+"U4_WHEEL_N:1",
+"STEP대기_CDQ2A25-20DMZ:1",
+"CB5-16_RX08_LIP:1",
+"CB5-16_RX08_LIP:2",
+"CB5-16_RX08_LIP:3",
+"CB5-16_RX08_LIP:4",
+"CB5-16_RX08_TOP:1",
+"CB5-16_RX08_TOP:2",
+"KQ2L06-M5A_RX08_HEAD:1",
+"KQ2L06-M5A_RX08_ROD:1"
+]
+}
+},
+{
+"command": "joint.rigid_group",
+"params": {
+"occurrences": [
+"U4_STOP:1",
+"CB8-20_RX08:1",
+"STEP대기_NUT-M8_RX08:1"
+]
+}
+},
+{
+"command": "motion.study",
+"params": {
+"study": "REST",
+"steps": 1,
+"keys": [
+{
+"joint": "J_U3_PRESSER",
+"index": 0,
+"points": [
+[
+0.0,
+20.0
+],
+[
+1.0,
+20.0
+]
+]
+},
+{
+"joint": "J_U3_NEEDLE",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U4_WHEEL_ROT",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U5_X",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U5_WHEEL_ROT",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_L_X",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_L_Y",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_L_ROT",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_S_X",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_S_Y",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_S_ROT",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_G_X",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_G_Y",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_G_ROT",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U4_PRESS",
+"index": 0,
+"points": [
+[
+0.0,
+13.006
+],
+[
+1.0,
+13.006
+]
+]
+},
+{
+"joint": "J_U7_CST_X",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U7_CST_Y",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U7_CUT",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U7_TUCK",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U7_FEED",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U7_LATCH",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U6_SHIFT",
+"index": 0,
+"points": [
+[
+0.0,
+-60.0
+],
+[
+1.0,
+-60.0
+]
+]
+},
+{
+"joint": "J_U5_LIFT",
+"index": 0,
+"points": [
+[
+0.0,
+30.0
+],
+[
+1.0,
+30.0
+]
+]
+},
+{
+"joint": "J_U5_FLOAT",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_V_X",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_V_Y",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_WP_V_ROT",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U6_PRESS",
+"index": 0,
+"points": [
+[
+0.0,
+4.5
+],
+[
+1.0,
+4.5
+]
+]
+},
+{
+"joint": "J_TP_L_01",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_02",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_03",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_04",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_05",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_06",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_07",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_08",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_09",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_10",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_11",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_12",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_13",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_14",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_15",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_16",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_17",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_18",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_19",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_20",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_21",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_22",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_23",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_24",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_25",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_26",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_27",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_28",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_29",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_30",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_31",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_32",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_33",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_34",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_35",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_36",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_37",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_38",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_39",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_40",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_41",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_SEAM",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_S_01",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_S_02",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_S_03",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_S_04",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_S_05",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_S_06",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_S_07",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_S_SEAM",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_01",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_02",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_03",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_04",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_05",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_06",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_07",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_08",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_09",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_10",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_11",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_12",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_13",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_14",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_15",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_16",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_17",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_18",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_19",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_20",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_21",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_22",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_23",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_24",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_25",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_26",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_27",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_28",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_29",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_30",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_31",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_32",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_33",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_34",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_35",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_G_SEAM",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_01",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_02",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_03",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_04",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_05",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_06",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_07",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_08",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_09",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_10",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_11",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_12",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_13",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_14",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_15",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_16",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_17",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_18",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_19",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_20",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_21",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_22",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_23",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_24",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_25",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_26",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_27",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_28",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_29",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_30",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_31",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_32",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_33",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_34",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_35",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_V_SEAM",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_16B",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_TP_L_26B",
+"index": 0,
+"points": [
+[
+0.0,
+0.0
+],
+[
+1.0,
+0.0
+]
+]
+},
+{
+"joint": "J_U4_STOP",
+"index": 0,
+"points": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+]
+}
+]
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "U4_STOP",
+"description": "RX-08: U4 mid-height stopper moving group (cylinder rod, stop block P_RX08_STOP_BLOCK, adjust bolt CB8-20 + M8 nut), slider J_U4_STOP 0 OFF (rod out) .. 20 ON (rod in)"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "STEP대기_CDQ2A25-20DMZ",
+"description": "STEP wait (E-10): SMC CQ2 compact cylinder bore 25 stroke 20, temp box 40 x 40 x L 47.5, rod 12 male M10 (rod body in U4_STOP), ports M5 on +Y face X -250/-217, head face M5 tap x4 pitch 26 (all provisional, catalog not read)",
+"part_number": "CDQ2A25-20DMZ",
+"bom_type": "purchased"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "CB5-16_RX08_LIP",
+"description": "Misumi CB5-16 STEP, stopper bracket end lip -> cylinder head face M5 tap (engagement 5.5 provisional)",
+"part_number": "CB5-16",
+"bom_type": "purchased"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "CB5-16_RX08_TOP",
+"description": "Misumi CB5-16 STEP, stopper bracket top plate (clearance 5.5) -> P_M02_BASE M5 tap, engagement 8",
+"part_number": "CB5-16",
+"bom_type": "purchased"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "CB8-20_RX08",
+"description": "Misumi CB8-20 STEP, stopper height adjust bolt in stop block M8 tap, head top Z 141.72 (mat 10 + float 2)",
+"part_number": "CB8-20",
+"bom_type": "purchased"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "STEP대기_NUT-M8_RX08",
+"description": "STEP wait: hex jam nut M8 (standard part shape, part number to choose; HNTT8-5 in the brief is an M5 T-nut)",
+"part_number": "NUT-M8(형번 미정)",
+"bom_type": "purchased"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "KQ2L06-M5A_RX08_HEAD",
+"description": "SMC KQ2L06-M5A STEP, stopper cylinder head port, outlet -X",
+"part_number": "KQ2L06-M5A",
+"bom_type": "purchased"
+}
+},
+{
+"command": "component.metadata.set",
+"params": {
+"component": "KQ2L06-M5A_RX08_ROD",
+"description": "SMC KQ2L06-M5A STEP, stopper cylinder rod port, outlet +X",
+"part_number": "KQ2L06-M5A",
+"bom_type": "purchased"
+}
+},
+{
+"command": "motion.play",
+"params": {
+"study": "REST",
+"step": 0,
+"quiet": true
+}
+},
+{
+"command": "browser.visibility",
+"params": {
+"visible": false,
+"folder": "joints"
+}
+},
+{
+"command": "browser.visibility",
+"params": {
+"visible": false,
+"folder": "sketches"
+}
+}
+]

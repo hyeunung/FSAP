@@ -1,0 +1,72 @@
+[
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "U4_STOP",
+   "description": "RX-08: U4 mid-height stopper moving group (cylinder rod, stop block P_RX08_STOP_BLOCK, adjust bolt CB8-20 + M8 nut), slider J_U4_STOP 0 OFF (rod out) .. 20 ON (rod in)"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "STEP대기_CDQ2A25-20DMZ",
+   "description": "STEP wait (E-10): SMC CQ2 compact cylinder bore 25 stroke 20, temp box 40 x 40 x L 47.5, rod 12 male M10 (rod body in U4_STOP), ports M5 on +Y face X -250/-217, head face M5 tap x4 pitch 26 (all provisional, catalog not read)",
+   "part_number": "CDQ2A25-20DMZ",
+   "bom_type": "purchased"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "CB5-16_RX08_LIP",
+   "description": "Misumi CB5-16 STEP, stopper bracket end lip -> cylinder head face M5 tap (engagement 5.5 provisional)",
+   "part_number": "CB5-16",
+   "bom_type": "purchased"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "CB5-16_RX08_TOP",
+   "description": "Misumi CB5-16 STEP, stopper bracket top plate (clearance 5.5) -> P_M02_BASE M5 tap, engagement 8",
+   "part_number": "CB5-16",
+   "bom_type": "purchased"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "CB8-20_RX08",
+   "description": "Misumi CB8-20 STEP, stopper height adjust bolt in stop block M8 tap, head top Z 141.72 (mat 10 + float 2)",
+   "part_number": "CB8-20",
+   "bom_type": "purchased"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "STEP대기_NUT-M8_RX08",
+   "description": "STEP wait: hex jam nut M8 (standard part shape, part number to choose; HNTT8-5 in the brief is an M5 T-nut)",
+   "part_number": "NUT-M8(형번 미정)",
+   "bom_type": "purchased"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "KQ2L06-M5A_RX08_HEAD",
+   "description": "SMC KQ2L06-M5A STEP, stopper cylinder head port, outlet -X",
+   "part_number": "KQ2L06-M5A",
+   "bom_type": "purchased"
+  }
+ },
+ {
+  "command": "component.metadata.set",
+  "params": {
+   "component": "KQ2L06-M5A_RX08_ROD",
+   "description": "SMC KQ2L06-M5A STEP, stopper cylinder rod port, outlet +X",
+   "part_number": "KQ2L06-M5A",
+   "bom_type": "purchased"
+  }
+ }
+]
