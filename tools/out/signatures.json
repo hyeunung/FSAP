@@ -2,8 +2,8 @@
  "date": "2026-11-12",
  "pose": "REST step 0",
  "source": "RX-08 측정부 MCP measure {} 전수(v2.11.1, 3,166바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.12.0.sc",
- "doc_hash": "9e36c1b621289a95",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.12.1.sc",
+ "doc_hash": "0a6d2885bb8b55c3",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -57230,15 +57230,15 @@
   "TU0604_M08P_RX08_A/TU0604_M08P_RX08_A": {
    "name": "TU0604_M08P_RX08_A",
    "bbox": [
-    -284.824,
-    1126.731,
-    59.724,
-    151.431,
-    88.792,
-    394.271
+    -172.181,
+    1126.53,
+    59.33,
+    113.295,
+    340.0,
+    394.296
    ],
-   "volume": 48616.239,
-   "mass": 62.715,
+   "volume": 39532.88,
+   "mass": 50.997,
    "material": "Default",
    "bolt": false,
    "spec": "",
@@ -57248,15 +57248,15 @@
   "TU0604_M08P_RX08_B/TU0604_M08P_RX08_B": {
    "name": "TU0604_M08P_RX08_B",
    "bbox": [
-    -219.948,
-    1158.509,
-    57.382,
-    159.505,
-    88.915,
-    384.486
+    -172.345,
+    1158.351,
+    57.948,
+    113.348,
+    308.824,
+    384.345
    ],
-   "volume": 49860.895,
-   "mass": 64.321,
+   "volume": 43377.829,
+   "mass": 55.957,
    "material": "Default",
    "bolt": false,
    "spec": "",
@@ -57334,6 +57334,42 @@
    "spec": "",
    "unit": "U8_PNEU",
    "component": "KQ2L06-M5A_M08S_PZ"
+  },
+  "TU0604_M08P_RX08_A_U4/TU0604_M08P_RX08_A_U4": {
+   "name": "TU0604_M08P_RX08_A_U4",
+   "bbox": [
+    -285.008,
+    -165.991,
+    75.974,
+    151.012,
+    88.997,
+    340.038
+   ],
+   "volume": 12455.011,
+   "mass": 16.067,
+   "material": "Default",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "TU0604_M08P_RX08_A_U4"
+  },
+  "TU0604_M08P_RX08_B_U4/TU0604_M08P_RX08_B_U4": {
+   "name": "TU0604_M08P_RX08_B_U4",
+   "bbox": [
+    -219.509,
+    -165.975,
+    57.989,
+    159.024,
+    88.986,
+    340.121
+   ],
+   "volume": 12133.695,
+   "mass": 15.652,
+   "material": "Default",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "TU0604_M08P_RX08_B_U4"
   }
  }
 }
