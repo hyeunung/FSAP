@@ -84,7 +84,7 @@
 
 ## 6. 서명·기록·임시 STEP
 - 서명: 저장 뒤 바뀐·새 4바디(`tools/out/mech_RX-08/model1/sig_fix1.json`) → `ledger.py sigpatch`(지운 이름 없음 — 같은 이름 다시 씀). 볼트 변화 없음.
-- 저장 확인: 앱 `inspect_design` dirty false·이름 FSAP_v2.12.1. CLI `run --results`(저장본) 결과는 `tools/out/mech_RX-08/model1/savecheck.out`.
+- 저장 확인: 앱 `inspect_design` dirty false·이름 FSAP_v2.12.1. 저장본 CLI `run --results --allow-errors`(`tools/out/mech_RX-08/model1/savecheck2.out`, 열기+측정 911 s): 바디 3,187(서명 전체와 같음), 관 4·BASE·그네·블록·CB8-20·보 bbox·부피가 앱 실측과 같음(REST, J_U4_STOP 0, 머리 Z 141.72). `--allow-errors` 없이는 전부터 있는 Remove86 오류로 "nothing was written"이 나와 다시 돌림(903 s).
 - 기록: `tools/out/mech_RX-08/edit.json`(100단계: 지우기 1 + 관 4구간 + 강체 + REST·숨김), `edit_meta.json`{base v2.12.0, result v2.12.1}. 앞 회차 기록은 `model/edit_v2120_from_v2111.json`. 생성기 `tools/out/mech_RX-08/model1/gen_fix1.py`, 단계 `model1/stage_*.json`.
 - 임시 STEP(해석용, 형상 v2.12.0과 같음, 이번 저장본에서 다시 냄): `tools/out/mech_RX-08/stepout/P_RX08_STOP_BRKT.step`·`P_RX08_STOP_BLOCK.step`·`P_M02_BASE.step`.
 
@@ -98,4 +98,4 @@
 - 큰 설계(3,738 피처)에서 `joint.drive J_U4_X`는 앱에서 14~15분 걸리고 MCP 호출(5분)이 끊긴다. `batch`에 측정과 섞어 보내면 결과를 잃는다 — 구동은 `execute` 하나로 보내고 `pending`으로 받을 것(RX-06 검도 메모와 같음). `J_U4_PRESS`·`J_U4_STOP` 구동은 1초 안.
 - 파이프 바디를 평면으로 나누는 `solid.split_body`는 65 s 뒤 "boolean Intersect: no result"로 실패했다. 스케치 3D 길을 둘로 나눠 파이프 두 개를 새로 만드는 쪽이 5 s로 끝났다.
 - `joint.sweep`은 실물 바디로 멈춤각을 바로 준다(메시 공차 0.23 mm 안). 프로브 반대로 돌리기보다 빠르고 정확.
-- CLI `solidcraft-cli run`으로 5.7 MB 저장본을 여는 데 8분 넘게 걸렸다(저장 확인용).
+- CLI `solidcraft-cli run`으로 5.7 MB 저장본 열기+측정이 903~911 s 걸렸다(모델 무게 상한 240 s를 넘음 — LITE 판단 재료). 전부터 있는 타임라인 오류 1개(Remove86) 때문에 `--allow-errors` 없이는 측정도 안 나온다.

@@ -1,0 +1,195 @@
+{
+ "_설명": "RX-08 해석부 손계산. 좌표 = 측정 좌표계, J_U4_X 0, J_U4_STOP 20(ON), 그네 0.95° 받침",
+ "load": {
+  "arm_mm": 43.5,
+  "T_Nm": {
+   "p0_1g": 3.675,
+   "p0.2_1g": 8.889,
+   "op": 16.239,
+   "mis": 24.06
+  },
+  "F_stop_N": {
+   "op": 373.3,
+   "mis": 553.1,
+   "1g_0.2": 204.3,
+   "1g_0.102": 145.6
+  },
+  "_note": "두께 16 매트 θ 3.751 반력(측정 4절)이 두께 10보다 큼 -> 가장 불리한 하나(E-19)"
+ },
+ "brkt_foot": {
+  "sigma_op_MPa": 33.3,
+  "sigma_mis_MPa": 49.3,
+  "SF_op": 6.16,
+  "SF_mis": 4.16,
+  "ok": true,
+  "yield_ok": true,
+  "material": "SUS304",
+  "note": "팔 = 받침점~기둥 모서리 24.1 mm, 단면 20.0x9.0(키 홈 3 뺌, 폭 절반 보수)"
+ },
+ "brkt_column": {
+  "sigma_op_MPa": 36.9,
+  "sigma_mis_MPa": 54.6,
+  "SF_op": 5.56,
+  "SF_mis": 3.75,
+  "ok": true,
+  "yield_ok": true,
+  "material": "SUS304",
+  "note": "편심 ex 24·ey 25, 바닥·꼭대기 같은 모멘트. 피벗 브래킷 B 면 닿음은 받침으로 안 셈(보수). 안쪽 모서리 R 없으면 응력 집중(정적 연성재라 SF에 안 넣음)"
+ },
+ "brkt_top_plate": {
+  "sigma_op_MPa": 99.1,
+  "sigma_mis_MPa": 146.9,
+  "SF_op": 2.07,
+  "SF_mis": 1.4,
+  "ok": false,
+  "yield_ok": true,
+  "material": "SUS304",
+  "note": "자른 면 Y 86 굽힘 팔 16, 비틀림 팔 24, Zb 128, Wt 177.4. 볼트 둘 다 Y < 86이라 비틀림 전부가 Y 86 단면을 지남. 1 g 0.2 MPa(204 N) SF 3.78"
+ },
+ "brkt_top_plate_t12_whatif": {
+  "sigma_op_MPa": 47.9,
+  "sigma_mis_MPa": 71.0,
+  "SF_op": 4.28,
+  "SF_mis": 2.89,
+  "note": "윗판 Z 234~242 -> Z 230~242(t12, 밑으로 4). 같은 경계조건(실형상)"
+ },
+ "top_bolts_M5_op": {
+  "inputs": {
+   "d": 5,
+   "le": 8,
+   "load_N": 933.3,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 16.74,
+   "암나사 전단": 6.21
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "top_bolts_M5_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 8,
+   "load_N": 1382.8,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 11.3,
+   "암나사 전단": 4.19
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "top_bolts_M5_sep": {
+  "note": "M5 12.9 조임 7 N·m(D-108 일반값) 예압 7,000 N/개 > 오조작 볼트 힘 -> 이음 안 벌어짐(윗판을 고정단으로 본 근거)",
+  "preload_N": 7000.0,
+  "load_mis_N": 1382.8,
+  "SF_sep": 5.06
+ },
+ "base_tap_strip": {
+  "sigma_op_MPa": 45.0,
+  "sigma_mis_MPa": 66.7,
+  "SF_op": 4.55,
+  "SF_mis": 3.07,
+  "ok": true,
+  "yield_ok": true,
+  "material": "SUS304",
+  "note": "보수: 지레 압축(윗판 +X 끝)이 같은 띠를 밀어 올려 실제 순 하중은 F뿐 — 볼트 당김 합 전부를 띠 가운데 점하중으로 셈. 장공 X -175.5~-157이 띠 폭을 줄임"
+ },
+ "base_slot_ligament": {
+  "mm": -13.5,
+  "note": "장공 +X 끝 X -157 ~ 탭 Ø5(X -146) 사이 살 8.5 mm(> d 5)"
+ },
+ "block_tower": {
+  "sigma_op_MPa": 2.2,
+  "sigma_mis_MPa": 3.2,
+  "SF_op": 94.28,
+  "SF_mis": 63.63,
+  "ok": true,
+  "yield_ok": true,
+  "material": "SUS304",
+  "note": "M8 탭 구멍 Ø6.8 뺀 순 단면 압축"
+ },
+ "adj_bolt_CB8_mis": {
+  "inputs": {
+   "d": 8,
+   "le": 10.28,
+   "load_N": 553.1,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 13.3,
+   "dh": 8.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.28,
+  "sf_operating": {
+   "나사 인장": 72.79,
+   "암나사 전단": 21.55
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "head_edge_bearing": {
+  "p_op_MPa": 57.4,
+  "p_mis_MPa": 85.1,
+  "SF_op": 3.4,
+  "SF_mis": 2.29,
+  "note": "접촉 폭 0.5 mm는 가정값(근거 없음). 되풀이 닿음 자국 -> 둥근 머리 스토퍼 볼트(설계안 9-2)로 없앰"
+ },
+ "swing_plate": {
+  "sigma_op_MPa": 6.4,
+  "sigma_mis_MPa": 9.5,
+  "SF_op": 30.51,
+  "SF_mis": 20.59,
+  "ok": true,
+  "yield_ok": true,
+  "material": "A5052",
+  "note": "그네 윗판 X +끝(-161) 근처 받침, 45° 퍼짐 폭"
+ },
+ "cylinder": {
+  "push_0.5MPa_N": 245.4,
+  "need_set_0.102_x1.5_N": 218.4,
+  "SF_set": 1.69,
+  "SF_at_0.2": 1.2,
+  "note": "받침 면 수평 -> 실린더 축 힘 0. 짐 진 채 빼기(설계안 μ0.3 두 면) 122.6 N 밀기 SF 2.00. 전환은 들림(J_U4_PRESS 13.006)에서만"
+ },
+ "brkt_lip": {
+  "sigma_op_MPa": 6.7,
+  "sigma_mis_MPa": 6.7,
+  "SF_op": 30.7,
+  "SF_mis": 30.7,
+  "ok": true,
+  "yield_ok": true,
+  "material": "SUS304",
+  "note": "립 X -268~-257.5(t10.5) 높이 Z 72~112, 실린더 축 Z 92 -> 팔 20, 추력 245 N(최대)"
+ }
+}

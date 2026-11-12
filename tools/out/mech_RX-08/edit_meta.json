@@ -1,5 +1,5 @@
 {
- "base": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.12.0.sc",
- "result": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.12.1.sc",
- "note": "RX-08 수정 1회차, 앱(MCP) 세션. 앞 기록(v2.11.1 -> v2.12.0)은 model/edit_v2120_from_v2111.json. 검사용 구동(J_U4_X 95, J_U4_PRESS·J_U4_STOP 자세)은 기록에서 뺌. 먼저 v2.12.0을 v2.12.1로 다른 이름 저장(형상 그대로) 뒤 이 명령을 보내고 다시 save"
+ "base": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.12.1.sc",
+ "result": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.12.2.sc",
+ "note": "RX-08 수정 2회차, 앱(MCP). v2.12.1을 v2.12.2로 다른 이름 저장(형상 그대로) 뒤 Remove86(97923) 대상을 없는 이름 SSEB13-220_RX06_RAIL에서 Chamfer2(STEP 원본 레일)로 바꿈. 앞 기록은 model1/·model/"
 }

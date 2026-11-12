@@ -22,17 +22,17 @@
    }
   },
   "P_M02_BASE": {
-   "case": "cases/mech_RX-06_handcalc.py",
+   "case": "cases/mech_RX-08_handcalc.py",
    "fixed": "[RX-06 v2.11.0에서 바뀜] 보 밑 체결(CB5-16 x4) 지움 -> 윗판 윗면(Z 250)이 P_RX06_CARRIAGE 발(Y 45~107, Z 250~262) 밑에 CB5-16 x6((-232,50)·(-215,50)·(-150,50)·(-215,85)·(-180,85)·(-150,85))으로 매달림. 보 밑 연장(Y>=116, 윗면 248)은 보와 틈 2(닿지 않음)",
    "contact": "발 밑면-윗판 윗면 압축, 볼트 머리 자리 Ø10 x 1 홈. 연장 밑에 P_M02S_CYL_BRKT 날개(Z 236~242) CB5-12 x2",
-   "load": "U4 묶음 10.815 kg x 3 g + 바퀴 반력 N(0.2 MPa 56.4 N / 0.5 MPa 121.5 N) + 접선 Y 18 N(오조작 mu0.5 N) + X mu N, 실린더 닫힌 고리 Ø20 x 0.5 MPa 157.1 N(연장 끝 세로힘으로 보수)",
+   "load": "U4 묶음 10.815 kg x 3 g + 바퀴 반력 N(0.2 MPa 56.4 N / 0.5 MPa 121.5 N) + 접선 Y 18 N(오조작 mu0.5 N) + X mu N, 실린더 닫힌 고리 Ø20 x 0.5 MPa 157.1 N(연장 끝 세로힘으로 보수) [RX-08 더함] 새 M5 탭 x2 (X -146, Y 69/79)에 스토퍼 브래킷 지레 당김 F x 30/6: 운전 1,867 N, 오조작 2,766 N(합). 관 장공 X -175.5~-157·Y 66~84 넓힘",
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
-   "step": "tools/out/mech_RX-06/stepout/P_M02_BASE.step",
-   "version": "v2.11.0",
+   "status": "손계산 RX-06 + RX-08(탭 둘레 띠 SF 4.55/3.07). FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-08/stepout/P_M02_BASE.step",
+   "version": "v2.12.1",
    "_옛 모델(M02)": {
     "case": "cases/mech_M02_handcalc.py",
     "fixed": "누운 다리(Z 242~250)가 U1_BEAM 밑면(Y 120~200)에 CB5-16 x4(X -310·-160, Y 140·180)로 체결, 보 앞 모서리 Y 120에서 외팔(받침점)",
@@ -42,6 +42,19 @@
      "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
      "source": "요구서 6-1(M-09 기본값)"
     }
+   },
+   "_옛 모델(RX-06 v2.11.0)": {
+    "case": "cases/mech_RX-06_handcalc.py",
+    "fixed": "[RX-06 v2.11.0에서 바뀜] 보 밑 체결(CB5-16 x4) 지움 -> 윗판 윗면(Z 250)이 P_RX06_CARRIAGE 발(Y 45~107, Z 250~262) 밑에 CB5-16 x6((-232,50)·(-215,50)·(-150,50)·(-215,85)·(-180,85)·(-150,85))으로 매달림. 보 밑 연장(Y>=116, 윗면 248)은 보와 틈 2(닿지 않음)",
+    "contact": "발 밑면-윗판 윗면 압축, 볼트 머리 자리 Ø10 x 1 홈. 연장 밑에 P_M02S_CYL_BRKT 날개(Z 236~242) CB5-12 x2",
+    "load": "U4 묶음 10.815 kg x 3 g + 바퀴 반력 N(0.2 MPa 56.4 N / 0.5 MPa 121.5 N) + 접선 Y 18 N(오조작 mu0.5 N) + X mu N, 실린더 닫힌 고리 Ø20 x 0.5 MPa 157.1 N(연장 끝 세로힘으로 보수)",
+    "criteria": {
+     "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+     "source": "요구서 6-1(M-09 기본값)"
+    },
+    "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+    "step": "tools/out/mech_RX-06/stepout/P_M02_BASE.step",
+    "version": "v2.11.0"
    }
   },
   "P_M02_PIVOT_PIN(구매·부시 몫)": {
@@ -1001,6 +1014,32 @@
    },
    "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16). C0·C0a 카탈로그 미확인(임시)",
    "version": "v2.11.0"
+  },
+  "P_RX08_STOP_BRKT_밀링": {
+   "case": "cases/mech_RX-08_handcalc.py",
+   "fixed": "윗판(Z 234~242, X -152~-140, Y 64~104)이 P_M02_BASE 밑면에 CB5-16 x2 (X -146, Y 69/79)로 매달림, 예압 7 kN/개로 이음 닫힘 -> 윗판 고정단. 피벗 브래킷 B 면 닿음은 받침으로 안 셈(보수)",
+   "contact": "발 윗면(Z 72) <- 멈춤 블록 밑면 압축(ON 블록 X -187~-163.5), 키 홈 깊이 3. 립(X -268~-257.5)에 실린더 CB5-16 x4",
+   "load": "스토퍼 반력 F = T/43.5 mm(피벗 Y 120 - 머리 닿음 Y 76.5). 운전 T = 0.2 MPa(IR1000 상한) + 무게·스프링 몫 x3 = 16.24 N·m -> 373.3 N, 오조작 0.5 MPa 전부 + 3 g = 24.06 N·m -> 553.1 N(두께 16, 측정 4절 stop_calc.json). 받침점 볼트 축 (X -170, Y 70). 립: 추력 245.4 N 팔 20",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-08_handcalc.json. FEA 못 함 — 환경 없음(D-16). 윗판 t8 비틀림+굽힘 SF 2.07/1.40 미달(디테일 RX08-FEA-D1)",
+   "step": "tools/out/mech_RX-08/stepout/P_RX08_STOP_BRKT.step",
+   "version": "v2.12.1"
+  },
+  "P_RX08_STOP_BLOCK_밀링": {
+   "case": "cases/mech_RX-08_handcalc.py",
+   "fixed": "밑면이 브래킷 발 윗면에 얹힘(압축만), 로드 M10이 -X 면 탭에 물림(축 힘 0)",
+   "contact": "탑 윗면 M8 관통 탭에 CB8-20(머리가 그네 윗판 밑을 받음) + 너트 잠금",
+   "load": "스토퍼 반력 F = T/43.5 mm(피벗 Y 120 - 머리 닿음 Y 76.5). 운전 T = 0.2 MPa(IR1000 상한) + 무게·스프링 몫 x3 = 16.24 N·m -> 373.3 N, 오조작 0.5 MPa 전부 + 3 g = 24.06 N·m -> 553.1 N(두께 16, 측정 4절 stop_calc.json)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산. 순 단면 압축 SF 63 이상",
+   "step": "tools/out/mech_RX-08/stepout/P_RX08_STOP_BLOCK.step",
+   "version": "v2.12.1"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
