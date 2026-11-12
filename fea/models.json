@@ -55,7 +55,8 @@
     "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
     "step": "tools/out/mech_RX-06/stepout/P_M02_BASE.step",
     "version": "v2.11.0"
-   }
+   },
+   "note_M02R_v2.14.0": "스프링 탭 M5 탭 4개 자리만 (-302·-288·-192·-178, 50) -> (-307·-283·-197·-173, 50). Y 50 줄 구멍 7개(개수·지름 같음) -> 순 단면 변화 0, 고정·하중 그대로라 다시 풀지 않고 RX-06·RX-08 값으로 판정만 다시 냄(탭 둘레 띠 SF 4.55/3.07). 새 탭 살: 가장 가까운 구멍 (-215, 50)까지 13.4, 관 장공까지 13.5, 끝 X -330까지 20.5. 탭 하나에 스프링 당김 16.0 N. 근거 fea/results/mech_M02R_swing_handcalc.json base_taps·base_rejudge, STEP tools/out/mech_M02R/stepout/P_M02_BASE.step"
   },
   "P_M02_PIVOT_PIN(구매·부시 몫)": {
    "case": "cases/mech_M02_handcalc.py",
@@ -78,24 +79,52 @@
    }
   },
   "P_M02_ARM_SIDE_N": {
-   "case": "cases/mech_MOT-01_handcalc.py (옛 cases/mech_M02_handcalc.py)",
-   "fixed": "피벗 부시 Ø16 (-300, 70)",
-   "contact": "로드 핀 Ø9 (-160, 122) 실린더 힘, 앞판 옆 볼트 X -126",
-   "load": "바퀴 힘 x 60(로드 핀 단면, 판당 1/2). 운전: 레귤레이터를 누름 100 N에 맞춤(실린더 104.2 N) + 가동부 4.63 kg x 3 g -> 바퀴 153.8 N, 접선 Y = 서보 토크 제한 3.5 N·m / r 0.06 = 58.3 N. 오조작: 공급 0.5 MPa 전부(Ø20 밀기 157.1 N) + 3 g -> 바퀴 190.9 N, 토크 제한 없음 -> 접선 μ 0.5 x 190.9 = 95.5 N. what-if μ 0.8 기록만 / v2.7.0(MOT-01): 로드 핀 단면이 안면 홈(깊이 2, Z 40~104 t4) 안, 피벗 구멍 Ø18, 질량 차이 반영 바퀴 163.0/204.5 N",
+   "_옛 모델(M02·MOT-01 크랭크·피벗 부시)": {
+    "case": "cases/mech_MOT-01_handcalc.py (옛 cases/mech_M02_handcalc.py)",
+    "fixed": "피벗 부시 Ø16 (-300, 70)",
+    "contact": "로드 핀 Ø9 (-160, 122) 실린더 힘, 앞판 옆 볼트 X -126",
+    "load": "바퀴 힘 x 60(로드 핀 단면, 판당 1/2). 운전: 레귤레이터를 누름 100 N에 맞춤(실린더 104.2 N) + 가동부 4.63 kg x 3 g -> 바퀴 153.8 N, 접선 Y = 서보 토크 제한 3.5 N·m / r 0.06 = 58.3 N. 오조작: 공급 0.5 MPa 전부(Ø20 밀기 157.1 N) + 3 g -> 바퀴 190.9 N, 토크 제한 없음 -> 접선 μ 0.5 x 190.9 = 95.5 N. what-if μ 0.8 기록만 / v2.7.0(MOT-01): 로드 핀 단면이 안면 홈(깊이 2, Z 40~104 t4) 안, 피벗 구멍 Ø18, 질량 차이 반영 바퀴 163.0/204.5 N",
+    "criteria": {
+     "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+     "source": "요구서 6-1(M-09 기본값)"
+    }
+   },
+   "case": "cases/mech_M02R_swing_handcalc.py (형상 cases/mech_M02R_stepgeo.py)",
+   "fixed": "[M02R C-41, v2.14.0] 그네에 직접 안 붙음. 앞판 P_M02_FRONT 옆 볼트 CB5-16 x2 (X -126, Z 51·89)와 ARM_TIE 끝 볼트 CB5-16_M02_9 (X -265, Z 111)로 옆판 P 쪽에 이어짐",
+   "contact": "-",
+   "load": "상한: 세로 힘의 절반(운전 84.8 N = 3 g 무게의 절반, 오조작 67.4 N)이 앞판 -> 옆판 N -> TIE로 감. 앞판 볼트~TIE 139 면내 굽힘, 단면 67 x 안면 홈 t4",
    "criteria": {
-    "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "status": "손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 3.9/3.1 MPa SF 52/65 — 과사양(M-09) 기록만(옆판 P와 같은 두께로 맞춘 부품)",
+   "step": "tools/out/mech_M02R/stepout/P_M02_ARM_SIDE_N.step",
+   "version": "v2.14.0",
+   "note": "모델 바꾼 이유는 옆판 P와 같음(옛 피벗 부시·로드 핀 구멍 메움). 옛 모델 값 1.12/1.40 MPa SF 184/146"
   },
   "P_M02_ARM_SIDE_P": {
-   "case": "cases/mech_M02_handcalc.py",
-   "fixed": "피벗 부시 Ø16 (-300, 70)",
-   "contact": "로드 핀 Ø9 (-160, 122) 실린더 힘, 앞판 옆 볼트 X -126",
-   "load": "바퀴 힘 x 60(로드 핀 단면, 판당 1/2). 운전: 레귤레이터를 누름 100 N에 맞춤(실린더 104.2 N) + 가동부 4.63 kg x 3 g -> 바퀴 153.8 N, 접선 Y = 서보 토크 제한 3.5 N·m / r 0.06 = 58.3 N. 오조작: 공급 0.5 MPa 전부(Ø20 밀기 157.1 N) + 3 g -> 바퀴 190.9 N, 토크 제한 없음 -> 접선 μ 0.5 x 190.9 = 95.5 N. what-if μ 0.8 기록만",
+   "_옛 모델(M02 크랭크·피벗 부시)": {
+    "case": "cases/mech_M02_handcalc.py",
+    "fixed": "피벗 부시 Ø16 (-300, 70)",
+    "contact": "로드 핀 Ø9 (-160, 122) 실린더 힘, 앞판 옆 볼트 X -126",
+    "load": "바퀴 힘 x 60(로드 핀 단면, 판당 1/2). 운전: 레귤레이터를 누름 100 N에 맞춤(실린더 104.2 N) + 가동부 4.63 kg x 3 g -> 바퀴 153.8 N, 접선 Y = 서보 토크 제한 3.5 N·m / r 0.06 = 58.3 N. 오조작: 공급 0.5 MPa 전부(Ø20 밀기 157.1 N) + 3 g -> 바퀴 190.9 N, 토크 제한 없음 -> 접선 μ 0.5 x 190.9 = 95.5 N. what-if μ 0.8 기록만",
+    "criteria": {
+     "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+     "source": "요구서 6-1(M-09 기본값)"
+    }
+   },
+   "case": "cases/mech_M02R_swing_handcalc.py (형상 cases/mech_M02R_stepgeo.py)",
+   "fixed": "[M02R C-41, v2.14.0] 바깥면 Y 37이 그네 P_M02S_SWING 세운 판(X -320~-161 · Z 92~141) 안면에 볼트 3개: CB5-16_M02S_1 (-300, Z 100)·_2 (-166, Z 120)은 옆판 M5 탭(물림 6 = 1.2d), CB5-20_M02S_1 (-265, Z 111)은 옆판 통과 -> ARM_TIE 탭(물림 6). 맞닿는 면: Z 92~107 띠 + 귀(X -280~-250 Z ~126, X -175~-161 Z ~132). 좌표 θ0",
+   "contact": "앞판 P_M02_FRONT 옆 볼트 CB5-16 x2 (X -126, Z 51·89)로 서보·감속기·바퀴 힘이 들어옴(그네 끝 X -161보다 35 앞), TIE (X -265)",
+   "load": "운전A: 매달린 묶음 56.5 N x 3 g(들림, 몸통 좌표에서 중력 13° 기움) CG (-191, -0.4, 74.4). 운전B: IR1000 상한 0.2 MPa 바퀴 71.5 N(두께 16, 접지 (-100, -4.32, 18)) + 마찰 μ0.4(Y 또는 X) + 무게 1 g. 오조작: 공급 0.5 MPa 전부 134.9 N + μ0.5 + 무게 1 g. 볼트 무리: 면내 전단(무게중심 둘레 비틀림 포함) + X축·Z축 벌어짐 지레 인장. 옆판 단면: 자른 면 X -147(67 x 안면 홈 t4)에 힘 전부(옆판 N·TIE 몫 0 = 상한) — 면외 굽힘·면내 굽힘·비틀림(얇은 직사각)",
    "criteria": {
-    "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "status": "손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 볼트 인장 최대 158.6/369.6 N(암나사 전단 SF 27.4/12.2), 전단 123.8/204.3 N, 단면 X -147 von Mises 32.6/41.6 MPa SF 6.29/4.93",
+   "step": "tools/out/mech_M02R/stepout/P_M02_ARM_SIDE_P.step",
+   "version": "v2.14.0",
+   "note": "모델 바꾼 이유: 옛 고정(피벗 부시 Ø16 (-300, 70))·하중(로드 핀 Ø9 (-160, 122)) 구멍이 v2.10.3 그네식에서 안 쓰이고 v2.14.0에서 메워져 없다. 옛 모델을 같은 형상에 넣으면 안면 홈 단면 면내 굽힘 1.12/1.40 MPa(SF 184/146, mech_MOT-01_handcalc.json)뿐 — 한쪽 옆판에만 매달려 생기는 비틀림을 못 봄"
   },
   "P_M02_FRONT": {
    "case": "cases/mech_M02_handcalc.py",
@@ -158,14 +187,28 @@
    }
   },
   "P_M02_ARM_TIE": {
-   "case": "cases/mech_M02_handcalc.py",
-   "fixed": "옆판 사이 CB5-16 x2",
-   "contact": "-",
-   "load": "옆판 간격 유지 — 하중 작음(손계산 생략, 조임 토크만)",
+   "_옛 모델(M02)": {
+    "case": "cases/mech_M02_handcalc.py",
+    "fixed": "옆판 사이 CB5-16 x2",
+    "contact": "-",
+    "load": "옆판 간격 유지 — 하중 작음(손계산 생략, 조임 토크만)",
+    "criteria": {
+     "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+     "source": "요구서 6-1(M-09 기본값)"
+    }
+   },
+   "case": "cases/mech_M02R_swing_handcalc.py (형상 cases/mech_M02R_stepgeo.py)",
+   "fixed": "[M02R C-41, v2.14.0] P 쪽 끝면(20 x 20, Y 31)이 옆판 P 안면에 CB5-20_M02S_1(그네 판 8 + 옆판 6 통과, TIE M5 탭 물림 6 = 1.2d)로 물림",
+   "contact": "N 쪽 끝면에 옆판 N(CB5-16_M02_9)",
+   "load": "상한: 옆판 N 몫 세로 힘(운전 84.8 N, 오조작 67.4 N)이 N 쪽 끝에 걸리는 외팔 62. 끝면 지레 팔 10으로 볼트 인장 659.7/787.7 N(그네 이음 인장 포함)",
    "criteria": {
-    "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "status": "손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 막대 20 x 20 굽힘 3.9/3.1 MPa SF 50/62, 볼트 암나사 전단(A5052) SF 6.27/5.25",
+   "step": "tools/out/mech_M02R/stepout/P_M02_ARM_TIE.step",
+   "version": "v2.14.0",
+   "note": "옛 모델은 \"옆판 간격 유지 — 하중 작음(손계산 생략)\". 그네식에서는 옆판 N의 힘이 지나갈 수 있는 길이라 상한으로 셈"
   },
   "P_M02_WHEEL": {
    "case": "cases/mech_M02_handcalc.py",
@@ -1040,6 +1083,20 @@
    "status": "손계산. 순 단면 압축 SF 63 이상",
    "step": "tools/out/mech_RX-08/stepout/P_RX08_STOP_BLOCK.step",
    "version": "v2.12.1"
+  },
+  "P_M02S_SPRING_TAB_1·_2": {
+   "case": "cases/mech_M02R_swing_handcalc.py (형상 cases/mech_M02R_stepgeo.py)",
+   "fixed": "날개(X s±16.5 · Y 40~60 · Z 238~242, t4) 윗면이 P_M02_BASE 밑면(Z 242)에 CB5-12 x2(X s±12, Y 50, 머리 아래, base M5 탭 물림 8)로 매달림. s = -295(_1)·-185(_2)",
+   "contact": "날개 윗면-base 밑면 압축, 볼트 머리 좌면 Ø8.5(날개 끝까지 0.25)",
+   "load": "다리(X s-2~s+2 · Y 44~56 · Z 228~238) 구멍 Ø4.5(Z 234)에 스프링 AUT12-45 고리 힘 아래로. 내림 끝 J_U4_PRESS -4.11°에서 30.74 N(k 0.4·초장력 15.51 임시 D-189) + 탭·스프링 반쪽 3 g 1.3 N. 스프링 힘은 실린더 행정 끝 기하로 막혀 공압 오조작으로 늘지 않음(운전 = 오조작)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 날개 굽힘 3.6 MPa SF 57, 다리 순 단면(Kt 3) SF 64, 볼트 암나사 전단 SF 362 — 과사양(M-09) 기록: t4 -> t2도 SF 14",
+   "step": "tools/out/mech_M02R/stepout/P_M02S_SPRING_TAB_1.step",
+   "version": "v2.14.0",
+   "note": "_2는 같은 형상·같은 하중(E-19)"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."

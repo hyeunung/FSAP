@@ -1,0 +1,950 @@
+{
+ "_설명": "M02R 4회차 해석부 손계산(v2.14.0). FEA 못 함 — 환경 없음(D-16). 단위 mm·N·MPa",
+ "spring": {
+  "k": 0.4,
+  "init_each": 15.51,
+  "states": {
+   "내림 끝 J -4.11": {
+    "len": 83.06,
+    "F_each_N": 30.74,
+    "dir_from_Z_deg": 0.67
+   },
+   "옛 내림 끝 J -3.349": {
+    "len": 82.12,
+    "F_each_N": 30.36,
+    "dir_from_Z_deg": 0.57
+   },
+   "두께 6 J -0.96": {
+    "len": 79.18,
+    "F_each_N": 29.18,
+    "dir_from_Z_deg": 0.19
+   },
+   "θ0": {
+    "len": 78.0,
+    "F_each_N": 28.71,
+    "dir_from_Z_deg": 0.0
+   },
+   "두께 16 J 3.751": {
+    "len": 73.46,
+    "F_each_N": 26.9,
+    "dir_from_Z_deg": 0.93
+   },
+   "들림 J 13.006": {
+    "len": 62.89,
+    "F_each_N": 22.67,
+    "dir_from_Z_deg": 4.92
+   }
+  },
+  "F_max_each_N": 30.74,
+  "tab_self_3g_N": 1.29,
+  "F_tab_N": 32.03,
+  "model_report_value": 30.38,
+  "note": "모델링부 30.38 N은 옛 내림 끝 -3.349° 값. 지금 J_U4_PRESS 하한 -4.11°에서 다시 셈. 초장력·k는 임시(D-189)"
+ },
+ "tab_geom": {
+  "plate_X": [
+   -311.5,
+   -278.5
+  ],
+  "plate_Y": [
+   40.0,
+   60.0
+  ],
+  "t": 4.0,
+  "bolt_hole_X": [
+   -307.0,
+   -283.0
+  ],
+  "bolt_span": 24.0,
+  "hook_hole": [
+   -297.0,
+   50.0,
+   234.0
+  ],
+  "leg_X": [
+   -297.0,
+   -293.0
+  ],
+  "leg_Y": [
+   44.0,
+   56.0
+  ],
+  "leg_Z": [
+   228.0,
+   238.0
+  ],
+  "ligament_X_mm": 1.75,
+  "ligament_Y_mm": 7.25,
+  "head_d8.5_inside_mm": 0.25,
+  "solid": 1,
+  "closed_shell": 1
+ },
+ "tab_plate_beam": {
+  "inputs": {
+   "t": 4.0,
+   "b": 20.0,
+   "L": 12.0,
+   "E": 193000.0,
+   "Rp": 205.0,
+   "end": "cantilever",
+   "sf_min": 3.0
+  },
+  "force_N": 16.014,
+  "deflection_mm": 0.0004,
+  "stiffness_N_mm": 35740.7407,
+  "stress_MPa": 3.6,
+  "sf": 56.9,
+  "thin": false,
+  "ok": true,
+  "needs_fea": true
+ },
+ "tab_plate_bending": {
+  "sigma_op_MPa": 3.6,
+  "sigma_mis_MPa": 3.6,
+  "SF_op": 56.94,
+  "SF_mis": 56.94,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "overspec": true,
+  "material": "SUS304",
+  "note": "경간 24(볼트 X [-307.0, -283.0]), 단면 20 x 4. 다리 뿌리 Kt 3를 곱해도 10.8 MPa(SF 19.0)"
+ },
+ "tab_leg_net_tension": {
+  "sigma_op_MPa": 3.2,
+  "sigma_mis_MPa": 3.2,
+  "SF_op": 64.01,
+  "SF_mis": 64.01,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "overspec": true,
+  "material": "SUS304",
+  "note": "다리 12 x 4, 구멍 Ø4.5 -> 순 단면 30 mm², Kt 3 포함"
+ },
+ "tab_leg_tearout": {
+  "tau_MPa": 1.07,
+  "allow_0.577Rp": 118.3,
+  "SF": 110.8,
+  "e_below_hole_mm": 3.75,
+  "A_mm2": 30.0
+ },
+ "tab_leg_root": {
+  "sigma_op_MPa": 2.35,
+  "sigma_mis_MPa": 2.35,
+  "SF_op": 87.42,
+  "SF_mis": 87.42,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "overspec": true,
+  "material": "SUS304",
+  "note": "스프링 기울기 최대 4.9° -> Y 성분 2.75 N, 팔 4, Kt 3 포함"
+ },
+ "tab_capacity": {
+  "F_cap_SF2_N": 911.0,
+  "ratio_to_spring_max": 29.6,
+  "note": "손으로 스프링을 더 당기는 식의 오조작도 스프링 최대 힘의 이 배수까지 SF 2"
+ },
+ "tab_bolt_M5_op": {
+  "inputs": {
+   "d": 5,
+   "le": 8.0,
+   "load_N": 16.01,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 975.64,
+   "암나사 전단": 362.04
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "tab_bolt_M5_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 8.0,
+   "load_N": 16.01,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 975.64,
+   "암나사 전단": 362.04
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "tab_bolt_torque": {
+  "thread_strip_N": 5796.0,
+  "T_limit_Nm(SF1)": 5.8,
+  "at_7Nm(D-108 일반값)": {
+   "조임 볼트 응력": 2.01,
+   "조임 좌면": 1.88,
+   "조임 암나사 전단": 0.83
+  },
+  "at_4Nm": {
+   "조임 볼트 응력": 3.51,
+   "조임 좌면": 3.3,
+   "조임 암나사 전단": 1.45
+  },
+  "note": "SUS304 t8 탭에 12.9 볼트 일반 토크 7 N·m는 손계산식으로 암나사 전단 < 1. 4 N·m 지정이면 >= 1.4"
+ },
+ "tab_edge_ligament": {
+  "ligament_X_mm": 1.75,
+  "M-03_default": 2.5,
+  "seat_area_mm2": 33.0,
+  "seat_p_at_4kN_MPa": 121.0,
+  "pG_SUS304": 400,
+  "shear_on_bolt_Y_N": 1.37,
+  "bearing_Y_MPa": 0.069,
+  "note": "찢김 방향(X) 하중 0, Y 성분은 볼트당 1 N 안쪽이고 Y 쪽 살은 7.25. 강도로는 문제 없음 — 규칙(M-03) 예외는 따로 판정"
+ },
+ "base_taps": {
+  "new_taps_found": [
+   [
+    -307.0,
+    50.0
+   ],
+   [
+    -283.0,
+    50.0
+   ],
+   [
+    -197.0,
+    50.0
+   ],
+   [
+    -173.0,
+    50.0
+   ]
+  ],
+  "old_taps_gone": [
+   [
+    -302.0,
+    50.0
+   ],
+   [
+    -288.0,
+    50.0
+   ],
+   [
+    -192.0,
+    50.0
+   ],
+   [
+    -178.0,
+    50.0
+   ]
+  ],
+  "nearest": {
+   "(-307.0, 50.0)": {
+    "ligament_to_nearest_hole_mm": 19.4,
+    "hole": [
+     -283.0,
+     50.0
+    ],
+    "r": 2.1
+   },
+   "(-283.0, 50.0)": {
+    "ligament_to_nearest_hole_mm": 19.4,
+    "hole": [
+     -307.0,
+     50.0
+    ],
+    "r": 2.1
+   },
+   "(-197.0, 50.0)": {
+    "ligament_to_nearest_hole_mm": 13.4,
+    "hole": [
+     -215.0,
+     50.0
+    ],
+    "r": 2.1
+   },
+   "(-173.0, 50.0)": {
+    "ligament_to_nearest_hole_mm": 18.4,
+    "hole": [
+     -150.0,
+     50.0
+    ],
+    "r": 2.1
+   }
+  },
+  "edge_X_mm": 20.5,
+  "tap(-173,50)_to_tube_slot_Y66_mm": 13.5,
+  "holes_on_Y50_line_X": [
+   -307.0,
+   -283.0,
+   -232.0,
+   -215.0,
+   -197.0,
+   -173.0,
+   -150.0
+  ],
+  "net_section_Y50": "구멍 7개 — 옛 자리와 개수·지름 같음(자리만 ∓5) -> Y 50 줄 순 단면 변화 0",
+  "solid": 1,
+  "thread_strip_SF_op": 362.04
+ },
+ "base_rejudge": {
+  "RX-08 base_tap_strip": {
+   "sigma_op_MPa": 45.0,
+   "sigma_mis_MPa": 66.7,
+   "SF_op": 4.55,
+   "SF_mis": 3.07
+  },
+  "ok": true,
+  "tab_local": "탭 2개가 base 밑면을 내리당김 합 32.0 N(탭당) — 캐리지 발 볼트 (-232,50)·(-215,50)·(-150,50) 사이 t8 판, 굽힘 응력 < 1 MPa",
+  "dist_new_tap_to_RX08_tap": 33.0
+ },
+ "joint_cases": {
+  "운전A 들림 3g (기움 +1)": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 10.6,
+    "B2 CB5-20_M02S_1": 36.2,
+    "B3 CB5-16_M02S_2": 123.8
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 45.3,
+    "B2 CB5-20_M02S_1": 107.6,
+    "B3 CB5-16_M02S_2": 158.6
+   },
+   "Mx_bottom_heel": 6848.0,
+   "Mz_heel_-161": -1144.0,
+   "torque_Y": 8698.0
+  },
+  "운전A 들림 3g (기움 -1)": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 10.6,
+    "B2 CB5-20_M02S_1": 36.2,
+    "B3 CB5-16_M02S_2": 123.8
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 41.7,
+    "B2 CB5-20_M02S_1": 90.5,
+    "B3 CB5-16_M02S_2": 127.7
+   },
+   "Mx_bottom_heel": 5505.0,
+   "Mz_heel_-161": 1144.0,
+   "torque_Y": 8698.0
+  },
+  "운전B 누름 0.2 MPa μ0.4 마찰 Y+1": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 37.5,
+    "B2 CB5-20_M02S_1": 10.8,
+    "B3 CB5-16_M02S_2": 62.9
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 16.5,
+    "B2 CB5-20_M02S_1": 26.1,
+    "B3 CB5-16_M02S_2": 29.8
+   },
+   "Mx_bottom_heel": 1275.0,
+   "Mz_heel_-161": 1745.0,
+   "torque_Y": -7296.0
+  },
+  "운전B 누름 0.2 MPa μ0.4 마찰 Y-1": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 37.5,
+    "B2 CB5-20_M02S_1": 10.8,
+    "B3 CB5-16_M02S_2": 62.9
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 61.4,
+    "B2 CB5-20_M02S_1": 134.3,
+    "B3 CB5-16_M02S_2": 132.9
+   },
+   "Mx_bottom_heel": -2958.0,
+   "Mz_heel_-161": -1745.0,
+   "torque_Y": -7296.0
+  },
+  "운전B 누름 0.2 MPa μ0.4 마찰 X+1": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 55.5,
+    "B2 CB5-20_M02S_1": 18.7,
+    "B3 CB5-16_M02S_2": 83.3
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 19.5,
+    "B2 CB5-20_M02S_1": 34.3,
+    "B3 CB5-16_M02S_2": 24.3
+   },
+   "Mx_bottom_heel": -841.0,
+   "Mz_heel_-161": 1182.0,
+   "torque_Y": -9937.0
+  },
+  "운전B 누름 0.2 MPa μ0.4 마찰 X-1": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 22.1,
+    "B2 CB5-20_M02S_1": 11.1,
+    "B3 CB5-16_M02S_2": 44.0
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 15.0,
+    "B2 CB5-20_M02S_1": 32.6,
+    "B3 CB5-16_M02S_2": 30.9
+   },
+   "Mx_bottom_heel": -841.0,
+   "Mz_heel_-161": -1182.0,
+   "torque_Y": -4656.0
+  },
+  "오조작 0.5 MPa μ0.5 마찰 Y+1": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 69.7,
+    "B2 CB5-20_M02S_1": 9.4,
+    "B3 CB5-16_M02S_2": 156.1
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 29.1,
+    "B2 CB5-20_M02S_1": 38.2,
+    "B3 CB5-16_M02S_2": 36.1
+   },
+   "Mx_bottom_heel": 1530.0,
+   "Mz_heel_-161": 4114.0,
+   "torque_Y": -16401.0
+  },
+  "오조작 0.5 MPa μ0.5 마찰 Y-1": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 69.7,
+    "B2 CB5-20_M02S_1": 9.4,
+    "B3 CB5-16_M02S_2": 156.1
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 169.4,
+    "B2 CB5-20_M02S_1": 369.6,
+    "B3 CB5-16_M02S_2": 355.8
+   },
+   "Mx_bottom_heel": -8450.0,
+   "Mz_heel_-161": -4114.0,
+   "torque_Y": -16401.0
+  },
+  "오조작 0.5 MPa μ0.5 마찰 X+1": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 113.0,
+    "B2 CB5-20_M02S_1": 31.0,
+    "B3 CB5-16_M02S_2": 204.3
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 70.8,
+    "B2 CB5-20_M02S_1": 133.8,
+    "B3 CB5-16_M02S_2": 99.8
+   },
+   "Mx_bottom_heel": -3460.0,
+   "Mz_heel_-161": 2786.0,
+   "torque_Y": -22627.0
+  },
+  "오조작 0.5 MPa μ0.5 마찰 X-1": {
+   "shear_N": {
+    "B1 CB5-16_M02S_1": 34.1,
+    "B2 CB5-20_M02S_1": 23.5,
+    "B3 CB5-16_M02S_2": 111.1
+   },
+   "tension_N": {
+    "B1 CB5-16_M02S_1": 60.0,
+    "B2 CB5-20_M02S_1": 129.8,
+    "B3 CB5-16_M02S_2": 115.1
+   },
+   "Mx_bottom_heel": -3460.0,
+   "Mz_heel_-161": -2786.0,
+   "torque_Y": -10174.0
+  }
+ },
+ "joint_load": {
+  "W_N": 56.5,
+  "CG": [
+   -191.0,
+   -0.4,
+   74.4
+  ],
+  "wheel": [
+   -100.0,
+   -4.32,
+   18.0
+  ],
+  "N_op_0.2MPa": 71.5,
+  "N_mis_0.5MPa": 134.9,
+  "T_max_N": {
+   "op": 158.6,
+   "mis": 369.6
+  },
+  "V_max_N": {
+   "op": 123.8,
+   "mis": 204.3
+  },
+  "_note": "인장 = X축 벌어짐 + Z축 벌어짐을 더함(둘 다 Y 직접 힘을 포함해 조금 겹쳐 셈 = 보수). 전단은 예압 마찰을 안 믿고 볼트가 받는 것으로"
+ },
+ "joint_bolt_sideP_tap_op": {
+  "inputs": {
+   "d": 5,
+   "le": 6.0,
+   "load_N": 158.6,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.2,
+  "sf_operating": {
+   "나사 인장": 98.49,
+   "암나사 전단": 27.41
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "joint_bolt_sideP_tap_mis": {
+  "inputs": {
+   "d": 5,
+   "le": 6.0,
+   "load_N": 355.8,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.2,
+  "sf_operating": {
+   "나사 인장": 43.9,
+   "암나사 전단": 12.22
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "joint_bolt_shear": {
+  "op": {
+   "V_N": 123.8,
+   "tau_MPa": 8.7,
+   "SF_0.6Rp_12.9": 75.7,
+   "bearing_sideP_t6_MPa": 4.1,
+   "bearing_swing_A5052_t8_MPa": 3.1,
+   "SF_bearing_min": 49.7
+  },
+  "mis": {
+   "V_N": 204.3,
+   "tau_MPa": 14.4,
+   "SF_0.6Rp_12.9": 45.9,
+   "bearing_sideP_t6_MPa": 6.8,
+   "bearing_swing_A5052_t8_MPa": 5.1,
+   "SF_bearing_min": 30.1
+  }
+ },
+ "joint_bolt_torque": {
+  "strip_SUS304_le6_N": 4347.0,
+  "strip_A5052_le6_N": 4135.0,
+  "T_limit_Nm(SF1)": 4.14,
+  "at_7Nm": {
+   "조임 볼트 응력": 2.01,
+   "조임 좌면": 1.88,
+   "조임 암나사 전단": 0.62
+  },
+  "at_3Nm_SUS304": {
+   "inputs": {
+    "d": 5,
+    "le": 6.0,
+    "load_N": 369.6,
+    "torque_Nm": 3.0,
+    "bolt": "12.9",
+    "base": "SUS304",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 3000.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 42.26,
+    "암나사 전단": 11.76,
+    "분리(예압/외력)": 8.12
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.69,
+    "조임 좌면": 4.4,
+    "조임 암나사 전단": 1.45
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "at_3Nm_A5052": {
+   "inputs": {
+    "d": 5,
+    "le": 6.0,
+    "load_N": 369.6,
+    "torque_Nm": 3.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 3000.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 42.26,
+    "암나사 전단": 11.19,
+    "분리(예압/외력)": 8.12
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.69,
+    "조임 좌면": 2.31,
+    "조임 암나사 전단": 1.38
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "slip_3Nm_mu0.15": {
+   "grip_N": 1350.0,
+   "V_sum_mis_N": 613.0,
+   "SF": 2.2
+  },
+  "note": "물림 6 mm = 1.2d(< 1.5d M-01, 검도 M02R-D5)라 일반 토크 7 N·m는 암나사 전단 < 1. 3 N·m 지정이면 조임 SF >= 1.38, 분리 SF 충분"
+ },
+ "sideP_geom": {
+  "t": 6.0,
+  "pocket_t": 4.0,
+  "pocket_X": [
+   -214.0,
+   -134.0
+  ],
+  "outline_Z": [
+   40.0,
+   107.0
+  ],
+  "ears": {
+   "X -280~-250": 126.0,
+   "X -175~-145": 132.0
+  },
+  "tap_edge": {
+   "B1 (-300,100)": {
+    "to_top_Z107_mm": 4.5,
+    "to_end_X-320_mm": 17.5
+   },
+   "B3 (-166,120)": {
+    "to_ear_side_X-175_mm": 6.5,
+    "to_ear_top_Z132_mm": 9.5
+   }
+  },
+  "filled": "옛 부시 구멍 r 9 (-300,70)·옛 핀 구멍 r 4.5 (-160,122) 없음(STEP 원통 면에 없음)",
+  "solid": 1
+ },
+ "sideP_section_cases": {
+  "운전A 들림 3g (기움 +1)": {
+   "kind": "op",
+   "Tx": 5647.0,
+   "Mz": -1678.0,
+   "My": 7267.0,
+   "sigma": 11.8,
+   "tau": 17.4,
+   "vm": 32.3
+  },
+  "운전A 들림 3g (기움 -1)": {
+   "kind": "op",
+   "Tx": 5716.0,
+   "Mz": 1678.0,
+   "My": 7267.0,
+   "sigma": 11.8,
+   "tau": 17.6,
+   "vm": 32.6
+  },
+  "운전B 누름 0.2 MPa μ0.4 마찰 Y+1": {
+   "kind": "op",
+   "Tx": 791.0,
+   "Mz": 1344.0,
+   "My": 5846.0,
+   "sigma": 9.5,
+   "tau": 2.5,
+   "vm": 10.4
+  },
+  "운전B 누름 0.2 MPa μ0.4 마찰 Y-1": {
+   "kind": "op",
+   "Tx": -2384.0,
+   "Mz": -1344.0,
+   "My": 5846.0,
+   "sigma": 9.5,
+   "tau": 7.1,
+   "vm": 15.5
+  },
+  "운전B 누름 0.2 MPa μ0.4 마찰 X+1": {
+   "kind": "op",
+   "Tx": -796.0,
+   "Mz": 0.0,
+   "My": 7434.0,
+   "sigma": 2.6,
+   "tau": 2.4,
+   "vm": 4.9
+  },
+  "운전B 누름 0.2 MPa μ0.4 마찰 X-1": {
+   "kind": "op",
+   "Tx": -796.0,
+   "Mz": 0.0,
+   "My": 4259.0,
+   "sigma": 1.5,
+   "tau": 2.4,
+   "vm": 4.4
+  },
+  "오조작 0.5 MPa μ0.5 마찰 Y+1": {
+   "kind": "mis",
+   "Tx": 518.0,
+   "Mz": 3169.0,
+   "My": 8825.0,
+   "sigma": 20.7,
+   "tau": 2.1,
+   "vm": 21.0
+  },
+  "오조작 0.5 MPa μ0.5 마찰 Y-1": {
+   "kind": "mis",
+   "Tx": -6967.0,
+   "Mz": -3169.0,
+   "My": 8825.0,
+   "sigma": 20.7,
+   "tau": 20.8,
+   "vm": 41.6
+  },
+  "오조작 0.5 MPa μ0.5 마찰 X+1": {
+   "kind": "mis",
+   "Tx": -3225.0,
+   "Mz": 0.0,
+   "My": 12568.0,
+   "sigma": 4.5,
+   "tau": 9.8,
+   "vm": 17.6
+  },
+  "오조작 0.5 MPa μ0.5 마찰 X-1": {
+   "kind": "mis",
+   "Tx": -3225.0,
+   "Mz": 0.0,
+   "My": 5082.0,
+   "sigma": 1.9,
+   "tau": 9.8,
+   "vm": 17.1
+  }
+ },
+ "sideP_section_X-147": {
+  "sigma_op_MPa": 32.6,
+  "sigma_mis_MPa": 41.6,
+  "SF_op": 6.29,
+  "SF_mis": 4.93,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "overspec": false,
+  "material": "SUS304",
+  "note": "상한 가정: 앞판(X -126 볼트 2)으로 들어온 힘 전부가 옆판 P 한 장으로 그네까지 감(옆판 N·TIE 몫 0), 무게도 전부 앞쪽에 있다고 봄. 단면 67 x 4(안면 홈), 비틀림 얇은 직사각 식. 실제 이음·모서리 응력 집중은 FEA 없이는 못 봄(D-16)"
+ },
+ "tie_sideN_bound": {
+  "op": {
+   "F_N_side_N": 84.8,
+   "M_Nmm": 5254.0,
+   "sigma_TIE_MPa": 3.94,
+   "SF_TIE": 49.5,
+   "B2_tension_N": 659.7,
+   "B2_calc": {
+    "inputs": {
+     "d": 5,
+     "le": 6.0,
+     "load_N": 659.7,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 1.2,
+    "sf_operating": {
+     "나사 인장": 23.68,
+     "암나사 전단": 6.27
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "sideN_inplane_MPa": 3.94,
+   "SF_sideN": 52.1
+  },
+  "mis": {
+   "F_N_side_N": 67.4,
+   "M_Nmm": 4181.0,
+   "sigma_TIE_MPa": 3.14,
+   "SF_TIE": 62.2,
+   "B2_tension_N": 787.7,
+   "B2_calc": {
+    "inputs": {
+     "d": 5,
+     "le": 6.0,
+     "load_N": 787.7,
+     "torque_Nm": 0.0,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 0.0,
+    "engage_ratio": 1.2,
+    "sf_operating": {
+     "나사 인장": 19.83,
+     "암나사 전단": 5.25
+    },
+    "sf_tightening": {},
+    "worst": "암나사 전단",
+    "ok": false,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "sideN_inplane_MPa": 3.13,
+   "SF_sideN": 65.5
+  }
+ },
+ "sideN_geom": {
+  "filled": "옛 부시 구멍 r 9·옛 핀 구멍 r 4.5 없음 -> 순 단면이 늘기만 함",
+  "solid": 1,
+  "tie_solid": 1
+ },
+ "swing_recheck": {
+  "dM_gmm": 229.2,
+  "dM_model_report": 229.7,
+  "dN_N": 0.0187,
+  "dN_pct_of_N_free": 0.073,
+  "rot_SF_before_after": {
+   "6": [
+    1.0127,
+    1.0132
+   ],
+   "10": [
+    1.0466,
+    1.0471
+   ],
+   "16": [
+    1.0789,
+    1.0794
+   ]
+  },
+  "mark_SF_16_before_after": [
+   1.0128,
+   1.0124
+  ],
+  "press_SF": [
+   1.961,
+   1.961
+  ],
+  "lift_SF_min": [
+   1.79,
+   1.79
+  ],
+  "spring_anchor": {
+   "tab_hook_hole(STEP)": [
+    -297.0,
+    50.0,
+    234.0
+   ],
+   "design": [
+    50.0,
+    234.0
+   ],
+   "len_theta0": 78.0
+  },
+  "unchanged": true,
+  "note": "옆판 구멍 메움·탭으로 질량이 준 만큼(-1.76 g)과 무게중심 이동. 표기 자리(소수 셋째)에서 변화 없음. 회전·자국 SF 1.01대의 좁은 여유는 전부터 있는 디테일 M02R-D2(D-188·D-189)"
+ },
+ "summary": {
+  "min_SF_op": [
+   6.29,
+   "sideP_section_X-147"
+  ],
+  "min_SF_mis": [
+   4.93,
+   "sideP_section_X-147"
+  ],
+  "all_ok": true,
+  "near_limit": [],
+  "overspec": [
+   "tab_plate_bending",
+   "tab_leg_net_tension",
+   "tab_leg_root"
+  ],
+  "bolt_ok_strength": {
+   "tab_bolt_M5_op": {
+    "sf": {
+     "나사 인장": 975.64,
+     "암나사 전단": 362.04
+    },
+    "engage": 1.6,
+    "ok": true,
+    "needs_fea": false
+   },
+   "tab_bolt_M5_mis": {
+    "sf": {
+     "나사 인장": 975.64,
+     "암나사 전단": 362.04
+    },
+    "engage": 1.6,
+    "ok": true,
+    "needs_fea": false
+   },
+   "joint_bolt_sideP_tap_op": {
+    "sf": {
+     "나사 인장": 98.49,
+     "암나사 전단": 27.41
+    },
+    "engage": 1.2,
+    "ok": false,
+    "needs_fea": false
+   },
+   "joint_bolt_sideP_tap_mis": {
+    "sf": {
+     "나사 인장": 43.9,
+     "암나사 전단": 12.22
+    },
+    "engage": 1.2,
+    "ok": false,
+    "needs_fea": false
+   }
+  },
+  "fea": "해석 못 함 — 환경 없음(자료대기 D-16)"
+ }
+}

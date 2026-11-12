@@ -3360,15 +3360,11 @@
     "P_M02_",
     "STEP대기_MHMF022L1U2M",
     "STEP대기_VRXF-PB-60-10",
-    "CDM2C20-25Z_",
-    "I-020B_M02",
     "6004ZZ_M02_",
     "E32-D36P1_2M_M02",
     "CB5-16_M02",
     "CB5-20_M02",
     "CB5-12_M02",
-    "KQ2L06-01AS_M08_U4",
-    "TU0604_M08_U4C",
     "P_RX08_",
     "STEP대기_CDQ2A25-20DMZ",
     "CB5-16_RX08",
@@ -3381,9 +3377,7 @@
     "U4_WHEEL_N",
     "U4_PRESS",
     "U4_WHEEL",
-    "U4_DISK",
-    "U4_CYL",
-    "U4_ROD"
+    "U4_DISK"
    ],
    "_note": "M02(v2.1.0): 고정 U4_WHEEL_N = P_M02_BASE(SUS304 t8 L, U1_BEAM 밑)·P_M02_CYLBRKT(SUS304 t4 용접)·P_M02_DISK_BASE·P_M02_DISK_HSG·6004ZZ ×2. U4_PRESS(레버) = ARM_SIDE_N/P·FRONT·ARM_TIE·SNS_BRKT·STEP대기_VRXF-PB-60-10·STEP대기_MHMF022L1U2M·E32-D36P1_2M. U4_WHEEL = P_M02_WHEEL·P_M02_WHEEL_TREAD. U4_DISK = P_M02_DISK·P_M02_DISK_SHAFT. U4_CYL·U4_ROD = CDM2C20-25Z + I-020B. 볼트 CB5-16_M02_1~23·CB5-20_M02_1~4·CB5-12_M02_1~2 M08 수정1(v2.5.1): 실린더 포트 이음 KQ2L06-01AS ×2·실린더 쪽 관 TU0604_M08_U4C_A/B(U4_CYL 아래, 실린더와 함께 돎). RX-08 수정1(v2.12.1): 스토퍼 관 U4 쪽 구간 TU0604_M08P_RX08_A_U4·_B_U4(U4_WHEEL_N 아래, J_U4_X를 따라감). 세움 Z 340에서 U8 쪽 구간 TU0604_M08P_RX08_A·_B와 이어지고, 그 사이는 휘는 관(실물 여유·고리는 디테일)."
   },
@@ -5660,7 +5654,8 @@
   "2026-11-12 M02R 3회차(v2.10.3): J_U4_PRESS 축 X 그네, J_U4_CYL_PIN·CYL_ROD·ROD_PIN 지움, J_U4S_ROD·J_U4S_SLOT 새로, 상태 값 환산",
   "2026-11-12 RX-06 v2.11.0: J_U4_X(직동 0~95, d1 = 100 + J)·J_U4_XSCREW(회전, 링크 18°/mm) 추가, 유닛 U4_XAXIS·U4_XCAR·U4_DISK_BASE, 상태 SETUP_D1_195. 기존 연구 키 변화 없음(J_U4_X 대기 0)",
   "2026-11-12 RX-08 v2.12.0: J_U4_STOP(직동 0~20, + = 당김 = ON) 추가, 유닛 U4_STOP, 모든 상태에 J_U4_STOP 0, 상태 FLOAT_10_2(J_U4_PRESS 0.95 + J_U4_STOP 20), REST 연구 키 J_U4_STOP 0. 매니폴드 07 -> 08(STEP대기)",
-  "2026-11-12 RX-08 수정1 v2.12.1: 스토퍼 관 A·B를 U4 쪽(U4_WHEEL_N 아래 TU0604_M08P_RX08_A_U4·_B_U4, 강체로 U4_WHEEL_N에 묶음)·U8 쪽 두 구간으로 나눔(세움 X -169 Z 340). 조인트·행정·상태 변화 없음"
+  "2026-11-12 RX-08 수정1 v2.12.1: 스토퍼 관 A·B를 U4 쪽(U4_WHEEL_N 아래 TU0604_M08P_RX08_A_U4·_B_U4, 강체로 U4_WHEEL_N에 묶음)·U8 쪽 두 구간으로 나눔(세움 X -169 Z 340). 조인트·행정·상태 변화 없음",
+  "2026-11-13 M02R 잔재 정리 v2.14.0: 조인트·행정·상태 변화 없음. 유닛 U4_WHEEL_N parts에서 CDM2C20-25Z_·I-020B_M02·KQ2L06-01AS_M08_U4·TU0604_M08_U4C, components에서 U4_CYL·U4_ROD 뺌(빈 컴포넌트 21개 + CB5-12_M02_2 지움)"
  ],
  "_timing": {
   "_note": "시간 메모(s). 동작 연구에는 쓰지 않는다(연구는 단계만). 땀 이송 시간은 따로. 근거 design1·design2(C-37 (다), D-96 구름 0.02·μ0.4·U4 40 N·d1 100) · 수정 1회차: U4+U5 구간에 U5 밑 띠 미끄럼 μs 0.30(D-97)·U4 밑 원판 끌림 포함 · DC-04(2026-11-11): 회전 중 노루발 봉제 높이(J_U3_PRESSER 0)·낮은 누름 끌림 T_f 0.096 N·m 포함",
