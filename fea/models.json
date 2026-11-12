@@ -22,13 +22,26 @@
    }
   },
   "P_M02_BASE": {
-   "case": "cases/mech_M02_handcalc.py",
-   "fixed": "누운 다리(Z 242~250)가 U1_BEAM 밑면(Y 120~200)에 CB5-16 x4(X -310·-160, Y 140·180)로 체결, 보 앞 모서리 Y 120에서 외팔(받침점)",
-   "contact": "누운 다리 윗면-보 밑면 압축만. 피벗 핀 Ø12는 세운 다리(X -325~-280, Y -60~-52, t8)에서 외팔, 부시 Y -34(18)·+34(86)",
-   "load": "실린더 반력(Y 0, X -162) 위로 + 피벗 반력(Y -56, X -300) + 접선 Y 힘(접점 Z 10)의 X축·Z축 모멘트. 운전: 레귤레이터를 누름 100 N에 맞춤(실린더 104.2 N) + 가동부 4.63 kg x 3 g -> 바퀴 153.8 N, 접선 Y = 서보 토크 제한 3.5 N·m / r 0.06 = 58.3 N. 오조작: 공급 0.5 MPa 전부(Ø20 밀기 157.1 N) + 3 g -> 바퀴 190.9 N, 토크 제한 없음 -> 접선 μ 0.5 x 190.9 = 95.5 N. what-if μ 0.8 기록만",
+   "case": "cases/mech_RX-06_handcalc.py",
+   "fixed": "[RX-06 v2.11.0에서 바뀜] 보 밑 체결(CB5-16 x4) 지움 -> 윗판 윗면(Z 250)이 P_RX06_CARRIAGE 발(Y 45~107, Z 250~262) 밑에 CB5-16 x6((-232,50)·(-215,50)·(-150,50)·(-215,85)·(-180,85)·(-150,85))으로 매달림. 보 밑 연장(Y>=116, 윗면 248)은 보와 틈 2(닿지 않음)",
+   "contact": "발 밑면-윗판 윗면 압축, 볼트 머리 자리 Ø10 x 1 홈. 연장 밑에 P_M02S_CYL_BRKT 날개(Z 236~242) CB5-12 x2",
+   "load": "U4 묶음 10.815 kg x 3 g + 바퀴 반력 N(0.2 MPa 56.4 N / 0.5 MPa 121.5 N) + 접선 Y 18 N(오조작 mu0.5 N) + X mu N, 실린더 닫힌 고리 Ø20 x 0.5 MPa 157.1 N(연장 끝 세로힘으로 보수)",
    "criteria": {
-    "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-06/stepout/P_M02_BASE.step",
+   "version": "v2.11.0",
+   "_옛 모델(M02)": {
+    "case": "cases/mech_M02_handcalc.py",
+    "fixed": "누운 다리(Z 242~250)가 U1_BEAM 밑면(Y 120~200)에 CB5-16 x4(X -310·-160, Y 140·180)로 체결, 보 앞 모서리 Y 120에서 외팔(받침점)",
+    "contact": "누운 다리 윗면-보 밑면 압축만. 피벗 핀 Ø12는 세운 다리(X -325~-280, Y -60~-52, t8)에서 외팔, 부시 Y -34(18)·+34(86)",
+    "load": "실린더 반력(Y 0, X -162) 위로 + 피벗 반력(Y -56, X -300) + 접선 Y 힘(접점 Z 10)의 X축·Z축 모멘트. 운전: 레귤레이터를 누름 100 N에 맞춤(실린더 104.2 N) + 가동부 4.63 kg x 3 g -> 바퀴 153.8 N, 접선 Y = 서보 토크 제한 3.5 N·m / r 0.06 = 58.3 N. 오조작: 공급 0.5 MPa 전부(Ø20 밀기 157.1 N) + 3 g -> 바퀴 190.9 N, 토크 제한 없음 -> 접선 μ 0.5 x 190.9 = 95.5 N. what-if μ 0.8 기록만",
+    "criteria": {
+     "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+     "source": "요구서 6-1(M-09 기본값)"
+    }
    }
   },
   "P_M02_PIVOT_PIN(구매·부시 몫)": {
@@ -911,6 +924,83 @@
    "status": "손계산 fea/results/mech_U6S_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
    "step": "tools/out/mech_U6S/stepout/P_M06_SLIDE_COLLAR.step",
    "version": "v2.9.0"
+  },
+  "P_RX06_CARRIAGE": {
+   "case": "cases/mech_RX-06_handcalc.py",
+   "fixed": "웹 +Y 면(Y 107)에 SSEB13 블록 4개(X -221·-144, Z 266·440) — 블록 4개 강체 패턴으로 힘·모멘트 나눔(Fy 우력 레일 사이 174, Fz·Fy 우력 블록 사이 77). X는 BSS2020 너트(Y 70, Z 530, CB6-20 x4 귀)",
+   "contact": "발(Y 45~107, Z 250~262) 밑에 P_M02_BASE 6 x M5",
+   "load": "묶음 x 3 g + 바퀴 힘(운전·오조작) + 손 100 N x r25 끝 멈춤 축력 707 N(너트 귀)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-06/stepout/P_RX06_CARRIAGE.step",
+   "version": "v2.11.0",
+   "note": "뿌리 단면 115 x 12(웹·발 같음) 굽힘. 최소 SF 15.6(오조작) — 과사양(M-09) 기록: 두께 12 -> 8도 SF > 7"
+  },
+  "P_RX06_SPACER_F": {
+   "case": "cases/mech_RX-06_handcalc.py",
+   "fixed": "BSW20 밑, 보 앞면(Y 120) 4 x M6 관통 체결(보 탭)",
+   "contact": "유닛 밑면 전면 압축",
+   "load": "손 오조작 축력 707 N(BSW 쪽만, 축선 Y 70 -> 보 면 50 팔 당김) / BUN은 반경 하중만(너트 무게)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-06/stepout/P_RX06_SPACER_F.step",
+   "version": "v2.11.0"
+  },
+  "P_RX06_SPACER_S": {
+   "case": "cases/mech_RX-06_handcalc.py",
+   "fixed": "BUN20 밑, 보 앞면(Y 120) 4 x M6 관통 체결(보 탭)",
+   "contact": "유닛 밑면 전면 압축",
+   "load": "손 오조작 축력 707 N(BSW 쪽만, 축선 Y 70 -> 보 면 50 팔 당김) / BUN은 반경 하중만(너트 무게)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-06/stepout/P_RX06_SPACER_S.step",
+   "version": "v2.11.0"
+  },
+  "P_RX06_STOP_A": {
+   "case": "cases/mech_RX-06_handcalc.py",
+   "fixed": "레일 R1 윗면 앞(Y 108~112.5, Z 260~272) — 고정법 미정(디테일 D5), 뿌리 12 x 2 전단으로 봄",
+   "contact": "블록 끝면(엔드캡·실) 4.5 x 12 = 54 mm²",
+   "load": "운전 손 2.9 N -> 20.5 N, 오조작 손 100 N -> 707 N",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-06/stepout/P_RX06_STOP_A.step",
+   "version": "v2.11.0",
+   "note": "STOP_B 같은 형상·같은 하중"
+  },
+  "P_M02S_CYL_BRKT": {
+   "case": "cases/mech_RX-06_handcalc.py",
+   "fixed": "[RX-06] 보에서 떼어 윗날개(Z 236~242)를 P_M02_BASE 연장 밑에 CB5-12_M02S_CYL_3·4",
+   "contact": "세운 다리(폭 50, t6)에 CDQ2 Ø20 머리 끝 M5 x4, 축 Z 223",
+   "load": "0.5 MPa 밀기 157.1 N(레귤레이터 우회 오조작), 들기 0.5 MPa 117.8 N. 팔 16(날개 Z 239까지), 보수로 M02R 팔 27도",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-06/stepout/P_M02S_CYL_BRKT.step",
+   "version": "v2.11.0"
+  },
+  "SSEB13-570 블록 x4 · BSS2020 · BSW20 · BUN20 (RX-06 구매품 몫)": {
+   "case": "cases/mech_RX-06_handcalc.py",
+   "load": "블록 P = |Fy|+|Fz| 최대: 들기 3 g 240 N, 운전 349 N, 오조작 550 N. 볼나사 축력 오조작 707 N(C0a 13 kN 임시), 구동 저널 Ø12 손 100 N 팔 43",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16). C0·C0a 카탈로그 미확인(임시)",
+   "version": "v2.11.0"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
