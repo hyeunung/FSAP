@@ -408,7 +408,22 @@
     "source": "요구서 6-1(M-09 기본값), M04R 완료 판정"
    },
    "version": "v2.4.0",
-   "step": "tools/out/mech_M04R/stepout/P_M04_PANEL_W2.step"
+   "step": "tools/out/mech_M04R/stepout/P_M04_PANEL_W2.step",
+   "v2.17.0_RX-11": {
+    "fixed": "v2.17.0(RX-11): 긴 홈 X -1847~-410 · |Y| ≤ 23으로 레일 ±100 사이가 끊김 -> 레일 안쪽 면 Y 80에서 나온 외팔 57 두 장(옛 경간 160 판 모델은 이 형상에 맞지 않음). 뿌리: 레일 윗면 40 폭에 얹힘 + 접시 M5 Y ±100 피치 300 -> 고정 ~ 뒤 경간 돌기 허용 사이",
+    "load": "새들 귀 하나 = 바퀴 누름 반(23.27 / 65 N) 살 끝 Y 24.75. 손 100 N 홈 옆 볼(Y 50) 하나",
+    "result": "살 끝 처짐 46.54 N 0.017~0.062 mm · 130 N 0.046~0.173 mm, 뿌리 9.6 / 26.9 MPa SF 21.3 / 7.6. 손 100 N 볼: 19.3 MPa SF 10.6(옛 모델 13.95 MPa SF 14.7)",
+    "case": "cases/mech_RX-11_handcalc.py",
+    "step": "tools/out/mech_RX-11/stepout/P_M04_PANEL_W2.step",
+    "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_handcalc.json"
+   },
+   "v2.17.1_RX-11 수정1": {
+    "case": "cases/mech_RX-11_fea1_handcalc.py",
+    "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_fea1_handcalc.json",
+    "fixed": "앞 회차 외팔 57(뿌리 Y 80) 그대로. 더한 하중: 새들 귀(판 윗면 |Y| 23~26.5, 아래로 P/2)와 클램프 기둥(판 밑면 |Y| 23.5~30, 위로 P/2)의 도심이 어긋날 때 살에 걸리는 짝힘 P/2 x e(e 0 ~ 2.0)",
+    "load": "예압 600 N(0.6 N·m) -> 짝힘 0 ~ 600 N·mm, 폭 50 x t 4 SUS304 외팔보(상한)",
+    "result": "새들 자리 내려앉음 0 ~ 0.018(뿌리 고정) ~ 0.035 mm(뿌리 돎), 판 살 4.5 MPa. 롤러 윗면 무부하 낮아짐(새들 0.012 포함) 0.012 ~ 0.047 mm ≤ 0.1. K 0.15 0.016~0.062, K 0.12 0.020~0.078. 3 N·m였으면 0.059~0.233"
+   }
   },
   "P_M04_PANEL_E2": {
    "case": "cases/mech_M04R_handcalc.py",
@@ -420,7 +435,15 @@
     "source": "요구서 6-1(M-09 기본값), M04R 완료 판정"
    },
    "version": "v2.4.0",
-   "step": "tools/out/mech_M04R/stepout/P_M04_PANEL_E2.step"
+   "step": "tools/out/mech_M04R/stepout/P_M04_PANEL_E2.step",
+   "v2.17.0_RX-11": {
+    "fixed": "v2.17.0(RX-11): 긴 홈 X -410~-317 · |Y| ≤ 23. 끝 새들(X -326) 귀는 가로대 CM1 +X 면(-380)에서 외팔 — 길에 볼 구멍(-350, ±50)이 있어 살 9 x t4 · 길이 42만 셈(불리, 구멍 밖 판은 안 셈)",
+    "load": "J_U5_X 1380(트레드 X -420)에서 이 새들 몫 57 %: 운전 26.6 N, 오설정 74.3 N, 손 100 N 새들 바로 위",
+    "result": "상한: 운전 0.036 mm SF 8.8, 오설정 0.099 mm SF 3.15, 손 0.133 mm SF 2.34",
+    "case": "cases/mech_RX-11_handcalc.py",
+    "step": "tools/out/mech_RX-11/stepout/P_M04_PANEL_E2.step",
+    "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_handcalc.json"
+   }
   },
   "P_M04_INSERT": {
    "case": "cases/mech_M04_fea1_handcalc.py",
@@ -512,7 +535,8 @@
    "result": "오조작 σ 9.0 MPa SF 21.6, 처짐 0.002",
    "status": "손계산. FEA 못 함 — 환경 없음(D-16)",
    "step": "tools/out/mech_DC2-05/stepout/P_DC205_STRIP.step",
-   "version": "v2.2.0"
+   "version": "v2.2.0",
+   "removed": "v2.17.0(RX-11, C-45)에서 걷어 냄 — 기록으로만 남김"
   },
   "P_DC205_DISC": {
    "case": "cases/mech_DC2-05_fea1_handcalc.py",
@@ -521,7 +545,8 @@
    "result": "0.6 N·m: SF 2.48~3.98(+30% 1.91), 표준 4.5 N·m는 항복(SF 0.33~0.53)",
    "status": "손계산. FEA 못 함 — 환경 없음(D-16)",
    "step": "tools/out/mech_DC2-05/stepout/P_DC205_DISC.step",
-   "version": "v2.2.0"
+   "version": "v2.2.0",
+   "removed": "v2.17.0(RX-11, C-45)에서 걷어 냄 — 기록으로만 남김"
   },
   "P_M05_CST_PLATE": {
    "case": "cases/mech_M05_handcalc.py",
@@ -1132,6 +1157,93 @@
    "step": "tools/out/mech_RX-06R/stepout/P_RX06R_LOCK_CLAMP.step",
    "version": "v2.15.0",
    "note": "볼트 사이 가운데 처짐 0.022 mm(틈 0.5) — 날이 96 % 닫힘. 굽힘 35.4 MPa SF 5.79(0.5)·56.7 MPa SF 3.62(0.8). 판 비틀림(날 선하중이 볼트 줄에서 10 위)은 넣지 않음"
+  },
+  "P_RX11_SADDLE": {
+   "case": "cases/mech_RX-11_handcalc.py",
+   "version": "v2.17.0",
+   "step": "tools/out/mech_RX-11/stepout/P_RX11_SADDLE.step",
+   "fixed": "귀 밑면(|Y| 23~26.5, Z -8)이 판 W2·E2 윗면에 얹힘 = 단순 받침 두 줄(반력 자리 Y 24.75 불리 ~ 23.5 유리). 면 고정 아님",
+   "contact": "귀-판 윗면 압축만. 볼트 머리 좌면(카운터보어 바닥 Z -8, 고리 Ø5.5~Ø8.5). 축 Ø6이 홈 R 3.1 바닥에 선 접촉(Hertz)",
+   "load": "CB5-20 예압 T/(0.2 d) 가운데 아래로 = 3점 굽힘(위 압축). 바퀴 누름 46.54 / 오설정 130 N은 축 홈 4곳(작음). 단면: Y 0(구멍 + 카운터보어), Y 7.9~14.1 포켓(바닥 살 + 가운데 벽 2), 귀 뿌리 14 x 6 — STEP 값",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, A6063-T5 145). SF < 1.2만 동작. 처짐: 과제 완료 판정 ④ 롤러 ≤ 0.1 mm, 그 밖은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값), RX-11 완료 판정 ④"
+   },
+   "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_handcalc.json",
+   "result": "3.0 N·m(설계 지정): 포켓 안쪽 끝 위 압축 231~250 MPa, SF 0.78~0.84(소성 붕괴 SF 1.67) -> 동작. 0.6 N·m: SF 3.91~4.22, +30 % 흩어짐 3.01. 축 자리 내려앉음 3.0 N·m 0.059 / 0.6 N·m 0.012 mm",
+   "v2.17.1_RX-11 수정1": {
+    "case": "cases/mech_RX-11_fea1_handcalc.py",
+    "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_fea1_handcalc.json",
+    "load": "형상·받침 그대로. 볼트 예압 지정 0.6 N·m(K 0.2 -> 600 N) + 바퀴 누름(축 홈 Y ±11, 두 줄 반씩 / 한 줄이 다)을 겹침. 단면은 Y 전 구간 0.02 간격으로 훑음(앞 회차는 Y 0·4·7.9·11·14.1·22.5 여섯 자리만 -> 최대 자리 Y 8.15~8.2를 4 % 낮게 봄)",
+    "result": "0.6 N·m 예압만 51.9 MPa SF 3.76(유리 받침 4.06), + 운전 46.54 N 3.46, + 오설정 130 N 3.03, + 손 100 N 3.17. K 0.15(800 N) 2.82 · K 0.12(1,000 N 가정) 2.25 · 토크 +30 % 2.89. 항복 예압 2,254 N(K 0.2로 2.25 N·m), SF 1.2 예압 1,878 N. 같은 훑기로 3 N·m는 259.5 MPa SF 0.75(앞 회차 표 0.78). 축 자리 내려앉음 0.012 mm"
+   }
+  },
+  "P_RX11_CLAMP": {
+   "case": "cases/mech_RX-11_handcalc.py",
+   "version": "v2.17.0",
+   "step": "tools/out/mech_RX-11/stepout/P_RX11_CLAMP.step",
+   "fixed": "양 끝 기둥 윗면(|Y| 23.5~30, Z -12)이 판 밑면에 닿음 = 단순 받침(반력 자리 26.75 불리 ~ 23.5 유리)",
+   "contact": "기둥-판 밑면 압축만. 가운데 M5 탭(물림 11.5)",
+   "load": "CB5-20 예압이 가운데를 위로 당김 = 3점 굽힘. 가운데 단면 (14 - 5) x 14.5(STEP Z -31 ~ -16.5)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, A6063-T5 145). SF < 1.2만 동작. 처짐: 과제 완료 판정 ④ 롤러 ≤ 0.1 mm, 그 밖은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값), RX-11 완료 판정 ④"
+   },
+   "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_handcalc.json",
+   "result": "3.0 N·m: 111.8~127.2 MPa SF 1.53~1.74(디테일). 0.6 N·m: SF 7.66~8.72",
+   "v2.17.1_RX-11 수정1": {
+    "case": "cases/mech_RX-11_fea1_handcalc.py",
+    "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_fea1_handcalc.json",
+    "load": "형상·받침 그대로. 예압 600 N",
+    "result": "0.6 N·m SF 7.66~8.72. K 0.15 5.75 · K 0.12 4.60"
+   }
+  },
+  "CB5-20_RX11 x8": {
+   "case": "cases/mech_RX-11_handcalc.py",
+   "version": "v2.17.0",
+   "fixed": "머리 = 새들 카운터보어 바닥, 나사 = 클램프 A5052 탭 물림 11.5",
+   "contact": "외력 인장 없음(바퀴 누름은 귀-판으로 감)",
+   "load": "조임 예압만(handcalc.calc k 0.2)",
+   "criteria": {
+    "value": "조임 SF ≥ 1(볼트·좌면·암나사), 물림 ≥ 1.5d",
+    "source": "E-18 handcalc, M-01"
+   },
+   "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_handcalc.json",
+   "result": "3.0 N·m: 볼트 4.69 · 좌면 2.31 · 암나사 2.64. 0.6 N·m: 23.4 · 11.6 · 13.2. X 미끄럼 버팀 0.6 N·m 90 N(귀만)~180 N(귀 + 기둥)",
+   "v2.17.1_RX-11 수정1": {
+    "case": "cases/mech_RX-11_fea1_handcalc.py",
+    "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_fea1_handcalc.json",
+    "load": "조임 0.6 N·m + 중강도 나사 고정제(부품 속성에 적힘, mech_RX-11_model1.md). 외력 인장 없음",
+    "result": "볼트 23.43 · 좌면 11.55 · 암나사 13.21, 물림 2.3d. X 미끄럼 버팀 90 N(귀만)~180 N: 운전 23.6 N에 3.8~7.6, 손 100 N에 0.9~1.8(디테일, 틈 1.0에서 멈춤)"
+   }
+  },
+  "STEP대기_RORLM20-6-L200 · STEP대기_SFJ6-213(구매품 몫)": {
+   "case": "cases/mech_RX-11_handcalc.py",
+   "version": "v2.17.0",
+   "fixed": "롤러 = 내장 B696ZZ 2개(중심 사이 195) 단순보. 축 Ø6 = 베어링 중심에서 새들 홈 받침 가운데까지 팔 6.25",
+   "contact": "바퀴(매트 너머) 선 접촉 -> 롤러 하나가 다 받고 가운데(불리)",
+   "load": "바퀴 누름 46.54 N(운전), 오설정 바닥 130 N",
+   "criteria": {
+    "value": "롤러 처짐 ≤ 0.1 mm, 696ZZ 정적 SF ≥ 3 / 2(C0r 670 N 임시 D-200)",
+    "source": "RX-11 완료 판정 ④, M-06·M-09"
+   },
+   "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_handcalc.json",
+   "result": "처짐 0.0051 / 0.0143 mm. 정적 SF 14.4 / 5.15(C0r 절반이어도 7.2 / 2.58). 축 굽힘 13.7 / 38.3 MPa. 파이프 Ø20/Ø12 I 6,836 mm4"
+  },
+  "HFS8-4080-560_M04_NOTCH(구매·추가 가공)": {
+   "case": "cases/mech_RX-11_handcalc.py",
+   "version": "v2.17.0",
+   "step": "tools/out/mech_RX-11/stepout/HFS8-4080-560_M04_NOTCH.step",
+   "fixed": "끝 Y ±280 HBLFSN8 + CB8-16 -> 경간 560 단순보(옛 모델 'HFS8-4080-560_M04 x3(구매)'와 같음)",
+   "contact": "윗면-판 밑면 압축만",
+   "load": "옛 모델 하중(E2 전부 + W2 1/4 x3 g 등분포 747.6 N) + 가운데 점하중 153.1 N(오설정 130 + RX-11 부품 x3 g)",
+   "criteria": {
+    "value": "오조작 SF 2(A6063-T5 145)",
+    "source": "M-09"
+   },
+   "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_handcalc.json",
+   "result": "모델 바꿈: I 하한 1.5e5 통짜 -> STEP 윤곽 적분(온 단면 A 1,115.5 mm2 · I 723,619 mm4, 통과 홈 자리 Z -92~-23 A 913.4 · I 419,481). 홈 자리 6.46 MPa SF 22.4. 옛 모델(통짜 1.5e5) 19.67 MPa SF 7.37, 온 단면 4.08 MPa SF 35.6",
+   "note": "통과 홈이 경간 가운데(굽힘 최대 자리) 윗 플랜지를 자른다. I 58 %로 줄어도 SF 22"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
