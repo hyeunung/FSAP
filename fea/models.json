@@ -640,7 +640,13 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "case_RX-10": "cases/mech_RX-10_handcalc.py",
+   "step_RX-10": "tools/out/mech_RX-10/stepout/P_M06_CARR.step",
+   "version_RX-10": "v2.17.2",
+   "contact_RX-10": "누름 실린더 브래킷 인서트 자리 (Y -177·-128, Z 86, Ø6.8 x 8 + Ø5.2 x 3). Y -177 구멍에서 캐리지 -Y 끝(Y -185)까지 살 4.6",
+   "load_RX-10": "브래킷 볼트 인장(손 100 N 175 N, 들기 57.7 N)·전단(가까운 볼트 77.6 N). 다리 단면·C턱은 그대로(M06 값)",
+   "status_RX-10": "손계산 fea/results/mech_RX-10_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
   },
   "P_M06_SHOE": {
    "case": "cases/mech_M06_handcalc.py",
@@ -661,7 +667,18 @@
     "value": "부품 운전 SF 3, 오조작 SF 2. 자국: 미끄럼 허용 30 kPa(D-165 임시)에 SF ≥ 2 — 평균이 아니라 Winkler 기울기 최대 압력 p_avg(1 + 6e/L), e = mu x 20.5",
     "source": "요구서 6-1(M-09), 설계안 mech_U6S_design.md 'C-03 … 자국 SF ≥ 2', FUNC-01 ① Winkler"
    },
-   "status_U6S": "손계산 fea/results/mech_U6S_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+   "status_U6S": "손계산 fea/results/mech_U6S_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "case_RX-10": "cases/mech_RX-10_handcalc.py",
+   "step_RX-10": "tools/out/mech_RX-10/stepout/P_M06_SHOE.step",
+   "version_RX-10": "v2.17.2",
+   "fixed_RX-10": "U6S와 같음(윗날개 탭 t2가 CJ2B10 로드 M4 너트 2개에 꽉 물림, 장공 2개 Y -135·-175가 칼라 Z 32.5 위로 Z 미끄럼). 로드 축 (X -68, Y -166)(REST), 탭 외팔 = 벽 안쪽 면 X -80 -> 로드 X -68 팔 12, 유효 폭 31",
+   "contact_RX-10": "바닥 평탄 면 19.0 x 119.295 = 2,266.599 mm2(STEP 다각형 = 모델 실측), 중심 (X -68.5, Y -174.647). 로드 편심 e_y +8.647·e_x +0.5. Winkler 강체 판(기울기 자유: 필요 기울기 <= 0.0035 rad, 로드 끝 옆 이동 0.07 <= 틈 0.15). 가로 기울기는 칼라 축 틈 0.1 / 턱 Ø12 = 0.0083 rad에서 막힘",
+   "load_RX-10": "누름 띠 9.85~22.94 N(0.19 MPa, W 1.470 N), 레귤레이터 상한 0.20 MPa 23.79 N, 들기 0.5 MPa 33.0 N, 레귤레이터 우회 39.3 N, 손 100 N(오조작): (a) 로드 선 Z (b) 입술 모서리(Y -245) Z 위·아래 — (b)는 슈 앞뒤 기울기를 로드 굽힘(각 theta + 옆 25.2 theta)으로 받는다(새로 더한 경우, RX-10 해석)",
+   "criteria_RX-10": {
+    "value": "자국: 30 kPa(D-165 임시)에 SF >= 2 — 완료 판정은 U6S와 같은 식 p_avg(1 + 6 mu h/L), mu 0.4·h 20.5·L 130. 부품 운전 SF 3, 오조작 SF 2, 영구 변형 선 1.2(로드 SUS304 205 가정)",
+    "source": "요구서 5절 RX-10 완료 판정, 요구서 6-1(M-09)"
+   },
+   "status_RX-10": "손계산 fea/results/mech_RX-10_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
   },
   "P_M06_ROLL_SHAFT": {
    "case": "cases/mech_M06_handcalc.py",
@@ -991,7 +1008,14 @@
    },
    "status": "손계산 fea/results/mech_U6S_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
    "step": "tools/out/mech_U6S/stepout/P_M06_PCYL_BRKT.step",
-   "version": "v2.9.0"
+   "version": "v2.9.0",
+   "case_RX-10": "cases/mech_RX-10_handcalc.py",
+   "step_RX-10": "tools/out/mech_RX-10/stepout/P_M06_PCYL_BRKT.step",
+   "version_RX-10": "v2.17.2",
+   "fixed_RX-10": "세운 벽(X -82~-79 @REST, Z ~94)이 P_M06_CARR 다리 +X 면에 CB5-12 x2(Y -177·-128, Z 86) -> MBIS5 인서트. 받침: 위 힘 벽 윗끝 Z 94(팔 8), 아래 힘 판 밑 Z 74.3(팔 11.7). 실린더 축 Y -166은 볼트 사이 11 : 38",
+   "contact_RX-10": "판(Z 74.3~77.3) Ø8.5 구멍 (X -68, Y -166)에 CJ2B10 장착 너트, 벽면에서 팔 14(굽힘 R 포함 13), 축~판 -Y 끝 18.5(유효 폭 28 반쪽 14 안)",
+   "load_RX-10": "U6S와 같음(W만 1.470 N): 들기 33.0 / 누름 멈춤 0.20 MPa 15.7 / 우회 39.3 / 손 100 N + 자중 x3 g. 볼트 인장은 가까운 볼트(Y -177)가 다 받는다고 봄",
+   "status_RX-10": "손계산 fea/results/mech_RX-10_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
   },
   "P_M06_SLIDE_COLLAR": {
    "case": "cases/mech_U6S_handcalc.py",
