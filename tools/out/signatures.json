@@ -2,8 +2,8 @@
  "date": "2026-11-12",
  "pose": "REST step 0",
  "source": "RX-08 측정부 MCP measure {} 전수(v2.11.1, 3,166바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.14.0.sc",
- "doc_hash": "9a45dc490803fadc",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.15.0.sc",
+ "doc_hash": "afbbf359e5a271f5",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -35,8 +35,8 @@
     250.0,
     650.0
    ],
-   "volume": 34452386.275,
-   "mass": 270451.232,
+   "volume": 34451946.241,
+   "mass": 270447.778,
    "material": "Steel",
    "bolt": false,
    "spec": ""
@@ -4073,42 +4073,6 @@
    "bolt": false,
    "spec": ""
   },
-  "U4_XAXIS/P_RX06_SPACER_F": {
-   "name": "P_RX06_SPACER_F",
-   "bbox": [
-    -392.0,
-    -340.0,
-    100.0,
-    120.0,
-    482.5,
-    577.5
-   ],
-   "volume": 98800.0,
-   "mass": 264.784,
-   "material": "A5052",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "U4_XAXIS"
-  },
-  "U4_XAXIS/P_RX06_SPACER_S": {
-   "name": "P_RX06_SPACER_S",
-   "bbox": [
-    -120.0,
-    -94.0,
-    100.0,
-    120.0,
-    482.5,
-    577.5
-   ],
-   "volume": 49400.0,
-   "mass": 132.392,
-   "material": "A5052",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "U4_XAXIS"
-  },
   "U4_XAXIS/P_RX06_STOP_A": {
    "name": "P_RX06_STOP_A",
    "bbox": [
@@ -4147,201 +4111,21 @@
   },
   "U4_XCAR/P_RX06_CARRIAGE": {
    "name": "P_RX06_CARRIAGE",
+   "unit": "U4_XCAR",
+   "component": "U4_XCAR",
    "bbox": [
     -240.0,
     -125.0,
     45.0,
     107.0,
     250.0,
-    565.0
+    482.0
    ],
-   "volume": 514612.34,
-   "mass": 1379.161,
+   "volume": 383445.752,
+   "mass": 1027.635,
    "material": "A5052",
    "bolt": false,
-   "spec": "",
-   "unit": "U4_XCAR",
-   "component": "U4_XCAR"
-  },
-  "BSW20_RX06/BSW20_RX06_BODY": {
-   "name": "BSW20_RX06_BODY",
-   "bbox": [
-    -392.0,
-    -340.0,
-    42.0,
-    100.0,
-    482.5,
-    577.5
-   ],
-   "volume": 184378.776,
-   "mass": 237.849,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "BSW20_RX06"
-  },
-  "BSW20_RX06/BSW20_RX06_COLLAR_1": {
-   "name": "BSW20_RX06_COLLAR_1",
-   "bbox": [
-    -389.0,
-    -378.0,
-    57.5,
-    82.5,
-    517.5,
-    542.5
-   ],
-   "volume": 1943.675,
-   "mass": 2.507,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "BSW20_RX06"
-  },
-  "BSW20_RX06/BSW20_RX06_LOCKNUT": {
-   "name": "BSW20_RX06_LOCKNUT",
-   "bbox": [
-    -402.0,
-    -389.0,
-    52.5,
-    87.5,
-    512.5,
-    547.5
-   ],
-   "volume": 6873.548,
-   "mass": 8.867,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "BSW20_RX06"
-  },
-  "BSW20_RX06/BSW20_RX06_COLLAR_1 (BSW20_RX06:1/BSW20_c:2)": {
-   "name": "BSW20_RX06_COLLAR_1 (BSW20_RX06:1/BSW20_c:2)",
-   "bbox": [
-    -350.0,
-    -339.0,
-    57.5,
-    82.5,
-    517.5,
-    542.5
-   ],
-   "volume": 1943.675,
-   "mass": 2.507,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "BSW20_RX06"
-  },
-  "CB6-20_M03_CAR/CB6-20_M03_CAR (CB6-20_M03_CAR:5)": {
-   "name": "CB6-20_M03_CAR (CB6-20_M03_CAR:5)",
-   "bbox": [
-    -174.0,
-    -148.0,
-    50.3,
-    60.3,
-    499.5,
-    509.5
-   ],
-   "volume": 956.413,
-   "mass": 1.234,
-   "material": "Default",
-   "bolt": true,
-   "spec": "CB6-20",
-   "unit": "U4_XCAR",
-   "component": "CB6-20_M03_CAR"
-  },
-  "BUN20_RX06/BUN20_RX06_BODY": {
-   "name": "BUN20_RX06_BODY",
-   "bbox": [
-    -120.0,
-    -94.0,
-    42.0,
-    100.0,
-    482.5,
-    577.5
-   ],
-   "volume": 83949.992,
-   "mass": 108.295,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "BUN20_RX06"
-  },
-  "BUN20_RX06/BUN20_RX06_RING": {
-   "name": "BUN20_RX06_RING",
-   "bbox": [
-    -115.2,
-    -114.0,
-    57.8,
-    83.4,
-    518.475,
-    541.525
-   ],
-   "volume": 179.472,
-   "mass": 0.232,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "BUN20_RX06"
-  },
-  "BSS2020-1100_RX06/BSS2020-1100_RX06_SHAFT": {
-   "name": "BSS2020-1100_RX06_SHAFT",
-   "bbox": [
-    -445.0,
-    -94.0,
-    60.0,
-    80.0,
-    520.0,
-    540.0
-   ],
-   "volume": 110251.586,
-   "mass": 142.225,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "BSS2020-1100_RX06"
-  },
-  "BSS2020-1100_RX06_NUT/BSS2020-1100_RX06_NUT": {
-   "name": "BSS2020-1100_RX06_NUT",
-   "bbox": [
-    -217.5,
-    -147.5,
-    47.0,
-    93.0,
-    497.0,
-    563.0
-   ],
-   "volume": 105802.984,
-   "mass": 136.486,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XCAR",
-   "component": "BSS2020-1100_RX06_NUT"
-  },
-  "STEP대기_HANDLE_D50/STEP대기_HANDLE_D50": {
-   "name": "STEP대기_HANDLE_D50",
-   "bbox": [
-    -495.0,
-    -445.0,
-    45.0,
-    95.0,
-    505.001,
-    554.999
-   ],
-   "volume": 42660.702,
-   "mass": 55.032,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "STEP대기_HANDLE_D50"
+   "spec": ""
   },
   "CB5-16_M02_1/CB5-16_M02_1 (CB5-16_M02_1:2)": {
    "name": "CB5-16_M02_1 (CB5-16_M02_1:2)",
@@ -4378,96 +4162,6 @@
    "spec": "CB5-16",
    "unit": "U4_XCAR",
    "component": "CB5-16_M02_1"
-  },
-  "CB6-20_M03_CAR/CB6-20_M03_CAR (CB6-20_M03_CAR:6)": {
-   "name": "CB6-20_M03_CAR (CB6-20_M03_CAR:6)",
-   "bbox": [
-    -174.0,
-    -148.0,
-    50.3,
-    60.3,
-    550.5,
-    560.5
-   ],
-   "volume": 956.413,
-   "mass": 1.234,
-   "material": "Default",
-   "bolt": true,
-   "spec": "CB6-20",
-   "unit": "U4_XCAR",
-   "component": "CB6-20_M03_CAR"
-  },
-  "CB6-20_M03_CAR/CB6-20_M03_CAR (CB6-20_M03_CAR:7)": {
-   "name": "CB6-20_M03_CAR (CB6-20_M03_CAR:7)",
-   "bbox": [
-    -174.0,
-    -148.0,
-    79.7,
-    89.7,
-    499.5,
-    509.5
-   ],
-   "volume": 956.413,
-   "mass": 1.234,
-   "material": "Default",
-   "bolt": true,
-   "spec": "CB6-20",
-   "unit": "U4_XCAR",
-   "component": "CB6-20_M03_CAR"
-  },
-  "CB6-20_M03_CAR/CB6-20_M03_CAR (CB6-20_M03_CAR:8)": {
-   "name": "CB6-20_M03_CAR (CB6-20_M03_CAR:8)",
-   "bbox": [
-    -174.0,
-    -148.0,
-    79.7,
-    89.7,
-    550.5,
-    560.5
-   ],
-   "volume": 956.413,
-   "mass": 1.234,
-   "material": "Default",
-   "bolt": true,
-   "spec": "CB6-20",
-   "unit": "U4_XCAR",
-   "component": "CB6-20_M03_CAR"
-  },
-  "RAIL_SSEB13-570/SSEB13-570_RX06_RAIL": {
-   "name": "SSEB13-570_RX06_RAIL",
-   "bbox": [
-    -335.0,
-    -125.0,
-    112.5,
-    120.0,
-    260.0,
-    272.0
-   ],
-   "volume": 18900.0,
-   "mass": 24.381,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "RAIL_SSEB13-570"
-  },
-  "RAIL_SSEB13-570/SSEB13-570_RX06_RAIL (SSEB13-570_RX06:1/RAIL_SSEB13-570:2)": {
-   "name": "SSEB13-570_RX06_RAIL (SSEB13-570_RX06:1/RAIL_SSEB13-570:2)",
-   "bbox": [
-    -335.0,
-    -125.0,
-    112.5,
-    120.0,
-    434.0,
-    446.0
-   ],
-   "volume": 18900.0,
-   "mass": 24.381,
-   "material": "Default",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_XAXIS",
-   "component": "RAIL_SSEB13-570"
   },
   "BLOCK_SSEB13-570/SSEB13-570_RX06_BLOCK": {
    "name": "SSEB13-570_RX06_BLOCK",
@@ -57511,6 +57205,186 @@
    ],
    "volume": 71445.686,
    "mass": 92.165,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_XAXIS/P_RX06R_LOCK_BLADE_판금": {
+   "name": "P_RX06R_LOCK_BLADE_판금",
+   "unit": "U4_XAXIS",
+   "component": "U4_XAXIS",
+   "bbox": [
+    -335.0,
+    -122.0,
+    92.5,
+    120.0,
+    457.0,
+    577.0
+   ],
+   "volume": 58633.893,
+   "mass": 464.967,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_XCAR/P_RX06R_LOCK_CLAMP_레이저": {
+   "name": "P_RX06R_LOCK_CLAMP_레이저",
+   "unit": "U4_XCAR",
+   "component": "U4_XCAR",
+   "bbox": [
+    -237.5,
+    -127.5,
+    89.3,
+    92.3,
+    458.0,
+    478.0
+   ],
+   "volume": 6457.474,
+   "mass": 51.208,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "CB5-16_RX06R_LOCK_1/CB5-16_RX06R_LOCK_1": {
+   "name": "CB5-16_RX06R_LOCK_1",
+   "unit": "U4_XCAR",
+   "component": "CB5-16_RX06R_LOCK_1",
+   "bbox": [
+    -229.25,
+    -220.75,
+    84.3,
+    105.3,
+    463.75,
+    472.25
+   ],
+   "volume": 554.945,
+   "mass": 0.716,
+   "material": "Default",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "CB5-16_RX06R_LOCK_2/CB5-16_RX06R_LOCK_2": {
+   "name": "CB5-16_RX06R_LOCK_2",
+   "unit": "U4_XCAR",
+   "component": "CB5-16_RX06R_LOCK_2",
+   "bbox": [
+    -144.25,
+    -135.75,
+    84.3,
+    105.3,
+    463.75,
+    472.25
+   ],
+   "volume": 554.945,
+   "mass": 0.716,
+   "material": "Default",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "CB5-12_RX06R_BLADE_1/CB5-12_RX06R_BLADE_1": {
+   "name": "CB5-12_RX06R_BLADE_1",
+   "unit": "U4_XAXIS",
+   "component": "CB5-12_RX06R_BLADE_1",
+   "bbox": [
+    -319.25,
+    -310.75,
+    113.0,
+    130.0,
+    557.75,
+    566.25
+   ],
+   "volume": 476.413,
+   "mass": 0.615,
+   "material": "Default",
+   "bolt": true,
+   "spec": "CB5-12"
+  },
+  "CB5-12_RX06R_BLADE_2/CB5-12_RX06R_BLADE_2": {
+   "name": "CB5-12_RX06R_BLADE_2",
+   "unit": "U4_XAXIS",
+   "component": "CB5-12_RX06R_BLADE_2",
+   "bbox": [
+    -259.25,
+    -250.75,
+    113.0,
+    130.0,
+    557.75,
+    566.25
+   ],
+   "volume": 476.413,
+   "mass": 0.615,
+   "material": "Default",
+   "bolt": true,
+   "spec": "CB5-12"
+  },
+  "CB5-12_RX06R_BLADE_3/CB5-12_RX06R_BLADE_3": {
+   "name": "CB5-12_RX06R_BLADE_3",
+   "unit": "U4_XAXIS",
+   "component": "CB5-12_RX06R_BLADE_3",
+   "bbox": [
+    -199.25,
+    -190.75,
+    113.0,
+    130.0,
+    557.75,
+    566.25
+   ],
+   "volume": 476.413,
+   "mass": 0.615,
+   "material": "Default",
+   "bolt": true,
+   "spec": "CB5-12"
+  },
+  "CB5-12_RX06R_BLADE_4/CB5-12_RX06R_BLADE_4": {
+   "name": "CB5-12_RX06R_BLADE_4",
+   "unit": "U4_XAXIS",
+   "component": "CB5-12_RX06R_BLADE_4",
+   "bbox": [
+    -139.25,
+    -130.75,
+    113.0,
+    130.0,
+    557.75,
+    566.25
+   ],
+   "volume": 476.413,
+   "mass": 0.615,
+   "material": "Default",
+   "bolt": true,
+   "spec": "CB5-12"
+  },
+  "RAIL_SSEB13-570/SSEB13-220_RX06_RAIL": {
+   "name": "SSEB13-220_RX06_RAIL",
+   "unit": "U4_XAXIS",
+   "component": "RAIL_SSEB13-570",
+   "bbox": [
+    -335.0,
+    -115.0,
+    112.5,
+    120.0,
+    260.0,
+    272.0
+   ],
+   "volume": 17180.227,
+   "mass": 22.162,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "RAIL_SSEB13-570/SSEB13-220_RX06_RAIL (SSEB13-570_RX06:1/RAIL_SSEB13-570:2)": {
+   "name": "SSEB13-220_RX06_RAIL (SSEB13-570_RX06:1/RAIL_SSEB13-570:2)",
+   "unit": "U4_XAXIS",
+   "component": "RAIL_SSEB13-570",
+   "bbox": [
+    -335.0,
+    -115.0,
+    112.5,
+    120.0,
+    434.0,
+    446.0
+   ],
+   "volume": 17180.227,
+   "mass": 22.162,
    "material": "Default",
    "bolt": false,
    "spec": ""

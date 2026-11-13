@@ -982,18 +982,25 @@
    "version": "v2.9.0"
   },
   "P_RX06_CARRIAGE": {
-   "case": "cases/mech_RX-06_handcalc.py",
-   "fixed": "웹 +Y 면(Y 107)에 SSEB13 블록 4개(X -221·-144, Z 266·440) — 블록 4개 강체 패턴으로 힘·모멘트 나눔(Fy 우력 레일 사이 174, Fz·Fy 우력 블록 사이 77). X는 BSS2020 너트(Y 70, Z 530, CB6-20 x4 귀)",
-   "contact": "발(Y 45~107, Z 250~262) 밑에 P_M02_BASE 6 x M5",
-   "load": "묶음 x 3 g + 바퀴 힘(운전·오조작) + 손 100 N x r25 끝 멈춤 축력 707 N(너트 귀)",
+   "case": "cases/mech_RX-06R_handcalc.py",
+   "fixed": "웹 +Y 면(Y 107)에 SSEB13 블록 4개(X -221·-144, Z 266·440) — 블록 4개 강체 패턴으로 힘·모멘트 나눔(레일 사이 174, 블록 사이 77). X는 잠금(날 중립면 Y 93.5, 볼트 줄 Z 468, CB5-16 x2 마찰)이 받음",
+   "contact": "발(Y 45~107, Z 250~262) 밑에 P_M02_BASE 6 x M5. 웹 앞면 Y 95(Z 458~478)에 잠금 날이 눌림",
+   "load": "묶음 12.16 kg + 캐리지 1.028 kg + 누름 판·볼트 0.06 kg, x 3 g + 바퀴 힘(누름 운전 0.2 MPa 71.5 N·오조작 0.5 MPa 134.9 N의 마찰·접선 18 N) + 날 복원력(틈 0.5·0.8을 닫는 힘 -Y @ Z 478, 물림 모멘트)",
    "criteria": {
-    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205). 조임 강제 변위(날 굽힘)는 영구 변형 한계 1.2도 같이 봄. 블록은 C0 보수 임시 2 kN·카탈로그 표 6 kN(미확인) 둘 다. 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
-   "step": "tools/out/mech_RX-06/stepout/P_RX06_CARRIAGE.step",
-   "version": "v2.11.0",
-   "note": "뿌리 단면 115 x 12(웹·발 같음) 굽힘. 최소 SF 15.6(오조작) — 과사양(M-09) 기록: 두께 12 -> 8도 SF > 7"
+   "status": "손계산 fea/results/mech_RX-06R_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-06R/stepout/P_RX06_CARRIAGE.step",
+   "version": "v2.15.0",
+   "note": "RX-06R(C-46): 웹 윗끝 565 -> 482, 너트 귀 없앰, M5 탭 2(Z 468). 뿌리 단면 115 x 12 그대로 — 최소 SF 14.0(오조작), 웹 윗부분(탭 뺀 단면 106.6 x 12) SF 10.2. 과사양(M-09) 기록: 두께 12 -> 8도 SF 6.2",
+   "_이전(v2.11.0, RX-06)": {
+    "case": "cases/mech_RX-06_handcalc.py",
+    "fixed": "웹 +Y 면(Y 107)에 SSEB13 블록 4개(X -221·-144, Z 266·440) — 블록 4개 강체 패턴으로 힘·모멘트 나눔(Fy 우력 레일 사이 174, Fz·Fy 우력 블록 사이 77). X는 BSS2020 너트(Y 70, Z 530, CB6-20 x4 귀)",
+    "load": "묶음 x 3 g + 바퀴 힘(운전·오조작) + 손 100 N x r25 끝 멈춤 축력 707 N(너트 귀)",
+    "step": "tools/out/mech_RX-06/stepout/P_RX06_CARRIAGE.step",
+    "바꾼 이유": "볼나사 너트(Y 70, Z 530)가 없어져 X 받침이 잠금으로 옮겨짐 — 설계 변경(해석 모델 선택을 바꾼 것이 아님)"
+   }
   },
   "P_RX06_SPACER_F": {
    "case": "cases/mech_RX-06_handcalc.py",
@@ -1004,7 +1011,7 @@
     "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16) | 없어짐 — RX-06R(C-46) v2.15.0에서 걷어 냄(볼나사 지지 유닛 받침)",
    "step": "tools/out/mech_RX-06/stepout/P_RX06_SPACER_F.step",
    "version": "v2.11.0"
   },
@@ -1017,7 +1024,7 @@
     "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16) | 없어짐 — RX-06R(C-46) v2.15.0에서 걷어 냄(볼나사 지지 유닛 받침)",
    "step": "tools/out/mech_RX-06/stepout/P_RX06_SPACER_S.step",
    "version": "v2.11.0"
   },
@@ -1030,7 +1037,7 @@
     "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16) | RX-06R v2.15.0: 볼나사가 없어져 손 100 N이 707 N으로 커지지 않는다 — 캐리지를 손으로 밀어 붙이는 100 N이 그대로 걸림(뿌리 전단 4.2 MPa). 형상 그대로라 다시 풀지 않음",
    "step": "tools/out/mech_RX-06/stepout/P_RX06_STOP_A.step",
    "version": "v2.11.0",
    "note": "STOP_B 같은 형상·같은 하중"
@@ -1055,7 +1062,7 @@
     "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16). C0·C0a 카탈로그 미확인(임시)",
+   "status": "손계산 fea/results/mech_RX-06_handcalc.json. FEA 못 함 — 환경 없음(D-16). C0·C0a 카탈로그 미확인(임시) | RX-06R v2.15.0: BSS2020·BSW20·BUN20 없어짐. 블록 4는 cases/mech_RX-06R_handcalc.py로 다시 셈 — 날 힘 없음 운전 381.9 N(SF 5.24)·오조작 583.9 N(3.43), 날 복원력 기준 틈 0.5 더하면 593.7 N(3.37)·795.7 N(2.51), 틈 0.8이면 720.9 N(2.77)·922.9 N(2.17) — C0 2 kN 보수 임시 대비(표 값 6 kN이면 6.5 이상)",
    "version": "v2.11.0"
   },
   "P_RX08_STOP_BRKT_밀링": {
@@ -1097,6 +1104,34 @@
    "step": "tools/out/mech_M02R/stepout/P_M02S_SPRING_TAB_1.step",
    "version": "v2.14.0",
    "note": "_2는 같은 형상·같은 하중(E-19)"
+  },
+  "P_RX06R_LOCK_BLADE_판금": {
+   "case": "cases/mech_RX-06R_handcalc.py",
+   "fixed": "플랜지(Y 118~120, Z 547~577)가 보 앞면 Y 120에 CB5-12 x4(Z 562, X -315·-255·-195·-135, 4 N·m)로 체결 — 볼트 머리 Ø8.5 아랫끝 Z 557.75 위를 고정, 그 아래 플랜지는 보 면에서 들릴 수 있음(뼈대 풀이에서 들리는 쪽으로 나옴, 접촉 반력 없음)",
+   "contact": "매달린 다리(Y 92.5~94.5)가 누름 판(Z 458~478)과 캐리지 웹 앞면(Y 95) 사이에 평평하게 물림 — 누름 판 윗끝 Z 478에서 Y 변위 = 틈(0.5 기준, 0.8 공차 끝), 기울기 0. Z 묶임은 닫히는 순간의 마찰(mu 0.15 x 닫는 힘)까지만(기준 모델 V2m), 완전히 묶인 경우는 상한(V1)",
+   "load": "조임 강제 변위(틈 0.5·0.8). X 힘(운전 28.6 N, 손 100 N, 보수 204.3·553.1 N)은 물린 자리(Z 468)에서 플랜지 볼트 줄(Z 562)까지 면내 — 팔 94",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205). 조임 강제 변위(날 굽힘)는 영구 변형 한계 1.2도 같이 봄. 블록은 C0 보수 임시 2 kN·카탈로그 표 6 kN(미확인) 둘 다. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "2D 뼈대 손계산(단위 폭, 판 강성 E/(1-nu^2), 굽힘 R3 곡선보 계수 1.285) fea/results/mech_RX-06R_handcalc.json. FEA 못 함 — 환경 없음(D-16). 접촉(누름 판·웹·날)이 정하는 물림 강성은 고체 접촉 FEA 대상",
+   "step": "tools/out/mech_RX-06R/stepout/P_RX06R_LOCK_BLADE.step",
+   "version": "v2.15.0",
+   "note": "설계안 모델(뿌리 Z 543 고정, 볼트 줄 Z 468에서 자유롭게 도는 외팔보 L 75: 51.5 MPa SF 3.98)은 누름 판–웹 사이에 평평하게 물린 조건(기울기 0)을 빼서 낮게 나온다. 같은 형상으로 푼 값: 기준 V2m 90.6 MPa SF 2.26(틈 0.5)·145.0 MPa SF 1.41(0.8), 상한 V1 131.9 MPa SF 1.55·211.0 MPa SF 0.97. 닫는 힘 287 N(설계안 97 N). t2 -> t1.2면 SF 3.77(0.5)"
+  },
+  "P_RX06R_LOCK_CLAMP_레이저": {
+   "case": "cases/mech_RX-06R_handcalc.py",
+   "fixed": "CB5-16 x2(X -225·-140, Z 468, 3 N·m)가 판 가운데 높이를 웹 쪽으로 누름 — 볼트 2점 받침(판 X 0~110에서 12.5·97.5)",
+   "contact": "판 뒷면 전체가 날 앞면에 닿음. 날 복원력은 Winkler 받침 q = kq(틈 - w), kq 2.696 N/mm²(날 뼈대 V2m). 판 끝이 웹 쪽으로 기울면 밀기만 하는 접촉",
+   "load": "날 복원력(틈 0.5: 146 N, 0.8: 233 N — 판 폭 110 몫) + 볼트 예압 3,000 N x 2",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205). 조임 강제 변위(날 굽힘)는 영구 변형 한계 1.2도 같이 봄. 블록은 C0 보수 임시 2 kN·카탈로그 표 6 kN(미확인) 둘 다. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "탄성 받침 위 보 손계산(보 20 x t3, 볼트 구멍 뺀 단면 14.5 x 3) fea/results/mech_RX-06R_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "step": "tools/out/mech_RX-06R/stepout/P_RX06R_LOCK_CLAMP.step",
+   "version": "v2.15.0",
+   "note": "볼트 사이 가운데 처짐 0.022 mm(틈 0.5) — 날이 96 % 닫힘. 굽힘 35.4 MPa SF 5.79(0.5)·56.7 MPa SF 3.62(0.8). 판 비틀림(날 선하중이 볼트 줄에서 10 위)은 넣지 않음"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."

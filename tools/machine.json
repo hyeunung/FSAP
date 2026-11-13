@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.12.2.sc",
+ "doc": "../3D_Modeling/FSAP_v2.15.0.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -3252,26 +3252,7 @@
    "rest": 0,
    "min": 0,
    "max": 95,
-   "_note": "RX-06(v2.11.0): U4 X 위치 조절축(d1 = 100 + J). 부모 U4_XAXIS(보 앞 레일 SSEB13 2줄, 틀에 강체), 자식 U4_XCAR(캐리지 + 블록 4 + 볼나사 너트)이 U4_WHEEL_N 묶음(U4_PRESS·U4_WHEEL·U4S_*)을 매단다. 수동 손잡이(셋업 때만, 봉제 중 바꾸지 않음 — 0-8-1·0-8-4). 행정 끝 = 끝 멈춤 P_RX06_STOP_B(0)·STOP_A(95)에 블록 끝면이 닿음. 연구 키 없음(셋업 축)"
-  },
-  "J_U4_XSCREW": {
-   "cad": "J_U4_XSCREW",
-   "type": "rotate",
-   "unit": "BSS2020-1100_RX06",
-   "axis": [
-    1,
-    0,
-    0
-   ],
-   "origin": [
-    -270,
-    70,
-    530
-   ],
-   "rest": 0,
-   "min": -1800,
-   "max": 1800,
-   "_note": "RX-06: 볼나사 BSS2020(리드 20) 회전. motion_link J_U4_X → J_U4_XSCREW 18°/mm(4.75회전 = 95 mm). 따라 도는 조인트(구동 아님)"
+   "_note": "RX-06R(v2.15.0, C-46): U4 X 위치 조절축(d1 = 100 + J). 손으로 밀고 잠금 볼트 2개(CB5-16, 3 N·m)로 고정, 셋업 축(봉제 중 바꾸지 않음 — 0-8-1·0-8-4). 부모 U4_XAXIS(보 앞 레일 SSEB13-220 2줄 + 잠금 날, 틀에 강체), 자식 U4_XCAR(캐리지 + 블록 4 + 누름 판 + 잠금 볼트 2)이 U4_WHEEL_N 묶음(U4_PRESS·U4_WHEEL·U4S_*)을 매단다. 잠금: 보 앞면에 고정한 날(SUS304 t2, 긴 구멍 X 183)을 캐리지 웹 앞면과 누름 판 사이에 물림. 행정 끝 = 끝 멈춤 P_RX06_STOP_B(0)·STOP_A(95)에 블록 끝면이 닿음. 연구 키 없음(셋업 축). 볼나사·손잡이·J_U4_XSCREW·motion_link 18°/mm는 v2.15.0에서 지움"
   },
   "J_U4_STOP": {
    "cad": "J_U4_STOP",
@@ -3661,27 +3642,24 @@
   },
   "U4_XAXIS": {
    "parts": [
-    "P_RX06_SPACER_",
     "P_RX06_STOP_",
-    "SSEB13-570_RX06_RAIL",
-    "BSW20_RX06",
-    "BUN20_RX06",
-    "BSS2020-1100_RX06_SHAFT",
-    "STEP대기_HANDLE_D50"
+    "SSEB13-220_RX06_RAIL",
+    "P_RX06R_LOCK_BLADE_판금",
+    "CB5-12_RX06R_BLADE_1~4 (날 고정 볼트 4)"
    ],
    "moving": false,
-   "_note": "RX-06: 보 앞면 고정쪽(레일 2줄 Z 266·440, 지지 유닛 + 스페이서, 끝 멈춤). 축·손잡이는 J_U4_XSCREW로 돈다"
+   "_note": "RX-06R: 보 앞면 고정쪽(레일 2줄 Z 266·440 — STEP SSEB13-570을 X −115에서 자른 L220, 끝 멈춤, 잠금 날 + CB5-12 ×4)"
   },
   "U4_XCAR": {
    "parts": [
     "P_RX06_CARRIAGE",
     "SSEB13-570_RX06_BLOCK",
-    "BSS2020-1100_RX06_NUT",
-    "CB6-20_M03_CAR (RX-06 너트 볼트 4)",
+    "P_RX06R_LOCK_CLAMP_레이저",
+    "CB5-16_RX06R_LOCK_1·_2 (잠금 볼트 2)",
     "CB5-16_M02_1~4·1:2·1:3 (캐리지 발 볼트 6)"
    ],
    "moving": true,
-   "_note": "RX-06: J_U4_X로 움직임. U4_WHEEL_N을 강체로 매단다"
+   "_note": "RX-06R: J_U4_X로 움직임(손으로 밀고 잠금 볼트로 고정). U4_WHEEL_N을 강체로 매단다"
   },
   "U4_DISK_BASE": {
    "parts": [
@@ -5462,7 +5440,7 @@
     "J_U4_STOP": 0
    },
    "phase": "셋업(d1 195)",
-   "_note": "RX-06: d1 최대. 손잡이로 바퀴 든 상태에서만 옮긴다(제어 제약 U-09)"
+   "_note": "RX-06: d1 최대. RX-06R(v2.15.0): 손으로 밀어, 바퀴 든 상태에서만 옮기고 잠금 볼트 2개로 고정한다(제어 제약 U-09)"
   },
   {
    "name": "FLOAT_10_2",
@@ -5598,6 +5576,11 @@
    "a": "U4S_ROD(STEP대기_Y-020B_PIN)",
    "b": "P_M02S_SWING 텅 장공",
    "reason": "M02R 3회차: 핀 Ø8 ↔ 장공 폭 8.2(틈 0.1), 너클 안쪽 틈 10.4 ↔ 텅 t10(틈 0.2) — 맞닿음만 허용"
+  },
+  {
+   "a": "CB5-16_RX06R_LOCK_1·_2 · CB5-12_RX06R_BLADE_1~4",
+   "b": "P_RX06_CARRIAGE(웹 M5 탭 Ø4.2 관통 t12) · P_M07_BEAM(앞벽 M5 탭 Ø4.2 관통 t8)",
+   "reason": "RX-06R(v2.15.0) 나사 물림(Ø5 축 ↔ Ø4.2 탭, 물림 10.3·8) 의도된 겹침(M-08). inspect.clearance는 캐리지 ↔ 잠금 볼트 쌍을 unchecked(boolean Intersect no result)로 냄. RX-06 레일 민 상자 ↔ 블록 178.86 mm³ ×4 기준선은 레일을 실물 STEP으로 바꿔 없어짐(겹침 0)"
   }
  ],
  "workpiece_module": "",
@@ -5655,7 +5638,8 @@
   "2026-11-12 RX-06 v2.11.0: J_U4_X(직동 0~95, d1 = 100 + J)·J_U4_XSCREW(회전, 링크 18°/mm) 추가, 유닛 U4_XAXIS·U4_XCAR·U4_DISK_BASE, 상태 SETUP_D1_195. 기존 연구 키 변화 없음(J_U4_X 대기 0)",
   "2026-11-12 RX-08 v2.12.0: J_U4_STOP(직동 0~20, + = 당김 = ON) 추가, 유닛 U4_STOP, 모든 상태에 J_U4_STOP 0, 상태 FLOAT_10_2(J_U4_PRESS 0.95 + J_U4_STOP 20), REST 연구 키 J_U4_STOP 0. 매니폴드 07 -> 08(STEP대기)",
   "2026-11-12 RX-08 수정1 v2.12.1: 스토퍼 관 A·B를 U4 쪽(U4_WHEEL_N 아래 TU0604_M08P_RX08_A_U4·_B_U4, 강체로 U4_WHEEL_N에 묶음)·U8 쪽 두 구간으로 나눔(세움 X -169 Z 340). 조인트·행정·상태 변화 없음",
-  "2026-11-13 M02R 잔재 정리 v2.14.0: 조인트·행정·상태 변화 없음. 유닛 U4_WHEEL_N parts에서 CDM2C20-25Z_·I-020B_M02·KQ2L06-01AS_M08_U4·TU0604_M08_U4C, components에서 U4_CYL·U4_ROD 뺌(빈 컴포넌트 21개 + CB5-12_M02_2 지움)"
+  "2026-11-13 M02R 잔재 정리 v2.14.0: 조인트·행정·상태 변화 없음. 유닛 U4_WHEEL_N parts에서 CDM2C20-25Z_·I-020B_M02·KQ2L06-01AS_M08_U4·TU0604_M08_U4C, components에서 U4_CYL·U4_ROD 뺌(빈 컴포넌트 21개 + CB5-12_M02_2 지움)",
+  "2026-11-13 RX-06R v2.15.0: J_U4_XSCREW·motion_link(18°/mm) 지움, U4_XAXIS parts(볼나사 지지 유닛·축·손잡이·스페이서 빼고 잠금 날·CB5-12 ×4), U4_XCAR parts(너트·CB6-20 ×4 빼고 누름 판·CB5-16 ×2). J_U4_X 0~95 그대로(손으로 밀고 볼트 잠금), 상태 SETUP_D1_195 그대로"
  ],
  "_timing": {
   "_note": "시간 메모(s). 동작 연구에는 쓰지 않는다(연구는 단계만). 땀 이송 시간은 따로. 근거 design1·design2(C-37 (다), D-96 구름 0.02·μ0.4·U4 40 N·d1 100) · 수정 1회차: U4+U5 구간에 U5 밑 띠 미끄럼 μs 0.30(D-97)·U4 밑 원판 끌림 포함 · DC-04(2026-11-11): 회전 중 노루발 봉제 높이(J_U3_PRESSER 0)·낮은 누름 끌림 T_f 0.096 N·m 포함",
