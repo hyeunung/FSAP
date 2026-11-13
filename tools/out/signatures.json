@@ -2,8 +2,8 @@
  "date": "2026-11-12",
  "pose": "REST step 0",
  "source": "RX-08 측정부 MCP measure {} 전수(v2.11.1, 3,166바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.15.0.sc",
- "doc_hash": "afbbf359e5a271f5",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.15.2.sc",
+ "doc_hash": "1aa0397a928ba8bd",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -6970,42 +6970,6 @@
    "material": "SPCC",
    "bolt": false,
    "spec": ""
-  },
-  "U7_CASSETTE/CB5-16_M05_1 (U7_CASSETTE:1/CB5-16_M05_1:2)": {
-   "name": "CB5-16_M05_1 (U7_CASSETTE:1/CB5-16_M05_1:2)",
-   "unit": "U7_CASSETTE",
-   "component": "CB5-16_M05_1",
-   "bbox": [
-    46.0,
-    67.0,
-    -156.75,
-    -148.25,
-    299.75,
-    308.25
-   ],
-   "volume": 554.847,
-   "mass": 4.356,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
-  "U7_CASSETTE/CB5-16_M05_1 (U7_CASSETTE:1/CB5-16_M05_1:3)": {
-   "name": "CB5-16_M05_1 (U7_CASSETTE:1/CB5-16_M05_1:3)",
-   "unit": "U7_CASSETTE",
-   "component": "CB5-16_M05_1",
-   "bbox": [
-    46.0,
-    67.0,
-    -156.75,
-    -148.25,
-    315.75,
-    324.25
-   ],
-   "volume": 554.847,
-   "mass": 4.356,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
   },
   "U7_CASSETTE/P_M08_TUBE_BRKT_CST_V": {
    "name": "P_M08_TUBE_BRKT_CST_V",
@@ -57388,6 +57352,42 @@
    "material": "Default",
    "bolt": false,
    "spec": ""
+  },
+  "U7_CASSETTE/CB5-12_M05_7 (U7_CASSETTE:1/CB5-12_M05_7:2)": {
+   "name": "CB5-12_M05_7 (U7_CASSETTE:1/CB5-12_M05_7:2)",
+   "unit": "U7_CASSETTE",
+   "component": "CB5-12_M05_7",
+   "bbox": [
+    50.0,
+    67.0,
+    -156.75,
+    -148.25,
+    299.75,
+    308.25
+   ],
+   "volume": 476.413,
+   "mass": 3.74,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-12"
+  },
+  "U7_CASSETTE/CB5-12_M05_7 (U7_CASSETTE:1/CB5-12_M05_7:3)": {
+   "name": "CB5-12_M05_7 (U7_CASSETTE:1/CB5-12_M05_7:3)",
+   "unit": "U7_CASSETTE",
+   "component": "CB5-12_M05_7",
+   "bbox": [
+    50.0,
+    67.0,
+    -156.75,
+    -148.25,
+    315.75,
+    324.25
+   ],
+   "volume": 476.413,
+   "mass": 3.74,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-12"
   }
  }
 }

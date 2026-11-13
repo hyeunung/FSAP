@@ -4094,3 +4094,28 @@ PM(원칙 감사), 대상 `3D_Modeling/FSAP_v2.14.0.sc`(tools/config.json doc, M
 | RX-06R-D8 | d₁ 눈금 없음(잠금 풀림·위치 센서도 없음 — 바꾼 뒤 HMI에 d₁ 입력). 날 만드는 법 4가지 비교·금액(M-13) 안 함 | 날 윗면 또는 보 앞면 | `mech_RX-06R_design.md` 11절 | 눈금(스티커·각인), 디테일링에서 M-13 표 | 아니오 |
 
 RX-06 디테일 가운데 남는 것: RX-06-D1(레일 M3·블록 볼트 — 레일 구멍은 실물 자리 피치 25·끝 10 × 9개 × 2줄로 읽는다)·D2·D4·D5·D7. 최종 판정 details 7건 = D1~D7, D8은 설계안 11절에서 옮김.
+
+## 구동 RX-06-C2 결과 (2026-11-13)
+
+저장본 `3D_Modeling/FSAP_v2.15.2.sc`(v2.15.0 → v2.15.1 모델링 → v2.15.2 수정 1회차, 새로 생기거나 없어진 컴포넌트 0), 최종 판정 **pass**(완료 판정 ①~④ 만족, below_done 아님, 동작 문제 0). 설계검토서 `docs/review/FSAP_v2.15.2_review.md`, BOM `docs/bom/FSAP_v2.15.2_*.csv`, 보고서 `docs/reports/mechanism/mech_RX-06-C2_model.md`·`_verify.md`·`_model1.md`·`_verify1.md`, 생성기 `tools/gen_rx06c2.py`·`gen_rx06c2_fix1.py`.
+
+- 적용: ① 움직이는 컴포넌트 바디를 고치던 루트 피처를 그 컴포넌트로 옮김 — U5_CAR Combine43·44(탭 6), U7_CASSETTE Combine45(탭 4)는 `component.move_features`가 거부해 지우고 같은 자리·치수의 Cylinder cut 10개를 컴포넌트 피처로 다시 만듦, Cylinder351·352는 U7_CASSETTE로 옮김. ② 같은 꼴을 더 찾아 함께 옮김 — `P_M08_TUBE_BRKT_CST_O` Cylinder1175·1176, U7_FIXED Combine42·Extrude48·Cylinder753·754, U6_SENSOR Extrude47. ③ U4_WHEEL_N 빈 피처 Box326·Combine41(+ 도구 원통 2) 지움. 피처 3,717 → 3,709, 대상 8바디 REST 부피·bbox 변화 0. ④ 끝 자세(J_U5_X 5점, J_U7_HGT 5점, MAINT_U7 6단계, J_U4_X 4점, 겹친 자세)에서 부피 = REST, bbox = 강체 이동, 구멍 축 따라감. `joint.drive` J_U4_X 465~574 s → 0.36 s. ⑤ 수정 1회차 — 관 브래킷 `P_M08_TUBE_BRKT_CST_V` 아래 볼트 `CB5-16_M05_1:2·:3` → `CB5-12_M05_7:2·:3`(끝 X 46 → 50.0, 물림 8 = 1.6d). 타임라인 error 0, warning 54 → 54.
+- 실패: 검도 첫 회차(v2.15.1) 불합격 1건 — 완료 판정 ④. 볼트 `CB5-16_M05_1:2·:3` 끝 4 mm가 `P_M05_HOLDER` +X 벽 살(구멍 없음)을 뚫음(78.5 mm³ × 2). 이번 과제가 만든 것이 아니라 v2.8.8(PNEU-01 수정 2)부터 탭 물림 쌍(unchecked)에 섞여 있던 것. 수정 1회차로 풀림(HOLDER와 overlaps 0, unchecked 아님).
+- 남은 동작 문제: 0. 닫힌 것: RX-06-D7(Box326·Combine41 빈 피처).
+- 예외 판정: 0건(요청 없음).
+- 해석: 대상 없음(형상·하중 경로가 바뀐 가공품 없음, E-18). 환경도 없음(D-16).
+
+| id | 결정 | 이유 | 근거 |
+|---|---|---|---|
+| RX-06-C2-R1 | RX-06-C2를 **해결(v2.15.2)**로 닫는다 | 완료 판정 네 항목 만족, 검도 수정 1회차 합격. 남은 것은 E-02 "구동 단계에서 새로 본 디테일은 기록만 하고 수정 회차를 쓰지 않는다"의 디테일 2건 | 최종 판정, `mech_RX-06-C2_verify1.md` |
+| RX-06-C2-R2 | Combine cut은 옮기지 않고 **지우고 컴포넌트 안 Cylinder cut으로 다시 만든다** | `component.move_features`가 Combine을 거부한다(도구 원통을 먼저 옮겨도, 함께 옮겨도 같음). base·축·반지름·깊이를 지운 도구 원통과 같게 해 형상 값 변화 0 | `mech_RX-06-C2_model.md` 2절, 저장본 대조(없어진 피처 22 · 새 피처 14) |
+| RX-06-C2-R3 | 지시에 없던 같은 꼴 7피처(CST_O·U7_FIXED·U6_SENSOR)도 **이번에 함께 옮긴다** | 같은 조인트(J_U7_CST_X·Y·J_U7_HGT)로 움직이는 바디라 남기면 완료 판정 ②의 자세에서 형상이 틀린다. 지난 검도의 정적 점검이 못 본 것 | `mech_RX-06-C2_model.md` 3절 |
+| RX-06-C2-R4 | 볼트를 **CB5-12**로(CB5-14 아님), `CB5-16_M05_1:4·:5`는 그대로 | M-01 "상대 부품의 탭 또는 너트가 실제로 있음, 물림 ≥ 1.5d": 판 두께 8 = 1.6d. CB5-12는 실물 STEP이 있고(E-10) CB5-14는 없다. :4·:5 끝(X 48~50)에는 닿는 바디가 없다(가장 가까운 관 24.4 mm) | `mech_RX-06-C2_model1.md`, `mech_RX-06-C2_verify1.md` |
+| RX-06-C2-R5 | 테이프 모형 Split 27개·U6_SHOE → U6_PRESS 피처·루트 Move14는 **구동 후보 RX-06-C3**으로 올리고 이번에 손대지 않는다 | 작업 대상 모형·과제 범위 밖이고, 움직인 자세의 형상이 실제로 틀리는지 아직 재지 않았다(U6_PRESS는 형상이 맞게 따라가고 구동 시간만 395·460 s) | `mech_RX-06-C2_model.md` 6절, `mech_RX-06-C2_verify.md` |
+
+디테일 과제(E-02, 구동 확정 뒤 처리):
+
+| id | 무엇 | 어디 | 근거 | 고치는 법 |
+|---|---|---|---|---|
+| RX-06-C2-D1 | 새 볼트 `CB5-12_M05_7:2·:3` 끝이 판 뒷면과 같은 면이고 바로 뒤가 고정부 `P_M05_HOLDER` 벽이라 여유 0(겹침은 0). 볼트 길이 +공차면 닿는다 | U7_CASSETTE, X 50.0 · Y −152.5 · Z 304/320(REST · J_U7_HGT 전 구간) | 볼트 bbox X 50.0~67.0, 476.413 mm³. `inspect.clearance`(REST · HGT −4·−1.5·1·3.5·6) overlaps 0, HOLDER 거리 0.0. `tools/out/mech_RX-06-C2/verify1/v1_out.json` | HOLDER +X 벽에 Ø6 × 깊이 1 릴리프 2곳(Y −152.5, Z 304·320, 권장) 또는 머리 밑 와셔 t1 1장(물림 7 = 1.4d) |
+| RX-06-C2-D2 | 위 볼트(Z 320) 머리 앞 렌치 길에 유연 관 `TU0604_M08P_U7C_FEED_A`(머리 자리는 앞 버전과 같음). 바디끼리는 1 mm 안에 없음 | U7_CASSETTE, 머리 X 62~67 · Y −152.5 · Z 320 앞(+X) | 모델링부 프로브 겹침 66.9 mm³(`mech_RX-06-C2_model1.md`). `inspect.clearance` 1.0의 near 목록에 관 없음 | 관 FEED_A 경로를 Y로 약 3 mm 비키거나 조립 순서(볼트 먼저, 관 나중)를 조립 메모에 |
