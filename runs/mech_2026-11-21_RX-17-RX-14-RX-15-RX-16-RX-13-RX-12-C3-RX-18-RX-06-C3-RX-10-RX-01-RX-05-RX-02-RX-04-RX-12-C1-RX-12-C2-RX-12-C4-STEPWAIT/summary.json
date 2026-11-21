@@ -1,0 +1,164 @@
+{
+ "run": "mech_2026-11-21_RX-17-RX-14-RX-15-RX-16-RX-13-RX-12-C3-RX-18-RX-06-C3-RX-10-RX-01-RX-05-RX-02-RX-04-RX-12-C1-RX-12-C2-RX-12-C4-STEPWAIT",
+ "status": "준비 못 함",
+ "engine": "v4.0.0",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-21",
+ "journal": "wf_f8ec63a2-ee4",
+ "totals": {
+  "agents": 8,
+  "agent_sec": 1230,
+  "input": 957404,
+  "cache_read": 8464090,
+  "output": 111716,
+  "tools": 134,
+  "wall_sec": 1230
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 473,
+   "agents": 3,
+   "output": 57074
+  },
+  "▸ modeling-round": {
+   "sec": 757,
+   "agents": 5,
+   "output": 54642
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 77,
+   "tokens": {
+    "input": 81290,
+    "cache_read": 148923,
+    "output": 11345
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 58,
+   "tokens": {
+    "input": 90585,
+    "cache_read": 161881,
+    "output": 8080
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 338,
+   "tokens": {
+    "input": 193311,
+    "cache_read": 2053875,
+    "output": 37649
+   },
+   "tools": 22,
+   "turns": 16
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 79,
+   "tokens": {
+    "input": 81331,
+    "cache_read": 148923,
+    "output": 11431
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 508,
+   "tokens": {
+    "input": 192336,
+    "cache_read": 4769941,
+    "output": 25191
+   },
+   "tools": 67,
+   "turns": 31
+  },
+  {
+   "label": "준비부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 74,
+   "tokens": {
+    "input": 103960,
+    "cache_read": 490483,
+    "output": 8016
+   },
+   "tools": 20,
+   "turns": 6
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 75,
+   "tokens": {
+    "input": 121070,
+    "cache_read": 606605,
+    "output": 7559
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 21,
+   "tokens": {
+    "input": 93521,
+    "cache_read": 83459,
+    "output": 2445
+   },
+   "tools": 9,
+   "turns": 2
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "status": "준비 못 함",
+  "why": "준비부가 다 만들지 못함 — 만든 것 0, 모델 변경 0, 새 번호 저장 0(config.json doc는 v2.17.2 그대로). 준비부가 만들 수 있는 준비물(조인트 587·floating 0, 연구 11개, REST 대기 포즈, machine.json, 모형 MAT_L·S·G·V·W, 상태 44)은 빠진 것이"
+ },
+ "retro": {
+  "new_ids": [
+   "WF-230",
+   "WF-231",
+   "WF-232",
+   "WF-233",
+   "WF-234"
+  ],
+  "repeat_ids": [
+   "WF-176"
+  ],
+  "one_line": "엔진 v4.0.0 회고(FSAP MAT-RS-001, 준비 단계 중단 — 모델 변경 0): C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/docs/reports/engine-candidates.md에 새 후보 5건 추가, WF-176 반복 2→3. WF-230 CAD 앱 버전이 실행 사이에 바뀌어 저장본이 다르게 재계산되는데 저장 때 버전 기록·시작 때 대조가 없음(오류 0→103, 과제 17건 0건 진행) / WF-231 MCP 서버 허용 폴더에 프로젝트가 없어 열기·저장 거부, 시작 확인 없음 / WF-232 준비 점검의 빠진 것이 실행 환경 문제뿐이어도 준비부가 불리고 중단 사유가 '준비 못 함'으로만 나감 / WF-233 큰 저장본 MCP open이 한도를 넘으면 서버가 약 4분 사라져 '앱 막힘' 절차를 못 씀 / WF-234 준비 단계 중단 실행은 최종 보고서가 없어 회고 절·실행 끝 로그인 확인이 빠짐. 고친 엔진 파일 없음(엔진은 읽기만). 커밋 안 함: 최종 보고서가 없고 새 버전 저장도 없어 요구서 8-5·실행 규칙 4대로 engine-candidates.md 변경은 다음 버전 커밋에 함께 넣는다. '워크플로우 개선 후보' 절도 붙일 최종 보고서가 없어 못 붙임. 미스미 로그인 확인은 이 부서에서 하지 않음. 실행 재개 전 사용자 몫 2건: SolidCraft 0.45.0 유지(피처 103개 복구 과제 먼저) 또는 앞 버전으로 되돌리기 결정, MCP 서버를 --allow-path <workspace>로 다시 띄우기."
+ },
+ "final_report": false,
+ "skipped": [],
+ "_counts": {
+  "부서": 8,
+  "시간 h": 0.3,
+  "출력 토큰": 111716,
+  "실패": 0
+ }
+}
