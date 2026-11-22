@@ -2,8 +2,8 @@
  "date": "2026-11-12",
  "pose": "REST step 0",
  "source": "RX-08 측정부 MCP measure {} 전수(v2.11.1, 3,166바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.20.4.sc",
- "doc_hash": "a5292722691523bd",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.21.1.sc",
+ "doc_hash": "c8fdc2cdd0a57630",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -57442,6 +57442,816 @@
    "spec": "",
    "unit": "U4_WHEEL_N",
    "component": "U4S_ROD"
+  },
+  "WP_TP_W_01/TP_W_01a": {
+   "name": "TP_W_01a",
+   "unit": "WP",
+   "component": "WP_TP_W_01",
+   "bbox": [
+    -3.5,
+    7.5,
+    -444.7,
+    -300.0,
+    0.0,
+    11.0
+   ],
+   "volume": 17508.7,
+   "mass": 22.586,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_02/TP_W_02a": {
+   "name": "TP_W_02a",
+   "unit": "WP",
+   "component": "WP_TP_W_02",
+   "bbox": [
+    -3.5,
+    7.5,
+    -589.4,
+    -444.7,
+    0.0,
+    11.0
+   ],
+   "volume": 17508.7,
+   "mass": 22.586,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_03/TP_W_03a": {
+   "name": "TP_W_03a",
+   "unit": "WP",
+   "component": "WP_TP_W_03",
+   "bbox": [
+    -3.5,
+    7.5,
+    -734.1,
+    -589.4,
+    0.0,
+    11.0
+   ],
+   "volume": 17508.7,
+   "mass": 22.586,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_04/TP_W_04a": {
+   "name": "TP_W_04a",
+   "unit": "WP",
+   "component": "WP_TP_W_04",
+   "bbox": [
+    -3.5,
+    7.5,
+    -878.8,
+    -734.1,
+    0.0,
+    11.0
+   ],
+   "volume": 17508.7,
+   "mass": 22.586,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_05/TP_W_05a": {
+   "name": "TP_W_05a",
+   "unit": "WP",
+   "component": "WP_TP_W_05",
+   "bbox": [
+    -3.5,
+    7.5,
+    -1023.5,
+    -878.8,
+    0.0,
+    11.0
+   ],
+   "volume": 17508.7,
+   "mass": 22.586,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_06/TP_W_06a": {
+   "name": "TP_W_06a",
+   "unit": "WP",
+   "component": "WP_TP_W_06",
+   "bbox": [
+    -3.5,
+    7.5,
+    -1051.0,
+    -1023.5,
+    0.0,
+    11.0
+   ],
+   "volume": 3327.5,
+   "mass": 4.292,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_06/TP_W_06b": {
+   "name": "TP_W_06b",
+   "unit": "WP",
+   "component": "WP_TP_W_06",
+   "bbox": [
+    -117.4,
+    -3.5,
+    -1051.0,
+    -1040.0,
+    0.0,
+    11.0
+   ],
+   "volume": 13781.9,
+   "mass": 17.779,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_07/TP_W_07a": {
+   "name": "TP_W_07a",
+   "unit": "WP",
+   "component": "WP_TP_W_07",
+   "bbox": [
+    -254.8,
+    -117.4,
+    -1051.0,
+    -1040.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16625.4,
+   "mass": 21.447,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_08/TP_W_08a": {
+   "name": "TP_W_08a",
+   "unit": "WP",
+   "component": "WP_TP_W_08",
+   "bbox": [
+    -392.2,
+    -254.8,
+    -1051.0,
+    -1040.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16625.4,
+   "mass": 21.447,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_09/TP_W_09a": {
+   "name": "TP_W_09a",
+   "unit": "WP",
+   "component": "WP_TP_W_09",
+   "bbox": [
+    -529.6,
+    -392.2,
+    -1051.0,
+    -1040.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16625.4,
+   "mass": 21.447,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_10/TP_W_10a": {
+   "name": "TP_W_10a",
+   "unit": "WP",
+   "component": "WP_TP_W_10",
+   "bbox": [
+    -667.0,
+    -529.6,
+    -1051.0,
+    -1040.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16625.4,
+   "mass": 21.447,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_11/TP_W_11a": {
+   "name": "TP_W_11a",
+   "unit": "WP",
+   "component": "WP_TP_W_11",
+   "bbox": [
+    -694.5,
+    -667.0,
+    -1051.0,
+    -1040.0,
+    0.0,
+    11.0
+   ],
+   "volume": 3327.5,
+   "mass": 4.292,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_11/TP_W_11b": {
+   "name": "TP_W_11b",
+   "unit": "WP",
+   "component": "WP_TP_W_11",
+   "bbox": [
+    -694.5,
+    -683.5,
+    -1040.0,
+    -941.75,
+    0.0,
+    11.0
+   ],
+   "volume": 11888.25,
+   "mass": 15.336,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_12/TP_W_12a": {
+   "name": "TP_W_12a",
+   "unit": "WP",
+   "component": "WP_TP_W_12",
+   "bbox": [
+    -694.5,
+    -683.5,
+    -941.75,
+    -820.0,
+    0.0,
+    11.0
+   ],
+   "volume": 14731.75,
+   "mass": 19.004,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_13/TP_W_13a": {
+   "name": "TP_W_13a",
+   "unit": "WP",
+   "component": "WP_TP_W_13",
+   "bbox": [
+    -694.5,
+    -683.5,
+    -820.0,
+    -698.25,
+    0.0,
+    11.0
+   ],
+   "volume": 14731.75,
+   "mass": 19.004,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_14/TP_W_14a": {
+   "name": "TP_W_14a",
+   "unit": "WP",
+   "component": "WP_TP_W_14",
+   "bbox": [
+    -694.5,
+    -683.5,
+    -698.25,
+    -576.5,
+    0.0,
+    11.0
+   ],
+   "volume": 14731.75,
+   "mass": 19.004,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_15/TP_W_15a": {
+   "name": "TP_W_15a",
+   "unit": "WP",
+   "component": "WP_TP_W_15",
+   "bbox": [
+    -694.5,
+    -683.5,
+    -576.5,
+    -549.0,
+    0.0,
+    11.0
+   ],
+   "volume": 3327.5,
+   "mass": 4.292,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_15/TP_W_15b": {
+   "name": "TP_W_15b",
+   "unit": "WP",
+   "component": "WP_TP_W_15",
+   "bbox": [
+    -683.5,
+    -600.3333,
+    -560.0,
+    -549.0,
+    0.0,
+    11.0
+   ],
+   "volume": 10063.171,
+   "mass": 12.981,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_16/TP_W_16a": {
+   "name": "TP_W_16a",
+   "unit": "WP",
+   "component": "WP_TP_W_16",
+   "bbox": [
+    -600.3333,
+    -493.6667,
+    -560.0,
+    -549.0,
+    0.0,
+    11.0
+   ],
+   "volume": 12906.659,
+   "mass": 16.65,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_17/TP_W_17a": {
+   "name": "TP_W_17a",
+   "unit": "WP",
+   "component": "WP_TP_W_17",
+   "bbox": [
+    -493.6667,
+    -383.5,
+    -560.0,
+    -549.0,
+    0.0,
+    11.0
+   ],
+   "volume": 13330.171,
+   "mass": 17.196,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_18/TP_W_18a": {
+   "name": "TP_W_18a",
+   "unit": "WP",
+   "component": "WP_TP_W_18",
+   "bbox": [
+    -394.5,
+    -383.5,
+    -549.0,
+    -428.25,
+    0.0,
+    11.0
+   ],
+   "volume": 14610.75,
+   "mass": 18.848,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_19/TP_W_19a": {
+   "name": "TP_W_19a",
+   "unit": "WP",
+   "component": "WP_TP_W_19",
+   "bbox": [
+    -394.5,
+    -383.5,
+    -428.25,
+    -300.0,
+    0.0,
+    11.0
+   ],
+   "volume": 15518.25,
+   "mass": 20.019,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_20/TP_W_20a": {
+   "name": "TP_W_20a",
+   "unit": "WP",
+   "component": "WP_TP_W_20",
+   "bbox": [
+    -394.5,
+    -383.5,
+    -300.0,
+    -171.75,
+    0.0,
+    11.0
+   ],
+   "volume": 15518.25,
+   "mass": 20.019,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_21/TP_W_21a": {
+   "name": "TP_W_21a",
+   "unit": "WP",
+   "component": "WP_TP_W_21",
+   "bbox": [
+    -394.5,
+    -383.5,
+    -171.75,
+    -40.0,
+    0.0,
+    11.0
+   ],
+   "volume": 15941.75,
+   "mass": 20.565,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_22/TP_W_22a": {
+   "name": "TP_W_22a",
+   "unit": "WP",
+   "component": "WP_TP_W_22",
+   "bbox": [
+    -527.0,
+    -394.5,
+    -51.0,
+    -40.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16032.5,
+   "mass": 20.682,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_23/TP_W_23a": {
+   "name": "TP_W_23a",
+   "unit": "WP",
+   "component": "WP_TP_W_23",
+   "bbox": [
+    -667.0,
+    -527.0,
+    -51.0,
+    -40.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16940.0,
+   "mass": 21.853,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_24/TP_W_24a": {
+   "name": "TP_W_24a",
+   "unit": "WP",
+   "component": "WP_TP_W_24",
+   "bbox": [
+    -694.5,
+    -667.0,
+    -51.0,
+    -40.0,
+    0.0,
+    11.0
+   ],
+   "volume": 3327.5,
+   "mass": 4.292,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_24/TP_W_24b": {
+   "name": "TP_W_24b",
+   "unit": "WP",
+   "component": "WP_TP_W_24",
+   "bbox": [
+    -694.5,
+    -683.5,
+    -40.0,
+    58.25,
+    0.0,
+    11.0
+   ],
+   "volume": 11888.25,
+   "mass": 15.336,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_25/TP_W_25a": {
+   "name": "TP_W_25a",
+   "unit": "WP",
+   "component": "WP_TP_W_25",
+   "bbox": [
+    -694.5,
+    -683.5,
+    58.25,
+    180.0,
+    0.0,
+    11.0
+   ],
+   "volume": 14731.75,
+   "mass": 19.004,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_26/TP_W_26a": {
+   "name": "TP_W_26a",
+   "unit": "WP",
+   "component": "WP_TP_W_26",
+   "bbox": [
+    -694.5,
+    -683.5,
+    180.0,
+    301.75,
+    0.0,
+    11.0
+   ],
+   "volume": 14731.75,
+   "mass": 19.004,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_27/TP_W_27a": {
+   "name": "TP_W_27a",
+   "unit": "WP",
+   "component": "WP_TP_W_27",
+   "bbox": [
+    -694.5,
+    -683.5,
+    301.75,
+    423.5,
+    0.0,
+    11.0
+   ],
+   "volume": 14731.75,
+   "mass": 19.004,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_28/TP_W_28a": {
+   "name": "TP_W_28a",
+   "unit": "WP",
+   "component": "WP_TP_W_28",
+   "bbox": [
+    -694.5,
+    -683.5,
+    423.5,
+    451.0,
+    0.0,
+    11.0
+   ],
+   "volume": 3327.5,
+   "mass": 4.292,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_28/TP_W_28b": {
+   "name": "TP_W_28b",
+   "unit": "WP",
+   "component": "WP_TP_W_28",
+   "bbox": [
+    -683.5,
+    -569.6,
+    440.0,
+    451.0,
+    0.0,
+    11.0
+   ],
+   "volume": 13781.9,
+   "mass": 17.779,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_29/TP_W_29a": {
+   "name": "TP_W_29a",
+   "unit": "WP",
+   "component": "WP_TP_W_29",
+   "bbox": [
+    -569.6,
+    -432.2,
+    440.0,
+    451.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16625.4,
+   "mass": 21.447,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_30/TP_W_30a": {
+   "name": "TP_W_30a",
+   "unit": "WP",
+   "component": "WP_TP_W_30",
+   "bbox": [
+    -432.2,
+    -294.8,
+    440.0,
+    451.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16625.4,
+   "mass": 21.447,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_31/TP_W_31a": {
+   "name": "TP_W_31a",
+   "unit": "WP",
+   "component": "WP_TP_W_31",
+   "bbox": [
+    -294.8,
+    -157.4,
+    440.0,
+    451.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16625.4,
+   "mass": 21.447,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_32/TP_W_32a": {
+   "name": "TP_W_32a",
+   "unit": "WP",
+   "component": "WP_TP_W_32",
+   "bbox": [
+    -157.4,
+    -20.0,
+    440.0,
+    451.0,
+    0.0,
+    11.0
+   ],
+   "volume": 16625.4,
+   "mass": 21.447,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_33/TP_W_33a": {
+   "name": "TP_W_33a",
+   "unit": "WP",
+   "component": "WP_TP_W_33",
+   "bbox": [
+    -20.0,
+    7.5,
+    440.0,
+    451.0,
+    0.0,
+    11.0
+   ],
+   "volume": 3327.5,
+   "mass": 4.292,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_33/TP_W_33b": {
+   "name": "TP_W_33b",
+   "unit": "WP",
+   "component": "WP_TP_W_33",
+   "bbox": [
+    -3.5,
+    7.5,
+    336.25,
+    440.0,
+    0.0,
+    11.0
+   ],
+   "volume": 12553.75,
+   "mass": 16.194,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_34/TP_W_34a": {
+   "name": "TP_W_34a",
+   "unit": "WP",
+   "component": "WP_TP_W_34",
+   "bbox": [
+    -3.5,
+    7.5,
+    209.0,
+    336.25,
+    0.0,
+    11.0
+   ],
+   "volume": 15397.25,
+   "mass": 19.862,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_35/TP_W_35a": {
+   "name": "TP_W_35a",
+   "unit": "WP",
+   "component": "WP_TP_W_35",
+   "bbox": [
+    -3.5,
+    7.5,
+    81.75,
+    209.0,
+    0.0,
+    11.0
+   ],
+   "volume": 15397.25,
+   "mass": 19.862,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_36/TP_W_36a": {
+   "name": "TP_W_36a",
+   "unit": "WP",
+   "component": "WP_TP_W_36",
+   "bbox": [
+    -3.5,
+    7.5,
+    -45.5,
+    81.75,
+    0.0,
+    11.0
+   ],
+   "volume": 15397.25,
+   "mass": 19.862,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_37/TP_W_37a": {
+   "name": "TP_W_37a",
+   "unit": "WP",
+   "component": "WP_TP_W_37",
+   "bbox": [
+    -3.5,
+    7.5,
+    -172.75,
+    -45.5,
+    0.0,
+    11.0
+   ],
+   "volume": 15397.25,
+   "mass": 19.862,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_38/TP_W_38a": {
+   "name": "TP_W_38a",
+   "unit": "WP",
+   "component": "WP_TP_W_38",
+   "bbox": [
+    -3.5,
+    7.5,
+    -300.0,
+    -172.75,
+    0.0,
+    11.0
+   ],
+   "volume": 15397.25,
+   "mass": 19.862,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
+  },
+  "WP_TP_W_SEAM/SEAM_W": {
+   "name": "SEAM_W",
+   "unit": "WP",
+   "component": "WP_TP_W_SEAM",
+   "bbox": [
+    -3.5,
+    8.5,
+    -330.0,
+    -300.0,
+    11.0,
+    12.0
+   ],
+   "volume": 360.0,
+   "mass": 0.464,
+   "material": "Default",
+   "bolt": false,
+   "spec": ""
   }
  }
 }
