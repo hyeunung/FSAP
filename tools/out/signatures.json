@@ -2,8 +2,8 @@
  "date": "2026-11-12",
  "pose": "REST step 0",
  "source": "RX-08 측정부 MCP measure {} 전수(v2.11.1, 3,166바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.17.2.sc",
- "doc_hash": "e6927e24cc5ee9d1",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.17.3.sc",
+ "doc_hash": "215ccd595dff9801",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -809,8 +809,8 @@
     120.0,
     195.0
    ],
-   "volume": 40595.441,
-   "mass": 321.922,
+   "volume": 36644.388,
+   "mass": 290.59,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -3221,8 +3221,8 @@
     13.0,
     60.0
    ],
-   "volume": 158143.675,
-   "mass": 159.725,
+   "volume": 159166.573,
+   "mass": 160.758,
    "material": "PA12",
    "bolt": false,
    "spec": ""
@@ -3437,8 +3437,8 @@
     560.0,
     650.0
    ],
-   "volume": 25226.486,
-   "mass": 200.046,
+   "volume": 22475.905,
+   "mass": 178.234,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -3707,8 +3707,8 @@
     17.0,
     54.5
    ],
-   "volume": 17626.997,
-   "mass": 139.782,
+   "volume": 17638.611,
+   "mass": 139.874,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -3718,15 +3718,15 @@
    "unit": "U7_TAPE_LINE",
    "component": "U7_TAPE_LINE",
    "bbox": [
-    21.554,
+    24.0,
     665.431,
     -125.5,
     -94.5,
-    575.987,
-    615.849
+    576.0,
+    615.0
    ],
-   "volume": 20813.955,
-   "mass": 26.85,
+   "volume": 20807.513,
+   "mass": 26.842,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -3736,15 +3736,15 @@
    "unit": "U7_TAPE_LINE",
    "component": "U7_TAPE_LINE",
    "bbox": [
-    13.14,
+    13.137,
     44.497,
-    -125.506,
-    -94.494,
+    -125.508,
+    -94.492,
     333.712,
     576.009
    ],
-   "volume": 7527.99,
-   "mass": 9.711,
+   "volume": 7503.297,
+   "mass": 9.679,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -5201,8 +5201,8 @@
     730.678,
     769.322
    ],
-   "volume": 233.515,
-   "mass": 1.833,
+   "volume": 233.353,
+   "mass": 1.832,
    "material": "Steel",
    "bolt": false,
    "spec": ""
@@ -5273,8 +5273,8 @@
     730.678,
     769.322
    ],
-   "volume": 233.515,
-   "mass": 1.833,
+   "volume": 233.353,
+   "mass": 1.832,
    "material": "Steel",
    "bolt": false,
    "spec": ""
@@ -5824,15 +5824,15 @@
    "unit": "U6_SHOE",
    "component": "TU0604_M08P_U6P_B",
    "bbox": [
-    -100.104,
-    -49.999,
-    -189.001,
-    -143.498,
+    -100.0,
+    -50.0,
+    -189.0,
+    -143.5,
     99.7,
     218.0
    ],
-   "volume": 5313.49,
-   "mass": 6.854,
+   "volume": 5317.091,
+   "mass": 6.859,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -6589,78 +6589,6 @@
    ],
    "volume": 21953.778,
    "mass": 28.32,
-   "material": "Default",
-   "bolt": false,
-   "spec": ""
-  },
-  "U7_CASSETTE/TU0604_M08P_U7C_TUCK_A": {
-   "name": "TU0604_M08P_U7C_TUCK_A",
-   "unit": "U7_TAPE",
-   "component": "TU0604_M08P_U7C_TUCK_A",
-   "bbox": [
-    25.898,
-    124.003,
-    -255.015,
-    -150.494,
-    32.08,
-    683.004
-   ],
-   "volume": 22108.792,
-   "mass": 28.52,
-   "material": "Default",
-   "bolt": false,
-   "spec": ""
-  },
-  "U7_CASSETTE/TU0604_M08P_U7C_TUCK_B": {
-   "name": "TU0604_M08P_U7C_TUCK_B",
-   "unit": "U7_TAPE",
-   "component": "TU0604_M08P_U7C_TUCK_B",
-   "bbox": [
-    25.979,
-    124.023,
-    -291.016,
-    -130.462,
-    32.077,
-    683.012
-   ],
-   "volume": 23214.632,
-   "mass": 29.947,
-   "material": "Default",
-   "bolt": false,
-   "spec": ""
-  },
-  "U7_CASSETTE/TU0604_M08P_U7C_FEED_A": {
-   "name": "TU0604_M08P_U7C_FEED_A",
-   "unit": "U7_TAPE",
-   "component": "TU0604_M08P_U7C_FEED_A",
-   "bbox": [
-    59.0,
-    107.007,
-    -156.502,
-    -120.5,
-    299.979,
-    666.001
-   ],
-   "volume": 11766.211,
-   "mass": 15.178,
-   "material": "Default",
-   "bolt": false,
-   "spec": ""
-  },
-  "U7_CASSETTE/TU0604_M08P_U7C_FEED_B": {
-   "name": "TU0604_M08P_U7C_FEED_B",
-   "unit": "U7_TAPE",
-   "component": "TU0604_M08P_U7C_FEED_B",
-   "bbox": [
-    59.0,
-    107.002,
-    -144.225,
-    -120.5,
-    501.996,
-    666.002
-   ],
-   "volume": 5840.795,
-   "mass": 7.535,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -7595,8 +7523,8 @@
     -46.16,
     -44.72
    ],
-   "volume": 233.207,
-   "mass": 1.831,
+   "volume": 233.353,
+   "mass": 1.832,
    "material": "Steel",
    "bolt": false,
    "spec": ""
@@ -7631,8 +7559,8 @@
     -55.28,
     -53.84
    ],
-   "volume": 233.207,
-   "mass": 1.831,
+   "volume": 233.353,
+   "mass": 1.832,
    "material": "Steel",
    "bolt": false,
    "spec": ""
@@ -7667,8 +7595,8 @@
     -26.16,
     -24.72
    ],
-   "volume": 233.208,
-   "mass": 1.831,
+   "volume": 233.353,
+   "mass": 1.832,
    "material": "Steel",
    "bolt": false,
    "spec": ""
@@ -7703,8 +7631,8 @@
     -35.28,
     -33.84
    ],
-   "volume": 233.207,
-   "mass": 1.831,
+   "volume": 233.353,
+   "mass": 1.832,
    "material": "Steel",
    "bolt": false,
    "spec": ""
@@ -9935,8 +9863,8 @@
     68.0,
     132.0
    ],
-   "volume": 41382.193,
-   "mass": 111.732,
+   "volume": 41997.755,
+   "mass": 113.394,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -10162,15 +10090,15 @@
    "unit": "U5_WHEEL_F",
    "component": "TU0604_M08P_U5C_1",
    "bbox": [
-    -2003.704,
-    -1929.982,
-    42.497,
-    253.076,
+    -2003.7,
+    -1930.0,
+    42.5,
+    253.0,
     247.0,
-    827.033
+    827.0
    ],
-   "volume": 22127.715,
-   "mass": 28.545,
+   "volume": 22129.295,
+   "mass": 28.547,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -10180,15 +10108,15 @@
    "unit": "U5_WHEEL_F",
    "component": "TU0604_M08P_U5C_2",
    "bbox": [
-    -2003.714,
+    -2003.7,
     -1930.0,
-    -18.052,
-    253.014,
-    187.44,
-    815.015
+    -18.0,
+    253.0,
+    187.5,
+    815.0
    ],
-   "volume": 25591.496,
-   "mass": 33.013,
+   "volume": 25593.849,
+   "mass": 33.016,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -10925,8 +10853,8 @@
     62.222,
     135.382
    ],
-   "volume": 41382.193,
-   "mass": 111.732,
+   "volume": 41997.755,
+   "mass": 113.394,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -12898,15 +12826,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U4_B",
    "bbox": [
-    -211.607,
-    1052.819,
-    49.92,
+    -211.5,
+    1052.75,
+    50.0,
     171.5,
-    219.864,
-    433.002
+    220.0,
+    433.0
    ],
-   "volume": 46425.903,
-   "mass": 59.889,
+   "volume": 46496.109,
+   "mass": 59.98,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -12916,15 +12844,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U6",
    "bbox": [
-    -350.449,
-    1073.926,
-    -133.11,
-    111.21,
+    -350.0,
+    1073.75,
+    -133.0,
+    111.0,
     210.3,
     331.4
    ],
-   "volume": 49292.648,
-   "mass": 63.588,
+   "volume": 49346.022,
+   "mass": 63.657,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -12934,15 +12862,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U5_B",
    "bbox": [
-    -1312.997,
-    1063.832,
-    59.755,
-    253.205,
+    -1313.0,
+    1063.25,
+    60.0,
+    253.0,
     370.6,
-    683.094
+    683.001
    ],
-   "volume": 81904.891,
-   "mass": 105.657,
+   "volume": 81975.36,
+   "mass": 105.748,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -12952,15 +12880,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U7_4_A",
    "bbox": [
-    -36.428,
+    -36.3,
     1084.25,
-    -156.804,
-    133.286,
-    283.409,
-    793.328
+    -156.5,
+    133.0,
+    283.4,
+    793.0
    ],
-   "volume": 57262.664,
-   "mass": 73.869,
+   "volume": 57296.878,
+   "mass": 73.913,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -12970,15 +12898,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U7_4_B",
    "bbox": [
-    -36.302,
-    1084.357,
-    -136.898,
-    133.166,
+    -36.3,
+    1084.25,
+    -136.5,
+    133.0,
     370.6,
-    784.131
+    784.0
    ],
-   "volume": 50294.115,
-   "mass": 64.879,
+   "volume": 50329.079,
+   "mass": 64.924,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -12988,15 +12916,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U7_5_A",
    "bbox": [
-    -53.455,
+    -53.3,
     1094.75,
-    -156.847,
-    143.3,
-    283.411,
-    793.356
+    -156.5,
+    143.0,
+    283.4,
+    793.0
    ],
-   "volume": 58301.313,
-   "mass": 75.209,
+   "volume": 58339.907,
+   "mass": 75.259,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -13006,15 +12934,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U7_5_B",
    "bbox": [
-    -53.528,
-    1094.754,
-    -136.884,
-    143.146,
+    -53.3,
+    1094.75,
+    -136.5,
+    143.0,
     370.6,
-    784.103
+    784.0
    ],
-   "volume": 51360.839,
-   "mass": 66.255,
+   "volume": 51349.504,
+   "mass": 66.24,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -13024,15 +12952,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U7_6_A",
    "bbox": [
-    -70.56,
-    1105.276,
-    -156.898,
-    153.274,
-    283.414,
-    793.351
+    -70.3,
+    1105.25,
+    -156.5,
+    153.0,
+    283.4,
+    793.0
    ],
-   "volume": 59453.586,
-   "mass": 76.695,
+   "volume": 59496.153,
+   "mass": 76.75,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -13042,15 +12970,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U7_6_B",
    "bbox": [
-    -70.345,
-    1105.34,
-    -136.865,
-    153.176,
+    -70.3,
+    1105.25,
+    -136.5,
+    153.0,
     370.6,
-    784.079
+    784.0
    ],
-   "volume": 52440.837,
-   "mass": 67.649,
+   "volume": 52481.387,
+   "mass": 67.701,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -13364,15 +13292,15 @@
   "U8_PNEU/TU0604_M08P_U4_A2": {
    "name": "TU0604_M08P_U4_A2",
    "bbox": [
-    -211.501,
-    731.334,
-    75.726,
-    216.874,
-    189.247,
+    -211.5,
+    730.94,
+    76.0,
+    217.0,
+    189.5,
     465.7
    ],
-   "volume": 38080.929,
-   "mass": 49.124,
+   "volume": 38122.911,
+   "mass": 49.178,
    "material": "Default",
    "bolt": false,
    "spec": "",
@@ -13384,15 +13312,15 @@
    "unit": "U8_PNEU",
    "component": "TU0805_M08P_P",
    "bbox": [
-    976.0,
-    1020.03,
+    976.001,
+    1020.089,
     103.5,
     112.0,
-    297.962,
-    355.0
+    297.905,
+    354.999
    ],
-   "volume": 3811.255,
-   "mass": 4.917,
+   "volume": 3810.604,
+   "mass": 4.916,
    "material": "Default",
    "bolt": false,
    "spec": ""
@@ -18017,8 +17945,8 @@
     358.0,
     422.0
    ],
-   "volume": 41382.193,
-   "mass": 111.732,
+   "volume": 41997.755,
+   "mass": 113.394,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19092,13 +19020,13 @@
    "bbox": [
     545.0,
     585.0,
-    -655.001,
-    2195.001,
+    -180.0,
+    1540.0,
     -172.0,
     -92.0
    ],
-   "volume": 1927352.868,
-   "mass": 5203.853,
+   "volume": 1918121.482,
+   "mass": 5178.928,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19110,13 +19038,13 @@
    "bbox": [
     935.0,
     975.0,
-    -655.001,
-    2195.001,
+    -180.0,
+    1540.0,
     -172.0,
     -92.0
    ],
-   "volume": 1927352.868,
-   "mass": 5203.853,
+   "volume": 1918121.482,
+   "mass": 5178.928,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19126,15 +19054,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
-    200.001,
+    -2175.0,
+    -420.0,
     -120.0,
     -80.0,
     -92.0,
     -12.0
    ],
-   "volume": 1966582.153,
-   "mass": 5309.772,
+   "volume": 1957153.024,
+   "mass": 5284.313,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19144,15 +19072,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
-    200.001,
+    -2175.0,
+    -420.0,
     80.0,
     120.0,
     -92.0,
     -12.0
    ],
-   "volume": 1966582.153,
-   "mass": 5309.772,
+   "volume": 1957153.024,
+   "mass": 5284.313,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19162,15 +19090,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     380.0,
     -1520.0,
     -1480.0,
     -92.0,
     -12.0
    ],
-   "volume": 2863029.858,
-   "mass": 7730.181,
+   "volume": 2849302.551,
+   "mass": 7693.117,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19180,15 +19108,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     380.0,
     -1220.0,
     -1180.0,
     -92.0,
     -12.0
    ],
-   "volume": 2863029.858,
-   "mass": 7730.181,
+   "volume": 2849302.551,
+   "mass": 7693.117,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19198,15 +19126,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     380.0,
     -920.0,
     -880.0,
     -92.0,
     -12.0
    ],
-   "volume": 2863029.858,
-   "mass": 7730.181,
+   "volume": 2849302.551,
+   "mass": 7693.117,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19216,15 +19144,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     380.0,
     -620.0,
     -580.0,
     -92.0,
     -12.0
    ],
-   "volume": 2863029.858,
-   "mass": 7730.181,
+   "volume": 2849302.551,
+   "mass": 7693.117,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19234,15 +19162,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     380.0,
     -320.0,
     -280.0,
     -92.0,
     -12.0
    ],
-   "volume": 2863029.858,
-   "mass": 7730.181,
+   "volume": 2849302.551,
+   "mass": 7693.117,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19254,13 +19182,13 @@
    "bbox": [
     -2155.0,
     -2115.0,
-    -2015.001,
+    -1540.0,
     1540.0,
     -172.0,
     -92.0
    ],
-   "volume": 3451420.434,
-   "mass": 9318.835,
+   "volume": 3434775.678,
+   "mass": 9273.894,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19272,13 +19200,13 @@
    "bbox": [
     -1555.0,
     -1515.0,
-    -2015.001,
+    -1540.0,
     1540.0,
     -172.0,
     -92.0
    ],
-   "volume": 3451420.434,
-   "mass": 9318.835,
+   "volume": 3434775.678,
+   "mass": 9273.894,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19290,13 +19218,13 @@
    "bbox": [
     -955.0,
     -915.0,
-    -2015.001,
+    -1540.0,
     1540.0,
     -172.0,
     -92.0
    ],
-   "volume": 3451420.434,
-   "mass": 9318.835,
+   "volume": 3434775.678,
+   "mass": 9273.894,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19308,13 +19236,13 @@
    "bbox": [
     -460.0,
     -420.0,
-    -2015.001,
+    -1540.0,
     1540.0,
     -172.0,
     -92.0
    ],
-   "volume": 3454612.438,
-   "mass": 9327.454,
+   "volume": 3434775.678,
+   "mass": 9273.895,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19324,15 +19252,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     975.0,
     280.0,
     320.0,
     -92.0,
     -12.0
    ],
-   "volume": 3529861.807,
-   "mass": 9530.627,
+   "volume": 3512838.762,
+   "mass": 9484.665,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19342,15 +19270,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     975.0,
     580.0,
     620.0,
     -92.0,
     -12.0
    ],
-   "volume": 3529861.807,
-   "mass": 9530.627,
+   "volume": 3512838.762,
+   "mass": 9484.665,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19360,15 +19288,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     975.0,
     880.0,
     920.0,
     -92.0,
     -12.0
    ],
-   "volume": 3529861.807,
-   "mass": 9530.627,
+   "volume": 3512838.762,
+   "mass": 9484.665,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19378,15 +19306,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     975.0,
     1180.0,
     1220.0,
     -92.0,
     -12.0
    ],
-   "volume": 3529861.807,
-   "mass": 9530.627,
+   "volume": 3512838.762,
+   "mass": 9484.665,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -19396,15 +19324,15 @@
    "unit": "U2_TABLE",
    "component": "U2_TABLE",
    "bbox": [
-    -2650.001,
+    -2175.0,
     975.0,
     1480.0,
     1520.0,
     -92.0,
     -12.0
    ],
-   "volume": 3529861.807,
-   "mass": 9530.627,
+   "volume": 3512838.762,
+   "mass": 9484.665,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48700,15 +48628,15 @@
    "unit": "U1_FRAME",
    "component": "U1_FRAME",
    "bbox": [
-    -2585.001,
+    -2300.0,
     1150.0,
     1480.0,
     1520.0,
     -330.0,
     -250.0
    ],
-   "volume": 3875844.07,
-   "mass": 10464.779,
+   "volume": 3847394.834,
+   "mass": 10387.966,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48718,15 +48646,15 @@
    "unit": "U1_FRAME",
    "component": "U1_FRAME",
    "bbox": [
-    -2585.001,
+    -2300.0,
     1150.0,
     -20.0,
     20.0,
     -410.0,
     -330.0
    ],
-   "volume": 3875844.07,
-   "mass": 10464.779,
+   "volume": 3847394.834,
+   "mass": 10387.966,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48738,13 +48666,13 @@
    "bbox": [
     -2300.0,
     -2260.0,
-    -1765.001,
+    -1480.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 3316949.508,
-   "mass": 8955.764,
+   "volume": 3300953.249,
+   "mass": 8912.574,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48756,13 +48684,13 @@
    "bbox": [
     -2155.0,
     -2115.0,
-    -1765.001,
+    -1480.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 3316949.508,
-   "mass": 8955.764,
+   "volume": 3300953.249,
+   "mass": 8912.574,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48774,13 +48702,13 @@
    "bbox": [
     -1555.0,
     -1515.0,
-    -1765.001,
+    -1480.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 3316949.508,
-   "mass": 8955.764,
+   "volume": 3300953.249,
+   "mass": 8912.574,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48792,13 +48720,13 @@
    "bbox": [
     -955.0,
     -915.0,
-    -1765.001,
+    -1480.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 3316949.508,
-   "mass": 8955.764,
+   "volume": 3300953.249,
+   "mass": 8912.574,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48810,13 +48738,13 @@
    "bbox": [
     -460.0,
     -420.0,
-    -1765.001,
+    -1480.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 3316949.508,
-   "mass": 8955.764,
+   "volume": 3300953.249,
+   "mass": 8912.574,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48828,13 +48756,13 @@
    "bbox": [
     340.0,
     380.0,
-    -1765.001,
+    -1480.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 3316949.508,
-   "mass": 8955.764,
+   "volume": 3300953.249,
+   "mass": 8912.574,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -48846,13 +48774,13 @@
    "bbox": [
     1110.0,
     1150.0,
-    -1765.001,
+    -1480.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 3316949.508,
-   "mass": 8955.764,
+   "volume": 3300953.249,
+   "mass": 8912.574,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -55090,15 +55018,15 @@
    "unit": "U1_FRAME",
    "component": "U1_FRAME",
    "bbox": [
-    -2585.001,
+    -2300.0,
     380.0,
     -1520.0,
     -1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 3003099.812,
-   "mass": 8108.369,
+   "volume": 2988700.915,
+   "mass": 8069.492,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -55128,13 +55056,13 @@
    "bbox": [
     545.0,
     585.0,
-    -545.001,
+    -260.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 1949768.853,
-   "mass": 5264.376,
+   "volume": 1940425.221,
+   "mass": 5239.148,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -55146,13 +55074,13 @@
    "bbox": [
     935.0,
     975.0,
-    -545.001,
+    -260.0,
     1480.0,
     -330.0,
     -250.0
    ],
-   "volume": 1949768.853,
-   "mass": 5264.376,
+   "volume": 1940425.221,
+   "mass": 5239.148,
    "material": "Aluminum",
    "bolt": false,
    "spec": ""
@@ -56528,15 +56456,15 @@
   "TU0604_M08P_RX08_A/TU0604_M08P_RX08_A": {
    "name": "TU0604_M08P_RX08_A",
    "bbox": [
-    -172.181,
-    1126.53,
-    59.33,
-    113.295,
+    -172.0,
+    1126.25,
+    60.0,
+    113.0,
     340.0,
-    394.296
+    394.0
    ],
-   "volume": 39532.88,
-   "mass": 50.997,
+   "volume": 39560.25,
+   "mass": 51.032,
    "material": "Default",
    "bolt": false,
    "spec": "",
@@ -56546,15 +56474,15 @@
   "TU0604_M08P_RX08_B/TU0604_M08P_RX08_B": {
    "name": "TU0604_M08P_RX08_B",
    "bbox": [
-    -172.345,
-    1158.351,
-    57.948,
-    113.348,
-    308.824,
-    384.345
+    -172.0,
+    1158.0,
+    58.0,
+    113.0,
+    309.0,
+    384.0
    ],
-   "volume": 43377.829,
-   "mass": 55.957,
+   "volume": 43431.74,
+   "mass": 56.027,
    "material": "Default",
    "bolt": false,
    "spec": "",
@@ -56654,15 +56582,15 @@
   "TU0604_M08P_RX08_B_U4/TU0604_M08P_RX08_B_U4": {
    "name": "TU0604_M08P_RX08_B_U4",
    "bbox": [
-    -219.509,
-    -165.975,
-    57.989,
-    159.024,
-    88.986,
-    340.121
+    -219.5,
+    -166.0,
+    58.0,
+    159.0,
+    89.0,
+    340.0
    ],
-   "volume": 12133.695,
-   "mass": 15.652,
+   "volume": 12147.506,
+   "mass": 15.67,
    "material": "Default",
    "bolt": false,
    "spec": "",
@@ -56836,15 +56764,15 @@
    "unit": "U8_PNEU",
    "component": "TU0604_M08P_U5_A2",
    "bbox": [
-    -1308.993,
-    831.043,
-    91.982,
-    253.144,
+    -1309.0,
+    830.94,
+    92.0,
+    253.0,
     483.9,
-    693.084
+    693.0
    ],
-   "volume": 71445.686,
-   "mass": 92.165,
+   "volume": 71492.174,
+   "mass": 92.225,
    "material": "Default",
    "bolt": false,
    "spec": ""
