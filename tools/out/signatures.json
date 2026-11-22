@@ -2,8 +2,8 @@
  "date": "2026-11-12",
  "pose": "REST step 0",
  "source": "RX-08 측정부 MCP measure {} 전수(v2.11.1, 3,166바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.20.2.sc",
- "doc_hash": "4607744f070619d2",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.20.4.sc",
+ "doc_hash": "a5292722691523bd",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -517,12 +517,12 @@
     -330.0,
     -140.0,
     -60.0,
-    266.0,
-    241.999,
-    250.001
+    140.0,
+    242.0,
+    250.0
    ],
-   "volume": 380844.131,
-   "mass": 3020.094,
+   "volume": 288296.053,
+   "mass": 2286.188,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -3515,72 +3515,18 @@
    "bolt": false,
    "spec": ""
   },
-  "U4S_CYL/STEP대기_CDQ2YA20-25DMZ": {
-   "name": "STEP대기_CDQ2YA20-25DMZ",
-   "bbox": [
-    -258.0,
-    -222.0,
-    177.93,
-    222.43,
-    205.0,
-    241.0
-   ],
-   "volume": 54467.875,
-   "mass": 147.063,
-   "material": "Aluminum",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_WHEEL_N",
-   "component": "U4S_CYL"
-  },
-  "U4S_CYL/P_M02S_CYL_BRKT": {
-   "name": "P_M02S_CYL_BRKT",
-   "bbox": [
-    -265.0,
-    -215.0,
-    222.43,
-    262.0,
-    205.0,
-    242.0
-   ],
-   "volume": 19551.057,
-   "mass": 155.04,
-   "material": "SUS304",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_WHEEL_N",
-   "component": "U4S_CYL"
-  },
-  "U4S_ROD/STEP대기_CDQ2YA20-25DMZ_ROD": {
-   "name": "STEP대기_CDQ2YA20-25DMZ_ROD",
-   "bbox": [
-    -245.0,
-    -235.0,
-    157.894,
-    205.894,
-    218.0,
-    228.0
-   ],
-   "volume": 3769.285,
-   "mass": 29.589,
-   "material": "S45C",
-   "bolt": false,
-   "spec": "",
-   "unit": "U4_WHEEL_N",
-   "component": "U4S_ROD"
-  },
   "U4S_ROD/STEP대기_Y-020B": {
    "name": "STEP대기_Y-020B",
    "bbox": [
     -251.0,
     -229.0,
-    121.894,
-    157.894,
+    105.894,
+    141.894,
     213.0,
     233.0
    ],
-   "volume": 10250.352,
-   "mass": 80.465,
+   "volume": 9814.451,
+   "mass": 77.043,
    "material": "Steel",
    "bolt": false,
    "spec": "",
@@ -3597,8 +3543,8 @@
     217.0,
     229.0
    ],
-   "volume": 1407.21,
-   "mass": 11.047,
+   "volume": 1407.434,
+   "mass": 11.048,
    "material": "S45C",
    "bolt": false,
    "spec": "",
@@ -3689,8 +3635,8 @@
     250.0,
     482.0
    ],
-   "volume": 383445.752,
-   "mass": 1027.635,
+   "volume": 383289.21,
+   "mass": 1027.215,
    "material": "A5052",
    "bolt": false,
    "spec": ""
@@ -3803,125 +3749,17 @@
    "unit": "U4_XCAR",
    "component": "BLOCK_SSEB13-570"
   },
-  "CB5-12_M02S_BEAM_1/CB5-12_M02S_BEAM_1": {
-   "name": "CB5-12_M02S_BEAM_1",
-   "bbox": [
-    -259.25,
-    -250.75,
-    243.75,
-    252.25,
-    231.0,
-    248.0
-   ],
-   "volume": 476.364,
-   "mass": 3.739,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12",
-   "unit": "U4_WHEEL_N",
-   "component": "CB5-12_M02S_BEAM_1"
-  },
-  "CB5-12_M02S_BEAM_2/CB5-12_M02S_BEAM_2": {
-   "name": "CB5-12_M02S_BEAM_2",
-   "bbox": [
-    -229.25,
-    -220.75,
-    243.75,
-    252.25,
-    231.0,
-    248.0
-   ],
-   "volume": 476.364,
-   "mass": 3.739,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12",
-   "unit": "U4_WHEEL_N",
-   "component": "CB5-12_M02S_BEAM_2"
-  },
-  "CB5-12_M02S_CYL_1/CB5-12_M02S_CYL_1": {
-   "name": "CB5-12_M02S_CYL_1",
-   "bbox": [
-    -257.0,
-    -248.5,
-    216.43,
-    233.43,
-    206.0,
-    214.5
-   ],
-   "volume": 476.364,
-   "mass": 3.739,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12",
-   "unit": "U4_WHEEL_N",
-   "component": "CB5-12_M02S_CYL_1"
-  },
-  "CB5-12_M02S_CYL_2/CB5-12_M02S_CYL_2": {
-   "name": "CB5-12_M02S_CYL_2",
-   "bbox": [
-    -231.5,
-    -223.0,
-    216.43,
-    233.43,
-    206.0,
-    214.5
-   ],
-   "volume": 476.364,
-   "mass": 3.739,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12",
-   "unit": "U4_WHEEL_N",
-   "component": "CB5-12_M02S_CYL_2"
-  },
-  "CB5-12_M02S_CYL_3/CB5-12_M02S_CYL_3": {
-   "name": "CB5-12_M02S_CYL_3",
-   "bbox": [
-    -257.0,
-    -248.5,
-    216.43,
-    233.43,
-    231.5,
-    240.0
-   ],
-   "volume": 476.364,
-   "mass": 3.739,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12",
-   "unit": "U4_WHEEL_N",
-   "component": "CB5-12_M02S_CYL_3"
-  },
-  "CB5-12_M02S_CYL_4/CB5-12_M02S_CYL_4": {
-   "name": "CB5-12_M02S_CYL_4",
-   "bbox": [
-    -231.5,
-    -223.0,
-    216.43,
-    233.43,
-    231.5,
-    240.0
-   ],
-   "volume": 476.364,
-   "mass": 3.739,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12",
-   "unit": "U4_WHEEL_N",
-   "component": "CB5-12_M02S_CYL_4"
-  },
   "KQ2L06-M5A_M02S_ROD/KQ2L06-M5A_M02S_ROD": {
    "name": "KQ2L06-M5A_M02S_ROD",
    "bbox": [
-    -225.0,
-    -203.3,
-    171.5,
-    190.041,
-    217.8,
-    228.2
+    -245.2,
+    -234.8,
+    9.359,
+    27.9,
+    186.3,
+    208.0
    ],
-   "volume": 1290.462,
+   "volume": 1290.554,
    "mass": 1.665,
    "material": "Default",
    "bolt": false,
@@ -3932,14 +3770,14 @@
   "KQ2L06-M5A_M02S_HEAD/KQ2L06-M5A_M02S_HEAD": {
    "name": "KQ2L06-M5A_M02S_HEAD",
    "bbox": [
-    -225.0,
-    -203.3,
-    208.8,
-    219.2,
-    208.5,
-    227.041
+    -244.041,
+    -225.5,
+    -35.3,
+    -24.9,
+    186.3,
+    208.0
    ],
-   "volume": 1290.462,
+   "volume": 1290.554,
    "mass": 1.665,
    "material": "Default",
    "bolt": false,
@@ -10771,21 +10609,21 @@
   },
   "U8_PNEU/TU0604_M08P_U4_B": {
    "name": "TU0604_M08P_U4_B",
-   "unit": "U8_PNEU",
-   "component": "TU0604_M08P_U4_B",
    "bbox": [
-    -211.5,
+    -162.506,
     1052.75,
     50.0,
-    171.5,
-    220.0,
+    113.0,
+    340.0,
     433.0
    ],
-   "volume": 46496.109,
-   "mass": 59.98,
+   "volume": 39321.23,
+   "mass": 50.724,
    "material": "Default",
    "bolt": false,
-   "spec": ""
+   "spec": "",
+   "unit": "U8_PNEU",
+   "component": "TU0604_M08P_U4_B"
   },
   "U8_PNEU/TU0604_M08P_U6": {
    "name": "TU0604_M08P_U6",
@@ -11132,15 +10970,15 @@
   "U8_PNEU/TU0604_M08P_U4_A2": {
    "name": "TU0604_M08P_U4_A2",
    "bbox": [
-    -211.5,
+    -162.506,
     730.94,
     76.0,
-    217.0,
-    189.5,
+    113.0,
+    340.0,
     465.7
    ],
-   "volume": 38122.911,
-   "mass": 49.178,
+   "volume": 28880.252,
+   "mass": 37.256,
    "material": "Default",
    "bolt": false,
    "spec": "",
@@ -57334,6 +57172,276 @@
    "volume": 41.555,
    "mass": 0.33,
    "material": "SUS304"
+  },
+  "U4S_CYL/STEP대기_CDQSYB20-25DCM": {
+   "name": "STEP대기_CDQSYB20-25DCM",
+   "bbox": [
+    -258.0,
+    -222.0,
+    -38.1,
+    21.4,
+    205.0,
+    241.0
+   ],
+   "volume": 73565.472,
+   "mass": 198.627,
+   "material": "Aluminum",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "U4S_CYL"
+  },
+  "U4S_CYL/P_RX13_CYL_BRKT_밀링": {
+   "name": "P_RX13_CYL_BRKT_밀링",
+   "bbox": [
+    -275.0,
+    -205.0,
+    -45.1,
+    -8.1,
+    203.0,
+    242.0
+   ],
+   "volume": 25388.724,
+   "mass": 201.333,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "U4S_CYL"
+  },
+  "U4S_ROD/STEP대기_CDQSYB20-25DCM_ROD": {
+   "name": "STEP대기_CDQSYB20-25DCM_ROD",
+   "bbox": [
+    -247.506,
+    -232.494,
+    16.894,
+    64.894,
+    216.5,
+    229.5
+   ],
+   "volume": 3854.539,
+   "mass": 30.258,
+   "material": "S45C",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "U4S_ROD"
+  },
+  "U4S_ROD/P_RX13_ROD_EXT_선반": {
+   "name": "P_RX13_ROD_EXT_선반",
+   "bbox": [
+    -247.0,
+    -233.0,
+    55.894,
+    114.894,
+    216.0,
+    230.0
+   ],
+   "volume": 7117.038,
+   "mass": 56.438,
+   "material": "SUS303",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "U4S_ROD"
+  },
+  "TU0604_M08P_U4_A2_U4/TU0604_M08P_U4_A2_U4": {
+   "name": "TU0604_M08P_U4_A2_U4",
+   "bbox": [
+    -243.0,
+    -156.506,
+    27.9,
+    82.0,
+    188.5,
+    340.0
+   ],
+   "volume": 7543.272,
+   "mass": 9.731,
+   "material": "Default",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "TU0604_M08P_U4_A2_U4"
+  },
+  "TU0604_M08P_U4_B_U4/TU0604_M08P_U4_B_U4": {
+   "name": "TU0604_M08P_U4_B_U4",
+   "bbox": [
+    -225.5,
+    -156.506,
+    -33.1,
+    73.0,
+    188.5,
+    340.0
+   ],
+   "volume": 8154.673,
+   "mass": 10.52,
+   "material": "Default",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "TU0604_M08P_U4_B_U4"
+  },
+  "CB6-16_RX13_CYL_1/CB6-16_RX13_CYL_1": {
+   "name": "CB6-16_RX13_CYL_1",
+   "bbox": [
+    -257.75,
+    -247.75,
+    -51.1,
+    -29.1,
+    205.25,
+    215.25
+   ],
+   "volume": 843.416,
+   "mass": 6.621,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB6-16",
+   "unit": "U4_WHEEL_N",
+   "component": "CB6-16_RX13_CYL_1"
+  },
+  "CB5-16_RX13_BRKT_1/CB5-16_RX13_BRKT_1": {
+   "name": "CB5-16_RX13_BRKT_1",
+   "bbox": [
+    -271.25,
+    -262.75,
+    -35.35,
+    -26.85,
+    234.0,
+    255.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16",
+   "unit": "U4_WHEEL_N",
+   "component": "CB5-16_RX13_BRKT_1"
+  },
+  "CB6-16_RX13_CYL_2/CB6-16_RX13_CYL_2": {
+   "name": "CB6-16_RX13_CYL_2",
+   "bbox": [
+    -232.25,
+    -222.25,
+    -51.1,
+    -29.1,
+    205.25,
+    215.25
+   ],
+   "volume": 843.416,
+   "mass": 6.621,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB6-16",
+   "unit": "U4_WHEEL_N",
+   "component": "CB6-16_RX13_CYL_2"
+  },
+  "CB5-16_RX13_BRKT_2/CB5-16_RX13_BRKT_2": {
+   "name": "CB5-16_RX13_BRKT_2",
+   "bbox": [
+    -271.25,
+    -262.75,
+    -19.35,
+    -10.85,
+    234.0,
+    255.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16",
+   "unit": "U4_WHEEL_N",
+   "component": "CB5-16_RX13_BRKT_2"
+  },
+  "CB6-16_RX13_CYL_3/CB6-16_RX13_CYL_3": {
+   "name": "CB6-16_RX13_CYL_3",
+   "bbox": [
+    -257.75,
+    -247.75,
+    -51.1,
+    -29.1,
+    230.75,
+    240.75
+   ],
+   "volume": 843.416,
+   "mass": 6.621,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB6-16",
+   "unit": "U4_WHEEL_N",
+   "component": "CB6-16_RX13_CYL_3"
+  },
+  "CB5-16_RX13_BRKT_3/CB5-16_RX13_BRKT_3": {
+   "name": "CB5-16_RX13_BRKT_3",
+   "bbox": [
+    -217.25,
+    -208.75,
+    -35.35,
+    -26.85,
+    234.0,
+    255.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16",
+   "unit": "U4_WHEEL_N",
+   "component": "CB5-16_RX13_BRKT_3"
+  },
+  "CB6-16_RX13_CYL_4/CB6-16_RX13_CYL_4": {
+   "name": "CB6-16_RX13_CYL_4",
+   "bbox": [
+    -232.25,
+    -222.25,
+    -51.1,
+    -29.1,
+    230.75,
+    240.75
+   ],
+   "volume": 843.416,
+   "mass": 6.621,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB6-16",
+   "unit": "U4_WHEEL_N",
+   "component": "CB6-16_RX13_CYL_4"
+  },
+  "CB5-16_RX13_BRKT_4/CB5-16_RX13_BRKT_4": {
+   "name": "CB5-16_RX13_BRKT_4",
+   "bbox": [
+    -217.25,
+    -208.75,
+    -19.35,
+    -10.85,
+    234.0,
+    255.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16",
+   "unit": "U4_WHEEL_N",
+   "component": "CB5-16_RX13_BRKT_4"
+  },
+  "U4S_ROD/STEP대기_NT-02_RX13": {
+   "name": "STEP대기_NT-02_RX13",
+   "bbox": [
+    -247.506,
+    -232.494,
+    100.894,
+    105.894,
+    216.5,
+    229.5
+   ],
+   "volume": 550.212,
+   "mass": 4.319,
+   "material": "Steel",
+   "bolt": false,
+   "spec": "",
+   "unit": "U4_WHEEL_N",
+   "component": "U4S_ROD"
   }
  }
 }

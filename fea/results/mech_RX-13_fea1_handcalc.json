@@ -1,0 +1,687 @@
+{
+ "_설명": "RX-13 해석부 손계산. 좌표 = 월드, J_U4_X 0, REST(들림 13.006). 판정 운전 SF 3 · 오조작 SF 2, SF < 1.2는 영구 변형(동작)",
+ "load": {
+  "F_push_0.5MPa_N": 157.1,
+  "F_pull_op_0.2MPa_N": 47.1,
+  "F_pull_mis_0.5MPa_N": 117.8,
+  "F_pin_lift_hold_N": 60.4,
+  "mu_slot(임시)": 0.15,
+  "side_N": {
+   "op_lift_hold": 20.8,
+   "op_press_end_0.2": 17.4,
+   "mis_pull_0.5_press_end": 39.6,
+   "mis_pull_0.5_sew": 30.5,
+   "mis_push_jam_lift": 49.9
+  },
+  "side_N_마찰·자중 뺌(설계안 방식)": {
+   "op_lift_hold": 8.7,
+   "mis_pull_0.5_press_end": 18.4,
+   "mis_push_jam_lift": 22.6
+  },
+  "m_rod_group_kg": 0.179,
+  "_note": "들기 끝에서는 실린더 스트로크 끝(로드 값 24.994/25)이 받아 핀에는 60.4 N만 간다. mis_push_jam_lift는 들림 도중 그네가 막혀 0.5 MPa 밂 157 N이 전부 핀에 걸리는 보수 경우"
+ },
+ "brkt_ear_net": {
+  "sigma_op_MPa": 17.3,
+  "sigma_mis_MPa": 17.3,
+  "SF_op": 11.82,
+  "SF_mis": 11.82,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "material": "SUS304",
+  "note": "순 단면 11 x 8(Z 117), 팔 19(축 Z 223 ~ 면 Z 242). 설계안은 팔 15(귀 가운데) 10 MPa. 안쪽 모서리 날카로움 Kt 3 가정 봉우리 52 MPa(SF 3.9) — 연성 정하중이라 판정엔 안 씀(RX-13-K3)"
+ },
+ "brkt_wall_span": {
+  "sigma_op_MPa": 6.7,
+  "sigma_mis_MPa": 6.7,
+  "SF_op": 30.55,
+  "SF_mis": 30.55,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "material": "SUS304",
+  "note": "귀 사이 보: M 1414 N·mm, Z 211"
+ },
+ "brkt_wall_local": {
+  "sigma_op_MPa": 9.0,
+  "sigma_mis_MPa": 9.0,
+  "SF_op": 22.74,
+  "SF_mis": 22.74,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "material": "SUS304",
+  "note": "귀 옆 띠 16 x 7 외팔 15: M 1178 N·mm, Z 131(퍼짐 무시 = 보수)"
+ },
+ "brkt_tilt": {
+  "theta_ear_rad": 0.000115,
+  "theta_wall_rad": 0.0002,
+  "pin_dz_mm(팔 170)": 0.054,
+  "note": "0.5 MPa 밂 157 N. 핀은 장공 길이 방향(거의 Z)으로 미끄러져 흡수 — 너클 갈래 옆 틈 0.2, 로드 구멍 틈 0.25보다 작다(기록, 6-2 처짐 기준 미정 D-08)"
+ },
+ "CB5-16_RX13_BRKT(M5, SUS304 귀 탭 물림 8)": {
+  "inputs": {
+   "d": 5,
+   "le": 8,
+   "load_N": 102.9,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 151.8,
+   "암나사 전단": 56.33
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "CB6-16_RX13_CYL(M6, 실린더 몸 알루미늄 탭 물림 9) 운전": {
+  "inputs": {
+   "d": 6,
+   "le": 9,
+   "load_N": 28.9,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "A5052-H112",
+   "dw": 10.100000000000001,
+   "dh": 6.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.5,
+  "sf_operating": {
+   "나사 인장": 765.05,
+   "암나사 전단": 145.29
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "CB6-16_RX13_CYL(M6, 실린더 몸 알루미늄 탭 물림 9) 오조작": {
+  "inputs": {
+   "d": 6,
+   "le": 9,
+   "load_N": 46.6,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "A5052-H112",
+   "dw": 10.100000000000001,
+   "dh": 6.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.5,
+  "sf_operating": {
+   "나사 인장": 474.46,
+   "암나사 전단": 90.1
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "brkt_slip": {
+  "shear_N": 157.1,
+  "preload_N_x4(M5 12.9 7 N·m 일반값 D-108)": 28000.0,
+  "mu": 0.15,
+  "SF": 26.7,
+  "T_m5_N_each": 102.9,
+  "T_m6_N_each_op_mis": [
+   28.9,
+   46.6
+  ],
+  "note": "실린더 몸 재질은 임시 형상이라 가장 약한 A5052-H112(110)로 봄. 볼트 힘이 예압보다 훨씬 작아 이음 안 벌어짐"
+ },
+ "rod_chain": {
+  "op_lift_hold": {
+   "side_N": 20.8,
+   "M_root_Nmm": 1684,
+   "sigma_rod_root_MPa": 65.3,
+   "SF_rod_root(SUS304 205 보수)": 3.14,
+   "SF_rod_root(S45C 345, 모델 재질)": 5.29,
+   "sigma_ext_male_root_MPa": 26.1,
+   "SF_ext_male_root(SUS303 205)": 7.85,
+   "SF_옛 M02R 팔 31(SUS304 205)": 7.85,
+   "need": 3.0,
+   "ok_205": true,
+   "ok_345": true,
+   "yield_ok_205": true
+  },
+  "op_press_end_0.2": {
+   "side_N": 17.4,
+   "M_root_Nmm": 1412,
+   "sigma_rod_root_MPa": 54.6,
+   "SF_rod_root(SUS304 205 보수)": 3.75,
+   "SF_rod_root(S45C 345, 모델 재질)": 6.32,
+   "sigma_ext_male_root_MPa": 21.8,
+   "SF_ext_male_root(SUS303 205)": 9.41,
+   "SF_옛 M02R 팔 31(SUS304 205)": 9.41,
+   "need": 3.0,
+   "ok_205": true,
+   "ok_345": true,
+   "yield_ok_205": true
+  },
+  "mis_pull_0.5_press_end": {
+   "side_N": 39.6,
+   "M_root_Nmm": 3209,
+   "sigma_rod_root_MPa": 124.5,
+   "SF_rod_root(SUS304 205 보수)": 1.65,
+   "SF_rod_root(S45C 345, 모델 재질)": 2.77,
+   "sigma_ext_male_root_MPa": 49.9,
+   "SF_ext_male_root(SUS303 205)": 4.11,
+   "SF_옛 M02R 팔 31(SUS304 205)": 4.11,
+   "need": 2.0,
+   "ok_205": false,
+   "ok_345": true,
+   "yield_ok_205": true
+  },
+  "mis_pull_0.5_sew": {
+   "side_N": 30.5,
+   "M_root_Nmm": 2475,
+   "sigma_rod_root_MPa": 96.8,
+   "SF_rod_root(SUS304 205 보수)": 2.12,
+   "SF_rod_root(S45C 345, 모델 재질)": 3.56,
+   "sigma_ext_male_root_MPa": 39.3,
+   "SF_ext_male_root(SUS303 205)": 5.22,
+   "SF_옛 M02R 팔 31(SUS304 205)": 5.22,
+   "need": 2.0,
+   "ok_205": true,
+   "ok_345": true,
+   "yield_ok_205": true
+  },
+  "mis_push_jam_lift": {
+   "side_N": 49.9,
+   "M_root_Nmm": 4038,
+   "sigma_rod_root_MPa": 156.9,
+   "SF_rod_root(SUS304 205 보수)": 1.31,
+   "SF_rod_root(S45C 345, 모델 재질)": 2.2,
+   "sigma_ext_male_root_MPa": 63.0,
+   "SF_ext_male_root(SUS303 205)": 3.25,
+   "SF_옛 M02R 팔 31(SUS304 205)": 3.25,
+   "need": 2.0,
+   "ok_205": false,
+   "ok_345": true,
+   "yield_ok_205": true
+  }
+ },
+ "rod_chain_note": {
+  "d3_mm": 6.466,
+  "Z_m8_mm3": 26.55,
+  "arm_rod_root_mm": 81.0,
+  "arm_ext_root_mm": 31.0,
+  "note": "로드 재질: 임시 형상은 S45C(345)로 지정돼 있으나 CQS φ20 실물 로드 재질은 카탈로그에서 확인 못 함(D-188) -> 스테인리스(205)면 오조작 SF가 2에 못 미친다. 옆힘은 장공 기울기 몫 + 마찰 μ 0.15(같은 쪽으로 보수) + 로드 묶음 자중 x3 g 절반. 설계안은 기울기 몫만(8.7 N) 셈"
+ },
+ "ext_female_section": {
+  "Z_mm3": 240.7,
+  "sigma_mis_MPa": 17.3,
+  "SF_mis": 11.9,
+  "note": "암나사 끝 Y 55.9, 팔 76. 과사양 아님(Ø14는 M8 암나사·스패너 면이 정함)"
+ },
+ "bush_moment_Nm": {
+  "op_lift_hold(마찰 포함)": 2.3,
+  "op_lift_hold(설계안 8.7 N)": 0.96,
+  "op_press_end_0.2": 1.49,
+  "mis_pull_0.5_press_end": 3.39,
+  "mis_push_jam_lift": 5.51,
+  "rod_Ø10_at_bush_sigma_mis_MPa": 56.1,
+  "note": "CQSY φ20 허용 옆하중 그래프는 카탈로그부가 못 읽음 — 임시(D-188). 스무스 실린더는 옆하중에 마찰이 민감하다(누름 힘 창 f ≤ 10 N과 엮임)"
+ },
+ "M8_rod_into_ext(물림 9, SUS303 -> SUS304 값)": {
+  "inputs": {
+   "d": 8,
+   "le": 9,
+   "load_N": 157.1,
+   "torque_Nm": 0.0,
+   "bolt": "A2-70",
+   "base": "SUS304",
+   "dw": 13.3,
+   "dh": 8.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.12,
+  "sf_operating": {
+   "나사 인장": 104.84,
+   "암나사 전단": 66.41
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "buckling": {
+  "Pcr_N": 20436,
+  "SF": 130.1
+ },
+ "base_tap_strip": {
+  "표 모델(폭 전부) v2.12.1 장공 벽 X -157": {
+   "w_mm": 17.0,
+   "sigma_op": 45.0,
+   "sigma_mis": 66.7,
+   "SF_op": 4.55,
+   "SF_mis": 3.07
+  },
+  "표 모델(폭 전부) v2.20.4 반달 자리 X -155.506": {
+   "w_mm": 15.51,
+   "sigma_op": 49.4,
+   "sigma_mis": 73.2,
+   "SF_op": 4.15,
+   "SF_mis": 2.8
+  },
+  "what-if 탭 Ø5 뺀 순 단면 v2.12.1": {
+   "w_mm": 12.0,
+   "sigma_op": 63.8,
+   "sigma_mis": 94.5,
+   "SF_op": 3.21,
+   "SF_mis": 2.17
+  },
+  "what-if 탭 Ø5 뺀 순 단면 v2.20.4": {
+   "w_mm": 10.51,
+   "sigma_op": 72.9,
+   "sigma_mis": 108.0,
+   "SF_op": 2.81,
+   "SF_mis": 1.9
+  },
+  "ligament_notch_to_tap_mm": 7.01,
+  "ligament_old_mm": 8.5,
+  "note": "표 모델 하중은 볼트 당김 합(F x 5) 전부를 띠 가운데 점하중으로 본 보수값(실제 순 하중은 F). 판정은 표 모델(폭 전부)로, 순 단면 값은 기록",
+  "ok": true,
+  "대조: 순 하중 F + 우력 비틀림(순 단면 10.51 x 8)": {
+   "op": {
+    "sigma": 14.6,
+    "tau": 34.7,
+    "vm": 61.8,
+    "SF": 3.31
+   },
+   "mis": {
+    "sigma": 21.6,
+    "tau": 51.4,
+    "vm": 91.6,
+    "SF": 2.24
+   }
+  }
+ },
+ "base_front_cantilever": {
+  "M_add_Nmm": 4182,
+  "sigma_add_MPa": 2.06,
+  "note": "브래킷이 더하는 몫만(우력 157 x 19 + 자중 x3 g x 팔 65). Y -31.1·-15.1 줄 순 폭 190 - 2 x 5.5 = 179(-5.8 %). 구멍 ~ 판 앞끝 Y -60 살 26.2, 구멍 사이 16 - 5.5 = 10.5"
+ },
+ "base_removed": {
+  "mass_kg_before_after": [
+   3.02,
+   2.286
+  ],
+  "note": "보 밑 연장(Y 140~266)과 옛 실린더 닫힌 고리 하중(RX-06 plate_ext 항목)이 없어짐 — 그 항목은 판정 대상에서 뺀다"
+ },
+ "cg_shift": {
+  "m_bundle_kg": [
+   12.161,
+   11.604
+  ],
+  "y_cg_mm": [
+   33.6,
+   15.2
+  ],
+  "Mx_ratio": 1.178,
+  "rail_blocks": {
+   "A_들기_3g": {
+    "P_max_old_N": 256.6,
+    "P_max_new_N": 302.4,
+    "SF_C0_2kN(보수 임시)": 6.61,
+    "need": 3.0,
+    "ok": true
+   },
+   "B_운전_누름_3g(N 덜어 줌 무시)": {
+    "P_max_old_N": 381.9,
+    "P_max_new_N": 450.0,
+    "SF_C0_2kN(보수 임시)": 4.44,
+    "need": 3.0,
+    "ok": true
+   },
+   "C_운전_누름_3g(N 반영)": {
+    "P_max_old_N": 379.3,
+    "P_max_new_N": 447.0,
+    "SF_C0_2kN(보수 임시)": 4.47,
+    "need": 3.0,
+    "ok": true
+   },
+   "D_오조작_공급압_전부_3g(N 무시)": {
+    "P_max_old_N": 583.9,
+    "P_max_new_N": 688.1,
+    "SF_C0_2kN(보수 임시)": 2.91,
+    "need": 2.0,
+    "ok": true
+   }
+  },
+  "carriage_root": {
+   "A_들기_3g": {
+    "SF_old": 24.5,
+    "SF_new": 20.8,
+    "need": 3.0
+   },
+   "B_운전_누름_3g(N 덜어 줌 무시)": {
+    "SF_old": 20.4,
+    "SF_new": 17.3,
+    "need": 3.0
+   },
+   "C_운전_누름_3g(N 반영)": {
+    "SF_old": 27.4,
+    "SF_new": 23.3,
+    "need": 3.0
+   },
+   "D_오조작_공급압_전부_3g(N 무시)": {
+    "SF_old": 14.0,
+    "SF_new": 11.9,
+    "need": 2.0
+   }
+  },
+  "foot_bolt_M5": {
+   "load_old_N": 422.3,
+   "load_new_N": 497.6,
+   "SF_암나사 전단_old_new": [
+    6.86,
+    5.82
+   ],
+   "need": 3.0
+  },
+  "note": "보수: 블록 최대 힘·뿌리 모멘트·발 볼트 힘 전체에 자중 모멘트 비를 곱함(바퀴 힘 몫까지). 바퀴 누름 N은 당김 넓이로 줄어(0.5 MPa 107 N < 134.9 N) 옛 값이 보수"
+ },
+ "carriage_slot_notch": {
+  "net_width_mm": [
+   96.5,
+   95.006
+  ],
+  "change_%": 1.5,
+  "note": "뿌리(웹 Y 95~107)는 장공(Y 66~84) 밖이라 뿌리 단면 115 x 12 그대로. 장공 +X 벽 ~ 발 볼트 (-150, 50·85) 구멍 Ø5.5 사이 살 X로 2.76, Y로 떨어져 있음(볼트 Y 50·85, 반달 Y 70·79)"
+ },
+ "force_recheck": {
+  "spring_kept_f6.28": {
+   "p_set": 0.128,
+   "press_SF(0.2/p)": 1.562,
+   "press_SF_ok(>=1.5)": true,
+   "rot_SF": [
+    1.035,
+    1.069,
+    1.099
+   ],
+   "mark_SF_nom(51.6/N)": [
+    1.125,
+    1.106,
+    1.038
+   ],
+   "N_nom_check(N_free + k p)": [
+    45.86,
+    46.66,
+    49.69
+   ],
+   "N_nom_design": [
+    45.86,
+    46.66,
+    49.69
+   ],
+   "min_ok": true
+  },
+  "spring_kept_f9.42": {
+   "p_set": 0.133,
+   "press_SF(0.2/p)": 1.504,
+   "press_SF_ok(>=1.5)": true,
+   "rot_SF": [
+    1.001,
+    1.034,
+    1.068
+   ],
+   "mark_SF_nom(51.6/N)": [
+    1.105,
+    1.087,
+    1.022
+   ],
+   "N_nom_check(N_free + k p)": [
+    46.68,
+    47.48,
+    50.48
+   ],
+   "N_nom_design": [
+    46.69,
+    47.48,
+    50.48
+   ],
+   "min_ok": true
+  },
+  "lift_SF(0.5 MPa 밂 - f 6.28)/핀 힘": {
+   "maint_down(밑 3)": 4.88,
+   "thick6": 4.25,
+   "thick10(봉제 θ0)": 4.04,
+   "thick16": 3.4,
+   "lift(밑 40, +30)": 2.5
+  },
+  "stroke": {
+   "used_mm": 24.878,
+   "of": 25.0,
+   "margin_lift_end_mm": 0.006,
+   "margin_press_end_mm": 0.116,
+   "note": "모델 실측(mech_RX-13_model.md 4절). 들림 끝은 스트로크 끝이 정하는 설계(여유 0이 의도), 누름 끝 여유 0.116은 M02R 0.1과 같음. 로드 나사 ±3 조정 자리"
+  }
+ },
+ "side_friction_whatif": {
+  "설계안 방식(기울기 몫만), 받침 간격 20": {
+   "side_N": 2.5,
+   "M_Nm": 0.23,
+   "f_add_N(μ 0.1, 받침 2곳)": 2.6,
+   "f_total_N": 8.9,
+   "window_ok(f <= 10)": true
+  },
+  "설계안 방식(기울기 몫만), 받침 간격 30": {
+   "side_N": 2.5,
+   "M_Nm": 0.23,
+   "f_add_N(μ 0.1, 받침 2곳)": 1.8,
+   "f_total_N": 8.1,
+   "window_ok(f <= 10)": true
+  },
+  "마찰 μ 0.15 + 자중 x1 g 절반, 받침 간격 20": {
+   "side_N": 8.0,
+   "M_Nm": 0.73,
+   "f_add_N(μ 0.1, 받침 2곳)": 8.2,
+   "f_total_N": 14.4,
+   "window_ok(f <= 10)": false
+  },
+  "마찰 μ 0.15 + 자중 x1 g 절반, 받침 간격 30": {
+   "side_N": 8.0,
+   "M_Nm": 0.73,
+   "f_add_N(μ 0.1, 받침 2곳)": 5.7,
+   "f_total_N": 12.0,
+   "window_ok(f <= 10)": false
+  },
+  "M02R(팔 62.1, 2.5 N), 받침 간격 20": {
+   "f_add_N": 1.8
+  }
+ },
+ "summary": [
+  {
+   "item": "브래킷 귀 순 단면(0.5 MPa 밂)",
+   "SF": 11.82,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "브래킷 앞벽 귀 옆 띠",
+   "SF": 22.74,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "브래킷 앞벽 귀 사이 보",
+   "SF": 30.55,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "브래킷 미끄럼(M5 x4 마찰)",
+   "SF": 26.7,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "로드 수나사 뿌리 운전 들림 유지(205)",
+   "SF": 3.14,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": "기준 ±10 % 안"
+  },
+  {
+   "item": "로드 수나사 뿌리 오조작 0.5 MPa 당김 누름 끝(205)",
+   "SF": 1.65,
+   "need": 2.0,
+   "ok": false,
+   "kind_if_ng": "디테일",
+   "note": "S45C 345면 2.77"
+  },
+  {
+   "item": "로드 수나사 뿌리 오조작 들림 도중 막힘 0.5 MPa 밂(205)",
+   "SF": 1.31,
+   "need": 2.0,
+   "ok": false,
+   "kind_if_ng": "디테일",
+   "note": "S45C 345면 2.20"
+  },
+  {
+   "item": "연장봉 수나사 뿌리 오조작(SUS303)",
+   "SF": 3.25,
+   "need": 2.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "윗판 스토퍼 탭 띠 운전(표 모델)",
+   "SF": 4.15,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "윗판 스토퍼 탭 띠 오조작(표 모델)",
+   "SF": 2.8,
+   "need": 2.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "윗판 스토퍼 탭 띠 운전(what-if 순 단면)",
+   "SF": 2.81,
+   "need": 3.0,
+   "ok": false,
+   "kind_if_ng": "디테일",
+   "note": "하중 5배 보수, 대조 모델 SF 3.31"
+  },
+  {
+   "item": "윗판 스토퍼 탭 띠 오조작(what-if 순 단면)",
+   "SF": 1.9,
+   "need": 2.0,
+   "ok": false,
+   "kind_if_ng": "디테일",
+   "note": "하중 5배 보수, 대조 모델 SF 2.24"
+  },
+  {
+   "item": "레일 블록 A_들기_3g",
+   "SF": 6.61,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "레일 블록 B_운전_누름_3g(N 덜어 줌 무시)",
+   "SF": 4.44,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "레일 블록 C_운전_누름_3g(N 반영)",
+   "SF": 4.47,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "레일 블록 D_오조작_공급압_전부_3g(N 무시)",
+   "SF": 2.91,
+   "need": 2.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "캐리지 뿌리 A_들기_3g",
+   "SF": 20.8,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "캐리지 뿌리 B_운전_누름_3g(N 덜어 줌 무시)",
+   "SF": 17.3,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "캐리지 뿌리 C_운전_누름_3g(N 반영)",
+   "SF": 23.3,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "캐리지 뿌리 D_오조작_공급압_전부_3g(N 무시)",
+   "SF": 11.9,
+   "need": 2.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  },
+  {
+   "item": "발 볼트 M5 암나사 전단",
+   "SF": 5.82,
+   "need": 3.0,
+   "ok": true,
+   "kind_if_ng": "",
+   "note": ""
+  }
+ ],
+ "min_SF": 1.31,
+ "motion_problem(SF < 1.2)": []
+}
