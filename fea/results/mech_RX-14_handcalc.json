@@ -1,0 +1,765 @@
+{
+ "KIT_PLATE_ear_neck": {
+  "F_N": 196.0,
+  "arm_mm": 15.0,
+  "M_Nmm": 2940.0,
+  "Z_mm3": 30.0,
+  "sigma_MPa": 98.0,
+  "mat": "SUS304",
+  "SF": 2.092,
+  "need": 3.0,
+  "note": "클램프 힘이 판에 다 걸릴 때(핀이 물려 기울기를 막은 뒤). 굽힘선 2곳 응력 집중은 넣지 않음",
+  "verdict": "디테일(기준 미달)"
+ },
+ "KIT_PLATE_ear_deflection": {
+  "defl_mm": 0.025,
+  "note": "목·귀를 팔 15의 외팔로 본 값(세운 살 회전 제외)"
+ },
+ "KIT_clamp_load_path": {
+  "clamp_Y": 30.0,
+  "support_edge_Y": 15.0,
+  "tip_moment_Nmm": 2940.0,
+  "weight_restoring_Nmm": 56.879,
+  "ratio_tip_over_restoring": 51.689,
+  "tilt_until_pin_bind_rad": 0.008,
+  "lift_at_plate_edge_Y_m43_mm": 0.464,
+  "lift_at_binder_Y_m46_mm": 0.488,
+  "pin_edge_force_total_N": 980.0,
+  "pin_edge_force_each_N": 490.0,
+  "clamp_force_before_bind_N": 3.792,
+  "verdict": "동작(하중 경로)",
+  "note": "클램프 196 N이 받침 밖에 걸려 카세트를 판넬에 누르지 못한다. 핀이 구멍 모서리에 물릴 때까지 기울고(틈 0.024 기준 0.46도), 그 뒤로는 핀 2개가 구멍 위·아래 모서리(간격 3)로 짝힘 약 980 N을 받는다. 물리기 전 누름은 무게 몫 약 4 N뿐"
+ },
+ "KIT_PLATE_ear_after_fix_pad_Y44": {
+  "M_Nmm": 1419.31,
+  "sigma_MPa": 47.31,
+  "SF": 4.333,
+  "need": 3.0,
+  "hold_down_on_plate_N": 94.621,
+  "note": "안 1: 받침 블록 포켓에 귀 끝 받이 턱(Y 40~48, 윗면 Z -20). 판 누름은 판 끝 Y 15에 약 95 N",
+  "verdict": "됨"
+ },
+ "KIT_pin_lateral_misuse": {
+  "F_N": 100.0,
+  "M_Nmm": 550.0,
+  "sigma_MPa": 25.936,
+  "shear_MPa": 3.537,
+  "plate_bearing_MPa": 5.556,
+  "mat": "S45C 대용(핀 강)",
+  "SF": 13.302,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "SEAT_clamp_bolt_CB4-12": {
+  "inputs": {
+   "d": 4,
+   "le": 5.0,
+   "load_N": 140.86458923512748,
+   "torque_Nm": 1.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 7.0,
+   "dh": 4.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 1875.0,
+  "engage_ratio": 1.25,
+  "sf_operating": {
+   "나사 인장": 68.56,
+   "암나사 전단": 19.57,
+   "분리(예압/외력)": 13.31
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 4.64,
+   "조임 좌면": 2.53,
+   "조임 암나사 전단": 1.47
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_near_each_N": 140.9,
+   "note": "지레(축 X 51). 물림 5 = 1.25d < 1.5d(RX-14-V2). 조임 1.5 N·m 가정"
+  }
+ },
+ "SEAT_pocket_floor": {
+  "P_N": 281.729,
+  "M_Nmm": 4952.76,
+  "Z_mm3": 110.0,
+  "sigma_MPa": 45.025,
+  "mat": "A5052",
+  "SF": 4.331,
+  "need": 3.0,
+  "SF_if_H112_110": 2.443,
+  "note": "단순 받침 보(구멍 Ø3.3 x2 뺀 폭). Y 16 벽 받침은 넣지 않음(보수)",
+  "verdict": "됨"
+ },
+ "SEAT_bolt_CB5-12_x3": {
+  "inputs": {
+   "d": 5,
+   "le": 8.0,
+   "load_N": 65.33333333333333,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 239.08,
+   "암나사 전단": 84.39,
+   "분리(예압/외력)": 68.88
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.23
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "COVER_nose_bottoming_with_tape_gap0.5": {
+  "cantilever_mm": 33.0,
+  "k_N_mm": 45.649,
+  "force_to_yield_N": 35.202,
+  "defl_at_yield_mm": 0.771,
+  "gap_mm": 0.5,
+  "force_to_bottom_N": 22.825,
+  "sigma_at_bottom_MPa": 132.92,
+  "mat": "SUS304",
+  "SF": 1.542,
+  "need": 3.0,
+  "note": "운전: 매트가 타고 넘어 코가 테이프에 닿을 때까지 눌림",
+  "verdict": "디테일(기준 미달)"
+ },
+ "COVER_nose_bottoming_no_tape_gap1.5": {
+  "cantilever_mm": 33.0,
+  "k_N_mm": 45.649,
+  "force_to_yield_N": 35.202,
+  "defl_at_yield_mm": 0.771,
+  "gap_mm": 1.5,
+  "force_to_bottom_N": 68.474,
+  "sigma_at_bottom_MPa": 398.76,
+  "mat": "SUS304",
+  "SF": 0.514,
+  "need": 2.0,
+  "note": "오조작: 테이프 없이 손으로 누름(68 N이면 바늘판에 닿음, 손 100 N 기준)",
+  "verdict": "동작(SF < 1.2)"
+ },
+ "COVER_nose_handcalc_beam_check": {
+  "inputs": {
+   "t": 1.0,
+   "b": 34.0,
+   "L": 33.0,
+   "E": 193000.0,
+   "Rp": 205.0,
+   "end": "cantilever",
+   "sf_min": 2.0
+  },
+  "force_N": 35.202,
+  "deflection_mm": 0.7711,
+  "stiffness_N_mm": 45.6493,
+  "stress_MPa": 205.0,
+  "sf": 1.0,
+  "thin": true,
+  "ok": false,
+  "needs_fea": false
+ },
+ "COVER_nose_after_fix_side_legs": {
+  "M_Nmm": 662.5,
+  "Z_mm3": 4.833,
+  "sigma_MPa": 137.069,
+  "SF_SUS304": 1.496,
+  "SF_SUS304_half_hard_470": 3.429,
+  "need": 2.0,
+  "defl_mm": 0.176,
+  "note": "안: 옆벽을 X 31까지 내리고(다리) 재질 SUS304-1/2H"
+ },
+ "COVER_top_span_misuse": {
+  "M_Nmm": 662.5,
+  "Z_mm3": 8.167,
+  "sigma_MPa": 81.122,
+  "mat": "SUS304",
+  "SF": 2.527,
+  "need": 2.0,
+  "defl_mm": 0.104,
+  "verdict": "됨"
+ },
+ "DUCT_end_misuse_right_X968_1060": {
+  "cantilever_mm": 92.0,
+  "I_mm4": 53.976,
+  "Z_mm3": 13.414,
+  "M_Nmm": 8741.157,
+  "sigma_MPa": 651.635,
+  "mat": "SUS304",
+  "SF": 0.315,
+  "need": 2.0,
+  "force_to_yield_N": 31.459,
+  "tip_defl_at_yield_mm": 0.745,
+  "note": "손 100 N 끝 누름(뚜껑 위). 밑에 판넬 없음(판넬 X 약 975까지)",
+  "verdict": "동작(SF < 1.2)"
+ },
+ "DUCT_end_selfweight3g_right_X968_1060": {
+  "w_N_mm": 0.018,
+  "M_Nmm": 75.768,
+  "sigma_MPa": 5.648,
+  "SF": 36.294,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "DUCT_end_misuse_left_X125_192": {
+  "cantilever_mm": 67.0,
+  "I_mm4": 53.976,
+  "Z_mm3": 13.414,
+  "M_Nmm": 6365.842,
+  "sigma_MPa": 474.56,
+  "mat": "SUS304",
+  "SF": 0.432,
+  "need": 2.0,
+  "force_to_yield_N": 43.198,
+  "tip_defl_at_yield_mm": 0.395,
+  "note": "손 100 N 끝 누름(뚜껑 위). 밑 판넬까지 틈 2",
+  "verdict": "동작(SF < 1.2)"
+ },
+ "DUCT_end_selfweight3g_left_X125_192": {
+  "w_N_mm": 0.018,
+  "M_Nmm": 40.185,
+  "sigma_MPa": 2.996,
+  "SF": 68.432,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "LID_span_misuse": {
+  "M_Nmm": 662.5,
+  "Z_mm3": 8.167,
+  "sigma_MPa": 81.122,
+  "mat": "SUS304",
+  "SF": 2.527,
+  "need": 2.0,
+  "defl_mm": 0.104,
+  "note": "테이프 길 높이 3(테이프 1)에 처짐 0.10 -> 막지 않음",
+  "verdict": "됨"
+ },
+ "DUCT_ear_bolt_CB5-12_panel_t4": {
+  "inputs": {
+   "d": 5,
+   "le": 4.0,
+   "load_N": 5.0,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 0.8,
+  "sf_operating": {
+   "나사 인장": 3124.0,
+   "암나사 전단": 579.62,
+   "분리(예압/외력)": 900.0
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 2.93,
+   "조임 암나사 전단": 0.64
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": [],
+  "_note": "판넬 재질 SUS304로 봄(요구서 2-1 판금). 조임 4.5 N·m이면 암나사 전단이 기준 — 토크를 낮추거나 너트(RX-14-K4)"
+ },
+ "DUCT_ear_bolt_CB5-12_panel_t4_2Nm": {
+  "inputs": {
+   "d": 5,
+   "le": 4.0,
+   "load_N": 5.0,
+   "torque_Nm": 2.0,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 2000.0,
+  "engage_ratio": 0.8,
+  "sf_operating": {
+   "나사 인장": 3124.0,
+   "암나사 전단": 579.62,
+   "분리(예압/외력)": 400.0
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 7.03,
+   "조임 좌면": 6.6,
+   "조임 암나사 전단": 1.45
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "R1_arm_and_backplate_operating": {
+  "F_N": 16.048,
+  "arm_mm": 134.0,
+  "sigma_arm_MPa": 2.374,
+  "sigma_back_corner_MPa": 4.48,
+  "mat": "SUS304",
+  "SF": 45.758,
+  "need": 3.0,
+  "defl_roller_mm": 0.025,
+  "verdict": "됨(과사양 note)"
+ },
+ "R1_bolt_CB5-16_beam_operating": {
+  "inputs": {
+   "d": 5,
+   "le": 10.0,
+   "load_N": 89.60275252862279,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 2.0,
+  "sf_operating": {
+   "나사 인장": 174.33,
+   "암나사 전단": 76.92,
+   "분리(예압/외력)": 50.22
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.53
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_each_N": 89.6,
+   "note": "보 재질은 A5052 대용(M06 선례), 물림 16 - 6 = 10"
+  }
+ },
+ "R1_arm_and_backplate_misuse_hand": {
+  "F_N": 100.0,
+  "arm_mm": 134.0,
+  "sigma_arm_MPa": 14.79,
+  "sigma_back_corner_MPa": 27.917,
+  "mat": "SUS304",
+  "SF": 7.343,
+  "need": 2.0,
+  "defl_roller_mm": 0.153,
+  "verdict": "됨(과사양 note)"
+ },
+ "R1_bolt_CB5-16_beam_misuse_hand": {
+  "inputs": {
+   "d": 5,
+   "le": 10.0,
+   "load_N": 558.3333333333334,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 2.0,
+  "sf_operating": {
+   "나사 인장": 27.98,
+   "암나사 전단": 12.34,
+   "분리(예압/외력)": 8.06
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.53
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_each_N": 558.3,
+   "note": "보 재질은 A5052 대용(M06 선례), 물림 16 - 6 = 10"
+  }
+ },
+ "R2_upright_operating": {
+  "F_N": 16.048,
+  "sigma_MPa": 3.169,
+  "tau_torsion_MPa": 0.683,
+  "mat": "SUS304",
+  "SF": 64.684,
+  "need": 3.0,
+  "defl_X_mm": 0.009,
+  "twist_rad": 0.0,
+  "note": "테이프 합력(XZ 면)을 X로 다 걸고, 치우침 24.5의 굽힘·비틀림 더함",
+  "verdict": "됨(과사양 note)"
+ },
+ "R2_upright_misuse_hand_Y": {
+  "F_N": 100.0,
+  "M_Nmm": 25900.0,
+  "sigma_MPa": 89.931,
+  "mat": "SUS304",
+  "SF": 2.28,
+  "need": 2.0,
+  "defl_Y_mm": 3.473,
+  "note": "롤러를 축 방향(Y)으로 손 100 N. 얇은 쪽 굽힘, 탄성 처짐(되돌아옴)",
+  "verdict": "됨"
+ },
+ "R2_foot_bolt_CB5-12_le3.5_4.5Nm": {
+  "inputs": {
+   "d": 5,
+   "le": 3.5,
+   "load_N": 725.5224544241885,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 0.7,
+  "sf_operating": {
+   "나사 인장": 21.53,
+   "암나사 전단": 4.18,
+   "분리(예압/외력)": 6.2
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 3.59,
+   "조임 암나사 전단": 0.67
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_worst_N": 725.5,
+   "note": "T너트 HNTT8-5 강(SS400 대용). 오조작 손 100 N"
+  }
+ },
+ "R2_foot_bolt_CB5-16_le7.5_4.5Nm": {
+  "inputs": {
+   "d": 5,
+   "le": 7.5,
+   "load_N": 725.5224544241885,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.5,
+  "sf_operating": {
+   "나사 인장": 21.53,
+   "암나사 전단": 8.95,
+   "분리(예압/외력)": 6.2
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 3.59,
+   "조임 암나사 전단": 1.44
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_worst_N": 725.5,
+   "note": "T너트 HNTT8-5 강(SS400 대용). 오조작 손 100 N"
+  }
+ },
+ "R2_foot_bolt_CB5-12_le3.5_3.0Nm": {
+  "inputs": {
+   "d": 5,
+   "le": 3.5,
+   "load_N": 725.5224544241885,
+   "torque_Nm": 3.0,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 3000.0,
+  "engage_ratio": 0.7,
+  "sf_operating": {
+   "나사 인장": 21.53,
+   "암나사 전단": 4.18,
+   "분리(예압/외력)": 4.13
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 4.69,
+   "조임 좌면": 5.39,
+   "조임 암나사 전단": 1.01
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": true,
+  "near_limit": [
+   "조임 암나사 전단"
+  ],
+  "_load": {
+   "T_worst_N": 725.5,
+   "note": "T너트 HNTT8-5 강(SS400 대용). 오조작 손 100 N"
+  }
+ },
+ "R2_foot_bolt_CB5-16_le7.5_3.0Nm": {
+  "inputs": {
+   "d": 5,
+   "le": 7.5,
+   "load_N": 725.5224544241885,
+   "torque_Nm": 3.0,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 3000.0,
+  "engage_ratio": 1.5,
+  "sf_operating": {
+   "나사 인장": 21.53,
+   "암나사 전단": 8.95,
+   "분리(예압/외력)": 4.13
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 4.69,
+   "조임 좌면": 5.39,
+   "조임 암나사 전단": 2.16
+  },
+  "worst": "분리(예압/외력)",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_worst_N": 725.5,
+   "note": "T너트 HNTT8-5 강(SS400 대용). 오조작 손 100 N"
+  }
+ },
+ "SHAFT_root_operating_model_5.12kg": {
+  "F_N": 174.781,
+  "arm_mm": 122.0,
+  "M_Nmm": 21323.299,
+  "sigma_MPa": 27.15,
+  "mat": "S45C",
+  "SF": 12.707,
+  "SF_with_Kt2": 6.354,
+  "need": 3.0,
+  "defl_roll_1g_mm": 0.021,
+  "before_cut_M_Nmm": 37053.602,
+  "note": "자르기 전 팔 212 -> 122(모멘트 0.58배)",
+  "verdict": "됨(과사양 note)"
+ },
+ "SHAFT_root_misuse_model_5.12kg": {
+  "M_Nmm": 22101.1,
+  "sigma_MPa": 28.14,
+  "mat": "S45C",
+  "SF": 12.26,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "SHAFT_flange_bolt_CB5-16_model_5.12kg": {
+  "inputs": {
+   "d": 5,
+   "le": 8.0,
+   "load_N": 388.35318093083436,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 40.22,
+   "암나사 전단": 14.2,
+   "분리(예압/외력)": 11.59
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.23
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_worst_N": 388.4,
+   "note": "기둥 A5052 t10 탭(물림 16 - 8 = 8)"
+  }
+ },
+ "POST_bending_operating_model_5.12kg": {
+  "M_Nmm": 21323.299,
+  "sigma_MPa": 26.11,
+  "mat": "A5052",
+  "SF": 7.468,
+  "need": 3.0,
+  "note": "형상 변화 없음. 하중 팔만 줄어듦",
+  "verdict": "됨"
+ },
+ "POST_bolt_CB5-20_model_5.12kg": {
+  "inputs": {
+   "d": 5,
+   "le": 10.0,
+   "load_N": 646.3604420792452,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 2.0,
+  "sf_operating": {
+   "나사 인장": 24.17,
+   "암나사 전단": 10.66,
+   "분리(예압/외력)": 6.96
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.53
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_worst_N": 646.4,
+   "before_cut_T_N": 1061.9
+  }
+ },
+ "SHAFT_root_operating_D-124_3kg": {
+  "F_N": 112.411,
+  "arm_mm": 122.0,
+  "M_Nmm": 13714.123,
+  "sigma_MPa": 17.461,
+  "mat": "S45C",
+  "SF": 19.758,
+  "SF_with_Kt2": 9.879,
+  "need": 3.0,
+  "defl_roll_1g_mm": 0.013,
+  "before_cut_M_Nmm": 23831.099,
+  "note": "자르기 전 팔 212 -> 122(모멘트 0.58배)",
+  "verdict": "됨(과사양 note)"
+ },
+ "SHAFT_root_misuse_D-124_3kg": {
+  "M_Nmm": 19564.708,
+  "sigma_MPa": 24.911,
+  "mat": "S45C",
+  "SF": 13.85,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "SHAFT_flange_bolt_CB5-16_D-124_3kg": {
+  "inputs": {
+   "d": 5,
+   "le": 8.0,
+   "load_N": 249.77013886221934,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 62.54,
+   "암나사 전단": 22.07,
+   "분리(예압/외력)": 18.02
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.23
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_worst_N": 249.8,
+   "note": "기둥 A5052 t10 탭(물림 16 - 8 = 8)"
+  }
+ },
+ "POST_bending_operating_D-124_3kg": {
+  "M_Nmm": 13714.123,
+  "sigma_MPa": 16.793,
+  "mat": "A5052",
+  "SF": 11.612,
+  "need": 3.0,
+  "note": "형상 변화 없음. 하중 팔만 줄어듦",
+  "verdict": "됨(과사양 note)"
+ },
+ "POST_bolt_CB5-20_D-124_3kg": {
+  "inputs": {
+   "d": 5,
+   "le": 10.0,
+   "load_N": 415.70803407924524,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 2.0,
+  "sf_operating": {
+   "나사 인장": 37.57,
+   "암나사 전단": 16.58,
+   "분리(예압/외력)": 10.82
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.53
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": [],
+  "_load": {
+   "T_worst_N": 415.7,
+   "before_cut_T_N": 682.9
+  }
+ },
+ "HOLDER_note": {
+  "verdict": "됨(하중 줄어듦)",
+  "note": "Y < -100의 걸쇠·핀 팔을 잘라 걸쇠 당김 1,500 N과 U7 움직이는 묶음 2.5 kg이 없어졌다. 남은 판(날개 A, UPPER 체결 CB5-12 x2 장공)의 단면·체결은 v2.6.7(REG-02 fix1) 그대로라 DC2-04 손계산(fea/results/mech_DC2-04_handcalc.json)의 하중보다 작다. 새 계산 없음(E-19)"
+ }
+}

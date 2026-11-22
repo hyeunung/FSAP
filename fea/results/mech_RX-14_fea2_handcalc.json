@@ -1,0 +1,168 @@
+{
+ "F8_ear_root_after_strip": {
+  "load_Y": -20.0,
+  "strip_Y": [
+   -35.0,
+   -5.0
+  ],
+  "arm_to_ear_root_before_mm": 17.0,
+  "M_ear_before_Nmm": 1700.0,
+  "M_ear_after_Nmm": 0.0,
+  "SF_before": 0.64,
+  "verdict": "없어짐",
+  "note": "벽 가운데선 Y -36.5 · -3.5 는 띠 변 밖 1.5 — 3절"
+ },
+ "F8_midspan_Xbend_after_strip": {
+  "span_before_mm": 184.0,
+  "span_after_mm": 0.0,
+  "SF_before": [
+   0.63,
+   1.26
+  ],
+  "verdict": "없어짐"
+ },
+ "LID_span34_inner_finger15": {
+  "span_mm": 34.0,
+  "eff_width_mm": 49.0,
+  "M_Nmm": 662.5,
+  "sigma_MPa": 81.1224,
+  "mat": "SUS304(205)",
+  "SF": 2.527,
+  "need": 2.0,
+  "SF_plastic_hinge": 3.7906,
+  "SF_if_half_hard_470": 5.7937,
+  "defl_mm": 0.1039,
+  "gap_under_lid_mm": 3.0,
+  "verdict": "됨"
+ },
+ "LID_span34_inner_point": {
+  "span_mm": 34.0,
+  "eff_width_mm": 49.0,
+  "M_Nmm": 850.0,
+  "sigma_MPa": 104.0816,
+  "mat": "SUS304(205)",
+  "SF": 1.9696,
+  "need": 2.0,
+  "SF_plastic_hinge": 2.9544,
+  "SF_if_half_hard_470": 4.5157,
+  "defl_mm": 0.1039,
+  "gap_under_lid_mm": 3.0,
+  "verdict": "디테일(기준 미달)"
+ },
+ "LID_span34_free_end_finger15": {
+  "span_mm": 34.0,
+  "eff_width_mm": 24.86,
+  "M_Nmm": 662.5,
+  "sigma_MPa": 159.8954,
+  "mat": "SUS304(205)",
+  "SF": 1.2821,
+  "need": 2.0,
+  "SF_plastic_hinge": 1.9231,
+  "SF_if_half_hard_470": 2.9394,
+  "defl_mm": 0.2048,
+  "gap_under_lid_mm": 3.0,
+  "verdict": "디테일(기준 미달)"
+ },
+ "LID_span34_free_end_point": {
+  "span_mm": 34.0,
+  "eff_width_mm": 24.86,
+  "M_Nmm": 850.0,
+  "sigma_MPa": 205.1488,
+  "mat": "SUS304(205)",
+  "SF": 0.9993,
+  "need": 2.0,
+  "SF_plastic_hinge": 1.4989,
+  "SF_if_half_hard_470": 2.291,
+  "defl_mm": 0.2048,
+  "gap_under_lid_mm": 3.0,
+  "verdict": "동작(SF < 1.2)"
+ },
+ "LID_free_end_finger15_propped": {
+  "M_Nmm": 496.875,
+  "sigma_MPa": 119.9216,
+  "mat": "SUS304(205)",
+  "SF": 1.7095,
+  "need": 2.0,
+  "note": "끝에서 7 mm 자리 귀 볼트가 +Y 변을 누름 -> 실제는 단순 받침(1.28)과 이 값 사이",
+  "verdict": "디테일(기준 미달)"
+ },
+ "FLOOR_wall_overhang_1p5": {
+  "overhang_mm": 1.5,
+  "F_wall_N": 50.0,
+  "eff_width_mm": 49.0,
+  "M_Nmm": 75.0,
+  "sigma_MPa": 9.1837,
+  "mat": "SUS304",
+  "SF": 22.3222,
+  "need": 2.0,
+  "shear_MPa": 1.0204,
+  "note": "받침이라 과사양으로 세지 않음",
+  "verdict": "됨(과사양 note)"
+ },
+ "FLOOR_wall_overhang_free_end": {
+  "eff_width_mm": 24.86,
+  "sigma_MPa": 18.1014,
+  "mat": "SUS304",
+  "SF": 11.3251,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "RELIEF_wall_beam_no_flange_continuous_PL/8": {
+  "chord_mm": 33.541,
+  "section": "벽 1 x 4",
+  "Z_mm3": 2.6667,
+  "M_Nmm": 209.6314,
+  "sigma_MPa": 78.6118,
+  "mat": "SUS304",
+  "SF": 2.6078,
+  "need": 2.0,
+  "note": "가정값 검토(what-if) — 지금 모델은 플랜지가 받아 이 하중 경로가 없다. 수정 지시의 근거로 쓰지 않는다",
+  "verdict": "됨"
+ },
+ "RELIEF_wall_beam_no_flange_simple_PL/4": {
+  "chord_mm": 33.541,
+  "section": "벽 1 x 4",
+  "Z_mm3": 2.6667,
+  "M_Nmm": 419.2627,
+  "sigma_MPa": 157.2235,
+  "mat": "SUS304",
+  "SF": 1.3039,
+  "need": 2.0,
+  "note": "가정값 검토(what-if) — 지금 모델은 플랜지가 받아 이 하중 경로가 없다. 수정 지시의 근거로 쓰지 않는다",
+  "verdict": "디테일(기준 미달)"
+ },
+ "RELIEF_as_modeled": {
+  "unsupported_gap_mm": 0.5,
+  "verdict": "됨(플랜지 윗면 Z -6 이 받음, 닿음 0.0 — 검도 verify2/sum_b1.json)"
+ },
+ "STRIP_bearing_on_panel": {
+  "F_N": 100.0,
+  "area_mm2": 450.0,
+  "p_MPa": 0.2222,
+  "mat": "SUS304",
+  "SF": 922.5,
+  "need": 2.0,
+  "note": "받침 — 과사양으로 세지 않음. 따냄 자리 남는 살 22.5 x 15 로는 0.30 MPa",
+  "verdict": "됨(과사양 note)"
+ },
+ "STRIP_selfweight_3g": {
+  "mass_g": 382.3,
+  "F_N": 11.2511,
+  "note": "판넬에 얹힘. 점용접은 위치만 잡는다(운전 하중 없음)"
+ },
+ "FIT_gap_side": {
+  "gap_mm": 0.3,
+  "force_to_seat_N": 23.7037,
+  "ear_root_use_ratio": 0.3704,
+  "far_edge_drop_at_yield_mm": 0.81,
+  "verdict": "됨(탄성 안)",
+  "note": "틈 0.3 은 24 N 에 닫히고 그 뒤는 띠가 받는다. 귀 뿌리는 항복의 37 %. 틈 0.81 까지 탄성"
+ },
+ "FIT_lift_side": {
+  "ear_arm_mm": 8.0,
+  "ear_lift_at_yield_mm": 0.0453,
+  "tol_mm": 0.3,
+  "verdict": "디테일(정밀 체인)",
+  "note": "귀가 0.045 mm 넘게 뜨면 볼트 조임이 귀를 굽혀 앉힌다(영구 굽힘, 기능은 유지 — 귀는 위치 고정용). 굽힘 공차 ±0.3(M-04)"
+ }
+}

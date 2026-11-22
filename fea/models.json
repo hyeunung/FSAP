@@ -574,7 +574,9 @@
    },
    "status_DC2-04": "손계산 fea/results/mech_DC2-04_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
    "step_REG-02_fix1": "tools/out/mech_REG-02/stepout/P_M05_HOLDER_fix1.step",
-   "note_REG-02_fix1": "v2.6.7: 날개 A 장공 X 36->33(굽힘선까지 10.25). 경계조건 그대로"
+   "note_REG-02_fix1": "v2.6.7: 날개 A 장공 X 36->33(굽힘선까지 10.25). 경계조건 그대로",
+   "step_RX-14": "tools/out/mech_RX-14/stepout/P_M05_HOLDER.step",
+   "note_RX-14": "v2.19.0: Y < -100 자름(걸쇠 당김·U7 묶음 하중 없어짐). 남은 날개 A 단면·체결 그대로 -> DC2-04 계산 안쪽, 새 계산 없음"
   },
   "P_M05_CYL_BRKT": {
    "case": "cases/mech_M05_handcalc.py",
@@ -688,7 +690,11 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "case_RX-14": "cases/mech_RX-14_handcalc.py",
+   "step_RX-14": "tools/out/mech_RX-14/stepout/P_M06_ROLL_SHAFT.step",
+   "version_RX-14": "v2.19.0",
+   "note_RX-14": "v2.19.0: Y -142~-52 자름, 베어링 Y -46·4, 롤 가운데 Y -20. 뿌리 팔 212 -> 122, 앞끝 244 -> 154. 롤 질량은 모형 5.12 kg과 D-124 3 kg 둘 다 계산. 고정은 그대로"
   },
   "P_M06_ROLL_HUB": {
    "case": "cases/mech_M06_handcalc.py",
@@ -1268,6 +1274,126 @@
    "status": "손계산. FEA 못 함 — 환경 없음(D-16) fea/results/mech_RX-11_handcalc.json",
    "result": "모델 바꿈: I 하한 1.5e5 통짜 -> STEP 윤곽 적분(온 단면 A 1,115.5 mm2 · I 723,619 mm4, 통과 홈 자리 Z -92~-23 A 913.4 · I 419,481). 홈 자리 6.46 MPa SF 22.4. 옛 모델(통짜 1.5e5) 19.67 MPa SF 7.37, 온 단면 4.08 MPa SF 35.6",
    "note": "통과 홈이 경간 가운데(굽힘 최대 자리) 윗 플랜지를 자른다. I 58 %로 줄어도 SF 22"
+  },
+  "P_RX14_KIT_PLATE": {
+   "case": "cases/mech_RX-14_handcalc.py",
+   "step": "tools/out/mech_RX-14/stepout/P_RX14_KIT_PLATE.step",
+   "version": "v2.19.0",
+   "fixed": "판넬 P_M04_PANEL_E2 윗면 Z -8에 얹힘(받침 끝은 창 모서리 Y 15), 핀 MSTH6-20 x2 (64·108, 8) 가로만",
+   "contact": "받이 귀 윗면 Z -17에 클램프 암(X 96~100, Y 24~36)",
+   "load": "MC01-5 체압력 196 N 아래로 at Y 30 / 손 100 N 가로(오조작)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작(손 100 N) SF 2. SF < 1.2 = 동작. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-14_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "note": "누르는 자리가 받침 밖 15 mm — 하중 경로 문제(RX-14-F1)",
+   "fixed_v2.19.1": "판넬 윗면 Z -8(받침 끝 창 모서리 Y 15) + 받이 귀 끝이 받침 블록 턱(Y 40~48, Z -20)에 얹힘, 핀 x2 가로만",
+   "note_v2.19.1": "귀 Y 48까지. 힘 자리 Y 30이 두 받침 사이 -> 기울이는 모멘트 0, 판 누름 94.6 N, 귀 SF 4.33(RX-14-F1 없어짐). 귀 밑면-턱 높이 맞춤은 틈 0.061 mm 안이어야(정밀 체인 디테일 RX-14-F9)",
+   "case_fea1": "cases/mech_RX-14_fea1_handcalc.py",
+   "version_fea1": "v2.19.1",
+   "status_fea1": "손계산 fea/results/mech_RX-14_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX14_KIT_SEAT": {
+   "case": "cases/mech_RX-14_handcalc.py",
+   "step": "tools/out/mech_RX-14/stepout/P_RX14_KIT_SEAT.step",
+   "version": "v2.19.0",
+   "fixed": "윗면 Z -12가 판넬 밑면, CB5-12 x3 (50·86·120, 8) 탭 물림 8",
+   "contact": "포켓 바닥 Z -27에 클램프 플랜지(X 51~84), CB4-12 x4",
+   "load": "클램프 반력 196 N 위로 at X 94(지레 축 X 51)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작(손 100 N) SF 2. SF < 1.2 = 동작. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-14_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "contact_v2.19.1": "포켓 바닥 Z -27 클램프 플랜지 + 턱 X 94~122 · Y 40~48 윗면 Z -20에 귀 누름 101.4 N",
+   "note_v2.19.1": "턱 면압 0.63 MPa. 블록은 94.6 N으로 판넬 밑면에 눌림. 볼트는 첫 회차 값 안쪽",
+   "case_fea1": "cases/mech_RX-14_fea1_handcalc.py",
+   "version_fea1": "v2.19.1",
+   "status_fea1": "손계산 fea/results/mech_RX-14_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX14_KIT_COVER": {
+   "case": "cases/mech_RX-14_handcalc.py",
+   "step": "tools/out/mech_RX-14/stepout/P_RX14_KIT_COVER.step",
+   "version": "v2.19.0",
+   "fixed": "발 2줄(X 64~124)이 카세트 판 윗면 Z -5에 점용접",
+   "contact": "코 X 31~44 밑면 Z 1.5 ↔ 바늘판 Z 0(틈 1.5, 테이프 1)",
+   "load": "매트 타고 넘음(코가 테이프에 닿을 때까지) / 손 100 N(오조작)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작(손 100 N) SF 2. SF < 1.2 = 동작. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-14_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "fixed_v2.19.1": "발 2줄(X 64~124) 점용접 + 다리 2개(Y -37~-36 · -4~-3, X 31~64)가 바늘판 Z 0 · 혀 윗면에 얹힘",
+   "material_v2.19.1": "SUS304-1/2H(내력 470 MPa, JIS G 4313 SUS304-CSP 1/2H)",
+   "note_v2.19.1": "윗판은 다리 사이 경간 33 양쪽 받침. 손 100 N SF 2.33~4.05(풀림재 SUS304면 1.02~1.77 — 재질 지정이 조건). RX-14-F2 없어짐",
+   "case_fea1": "cases/mech_RX-14_fea1_handcalc.py",
+   "version_fea1": "v2.19.1",
+   "status_fea1": "손계산 fea/results/mech_RX-14_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX14_DUCT·DUCT_LID": {
+   "case": "cases/mech_RX-14_handcalc.py",
+   "step": "tools/out/mech_RX-14/stepout/P_RX14_DUCT.step, P_RX14_DUCT_LID.step",
+   "version": "v2.19.0",
+   "fixed": "귀 5곳(X 200·400·600·800·960, 폭 16) CB5-12로 판넬 탭",
+   "contact": "뚜껑이 홈통 벽 위(Z -2)에 얹힘, 귀에서만 같이 조임",
+   "load": "자중 x3 g, 테이프 장력 10 N(가로 몫 0.13 N) / 손 100 N 끝·경간(오조작)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작(손 100 N) SF 2. SF < 1.2 = 동작. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-14_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "fixed_v2.19.1": "귀 6곳(X 140·200·400·600·800·960, 폭 16, +Y 쪽에만 Y -3~11) CB5-12로 판넬 탭. 바닥 밑 판넬까지 틈 2, -Y 쪽 받침 없음",
+   "load_v2.19.1": "손 100 N: 끝(X 방향 외팔 7) / 귀 자리 뚜껑 가운데 Y -20(Y 방향 외팔 17) / 귀 사이 경간 184 가운데",
+   "note_v2.19.1": "X 125~975. 끝 X 굽힘 SF 4.13(RX-14-F3 그 자리는 없어짐). 한쪽 귀 뿌리 16 x 1 두 장이 SF 0.64(소성 힌지 0.97), 경간 가운데 X 굽힘 SF 0.63~1.26 -> RX-14-F8(동작). 첫 회차 모델은 끝 외팔과 뚜껑 경간만 봤다 — 하중 자리를 더한 것이고 고정·기준은 그대로",
+   "case_fea1": "cases/mech_RX-14_fea1_handcalc.py",
+   "version_fea1": "v2.19.1",
+   "status_fea1": "손계산 fea/results/mech_RX-14_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "fixed_v2.19.2": "귀 6곳 그대로(위치 고정). 바닥 밑면 Z -6 전 길이가 받침 띠 P_RX14_DUCT_STRIP(Y -35~-5) 위에 얹힘(점용접), 띠는 판넬 윗면 Z -8에 얹힘. 볼 8곳 따냄 자리는 볼 유닛 플랜지 윗면 Z -6(STEP대기_ 임시 외형)이 받음",
+   "load_v2.19.2": "손 100 N(오조작): 뚜껑 경간 34 안쪽 / 뚜껑 자유 끝 변(X 125·975) / 벽 밑 바닥(띠 변 밖 1.5) / 따냄 자리 벽(가정값 검토: 플랜지가 안 받을 때)",
+   "note_v2.19.2": "RX-14-F8 없어짐(귀 뿌리 모멘트 1,700 -> 0, X 방향 경간 없음). 뚜껑 안쪽 SF 2.53(손가락 15)·1.97(점), 자유 끝 변 1.28(손가락 15, 단순 받침)~1.71(한쪽 고정)·점 1.00 -> RX-14-F12(디테일, 1/2H면 2.94). 하중 자리(뚜껑 끝 변)를 더한 것이고 기준은 그대로",
+   "case_fea2": "cases/mech_RX-14_fea2_handcalc.py",
+   "version_fea2": "v2.19.2",
+   "status_fea2": "손계산 fea/results/mech_RX-14_fea2_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX14_R1_BRKT": {
+   "case": "cases/mech_RX-14_handcalc.py",
+   "step": "tools/out/mech_RX-14/stepout/P_RX14_R1_BRKT.step",
+   "version": "v2.19.0",
+   "fixed": "뒷판 Y 120 면이 보 앞면, CB5-16 x2 (1127, Z 580·620)",
+   "contact": "앞판 핀 구멍 (1137, 681)",
+   "load": "테이프 10 N x 루트2 + 롤러·핀 x3 g = 16.0 N at Y -20 / 손 100 N",
+   "criteria": {
+    "value": "운전 SF 3, 오조작(손 100 N) SF 2. SF < 1.2 = 동작. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-14_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX14_R2_BRKT": {
+   "case": "cases/mech_RX-14_handcalc.py",
+   "step": "tools/out/mech_RX-14/stepout/P_RX14_R2_BRKT.step",
+   "version": "v2.19.0",
+   "fixed": "발 밑면 Z -250이 형재 윗면, CB5-12 x2 (1130, 20·40) + HNTT8-5",
+   "contact": "세운 판 핀 구멍 (1137, 15)",
+   "load": "테이프 합력 16.0 N at Y -20 · Z 15 / 손 100 N Y(오조작)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작(손 100 N) SF 2. SF < 1.2 = 동작. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-14_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX14_DUCT_STRIP": {
+   "case": "cases/mech_RX-14_fea2_handcalc.py",
+   "step": "tools/out/mech_RX-14/stepout/P_RX14_DUCT_STRIP.step",
+   "version": "v2.19.2",
+   "fixed": "밑면 Z -8 전체가 판넬 P_M04_PANEL_E2 윗면에 얹힘(볼트 없음)",
+   "contact": "윗면 Z -6이 홈통 바닥 밑면에 닿음(점용접 — 모델에 없음). 볼 플랜지 8개와 틈 0.5(R 22.5 ↔ R 22)",
+   "load": "손 100 N이 홈통 벽 두 줄(Y -36.5 · -3.5)로 내려옴 -> 눌림 / 자중 x3 g 11.3 N",
+   "criteria": {
+    "value": "오조작(손 100 N) SF 2. SF < 1.2 = 동작",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-14_fea2_handcalc.json — 눌림 0.22 MPa(받침, 과사양으로 세지 않음). FEA 못 함 — 환경 없음(D-16)"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."

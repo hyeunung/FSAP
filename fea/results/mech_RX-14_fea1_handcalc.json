@@ -1,0 +1,258 @@
+{
+ "F1_ear_two_supports_ledge_mid_Y44": {
+  "support_Y": [
+   15.0,
+   44.0
+  ],
+  "clamp_Y": 30.0,
+  "hold_down_on_panel_edge_N": 94.6207,
+  "ledge_reaction_N": 101.3793,
+  "tip_moment_Nmm": 0.0,
+  "M_Nmm": 1419.3103,
+  "Z_mm3": 30.0,
+  "sigma_MPa": 47.3103,
+  "mat": "SUS304",
+  "SF": 4.3331,
+  "need": 3.0,
+  "defl_at_clamp_mm": 0.0114,
+  "note": "힘 자리 Y 30이 두 받침(Y 15 · 턱) 사이 -> 기울이는 모멘트 0. 첫 회차는 받침 밖 15 mm였다",
+  "verdict": "됨"
+ },
+ "F1_ear_two_supports_ledge_inner_edge_Y40": {
+  "support_Y": [
+   15.0,
+   40.0
+  ],
+  "clamp_Y": 30.0,
+  "hold_down_on_panel_edge_N": 78.4,
+  "ledge_reaction_N": 117.6,
+  "tip_moment_Nmm": 0.0,
+  "M_Nmm": 1176.0,
+  "Z_mm3": 30.0,
+  "sigma_MPa": 39.2,
+  "mat": "SUS304",
+  "SF": 5.2296,
+  "need": 3.0,
+  "defl_at_clamp_mm": 0.0068,
+  "note": "힘 자리 Y 30이 두 받침(Y 15 · 턱) 사이 -> 기울이는 모멘트 0. 첫 회차는 받침 밖 15 mm였다",
+  "verdict": "됨"
+ },
+ "F1_ledge_bearing": {
+  "reaction_N": 101.3793,
+  "area_mm2": 160.0,
+  "p_MPa": 0.6336,
+  "mat": "A5052",
+  "SF": 307.7551,
+  "need": 3.0,
+  "note": "귀 폭 20 x 턱 Y 8. 턱은 포켓 바닥(Z -27)에서 솟은 살 7이라 눌림만",
+  "verdict": "됨(과사양 note)"
+ },
+ "F1_seat_bolt_note": {
+  "net_up_on_seat_N": 94.6207,
+  "verdict": "됨(첫 회차 값 안쪽)",
+  "note": "클램프 반력 196 N 위로 - 턱 누름 101.4 N 아래로 = 94.6 N이 블록을 판넬 밑면에 누른다. CB5-12 x3은 첫 회차 65.3 N/개 계산(운전 최저 68.9)보다 작다"
+ },
+ "F1_height_match_sensitivity": {
+  "ear_tip_defl_per_N_mm": 0.0003,
+  "gap_closed_by_ear_bending_mm": 0.0609,
+  "gap_at_pin_bind_mm": 0.2929,
+  "force_to_close_0p3_gap_by_bending_N": 965.0,
+  "table": [
+   {
+    "gap_mm": 0.05,
+    "binder_lift_Y_m46_mm": 0.0,
+    "pin_bind": false
+   },
+   {
+    "gap_mm": 0.1,
+    "binder_lift_Y_m46_mm": 0.082,
+    "pin_bind": false
+   },
+   {
+    "gap_mm": 0.2,
+    "binder_lift_Y_m46_mm": 0.293,
+    "pin_bind": false
+   },
+   {
+    "gap_mm": 0.3,
+    "binder_lift_Y_m46_mm": 0.488,
+    "pin_bind": true
+   }
+  ],
+  "sheet_bend_tolerance_mm": 0.3,
+  "binder_margin_mm": 0.5,
+  "verdict": "디테일(정밀 체인)",
+  "note": "틈이 0.061 mm보다 크면 귀가 휘어서는 못 메우고 판이 Y 15 모서리로 기운다(틈 0.3에서 바인더 쪽 0.49 mm 들리고 핀이 다시 물린다). 판금 굽힘 너머 공차 ±0.3(M-04)이라 턱 높이는 조정식(세트 스크루 받이 · 심)이어야 한다. 귀가 0.3 낮으면(턱에 먼저 닿음) 판 +Y 변이 떠서 클램프가 귀를 휘어 내린다 - 이쪽은 안 기운다"
+ },
+ "F2_nose_top_on_legs_center_point_load_full_width": {
+  "span_mm": 33.0,
+  "eff_width_mm": 33.0,
+  "M_Nmm": 825.0,
+  "sigma_MPa": 150.0,
+  "mat": "SUS304-1/2H(470)",
+  "SF": 3.1333,
+  "need": 2.0,
+  "SF_if_SUS304_annealed": 1.3667,
+  "defl_mm": 0.1411,
+  "verdict": "됨"
+ },
+ "F2_nose_top_on_legs_center_finger15_full_width": {
+  "span_mm": 33.0,
+  "eff_width_mm": 33.0,
+  "M_Nmm": 637.5,
+  "sigma_MPa": 115.9091,
+  "mat": "SUS304-1/2H(470)",
+  "SF": 4.0549,
+  "need": 2.0,
+  "SF_if_SUS304_annealed": 1.7686,
+  "defl_mm": 0.1411,
+  "verdict": "됨"
+ },
+ "F2_nose_top_on_legs_free_edge_point_load": {
+  "span_mm": 33.0,
+  "eff_width_mm": 24.57,
+  "M_Nmm": 825.0,
+  "sigma_MPa": 201.4652,
+  "mat": "SUS304-1/2H(470)",
+  "SF": 2.3329,
+  "need": 2.0,
+  "SF_if_SUS304_annealed": 1.0175,
+  "defl_mm": 0.1895,
+  "verdict": "됨"
+ },
+ "F2_nose_top_on_legs_free_edge_finger15": {
+  "span_mm": 33.0,
+  "eff_width_mm": 24.57,
+  "M_Nmm": 637.5,
+  "sigma_MPa": 155.6777,
+  "mat": "SUS304-1/2H(470)",
+  "SF": 3.0191,
+  "need": 2.0,
+  "SF_if_SUS304_annealed": 1.3168,
+  "defl_mm": 0.1895,
+  "verdict": "됨"
+ },
+ "F2_nose_operating_allowable": {
+  "yield_force_N": 233.2909,
+  "allowable_at_SF3_N": 77.7636,
+  "gap_under_top_mm": 1.5,
+  "tape_mm": 1.0,
+  "defl_at_100N_worst_mm": 0.1895,
+  "note": "매트가 타고 넘는 힘은 유연체라 모델로 판정하지 않음(요구서 7절). 다리가 받쳐 코가 테이프를 누르지 않는다(100 N 처짐 0.19 < 틈 0.5)"
+ },
+ "F2_leg_compression": {
+  "F_each_N": 50.0,
+  "area_mm2": 15.0,
+  "p_MPa": 3.3333,
+  "SF": 141.0,
+  "need": 2.0,
+  "note": "X 31~46의 15 mm가 바늘판 Z 0에 얹힘. 좌굴 없음(높이 1.5 = 두께의 1.5배)",
+  "verdict": "됨(과사양 note)"
+ },
+ "F2_nose_lateral_Y_hand": {
+  "M_Nmm": 3300.0,
+  "Z_mm3": 192.6667,
+  "sigma_MPa": 17.128,
+  "SF": 27.4404,
+  "need": 2.0,
+  "note": "코 끝을 Y로 손 100 N: 윗판 면 안 굽힘(폭 34), 뿌리 X 64",
+  "verdict": "됨(과사양 note)"
+ },
+ "F3_end_cantilever_Xbend_left_X125_132": {
+  "cantilever_mm": 7.0,
+  "Z_mm3": 13.4142,
+  "M_Nmm": 665.088,
+  "sigma_MPa": 49.5809,
+  "mat": "SUS304",
+  "SF": 4.1347,
+  "need": 2.0,
+  "before_fix_SF": 0.43,
+  "verdict": "됨"
+ },
+ "F3_end_cantilever_Xbend_right_X968_975": {
+  "cantilever_mm": 7.0,
+  "Z_mm3": 13.4142,
+  "M_Nmm": 665.088,
+  "sigma_MPa": 49.5809,
+  "mat": "SUS304",
+  "SF": 4.1347,
+  "need": 2.0,
+  "before_fix_SF": 0.32,
+  "verdict": "됨"
+ },
+ "F8_ear_root_one_sided_hand_at_ear": {
+  "arm_mm": 17.0,
+  "M_Nmm": 1700.0,
+  "ear_section": "16 x 1 (홈통 귀) + 16 x 1 (뚜껑 귀)",
+  "My_each_Nmm": 546.6667,
+  "force_to_first_yield_N": 64.3137,
+  "force_to_plastic_hinge_N": 96.4706,
+  "mat": "SUS304",
+  "SF": 0.6431,
+  "SF_plastic_hinge": 0.9647,
+  "need": 2.0,
+  "far_edge_drop_at_yield_mm": 0.8125,
+  "gap_to_panel_mm": 2.0,
+  "rotation_until_floor_touches_panel_rad": 0.0588,
+  "note": "-Y 쪽(Y -37)에 받침이 없어 홈통·뚜껑이 귀 줄(Y -3)을 축으로 한쪽으로 매달려 있다. 귀 6곳 어디서나 같고, 끝 귀(X 140 · 960)도 같다. 항복 때 먼 변 처짐이 틈 2보다 작아 판넬이 받기 전에 귀가 꺾인다(꺾인 뒤 2 mm에서 판넬에 닿아 멈춤). 첫 회차에서 못 본 하중 경로다(끝 외팔만 봤다)",
+  "verdict": "동작(SF < 1.2)"
+ },
+ "F8_midspan_Xbend_fixed_ends_PL/8": {
+  "span_mm": 184.0,
+  "M_Nmm": 2185.2892,
+  "sigma_MPa": 162.9086,
+  "mat": "SUS304",
+  "SF": 1.2584,
+  "need": 2.0,
+  "verdict": "디테일(기준 미달)"
+ },
+ "F8_midspan_Xbend_continuous_0.171PL": {
+  "span_mm": 184.0,
+  "M_Nmm": 2989.4756,
+  "sigma_MPa": 222.859,
+  "mat": "SUS304",
+  "SF": 0.9199,
+  "need": 2.0,
+  "verdict": "동작(SF < 1.2)"
+ },
+ "F8_midspan_Xbend_simple_PL/4": {
+  "span_mm": 184.0,
+  "M_Nmm": 4370.5784,
+  "sigma_MPa": 325.8173,
+  "mat": "SUS304",
+  "SF": 0.6292,
+  "need": 2.0,
+  "verdict": "동작(SF < 1.2)"
+ },
+ "F8_midspan_torsion": {
+  "T_each_side_Nmm": 850.0,
+  "J_duct_mm4": 14.0,
+  "J_lid_mm4": 11.3333,
+  "twist_rad_duct_only": 0.0755,
+  "twist_rad_duct_plus_lid": 0.0417,
+  "far_edge_drop_mm": [
+   1.4182788051209105,
+   2.5664092664092664
+  ],
+  "gap_to_panel_mm": 2.0,
+  "tau_MPa": 33.5526,
+  "defl_at_yield_simple_mm": 0.7448,
+  "ear_root_SF_with_half_torque": 1.2863,
+  "note": "열린 얇은 단면이라 비틀림이 무르다: 100 N에서 먼 변이 1.4~2.6 mm 내려와 판넬(틈 2)에 닿을 수 있다(비틀림 전단 34 MPa, 탄성). X 방향 굽힘 항복 처짐은 0.75 mm(단순 받침)로 틈 2보다 작다 -> 판넬이 받기 전에 벽 윗변이 항복할 수 있다(끝 조건에 따라 SF 0.63~1.26)"
+ },
+ "F8_after_fix_floor_supported": {
+  "lid_span_mm": 34.0,
+  "sigma_MPa": 81.1224,
+  "SF": 2.527,
+  "need": 2.0,
+  "wall_compress_MPa": 1.0204,
+  "note": "안 1: 바닥 밑 t2 받침 띠(폭 30, 전 길이, 점용접 또는 판넬에 접착). 안 2: 홈통 바닥을 Z -8~-7로 내려 판넬에 얹고 카세트 입구에서 2 올림. 안 3: -Y 쪽에도 발(볼트 없음)을 귀 자리마다 + 경간 가운데 — 경간 84로 줄어도 단순 받침 SF 1.38이라 모자람",
+  "verdict": "됨"
+ },
+ "F8_option3_feet_span84_simple": {
+  "sigma_MPa": 148.7427,
+  "SF": 1.3782,
+  "need": 2.0,
+  "verdict": "디테일(기준 미달)"
+ }
+}
