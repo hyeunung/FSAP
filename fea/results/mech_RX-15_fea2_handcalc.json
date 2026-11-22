@@ -1,0 +1,523 @@
+{
+ "loads": {
+  "thrust_N": 100.531,
+  "spring_N_tmp": 20.0,
+  "stop_N": 80.531,
+  "V_over_H": 1.04,
+  "jam_H_with_guide_friction": 48.6592
+ },
+ "pin_H20": {
+  "M_Nmm": -433.6,
+  "F_pin_N": 42.2708,
+  "POM_bearing_uniform_MPa": 2.6419,
+  "SF": 22.7107,
+  "need": 3.0,
+  "POM_bearing_edge_MPa": 11.0631,
+  "SF_edge": 5.4235,
+  "edge_verdict": "됨",
+  "blade_hole_bearing_MPa": 42.2708,
+  "SF_blade_hole": 23.657,
+  "pin_shear_MPa": 13.4552,
+  "SF_pin_shear": 8.791,
+  "pin_bend_MPa": 13.4552,
+  "SF_pin_bend": 15.2357,
+  "blade_shearout_MPa": 8.4542,
+  "note": "핀만으로(볼트 마찰 0). 날 구멍 옆 살 5.0 · 밑 살 2.0 · 볼트 구멍과 2.25",
+  "verdict": "됨(과사양 note)"
+ },
+ "pin_H40": {
+  "M_Nmm": -867.2,
+  "F_pin_N": 84.5415,
+  "POM_bearing_uniform_MPa": 5.2838,
+  "SF": 11.3554,
+  "need": 3.0,
+  "POM_bearing_edge_MPa": 22.1261,
+  "SF_edge": 2.7117,
+  "edge_verdict": "디테일(기준 미달)",
+  "blade_hole_bearing_MPa": 84.5415,
+  "SF_blade_hole": 11.8285,
+  "pin_shear_MPa": 26.9104,
+  "SF_pin_shear": 4.3955,
+  "pin_bend_MPa": 26.9104,
+  "SF_pin_bend": 7.6179,
+  "blade_shearout_MPa": 16.9083,
+  "note": "핀만으로(볼트 마찰 0). 날 구멍 옆 살 5.0 · 밑 살 2.0 · 볼트 구멍과 2.25",
+  "verdict": "됨(과사양 note)"
+ },
+ "pin_jam_H49": {
+  "M_Nmm": -1063.9,
+  "F_pin_N": 103.6777,
+  "POM_bearing_uniform_MPa": 6.4799,
+  "SF": 9.2595,
+  "need": 2.0,
+  "POM_bearing_edge_MPa": 27.1344,
+  "SF_edge": 2.2112,
+  "edge_verdict": "됨",
+  "blade_hole_bearing_MPa": 103.6777,
+  "SF_blade_hole": 9.6453,
+  "pin_shear_MPa": 33.0016,
+  "SF_pin_shear": 3.5842,
+  "pin_bend_MPa": 33.0016,
+  "SF_pin_bend": 6.2118,
+  "blade_shearout_MPa": 20.7355,
+  "note": "핀만으로(볼트 마찰 0). 날 구멍 옆 살 5.0 · 밑 살 2.0 · 볼트 구멍과 2.25",
+  "verdict": "됨(과사양 note)"
+ },
+ "pin_jam_H80_upper": {
+  "M_Nmm": -1734.4,
+  "F_pin_N": 169.0831,
+  "POM_bearing_uniform_MPa": 10.5677,
+  "SF": 5.6777,
+  "need": 2.0,
+  "POM_bearing_edge_MPa": 44.2522,
+  "SF_edge": 1.3559,
+  "edge_verdict": "디테일(기준 미달)",
+  "blade_hole_bearing_MPa": 169.0831,
+  "SF_blade_hole": 5.9143,
+  "pin_shear_MPa": 53.8208,
+  "SF_pin_shear": 2.1978,
+  "pin_bend_MPa": 53.8208,
+  "SF_pin_bend": 3.8089,
+  "blade_shearout_MPa": 33.8166,
+  "note": "핀만으로(볼트 마찰 0). 날 구멍 옆 살 5.0 · 밑 살 2.0 · 볼트 구멍과 2.25",
+  "verdict": "됨"
+ },
+ "pin_d3_H40": {
+  "edge_MPa": 14.7507,
+  "SF": 4.0676,
+  "need": 3.0,
+  "verdict": "됨"
+ },
+ "pin_d3_jam_H49": {
+  "edge_MPa": 18.0896,
+  "SF": 3.3168,
+  "need": 2.0,
+  "verdict": "됨"
+ },
+ "blade_arm_root_H20": {
+  "M_Nmm": 676.8,
+  "sigma_MPa": 181.5225,
+  "SF": 5.509,
+  "need": 3.0,
+  "tip_defl_mm": 0.0966,
+  "note": "SK5 내력 1,000 MPa 어림(임시). HRC 50 이상(약 1,400)이면 SF x 1.4",
+  "verdict": "됨"
+ },
+ "blade_arm_root_H40": {
+  "M_Nmm": 1353.6,
+  "sigma_MPa": 363.045,
+  "SF": 2.7545,
+  "need": 3.0,
+  "tip_defl_mm": 0.1932,
+  "note": "SK5 내력 1,000 MPa 어림(임시). HRC 50 이상(약 1,400)이면 SF x 1.4",
+  "verdict": "디테일(기준 미달)"
+ },
+ "blade_arm_root_jam_H49": {
+  "M_Nmm": 1659.5,
+  "sigma_MPa": 445.0779,
+  "SF": 2.2468,
+  "need": 2.0,
+  "tip_defl_mm": 0.2368,
+  "note": "SK5 내력 1,000 MPa 어림(임시). HRC 50 이상(약 1,400)이면 SF x 1.4",
+  "verdict": "됨"
+ },
+ "blade_arm_root_jam_H80_upper": {
+  "M_Nmm": 2707.2,
+  "sigma_MPa": 726.09,
+  "SF": 1.3772,
+  "need": 2.0,
+  "tip_defl_mm": 0.3863,
+  "note": "SK5 내력 1,000 MPa 어림(임시). HRC 50 이상(약 1,400)이면 SF x 1.4",
+  "verdict": "디테일(기준 미달)"
+ },
+ "blade_shank_net_H20": {
+  "M_Nmm": 433.6,
+  "sigma_MPa": 36.3014,
+  "SF": 27.5472,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "blade_shank_net_H40": {
+  "M_Nmm": 867.2,
+  "sigma_MPa": 72.6028,
+  "SF": 13.7736,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "blade_shank_net_jam_H49": {
+  "M_Nmm": 1063.9,
+  "sigma_MPa": 89.0707,
+  "SF": 11.227,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "blade_shank_net_jam_H80_upper": {
+  "M_Nmm": 1734.4,
+  "sigma_MPa": 145.2056,
+  "SF": 6.8868,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "blade_buckling": {
+  "Pcr_free_N": 27.7805,
+  "Pcr_guided_N": 226.7794,
+  "SF_guided_H40": 5.6695,
+  "SF_guided_jam49": 4.6282,
+  "note": "틈 안내(카세트 판·덮개 0.25)에 기댄다 — 설계 7절과 같음, 변화 없음"
+ },
+ "rod_tap_POM": {
+  "inputs": {
+   "d": 5,
+   "le": 8.0,
+   "load_N": 80.5,
+   "torque_Nm": 0.5,
+   "bolt": "A2-70",
+   "base": "POM",
+   "dw": 8.0,
+   "dh": 5.0,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 500.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 79.38,
+   "암나사 전단": 21.07,
+   "분리(예압/외력)": 6.21
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 11.5,
+   "조임 좌면": 3.68,
+   "조임 암나사 전단": 3.39
+  },
+  "worst": "분리(예압/외력)",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "rod_tap_POM_shear": {
+  "load_N": 80.531,
+  "area_mm2": 62.8319,
+  "tau_MPa": 1.2817,
+  "SF": 27.0112,
+  "need": 3.0,
+  "engage_ratio": 1.6,
+  "verdict": "됨(과사양 note)"
+ },
+ "stop_column": {
+  "F_N": 80.531,
+  "arm_mm": 2.2,
+  "bend_MPa": 22.146,
+  "shear_MPa": 6.7109,
+  "bearing_MPa": 6.7109,
+  "SF": 2.7093,
+  "need": 3.0,
+  "note": "설계 7절은 65 N · 팔 2로 SF 3.7. 실린더 효율을 빼지 않은 80.5 N · 팔 2.2(판넬 두께 가운데). 충격 계수는 안 넣음",
+  "verdict": "디테일(기준 미달)"
+ },
+ "cross_arm": {
+  "bend_MPa": 5.5566,
+  "torsion_MPa": 4.9081,
+  "SF": 10.7979,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "tongue_at_stop": {
+  "M_Nmm": 1908.5839,
+  "couple_N": 33.4839,
+  "root_M_Nmm": 1406.325,
+  "sigma_MPa": 23.4387,
+  "SF": 2.5599,
+  "need": 3.0,
+  "note": "사이클마다. 변형은 틈 0.2로 묶임",
+  "verdict": "디테일(기준 미달)"
+ },
+ "down_force_path": {
+  "s20_H20": {
+   "H": 20.0,
+   "V": 20.8,
+   "rod_free_mm": 33.0,
+   "tongue_free_mm": 18.0,
+   "tongue_only": {
+    "M_at_guide_mouth_Nmm": 781.2,
+    "sigma_MPa": 13.0,
+    "SF": 4.61,
+    "tip_drop_mm": 1.24
+   },
+   "rod_only": {
+    "side_load_N": 20.8,
+    "M_at_nose_Nmm": 1093.2,
+    "sigma_MPa": 89.1,
+    "SF_yield_205": 2.3,
+    "SF_yield_450": 5.05,
+    "SF_collapse_205": 3.91,
+    "tip_drop_elastic_mm": 0.28,
+    "tip_drop_with_bush_play_mm": 0.77,
+    "tongue_at_guide_mouth_drop_mm": 0.019
+   },
+   "need": 3.0
+  },
+  "s20_H40": {
+   "H": 40.0,
+   "V": 41.6,
+   "rod_free_mm": 33.0,
+   "tongue_free_mm": 18.0,
+   "tongue_only": {
+    "M_at_guide_mouth_Nmm": 1562.4,
+    "sigma_MPa": 26.0,
+    "SF": 2.3,
+    "tip_drop_mm": 2.48
+   },
+   "rod_only": {
+    "side_load_N": 41.6,
+    "M_at_nose_Nmm": 2186.4,
+    "sigma_MPa": 178.2,
+    "SF_yield_205": 1.15,
+    "SF_yield_450": 2.53,
+    "SF_collapse_205": 1.96,
+    "tip_drop_elastic_mm": 0.56,
+    "tip_drop_with_bush_play_mm": 1.05,
+    "tongue_at_guide_mouth_drop_mm": 0.038
+   },
+   "need": 3.0
+  },
+  "s20_jam_H49": {
+   "H": 49.0,
+   "V": 51.0,
+   "rod_free_mm": 33.0,
+   "tongue_free_mm": 18.0,
+   "tongue_only": {
+    "M_at_guide_mouth_Nmm": 1916.6,
+    "sigma_MPa": 31.9,
+    "SF": 1.88,
+    "tip_drop_mm": 3.04
+   },
+   "rod_only": {
+    "side_load_N": 51.0,
+    "M_at_nose_Nmm": 2681.6,
+    "sigma_MPa": 218.5,
+    "SF_yield_205": 0.94,
+    "SF_yield_450": 2.06,
+    "SF_collapse_205": 1.59,
+    "tip_drop_elastic_mm": 0.69,
+    "tip_drop_with_bush_play_mm": 1.18,
+    "tongue_at_guide_mouth_drop_mm": 0.046
+   },
+   "need": 2.0
+  },
+  "s20_jam_H80_upper": {
+   "H": 80.0,
+   "V": 83.2,
+   "rod_free_mm": 33.0,
+   "tongue_free_mm": 18.0,
+   "tongue_only": {
+    "M_at_guide_mouth_Nmm": 3124.8,
+    "sigma_MPa": 52.1,
+    "SF": 1.15,
+    "tip_drop_mm": 4.96
+   },
+   "rod_only": {
+    "side_load_N": 83.2,
+    "M_at_nose_Nmm": 4372.8,
+    "sigma_MPa": 356.3,
+    "SF_yield_205": 0.58,
+    "SF_yield_450": 1.26,
+    "SF_collapse_205": 0.98,
+    "tip_drop_elastic_mm": 1.13,
+    "tip_drop_with_bush_play_mm": 1.62,
+    "tongue_at_guide_mouth_drop_mm": 0.075
+   },
+   "need": 2.0
+  },
+  "s36_H20": {
+   "H": 20.0,
+   "V": 20.8,
+   "rod_free_mm": 49.0,
+   "tongue_free_mm": 34.0,
+   "tongue_only": {
+    "M_at_guide_mouth_Nmm": 1114.0,
+    "sigma_MPa": 18.6,
+    "SF": 3.23,
+    "tip_drop_mm": 3.5
+   },
+   "rod_only": {
+    "side_load_N": 20.8,
+    "M_at_nose_Nmm": 1426.0,
+    "sigma_MPa": 116.2,
+    "SF_yield_205": 1.76,
+    "SF_yield_450": 3.87,
+    "SF_collapse_205": 3.0,
+    "tip_drop_elastic_mm": 0.59,
+    "tip_drop_with_bush_play_mm": 1.17,
+    "tongue_at_guide_mouth_drop_mm": 0.025
+   },
+   "need": 3.0
+  },
+  "s36_H40": {
+   "H": 40.0,
+   "V": 41.6,
+   "rod_free_mm": 49.0,
+   "tongue_free_mm": 34.0,
+   "tongue_only": {
+    "M_at_guide_mouth_Nmm": 2228.0,
+    "sigma_MPa": 37.1,
+    "SF": 1.62,
+    "tip_drop_mm": 6.99
+   },
+   "rod_only": {
+    "side_load_N": 41.6,
+    "M_at_nose_Nmm": 2852.0,
+    "sigma_MPa": 232.4,
+    "SF_yield_205": 0.88,
+    "SF_yield_450": 1.94,
+    "SF_collapse_205": 1.5,
+    "tip_drop_elastic_mm": 1.18,
+    "tip_drop_with_bush_play_mm": 1.76,
+    "tongue_at_guide_mouth_drop_mm": 0.05
+   },
+   "need": 3.0
+  },
+  "s36_jam_H49": {
+   "H": 49.0,
+   "V": 51.0,
+   "rod_free_mm": 49.0,
+   "tongue_free_mm": 34.0,
+   "tongue_only": {
+    "M_at_guide_mouth_Nmm": 2732.6,
+    "sigma_MPa": 45.5,
+    "SF": 1.32,
+    "tip_drop_mm": 8.57
+   },
+   "rod_only": {
+    "side_load_N": 51.0,
+    "M_at_nose_Nmm": 3497.6,
+    "sigma_MPa": 285.0,
+    "SF_yield_205": 0.72,
+    "SF_yield_450": 1.58,
+    "SF_collapse_205": 1.22,
+    "tip_drop_elastic_mm": 1.44,
+    "tip_drop_with_bush_play_mm": 2.03,
+    "tongue_at_guide_mouth_drop_mm": 0.062
+   },
+   "need": 2.0
+  },
+  "s36_jam_H80_upper": {
+   "H": 80.0,
+   "V": 83.2,
+   "rod_free_mm": 49.0,
+   "tongue_free_mm": 34.0,
+   "tongue_only": {
+    "M_at_guide_mouth_Nmm": 4456.0,
+    "sigma_MPa": 74.3,
+    "SF": 0.81,
+    "tip_drop_mm": 13.98
+   },
+   "rod_only": {
+    "side_load_N": 83.2,
+    "M_at_nose_Nmm": 5704.0,
+    "sigma_MPa": 464.8,
+    "SF_yield_205": 0.44,
+    "SF_yield_450": 0.97,
+    "SF_collapse_205": 0.75,
+    "tip_drop_elastic_mm": 2.35,
+    "tip_drop_with_bush_play_mm": 2.94,
+    "tongue_at_guide_mouth_drop_mm": 0.1
+   },
+   "need": 2.0
+  }
+ },
+ "DOWN_FORCE_GUIDE": {
+  "SF": 0.88,
+  "need": 3.0,
+  "SF_H20": 1.76,
+  "SF_jam49": 0.72,
+  "SF_H40_Rp450": 1.94,
+  "SF_jam49_Rp450": 1.58,
+  "side_load_N_H20_H40_jam": [
+   20.8,
+   41.6,
+   51.0
+  ],
+  "tip_drop_rod_mm_H20_H40_jam": [
+   1.17,
+   1.76,
+   2.03
+  ],
+  "tip_drop_tongue_only_mm_H20_H40": [
+   3.5,
+   6.99
+  ],
+  "gap_blade_to_tuck_plate_mm": 1.2,
+  "edge_height_mm": 4.8,
+  "note": "CUT 36(자르기 끝). 로드 Rp 205는 SUS304 풀림값(엔진 표), 450은 냉간 인발 어림 — 둘 다 임시. 로드 Ø5는 카탈로그 기억값",
+  "verdict": "동작(SF < 1.2)"
+ },
+ "down_force_sensitivity_H40": {
+  "mu0.00": {
+   "V_over_H": 1.036,
+   "side_load_N": 41.4,
+   "rod_sigma_MPa": 231.0,
+   "SF_yield_205": 0.89
+  },
+  "mu0.15": {
+   "V_over_H": 0.766,
+   "side_load_N": 30.7,
+   "rod_sigma_MPa": 145.5,
+   "SF_yield_205": 1.41
+  },
+  "mu0.30": {
+   "V_over_H": 0.561,
+   "side_load_N": 22.4,
+   "rod_sigma_MPa": 80.2,
+   "SF_yield_205": 2.55
+  }
+ },
+ "yaw_H40": {
+  "M_Nmm": 500.0,
+  "tip_side_mm": 0.3021,
+  "slot_gap_mm": 0.25,
+  "note": "날이 틈 0.25 안에서 옆 면에 닿음. 핀 기둥 ↔ 장공 0.3"
+ },
+ "fix_tongue_material_H40_s36": {
+  "POM 10x6(지금)": {
+   "tip_drop_mm": 6.99,
+   "sigma_MPa": 37.1,
+   "SF": 1.62,
+   "play_tilt_tip_mm": 0.53
+  },
+  "POM 10x12": {
+   "tip_drop_mm": 0.87,
+   "sigma_MPa": 9.3,
+   "SF": 6.46,
+   "play_tilt_tip_mm": 0.53
+  },
+  "A6061-T6 10x6": {
+   "tip_drop_mm": 0.28,
+   "sigma_MPa": 37.1,
+   "SF": 6.46,
+   "play_tilt_tip_mm": 0.53
+  },
+  "SUS304 10x6": {
+   "tip_drop_mm": 0.1,
+   "sigma_MPa": 37.1,
+   "SF": 5.52,
+   "play_tilt_tip_mm": 0.53
+  }
+ },
+ "fix_blade_rest": {
+  "note": "날 팔 밑(Z -8)에 고정 받침: V 41.6 N이 받침으로 감. 받침 면 0.5 x 5 = 2.5 mm² -> 16.6 MPa, 미끄럼 마찰 0.15 x 41.6 = 6.2 N(추력 여유에서 뺌)",
+  "bearing_MPa": 16.64,
+  "friction_N": 6.24
+ },
+ "clamp": {
+  "note": "Z -33까지 늘림 + 핀 도피 Ø2.6. 하중 경로에서 빠짐(날은 핀이 건다) — 누르는 일만. 탭 물림 3.75(0.75d)는 1회차 A2 그대로",
+  "face_mm2": 173.4324
+ },
+ "self_weight_3g": {
+  "slide_g": 22.6,
+  "blade_g": 2.3,
+  "clamp_g": 5.9,
+  "F_N": 0.9064,
+  "note": "0.9 N — 무시"
+ }
+}

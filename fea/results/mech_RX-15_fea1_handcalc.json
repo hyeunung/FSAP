@@ -1,0 +1,272 @@
+{
+ "geom": {
+  "plate_X": [
+   124.75,
+   128.75
+  ],
+  "plate_Y": [
+   -89.5,
+   -76.0
+  ],
+  "plate_Z": [
+   -30.0,
+   -18.0
+  ],
+  "ledge_X": [
+   124.35,
+   124.75
+  ],
+  "ledge_Y": [
+   -89.5,
+   -88.0
+  ],
+  "tap_drill_d": 4.2,
+  "bolt_YZ": [
+   -82.0,
+   -24.0
+  ],
+  "tip_arm_Y": 39.5,
+  "tip_arm_Z": 20.4,
+  "clamp_touches": "날(0.0) · 볼트 나사뿐. 블록과 0.1 틈"
+ },
+ "M_H20": {
+  "H_N": 20.0,
+  "V_N": 0.0,
+  "Tx_Nmm": 408.0,
+  "need": 3.0
+ },
+ "M_H40": {
+  "H_N": 40.0,
+  "V_N": 0.0,
+  "Tx_Nmm": 816.0,
+  "need": 3.0
+ },
+ "M_H40_V41.6": {
+  "H_N": 40.0,
+  "V_N": 41.6,
+  "Tx_Nmm": -827.2,
+  "need": 3.0
+ },
+ "M_H20_V20.8": {
+  "H_N": 20.0,
+  "V_N": 20.8,
+  "Tx_Nmm": -413.6,
+  "need": 3.0
+ },
+ "M_jam_H80": {
+  "H_N": 80.0,
+  "V_N": 0.0,
+  "Tx_Nmm": 1632.0,
+  "need": 2.0
+ },
+ "M_jam_H80_V83": {
+  "H_N": 80.0,
+  "V_N": 83.2,
+  "Tx_Nmm": -1654.4,
+  "need": 2.0
+ },
+ "friction_torque_per_N": {
+  "with_bolt_turning": 1.6,
+  "thread_loosening": 1.1607,
+  "used": 1.1607
+ },
+ "slip_T1.5_relax1.0": {
+  "tighten_Nm": 1.5,
+  "relax": 1.0,
+  "preload_N": 1500.0,
+  "head_seat_on_POM_MPa": 45.4728,
+  "POM_Rp_MPa": 60.0,
+  "cap_Nmm": 1740.9831,
+  "SF_H20": 4.267,
+  "SF_H40": 2.134,
+  "SF_H40_V41.6": 2.105,
+  "SF_H20_V20.8": 4.209,
+  "SF_jam_H80": 1.067,
+  "SF_jam_H80_V83": 1.052
+ },
+ "slip_T1.5_relax0.5": {
+  "tighten_Nm": 1.5,
+  "relax": 0.5,
+  "preload_N": 750.0,
+  "head_seat_on_POM_MPa": 45.4728,
+  "POM_Rp_MPa": 60.0,
+  "cap_Nmm": 870.4916,
+  "SF_H20": 2.134,
+  "SF_H40": 1.067,
+  "SF_H40_V41.6": 1.052,
+  "SF_H20_V20.8": 2.105,
+  "SF_jam_H80": 0.533,
+  "SF_jam_H80_V83": 0.526
+ },
+ "slip_T0.7_relax1.0": {
+  "tighten_Nm": 0.7,
+  "relax": 1.0,
+  "preload_N": 700.0,
+  "head_seat_on_POM_MPa": 21.2207,
+  "POM_Rp_MPa": 60.0,
+  "cap_Nmm": 812.4588,
+  "SF_H20": 1.991,
+  "SF_H40": 0.996,
+  "SF_H40_V41.6": 0.982,
+  "SF_H20_V20.8": 1.964,
+  "SF_jam_H80": 0.498,
+  "SF_jam_H80_V83": 0.491
+ },
+ "SLIP_rotation_blade": {
+  "preload_N": 750.0,
+  "cap_Nmm": 870.4916,
+  "M_Nmm": 816.0,
+  "SF": 1.0668,
+  "need": 3.0,
+  "SF_H20": 2.1336,
+  "SF_jam": 0.5262,
+  "SF_no_relax_H40": 2.1336,
+  "note": "턱은 이 값에 기여 0. 미끄러지면 볼트 구멍(Ø5.5)으로는 회전이 안 멈춘다",
+  "verdict": "동작(SF < 1.2)"
+ },
+ "slip_consequence": {
+  "tip_arm_mm": 39.5,
+  "to_tuck_plate_gap_mm": 1.2,
+  "angle_to_tuck_deg": 1.7406,
+  "blade_top_Z": -1.2,
+  "table_Z": 0.0,
+  "angle_to_table_plane_deg": 1.7406,
+  "note": "1.74°에서 날 밑이 접기 판 윗면(Z -9.2)에 닿거나(아래로), 날 윗변이 테이블 면 Z 0 위로 나온다(위로)"
+ },
+ "ledge_if_keyed_H40": {
+  "M_Nmm": 816.0,
+  "R_ledge_N": 204.0,
+  "bearing_mean_MPa": 85.0,
+  "bearing_peak_MPa": 170.0,
+  "SF": 2.4118,
+  "need": 3.0,
+  "SF_peak": 1.2059,
+  "root_shear_MPa": 22.6667,
+  "SF_root_shear": 5.2185,
+  "lip_bend_MPa": 18.1333,
+  "bolt_side_reaction_N": 164.0,
+  "blade_hole_bearing_MPa": 65.6,
+  "verdict": "디테일(기준 미달)"
+ },
+ "ledge_if_keyed_jam_H80_V83": {
+  "M_Nmm": 1654.4,
+  "R_ledge_N": 413.6,
+  "bearing_mean_MPa": 172.3333,
+  "bearing_peak_MPa": 344.6667,
+  "SF": 1.1896,
+  "need": 2.0,
+  "SF_peak": 0.5948,
+  "root_shear_MPa": 45.9556,
+  "SF_root_shear": 2.5739,
+  "lip_bend_MPa": 36.7644,
+  "bolt_side_reaction_N": 333.6,
+  "blade_hole_bearing_MPa": 133.44,
+  "verdict": "동작(SF < 1.2)"
+ },
+ "fix_two_pins_H40": {
+  "pin_d": 2.0,
+  "spacing": 13.5,
+  "F_pin_N": 80.4444,
+  "POM_bearing_MPa": 5.0278,
+  "SF": 11.9337,
+  "need": 3.0,
+  "blade_bearing_MPa": 80.4444,
+  "pin_shear_MPa": 25.6063,
+  "verdict": "됨(과사양 note)"
+ },
+ "fix_two_pins_jam_H80_V83": {
+  "pin_d": 2.0,
+  "spacing": 13.5,
+  "F_pin_N": 180.2592,
+  "POM_bearing_MPa": 11.2662,
+  "SF": 5.3257,
+  "need": 2.0,
+  "blade_bearing_MPa": 180.2592,
+  "pin_shear_MPa": 57.3783,
+  "verdict": "됨"
+ },
+ "tap_SUS304_T1.5": {
+  "inputs": {
+   "d": 5,
+   "le": 3.75,
+   "load_N": 40.0,
+   "torque_Nm": 1.5,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 1500.0,
+  "engage_ratio": 0.75,
+  "sf_operating": {
+   "나사 인장": 390.5,
+   "암나사 전단": 67.92,
+   "분리(예압/외력)": 37.5
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 9.37,
+   "조임 좌면": 8.8,
+   "조임 암나사 전단": 1.81
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "head_seat_POM_T1.5": {
+  "조임 볼트 응력": 9.37,
+  "조임 좌면": 1.32,
+  "조임 암나사 전단": 0.53
+ },
+ "tap_SUS304_T0.7": {
+  "inputs": {
+   "d": 5,
+   "le": 3.75,
+   "load_N": 40.0,
+   "torque_Nm": 0.7,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 700.0,
+  "engage_ratio": 0.75,
+  "sf_operating": {
+   "나사 인장": 390.5,
+   "암나사 전단": 67.92,
+   "분리(예압/외력)": 17.5
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 20.08,
+   "조임 좌면": 18.85,
+   "조임 암나사 전단": 3.88
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "head_seat_POM_T0.7": {
+  "조임 볼트 응력": 20.08,
+  "조임 좌면": 2.83,
+  "조임 암나사 전단": 1.14
+ },
+ "clamp_face_pressure": {
+  "preload_N": 1500.0,
+  "area_mm2": 120.2417,
+  "p_MPa": 12.4749,
+  "note": "날을 사이에 둔 평면 눌림. 누름 판 굽힘 없음(뒤가 블록 면)"
+ },
+ "self_weight_3g": {
+  "mass_g": 4.76,
+  "F_N": 0.1401,
+  "note": "무시"
+ },
+ "overspec": {
+  "note": "누름 판 t4는 나사 물림(3.75, 0.75d)이 정한다 — 줄일 두께 없음. 오히려 물림 1.5d(M-01) 미달"
+ }
+}

@@ -2,8 +2,8 @@
  "date": "2026-11-12",
  "pose": "REST step 0",
  "source": "RX-08 측정부 MCP measure {} 전수(v2.11.1, 3,166바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.19.2.sc",
- "doc_hash": "9a88ac04c361663a",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.20.2.sc",
+ "doc_hash": "4607744f070619d2",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -197,8 +197,8 @@
     -12.0,
     -8.0
    ],
-   "volume": 2652175.336,
-   "mass": 21031.751,
+   "volume": 2635170.961,
+   "mass": 20896.906,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -55823,42 +55823,6 @@
    "mass": 14.884,
    "material": "Steel"
   },
-  "U8_PNEU/STEP대기_M-5P_7": {
-   "name": "STEP대기_M-5P_7",
-   "unit": "U8_PNEU",
-   "component": "STEP대기_M-5P_7",
-   "bolt": false,
-   "spec": "",
-   "bbox": [
-    1098.25,
-    1106.25,
-    67.5,
-    75.5,
-    341.9,
-    349.9
-   ],
-   "volume": 279.602,
-   "mass": 0.361,
-   "material": "Default"
-  },
-  "U8_PNEU/STEP대기_M-5P_5": {
-   "name": "STEP대기_M-5P_5",
-   "unit": "U8_PNEU",
-   "component": "STEP대기_M-5P_5",
-   "bolt": false,
-   "spec": "",
-   "bbox": [
-    1087.75,
-    1095.75,
-    67.5,
-    75.5,
-    341.9,
-    349.9
-   ],
-   "volume": 279.602,
-   "mass": 0.361,
-   "material": "Default"
-  },
   "U7_BASE/CB5-12_RX14 (U7_BASE:1/CB5-12_RX14:5)": {
    "name": "CB5-12_RX14 (U7_BASE:1/CB5-12_RX14:5)",
    "unit": "U7_TAPE",
@@ -56143,8 +56107,8 @@
     -20.0,
     -0.5
    ],
-   "volume": 16302.021,
-   "mass": 129.275,
+   "volume": 10944.909,
+   "mass": 86.793,
    "material": "SUS304"
   },
   "U7_BASE/P_RX14_R1_BRKT": {
@@ -56164,24 +56128,6 @@
    "volume": 140533.351,
    "mass": 1114.429,
    "material": "SUS304"
-  },
-  "U8_PNEU/STEP대기_M-5P_6": {
-   "name": "STEP대기_M-5P_6",
-   "unit": "U8_PNEU",
-   "component": "STEP대기_M-5P_6",
-   "bolt": false,
-   "spec": "",
-   "bbox": [
-    1098.25,
-    1106.25,
-    67.5,
-    75.5,
-    352.1,
-    360.1
-   ],
-   "volume": 279.602,
-   "mass": 0.361,
-   "material": "Default"
   },
   "U7_BASE/CB4-12_RX14 (U7_BASE:1/CB4-12_RX14:3)": {
    "name": "CB4-12_RX14 (U7_BASE:1/CB4-12_RX14:3)",
@@ -56291,24 +56237,6 @@
    "mass": 3.74,
    "material": "SCM435"
   },
-  "U8_PNEU/STEP대기_M-5P_3": {
-   "name": "STEP대기_M-5P_3",
-   "unit": "U8_PNEU",
-   "component": "STEP대기_M-5P_3",
-   "bolt": false,
-   "spec": "",
-   "bbox": [
-    1077.25,
-    1085.25,
-    67.5,
-    75.5,
-    341.9,
-    349.9
-   ],
-   "volume": 279.602,
-   "mass": 0.361,
-   "material": "Default"
-  },
   "U7_BASE/CB5-12_RX14 (U7_BASE:1/CB5-12_RX14:7)": {
    "name": "CB5-12_RX14 (U7_BASE:1/CB5-12_RX14:7)",
    "unit": "U7_TAPE",
@@ -56395,8 +56323,8 @@
     -8.0,
     -2.0
    ],
-   "volume": 35393.45,
-   "mass": 280.67,
+   "volume": 34409.45,
+   "mass": 272.867,
    "material": "SUS304"
   },
   "U7_BASE/P_RX14_KIT_SEAT": {
@@ -56449,8 +56377,962 @@
     -8.0,
     -6.0
    ],
-   "volume": 48212.266,
-   "mass": 382.323,
+   "volume": 46244.266,
+   "mass": 366.717,
+   "material": "SUS304"
+  },
+  "U7_SEAM/CB5-12_RX15_FEED": {
+   "name": "CB5-12_RX15_FEED",
+   "unit": "U7_TAPE",
+   "component": "CB5-12_RX15_FEED",
+   "bolt": true,
+   "spec": "CB5-12",
+   "bbox": [
+    310.3,
+    327.3,
+    -24.25,
+    -15.75,
+    -21.75,
+    -13.25
+   ],
+   "volume": 476.463,
+   "mass": 3.74,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-12_RX15_TUCK": {
+   "name": "CB5-12_RX15_TUCK",
+   "unit": "U7_TAPE",
+   "component": "CB5-12_RX15_TUCK",
+   "bolt": true,
+   "spec": "CB5-12",
+   "bbox": [
+    180.8,
+    197.8,
+    -16.25,
+    -7.75,
+    -22.25,
+    -13.75
+   ],
+   "volume": 476.463,
+   "mass": 3.74,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15": {
+   "name": "CB5-16_RX15",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    95.75,
+    104.25,
+    -104.25,
+    -95.75,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:2)": {
+   "name": "CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:2)",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    119.75,
+    128.25,
+    -104.25,
+    -95.75,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:3)": {
+   "name": "CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:3)",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    95.75,
+    104.25,
+    -226.25,
+    -217.75,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:4)": {
+   "name": "CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:4)",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    119.75,
+    128.25,
+    -226.25,
+    -217.75,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:5)": {
+   "name": "CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:5)",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    145.75,
+    154.25,
+    16.75,
+    25.25,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:6)": {
+   "name": "CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:6)",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    173.75,
+    182.25,
+    16.75,
+    25.25,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:7)": {
+   "name": "CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:7)",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    201.75,
+    210.25,
+    16.75,
+    25.25,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:8)": {
+   "name": "CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:8)",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    313.75,
+    322.25,
+    -50.25,
+    -41.75,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:9)": {
+   "name": "CB5-16_RX15 (U7_SEAM:1/CB5-16_RX15:9)",
+   "unit": "U7_TAPE",
+   "component": "CB5-16_RX15",
+   "bolt": true,
+   "spec": "CB5-16",
+   "bbox": [
+    313.75,
+    322.25,
+    -64.25,
+    -55.75,
+    -24.0,
+    -3.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CB5-20_RX15": {
+   "name": "CB5-20_RX15",
+   "unit": "U7_TAPE",
+   "component": "CB5-20_RX15",
+   "bolt": true,
+   "spec": "CB5-20",
+   "bbox": [
+    103.5,
+    128.5,
+    -86.25,
+    -77.75,
+    -28.25,
+    -19.75
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435"
+  },
+  "U7_SEAM/CDJ2B16-150AZ-B_RX15_FEED": {
+   "name": "CDJ2B16-150AZ-B_RX15_FEED",
+   "unit": "U7_TAPE",
+   "component": "CDJ2B16-150AZ-B_RX15_FEED",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    331.0,
+    555.0,
+    -29.15,
+    -10.85,
+    -39.15,
+    -20.85
+   ],
+   "volume": 22381.832,
+   "mass": 60.431,
+   "material": "Aluminum"
+  },
+  "U7_SEAM/CDJ2B16-150AZ-B_RX15_FEED_NUT_MNT": {
+   "name": "CDJ2B16-150AZ-B_RX15_FEED_NUT_MNT",
+   "unit": "U7_TAPE",
+   "component": "CDJ2B16-150AZ-B_RX15_FEED",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    331.0,
+    335.0,
+    -27.0,
+    -13.0,
+    -38.083,
+    -21.917
+   ],
+   "volume": 414.663,
+   "mass": 3.255,
+   "material": "Steel"
+  },
+  "U7_SEAM/CDJ2B16-150AZ-B_RX15_FEED_NUT_RODA": {
+   "name": "CDJ2B16-150AZ-B_RX15_FEED_NUT_RODA",
+   "unit": "U7_TAPE",
+   "component": "CDJ2B16-150AZ-B_RX15_FEED_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    322.0,
+    326.0,
+    -24.0,
+    -16.0,
+    -34.619,
+    -25.381
+   ],
+   "volume": 156.621,
+   "mass": 1.229,
+   "material": "Steel"
+  },
+  "U7_SEAM/CDJ2B16-150AZ-B_RX15_FEED_NUT_RODB": {
+   "name": "CDJ2B16-150AZ-B_RX15_FEED_NUT_RODB",
+   "unit": "U7_TAPE",
+   "component": "CDJ2B16-150AZ-B_RX15_FEED_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    326.0,
+    330.0,
+    -24.0,
+    -16.0,
+    -34.619,
+    -25.381
+   ],
+   "volume": 156.621,
+   "mass": 1.229,
+   "material": "Steel"
+  },
+  "U7_SEAM/CDJ2B16-150AZ-B_RX15_FEED_ROD": {
+   "name": "CDJ2B16-150AZ-B_RX15_FEED_ROD",
+   "unit": "U7_TAPE",
+   "component": "CDJ2B16-150AZ-B_RX15_FEED_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    311.0,
+    515.0,
+    -28.0,
+    -12.0,
+    -38.0,
+    -22.0
+   ],
+   "volume": 4901.581,
+   "mass": 38.477,
+   "material": "Steel"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_CUT": {
+   "name": "CJ2B16-60SZ_RX15_CUT",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_CUT",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    102.85,
+    121.15,
+    -250.0,
+    -104.0,
+    -42.85,
+    -24.55
+   ],
+   "volume": 20865.956,
+   "mass": 56.338,
+   "material": "Aluminum"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_CUT_NUT_MNT": {
+   "name": "CJ2B16-60SZ_RX15_CUT_NUT_MNT",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_CUT",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    105.0,
+    119.0,
+    -108.0,
+    -104.0,
+    -41.783,
+    -25.617
+   ],
+   "volume": 414.663,
+   "mass": 3.255,
+   "material": "Steel"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_CUT_NUT_RODA": {
+   "name": "CJ2B16-60SZ_RX15_CUT_NUT_RODA",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_CUT_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    108.0,
+    116.0,
+    -95.0,
+    -91.0,
+    -38.319,
+    -29.081
+   ],
+   "volume": 156.621,
+   "mass": 1.229,
+   "material": "Steel"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_CUT_NUT_RODB": {
+   "name": "CJ2B16-60SZ_RX15_CUT_NUT_RODB",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_CUT_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    108.0,
+    116.0,
+    -99.0,
+    -95.0,
+    -38.319,
+    -29.081
+   ],
+   "volume": 156.621,
+   "mass": 1.229,
+   "material": "Steel"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_CUT_ROD": {
+   "name": "CJ2B16-60SZ_RX15_CUT_ROD",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_CUT_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    104.0,
+    120.0,
+    -181.8,
+    -84.0,
+    -41.7,
+    -25.7
+   ],
+   "volume": 2816.31,
+   "mass": 22.108,
+   "material": "Steel"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_TUCK": {
+   "name": "CJ2B16-60SZ_RX15_TUCK",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_TUCK",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    205.0,
+    351.0,
+    -4.15,
+    14.15,
+    -39.15,
+    -20.85
+   ],
+   "volume": 20865.956,
+   "mass": 56.338,
+   "material": "Aluminum"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_TUCK_NUT_MNT": {
+   "name": "CJ2B16-60SZ_RX15_TUCK_NUT_MNT",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_TUCK",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    205.0,
+    209.0,
+    -2.0,
+    12.0,
+    -38.083,
+    -21.917
+   ],
+   "volume": 414.663,
+   "mass": 3.255,
+   "material": "Steel"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_TUCK_NUT_RODA": {
+   "name": "CJ2B16-60SZ_RX15_TUCK_NUT_RODA",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_TUCK_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    192.0,
+    196.0,
+    0.381,
+    9.619,
+    -34.0,
+    -26.0
+   ],
+   "volume": 156.621,
+   "mass": 1.229,
+   "material": "Steel"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_TUCK_NUT_RODB": {
+   "name": "CJ2B16-60SZ_RX15_TUCK_NUT_RODB",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_TUCK_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    196.0,
+    200.0,
+    0.381,
+    9.619,
+    -34.0,
+    -26.0
+   ],
+   "volume": 156.621,
+   "mass": 1.229,
+   "material": "Steel"
+  },
+  "U7_SEAM/CJ2B16-60SZ_RX15_TUCK_ROD": {
+   "name": "CJ2B16-60SZ_RX15_TUCK_ROD",
+   "unit": "U7_TAPE",
+   "component": "CJ2B16-60SZ_RX15_TUCK_ROD",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    185.0,
+    282.8,
+    -3.0,
+    13.0,
+    -38.0,
+    -22.0
+   ],
+   "volume": 2816.31,
+   "mass": 22.108,
+   "material": "Steel"
+  },
+  "U8_PNEU/KQ2L06-M5A_M08S_NZ (U8_PNEU:1/KQ2L06-M5A_M08S_NZ:4)": {
+   "name": "KQ2L06-M5A_M08S_NZ (U8_PNEU:1/KQ2L06-M5A_M08S_NZ:4)",
+   "unit": "U8_PNEU",
+   "component": "KQ2L06-M5A_M08S_NZ",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    1086.55,
+    1096.95,
+    57.8,
+    79.5,
+    331.4,
+    349.941
+   ],
+   "volume": 1290.554,
+   "mass": 1.665,
+   "material": "Default"
+  },
+  "U8_PNEU/KQ2L06-M5A_M08S_NZ (U8_PNEU:1/KQ2L06-M5A_M08S_NZ:5)": {
+   "name": "KQ2L06-M5A_M08S_NZ (U8_PNEU:1/KQ2L06-M5A_M08S_NZ:5)",
+   "unit": "U8_PNEU",
+   "component": "KQ2L06-M5A_M08S_NZ",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    1097.05,
+    1107.45,
+    57.8,
+    79.5,
+    331.4,
+    349.941
+   ],
+   "volume": 1290.554,
+   "mass": 1.665,
+   "material": "Default"
+  },
+  "U8_PNEU/KQ2L06-M5A_M08S_NZ (U8_PNEU:1/KQ2L06-M5A_M08S_NZ:6)": {
+   "name": "KQ2L06-M5A_M08S_NZ (U8_PNEU:1/KQ2L06-M5A_M08S_NZ:6)",
+   "unit": "U8_PNEU",
+   "component": "KQ2L06-M5A_M08S_NZ",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    1076.05,
+    1086.45,
+    57.8,
+    79.5,
+    331.4,
+    349.941
+   ],
+   "volume": 1290.554,
+   "mass": 1.665,
+   "material": "Default"
+  },
+  "U8_PNEU/KQ2L06-M5A_M08S_PZ (U8_PNEU:1/KQ2L06-M5A_M08S_PZ:5)": {
+   "name": "KQ2L06-M5A_M08S_PZ (U8_PNEU:1/KQ2L06-M5A_M08S_PZ:5)",
+   "unit": "U8_PNEU",
+   "component": "KQ2L06-M5A_M08S_PZ",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    1097.05,
+    1107.45,
+    57.8,
+    79.5,
+    352.059,
+    370.6
+   ],
+   "volume": 1290.554,
+   "mass": 1.665,
+   "material": "Default"
+  },
+  "U7_SEAM/KQ2L06-M5A_RX15_CUT": {
+   "name": "KQ2L06-M5A_RX15_CUT",
+   "unit": "U7_TAPE",
+   "component": "KQ2L06-M5A_RX15_CUT",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    107.959,
+    126.5,
+    -250.2,
+    -239.8,
+    -61.55,
+    -39.85
+   ],
+   "volume": 1290.554,
+   "mass": 1.665,
+   "material": "Default"
+  },
+  "U7_SEAM/KQ2L06-M5A_RX15_FEED_A": {
+   "name": "KQ2L06-M5A_RX15_FEED_A",
+   "unit": "U7_TAPE",
+   "component": "KQ2L06-M5A_RX15_FEED_A",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    344.959,
+    363.5,
+    -25.2,
+    -14.8,
+    -57.85,
+    -36.15
+   ],
+   "volume": 1290.554,
+   "mass": 1.665,
+   "material": "Default"
+  },
+  "U7_SEAM/KQ2L06-M5A_RX15_FEED_B": {
+   "name": "KQ2L06-M5A_RX15_FEED_B",
+   "unit": "U7_TAPE",
+   "component": "KQ2L06-M5A_RX15_FEED_B",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    546.959,
+    565.5,
+    -25.2,
+    -14.8,
+    -57.85,
+    -36.15
+   ],
+   "volume": 1290.554,
+   "mass": 1.665,
+   "material": "Default"
+  },
+  "U7_SEAM/KQ2L06-M5A_RX15_TUCK": {
+   "name": "KQ2L06-M5A_RX15_TUCK",
+   "unit": "U7_TAPE",
+   "component": "KQ2L06-M5A_RX15_TUCK",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    341.959,
+    360.5,
+    -0.2,
+    10.2,
+    -57.85,
+    -36.15
+   ],
+   "volume": 1290.554,
+   "mass": 1.665,
+   "material": "Default"
+  },
+  "U7_SEAM/P_RX15_BLADE": {
+   "name": "P_RX15_BLADE",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_BLADE",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    124.25,
+    124.75,
+    -88.0,
+    -40.0,
+    -33.0,
+    -1.2
+   ],
+   "volume": 292.179,
+   "mass": 2.294,
+   "material": "SK5"
+  },
+  "U7_SEAM/P_RX15_BLADE_CLAMP": {
+   "name": "P_RX15_BLADE_CLAMP",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_BLADE_CLAMP",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    124.35,
+    128.75,
+    -89.5,
+    -76.0,
+    -33.0,
+    -18.0
+   ],
+   "volume": 740.545,
+   "mass": 5.873,
+   "material": "SUS304"
+  },
+  "U7_SEAM/P_RX15_CUT_BASE": {
+   "name": "P_RX15_CUT_BASE",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_CUT_BASE",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    96.0,
+    128.0,
+    -232.0,
+    -93.0,
+    -45.0,
+    -12.0
+   ],
+   "volume": 45148.296,
+   "mass": 120.997,
+   "material": "A5052"
+  },
+  "U7_SEAM/P_RX15_CUT_SLIDE": {
+   "name": "P_RX15_CUT_SLIDE",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_CUT_SLIDE",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    95.0,
+    124.25,
+    -230.0,
+    -76.0,
+    -40.0,
+    -5.5
+   ],
+   "volume": 15931.027,
+   "mass": 22.463,
+   "material": "POM"
+  },
+  "U7_SEAM/P_RX15_FEED_BASE": {
+   "name": "P_RX15_FEED_BASE",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_FEED_BASE",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    312.0,
+    339.0,
+    -66.0,
+    -10.0,
+    -40.0,
+    -12.0
+   ],
+   "volume": 21516.643,
+   "mass": 57.665,
+   "material": "A5052"
+  },
+  "U7_SEAM/P_RX15_FEED_CLAW": {
+   "name": "P_RX15_FEED_CLAW",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_FEED_CLAW",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    310.0,
+    322.3,
+    -25.0,
+    -15.0,
+    -21.0,
+    -5.0
+   ],
+   "volume": 45.098,
+   "mass": 0.358,
+   "material": "SUS304-1/2H"
+  },
+  "U7_SEAM/P_RX15_FEED_SLIDE": {
+   "name": "P_RX15_FEED_SLIDE",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_FEED_SLIDE",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    304.0,
+    322.0,
+    -25.0,
+    -15.0,
+    -36.0,
+    -6.2
+   ],
+   "volume": 4216.348,
+   "mass": 5.945,
+   "material": "POM"
+  },
+  "U7_SEAM/P_RX15_PIN": {
+   "name": "P_RX15_PIN",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_PIN",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    98.1,
+    100.1,
+    -83.5,
+    -36.5,
+    -8.0,
+    -6.0
+   ],
+   "volume": 147.655,
+   "mass": 1.171,
+   "material": "SUS304"
+  },
+  "U7_SEAM/P_RX15_TUCKER": {
+   "name": "P_RX15_TUCKER",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_TUCKER",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    131.0,
+    192.8,
+    -35.0,
+    -5.0,
+    -24.0,
+    -9.2
+   ],
+   "volume": 840.513,
+   "mass": 6.665,
+   "material": "SUS304-1/2H"
+  },
+  "U7_SEAM/P_RX15_TUCK_ARM": {
+   "name": "P_RX15_TUCK_ARM",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_TUCK_ARM",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    185.0,
+    192.0,
+    -14.0,
+    9.0,
+    -35.0,
+    -10.2
+   ],
+   "volume": 1919.239,
+   "mass": 15.22,
+   "material": "SUS304"
+  },
+  "U7_SEAM/P_RX15_TUCK_BASE": {
+   "name": "P_RX15_TUCK_BASE",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_TUCK_BASE",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    127.0,
+    213.0,
+    -12.0,
+    28.0,
+    -40.0,
+    -12.0
+   ],
+   "volume": 46931.989,
+   "mass": 125.778,
+   "material": "A5052"
+  },
+  "U8_PNEU/TU0604_RX15_CUT": {
+   "name": "TU0604_RX15_CUT",
+   "unit": "U8_PNEU",
+   "component": "TU0604_RX15_CUT",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    126.5,
+    1084.25,
+    -248.0,
+    66.0,
+    -59.35,
+    331.4
+   ],
+   "volume": 46302.724,
+   "mass": 59.731,
+   "material": "Default"
+  },
+  "U8_PNEU/TU0604_RX15_FEED_A": {
+   "name": "TU0604_RX15_FEED_A",
+   "unit": "U8_PNEU",
+   "component": "TU0604_RX15_FEED_A",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    363.5,
+    1105.25,
+    -23.0,
+    66.0,
+    -55.65,
+    331.4
+   ],
+   "volume": 32902.434,
+   "mass": 42.444,
+   "material": "Default"
+  },
+  "U8_PNEU/TU0604_RX15_FEED_B": {
+   "name": "TU0604_RX15_FEED_B",
+   "unit": "U8_PNEU",
+   "component": "TU0604_RX15_FEED_B",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    565.5,
+    1105.25,
+    -23.0,
+    66.0,
+    -55.65,
+    388.6
+   ],
+   "volume": 29046.607,
+   "mass": 37.47,
+   "material": "Default"
+  },
+  "U8_PNEU/TU0604_RX15_TUCK": {
+   "name": "TU0604_RX15_TUCK",
+   "unit": "U8_PNEU",
+   "component": "TU0604_RX15_TUCK",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    360.5,
+    1094.75,
+    2.0,
+    66.0,
+    -55.65,
+    331.4
+   ],
+   "volume": 31963.282,
+   "mass": 41.233,
+   "material": "Default"
+  },
+  "U7_SEAM/P_RX15_BLADE_PIN_L": {
+   "name": "P_RX15_BLADE_PIN_L",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_BLADE_PIN_L",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    116.25,
+    126.25,
+    -83.0,
+    -81.0,
+    -31.0,
+    -29.0
+   ],
+   "volume": 31.416,
+   "mass": 0.249,
+   "material": "SUS304"
+  },
+  "U7_SEAM/P_RX15_BLADE_PIN_U": {
+   "name": "P_RX15_BLADE_PIN_U",
+   "unit": "U7_TAPE",
+   "component": "P_RX15_BLADE_PIN_U",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    116.25,
+    126.25,
+    -83.0,
+    -81.0,
+    -17.0,
+    -15.0
+   ],
+   "volume": 31.416,
+   "mass": 0.249,
+   "material": "SUS304"
+  },
+  "U7_SEAM/STEP대기_WASHER_M5S_RX15": {
+   "name": "STEP대기_WASHER_M5S_RX15",
+   "unit": "U7_TAPE",
+   "component": "STEP대기_WASHER_M5S_RX15",
+   "bolt": false,
+   "spec": "",
+   "bbox": [
+    108.5,
+    109.5,
+    -86.5,
+    -77.5,
+    -28.5,
+    -19.5
+   ],
+   "volume": 41.555,
+   "mass": 0.33,
    "material": "SUS304"
   }
  }

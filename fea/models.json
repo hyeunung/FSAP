@@ -1394,6 +1394,58 @@
     "source": "요구서 6-1(M-09 기본값)"
    },
    "status": "손계산 fea/results/mech_RX-14_fea2_handcalc.json — 눌림 0.22 MPa(받침, 과사양으로 세지 않음). FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX15_BLADE_CLAMP": {
+   "case": "cases/mech_RX-15_fea2_handcalc.py",
+   "step": "tools/out/mech_RX-15/stepout/P_RX15_BLADE_CLAMP.step",
+   "version": "v2.20.2",
+   "fixed": "M5 탭(Y -82 · Z -24, 물림 3.75) 한 곳 — CB5-20_RX15(머리 밑 와셔)가 POM 블록과 날을 지나 물림. Z -33까지 늘림, 아래 핀 도피 Ø2.6",
+   "contact": "-X 면(X 124.75)이 날 섕크에 닿음 0.0, 턱 +Y 면(Y -88)이 날 등에 닿음 0.0",
+   "load": "v2.20.2부터 날 회전은 맞춤 핀 2개가 받는다 — 누름 판은 누르는 일만(조임 예압). 자중 x3 g 무시",
+   "criteria": {
+    "value": "일반 SF 3, 오조작(걸림) SF 2. SF < 1.2 = 동작",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-15_fea2_handcalc.json — 하중 경로에서 빠짐. 탭 물림 0.75d(디테일 A2) 그대로. 1회차(v2.20.1): 마찰만으로 SF 1.07 · 걸림 0.53 -> 핀으로 고침. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX15_BLADE_PIN": {
+   "case": "cases/mech_RX-15_fea2_handcalc.py",
+   "step": "tools/out/mech_RX-15/stepout/P_RX15_BLADE_PIN_L.step · _U.step",
+   "version": "v2.20.2",
+   "fixed": "POM 슬라이드 블록 구멍 Ø2 x 8(X 116.25~124.25)에 박힘, 축 X, Y -82 · Z -30 · -16(간격 14)",
+   "contact": "날 구멍 Ø2(t0.5, X 124.25~124.75)에 꿰임 — 블록 면에서 e 0.25. 누름 판과는 도피 0.3 / 1.0",
+   "load": "날 끝 (Y -42.5, Z -3.6)의 절단 힘 H 20~40 N(임시 D-06) + 아래 힘 1.04 H -> 핀 가운데 둘레 -867 N·mm(40 N), 핀 힘 84.5 N. 걸림 H 49 N(안내 마찰 뺌) 103.7 N, 위쪽 값 80 N 169.1 N. 볼트 마찰 0",
+   "criteria": {
+    "value": "일반 SF 3, 오조작(걸림) SF 2. SF < 1.2 = 동작",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-15_fea2_handcalc.json — POM 고른 눌림 SF 11.4 · 9.3, 가장자리 눌림 2.71(40 N, 기준 3 미달 — 디테일 V6) · 2.21(걸림 49 N), 핀 전단 4.4, 날 구멍 눌림 11.8. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX15_BLADE": {
+   "case": "cases/mech_RX-15_fea2_handcalc.py",
+   "step": "tools/out/mech_RX-15/stepout/P_RX15_BLADE.step",
+   "version": "v2.20.2",
+   "fixed": "섕크(Y -88~-76 · Z -33~-1.2)가 맞춤 핀 2개에 걸리고 누름 판 + CB5-20으로 블록 면에 눌림",
+   "contact": "팔(Y -76~-40 · Z -8~-1.2, 높이 6.8)은 외팔 36. 옆은 카세트 판·덮개·홈통 틈 0.25 안내, 밑은 받침 없음(접기 판 윗면과 1.2)",
+   "load": "날 변 가운데에 H(-Y) 20~40 N(임시 D-06) + V(-Z) 1.04 H, 걸림 H 49 N / 자중 무시",
+   "criteria": {
+    "value": "일반 SF 3, 오조작(걸림) SF 2. SF < 1.2 = 동작",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-15_fea2_handcalc.json — 팔 뿌리 굽힘 363 MPa SF 2.75(40 N, SK5 내력 1,000 어림 — 디테일) · 걸림 2.25, 섕크 순단면 11.2, 좌굴은 틈 안내에 기대 5.7. FEA 못 함 — 환경 없음(D-16)"
+  },
+  "P_RX15_CUT_SLIDE": {
+   "case": "cases/mech_RX-15_fea2_handcalc.py",
+   "step": "tools/out/mech_RX-15/stepout/P_RX15_CUT_SLIDE.step",
+   "version": "v2.20.2",
+   "fixed": "혀(10 x 6, Y -230~-91)가 받침 P_RX15_CUT_BASE 홈(X 106.8~117.2 · Z -18.4~-12, Y -232~-93)에 미끄럼 — 바닥 틈 0.2 · 뚜껑(판넬 밑 Z -12) 틈 0.2 · 옆 0.2. 블록 로드 탭 M5 x 8에 실린더 로드 Ø5가 너트 2개로 꽉 물림(코 끝 Y -104에서 외팔 13 + 행정)",
+   "contact": "핀 기둥(3 x 4, POM) ↔ 판넬 장공 +Y 끝 Y -43.5(행정 40 멈춤, 사이클마다). 블록 윗면 ↔ 판넬 밑 0.2. 블록 밑은 받침 없음",
+   "load": "실린더 Ø16 x 0.5 MPa 100.5 N - 스프링 20(임시) = 80.5 N(로드 축 Z -33.7) / 날 끝 H 20~40 N + V 1.04 H(날 끝은 블록 뒷면에서 48.5 앞, 로드 축에서 Z 30.1 위) / 자중 x3 g 0.9 N",
+   "criteria": {
+    "value": "일반 SF 3, 오조작(걸림) SF 2. SF < 1.2 = 동작",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-15_fea2_handcalc.json — 아래 힘 V를 받는 안내가 없다(동작 A4): 혀는 틈 0.2 안에서 뜨고 실린더 로드가 옆 힘 20.8~41.6 N을 굽힘으로 받음, 로드 SF 0.88(40 N, Rp 205) · 1.76(20 N) · 걸림 0.72, 날 끝 처짐 1.2~2.0 mm. 혀만 받으면 7.0 mm. 멈춤 기둥 SF 2.71 · 멈춤 자세 혀 2.56(디테일). FEA 못 함 — 환경 없음(D-16)"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
