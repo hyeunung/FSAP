@@ -1,0 +1,246 @@
+{
+ "bbox": {
+  "n_pts": 88,
+  "min": [
+   -28.0,
+   -66.299,
+   0.0
+  ],
+  "max": [
+   98.0,
+   0.0,
+   125.00000000000001
+  ]
+ },
+ "geom": {
+  "L_plate": 26.87,
+  "L_lip": 12.5,
+  "lever_max": 28.93,
+  "far_pt": [
+   -55.474,
+   95.483
+  ],
+  "root": [
+   -52.433,
+   124.25
+  ],
+  "b_plate": 100.0,
+  "span_bolts": 110.0
+ },
+ "loads": {
+  "W3_N": 3.387,
+  "F_hand_N": 20.0,
+  "F_whatif_N": 100.0
+ },
+ "run_selfweight": {
+  "F_N": 3.3873930000000003,
+  "sf_req": 3.0,
+  "root_full": {
+   "M": 98.0,
+   "sigma": 2.6,
+   "SF": 78.45
+  },
+  "root_corner": {
+   "b_eff": 28.9,
+   "sigma": 9.0,
+   "SF": 22.69
+  },
+  "torsion": {
+   "J_mm4": 61.0,
+   "T_half": 49.0,
+   "tau": 1.2,
+   "SF": 98.26,
+   "theta_rad": 0.00059,
+   "tip_move_mm": 0.017
+  },
+  "flange_boltline": {
+   "arm": 20.8,
+   "b_eff": 17.2,
+   "M": 70.5,
+   "sigma": 10.9,
+   "SF": 18.8
+  },
+  "bolt_pull_N": 12.8,
+  "bolt_M4": {
+   "inputs": {
+    "d": 4,
+    "le": 10.5,
+    "load_N": 12.8,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 7.0,
+    "dh": 4.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 1875.0,
+   "engage_ratio": 2.62,
+   "sf_operating": {
+    "나사 인장": 754.53,
+    "암나사 전단": 452.28,
+    "분리(예압/외력)": 146.48
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.64,
+    "조임 좌면": 2.53,
+    "조임 암나사 전단": 3.09
+   },
+   "worst": "조임 좌면",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "label": "운전 자중 x3 g"
+ },
+ "misuse_hand20": {
+  "F_N": 20.0,
+  "sf_req": 2.0,
+  "root_full": {
+   "M": 578.5,
+   "sigma": 15.4,
+   "SF": 13.29
+  },
+  "root_corner": {
+   "b_eff": 28.9,
+   "sigma": 53.3,
+   "SF": 3.84
+  },
+  "torsion": {
+   "J_mm4": 61.0,
+   "T_half": 289.3,
+   "tau": 7.1,
+   "SF": 16.64,
+   "theta_rad": 0.00348,
+   "tip_move_mm": 0.101
+  },
+  "flange_boltline": {
+   "arm": 20.8,
+   "b_eff": 17.2,
+   "M": 416.0,
+   "sigma": 64.4,
+   "SF": 3.18
+  },
+  "bolt_pull_N": 75.5,
+  "bolt_M4": {
+   "inputs": {
+    "d": 4,
+    "le": 10.5,
+    "load_N": 75.5,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 7.0,
+    "dh": 4.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1875.0,
+   "engage_ratio": 2.62,
+   "sf_operating": {
+    "나사 인장": 127.92,
+    "암나사 전단": 76.68,
+    "분리(예압/외력)": 24.83
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.64,
+    "조임 좌면": 2.53,
+    "조임 암나사 전단": 3.09
+   },
+   "worst": "조임 좌면",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "label": "오조작 손 20 N(설계안 가정)"
+ },
+ "whatif_hand100": {
+  "F_N": 100.0,
+  "sf_req": 2.0,
+  "root_full": {
+   "M": 2892.7,
+   "sigma": 77.1,
+   "SF": 2.66
+  },
+  "root_corner": {
+   "b_eff": 28.9,
+   "sigma": 266.7,
+   "SF": 0.77
+  },
+  "torsion": {
+   "J_mm4": 61.0,
+   "T_half": 1446.4,
+   "tau": 35.6,
+   "SF": 3.33,
+   "theta_rad": 0.01738,
+   "tip_move_mm": 0.503
+  },
+  "flange_boltline": {
+   "arm": 20.8,
+   "b_eff": 17.2,
+   "M": 2079.9,
+   "sigma": 321.9,
+   "SF": 0.64
+  },
+  "bolt_pull_N": 377.3,
+  "bolt_M4": {
+   "inputs": {
+    "d": 4,
+    "le": 10.5,
+    "load_N": 377.3,
+    "torque_Nm": 1.5,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 7.0,
+    "dh": 4.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1875.0,
+   "engage_ratio": 2.62,
+   "sf_operating": {
+    "나사 인장": 25.6,
+    "암나사 전단": 15.34,
+    "분리(예압/외력)": 4.97
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.64,
+    "조임 좌면": 2.53,
+    "조임 암나사 전단": 3.09
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "label": "가정 검토 손 100 N"
+ },
+ "seat_CB4_on_slot": {
+  "A_mm2": 9.31,
+  "preload_N": 1875.0,
+  "p_MPa": 201.3,
+  "pG_SUS304": 400,
+  "SF": 1.99
+ },
+ "seat_CB4_on_slot_1Nm": {
+  "preload_N": 1250.0,
+  "p_MPa": 134.2
+ },
+ "lamp_M3_each_N": 0.589,
+ "vibration": {
+  "k_bend_Nm_rad": 202.0,
+  "k_tor_Nm_rad": 499.2,
+  "k_series": 143.8,
+  "J_kgm2": 4.2040000000000004e-05,
+  "f1_Hz": 294.0,
+  "f_bend_only_Hz": 349.0,
+  "head_Hz": 50.0,
+  "ratio": 5.89
+ },
+ "selfweight_tip_mm": 0.0066,
+ "summary": {
+  "misuse20_min_SF": 3.18,
+  "whatif100_min_SF": 0.64,
+  "run_min_SF": 18.8
+ }
+}
