@@ -1,0 +1,181 @@
+{
+ "bbox": {
+  "P_RX02_NOZ_BLK_MILL": {
+   "n_pts": 109,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    51.77888886054566,
+    44.0,
+    125.0
+   ]
+  },
+  "P_RX02_NOZ_PIPE": {
+   "n_pts": 2395,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    32.00000001768719,
+    32.00000001768719,
+    109.00000000000004
+   ]
+  }
+ },
+ "pipe": {
+  "A_mm2": 5.498,
+  "I_mm4": 8.59,
+  "Z_mm3": 4.295,
+  "L_centerline": 84.1,
+  "L_out_of_block": 80.1,
+  "root_tip_dist": 74.42,
+  "arm_jet_mm": 30.07,
+  "op": {
+   "F_jet_N": 3.534,
+   "M_jet_Nmm": 106.3,
+   "F_selfweight3g_N": 0.1079,
+   "M_g_Nmm": 1.45,
+   "sigma_MPa": 25.08,
+   "sf": 8.17,
+   "sf_req": 3,
+   "overspec_limit": 9,
+   "hoop_MPa": 1.5,
+   "sf_hoop": 136.7,
+   "tip_defl_mm": 0.3652
+  },
+  "misuse": {
+   "F_N": 10.0,
+   "M_Nmm": 744.2,
+   "sigma_MPa": 173.3,
+   "sf": 1.18,
+   "sf_req": 2,
+   "F_first_yield_N": 11.83,
+   "F_for_sf2_N": 5.92
+  },
+  "bend": {
+   "R": 10.0,
+   "R_over_D": 2.5,
+   "outer_strain": 0.2,
+   "wall_outer_after_mm": 0.417,
+   "SUS304_elong_min": 0.4
+  },
+  "vib": {
+   "f1_Hz_Lout": 538.0,
+   "f1_Hz_L107": 301.0,
+   "excite_Hz": 50.0,
+   "ratio": 10.8
+  },
+  "socket": {
+   "Le_mm": 4.0,
+   "p_jet_MPa": 10.19,
+   "sf_jet": 20.6,
+   "p_hand10N_MPa": 70.4,
+   "sf_hand10N": 2.98,
+   "p_at_pipe_yield_MPa": 83.3
+  }
+ },
+ "block": {
+  "F_tube_N": 20.0,
+  "F_w3g_N": 1.477,
+  "F_bolt_each_N": 17.64,
+  "sigma_MPa": 1.59,
+  "sf": 123.0,
+  "port_wall_min_mm": 2.5,
+  "hoop_wall_sf": 390.0
+ },
+ "CB5-20_into_head": {
+  "inputs": {
+   "d": 5,
+   "le": 10.0,
+   "load_N": 17.64,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052-H112",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 2.0,
+  "sf_operating": {
+   "나사 인장": 885.49,
+   "암나사 전단": 220.39,
+   "분리(예압/외력)": 255.1
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.32,
+   "조임 암나사 전단": 0.86
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "CB5-20_seat_on_block": {
+  "inputs": {
+   "d": 5,
+   "le": 10.0,
+   "load_N": 17.64,
+   "torque_Nm": 4.5,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 4500.0,
+  "engage_ratio": 2.0,
+  "sf_operating": {
+   "나사 인장": 885.49,
+   "암나사 전단": 390.7,
+   "분리(예압/외력)": 255.1
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.12,
+   "조임 좌면": 1.54,
+   "조임 암나사 전단": 1.53
+  },
+  "worst": "조임 암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "M5_fitting_tap": {
+  "inputs": {
+   "d": 5,
+   "le": 5.0,
+   "load_N": 20.0,
+   "torque_Nm": 1.5,
+   "bolt": "A2-70",
+   "base": "A5052",
+   "dw": 8.0,
+   "dh": 5.2,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 1500.0,
+  "engage_ratio": 1.0,
+  "sf_operating": {
+   "나사 인장": 319.5,
+   "암나사 전단": 172.3,
+   "분리(예압/외력)": 75.0
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 3.83,
+   "조임 좌면": 4.06,
+   "조임 암나사 전단": 2.3
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ }
+}
