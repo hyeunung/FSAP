@@ -1,0 +1,167 @@
+{
+ "bbox_P_M03_GCOV_SM": {
+  "bbox_xyz": [
+   [
+    -2180.0,
+    -420.0
+   ],
+   [
+    27.0,
+    120.0
+   ],
+   [
+    290.0,
+    520.0
+   ]
+  ],
+  "vertices": 236,
+  "cylinder_radius_count": {
+   "2.25": 18,
+   "2.7": 36,
+   "2.75": 14,
+   "2.0": 6,
+   "4.0": 6
+  },
+  "expect": "X -2180~-420 · Y 27~120 · Z 290~520, 반지름 2.7 구멍 18(면이 나뉘면 36), 4.5 반지름 0"
+ },
+ "C_front_gross": {
+  "A_mm2": 458,
+  "Iz_mm4": 15920.1405,
+  "Iy_mm4": 1550431.7234,
+  "sigma_hand_Y_MPa": 35.78,
+  "SF_hand_Y": 4.4718,
+  "sigma_hand_Z_MPa": 2.4395,
+  "SF": 65.5875,
+  "need": 2.0,
+  "deflect_hand_Z_mm": 0.0657,
+  "deflect_hand_Y_mm": 6.4008,
+  "verdict": "됨(과사양 note)"
+ },
+ "C_front_net_hole_5.4": {
+  "A_mm2": 447.2,
+  "Iz_mm4": 15398.8636,
+  "Iy_mm4": 1486305.6606,
+  "sigma_hand_Y_MPa": 37.3847,
+  "SF_hand_Y": 4.2798,
+  "sigma_hand_Z_MPa": 2.4983,
+  "SF": 64.0424,
+  "need": 2.0,
+  "deflect_hand_Z_mm": 0.0686,
+  "deflect_hand_Y_mm": 6.6175,
+  "verdict": "됨(과사양 note)"
+ },
+ "hole_edge_peak_hand_Z": {
+  "note": "항복은 국부 첨두로 판정하지 않는 것이 보통이나 보수로 기록(정적, 연성 재질)",
+  "sigma_nominal_MPa": 1.9927,
+  "Kt": 2.5,
+  "sigma_peak_MPa": 4.9816,
+  "SF": 32.1179,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "bolt_external_load": {
+  "hand_lift_one_bolt_N": 107.4428,
+  "brush_drag_N": "≤ 20(설계안 임시, 마찰 — 볼트엔 전단, 예압 마찰로 받음)"
+ },
+ "handcalc_CB4_20_into_NFPS": {
+  "inputs": {
+   "d": 4,
+   "le": 4.0,
+   "load_N": 107.4,
+   "torque_Nm": 1.2,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 6.9,
+   "dh": 4.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 1500.0,
+  "engage_ratio": 1.0,
+  "sf_operating": {
+   "나사 인장": 89.93,
+   "암나사 전단": 21.59,
+   "분리(예압/외력)": 13.97
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 5.79,
+   "조임 좌면": 5.73,
+   "조임 암나사 전단": 1.55
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "handcalc_CB4_20_into_NFPS_T0.8": {
+  "inputs": {
+   "d": 4,
+   "le": 4.0,
+   "load_N": 107.4,
+   "torque_Nm": 0.8,
+   "bolt": "12.9",
+   "base": "SUS304",
+   "dw": 6.9,
+   "dh": 4.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 1000.0,
+  "engage_ratio": 1.0,
+  "sf_operating": {
+   "나사 인장": 89.93,
+   "암나사 전단": 21.59,
+   "분리(예압/외력)": 9.31
+  },
+  "sf_tightening": {
+   "조임 볼트 응력": 8.69,
+   "조임 좌면": 8.6,
+   "조임 암나사 전단": 2.32
+  },
+  "worst": "조임 암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "preload": {
+  "T_Nm": 1.2,
+  "K": 0.2,
+  "F_N": 1500.0
+ },
+ "nut_body_bearing_plate": {
+  "A_mm2": 26.1145,
+  "sigma_MPa": 61.5537,
+  "SF": 2.5994,
+  "need": 3.0,
+  "note": "예압 + 손 들어 올림. 판은 홀더(위)와 너트 몸(아래) 사이 눌림 — 펀칭 아님",
+  "verdict": "디테일(기준 미달)"
+ },
+ "nut_torque_out": {
+  "T_tight_Nm": 1.2,
+  "T_out_catalog_Nm": 2.3,
+  "SF": 1.9167,
+  "need": 3.0,
+  "note": "카탈로그 값 임시(사이트 열지 않음). 표준 토크 3.8 N·m로 조이면 SF 0.61 -> 너트 헛돎. 도면·설계검토서에 토크 지정 필요",
+  "verdict": "디테일(기준 미달)"
+ },
+ "nut_pushout": {
+  "note": "들어 올림 · 조임 모두 너트를 판 쪽으로 당김 -> 밀림 하중 0. 위에서 누르는 힘은 홀더가 윗판에 바로 전함",
+  "SF": "해당 없음"
+ },
+ "head_bearing_holder": {
+  "A_mm2": 22.5802,
+  "sigma_MPa": 71.1882,
+  "SF": 2.2476,
+  "need": 3.0,
+  "note": "홀더 A5052 임시(D-224). 받침 허용을 항복과 같게 본 보수값",
+  "verdict": "디테일(기준 미달)"
+ },
+ "segment_slip": {
+  "bolts_A": 4,
+  "F_fric_N": 1200.0,
+  "drag_N": 20.0,
+  "SF": 60.0,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ }
+}
