@@ -1,0 +1,210 @@
+{
+ "bbox_P_M03_GCOV_SM": {
+  "bbox_xyz": [
+   [
+    -2180.0,
+    -420.0
+   ],
+   [
+    27.0,
+    120.0
+   ],
+   [
+    290.0,
+    520.0
+   ]
+  ],
+  "points": 236
+ },
+ "bbox_P_M03_GCOV_RBRKT_SM": {
+  "bbox_xyz": [
+   [
+    -2160.0,
+    -440.0
+   ],
+   [
+    100.0,
+    150.0
+   ],
+   [
+    247.0,
+    261.0
+   ]
+  ],
+  "points": 88
+ },
+ "C_front_hand_Y": {
+  "load": "손 100 N 수평(+Y) 창 가운데, 단순 지지 1500",
+  "A_mm2": 458,
+  "yc": 30.81,
+  "Iz_mm4": 15920.1405,
+  "c": 15.19,
+  "M_Nmm": 37500.0,
+  "sigma_MPa": 35.78,
+  "SF": 4.4718,
+  "need": 2.0,
+  "deflect_mm": 6.4008,
+  "verdict": "됨"
+ },
+ "C_front_hand_Z": {
+  "load": "손 100 N 아래(-Z) 윗판 앞끝 창 가운데",
+  "Iy_mm4": 1550431.7234,
+  "sigma_MPa": 2.4395,
+  "SF": 65.5875,
+  "need": 2.0,
+  "deflect_mm": 0.0657,
+  "verdict": "됨(과사양 note)"
+ },
+ "C_front_selfweight_3g": {
+  "w_N_per_mm": 0.0605,
+  "M_Nmm": 17017.3503,
+  "sigma_MPa": 1.107,
+  "SF": 144.5309,
+  "need": 3.0,
+  "deflect_mm": 0.0373,
+  "verdict": "됨(과사양 note)"
+ },
+ "wall_plate_no_holder": {
+  "load": "손 100 N 앞벽 아래 끝(+Y), 홀더 띠 무시(보수)",
+  "a_mm": 169,
+  "m_root_N": 50.9,
+  "b_eff_mm": 332.0236,
+  "sigma_MPa": 76.35,
+  "SF": 2.0956,
+  "need": 2.0,
+  "deflect_mm": 10.5345,
+  "verdict": "됨(기준 +10% 안 — FEA 확인 대상, 환경 없음 D-16)"
+ },
+ "wall_plate_with_holder": {
+  "load": "같은 손 하중, B3 홀더 10x10 띠가 X로 나눔(탄성 기초 보)",
+  "k_N_mm2": 0.0286,
+  "beta_per_mm": 0.0033,
+  "spread_len_mm": 940.8645,
+  "q_peak_N_per_mm": 0.167,
+  "sigma_MPa": 42.3224,
+  "SF": 3.7805,
+  "need": 2.0,
+  "deflect_mm": 5.8395,
+  "verdict": "됨"
+ },
+ "wall_push_room": {
+  "gap_to_tube_U5C1_mm": 13.5,
+  "total_push_mm": 16.9353,
+  "note": "손 오조작 때만(탄성, 놓으면 되돌아옴). 보수(홀더 무시) 합 처짐이 틈 13.5를 넘으면 기록"
+ },
+ "rear_bolt_load": {
+  "hand_end_N": 290.625,
+  "selfweight_3g_N_total": 147.0911,
+  "selfweight_per_bolt_N": 42.6827,
+  "shear_per_bolt_N": 21.013,
+  "worst_bolt_N": 333.3077,
+  "note": "손 하중을 볼트 1개가 다 받는다고 봄(보수). 끝 윗판이 브래킷에 얹힌 받침은 무시"
+ },
+ "handcalc_rear_CB5": {
+  "inputs": {
+   "d": 5,
+   "le": 8.0,
+   "load_N": 333.3,
+   "torque_Nm": 0,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 46.86,
+   "암나사 전단": 20.78
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "bracket_leg_hand_down": {
+  "load": "손 100 N 아래 B4 홀더(Y 105), 받침점 다리 뒤끝 Y 150",
+  "bolt_N": 450.0,
+  "selfweight_3g_per_bolt_N": 27.6789,
+  "M_leg_Nmm": 3500.0,
+  "sigma_MPa": 24.6914,
+  "SF": 6.48,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "bracket_riser_flange": {
+  "load": "같은 손, 세운 판 · 윗 날개 뿌리",
+  "M_Nmm": 1050.0,
+  "sigma_MPa": 7.0,
+  "SF": 22.8571,
+  "need": 2.0,
+  "deflect_flange_mm": 0.0025,
+  "verdict": "됨(과사양 note)"
+ },
+ "bracket_hand_up": {
+  "bolt_N": 52.1739
+ },
+ "bracket_leg_if_t2": {
+  "sigma_MPa": 55.5556,
+  "SF": 2.88,
+  "need": 2.0,
+  "note": "과사양 note용(문제로 세지 않음)",
+  "verdict": "됨"
+ },
+ "handcalc_bracket_CB5": {
+  "inputs": {
+   "d": 5,
+   "le": 8.0,
+   "load_N": 477.7,
+   "torque_Nm": 0,
+   "bolt": "12.9",
+   "base": "SS400",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 1.6,
+  "sf_operating": {
+   "나사 인장": 32.7,
+   "암나사 전단": 14.5
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "handcalc_holder_CB4_selfweight": {
+  "inputs": {
+   "d": 4,
+   "le": 10.0,
+   "load_N": 1.89,
+   "torque_Nm": 0,
+   "bolt": "12.9",
+   "base": "A5052",
+   "dw": 6.9,
+   "dh": 4.5,
+   "K": 0.2,
+   "sf_min": 3.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 2.5,
+  "sf_operating": {
+   "나사 인장": 5110.05,
+   "암나사 전단": 2917.19
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": true,
+  "needs_fea": false,
+  "near_limit": []
+ },
+ "brush_drag": {
+  "note": "솔 털 끌림(대차가 털 사이를 지날 때 X 힘)은 마찰 값 없음 -> 기록만(7절 시제품, 설계검토서 제어 제약 'X 서보 토크 여유'). 홀더 · 덮개에 주는 힘은 털이 휘어 지나가는 크기라 손 100 N보다 작다고 봄(가정)"
+ }
+}
