@@ -1,0 +1,101 @@
+{
+ "LBRK_COL_U_leg | 운전(테이프 16 N 을 -Y 로 다, 가장 불리)": {
+  "M_base_Nmm": 10297.09,
+  "T_N": 118.971,
+  "arm_mm": 20.0,
+  "Z_mm3": 92.0,
+  "sigma_MPa": 25.863,
+  "SF": 7.926,
+  "need": 3.0,
+  "SF_head_edge": 10.065,
+  "defl_tip_mm": 0.009,
+  "roller_shift_mm": 0.031,
+  "note": "세운 다리 순폭 34.5(구멍 뺌) 굽힘. 누운 다리(140 윗면)는 면내 인장이라 작음",
+  "verdict": "됨"
+ },
+ "LBRK_COL_U_leg | 운전(테이프 16 N 을 아래로 다)": {
+  "M_base_Nmm": 7017.09,
+  "T_N": 70.171,
+  "arm_mm": 20.0,
+  "Z_mm3": 92.0,
+  "sigma_MPa": 15.255,
+  "SF": 13.439,
+  "need": 3.0,
+  "SF_head_edge": 17.065,
+  "defl_tip_mm": 0.005,
+  "roller_shift_mm": 0.018,
+  "note": "세운 다리 순폭 34.5(구멍 뺌) 굽힘. 누운 다리(140 윗면)는 면내 인장이라 작음",
+  "verdict": "됨(과사양 note)"
+ },
+ "LBRK_COL_U_leg | 오조작(손 100 N -Y 당김 + 테이프 + 자중)": {
+  "M_base_Nmm": 44797.09,
+  "T_N": 563.971,
+  "arm_mm": 20.0,
+  "Z_mm3": 92.0,
+  "sigma_MPa": 122.602,
+  "SF": 1.672,
+  "need": 2.0,
+  "SF_head_edge": 2.123,
+  "defl_tip_mm": 0.042,
+  "roller_shift_mm": 0.146,
+  "note": "세운 다리 순폭 34.5(구멍 뺌) 굽힘. 누운 다리(140 윗면)는 면내 인장이라 작음",
+  "verdict": "디테일(기준 미달)"
+ },
+ "LBRK_COL_U_leg | 오조작(손 100 N 아래 + 테이프 + 자중)": {
+  "M_base_Nmm": 21017.09,
+  "T_N": 210.171,
+  "arm_mm": 20.0,
+  "Z_mm3": 92.0,
+  "sigma_MPa": 45.689,
+  "SF": 4.487,
+  "need": 2.0,
+  "SF_head_edge": 5.698,
+  "defl_tip_mm": 0.016,
+  "roller_shift_mm": 0.054,
+  "note": "세운 다리 순폭 34.5(구멍 뺌) 굽힘. 누운 다리(140 윗면)는 면내 인장이라 작음",
+  "verdict": "됨"
+ },
+ "LBRK_COL_L_leg | 오조작(손 100 N +Y 밀기)": {
+  "M_base_Nmm": 31277.09,
+  "T_N": 312.771,
+  "sigma_MPa": 67.994,
+  "SF": 3.015,
+  "need": 2.0,
+  "verdict": "됨"
+ },
+ "bolt_CB5-16_HNTT8-5": {
+  "inputs": {
+   "d": 5,
+   "le": 4.0,
+   "load_N": 563.971,
+   "torque_Nm": 0.0,
+   "bolt": "12.9",
+   "base": "S45C",
+   "dw": 8.5,
+   "dh": 5.5,
+   "K": 0.2,
+   "sf_min": 2.0
+  },
+  "preload_N": 0.0,
+  "engage_ratio": 0.8,
+  "sf_operating": {
+   "나사 인장": 27.7,
+   "암나사 전단": 8.65
+  },
+  "sf_tightening": {},
+  "worst": "암나사 전단",
+  "ok": false,
+  "needs_fea": false,
+  "near_limit": [],
+  "note": "T너트 물림 4 가정, 조임 토크 미정(기존 모든 CB5+HNTT8-5 와 같음) -> 운전 값만"
+ },
+ "whatif_X_side_100N": {
+  "M_Nmm": 14000.0,
+  "friction_capacity_Nmm": 5600.0,
+  "ratio": 2.5,
+  "note": "models.json 표 하중 방향(Y) 밖. 140 쪽 볼트가 L 하나에 1개라 Z축 돌림은 마찰뿐(예압 4 kN 가정). 디테일 기록"
+ },
+ "profile_140_bending": {
+  "note": "HFS8-4080 단면은 t4 판 다리보다 훨씬 커서 E-19 로 L 다리만 판정"
+ }
+}

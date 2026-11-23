@@ -1422,7 +1422,21 @@
     "value": "운전 SF 3, 오조작(손 100 N) SF 2. SF < 1.2 = 동작. 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-14_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+   "status": "손계산 fea/results/mech_RX-14_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "_RX-12-C2": "R2 브래킷은 +175 옮겨 (1312, -20, 15), 받침은 HFS8-4080-140_RX12C2 윗면. 브래킷 자체 모델·하중 그대로"
+  },
+  "P_RX12C2_LBRK_COL": {
+   "case": "cases/mech_RX-12-C2_handcalc.py",
+   "step": "tools/out/mech_RX-12-C2/stepout/P_RX12C2_LBRK_COL.step",
+   "version": "v2.25.2 후보",
+   "fixed": "세운 다리가 기둥 80160 -Y 면(Y 120)에 CB5-16 + HNTT8-5 (1290, Z -230 위 / -350 아래). 누운 다리는 HFS8-4080-140_RX12C2 윗/밑면에 (1305, Y 100). 140 +Y 끝면이 기둥 면에 맞대 받침(모서리 Z -330 / -250이 지렛대 받침점, 볼트 줄까지 100)",
+   "contact": "140 끝면-기둥 면 압축만. 세운 다리는 볼트 줄(Z -230)에서 꺾임(Z -250)까지 외팔 20(볼트 중심, 보수)",
+   "load": "P_RX14_R2_BRKT 칸 그대로: 테이프 16.0 N at 핀 (1312, -20, 15) / 손 100 N Y(오조작). R2 브래킷 0.77 kg + 롤러·핀 0.2 kg(가정) + 140 0.38 kg(2.7 kg/m 가정) x 3 g. 140 외팔 140",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, E 193 GPa). SF < 1.2 = 동작. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "status": "손계산 fea/results/mech_RX-12-C2_handcalc.json. FEA 못 함 — 환경 없음(D-16). 위 L 세운 다리 운전 SF 7.93, 오조작(손 -Y 당김) SF 1.67(볼트 머리 좌면 끝 기준 what-if 2.12) — 디테일. 아래 L 3.02. 볼트 운전 SF 8.65(암나사 전단). what-if 손 100 N X 옆: Z축 돌림 14,000 N·mm / 마찰 5,600 = 2.5배 — 디테일 기록"
   },
   "P_RX14_DUCT_STRIP": {
    "case": "cases/mech_RX-14_fea2_handcalc.py",
