@@ -1,7 +1,7 @@
 {
  "_설명": "FSAP MAT-RS-001 v2.0 기계 정의(엔진 E-15, 틀 templates/machine-definition.json). 준비부 2026-11-03. 움직임은 설계 파일의 조인트로만. 값: slide mm, rotate deg. 좌표: 바늘점 원점, 테이블 면 Z 0, 매트 이송 +Y, 작업자 -Y, 매트 몸통 -X(요구서 0-8-3). 생성기 tools/gen_v2_prep.py(설계 명령·연구) + tools/gen_v2_machine.py(이 파일)",
  "cad": "solidcraft",
- "doc": "../3D_Modeling/FSAP_v2.21.1.sc",
+ "doc": "../3D_Modeling/FSAP_v2.22.0.sc",
  "joints": {
   "J_U3_PRESSER": {
    "cad": "J_U3_PRESSER",
@@ -4252,6 +4252,594 @@
    "model_only": true,
    "sim_stage": true,
    "_note": "RX-12-C3(v2.21.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님, M-07 예외 아님 — 작업 대상 모형). WP_MAT_W:1 ↔ WP_TAPE_W:1/WP_TP_W_SEAM:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 이음~이음 mm. 붙는 단계 CYCLE_W2 514"
+  },
+  "J_TP_P_01": {
+   "cad": "J_TP_P_01",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    0.0,
+    -365.833,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_01:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 0.0~131.6667 mm. 붙는 단계 CYCLE_P1 78"
+  },
+  "J_TP_P_02": {
+   "cad": "J_TP_P_02",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    0.0,
+    -497.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_02:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 131.6667~263.3333 mm. 붙는 단계 CYCLE_P1 83"
+  },
+  "J_TP_P_03": {
+   "cad": "J_TP_P_03",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    0.0,
+    -629.167,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_03:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 263.3333~395.0 mm. 붙는 단계 CYCLE_P1 89"
+  },
+  "J_TP_P_04": {
+   "cad": "J_TP_P_04",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -6.883,
+    -731.617,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_04:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 395.0~471.9137 mm. 붙는 단계 CYCLE_P1 180"
+  },
+  "J_TP_P_05": {
+   "cad": "J_TP_P_05",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -113.5,
+    -738.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_05:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 471.9137~611.9137 mm. 붙는 단계 CYCLE_P1 186"
+  },
+  "J_TP_P_06": {
+   "cad": "J_TP_P_06",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -253.5,
+    -738.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_06:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 611.9137~751.9137 mm. 붙는 단계 CYCLE_P1 192"
+  },
+  "J_TP_P_07": {
+   "cad": "J_TP_P_07",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -393.5,
+    -738.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_07:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 751.9137~891.9137 mm. 붙는 단계 CYCLE_P1 198"
+  },
+  "J_TP_P_08": {
+   "cad": "J_TP_P_08",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -500.117,
+    -731.617,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_08:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 891.9137~968.8274 mm. 붙는 단계 CYCLE_P1 289"
+  },
+  "J_TP_P_09": {
+   "cad": "J_TP_P_09",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -507.0,
+    -627.208,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_09:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 968.8274~1104.4108 mm. 붙는 단계 CYCLE_P1 295"
+  },
+  "J_TP_P_10": {
+   "cad": "J_TP_P_10",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -507.0,
+    -491.625,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_10:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1104.4108~1239.9941 mm. 붙는 단계 CYCLE_P1 300"
+  },
+  "J_TP_P_11": {
+   "cad": "J_TP_P_11",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -507.0,
+    -356.042,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_11:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1239.9941~1375.5774 mm. 붙는 단계 CYCLE_P1 306"
+  },
+  "J_TP_P_12": {
+   "cad": "J_TP_P_12",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -507.0,
+    -220.458,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_12:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1375.5774~1511.1608 mm. 붙는 단계 CYCLE_P1 311"
+  },
+  "J_TP_P_13": {
+   "cad": "J_TP_P_13",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -507.0,
+    -84.875,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_13:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1511.1608~1646.7441 mm. 붙는 단계 CYCLE_P1 326"
+  },
+  "J_TP_P_14": {
+   "cad": "J_TP_P_14",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -507.0,
+    50.708,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_14:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1646.7441~1782.3274 mm. 붙는 단계 CYCLE_P1 353"
+  },
+  "J_TP_P_15": {
+   "cad": "J_TP_P_15",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -505.224,
+    138.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_15:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1782.3274~1825.8786 mm. 붙는 단계 CYCLE_P1 456"
+  },
+  "J_TP_P_16": {
+   "cad": "J_TP_P_16",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -461.673,
+    138.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_16:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1825.8786~1869.4298 mm. 붙는 단계 CYCLE_P2 99"
+  },
+  "J_TP_P_17": {
+   "cad": "J_TP_P_17",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -458.699,
+    63.0,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_17:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1869.4298~1980.4488 mm. 붙는 단계 CYCLE_P2 121"
+  },
+  "J_TP_P_18": {
+   "cad": "J_TP_P_18",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -438.5,
+    -31.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_18:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 1980.4488~2080.1391 mm. 붙는 단계 CYCLE_P2 314"
+  },
+  "J_TP_P_19": {
+   "cad": "J_TP_P_19",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -418.485,
+    51.436,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_19:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2080.1391~2168.0281 mm. 붙는 단계 CYCLE_P2 331"
+  },
+  "J_TP_P_20": {
+   "cad": "J_TP_P_20",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -410.457,
+    131.748,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_20:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2168.0281~2244.5689 mm. 붙는 단계 CYCLE_P2 429"
+  },
+  "J_TP_P_21": {
+   "cad": "J_TP_P_21",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -318.894,
+    138.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_21:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2244.5689~2354.7263 mm. 붙는 단계 CYCLE_P2 439"
+  },
+  "J_TP_P_22": {
+   "cad": "J_TP_P_22",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -208.736,
+    138.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_22:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2354.7263~2464.8838 mm. 붙는 단계 CYCLE_P2 443"
+  },
+  "J_TP_P_23": {
+   "cad": "J_TP_P_23",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -98.579,
+    138.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_23:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2464.8838~2575.0413 mm. 붙는 단계 CYCLE_P2 448"
+  },
+  "J_TP_P_24": {
+   "cad": "J_TP_P_24",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    -6.883,
+    131.617,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_24:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2575.0413~2651.955 mm. 붙는 단계 CYCLE_P2 539"
+  },
+  "J_TP_P_25": {
+   "cad": "J_TP_P_25",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    0.0,
+    29.167,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_25:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2651.955~2783.6216 mm. 붙는 단계 CYCLE_P2 545"
+  },
+  "J_TP_P_26": {
+   "cad": "J_TP_P_26",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    0.0,
+    -102.5,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_26:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2783.6216~2915.2883 mm. 붙는 단계 CYCLE_P2 550"
+  },
+  "J_TP_P_27": {
+   "cad": "J_TP_P_27",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    0.0,
+    -234.167,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_27:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 2915.2883~3046.955 mm. 붙는 단계 CYCLE_P2 555"
+  },
+  "J_TP_P_SEAM": {
+   "cad": "J_TP_P_SEAM",
+   "type": "slide",
+   "unit": "WP_P",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "origin": [
+    2.5,
+    -315.0,
+    10
+   ],
+   "rest": 0,
+   "min": 0,
+   "max": 2000,
+   "model_only": true,
+   "sim_stage": true,
+   "_note": "RX-18(v2.22.0, SIM-01 방식): 붙은 테이프 단계 조인트(실제 구동 아님 — 작업 대상 모형). WP_MAT_P:1 ↔ WP_TAPE_P:1/WP_TP_P_SEAM:1, 2000 = 대기(Z +2000, 아직 안 붙음), 0 = 붙음. 땀 선 호 이음~이음 mm. 붙는 단계 CYCLE_P2 556"
   }
  },
  "units": {
@@ -4686,11 +5274,14 @@
   },
   "WP_P": {
    "parts": [
-    "MAT_P"
+    "MAT_P",
+    "TP_P_",
+    "SEAM_P"
    ],
    "moving": true,
    "workpiece": true,
-   "_note": "RX-17(v2.18.0, tools/gen_rx17.py): 컴포넌트 WP_P_X·WP_P_Y·WP_MAT_P(MAT_P). MAT_P 바깥 520x890x10, 홈 빈 곳 REST X -453.5~-423.5 · Y -25~145(바닥 반원 R 12.5 중심 (-438.5, -12.5)), 띠 X -513.5~-453.5 · Y -25~145, 볼록 R 30 네 곳, 띠 끝 두 모서리 각짐. REST bbox X -513.5~6.5 · Y -745~145 · Z 0~10, 부피 4,574,578 mm3. 테이프 띠·조각 모형 없음(RX-14 뒤, RX-12-C3과 같이). 재질 Default(모형), 표시 숨김(MAT_W와 같음)"
+   "_note": "RX-17(v2.18.0, tools/gen_rx17.py): 컴포넌트 WP_P_X·WP_P_Y·WP_MAT_P(MAT_P). MAT_P 바깥 520x890x10, 홈 빈 곳 REST X -453.5~-423.5 · Y -25~145(바닥 반원 R 12.5 중심 (-438.5, -12.5)), 띠 X -513.5~-453.5 · Y -25~145, 볼록 R 30 네 곳, 띠 끝 두 모서리 각짐. REST bbox X -513.5~6.5 · Y -745~145 · Z 0~10, 부피 4,574,578 mm3. 테이프 띠·조각 모형 없음(RX-14 뒤, RX-12-C3과 같이). 재질 Default(모형), 표시 숨김(MAT_W와 같음)",
+   "_note_RX18": "RX-18(v2.22.0, tools/gen_rx18.py): 컴포넌트 WP_TAPE_P 밑에 WP_TP_P_01~27(바디 TP_P_<nn>a·b·c — 상자 25 · 네모 9 · 고리 부채꼴 5) + WP_TP_P_SEAM(SEAM_P). 바디 39 + 1, 부피 370,405.7 + 360 mm3, 단면 = 가장자리 밖 1 · 안 10 · Z 0~11. 재질 Default(모형), 표시 숨김. 임시값 D-01~D-04 · D-07 · D-213"
   }
  },
  "studies": {
@@ -4724,7 +5315,8 @@
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_U7": "RX-14(v2.19.0): 옛 J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 키를 걷고 J_U7_BIND_FEED·J_U3_BIND_DRV·J_U7_CLAMP·J_U7_KIT_Z·J_U7_KIT_X 0 키를 넣음. 그 밖 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff.json)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
   },
   "CYCLE_L": {
    "steps": 716,
@@ -4858,7 +5450,9 @@
    "_keys_WP_W": "RX-12(v2.16.0): J_WP_W_X·Y·ROT 0 키를 더함(연구 전환 때 W 매트 상태가 남지 않게, VGR-01 _keys_WP_V와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)",
+   "_keys_WP_L_eject": "RX-18(v2.22.0): 배출 — J_WP_L_X 끝 [[634.0, 0.0], [716.0, 0.0]] → [[634.0, 0.0], [703, 0.0], [704, -15.0], [716, -15.0]]. 매트를 몸통 쪽 -X 15로 뺀 뒤 -Y 300으로 꺼냄(이음매 두 겹이 바인더 턱 벽 X 8.0을 스치지 않게, 틈 14.5, 임시 D-106 · D-211). J_WP_L_Y 끝 [[704.0, 330.0], [716.0, 30.0]] 그대로"
   },
   "CYCLE_S": {
    "steps": 450,
@@ -4992,7 +5586,9 @@
    "_keys_WP_W": "RX-12(v2.16.0): J_WP_W_X·Y·ROT 0 키를 더함(연구 전환 때 W 매트 상태가 남지 않게, VGR-01 _keys_WP_V와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)",
+   "_keys_WP_S_eject": "RX-18(v2.22.0): 배출 — J_WP_S_X 끝 [[426.0, 0.0], [450.0, 0.0]] → [[426.0, 0.0], [437, 0.0], [438, -15.0], [450, -15.0]]. 매트를 몸통 쪽 -X 15로 뺀 뒤 -Y 300으로 꺼냄(이음매 두 겹이 바인더 턱 벽 X 8.0을 스치지 않게, 틈 14.5, 임시 D-106 · D-211). J_WP_S_Y 끝 [[438.0, 330.0], [450.0, 30.0]] 그대로"
   },
   "CYCLE_G1": {
    "steps": 514,
@@ -5090,7 +5686,8 @@
    "_keys_WP_W": "RX-12(v2.16.0): J_WP_W_X·Y·ROT 0 키를 더함(연구 전환 때 W 매트 상태가 남지 않게, VGR-01 _keys_WP_V와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
   },
   "CYCLE_G2": {
    "steps": 630,
@@ -5208,7 +5805,9 @@
    "_keys_WP_W": "RX-12(v2.16.0): J_WP_W_X·Y·ROT 0 키를 더함(연구 전환 때 W 매트 상태가 남지 않게, VGR-01 _keys_WP_V와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)",
+   "_keys_WP_G_eject": "RX-18(v2.22.0): 배출 — J_WP_G_X 끝 [[546.0, 0.0], [630.0, 0.0]] → [[546.0, 0.0], [617, 0.0], [618, -15.0], [630, -15.0]]. 매트를 몸통 쪽 -X 15로 뺀 뒤 -Y 300으로 꺼냄(이음매 두 겹이 바인더 턱 벽 X 8.0을 스치지 않게, 틈 14.5, 임시 D-106 · D-211). J_WP_G_Y 끝 [[618.0, 330.0], [630.0, 30.0]] 그대로"
   },
   "MAINT_HEAD": {
    "steps": 1,
@@ -5239,14 +5838,16 @@
    "_keys_WP_W": "RX-12(v2.16.0): J_WP_W_X·Y·ROT 0 키를 더함(연구 전환 때 W 매트 상태가 남지 않게, VGR-01 _keys_WP_V와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
   },
   "MAINT_U7": {
    "steps": 14,
    "_note": "RX-14(v2.19.0, C-51, tools/gen_rx14.py) 카세트 탈착(다시 만듦): 0 REST, 1 클램프 71°, 2~3 KIT_Z 12.5·25, 4~7 KIT_X 37.5~150(탈착 자세 = 7), 8~11 KIT_X 되돌림, 12~13 KIT_Z 0, 14 클램프 0. 봉제 사이클 아님(손 조작)",
    "_keys_U7": "J_U7_CLAMP [[0,0],[1,71],[13,71],[14,0]] · J_U7_KIT_Z [[0,0],[1,0],[3,25],[11,25],[13,0],[14,0]] · J_U7_KIT_X [[0,0],[3,0],[7,150],[11,0],[14,0]] · BIND 0",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
   },
   "CYCLE_V": {
    "steps": 486,
@@ -5360,7 +5961,8 @@
    "_keys_WP_W": "RX-12(v2.16.0): J_WP_W_X·Y·ROT 0 키를 더함(연구 전환 때 W 매트 상태가 남지 않게, VGR-01 _keys_WP_V와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
   },
   "CYCLE_W1": {
    "steps": 583,
@@ -5380,7 +5982,8 @@
    "_note": "RX-12(v2.16.0, tools/gen_rx12.py). 한 사이클 1168단계를 오목 바닥 가운데에서 둘로 나눔(표본 상한 1000, WF-126) — 앞 반. 끝 자세 = CYCLE_W2 0. 구간: ① 대기·로딩(매트를 올린 자리) 0 · ① 작업자가 가장자리를 노루발 표시에 맞춤 1~12 · ② 노루발 내림·센서 슈 자리로 13~14 · ② 슈 누름·바늘 옆 바퀴 내림 15~16 · ② 먼 쪽 대차 d2 440으로(J_U5_X 1360, 바퀴는 들린 채 — 바퀴 밑이 오목 빈 곳) 17~71 · ③ 뒤 긴 변 앞 반(오목 뒤 구간, 먼 쪽 바퀴 들림) 72~83 · ③ 정지·먼 쪽 바퀴 내림(땀 점이 오목 벽 선에서 50 지남) 84~85 · ③ 뒤 긴 변 앞 반(다리2 뒤 구간) 86~103 · ④ 볼록 모서리 A 정지·바늘 꽂음·슈 들기(노루발 낮은 누름 C-39) 104~105 · ④ 볼록 모서리 A 바늘 중심 회전 106~195 · ④ 볼록 모서리 A 바늘 빼기·슈 내림 196~197 · ③ 옆 변 A 198~225 · ④ 볼록 모서리 B 정지·바늘 꽂음·슈 들기(노루발 낮은 누름 C-39) 226~227 · ④ 볼록 모서리 B 바늘 중심 회전 228~317 · ④ 볼록 모서리 B 바늘 빼기·슈 내림 318~319 · ③ 다리2 끝 변 320~347 · ④ 오목 입구2(볼록) 정지·바늘 꽂음·슈 들기(노루발 낮은 누름 C-39) 348~349 · ④ 오목 입구2(볼록) 바늘 중심 회전 350~439 · ④ 오목 입구2(볼록) 바늘 빼기·슈 내림 440~441 · ③ 오목 벽2 442~469 · ④ 오목 안 모서리2(오목) 정지·바늘 꽂음·슈 들기(노루발 낮은 누름 C-39) 470~471 · ④ 오목 안 모서리2(오목) 바늘 중심 회전 472~516 · ④ 오목 안 모서리2(오목) 바늘 중심 회전 정지·먼 쪽 바퀴 들기(ROT 225) 517 · ④ 오목 안 모서리2(오목) 바늘 중심 회전 518~562 · ④ 오목 안 모서리2(오목) 바늘 빼기·슈 내림 563~564 · ③ 오목 바닥 앞 반(먼 쪽 바퀴 들림) 565~583. J_U5_X 1360(d2 440, D-152). 먼 쪽 바퀴: 85 내림, 517(ROT 225) 정지·들기. 매트가 +X로 넘어가는 구간 348~583(X 최대 1052.1 = 488단계)",
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP": "RX-12-C3(v2.21.0): J_TP_W_* 키 [[0,2000],[i-1,2000],[i,0],[N,0]] — i = 땀이 조각 끝을 지난 첫 단계(W1에서 붙은 조각은 W2 전 구간 0). 조각 38 + 이음매(SEAM W2 514). 단계 표 tools/out/mech_RX-12-C3/design1/pieces.json"
+   "_keys_TP": "RX-12-C3(v2.21.0): J_TP_W_* 키 [[0,2000],[i-1,2000],[i,0],[N,0]] — i = 땀이 조각 끝을 지난 첫 단계(W1에서 붙은 조각은 W2 전 구간 0). 조각 38 + 이음매(SEAM W2 514). 단계 표 tools/out/mech_RX-12-C3/design1/pieces.json",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
   },
   "CYCLE_W2": {
    "steps": 585,
@@ -5401,53 +6004,60 @@
    "_keys_WP_P": "RX-17(v2.18.0): J_WP_P_X·Y·ROT 0 키를 더함(연구 전환 때 P 매트 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
    "_keys_TP": "RX-12-C3(v2.21.0): J_TP_W_* 키 [[0,2000],[i-1,2000],[i,0],[N,0]] — i = 땀이 조각 끝을 지난 첫 단계(W1에서 붙은 조각은 W2 전 구간 0). 조각 38 + 이음매(SEAM W2 514). 단계 표 tools/out/mech_RX-12-C3/design1/pieces.json",
-   "_keys_WP_W_eject": "RX-12-C3 수정 1(v2.21.1, tools/gen_rx12c3_fix1.py): J_WP_W_X 키 끝 [478, 0] → [572, 0] → [573, -15] → [585, -15]. J_WP_W_Y(573: 330 → 585: 30)·단계 수 585·다른 키 74줄 변화 0(motion.list 전후 대조, model1/study_diff_actual.json). 까닭: 이음매 두 겹 SEAM_W 바깥면 X 8.5가 바인더 턱 벽 안쪽 면 X 8.0(임시 D-211)보다 0.5 깊어 그대로 -Y로 당기면 574·575에서 6.25·1.0 mm3 겹침 → -X 15 뺀 뒤에는 573~585 겹침 0·1.5 안 쌍 0. 배출은 기계 축이 아니라 작업자 손(요구서 0-8-4 ⑥), -Y 300은 임시 자세(D-106). 기준선에 넣지 않음(결정로그 RX-12-C3-X1 기각)"
+   "_keys_WP_W_eject": "RX-12-C3 수정 1(v2.21.1, tools/gen_rx12c3_fix1.py): J_WP_W_X 키 끝 [478, 0] → [572, 0] → [573, -15] → [585, -15]. J_WP_W_Y(573: 330 → 585: 30)·단계 수 585·다른 키 74줄 변화 0(motion.list 전후 대조, model1/study_diff_actual.json). 까닭: 이음매 두 겹 SEAM_W 바깥면 X 8.5가 바인더 턱 벽 안쪽 면 X 8.0(임시 D-211)보다 0.5 깊어 그대로 -Y로 당기면 574·575에서 6.25·1.0 mm3 겹침 → -X 15 뺀 뒤에는 573~585 겹침 0·1.5 안 쌍 0. 배출은 기계 축이 아니라 작업자 손(요구서 0-8-4 ⑥), -Y 300은 임시 자세(D-106). 기준선에 넣지 않음(결정로그 RX-12-C3-X1 기각)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
   },
   "CYCLE_P1": {
    "steps": 461,
    "workpiece": [
-    "WP_MAT_P:1"
+    "WP_MAT_P:1",
+    "WP_TAPE_P:1"
    ],
    "mat": "520x890 운전석: 홈 25(입구 30)·깊이 170·R 12.5 + 띠 60 (D-01~D-03·D-213 임시)",
    "d1": 100.0,
    "d2": 440.0,
    "_keys_U7": "RX-14(v2.19.0): 옛 J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 키를 걷고 J_U7_BIND_FEED·J_U3_BIND_DRV·J_U7_CLAMP·J_U7_KIT_Z·J_U7_KIT_X 0 키를 넣음. 그 밖 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff.json)",
-   "_keys_WP_other": "J_WP_L·S·G·V·W_X·Y·ROT 0 키(다른 매트는 로딩 자리). J_TP_* 키 없음(이 매트는 테이프 조각 모형이 없다)",
-   "_keys_U5_FLOAT": "J_U5_LIFT -10 + FLOAT 10(매트 윗면) / 들림 30 + FLOAT 0",
-   "_keys_U4": "J_U4_PRESS 내림 0 / 들림 13.006 — 접지 상자(X -d ± 12.5 · Y ± 10)가 그 자세와 앞뒤 자세에서 모두 매트 위일 때만 내림. J_U4_X 키 없음(d1 100 — 지금 범위 0~95로는 d1 45를 못 만든다, RX-16 뒤 다시)",
+   "_keys_WP_other": "J_WP_L·S·G·V·W_X·Y·ROT 0 키(다른 매트는 로딩 자리). 조각 키 있음(J_TP_P_01~27 · SEAM, RX-18 v2.22.0 — _keys_TP)",
+   "_keys_U5_FLOAT": "J_U5_LIFT -10 + FLOAT 10(매트 윗면) / 들림 30 + FLOAT 0. 테이프 띠 위 구간 FLOAT 11(RX-18 v2.22.0): 453~454",
+   "_keys_U4": "J_U4_PRESS 0(매트 윗면) / 들림 13.006 · 테이프 띠 위 구간 0.477(바퀴 밑 Z 11 = 띠 윗면, RX-18 v2.22.0): 322~352 · 426~430 · 440~445. 모형 키일 뿐 — 실제는 공압 누름이라 높이를 따로 제어하지 않는다(U-09). J_U4_X 키 없음(d1 100)",
    "_keys_U3": "J_U3_PRESSER 20 -> 0 뒤 끝까지 0(C-39), J_U3_NEEDLE 각진 모서리 회전·홈 바닥 -30, 봉제 0",
    "_keys_U6": "J_U6_SHIFT -60 -> 0, J_U6_PRESS 봉제 -0.4 / 바늘 꽂고 도는 구간 4.5",
    "_interval": "몸통 직선 25 mm, 띠·홈 구간과 그 앞뒤 50 mm는 5 mm, 회전·둥근 모서리·홈 바닥 1°(요구서 6-4)",
    "_contact": "d1 100에서 두 바퀴가 다 매트 밖인 자세 143(홈 입구 회전 60 · 띠의 홈 쪽 벽 31 · 홈 바닥 52 = P2 25~187), d1 45면 0 — tools/out/mech_RX-17/model/contact_table_p.json. 그 구간은 연구에서 두 바퀴를 든다(RX-16이 받음)",
    "_note": "RX-17(v2.18.0, tools/gen_rx17.py). 한 사이클 1088단계를 띠 끝에서 둘로 나눔(표본 상한 1000, WF-126) — 앞 반. 끝 자세 = CYCLE_P2 0. 구간: ① 대기·로딩(매트를 올린 자리) 0 · ① 작업자가 가장자리를 노루발 표시에 맞춤 1~12 · ② 노루발 내림·센서 슈 자리로 13~14 · ② 슈 누름·바늘 옆 바퀴 내림 15~16 · ② 먼 쪽 대차 d2 440으로(J_U5_X 1360, 바퀴는 든 채) 17~71 · ② 먼 쪽 바퀴 내림(밑에 매트가 있을 때) 72 · ③ 몸통 오른 변 앞 반(시작 변) 73~89 · ③ 둥근 모서리 R30 A (520,0) 돌며 봉제 90~179 · ③ 몸통 아랫변 180~198 · ③ 둥근 모서리 R30 B (0,0) 돌며 봉제 199~288 · ③ 몸통 왼 변 289~314 · ③ 몸통 왼 변 끝 50(5 mm 간격) 315~324 · ③ 띠 바깥 변 325~357 · ④ 띠 끝 바깥 모서리(볼록, 각짐) 정지·바늘 꽂음·슈 들기(노루발 낮은 누름 C-39) 358~359 · ④ 띠 끝 바깥 모서리(볼록, 각짐) 바늘 중심 회전 360~449 · ④ 띠 끝 바깥 모서리(볼록, 각짐) 바늘 빼기·슈 내림 450~451 · ③ 띠 끝 452~461. J_U5_X 1360(d2 440, D-152). 바퀴 오르내림: P1 16 U4 내림 · P1 72 U5 내림 · P1 353 U4 들기 · P1 356 U5 들기 · P1 361 U5 내림 · P1 426 U4 내림 · P1 446 U4 들기 · P1 448 U5 들기 · P1 453 U5 내림",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP": "RX-18(v2.22.0): J_TP_P_* 키 [[0,2000],[i-1,2000],[i,0],[N,0]] — i = 땀이 조각 끝을 지난 첫 단계(P1에서 붙은 조각은 P2 전 구간 0). 조각 27 + 이음매(SEAM P2 556). 단계 표 tools/out/mech_RX-18/design/pieces_P.json"
   },
   "CYCLE_P2": {
    "steps": 627,
    "workpiece": [
-    "WP_MAT_P:1"
+    "WP_MAT_P:1",
+    "WP_TAPE_P:1"
    ],
    "mat": "520x890 운전석: 홈 25(입구 30)·깊이 170·R 12.5 + 띠 60 (D-01~D-03·D-213 임시)",
    "d1": 100.0,
    "d2": 440.0,
    "_keys_U7": "RX-14(v2.19.0): 옛 J_U7_CST_X·CST_Y·CUT·TUCK·FEED·LATCH 키를 걷고 J_U7_BIND_FEED·J_U3_BIND_DRV·J_U7_CLAMP·J_U7_KIT_Z·J_U7_KIT_X 0 키를 넣음. 그 밖 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff.json)",
-   "_keys_WP_other": "J_WP_L·S·G·V·W_X·Y·ROT 0 키(다른 매트는 로딩 자리). J_TP_* 키 없음(이 매트는 테이프 조각 모형이 없다)",
-   "_keys_U5_FLOAT": "J_U5_LIFT -10 + FLOAT 10(매트 윗면) / 들림 30 + FLOAT 0",
-   "_keys_U4": "J_U4_PRESS 내림 0 / 들림 13.006 — 접지 상자(X -d ± 12.5 · Y ± 10)가 그 자세와 앞뒤 자세에서 모두 매트 위일 때만 내림. J_U4_X 키 없음(d1 100 — 지금 범위 0~95로는 d1 45를 못 만든다, RX-16 뒤 다시)",
+   "_keys_WP_other": "J_WP_L·S·G·V·W_X·Y·ROT 0 키(다른 매트는 로딩 자리). 조각 키 있음(J_TP_P_01~27 · SEAM, RX-18 v2.22.0 — _keys_TP)",
+   "_keys_U5_FLOAT": "J_U5_LIFT -10 + FLOAT 10(매트 윗면) / 들림 30 + FLOAT 0. 테이프 띠 위 구간 FLOAT 11(RX-18 v2.22.0): 283~285 · 358~360",
+   "_keys_U4": "J_U4_PRESS 0(매트 윗면) / 들림 13.006 · 테이프 띠 위 구간 0.477(바퀴 밑 Z 11 = 띠 윗면, RX-18 v2.22.0): 5~10 · 20~24 · 188~192. 모형 키일 뿐 — 실제는 공압 누름이라 높이를 따로 제어하지 않는다(U-09). J_U4_X 키 없음(d1 100)",
    "_keys_U3": "J_U3_PRESSER 20 -> 0 뒤 끝까지 0(C-39), J_U3_NEEDLE 각진 모서리 회전·홈 바닥 -30, 봉제 0",
    "_keys_U6": "J_U6_SHIFT -60 -> 0, J_U6_PRESS 봉제 -0.4 / 바늘 꽂고 도는 구간 4.5",
    "_interval": "몸통 직선 25 mm, 띠·홈 구간과 그 앞뒤 50 mm는 5 mm, 회전·둥근 모서리·홈 바닥 1°(요구서 6-4)",
    "_contact": "d1 100에서 두 바퀴가 다 매트 밖인 자세 143(홈 입구 회전 60 · 띠의 홈 쪽 벽 31 · 홈 바닥 52 = P2 25~187), d1 45면 0 — tools/out/mech_RX-17/model/contact_table_p.json. 그 구간은 연구에서 두 바퀴를 든다(RX-16이 받음)",
    "_note": "RX-17(v2.18.0, tools/gen_rx17.py). 뒤 반(시작 자세 = CYCLE_P1 461). 구간: ③ 띠 끝 0 · ④ 홈 입구 = 띠 끝 홈 쪽 모서리(볼록, 각짐) 정지·바늘 꽂음·슈 들기(노루발 낮은 누름 C-39) 1~2 · ④ 홈 입구 = 띠 끝 홈 쪽 모서리(볼록, 각짐) 바늘 중심 회전 3~92 · ④ 홈 입구 = 띠 끝 홈 쪽 모서리(볼록, 각짐) 바늘 빼기·슈 내림 93~94 · ③ 띠의 홈 쪽 벽 95~125 · ④ 홈 바닥 정지·바늘 꽂음·슈 들기(땀마다 멈춰 돎, 0-8-2 ②) 126~127 · ④ 홈 바닥(R 12.5, 땀 선 R 19) 땀마다 멈춰 돎 128~307 · ④ 홈 바닥 끝·바늘 빼기·슈 내림 308~309 · ③ 홈 건너편 벽 310~335 · ③ 둥근 모서리 R30 홈 입구 건너편 (90,890) 돌며 봉제 336~425 · ③ 홈 건너 윗변 처음 50(5 mm 간격) 426~435 · ③ 홈 건너 윗변 436~448 · ③ 둥근 모서리 R30 C (520,890) 돌며 봉제 449~538 · ③⑤ 몸통 오른 변 뒤 반 + 시작부 위 겹쳐 박기 30 539~556 · ⑥ 노루발 들기·먼 쪽 바퀴 들기 557 · ⑥ 노루발 들기·슈 들기 558 · ⑥ 바늘 옆 바퀴 들기·센서 슈 대기 559~560 · ⑥ 먼 쪽 대차 대기로(J_U5_X 0) 561~615 · ⑥ 배출(-Y 300, D-106) 616~627. 바퀴 오르내림: P2 5 U4 내림 · P2 7 U5 들기 · P2 25 U4 들기 · P2 188 U4 내림 · P2 211 U5 내림 · P2 286 U5 들기 · P2 358 U5 내림 · P2 518 U5 들기 · P2 546 U5 내림 · P2 557 U5 들기 · P2 560 U4 들기. 매트가 +X로 넘어가는 구간 P2 1~335(X 최대 483.1 = 144단계, +X 넓이 최대 398,241 mm2 = 92~125단계)",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP": "RX-18(v2.22.0): J_TP_P_* 키 [[0,2000],[i-1,2000],[i,0],[N,0]] — i = 땀이 조각 끝을 지난 첫 단계(P1에서 붙은 조각은 P2 전 구간 0). 조각 27 + 이음매(SEAM P2 556). 단계 표 tools/out/mech_RX-18/design/pieces_P.json",
+   "_keys_WP_P_eject": "RX-18(v2.22.0): 배출 — J_WP_P_X 끝 [[538.0, -0.0], [627.0, 0.0]] → [[538.0, -0.0], [614, 0.0], [615, -15.0], [627, -15.0]]. 매트를 몸통 쪽 -X 15로 뺀 뒤 -Y 300으로 꺼냄(이음매 두 겹이 바인더 턱 벽 X 8.0을 스치지 않게, 틈 14.5, 임시 D-106 · D-211). J_WP_P_Y 끝 [[615.0, 330.0], [627.0, 30.0]] 그대로"
   },
   "BIND_U7": {
    "steps": 4,
    "_note": "RX-14(v2.19.0, C-51, tools/gen_rx14.py) 바인더 이송: J_U7_BIND_FEED·J_U3_BIND_DRV 0 -> -12(단계 2) -> 0, 5자세. 나머지 조인트는 REST 값. SEAM_U7(절단·끝 접기·앞끝 보내기)은 걷는 조인트뿐이라 지움 — RX-15가 새 유닛으로 다시 만든다",
    "_keys_RX15": "RX-15(v2.20.0): J_U7_CUT·J_U7_TUCK·J_U7_FEED 0 키를 더함. 기존 키의 점·값 변화 0(model/study_diff.json)",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
   },
   "SEAM_U7": {
    "steps": 19,
@@ -5458,7 +6068,20 @@
    "mat": "300x200",
    "_note": "RX-15(v2.20.0, C-19, tools/gen_rx15.py) 이음매(20자세 0~19, 다른 조인트는 CYCLE_S 428 값 → 12단계 434 값 → 13단계부터 450 값): 0 정지(J_WP_S_Y 213.4 = 이음매 끝 116.6 전), 1~4 CUT 10·20·30·40(핀 넣기 + 자르기), 5~8 TUCK 13.5·27·40.5·54(접기), 9 CUT 0(핀 빼기), 10 Y 283.4(70 진행), 11 TUCK 0, 12 Y 330(이음매 끝), 13 배출 뒤 TUCK 54(접기 판을 바닥으로), 14~17 FEED 37.5·75·112.5·150(앞끝 보내기), 18 FEED 0, 19 TUCK 0",
    "_keys_RX15": "J_U7_CUT [0,10,20,30,40,40,40,40,40,0,…] · J_U7_TUCK [0×5,13.5,27,40.5,54,54,54,0,0,54×6,0] · J_U7_FEED [0×14,37.5,75,112.5,150,0,0]",
-   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)"
+   "_keys_TP_W": "RX-12-C3(v2.21.0): J_TP_W_01~38 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게, _keys_WP_W와 같은 방식). 기존 키의 점·값 변화 0(motion.list 전후 대조, model/study_diff_actual.json)",
+   "_keys_TP_P": "RX-18(v2.22.0): J_TP_P_01~27 · SEAM 0 키를 더함(연구 전환 때 상태가 남지 않게). 기존 키의 점·값 변화는 배출 키 한 줄(해당 연구만)뿐 (motion.list 전후 대조, tools/out/mech_RX-18/model/study_diff_actual.json)"
+  },
+  "CYCLE_V2": {
+   "steps": 630,
+   "workpiece": [
+    "WP_MAT_V:1",
+    "WP_TAPE_V:1"
+   ],
+   "mat": "1200x1200 V홈 30° R_b 2 깊이 150 (D-150)",
+   "d2": 800.0,
+   "_note": "RX-18(v2.22.0, tools/gen_rx18.py): V 매트의 홈 밖 둘레 · 이음매 · 배출(뒤 반). CYCLE_V 끝 (0, 695.18, 0°)에서 이어 박는다 — 바깥 둘레가 G와 같은 1200² 네모라 CYCLE_G2 키를 복사해 J_WP_G_* → J_WP_V_*(J_WP_G_*는 0 키), J_TP_G_* 빼고 J_TP_V_* 넣음. 고친 세 곳: ① J_WP_V_Y [0, 695.18] → [18, 850] → 뒤는 G2와 같음(첫 18단계 8.6 mm/단계) ② J_U4_PRESS [0, 0] → [6, 0] → 뒤는 G2와 같음(V는 그 자리가 매트 윗면) ③ J_WP_V_X 끝 [546, 0] → [617, 0] → [618, -15] → [630, -15](배출). J_TP_V_01~04는 0(V에서 이미 붙음), 05~35 · SEAM_V(574)는 땀이 조각 끝을 지난 첫 단계. 시작 상태는 G2와 같다(노루발 0 · 슈 누름 · U5 내림 · J_U5_X 1000). CYCLE_V의 483~486 들기는 그 연구를 혼자 끝내는 단계이고 V2는 들지 않고 이어 박는 뒤 반이다. J_U5_X 1360 → 1000 옮김은 두 연구 사이에 있고 모형에 넣지 않았다. 땀 길이 4,382.8 mm, 전체 키 111줄 = tools/out/mech_RX-18/design/keys.json CYCLE_V2.all + J_TP_P_* 0 키 28줄",
+   "_keys_TP": "J_TP_V_05~35 붙는 단계: mech_RX-18_design.md 2-3. SEAM_V 574",
+   "_keys_WP_V_eject": "RX-18(v2.22.0): 배출 J_WP_V_X [617, 0] → [618, -15] → [630, -15], J_WP_V_Y [618, 330] → [630, 30](G2와 같음)"
   }
  },
  "workpiece_stages": {
@@ -5466,7 +6089,7 @@
   "fragments": "떨어지는 조각 없음 — 0-8-4 ⑤ 절단은 바인더 앞 한 번(앞끝은 바인더에 남고 US4688499, 끝은 접어 넣음 US6044783A). 실 끝은 헤드 내장 사절. 조각이 생기는 방식으로 바뀌면 M05가 모형을 넣는다(D-07)",
   "sim_tape": "SIM-01(v2.10.0): 붙은 테이프 단계 = J_TP_* 슬라이더(값 2000 대기 Z+2000, 0 붙음). 연구 키로 땀 진행에 따라 조각을 붙인다. 떨어지는 조각 없음은 그대로",
   "WP_W": "WP_W: before = MAT_W, sewing·after = MAT_W + TAPE_W(J_TP_W_* 단계, RX-12-C3 v2.21.0). 이음매 겹 SEAM_W(J_TP_W_SEAM, W2 514)",
-  "WP_P": "WP_P: before = MAT_P만(테이프 띠·조각 없음 — RX-14 뒤). 가공 뒤 형상(TAPE_P·SEAM_P·J_TP_P_*)은 만들지 않았다"
+  "WP_P": "WP_P: before = MAT_P, sewing·after = MAT_P + TAPE_P(J_TP_P_* 단계, RX-18 v2.22.0). 이음매 겹 SEAM_P(J_TP_P_SEAM, P2 556)"
  },
  "states": [
   {
@@ -5767,7 +6390,7 @@
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
     "J_U5_WHEEL_ROT": -241.47,
-    "J_WP_L_X": 0.0,
+    "J_WP_L_X": -15.0,
     "J_WP_L_Y": 30.0,
     "J_WP_L_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
@@ -5967,7 +6590,7 @@
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
     "J_U5_WHEEL_ROT": 0.0,
-    "J_WP_S_X": 0.0,
+    "J_WP_S_X": -15.0,
     "J_WP_S_Y": 30.0,
     "J_WP_S_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
@@ -6328,7 +6951,7 @@
     "J_U5_X": 0.0,
     "J_U5_LIFT": 30.0,
     "J_U5_WHEEL_ROT": -43.768,
-    "J_WP_G_X": 0.0,
+    "J_WP_G_X": -15.0,
     "J_WP_G_Y": 30.0,
     "J_WP_G_ROT": 360.0,
     "J_U6_SHIFT": -60.0,
@@ -7846,7 +8469,7 @@
     "J_U6_SHIFT": -60.0,
     "J_U5_FLOAT": 0.0,
     "J_U6_PRESS": 4.5,
-    "J_WP_P_X": 0.0,
+    "J_WP_P_X": -15.0,
     "J_WP_P_Y": 30.0,
     "J_WP_P_ROT": 360.0,
     "J_WP_L_X": 0,
@@ -8224,9 +8847,9 @@
    "reason": "RX-14: 포트 마개 나사 Ø5 × 4가 밸브 M5 포트에 물림(STEP대기_M-5P_1과 같음)"
   },
   {
-   "a": "WP_MAT_G·V·W·P · WP_TP_W_*",
+   "a": "WP_MAT_G·V·W·P · WP_TP_G_* · WP_TP_V_* · WP_TP_P_* · WP_TP_W_*",
    "b": "STEP대기_BINDER_30_RX14 · P_RX14_KIT_COVER · TL_RX14_PATH",
-   "reason": "RX-14: 오목 모서리 앞에서 +X로 넘어온 매트가 바인더 바닥(3)·팔(1.5)·덮개(2.5)를 타고 넘는 구간, 턱(벽 X 8~12 · 윗입술 Z 12.5~14)은 '넘지 못함 — 시제품 확인'(요구서 7절·0-8-2 ②). 강체 모형이라 겹침으로 나온다. 구간 표 mech_RX-14_model.md / RX-12-C3: 매트 가장자리에 감긴 테이프 조각이 매트와 함께 바인더 바닥(3) · 덮개(2.5)를 타고 넘음, W1 545~564 · W2 95~114, 바닥 189.0 · 덮개 124.3 mm³, 필요 높이 변화 없음"
+   "reason": "RX-14: 오목 모서리 앞에서 +X로 넘어온 매트가 바인더 바닥(3)·팔(1.5)·덮개(2.5)를 타고 넘는 구간, 턱(벽 X 8~12 · 윗입술 Z 12.5~14)은 '넘지 못함 — 시제품 확인'(요구서 7절·0-8-2 ②). 강체 모형이라 겹침으로 나온다. 구간 표 mech_RX-14_model.md / RX-12-C3: 매트 가장자리에 감긴 테이프 조각이 매트와 함께 바인더 바닥(3) · 덮개(2.5)를 타고 넘음, W1 545~564 · W2 95~114, 바닥 189.0 · 덮개 124.3 mm³, 필요 높이 변화 없음 / RX-18: G1 324~430 · V 368~378 · P2 242~359, 팔 Z ≤ 1.5 · 덮개 Z ≤ 2.5 · 바닥 Z ≤ 3.0, 턱 벽 X 8~12 안 0"
   },
   {
    "a": "P_RX15_BLADE",
@@ -8307,7 +8930,7 @@
   "D-99": "d1 100",
   "D-104": "바퀴 들림 30, 접촉 길이 ±10(새)",
   "D-105": "대차 d2 420~1800(M00-D05, 옛 300~1800), 대기 1800, 큰 매트 d2 1000·홈 매트 800·작은 매트 안 내림",
-  "D-106": "로딩: 시작점에서 -Y 300 자리에 올려 +Y로 밀어 맞춤, 배출: 끝 자세에서 -Y 300(새). CYCLE_W2 배출(RX-12-C3 수정 1, v2.21.1): 끝 자세에서 -X 15 뺀 뒤 -Y 300(이음매 두 겹이 바인더 턱 벽을 스치지 않게, 턱 벽 X 8.0은 임시 D-211)",
+  "D-106": "로딩: 시작점에서 -Y 300 자리에 올려 +Y로 밀어 맞춤, 배출: 끝 자세에서 -Y 300(새). CYCLE_W2 배출(RX-12-C3 수정 1, v2.21.1): 끝 자세에서 -X 15 뺀 뒤 -Y 300(이음매 두 겹이 바인더 턱 벽을 스치지 않게, 턱 벽 X 8.0은 임시 D-211). RX-18(v2.22.0): 모든 매트의 배출을 끝 자세에서 -X 15 뺀 뒤 -Y 300으로(CYCLE_L 704 · S 438 · G2 618 · P2 615 · V2 618)",
   "D-107": "M00 골격 임시값: 작업면 높이 900, 보 Z 250~650, 기둥 150x300, 윗헤드 몸체 X -80~500 Z 125~560, 원판 중심 X -175, 서보 묶음 길이 265, 포켓 X 400~1160 Y <= -250",
   "D-01·D-02·D-03(RX-12)": "시험 매트 '긴 매트 + 넓은 오목' MAT_W: 1500x700x10, 긴 변 가운데 오목 폭 500 x 깊이 300, 모서리 R 0 — 실물 없음, R375X 사진 비례(docs/images/r375x/decisions/q3_test_mat.png)로 잡은 임시값. e 6.5(D-78·D-144), d2 440(D-152), 로딩 -Y 300(D-106)",
   "D-01·D-02·D-03·D-213(RX-17)": "시험 매트 '운전석(홈 + 좁은 띠)' MAT_P: 몸통 520x720, 띠 60x170, 홈 입구 30·바닥 폭 25·바닥 R 12.5·깊이 170, 볼록 R 30, 두께 10(D-04) — 실물 치수 없음, 사용자 사진(docs/concept/images/mat_carpet_narrow_u_slot.webp) 비례로 잡은 임시값(C-53). e 6.5(D-78·D-144), d1 100(C-37), d2 440(D-152), 로딩 -Y 300(D-106), 바퀴 접지 상자 Y ± 10(D-93)",
@@ -8355,7 +8978,8 @@
   "2026-11-23 RX-13 v2.20.3: U4 누름 실린더를 윗판 밑 앞쪽(보 앞면 앞 · 모터 위)으로 — J_U4S_ROD 다시 맺음(축 +Y, 0 = 후퇴 끝 = 누름 쪽, 대기 24.994), 링크 J_U4_PRESS → J_U4S_ROD +1.4535 mm/° · 오프셋 6.09(옛 -1.4535 · 18.94). J_U4_PRESS 범위·대기·연구 키 변화 0. 유닛 U4_WHEEL_N parts에 RX-13 것 더함, 기준선 5줄",
   "2026-11-23 RX-13 수정 1 v2.20.4: 잠금 너트 임시 형상 이름 STEP대기_NUT-M8_RX13 → STEP대기_NT-02_RX13(SMC NT-02, M8×1.25 · B 13 · H 5), U4 누름 관 세움 X −161.006 → −159.506(RX08 관과 틈 1.994 → 3.494) · 윗판·캐리지 발 장공 +X 벽에 R4 자리 2. 조인트·행정·연구 키 변화 0",
   "2026-11-23 RX-12-C3 v2.21.0: 긴 매트 MAT_W 테이프 띠·조각 모형 WP_TAPE_W(조각 38 + 이음매, 바디 45) + 조인트 J_TP_W_01~38 · J_TP_W_SEAM(슬라이더 +Z 0~2000, 0 = 붙음) — CYCLE_W1·W2에 조각 키 39줄씩, 바퀴 키 J_U4_PRESS(띠 위 0.477) · J_U5_FLOAT(띠 위 11) 두 줄씩 바꿈, 나머지 12개 연구는 J_TP_W_* 0 키(기존 키 변화 0). 기계 부품 변경 0. 기준선 27번 줄에 WP_TP_W_* 보탬. 상태 표 고친 값 2",
-  "2026-11-23 RX-12-C3 수정 1 v2.21.1: CYCLE_W2 배출 길 — J_WP_W_X 키 [572, 0] → [573, -15] → [585, -15](매트를 몸통 쪽 -X 15로 뺀 뒤 -Y 300). 조인트·행정·형상·다른 연구·다른 키 변화 0. 상태 'CYCLE_W2 573 이후'의 J_WP_W_X 0 → -15. SEAM_W ↔ 바인더 턱 벽 겹침(574·575, 6.25·1.0 mm3) 0으로. 기준선 변화 0(결정로그 RX-12-C3-X1·X2·X3 기각). CYCLE_L 등 다른 매트 배출은 RX-18"
+  "2026-11-23 RX-12-C3 수정 1 v2.21.1: CYCLE_W2 배출 길 — J_WP_W_X 키 [572, 0] → [573, -15] → [585, -15](매트를 몸통 쪽 -X 15로 뺀 뒤 -Y 300). 조인트·행정·형상·다른 연구·다른 키 변화 0. 상태 'CYCLE_W2 573 이후'의 J_WP_W_X 0 → -15. SEAM_W ↔ 바인더 턱 벽 겹침(574·575, 6.25·1.0 mm3) 0으로. 기준선 변화 0(결정로그 RX-12-C3-X1·X2·X3 기각). CYCLE_L 등 다른 매트 배출은 RX-18",
+  "2026-11-23 RX-18 v2.22.0: 운전석 매트 MAT_P 테이프 띠·조각 모형 WP_TAPE_P(조각 27 + 이음매, 바디 40) + 조인트 J_TP_P_01~27 · J_TP_P_SEAM(슬라이더 +Z 0~2000, 0 = 붙음) — CYCLE_P1·P2에 조각 키 28줄씩 · 바퀴 키 J_U4_PRESS(띠 위 0.477) · J_U5_FLOAT(띠 위 11), 배출 키 J_WP_<M>_X -15(L 704 · S 438 · G2 618 · P2 615), 새 연구 CYCLE_V2(630단계, V 매트 홈 밖 둘레 · 이음매 · 배출), 나머지 연구는 J_TP_P_* 0 키. 기계 부품 변경 0. 기준선 28번 줄에 WP_TP_G_* · V_* · P_* 보탬. 상태 표 고친 값 4"
  ],
  "_timing": {
   "_note": "시간 메모(s). 동작 연구에는 쓰지 않는다(연구는 단계만). 땀 이송 시간은 따로. 근거 design1·design2(C-37 (다), D-96 구름 0.02·μ0.4·U4 40 N·d1 100) · 수정 1회차: U4+U5 구간에 U5 밑 띠 미끄럼 μs 0.30(D-97)·U4 밑 원판 끌림 포함 · DC-04(2026-11-11): 회전 중 노루발 봉제 높이(J_U3_PRESSER 0)·낮은 누름 끌림 T_f 0.096 N·m 포함 · RX-11(2026-11-13, C-45): U5 밑 PTFE 띠를 걷고 X축 자유 롤러 2줄 — U4+U5 구간 키를 띠 미끄럼 항(μs 0.30) 없이 다시 계산. 식: T_have = μ 0.4 × (F4 40 N × d1 + F5 40 N × d2) ≥ SF × [볼 구름 0.02 + 원판 끌림 0.048 + 노루발 끌림 0.096 + 롤러 항 + (I_매트 + I_롤러) × α(삼각 속도)], 롤러 항 = 바퀴 밑 롤러 관성 2 × 0.219 kg × d2² + 바퀴 밑 구름 0.05 × 40 N × d2 + 바퀴 밖 롤러 0.18 N × Σ|x|. 원본 tools/out/mech_RX-11/design/rx11design.json",
