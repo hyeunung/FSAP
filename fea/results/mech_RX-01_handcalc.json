@@ -1,0 +1,393 @@
+{
+ "_설명": "RX-01 해석부 손계산. 좌표 = 월드(측정 좌표계), REST. 운전 SF 3 · 오조작 SF 2, SF < 1.2 = 영구 변형(동작)",
+ "step_bbox": {
+  "P_M08_VP_PLATE": [
+   1150.0,
+   1190.0,
+   114.0,
+   120.0,
+   111.0,
+   249.0
+  ],
+  "P_M08_PSW_BRKT": [
+   1124.0,
+   1158.0,
+   70.0,
+   120.0,
+   466.0,
+   552.0
+  ]
+ },
+ "step_bbox_matches_model": {
+  "P_M08_VP_PLATE": true,
+  "P_M08_PSW_BRKT": true
+ },
+ "loads_valve": {
+  "m_valve_kg": 0.1863,
+  "m_plate_kg": 0.0878,
+  "W_op_N": 8.07,
+  "T_op_plate_bolt_N": 1.34,
+  "T_op_valve_bolt_N": 0.9,
+  "T_mis_N": 413.5,
+  "note": "P 엘보(X 1199.8) 당김 100 x 49.8/20 = 249 N < 413.5 N. +Y(기둥 쪽) 밂은 판·기둥 면 압축이라 볼트 몫 0"
+ },
+ "CB3-40 x2 (밸브 -> 판 M3 탭, 물림 6)": {
+  "operating": {
+   "inputs": {
+    "d": 3,
+    "le": 6.0,
+    "load_N": 0.9049021375399362,
+    "torque_Nm": 0.63,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 5.5,
+    "dh": 3.2,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 1050.0,
+   "engage_ratio": 2.0,
+   "sf_operating": {
+    "나사 인장": 6114.47,
+    "암나사 전단": 2741.81,
+    "분리(예압/외력)": 1160.35
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.74,
+    "조임 좌면": 3.14,
+    "조임 암나사 전단": 2.36
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "misuse": {
+   "inputs": {
+    "d": 3,
+    "le": 6.0,
+    "load_N": 413.50000000000017,
+    "torque_Nm": 0.63,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 5.5,
+    "dh": 3.2,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 1050.0,
+   "engage_ratio": 2.0,
+   "sf_operating": {
+    "나사 인장": 13.38,
+    "암나사 전단": 6.0,
+    "분리(예압/외력)": 2.54
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.74,
+    "조임 좌면": 3.14,
+    "조임 암나사 전단": 2.36
+   },
+   "worst": "분리(예압/외력)",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "CB5-16 x2 (판 -> HNTT8-5, 물림 7.5)": {
+  "operating": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 1.3445144549999999,
+    "torque_Nm": 3.0,
+    "bolt": "12.9",
+    "base": "S45C",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 3000.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 11617.58,
+    "암나사 전단": 6801.7,
+    "분리(예압/외력)": 2231.29
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.69,
+    "조임 좌면": 6.93,
+    "조임 암나사 전단": 3.05
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "misuse": {
+   "inputs": {
+    "d": 5,
+    "le": 7.5,
+    "load_N": 413.50000000000017,
+    "torque_Nm": 3.0,
+    "bolt": "12.9",
+    "base": "S45C",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 3000.0,
+   "engage_ratio": 1.5,
+   "sf_operating": {
+    "나사 인장": 37.78,
+    "암나사 전단": 22.12,
+    "분리(예압/외력)": 7.26
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.69,
+    "조임 좌면": 6.93,
+    "조임 암나사 전단": 3.05
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "P_M08_VP_PLATE 굽힘": {
+  "op": {
+   "P_N": 1.81,
+   "M_Nmm": 54.2,
+   "sigma_MPa": 0.24,
+   "SF": 799.32,
+   "defl_mm": 0.001
+  },
+  "mis": {
+   "P_N": 413.5,
+   "M_Nmm": 12374.0,
+   "sigma_MPa": 55.74,
+   "SF": 3.5,
+   "defl_mm": 0.294
+  }
+ },
+ "P_M08_VP_PLATE 굽힘 판정": {
+  "SF_op": 799.32,
+  "SF_mis": 3.5,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "note": "단순보 스팬 120(볼트 Z 120↔240), 순 단면 37 x 6. t6 -> t5면 오조작 SF 2.43(과사양 note)"
+ },
+ "P_M08_PSW_BRKT 가로판 굽힘": {
+  "SF_op": 131.92,
+  "SF_mis": 2.36,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "note": "가로판 34 x 4, 모멘트 운전 134 · 오조작 7500 N·mm. 연성 재질 정하중이라 굽힘 R4 응력 집중 계수는 넣지 않음(참고: Kt 1.2면 1.96)"
+ },
+ "P_M08_PSW_BRKT beam 도구(외팔 L 75)": {
+  "inputs": {
+   "t": 4.0,
+   "b": 34.0,
+   "L": 75.0,
+   "E": 70000.0,
+   "Rp": 195.0,
+   "end": "cantilever",
+   "sf_min": 2.0
+  },
+  "force_N": 100.0,
+  "deflection_mm": 1.1079,
+  "stiffness_N_mm": 90.2637,
+  "stress_MPa": 82.72,
+  "sf": 2.36,
+  "thin": true,
+  "ok": true,
+  "needs_fea": false
+ },
+ "P_M08_PSW_BRKT 앞 날개 굽힘(-Y 100 N)": {
+  "SF_op": null,
+  "SF_mis": 3.6,
+  "ok": true,
+  "yield_ok": true,
+  "near_limit": false,
+  "note": "순 단면 18 x 4(Ø16 구멍 자리), 팔 26"
+ },
+ "CB5-16 x2 (받침 -> 보 앞벽 M5 탭 t8 SS400)": {
+  "operating": {
+   "inputs": {
+    "d": 5,
+    "le": 8.0,
+    "load_N": 3.3505333965,
+    "torque_Nm": 3.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 3000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 4661.94,
+    "암나사 전단": 2067.5,
+    "분리(예압/외력)": 895.38
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.69,
+    "조임 좌면": 5.39,
+    "조임 암나사 전단": 2.31
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "misuse": {
+   "inputs": {
+    "d": 5,
+    "le": 8.0,
+    "load_N": 187.5,
+    "torque_Nm": 3.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 3000.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 83.31,
+    "암나사 전단": 36.95,
+    "분리(예압/외력)": 16.0
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 4.69,
+    "조임 좌면": 5.39,
+    "조임 암나사 전단": 2.31
+   },
+   "worst": "조임 암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "CB3-8 x2 (받침 -> 스위치 몸 M3 탭, 물림 4 임시)": {
+  "operating": {
+   "inputs": {
+    "d": 3,
+    "le": 4.0,
+    "load_N": 0.766577925,
+    "torque_Nm": 0.3,
+    "bolt": "12.9",
+    "base": "POM",
+    "dw": 5.5,
+    "dh": 3.4,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 500.0,
+   "engage_ratio": 1.33,
+   "sf_operating": {
+    "나사 인장": 7217.79,
+    "암나사 전단": 663.91,
+    "분리(예압/외력)": 652.25
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.96,
+    "조임 좌면": 1.76,
+    "조임 암나사 전단": 1.02
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": true,
+   "near_limit": [
+    "조임 암나사 전단"
+   ]
+  },
+  "misuse": {
+   "inputs": {
+    "d": 3,
+    "le": 4.0,
+    "load_N": 83.33333333333333,
+    "torque_Nm": 0.3,
+    "bolt": "12.9",
+    "base": "POM",
+    "dw": 5.5,
+    "dh": 3.4,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 500.0,
+   "engage_ratio": 1.33,
+   "sf_operating": {
+    "나사 인장": 66.4,
+    "암나사 전단": 6.11,
+    "분리(예압/외력)": 6.0
+   },
+   "sf_tightening": {
+    "조임 볼트 응력": 9.96,
+    "조임 좌면": 1.76,
+    "조임 암나사 전단": 1.02
+   },
+   "worst": "조임 암나사 전단",
+   "ok": false,
+   "needs_fea": true,
+   "near_limit": [
+    "조임 암나사 전단"
+   ]
+  },
+  "resin_30MPa_check": {
+   "A_th_mm2": 14.14,
+   "SF_mis": 3.05,
+   "note": "몸 수지 항복 30 MPa 가정(설계 1회차) — 물림 4는 1.5d 4.5보다 짧다(임시 탭 깊이, 실물 STEP·취급설명서 대기)"
+  }
+ },
+ "loads_switch": {
+  "m_switch_kg_x2": 0.0625,
+  "m_brkt_kg": 0.0434,
+  "M_op_Nmm": 134.0,
+  "M_mis_Nmm": 7500.0,
+  "T_bolt_op_N": 3.35,
+  "T_bolt_mis_N": 187.5
+ },
+ "tip_deflection_mis_mm": 1.108,
+ "_min_rows": [
+  [
+   ".CB3-8 x2 (받침 -> 스위치 몸 M3 탭, 물림 4 임시).operating.sf_tightening.조임 암나사 전단",
+   1.02
+  ],
+  [
+   ".CB3-8 x2 (받침 -> 스위치 몸 M3 탭, 물림 4 임시).misuse.sf_tightening.조임 암나사 전단",
+   1.02
+  ],
+  [
+   ".CB3-8 x2 (받침 -> 스위치 몸 M3 탭, 물림 4 임시).operating.sf_tightening.조임 좌면",
+   1.76
+  ],
+  [
+   ".CB3-8 x2 (받침 -> 스위치 몸 M3 탭, 물림 4 임시).misuse.sf_tightening.조임 좌면",
+   1.76
+  ],
+  [
+   ".CB5-16 x2 (받침 -> 보 앞벽 M5 탭 t8 SS400).operating.sf_tightening.조임 암나사 전단",
+   2.31
+  ],
+  [
+   ".CB5-16 x2 (받침 -> 보 앞벽 M5 탭 t8 SS400).misuse.sf_tightening.조임 암나사 전단",
+   2.31
+  ],
+  [
+   ".CB3-40 x2 (밸브 -> 판 M3 탭, 물림 6).operating.sf_tightening.조임 암나사 전단",
+   2.36
+  ],
+  [
+   ".CB3-40 x2 (밸브 -> 판 M3 탭, 물림 6).misuse.sf_tightening.조임 암나사 전단",
+   2.36
+  ]
+ ]
+}
