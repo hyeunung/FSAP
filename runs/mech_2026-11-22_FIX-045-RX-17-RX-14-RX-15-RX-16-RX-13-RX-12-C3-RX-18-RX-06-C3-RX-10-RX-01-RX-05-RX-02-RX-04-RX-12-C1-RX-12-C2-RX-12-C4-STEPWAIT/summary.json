@@ -1,0 +1,4676 @@
+{
+ "run": "mech_2026-11-22_FIX-045-RX-17-RX-14-RX-15-RX-16-RX-13-RX-12-C3-RX-18-RX-06-C3-RX-10-RX-01-RX-05-RX-02-RX-04-RX-12-C1-RX-12-C2-RX-12-C4-STEPWAIT",
+ "status": "완료",
+ "engine": "v4.0.0",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-22",
+ "journal": "wf_59b79343-bda",
+ "totals": {
+  "agents": 62,
+  "agent_sec": 36985,
+  "input": 14490791,
+  "cache_read": 381030923,
+  "output": 2102706,
+  "tools": 2344,
+  "wall_sec": 59978
+ },
+ "phases": {
+  "최종 보고": {
+   "sec": 0,
+   "agents": 1,
+   "output": 0
+  },
+  "▸ modeling-round": {
+   "sec": 36985,
+   "agents": 61,
+   "output": 2102706
+  }
+ },
+ "agents": [
+  {
+   "label": "전체 최종 보고",
+   "phase": "최종 보고",
+   "status": "running",
+   "sec": 0,
+   "tokens": {
+    "input": 0,
+    "cache_read": 0,
+    "output": 0
+   },
+   "tools": 0,
+   "turns": 1
+  },
+  {
+   "label": "RX-01 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2406,
+   "tokens": {
+    "input": 324014,
+    "cache_read": 31661430,
+    "output": 81087
+   },
+   "tools": 217,
+   "turns": 145
+  },
+  {
+   "label": "RX-01 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 499,
+   "tokens": {
+    "input": 226267,
+    "cache_read": 6947985,
+    "output": 37874
+   },
+   "tools": 51,
+   "turns": 44
+  },
+  {
+   "label": "RX-01 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 250,
+   "tokens": {
+    "input": 96771,
+    "cache_read": 2554374,
+    "output": 21208
+   },
+   "tools": 21,
+   "turns": 21
+  },
+  {
+   "label": "RX-01 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 180,
+   "tokens": {
+    "input": 144902,
+    "cache_read": 1378500,
+    "output": 15775
+   },
+   "tools": 15,
+   "turns": 12
+  },
+  {
+   "label": "RX-05 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 579,
+   "tokens": {
+    "input": 219458,
+    "cache_read": 4492485,
+    "output": 38599
+   },
+   "tools": 33,
+   "turns": 29
+  },
+  {
+   "label": "RX-05 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 22,
+   "tokens": {
+    "input": 93766,
+    "cache_read": 90392,
+    "output": 2101
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "RX-05 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 925,
+   "tokens": {
+    "input": 212058,
+    "cache_read": 6108915,
+    "output": 69797
+   },
+   "tools": 45,
+   "turns": 37
+  },
+  {
+   "label": "RX-05 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 171,
+   "tokens": {
+    "input": 127170,
+    "cache_read": 535767,
+    "output": 16606
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "RX-05 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 54,
+   "tokens": {
+    "input": 102245,
+    "cache_read": 588205,
+    "output": 2319
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "RX-05 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 7090,
+   "tokens": {
+    "input": 2796460,
+    "cache_read": 41068777,
+    "output": 149226
+   },
+   "tools": 157,
+   "turns": 147
+  },
+  {
+   "label": "RX-05 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 537,
+   "tokens": {
+    "input": 199919,
+    "cache_read": 4350539,
+    "output": 35368
+   },
+   "tools": 33,
+   "turns": 30
+  },
+  {
+   "label": "RX-05 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 281,
+   "tokens": {
+    "input": 98695,
+    "cache_read": 2098598,
+    "output": 26597
+   },
+   "tools": 20,
+   "turns": 17
+  },
+  {
+   "label": "RX-05 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 152,
+   "tokens": {
+    "input": 138964,
+    "cache_read": 1056797,
+    "output": 14013
+   },
+   "tools": 16,
+   "turns": 10
+  },
+  {
+   "label": "RX-02 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 603,
+   "tokens": {
+    "input": 210265,
+    "cache_read": 4860179,
+    "output": 35282
+   },
+   "tools": 39,
+   "turns": 32
+  },
+  {
+   "label": "RX-02 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 31,
+   "tokens": {
+    "input": 96187,
+    "cache_read": 184595,
+    "output": 2631
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "RX-02 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1928,
+   "tokens": {
+    "input": 296721,
+    "cache_read": 11532813,
+    "output": 130487
+   },
+   "tools": 63,
+   "turns": 56
+  },
+  {
+   "label": "RX-02 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 116,
+   "tokens": {
+    "input": 117930,
+    "cache_read": 636108,
+    "output": 8998
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "RX-02 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 39,
+   "tokens": {
+    "input": 102856,
+    "cache_read": 494605,
+    "output": 1815
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "RX-02 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1214,
+   "tokens": {
+    "input": 371628,
+    "cache_read": 28085852,
+    "output": 87093
+   },
+   "tools": 182,
+   "turns": 110
+  },
+  {
+   "label": "RX-02 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 687,
+   "tokens": {
+    "input": 234516,
+    "cache_read": 11821129,
+    "output": 43775
+   },
+   "tools": 70,
+   "turns": 68
+  },
+  {
+   "label": "RX-02 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 250,
+   "tokens": {
+    "input": 81985,
+    "cache_read": 1431451,
+    "output": 21622
+   },
+   "tools": 18,
+   "turns": 13
+  },
+  {
+   "label": "RX-02 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 195,
+   "tokens": {
+    "input": 147812,
+    "cache_read": 1634828,
+    "output": 19624
+   },
+   "tools": 29,
+   "turns": 14
+  },
+  {
+   "label": "RX-04 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 486,
+   "tokens": {
+    "input": 208450,
+    "cache_read": 5229653,
+    "output": 39730
+   },
+   "tools": 51,
+   "turns": 36
+  },
+  {
+   "label": "RX-04 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 22,
+   "tokens": {
+    "input": 92757,
+    "cache_read": 180822,
+    "output": 1806
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "RX-04 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 446,
+   "tokens": {
+    "input": 180989,
+    "cache_read": 3617727,
+    "output": 37724
+   },
+   "tools": 40,
+   "turns": 25
+  },
+  {
+   "label": "RX-04 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 146,
+   "tokens": {
+    "input": 120187,
+    "cache_read": 743154,
+    "output": 12724
+   },
+   "tools": 8,
+   "turns": 8
+  },
+  {
+   "label": "RX-04 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 33,
+   "tokens": {
+    "input": 98709,
+    "cache_read": 379262,
+    "output": 1579
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "RX-04 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1101,
+   "tokens": {
+    "input": 303461,
+    "cache_read": 17408276,
+    "output": 77584
+   },
+   "tools": 101,
+   "turns": 76
+  },
+  {
+   "label": "RX-04 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 367,
+   "tokens": {
+    "input": 185738,
+    "cache_read": 5522404,
+    "output": 25930
+   },
+   "tools": 47,
+   "turns": 38
+  },
+  {
+   "label": "RX-04 해석",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 237,
+   "tokens": {
+    "input": 95080,
+    "cache_read": 1791178,
+    "output": 19316
+   },
+   "tools": 15,
+   "turns": 15
+  },
+  {
+   "label": "RX-04 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 137,
+   "tokens": {
+    "input": 139403,
+    "cache_read": 1193771,
+    "output": 12462
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "RX-12-C1 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 464,
+   "tokens": {
+    "input": 232198,
+    "cache_read": 8556288,
+    "output": 38195
+   },
+   "tools": 56,
+   "turns": 51
+  },
+  {
+   "label": "RX-12-C1 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 40,
+   "tokens": {
+    "input": 93878,
+    "cache_read": 364937,
+    "output": 2552
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "RX-12-C1 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1010,
+   "tokens": {
+    "input": 242832,
+    "cache_read": 5588458,
+    "output": 91038
+   },
+   "tools": 41,
+   "turns": 35
+  },
+  {
+   "label": "RX-12-C1 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 217,
+   "tokens": {
+    "input": 135534,
+    "cache_read": 827197,
+    "output": 20162
+   },
+   "tools": 12,
+   "turns": 8
+  },
+  {
+   "label": "RX-12-C1 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 697,
+   "tokens": {
+    "input": 126586,
+    "cache_read": 2885538,
+    "output": 65493
+   },
+   "tools": 28,
+   "turns": 20
+  },
+  {
+   "label": "RX-12-C1 완료 판정 확인 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 184,
+   "tokens": {
+    "input": 122322,
+    "cache_read": 651234,
+    "output": 16004
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "RX-12-C1 기구설계부 수정2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 370,
+   "tokens": {
+    "input": 101977,
+    "cache_read": 2357463,
+    "output": 38670
+   },
+   "tools": 33,
+   "turns": 18
+  },
+  {
+   "label": "RX-12-C1 완료 판정 확인 2",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 130,
+   "tokens": {
+    "input": 119544,
+    "cache_read": 522449,
+    "output": 12109
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "RX-12-C2 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2154,
+   "tokens": {
+    "input": 907018,
+    "cache_read": 8494312,
+    "output": 49832
+   },
+   "tools": 62,
+   "turns": 52
+  },
+  {
+   "label": "RX-12-C2 카탈로그부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 29,
+   "tokens": {
+    "input": 98538,
+    "cache_read": 281465,
+    "output": 2722
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "RX-12-C2 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 844,
+   "tokens": {
+    "input": 221822,
+    "cache_read": 3894294,
+    "output": 74867
+   },
+   "tools": 27,
+   "turns": 24
+  },
+  {
+   "label": "RX-12-C2 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 132,
+   "tokens": {
+    "input": 123006,
+    "cache_read": 1277781,
+    "output": 8795
+   },
+   "tools": 13,
+   "turns": 13
+  },
+  {
+   "label": "RX-12-C2 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 44,
+   "tokens": {
+    "input": 97208,
+    "cache_read": 280652,
+    "output": 1978
+   },
+   "tools": 7,
+   "turns": 4
+  },
+  {
+   "label": "RX-12-C2 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2708,
+   "tokens": {
+    "input": 546047,
+    "cache_read": 81356660,
+    "output": 168679
+   },
+   "tools": 279,
+   "turns": 226
+  },
+  {
+   "label": "RX-12-C2 모델링부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 1420,
+   "tokens": {
+    "input": 282654,
+    "cache_read": 22913717,
+    "output": 84955
+   },
+   "tools": 120,
+   "turns": 99
+  },
+  {
+   "label": "RX-12-C2 검도·체결 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 441,
+   "tokens": {
+    "input": 170814,
+    "cache_read": 5059896,
+    "output": 31176
+   },
+   "tools": 42,
+   "turns": 39
+  },
+  {
+   "label": "RX-12-C2 해석 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 214,
+   "tokens": {
+    "input": 84261,
+    "cache_read": 1629009,
+    "output": 18782
+   },
+   "tools": 22,
+   "turns": 14
+  },
+  {
+   "label": "RX-12-C2 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 161,
+   "tokens": {
+    "input": 136290,
+    "cache_read": 1555303,
+    "output": 15133
+   },
+   "tools": 14,
+   "turns": 14
+  },
+  {
+   "label": "RX-12-C4 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 359,
+   "tokens": {
+    "input": 185955,
+    "cache_read": 3457733,
+    "output": 30489
+   },
+   "tools": 29,
+   "turns": 26
+  },
+  {
+   "label": "RX-12-C4 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 352,
+   "tokens": {
+    "input": 181123,
+    "cache_read": 3270226,
+    "output": 31031
+   },
+   "tools": 23,
+   "turns": 23
+  },
+  {
+   "label": "RX-12-C4 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 83,
+   "tokens": {
+    "input": 114717,
+    "cache_read": 619748,
+    "output": 6213
+   },
+   "tools": 10,
+   "turns": 7
+  },
+  {
+   "label": "RX-12-C4 구매부 STEP",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 26,
+   "tokens": {
+    "input": 99518,
+    "cache_read": 379927,
+    "output": 1561
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "RX-12-C4 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 122,
+   "tokens": {
+    "input": 130609,
+    "cache_read": 1530716,
+    "output": 10222
+   },
+   "tools": 23,
+   "turns": 14
+  },
+  {
+   "label": "RX-12-C4 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 126,
+   "tokens": {
+    "input": 121148,
+    "cache_read": 825291,
+    "output": 10445
+   },
+   "tools": 15,
+   "turns": 9
+  },
+  {
+   "label": "RX-12-C4 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 39,
+   "tokens": {
+    "input": 98250,
+    "cache_read": 279547,
+    "output": 2989
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2483,
+   "tokens": {
+    "input": 1031088,
+    "cache_read": 16608680,
+    "output": 71253
+   },
+   "tools": 92,
+   "turns": 89
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 349,
+   "tokens": {
+    "input": 189022,
+    "cache_read": 4042138,
+    "output": 26495
+   },
+   "tools": 29,
+   "turns": 29
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 94,
+   "tokens": {
+    "input": 169404,
+    "cache_read": 644121,
+    "output": 8606
+   },
+   "tools": 4,
+   "turns": 5
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 62,
+   "tokens": {
+    "input": 144033,
+    "cache_read": 686508,
+    "output": 4838
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 447,
+   "tokens": {
+    "input": 318032,
+    "cache_read": 509064,
+    "output": 66670
+   },
+   "tools": 5,
+   "turns": 5
+  }
+ ],
+ "fix_agents": [
+  "RX-12-C1 기구설계부 수정1",
+  "RX-12-C1 기구설계부 수정2",
+  "RX-12-C2 모델링부 수정1"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPLITE",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.17.2.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "FIX-045",
+    "size": "M",
+    "status": "모델 반영·문제 남음",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.17.3.sc",
+    "empty_save": false,
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "절차 6-1 자세 검사: 겹침·간격은 REST에서만 봤다(바뀐 8바디 ↔ 이웃, 겹침 0 / 관 1쌍은 전과 같은 이음 겹침 113.1 mm³). J_U6_PRESS 0·25·50·75·100 % 점은 몰지 않았다 — 슈 로드 구멍(Cylinder789 높이 10)은 누름 −0.4~4.5에서 윗날개를 지나는지 치수 계산으로만 확인",
+      "where": "모델링 미완",
+      "evidence": "모델링부 unfinished",
+      "fix": "이번 회차에 끝낸다"
+     },
+     {
+      "kind": "동작",
+      "what": "P_M06_BASE(−9.7 %) · P_M06_G1_BRKT(−10.9 %) 부피가 서명과 다르다 — bbox와 구멍 자리는 같고 옛 결과가 플랜지 부피를 겹쳐 센 것으로 판단했으나 옛 형상을 직접 볼 수 없어 확정하지 못함(검도 확인 필요)",
+      "where": "모델링 미완",
+      "evidence": "모델링부 unfinished",
+      "fix": "이번 회차에 끝낸다"
+     }
+    ],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-17",
+    "size": "L",
+    "status": "완료",
+    "chosen": "RX-17-S",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.18.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "모델링 보고서 문구의 단계 범위가 틀림: '두 바퀴가 다 매트 밖인 자세 143(P2 25~187)'",
+      "where": "docs/reports/mechanism/mech_RX-17_model.md 요약·4-3 아래 문장(설계검토서·요구서로 옮겨질 문구)",
+      "evidence": "검도 재계산(25x20 격자, tools/out/mech_RX-17/verify/verify_calc.json): 두 바퀴 다 접지 비율 0.5 미만 143자세는 P2 35~177. P2 25~187은 연구에서 두 바퀴를 든 163단계 구간. 자세 수 143과 d1 45에서 0은 맞음",
+      "fix": "문서 담당이 옮길 때 '143자세(P2 35~177), 연구에서 두 바퀴를 든 구간 P2 25~187'로 적는다. 모델 변경 없음",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-14",
+    "size": "L",
+    "status": "완료",
+    "chosen": "RX-14-D1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.19.2.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "RX-14-K12: 뚜껑 t1을 점 하중(손 100 N)으로 보면 오조작 기준 SF 2에 조금 모자란다. 손가락 폭 15로 보면 기준을 넘는다. 동작 문제(SF 1.2 미만)는 아니다",
+      "where": "P_RX14_DUCT_LID, 벽 사이 경간 34(Y -37~-3), X 125~975",
+      "evidence": "점 하중: M 850 N·mm, 유효 폭 49, Z 8.17 mm3, 응력 104.1 MPa, SUS304 항복 205 → SF 1.97. 손가락 폭 15: M 662.5 N·mm, 81.1 MPa → SF 2.53. 처짐 0.10(뚜껑 밑 틈 2)",
+      "fix": "뚜껑 재질을 SUS304-1/2H(항복 470)로 지정하면 점 하중 SF 4.5. 형상은 그대로",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "모델링부 후보 RX-14-V13·V14·V15 확인: 띠 따냄과 볼 플랜지 틈 0.5, 홈통 바닥이 띠와 플랜지 두 곳에 앉음, 띠와 홈통 바닥 점용접 자리가 모델에 없음. 볼 유닛이 임시 외형이라 실물 뒤에 다시 본다",
+      "where": "P_RX14_DUCT_STRIP 따냄 R 22.5 × 8(X 150~850, Y -50) ↔ STEP대기_BALL_D25_M04 플랜지 Ø44",
+      "evidence": "띠 ↔ 볼 플랜지 8개 모두 0.5, 홈통 ↔ 볼 플랜지 8개 모두 0.0, 띠 ↔ 홈통 0.0 (tools/out/mech_RX-14/verify2/sum_b1.json)",
+      "fix": "볼 유닛 실물 STEP을 받은 뒤 플랜지 지름·두께에 맞춰 따냄 반지름을 다시 정한다(띠만 받게 하려면 따냄을 넓힌다). 점용접 자리·점 수는 도면 단계",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-14-F12 뚜껑 자유 끝 변을 손 100 N으로 누를 때 SF 기준 2 미달(1.2는 넘음). 형상은 v2.19.0부터 같고 앞 두 회차가 이 자리를 보지 않았다",
+      "where": "P_RX14_DUCT_LID X 125 · 975 끝 변(벽 사이 경간 34, t1 SUS304)",
+      "evidence": "유효 폭 24.9, 손가락 폭 15 모델 σ 159.9 MPa SF 1.28(단순 받침)~1.71(귀 쪽 고정). 점 하중 한계값 1.00(소성 힌지 1.50). 안쪽은 2.53 · 1.97. fea/results/mech_RX-14_fea2_handcalc.json",
+      "fix": "뚜껑 재질 SUS304-CSP 1/2H(내력 470) 지정 → 2.94(점 2.29), 형상 그대로(검도 K12와 같은 고침). 또는 끝 변을 3 mm 아래로 접어 테두리",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-14-F11 홈통 귀 단 높이 2(굽힘 두 번, ±0.3) ↔ 받침 띠 t2 높이 맞춤",
+      "where": "P_RX14_DUCT 귀 6곳 ↔ P_RX14_DUCT_STRIP",
+      "evidence": "띠 밑이 뜨는 쪽: 틈 0.3은 24 N에 닫히고 0.81까지 탄성. 귀가 뜨는 쪽: 0.045 mm부터 볼트 조임이 귀(팔 8, 16 × 1)를 굽힘",
+      "fix": "단 치수 2.0 +0.3 / 0으로 지정하거나 귀를 먼저 조인 뒤 띠를 맞춰 점용접",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "따냄 8곳은 볼 유닛 플랜지(STEP대기 임시 외형)가 홈통 바닥을 받는 것으로 돼 있다. 실물 플랜지가 받지 못할 때의 가정값 검토(V13 · V14에 붙임)",
+      "where": "P_RX14_DUCT_STRIP 따냄 R 22.5 × 8(X 150~850, 현 33.5) 위 P_RX14_DUCT −Y 벽",
+      "evidence": "벽 1 × 4 보, 50 N: 양옆 이어짐 SF 2.61, 단순 받침 1.30(기준 2). 모델 그대로는 닿음 0.0으로 문제없음",
+      "fix": "볼 유닛 실물 STEP을 받으면 플랜지 높이 · 지름과 따냄 반지름을 다시 본다. 못 받는 형상이면 따냄을 줄이거나 띠만 받게 넓힌다",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "앞 회차 디테일 그대로 남음: F6(물림 부족 볼트 조임 토크) · F7(클램프 볼트 물림 1.25d) · F9(받이 귀 ↔ 턱 높이 맞춤) · F10(덮개 재질 1/2H 지정)",
+      "where": "홈통 귀 CB5-12 ×6 · R2 발 ×2, CB4-12 ×4, P_RX14_KIT_PLATE ↔ P_RX14_KIT_SEAT, P_RX14_KIT_COVER",
+      "evidence": "docs/reports/mechanism/mech_RX-14_fea1.md 4절 값 그대로(형상 변화 없음, 다시 계산하지 않음 — E-21)",
+      "fix": "수정 1회차 보고서 4절대로(디테일링)",
+      "external": false
+     }
+    ],
+    "exception_requests": [
+     {
+      "rule": "요구서 5절 RX-14 완료 판정 \"바인더·덮개 ↔ 매트 겹침은 '타고 넘는 구간'으로만 남고\"",
+      "where": "바인더 턱 ↔ 매트, CYCLE_G1 · V · W1 · W2 · P2의 오목 모서리 앞 구간",
+      "why": "턱(벽 X 8~12 · Z 0~14 + 윗입술)은 매트와 Z 0~10 전체로 겹쳐 위로 넘을 길이 없다(점 검사 2,165~2,587 mm³, 단계 구간은 모델링 보고서 5-1). 턱 치수는 D-211 · D-04 임시값이고, 완료 판정 확인 1회차(mech_RX-14_donecheck1.md 8행)가 프로젝트 규칙 '유연한 것의 거동은 모델로 판정하지 않고 7절에 기록'으로 받아들였다. 검도는 그 판정을 따라 completion_met을 true로 냈다",
+      "proposal": "턱 구간을 '넘지 못함 — 시제품 확인(7절)'으로 따로 두는 것을 5절 완료 판정 문구에 넣는다. W(각진 넓은 오목) 두 모서리를 0-8-2 ② · 7절에 더하는 것은 사용자가 동의한 문구 밖이므로 최종 보고에서 사용자에게 알린다"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "요구서 5절 RX-14 완료 판정 \"바인더·덮개 ↔ 매트 겹침은 '타고 넘는 구간'으로만 남고(구간·필요 높이를 표로), 그 밖 간섭 0\" / E-12 \"수렴·완료 판정은 모델 안에서 고칠 수 있는 결함으로만 한다\", \"모델로 확인할 수 없는 것(요구서 7)은 결함으로 붙잡지 않고 시제품 확인 항목으로 기록만 한다\" / 요구서 0-8-2 ② \"홈 바닥(R 12.5)과 V 꼭짓점은 어느 방식으로도 확인되지 않아 시제품에서 본다(7절)\"",
+      "where": "RX-14-X1 — 바인더 턱(STEP대기_BINDER_30_RX14의 X −3~12 · Y −22~−9.5, 이송 −12에서 Y −34~−21.5, Z 0~14) ↔ 매트, 홈 바닥 · V 꼭짓점 앞 구간: CYCLE_G1 202~387 · CYCLE_V 201~358 · CYCLE_P2 119~303단계(이송 0과 −12를 합친 범위)",
+      "decision": "승인",
+      "reason": "요구서가 이 자리를 이미 시제품 확인으로 정했다(0-8-2 ②, 7절 v2.1 ① \"좁은 홈 바닥(R 12.5)·V 꼭짓점에서 감기는지 — 바늘 앞에 비는 자리가 12 mm뿐\", 사용자 동의 2026-11-21 C-51). E-12에 맞는지 형상 시험으로 확인했다(E-14 · WF-129, 설계 변경 0): 저장본 v2.19.0의 턱은 벽 X 8~12 · Z 0~14, 윗입술 X −3~12 · Z 12.5~14(앱 body_topology)로 매트 윗면 Z 10을 덮어 넘는 길이 없고, 턱을 임시값(D-211) 안에서 줄여도 겹침이 남는다 — 평면 강체 계산 tools/out/mech_RX-14/exception/jaw_sweep.json: 길이 12.5 G 53.7 · V 30.2 · P 53.1 mm → 길이 1 · 벽 1에서도 G 42.3 · V 12.4 · P 42.3 mm. 바늘 옆까지 당기면 도는 자세에서 닿는다(G 18~24 · V 12~18자세). 모델 안에서 고칠 수 있는 결함이 아니고, 매트가 눌리거나 구부러져 가장자리가 펴지는 것은 강체 모형으로 볼 수 없다(프로젝트 규칙 \"유연한 것의 거동은 모델로 판정하지 않고 7절에 기록\"). 단 제안대로 5절 완료 판정 문구를 고치는 것은 받지 않는다 — E-14 \"사용자 원문을 약하게 다시 해석하지 않는다\": 예외는 결정로그에 남겨서 준다.",
+      "instruction": "모델 변경 없음(v2.19.0 그대로). 범위는 위 턱 ↔ 그 연구의 매트 바디, 위 단계뿐이다 — 바닥 3 · 팔 1.5 · 덮개 2.5는 지금처럼 '타고 넘는 구간', 그 밖의 쌍 · 단계는 간섭 0으로 본다. 문서 담당: 요구서 5절 RX-14 완료 판정 칸 원문은 그대로 두고 상태 칸에 \"턱 구간(홈 바닥 · V 꼭짓점)은 예외 RX-14-X1 — 넘지 못함, 시제품 확인(7절)\"을 적는다. 7절 v2.1 ① 줄에 구간 표(이송 0 / −12: G 53.7 / 66.3 · V 30.2 / 40.2 · P 53.1 / 66.3 mm), \"턱은 타고 넘을 수 없다(윗입술 Z 12.5~14)\", 임시값(턱 길이 12.5 · 벽 X 8~12 · 입 높이 12.5 · 행정 12 = D-211 · D-04)을 더한다. 판정 기억(judged.json)에는 이 쌍 · 단계 범위로만 넣는다. 실물 바인딩 장치 치수(D-211)가 오면 턱을 다시 그리고 구간 표와 이 판정을 다시 본다. RX-18은 이 구간을 5절 RX-18의 \"바늘 앞 13 안에 재료가 오는 구간\" 목록에 같은 수치로 싣는다."
+     },
+     {
+      "rule": "요구서 0-8-2 ② \"홈 바닥(R 12.5)과 V 꼭짓점은 어느 방식으로도 확인되지 않아 시제품에서 본다(7절)\" — W는 문장에 없음 / E-02 \"개념을 고치는 것은 사용자다\", \"0-8을 바꾸는 것은 사용자 동의가 먼저다\" / E-14 \"사용자 원문을 약하게 다시 해석하지 않는다\"(WF-019) / E-12 \"수렴·완료 판정은 모델 안에서 고칠 수 있는 결함으로만 한다\"",
+      "where": "RX-14-X2 — W(각진 넓은 오목) 두 모서리의 턱 ↔ 매트 겹침: CYCLE_W1 461~559 · CYCLE_W2 11~109단계(점 검사 2,337.7 mm³, 외곽 이송 0 / −12 64.2 / 89.3 mm), 그리고 요구서 0-8-2 ② · 0-8-5 · 7절에 W를 더하는 것",
+      "decision": "사용자 결정",
+      "reason": "0-8-2 ② 문장에는 홈 바닥과 V 꼭짓점만 있어 W까지 넓혀 읽을 수 없다. 사용자가 동의할 때 본 변경안(docs/concept/v2.1-tape-path-draft.md 2절)은 넓은 오목(모서리 R 25)을 \"매트가 바인더 위를 타고 넘어야 한다\"고 적었는데, 이번에 턱은 넘을 수 없다는 것이 나왔고 모델 MAT_W는 R 0(D-03 임시)이다 — 사용자가 동의한 내용과 다르다. 개념 문구(0-8)를 바꾸는 것과, 오목 모서리 앞에서 바인더를 비키는 장치 같은 구조 변경 여부는 사용자가 정한다. 다만 RX-14 완료는 이것으로 막지 않는다: 형상 시험(jaw_sweep.json)에서 턱을 길이 1까지 줄여도 W 37.9 mm가 남아 모델 안에서 고칠 수 없고(E-12), 모서리 반경(D-03)과 턱(D-211)이 모두 임시값이다.",
+      "instruction": "정해질 때까지 규칙대로: 요구서 0-8-2 ② · 0-8-5 문구는 고치지 않는다(design1.md 6절의 '0-8-2 ②에 W를 더한다'는 문서 지시는 하지 않는다). 모델 변경 없음. 문서 담당은 7절에 '사용자 확인 전'이라고 밝힌 새 줄로 W 두 모서리 턱 구간(둘레 258.4~303.1 · 768.7~813.3, 이송 −12 기준 각 44.7 mm, R 0은 D-03 임시)을 기록만 하고, 5절 RX-14 상태 칸에 \"W 두 모서리 턱 구간은 사용자 결정 대기(RX-14-X2)\"를 적는다. 회귀 · RX-18은 이 쌍 · 단계를 수정 회차로 돌리지 않고 '사용자 결정 대기' 목록으로 따로 낸다(통과로 적지 않는다). 최종 보고 맨 위에 올려 묻는다: ① W 두 모서리도 홈 바닥 · V 꼭짓점처럼 시제품 확인으로 둘지 ② 실제 오목 모서리 반경(D-03)을 받을 수 있는지 ③ 오목 모서리 앞에서 바인더를 비키는 구조를 검토할지. 사용자가 변경안에서 본 \"나머지는 타고 넘는 구간\"이 턱에는 맞지 않는다는 것도 함께 알린다(좁은 홈 · 오목 회전 봉제는 이 기계의 최우선 항목)."
+     },
+     {
+      "rule": "E-12 \"수렴·완료 판정은 모델 안에서 고칠 수 있는 결함으로만 한다\" / E-03 \"작업 대상·떨어진 조각·이웃 유닛과 겹치지 않고\" / U-09 \"PLC에 넘길 동작 순서 제약(예: 무엇이 물러나기 전 무엇을 하면 안 됨)은 설계검토서에 기록해 둔다\"",
+      "where": "RX-14-X3 — 바인더 이송 −12 자세에서 홈 입구 회전 중 턱 ↔ 매트 겹침: CYCLE_G1 91~135단계(평면 계산 도는 자세 8)",
+      "decision": "기각",
+      "reason": "요청이 근거로 든 모델링 보고서 5-1 표에 이 구간이 함께 들어 있으나, 오목 모서리 앞이 아니고 유연한 거동도 아니다. 모델 안에서 피할 수 있다 — 평면 강체 계산 tools/out/mech_RX-14/exception/jaw_feed_pivot.json: 바인더 이송 0~−6에서는 도는 자세 0, −8은 4, −9는 6, −10 · −11은 7, −12는 8. 저장본 매트 연구는 도는 단계에서 J_U7_BIND_FEED가 0이라 이 구간 겹침이 0이다(모델링 5-1 이송 0 줄: G1 205~385뿐). E-12의 '모델 안에서 고칠 수 있는 결함' 쪽이므로 시제품 확인으로 넘기지 않는다.",
+      "instruction": "규칙대로: 이 구간은 '넘지 못함 — 시제품 확인'이 아니라 '순서 제약으로 피함'으로 적는다. 문서 담당은 설계검토서 6절 제어 순서 제약에 \"바늘을 박고 매트를 돌리는 동안 바인더 이송 위치는 −6 이상(0 쪽), 임시 D-211\"을 넣고, 구간 표의 G 이송 −12 '도는 자세 8'에 같은 주석을 단다. 모델링부(RX-15 · RX-18 포함): 매트 연구의 도는 단계는 J_U7_BIND_FEED 0 키를 그대로 두고, 땀마다 이송 키를 넣게 되더라도 도는 단계는 −6 이상으로 둔다. 판정 기억(judged.json)에 G1 91~135를 넣지 않는다 — 그 단계에서 겹침이 나오면 간섭으로 올린다."
+     }
+    ],
+    "step_placeholders": [
+     "MC01-5",
+     "M-5P",
+     "867-392342-M 바인딩 장치(D-211)"
+    ],
+    "external_blocks": [
+     "MC01-5 · M-5P STEP 미수령(STEP대기_ 임시 형상 그대로)",
+     "바인딩 장치 867-392342-M 실물 치수 없음(D-211 · D-212 임시 형상 그대로)",
+     "볼 유닛 STEP대기_BALL_D25_M04 임시 외형 — 띠 따냄 R 22.5는 플랜지 Ø44 임시값 기준(RX-14-V13)"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "RX-15",
+    "size": "L",
+    "status": "모델 반영·문제 남음",
+    "chosen": "RX-15-D1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.20.2.sc",
+    "empty_save": false,
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "절단 아래 힘 V(= 1.04 × 절단 힘, 설계 수정 1의 값)를 받는 안내가 없다. POM 혀(10 × 6)는 받침 홈 틈 0.2 안에서 뜨고, 블록에 M5로 꽉 물린 실린더 로드 Ø5가 옆 힘을 굽힘으로 받는다(RX-15-A4)",
+      "where": "P_RX15_CUT_SLIDE 혀 ↔ P_RX15_CUT_BASE 홈, CJ2B16-60SZ_RX15_CUT_ROD (자르기 끝 CUT 36, 로드 내민 길이 49)",
+      "evidence": "로드 코 끝 굽힘 232 MPa → SF 0.88(40 N) · 1.76(20 N) · 걸림 49 N 0.72(로드 내력 205 MPa. 450으로 보면 1.94 · 3.87 · 1.58). 옆 힘 20.8~51 N이 사이클마다 로드 부시에. 날 끝 처짐 1.2~2.0 mm(날 변 높이 4.8, 접기 판과 틈 1.2). 혀만 받는다고 보면 처짐 7.0 mm · POM 37 MPa SF 1.62. 로드 EI 5.92e6 vs 혀 0.50e6 N·mm², 로드만 받을 때 받침 앞끝의 혀 내려감 0.03~0.06 < 틈 0.2. 임시값: 절단 힘 20~40 N(D-06), 로드 Ø5 · 내력, 부시 틈. fea/results/mech_RX-15_fea2_handcalc.json",
+      "fix": "날 팔 밑(Z -8)에 고정 받침 띠를 둔다(접기 판이 지나는 Y -35~-5 밖, 자르는 구간 CUT 7~36에서 팔 밑) — V 41.6 N이 받침으로 가고 눌림 16.6 MPa · 마찰 6.2 N. 또는 혀를 A6061-T6 10 × 6으로 바꾸고 홈 틈을 줄임(처짐 0.28 mm, SF 6.5). 로드 ↔ 블록을 뜬 이음으로 하면 로드 옆 힘이 완전히 빠진다",
+      "external": false
+     }
+    ],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "RX-15-V5(새): 날 교체 길이 막힌다. 날을 맞춤 핀에서 빼려면 +X로 2.0 가야 하는데 섕크가 지나는 판넬 날 장공의 +X 쪽 틈이 0.65뿐이다. 자르기 유닛을 판넬 밑으로 내려야만 날(소모품)을 갈 수 있다. 조립 자체는 묶음으로 밑에서 올리면 된다",
+      "where": "P_RX15_BLADE(X 124.25~124.75) · P_RX15_BLADE_PIN_L/_U(핀 끝 X 126.25) ↔ P_M04_PANEL_E2 날 장공(X 123.6~125.4, Z -12~-8)",
+      "evidence": "inspect.clearance 3.0(REST · 카세트 뺀 자세 같음): 날 ↔ 판넬 0.65 at (125.4, -76, -8). 필요 거리 126.25 - 124.25 = 2.0. 누름 판은 +X 1.5로 빠짐(3 mm 안 상대 없음). tools/out/mech_RX-15/verify2/v2_svc.json",
+      "fix": "판넬 날 장공을 대기 자리에서만 넓힌다: X 125.4 -> 127.2, Y -89~-75(섕크 Y -88~-76 + 1). 핀을 줄이는 안(길이 8.9)은 0.9가 필요해 모자람",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-15-V6(새): 핀 구멍 가장자리 눌림 여유. 핀이 POM에 외팔로 박혀 눌림이 고르지 않다(최대 = F/(dL) x (4 + 6e/L), e 0.25 · L 8 -> x 4.19). 모델링부 값(고른 분포 SF 12.7 · 11.4 · 5.7)보다 작다",
+      "where": "P_RX15_CUT_SLIDE 핀 구멍 Ø2 x 8 둘 (Y -82, Z -30 · -16)",
+      "evidence": "핀 힘 75.4 · 84.5 · 169.1 N -> 최대 눌림 19.7 · 22.1 · 44.3 MPa -> SF 3.0 · 2.7 · 1.35 (기준 3 / 걸림 2). POM 60 MPa · 절단 힘 40 N은 임시(D-06), 볼트 마찰 0 가정. 항복은 넘지 않는다",
+      "fix": "핀 Ø2 -> Ø3(SF 4.6 · 4.1 · 2.0) 또는 블록 핀 자리에 강 부시. 절단 힘 실측(D-06) 뒤 정함",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "수정 1회차 · 모델링부 디테일 그대로: RX-15-V1(순서 밖 보내기 ↔ 접기 겹침) · V2(끝 확인 스위치 못 닮) · V3(CB5-20_RX15 물림 3.75 = 0.75d, CB5-12_RX15_TUCK 7.0) · V4(미끄럼 틈 0.06~0.2) · M1 · M3 · M7-a(접기 포트 65° 돌림) · M8 · M9(핀 공차) · M10(와셔 형번 미정, STEP대기_)",
+      "where": "U7_SEAM",
+      "evidence": "docs/reports/mechanism/mech_RX-15_verify1.md 5절, mech_RX-15_model2.md 7절. 이번 회차 변화 없음",
+      "fix": "디테일링에서 처리(각 항목 고침 제안은 해당 보고서)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-15-M7-b: 보내기 실린더 헤드 쪽 포트 앞 공간 20.85 < 35 — 예외 RX-15-X2(승인, 헤드 기종 D-10까지 엘보 실물 틈 2.15로 봄)",
+      "where": "CDJ2B16-150AZ-B_RX15_FEED 헤드 쪽 포트 ↔ U3_LOWER_DRIVE(임시 봉투)",
+      "evidence": "결정로그 RX-15-X2. 이번 회차 형상 변화 0",
+      "fix": "D-10 헤드 기종이 정해지면 -Z 프로브를 다시 잰다",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "맞춤 핀 구멍 가장자리 눌림이 기준 3 미달(RX-15-A5, 검도 RX-15-V6과 같은 것)",
+      "where": "P_RX15_CUT_SLIDE 블록 핀 구멍 Ø2 × 8 (Y -82, Z -30 · -16)",
+      "evidence": "핀 힘 84.5 N(40 N + 아래 힘) → 고른 눌림 5.28 MPa SF 11.4, 가장자리 22.1 MPa SF 2.71(기준 3). 걸림 49 N 2.21(기준 2 통과), 위쪽 값 80 N 1.36. POM 60 MPa 임시",
+      "fix": "핀 Ø3(걸림 49 N에서 3.32) 또는 블록 핀 자리에 강 부시. 절단 힘 실측(D-06) 뒤 정함",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "날 팔 뿌리 굽힘이 기준 3 미달(RX-15-A6)",
+      "where": "P_RX15_BLADE 팔 뿌리 Y -76 (단면 0.5 × 6.8)",
+      "evidence": "363 MPa → SF 2.75(40 N, 기준 3) · 걸림 2.25(기준 2). SK5 내력 1,000 MPa 어림(임시). 처짐 0.19 mm",
+      "fix": "날 경도 HRC 50 이상을 도면에 적음(SF 3.9). A4의 날 밑 받침을 두면 없어진다",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "행정 멈춤을 POM 핀 기둥이 받고, 멈춤 자세에서 혀 뿌리에 굽힘이 걸린다 — 사이클마다(RX-15-A7)",
+      "where": "P_RX15_CUT_SLIDE 핀 기둥 3 × 4(판넬 장공 +Y 끝 Y -43.5), 혀 뿌리",
+      "evidence": "기둥: 80.5 N × 팔 2.2 / 8 mm³ = 22.1 MPa → SF 2.71(기준 3, 설계 값 3.7은 65 N · 팔 2). 혀: 로드 Z -33.7 ↔ 기둥 Z -10 어긋남 1,909 N·mm → 뿌리 23.4 MPa SF 2.56. 충격 계수 안 넣음",
+      "fix": "멈춤을 블록 면 ↔ 금속 받이로 옮기거나 기둥 4 × 6",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "누름 판 탭 물림 0.75d(1회차 RX-15-A2 그대로, 검도 RX-15-V3)",
+      "where": "P_RX15_BLADE_CLAMP M5 탭",
+      "evidence": "물림 3.75 < 1.5d(M-01). v2.20.2에서 누름 판은 하중 경로에서 빠져 누르는 일만 한다",
+      "fix": "누름 판 두께 4 → 8",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "FEA 못 함 — 환경 없음(D-16). SMC CJ2B16 허용 옆하중 · 로드 지름 · 재질 미확인",
+      "where": "engine/fea/.venv 없음, tools/out/mech_RX-15/catalog.md(로드 Ø5는 카탈로그 기억값)",
+      "evidence": "강도는 모두 손계산. 로드 내력 205~450 MPa 범위로 계산",
+      "fix": "해석 환경 설치(사용자), 카탈로그 값은 자료대기에 올려 확인",
+      "external": true
+     }
+    ],
+    "exception_requests": [
+     {
+      "rule": "M-06 (공압 포트 앞 피팅 공간 M5 Ø11 × 35 mm)",
+      "where": "CJ2B16-60SZ_RX15_TUCK 헤드 포트 (346, 5, -Z)와 CDJ2B16-150AZ-B_RX15_FEED 헤드 쪽 포트 (349, -20, -Z)",
+      "why": "포트 면 Z -39.15 ↔ U3_LOWER_DRIVE 임시 봉투(재봉 헤드 아랫축, D-10) 윗면 Z -60 = 20.85 mm로 35에 14.15 모자람(프로브 겹침 1,344.72 mm³ × 2). 실물 엘보 KQ2L06-M5A 높이 18.7 → 틈 2.15, 관은 +X로 나가고 0.3 안에 다른 바디 없음. +Y는 볼 몸, -Y는 이웃 실린더, +Z는 판넬이라 다른 방향 없음",
+      "proposal": "엘보 피팅 실물 STEP + 관 간격 검사로 이 두 포트의 피팅 공간을 인정하고, 헤드 기종(D-10)이 정해져 아랫축 봉투가 확정되면 다시 잰다(디테일 RX-15-M7)"
+     },
+     {
+      "rule": "M-06",
+      "where": "CJ2B16-60SZ_RX15_TUCK 헤드 포트 (346, 5)와 CDJ2B16-150AZ-B_RX15_FEED 헤드 쪽 포트 (349, -20), 둘 다 -Z 방향",
+      "why": "포트 면 Z -39.15 ↔ U3_LOWER_DRIVE 임시 봉투 윗면 Z -60 = 20.85 mm(35에 14.15 모자람, 프로브 겹침 1,344.72 mm3 × 2). 검도 실측: 실물 엘보 KQ2L06-M5A ↔ 봉투 2.15, 관 ↔ 봉투 4.35, 겹침 0. +Y 볼 몸 · -Y 이웃 실린더 · +Z 판넬이라 다른 방향 없음. 봉투는 헤드 기종 미정(D-10)의 임시 형상",
+      "proposal": "엘보 실물 STEP + 관 간격 검사로 이 두 포트의 피팅 공간을 인정하고, 헤드 기종(D-10)이 정해지면 다시 잰다"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "M-06 \"공압 포트 앞에는 피팅 공간을 둔다(접목기 기준 Rc1/8 Ø14, M5 Ø11 × 35 mm). CAD 안내서 '포트 공간'대로 구멍 크기별 프로브로 잰다(… 값은 프로젝트 config.json port_probes)\" — tools/config.json에 port_probes가 없어 M5 Ø11 × 35가 그대로 기준",
+      "where": "RX-15-X1 — 접기 실린더 CJ2B16-60SZ_RX15_TUCK 헤드 포트 (346, 5), 지금 −Z 방향 (모델링 수정 1회차 8절과 검도 6절의 요청 2건은 같은 건이라 포트별로 갈라 판정)",
+      "decision": "기각",
+      "reason": "규칙대로 되는 방향이 모델 안에 있다. 형상 시험(앱 MCP, FSAP_v2.20.1, 체크포인트 157 → 프로브 19개 → 간격 검사 2회 → 되돌림, dirty false · marker 3,446 · 프로브 0 확인, 저장 0): 실린더 축 둘레로 포트를 −Z에서 +Y 쪽 65°로 돌리면 Ø11 × 35 프로브 겹침 0, 여유 볼 :728 6.06 · U3_LOWER_DRIVE 6.36 mm(60° 봉투 3.16, 70° 볼 3.86). 모델링 보고서는 ±Y · ±Z 네 방향만 봤다. E-12 \"수렴·완료 판정은 모델 안에서 고칠 수 있는 결함으로만 한다\" — 고칠 수 있으므로 예외가 아니라 고칠 것이다(RX-14-X3 · M02R-E05~E07과 같은 읽기, WF-019 원문보다 넓게 읽지 않음). 동작 문제는 아니다: 지금 엘보 ↔ 봉투 2.15 · 관 4.35 · 겹침 0(다시 잼, truncated false), 고정 바디라 SEAM_U7 전 단계 같은 값 → E-02 \"구동 단계에서 새로 본 디테일은 기록만 하고 수정 회차를 쓰지 않는다\". 결과 C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/tools/out/mech_RX-15/exception/tilt_probe_result.json",
+      "instruction": "이번 구동 라운드에서는 형상을 고치지 않는다(v2.20.1 그대로, 새 번호 없음, 이 판정만으로 수정 회차를 열지 않는다). 설계검토서 디테일 RX-15-M7을 둘로 갈라 M7-a(접기 포트, 디테일링에서 고칠 것)로 적는다: 실린더와 엘보 KQ2L06-M5A_RX15_TUCK를 실린더 축(X축, Y 5 · Z −30) 둘레로 돌려 포트 방향 −Z → +Y 쪽 65°(방향 (0, 0.906, −0.423)), 엘보 출구 +X 그대로, 관 TU0604_RX15_TUCK 앞머리만 다시 잇는다. 고친 뒤 Ø11 × 35 프로브 겹침 0과 엘보 · 관 ↔ 볼 :728 · U3_LOWER_DRIVE · CB5-12_RX14 :5 간격을 잰다. 디테일링 때 헤드 기종(D-10)이 이미 정해져 봉투가 실물로 바뀌어 있으면 먼저 −Z 그대로 프로브를 다시 재고, 되면 돌리지 않는다. 요구서 5절 RX-15 완료 판정 칸 원문은 고치지 않고 상태 칸에만 적는다."
+     },
+     {
+      "rule": "M-06 \"공압 포트 앞에는 피팅 공간을 둔다(접목기 기준 Rc1/8 Ø14, M5 Ø11 × 35 mm)\" / E-12 \"STEP·카탈로그·가격·실측처럼 밖에서 받아야 하는 것은 자료대기 목록에 D-번호로 모으고, 작업은 기본값·임시 형상(E-10)으로 계속한다\"",
+      "where": "RX-15-X2 — 보내기 실린더 CDJ2B16-150AZ-B_RX15_FEED 헤드 쪽 포트 (349, −20), −Z 방향 (요청 2건 공통)",
+      "decision": "승인",
+      "reason": "범위 한정 · 조건부 승인. ① 35에 모자라게 하는 것은 U3_LOWER_DRIVE 하나뿐이고 이것은 부품이 아니라 아랫축 차지 상자다(D-10 · D-143: 축선 Y 0 · Z −90 · 축 Ø15 가정, 이 포트는 Y −20). 실물은 헤드 기종이 정해져야 안다. ② 형상 시험에서 모델 안의 다른 방향은 규칙 숫자를 겨우 채울 뿐이다: −Y 쪽 55~60°에서만 프로브 겹침 0(55° 봉투 0.17 · 볼 :727 1.40 / 57° 1.34 · 1.05 / 60° 3.16 · 0.51, 65°부터 볼과 겹침 0.49~57.46 mm³), 가장 큰 여유 1.05 mm · 각 ±2.5°, 상대 둘(봉투 · 볼 유닛 STEP대기_BALL_D25_M04)이 다 임시 형상이다. 보내기 실린더는 포트 둘이 같이 돌아, 지금 기준을 지키는 로드 쪽 포트 (551)까지 볼 :761 1.05 · 받침 0.5로 나빠진다. +Y 쪽은 접기 실린더, +X로 옮기면 커플링(윗끝 Z −67) · 서보 HG-KR43_U3(윗면 Z −60)에 걸린다 — 지시할 만한 '되는 방법'이 없다. ③ 요청한 형상은 저장본에 이미 그려져 있고 다시 잰 값이 엘보 ↔ 봉투 2.15 · 겹침 0 · truncated false(관 4.35는 검도 값). 구조 변경 · 큰 돈이 아니라 사용자 결정으로 올리지 않는다. config.json port_probes는 만들지 않는다 — 다른 포트는 모두 Ø11 × 35 그대로.",
+      "instruction": "포트 방향 −Z와 엘보 그대로 둔다. 보내기 실린더를 축 둘레로 돌리지 않는다. 조건: ① 이 포트의 피팅은 엘보 KQ2L06-M5A로 고정(곧은 피팅 금지 — BOM 비고 · 설계검토서). ② 엘보는 실린더를 받침에 끼우기 전에 조인다고 설계검토서 조립 순서에 적는다(끼운 뒤 스패너 접근은 재지 않았다). ③ 자료대기 D-10 '쓰는 곳'에 한 줄: \"아랫축 실물이 X 345~363.5 · Y −25.2~−14.8(엘보 자리)에서 Z −57.85(엘보 밑)보다 위로 오면 닿는다. 여유 2.15. Ø11 × 35 기준은 Z −74.15\". ④ 디테일 RX-15-M7-b(보내기 헤드 쪽 포트)를 '외부, D-10'으로 열어 둔다 — 헤드 기종이 정해져 봉투를 실물로 바꾸면 −Z 프로브를 다시 재고, 그때도 35가 안 되면 이 승인은 끝나고 실린더 자리나 포트 방향을 고친다. 요구서 5절 RX-15 상태 칸에 \"보내기 헤드 쪽 포트는 예외 RX-15-X2(D-10까지)\"를 적는다. 틈 2.15는 임시 상자 기준이라 확정값처럼 쓰지 않는다. 결정로그 C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/docs/decision-log.md 끝 '구동 RX-15 예외 판정 (2026-11-22)' 절에 적었다."
+     }
+    ],
+    "step_placeholders": [],
+    "external_blocks": [
+     "와셔(소형 평와셔 M5 5.3 × 9 × 1) 형번 미정 · STEP 없음(purchased-step · PartsLibrary에 없음) — STEP대기_WASHER_M5S_RX15 임시 형상으로 둠, 형번과 자료대기 번호는 구매 · 문서 담당"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "RX-16",
+    "status": "개념 재검토",
+    "concept_conflict": "RX-16-S1: 개념 안의 세 항목이 서로 맞지 않는다. (가) 0-8-2 ② · 0-8-3 U4 \"띠를 박을 때 바늘 옆 바퀴를 안쪽 자리로(d₁ 45까지, C-52 — 임시값)\", (나) 0-8-3 U4 벤치마크 \"서보 직결 바퀴\"(Ø120 × 25, D-93 사진 추정 Ø100~150), (다) 0-8-2 ① · 0-8-3 U3 \"윗헤드 몸체는 매트 위 높이 여유 위, 867 암 밑 335×125\"(모델 임시 상자 X −80~500 · Z 125~560, D-10 · D-107). 수치: d₁ 45의 바퀴 X −57.5~−32.5는 헤드 상자 안(X ≥ −80)이고 바퀴 윗끝은 봉제 Z 130 · 들림 158.8로 헤드 밑 125보다 5~33.8 높다(겹침 약 4,031 · 65,346 mm³). 그네 앞판·팔·감속기도 들림에서 X 10~15 겹친다. 치수만 고쳐 얻는 안쪽 한계는 d₁ 97.5로 C-52의 목적(띠 X −53.5~+6.5 위에 접지 — d₁ ≤ 53.5 필요)에 못 미친다. 풀려면 하나를 바꿔야 한다: ① (다)를 실물로 — D-10 치수 2개(바늘 중심 → 헤드 왼쪽 끝 면 거리, 바늘 왼쪽 60 mm 구간 헤드 밑면 높이). 왼쪽 면 X ≥ −27.5 또는 밑면 Z ≥ 164면 지금 바퀴 그대로 된다. ② (나)를 — 바퀴 Ø92~97(예 Ø94) + U4 매달림 13 내림 + 들림 밑 높이 38.8 → 26. 여유 5~8 mm가 전부 임시값 기준이고 면압 약 13 %↑(C-03), 들림·RX-08 멈춤·RX-13 실린더가 같이 바뀐다. Ø ≤ 80은 직결 불가(서보 밑이 매트 +1.2) — 벨트 구동으로 구조 변경. ③ (가)를 — C-52를 거두고 띠 구간은 다른 수단(예: 분석 보고서 5절의 바늘 오른쪽 뒤 보조 바퀴)으로. 추천: ① 먼저, 헤드 밑면이 125 이상이지만 164 미만이면 ②."
+   },
+   {
+    "id": "RX-13",
+    "size": "L",
+    "status": "일부(완료 판정 미달)",
+    "chosen": "RX-13-S1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.20.4.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "완료 판정 'J_U4_X 전 범위(45~195) × 들기·누름·스토퍼 간섭 0' 가운데 d₁ 45~100 구간을 잴 수 없음(RX-13-C1). d₁ 100~195(조인트 0~95)는 59자세 새 겹침 0",
+      "where": "J_U4_X(0~95 = d₁ 100~195), U4 묶음 전체",
+      "evidence": "machine.json J_U4_X min 0 · max 95. RX-16은 결정로그 RX-16-S1 '설계안을 내지 않는다(개념 충돌)' — d₁ 45의 바퀴 자리가 헤드 임시 상자 밑, 치수로 풀리는 안쪽 한계 d₁ 97.5. 서명 bbox 어림(verify1/prep.py)은 관 bbox가 커서 판정 불가",
+      "fix": "RX-16 방향(사용자 결정) 뒤 넓힌 조인트 범위의 양 끝·중간에서 verify1/poses.py 검사를 다시 한다. RX-13 모델링 수정으로는 풀리지 않음",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "잠금 너트 형번 표기 미확인·실물 STEP 없음(RX-13-V2)",
+      "where": "STEP대기_NT-02_RX13 (U4S_ROD, Y 100.9~105.9)",
+      "evidence": "치수 B 13 · H 5 · M8×1.25는 catalog.md(CQSY φ20 B1 13 · H1 5)로 확인됨. 형번 문자열 NT-02는 모델링부가 기억으로 적음",
+      "fix": "구매부가 SMC 부속 표에서 φ20용 로드 끝 너트 형번 확인 뒤 STEP 교체",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "실린더·너클 실물 STEP 없음(임시 형번, RX-13-V5)",
+      "where": "STEP대기_CDQSYB20-25DCM · _ROD, STEP대기_Y-020B · _PIN",
+      "evidence": "자료대기 D-188(형번·외형·포트 자리·마찰 임시), 임시 형상 □36 × 59.5",
+      "fix": "형번 확정 뒤 STEP 교체, 포트 자리·탭 깊이·로드 구멍 틈 다시 확인",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "관 ↔ 장공 벽 틈 1.0(RX-13-V3)",
+      "where": "TU0604_M08P_U4_A2_U4 · _B_U4 · RX08_B_U4 ↔ P_M02_BASE · P_RX06_CARRIAGE 관 장공",
+      "evidence": "inspect.clearance 59자세 같은 값: U4 관 2줄 1.0, RX08_B_U4 ↔ 윗판 0.989 · 캐리지 1.0, RX08_A_U4 2.0",
+      "fix": "장공 폭을 통째로 20으로(X −177.5~−155.5) 넓힘, 캐리지 볼트 CB5-16_M02_1:2(X −184.25~−175.75) 자리와 함께 디테일링에서",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "장공 +X 벽 반달 R4 2곳과 장공 벽이 만나는 모서리가 뾰족함(RX-13-V4)",
+      "where": "P_M02_BASE · P_RX06_CARRIAGE 발, 반달 축 (−159.506, 70) · (−159.506, 79), 끝 X −155.506",
+      "evidence": "모델링 보고서 2절(Ø8 엔드밀 내려찍기 2번), 형상 그대로 확인(관 ↔ 벽 1.0)",
+      "fix": "V3과 같이 장공으로 합치거나 만나는 모서리에 R 1",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "실린더 로드 옆 모멘트 허용값 미확인(RX-13-K1)",
+      "where": "STEP대기_CDQSYB20-25DCM_ROD + P_RX13_ROD_EXT_선반 + 너클(외팔)",
+      "evidence": "손계산 0.96 N·m(M02R 0.40), SMC 허용 옆하중 미확인(D-188)",
+      "fix": "카탈로그 허용 옆하중 확인, 넘으면 플로팅 조인트 또는 연장봉 안내 부시",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "FEA 못 함 — 환경 없음(D-16), 강도는 손계산만",
+      "where": "P_RX13_CYL_BRKT_밀링 · P_RX13_ROD_EXT_선반 · P_M02_BASE 반달 자리",
+      "evidence": "engine/fea/.venv 없음. 손계산 귀 뿌리 10 MPa · 로드 골 34.7 MPa · 좌굴 20,435 N",
+      "fix": "해석 환경이 생기면 tools/out/mech_RX-13/stepout/ 임시 STEP으로 해석",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-13-A1 실린더 로드 수나사 M8×1.25 뿌리 굽힘 여유 부족(보수 재질 가정). 연장봉 P_RX13_ROD_EXT 45 때문에 핀~뿌리 팔이 31 → 81로 늘어 굽힘이 2.6배",
+      "where": "STEP대기_CDQSYB20-25DCM_ROD 수나사 뿌리(Y 50.9), U4S_ROD 사슬",
+      "evidence": "옆힘(장공 기울기 + 마찰 μ 0.15 임시 + 자중 3 g 절반): 운전 20.8 N, 오조작 39.6 · 49.9 N. 로드가 스테인리스(205 MPa)면 운전 SF 3.14(기준 3, ±10 % 안), 오조작 SF 1.65(0.5 MPa 당김 누름 끝) · 1.31(들림 도중 막힘 0.5 MPa 밂) < 기준 2. 모델 재질 S45C 345면 2.77 · 2.20으로 충족. SF ≥ 1.2라 영구 변형 아님. 실물 로드 재질 · 허용 옆하중 미확인(D-188). fea/results/mech_RX-13_fea1_handcalc.json rod_chain",
+      "fix": "① SMC 자료로 CQSY φ20 로드 재질 · 허용 옆하중 확인(D-188, RX-13-K1) ② 못 미치면 연장봉 Ø14를 받는 무급유 부시 블록을 윗판 밑 Y 85~100에 달아 옆힘을 윗판이 받게 하거나 연장봉 45 → 25(팔 61, SF × 1.33)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-13-A2 옆힘이 실린더 안 마찰을 키워 누름 힘 창(f ≤ 10 N)을 넘을 수 있음 — 가정 검토(받침 간격 · μ 임시), 판정 아님",
+      "where": "U4S_CYL 부시 · 피스톤, 봉제 자세(핀~부시 91.6)",
+      "evidence": "설계안 방식 옆힘 2.5 N이면 f 합 8.1~8.9 N(창 안), 장공 마찰 μ 0.15와 자중을 넣은 8.0 N이면 12.0~14.4 N(창 밖). 피스톤~부시 받침 간격 20 · 30 mm와 μ 0.1은 실물 값 없음. side_friction_whatif",
+      "fix": "A1 ②의 안내 부시가 같이 푼다. 시제품에서 누름 힘 히스테리시스를 재는 항목으로 요구서 7절에 기록",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-13-A3 수정 1회차의 관 장공 반달 자리 R4가 스토퍼 브래킷 탭 둘레 띠를 줄임",
+      "where": "P_M02_BASE X −155.5~−140 · Y 50~85, 탭 (−146, 69) · (−146, 79) 옆 반달 중심 (−159.51, 70 · 79)",
+      "evidence": "띠 폭 17 → 15.5, 반달~탭 살 8.5 → 7.0. 표 모델(RX-08, 폭 전부) SF 운전/오조작 4.55/3.07 → 4.15/2.80(기준 3/2 충족). 탭 Ø5를 뺀 순 단면 가정 검토 3.21/2.17 → 2.81/1.90(하중은 순 하중의 5배 보수), 순 하중 + 비틀림 대조 3.31/2.24. base_tap_strip",
+      "fix": "해석 환경이 생기면(D-16) 이 띠를 FEA로 확인. 못 미치면 윗판 +X 끝을 X −140 → −135로 5 넓힘(이웃 틈 확인 뒤)",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "CDQSYB20-25DCM",
+     "Y-020B"
+    ],
+    "external_blocks": [
+     "실물 STEP 미수령(임시 형상 STEP대기_ 유지): SMC NT-02(잠금 너트 — 형번 표기도 구매부 확인 필요), CDQSYB20-25DCM, Y-020B — 미스미 로그인 풀림·SMC CAD(D-188)",
+     "J_U4_X 45~100(d₁) 구간 간섭: 조인트 범위가 0~95(d₁ 100~195)라 잴 수 없음 — RX-16 미해결",
+     "FEA 못 함 — 해석 환경 없음(D-16), 강도는 손계산"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "RX-12-C3",
+    "size": "L",
+    "status": "완료",
+    "chosen": "RX-12-C3-S1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.21.1.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [
+     {
+      "rule": "M-08 (의도된 겹침 기준선) · 요구서 7절",
+      "where": "SEAM_W ↔ STEP대기_BINDER_30_RX14 턱 벽(X 8~12), CYCLE_W2 574·575 = ⑥ 배출(−Y 300). SEAM_L도 CYCLE_L 705·706에서 같음",
+      "why": "이음매 겹 모형(X −3.5~8.5 · Z 11~12)의 바깥 0.5 mm가 배출 중 바인더 턱 벽을 지난다. 겹침 6.25 mm³(574) · 1.0 mm³(575), bbox X 8.0~8.5 · Y −22~−9.5 · Z 11~12. L 매트도 같은 값으로 쟀다(tools/out/mech_RX-12-C3/model/cli/res_w2_574.json · res_l_705.json). RX-14 검사는 WP_MAT_*만 상대로 해 드러나지 않았다",
+      "proposal": "둘 중 하나를 정해 달라: ① 기준선에 'SEAM_* ↔ 바인더 턱 벽, 배출 첫 2단계, 6.25 mm³ 이하 — 유연한 테이프 겹(모델 판정 아님, 요구서 7절 기록)' 한 줄을 넣는다 ② 배출 전에 바인더를 물리거나(J_U7_BIND_FEED · J_U7_KIT_X) 배출 길을 바꾸는 구동 과제로 넘긴다. 모델링부는 기준선을 스스로 넣지 않았다"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "M-08 (의도된 겹침 기준선) · E-03 · E-12 · 요구서 7절",
+      "where": "RX-12-C3-X1 — SEAM_W ↔ STEP대기_BINDER_30_RX14 턱 벽(X 8~12), CYCLE_W2 574·575(⑥ 배출 −Y 300), 6.25 · 1.0 mm³",
+      "decision": "기각",
+      "reason": "M-08 원문 \"정상 겹침: 볼트 나사부의 탭 물림(채움률 < 0.5), 구매처 CAD끼리의 미세 겹침, 설계상 압입\" — 작업 대상 ↔ 기계 부품 겹침은 셋 중 어느 것도 아니다. E-03 \"작업 대상·떨어진 조각·이웃 유닛과 겹치지 않고, 빠져야 할 것이 실제로 빠져나간다\" — 배출이 바로 그 단계다. E-12 \"수렴·완료 판정은 모델 안에서 고칠 수 있는 결함으로만 한다\" — 모델 안에서 고칠 수 있다: 형상 시험(E-14·WF-129, 저장본 v2.21.0에 CLI run --results 1회, 저장 0, 파일 md5 앞뒤 같음, tools/out/mech_RX-12-C3/exception/eject_summary.json)에서 J_WP_W_X를 −15로 뺀 뒤 −Y로 가면 573·574·575·576·580·585단계 모두 겹침 0 · 1.5 mm 안 쌍 0(truncated false, 조각 44 + SEAM_W + MAT_W ↔ 54바디). −1 · −5도 SEAM ↔ 바인더 겹침 0(틈 0.5). 배출은 기계 축이 아니라 작업자 손이고(요구서 0-8-4 ⑥ \"노루발·바퀴·슈 들기, 작업자가 꺼냄\") −Y 300은 근거 없는 임시 자세(자료대기 D-106 \"근거 없음\")라 길을 바꿔도 개념·구조·구매품이 바뀌지 않는다. 요구서 7절에는 배출 중 이음매가 턱을 지나는 자리를 시제품 확인으로 둔 문장이 없다(\"이음매 마감\"은 봉제 품질 항목) — '유연한 테이프 겹'이라는 이유로 넓혀 읽지 않는다(WF-019). 선례 RX-14-X3(모델 안에서 피할 수 있는 것은 예외가 아니다)과 같은 읽기.",
+      "instruction": "기준선(machine.json baseline_overlaps)과 judged.json에 SEAM_* ↔ 바인더 줄을 넣지 않는다. 이번 과제 수정 회차에서 배출 길을 고친다: CYCLE_W2에 J_WP_W_X 키 572 = 0 → 573 = −15 → 585 = −15(매트를 몸통 쪽 −X로 15 빼 가장자리를 바인더 입에서 뺀 뒤 −Y 300). J_WP_W_Y 키, 단계 수 585, 다른 조인트 키는 그대로. 기계 부품 변경 0 그대로, 새 번호(마지막 자리 +1)로 저장. 수정 뒤 확인: CYCLE_W2 572~585에서 조각 + SEAM_W + MAT_W ↔ 모델링부 574단계 검사와 같은 54바디 겹침 0(기준선 19번 TL_FEED ↔ 조각 제외), CYCLE_W2 전 구간 간섭 다시(truncated false), CYCLE_W1은 키가 안 바뀌므로 지난 결과 그대로(E-17). machine.json CYCLE_W2 _note ⑥을 '배출(−X 15 → −Y 300, D-106)'로 고친다. 문서 담당: 설계검토서 6절에 작업 순서 '⑥ 매트를 몸통 쪽으로 15 mm 이상 빼고 당겨 꺼낸다(그대로 −Y로 당기면 이음매 두 겹이 턱 벽을 0.5 스침, 임시 D-211·D-04)', 자료대기 D-106 쓰는 곳에 새 배출 자세, 요구서 7절에 기록 한 줄(배출 때 −X로 빼지 않고 당기면 걸리는지, 이음매 두 겹이 바인더 입을 지나는지 D-211 — 기준선 아님). 요구서 5절 RX-12-C3 완료 판정 칸 원문은 고치지 않는다."
+     },
+     {
+      "rule": "M-08 · E-17(과제 안 검사 범위) · 요구서 5절 RX-12-C3·RX-18 완료 판정",
+      "where": "RX-12-C3-X2 — SEAM_L ↔ 같은 턱 벽, CYCLE_L 705·706(6.25 · 1.0 mm³). CYCLE_S·G2·V의 SEAM_S·G·V 배출 단계는 이번에 재지 않음",
+      "decision": "기각",
+      "reason": "기준선에 넣을 근거가 X1과 같이 없다(M-08 정상 겹침 셋에 들지 않음, 같은 방법으로 모델 안에서 고칠 수 있음). 다만 RX-12-C3 완료 판정은 \"CYCLE_W1·W2 전 구간 기준선 밖 겹침 0\"이고 다른 매트 연구의 기존 키는 이 과제 범위 밖이다. RX-14 검사가 WP_MAT_*만 상대로 봐서 RX-14 뒤부터 있던 것이 이번에 드러난 것이고, 요구서 5절 RX-18 \"모든 매트 연구(S·L·G1·G2·V·W1·W2·P)를 새 바인더·덮개·테이프 모형으로 다시 돌린다 … 그 밖 간섭 0\"에서 닫힌다. 고치는 법이 정해져 있어 예외도 사용자 결정도 아니다.",
+      "instruction": "SEAM_L ↔ 턱 벽을 기준선·judged.json에 넣지 않는다. 이번 과제에서는 CYCLE_L을 고치지 않는다. RX-18이 모든 매트 연구를 다시 돌릴 때 같은 방법(배출 −Y 전에 J_WP_<M>_X −15, X만 움직이는 단계 하나)으로 CYCLE_L을 고치고, CYCLE_S·G2·V의 SEAM_S·G·V도 배출 단계에서 잰 뒤 같으면 같이 고친다(같은 값일 것이라는 것은 추정, 측정 안 함. MAT_P는 테이프 모형 없음). 라운드 끝 회귀가 RX-18보다 먼저 이 쌍을 만나면 새 문제가 아니라 결정로그 RX-12-C3-X2의 알려진 항목으로 적는다. 문서 담당은 요구서 5절 RX-18 내용 칸 끝에 '배출 단계 이음매 겹 ↔ 바인더 턱 벽(결정로그 RX-12-C3-X2)' 한 줄을 보탠다(완료 판정 칸은 그대로)."
+     },
+     {
+      "rule": "E-01 · 요구서 8-4(구조 결정) · E-12",
+      "where": "RX-12-C3-X3 — 제안 ②의 '배출 전에 바인더를 물리는 구동 과제'(J_U7_BIND_FEED · J_U7_KIT_X)",
+      "decision": "기각",
+      "reason": "J_U7_BIND_FEED는 Y로 12뿐이라 턱이 Y −34~−21.5로 갈 뿐 이음매가 지나는 −Y 배출 길 위에 그대로 있다. J_U7_KIT_X는 손 탈착 조인트(machine.json manual: true, 클램프 71° → +Z 25 뒤에만)라 사이클마다 쓰려면 새 액추에이터가 든다 — 요구서 8-4의 구조 결정에 해당한다. X1의 배출 길(−X 15 → −Y)로 겹침 0이 되므로 구조를 바꿀 필요가 없다(E-12 \"모델 안에서 고칠 수 있는 결함\").",
+      "instruction": "바인더 물림 구동 과제를 만들지 않는다. 구동 후보에도 올리지 않는다. 기록만(결정로그 같은 절 끝): 임시 턱 벽 안쪽 면 X 8.0은 테이프 한 겹(바깥 X 7.5)에 틈 0.5인 값이라, 이음매를 박는 CYCLE_W2 501~514단계에 두 겹이 턱 안을 앞으로 지날 때 손계산으로 0.5 모자란다(7.5 + 두께 1.0 = 8.5, D-04 임시 — 모형은 SEAM_W를 514에서 바늘 뒤에 붙여 이 구간이 검사에 안 나옴). 임시 형상은 이번에 고치지 않는다(RX-12-C3 '기계 부품 변경 0'). RX-18과 D-211(실물 바인딩 장치 치수)이 입 폭이 두 겹을 받는지 본다."
+     }
+    ],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-18",
+    "size": "L",
+    "status": "완료",
+    "chosen": "RX-18-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.22.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "기준선 문구의 단계 범위가 전 구간 CAD 결과와 2단계 다르다(문서 문구, 판정에는 영향 없음 — 문구 범위가 실제 범위를 품는다)",
+      "where": "tools/machine.json baseline_overlaps 28번 줄(색인 27) reason의 'RX-18: … P2 240~359', 설계 보고서 2-4 · 4-2",
+      "evidence": "저장본 CLI 전 구간: WP_TAPE_P ↔ U7_KIT 242~359. 검도 자세: P2 240 조각 ↔ 덮개 틈 0.29, 241 맞닿음 0.00, 242 겹침 0.1 mm³(TP_P_17a, X 53.88~55.43 · Z 0~0.34), 359 1.2 + 0.6 mm³, 360 틈 0.40",
+      "fix": "machine.json 28번 줄 reason의 'P2 240~359'를 'P2 242~359'로 고치고, 설계검토서 · 요구서 7절 표에도 242~359(팔 272~333)로 적는다",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-06-C3",
+    "size": "S",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.22.1.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "피처의 컴포넌트와 그 피처가 고치는 바디의 컴포넌트가 다른 줄이 남아 있다. 지금은 구동 시간·형상에 영향이 없으나 SolidCraft 0.45.0은 타임라인을 다시 계산할 때의 자세로 결과가 정해져, REST가 아닌 자세에서 앞쪽 피처를 고치면 결과가 달라질 수 있다",
+      "where": "루트 피처가 유닛 바디를 고치는 것(U1_FRAME·U2_TABLE·U3_HEAD·U5_WHEEL_F·U8_PNEU의 cylinder·remove, RX-15 실린더 로드 루트 Move 12, 테이프 Split 27·Move)",
+      "evidence": "모델링부 정적 점검 483줄(작업 전 487, tools/out/mech_RX-06-C3/static_scan_after.json — 검도가 다시 세지는 않음). 검도 실측: 6자세(CYCLE_S 350·L 500·G2 200·V2 300·W1 300·P2 300)에서 3,276바디 면 수 차이 0·테이프 바디 228개 부피 차이 0, 구동 0.3~0.8 s",
+      "fix": "디테일링에서 편집은 REST에서만 하고, 조인트로 움직이는 바디를 고치는 것(RX-15 로드 Move 12)부터 component.move_features로 제 컴포넌트에 옮긴 뒤 부피·면 수를 바로 재서 좌표를 바디 기준 값으로 되돌린다(RX-06-C3 모델링 2-1 방식)",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-10",
+    "size": "S",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.22.3.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "RX-10-F1b-V1 — 기구 한도 기울기(0.2525 rad, 들림·끝 누르기·밑에 아무것도 없음)에서 너트 틈·로드 굽힘 여유가 작음(정밀 체인)",
+      "where": "윗 로드 너트 CJ2B10-15Z_M06P_NUT_ROD(NTJ-010C:1) ↔ P_M06_SHOE 윗날개, 로드 M4 골, v2.22.3",
+      "evidence": "모델 실측 틈 2.3 / 필요 2.151(여유 0.149), 장공 +Y 틈 7.0 / 필요 6.36(여유 0.64), 첫 항복 SF 1.27(기준 1.2, 492.1 N·mm ÷ 624). 매트가 있으면 필요 0.622. 손계산 f1b/handcalc_f1b.json(FEA 못 함 D-16, 로드 재질·나사부 길이 D-210 임시)",
+      "fix": "조립 지시 틈 2.3 +0.3/−0 · 틈 게이지 확인 · 나사 고정제를 설계검토서 조립 조정에 적고, 실린더 실물 나사부 길이로 쓰는 길이 10.7을 다시 확인",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-10-F1b-V2 — 로드 너트가 장공 옆 살에만 앉음",
+      "where": "아래·윗 로드 너트(맞변 7) ↔ P_M06_SHOE 로드 장공 폭 5 (X −70.5~−65.5, Y −171~−157)",
+      "evidence": "한쪽 걸침 1.0(X 틈 ±0.5로 0.5~1.5), 앉는 넓이 약 9 mm², 37.4 N에서 약 4 MPa(강도는 넉넉). 장공 5 × 10 때부터 같은 폭",
+      "fix": "디테일링에서 M4 평와셔(Ø9 × t0.8) 2장을 너트 밑에 넣고 틈 2.3은 와셔 면 기준으로 유지",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-10-F1b-V3 — 로드가 너트 틈만큼 더 나올 때 아래 너트 밑 ↔ 칼라 볼트 머리 높이 여유가 작음(안 닿음)",
+      "where": "CJ2B10-15Z_M06P_NUT_ROD (NTJ-010C:2) ↔ CB5-12_M06_3 머리, SHIFT 0 · PRESS −5.0",
+      "evidence": "누름 −5.0에서 아래 너트 밑 Z 39.8, 틈 2.3 더 나오면 37.5 ↔ 머리 윗 36.75(Z 0.75). 너트 X −11.5 ↔ 머리 끝 X −13.4 = X 1.9라 높이와 무관하게 안 닿음. −5.0에서 3D 거리 6.671",
+      "fix": "V2의 와셔 바깥지름을 Ø9 이하로 해 X 여유 0.9 이상 남김",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "v2.22.2 검도 디테일 RX-10-F1-V2~V5가 그대로 남음(브래킷 벽 굽힘 끝 릴리프 0.5 < t 3, 턱 굽힘 ↔ 벽 끝 3.5 < 4t, 윗날개 턱 눌림 SF 1.39~2.40, 멈춤 틈 0.5의 굽힘 공차). V1·V6은 이번 수정으로 풀림",
+      "where": "P_M06_PCYL_BRKT · P_M06_SHOE 윗날개 Y −226",
+      "evidence": "브래킷·턱은 v2.22.3에서 안 바뀜(바뀐 바디 2개뿐). 수치는 mech_RX-10_verify.md 6절",
+      "fix": "mech_RX-10_verify.md 6절의 고치는 법 그대로(디테일링)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-10-F8(새): 들린 슈 끝을 손으로 누르면 칼라 2개가 벽 장공 폭(7.1 ↔ Ø7.0, 칼라 사이 40)에 엇갈려 걸린다 — 기울기 한도는 장공 끝 0.2525 rad가 아니라 0.0707 rad. 손을 떼도 기운 채 남을 수 있음(영구 변형 없음, 운전 중에는 안 걸림 — 필요 기울기 0.0035 rad)",
+      "where": "P_M06_SHOE 벽 장공 7.1 x 17.1 x2(Y -135 · -175) ↔ 칼라 Ø7.0",
+      "evidence": "40(1 - cos θ) = 2 x 0.05 → 0.0707 rad. 손 100 N: +Y 칼라 둘레 9,898 N·mm → 칼라 Y 힘 669~1,452 N(마찰 0.3~0.1), PET-CF 인서트 받음 SF 4.66~2.15 · 장공 받음 SF 6.44~2.96 · M5 전단 SF 6.5 이상(마찰 0 바닥 값이면 3,502 N · SF 0.89). 마찰 0.2에서 손 23.3 N 넘게 누르면 걸려 남고 푸는 손 힘 32.9 N, 걸린 평탄 끝 Z 10.5 < 이음매 윗면 12.1. 손계산이라 마찰·눌림 가정에 민감",
+      "fix": "시제품에서 확인(요구서 7절 — 들린 슈 끝을 눌렀다 놓았을 때 기운 채 남는지). 남으면 -Y 벽 장공 폭 7.1 → 8.4(필요 8.37): 한도가 장공 끝 0.2525 rad로 가고 뜬 이음(틈 2.3 · +Y 7.0)은 이미 그 값에 맞음(SF 1.71)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-10-F9(새): 로드 M4 나사 길이(임시 15, D-210)가 더 길면 로드 굽힘 여유가 줄어듦",
+      "where": "CJ2B10-15Z_M06P_ROD 나사 윗끝 Z 64.3(REST)",
+      "evidence": "나사가 실린더 코까지 이어진다고 보면 SF 1.70(모형 한도 0.0707 rad) · 1.06(상한 가정 0.2525 rad — F8의 장공 넓히기를 할 때만 해당). 모형·SMC A 치수 15에서는 2.29 · 1.71",
+      "fix": "SMC CJ2 카탈로그 A 치수 확인(자료대기 D-210). F8에서 장공을 넓히기 전에 이 값부터 확인",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-10-F6(그대로): 들림·끝 들기에서 로드 축 힘이 들기 붙듦과 거의 같음",
+      "where": "로드 Y -166, 멈춤 턱 팔 60",
+      "evidence": "32.8 N ÷ 32.99~37.4 N = 1.01~1.14. 넘어도 로드가 4.2 mm 나올 뿐 로드 굽힘 SF 2.29(A2)",
+      "fix": "그대로 둠(멈춤 팔 60 → 70이면 축 힘 26 N)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-10-F7(그대로): 슈 윗날개가 멈춤 턱에 눌리는 굽힘 SF가 오조작 기준 2 아래",
+      "where": "P_M06_SHOE 윗날개 Y -226, 턱 X -75.5~-60",
+      "evidence": "닿는 X 자리별 SF 2.40 · 1.42 · 1.20(멈춤 힘 131.4 N, 형상·힘 그대로)",
+      "fix": "턱을 벽 쪽으로 좁힘(X -78~-72) 또는 윗날개 -Y 끝 Y -235 → -245",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RX-10-F5: FEA 못 함 — 환경 없음(D-16). 로드 굽힘·칼라 장공 폭 걸림·윗날개 눌림은 손계산",
+      "where": "로드, P_M06_SHOE · P_M06_PCYL_BRKT",
+      "evidence": "engine/fea/.venv 없음. 손계산 fea/results/mech_RX-10_F1b_handcalc.json",
+      "fix": "환경이 생기면 임시 STEP 2개 + 칼라로 접촉 FEA",
+      "external": true
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [
+     "FEA 환경 없음(D-16) — 강도는 손계산으로 확인"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "RX-01",
+    "size": "M",
+    "status": "완료",
+    "chosen": "RX-01-S1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.22.4.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "받침이 판금 기능 부품이 아니라 M-04 전개·구멍-굽힘 도구 검사 불가(수치로는 구멍-굽힘 26·20 ≥ 2t 8)",
+      "where": "P_M08_PSW_BRKT",
+      "evidence": "돌출+필렛 형상, 모델링부 RX01-D1",
+      "fix": "디테일링에서 sheet.* 로 t4·안 R4 판금으로 다시 그림",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "임시 매니폴드 끝판에 포트 구멍이 없어 끝판 엘보 Rc1/8 나사가 몸과 겹침(판정 기억으로 허용, TPH-01_1·_3과 같은 종류)",
+      "where": "STEP대기_SS5Y3-20-08_M08 ↔ KQ2L06-01AS_M08V_PSW",
+      "evidence": "inspect.clearance 겹침 773.0 mm³, judged.json 61a81864bb8b6aa426b7",
+      "fix": "실물 STEP SS5Y3-20-08 교체(미스미 로그인 풀림으로 미수령)",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "밸브 장착 Ø3.2 피치 40·스위치 뒤 M3 탭 자리가 임시값, 스위치 뒤 엘보 ↔ 받침 앞 날개 틈 0.6",
+      "where": "STEP대기_VP342-5DZ1-01A, STEP대기_ISE20-N-M-C6L-L, P_M08_PSW_BRKT",
+      "evidence": "임시 형상(E-10), 틈 0.6 mm",
+      "fix": "실물 STEP 수령 뒤 판 M3 탭 자리·받침 구멍·틈 다시 확인",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "받침 가로판 굽힘 SF 2.36(기준 2 근처), 스케치 dof 16, 보 Z 299 탭을 메움 피처로 없앰",
+      "where": "P_M08_PSW_BRKT, SK_RX01_VP_PILOT·SK_RX01_PSW_BRKT, RX01_BEAM_FILL_299",
+      "evidence": "mech_RX-01_design1.md 5절 SF 2.36, 모델링부 RX01-D2·D5",
+      "fix": "폭 34→40 또는 리브, 스케치 구속, 보 Extrude144 정리(디테일링)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "스위치 몸 M3 탭 물림 4 = 1.33d로 M-01의 1.5d보다 짧고, 조임 때 암나사 SF가 1.02로 기준 1.0 바로 위다. 부하를 받을 때 SF는 오조작 6.0으로 여유가 있다",
+      "where": "STEP대기_CB3-8 ×2 (X 1131·1151, Z 486) → STEP대기_ISE20-N-M-C6L-L 몸 탭(임시 형상의 깊이 4)",
+      "evidence": "fea/results/mech_RX-01_handcalc.json: CB3-8 engage_ratio 1.33, 조임 암나사 전단 1.02, 좌면 1.76(수지는 POM 값으로 보수, 조임 0.3 N·m)",
+      "fix": "실물 ISE20 STEP·취급설명서로 탭 깊이와 허용 토크를 확인한다. 물림이 4.5 이상이 되게 볼트 길이를 바꾸고(CB3-10 등), 토크는 설명서 값으로 맞춘다",
+      "external": true
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "VP342-5DZ1-01A",
+     "ISE20-N-M-C6L-L",
+     "AN110-01",
+     "CB3-40",
+     "CB3-8"
+    ],
+    "external_blocks": [
+     "STEP 미수령 5종(VP342-5DZ1-01A, ISE20-N-M-C6L-L, AN110-01, CB3-40, CB3-8) — E-10 임시 형상 STEP대기_로 그림, 실물 교체는 다음 STEP 재시도(미스미 로그인 풀림)"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "RX-05",
+    "size": "M",
+    "status": "일부(완료 판정 미달)",
+    "chosen": "RX-05-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.23.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "윗 솔 B1·B2 홀더 볼트 CB4-12_RX05_TOP ×18이 닫힌 덮개 안에서 위로 조인다. 완성 상태에서는 렌치가 닿지 않고(M-01 '완성 조립 상태 렌치 접근', M-02 조립 순서 제약), 솔(소모품)을 바꾸려면 덮개 전체(CB5 ×7)를 떼야 한다. 완료 판정 '공구 접근' 미달이다(WF-169).",
+      "where": "U5_GCOV / CB4-12_RX05_TOP ×18 (Y 38·95, 머리 Z 462~466)",
+      "evidence": "머리 둘레가 앞벽 Y 27, 윗판 Z 466, 밑 솔 B3 홀더(Y 29~39, Z 292~302), 보 앞면 Y 120으로 닫혀 있다. Y 95 줄 밑은 대차판 Y 80~92와 벨트 Y 98~114 사이가 6뿐이다. 30 mm 프로브 겹침 0은 닫힌 상자 안 빈 공간을 잰 것일 뿐이다.",
+      "fix": "볼트를 위에서 넣게 뒤집는다. 홀더 Y 38·95 구멍을 Ø4.5 통과 + 자리파기로 바꾸고, 덮개 윗판(t2)에 판금용 M4 압입(클린칭) 너트를 넣는다(형번은 구매부). 머리는 홀더 윗면 Z 478 위에서 손이 닿는다. 다른 방법: 홀더를 윗판 위에서 양 끝 장공과 위 볼트로 누르는 클립으로 고정한다.",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "받침 윗 날개 B4 구멍과 굽힘 사이 거리가 M-04 구멍–굽힘 ≥ 2t+R(9)에 못 미친다",
+      "where": "P_M03_GCOV_RBRKT_SM 윗 날개 B4 구멍 Y 105",
+      "evidence": "Ø4.5 가장자리 Y 107.25에서 세운 판 바깥면 Y 114까지 6.75(굽힘 접선 Y 111까지 3.75), 기준 9",
+      "fix": "B4 줄을 Y 105 → 103으로 옮기고 윗 날개를 Y 98까지 2 늘린다(가장자리–세운 판 8.75). 아니면 디테일링에서 형상을 다시 본다.",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "덮개 윗판 B2 구멍과 창 가장자리 사이가 1.5t(3)에 못 미친다",
+      "where": "P_M03_GCOV_SM 윗판 Y 95 구멍 ↔ 창 뒤 가장자리 Y 90",
+      "evidence": "2.75 < 3",
+      "fix": "B2 줄을 Y 95 → 96으로 옮긴다(홀더 Y 90~100 안, 창까지 3.75)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "모델링부가 기록한 판금 구멍–굽힘 거리 미달 RX05-D1·D2(앞벽 구멍–밑 날개 굽힘 0.75, 윗판 Y 38–립 굽힘 1.75, 기준 6)",
+      "where": "P_M03_GCOV_SM",
+      "evidence": "M-04 구멍–굽힘 ≥ 2t+R = 6",
+      "fix": "디테일링에서 고친다. V-D1에서 볼트 방향을 바꿀 때 Y 38 자리도 함께 다시 정한다.",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "모델링부 기록 RX05-D3~D7: 앞 C단면 처짐 6.3, 받침–보 틈 3, 덮개 끝 틈, 관 U5C_2 R20(TU0604 최소 굽힘 R 카탈로그 미확인), 홀더 탭 임시",
+      "where": "U5_GCOV, TU0604_M08P_U5C_2",
+      "evidence": "mech_RX-05_model.md 7절",
+      "fix": "디테일링",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "솔 띠 실물 형번과 STEP이 없어 STEP대기_BRSEAL ×4 임시 형상으로 두었다",
+      "where": "STEP대기_BRSEAL_B25_1·_2·_3, B40_1",
+      "evidence": "stepcheck에서 BRSEAL-H10-B25·-B40 없음",
+      "fix": "구매부가 형번을 정하고 STEP을 받는다(미스미 로그인 상태에 따름)",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "앞벽 국부 판 굽힘. 손 100 N을 수평으로 걸고 홀더 띠를 무시한 보수 계산에서 SF가 기준 +10% 안에 든다. FEA로 확인해야 하지만 환경이 없다(D-16).",
+      "where": "P_M03_GCOV_SM 앞벽 Y 27~29 · Z 290~466 (RX05-F1)",
+      "evidence": "Jaramillo m≈0.509P, 외팔 169, t2 → σ 76.4 MPa, SF 2.10(기준 2, A5052-H32 160). B3 홀더 10×10 띠를 탄성 기초 보로 넣으면 σ 42.3 MPa, SF 3.78. fea/results/mech_RX-05_handcalc.json wall_plate_*",
+      "fix": "디테일링에서 할 일: 환경이 생기면 FEA로 확인한다. 모자라면 앞벽 Z≈380에 X 방향 비드 리브 1줄을 넣거나 앞벽을 t2 → t2.5로 한다.",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "손으로 앞벽을 밀 때 합 처짐이 안쪽 관 U5C_1과의 틈에 가깝다. 탄성 변형이고 오조작 때만 생긴다.",
+      "where": "P_M03_GCOV_SM 앞벽 ↔ TU0604_M08P_U5C_1(최소 Y 42.5), 틈 13.5 (RX05-F2)",
+      "evidence": "C단면 6.4 mm + 국부 판 10.5 mm = 보수 16.9 mm > 13.5. 홀더를 넣으면 12.2 mm < 13.5",
+      "fix": "모델링 RX05-D3(처짐)과 함께 리브로 강성을 올리면 같이 풀린다.",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "BRSEAL-H10-B25",
+     "BRSEAL-H10-B40"
+    ],
+    "external_blocks": [
+     "솔 띠 BRSEAL-H10-B25 ×3 · BRSEAL-H10-B40 ×1: 형번 미확정 · STEP 없음 → STEP대기_ 임시 형상(치수 출처 tools/out/mech_RX-05/catalog.md, E-12 임시). 미스미 로그인 '풀림' 상태라 받기 시도 안 함"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "RX-02",
+    "size": "M",
+    "status": "완료",
+    "chosen": "RX-02-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.24.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "매니폴드 임시 상자에 끝판 P·R 포트·왼쪽 끝판 구멍이 없어 피팅 나사부가 상자와 겹침(08 때와 같은 상대 위치, 판정 기억에 남김)",
+      "where": "STEP대기_SS5Y3-20-09_M08 ↔ TPH-01_1·_3(221.2씩)·KQ2L06-01AS_M08V_PSW(773.0)·KQ2H08-01AS_1·AN110-01_1·_2(201.1씩)",
+      "evidence": "REST inspect.clearance 183쌍 truncated false, 07·08 판정(dc4776d148b2b078cf9f, 61a81864bb8b6aa426b7)과 같은 값",
+      "fix": "SS5Y3-20-09 실물 STEP(D-193) 받을 때 바꿔 끼우고 다시 잰다",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "AS1211F-M5-06·M-5P_9 실물 STEP 없음(임시 형상)",
+      "where": "U3_NOZZLE STEP대기_AS1211F-M5-06, U8_PNEU STEP대기_M-5P_9",
+      "evidence": "stepcheck 없음(모델링 보고 8절)",
+      "fix": "다음 STEP 재시도에서 실물로 교체",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "옮긴 CB4-25 :4 렌치 길(머리 지름 □7×30)이 9번 밸브 몸에서 0.65 mm(Ø3 키 2.67) — 겹침은 0",
+      "where": "CB4-25_M08 (U8_PNEU:1/CB4-25_M08:4), X 1143.7 · Z 359",
+      "evidence": "프로브 PRB_K4 near 0.65, PRB_KEY4 2.67",
+      "fix": "디테일링에서 머리 낮은 볼트 또는 자리 X +1 검토",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "압력 스위치 엘보 ↔ HMI 받침 0.3 mm(RX02-D1)",
+      "where": "KQ2L06-01AS_M08V_PSW ↔ P_M08_HMI_MOUNT_ML",
+      "evidence": "REST clearance 0.3",
+      "fix": "디테일링에서 받침 모서리 2 mm 따기",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "남은 CB4-25 :1·:2 보 탭 없음, 보와 62.83 mm³ 겹침(RX02-D4, 분석 4-5 '보 24' 묶음)",
+      "where": "CB4-25_M08 :1·:2 X 1039.8 ↔ P_M07_BEAM",
+      "evidence": "inspect.clearance 62.832(:1)",
+      "fix": "디테일링에서 보 M4 탭 2개",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "손 닿음 10 N 오조작에서 노즐 관이 굽음(관을 손으로 굽혀 겨눔을 맞추는 부품이라 기능 고장은 아님, 10 N은 요구서 값이 아닌 가정)",
+      "where": "P_RX02_NOZ_PIPE 뿌리 (30,30,105)",
+      "evidence": "σ 173.3 MPa, SF 1.18(필요 2), 11.83 N에서 굽기 시작. 운전 SF 8.17",
+      "fix": "꺾임 (30,30,62.5)에 클립(RX02-D2) → 팔 74.4→38.0, SF 2.32. 또는 관 Ø5×0.75(SF 2.57, 겨눔 다시)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "CB5-20 헤드 쪽 조임 4.5 N·m에서 암나사 전단 여유 부족(헤드 모재 미정, A5052-H112 보수 가정)",
+      "where": "헤드 암 밑면 M5 탭 (23,23,125)·(23,37,125)",
+      "evidence": "handcalc 조임 암나사 전단 SF 0.86, 운전 SF 220(하중 17.64 N)",
+      "fix": "조임 토크 2.5 N·m 지시(SF 1.55) 또는 헬리서트, 실물 867 헤드 재질(D-10)로 다시",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "노즐 관 끼움 깊이 4 mm(설계안 8)와 굽힘 R/D 2.5",
+      "where": "블록 밑 Ø4.05 Z 105~109 · 관 꺾임 R10",
+      "evidence": "소켓 받침 SF 2.98(손 10 N)으로 합격이나 접합 길이 1.0 D, 바깥 섬유 변형률 0.20",
+      "fix": "끼움 8(2 D)로 바꿈(블록 공기 길 옆 구멍), R10은 제작처 맨드릴 굽힘 확인, 안 되면 R12",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "AS1211F-M5-06",
+     "SS5Y3-20-09",
+     "M-5P"
+    ],
+    "external_blocks": [
+     "AS1211F-M5-06 · SS5Y3-20-09 · M-5P 실물 STEP 없음 — STEP대기_ 임시 형상으로 넣음(받기는 구매부·다음 STEP 재시도)"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "RX-04",
+    "size": "M",
+    "status": "완료",
+    "chosen": "RX-04-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.25.0.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "RX04-V2 새 볼트 렌치 접근: CB4-12_RX04_1 육각 키 길(아래 방향, Ø7)을 케이블 CBL_RX04_LED가 가로지른다",
+      "where": "U3_HEAD/U3_LED, CB4-12_RX04_1 (X -20, Y -45.5, 머리 Z 119.5)",
+      "evidence": "케이블이 머리 밑 5.5 mm(Z 110~114, Y -55~-41)를 지난다. CB4-12_RX04_2는 비어 있다",
+      "fix": "케이블 앞 구간을 X -27로 비킨다(머리 X -23.5와 1.5). 아니면 클립 ① 앞 Y -41에서 케이블을 돌린다. 조립은 브래킷을 먼저 한다"
+     },
+     {
+      "kind": "디테일",
+      "what": "RX04-V3: U4 d₁ 45에서 바퀴·트레드 옆면과 브래킷 플랜지 -X 끝 사이가 좁다",
+      "where": "P_M02_WHEEL·P_M02_WHEEL_TREAD ↔ P_RX04_LED_BRKT_SHT (X -28)",
+      "evidence": "bbox를 +55 X로 옮겨 계산한 떨어짐이 4.5 mm다(누름 13.006°와 -4.11° 모두). J_U4_X 0~95 한도 때문에 조인트로 몰 수 없다",
+      "fix": "RX-16(d₁ 45 행정)에서 실제 자세로 다시 잰다. 모자라면 플랜지 -X 끝을 -25로, 장공 중심을 -20에서 -17로 옮긴다(끝 살 3 유지)"
+     },
+     {
+      "kind": "디테일",
+      "what": "RX04-D2 판금 M-04: 브래킷이 판금 기능 바디가 아니다(굽힘 R 없음, 전개 안 됨)",
+      "where": "P_RX04_LED_BRKT_SHT (SUS304 t1.5)",
+      "evidence": "sheet.recognize가 거부했다(모델링 보고 2절). 굽힘 모서리가 각져 있다",
+      "fix": "판금으로 다시 그린다. 굽힘 안 R 1.5, 굽힘 양끝 릴리프"
+     },
+     {
+      "kind": "디테일",
+      "what": "RX04-D3: LEDBAR-L100 형번이 정해지지 않았고 STEP이 없다. 탭 깊이 9와 케이블 최소 굽힘 R5는 임시값이다",
+      "where": "STEP대기_LEDBAR_L100, CBL_RX04_LED",
+      "evidence": "자료대기 D-229. 미스미 로그인이 풀려 있다",
+      "fix": "형번이 정해지면 실물 STEP으로 바꾸고 탭 깊이와 케이블 R을 확인한다",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "RX04-D4: 브래킷 판 앞면과 케이블 사이가 1.15 mm다",
+      "where": "P_RX04_LED_BRKT_SHT ↔ CBL_RX04_LED (LED -X 출구)",
+      "evidence": "inspect.clearance 1.15",
+      "fix": "출구 쪽에 클립을 하나 더 달거나 판 끝에 R을 준다"
+     },
+     {
+      "kind": "디테일",
+      "what": "손 하중 기준 없음 — 손 100 N(가정 검토)이면 플랜지 볼트 줄·경사 판 모서리 영구 변형",
+      "where": "P_RX04_LED_BRKT_SHT 플랜지 볼트 줄(Y −45.5)·경사 판 뿌리",
+      "evidence": "오조작 손 20 N(설계안 가정): SF 3.18·3.84 ≥ 2. 가정 검토 100 N: SF 0.64·0.77 (fea/results/mech_RX-04_handcalc.json)",
+      "fix": "손 하중 값이 100 N으로 정해지면 t1.5 → t3 또는 가운데(X 35)에 CB4 볼트 하나 추가 (RX04-F1)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "CB4-12 머리 Ø7이 장공 폭 4.5 위에 앉아 좌면이 작음",
+      "where": "P_RX04_LED_BRKT_SHT 장공 (−20,−45.5)·(90,−45.5)",
+      "evidence": "좌면 9.31 mm², 1.5 N·m 예압 1,875 N → 201 MPa, SUS304 한계 400의 SF 1.99",
+      "fix": "평와셔 M4(외경 9) 추가 또는 조임 1.0 N·m (RX04-F2)",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "LEDBAR-L100 (미스미 소형 LED 바 조명 L100, 형번 미확정 D-229)"
+    ],
+    "external_blocks": [
+     "LEDBAR-L100: 형번 미확정, STEP 없음(D-229) — 카탈로그 표 임시 외형으로 STEP대기_LEDBAR_L100 임시 형상"
+    ],
+    "regrade": null
+   },
+   {
+    "id": "RX-12-C1",
+    "status": "설계 미달(수정 상한)",
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "완료 판정 2 — 로딩 자리·작업자 접근 유지(손으로 펴고 빗장 꽂기, 0° 폄 자리가 하나로 정해짐)",
+      "where": "설계안",
+      "evidence": "멈춤 접점은 경첩 축에서 23 mm(X 1128 − 1105)이고, 빗장 A·B는 710 mm(X ≈ 395)에 있어 지레비가 30.9다. 멈춤이 0°를 정하고 빗장은 잠금만 한다면, 빗장(구멍 Ø8.3 · 막대 Ø8, ±0.3)이 꽂히려면 CB6-20 머리 높이를 ±0.0097 mm(M6 한 바퀴의 ±3.5°)로 맞춰야 한다. 멈춤 힘 공차 51~597 N에서는 혀 팔 처짐(외팔 22, 24×10, I 2,000)만으로도 빗장 자리가 0.04~0.47 mm 움직인다. 머리가 0.01 mm만 높아도 판이 덜 올라가 빗장을 꽂지 못한다. 그러면 펴기가 끝나지 않고 시작 조건에 막힌다. 설계안의 'Z 0 ± 0.15'는 빗장이 0°를 정할 때만 맞는 값이다. 멈춤이 정한다면 −X 끝 오차는 (나사 오차 + 처짐 + 경첩 틈) × 30.9다",
+      "fix": "형상은 그대로 둔다. 고칠 곳은 네 군데다. ① 2절 '폄'과 완료 판정 근거를 '0°는 빗장 A·B(r 710, 틈 0.3 → Z ±0.15)가 정한다'로 고친다. 가스 스프링이 판을 빗장 위쪽에 대고 있고(반력 명목 10.4 N, 공차 1.6~19.3 N), 혀–CB6-20은 빗장을 뺐을 때 받치는 거친 멈춤이라고 적는다. ② 2절 '높이 맞춤'은 나사 머리를 빗장 정렬 높이보다 0.03~0.10 mm 낮게 맞추는 것으로 고친다. 그러면 −X 끝이 빗장 자리보다 +1~+3 mm 높다(1/10~1/3 바퀴). 펼 때는 앞 모서리를 ≤ 20 N으로 눌러 빗장을 꽂고, 꽂힌 뒤 혀가 멈춤에서 0.03~0.10 mm 뜨는지 확인하는 순서를 넣는다. ③ 4절 '±0.15'를 빗장 기준으로 바로잡는다. ④ machine.json REST(J_U2_FLAP 0)는 그대로 둔다"
+     }
+    ],
+    "design": {
+     "basis": "벤치마크 없음 — 0-8-3 U2 '새로 하는 것'(R375X에는 작업자 포켓이 없다). 볼·피치 100·판 높이(Z −12~−8, 볼 꼭대기 Z 0)·Ø36 구멍은 M04/M04R 볼 테이블(C-31)에서 그대로 가져온다. L브래킷은 P_M07_LBRK(T19) 모양 그대로다. 접는 이유는 DC203-R1 P1 서는 자리를 지키기 위해서다. 1·2회차의 가스 스프링 균형과 멈춤은 같은 안 안의 세부다.",
+     "revisions": [
+      {
+       "round": 1,
+       "where": "7-1 P_RX12C1_FLAP_BAR_L2(와 판의 L2 고정 구멍 4개)",
+       "change": "가운데 Y −750(Y −755~−745) → Y −800(Y −805~−795). 판 처짐 0.054 → 0.09 mm(경간 400 · 300)",
+       "why": "볼 줄 j = 4(Y −750)의 몸통 7개(X 450~1050, Z −30~−13)와 겹쳤다. 이제 −772 · −828 가장자리와 23씩 떨어진다"
+      },
+      {
+       "round": 1,
+       "where": "2절 순서, 7-1(팔 블록 · 귀판 · 핀 P), 7-2(클레비스 · 핀 A · POM 멈춤 A · B · 가스 스프링), 7-3(J_RX12C1_GS_CYL · GS_ROD)",
+       "change": "멈춤 없음 · 빗장을 빼면 자유 낙하 → 가스 스프링 1개(Y −1235, P (1055, −48) · A (1073, −368), F1 1,120 N, 320.5 → 271.6). 0°에서 완전히 늘어나 +6 N·m로 붙잡고, 0~−75°는 +0.6~+13.5 N·m, −90°는 −8.35 N·m. 그리고 :9 −X 면 POM 멈춤 2개(X 1100~1110 · Z −320~−260, Y −400 · −1100)로 −90° 멈춤",
+       "why": "빗장을 빼는 순간 판이 50 N·m로 떨어지고 −93°에서 :9에 부딪혔다. 펼 때 −X 끝을 받친 채로 +X 옆 빗장을 꽂을 수 없었다. 이제 손 힘 ≤ 34 N, 빗장 조작 때 판이 0°에 붙잡혀 있다"
+      },
+      {
+       "round": 1,
+       "where": "7-1 경첩 STEP대기_HHPSN8 간이 형상",
+       "change": "판쪽 잎 X 1097~1100 → 1100~1103, 기둥쪽 잎 X 1110~1113 → 1107~1110, 축통 Ø10 중심 X 1105",
+       "why": "잎이 XP 막대(X 1085~1100)와 기둥(X 1110~1150) 안에 들어가 정적 겹침이 생겼다"
+      },
+      {
+       "round": 2,
+       "where": "7-2 가스 스프링, 7-3 J_RX12C1_GS_ROD, 2절 폄 정의",
+       "change": "STEP대기_GASSPRING_F1200_S60_L320(0°에서 완전 신장 320.5로 붙잡음) → STEP대기_GASSPRING_F1120_S60_L325(L_ext 325, 자리 P · A 그대로, 0°에서 320.51 = L_ext − 4.49). GS_ROD 범위 271.6~320.51, REST 320.51",
+       "why": "스프링 내부 멈춤과 빗장이 0°를 함께 정하는 과구속이었다. 필요한 320.51보다 0.5 짧아 −X 끝이 7 mm(공차 ±2면 14~28) 처져 빗장을 꽂을 수 없었다. 이제 공차 ±2 · 힘 ±10 %에서도 2.49~6.49 짧다"
+      },
+      {
+       "round": 2,
+       "where": "7-1 새 P_RX12C1_UPSTOP_TONGUE + XP +X 면 M5 탭 2, 7-2 새 P_RX12C1_UPSTOP_BLK + CB6-20 멈춤 나사 + CB5-16·HNTT8-5 2",
+       "change": "0° 멈춤 없음 → 판 쪽 혀(팔 X 1106~1135 · Y −1132~−1108 · Z −23~−13)가 기둥 B +Y 면 블록(X 1118~1145 · Y −1135~−1108 · Z −80~−40) 위 CB6-20 머리(Z −23, 팔 23)에 놓임. 멈춤 힘 321 N(51~597), 나사 고정제로 잠금. 빗장은 잠금 전용",
+       "why": "0° = 볼 꼭대기 Z 0을 하나의 조절 가능한 고정 멈춤이 정하게 한다. 혀·볼트 머리와 기둥 B·캡·L브래킷·클레비스 사이 ≥ 5(최소 5.0)"
+      }
+     ]
+    }
+   },
+   {
+    "id": "RX-12-C2",
+    "size": "M",
+    "status": "완료",
+    "chosen": "RX-12-C2-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.25.2.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "The modelling report summary says 'CB5-16 + HNTT8-5 46 sets'. The model actually has 38 sets (U2 28, U1 10), and 47 new bolts in total (38 + SFB5-10 7 + CB5-12 2).",
+      "where": "mech_RX-12-C2_model1.md summary and section 2",
+      "evidence": "Signature bbox check: 47 new bolts. CAD interference: U1 bolt-nut pairs 10, U2 bolt-nut pairs 28, SFB-nut pairs 7, PX tap-CB5-12 pairs 2.",
+      "fix": "The documentation department writes 38 sets of CB5-16 + HNTT8-5 and 47 new bolts in the BOM and the design review."
+     },
+     {
+      "kind": "디테일",
+      "what": "RX12C2-D7 (new column L brackets have no sheet-metal bend R and no hand calculation) and RX12C2-D8 (wrench access and thread engagement length of the new bolts not checked) are still open.",
+      "where": "P_RX12C2_LBRK_COL_U/_L, the 47 new bolts",
+      "evidence": "Design review FSAP_v2.25.2_review.md section 7, lines 55-56",
+      "fix": "Detailing: remake the brackets as sheet metal with inner R 4, do a hand calculation with the R2 tape tension, and run the bolt check from the guide."
+     },
+     {
+      "kind": "디테일",
+      "what": "손 100 N −Y 당김(오조작)에서 위 기둥 L 세운 다리 굽힘 SF 1.67 < 기준 2 (볼트 머리 좌면 끝 기준 what-if 2.12). 운전 SF 7.93",
+      "where": "P_RX12C2_LBRK_COL_U 세운 다리 (볼트 줄 Z −230 ~ 꺾임 Z −250, 기둥 −Y 면 Y 120)",
+      "evidence": "fea/results/mech_RX-12-C2_handcalc.json: T 564 N, 팔 20, 순폭 34.5·t4 Z 92 mm³, σ 122.6 MPa, SUS304 205",
+      "fix": "판 t4→t5(SF 2.6), 또는 꺾임 안 리브, 또는 기둥 볼트를 꺾임 쪽으로 옮겨 팔 20→14(SF 2.4)"
+     },
+     {
+      "kind": "디테일",
+      "what": "140 쪽 볼트가 L마다 1개라 Z축 돌림을 마찰로만 버팀. what-if 손 100 N X 옆: 14,000 N·mm / 마찰 5,600 N·mm = 2.5배(표 하중 방향 밖)",
+      "where": "HFS8-4080-140_RX12C2 윗/밑 L 볼트 (1305, Y 100)",
+      "evidence": "예압 4 kN·μ 0.2·r 3.5 가정, mech_RX-12-C2_handcalc.json whatif_X_side_100N",
+      "fix": "L 누운 다리 볼트를 Y 2줄(Y 90·110)로, 또는 140 −Y 끝 받침 추가"
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "STEP대기_BALL_D25_M04 실물(D-96·D-118, 형번 미정)",
+     "STEP대기_LEVELER_M8_M04 실물(D-119, 형번 미확인)"
+    ],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-12-C4",
+    "size": "S",
+    "status": "모델 반영·해석 못 함",
+    "chosen": "RX-12-C4-A",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.25.2.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "완료 판정 'CYCLE_W1·W2 회전마다 미끄럼 SF ≥ 1'은 RX-12-C1 접이 받침(J_U2_FLAP 0 폄)이 있을 때만 맞다. 지금 모델 v2.25.2에는 포켓 받침이 없어 오목 입구2와 안 모서리2의 SF가 1보다 작고, 시간 키를 늘려도 풀리지 않는다(정지 SF 0.389).",
+      "where": "v2.25.2 CYCLE_W1 350~562 (입구2 U4+U5, 안 모서리2 앞 U4+U5, 안 모서리2 뒤 U4만)",
+      "evidence": "rx12c4design.json에서 받침 상태 A의 SF는 0.711·0.781·0.343(받침 밖 1.327 kg)이다. 받침 상태 B에서는 1.106·1.130·1.107이다. machine.json에 J_U2_FLAP 조인트가 없고 RX-12-C1은 요구서 5절에서 미해결이다.",
+      "fix": "RX-12-C1(볼 63 + 혀 판 볼 1 접이 받침)을 합친다. 합친 모델에서 W1 350~562의 받침 밖 질량이 0.034 kg 이하인지 합치기부나 최종 회귀가 잰 뒤 '받침 조건' 키를 지운다. 이 과제의 수정 회차가 아니다.",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [
+     "RORLM20-6-L200"
+    ],
+    "external_blocks": [
+     "RORLM20-6-L200 실물 STEP 미수령(미스미 로그인 풀림) — 기존 STEP대기_RORLM20-6-L200 ×14(RX-11) 유지, 이 과제에서는 .sc를 열지 않아 새로 그리지 않음"
+    ],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "CYCLE_G1 10단계 오프셋·20간격 일부 29점(어림 초과)",
+    "CYCLE_G2 37점(어림 초과)",
+    "CYCLE_L 44점(어림 초과)",
+    "CYCLE_P1 25점(어림 초과)",
+    "CYCLE_P2 37점(어림 초과)",
+    "CYCLE_S 23점(어림 초과)",
+    "CYCLE_V 27점(어림 초과)",
+    "CYCLE_V2 37점(어림 초과)",
+    "CYCLE_W1 34점(어림 초과)",
+    "CYCLE_W2 34점(어림 초과)",
+    "체결·관 바디(움직이는 382·둘레 358)의 자세별 간섭 전부(검사 묶음 밖)",
+    "요구서 6-4 mm·° 간격(X·Y 25 mm, 회전 5°, 좁은 곳 5 mm·1°)으로 다시 센 점(20단계 간격으로만 봄)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 685,
+    "estimate_s": 1860.1,
+    "actual_s": 1787.1,
+    "chunk_times": [
+     {
+      "id": "STATES",
+      "elapsed_s": 655.2,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V2",
+      "elapsed_s": 135,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W1",
+      "elapsed_s": 130.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W2",
+      "elapsed_s": 130.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P1",
+      "elapsed_s": 115,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P2",
+      "elapsed_s": 135.1,
+      "status": "ok"
+     },
+     {
+      "id": "SEAM_U7",
+      "elapsed_s": 100.1,
+      "status": "ok"
+     },
+     {
+      "id": "BIND_U7",
+      "elapsed_s": 25,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_U7",
+      "elapsed_s": 75,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_HEAD",
+      "elapsed_s": 10,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L",
+      "elapsed_s": 145.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S",
+      "elapsed_s": 115,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1",
+      "elapsed_s": 120.2,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G2",
+      "elapsed_s": 135.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V",
+      "elapsed_s": 115,
+      "status": "ok"
+     },
+     {
+      "id": "run1_carryover(버림)",
+      "elapsed_s": 700,
+      "status": "discarded"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "run 2: 연구 CYCLE_V2 315 5.0 s/단계, 자세 STATES 56 10.0 s/점, 오류 0 (run 1 시험 연구 5.6 s·자세 8.8 s, run 1은 세션 상태 넘어옴 결함으로 결과 버림)",
+    "per_step_s": {
+     "study": 5.0157,
+     "pose": 10.0073
+    },
+    "pose_steps": 60,
+    "reduced": "run 1(700 s)을 버린 뒤 남은 상한 1,085 s로 run 2를 냈다. 어림 1,860 s > 1,085 s → 시작 전에 앞 373묶음(상태 60 전부 → 새 연구 40간격 → 짧은 연구 전 단계 → 예전 연구 40간격 → 20단계 오프셋 일부)만 돌리고 뒤 310묶음(20단계 오프셋 일부·10단계 오프셋 전부)을 못 본 범위로 정함. 체결·관 바디는 상한 안에 들게 검사 묶음에서 뺐다",
+    "seen": [
+     "STATES 0-59 전부(요구서 6-4 상태 목록 60)",
+     "CYCLE_L 0~716 20간격+끝 29점",
+     "CYCLE_S 23점",
+     "CYCLE_G1 24점",
+     "CYCLE_G2 27점",
+     "CYCLE_V 23점",
+     "CYCLE_V2 28점",
+     "CYCLE_W1 26점",
+     "CYCLE_W2 26점",
+     "CYCLE_P1 23점",
+     "CYCLE_P2 27점",
+     "SEAM_U7 0-19",
+     "BIND_U7 0-4",
+     "MAINT_U7 0-14",
+     "MAINT_HEAD 0-1",
+     "검사 대상: 움직이는 비체결 218 + 작업 대상(MAT·TP·SEAM) 자기검사 및 대 둘레 비체결 349"
+    ],
+    "unseen": [
+     "CYCLE_G1 10단계 오프셋·20간격 일부 29점(어림 초과)",
+     "CYCLE_G2 37점(어림 초과)",
+     "CYCLE_L 44점(어림 초과)",
+     "CYCLE_P1 25점(어림 초과)",
+     "CYCLE_P2 37점(어림 초과)",
+     "CYCLE_S 23점(어림 초과)",
+     "CYCLE_V 27점(어림 초과)",
+     "CYCLE_V2 37점(어림 초과)",
+     "CYCLE_W1 34점(어림 초과)",
+     "CYCLE_W2 34점(어림 초과)",
+     "체결·관 바디(움직이는 382·둘레 358)의 자세별 간섭 전부(검사 묶음 밖)",
+     "요구서 6-4 mm·° 간격(X·Y 25 mm, 회전 5°, 좁은 곳 5 mm·1°)으로 다시 센 점(20단계 간격으로만 봄)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 310,
+     "cad_calls": 12,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 210,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPLITE 모델링부",
+    "phase": "STEPLITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "FIX-045 모델링부",
+    "phase": "FIX-045 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3320,
+     "cad_calls": 100,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 172,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "FIX-045 모델링부 수정1",
+    "phase": "FIX-045 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 530,
+     "cad_calls": 17,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "FIX-045 문서·커밋",
+    "phase": "FIX-045 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-17 측정부",
+    "phase": "RX-17 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 700,
+     "cad_calls": 17,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-17 카탈로그부",
+    "phase": "RX-17 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 40,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-17 기구설계부",
+    "phase": "RX-17 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1250,
+     "cad_calls": 25,
+     "file_opens": 0,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-17 완료 판정 확인",
+    "phase": "RX-17 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 190,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-17 모델링부",
+    "phase": "RX-17 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1560,
+     "cad_calls": 143,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 188,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-17 검도·체결",
+    "phase": "RX-17 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 998,
+     "cad_calls": 23,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-17 문서·커밋",
+    "phase": "RX-17 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-14 측정부",
+    "phase": "RX-14 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 700,
+     "cad_calls": 19,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-14 카탈로그부",
+    "phase": "RX-14 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 480,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-14 기구설계부",
+    "phase": "RX-14 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 5400,
+     "cad_calls": 11,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": "예상 40분의 2배를 넘김(어림 90분): 걷는 범위가 4개 유닛에 걸쳐 있고, CAD 확인에서 볼 받침 플랜지(Ø44, Z −6)를 새로 찾아 테이프 길 높이·카세트 길이·핀·클램프 배치를 다시 잡았다. 시작 시각을 따로 찍지 않아 걸린 시간은 어림값이다."
+    },
+    "expect_min": 40,
+    "over": true
+   },
+   {
+    "label": "RX-14 완료 판정 확인",
+    "phase": "RX-14 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-14 기구설계부 수정1",
+    "phase": "RX-14 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 5,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-14 완료 판정 확인 1",
+    "phase": "RX-14 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-14 구매부 STEP",
+    "phase": "RX-14 · 구매품",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-14 모델링부",
+    "phase": "RX-14 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 3286,
+     "cad_calls": 241,
+     "file_opens": 4,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 150,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-14 검도·체결",
+    "phase": "RX-14 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 760,
+     "cad_calls": 17,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-14 해석",
+    "phase": "RX-14 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 500,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-14 예외 판정",
+    "phase": "RX-14 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 343,
+     "cad_calls": 4,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-14 모델링부 수정1",
+    "phase": "RX-14 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 780,
+     "cad_calls": 61,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 150,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-14 검도·체결 1",
+    "phase": "RX-14 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 341,
+     "cad_calls": 8,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-14 해석 1",
+    "phase": "RX-14 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 335,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-14 모델링부 수정2",
+    "phase": "RX-14 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 640,
+     "cad_calls": 21,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 313,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-14 검도·체결 2",
+    "phase": "RX-14 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 250,
+     "cad_calls": 14,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-14 해석 2",
+    "phase": "RX-14 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 480,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-14 문서·커밋",
+    "phase": "RX-14 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 720,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-15 측정부",
+    "phase": "RX-15 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1067,
+     "cad_calls": 27,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 3,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-15 카탈로그부",
+    "phase": "RX-15 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 1,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-15 기구설계부",
+    "phase": "RX-15 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1830,
+     "cad_calls": 5,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-15 완료 판정 확인",
+    "phase": "RX-15 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-15 기구설계부 수정1",
+    "phase": "RX-15 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 2700,
+     "cad_calls": 3,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-15 완료 판정 확인 1",
+    "phase": "RX-15 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-15 모델링부",
+    "phase": "RX-15 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 3840,
+     "cad_calls": 275,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 153,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-15 모델링부 수정1",
+    "phase": "RX-15 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1830,
+     "cad_calls": 62,
+     "file_opens": 10,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 130,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-15 검도·체결 1",
+    "phase": "RX-15 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 720,
+     "cad_calls": 165,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-15 해석 1",
+    "phase": "RX-15 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-15 예외 판정",
+    "phase": "RX-15 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 780,
+     "cad_calls": 15,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-15 모델링부 수정2",
+    "phase": "RX-15 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 62,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 120,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-15 검도·체결 2",
+    "phase": "RX-15 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 805,
+     "cad_calls": 126,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-15 해석 2",
+    "phase": "RX-15 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-15 문서·커밋",
+    "phase": "RX-15 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 460,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-16 측정부",
+    "phase": "RX-16 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1140,
+     "cad_calls": 16,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 135,
+     "over_reason": "",
+     "mcp_restarts": [
+      "앱 재시작 없음. 이 세션 MCP 서버(pid 28632)가 batch(inspect.clearance 1단계, 110×39바디) 'Request timed out' 뒤 없어져 'Server unavailable' — 다른 연결 요청이 막은 것이 아니라 앱은 그대로 둠(pid 23484, 메모리 약 43.8 GB). 그 사이 저장본 CLI 2회(각 138~141 s, 열기 약 135 s 어림)로 측정. 약 10분 뒤 MCP가 다시 붙어 running 빈 목록 · dirty false · marker 3460 · REST moved false 확인. 버린 것 없음(편집 0, 체크포인트 164만 남음)"
+     ]
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-16 카탈로그부",
+    "phase": "RX-16 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-16 기구설계부",
+    "phase": "RX-16 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1900,
+     "cad_calls": 6,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-13 측정부",
+    "phase": "RX-13 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 570,
+     "cad_calls": 6,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 133,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-13 카탈로그부",
+    "phase": "RX-13 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 270,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-13 기구설계부",
+    "phase": "RX-13 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1050,
+     "cad_calls": 1,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 140,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-13 완료 판정 확인",
+    "phase": "RX-13 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-13 구매부 STEP",
+    "phase": "RX-13 · 구매품",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 3,
+     "mcp_restarts": [],
+     "open_s": 0,
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-13 모델링부",
+    "phase": "RX-13 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 5850,
+     "cad_calls": 80,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 130,
+     "over_reason": "",
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-13 모델링부 수정1",
+    "phase": "RX-13 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1420,
+     "cad_calls": 150,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 130,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-13 검도·체결 1",
+    "phase": "RX-13 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 720,
+     "cad_calls": 280,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-13 해석 1",
+    "phase": "RX-13 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 550,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-13 문서·커밋",
+    "phase": "RX-13 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 390,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 측정부",
+    "phase": "RX-12-C3 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 730,
+     "cad_calls": 16,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 30,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 카탈로그부",
+    "phase": "RX-12-C3 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 40,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 기구설계부",
+    "phase": "RX-12-C3 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1600,
+     "cad_calls": 22,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 완료 판정 확인",
+    "phase": "RX-12-C3 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 660,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 기구설계부 수정1",
+    "phase": "RX-12-C3 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 2700,
+     "cad_calls": 19,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [
+      "앱 재시작 없음. MCP 서버 쪽만: 응답이 큰 batch(path 지정 프로브 3회 · 자세 10개 인라인 1회 · 상자 46개 만들기 1회)가 'Request timed out'으로 결과를 잃고 서버 임시 폴더가 바뀜(서버가 다시 뜸) — 앱 running은 매번 빈 목록, 앱 상태는 유지. 자세 2개씩 인라인 batch로 바꿔 받음"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 완료 판정 확인 1",
+    "phase": "RX-12-C3 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 모델링부",
+    "phase": "RX-12-C3 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 2150,
+     "cad_calls": 112,
+     "file_opens": 9,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 160,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 검도·체결",
+    "phase": "RX-12-C3 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 19,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": [
+      "앱 재시작 없음. 다만 b4 묶음(REST · CYCLE_L 0 · CYCLE_W1 0, 상대 144바디) 호출이 'Request timed out'으로 끝나 결과를 잃었고, 그 뒤 MCP 서버 프로세스가 바뀌어 있었다(임시 폴더 solidcraft-mcp-36992 → 27536). running · pending은 빈 목록, 앱(solidcraft.exe, 메모리 약 34 GB)과 열린 설계 v2.21.0은 그대로였다. 버린 것 없음. REST 0만 상대 77바디로 다시 쟀고 CYCLE_L 0 · CYCLE_W1 0(조각이 모두 Z 2000 대기)은 다시 재지 않았다 — 기계 최고 Z 915.5라 대기 조각과 틈 1,084.5(서명 bbox로 판정)."
+     ]
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 예외 판정",
+    "phase": "RX-12-C3 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 620,
+     "cad_calls": 1,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 133,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 모델링부 수정1",
+    "phase": "RX-12-C3 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1000,
+     "cad_calls": 12,
+     "file_opens": 4,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 252,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 검도·체결 1",
+    "phase": "RX-12-C3 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 9,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 1,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-12-C3 문서·커밋",
+    "phase": "RX-12-C3 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 205,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-18 측정부",
+    "phase": "RX-18 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1260,
+     "cad_calls": 82,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-18 카탈로그부",
+    "phase": "RX-18 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-18 기구설계부",
+    "phase": "RX-18 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1500,
+     "cad_calls": 21,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-18 완료 판정 확인",
+    "phase": "RX-18 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 480,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-18 기구설계부 수정1",
+    "phase": "RX-18 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-18 완료 판정 확인 1",
+    "phase": "RX-18 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-18 모델링부",
+    "phase": "RX-18 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1780,
+     "cad_calls": 641,
+     "file_opens": 11,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 189,
+     "mcp_restarts": []
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-18 검도·체결",
+    "phase": "RX-18 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1850,
+     "cad_calls": 36,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-18 문서·커밋",
+    "phase": "RX-18 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 270,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-06-C3 모델링부",
+    "phase": "RX-06-C3 · 모델링",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 1950,
+     "cad_calls": 47,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 119,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-06-C3 검도·체결",
+    "phase": "RX-06-C3 · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 12,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-06-C3 문서·커밋",
+    "phase": "RX-06-C3 · 문서",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "RX-10 모델링부",
+    "phase": "RX-10 · 모델링",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 1800,
+     "cad_calls": 200,
+     "file_opens": 3,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 153,
+     "mcp_restarts": []
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-10 검도·체결",
+    "phase": "RX-10 · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 601,
+     "cad_calls": 60,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-10 해석",
+    "phase": "RX-10 · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 680,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-10 모델링부 수정1",
+    "phase": "RX-10 · 모델링",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 3050,
+     "cad_calls": 95,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 155,
+     "mcp_restarts": [],
+     "over_reason": "등급 S 모델링 예상 30분의 2배(60분) 안. 다만 timeline.roll_to end 한 번이 약 27분 걸렸다(앱 메모리 40.4 GB, 전날부터 켜 둔 앱 — 앞 회차 같은 명령 64~145 s). 재시작 없이 기다림"
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-10 검도·체결 1",
+    "phase": "RX-10 · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 640,
+     "cad_calls": 60,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-10 해석 1",
+    "phase": "RX-10 · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 670,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-10 문서·커밋",
+    "phase": "RX-10 · 문서",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "RX-01 측정부",
+    "phase": "RX-01 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1000,
+     "cad_calls": 16,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-01 카탈로그부",
+    "phase": "RX-01 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 1,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-01 기구설계부",
+    "phase": "RX-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1260,
+     "cad_calls": 4,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-01 완료 판정 확인",
+    "phase": "RX-01 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "mcp_restarts": [],
+     "open_s": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-01 구매부 STEP",
+    "phase": "RX-01 · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "mcp_restarts": [],
+     "open_s": 0,
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-01 모델링부",
+    "phase": "RX-01 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2400,
+     "cad_calls": 52,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 165,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-01 검도·체결",
+    "phase": "RX-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1500,
+     "cad_calls": 13,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-01 해석",
+    "phase": "RX-01 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 235,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-01 문서·커밋",
+    "phase": "RX-01 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-05 카탈로그부",
+    "phase": "RX-05 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-05 측정부",
+    "phase": "RX-05 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 561,
+     "cad_calls": 9,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-05 기구설계부",
+    "phase": "RX-05 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 10,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-05 완료 판정 확인",
+    "phase": "RX-05 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 159,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-05 구매부 STEP",
+    "phase": "RX-05 · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 40,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-05 모델링부",
+    "phase": "RX-05 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 7700,
+     "cad_calls": 38,
+     "file_opens": 13,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 200,
+     "mcp_restarts": [
+      "21:16 이 세션이 mcpcall.py로 보낸 engine.batch(stage 1, 25단계, connection 2661)가 running_s 2,400 s 넘게 끝나지 않음, 앱 작업 메모리 39,767 MB · 응답 없음. 약 40분 기다린 뒤 21:57:14 앱 프로세스만 Stop-Process 후 solidcraft.exe --control 27878로 다시 켬. 버린 것: 저장 안 된 stage 1 편집(덮개 base flange 시도). 저장본 v2.22.4는 그대로. 그 뒤 CLI run --in v2.22.4 --save v2.23.0으로 그림(앱에는 문서를 다시 열지 않음)"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-05 검도·체결",
+    "phase": "RX-05 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 520,
+     "cad_calls": 4,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 228,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-05 해석",
+    "phase": "RX-05 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-05 문서·커밋",
+    "phase": "RX-05 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-02 카탈로그부",
+    "phase": "RX-02 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "mcp_restarts": [],
+     "open_s": 0
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-02 측정부",
+    "phase": "RX-02 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 577,
+     "cad_calls": 3,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 205,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-02 기구설계부",
+    "phase": "RX-02 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1823,
+     "cad_calls": 3,
+     "file_opens": 3,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 240,
+     "mcp_restarts": []
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-02 완료 판정 확인",
+    "phase": "RX-02 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 160,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-02 구매부 STEP",
+    "phase": "RX-02 · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 21,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-02 모델링부",
+    "phase": "RX-02 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1169,
+     "cad_calls": 45,
+     "file_opens": 1,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 56,
+     "mcp_restarts": [
+      "시작 때 SolidCraft 앱이 꺼져 있었다(running 연결 시간 초과, solidcraft.exe 없음). 막은 요청은 없었고 기다린 시간 0. solidcraft.exe --control 27878만 켰고 버린 것 0",
+      "MCP 서버(solidcraft-cli) 프로세스가 batch 안 inspect.measure 호출 때 3번 끊겼다(29780→18628→20568→33240). 앱과 열린 설계는 그대로였고 버린 편집 0. 이후 measure 도구 단독으로 잼"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-02 검도·체결",
+    "phase": "RX-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 640,
+     "cad_calls": 19,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-02 해석",
+    "phase": "RX-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 221,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-02 문서·커밋",
+    "phase": "RX-02 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-04 카탈로그부",
+    "phase": "RX-04 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-04 측정부",
+    "phase": "RX-04 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 470,
+     "cad_calls": 9,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-04 기구설계부",
+    "phase": "RX-04 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 393,
+     "cad_calls": 8,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-04 완료 판정 확인",
+    "phase": "RX-04 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-04 구매부 STEP",
+    "phase": "RX-04 · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-04 모델링부",
+    "phase": "RX-04 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1076,
+     "cad_calls": 22,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 160,
+     "mcp_restarts": [
+      "앱 재시작 없음. 볼트 묶음 batch(약 60 s)가 'Request timed out'으로 돌아온 뒤 MCP 서버가 다시 떴다(허용 임시 폴더 33240 → 40196). 앱과 편집 내용은 그대로였고, 막힌 요청 0, 버린 것 0"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-04 검도·체결",
+    "phase": "RX-04 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 9,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-04 해석",
+    "phase": "RX-04 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 223,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-04 문서·커밋",
+    "phase": "RX-04 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-12-C1 카탈로그부",
+    "phase": "RX-12-C1 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 1,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-12-C1 측정부",
+    "phase": "RX-12-C1 · 측정",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 443,
+     "cad_calls": 10,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-12-C1 기구설계부",
+    "phase": "RX-12-C1 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 932,
+     "cad_calls": 4,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-12-C1 완료 판정 확인",
+    "phase": "RX-12-C1 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-12-C1 기구설계부 수정1",
+    "phase": "RX-12-C1 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 620,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": [
+      "mcp running이 os error 10054(앱 응답 없음)를 돌려줌 — 읽기 부서라 앱을 다시 켜지 않음, 기다린 시간 0, 서명 bbox로 대신 확인"
+     ]
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-12-C1 완료 판정 확인 1",
+    "phase": "RX-12-C1 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 163,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-12-C1 기구설계부 수정2",
+    "phase": "RX-12-C1 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1100,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-12-C1 완료 판정 확인 2",
+    "phase": "RX-12-C1 · 구상",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 카탈로그부",
+    "phase": "RX-12-C2 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 측정부",
+    "phase": "RX-12-C2 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2130,
+     "cad_calls": 3,
+     "file_opens": 3,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 622,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 기구설계부",
+    "phase": "RX-12-C2 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 790,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 완료 판정 확인",
+    "phase": "RX-12-C2 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 130,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 구매부 STEP",
+    "phase": "RX-12-C2 · 구매품",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 1,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 모델링부",
+    "phase": "RX-12-C2 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2800,
+     "cad_calls": 75,
+     "file_opens": 2,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 225,
+     "mcp_restarts": [
+      "The app was off at the start (no response on 27878). I started only the app (solidcraft.exe --control 27878). No request was blocked, no waiting, nothing discarded."
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 모델링부 수정1",
+    "phase": "RX-12-C2 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1700,
+     "cad_calls": 34,
+     "file_opens": 2,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 60,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 검도·체결 1",
+    "phase": "RX-12-C2 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 390,
+     "cad_calls": 8,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 해석 1",
+    "phase": "RX-12-C2 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-12-C2 문서·커밋",
+    "phase": "RX-12-C2 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 600,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-12-C4 측정부",
+    "phase": "RX-12-C4 · 측정",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 338,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "RX-12-C4 기구설계부",
+    "phase": "RX-12-C4 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 330,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-12-C4 완료 판정 확인",
+    "phase": "RX-12-C4 · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-12-C4 구매부 STEP",
+    "phase": "RX-12-C4 · 구매품",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 2,
+     "over_reason": "",
+     "mcp_restarts": [],
+     "open_s": 0
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "RX-12-C4 모델링부",
+    "phase": "RX-12-C4 · 모델링",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-12-C4 검도·체결",
+    "phase": "RX-12-C4 · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 112,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-12-C4 문서·커밋",
+    "phase": "RX-12-C4 · 문서",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 180,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2460,
+     "cad_calls": 1100,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 181,
+     "mcp_restarts": []
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 330,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "RX-01 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 P_M08_VP_PLATE, STEP대기_VP342-5DZ1-01A, STEP대기_CB3-40, STEP대기_AN110-01_3, KQ2L08-01AS_M08V_A, KQ2L08-01AS_M08V_P, KQ2L06-01AS_M08V_PSW, TU0604_M08P_PSW, STEP대기_ISE20-N-M-C6L-L, P_M08_PSW_BRKT, STEP대기_CB3-8, STEP대기_KQ2E08-00A_1, P_M08_AIR_IN_BRKT, STEP대기_TPH-01_2이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "RX-02 기구설계부",
+    "what": "설계 파일을 3번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "RX-12-C2 측정부",
+    "what": "설계 파일을 3번 엶(부서마다 한 번, E-04)"
+   },
+   {
+    "label": "RX-12-C2 버전 번호",
+    "what": "번호를 마지막 자리로 올림 — 새로 생기거나 없어진 컴포넌트 HFS8-4080-166_RX12C2, HFS8-4080-1760_RX12C2, HFS8-4080-120_RX12C2, HFS8-4080-140_RX12C2이면 가운데 자리(E-05)"
+   },
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-235",
+   "WF-236"
+  ],
+  "repeat_ids": [
+   "WF-231"
+  ],
+  "one_line": "회고 결과: WF-231은 반복 수를 1 올렸고(MCP batch path가 허용 폴더를 읽지 못함), WF-235(범위를 늘리는 과제가 끝나기 전에 뒤 과제가 한계 밖 자세를 요구함)와 WF-236(개념 변경 동의 전에 기하 충돌을 확인하지 않음)을 새로 추가했다. 개선 후보는 docs/reports/engine-candidates.md에, 요약은 최종 보고서 끝 '워크플로우 개선 후보' 절에 적었다. 최종 보고서만 커밋했고(7ecabdb) 푸시는 하지 않았다. 고친 엔진 파일은 없다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 62,
+  "시간 h": 10.3,
+  "출력 토큰": 2102706,
+  "실패": 0
+ }
+}
