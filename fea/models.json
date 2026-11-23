@@ -693,7 +693,25 @@
     "value": "자국: 30 kPa(D-165 임시)에 SF >= 2 — 완료 판정은 U6S와 같은 식 p_avg(1 + 6 mu h/L), mu 0.4·h 20.5·L 130. 부품 운전 SF 3, 오조작 SF 2, 영구 변형 선 1.2(로드 SUS304 205 가정)",
     "source": "요구서 5절 RX-10 완료 판정, 요구서 6-1(M-09)"
    },
-   "status_RX-10": "손계산 fea/results/mech_RX-10_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+   "status_RX-10": "손계산 fea/results/mech_RX-10_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "case_RX-10-F1": "cases/mech_RX-10_F1_handcalc.py",
+   "step_RX-10-F1": "tools/out/mech_RX-10/stepout/P_M06_SHOE.step",
+   "version_RX-10-F1": "v2.22.2",
+   "fixed_RX-10-F1": "장공 2개 Y -135·-175(Z 32.0~42.0 R3.55)가 칼라 Z 32.5 위로 Z 미끄럼 — 들림 자세에서 위로 0.55 · 아래로 9.55. 윗날개 탭 t2는 로드 M4 너트 2개 사이에 뜬 이음(Y 장공 5 x 10, 로드 ↔ 장공 Y ±3.0 · X ±0.5, 아래 너트 맞닿음 · 윗 너트 축 틈 0.6). 끝 들기는 P_M06_PCYL_BRKT 멈춤 턱(Y -226, 틈 0.5)이 윗날개 윗면을 받음",
+   "contact_RX-10-F1": "RX-10과 같음(바닥 2,266.6 mm2 그대로). 윗날개가 기울면 너트 면 모서리(맞모 반 4.04)에 닿고, 기울기가 0.0734 rad(맞모가 Y 방향)를 넘으면 너트 두 면 사이에 낀다",
+   "load_RX-10-F1": "손 100 N 입술 모서리(Y -245) Z 위·아래, 들림·누름. 끝 누르기는 로드가 들기 붙듦(32.99~37.4 N)만큼만 버티므로 평탄 끝이 밑에 닿을 때까지 기운다 — 밑은 이음매 Z 12.1 · 매트 Z 10 · 볼 윗점 Z 0 · 없음(칼라 장공 끝 0.2525 rad) 네 경우를 모두 푼다(옛 RX-10 해석은 0.0705 rad 하나만 봤다)",
+   "criteria_RX-10-F1": {
+    "value": "로드 굽힘 SF >= 1.2(M4 골 첫 항복 624 · 붕괴 1,059 N·mm, SUS304 205 임시 D-210), 탭이 받는 힘 <= 136 N, 오조작 부품 SF 2",
+    "source": "요구서 5절 RX-10 남은 동작 문제 완료 판정, 결정로그 RX-10-R2, 요구서 6-1(M-09)"
+   },
+   "status_RX-10-F1": "손계산 fea/results/mech_RX-10_F1_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "case_RX-10-F1b": "cases/mech_RX-10_F1b_handcalc.py",
+   "step_RX-10-F1b": "tools/out/mech_RX-10/stepout/P_M06_SHOE.step",
+   "version_RX-10-F1b": "v2.22.3",
+   "fixed_RX-10-F1b": "RX-10-F1과 같되 로드 장공 5 x 14(로드 ↔ 장공 +Y 7.0 · -Y 3.0 · X ±0.5), 윗 너트 축 틈 2.3(서명 bbox 56.8 - 54.5). 더한 것: 칼라 2개(Ø7.0, 사이 40)가 벽 장공(폭 7.1)에 엇갈려 닿는 기울기 acos(1 - 0.1/40) = 0.0707 rad — 장공 끝 한도 0.2525보다 먼저 온다(모형 한도). 0.2525는 폭 걸림을 안 볼 때의 상한 가정으로 같이 푼다",
+   "contact_RX-10-F1b": "닿는 면: 들림은 아래 너트 윗면 Z 52.5, 누름은 윗 너트 밑면 Z 56.8. 옆힘 팔은 그 면에서 실린더 코 밑 Z 69.3까지 + 로드 내밈. 굽힘 단면 둘: 코 부시 자리 Ø4(1,288 N·mm), 나사 윗끝 Z 64.3 M4 골(624 N·mm, 나사 길이 15 임시 D-210)",
+   "load_RX-10-F1b": "RX-10-F1과 같음 + 누름(매트 위)·끝 누르기(평탄 끝 Y -234.3 둘레로 넘어감, 손 70~159 N부터) + 들림·끝 들기에서 들기 붙듦을 넘은 경우. 폭 걸림에서 손 모멘트 9,898 N·mm는 칼라 Y 힘 n과 Z 마찰 짝힘으로: n = M / (40 (mu cos + sin))",
+   "status_RX-10-F1b": "손계산 fea/results/mech_RX-10_F1b_handcalc.json(옛 모델 같은 형상 값 mech_RX-10_F1b_oldmodel.json). FEA 못 함 — 환경 없음(D-16)"
   },
   "P_M06_ROLL_SHAFT": {
    "case": "cases/mech_M06_handcalc.py",
@@ -1034,7 +1052,16 @@
    "fixed_RX-10": "세운 벽(X -82~-79 @REST, Z ~94)이 P_M06_CARR 다리 +X 면에 CB5-12 x2(Y -177·-128, Z 86) -> MBIS5 인서트. 받침: 위 힘 벽 윗끝 Z 94(팔 8), 아래 힘 판 밑 Z 74.3(팔 11.7). 실린더 축 Y -166은 볼트 사이 11 : 38",
    "contact_RX-10": "판(Z 74.3~77.3) Ø8.5 구멍 (X -68, Y -166)에 CJ2B10 장착 너트, 벽면에서 팔 14(굽힘 R 포함 13), 축~판 -Y 끝 18.5(유효 폭 28 반쪽 14 안)",
    "load_RX-10": "U6S와 같음(W만 1.470 N): 들기 33.0 / 누름 멈춤 0.20 MPa 15.7 / 우회 39.3 / 손 100 N + 자중 x3 g. 볼트 인장은 가까운 볼트(Y -177)가 다 받는다고 봄",
-   "status_RX-10": "손계산 fea/results/mech_RX-10_handcalc.json. FEA 못 함 — 환경 없음(D-16)"
+   "status_RX-10": "손계산 fea/results/mech_RX-10_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "case_RX-10-F1": "cases/mech_RX-10_F1_handcalc.py",
+   "step_RX-10-F1": "tools/out/mech_RX-10/stepout/P_M06_PCYL_BRKT.step",
+   "version_RX-10-F1": "v2.22.2",
+   "fixed_RX-10-F1": "RX-10과 같음(벽 X -82~-79가 CB5-12 x2 Y -177·-128 · Z 86 -> MBIS5 인서트). 벽 + 판 L 단면이 Y -216.5까지, 혀(X -75.5~-60, t3)가 Y -226까지, 끝에서 아래로 접은 멈춤 턱 밑면 Z 55.0(X -75.5~-60 · Y -226~-223)",
+   "contact_RX-10-F1": "멈춤 턱 밑면 -Y 모서리(Y -226)가 슈 윗날개 윗면에 닿음(들림 자세 틈 0.5). 닿는 X 자리는 손 X 자리에 따라 턱 벽 쪽 끝 -75.5 ~ 윗날개 바깥 끝 -62",
+   "load_RX-10-F1": "멈춤 힘 위로 131.4 N(들림 · 끝 들기 100 N) / 105.4 N(누름 · 끝 들기). 볼트 Y -177까지 팔 49, 턱 가운데 X -67.75는 벽 + 판 모서리에서 12.75(비틀림 1,675 N·mm)",
+   "status_RX-10-F1": "손계산 fea/results/mech_RX-10_F1_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "version_RX-10-F1b": "v2.22.3",
+   "status_RX-10-F1b": "형상 · 힘 그대로(멈춤 힘 131.4 / 105.4 N) — RX-10-F1 값 그대로. fea/results/mech_RX-10_F1b_handcalc.json '새 하중 길'"
   },
   "P_M06_SLIDE_COLLAR": {
    "case": "cases/mech_U6S_handcalc.py",
