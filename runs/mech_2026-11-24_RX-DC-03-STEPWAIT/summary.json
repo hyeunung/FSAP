@@ -1,0 +1,741 @@
+{
+ "run": "mech_2026-11-24_RX-DC-03-STEPWAIT",
+ "status": "완료",
+ "engine": "v4.0.0",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-24",
+ "journal": "wf_2959aeea-37d",
+ "totals": {
+  "agents": 19,
+  "agent_sec": 7180,
+  "input": 3226910,
+  "cache_read": 45475479,
+  "output": 466328,
+  "tools": 363,
+  "wall_sec": 7157
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 155,
+   "agents": 1,
+   "output": 12439
+  },
+  "▸ modeling-round #3": {
+   "sec": 7025,
+   "agents": 18,
+   "output": 453889
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 3",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 155,
+   "tokens": {
+    "input": 157572,
+    "cache_read": 1728516,
+    "output": 12439
+   },
+   "tools": 17,
+   "turns": 14
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 81,
+   "tokens": {
+    "input": 82526,
+    "cache_read": 69259,
+    "output": 11115
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 121,
+   "tokens": {
+    "input": 117631,
+    "cache_read": 1500258,
+    "output": 8016
+   },
+   "tools": 23,
+   "turns": 15
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 32,
+   "tokens": {
+    "input": 97487,
+    "cache_read": 281736,
+    "output": 2419
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "STEPSWAP 모델링부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 70,
+   "tokens": {
+    "input": 112317,
+    "cache_read": 1054044,
+    "output": 4452
+   },
+   "tools": 15,
+   "turns": 11
+  },
+  {
+   "label": "STEPLITE 모델링부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 38,
+   "tokens": {
+    "input": 48565,
+    "cache_read": 354478,
+    "output": 3534
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "RX-DC-03 측정부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 744,
+   "tokens": {
+    "input": 279047,
+    "cache_read": 11505646,
+    "output": 62694
+   },
+   "tools": 72,
+   "turns": 64
+  },
+  {
+   "label": "RX-DC-03 카탈로그부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 24,
+   "tokens": {
+    "input": 92813,
+    "cache_read": 89723,
+    "output": 1873
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "RX-DC-03 기구설계부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 1588,
+   "tokens": {
+    "input": 335152,
+    "cache_read": 12337254,
+    "output": 139545
+   },
+   "tools": 67,
+   "turns": 57
+  },
+  {
+   "label": "RX-DC-03 완료 판정 확인",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 317,
+   "tokens": {
+    "input": 148888,
+    "cache_read": 601660,
+    "output": 29796
+   },
+   "tools": 9,
+   "turns": 6
+  },
+  {
+   "label": "RX-DC-03 기구설계부 수정1",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 804,
+   "tokens": {
+    "input": 225979,
+    "cache_read": 4630161,
+    "output": 74069
+   },
+   "tools": 32,
+   "turns": 27
+  },
+  {
+   "label": "RX-DC-03 완료 판정 확인 1",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 198,
+   "tokens": {
+    "input": 129447,
+    "cache_read": 422167,
+    "output": 19409
+   },
+   "tools": 8,
+   "turns": 5
+  },
+  {
+   "label": "RX-DC-03 기구설계부 수정2",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 350,
+   "tokens": {
+    "input": 119823,
+    "cache_read": 2751555,
+    "output": 29637
+   },
+   "tools": 26,
+   "turns": 20
+  },
+  {
+   "label": "RX-DC-03 완료 판정 확인 2",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 121,
+   "tokens": {
+    "input": 120084,
+    "cache_read": 527673,
+    "output": 11010
+   },
+   "tools": 9,
+   "turns": 6
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 2317,
+   "tokens": {
+    "input": 786819,
+    "cache_read": 5917643,
+    "output": 32532
+   },
+   "tools": 49,
+   "turns": 45
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 78,
+   "tokens": {
+    "input": 118553,
+    "cache_read": 859659,
+    "output": 7151
+   },
+   "tools": 9,
+   "turns": 9
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 59,
+   "tokens": {
+    "input": 112525,
+    "cache_read": 302071,
+    "output": 6555
+   },
+   "tools": 6,
+   "turns": 4
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #3",
+   "status": "done",
+   "sec": 40,
+   "tokens": {
+    "input": 104496,
+    "cache_read": 488169,
+    "output": 3565
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #3",
+   "status": "running",
+   "sec": 43,
+   "tokens": {
+    "input": 37186,
+    "cache_read": 53807,
+    "output": 6517
+   },
+   "tools": 3,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [
+  "RX-DC-03 기구설계부 수정1",
+  "RX-DC-03 기구설계부 수정2"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPSWAP",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.29.3.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "STEPLITE",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.29.3.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-DC-03",
+    "status": "설계 미달(수정 상한)",
+    "open_problems": [
+     {
+      "kind": "동작",
+      "what": "여유 고리 길이 ≥ 최대 거리 변화 + 굽힘 반지름 여유(항목 3) — 판 위 처짐 구간",
+      "where": "설계안",
+      "evidence": "판 위 구간(T2 튜브 위 Z 229 → 커넥터 밑)은 사이클마다 여유가 0.25~2.19로 바뀌는 가동 굽힘이다. 설계안의 반 사인 처짐 κ = π²a/L²로 셈하면 s 2.19에서 ENC(L 54, a 6.92)가 R 42.7, PWR(L 39, a 5.88)가 R 26.2다. s0 1.7에서도 ENC R 48.4, PWR R 29.7이다. L4에 쓴 가동 R65(D-232)에 못 미치고, PWR는 고정 굽힘 임시값 R27보다도 작다. 양끝 고정 모양이면 반지름이 절반이다(ENC 21.3, PWR 13.1). 설계안 3절에는 이 곡률 줄이 없다.",
+      "fix": "s_max 2.19에서 R ≥ 65가 되게 판 위 자유 경간 L을 늘린다. 반 사인 기준 R = L^1.5/(2π√s)이면 L ≥ 72이고, 커넥터 밑을 Z ≥ 301로 올린다(지금 ENC 283, PWR 268). 양끝 고정 기준 R = L^1.5/(4π√s)이면 L ≥ 114이고 커넥터 밑 Z ≥ 343이다. 이 경우 연장 케이블 E2 시작 Z 344와 겹치니 그 줄도 다시 본다. 쓴 기준과 근거를 D-232 임시값으로 적고, 3절 표에 '처짐 곡률 R' 줄을 더한다. s 범위 폭 1.94는 L4가 정하므로 s0를 줄여서는 풀리지 않는다. 경간을 바꾼 뒤 그 자리만 다시 잰다: Q_BOW Z 범위, U5 C-46 한계 틈 ≥ 5.5, d₁ 45 여유."
+     }
+    ],
+    "design": {
+     "basis": "0-8-3 U4 벤치마크 R375X(서보 직결 바퀴·핀 그네·세로 실린더)의 구조와 구매품(HG-KR23 + PGX62-H-10)을 그대로 둔다. 배선 길은 사진에 안 보여 '새로 하는 것'이다. 추천 (가)의 리드 상자 앞(−Y) 돌림은 따랐고, 리드 길은 같은 안 안에서 모터 뒤 길로 좌표를 정했다. 2회차는 검도가 짚은 L4 휨 폭 프로브와 T2 미끄럼만 고쳤다.",
+     "revisions": [
+      {
+       "round": 1,
+       "where": "그네↔블록 자유 구간 L4 · T1 묶음",
+       "change": "L4 40 → 75. T1은 θ0 직선 설치(끝 각 0~0.4834)에서 타이 2개 + 가운데 각 설치(θ0 틀 −5.676°, 끝 각 ±0.2417)로 바꿨다. 묶음 끝을 (Y 78, Z 138)에서 핀 축 위 (74.51, 139.98)로 옮겼고, 그에 따라 L2 80.5 → 69.82, α 25° → 17.82°, L3 65° → 77.86°",
+       "why": "양끝 고정 보 곡률 (4θL − 6δ)/L²이 L 40에서 R 32.3 < 가동 R65였다(검도). 고친 뒤 R 70.6"
+      },
+      {
+       "round": 1,
+       "where": "판 밑 커넥터 받침 · 커넥터 2쌍 · 판 홈 · 세움 받침",
+       "change": "판 밑 커넥터 받침을 걷고 T2 안내(Z 212~236)로 바꿨다. 커넥터는 판 위 ENC Z 283~333 · PWR Y 82~104 · Z 268~318로 옮겼다. 판 홈 Y 64~92 → 64~100. 세움 받침은 커넥터 +X 뒤 판으로 다시 그렸다",
+       "why": "판 밑 높이 61에 180° 고리(바깥 지름 62)와 커넥터가 안 들어가고 프로브도 없었다(검도)"
+      },
+      {
+       "round": 2,
+       "where": "L4 휨 폭 · 프로브 Q_L4",
+       "change": "휨 폭 '±3.5, 표면 Y 67.5~82.5' → '±3.6, 표면 Y 63.4~86.6'(묶음 반폭 4 → 8). 프로브 Q_L4 Y 66~84 · Z 150~236 → Q_L4W Y 63~87 · Z 140~236으로 넓혀 U4 12자세·U5 8자세를 다시 쟀다(겹침 0, U5 15 안 없음). 형상 좌표는 바뀐 것 없음",
+       "why": "검도: 반폭을 4로 셈해 Z 147~175의 Y 63.4~66 · 84~86.6 띠가 재지 않은 채 남았다"
+      },
+      {
+       "round": 2,
+       "where": "T2 묶음 방식 · 판 위 리드 여유",
+       "change": "'보호 튜브 위 타이, 허용 ±1, 필요 0.48' → 리드마다 PTFE 튜브 OD 8 × ID 7 × 20(위끝 −X 3°) 미끄럼 안내, 허용 ±2.0. L4 길이 차 ±0.97을 넣어 리드마다 Δ −0.49~+1.45. 판 위 설치 여유 s0 1.7(범위 0.25~2.19), 처짐 ENC 6.9 · PWR 5.9를 −X로, 처짐 자리 Q_BOW 프로브(판 위 겹침 0, U5 GCOV 10.4)",
+       "why": "검도: L4 안쪽·바깥 차 ±0.97을 빠뜨려 바깥 리드 1.45가 허용 ±1을 넘었다. 미끄럼 없이 묶으면 피복 변형이 1.9 %다"
+      }
+     ]
+    }
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "FAST 상태 37개 15~21·23·26~29·32·33·35~45·47~58(24~26번째 점은 전체 상한, 나머지는 어림 초과)",
+    "연구 10개 o0·o20(어림 초과, CYCLE_W1 o0은 280~끝만)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 589,
+    "estimate_s": 4211,
+    "actual_s": 1801,
+    "chunk_times": [
+     {
+      "id": "STATES@59 (시험)",
+      "elapsed_s": 30,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P2@o10t 0-11 (시험)",
+      "elapsed_s": 70,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V2@o10 0-31",
+      "elapsed_s": 170.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L@o10 0-35",
+      "elapsed_s": 200.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S@o10 0-22",
+      "elapsed_s": 130.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1@o10 0-25",
+      "elapsed_s": 140.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G2@o10 0-31",
+      "elapsed_s": 180.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V@o10 0-23",
+      "elapsed_s": 130.1,
+      "status": "ok"
+     },
+     {
+      "id": "SEAM_U7@all 0-19",
+      "elapsed_s": 115.1,
+      "status": "ok"
+     },
+     {
+      "id": "BIND_U7@all 0-4",
+      "elapsed_s": 30,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_U7@all 0-14",
+      "elapsed_s": 80.1,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_HEAD@all 0-1",
+      "elapsed_s": 15,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W1@o0 0-6",
+      "elapsed_s": 40.1,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@st 0-4 (시험)",
+      "elapsed_s": 105,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@st 5-15",
+      "elapsed_s": 205.1,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@st 16-26",
+      "elapsed_s": 160.1,
+      "status": "cut"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "연구 5.84 s/단계(CYCLE_P2 o10t 12단계), 자세 30.0 s/점(상태 59 1점)·21.0 s/점(FAST 5점), 오류 없음",
+    "per_step_s": {
+     "study": 5.84,
+     "pose": 21
+    },
+    "pose_steps": 62,
+    "reduced": "세션 하나(앱 32 GB로 병렬 불가)라 A 상태 59 → B 연구(상한 1300 s) → C FAST(남은 468 s) 순서로 regrun을 나눠 불렀다. B 어림 3005 s > 1300 s라 시작 전에 앞 222단계(지난 회귀 못 본 o10·짧은 연구 + W1 o0 7점)만 남기고 o0·o20 293단계를 뺐다. C 어림 1176 s > 468 s라 앞 22점만 남겼다",
+    "seen": [
+     "상태 59(reg28 60개와 합쳐 상태 61 전부)",
+     "CYCLE_P2 o10 390~610",
+     "CYCLE_V2 o10 10~630",
+     "CYCLE_L·S·G1·G2·V o10 전부",
+     "SEAM_U7 0-19·BIND_U7 0-4·MAINT_U7 0-14·MAINT_HEAD 0-1",
+     "CYCLE_W1 o0 0~240(7점)",
+     "FAST 24상태(0~14·22·24·25·30·31·34·46·59·60)"
+    ],
+    "unseen": [
+     "FAST 상태 37개 15~21·23·26~29·32·33·35~45·47~58(24~26번째 점은 전체 상한, 나머지는 어림 초과)",
+     "연구 10개 o0·o20(어림 초과, CYCLE_W1 o0은 280~끝만)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 115,
+     "cad_calls": 6,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 모델링부",
+    "phase": "STEPSWAP · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 4,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "STEPLITE 모델링부",
+    "phase": "STEPLITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 카탈로그부",
+    "phase": "RX-DC-03 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 측정부",
+    "phase": "RX-DC-03 · 측정",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 724,
+     "cad_calls": 17,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 기구설계부",
+    "phase": "RX-DC-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1497,
+     "cad_calls": 17,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 완료 판정 확인",
+    "phase": "RX-DC-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 295,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 기구설계부 수정1",
+    "phase": "RX-DC-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 760,
+     "cad_calls": 9,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 완료 판정 확인 1",
+    "phase": "RX-DC-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 480,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 기구설계부 수정2",
+    "phase": "RX-DC-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 6,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 25,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 완료 판정 확인 2",
+    "phase": "RX-DC-03 · 구상",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2275,
+     "cad_calls": 260,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 240.9,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 160,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": []
+ },
+ "retro": {
+  "new_ids": [
+   "WF-242",
+   "WF-243"
+  ],
+  "repeat_ids": [
+   "WF-176",
+   "WF-231"
+  ],
+  "one_line": "회고 완료: docs/reports/engine-candidates.md에 WF-242(케이블 가동 구간 곡률 점검 누락으로 수정 상한)·WF-243(서명 부분 갱신 모드 없음) 추가, WF-176·WF-231 반복 +1, 최종 보고서에 개선 후보 절 추가 후 커밋 3d0c678(푸시 안 함). 고친 엔진 파일 없음."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 19,
+  "시간 h": 2.0,
+  "출력 토큰": 466328,
+  "실패": 0
+ }
+}
