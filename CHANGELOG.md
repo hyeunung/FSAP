@@ -8,6 +8,7 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.29.3 RX-DC-02 U2_FLAP 감쇠 가스 스프링 로드 아래로 뒤집기(판정 해결 — 설계검토서 docs/review/FSAP_v2.29.3_review.md, BOM docs/bom/FSAP_v2.29.3_*.csv): 몸통 = 판 핀 P, 로드 Ø10 = 클레비스 핀 A, 축 Y −1242, 받침 고리 2 새로, 핀 P 27, 클레비스 −Y 볼 깎음. 7자세 겹침 0. 디테일 RXDC02-D1~D4
 - v2.28.1 회귀 수정(설계검토서 docs/review/FSAP_v2.28.1_review.md, BOM docs/bom/FSAP_v2.28.1_*.csv — v2.28.0과 같음. 다시 돌린 전체 회귀는 메모리 부족으로 판정 못 함, 형상 변경 없음, 대기 자세만): v2.28.0이 J_U7_HGT = 6.0으로 저장돼 U7_FIXED + U6 묶음 48바디가 Z +6에 있던 것을 대기값 0으로 되돌림(T10 키트와 맞음). REST에 J_U7_HGT·J_U4_X·J_U2_FLAP·J_U2_FLAP_LATCH_A·B 대기 키, CYCLE_* 10개에 이 다섯 + J_U4_STOP·J_U7_KIT_T06·T10·T16·J_WP_T06·T10·T16_Z 대기 키(전 구간 상수)를 더함. 이제 REST 0이 HGT 6을 0으로 되돌린다. 바디·피처·컴포넌트 수 그대로. 보고서 docs/reports/mechanism/mech_regfix_3.md
 - v2.28.0 RX-DC-01 두께별 바인더 키트(판정 해결 — 설계검토서 docs/review/FSAP_v2.28.0_review.md, BOM docs/bom/FSAP_v2.28.0_*.csv): STEP대기_BINDER_30_T06·T16 새로(입 높이 8.5·18.5, T10 12.5 그대로 U7_BIND_T10으로 옮김), 두께 상태 모형 WP_T06·WP_T16, 모델용 대기 슬라이더 6개. THICK_6·16 겹침 0, 탈착 길 겹침 0. 디테일 RX-DC-01-D1~D3
 - v2.27.1 RX-12-C1 수정 1(판정 해결 — 설계검토서 docs/review/FSAP_v2.27.1_review.md, BOM docs/bom/FSAP_v2.27.1_*.csv): 가스 스프링 펴짐 끝 오일 감쇠 지정(STEP대기_GASSPRING_F1120_S60_L325_EDAMP, D-231) + r 707 올림 완충 P_RX12C1_BUMP_BRKT·LUG·PAD A·B(우레탄 A70 Ø10 t5, 틈 0.3) + CB5-12·CB5-16·HNTT8-5 각 4, CB6-20 0.06 내림(높이 맞춤 기준). 혀 힘 0, 0°는 빗장, 5자세 겹침 0, 바디 3,771. 디테일 RX12C1-F1~F4

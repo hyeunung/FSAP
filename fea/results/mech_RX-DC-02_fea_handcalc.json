@@ -1,0 +1,270 @@
+{
+ "_step_bbox": {
+  "P_RX12C1_GS_CLEVIS": [
+   [
+    1050.0,
+    1119.54
+   ],
+   [
+    -1276.55,
+    -1216.0
+   ],
+   [
+    -395.0,
+    -255.0
+   ]
+  ],
+  "P_RX12C1_GS_PIN_P": [
+   [
+    1046.33,
+    1055.0
+   ],
+   [
+    -1249.0,
+    -1222.0
+   ],
+   [
+    -56.67,
+    -45.7
+   ]
+  ],
+  "P_RXDC02_GS_SPACER_A": [
+   [
+    1057.83,
+    1073.0
+   ],
+   [
+    -1238.0,
+    -1222.0
+   ],
+   [
+    -383.17,
+    -363.97
+   ]
+  ]
+ },
+ "loads": {
+  "F_op_N": 1573,
+  "F_misuse_tension_N": 2033.9,
+  "self_weight_3g_N": 17.08,
+  "note": "운전 = 스프링 압축 최대(공차 끝). 오조작 = 펴짐 끝 감쇠가 판 운동 에너지를 받는 순 인장(임시: 감쇠 15 mm, 최고/평균 1.5)"
+ },
+ "PIN_P_bend_op": {
+  "part": "P_RX12C1_GS_PIN_P",
+  "F_N": 1573,
+  "lever_mm": 15.0,
+  "sigma": 469.408,
+  "SF": 1.672,
+  "need": 3.0,
+  "verdict": "디테일(기준 미달)"
+ },
+ "PIN_P_shear_op": {
+  "part": "P_RX12C1_GS_PIN_P",
+  "tau": 31.294,
+  "SF": 14.549,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "PIN_P_bend_misuse": {
+  "part": "P_RX12C1_GS_PIN_P",
+  "F_N": 2033.9,
+  "lever_mm": 15.0,
+  "sigma": 606.947,
+  "SF": 1.293,
+  "need": 2.0,
+  "verdict": "디테일(기준 미달)"
+ },
+ "PIN_P_shear_misuse": {
+  "part": "P_RX12C1_GS_PIN_P",
+  "tau": 40.463,
+  "SF": 11.252,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "PIN_P_bend_before": {
+  "part": "P_RX12C1_GS_PIN_P",
+  "lever_mm": 8.0,
+  "sigma": 250.351,
+  "SF": 3.136,
+  "note": "RX-12-C1 v2.27.1(눈이 귀판에 바로 붙음) 같은 식"
+ },
+ "PIN_P_bend_op_modelingref": {
+  "part": "P_RX12C1_GS_PIN_P",
+  "lever_mm": 12.0,
+  "F_N": 1420.0,
+  "sigma": 339.0,
+  "SF": 2.316,
+  "note": "모델링부 식(귀판 면 고정, 1,420 N) 참고"
+ },
+ "LUG_bearing_op": {
+  "part": "P_RX12C1_GS_LUG",
+  "p": 32.771,
+  "SF": 6.256,
+  "need": 3.0,
+  "verdict": "됨"
+ },
+ "LUG_outplane_op": {
+  "part": "P_RX12C1_GS_LUG",
+  "sigma": 98.312,
+  "SF": 2.085,
+  "need": 3.0,
+  "verdict": "디테일(기준 미달)"
+ },
+ "LUG_bearing_misuse": {
+  "part": "P_RX12C1_GS_LUG",
+  "p": 42.373,
+  "SF": 4.838,
+  "need": 2.0,
+  "verdict": "됨"
+ },
+ "LUG_outplane_misuse": {
+  "part": "P_RX12C1_GS_LUG",
+  "sigma": 127.119,
+  "SF": 1.613,
+  "need": 2.0,
+  "verdict": "디테일(기준 미달)"
+ },
+ "LUG_edge_bearing_ref": {
+  "part": "P_RX12C1_GS_LUG",
+  "p_edge": 524.333,
+  "ratio_to_Sy": 2.558,
+  "before": 294.938,
+  "note": "선형 지압 분포 상한(참고). 판정 = 평균 지압. D1 고침(Ø10 또는 양쪽 받침)이면 사라짐"
+ },
+ "PIN_A_bend_op": {
+  "part": "P_RX12C1_GS_PIN_A",
+  "F_N": 1573,
+  "a_mm": 9.0,
+  "b_mm": 23.0,
+  "M_Nmm": 10175.344,
+  "sigma": 202.432,
+  "SF": 3.878,
+  "need": 3.0,
+  "verdict": "됨"
+ },
+ "PIN_A_shear_op": {
+  "part": "P_RX12C1_GS_PIN_A",
+  "R_minusY_N": 1130.594,
+  "R_plusY_N": 442.406,
+  "tau": 22.492,
+  "SF": 20.242,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "CLEVIS_wall_bearing_op": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "R_N": 1130.594,
+  "p": 23.554,
+  "SF": 8.279,
+  "need": 3.0,
+  "verdict": "됨"
+ },
+ "CLEVIS_wall_shearout_op": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "edge_mm": 17.0,
+  "cap_N": 17507.88,
+  "SF": 15.486,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "CLEVIS_wall_inplane_op": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "M_Nmm": 35048.406,
+  "sigma": 11.586,
+  "SF": 16.83,
+  "need": 3.0,
+  "note": "깎기 전 높이 131(Z -385~-254) -> 55. 뿌리 모서리 Kt 미반영(R 정보 없음)",
+  "verdict": "됨(과사양 note)"
+ },
+ "CLEVIS_wall_shearout_X_op": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "Fx_N": 133.083,
+  "cap_N": 12079.08,
+  "SF": 90.764,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "PIN_A_bend_misuse": {
+  "part": "P_RX12C1_GS_PIN_A",
+  "F_N": 2033.9,
+  "a_mm": 9.0,
+  "b_mm": 23.0,
+  "M_Nmm": 13156.791,
+  "sigma": 261.746,
+  "SF": 2.999,
+  "need": 2.0,
+  "verdict": "됨"
+ },
+ "PIN_A_shear_misuse": {
+  "part": "P_RX12C1_GS_PIN_A",
+  "R_minusY_N": 1461.866,
+  "R_plusY_N": 572.034,
+  "tau": 29.083,
+  "SF": 15.655,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "CLEVIS_wall_bearing_misuse": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "R_N": 1461.866,
+  "p": 30.456,
+  "SF": 6.403,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "CLEVIS_wall_shearout_misuse": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "edge_mm": 38.0,
+  "cap_N": 46009.08,
+  "SF": 31.473,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "CLEVIS_wall_inplane_misuse": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "M_Nmm": 45317.834,
+  "sigma": 14.981,
+  "SF": 13.016,
+  "need": 2.0,
+  "note": "깎기 전 높이 131(Z -385~-254) -> 55. 뿌리 모서리 Kt 미반영(R 정보 없음)",
+  "verdict": "됨(과사양 note)"
+ },
+ "CLEVIS_wall_shearout_X_misuse": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "Fx_N": 172.077,
+  "cap_N": 12079.08,
+  "SF": 70.196,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "SPACER_A_axial_op": {
+  "part": "P_RXDC02_GS_SPACER_A",
+  "area_mm2": 101.128,
+  "sigma": 1.555,
+  "SF": 131.794,
+  "need": 3.0,
+  "note": "지름 방향 하중 경로 아님(핀 Ø8 ↔ 고리 Ø8.2 틈 0.1, 핀 처짐보다 큼 — 아래 PIN_A_defl)",
+  "verdict": "됨(과사양 note)"
+ },
+ "SPACER_A_axial_misuse": {
+  "part": "P_RXDC02_GS_SPACER_A",
+  "area_mm2": 101.128,
+  "sigma": 2.011,
+  "SF": 101.928,
+  "need": 2.0,
+  "note": "지름 방향 하중 경로 아님(핀 Ø8 ↔ 고리 Ø8.2 틈 0.1, 핀 처짐보다 큼 — 아래 PIN_A_defl)",
+  "verdict": "됨(과사양 note)"
+ },
+ "PIN_A_defl": {
+  "delta_mm": 0.017,
+  "gap_spacer_mm": 0.1,
+  "note": "하중점 처짐 < 고리 틈 0.1이면 고리는 지름 방향 하중을 안 받음"
+ },
+ "ROD_buckling_ref": {
+  "Pcr_N": 9715.244,
+  "SF": 6.176,
+  "need": 3.0,
+  "note": "구매품(D-231) 사양 몫 — 참고. 몸통 Ø22 강성 무시한 보수",
+  "verdict": "됨"
+ }
+}

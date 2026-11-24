@@ -30,7 +30,7 @@
     "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205, S55C 400). 블록은 C0 보수 임시 2 kN 대비. 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-13_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16). 탭 둘레 띠(표 모델, 폭 전부) SF 4.55/3.07 -> 4.15/2.80. 탭 Ø5를 뺀 순 단면 what-if 3.21/2.17 -> 2.81/1.90(하중은 볼트 당김 합 = 순 하중의 5배 보수, 순 하중 + 비틀림 대조 3.31/2.24) — 디테일 기록. 브래킷이 앞 외팔에 더하는 응력 2.2 MPa",
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | 손계산 fea/results/mech_RX-13_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16). 탭 둘레 띠(표 모델, 폭 전부) SF 4.55/3.07 -> 4.15/2.80. 탭 Ø5를 뺀 순 단면 what-if 3.21/2.17 -> 2.81/1.90(하중은 볼트 당김 합 = 순 하중의 5배 보수, 순 하중 + 비틀림 대조 3.31/2.24) — 디테일 기록. 브래킷이 앞 외팔에 더하는 응력 2.2 MPa",
    "step": "tools/out/mech_RX-13/stepout/P_M02_BASE.step",
    "version": "v2.20.4",
    "_옛 모델(M02)": {
@@ -79,7 +79,8 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | "
   },
   "P_M02_CYLBRKT": {
    "case": "cases/mech_M02_handcalc.py",
@@ -110,7 +111,7 @@
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 3.9/3.1 MPa SF 52/65 — 과사양(M-09) 기록만(옆판 P와 같은 두께로 맞춘 부품)",
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | 손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 3.9/3.1 MPa SF 52/65 — 과사양(M-09) 기록만(옆판 P와 같은 두께로 맞춘 부품)",
    "step": "tools/out/mech_M02R/stepout/P_M02_ARM_SIDE_N.step",
    "version": "v2.14.0",
    "note": "모델 바꾼 이유는 옆판 P와 같음(옛 피벗 부시·로드 핀 구멍 메움). 옛 모델 값 1.12/1.40 MPa SF 184/146"
@@ -134,7 +135,7 @@
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 볼트 인장 최대 158.6/369.6 N(암나사 전단 SF 27.4/12.2), 전단 123.8/204.3 N, 단면 X -147 von Mises 32.6/41.6 MPa SF 6.29/4.93",
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | 손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 볼트 인장 최대 158.6/369.6 N(암나사 전단 SF 27.4/12.2), 전단 123.8/204.3 N, 단면 X -147 von Mises 32.6/41.6 MPa SF 6.29/4.93",
    "step": "tools/out/mech_M02R/stepout/P_M02_ARM_SIDE_P.step",
    "version": "v2.14.0",
    "note": "모델 바꾼 이유: 옛 고정(피벗 부시 Ø16 (-300, 70))·하중(로드 핀 Ø9 (-160, 122)) 구멍이 v2.10.3 그네식에서 안 쓰이고 v2.14.0에서 메워져 없다. 옛 모델을 같은 형상에 넣으면 안면 홈 단면 면내 굽힘 1.12/1.40 MPa(SF 184/146, mech_MOT-01_handcalc.json)뿐 — 한쪽 옆판에만 매달려 생기는 비틀림을 못 봄"
@@ -147,7 +148,8 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 항복 205, S45C 345, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "status": "v2.29.0부터 P_RX19_SWING_밀링 앞판(A5052로 바뀜, RX-19) | "
   },
   "P_M02_DISK": {
    "case": "cases/mech_M02_handcalc.py",
@@ -218,7 +220,7 @@
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 막대 20 x 20 굽힘 3.9/3.1 MPa SF 50/62, 볼트 암나사 전단(A5052) SF 6.27/5.25",
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | 손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 막대 20 x 20 굽힘 3.9/3.1 MPa SF 50/62, 볼트 암나사 전단(A5052) SF 6.27/5.25",
    "step": "tools/out/mech_M02R/stepout/P_M02_ARM_TIE.step",
    "version": "v2.14.0",
    "note": "옛 모델은 \"옆판 간격 유지 — 하중 작음(손계산 생략)\". 그네식에서는 옆판 N의 힘이 지나갈 수 있는 길이라 상한으로 셈"
@@ -969,7 +971,8 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A6061 240). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | "
   },
   "P_F01_SHAFT_HLD_N": {
    "case": "cases/mech_FUNC-01_handcalc.py",
@@ -1085,7 +1088,7 @@
     "value": "운전 SF 3, 오조작 SF 2(A5052 195, SUS304 205). 조임 강제 변위(날 굽힘)는 영구 변형 한계 1.2도 같이 봄. 블록은 C0 보수 임시 2 kN·카탈로그 표 6 kN(미확인) 둘 다. 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-06R_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
+   "status": "v2.29.0부터 P_RX19_BLOCK_밀링 몸(RX-19) | 손계산 fea/results/mech_RX-06R_handcalc.json. FEA 못 함 — 환경 없음(D-16)",
    "step": "tools/out/mech_RX-06R/stepout/P_RX06_CARRIAGE.step",
    "version": "v2.15.0",
    "note": "RX-06R(C-46): 웹 윗끝 565 -> 482, 너트 귀 없앰, M5 탭 2(Z 468). 뿌리 단면 115 x 12 그대로 — 최소 SF 14.0(오조작), 웹 윗부분(탭 뺀 단면 106.6 x 12) SF 10.2. 과사양(M-09) 기록: 두께 12 -> 8도 SF 6.2",
@@ -1171,22 +1174,22 @@
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-08_handcalc.json. FEA 못 함 — 환경 없음(D-16). 윗판 t8 비틀림+굽힘 SF 2.07/1.40 미달(디테일 RX08-FEA-D1)",
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | 손계산 fea/results/mech_RX-08_handcalc.json. FEA 못 함 — 환경 없음(D-16). 윗판 t8 비틀림+굽힘 SF 2.07/1.40 미달(디테일 RX08-FEA-D1)",
    "step": "tools/out/mech_RX-08/stepout/P_RX08_STOP_BRKT.step",
    "version": "v2.12.1"
   },
   "P_RX08_STOP_BLOCK_밀링": {
-   "case": "cases/mech_RX-08_handcalc.py",
-   "fixed": "밑면이 브래킷 발 윗면에 얹힘(압축만), 로드 M10이 -X 면 탭에 물림(축 힘 0)",
-   "contact": "탑 윗면 M8 관통 탭에 CB8-20(머리가 그네 윗판 밑을 받음) + 너트 잠금",
-   "load": "스토퍼 반력 F = T/43.5 mm(피벗 Y 120 - 머리 닿음 Y 76.5). 운전 T = 0.2 MPa(IR1000 상한) + 무게·스프링 몫 x3 = 16.24 N·m -> 373.3 N, 오조작 0.5 MPa 전부 + 3 g = 24.06 N·m -> 553.1 N(두께 16, 측정 4절 stop_calc.json)",
+   "case": "cases/mech_RX-19_handcalc.py",
+   "fixed": "[RX-19 v2.29.0 새로 그림] X -268~-250(물러남, 나옴 +20) · Y 29~65.4 · Z 150~166, M8 탭(축 Y 47.2 · Z 158)으로 플로팅 조인트 JA30-8-125 수나사에 물리고 잠금 너트. 나옴 자세에서 -Y 면이 블록 머리 보 +Y 면(Y 29)에 얹힘(압축만)",
+   "contact": "+Y 면 Y 65.4 <- 텅 -Y 면(폭 12, Z 150 모서리 선 닿음). -Y 면 -> 머리 보 18 x 10 면압. 조인트는 축 힘만(옆 뜸 ±0.5)",
+   "load": "스톱 운전 245.7 N · 오조작 821.2 N(-Y). 축 힘: 스토퍼 밂 245.4 · 당김 206.2 N(0.5 MPa)은 마찰로만 블록에",
    "criteria": {
-    "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐은 6-2 미정(D-08) -> 기록",
-    "source": "요구서 6-1(M-09 기본값)"
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195 · E 70 GPa · G 26.3 GPa, S45C 343). 과사양 = 필요치 3배(note). 처짐 6-2 미정(D-08) — 과제 기준: 바퀴 접지점 처짐 합 < 0.5, 스톱 받침 처짐 < 플로팅 조인트 옆 뜸 0.5",
+    "source": "요구서 6-1(M-09 기본값), 과제 RX-19 완료 판정"
    },
-   "status": "손계산. 순 단면 압축 SF 63 이상",
-   "step": "tools/out/mech_RX-08/stepout/P_RX08_STOP_BLOCK.step",
-   "version": "v2.12.1"
+   "status": "손계산. 탭 밑 순 단면 압축 SF 65.7/19.7, 머리 보 면압 4.6 MPa, 텅 모서리 선 닿음 68.4 N/mm(오조작, 1 mm 자리 잡음 SF 2.85 — 모서리 C0.5 디테일 RX19-FEA-D4). 옛 v2.12.1 모델(브래킷 발 위 블록)은 걷음",
+   "step": "tools/out/mech_RX-19/stepout/P_RX08_STOP_BLOCK.step",
+   "version": "v2.29.0"
   },
   "P_M02S_SPRING_TAB_1·_2": {
    "case": "cases/mech_M02R_swing_handcalc.py (형상 cases/mech_M02R_stepgeo.py)",
@@ -1197,7 +1200,7 @@
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, A5052 195). 처짐·흔들림은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 날개 굽힘 3.6 MPa SF 57, 다리 순 단면(Kt 3) SF 64, 볼트 암나사 전단 SF 362 — 과사양(M-09) 기록: t4 -> t2도 SF 14",
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | 손계산 fea/results/mech_M02R_swing_handcalc.json. FEA 못 함 — 환경 없음(D-16). 날개 굽힘 3.6 MPa SF 57, 다리 순 단면(Kt 3) SF 64, 볼트 암나사 전단 SF 362 — 과사양(M-09) 기록: t4 -> t2도 SF 14",
    "step": "tools/out/mech_M02R/stepout/P_M02S_SPRING_TAB_1.step",
    "version": "v2.14.0",
    "note": "_2는 같은 형상·같은 하중(E-19)"
@@ -1512,7 +1515,7 @@
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, SUS303 205, S45C 345). SF < 1.2는 영구 변형. 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-13_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16). 귀 순 단면 SF 11.8, 앞벽 22.7/30.6, 볼트 M5 암나사 전단 SF 56 · M6 90, 미끄럼 SF 26.7 — 과사양(M-09) 기록: 귀 t8 -> t5도 SF 4.6(탭 물림 1.5d가 두께를 정함)",
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | 손계산 fea/results/mech_RX-13_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16). 귀 순 단면 SF 11.8, 앞벽 22.7/30.6, 볼트 M5 암나사 전단 SF 56 · M6 90, 미끄럼 SF 26.7 — 과사양(M-09) 기록: 귀 t8 -> t5도 SF 4.6(탭 물림 1.5d가 두께를 정함)",
    "step": "tools/out/mech_RX-13/stepout/P_RX13_CYL_BRKT.step",
    "version": "v2.20.4"
   },
@@ -1525,7 +1528,7 @@
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, SUS303 205, S45C 345). SF < 1.2는 영구 변형. 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
    },
-   "status": "손계산 fea/results/mech_RX-13_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16). 연장봉 수나사 뿌리 SF 3.25(오조작) · 암나사 쪽 고리 단면 SF 11.9. 사슬에서 가장 약한 곳은 실린더 로드 수나사 뿌리(구매품): 운전 SF 3.14(205)/5.28(345), 오조작 1.31~1.65(205)/2.20~2.77(345) — 로드 재질 미확인(D-188)",
+   "status": "걷음 v2.29.0(RX-19, 블록·그네로 바뀜 — 기록으로만 남김) | 손계산 fea/results/mech_RX-13_fea1_handcalc.json. FEA 못 함 — 환경 없음(D-16). 연장봉 수나사 뿌리 SF 3.25(오조작) · 암나사 쪽 고리 단면 SF 11.9. 사슬에서 가장 약한 곳은 실린더 로드 수나사 뿌리(구매품): 운전 SF 3.14(205)/5.28(345), 오조작 1.31~1.65(205)/2.20~2.77(345) — 로드 재질 미확인(D-188)",
    "step": "tools/out/mech_RX-13/stepout/P_RX13_ROD_EXT.step",
    "version": "v2.20.4"
   },
@@ -1605,6 +1608,237 @@
    "load": "운전: (램프 40 g 임시 D-229 + 브래킷 65.1 g + 케이블 10 g) x 3 g = 3.38 N. 오조작: 입술 끝 (−55.474, 95.483)에 손 20 N(설계안 가정 — 요구서·자료대기에 값 없음), 꺾임선에서 팔 28.93에 수직. 가정 검토: 손 100 N(헤드 둘레 다른 부품 값). 헤드 진동 50 Hz(3000 땀/분)",
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. SUS304 Rp0.2 205 · E 193 GPa · G 75 GPa. 첫 고유 진동 > 헤드 50 Hz의 3배",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_FLAP_PL": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "막대 L1~L3·XN·XP 윗면에 CB5-12로 체결. 가장 큰 칸 Y 400 × X 662를 네 변 단순지지(보수)",
+   "contact": "볼 63은 판 구멍에 얹힘(하중만 전달)",
+   "load": "운전: 판 묶음 141 N을 판 넓이에 고르게 ×3 g. 오조작: 칸 가운데 손 100 N(반지름 10). 볼 구멍 살 0.64·Kt 2.5",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_FLAP_BAR_L1·L2·L3": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "XN↔XP 사이 662 단순지지",
+   "contact": "—",
+   "load": "몫 넓이 350×662 자중 ×3 g / 1 g + 가운데 손 100 N",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_FLAP_BAR_XN": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "0°에서 빗장 A·B(Y −412·−1088, 사이 676) 단순지지",
+   "contact": "빗장 막대 Ø8 ↔ 구멍 Ø8.3",
+   "load": "가운데에 L2 반력 + 손 100 N",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "load_bump": "[RX-12-C1 수정 1회차 v2.27.1] 빗장 뺀 충격: 패드 A·B(Y −448·−1052, 사이 604) 단순지지, 판 묶음 관성 합(운전 340 N · 오조작 511 N)을 가운데 한 점(보수), 단면 18×30 · Kt 2. 밑면 M5 탭 4(Ø4.2 깊이 13, X 414)",
+   "case_bump": "cases/mech_RX-12-C1_fea1_handcalc.py"
+  },
+  "P_RX12C1_GS_PIN_P": {
+   "case": "cases/mech_RX-DC-02_fea_handcalc.py",
+   "fixed": "[RX-DC-02 v2.29.3] 귀판 t6(Y -1230~-1224) 구멍에 외팔, 핀 Ø8 Y -1249~-1222. 팔 = 귀판 가운데 ~ 몸통 눈 가운데 15(3 + SPACER_P 7 + 5). 전 RX-12-C1 팔 8",
+   "contact": "몸통 눈 Ø8.2(Y -1247~-1237)",
+   "load": "가스 스프링 힘(r2_gasspring.json, 눈 중심 간 271.76~320.51은 RX-12-C1과 같음): 운전 최대 1,573 N 압축(-90, 공차 끝 F1 1,232 · L_ext 327). 오조작 [RX-DC-02] 펴는 중 손 놓침 -> 펴짐 끝 감쇠 순 인장 2,034 N(E 20.34 J / 감쇠 15 mm x 최고/평균 1.5, 임시 D-231)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_GS_LUG": {
+   "case": "cases/mech_RX-DC-02_fea_handcalc.py",
+   "fixed": "팔 블록 −Y 면에 CB5-12 ×2",
+   "contact": "핀 지압",
+   "load": "가스 스프링 힘(r2_gasspring.json, 눈 중심 간 271.76~320.51은 RX-12-C1과 같음): 운전 최대 1,573 N 압축(-90, 공차 끝 F1 1,232 · L_ext 327). 오조작 [RX-DC-02] 펴는 중 손 놓침 -> 펴짐 끝 감쇠 순 인장 2,034 N(E 20.34 J / 감쇠 15 mm x 최고/평균 1.5, 임시 D-231). 눈 치우침 15(전 8)의 면 밖 굽힘, 지압은 평균(선형 모서리 지압은 참고만)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_GS_ARM_BLK": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "판 윗면에서 CB5-12 ×2",
+   "contact": "—",
+   "load": "가스 스프링 힘(r2_gasspring.json): 0° 명목 1,145 N · 공차 끝 1,272 N, 최대 1,571 N(−90, F1 1,232 · L_ext 327)(볼트 인장으로 보수)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_GS_CLEVIS": {
+   "case": "cases/mech_RX-DC-02_fea_handcalc.py",
+   "fixed": "뒤판이 :9 -X 면에 CB5-16 ×2 대각(Z -270·-310), 아래 모서리 Z -385 받침. [RX-DC-02] -Y 볼(Y -1254~-1248)은 Z -330 위를 깎아 X 1059~1104 · Z -385~-330 t6만 남음(뒤판 X 1104에서 외팔 31)",
+   "contact": "핀 A 두 볼 지압 — 볼 가운데 Y -1251 / -1219(사이 32), 로드 눈 Y -1242(-Y 볼에서 9) -> -Y 볼 몫 0.72 F",
+   "load": "가스 스프링 힘(r2_gasspring.json, 눈 중심 간 271.76~320.51은 RX-12-C1과 같음): 운전 최대 1,573 N 압축(-90, 공차 끝 F1 1,232 · L_ext 327). 오조작 [RX-DC-02] 펴는 중 손 놓침 -> 펴짐 끝 감쇠 순 인장 2,034 N(E 20.34 J / 감쇠 15 mm x 최고/평균 1.5, 임시 D-231)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_GS_PIN_A": {
+   "case": "cases/mech_RX-DC-02_fea_handcalc.py",
+   "fixed": "클레비스 볼 두 장 단순지지(가운데 Y -1251 / -1219), 하중점 Y -1242",
+   "contact": "—",
+   "load": "가스 스프링 힘(r2_gasspring.json, 눈 중심 간 271.76~320.51은 RX-12-C1과 같음): 운전 최대 1,573 N 압축(-90, 공차 끝 F1 1,232 · L_ext 327). 오조작 [RX-DC-02] 펴는 중 손 놓침 -> 펴짐 끝 감쇠 순 인장 2,034 N(E 20.34 J / 감쇠 15 mm x 최고/평균 1.5, 임시 D-231)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_UPSTOP_TONGUE": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "플랜지가 XP +X 면에 CB5-12 ×2(Z −33), 아래 모서리 Z −43 지렛대",
+   "contact": "팔 밑면 ↔ CB6-20 머리(X 1128, 축에서 23)",
+   "load": "정적: 빗장 뺀 0° 순 올림 7.39~13.73 N·m ÷ 0.023 = 321~597 N. 오조작: 펴는 중 손 놓침 — 올림 에너지 13.5 J(공차 끝 20.3 J), 판 묶음 경첩 관성 2.37 kg·m², 완충은 판 묶음 굽힘 k_θ 2.2~22 kN·m/rad",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_UPSTOP_BLK": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "기둥 B +Y 면 CB5-16 ×2",
+   "contact": "CB6-20 M6 탭 물림 9.06",
+   "load": "혀와 같음",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_LATCH_ROD_A·B": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "블록 구멍(깊이 19)",
+   "contact": "XN 구멍, 틈 3",
+   "load": "빗장 반력 10.4~19.3 N + 손 100 N, 팔 12",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_LATCH_BLK_A·B": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "1255_M04 +X 면 CB5-16 ×2",
+   "contact": "—",
+   "load": "빗장 막대와 같음",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_STOP_A·B": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": ":9 −X 면 CB5-12 ×2",
+   "contact": "−90에서 L1·L3 옆면",
+   "load": "−90 순 −9.25 N·m ÷ 0.212 + 손 100 N, 두 개 나눔, 면 10×30",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_TAB_PL": {
+   "case": "cases/mech_RX-12-C1_handcalc.py",
+   "fixed": "기둥 A 끝 CB8-16 ×2(X 1130)",
+   "contact": "볼 (1050, −230)",
+   "load": "끝 X 976에 손 100 N, 외팔 154, 폭 100",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RX12C1_BUMP_BRKT_A·B": {
+   "case": "cases/mech_RX-12-C1_fea1_handcalc.py",
+   "fixed": "세움 X 380~390이 HFS8-4080-1255_M04 +X 면 X 380에 CB5-12 ×2(Z −112·−152, 자리파기 Ø9.5 깊이 6) → HNTT8-5. 지렛대 받침 = 접촉면 윗끝 Z −20",
+   "contact": "턱 밑면 Z −31이 패드 윗면과 압축만(0°에서 틈 0.3)",
+   "load": "빗장 뺀 채 판이 올라와 패드가 턱을 침: 운전 = 감쇠 도착 로드 20 mm/s(D-231 상한) 한쪽 204 N, 오조작 = 31 mm/s(혀 닿기 직전) 한쪽 307 N · 판 끝 손 100 N 위로 한쪽 72 N(한쪽 몫 60 %). 패드 가운데 X 398 → 턱 팔 8, 세움 중립축 팔 13",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SCM435 785, Urethane A70 압축 변형률 되풀이 ≤ 0.25 · 한 번 ≤ 0.40",
+    "source": "요구서 6-1(M-09 기본값), 우레탄 변형률은 일반 설계 지침"
+   }
+  },
+  "P_RX12C1_BUMP_LUG_A·B": {
+   "case": "cases/mech_RX-12-C1_fea1_handcalc.py",
+   "fixed": "바닥 t6이 XN 밑면 Z −43에 CB5-16 ×2(X 414, 물림 10, M5 탭)로 체결. 패드 반력이 러그를 아래로 당김 → 받침 = XN 밑면 +X 끝 X 423, 볼트 당김 합 = F·25/9",
+   "contact": "세움 윗면 Z −36.3에 패드 접착",
+   "load": "BUMP_BRKT와 같은 패드 힘(204 · 307 · 72 N)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SCM435 785, Urethane A70 압축 변형률 되풀이 ≤ 0.25 · 한 번 ≤ 0.40",
+    "source": "요구서 6-1(M-09 기본값), 우레탄 변형률은 일반 설계 지침"
+   }
+  },
+  "P_RX12C1_BUMP_PAD_A·B": {
+   "case": "cases/mech_RX-12-C1_fea1_handcalc.py",
+   "fixed": "러그 세움 윗면에 접착",
+   "contact": "윗면–브래킷 턱 압축만",
+   "load": "BUMP_BRKT와 같음. 강성 Gent 식 E 5.54 · 형상계수 0.5 → 한 개 130.6 N/mm(fix1 손계산)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SCM435 785, Urethane A70 압축 변형률 되풀이 ≤ 0.25 · 한 번 ≤ 0.40",
+    "source": "요구서 6-1(M-09 기본값), 우레탄 변형률은 일반 설계 지침"
+   }
+  },
+  "P_RX19_BLOCK_밀링": {
+   "case": "cases/mech_RX-19_handcalc.py",
+   "fixed": "옛 P_RX06_CARRIAGE 몸(X -240~-125, Y 45~107, Z 250~482)이 레일 블록 SSEB13-570 x4에 그대로 앉음 -> 캐리지 몸 고정단. 선반 t14(Z 236~250) 밑에 러그·실린더 다리·스톱 받침·스토퍼 다리가 이어 붙은 한 덩어리",
+   "contact": "러그 핀 구멍 Ø12 (Y 75, Z 135) <- 핀 PSFJ12-80 반력. 스톱 받침 머리 보(X -260~-228 · Y 17~29 · Z 150~160) +Y 면 Y 29 <- 스톱 블록 -Y 면 압축(나옴 X -248~-230, 겹침 18). 실린더 다리 -Y 면에 CDQSYB20 CB6-16 x4(물림 6). 스토퍼 다리 X -404에 CB5-16 x4(물림 4)",
+   "load": "핀 반력 운전 최대 220.8 N(스톱 닿음, 246 - 29.9 Y · 무게 46.75 Z) / 오조작 717.3 N(0.5 MPa 당김 117.8 + 무게·스프링 x3 -> 스톱 821 N). 스톱 받침: 운전 245.7 N · 오조작 821.2 N(-Y, Z 155, 기둥 가운데에서 X 팔 25.25). 들기 157.1 N(D20 0.5 MPa)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195 · E 70 GPa · G 26.3 GPa, S45C 343). 과사양 = 필요치 3배(note). 처짐 6-2 미정(D-08) — 과제 기준: 바퀴 접지점 처짐 합 < 0.5, 스톱 받침 처짐 < 플로팅 조인트 옆 뜸 0.5",
+    "source": "요구서 6-1(M-09 기본값), 과제 RX-19 완료 판정"
+   },
+   "status": "손계산 fea/results/mech_RX-19_handcalc.json. FEA 못 함 — 환경 없음(D-16). 러그 SF 25.1/7.74, 받침 기둥 VM SF 5.71/1.71(오조작 미달 디테일 RX19-FEA-D1), 받침 처짐 운전 0.197 · 오조작 0.66(> 뜸 0.5, RX19-FEA-D2)",
+   "step": "tools/out/mech_RX-19/stepout/P_RX19_BLOCK.step",
+   "version": "v2.29.0"
+  },
+  "P_RX19_SWING_밀링": {
+   "case": "cases/mech_RX-19_handcalc.py",
+   "fixed": "뺨 2(앞 X -132~-120, 뒤 X -172~-160, Y 59~91, 부시 MPFZ12-10 구멍 Ø18)가 핀 (Y 75, Z 135) 둘레로 돎 -> 핀이 받침, 텅 장공의 너클 핀이 둘째 받침(로드 축 힘)",
+   "contact": "텅(X -246~-234 · Y 65~85 · Z 116~160, 위 X 8 · Z 160~205) -Y 면이 스톱 블록 +Y 면에 Z 150 모서리로 처음 닿음(1.515°). 장공에 너클 핀 Ø8. 앞판(X -132~-120)에 감속기·서보·바퀴, 앞 띠 목(12 x 12, Y 31~45)이 앞판과 윗판을 이음",
+   "load": "스톱 운전 245.7 · 오조작 821.2 N(Z 150, 텅 뿌리 Z 116까지 팔 34). 들기 157.1 N(Z 180, 팔 64). 앞판 매단 무게 약 42 N x 1/3 g(목 굽힘 팔 43.6 · 비틀림 팔 44). 누름 끝 바퀴 51.6 N + 옆힘 16 N(μ0.4 x 40)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195 · E 70 GPa · G 26.3 GPa, S45C 343). 과사양 = 필요치 3배(note). 처짐 6-2 미정(D-08) — 과제 기준: 바퀴 접지점 처짐 합 < 0.5, 스톱 받침 처짐 < 플로팅 조인트 옆 뜸 0.5",
+    "source": "요구서 6-1(M-09 기본값), 과제 RX-19 완료 판정"
+   },
+   "status": "손계산 fea/results/mech_RX-19_handcalc.json. FEA 못 함 — 환경 없음(D-16). 텅 SF 18.8/5.59(들기 15.5), 뺨 SF 190/58.6, 목 VM SF 17.8/5.94(3 g), 바퀴 접지점 처짐 합 0.103 mm(< 0.5)",
+   "step": "tools/out/mech_RX-19/stepout/P_RX19_SWING.step",
+   "version": "v2.29.0"
+  },
+  "STEP대기_PSFJ12-80(핀·부시 MPFZ12-10 몫)": {
+   "case": "cases/mech_RX-19_handcalc.py",
+   "fixed": "부시 MPFZ12-10 두 개(뺨 앞 X -127~-117 · 뒤 X -175~-165) 가운데 X -122 · -170 받침, 경간 48",
+   "contact": "러그(X -158~-136, 가운데 X -147) 구멍 Ø12에서 하중",
+   "load": "핀 반력 운전 220.8 N · 오조작 717.3 N, 3점 굽힘(보수)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2(A5052 195 · E 70 GPa · G 26.3 GPa, S45C 343). 과사양 = 필요치 3배(note). 처짐 6-2 미정(D-08) — 과제 기준: 바퀴 접지점 처짐 합 < 0.5, 스톱 받침 처짐 < 플로팅 조인트 옆 뜸 0.5",
+    "source": "요구서 6-1(M-09 기본값), 과제 RX-19 완료 판정"
+   },
+   "status": "손계산. 굽힘 SF 22.0/6.76, 이중 전단 0.98/3.17 MPa, 부시 면압 0.92/2.99 MPa, 러그 면압 2.72 MPa",
+   "step": "tools/out/mech_RX-19/stepout/STEP_PSFJ12-80_pin.step",
+   "version": "v2.29.0"
+  },
+  "P_RXDC02_GS_SPACER_A": {
+   "case": "cases/mech_RX-DC-02_fea_handcalc.py",
+   "fixed": "핀 A에 끼움(Ø8 ↔ Ø8.2), Y -1237~-1222, 로드 눈과 클레비스 +Y 볼 사이",
+   "contact": "양 끝면(로드 눈 · 볼)",
+   "load": "지름 방향 하중 없음(핀 처짐 0.017 < 틈 0.1). 축 방향 = 스프링 힘 10 % 가정(마찰·기울기)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
+    "source": "요구서 6-1(M-09 기본값)"
+   }
+  },
+  "P_RXDC02_GS_SPACER_P": {
+   "case": "cases/mech_RX-DC-02_fea_handcalc.py",
+   "fixed": "핀 P에 끼움, Y -1237~-1230, 몸통 눈과 귀판 사이",
+   "contact": "양 끝면",
+   "load": "SPACER_A와 같은 꼴·같은 하중 계통(E-19 묶음, 불리한 쪽 = A)",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
     "source": "요구서 6-1(M-09 기본값)"
    }
   }

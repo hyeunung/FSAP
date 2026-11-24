@@ -1,0 +1,9 @@
+{
+ "task": "RX-DC-02",
+ "doc": "3D_Modeling/FSAP_v2.29.3.sc",
+ "note": "FEA 못 함 — 환경 없음(D-16). 손계산. 스프링 힘 최대 1,420 N(줄어든 쪽, RX-12-C1 r2_gasspring.py 값)을 핀 축에 수직으로",
+ "F_N": 1420,
+ "pin_A": {"d": 8, "support": "양쪽 볼(Y -1248 / -1222, 간격 26), 하중점 눈 중심 Y -1242(−Y 볼에서 6)", "M_Nmm": 6554, "sigma_MPa": 130.4, "tau_double_MPa": 14.1, "material": "SCM435 Re 785", "SF_yield": 6.0},
+ "clevis_minusY_wall": {"reaction_N": 1092, "bearing_MPa": 22.8, "inplane_bending_MPa": 11.2, "material": "A5052 Re 160(H32 하한)", "SF_min": 7.0, "note": "Z -330 위를 깎은 뒤 핀 둘레 남은 볼 X 1060~1104 · Z -385~-330 t6"},
+ "pin_P": {"d": 8, "support": "귀판 하나(Y -1230~-1224) 외팔", "arm_from_lug_face_mm": 12, "M_Nmm": 17040, "sigma_MPa": 339.0, "SF_yield": 2.3, "before_RXDC02": {"arm_mm": 5, "sigma_MPa": 141.2}, "note": "디테일 RXDC02-D1: Ø10 또는 양쪽 받침(E-02 기록만)"}
+}
