@@ -1,0 +1,917 @@
+{
+ "run": "mech_2026-11-24_RX-19-RX-DC-02-STEPWAIT",
+ "status": "완료",
+ "engine": "v4.0.0",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-24",
+ "journal": "wf_2959aeea-37d",
+ "totals": {
+  "agents": 23,
+  "agent_sec": 14274,
+  "input": 4564210,
+  "cache_read": 158994280,
+  "output": 857126,
+  "tools": 962,
+  "wall_sec": 14275
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 180,
+   "agents": 1,
+   "output": 15751
+  },
+  "▸ modeling-round #2": {
+   "sec": 14094,
+   "agents": 22,
+   "output": 841375
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 2",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 180,
+   "tokens": {
+    "input": 151944,
+    "cache_read": 1757045,
+    "output": 15751
+   },
+   "tools": 15,
+   "turns": 15
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 80,
+   "tokens": {
+    "input": 82579,
+    "cache_read": 69312,
+    "output": 11115
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 123,
+   "tokens": {
+    "input": 119765,
+    "cache_read": 1729141,
+    "output": 9336
+   },
+   "tools": 30,
+   "turns": 17
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 52,
+   "tokens": {
+    "input": 102504,
+    "cache_read": 484640,
+    "output": 3277
+   },
+   "tools": 9,
+   "turns": 6
+  },
+  {
+   "label": "STEPSWAP 모델링부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 65,
+   "tokens": {
+    "input": 109579,
+    "cache_read": 1033362,
+    "output": 4654
+   },
+   "tools": 15,
+   "turns": 11
+  },
+  {
+   "label": "STEPLITE 모델링부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 41,
+   "tokens": {
+    "input": 52386,
+    "cache_read": 465078,
+    "output": 3432
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "RX-19 모델링부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 3714,
+   "tokens": {
+    "input": 489317,
+    "cache_read": 51962431,
+    "output": 229484
+   },
+   "tools": 218,
+   "turns": 154
+  },
+  {
+   "label": "RX-19 검도·체결",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 971,
+   "tokens": {
+    "input": 285933,
+    "cache_read": 12109889,
+    "output": 66887
+   },
+   "tools": 91,
+   "turns": 68
+  },
+  {
+   "label": "RX-19 해석",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 430,
+   "tokens": {
+    "input": 128106,
+    "cache_read": 3557231,
+    "output": 40045
+   },
+   "tools": 26,
+   "turns": 26
+  },
+  {
+   "label": "RX-19 예외 판정",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 932,
+   "tokens": {
+    "input": 305157,
+    "cache_read": 12658178,
+    "output": 66550
+   },
+   "tools": 81,
+   "turns": 62
+  },
+  {
+   "label": "RX-19 모델링부 수정1",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 1863,
+   "tokens": {
+    "input": 416868,
+    "cache_read": 25668619,
+    "output": 119266
+   },
+   "tools": 110,
+   "turns": 92
+  },
+  {
+   "label": "RX-19 모델링부 수정2",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 431,
+   "tokens": {
+    "input": 114399,
+    "cache_read": 5632308,
+    "output": 27168
+   },
+   "tools": 43,
+   "turns": 42
+  },
+  {
+   "label": "RX-19 검도·체결 2",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 698,
+   "tokens": {
+    "input": 222464,
+    "cache_read": 9829915,
+    "output": 36439
+   },
+   "tools": 61,
+   "turns": 60
+  },
+  {
+   "label": "RX-19 문서·커밋",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 162,
+   "tokens": {
+    "input": 131302,
+    "cache_read": 787769,
+    "output": 13010
+   },
+   "tools": 16,
+   "turns": 8
+  },
+  {
+   "label": "RX-DC-02 모델링부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 886,
+   "tokens": {
+    "input": 257047,
+    "cache_read": 12368574,
+    "output": 69712
+   },
+   "tools": 77,
+   "turns": 65
+  },
+  {
+   "label": "RX-DC-02 검도·체결",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 216,
+   "tokens": {
+    "input": 141610,
+    "cache_read": 2791994,
+    "output": 15742
+   },
+   "tools": 30,
+   "turns": 24
+  },
+  {
+   "label": "RX-DC-02 해석",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 294,
+   "tokens": {
+    "input": 109917,
+    "cache_read": 2528595,
+    "output": 24637
+   },
+   "tools": 23,
+   "turns": 20
+  },
+  {
+   "label": "RX-DC-02 문서·커밋",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 88,
+   "tokens": {
+    "input": 113526,
+    "cache_read": 727164,
+    "output": 7440
+   },
+   "tools": 8,
+   "turns": 8
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 2377,
+   "tokens": {
+    "input": 786153,
+    "cache_read": 7720395,
+    "output": 33243
+   },
+   "tools": 58,
+   "turns": 52
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 468,
+   "tokens": {
+    "input": 184990,
+    "cache_read": 4022851,
+    "output": 37447
+   },
+   "tools": 30,
+   "turns": 30
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 90,
+   "tokens": {
+    "input": 114849,
+    "cache_read": 639334,
+    "output": 8535
+   },
+   "tools": 6,
+   "turns": 7
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #2",
+   "status": "done",
+   "sec": 38,
+   "tokens": {
+    "input": 101796,
+    "cache_read": 396648,
+    "output": 2586
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #2",
+   "status": "running",
+   "sec": 75,
+   "tokens": {
+    "input": 42019,
+    "cache_read": 53807,
+    "output": 11370
+   },
+   "tools": 3,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [
+  "RX-19 모델링부 수정1",
+  "RX-19 모델링부 수정2"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPSWAP",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.28.1.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "STEPLITE",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-19",
+    "size": "L",
+    "status": "모델 반영·해석 못 함",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.29.2.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "BOM 증감표에 수정 1회차(경로 3)가 반영되지 않음. JA30-8-125 +1, NUT-M8이 남아 있고 NUT-M10_RX19·L자 스톱 판·스토퍼 새 자리가 없다. 완료 판정 'BOM' 항목 미달",
+      "where": "tools/out/mech_RX-19/model/bom_delta_rx19_model.csv",
+      "evidence": "17행 'JA30-8-125(임시) 새로 +1', 19행 옮김 목록에 NUT-M8, 15행 스톱 블록 'X -268~-250 · M8 탭'(v2.29.0 값). 모델 v2.29.2에는 JA30·NUT-M8이 없고 NUT-M10_RX19가 있다(inspect_design 이름 목록)",
+      "fix": "JA30 줄 삭제. NUT-M8을 빼고 '새로(구매) STEP대기_NUT-M10_RX19 M10 1종 대변 16·두께 8 +1' 추가. 스톱 블록을 'L자 발 X −270~−230·Y 29~65.4·Z 150~166 + 세운 판 X −270~−255.5·Y 37~58·Z 166~224, T홈, SUS304'로, 스토퍼 몸을 'X −232~−184.5·축 Y 47.5·Z 216, 로드 −X'로 고치고 합계를 다시 센다. 문서 담당이 BOM 낼 때 처리(CAD 불필요)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "LIP 볼트 물림 4 < 1.5d(M5·Al), 다리 +X 면 렌치 접근, T홈 벽 2·목 3 가공성, 관 4줄 클램프 자리, 스톱 받침 기둥 오조작 SF 1.71·처짐 0.66",
+      "where": "U4_STOP·P_RX19_BLOCK_밀링",
+      "evidence": "RX19-D8·D13·D15·D16·FEA-D1·D2(모델링 1회차·해석부 기록 그대로)",
+      "fix": "디테일링에서: 탭 깊이 7.5 이상 또는 헬리서트, 기둥 X 8.5 → 12, 관 클램프 추가",
+      "external": false
+     }
+    ],
+    "exception_requests": [
+     {
+      "rule": "선정 지시서 좌표(final_mech_2026-11-24 수정안: 스토퍼 몸 X −369~−321.5, 다리 −381~−369, 선반 −381)",
+      "where": "STEP대기_CDQ2A25-20DMZ 몸·블록 스토퍼 다리",
+      "why": "모델의 스토퍼 로드는 물러남에서 Ø12가 23 나오고 M10 수나사 10이 붙는다. 지시 자리면 로드가 조인트 몸(X −321.5~−276.5)을 43 뚫는다. 그래서 몸을 X −392~−344.5, 다리를 −404~−392로 그렸다. 조인트 물러남·나옴 자리, 너트 자리 8.5, 너클 틈 5.5는 지시 기준 그대로이고, d₁ 195에서 다리는 X −499(빈 것을 확인한 −540 안)다",
+      "proposal": "그린 자리를 확정으로 받는다. 아니면 CDQ2A25-20DMZ 실물 로드 돌출 치수를 받아 다시 맞춘다"
+     },
+     {
+      "rule": "프로젝트 규칙 3(있는 버전 파일 덮어쓰기 금지) vs 지시 절차 2(v2.28.1에 그대로 save)",
+      "where": "저장 파일 이름",
+      "why": "v2.28.1은 회귀 수정으로 커밋된 버전(4e71d5b)이다. 덮어쓰면 기록이 사라진다",
+      "proposal": "새 번호 v2.29.0으로 저장했다(config.json doc 고침). 워크플로우의 WF-027 판정이 커밋된 버전을 빈 버전으로 잘못 본 것으로 보고, 개선후보에 올린다"
+     },
+     {
+      "rule": "결정로그 C-46 제어 제약(d₂ ≥ d₁ + 240, U5 틈 ≥ 5.5)",
+      "where": "U4 X 조절 d₁ 195 근처와 U5 대차 d₂ 하한",
+      "why": "RX-19 형상 그대로면 d₁ 195에서 d₂ 435~440일 때 U4↔U5 겹침이 36,400~51,100 mm³다. d₂ 490(d₁ + 295)에서도 U5를 들면 345 mm³가 남는다",
+      "proposal": "추천은 형상 수정(P2 (가), 스토퍼 사슬을 X ≥ −359.5로)이다. 형상을 두려면 C-46 제약을 d₂ ≥ d₁ + 300 이상(다시 재서 정함)으로 바꿀지 사용자가 정한다"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "rules/README '판정이 갈릴 때' 1 \"L1 E-03 동작·간섭 … 어떤 다른 이유로도 새 겹침·행정 부족을 만들지 않는다\", E-03 \"이웃 유닛과 겹치지 않고\", E-14 형상 예외 1회 시험",
+      "where": "STEP대기_CDQ2A25-20DMZ 몸(X −392~−344.5)·블록 스토퍼 다리(−404~−392)·LIP 볼트, v2.29.0",
+      "decision": "기각",
+      "reason": "그린 자리가 C-46이 허용하는 d₁ 195 · d₂ 435~440에서 U5 F01·리프트 윗판과 36,437~51,134 mm³ 겹친다(검도 P2). 선정 지시 자리(−X 끝 약 −386)도 기준 밖이다. PM이 MCP 체크포인트에서 U5 자리를 쟀더니, C-46 한계(J_U5_X 1365)에서 U4 −X 끝 기준은 셋이다: Y −70~78 · Z 20~266에서 ≥ −354.5, U5 바퀴 둘레(Z < 155.5)에서 ≥ −322, 덮개(Z ≥ 290)에서 ≥ −319.5. E-14 시험의 경로 1(지시 축 그대로, 플로팅 조인트 빼고 줄임)은 U5 바퀴와 175.2 mm³ 겹쳐 불합격이었다. −X 방향 축 사슬(몸 47.5 + 로드 33 + 다리 12 + 머리 5)은 −268~−354.5 사이(86.5)에 들어가지 않는다. 경로 3은 시험을 통과했다: U5 겹침 0 · 최소 틈 23.0, U4 4자세에서 겹침은 다시 깔 주 실린더 관 A2·B뿐, 그네 최소 틈 10.0",
+      "instruction": "v2.29.1(마지막 +1)에서 경로 3으로 다시 그린다.\n① 스토퍼 몸: 축 X (Y 47, Z 216), X −232~−184.5 · Y 27~67 · Z 196~236. 헤드 쪽 다리 X −184.5~−172.5는 블록과 한 덩어리로 하고 선반 밑에 매단다. 관통 볼트 머리는 X −237~−232, 포트는 +Y 면.\n② 로드 Ø12 −232~−255, M10 −255~−265. 로드 끝 너트를 세운 판 T홈에 물리고 옆 뜸은 ±0.5로 한다(U-14 기계식 플로팅). JA30-8-125와 NUT-M8_RX08은 걷는다. 너트 물림 ≥ 6.5.\n③ 스톱 블록과 한 덩어리인 L자 세운 판: Y 39~55 · Z 166~224 · t12. 넣음(로드 당김) X −267~−255, 뺌 −287~−275. 밑 부분 스톱 자리는 지금 그대로(넣음 −248~−230). 너클 틈은 4.\n④ J_U4_STOP: 0 = 넣음, 20 = 뺌으로 정하고 machine.json 상태·연구 키를 고친다. 동작 순서 제약 '스톱 넣고 빼기는 PRESS ≥ 1.515°일 때만'을 설계검토서에 적는다.\n⑤ 걷을 것: 블록 스토퍼 띠(X −404~−330)·다리, LIP ×4, RX08 포트·관 2(새로 깐다)와 딸린 탭. 잔재 0.\n⑥ 주 실린더 관 U4_A2·U4_B의 선반 밑 층과 올림(−262,46)·(−285,50)을 쓸림 자리(X −287~−228, Y 39~55, Z 166~224) 밖, 곧 Y ≥ 58 또는 X ≥ −228로 옮긴다. 검도 P1(RX08_A 관 ↔ ROD 피팅)도 함께 없앤 뒤 광선으로 다시 확인한다.\n⑦ 판정 자세: J_U4_X 0·47.5·95 × PRESS 19.523·10·1.515·−8.171 × STOP 0·20 × J_U5_X 1365·1360·1310 × LIFT −10·30.\n⑧ 합격 기준: 과제 범위 겹침 0, U4↔U5 틈 ≥ 5.5, 이음↔너클 틈 > 0(±0.5), 몸↔주 실린더 피팅·몸 틈 ≥ 2.\n⑨ 로드 나옴은 D-192 STEP을 받은 뒤 실물로 다시 맞춘다.\n결과는 tools/out/mech_RX-19/pm/pm_probe_summary.json에 있다."
+     },
+     {
+      "rule": "E-05 \"이미 저장·커밋된 버전 파일은 덮어쓰지 않는다 … 예외는 앞 과제가 형상을 바꾸지 못하고 새 이름으로만 저장한 빈 버전 … (WF-027)\", 실행 규칙 3 \"이미 있는 버전 파일은 덮어쓰지 않는다\"",
+      "where": "저장 파일 이름 3D_Modeling/FSAP_v2.29.0.sc(v2.28.1 덮어쓰기 대신)",
+      "decision": "승인",
+      "reason": "v2.28.1은 회귀 수정이 J_U7_HGT·연구 키를 고쳐 커밋한 실제 버전이다(4e71d5b, REGFIX3-K1). 앞 과제가 형상을 바꾸지 못한 빈 버전이 아니므로 WF-027 예외에 들지 않는다. 번호 자리도 E-05 \"새 컴포넌트가 생기거나 없어졌으면 가운데 +1·마지막 0\"에 맞다(윗판·그네·팔 묶음 47바디를 걷었다). 같은 판정 U6S-E01이 있다",
+      "instruction": "v2.29.0을 그대로 두고, config.json doc는 v2.29.0을 가리킨다. 이 과제의 다음 수정 회차는 v2.29.1로 새 파일에 저장하고 doc를 고친다. WF-027 판정 고침은 엔진 일이라 회고가 docs/reports/engine-candidates.md에 올린다(실행 규칙 1, 엔진은 읽기만)"
+     },
+     {
+      "rule": "결정로그 '구동 RX-06 설계안' 제어 제약 d₂ ≥ d₁ + 240(U5 틈 ≥ 5.5), C-46. 판정 순서 1(E-03 \"새 겹침·행정 부족을 만들지 않는다\"), U-03 \"간섭·여유 부족은 그 기구물을 고쳐서 맞춘다\"",
+      "where": "U4 X 조절 d₁ 195 근처와 U5 대차 d₂ 하한(J_U4_X 95 × J_U5_X 1310~1365)",
+      "decision": "기각",
+      "reason": "d₂ ≥ d₁ + 240은 사용자 말이 아니라 RX-06 설계가 틈을 재서 정한 제약이다. 이번 겹침은 RX-19가 U4 −X 끝을 −356에서 −409로 늘려 생긴 새 겹침이다. 제약을 d₁ + 300으로 좁히면 U5가 갈 수 있는 범위가 60 줄어든다(d₁ 195에서 d₂ 하한 435 → 495). 판정 순서 1에 따라 새 겹침을 제약으로 덮지 않는다. 형상으로 푸는 길이 E-14 시험에서 확인됐다(경로 3, U5 최소 틈 23.0). 그래서 구조·돈 결정이 아니고 사용자 결정으로 올리지 않는다",
+      "instruction": "C-46 제어 제약은 그대로 둔다(d₂ ≥ d₁ + 240, d₁ 바꾸기는 바퀴 든 상태에서만). 스토퍼 사슬을 RX19-EX1 지시(경로 3)대로 옮겨 J_U5_X 1365·1360·1310 × LIFT −10·30에서 U4↔U5 틈 ≥ 5.5를 낸다. 검도는 이웃 조인트를 제약 한계 자세 J_U5_X 1365(= d₁ + 240)에서도 잰다. 검도 보고서의 −359.5는 1360 기준이다. 한계 기준은 −354.5(바퀴 둘레 −322)를 쓴다"
+     }
+    ],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-DC-02",
+    "size": "M",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.29.3.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "RXDC02-D1 핀 P Ø8이 귀판 하나에 외팔(귀판 면→눈 중심 12), 1,420 N에서 σ 339 MPa, SF 2.3",
+      "where": "P_RX12C1_GS_PIN_P (U2_FLAP, 1055,−48)",
+      "evidence": "fea/results/mech_RX-DC-02_handcalc.json, 모델링부 7절",
+      "fix": "핀 Ø10(구멍 Ø10.2)으로 키우거나 −Y 쪽 Y −1255~−1249에 받침 귀판 t6 추가해 양쪽 받침",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RXDC02-D2 받침 고리 t15·t7과 핀 축 방향 빠짐 방지 없음",
+      "where": "P_RXDC02_GS_SPACER_A·_P, 핀 A·P",
+      "evidence": "모델링부 보고서 9절",
+      "fix": "핀 끝 E형 멈춤링 홈(E-7, 홈 Ø6.6)",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RXDC02-D3 클레비스 −Y 볼 높이 55(Z −385~−330)만 남음, 이음쇠 임시 치수 기반",
+      "where": "P_RX12C1_GS_CLEVIS −Y 볼",
+      "evidence": "D-231 형번·이음쇠 치수 없음",
+      "fix": "D-231 형번 이음쇠 치수 받은 뒤 볼 높이·깎는 높이 다시",
+      "external": true
+     },
+     {
+      "kind": "디테일",
+      "what": "핀 P Ø8 SCM435 외팔 굽힘 기준 미달(RXDC02-D1, 뒤집기로 외팔 팔이 8에서 15로 늘어남)",
+      "where": "P_RX12C1_GS_PIN_P, 귀판 Y −1230~−1224에서 몸통 눈 가운데 Y −1242까지",
+      "evidence": "운전 1,573 N일 때 σ 469 MPa로 SF 1.67(기준 3). 오조작 순 인장 2,034 N일 때 σ 607 MPa로 SF 1.29(기준 2). fea/results/mech_RX-DC-02_fea_handcalc.json PIN_P_bend_*",
+      "fix": "−Y 쪽 Y −1255~−1249에 SUS304 t6 받침 귀판을 더해 양쪽에서 받친다(SF 6 넘음, D4도 함께 풀림). 아니면 핀을 Ø10으로 키운다(구멍 Ø10.2, SF 3.27 / 2.53)"
+     },
+     {
+      "kind": "디테일",
+      "what": "귀판 GS_LUG 면 밖 굽힘 기준 미달(RXDC02-D4, 새로 찾음). 눈 치우침이 8에서 15로 늘어남",
+      "where": "P_RX12C1_GS_LUG, SUS304 t6 폭 40",
+      "evidence": "운전 σ 98 MPa로 SF 2.09(기준 3). 오조작 σ 127 MPa로 SF 1.61(기준 2). LUG_outplane_*",
+      "fix": "D1을 양쪽 받침으로 고치면 함께 풀린다. 귀판만 고치려면 t6을 t8로 바꾼다(SF 3.7)"
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [
+     "D-231 감쇠 가스 스프링 형번·감쇠 곡선·이음쇠 치수 없음(눈목 20·속 Ø12·눈 Ø16 폭 10은 임시값)",
+     "FEA 못 함 — 엔진 해석 환경 없음(D-16), 손계산 fea/results/mech_RX-DC-02_handcalc.json으로 대신함"
+    ],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "상태 59(전체 상한)",
+    "CYCLE_P2 o10 390~610, CYCLE_V2 o10 전부(전체 상한)",
+    "CYCLE_L·S·G1·G2·V o10(어림 초과)",
+    "연구 10개 o0·o20(어림 초과)",
+    "SEAM_U7·BIND_U7·MAINT_U7·MAINT_HEAD 전 단계(어림 초과)",
+    "FAST 체결·관 상태 61점(어림 초과)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 749,
+    "estimate_s": 5985,
+    "actual_s": 1790.5,
+    "chunk_times": [
+     {
+      "id": "STATES@all 10-21",
+      "elapsed_s": 225.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@all 22-33",
+      "elapsed_s": 215.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@all 34-45",
+      "elapsed_s": 255.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@all 46-57",
+      "elapsed_s": 260.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@all 58-60",
+      "elapsed_s": 50.1,
+      "status": "cut"
+     },
+     {
+      "id": "studies runs_b (W1·W2·P1·P2 o10)",
+      "elapsed_s": 570,
+      "status": "partial"
+     }
+    ],
+    "killed_calls": 1,
+    "skipped_steps": 0,
+    "trial": "자세 19.0~20.0 s/점(오류 없음), 연구 5.75 s/단계(첫 시험은 자세 시험과 동시에 떠 잠금 대기로 timeout, 따로 다시 시험해 ok)",
+    "per_step_s": {
+     "study": 5.75,
+     "pose": 19.5
+    },
+    "pose_steps": 122,
+    "reduced": "어림 5,985 s > 상한 1,800 s라 시작 전에 줄였다. 상태 61을 먼저 돌리고(60 봄), 연구는 앞 99단계만 남겼다. FAST 61점과 나머지 연구는 못 본 범위로 정했다",
+    "seen": [
+     "STATES 60/61(상태 59 빼고)",
+     "CYCLE_W1 o10 10~570",
+     "CYCLE_W2 o10 10~570",
+     "CYCLE_P1 o10 10~450",
+     "CYCLE_P2 o10 10~370",
+     "가스 스프링 보충 J_U2_FLAP 0·-45·-90",
+     "REST measure·joint.list"
+    ],
+    "unseen": [
+     "상태 59(전체 상한)",
+     "CYCLE_P2 o10 390~610, CYCLE_V2 o10 전부(전체 상한)",
+     "CYCLE_L·S·G1·G2·V o10(어림 초과)",
+     "연구 10개 o0·o20(어림 초과)",
+     "SEAM_U7·BIND_U7·MAINT_U7·MAINT_HEAD 전 단계(어림 초과)",
+     "FAST 체결·관 상태 61점(어림 초과)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 110,
+     "cad_calls": 8,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 1,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 모델링부",
+    "phase": "STEPSWAP · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 3,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "STEPLITE 모델링부",
+    "phase": "STEPLITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 120,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-19 모델링부",
+    "phase": "RX-19 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 3900,
+     "cad_calls": 75,
+     "file_opens": 2,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 90.3,
+     "mcp_restarts": [
+      "11:20~11:31 이 세션 MCP의 selection.delete(dry_run, 컴포넌트 28)가 running_s 341을 넘겨도 끝나지 않았고, Claude 쪽 MCP 서버(pid 32572)가 끊겼다. 11:31 앱(pid 40328)만 강제 종료하고 --control 27878로 다시 켰다. 버린 것: 저장 안 한 solid.remove 1개와 자세. 그 뒤 solidcraft-cli mcp에 직접 붙는 클라이언트(scmcp.py)로 이어 썼다. v2.28.1 다시 열기 90.3 s",
+      "11:35~11:38 timeline.delete(볼트 import 피처 26개 한 번에)를 보낸 지 158 s 뒤 앱이 죽었다(10054). 앱을 다시 켜고 v2.28.1을 다시 열었다(90.3 s). 버린 것: 자세·solid.remove 1개. 지우기는 묶음 5개로 나눠 맨 뒤에 했다"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-19 검도·체결",
+    "phase": "RX-19 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 21,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [
+      "93단계 batch 하나가 MCP 요청 시간을 넘겼다. Claude 쪽 MCP 서버만 다시 떴고 앱은 다시 켜지 않았다(running 비어 있음, 문서 v2.29.0 그대로 dirty false). 버린 것은 그 batch의 결과뿐이고 3자세씩 다시 돌렸다"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-19 해석",
+    "phase": "RX-19 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-19 예외 판정",
+    "phase": "RX-19 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 898,
+     "cad_calls": 22,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-19 모델링부 수정1",
+    "phase": "RX-19 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 1900,
+     "cad_calls": 38,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [
+      "component.delete(STEP대기_NUT-M8_RX08) 응답 시간 초과로 Claude 쪽 MCP 서버가 다시 붙음(앱 재시작 없음, running 빈칸·pending null 확인, 버린 것 없음)"
+     ],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-19 모델링부 수정2",
+    "phase": "RX-19 · 모델링",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 14,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 180,
+    "over": false
+   },
+   {
+    "label": "RX-19 검도·체결 2",
+    "phase": "RX-19 · 검증",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 680,
+     "cad_calls": 14,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "RX-19 문서·커밋",
+    "phase": "RX-19 · 문서",
+    "size": "L",
+    "timing": {
+     "elapsed_s": 151,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 20,
+    "over": false
+   },
+   {
+    "label": "RX-DC-02 모델링부",
+    "phase": "RX-DC-02 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 900,
+     "cad_calls": 21,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 289,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-DC-02 검도·체결",
+    "phase": "RX-DC-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 5,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-DC-02 해석",
+    "phase": "RX-DC-02 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-DC-02 문서·커밋",
+    "phase": "RX-DC-02 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 180,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2250,
+     "cad_calls": 172,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 238.8,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 446,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "전체 회귀",
+    "what": "호출 하나가 8분을 넘김"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [
+   "WF-239",
+   "WF-240",
+   "WF-241"
+  ],
+  "repeat_ids": [],
+  "one_line": "개선후보 WF-239(빈 버전 판정 오류)·WF-240(회귀 묶음 s/단계 기준)·WF-241(회차 뒤 BOM 증감표 누락)를 FSAP docs/reports/engine-candidates.md에 추가하고, 최종 보고서에 절을 붙여 커밋했다(2d0444b, 푸시 안 함). 엔진 파일은 고치지 않았다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 23,
+  "시간 h": 4.0,
+  "출력 토큰": 857126,
+  "실패": 0
+ }
+}
