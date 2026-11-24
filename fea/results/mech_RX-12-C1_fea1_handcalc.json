@@ -1,0 +1,373 @@
+{
+ "method": "손계산(FEA 못 함 — 환경 없음, D-16)",
+ "load_cases": {
+  "운전: 감쇠 도착 20 mm/s(D-231 상한)": {
+   "F_one": 203.9,
+   "need": 3.0
+  },
+  "오조작: 도착 31 mm/s(혀 닿기 직전)": {
+   "F_one": 306.78,
+   "need": 2.0,
+   "pad_defl": 1.96
+  },
+  "오조작: 빗장 뺀 판 끝 손 100 N 위로": {
+   "F_one": 71.91,
+   "need": 2.0
+  }
+ },
+ "PAD": {
+  "part": "P_RX12C1_BUMP_PAD_A·B",
+  "cases": {
+   "운전: 감쇠 도착 20 mm/s(D-231 상한)": {
+    "F_N": 203.9,
+    "stress_MPa": 2.6,
+    "strain": 0.312
+   },
+   "오조작: 도착 31 mm/s(혀 닿기 직전)": {
+    "F_N": 306.8,
+    "stress_MPa": 3.91,
+    "strain": 0.47
+   },
+   "오조작: 빗장 뺀 판 끝 손 100 N 위로": {
+    "F_N": 71.9,
+    "stress_MPa": 0.92,
+    "strain": 0.11
+   }
+  },
+  "limit": "우레탄 압축 되풀이 변형률 ≤ 0.25(일반 설계 지침), 한 번 충격 ≤ 0.40",
+  "note": "선형 k(형상계수 0.5) — 0.25 넘으면 실제는 더 단단해져 눌림은 이보다 작다(보수)"
+ },
+ "BRKT": {
+  "part": "P_RX12C1_BUMP_BRKT_A·B",
+  "A5052": 195.0,
+  "tooth": {
+   "Z_mm3": 484.0,
+   "Kt": 2.5,
+   "run": {
+    "F": 203.9,
+    "sigma": 8.43,
+    "SF": 23.14,
+    "need": 3.0
+   },
+   "mis": {
+    "F": 306.8,
+    "sigma": 12.68,
+    "SF": 15.38,
+    "need": 2.0
+   }
+  },
+  "column_net": {
+   "A_mm2": 161.0,
+   "xc": 384.7,
+   "Z_mm3": 256.6,
+   "run": {
+    "F": 203.9,
+    "sigma": 11.83,
+    "SF": 16.48,
+    "need": 3.0
+   },
+   "mis": {
+    "F": 306.8,
+    "sigma": 17.81,
+    "SF": 10.95,
+    "need": 2.0
+   }
+  },
+  "bolts_CB5_12": {
+   "lever_pivot": "접촉면 윗끝 Z −20",
+   "T_bolt_mis_N": 28.2,
+   "preload_N": 4500,
+   "slip_SF_run": 6.62,
+   "slip_SF_mis": 4.4,
+   "handcalc": {
+    "inputs": {
+     "d": 5,
+     "le": 5.5,
+     "load_N": 28.156285125565887,
+     "torque_Nm": 4.5,
+     "bolt": "12.9",
+     "base": "SS400",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 4500.0,
+    "engage_ratio": 1.1,
+    "sf_operating": {
+     "나사 인장": 554.76,
+     "암나사 전단": 169.14,
+     "분리(예압/외력)": 159.82
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 3.59,
+     "조임 암나사 전단": 1.06
+    },
+    "worst": "조임 암나사 전단",
+    "ok": false,
+    "needs_fea": true,
+    "near_limit": [
+     "조임 암나사 전단"
+    ]
+   }
+  }
+ },
+ "LUG": {
+  "part": "P_RX12C1_BUMP_LUG_A·B",
+  "lever": {
+   "pivot": "XN 밑면 +X 끝 X 423",
+   "T_total_per_F": 2.778,
+   "fix1_value": 0.778,
+   "note": "fix1 손계산은 받침을 X 405로 잡아 볼트 당김을 3.6배 작게 셈 — 판정은 바뀌지 않음(아래 SF)"
+  },
+  "bolt_line": {
+   "Z_net": 78.0,
+   "run": {
+    "F": 203.9,
+    "sigma": 41.83,
+    "SF": 4.66,
+    "need": 3.0
+   },
+   "mis": {
+    "F": 306.8,
+    "sigma": 62.93,
+    "SF": 3.1,
+    "need": 2.0
+   }
+  },
+  "corner": {
+   "Z_gross": 144.0,
+   "Kt": 2.5,
+   "run": {
+    "F": 203.9,
+    "sigma": 24.78,
+    "SF": 7.87,
+    "need": 3.0
+   },
+   "mis": {
+    "F": 306.8,
+    "sigma": 37.28,
+    "SF": 5.23,
+    "need": 2.0
+   }
+  },
+  "bolts_CB5_16_into_XN_tap": {
+   "T_one_run_N": 283.2,
+   "T_one_mis_N": 426.1,
+   "handcalc_run": {
+    "inputs": {
+     "d": 5,
+     "le": 10,
+     "load_N": 283.19444444444446,
+     "torque_Nm": 4.5,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 3.0
+    },
+    "preload_N": 4500.0,
+    "engage_ratio": 2.0,
+    "sf_operating": {
+     "나사 인장": 55.16,
+     "암나사 전단": 24.34,
+     "분리(예압/외력)": 15.89
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.53
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   },
+   "handcalc_mis": {
+    "inputs": {
+     "d": 5,
+     "le": 10,
+     "load_N": 426.0837011929256,
+     "torque_Nm": 4.5,
+     "bolt": "12.9",
+     "base": "A5052",
+     "dw": 8.5,
+     "dh": 5.5,
+     "K": 0.2,
+     "sf_min": 2.0
+    },
+    "preload_N": 4500.0,
+    "engage_ratio": 2.0,
+    "sf_operating": {
+     "나사 인장": 36.66,
+     "암나사 전단": 16.17,
+     "분리(예압/외력)": 10.56
+    },
+    "sf_tightening": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.53
+    },
+    "worst": "조임 암나사 전단",
+    "ok": true,
+    "needs_fea": false,
+    "near_limit": []
+   }
+  }
+ },
+ "XN": {
+  "part": "P_RX12C1_FLAP_BAR_XN",
+  "Z_mm3": 2700.0,
+  "span_mm": 604,
+  "run": {
+   "F_total": 339.8,
+   "sigma": 38.01,
+   "SF": 5.13,
+   "need": 3.0
+  },
+  "mis": {
+   "F_total": 511.3,
+   "sigma": 57.19,
+   "SF": 3.41,
+   "need": 2.0
+  },
+  "tap_wall_mm": 6.9,
+  "tap_depth_vs_bar": "탭 Z −43~−30, 막대 윗면 −13까지 17 남음(볼 구멍·윗 탭과 안 만남: 탭 Y −454·−442·−1058·−1046 ↔ 빗장 Y −412·−1088)"
+ },
+ "UNDAMPED_REF": {
+  "pad_defl_mm": 10.25,
+  "pad_thickness": 5.0,
+  "verdict": "패드 두께 5보다 더 눌려야 함 → 바닥 닿고 혀 충격 되살아남. 감쇠 가스 스프링은 구매 사양 필수 조건(D-231)"
+ },
+ "summary": [
+  {
+   "item": "BRKT 턱 run",
+   "SF": 23.14,
+   "need": 3.0,
+   "ok": true,
+   "over_3x": true
+  },
+  {
+   "item": "BRKT 턱 mis",
+   "SF": 15.38,
+   "need": 2.0,
+   "ok": true,
+   "over_3x": true
+  },
+  {
+   "item": "BRKT 세움 run",
+   "SF": 16.48,
+   "need": 3.0,
+   "ok": true,
+   "over_3x": true
+  },
+  {
+   "item": "BRKT 세움 mis",
+   "SF": 10.95,
+   "need": 2.0,
+   "ok": true,
+   "over_3x": true
+  },
+  {
+   "item": "LUG 볼트줄 run",
+   "SF": 4.66,
+   "need": 3.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "LUG 볼트줄 mis",
+   "SF": 3.1,
+   "need": 2.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "LUG 모서리 run",
+   "SF": 7.87,
+   "need": 3.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "LUG 모서리 mis",
+   "SF": 5.23,
+   "need": 2.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "XN 굽힘 run",
+   "SF": 5.13,
+   "need": 3.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "XN 굽힘 mis",
+   "SF": 3.41,
+   "need": 2.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "BRKT 볼트 미끄럼 run",
+   "SF": 6.62,
+   "need": 3.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "BRKT 볼트 미끄럼 mis",
+   "SF": 4.4,
+   "need": 2.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "LUG CB5-16 run 운전 최소",
+   "SF": 15.89,
+   "need": 3.0,
+   "ok": true,
+   "over_3x": true
+  },
+  {
+   "item": "LUG CB5-16 run 조임 최소",
+   "SF": 1.53,
+   "need": 1.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "LUG CB5-16 mis 운전 최소",
+   "SF": 10.56,
+   "need": 2.0,
+   "ok": true,
+   "over_3x": true
+  },
+  {
+   "item": "LUG CB5-16 mis 조임 최소",
+   "SF": 1.53,
+   "need": 1.0,
+   "ok": true,
+   "over_3x": false
+  },
+  {
+   "item": "BRKT CB5-12 mis 운전 최소",
+   "SF": 159.82,
+   "need": 2.0,
+   "ok": true,
+   "over_3x": true
+  },
+  {
+   "item": "BRKT CB5-12 mis 조임 최소",
+   "SF": 1.06,
+   "need": 1.0,
+   "ok": true,
+   "over_3x": false
+  }
+ ],
+ "action": []
+}

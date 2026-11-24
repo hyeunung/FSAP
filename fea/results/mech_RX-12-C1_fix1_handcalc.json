@@ -1,0 +1,112 @@
+{
+ "method": "손계산(FEA 못 함 — 환경 없음, D-16)",
+ "pad": {
+  "material": "Urethane_A70",
+  "E_MPa": 5.54,
+  "shape_factor": 0.5,
+  "Ec_MPa": 8.32,
+  "k_one_N_mm": 130.6,
+  "k_total_N_mm": 261.3,
+  "K_theta_Nm_rad": 130600.0,
+  "r_pad_mm": 707.0,
+  "gap_mm": 0.3,
+  "latch_float_mm": 0.15,
+  "gap_minus_float": 0.15
+ },
+ "lever_rod_mm": 49.921,
+ "cases": {
+  "5 mm/s": {
+   "v_rod_mm_s": 5,
+   "omega": 0.1002,
+   "KE_J": 0.0119,
+   "pad_defl_mm": 0.45,
+   "pad_strain": 0.09,
+   "F_total_N": 117.5,
+   "F_one_N": 70.5,
+   "theta_chord_mrad": 1.061,
+   "theta_root_mrad": 1.525,
+   "tongue_engage_mrad_old": 2.609,
+   "tongue_engage_mrad": 5.217,
+   "tongue_touch": false
+  },
+  "10 mm/s": {
+   "v_rod_mm_s": 10,
+   "omega": 0.2003,
+   "KE_J": 0.0475,
+   "pad_defl_mm": 0.717,
+   "pad_strain": 0.143,
+   "F_total_N": 187.5,
+   "F_one_N": 112.5,
+   "theta_chord_mrad": 1.439,
+   "theta_root_mrad": 2.18,
+   "tongue_engage_mrad_old": 2.609,
+   "tongue_engage_mrad": 5.217,
+   "tongue_touch": false
+  },
+  "15 mm/s": {
+   "v_rod_mm_s": 15,
+   "omega": 0.3005,
+   "KE_J": 0.1069,
+   "pad_defl_mm": 1.006,
+   "pad_strain": 0.201,
+   "F_total_N": 262.8,
+   "F_one_N": 157.7,
+   "theta_chord_mrad": 1.847,
+   "theta_root_mrad": 2.886,
+   "tongue_engage_mrad_old": 2.609,
+   "tongue_engage_mrad": 5.217,
+   "tongue_touch": false
+  },
+  "20 mm/s": {
+   "v_rod_mm_s": 20,
+   "omega": 0.4006,
+   "KE_J": 0.19,
+   "pad_defl_mm": 1.301,
+   "pad_strain": 0.26,
+   "F_total_N": 339.9,
+   "F_one_N": 203.9,
+   "theta_chord_mrad": 2.264,
+   "theta_root_mrad": 3.608,
+   "tongue_engage_mrad_old": 2.609,
+   "tongue_engage_mrad": 5.217,
+   "tongue_touch": false
+  },
+  "25 mm/s": {
+   "v_rod_mm_s": 25,
+   "omega": 0.5008,
+   "KE_J": 0.2968,
+   "pad_defl_mm": 1.598,
+   "pad_strain": 0.32,
+   "F_total_N": 417.6,
+   "F_one_N": 250.5,
+   "theta_chord_mrad": 2.685,
+   "theta_root_mrad": 4.336,
+   "tongue_engage_mrad_old": 2.609,
+   "tongue_engage_mrad": 5.217,
+   "tongue_touch": false
+  }
+ },
+ "rod_speed_allow_no_tongue_mm_s": 31.0,
+ "undamped_ref": {
+  "E_J": 13.528,
+  "pad_defl_mm": 10.25,
+  "F_N": 2679.0,
+  "verdict": "감쇠 없으면 패드 행정(혀까지)·변형률을 크게 넘음 → 감쇠는 필수"
+ },
+ "static_rest_unlatched": {
+  "F_total_N": 19.4,
+  "pad_defl_mm": 0.074,
+  "tip_above_nominal_mm": 0.374
+ },
+ "bracket": {
+  "F_design_N": 407.8,
+  "sigma_MPa": 6.74,
+  "SF": 28.9,
+  "SF_slip": 4.4
+ },
+ "lug_bolt": {
+  "T_N": 317.2,
+  "SF_vs_preload": 37.8
+ },
+ "damper_spec": "가스 스프링 펴짐 끝 오일 감쇠(end-position damping in extension), 감쇠 구간 ≥ 15 mm(0°는 완전 신장 4.49 앞), 0° 도착 로드 속도 ≤ 10 mm/s 목표 · 상한 = rod_speed_allow_no_tongue"
+}

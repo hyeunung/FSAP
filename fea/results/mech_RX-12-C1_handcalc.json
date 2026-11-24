@@ -1,0 +1,642 @@
+{
+ "_step_bbox": {
+  "P_RX12C1_FLAP_BAR_L1": [
+   [
+    0.0,
+    1118.14
+   ],
+   [
+    -764.14,
+    0.0
+   ],
+   [
+    -43.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_FLAP_BAR_XN": [
+   [
+    0.0,
+    906.35
+   ],
+   [
+    -1244.85,
+    0.0
+   ],
+   [
+    -43.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_FLAP_BAR_XP": [
+   [
+    0.0,
+    1584.82
+   ],
+   [
+    -1244.82,
+    0.0
+   ],
+   [
+    -43.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_FLAP_PL": [
+   [
+    0.0,
+    1375.74
+   ],
+   [
+    -1375.74,
+    0.0
+   ],
+   [
+    -14.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_GS_ARM_BLK": [
+   [
+    0.0,
+    1092.71
+   ],
+   [
+    -1234.71,
+    0.0
+   ],
+   [
+    -43.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_GS_CLEVIS": [
+   [
+    0.0,
+    1119.54
+   ],
+   [
+    -1269.54,
+    0.0
+   ],
+   [
+    -395.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_GS_LUG": [
+   [
+    0.0,
+    1082.25
+   ],
+   [
+    -1249.25,
+    0.0
+   ],
+   [
+    -63.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_GS_PIN_A": [
+   [
+    0.0,
+    1073.0
+   ],
+   [
+    -1254.0,
+    0.0
+   ],
+   [
+    -376.67,
+    0.0
+   ]
+  ],
+  "P_RX12C1_GS_PIN_P": [
+   [
+    0.0,
+    1055.0
+   ],
+   [
+    -1240.0,
+    0.0
+   ],
+   [
+    -56.67,
+    0.0
+   ]
+  ],
+  "P_RX12C1_LATCH_BLK_A": [
+   [
+    0.0,
+    408.91
+   ],
+   [
+    -429.91,
+    0.0
+   ],
+   [
+    -165.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_LATCH_ROD_A": [
+   [
+    0.0,
+    1109.0
+   ],
+   [
+    -420.67,
+    0.0
+   ],
+   [
+    -76.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_STOP_A": [
+   [
+    0.0,
+    1122.39
+   ],
+   [
+    -417.39,
+    0.0
+   ],
+   [
+    -320.3,
+    0.0
+   ]
+  ],
+  "P_RX12C1_TAB_PL": [
+   [
+    0.0,
+    1187.57
+   ],
+   [
+    -397.07,
+    0.0
+   ],
+   [
+    -20.0,
+    0.0
+   ]
+  ],
+  "P_RX12C1_UPSTOP_BLK": [
+   [
+    0.0,
+    1152.5
+   ],
+   [
+    -1142.5,
+    0.0
+   ],
+   [
+    -92.3,
+    0.0
+   ]
+  ],
+  "P_RX12C1_UPSTOP_TONGUE": [
+   [
+    0.0,
+    1146.54
+   ],
+   [
+    -1143.54,
+    0.0
+   ],
+   [
+    -50.0,
+    0.0
+   ]
+  ]
+ },
+ "gas_spring": {
+  "F0_nom": 1145,
+  "F0_tol": 1272,
+  "Fmax_tol": 1573,
+  "net0_nom": 7.39,
+  "net0_tol": 13.73,
+  "E_rise_nom_J": 13.528,
+  "E_rise_tol_J": 20.339,
+  "note": "-75~0 순 올림 모멘트 적분(손 놓으면 판이 스스로 올라오는 에너지)"
+ },
+ "GS_PIN_P_bend": {
+  "part": "P_RX12C1_GS_PIN_P",
+  "F_N": 1573,
+  "lever_mm": 8.0,
+  "sigma": 250.351,
+  "SF": 3.136,
+  "need": 3.0,
+  "verdict": "됨"
+ },
+ "GS_PIN_P_shear": {
+  "part": "P_RX12C1_GS_PIN_P",
+  "tau": 31.294,
+  "SF": 14.549,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "GS_LUG_bearing": {
+  "part": "P_RX12C1_GS_LUG",
+  "p": 32.771,
+  "SF": 6.256,
+  "need": 3.0,
+  "verdict": "됨"
+ },
+ "GS_LUG_outplane": {
+  "part": "P_RX12C1_GS_LUG",
+  "sigma": 52.433,
+  "SF": 3.91,
+  "need": 3.0,
+  "verdict": "됨"
+ },
+ "GS_LUG_bolts": {
+  "part": "CB5-12 x2 (귀판->팔 블록)",
+  "per_bolt_N": 786.5,
+  "handcalc": {
+   "inputs": {
+    "d": 5.0,
+    "le": 7.0,
+    "load_N": 786.5,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.4,
+   "sf_operating": {
+    "나사 인장": 19.86,
+    "암나사 전단": 6.13
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "slip_SF": 0.763,
+  "note": "미끄럼 SF는 예압 4 kN·μ0.15 가정(RX-12-C1 설계 관례). 미끄러져도 구멍 틈 0.25 뒤 몸통 전단으로 받음"
+ },
+ "GS_ARM_BLK_bolts": {
+  "part": "CB5-12 x2 (판->팔 블록)",
+  "per_bolt_N": 786.5,
+  "handcalc": {
+   "inputs": {
+    "d": 5.0,
+    "le": 7.0,
+    "load_N": 786.5,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.4,
+   "sf_operating": {
+    "나사 인장": 19.86,
+    "암나사 전단": 6.13
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "GS_PIN_A_shear": {
+  "part": "P_RX12C1_GS_PIN_A",
+  "tau": 15.647,
+  "SF": 29.098,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "GS_CLEVIS_bearing": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "p": 16.385,
+  "SF": 11.901,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "GS_CLEVIS_tearout": {
+  "part": "P_RX12C1_GS_CLEVIS",
+  "cap_N": 35287.2,
+  "SF": 22.433,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "GS_CLEVIS_bolts": {
+  "part": "CB5-16 x2 (클레비스->:9)",
+  "M_Nmm": 48763.0,
+  "T_max_N": 297.493,
+  "slip_SF": 0.763,
+  "handcalc": {
+   "inputs": {
+    "d": 5.0,
+    "le": 8.0,
+    "load_N": 297.49310344827586,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 52.51,
+    "암나사 전단": 18.53
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "note": "미끄럼 SF < 1 = 기존 디테일 RX12C1-D8(검도 0.85와 같은 계통, 최대 힘 1571로 다시 셈)"
+ },
+ "HINGE_reaction": {
+  "part": "STEP대기_HHPSN8 x2",
+  "hinge_total_0deg_nom_N": 993.592,
+  "hinge_total_0deg_tol_N": 1111.662,
+  "per_hinge_max_N": 786.5,
+  "note": "경첩 허용 하중 자료 없음(형번·STEP 대기) — 실물 형번 받을 때 카탈로그 허용 ≥ 3 × per_hinge_max 확인"
+ },
+ "HINGE_leaf_bolts_slip": {
+  "part": "CB5-12 x2 / 경첩 (판쪽·기둥쪽)",
+  "per_hinge_N": 786.5,
+  "slip_SF": 1.526,
+  "need": 3.0,
+  "handcalc": {
+   "inputs": {
+    "d": 5.0,
+    "le": 6.0,
+    "load_N": 393.25,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 39.72,
+    "암나사 전단": 10.52
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "verdict": "디테일(기준 미달)"
+ },
+ "FLAP_PL_misuse_100N": {
+  "part": "P_RX12C1_FLAP_PL",
+  "sigma_gross": 9.894,
+  "sigma_peak": 38.649,
+  "SF": 5.045,
+  "need": 2.0,
+  "defl_mm": 0.488,
+  "note": "손 100 N(반지름 10)이 가장 큰 칸 가운데. 살 0.64·구멍 Kt 2.5로 보수",
+  "verdict": "됨"
+ },
+ "FLAP_PL_selfweight_3g": {
+  "part": "P_RX12C1_FLAP_PL",
+  "q_Nmm2": 0.001,
+  "sigma_peak": 8.793,
+  "SF": 22.177,
+  "need": 3.0,
+  "defl_mm": 0.28,
+  "verdict": "됨(과사양 note)"
+ },
+ "FLAP_PL_beam_check": {
+  "part": "P_RX12C1_FLAP_PL",
+  "handcalc_beam": {
+   "inputs": {
+    "t": 5.0,
+    "b": 64.0,
+    "L": 400.0,
+    "E": 70000.0,
+    "Rp": 195.0,
+    "end": "guided",
+    "sf_min": 2.0
+   },
+   "force_N": 50.0,
+   "deflection_mm": 5.7143,
+   "stiffness_N_mm": 8.75,
+   "stress_MPa": 37.5,
+   "sf": 5.2,
+   "thin": true,
+   "ok": true,
+   "needs_fea": false
+  },
+  "note": "handcalc beam(띠 폭 100×살 0.64, 400 양끝 고정, 100 N 반씩) — 판 공식 교차 확인"
+ },
+ "FLAP_BAR_L2_3g": {
+  "part": "P_RX12C1_FLAP_BAR_L1·L2·L3",
+  "w1_N": 52.522,
+  "sigma": 8.692,
+  "SF": 22.434,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "FLAP_BAR_L2_misuse": {
+  "part": "P_RX12C1_FLAP_BAR_L1·L2·L3",
+  "sigma": 13.931,
+  "SF": 13.998,
+  "need": 2.0,
+  "defl_mm": 0.508,
+  "verdict": "됨(과사양 note)"
+ },
+ "FLAP_BAR_XN_misuse": {
+  "part": "P_RX12C1_FLAP_BAR_XN",
+  "sigma": 7.903,
+  "SF": 24.674,
+  "need": 2.0,
+  "defl_mm": 0.285,
+  "note": "빗장 사이 가운데 볼 꼭대기 처짐 — 이음 높이차(볼 위 매트가 넘는 곳)",
+  "verdict": "됨(과사양 note)"
+ },
+ "LATCH_ROD": {
+  "part": "P_RX12C1_LATCH_ROD_A·B",
+  "F_N": 119.338,
+  "sigma": 28.49,
+  "SF": 7.196,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "LATCH_BLK": {
+  "part": "P_RX12C1_LATCH_BLK_A·B",
+  "F_N": 119.338,
+  "handcalc": {
+   "inputs": {
+    "d": 5.0,
+    "le": 6.0,
+    "load_N": 119.33802816901408,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 130.89,
+    "암나사 전단": 34.65
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "note": "빗장 힘이 블록 볼트 2개 미끄럼(1.2 kN)보다 훨씬 작음"
+ },
+ "UPSTOP_TONGUE_static": {
+  "part": "P_RX12C1_UPSTOP_TONGUE",
+  "F_nom_N": 321.304,
+  "F_tol_N": 596.957,
+  "sigma": 32.833,
+  "SF": 5.939,
+  "need": 3.0,
+  "verdict": "됨"
+ },
+ "UPSTOP_TONGUE_bolts": {
+  "part": "CB5-12 x2 (혀->XP)",
+  "T_per_bolt_N": 835.739,
+  "handcalc": {
+   "inputs": {
+    "d": 5.0,
+    "le": 6.0,
+    "load_N": 835.7391304347826,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.2,
+   "sf_operating": {
+    "나사 인장": 18.69,
+    "암나사 전단": 4.95
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "UPSTOP_CB6-20_thread": {
+  "part": "CB6-20 → P_RX12C1_UPSTOP_BLK M6 탭",
+  "cap_N": 9657.438,
+  "SF": 16.178,
+  "need": 3.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "UPSTOP_BLK_slip": {
+  "part": "CB5-16 x2 (블록->기둥 B)",
+  "slip_SF": 2.01,
+  "need": 3.0,
+  "verdict": "디테일(기준 미달)"
+ },
+ "UNCONTROLLED_RISE": {
+  "part": "P_RX12C1_UPSTOP_TONGUE · CB6-20 · UPSTOP_BLK",
+  "I_kgm2": 2.367,
+  "E_nom_J": 13.528,
+  "E_tol_J": 20.339,
+  "omega_nom": 3.381,
+  "omega_tol": 4.146,
+  "tip_speed_r710_mps": 2.401,
+  "tongue_yield_N": 3545.455,
+  "cases": {
+   "강성 낮게(EI/L, 판 묶음 외팔 0.70 m)": {
+    "k_theta_Nm_per_rad": 2213.4,
+    "M_peak_Nm": 252.1,
+    "F_tongue_N": 10961,
+    "SF_tongue": 0.323
+   },
+   "강성 기준(EI/L)": {
+    "k_theta_Nm_per_rad": 7378.2,
+    "M_peak_Nm": 454.2,
+    "F_tongue_N": 19747,
+    "SF_tongue": 0.18
+   },
+   "강성 높게(3EI/L)": {
+    "k_theta_Nm_per_rad": 22134.5,
+    "M_peak_Nm": 781.2,
+    "F_tongue_N": 33967,
+    "SF_tongue": 0.104
+   }
+  },
+  "omega_allow_rad_s": 0.205,
+  "rod_speed_allow_mm_s": 10.216,
+  "SF": 0.104,
+  "need": 2.0,
+  "note": "혀는 경첩 축에서 23 mm라 에너지를 흡수할 행정이 없다(12 J를 1.75 kN으로 받으려면 혀 자리에서 14 mm = 35°). 판 묶음 굽힘이 유일한 완충 — 강성을 0.3배로 낮게 잡아도 SF < 1.2",
+  "verdict": "동작(SF < 1.2)"
+ },
+ "STOP_POM": {
+  "part": "P_RX12C1_STOP_A·B",
+  "F_total_N": 143.632,
+  "p": 0.239,
+  "SF": 250.64,
+  "need": 2.0,
+  "verdict": "됨(과사양 note)"
+ },
+ "TAB_PL_misuse": {
+  "part": "P_RX12C1_TAB_PL",
+  "sigma": 14.437,
+  "SF": 13.506,
+  "need": 2.0,
+  "defl_mm": 0.406,
+  "verdict": "됨(과사양 note)"
+ },
+ "TAB_PL_bolts": {
+  "part": "CB8-16 x2 (혀 판->기둥 A 끝 탭)",
+  "handcalc": {
+   "inputs": {
+    "d": 8.0,
+    "le": 10.0,
+    "load_N": 385.0,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 13.3,
+    "dh": 8.5,
+    "K": 0.2,
+    "sf_min": 3.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.25,
+   "sf_operating": {
+    "나사 인장": 104.57,
+    "암나사 전단": 28.64
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": false,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ }
+}
