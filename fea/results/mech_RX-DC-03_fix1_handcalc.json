@@ -1,0 +1,136 @@
+{
+ "geometry_from_step": {
+  "bbox": [
+   [
+    -318.6,
+    -268.0
+   ],
+   [
+    73.0,
+    97.0
+   ],
+   [
+    250.0,
+    392.0
+   ]
+  ],
+  "Z250_min_X": -296.6,
+  "Z253_min_X": -308.6,
+  "fold_bottom_free": true
+ },
+ "section_plate": {
+  "Iyy": 31.5,
+  "Ixx": 686.0
+ },
+ "section_L": {
+  "xc": -298.56,
+  "yc": 87.46,
+  "Iyy": 1553.88,
+  "Ixx": 1299.38,
+  "Ixy": 799.62
+ },
+ "J_L": 234.0,
+ "fix1_as_built": {
+  "run_top": {
+   "F": 10.88,
+   "arm": 137,
+   "root_sigma": 71.0,
+   "root_SF": 2.89,
+   "L_sigma": 12.8,
+   "L_SF": 15.97,
+   "defl_mm": 0.43
+  },
+  "mis_tie": {
+   "F": 50.0,
+   "arm": 91,
+   "root_sigma": 216.7,
+   "root_SF": 0.95,
+   "L_sigma": 39.2,
+   "L_SF": 5.23,
+   "defl_mm": 0.84
+  },
+  "mis_top": {
+   "F": 50.0,
+   "arm": 137,
+   "root_sigma": 326.2,
+   "root_SF": 0.63,
+   "L_sigma": 59.0,
+   "L_SF": 3.48,
+   "defl_mm": 1.96
+  },
+  "f1_Hz": {
+   "tip20g": 119.2,
+   "tip50g": 92.5
+  },
+  "mis_Y_tie": {
+   "T_Nmm": 1175.0,
+   "tau": 15.1,
+   "sigma_root": 46.4,
+   "vm": 53.3,
+   "SF": 3.85
+  }
+ },
+ "fixA_flange_extend": {
+  "run_top": {
+   "sigma": 12.8,
+   "SF": 15.97,
+   "defl_mm": 0.031
+  },
+  "mis_tie": {
+   "sigma": 39.2,
+   "SF": 5.23,
+   "defl_mm": 0.042
+  },
+  "mis_top": {
+   "sigma": 59.0,
+   "SF": 3.48,
+   "defl_mm": 0.143
+  },
+  "f1_Hz_tip50g": 340.6,
+  "fold_bottom_force_N": 641.0,
+  "ext_to_flange_shear_MPa": 15.3,
+  "fillet_weld_a2_len12_MPa": 19.1,
+  "bolt_N_plusX": 411.0,
+  "bolt_N_minusX": 154.0,
+  "bolt_calc": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 411.0,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 38.0,
+    "암나사 전단": 15.09
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "mass_add_g": 4.0
+ },
+ "fixB_thicker_plate": {
+  "t4": {
+   "sigma": 183.5,
+   "SF": 1.12
+  },
+  "t5": {
+   "sigma": 117.4,
+   "SF": 1.75
+  },
+  "t6": {
+   "sigma": 81.5,
+   "SF": 2.51
+  }
+ }
+}

@@ -8,6 +8,9 @@ This project follows Semantic Versioning.
 
 # [Unreleased]
 
+- v2.30.2 RX-DC-03 수정 2(판정 해결 — 설계검토서 docs/review/FSAP_v2.30.2_review.md, BOM docs/bom/FSAP_v2.30.2_*.csv): 세움 받침 꺾음 날 아래 플랜지 X −308.6~−296.6 · Y 83~97 · Z 250~253(111.9 g), 오조작 SF 0.63 → 3.48. 디테일 RXDC03-D5 · FEA-D4
+- v2.30.1 RX-DC-03 수정 1(BOM docs/bom/FSAP_v2.30.1_*.csv): 세움 받침 볼트 1 X −288(머리 겹침 해소), 꺾음 날 L자(SF 4.63, U4_XCAR 안)
+- v2.30.0 RX-DC-03 개념 W 서보 리드 길(근거 컴포넌트 U4_CABLE_LOOP, 가운데 +1 — 처음 v2.29.3으로 잘못 저장, RX-DC-03-EX1로 이름 바로잡고 v2.29.3은 RX-DC-02 원본으로 되돌림. BOM docs/bom/FSAP_v2.30.0_*.csv): 모터 −90°, 리드 그네 위 고정 굽힘만, 커넥터 2쌍 그네 받침, 연장 케이블 L4 · 판 위 경간 115 · 구름 고리 J_U4_LOOP · 보 앞 고정 받침, 판금 받침 4 · CB5-12 ×8. 12자세 간섭 0, U5 틈 7.068
 - v2.29.3 RX-DC-02 U2_FLAP 감쇠 가스 스프링 로드 아래로 뒤집기(판정 해결 — 설계검토서 docs/review/FSAP_v2.29.3_review.md, BOM docs/bom/FSAP_v2.29.3_*.csv): 몸통 = 판 핀 P, 로드 Ø10 = 클레비스 핀 A, 축 Y −1242, 받침 고리 2 새로, 핀 P 27, 클레비스 −Y 볼 깎음. 7자세 겹침 0. 디테일 RXDC02-D1~D4
 - v2.28.1 회귀 수정(설계검토서 docs/review/FSAP_v2.28.1_review.md, BOM docs/bom/FSAP_v2.28.1_*.csv — v2.28.0과 같음. 다시 돌린 전체 회귀는 메모리 부족으로 판정 못 함, 형상 변경 없음, 대기 자세만): v2.28.0이 J_U7_HGT = 6.0으로 저장돼 U7_FIXED + U6 묶음 48바디가 Z +6에 있던 것을 대기값 0으로 되돌림(T10 키트와 맞음). REST에 J_U7_HGT·J_U4_X·J_U2_FLAP·J_U2_FLAP_LATCH_A·B 대기 키, CYCLE_* 10개에 이 다섯 + J_U4_STOP·J_U7_KIT_T06·T10·T16·J_WP_T06·T10·T16_Z 대기 키(전 구간 상수)를 더함. 이제 REST 0이 HGT 6을 0으로 되돌린다. 바디·피처·컴포넌트 수 그대로. 보고서 docs/reports/mechanism/mech_regfix_3.md
 - v2.28.0 RX-DC-01 두께별 바인더 키트(판정 해결 — 설계검토서 docs/review/FSAP_v2.28.0_review.md, BOM docs/bom/FSAP_v2.28.0_*.csv): STEP대기_BINDER_30_T06·T16 새로(입 높이 8.5·18.5, T10 12.5 그대로 U7_BIND_T10으로 옮김), 두께 상태 모형 WP_T06·WP_T16, 모델용 대기 슬라이더 6개. THICK_6·16 겹침 0, 탈착 길 겹침 0. 디테일 RX-DC-01-D1~D3

@@ -1,0 +1,117 @@
+{
+ "geometry_from_step": {
+  "n_vertex": 40,
+  "n_face": 22,
+  "n_solid": 1,
+  "bbox": [
+   [
+    -318.6,
+    -268.0
+   ],
+   [
+    73.0,
+    97.0
+   ],
+   [
+    250.0,
+    392.0
+   ]
+  ],
+  "Z250_X": [
+   -308.6,
+   -285.75,
+   -275.75,
+   -273.0
+  ],
+  "Z253_X": [
+   -308.6,
+   -296.6,
+   -293.6,
+   -285.75,
+   -275.75,
+   -273.0
+  ],
+  "fold_bottom_tied": true
+ },
+ "section_L_root": {
+  "xc": -298.56,
+  "yc": 87.46,
+  "Iyy": 1553.88,
+  "Ixx": 1299.38,
+  "Ixy": 799.62
+ },
+ "fix2_as_built": {
+  "run_top": {
+   "F": 10.88,
+   "arm": 137,
+   "sigma": 12.8,
+   "SF": 15.97,
+   "defl_mm": 0.031
+  },
+  "mis_tie": {
+   "F": 50.0,
+   "arm": 91,
+   "sigma": 39.2,
+   "SF": 5.23,
+   "defl_mm": 0.042
+  },
+  "mis_top": {
+   "F": 50.0,
+   "arm": 137,
+   "sigma": 59.0,
+   "SF": 3.48,
+   "defl_mm": 0.143
+  },
+  "mis_Y_tie": {
+   "T_Nmm": 1175,
+   "tau": 15.1,
+   "sigma": 43.7,
+   "vm": 50.9,
+   "SF": 4.03
+  },
+  "f1_Hz": {
+   "tip20g": 437.0,
+   "tip50g": 340.6
+  },
+  "fold_bottom_force_N": 641,
+  "ext_to_flange_shear_MPa": 15.3,
+  "fillet_weld_a2_len12x2_MPa": 19.1,
+  "ext_deep_beam_sigma_MPa": 0.38,
+  "overhang_worst": {
+   "M_Nmm": 2307,
+   "sigma": 109.9,
+   "SF": 1.87
+  },
+  "fold_outstand_buckling_MPa": 4688,
+  "bolt_N_plusX": 411,
+  "bolt_N_minusX": 182,
+  "bolt_calc": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 411.0,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 38.0,
+    "암나사 전단": 15.09
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "bare_flange_span_mm": 1.35,
+  "clamp_cone_edge_X": -293.98,
+  "mass_g": 111.9
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "assume": {
+  "cable_return_N_each": 5.0,
+  "cables": 2,
+  "mis_hand_pull_N": 50.0,
+  "g_factor": 3
+ },
+ "P_RXDC03_LEAD_GUIDE": {
+  "arm_run": {
+   "F": 12.94,
+   "L": 47.6,
+   "sigma": 29.3,
+   "SF": 6.99,
+   "defl": 0.077
+  },
+  "arm_mis": {
+   "F": 50.0,
+   "L": 47.6,
+   "sigma": 113.3,
+   "SF": 1.81,
+   "defl": 0.296
+  },
+  "plate_mis": {
+   "F": 50.0,
+   "L": 58,
+   "sigma": 43.9,
+   "SF": 4.67,
+   "defl": 0.17
+  },
+  "arm_twist_mis": {
+   "T_Nmm": 2900.0,
+   "tau": 79.8,
+   "sigma_Y": 24.3,
+   "vm": 140.4,
+   "SF": 1.46,
+   "tip_move_mm": 0.99
+  },
+  "f1_Hz": 174.6,
+  "swing_extra_torque_Nmm": 42.7
+ },
+ "P_RXDC03_T2_GUIDE": {
+  "run": {
+   "F": 10.59,
+   "L": 21,
+   "sigma": 8.2,
+   "SF": 24.89,
+   "defl": 0.004
+  },
+  "mis": {
+   "F": 50.0,
+   "L": 21,
+   "sigma": 38.9,
+   "SF": 5.27,
+   "defl": 0.02
+  }
+ },
+ "P_RXDC03_RISER_BRKT": {
+  "run_top": {
+   "F": 10.88,
+   "L": 137,
+   "sigma": 71.0,
+   "SF": 2.89,
+   "defl": 1.534
+  },
+  "mis_tie": {
+   "F": 50.0,
+   "L": 91,
+   "sigma": 216.7,
+   "SF": 0.95,
+   "defl": 2.066
+  },
+  "mis_top": {
+   "F": 50.0,
+   "L": 137,
+   "sigma": 326.2,
+   "SF": 0.63,
+   "defl": 7.049
+  },
+  "run_Y_dir": {
+   "F": 10.0,
+   "L": 137,
+   "sigma": 14.0,
+   "SF": 14.66,
+   "defl": 0.065
+  },
+  "f1_Hz_tip20g": 67.8,
+  "f1_Hz_tip50g": 50.5,
+  "head_excite_Hz": {
+   "2000rpm": 33.3,
+   "3000rpm": 50.0
+  },
+  "fix_L_flange": {
+   "I": 1554.0,
+   "W": 154.8,
+   "mis_top_sigma": 44.3,
+   "SF": 4.63,
+   "defl_mis_top": 0.143,
+   "f1_Hz_tip50g": 341.1,
+   "mass_add_g": 39.7
+  },
+  "flange_bolt_mis_N": 411.0,
+  "flange_bolt_calc": {
+   "inputs": {
+    "d": 5,
+    "le": 9,
+    "load_N": 411.0,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "A5052",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.8,
+   "sf_operating": {
+    "나사 인장": 38.0,
+    "암나사 전단": 15.09
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  }
+ },
+ "P_RXDC03_BEAM_CLAMP": {
+  "run": {
+   "F": 12.06,
+   "L": 49,
+   "sigma": 28.1,
+   "SF": 7.28,
+   "defl": 0.078
+  },
+  "mis": {
+   "F": 50.0,
+   "L": 49,
+   "sigma": 116.7,
+   "SF": 1.76,
+   "defl": 0.323
+  },
+  "wall_bolt_mis_N": 71.0,
+  "wall_bolt_calc": {
+   "inputs": {
+    "d": 5,
+    "le": 8,
+    "load_N": 71.0,
+    "torque_Nm": 0.0,
+    "bolt": "12.9",
+    "base": "SS400",
+    "dw": 8.5,
+    "dh": 5.5,
+    "K": 0.2,
+    "sf_min": 2.0
+   },
+   "preload_N": 0.0,
+   "engage_ratio": 1.6,
+   "sf_operating": {
+    "나사 인장": 220.0,
+    "암나사 전단": 97.57
+   },
+   "sf_tightening": {},
+   "worst": "암나사 전단",
+   "ok": true,
+   "needs_fea": false,
+   "near_limit": []
+  },
+  "rest_gap_mm": 0.25
+ },
+ "route_R": {
+  "note": "케이블 경로 R은 기하 값 — 검도 재계산(L4 69.5, 판 위 132.6 반 사인 · 66.3 양끝 고정) 그대로, 해석부는 다시 셈하지 않음"
+ }
+}
