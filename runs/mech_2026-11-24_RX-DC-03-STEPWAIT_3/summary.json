@@ -1,0 +1,783 @@
+{
+ "run": "mech_2026-11-24_RX-DC-03-STEPWAIT",
+ "status": "완료",
+ "engine": "v4.0.0",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-24",
+ "journal": "wf_2959aeea-37d",
+ "totals": {
+  "agents": 22,
+  "agent_sec": 7209,
+  "input": 3342952,
+  "cache_read": 90897947,
+  "output": 514624,
+  "tools": 656,
+  "wall_sec": 7212
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 121,
+   "agents": 1,
+   "output": 12165
+  },
+  "▸ modeling-round #5": {
+   "sec": 7088,
+   "agents": 21,
+   "output": 502459
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 5",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 121,
+   "tokens": {
+    "input": 156371,
+    "cache_read": 1418298,
+    "output": 12165
+   },
+   "tools": 12,
+   "turns": 12
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 75,
+   "tokens": {
+    "input": 82484,
+    "cache_read": 69217,
+    "output": 11115
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 58,
+   "tokens": {
+    "input": 105522,
+    "cache_read": 1206979,
+    "output": 4300
+   },
+   "tools": 21,
+   "turns": 13
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 18,
+   "tokens": {
+    "input": 95707,
+    "cache_read": 184707,
+    "output": 1660
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "STEPSWAP 모델링부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 43,
+   "tokens": {
+    "input": 105416,
+    "cache_read": 810301,
+    "output": 3925
+   },
+   "tools": 13,
+   "turns": 9
+  },
+  {
+   "label": "STEPLITE 모델링부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 36,
+   "tokens": {
+    "input": 49102,
+    "cache_read": 356180,
+    "output": 3508
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "RX-DC-03 모델링부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 2101,
+   "tokens": {
+    "input": 639413,
+    "cache_read": 34208796,
+    "output": 159751
+   },
+   "tools": 149,
+   "turns": 115
+  },
+  {
+   "label": "RX-DC-03 검도·체결",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 550,
+   "tokens": {
+    "input": 234771,
+    "cache_read": 6022364,
+    "output": 37930
+   },
+   "tools": 44,
+   "turns": 37
+  },
+  {
+   "label": "RX-DC-03 해석",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 319,
+   "tokens": {
+    "input": 96847,
+    "cache_read": 2061320,
+    "output": 27800
+   },
+   "tools": 20,
+   "turns": 17
+  },
+  {
+   "label": "RX-DC-03 예외 판정",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 183,
+   "tokens": {
+    "input": 134310,
+    "cache_read": 1332434,
+    "output": 15021
+   },
+   "tools": 13,
+   "turns": 13
+  },
+  {
+   "label": "RX-DC-03 모델링부 수정1",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 1024,
+   "tokens": {
+    "input": 292185,
+    "cache_read": 17017007,
+    "output": 61841
+   },
+   "tools": 119,
+   "turns": 88
+  },
+  {
+   "label": "RX-DC-03 검도·체결 1",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 261,
+   "tokens": {
+    "input": 150753,
+    "cache_read": 3165897,
+    "output": 15997
+   },
+   "tools": 39,
+   "turns": 26
+  },
+  {
+   "label": "RX-DC-03 해석 1",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 304,
+   "tokens": {
+    "input": 85754,
+    "cache_read": 1943762,
+    "output": 25381
+   },
+   "tools": 22,
+   "turns": 17
+  },
+  {
+   "label": "RX-DC-03 모델링부 수정2",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 349,
+   "tokens": {
+    "input": 165673,
+    "cache_read": 5253562,
+    "output": 20973
+   },
+   "tools": 44,
+   "turns": 39
+  },
+  {
+   "label": "RX-DC-03 검도·체결 2",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 204,
+   "tokens": {
+    "input": 134442,
+    "cache_read": 2585818,
+    "output": 13491
+   },
+   "tools": 35,
+   "turns": 23
+  },
+  {
+   "label": "RX-DC-03 해석 2",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 240,
+   "tokens": {
+    "input": 76029,
+    "cache_read": 1183728,
+    "output": 21275
+   },
+   "tools": 11,
+   "turns": 11
+  },
+  {
+   "label": "RX-DC-03 문서·커밋",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 226,
+   "tokens": {
+    "input": 135838,
+    "cache_read": 1555009,
+    "output": 12737
+   },
+   "tools": 14,
+   "turns": 14
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 619,
+   "tokens": {
+    "input": 183960,
+    "cache_read": 5966009,
+    "output": 28423
+   },
+   "tools": 45,
+   "turns": 42
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 315,
+   "tokens": {
+    "input": 161934,
+    "cache_read": 3513863,
+    "output": 20521
+   },
+   "tools": 31,
+   "turns": 28
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 70,
+   "tokens": {
+    "input": 108011,
+    "cache_read": 509271,
+    "output": 6479
+   },
+   "tools": 5,
+   "turns": 6
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #5",
+   "status": "done",
+   "sec": 32,
+   "tokens": {
+    "input": 99292,
+    "cache_read": 386795,
+    "output": 1885
+   },
+   "tools": 5,
+   "turns": 5
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #5",
+   "status": "running",
+   "sec": 61,
+   "tokens": {
+    "input": 49138,
+    "cache_read": 146630,
+    "output": 8446
+   },
+   "tools": 5,
+   "turns": 2
+  }
+ ],
+ "fix_agents": [
+  "RX-DC-03 모델링부 수정1",
+  "RX-DC-03 모델링부 수정2"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPSWAP",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.29.3.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "STEPLITE",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.29.3.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-DC-03",
+    "size": "M",
+    "status": "완료",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.30.2.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "꺾음 날 아래 플랜지를 상자 join으로 만들어 이음 안쪽 R이 0이다(M-04). 실물 제작법이 모델에 없다. 블록 밖 돌출 3.6 mm는 최악 경우 SF 1.87이다(영구 변형 없음).",
+      "where": "P_RXDC03_RISER_BRKT_판금 플랜지 X −308.6~−296.6 · Y 83~97 · Z 250~253 ↔ 꺾음 날 X −308.6~−296.6 · Y 83~86, v2.30.2",
+      "evidence": "view.pick Z 251.5 층 최소 X −308.6(이음 확인). 부피 14,113.45, 면 22. 돌출 굽힘 M 2,308 N·mm / Z 21 mm³ → σ 110 MPa, SF 1.87",
+      "fix": "디테일링에서 처리한다. 꺾음 날을 늘린 플랜지에서 굽힘 R 3으로 접어 올리거나 모살 a2×12 양쪽(19.1 MPa)으로 만든다. 기존 RXDC03-D2에 합친다.",
+      "external": false
+     },
+     {
+      "kind": "디테일",
+      "what": "RXDC03-FEA-D4: 꺾음 날 밑 플랜지가 블록 밖으로 3.6 mm 나와 있다. -X 오조작 때 날 밑 누름 641 N이 전부 돌출 끝에 걸리는 최악 경우를 셈했다.",
+      "where": "P_RXDC03_RISER_BRKT_판금 X -308.6~-305 · Y 83~97 · Z 250~253",
+      "evidence": "M 2,307 N·mm, Z 21 mm³, σ 109.9 MPa, SF 1.87(오조작 기준 2). 고르게 나누면 16.5 MPa. 손계산 fea/results/mech_RX-DC-03_fix2_handcalc.json이고, FEA는 못 함(환경 없음, D-16).",
+      "fix": "블록 -X 끝을 -309까지 늘리거나, 날 밑 플랜지를 t3에서 t4로 바꾼다(SF 3.3). 디테일링에서 한다."
+     }
+    ],
+    "exception_requests": [
+     {
+      "rule": "E-05(번호 자리) ↔ 지시문 절차 2·WF-027",
+      "where": "3D_Modeling/FSAP_v2.29.3.sc",
+      "why": "새 컴포넌트 U4_CABLE_LOOP와 볼트 컴포넌트 8개가 생겼다. E-05로는 가운데 자리(v2.30.0)에 해당한다. 그러나 절차 2가 '다른 이름으로 저장하지 말고 v2.29.3에 그대로 작업하고 save'를 지시해 v2.29.3로 저장했다.",
+      "proposal": "문서 담당·PM이 v2.29.3 그대로 둘지, v2.30.0으로 다시 이름을 붙일지(config.json doc·CHANGELOG) 정한다"
+     }
+    ],
+    "decisions": [
+     {
+      "rule": "E-05(번호 자리·커밋된 버전 덮어쓰기 금지) ↔ 지시문 절차 2·WF-027",
+      "where": "3D_Modeling/FSAP_v2.29.3.sc (RX-DC-03 개념 W 저장본, 새 컴포넌트 U4_CABLE_LOOP + CB5-12 볼트 8)",
+      "decision": "기각",
+      "reason": "E-05 원문은 \"이번 저장에서 새 컴포넌트(유닛·부품 묶음)가 생기거나 없어졌으면 가운데 +1·마지막 0\"이다. U4_CABLE_LOOP가 새로 생겼으므로 번호는 v2.30.0이다. 같은 E-05는 \"이미 저장·커밋된 버전 파일은 덮어쓰지 않는다 … 예외는 앞 과제가 형상을 바꾸지 못하고 새 이름으로만 저장한 빈 버전(직전 번호와 형상이 같다)에 이어 그리는 경우뿐이다(WF-027)\"라고 한다. v2.29.3은 빈 버전이 아니다. RX-DC-02가 형상을 바꿔 저장했고, CHANGELOG 11행·BOM·FSAP_v2.29.3_review.md와 함께 커밋 3808c84로 올라갔다. 저장본을 대조하면 v2.29.2 document.json에는 RXDC02가 0회, RX-DC-02 원본 v2.29.3에는 21회 나온다. 직전 번호와 형상이 다르다. 절차 2의 전제(\"직전 과제가 빈 새 번호로만 저장\")는 틀렸다. STEPSWAP·STEPLITE 최종 보고 두 건 모두 \"이번 실행 저장 0, config.json 변경 없음\"이라 새 이름 저장이 없었다. rules/README '판정이 갈릴 때' 2에 따라 L1 절차 규칙이 앞서고, WF-019에 따라 원문보다 넓게 해석하지 않는다. E-05가 답을 정하고 구조·돈 문제도 아니므로 사용자 결정으로 올리지 않는다. 이름에 관한 예외라 형상 시험(WF-129)은 대상이 아니다. RX-DC-02 원본은 회귀용 임시 복사본(%TEMP%/mechdesign/reg28~30/base.sc, md5 d10f3e7a31809fa332804c07daee2098)에만 남아 있었다. 이것을 tools/out/mech_RX-DC-03/FSAP_v2.29.3_RXDC02_original.sc로 보존해 두었다. v2.29.3 .sc는 3808c84에 들어가지 않아 깃으로는 되살릴 수 없다.",
+      "instruction": "1) 모델링부(저장 권한 부서)가 한다. 앱에 열린 RX-DC-03 문서가 dirty false이고 현재 v2.29.3(md5 72d6bf20417a35e7eab08425b74d5974)과 같은 상태인지 확인한다. 그다음 문서 이름을 FSAP_v2.30.0으로 바꾸고 motion.play REST step 0을 한다. browser.visibility로 joints·sketches를 숨기고 save {path: 3D_Modeling/FSAP_v2.30.0.sc}로 저장한다(save {} 금지). 앱을 쓸 수 없으면 solidcraft-cli run <이름 바꾸기.json> --in FSAP_v2.29.3.sc --save FSAP_v2.30.0.sc로 한다. 저장한 뒤 document.json에 U4_CABLE_LOOP·RXDC03이 있고 이름이 FSAP_v2.30.0인지 확인한다. 형상은 그대로이므로 검사는 다시 하지 않는다. 2) 1이 확인된 뒤에만 tools/out/mech_RX-DC-03/FSAP_v2.29.3_RXDC02_original.sc를 3D_Modeling/FSAP_v2.29.3.sc로 복사해 되돌린다. 복사한 뒤 md5가 d10f3e7a31809fa332804c07daee2098인지 확인한다. 3) 문서 담당이 한다. tools/config.json doc을 ../3D_Modeling/FSAP_v2.30.0.sc로 바꾼다. CHANGELOG에 v2.30.0 줄을 새로 쓰고(근거 컴포넌트 U4_CABLE_LOOP, 가운데 +1) v2.29.3 줄은 그대로 둔다. 지금 FSAP_v2.29.3_made.csv(+4행)·_purchased.csv(+5행)의 내용으로 FSAP_v2.30.0_*.csv를 만든다. v2.29.3 BOM 두 파일은 git show 3808c84:<경로> 내용으로 되돌린다. 설계검토서는 FSAP_v2.30.0_review.md로 쓴다. 결정로그 '구동 RX-DC-03 모델링 — 개념 W' 머리, BOM 비고, mech_RX-DC-03_*.md에 적힌 저장본 이름은 'v2.30.0(처음 v2.29.3으로 잘못 저장, RX-DC-03-EX1)'으로 고친다. ledger·signatures에 v2.29.3 경로로 찍힌 RX-DC-03 항목이 있으면 v2.30.0으로 옮긴다. 4) 새 버전이므로 커밋·푸시한다(규칙 4). FSAP_v2.30.0.sc와 되돌린 FSAP_v2.29.3.sc를 함께 올리고, 커밋 메시지에 덮어쓰기와 되돌림을 적는다. 5) 워크플로우가 '빈 저장'을 열린 문서 이름으로 carry한 결함은 보고서 '## 워크플로우 메모'에 적어 회고가 engine-candidates.md에 올리게 한다. 엔진은 고치지 않는다. 판정 전문은 docs/decision-log.md 끝 '## 구동 RX-DC-03 예외 판정 (2026-11-24)'에 있다."
+     }
+    ],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": {
+     "from": "M",
+     "to": "L",
+     "why": "검도 0·1회차와 같다. 과제 전체(개념 W)에서 새 구매품 4종(연장 케이블·커넥터 임시 형상), 새 따름 조인트 J_U4_LOOP, U4·U5·U8·U1에 걸친 변경이 생겼다. 이번 수정 2회차 자체는 판금 플랜지 하나의 작은 변경이다."
+    }
+   }
+  ],
+  "regression": {
+   "ok": false,
+   "problems": [
+    {
+     "kind": "동작",
+     "what": "전체 회귀를 하지 못했다. 세션을 연 뒤 41초 만에 메모리 지킴이 멈췄다. 사용자 앱 solidcraft.exe가 40~41.6 GB를 잡고 있었고, 헤드리스 세션(7.75 GB)이 열리며 실메모리 여유가 0.41 GB, 커밋 여유가 2.1 GB로 줄었다. 410점 계획 중 3점만 봤다. 설계 결함은 찾지 못했다(본 3점은 새 겹침 0).",
+     "where": "전체 회귀 v2.30.2 (tools/out/mech_regrun/reg31)",
+     "evidence": "memguard.txt 19:43:54 phys 409 commit 2091 STOP; runs_b/regrun.json status trial_error (ConnectionResetError); 앱 메모리 tasklist 40,166,788 K",
+     "fix": "앱이 놀고 있을 때 사용자가 앱을 다시 켜 메모리를 푼 뒤 reg31 명세 spec31b·c·d를 다시 돌린다. 설계 수정은 필요 없다.",
+     "external": true
+    }
+   ],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "지난 못 본 범위: 연구 o20 CYCLE_W2 140~580, CYCLE_P1·P2·V2·L·S·G1·G2·V 전 단계, CYCLE_W1 500·540·580 — 129단계, 메모리 지킴 정지",
+    "바뀐 유닛 U4 상태 9개(0·30·22·24·25·31·34·2·7) — 메모리 지킴 정지",
+    "연구 10개 o0(40 간격) 217단계 — 메모리 지킴 정지",
+    "상태 나머지 52개(STATES) — 메모리 지킴 정지",
+    "FAST 체결·관 61상태 — 메모리 지킴 정지",
+    "v2.30.2에서 연구 o10·작은 연구 SEAM_U7·BIND_U7·MAINT_U7·MAINT_HEAD — 문서가 바뀌어 다시 봐야 함"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 410,
+    "estimate_s": 1070,
+    "actual_s": 35,
+    "chunk_times": [
+     {
+      "id": "CYCLE_W2@o20 0-14 (시험)",
+      "elapsed_s": 35,
+      "status": "panic(메모리 지킴 정지로 세션 닫힘, 3점 완료)"
+     },
+     {
+      "id": "STATES@u4 0-4",
+      "elapsed_s": 0,
+      "status": "no free worker, 내가 끊음"
+     }
+    ],
+    "killed_calls": 1,
+    "skipped_steps": 0,
+    "trial": "연구 시험 CYCLE_W2 o20: 3점 끝, 단계당 약 6.3 s(첫 점 14.2 s 데우기 포함). 4점째에 메모리 지킴 정지로 세션이 닫혀 panic. 자세 시험은 못 함",
+    "per_step_s": {
+     "study": 6.3,
+     "pose": 0
+    },
+    "pose_steps": 0,
+    "reduced": "시작 전에 줄인 것은 없다(B 132·C 9·D 269 계획). 메모리 지킴 정지 뒤 사용자 앱을 지키려고 다시 돌리지 않았다.",
+    "seen": [
+     "연구 CYCLE_W2 o20 20·60·100 (3점, 새 겹침 0)",
+     "REST 정적 자기검사·measure 3,758바디·joint.list(floating 0)"
+    ],
+    "unseen": [
+     "지난 못 본 범위: 연구 o20 CYCLE_W2 140~580, CYCLE_P1·P2·V2·L·S·G1·G2·V 전 단계, CYCLE_W1 500·540·580 — 129단계, 메모리 지킴 정지",
+     "바뀐 유닛 U4 상태 9개(0·30·22·24·25·31·34·2·7) — 메모리 지킴 정지",
+     "연구 10개 o0(40 간격) 217단계 — 메모리 지킴 정지",
+     "상태 나머지 52개(STATES) — 메모리 지킴 정지",
+     "FAST 체결·관 61상태 — 메모리 지킴 정지",
+     "v2.30.2에서 연구 o10·작은 연구 SEAM_U7·BIND_U7·MAINT_U7·MAINT_HEAD — 문서가 바뀌어 다시 봐야 함"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 6,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 모델링부",
+    "phase": "STEPSWAP · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 31,
+     "cad_calls": 3,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "STEPLITE 모델링부",
+    "phase": "STEPLITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 모델링부",
+    "phase": "RX-DC-03 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2073,
+     "cad_calls": 34,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 검도·체결",
+    "phase": "RX-DC-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 780,
+     "cad_calls": 14,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 해석",
+    "phase": "RX-DC-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 예외 판정",
+    "phase": "RX-DC-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 230,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 모델링부 수정1",
+    "phase": "RX-DC-03 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 5400,
+     "cad_calls": 32,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 검도·체결 1",
+    "phase": "RX-DC-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 13,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 해석 1",
+    "phase": "RX-DC-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 284,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 모델링부 수정2",
+    "phase": "RX-DC-03 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 14,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 검도·체결 2",
+    "phase": "RX-DC-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 7,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 해석 2",
+    "phase": "RX-DC-03 · 검증",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 240,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 40,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 문서·커밋",
+    "phase": "RX-DC-03 · 문서",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 260,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 1000,
+     "cad_calls": 6,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 243.8,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 6,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": [
+   {
+    "label": "RX-DC-03 수정1 버전 번호",
+    "what": "수정 회차 새 번호가 v2.29.4가 아님(3D_Modeling/FSAP_v2.30.1.sc, E-05)"
+   }
+  ]
+ },
+ "retro": {
+  "new_ids": [],
+  "repeat_ids": [
+   "WF-239",
+   "WF-238"
+  ],
+  "one_line": "새 후보 없음. 반복 2건: WF-239(빈 저장이 넘어가 커밋된 버전을 덮어씀)·WF-238(회귀 전 메모리 확인 없음). docs/reports/engine-candidates.md에 반영했고, 최종 보고서에 개선 후보 절을 붙여 커밋했다(3600437, 푸시 안 함). 엔진 파일은 고치지 않았다."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 22,
+  "시간 h": 2.0,
+  "출력 토큰": 514624,
+  "실패": 0
+ }
+}
