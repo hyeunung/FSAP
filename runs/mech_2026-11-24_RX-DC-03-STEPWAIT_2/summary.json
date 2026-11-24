@@ -1,0 +1,489 @@
+{
+ "run": "mech_2026-11-24_RX-DC-03-STEPWAIT",
+ "status": "완료",
+ "engine": "v4.0.0",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-24",
+ "journal": "wf_2959aeea-37d",
+ "totals": {
+  "agents": 12,
+  "agent_sec": 3122,
+  "input": 1629926,
+  "cache_read": 11284030,
+  "output": 103022,
+  "tools": 127,
+  "wall_sec": 3122
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 156,
+   "agents": 1,
+   "output": 12992
+  },
+  "▸ modeling-round #4": {
+   "sec": 2966,
+   "agents": 11,
+   "output": 90030
+  }
+ },
+ "agents": [
+  {
+   "label": "과제 정리부 4",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 156,
+   "tokens": {
+    "input": 161776,
+    "cache_read": 1702800,
+    "output": 12992
+   },
+   "tools": 17,
+   "turns": 14
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 81,
+   "tokens": {
+    "input": 82476,
+    "cache_read": 69209,
+    "output": 11115
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 77,
+   "tokens": {
+    "input": 108618,
+    "cache_read": 1017156,
+    "output": 4819
+   },
+   "tools": 18,
+   "turns": 11
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 24,
+   "tokens": {
+    "input": 96547,
+    "cache_read": 281110,
+    "output": 1706
+   },
+   "tools": 5,
+   "turns": 4
+  },
+  {
+   "label": "STEPSWAP 모델링부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 57,
+   "tokens": {
+    "input": 108844,
+    "cache_read": 829673,
+    "output": 3676
+   },
+   "tools": 13,
+   "turns": 9
+  },
+  {
+   "label": "STEPLITE 모델링부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 37,
+   "tokens": {
+    "input": 51011,
+    "cache_read": 357282,
+    "output": 3127
+   },
+   "tools": 4,
+   "turns": 4
+  },
+  {
+   "label": "RX-DC-03 모델링부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 352,
+   "tokens": {
+    "input": 110562,
+    "cache_read": 2086033,
+    "output": 29644
+   },
+   "tools": 19,
+   "turns": 16
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 2176,
+   "tokens": {
+    "input": 561127,
+    "cache_read": 3407027,
+    "output": 20206
+   },
+   "tools": 31,
+   "turns": 31
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 61,
+   "tokens": {
+    "input": 114997,
+    "cache_read": 622414,
+    "output": 5622
+   },
+   "tools": 7,
+   "turns": 7
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 46,
+   "tokens": {
+    "input": 104145,
+    "cache_read": 392309,
+    "output": 4640
+   },
+   "tools": 4,
+   "turns": 5
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round #4",
+   "status": "done",
+   "sec": 32,
+   "tokens": {
+    "input": 95854,
+    "cache_read": 465210,
+    "output": 2316
+   },
+   "tools": 6,
+   "turns": 6
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round #4",
+   "status": "running",
+   "sec": 23,
+   "tokens": {
+    "input": 33969,
+    "cache_read": 53807,
+    "output": 3159
+   },
+   "tools": 1,
+   "turns": 1
+  }
+ ],
+ "fix_agents": [],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPSWAP",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.29.3.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "STEPLITE",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "3D_Modeling/FSAP_v2.29.3.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RX-DC-03",
+    "size": "M",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [
+    "연구 o20(40 간격): CYCLE_W2·P1·P2·V2·L·S·G1·G2·V 전 단계와 CYCLE_W1 500·540·580 — 132단계, 어림 초과(시작 전)"
+   ],
+   "coverage": {
+    "runner": "regrun",
+    "limit_min": 30,
+    "steps_total": 330,
+    "estimate_s": 2566,
+    "actual_s": 1716,
+    "chunk_times": [
+     {
+      "id": "FAST@rest 0-4 (시험)",
+      "elapsed_s": 105,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@rest 5-15",
+      "elapsed_s": 220.1,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@rest 16-26",
+      "elapsed_s": 245.1,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@rest 27-36",
+      "elapsed_s": 210.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W1@o0 0-8 (시험)",
+      "elapsed_s": 60,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W2@o0 0-15",
+      "elapsed_s": 95.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P1@o0 0-12",
+      "elapsed_s": 75,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P2@o0 0-16",
+      "elapsed_s": 100.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V2@o0 0-16",
+      "elapsed_s": 100,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L@o0 0-18",
+      "elapsed_s": 110.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S@o0 0-12",
+      "elapsed_s": 75.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1@o0 0-13",
+      "elapsed_s": 80.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G2@o0 0-16",
+      "elapsed_s": 95.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V@o0 0-13",
+      "elapsed_s": 75,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W1@o20 0-11",
+      "elapsed_s": 70.1,
+      "status": "ok"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "자세 FAST 5점 105 s(21.0 s/점, 오류 0), 연구 CYCLE_W1 o0 9단계 60 s(6.67 s/단계, 오류 0)",
+    "per_step_s": {
+     "study": 6.67,
+     "pose": 21
+    },
+    "pose_steps": 37,
+    "reduced": "연구 o0·o20 293단계 어림 1,894 s > 남은 상한 1,019 s라 시작 전에 앞 152단계(o0 전부 + W1 o20 20~460)만 돌리고 뒤 132단계(o20)는 못 본 범위로 정함",
+    "seen": [
+     "FAST 체결·관 37상태 15~21·23·26~29·32·33·35~45·47~58(reg29 24상태와 합쳐 61 전부)",
+     "연구 10개 o0 40 간격 전부(CYCLE_W1 280~583, reg29 0~240과 합쳐 전부)",
+     "CYCLE_W1 o20 20~460(12점)",
+     "대기 measure 3,733바디(reg28과 해시 같음)·joint.list(floating 0)"
+    ],
+    "unseen": [
+     "연구 o20(40 간격): CYCLE_W2·P1·P2·V2·L·S·G1·G2·V 전 단계와 CYCLE_W1 500·540·580 — 132단계, 어림 초과(시작 전)"
+    ]
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 75,
+     "cad_calls": 3,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "mcp_restarts": [],
+     "open_s": 0,
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPSWAP 모델링부",
+    "phase": "STEPSWAP · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 150,
+     "cad_calls": 3,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "STEPLITE 모델링부",
+    "phase": "STEPLITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RX-DC-03 모델링부",
+    "phase": "RX-DC-03 · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 330,
+     "cad_calls": 2,
+     "file_opens": 0,
+     "channel": "MCP",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 2200,
+     "cad_calls": 205,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 239.4,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 60,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": []
+ },
+ "retro": {
+  "new_ids": [
+   "WF-244"
+  ],
+  "repeat_ids": [
+   "WF-204"
+  ],
+  "one_line": "회고 완료: WF-204 반복(해결·금지 과제 재배정으로 빈 저장), WF-244 추가(최종 보고 로그인 확인 누락 미점검). docs/reports/engine-candidates.md 갱신, 최종 보고서에 개선 후보 절 추가 후 커밋 28533ec(푸시 안 함). 엔진 파일은 고치지 않음."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 12,
+  "시간 h": 0.9,
+  "출력 토큰": 103022,
+  "실패": 0
+ }
+}
