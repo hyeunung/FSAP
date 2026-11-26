@@ -1,0 +1,408 @@
+{
+ "geometry": {
+  "verts": 58,
+  "solids": 1,
+  "closed_shells": 1,
+  "bbox": [
+   -318.6,
+   -268.0,
+   65.0,
+   97.0,
+   250.0,
+   487.0
+  ],
+  "z250_outline": [
+   [
+    -308.6,
+    83.0
+   ],
+   [
+    -308.6,
+    97.0
+   ],
+   [
+    -288.0,
+    74.5
+   ],
+   [
+    -288.0,
+    83.0
+   ],
+   [
+    -273.0,
+    74.5
+   ],
+   [
+    -273.0,
+    97.0
+   ]
+  ],
+  "holes_base(x,y,r)": [
+   [
+    -288.0,
+    90.0,
+    2.75
+   ],
+   [
+    -280.5,
+    78.25,
+    2.25
+   ],
+   [
+    -278.0,
+    90.0,
+    2.75
+   ]
+  ],
+  "web_rect": [
+   -288.0,
+   -273.0,
+   82.0,
+   85.0
+  ],
+  "fold1_rect": [
+   -288.0,
+   -285.0,
+   74.5,
+   82.0
+  ],
+  "fold2_rect": [
+   -276.0,
+   -273.0,
+   74.5,
+   82.0
+  ],
+  "flange_bottom_at_z250": true,
+  "fold_outer_bottom_edges_gone_at_z253": true,
+  "fold_inner_bottom_at_z253": true,
+  "one_body_root": true,
+  "block": {
+   "solids": 1,
+   "m4_tap_drill_r": 1.65,
+   "m4_tap_z": [
+    240.0,
+    250.0
+   ],
+   "T2_taps_from_below(x,y)": [
+    [
+     -296.0,
+     75.0
+    ],
+    [
+     -286.0,
+     75.0
+    ]
+   ],
+   "drill_wall_to_T2_2": 2.64,
+   "thread_wall_to_T2_2": 1.89
+  }
+ },
+ "section_channel_root": {
+  "A": 90.0,
+  "cx": -280.5,
+  "cy": 80.88,
+  "Ix": 864.84,
+  "Iy": 2497.5,
+  "Ixy": 0.0,
+  "J": 270.0,
+  "D": 2159947.27,
+  "corners": [
+   [
+    -288.0,
+    74.5
+   ],
+   [
+    -288.0,
+    82.0
+   ],
+   [
+    -288.0,
+    85.0
+   ],
+   [
+    -285.0,
+    74.5
+   ],
+   [
+    -285.0,
+    82.0
+   ],
+   [
+    -276.0,
+    74.5
+   ],
+   [
+    -276.0,
+    82.0
+   ],
+   [
+    -273.0,
+    74.5
+   ],
+   [
+    -273.0,
+    82.0
+   ],
+   [
+    -273.0,
+    85.0
+   ]
+  ]
+ },
+ "cases": [
+  {
+   "model": "ㄷ 단면 뿌리 Z 253",
+   "load": "운전 5 N x 2줄",
+   "dir": "±Y",
+   "sigma": 17.2,
+   "at_XY": [
+    -273.0,
+    74.5
+   ],
+   "tau": 2.2,
+   "vm": 17.7,
+   "SF": 11.61,
+   "crit": 3.0,
+   "judge": "합격",
+   "tip_defl_mm": 0.29,
+   "tie_defl_by_twist_mm": 0.05
+  },
+  {
+   "model": "ㄷ 단면 뿌리 Z 253",
+   "load": "운전 5 N x 2줄",
+   "dir": "±X",
+   "sigma": 7.0,
+   "at_XY": [
+    -273.0,
+    85.0
+   ],
+   "tau": 1.5,
+   "vm": 7.5,
+   "SF": 27.44,
+   "crit": 3.0,
+   "judge": "합격",
+   "tip_defl_mm": 0.09,
+   "tie_defl_by_twist_mm": 0.02
+  },
+  {
+   "model": "ㄷ 단면 뿌리 Z 253",
+   "load": "오조작 50 N",
+   "dir": "±Y",
+   "sigma": 86.2,
+   "at_XY": [
+    -273.0,
+    74.5
+   ],
+   "tau": 10.8,
+   "vm": 88.3,
+   "SF": 2.32,
+   "crit": 2.0,
+   "judge": "합격",
+   "tip_defl_mm": 1.46,
+   "tie_defl_by_twist_mm": 0.26
+  },
+  {
+   "model": "ㄷ 단면 뿌리 Z 253",
+   "load": "오조작 50 N",
+   "dir": "±X",
+   "sigma": 35.1,
+   "at_XY": [
+    -273.0,
+    85.0
+   ],
+   "tau": 7.3,
+   "vm": 37.4,
+   "SF": 5.49,
+   "crit": 2.0,
+   "judge": "합격",
+   "tip_defl_mm": 0.45,
+   "tie_defl_by_twist_mm": 0.12
+  },
+  {
+   "model": "Z 445 웨브만 15x3(그대로)",
+   "load": "운전 5 N x 2줄",
+   "dir": "±Y",
+   "sigma": 18.7,
+   "vm": 18.7,
+   "SF": 10.98,
+   "crit": 3.0,
+   "judge": "합격"
+  },
+  {
+   "model": "Z 445 웨브만 15x3(그대로)",
+   "load": "오조작 50 N",
+   "dir": "±Y",
+   "sigma": 93.3,
+   "vm": 93.3,
+   "SF": 2.2,
+   "crit": 2.0,
+   "judge": "합격"
+  }
+ ],
+ "shear_center": {
+  "b": 9.0,
+  "h": 12.0,
+  "e": 3.68,
+  "XY": [
+   -280.5,
+   87.18
+  ],
+  "note": "2회차 고침안 계산은 b 6으로 e 2.25 — 바로잡음(τ 차이 1 MPa 안)"
+ },
+ "worst_direction_50N": {
+  "angle_from_Y_deg": 158,
+  "sigma": 93.1,
+  "SF": 2.2
+ },
+ "root_support": {
+  "M4_hole_XY": [
+   -280.5,
+   78.25
+  ],
+  "M4_head_X": [
+   -284.0,
+   -277.0
+  ],
+  "M4_head_Y": [
+   74.75,
+   81.75
+  ],
+  "pocket_X": [
+   -285.0,
+   -276.0
+  ],
+  "pocket_Y": [
+   74.5,
+   82.0
+  ],
+  "head_gap_to_folds_mm": [
+   1.0,
+   1.0
+  ],
+  "head_gap_to_web_face_mm": 0.25,
+  "M5_holes_XY": [
+   [
+    -288.0,
+    90.0
+   ],
+   [
+    -278.0,
+    90.0
+   ]
+  ],
+  "M5_head_front_edge_Y": 85.75,
+  "web_back_face_Y": 85.0,
+  "fold_tension_each_N(+Y,50N)": 825,
+  "fold_tension_at_Y": 76.62,
+  "compression_resultant_N": 1649,
+  "compression_at_Y": 83.72
+ },
+ "plusY_50N": {
+  "front_bolt_T_N": {
+   "받침점 웨브 가운데 Y 83.5(보수)": 2243,
+   "받침점 단면 압축 합력 Y 83.72": 2140,
+   "밑판 강체·받침점 뒤 끝 Y 97(가장 작음)": 491
+  },
+  "rear_bolt_each_N_if_rigid": 183,
+  "flange_shear": {
+   "area_mm2_per_side": 22.5,
+   "tau_MPa(T/2 보수)": 49.8,
+   "SF(T/2 보수)": 2.37,
+   "tau_MPa(날 당김)": 36.7,
+   "SF(날 당김)": 3.23
+  },
+  "flange_bending_head_to_fold": {
+   "gap_head_rim_to_fold_face_mm": 1.4,
+   "arm_to_fold_midplane_mm": 2.9,
+   "span_over_thickness": 0.97,
+   "Z_mm3": 11.25,
+   "plastic_moment_Nmm": 3459,
+   "cases": [
+    {
+     "model": "날 발 회전 자유(가장 불리)",
+     "M_root_Nmm": 2392,
+     "sigma_MPa": 212.6,
+     "SF_first_yield": 0.96,
+     "SF_plastic_hinge": 1.45
+    },
+    {
+     "model": "날 발 회전 일부 구속 k 0.7e6",
+     "M_root_Nmm": 1933,
+     "sigma_MPa": 171.8,
+     "SF_first_yield": 1.19,
+     "SF_plastic_hinge": 1.79
+    },
+    {
+     "model": "날 발 회전 일부 구속 k 1.9e6",
+     "M_root_Nmm": 1640,
+     "sigma_MPa": 145.8,
+     "SF_first_yield": 1.41,
+     "SF_plastic_hinge": 2.11
+    },
+    {
+     "model": "날 발 회전 막힘(안내 끝)",
+     "M_root_Nmm": 1196,
+     "sigma_MPa": 106.3,
+     "SF_first_yield": 1.93,
+     "SF_plastic_hinge": 2.89
+    },
+    {
+     "model": "날 발 이음이 굳고 팔을 날 안쪽 면까지로(가장 후함)",
+     "M_root_Nmm": 577,
+     "sigma_MPa": 51.3,
+     "SF_first_yield": 3.99,
+     "SF_plastic_hinge": 5.99
+    }
+   ],
+   "run_10N_first_yield_SF": [
+    4.8,
+    5.95,
+    7.05,
+    9.65,
+    19.95
+   ],
+   "note": "길이/두께 약 1의 짧은 판 — 보 식은 어림. 첫 항복 SF가 기준 1.2를 사이에 두고 갈린다(0.9~1.8). 고체 FEA로만 가를 수 있다(D-16)"
+  },
+  "head_bearing": {
+   "area_mm2": 22.6,
+   "p_MPa": 99.3,
+   "SF": 2.06
+  }
+ },
+ "minusY_50N": {
+  "web_tension_N": 1649,
+  "strip_span_mm": 4.0,
+  "a_front": 1.75,
+  "a_rear": 2.25,
+  "strip_M_simply_supported_Nmm": 1624,
+  "strip_sigma_MPa(폭 15)": 72.2,
+  "strip_SF": 2.84,
+  "strip_shear_MPa": 20.6,
+  "front_bolt_share_N(단순보)": 928,
+  "rear_bolts_total_N(받침점 플랜지 앞 끝)": 765,
+  "fold_foot_bearing_MPa": 36.7
+ },
+ "X_50N": {
+  "half_section_tension_N": 1028,
+  "M4_only_N(지렛대 6.0)": 1975,
+  "rigid_base_share_N[M4, M5(-288), M5(-278)]": [
+   308,
+   694,
+   180
+  ]
+ },
+ "M4_design_tension_N": 2243,
+ "tap": {
+  "drill_depth_mm": 10.0,
+  "bolt_tip_Z": 241.0,
+  "engagement_nominal_mm": 9.0,
+  "engagement_over_d": 2.25,
+  "tip_to_drill_bottom_mm": 1.0,
+  "note": "밑구멍 깊이 10에 볼트 끝이 바닥 위 1 — 탭 불완전 나사(2~3산 = 1.4~2.1)를 빼면 유효 물림 약 7. 유효 물림 9를 쓰려면 밑구멍 12 이상(선반 t14) 또는 관통"
+ },
+ "mass": {
+  "volume_mm3_model": 23710.44,
+  "density": 7.93,
+  "mass_g": 188.0
+ }
+}
