@@ -1,0 +1,944 @@
+{
+ "run": "mech_2026-11-28_RGSEE",
+ "status": "완료",
+ "engine": "v4.1.2",
+ "machine": "FSAP MAT-RS-001",
+ "cad": "solidcraft",
+ "date": "2026-11-28",
+ "journal": "wf_495da566-4f9",
+ "totals": {
+  "agents": 20,
+  "agent_sec": 16993,
+  "input": 6367011,
+  "cache_read": 103688003,
+  "output": 723033,
+  "tools": 763,
+  "wall_sec": 16994
+ },
+ "phases": {
+  "과제 정리": {
+   "sec": 302,
+   "agents": 3,
+   "output": 38202
+  },
+  "▸ modeling-round": {
+   "sec": 16691,
+   "agents": 17,
+   "output": 684831
+  }
+ },
+ "agents": [
+  {
+   "label": "규칙 파일 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 84,
+   "tokens": {
+    "input": 84213,
+    "cache_read": 69729,
+    "output": 12296
+   },
+   "tools": 2,
+   "turns": 2
+  },
+  {
+   "label": "구동 개념 확인",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 59,
+   "tokens": {
+    "input": 93749,
+    "cache_read": 168066,
+    "output": 8211
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "과제 정리부 1",
+   "phase": "과제 정리",
+   "status": "done",
+   "sec": 159,
+   "tokens": {
+    "input": 184412,
+    "cache_read": 1836120,
+    "output": 17695
+   },
+   "tools": 40,
+   "turns": 14
+  },
+  {
+   "label": "규칙 파일 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 87,
+   "tokens": {
+    "input": 366,
+    "cache_read": 238147,
+    "output": 12632
+   },
+   "tools": 3,
+   "turns": 3
+  },
+  {
+   "label": "준비 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 277,
+   "tokens": {
+    "input": 138704,
+    "cache_read": 944417,
+    "output": 8075
+   },
+   "tools": 28,
+   "turns": 9
+  },
+  {
+   "label": "STEP 대기 재시도",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 49,
+   "tokens": {
+    "input": 109645,
+    "cache_read": 514107,
+    "output": 5422
+   },
+   "tools": 8,
+   "turns": 6
+  },
+  {
+   "label": "STEPLITE 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 77,
+   "tokens": {
+    "input": 129764,
+    "cache_read": 580788,
+    "output": 8721
+   },
+   "tools": 18,
+   "turns": 6
+  },
+  {
+   "label": "RGSEE 측정부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 3923,
+   "tokens": {
+    "input": 2221401,
+    "cache_read": 15638214,
+    "output": 92456
+   },
+   "tools": 106,
+   "turns": 68
+  },
+  {
+   "label": "RGSEE 기구설계부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2635,
+   "tokens": {
+    "input": 694703,
+    "cache_read": 21076715,
+    "output": 114275
+   },
+   "tools": 110,
+   "turns": 78
+  },
+  {
+   "label": "RGSEE 완료 판정 확인",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 282,
+   "tokens": {
+    "input": 174159,
+    "cache_read": 2123916,
+    "output": 28313
+   },
+   "tools": 24,
+   "turns": 16
+  },
+  {
+   "label": "RGSEE 기구설계부 수정1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 808,
+   "tokens": {
+    "input": 285835,
+    "cache_read": 8546510,
+    "output": 82128
+   },
+   "tools": 69,
+   "turns": 42
+  },
+  {
+   "label": "RGSEE 완료 판정 확인 1",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 155,
+   "tokens": {
+    "input": 166408,
+    "cache_read": 1782125,
+    "output": 15601
+   },
+   "tools": 20,
+   "turns": 14
+  },
+  {
+   "label": "RGSEE 모델링부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 2668,
+   "tokens": {
+    "input": 771720,
+    "cache_read": 10463844,
+    "output": 60935
+   },
+   "tools": 68,
+   "turns": 50
+  },
+  {
+   "label": "RGSEE 검도·체결",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 617,
+   "tokens": {
+    "input": 184573,
+    "cache_read": 3337382,
+    "output": 27535
+   },
+   "tools": 39,
+   "turns": 24
+  },
+  {
+   "label": "RGSEE 문서·커밋",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 138,
+   "tokens": {
+    "input": 133192,
+    "cache_read": 1161442,
+    "output": 13284
+   },
+   "tools": 14,
+   "turns": 11
+  },
+  {
+   "label": "전체 회귀",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 4007,
+   "tokens": {
+    "input": 419154,
+    "cache_read": 27766406,
+    "output": 137999
+   },
+   "tools": 118,
+   "turns": 96
+  },
+  {
+   "label": "구동 후보 점검부",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 648,
+   "tokens": {
+    "input": 244827,
+    "cache_read": 5580226,
+    "output": 41199
+   },
+   "tools": 60,
+   "turns": 31
+  },
+  {
+   "label": "최종 보고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 150,
+   "tokens": {
+    "input": 149417,
+    "cache_read": 1016066,
+    "output": 16572
+   },
+   "tools": 17,
+   "turns": 9
+  },
+  {
+   "label": "워크플로우 회고",
+   "phase": "▸ modeling-round",
+   "status": "done",
+   "sec": 117,
+   "tokens": {
+    "input": 129896,
+    "cache_read": 694596,
+    "output": 12051
+   },
+   "tools": 11,
+   "turns": 7
+  },
+  {
+   "label": "실행 기록부",
+   "phase": "▸ modeling-round",
+   "status": "running",
+   "sec": 53,
+   "tokens": {
+    "input": 50873,
+    "cache_read": 149187,
+    "output": 7633
+   },
+   "tools": 5,
+   "turns": 2
+  }
+ ],
+ "fix_agents": [
+  "RGSEE 기구설계부 수정1"
+ ],
+ "failed": [],
+ "states": null,
+ "result": {
+  "mode": "mechanism",
+  "results": [
+   {
+    "id": "STEPLITE",
+    "status": "모델링 안 됨",
+    "chosen": "지정 수정안",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.30.5.sc",
+    "empty_save": true,
+    "open_problems": [],
+    "detail_items": [],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   },
+   {
+    "id": "RGSEE",
+    "size": "S",
+    "status": "완료",
+    "chosen": "RGSEE-P1",
+    "doc": "C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/3D_Modeling/FSAP_v2.30.6.sc",
+    "empty_save": false,
+    "open_problems": [],
+    "detail_items": [
+     {
+      "kind": "디테일",
+      "what": "SolidCraft 0.50.0에서 새로 생긴 타임라인 경고 1개(오류는 0)",
+      "where": "피처 RX19_SW_SLOT(100803), FSAP_v2.30.6.sc",
+      "evidence": "경고 254 → 255, 오류 0. 바디 형상은 저장 때 측정과 3,755바디 차이 0(다른 바디는 관 1 · 어댑터 3뿐)",
+      "fix": "디테일링에서 경고 내용을 읽고 슬롯 스케치 참조를 다시 건다. 형상 변경 없음",
+      "external": false
+     }
+    ],
+    "exception_requests": [],
+    "decisions": [],
+    "step_placeholders": [],
+    "external_blocks": [],
+    "regrade": null
+   }
+  ],
+  "regression": {
+   "mode": "full",
+   "ok": true,
+   "problems": [],
+   "fixed": false,
+   "unverified": false,
+   "unseen": [],
+   "coverage": {
+    "runner": "regrun",
+    "mode": "full",
+    "limit_min": 30,
+    "steps_total": 799,
+    "estimate_s": 1382.7,
+    "actual_s": 1806.5,
+    "chunk_times": [
+     {
+      "id": "CYCLE_W2@o20 0-14(시험)",
+      "elapsed_s": 75,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@u4 0-4(시험)",
+      "elapsed_s": 85,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P1@o20 0-11",
+      "elapsed_s": 70.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V2@o20 0-15",
+      "elapsed_s": 85.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P2@o20 0-15",
+      "elapsed_s": 90.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L@o20 0-17",
+      "elapsed_s": 105.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S@o20 0-10",
+      "elapsed_s": 55.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1@o20 0-12",
+      "elapsed_s": 70.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V@o20 0-11",
+      "elapsed_s": 65.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G2@o20 0-15",
+      "elapsed_s": 85.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W1@o20 0-14",
+      "elapsed_s": 75.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@u4 5-8",
+      "elapsed_s": 70.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W1@o0 0-15",
+      "elapsed_s": 80.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W2@o0 0-15",
+      "elapsed_s": 85.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P1@o0 0-12",
+      "elapsed_s": 70.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P2@o0 0-16",
+      "elapsed_s": 95.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S@o0 0-12",
+      "elapsed_s": 65,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V2@o0 0-16",
+      "elapsed_s": 90.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L@o0 0-18",
+      "elapsed_s": 110.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1@o0 0-13",
+      "elapsed_s": 75.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V@o0 0-13",
+      "elapsed_s": 70,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G2@o0 0-16",
+      "elapsed_s": 90.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@rest 0-13",
+      "elapsed_s": 220.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@rest 42-51",
+      "elapsed_s": 190.1,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@rest 14-27",
+      "elapsed_s": 240.2,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@rest 28-41",
+      "elapsed_s": 270.2,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@all 0-13",
+      "elapsed_s": 280.2,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@all 14-27",
+      "elapsed_s": 300.2,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@all 28-41",
+      "elapsed_s": 300.2,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@all 56-60",
+      "elapsed_s": 90.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W1@o10 0-14",
+      "elapsed_s": 80.1,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@all 42-55",
+      "elapsed_s": 320.2,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W2@o10 0-14",
+      "elapsed_s": 80.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P1@o10 0-11",
+      "elapsed_s": 65.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P2@o10 0-15",
+      "elapsed_s": 90.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V2@o10 0-15",
+      "elapsed_s": 85.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S@o10 0-11",
+      "elapsed_s": 60,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L@o10 0-17",
+      "elapsed_s": 105.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V@o10 0-11",
+      "elapsed_s": 60,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1@o10 0-12",
+      "elapsed_s": 70.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G2@o10 0-15",
+      "elapsed_s": 85.1,
+      "status": "ok"
+     },
+     {
+      "id": "BIND_U7@all 0-4",
+      "elapsed_s": 25,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_HEAD@all 0-1",
+      "elapsed_s": 10,
+      "status": "ok"
+     },
+     {
+      "id": "SEAM_U7@all 0-19",
+      "elapsed_s": 100.1,
+      "status": "ok"
+     },
+     {
+      "id": "MAINT_U7@all 0-14",
+      "elapsed_s": 75.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W1@o30 0-13",
+      "elapsed_s": 75.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_W2@o30 0-13",
+      "elapsed_s": 75.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P1@o30 0-10",
+      "elapsed_s": 60.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_P2@o30 0-14",
+      "elapsed_s": 85.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V2@o30 0-15",
+      "elapsed_s": 85.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_S@o30 0-10",
+      "elapsed_s": 55.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_L@o30 0-17",
+      "elapsed_s": 100.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G1@o30 0-12",
+      "elapsed_s": 70.1,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_V@o30 0-11",
+      "elapsed_s": 60,
+      "status": "ok"
+     },
+     {
+      "id": "CYCLE_G2@o30 0-15",
+      "elapsed_s": 80,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@jend 0-4(시험)",
+      "elapsed_s": 30,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@jend 5-11",
+      "elapsed_s": 45,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@jend 0-11",
+      "elapsed_s": 120,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@lim 0-4(시험)",
+      "elapsed_s": 30,
+      "status": "ok"
+     },
+     {
+      "id": "STATES@lim 5-12",
+      "elapsed_s": 50,
+      "status": "ok"
+     },
+     {
+      "id": "FAST@lim 0-12",
+      "elapsed_s": 120,
+      "status": "cut"
+     },
+     {
+      "id": "FAST@lim 12-12(끊긴 1점 다시)",
+      "elapsed_s": 10,
+      "status": "ok"
+     }
+    ],
+    "killed_calls": 0,
+    "skipped_steps": 0,
+    "trial": "연구 15단계 75.0 s(단계당 5.00 s) · 자세 5점 85.0 s(점당 17.0 s), 오류 0. 보충 자세 시험은 점당 6.0 s. 주의: regrun 네 번의 합 1,806.5 s로 상한 1,800 s를 6.5 s 넘겼다 — 전 구간 정의 749점은 1,496.3 s, 넘긴 것은 상한에서 끊긴 보충 1점(FAST, J_U4_X 80 · J_U5_X 1380 · PRESS −8.171)을 따로 다시 낸 10.0 s다(E-17 ⑤와 다르게 한 곳, 보고서 5절)",
+    "per_step_s": {
+     "study": 5.0022,
+     "pose": 17.0036
+    },
+    "pose_steps": 172,
+    "reduced": "",
+    "reused": [],
+    "seen": [
+     "연구 10개(CYCLE_W1 · W2 · P1 · P2 · V2 · L · S · G1 · G2 · V) 10단계 간격 o0 · o10 · o20 · o30 585점(끝 단계 포함) — 연구 한 단계 = 요구서 6-4 간격이라 표본 간격은 이송 250 mm · 회전 10°",
+     "작은 연구 SEAM_U7 0~19 · BIND_U7 0~4 · MAINT_U7 0~14 · MAINT_HEAD 0~1 전 단계 42점",
+     "요구서 6-4 상태 목록 61개 전부(STATES, 비체결 바디 + 작업 대상 모형)",
+     "FAST 체결 · 관 61상태 전부",
+     "보충 A: 상태 · 연구 표본이 닿지 않은 조인트 행정 끝 12자세 × 비체결 · 체결(J_U4_PRESS −8.171 · −6.798, J_U5_X 1380, J_U5_FLOAT 20, J_U6_PRESS −5.0, J_U3_NEEDLE −36) 24점",
+     "보충 B: C-46 연동 한계(d₂ = d₁ + 240) 13자세 × 비체결 · 체결 26점",
+     "정적: REST 자기검사, REST measure 3,759바디(v2.30.5 저장 때와 대조), joint.list(floating 0), component.list, document.inspect(오류 0 · 경고 255 · 숨긴 바디 184)"
+    ],
+    "unseen": []
+   }
+  },
+  "timings": [
+   {
+    "label": "준비 점검부",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 270,
+     "cad_calls": 5,
+     "file_opens": 1,
+     "channel": "MCP+CLI",
+     "browser_calls": 0,
+     "open_s": 205,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEP 대기 재시도",
+    "phase": "준비",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 90,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 1,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "STEPLITE 모델링부",
+    "phase": "STEPLITE · 모델링",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 300,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 90,
+    "over": false
+   },
+   {
+    "label": "RGSEE 측정부",
+    "phase": "RGSEE · 측정",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 3950,
+     "cad_calls": 615,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 773.9,
+     "mcp_restarts": [],
+     "over_reason": "예상 10분(등급 S)의 약 6.6배. (1) 실행 도중 SolidCraft가 0.50.0으로 자동 업데이트돼 저장본 열기가 168 s → 773 s(이력 4,537피처 전부 다시 계산, 세션 2개 준비 792 s). (2) 과제 자체가 못 본 범위 597점을 지금 모델에서 보는 일이라 검사만 2,591 s(연구 단계 5.2~5.7 s, 상태·FAST 18~21 s, 세션 2개 병렬). 앱은 업데이트로 꺼졌고 내가 다시 켜지 않았다(MCP 호출 0, 앱 재시작 0)."
+    },
+    "expect_min": 10,
+    "over": true
+   },
+   {
+    "label": "RGSEE 기구설계부",
+    "phase": "RGSEE · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 2650,
+     "cad_calls": 31,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 700.2,
+     "mcp_restarts": [],
+     "over_reason": "예상 15분(등급 S)의 2배를 넘음(약 44분). 치수 설계가 아니라 앱 버전(0.50.0) 복구라 원인 찾기와 실제 파일 시험이 일이었다: 저장본 열기 700 s(0.50.0이 앞 버전 캐시를 못 써 4,537피처를 다시 계산), 끝에서 고치는 시험 194 s, 편집 152명령 시험 435 s, 체크포인트 원복 229 s. 열리는 동안 빈 설계 실험 12번과 편집 목록 생성기를 했다"
+    },
+    "expect_min": 15,
+    "over": true
+   },
+   {
+    "label": "RGSEE 완료 판정 확인",
+    "phase": "RGSEE · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 330,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RGSEE 기구설계부 수정1",
+    "phase": "RGSEE · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 800,
+     "cad_calls": 1,
+     "file_opens": 0,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RGSEE 완료 판정 확인 1",
+    "phase": "RGSEE · 구상",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 260,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 0,
+     "mcp_restarts": []
+    },
+    "expect_min": 0,
+    "over": false
+   },
+   {
+    "label": "RGSEE 모델링부",
+    "phase": "RGSEE · 모델링",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 2700,
+     "cad_calls": 112,
+     "file_opens": 2,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 652.2,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 30,
+    "over": false
+   },
+   {
+    "label": "RGSEE 검도·체결",
+    "phase": "RGSEE · 검증",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 610,
+     "cad_calls": 9,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "over_reason": "",
+     "open_s": 183.9,
+     "mcp_restarts": []
+    },
+    "expect_min": 15,
+    "over": false
+   },
+   {
+    "label": "RGSEE 문서·커밋",
+    "phase": "RGSEE · 문서",
+    "size": "S",
+    "timing": {
+     "elapsed_s": 420,
+     "cad_calls": 0,
+     "file_opens": 0,
+     "channel": "없음",
+     "browser_calls": 0,
+     "open_s": 0,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 10,
+    "over": false
+   },
+   {
+    "label": "전체 회귀",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 3960,
+     "cad_calls": 835,
+     "file_opens": 11,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 190.6,
+     "mcp_restarts": [],
+     "over_reason": "예상 30분(등급 S)의 2배를 넘김(약 66분). regrun 자체가 30.1분(상한 30분짜리 전 구간 749점 + 보충 50점)이고, 세션 열기 · 데우기가 네 번 약 19분 들었다: 메모리 여유를 보고 4번째 세션을 따로 더했고(실메모리 여유 41.9 → 최저 2.0 GB), 본 실행 뒤 조인트 행정 끝과 C-46 한계 자세가 전 구간 정의에 없는 것을 찾아 세션을 두 번 더 열었고, 상한에서 끊긴 보충 1점 때문에 한 번 더 열었다"
+    },
+    "expect_min": 60,
+    "over": false
+   },
+   {
+    "label": "구동 후보 점검부",
+    "phase": "전체 회귀",
+    "size": "M",
+    "timing": {
+     "elapsed_s": 660,
+     "cad_calls": 5,
+     "file_opens": 1,
+     "channel": "CLI",
+     "browser_calls": 0,
+     "open_s": 190,
+     "mcp_restarts": [],
+     "over_reason": ""
+    },
+    "expect_min": 0,
+    "over": false
+   }
+  ],
+  "violations": []
+ },
+ "retro": {
+  "new_ids": [
+   "WF-252",
+   "WF-253",
+   "WF-254",
+   "WF-255",
+   "WF-256",
+   "WF-257",
+   "WF-258",
+   "WF-259",
+   "WF-260",
+   "WF-261"
+  ],
+  "repeat_ids": [
+   "WF-230",
+   "WF-231",
+   "WF-239",
+   "WF-204",
+   "WF-238",
+   "WF-243",
+   "WF-197"
+  ],
+  "one_line": "회고 mech_2026-11-28_RGSEE(엔진 v4.1.2): 기존 7건 반복 수 올림(WF-230 실행 도중 앱 버전 바뀜, WF-231 MCP 허용 폴더, WF-239 빈 버전 오판, WF-204 빼라고 한 과제 재등장, WF-238 메모리 기준, WF-243 서명 bbox 묵음, WF-197 회귀 시험 어림), 새 10건 WF-252~261 추가(전 구간 범위 정의 한곳·제어 제약 칸, 표본 비율 표기, 간격 검사 '쟀는가' 조건, 앱 버전 뒤 서명·원장 허용값, 측정 뒤 과제 재등급, 최상위 바디 점검, 못 본 범위 점 목록·원장, 조인트 중간값 관 검사, 완료 판정 항목의 판정 부서, 선분 거리 손계산). 고친 엔진 파일: 없음(엔진은 읽기만). 쓴 파일: C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/docs/reports/engine-candidates.md(커밋하지 않음 — 지시대로 최종 보고서만 커밋, 지난 회고와 같음), C:/Users/hyeun/OneDrive/Documents/workspace/FSAP/docs/reports/mechanism/final_mech_2026-11-28_RGSEE.md('## 워크플로우 개선 후보' 절 추가, 커밋 ccd0624 푸시됨, modeling/mat-rs-001). 커밋 공동 작성자 줄은 세션 지침대로 Claude Fable 5.2로 적음(지시문의 Opus 5.5와 다름). git 작성자 미설정이라 프로젝트 규칙 4의 작성자로 커밋."
+ },
+ "final_report": true,
+ "skipped": [],
+ "_counts": {
+  "부서": 20,
+  "시간 h": 4.7,
+  "출력 토큰": 723033,
+  "실패": 0
+ }
+}
