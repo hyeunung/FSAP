@@ -1,0 +1,1671 @@
+{
+ "method": "손계산(FEA 못 함 — 환경 없음, D-16). 모델 표 fea/models.json 그대로",
+ "assume": {
+  "조임 토크 N·m": 4.5,
+  "미끄럼 예압 N": 4000.0,
+  "mu": 0.15,
+  "순단면 구멍 지름": 5.0,
+  "T너트 HNTT8-5 모재": "SS400 대용(RX-14 선례)",
+  "PGX62 축 모재": "S45C 대용(카탈로그 재질 미확인 — SS400이어도 조임 암나사 전단 1.64)"
+ },
+ "FLAP_BAR_L1·L2·L3": {
+  "model": "models.json 그대로: XN↔XP 662 단순지지, 몫 넓이 350×662 자중 ×3 g / 1 g + 손 100 N",
+  "section": {
+   "gross": {
+    "I": 22500.0,
+    "Z": 1500.0
+   },
+   "tap10(전)": {
+    "A": 250.0,
+    "yc": 13.0,
+    "I": 16083.3,
+    "Z_top": 946.1,
+    "Z_bot": 1237.2
+   },
+   "tap15(후)": {
+    "A": 225.0,
+    "yc": 12.5,
+    "I": 15468.8,
+    "Z_top": 883.9,
+    "Z_bot": 1237.5
+   }
+  },
+  "gross_midspan(지난 값)": {
+   "run": 22.434,
+   "mis": 13.998
+  },
+  "net_at_tap": {
+   "전(깊이 10)": {
+    "Z_min": 946.1,
+    "Ktn": 2.125,
+    "worst_hole": {
+     "x": 277.0,
+     "run_3g": {
+      "sigma_MPa": 28.51,
+      "SF": 6.84,
+      "need": 3.0,
+      "margin_pct": 128.0,
+      "ok": true,
+      "near(±10%)": false,
+      "over_3x": false
+     },
+     "mis_1g+hand": {
+      "sigma_MPa": 45.68,
+      "SF": 4.27,
+      "need": 2.0,
+      "margin_pct": 113.4,
+      "ok": true,
+      "near(±10%)": false,
+      "over_3x": false
+     }
+    }
+   },
+   "후(깊이 15)": {
+    "Z_min": 883.9,
+    "Ktn": 2.125,
+    "worst_hole": {
+     "x": 277.0,
+     "run_3g": {
+      "sigma_MPa": 30.51,
+      "SF": 6.39,
+      "need": 3.0,
+      "margin_pct": 113.0,
+      "ok": true,
+      "near(±10%)": false,
+      "over_3x": false
+     },
+     "mis_1g+hand": {
+      "sigma_MPa": 48.9,
+      "SF": 3.99,
+      "need": 2.0,
+      "margin_pct": 99.4,
+      "ok": true,
+      "near(±10%)": false,
+      "over_3x": false
+     }
+    }
+   }
+  },
+  "defl_mm": {
+   "구멍 없음(지난 값)": 0.5075,
+   "탭 10(전)": 0.5125,
+   "탭 15(후)": 0.5132,
+   "DP-2로 늘어난 값": 0.00069
+  },
+  "tap_wall_mm": 2.5,
+  "bottom_remain_mm": 15.0
+ },
+ "FLAP_BAR_XN": {
+  "model": "models.json 그대로: (가) 빗장 A·B 676 단순지지 + 가운데 L2 반력 + 손 100 N, (나) load_bump 패드 A·B 604 가운데 한 점 Kt 2",
+  "section": {
+   "gross": {
+    "I": 40500.0,
+    "Z": 2700.0
+   },
+   "tap10(전)": {
+    "A": 490.0,
+    "yc": 13.98,
+    "I": 34573.1,
+    "Z_top": 2158.1,
+    "Z_bot": 2473.1
+   },
+   "tap15(후)": {
+    "A": 465.0,
+    "yc": 13.79,
+    "I": 34194.6,
+    "Z_top": 2109.5,
+    "Z_bot": 2479.6
+   }
+  },
+  "Ktn": 2.377,
+  "old_model_gross_Kt2(지난 값, 형상 같음)": {
+   "run": 5.13,
+   "mis": 3.41
+  },
+  "net_at_center_tap": {
+   "전(깊이 10)": {
+    "Z_min": 2158.1,
+    "latch_mis(순단면 × Ktn)": {
+     "sigma_MPa": 23.5,
+     "SF": 8.3,
+     "need": 2.0,
+     "margin_pct": 314.8,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": true
+    },
+    "bump_run(순단면 × Ktn 2.377)": {
+     "sigma_MPa": 56.51,
+     "SF": 3.45,
+     "need": 3.0,
+     "margin_pct": 15.0,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": false
+    },
+    "bump_mis(순단면 × Ktn 2.377)": {
+     "sigma_MPa": 85.04,
+     "SF": 2.29,
+     "need": 2.0,
+     "margin_pct": 14.7,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": false
+    },
+    "bump_run(순단면 × Kt 2, 옛 모델 Kt)": {
+     "sigma_MPa": 47.55,
+     "SF": 4.1,
+     "need": 3.0,
+     "margin_pct": 36.7,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": false
+    },
+    "bump_mis(순단면 × Kt 2, 옛 모델 Kt)": {
+     "sigma_MPa": 71.55,
+     "SF": 2.73,
+     "need": 2.0,
+     "margin_pct": 36.3,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": false
+    }
+   },
+   "후(깊이 15)": {
+    "Z_min": 2109.5,
+    "latch_mis(순단면 × Ktn)": {
+     "sigma_MPa": 24.04,
+     "SF": 8.11,
+     "need": 2.0,
+     "margin_pct": 305.5,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": true
+    },
+    "bump_run(순단면 × Ktn 2.377)": {
+     "sigma_MPa": 57.82,
+     "SF": 3.37,
+     "need": 3.0,
+     "margin_pct": 12.4,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": false
+    },
+    "bump_mis(순단면 × Ktn 2.377)": {
+     "sigma_MPa": 87.0,
+     "SF": 2.24,
+     "need": 2.0,
+     "margin_pct": 12.1,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": false
+    },
+    "bump_run(순단면 × Kt 2, 옛 모델 Kt)": {
+     "sigma_MPa": 48.65,
+     "SF": 4.01,
+     "need": 3.0,
+     "margin_pct": 33.6,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": false
+    },
+    "bump_mis(순단면 × Kt 2, 옛 모델 Kt)": {
+     "sigma_MPa": 73.2,
+     "SF": 2.66,
+     "need": 2.0,
+     "margin_pct": 33.2,
+     "ok": true,
+     "near(±10%)": false,
+     "over_3x": false
+    }
+   }
+  },
+  "F_run_N": 339.8,
+  "F_mis_N": 511.3,
+  "note": "가운데 탭(414, −750)이 최대 굽힘 자리와 겹친다. 밑면 탭 4(깊이 13)는 그대로이고 가운데에서 300 떨어져 있다"
+ },
+ "FLAP_BAR_XP": {
+  "model": "models.json 그대로: 접이판 묶음 11.4 kg ×3 g 반 + 손 100 N이 경첩 하나에, 230 가운데",
+  "Fh_N": 183.8,
+  "M_Nmm": 10571.2,
+  "Z": {
+   "gross": 2250.0,
+   "윗 탭 10(전)": 1705.1,
+   "윗 탭 15(후)": 1653.4,
+   "윗 탭 12(XP_TAP_1)": 1673.7,
+   "혀 탭 10(전)": 2159.7,
+   "혀 탭 관통(후)": 2114.6,
+   "XP_TAP_1 + 경첩 탭 겹침(보수)": 1549.6
+  },
+  "Ktn": 2.296,
+  "sf_mis": {
+   "gross": {
+    "sigma_MPa": 4.7,
+    "SF": 41.5,
+    "need": 2.0,
+    "margin_pct": 1975.2,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   },
+   "윗 탭 10(전)": {
+    "sigma_MPa": 14.23,
+    "SF": 13.7,
+    "need": 2.0,
+    "margin_pct": 584.9,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   },
+   "윗 탭 15(후)": {
+    "sigma_MPa": 14.68,
+    "SF": 13.28,
+    "need": 2.0,
+    "margin_pct": 564.2,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   },
+   "윗 탭 12(XP_TAP_1)": {
+    "sigma_MPa": 14.5,
+    "SF": 13.45,
+    "need": 2.0,
+    "margin_pct": 572.3,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   },
+   "혀 탭 10(전)": {
+    "sigma_MPa": 11.24,
+    "SF": 17.35,
+    "need": 2.0,
+    "margin_pct": 767.6,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   },
+   "혀 탭 관통(후)": {
+    "sigma_MPa": 11.48,
+    "SF": 16.99,
+    "need": 2.0,
+    "margin_pct": 749.4,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   },
+   "XP_TAP_1 + 경첩 탭 겹침(보수)": {
+    "sigma_MPa": 15.66,
+    "SF": 12.45,
+    "need": 2.0,
+    "margin_pct": 522.5,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   }
+  },
+  "XP_TAP_1↔경첩 탭 살 mm": {
+   "밑구멍 Ø4.2끼리": 2.07,
+   "나사 Ø5끼리": 1.41,
+   "옆으로 본 틈(모델링 보고서)": 0.8,
+   "note": "윗 탭은 Z −25에서 멈추고 경첩 탭 윗선은 Z −25.9(나사 −25.5) — 높이로 0.5~0.9 떨어져 실제 가장 얇은 살은 빗변 값"
+  }
+ },
+ "M06_G1_PIN·TOP_PIN": {
+  "Z_solid(지난 손계산)": 98.17,
+  "Z_hollow(Ø10/Ø5)": 92.04,
+  "root_misuse(팔 36)": {
+   "지난 값(속 찬 단면)": {
+    "sigma_MPa": 36.67,
+    "SF": 5.59,
+    "need": 2.0,
+    "margin_pct": 179.5,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": false
+   },
+   "빈 단면(전 · 후 같음 — 탭이 전에도 뿌리를 지남)": {
+    "sigma_MPa": 39.11,
+    "SF": 5.24,
+    "need": 2.0,
+    "margin_pct": 162.1,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": false
+   }
+  },
+  "root_operating(7.1 N 팔 18)": {
+   "sigma_MPa": 1.38,
+   "SF": 148.24,
+   "need": 3.0,
+   "margin_pct": 4841.4,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": true
+  },
+  "탭 끝 단면(전 Y −10.5 팔 27.6 → 후 Y −13.5 팔 24.6)": {
+   "전": {
+    "sigma_MPa": 28.11,
+    "SF": 7.29,
+    "need": 2.0,
+    "margin_pct": 264.6,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   },
+   "후(빈 단면이 3 더 김)": {
+    "sigma_MPa": 29.99,
+    "SF": 6.84,
+    "need": 2.0,
+    "margin_pct": 241.8,
+    "ok": true,
+    "near(±10%)": false,
+    "over_3x": true
+   }
+  },
+  "wall_mm": {
+   "밑구멍 Ø4.2": 2.9,
+   "나사 Ø5": 2.5
+  },
+  "note": "뿌리(턱 앞)는 DP-2 전에도 탭이 지나는 빈 단면이었다. 지난 손계산이 속 찬 단면으로 봐 5.59였고 빈 단면으로 5.24 — DP-2가 낮춘 것이 아니라 단면을 측정대로 바로잡은 값"
+ },
+ "GS_ARM_BLK": {
+  "model": "models.json 그대로: 가스 스프링 최대 1573 N, 볼트 인장으로 보수(F/2)",
+  "taps": "윗 탭 2(X 1050 · 1070, Y −1190) 깊이 10 → 15, 옆 탭 2(X 1048 · 1072, Z −28) 깊이 10 → 15(Y −1224 → −1209)",
+  "윗 탭↔옆 탭 끝 거리 mm": 16.5,
+  "윗 탭 밑 남은 살 mm": 15.0,
+  "옆 탭 X 가장자리 살 mm": 5.5,
+  "block_shear_MPa": 1.31,
+  "slip_귀판(그대로)": 0.76,
+  "note": "귀판 볼트 미끄럼 0.76은 길이와 상관없다(FEA-05, 맞춤 핀 Ø5 ×2 — DP-6 몫). DP-2로는 나사 전단만 오른다"
+ },
+ "bolts": [
+  {
+   "key": "테이블 판넬 접시 SFB5-16 → HNTT8-5",
+   "n": 109,
+   "spec": "SFB5-16",
+   "le_old": 3.5,
+   "le_new": 9.0,
+   "load_N": 100.0,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "SUS304",
+   "class": "10.9",
+   "old": {
+    "op": {
+     "나사 인장": 133.48,
+     "암나사 전단": 30.31,
+     "분리(예압/외력)": 45.0
+    },
+    "tight": {
+     "조임 볼트 응력": 2.67,
+     "조임 좌면": 4.87,
+     "조임 암나사 전단": 0.67
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 133.48,
+     "암나사 전단": 77.93,
+     "분리(예압/외력)": 45.0
+    },
+    "tight": {
+     "조임 볼트 응력": 2.67,
+     "조임 좌면": 4.87,
+     "조임 암나사 전단": 1.73
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "접시 머리 Ø10 원뿔 자리(투영 넓이). 판넬이 형재에 눌리는 쪽이라 볼트 인장은 판을 드는 손 100 N뿐",
+   "load_src": "오조작 손 100 N(D-38 임시)"
+  },
+  {
+   "key": "플랩 판 → 바 5품번(윗 탭, XP_TAP_1 뺌)",
+   "n": 21,
+   "spec": "CB5-16",
+   "le_old": 7.0,
+   "le_new": 11.0,
+   "load_N": 118.4,
+   "need": 2.0,
+   "base": "A5052",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 131.94,
+     "암나사 전단": 40.75,
+     "분리(예압/외력)": 38.01
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.07
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 131.94,
+     "암나사 전단": 64.03,
+     "분리(예압/외력)": 38.01
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.68
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.58,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "판 t5 A5052. −90° 때 판 묶음 141 N ×3 g를 23개가 나눔 + 손 100 N이 볼트 하나에(보수)",
+   "load_src": "mech_RX-12-C1 W 141 N"
+  },
+  {
+   "key": "플랩 판 → XP_TAP_1(지금 CB5-16)",
+   "n": 1,
+   "spec": "CB5-16",
+   "le_old": 7.0,
+   "le_new": 11.0,
+   "load_N": 118.4,
+   "need": 2.0,
+   "base": "A5052",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 131.94,
+     "암나사 전단": 40.75,
+     "분리(예압/외력)": 38.01
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.07
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 131.94,
+     "암나사 전단": 64.03,
+     "분리(예압/외력)": 38.01
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.68
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.58,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "검도 기준 1건 자리 — 밑구멍 12라 볼트 끝–바닥 1.0. 수치는 되지만 끝까지 못 조인다(M-01)",
+   "load_src": ""
+  },
+  {
+   "key": "플랩 판 → XP_TAP_1(검도 수정안 CB5-14)",
+   "n": 1,
+   "spec": "CB5-14",
+   "le_old": 7.0,
+   "le_new": 9.0,
+   "load_N": 118.4,
+   "need": 2.0,
+   "base": "A5052",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 131.94,
+     "암나사 전단": 40.75,
+     "분리(예압/외력)": 38.01
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.07
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 131.94,
+     "암나사 전단": 52.39,
+     "분리(예압/외력)": 38.01
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.38
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 6.2,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "검도 수정안: 물림 9.0",
+   "load_src": ""
+  },
+  {
+   "key": "플랩 판 → 팔 블록 윗 탭",
+   "n": 2,
+   "spec": "CB5-16",
+   "le_old": 7.0,
+   "le_new": 11.0,
+   "load_N": 786.5,
+   "need": 3.0,
+   "base": "A5052",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 19.86,
+     "암나사 전단": 6.13,
+     "분리(예압/외력)": 5.72
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.07
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 19.86,
+     "암나사 전단": 9.64,
+     "분리(예압/외력)": 5.72
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.68
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.58,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "models.json 가스 스프링 최대 ÷ 2(볼트 인장으로 보수)"
+  },
+  {
+   "key": "귀판 → 팔 블록 옆 탭",
+   "n": 2,
+   "spec": "CB5-16",
+   "le_old": 6.0,
+   "le_new": 10.0,
+   "load_N": 786.5,
+   "need": 3.0,
+   "base": "A5052",
+   "seat": "SUS304",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 19.86,
+     "암나사 전단": 5.26,
+     "분리(예압/외력)": 5.72
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 0.92
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 19.86,
+     "암나사 전단": 8.76,
+     "분리(예압/외력)": 5.72
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.53
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 6.89,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "전단을 인장 값으로 본 보수. 미끄럼 0.76은 그대로(FEA-05)",
+   "load_src": "〃"
+  },
+  {
+   "key": "혀 → XP 옆 탭(관통)",
+   "n": 2,
+   "spec": "CB5-16",
+   "le_old": 6.0,
+   "le_new": 10.0,
+   "load_N": 835.7,
+   "need": 3.0,
+   "base": "A5052",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 18.69,
+     "암나사 전단": 4.95,
+     "분리(예압/외력)": 5.38
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 0.92
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 18.69,
+     "암나사 전단": 8.25,
+     "분리(예압/외력)": 5.38
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.53
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 6.89,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "mech_RX-12-C1 UPSTOP_TONGUE_bolts"
+  },
+  {
+   "key": "롤 핀 G1 · TOP 당김 볼트",
+   "n": 2,
+   "spec": "CB5-16",
+   "le_old": 6.0,
+   "le_new": 10.0,
+   "load_N": 307.1,
+   "need": 2.0,
+   "base": "SUS304",
+   "seat": "SUS304",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 50.86,
+     "암나사 전단": 14.15,
+     "분리(예압/외력)": 14.65
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 0.97
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 50.86,
+     "암나사 전단": 23.59,
+     "분리(예압/외력)": 14.65
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.61
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.25,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "지난 손계산은 물림 8로 가정(실측 전 6.0)",
+   "load_src": "mech_M06 손 100 N × 21.5 / 7"
+  },
+  {
+   "key": "허브 볼트 → PGX62 축 탭(U4 · U5)",
+   "n": 2,
+   "spec": "CB5-16",
+   "le_old": 4.75,
+   "le_new": 8.5,
+   "load_N": 100.0,
+   "need": 2.0,
+   "base": "S45C",
+   "seat": "A6061-T6",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 156.2,
+     "암나사 전단": 57.92,
+     "분리(예압/외력)": 45.0
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.13,
+     "조임 암나사 전단": 1.29
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 156.2,
+     "암나사 전단": 103.64,
+     "분리(예압/외력)": 45.0
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.13,
+     "조임 암나사 전단": 2.3
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 10.36,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "키 허브의 축 방향 빠짐 막음. 누름 100 N × μ 0.8 = 80 N(운전)보다 큰 손 100 N으로 봄. 축 재질은 가정",
+   "load_src": "D-92 누름 30~100 N"
+  },
+  {
+   "key": "POM 멈춤 STOP_A · B → HNTT8-5",
+   "n": 4,
+   "spec": "CB5-16",
+   "le_old": 5.0,
+   "le_new": 9.0,
+   "load_N": 71.8,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "POM",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 217.5,
+     "암나사 전단": 60.29,
+     "분리(예압/외력)": 62.66
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 0.44,
+     "조임 암나사 전단": 0.96
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 217.5,
+     "암나사 전단": 108.52,
+     "분리(예압/외력)": 62.66
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 0.44,
+     "조임 암나사 전단": 1.73
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": false,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "mech_RX-12-C1 STOP_POM"
+  },
+  {
+   "key": "POM 멈춤 — 조임 2.0 N·m 지정안",
+   "n": 4,
+   "spec": "CB5-16",
+   "le_old": 5.0,
+   "le_new": 9.0,
+   "load_N": 71.8,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "POM",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 217.5,
+     "암나사 전단": 60.29,
+     "분리(예압/외력)": 27.85
+    },
+    "tight": {
+     "조임 볼트 응력": 7.03,
+     "조임 좌면": 0.99,
+     "조임 암나사 전단": 2.16
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 217.5,
+     "암나사 전단": 108.52,
+     "분리(예압/외력)": 27.85
+    },
+    "tight": {
+     "조임 볼트 응력": 7.03,
+     "조임 좌면": 0.99,
+     "조임 암나사 전단": 3.9
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": false,
+   "needs_fea": false,
+   "near": [],
+   "note": "좌면 Ø8.5/Ø5.5 머리 그대로",
+   "load_src": ""
+  },
+  {
+   "key": "POM 멈춤 — 조임 2.0 N·m + 소형 와셔 Ø9(D-216)",
+   "n": 4,
+   "spec": "CB5-16",
+   "le_old": 5.0,
+   "le_new": 9.0,
+   "load_N": 71.8,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "POM",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 217.5,
+     "암나사 전단": 60.29,
+     "분리(예압/외력)": 27.85
+    },
+    "tight": {
+     "조임 볼트 응력": 7.03,
+     "조임 좌면": 1.2,
+     "조임 암나사 전단": 2.16
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 217.5,
+     "암나사 전단": 108.52,
+     "분리(예압/외력)": 27.85
+    },
+    "tight": {
+     "조임 볼트 응력": 7.03,
+     "조임 좌면": 1.2,
+     "조임 암나사 전단": 3.9
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "자리파기 Ø9.5에 들어가는 와셔",
+   "load_src": ""
+  },
+  {
+   "key": "범퍼 브래킷 BUMP_BRKT_A · B → HNTT8-5",
+   "n": 4,
+   "spec": "CB5-16",
+   "le_old": 5.5,
+   "le_new": 9.0,
+   "load_N": 28.2,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 554.76,
+     "암나사 전단": 169.14,
+     "분리(예압/외력)": 159.82
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.06
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 554.76,
+     "암나사 전단": 276.78,
+     "분리(예압/외력)": 159.82
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.73
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "mech_RX-12-C1_fea1 지렛대(오조작 31 mm/s)"
+  },
+  {
+   "key": "경첩 고정 잎 → HNTT8-5",
+   "n": 4,
+   "spec": "CB5-14",
+   "le_old": 6.5,
+   "le_new": 8.5,
+   "load_N": 393.2,
+   "need": 3.0,
+   "base": "SS400",
+   "seat": "SUS304",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 39.72,
+     "암나사 전단": 14.31,
+     "분리(예압/외력)": 11.44
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.25
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 39.72,
+     "암나사 전단": 18.72,
+     "분리(예압/외력)": 11.44
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.64
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.36,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "전단을 인장 값으로 본 보수. 경첩 잎 재질은 STEP 대기(SUS304로 봄)",
+   "load_src": "mech_RX-12-C1 경첩 하나 786.5 N"
+  },
+  {
+   "key": "빗장 블록 LATCH_BLK_A · B → HNTT8-5",
+   "n": 4,
+   "spec": "CB5-20",
+   "le_old": 5.5,
+   "le_new": 9.0,
+   "load_N": 59.7,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 261.78,
+     "암나사 전단": 79.81,
+     "분리(예압/외력)": 75.42
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.06
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 261.78,
+     "암나사 전단": 130.61,
+     "분리(예압/외력)": 75.42
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.73
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "mech_RX-12-C1 LATCH_BLK"
+  },
+  {
+   "key": "위 멈춤 블록 UPSTOP_BLK → HNTT8-5",
+   "n": 2,
+   "spec": "CB5-20",
+   "le_old": 5.5,
+   "le_new": 9.0,
+   "load_N": 298.5,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 52.33,
+     "암나사 전단": 15.96,
+     "분리(예압/외력)": 15.08
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.06
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 52.33,
+     "암나사 전단": 26.11,
+     "분리(예압/외력)": 15.08
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.73
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "미끄럼 2.01(기준 +0.5 %)은 길이와 상관없이 그대로",
+   "load_src": "mech_RX-12-C1 혀 정적 597 N"
+  },
+  {
+   "key": "원판 받침 DISK_BASE + 심 → HNTT8-5",
+   "n": 4,
+   "spec": "CB5-22",
+   "le_old": 5.5,
+   "le_new": 7.5,
+   "load_N": 23.9,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "SUS304",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 654.24,
+     "암나사 전단": 199.47,
+     "분리(예압/외력)": 188.48
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.06
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 654.24,
+     "암나사 전단": 272.01,
+     "분리(예압/외력)": 188.48
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.44
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 6.49,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "mech_M04R 접선 오조작 95.5 N ÷ 4"
+  },
+  {
+   "key": "U3 LDRV_BRKT → HNTT8-5",
+   "n": 4,
+   "spec": "CB5-20",
+   "le_old": 5.0,
+   "le_new": 9.0,
+   "load_N": 153.7,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "A6061-T6",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 101.63,
+     "암나사 전단": 28.17,
+     "분리(예압/외력)": 29.28
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.13,
+     "조임 암나사 전단": 0.96
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 101.63,
+     "암나사 전단": 50.7,
+     "분리(예압/외력)": 29.28
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.13,
+     "조임 암나사 전단": 1.73
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "헤드 취부(D-10) — 기록",
+   "load_src": "mech_MOT-01 U3 오조작 T 153.7 N"
+  },
+  {
+   "key": "R2 브래킷 발 → HNTT8-5",
+   "n": 2,
+   "spec": "CB5-16",
+   "le_old": 3.5,
+   "le_new": 7.5,
+   "load_N": 725.5,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "SUS304",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 21.53,
+     "암나사 전단": 4.18,
+     "분리(예압/외력)": 6.2
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 0.67
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 21.53,
+     "암나사 전단": 8.95,
+     "분리(예압/외력)": 6.2
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.44
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 6.49,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "mech_RX-14 오조작 손 100 N 지렛대"
+  },
+  {
+   "key": "커튼 받침 F39-LSGF · LC2F_BRKT → HNTT8-5",
+   "n": 8,
+   "spec": "CB5-14",
+   "le_old": 6.25,
+   "le_new": 8.5,
+   "load_N": 100.0,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "SUS304",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 156.2,
+     "암나사 전단": 54.12,
+     "분리(예압/외력)": 45.0
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.2
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 156.2,
+     "암나사 전단": 73.6,
+     "분리(예압/외력)": 45.0
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.64
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.36,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "받침 하나가 손 100 N 전부(가정 검토 값)",
+   "load_src": "detail_2026-11-28 LC2F"
+  },
+  {
+   "key": "커튼 기둥 받침 LC_BRKT_FR_SM → HNTT8-5",
+   "n": 8,
+   "spec": "CB5-16",
+   "le_old": 5.5,
+   "le_new": 9.0,
+   "load_N": 230.1,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "SUS304",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 67.9,
+     "암나사 전단": 20.7,
+     "분리(예압/외력)": 19.56
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.06
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 67.9,
+     "암나사 전단": 33.88,
+     "분리(예압/외력)": 19.56
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 2.93,
+     "조임 암나사 전단": 1.73
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 7.79,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "detail_2026-11-28 단 반력 460.1 N ÷ 2"
+  },
+  {
+   "key": "커튼 이음판 LC_JOINT_FL_WJ → HNTT8-5",
+   "n": 4,
+   "spec": "CB5-16",
+   "le_old": 3.5,
+   "le_new": 7.5,
+   "load_N": 530.8,
+   "need": 2.0,
+   "base": "SS400",
+   "seat": "A5052",
+   "class": "12.9",
+   "old": {
+    "op": {
+     "나사 인장": 29.43,
+     "암나사 전단": 5.71,
+     "분리(예압/외력)": 8.48
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 0.67
+    }
+   },
+   "new": {
+    "op": {
+     "나사 인장": 29.43,
+     "암나사 전단": 12.23,
+     "분리(예압/외력)": 8.48
+    },
+    "tight": {
+     "조임 볼트 응력": 3.12,
+     "조임 좌면": 1.54,
+     "조임 암나사 전단": 1.44
+    }
+   },
+   "torque_limit_Nm(암나사 SF 1)": 6.49,
+   "ok": true,
+   "needs_fea": false,
+   "near": [],
+   "note": "",
+   "load_src": "detail_2026-11-28 볼트 짝힘 530.8 N"
+  }
+ ],
+ "insert_MBIS5(안 바꿈)": {
+  "n": 4,
+  "engage_mm": 7.56,
+  "note": "인서트 · 볼트 · 하중 그대로 — 지난 판정(mech_U6S: 축 링 조임 ≤ 1.2 N·m 조건, PCYL_BRKT 2.77) 그대로. 체결 목록의 물림만 2.6 → 7.56으로 바로잡힘"
+ },
+ "summary_parts": [
+  {
+   "item": "L1~L3 탭 순단면 운전",
+   "SF": 6.39,
+   "need": 3.0,
+   "margin_pct": 113.0,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": false
+  },
+  {
+   "item": "L1~L3 탭 순단면 오조작",
+   "SF": 3.99,
+   "need": 2.0,
+   "margin_pct": 99.4,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": false
+  },
+  {
+   "item": "XN latch_mis(순단면 × Ktn)",
+   "SF": 8.11,
+   "need": 2.0,
+   "margin_pct": 305.5,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": true
+  },
+  {
+   "item": "XN bump_run(순단면 × Ktn 2.377)",
+   "SF": 3.37,
+   "need": 3.0,
+   "margin_pct": 12.4,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": false
+  },
+  {
+   "item": "XN bump_mis(순단면 × Ktn 2.377)",
+   "SF": 2.24,
+   "need": 2.0,
+   "margin_pct": 12.1,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": false
+  },
+  {
+   "item": "XN bump_run(순단면 × Kt 2, 옛 모델 Kt)",
+   "SF": 4.01,
+   "need": 3.0,
+   "margin_pct": 33.6,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": false
+  },
+  {
+   "item": "XN bump_mis(순단면 × Kt 2, 옛 모델 Kt)",
+   "SF": 2.66,
+   "need": 2.0,
+   "margin_pct": 33.2,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": false
+  },
+  {
+   "item": "XP 윗 탭 15 오조작",
+   "SF": 13.28,
+   "need": 2.0,
+   "margin_pct": 564.2,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": true
+  },
+  {
+   "item": "XP 혀 탭 관통 오조작",
+   "SF": 16.99,
+   "need": 2.0,
+   "margin_pct": 749.4,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": true
+  },
+  {
+   "item": "XP_TAP_1 + 경첩 탭 오조작",
+   "SF": 12.45,
+   "need": 2.0,
+   "margin_pct": 522.5,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": true
+  },
+  {
+   "item": "핀 뿌리 오조작(빈 단면)",
+   "SF": 5.24,
+   "need": 2.0,
+   "margin_pct": 162.1,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": false
+  },
+  {
+   "item": "핀 뿌리 운전",
+   "SF": 148.24,
+   "need": 3.0,
+   "margin_pct": 4841.4,
+   "ok": true,
+   "near(±10%)": false,
+   "over_3x": true
+  }
+ ],
+ "summary_bolts": [
+  {
+   "key": "테이블 판넬 접시 SFB5-16 → HNTT8-5",
+   "n": 109,
+   "le": "3.5 → 9.0",
+   "op_min": 45.0,
+   "need": 2.0,
+   "tight_min": 1.73,
+   "tight_min_old": 0.67,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "플랩 판 → 바 5품번(윗 탭, XP_TAP_1 뺌)",
+   "n": 21,
+   "le": "7.0 → 11.0",
+   "op_min": 38.01,
+   "need": 2.0,
+   "tight_min": 1.54,
+   "tight_min_old": 1.07,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "플랩 판 → XP_TAP_1(지금 CB5-16)",
+   "n": 1,
+   "le": "7.0 → 11.0",
+   "op_min": 38.01,
+   "need": 2.0,
+   "tight_min": 1.54,
+   "tight_min_old": 1.07,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "플랩 판 → XP_TAP_1(검도 수정안 CB5-14)",
+   "n": 1,
+   "le": "7.0 → 9.0",
+   "op_min": 38.01,
+   "need": 2.0,
+   "tight_min": 1.38,
+   "tight_min_old": 1.07,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "플랩 판 → 팔 블록 윗 탭",
+   "n": 2,
+   "le": "7.0 → 11.0",
+   "op_min": 5.72,
+   "need": 3.0,
+   "tight_min": 1.54,
+   "tight_min_old": 1.07,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "귀판 → 팔 블록 옆 탭",
+   "n": 2,
+   "le": "6.0 → 10.0",
+   "op_min": 5.72,
+   "need": 3.0,
+   "tight_min": 1.53,
+   "tight_min_old": 0.92,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "혀 → XP 옆 탭(관통)",
+   "n": 2,
+   "le": "6.0 → 10.0",
+   "op_min": 5.38,
+   "need": 3.0,
+   "tight_min": 1.53,
+   "tight_min_old": 0.92,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "롤 핀 G1 · TOP 당김 볼트",
+   "n": 2,
+   "le": "6.0 → 10.0",
+   "op_min": 14.65,
+   "need": 2.0,
+   "tight_min": 1.61,
+   "tight_min_old": 0.97,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "허브 볼트 → PGX62 축 탭(U4 · U5)",
+   "n": 2,
+   "le": "4.75 → 8.5",
+   "op_min": 45.0,
+   "need": 2.0,
+   "tight_min": 2.13,
+   "tight_min_old": 1.29,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "POM 멈춤 STOP_A · B → HNTT8-5",
+   "n": 4,
+   "le": "5.0 → 9.0",
+   "op_min": 62.66,
+   "need": 2.0,
+   "tight_min": 0.44,
+   "tight_min_old": 0.44,
+   "ok": false,
+   "needs_fea": false
+  },
+  {
+   "key": "POM 멈춤 — 조임 2.0 N·m 지정안",
+   "n": 4,
+   "le": "5.0 → 9.0",
+   "op_min": 27.85,
+   "need": 2.0,
+   "tight_min": 0.99,
+   "tight_min_old": 0.99,
+   "ok": false,
+   "needs_fea": false
+  },
+  {
+   "key": "POM 멈춤 — 조임 2.0 N·m + 소형 와셔 Ø9(D-216)",
+   "n": 4,
+   "le": "5.0 → 9.0",
+   "op_min": 27.85,
+   "need": 2.0,
+   "tight_min": 1.2,
+   "tight_min_old": 1.2,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "범퍼 브래킷 BUMP_BRKT_A · B → HNTT8-5",
+   "n": 4,
+   "le": "5.5 → 9.0",
+   "op_min": 159.82,
+   "need": 2.0,
+   "tight_min": 1.54,
+   "tight_min_old": 1.06,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "경첩 고정 잎 → HNTT8-5",
+   "n": 4,
+   "le": "6.5 → 8.5",
+   "op_min": 11.44,
+   "need": 3.0,
+   "tight_min": 1.64,
+   "tight_min_old": 1.25,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "빗장 블록 LATCH_BLK_A · B → HNTT8-5",
+   "n": 4,
+   "le": "5.5 → 9.0",
+   "op_min": 75.42,
+   "need": 2.0,
+   "tight_min": 1.54,
+   "tight_min_old": 1.06,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "위 멈춤 블록 UPSTOP_BLK → HNTT8-5",
+   "n": 2,
+   "le": "5.5 → 9.0",
+   "op_min": 15.08,
+   "need": 2.0,
+   "tight_min": 1.54,
+   "tight_min_old": 1.06,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "원판 받침 DISK_BASE + 심 → HNTT8-5",
+   "n": 4,
+   "le": "5.5 → 7.5",
+   "op_min": 188.48,
+   "need": 2.0,
+   "tight_min": 1.44,
+   "tight_min_old": 1.06,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "U3 LDRV_BRKT → HNTT8-5",
+   "n": 4,
+   "le": "5.0 → 9.0",
+   "op_min": 29.28,
+   "need": 2.0,
+   "tight_min": 1.73,
+   "tight_min_old": 0.96,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "R2 브래킷 발 → HNTT8-5",
+   "n": 2,
+   "le": "3.5 → 7.5",
+   "op_min": 6.2,
+   "need": 2.0,
+   "tight_min": 1.44,
+   "tight_min_old": 0.67,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "커튼 받침 F39-LSGF · LC2F_BRKT → HNTT8-5",
+   "n": 8,
+   "le": "6.25 → 8.5",
+   "op_min": 45.0,
+   "need": 2.0,
+   "tight_min": 1.64,
+   "tight_min_old": 1.2,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "커튼 기둥 받침 LC_BRKT_FR_SM → HNTT8-5",
+   "n": 8,
+   "le": "5.5 → 9.0",
+   "op_min": 19.56,
+   "need": 2.0,
+   "tight_min": 1.73,
+   "tight_min_old": 1.06,
+   "ok": true,
+   "needs_fea": false
+  },
+  {
+   "key": "커튼 이음판 LC_JOINT_FL_WJ → HNTT8-5",
+   "n": 4,
+   "le": "3.5 → 7.5",
+   "op_min": 8.48,
+   "need": 2.0,
+   "tight_min": 1.44,
+   "tight_min_old": 0.67,
+   "ok": true,
+   "needs_fea": false
+  }
+ ],
+ "ng": [
+  "POM 멈춤 STOP_A · B → HNTT8-5",
+  "POM 멈춤 — 조임 2.0 N·m 지정안"
+ ],
+ "near": []
+}

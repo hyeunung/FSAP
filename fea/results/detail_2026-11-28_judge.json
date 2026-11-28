@@ -1,0 +1,3974 @@
+{
+"doc": "FSAP_v2.30.6",
+"criteria": "요구서 6-1 = M-09 기본값: 운전 3, 오조작 2, 3배 넘으면 과사양",
+"count": {
+"됨": 88,
+"과사양": 20,
+"여유": 54,
+"기록": 6,
+"미달": 24,
+"조건": 6
+},
+"rows": [
+{
+"name": "P_M07_BEAM",
+"unit": "U1_FRAME",
+"mat": "Steel",
+"nb": 1,
+"mass_g": 279141.3,
+"dims": [
+200.0,
+400.0,
+3730.0
+],
+"where": "끝 얹힘면 넘어짐(볼트 포함)",
+"sf_run": 3.23,
+"sf_mis": 2.68,
+"ratio": 1.08,
+"src": "mech_M07_fea1",
+"verdict": "됨",
+"note": "운전 기준 +8 %(예압 D-54 임시) → FEA 대기. Z 처짐 1 g 0.049 mm",
+"geo": "같음"
+},
+{
+"name": "P_M07_SEAT_NX",
+"unit": "U1_FRAME",
+"mat": "Steel",
+"nb": 1,
+"mass_g": 2338.5,
+"dims": [
+100.0,
+100.0,
+180.0
+],
+"where": "보 받침(같은 경우)",
+"sf_run": 3.23,
+"sf_mis": 2.68,
+"ratio": 1.08,
+"src": "mech_M07_fea1",
+"verdict": "됨",
+"note": "보와 같은 묶음",
+"geo": "같음"
+},
+{
+"name": "P_M07_SEAT_PX",
+"unit": "U1_FRAME",
+"mat": "Steel",
+"nb": 1,
+"mass_g": 2338.5,
+"dims": [
+100.0,
+100.0,
+180.0
+],
+"where": "보 받침(같은 경우)",
+"sf_run": 3.23,
+"sf_mis": 2.68,
+"ratio": 1.08,
+"src": "mech_M07_fea1",
+"verdict": "됨",
+"note": "보와 같은 묶음",
+"geo": "같음"
+},
+{
+"name": "P_M07_SPLICE_NX",
+"unit": "U1_FRAME",
+"mat": "Steel",
+"nb": 1,
+"mass_g": 3627.2,
+"dims": [
+6.0,
+180.0,
+490.0
+],
+"where": "이음판(같은 경우)",
+"sf_run": 3.23,
+"sf_mis": 2.68,
+"ratio": 1.08,
+"src": "mech_M07_fea1",
+"verdict": "됨",
+"note": "길이 380 → 490(볼트 레버가 늘어 보수 쪽) — 값 재사용",
+"geo": "다름 dims [6.0, 180.0, 380.0]→[6.0, 180.0, 490.0] r+[] r-[]"
+},
+{
+"name": "P_M07_SPLICE_PX",
+"unit": "U1_FRAME",
+"mat": "Steel",
+"nb": 1,
+"mass_g": 3448.2,
+"dims": [
+6.0,
+170.0,
+490.0
+],
+"where": "이음판(같은 경우)",
+"sf_run": 3.23,
+"sf_mis": 2.68,
+"ratio": 1.08,
+"src": "mech_M07_fea1",
+"verdict": "됨",
+"note": "길이 380 → 490(볼트 레버가 늘어 보수 쪽) — 값 재사용",
+"geo": "다름 dims [6.0, 170.0, 380.0]→[6.0, 170.0, 490.0] r+[] r-[]"
+},
+{
+"name": "P_M04_PANEL_W1",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 64027.1,
+"dims": [
+4.0,
+1255.0,
+1775.0
+],
+"where": "판넬 t4 손 100 N(원판 구멍 가장자리) · 자중 3 g",
+"sf_run": 8.9,
+"sf_mis": 7.0,
+"ratio": 2.97,
+"src": "mech_M04R",
+"verdict": "과사양",
+"note": "t3면 6.68 · 3.94, 손 처짐 0.94 → 2.23 mm, 1 g 처짐 0.19 → 0.34 mm",
+"geo": "같음"
+},
+{
+"name": "P_M04_PANEL_W2",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 28178.3,
+"dims": [
+4.0,
+600.0,
+1765.0
+],
+"where": "판넬 t4 손 100 N(원판 구멍 가장자리) · 자중 3 g",
+"sf_run": 8.9,
+"sf_mis": 7.0,
+"ratio": 2.97,
+"src": "mech_M04R",
+"verdict": "과사양",
+"note": "t3면 6.68 · 3.94, 손 처짐 0.94 → 2.23 mm, 1 g 처짐 0.19 → 0.34 mm",
+"geo": "같음"
+},
+{
+"name": "P_M04_PANEL_W3",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 64308.6,
+"dims": [
+4.0,
+1260.0,
+1775.0
+],
+"where": "판넬 t4 손 100 N(원판 구멍 가장자리) · 자중 3 g",
+"sf_run": 8.9,
+"sf_mis": 7.0,
+"ratio": 2.97,
+"src": "mech_M04R",
+"verdict": "과사양",
+"note": "t3면 6.68 · 3.94, 손 처짐 0.94 → 2.23 mm, 1 g 처짐 0.19 → 0.34 mm",
+"geo": "같음"
+},
+{
+"name": "P_M04_PANEL_E1",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 28724.0,
+"dims": [
+4.0,
+800.0,
+1255.0
+],
+"where": "판넬 t4 손 100 N(원판 구멍 가장자리) · 자중 3 g",
+"sf_run": 8.9,
+"sf_mis": 7.0,
+"ratio": 2.97,
+"src": "mech_M04R",
+"verdict": "과사양",
+"note": "t3면 6.68 · 3.94, 손 처짐 0.94 → 2.23 mm, 1 g 처짐 0.19 → 0.34 mm",
+"geo": "같음"
+},
+{
+"name": "P_M04_PANEL_E2",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 20735.5,
+"dims": [
+4.0,
+600.0,
+1385.0
+],
+"where": "판넬 t4 손 100 N(원판 구멍 가장자리) · 자중 3 g",
+"sf_run": 8.9,
+"sf_mis": 7.0,
+"ratio": 2.97,
+"src": "mech_M04R",
+"verdict": "과사양",
+"note": "t3면 6.68 · 3.94, 손 처짐 0.94 → 2.23 mm, 1 g 처짐 0.19 → 0.34 mm",
+"geo": "같음"
+},
+{
+"name": "P_M04_PANEL_E3",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 49491.8,
+"dims": [
+4.0,
+1260.0,
+1375.0
+],
+"where": "판넬 t4 손 100 N(원판 구멍 가장자리) · 자중 3 g",
+"sf_run": 8.9,
+"sf_mis": 7.0,
+"ratio": 2.97,
+"src": "mech_M04R",
+"verdict": "과사양",
+"note": "t3면 6.68 · 3.94, 손 처짐 0.94 → 2.23 mm, 1 g 처짐 0.19 → 0.34 mm",
+"geo": "같음"
+},
+{
+"name": "P_M04R_DB_SHIM_A",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 341.1,
+"dims": [
+4.0,
+40.0,
+270.0
+],
+"where": "받침판 면압 0.1 MPa",
+"sf_run": null,
+"sf_mis": 999,
+"ratio": 499.5,
+"src": "mech_M04R",
+"verdict": "여유",
+"note": "눌림만 받는 받침 — 두께는 판넬과 같은 판재",
+"geo": "같음"
+},
+{
+"name": "P_M04R_DB_SHIM_B",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 341.1,
+"dims": [
+4.0,
+40.0,
+270.0
+],
+"where": "받침판 면압 0.1 MPa",
+"sf_run": null,
+"sf_mis": 999,
+"ratio": 499.5,
+"src": "mech_M04R",
+"verdict": "여유",
+"note": "눌림만 받는 받침 — 두께는 판넬과 같은 판재",
+"geo": "같음"
+},
+{
+"name": "P_RX12C2_PANEL_PX",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 9653.0,
+"dims": [
+4.0,
+183.0,
+1760.0
+],
+"where": "날개 판넬 t4 받침 사이 260 손 100 N",
+"sf_run": null,
+"sf_mis": 7.01,
+"ratio": 3.5,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "테이블 판넬과 같은 두께로 묶음. t3면 3.94",
+"geo": "다름 dims [4.0, 183.0, 1760.0]→[4.0, 183.0, 1760.0] r+[2.1, 2.75, 5.2] r-[]"
+},
+{
+"name": "P_M01_HANGER",
+"unit": "U3_HEAD",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 7244.8,
+"dims": [
+90.0,
+210.0,
+400.0
+],
+"where": "굽힘 뿌리",
+"sf_run": 3.95,
+"sf_mis": 3.37,
+"ratio": 1.32,
+"src": "mech_M01",
+"verdict": "기록",
+"note": "헤드 임시 형상 취부(D-10). 바늘점 흔들림 0.14 mm · 18 Hz",
+"geo": "같음"
+},
+{
+"name": "P_DC204_PUSH_BLK",
+"unit": "U3_HEAD",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 53.7,
+"dims": [
+8.0,
+26.0,
+40.0
+],
+"where": "블록 볼트 마찰 ↔ 면 안 비틀림(몸 33.4)",
+"sf_run": null,
+"sf_mis": 1.32,
+"ratio": 0.66,
+"src": "mech_DC2-04_fea1",
+"verdict": "기록",
+"note": "기준 2 미달 — 바인더 UPPER 임시 형상(D-211) 취부라 기록만",
+"geo": "같음"
+},
+{
+"name": "P_U3_LDRV_BRKT",
+"unit": "U3_HEAD",
+"mat": "A6061",
+"nb": 1,
+"mass_g": 936.9,
+"dims": [
+106.0,
+122.0,
+127.0
+],
+"where": "옆벽·바닥판 t8",
+"sf_run": 312,
+"sf_mis": 171,
+"ratio": 85.5,
+"src": "mech_MOT-01",
+"verdict": "기록",
+"note": "과사양(t5도 28 넘음) — 헤드 취부(D-10)라 기록만",
+"geo": "같음"
+},
+{
+"name": "P_M03_DRV_BRKT",
+"unit": "U5_WHEEL_F",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 1132.4,
+"dims": [
+38.0,
+120.0,
+152.0
+],
+"where": "웨브(구멍 Kt 넣어 8.3)",
+"sf_run": 23.0,
+"sf_mis": 19.9,
+"ratio": 7.67,
+"src": "mech_MOT-01",
+"verdict": "여유",
+"note": "웨브 t8은 M5 탭 물림 1.6d·벨트 정렬 강성",
+"geo": "같음"
+},
+{
+"name": "P_M03_IDLER_BRKT",
+"unit": "U5_WHEEL_F",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 634.3,
+"dims": [
+30.0,
+100.0,
+152.0
+],
+"where": "ㄷ t4",
+"sf_run": 35.0,
+"sf_mis": null,
+"ratio": 11.67,
+"src": "mech_M03",
+"verdict": "여유",
+"note": "t4 판재 묶음(LC 받침·판넬과 같은 판). 여유는 크다",
+"geo": "같음"
+},
+{
+"name": "P_M03_IDLER_SHAFT",
+"unit": "U5_WHEEL_F",
+"mat": "S45C",
+"nb": 1,
+"mass_g": 14.8,
+"dims": [
+14.0,
+14.0,
+25.0
+],
+"where": "축 M10 골",
+"sf_run": 11.14,
+"sf_mis": 8.06,
+"ratio": 3.71,
+"src": "mech_MOT-01",
+"verdict": "여유",
+"note": "풀리 안지름이 정함",
+"geo": "다름 dims [8.06, 11.45, 35.0]→[2.82, 4.01, 25.0] r+[2.1] r-[]"
+},
+{
+"name": "P_M03_IDLER_WASHER_O",
+"unit": "U5_WHEEL_F",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 6.9,
+"dims": [
+3.0,
+20.0,
+20.0
+],
+"where": "M5 예압 4 kN 좌면 36.7 MPa",
+"sf_run": 5.58,
+"sf_mis": null,
+"ratio": 1.86,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "기성 와셔 후보(판금부)",
+"geo": "old 없음"
+},
+{
+"name": "P_M03_IDLER_WASHER_I",
+"unit": "U5_WHEEL_F",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 2.2,
+"dims": [
+3.0,
+13.0,
+13.0
+],
+"where": "M5 예압 4 kN 좌면 36.7 MPa",
+"sf_run": 5.58,
+"sf_mis": null,
+"ratio": 1.86,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "기성 와셔 후보(판금부)",
+"geo": "old 없음"
+},
+{
+"name": "P_M06_BASE",
+"unit": "U6_SENSOR",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 290.6,
+"dims": [
+75.0,
+82.0,
+120.0
+],
+"where": "날개 외팔 손 Z 100 N",
+"sf_run": 7.65,
+"sf_mis": 3.27,
+"ratio": 1.64,
+"src": "mech_M06",
+"verdict": "됨",
+"note": "Ø4 구멍 더해짐",
+"geo": "다름 dims [75.0, 82.0, 120.0]→[75.0, 82.0, 120.0] r+[2.0] r-[]"
+},
+{
+"name": "P_M08_LC_JOINT_FL_WJ",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 1182.0,
+"dims": [
+6.0,
+160.0,
+460.0
+],
+"where": "이음판 t6 기둥 꼭대기 손 100 N",
+"sf_run": null,
+"sf_mis": 4.01,
+"ratio": 2.0,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_M08_LC_BRKT_FR_SM_1",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 322.9,
+"dims": [
+60.0,
+75.0,
+80.0
+],
+"where": "기둥 쪽 다리 X 기댐(SM_2)",
+"sf_run": null,
+"sf_mis": 1.38,
+"ratio": 0.69,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "SM_1 1.96 · −Y 당김 2.01. t6면 3.38",
+"geo": "같음"
+},
+{
+"name": "P_M08_LC_BRKT_FR_SM_2",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 290.3,
+"dims": [
+60.0,
+72.0,
+75.0
+],
+"where": "기둥 쪽 다리 X 기댐(SM_2)",
+"sf_run": null,
+"sf_mis": 1.38,
+"ratio": 0.69,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "SM_1 1.96 · −Y 당김 2.01. t6면 3.38",
+"geo": "다름 dims [60.0, 72.0, 75.0]→[60.0, 72.0, 75.0] r+[4.0, 8.0] r-[]"
+},
+{
+"name": "P_M08_LBRK_R1_SM",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 105.0,
+"dims": [
+30.0,
+40.0,
+45.0
+],
+"where": "L t6 뒤 기둥 받침",
+"sf_run": null,
+"sf_mis": 52.0,
+"ratio": 26.0,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4면 11.2(판금부 SH-02와 같은 안)",
+"geo": "같음"
+},
+{
+"name": "P_M08_LBRK_R2_SM",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 105.0,
+"dims": [
+30.0,
+40.0,
+45.0
+],
+"where": "L t6 뒤 기둥 받침",
+"sf_run": null,
+"sf_mis": 52.0,
+"ratio": 26.0,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4면 11.2(판금부 SH-02와 같은 안)",
+"geo": "다름 dims [30.0, 40.0, 45.0]→[30.0, 40.0, 45.0] r+[6.0, 12.0] r-[]"
+},
+{
+"name": "P_M08_LBRK_R3_SM",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 105.0,
+"dims": [
+30.0,
+40.0,
+45.0
+],
+"where": "L t6 뒤 기둥 받침",
+"sf_run": null,
+"sf_mis": 52.0,
+"ratio": 26.0,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4면 11.2(판금부 SH-02와 같은 안)",
+"geo": "다름 dims [30.0, 40.0, 45.0]→[30.0, 40.0, 45.0] r+[6.0, 12.0] r-[]"
+},
+{
+"name": "P_M08_LBRK_H1_SM",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "HMI 팔 뿌리 세운 다리(T너트 미끄럼 0.69 · 0.56)",
+"sf_run": 2.39,
+"sf_mis": 1.91,
+"ratio": 0.8,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "t4로 바꾸면 0.82 · 0.66 — SH-02에서 H형은 뺀다",
+"geo": "같음"
+},
+{
+"name": "P_M08_LBRK_H2_SM",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "HMI 팔 뿌리 세운 다리(T너트 미끄럼 0.69 · 0.56)",
+"sf_run": 2.39,
+"sf_mis": 1.91,
+"ratio": 0.8,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "t4로 바꾸면 0.82 · 0.66 — SH-02에서 H형은 뺀다",
+"geo": "다름 dims [30.0, 45.0, 45.0]→[30.0, 45.0, 45.0] r+[6.0, 12.0] r-[]"
+},
+{
+"name": "P_M08_HMI_MOUNT_ML",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 345.1,
+"dims": [
+10.0,
+65.0,
+200.0
+],
+"where": "받침판 t10 볼트(암나사 28.9)",
+"sf_run": 16.7,
+"sf_mis": null,
+"ratio": 5.57,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t10 = M5 탭 물림 2d·팔 끝 받침",
+"geo": "같음"
+},
+{
+"name": "P_M08_LC2F_BRKT_SM_1",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 61.0,
+"dims": [
+30.0,
+30.0,
+62.0
+],
+"where": "커튼 받침 t3(돌림 마찰 2.96)",
+"sf_run": 2.96,
+"sf_mis": 4.76,
+"ratio": 0.99,
+"src": "detail_2026-11-28",
+"verdict": "조건",
+"note": "운전 기준 −1 %(기준 ±10 % 안 — FEA 대기). 볼트 1개 돌림 막음이 마찰뿐(M-12)",
+"geo": "같음"
+},
+{
+"name": "P_M08_LC2F_BRKT_SM_2",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 61.0,
+"dims": [
+30.0,
+30.0,
+62.0
+],
+"where": "커튼 받침 t3(돌림 마찰 2.96)",
+"sf_run": 2.96,
+"sf_mis": 4.76,
+"ratio": 0.99,
+"src": "detail_2026-11-28",
+"verdict": "조건",
+"note": "운전 기준 −1 %(기준 ±10 % 안 — FEA 대기). 볼트 1개 돌림 막음이 마찰뿐(M-12)",
+"geo": "다름 dims [30.0, 30.0, 65.0]→[30.0, 30.0, 62.0] r+[3.0, 6.0] r-[]"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_1",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 127.4,
+"dims": [
+16.0,
+46.9,
+73.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "같음"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_2",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 127.4,
+"dims": [
+16.0,
+46.9,
+73.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_3",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 127.4,
+"dims": [
+16.0,
+46.9,
+73.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_4",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 127.4,
+"dims": [
+16.0,
+46.9,
+73.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_HMI_PLATE_SM",
+"unit": "U8_PNEU",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 1155.6,
+"dims": [
+65.0,
+214.0,
+279.0
+],
+"where": "받침 판 t2(누름 30 N 먼 끝 · 손 100 N 먼 끝)",
+"sf_run": 2.69,
+"sf_mis": 0.81,
+"ratio": 0.41,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "플랜지 볼트 줄 1.63 · 0.49. t4면 10.75 · 3.23(플랜지 1.96)",
+"geo": "같음"
+},
+{
+"name": "P_M01_FOOT",
+"unit": "U3_HEAD",
+"mat": "S45C",
+"nb": 1,
+"mass_g": 17.2,
+"dims": [
+13.5,
+14.0,
+68.0
+],
+"where": "노루발 발바닥",
+"sf_run": 3.02,
+"sf_mis": 1.01,
+"ratio": 0.51,
+"src": "mech_M01",
+"verdict": "기록",
+"note": "오조작 미달(M01-F4) — 헤드 부품(D-10)",
+"geo": "같음"
+},
+{
+"name": "P_RX19_SWING_밀링",
+"unit": "U4_PRESS",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 445.1,
+"dims": [
+130.0,
+153.6,
+167.8
+],
+"where": "텅·목·뺨",
+"sf_run": 17.8,
+"sf_mis": 5.59,
+"ratio": 2.79,
+"src": "mech_RX-19",
+"verdict": "됨",
+"note": "접지점 처짐 0.103 mm. RX-16 자리(그네 헤드 쪽 외곽)는 안 건드림",
+"geo": "old 없음"
+},
+{
+"name": "P_M02_SNS_BRKT",
+"unit": "U4_PRESS",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 31.6,
+"dims": [
+17.0,
+57.0,
+77.1
+],
+"where": "센서 0.05 kg × 3 g 외팔 58",
+"sf_run": 27.3,
+"sf_mis": null,
+"ratio": 9.1,
+"src": "mech_M02",
+"verdict": "여유",
+"note": "t2 센서 받침(최소 판). 손 100 N은 안 본 자리(가정 검토 0.40)",
+"geo": "다름 dims [26.81, 58.0, 68.83]→[17.0, 56.95, 77.12] r+[] r-[]"
+},
+{
+"name": "P_RXDC03_LEAD_GUIDE_판금",
+"unit": "U4_PRESS",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 87.1,
+"dims": [
+56.6,
+72.6,
+79.5
+],
+"where": "팔 굽힘·비틀림",
+"sf_run": 6.99,
+"sf_mis": 1.46,
+"ratio": 0.73,
+"src": "mech_RX-DC-03",
+"verdict": "미달",
+"note": "RXDC03-FEA-D2(팔만 1.81)",
+"geo": "old 없음"
+},
+{
+"name": "P_M02_WHEEL",
+"unit": "U4_WHEEL",
+"mat": "A6061",
+"nb": 1,
+"mass_g": 533.6,
+"dims": [
+31.5,
+100.0,
+100.0
+],
+"where": "키 허브 면압(최대 22 N·m)",
+"sf_run": 21.9,
+"sf_mis": 3.49,
+"ratio": 1.75,
+"src": "mech_MOT-01",
+"verdict": "됨",
+"note": "바퀴 몸 — 허브 구멍 더해짐(값 그대로, 키 자리)",
+"geo": "다름 dims [37.88, 72.02, 98.14]→[12.71, 31.5, 47.97] r+[2.75, 4.75] r-[60.0]"
+},
+{
+"name": "P_M02_WHEEL_TREAD",
+"unit": "U4_WHEEL_N",
+"mat": "Urethane_A70",
+"nb": 1,
+"mass_g": 103.7,
+"dims": [
+25.0,
+120.0,
+120.0
+],
+"where": "우레탄 변형률 0.069/0.25(누름 100 N)",
+"sf_run": 3.62,
+"sf_mis": null,
+"ratio": 1.21,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "매트 자국은 요구서 7절(모델 판정 아님)",
+"geo": "old 없음"
+},
+{
+"name": "P_M03_BELT_CLAMP_BASE",
+"unit": "U5_WHEEL_F",
+"mat": "PET-CF",
+"nb": 1,
+"mass_g": 13.7,
+"dims": [
+14.4,
+25.0,
+30.0
+],
+"where": "클램프",
+"sf_run": 29.0,
+"sf_mis": null,
+"ratio": 9.67,
+"src": "mech_M03",
+"verdict": "여유",
+"note": "벨트 이 물림 길이가 정함(출력품)",
+"geo": "old 없음"
+},
+{
+"name": "P_M03_BELT_CLAMP_CAP",
+"unit": "U5_WHEEL_F",
+"mat": "PET-CF",
+"nb": 1,
+"mass_g": 16.7,
+"dims": [
+17.2,
+25.0,
+30.0
+],
+"where": "클램프",
+"sf_run": 29.0,
+"sf_mis": null,
+"ratio": 9.67,
+"src": "mech_M03",
+"verdict": "여유",
+"note": "벨트 이 물림 길이가 정함(출력품)",
+"geo": "old 없음"
+},
+{
+"name": "P_M03_CHAIN_ARM",
+"unit": "U5_CAR",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 596.3,
+"dims": [
+40.0,
+195.0,
+428.0
+],
+"where": "체인 팔 t3",
+"sf_run": 4.42,
+"sf_mis": 2.49,
+"ratio": 1.25,
+"src": "mech_M03",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_M03_CAR_PLATE",
+"unit": "U5_CAR",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 1827.4,
+"dims": [
+12.0,
+220.0,
+260.0
+],
+"where": "대차판 t12",
+"sf_run": 30.5,
+"sf_mis": null,
+"ratio": 10.17,
+"src": "mech_M03",
+"verdict": "과사양",
+"note": "t8이면 약 13.6, M5 탭 물림 8(1.6d). 구멍 Ø5 → Ø6.6 바뀜(값 그대로)",
+"geo": "다름 dims [12.0, 220.0, 260.0]→[12.0, 220.0, 260.0] r+[3.3] r-[2.5]"
+},
+{
+"name": "P_M03_LIFT_SIDE_N",
+"unit": "U5_FLOAT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 657.6,
+"dims": [
+24.0,
+76.0,
+170.0
+],
+"where": "옆판 웨브",
+"sf_run": 29.9,
+"sf_mis": 5.49,
+"ratio": 2.75,
+"src": "mech_FUNC-01_1",
+"verdict": "됨",
+"note": "오조작이 정함",
+"geo": "다름 dims [24.0, 76.0, 170.0]→[24.0, 76.0, 170.0] r+[] r-[2.85]"
+},
+{
+"name": "P_M03_LIFT_SIDE_P",
+"unit": "U5_FLOAT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 646.8,
+"dims": [
+24.0,
+76.0,
+170.0
+],
+"where": "옆판 웨브",
+"sf_run": 29.9,
+"sf_mis": 5.49,
+"ratio": 2.75,
+"src": "mech_FUNC-01_1",
+"verdict": "됨",
+"note": "오조작이 정함",
+"geo": "다름 dims [24.0, 76.0, 170.0]→[24.0, 76.0, 170.0] r+[] r-[2.85]"
+},
+{
+"name": "P_M03_FRONT",
+"unit": "U5_FLOAT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 238.9,
+"dims": [
+12.0,
+62.0,
+74.0
+],
+"where": "앞판 t12",
+"sf_run": 106,
+"sf_mis": 50.7,
+"ratio": 25.35,
+"src": "mech_M03",
+"verdict": "여유",
+"note": "감속기 파일럿 깊이·탭이 정함. 형상 바뀜(80 → 74) — 여유 100배라 다시 안 품",
+"geo": "다름 dims [12.0, 62.0, 80.0]→[12.0, 62.0, 74.0] r+[25.02] r-[2.75, 9.0, 25.0]"
+},
+{
+"name": "P_M03_SNS_BRKT",
+"unit": "U5_FLOAT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 31.6,
+"dims": [
+17.0,
+58.0,
+70.0
+],
+"where": "센서 0.05 kg × 3 g 외팔 58",
+"sf_run": 27.3,
+"sf_mis": null,
+"ratio": 9.1,
+"src": "mech_M03",
+"verdict": "여유",
+"note": "t2 센서 받침(최소 판). 손 하중은 안 본 자리",
+"geo": "같음"
+},
+{
+"name": "P_F01_SHAFT_HLD_N",
+"unit": "U5_FLOAT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 34.8,
+"dims": [
+14.0,
+18.0,
+28.0
+],
+"where": "받침 블록",
+"sf_run": null,
+"sf_mis": 5.6,
+"ratio": 2.8,
+"src": "mech_FUNC-01",
+"verdict": "됨",
+"note": "M5 멈춤나사 구멍 더해짐",
+"geo": "다름 dims [14.0, 18.0, 28.0]→[14.0, 18.0, 28.0] r+[2.1] r-[]"
+},
+{
+"name": "P_F01_SHAFT_HLD_P",
+"unit": "U5_FLOAT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 34.8,
+"dims": [
+14.0,
+18.0,
+28.0
+],
+"where": "받침 블록",
+"sf_run": null,
+"sf_mis": 5.6,
+"ratio": 2.8,
+"src": "mech_FUNC-01",
+"verdict": "됨",
+"note": "M5 멈춤나사 구멍 더해짐",
+"geo": "old 없음"
+},
+{
+"name": "P_F01_SPRING_SEAT_N",
+"unit": "U5_FLOAT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 31.1,
+"dims": [
+3.0,
+44.0,
+44.0
+],
+"where": "고리 판 t3 스프링 453 N",
+"sf_run": null,
+"sf_mis": 3.39,
+"ratio": 1.7,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "",
+"geo": "old 없음"
+},
+{
+"name": "P_F01_SPRING_SEAT_P",
+"unit": "U5_FLOAT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 31.1,
+"dims": [
+3.0,
+44.0,
+44.0
+],
+"where": "고리 판 t3 스프링 453 N",
+"sf_run": null,
+"sf_mis": 3.39,
+"ratio": 1.7,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "",
+"geo": "old 없음"
+},
+{
+"name": "P_M03_WHEEL",
+"unit": "U5_WHEEL",
+"mat": "A6061",
+"nb": 1,
+"mass_g": 533.6,
+"dims": [
+31.5,
+100.0,
+100.0
+],
+"where": "키 허브 면압(최대 22 N·m)",
+"sf_run": 21.9,
+"sf_mis": 3.49,
+"ratio": 1.75,
+"src": "mech_MOT-01",
+"verdict": "됨",
+"note": "바퀴 몸 — 허브 구멍 더해짐(값 그대로, 키 자리)",
+"geo": "다름 dims [31.5, 69.05, 98.14]→[27.19, 31.5, 43.39] r+[2.75, 4.75] r-[60.0]"
+},
+{
+"name": "P_M03_WHEEL_TREAD",
+"unit": "U5_WHEEL_F",
+"mat": "Urethane_A70",
+"nb": 1,
+"mass_g": 103.7,
+"dims": [
+25.0,
+120.0,
+120.0
+],
+"where": "우레탄 변형률 0.069/0.25(누름 100 N)",
+"sf_run": 3.62,
+"sf_mis": null,
+"ratio": 1.21,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "매트 자국은 요구서 7절(모델 판정 아님)",
+"geo": "old 없음"
+},
+{
+"name": "P_M02_DISK",
+"unit": "U4_WHEEL_N",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 1564.2,
+"dims": [
+12.0,
+250.0,
+250.0
+],
+"where": "원판 t12 축 플랜지",
+"sf_run": 60.9,
+"sf_mis": null,
+"ratio": 20.3,
+"src": "mech_M02",
+"verdict": "과사양",
+"note": "t8 + 밑면 포켓 → 약 27, 관성도 준다(M02-F2)",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_M02_DISK_SHAFT",
+"unit": "U4_WHEEL_N",
+"mat": "S45C",
+"nb": 1,
+"mass_g": 274.2,
+"dims": [
+50.0,
+50.0,
+60.0
+],
+"where": "축 Ø20",
+"sf_run": 23.0,
+"sf_mis": null,
+"ratio": 7.67,
+"src": "mech_M02",
+"verdict": "여유",
+"note": "6004 안지름이 정함",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_M05_HOLDER",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 65.7,
+"dims": [
+10.0,
+40.0,
+49.0
+],
+"where": "4볼트 무리 미끄럼(두 면 2.36)",
+"sf_run": null,
+"sf_mis": 2.36,
+"ratio": 1.18,
+"src": "mech_REG-02_fix1",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_REG02_HGT_PLATE",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 288.8,
+"dims": [
+6.0,
+124.0,
+173.0
+],
+"where": "판 몸 면 안 · 면 밖",
+"sf_run": 191,
+"sf_mis": 90,
+"ratio": 45.0,
+"src": "mech_REG-02_fix1",
+"verdict": "여유",
+"note": "장공 살(8.25~10.25)·머리 좌면이 정함",
+"geo": "같음"
+},
+{
+"name": "P_M06_CARR",
+"unit": "U6_SHOE",
+"mat": "PET-CF",
+"nb": 1,
+"mass_g": 256.6,
+"dims": [
+78.0,
+85.0,
+135.0
+],
+"where": "캐리지 다리",
+"sf_run": null,
+"sf_mis": 10.9,
+"ratio": 5.45,
+"src": "mech_M06",
+"verdict": "여유",
+"note": "출력품 — 인서트·미끄럼 자리가 살을 정함",
+"geo": "같음"
+},
+{
+"name": "P_M06_SLIDE_COLLAR_1",
+"unit": "U6_SHOE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 1.3,
+"dims": [
+3.6,
+12.0,
+12.0
+],
+"where": "축 링 눌림(조임 1.2 N·m)",
+"sf_run": 2.52,
+"sf_mis": null,
+"ratio": 0.84,
+"src": "mech_U6S",
+"verdict": "조건",
+"note": "조임 ≤ 1.2 N·m 지정. 4.5 N·m면 0.67",
+"geo": "old 없음"
+},
+{
+"name": "P_M06_SLIDE_COLLAR_2",
+"unit": "U6_SHOE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 1.3,
+"dims": [
+3.6,
+12.0,
+12.0
+],
+"where": "축 링 눌림(조임 1.2 N·m)",
+"sf_run": 2.52,
+"sf_mis": null,
+"ratio": 0.84,
+"src": "mech_U6S",
+"verdict": "조건",
+"note": "조임 ≤ 1.2 N·m 지정. 4.5 N·m면 0.67",
+"geo": "old 없음"
+},
+{
+"name": "P_M06_PCYL_BRKT",
+"unit": "U6_SHOE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 90.1,
+"dims": [
+22.0,
+39.0,
+104.0
+],
+"where": "탭 t2(브래킷 t3 4.94)",
+"sf_run": null,
+"sf_mis": 2.77,
+"ratio": 1.39,
+"src": "mech_U6S",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_M06_ROLL_POST",
+"unit": "U7_ROLL_MOUNT",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 279.0,
+"dims": [
+10.0,
+60.0,
+175.0
+],
+"where": "기둥 판",
+"sf_run": null,
+"sf_mis": 4.52,
+"ratio": 2.26,
+"src": "mech_M06",
+"verdict": "됨",
+"note": "롤 가운데 처짐 3 g 1.54 mm",
+"geo": "같음"
+},
+{
+"name": "P_M06_ROLL_SHAFT",
+"unit": "U7_ROLL_MOUNT",
+"mat": "S45C",
+"nb": 1,
+"mass_g": 505.6,
+"dims": [
+50.0,
+50.0,
+162.0
+],
+"where": "롤 축 뿌리(Kt 1.5)",
+"sf_run": 13.7,
+"sf_mis": 4.19,
+"ratio": 2.1,
+"src": "mech_M06",
+"verdict": "됨",
+"note": "",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_M06_ROLL_HUB",
+"unit": "U7_ROLL_MOUNT",
+"mat": "PET-CF",
+"nb": 1,
+"mass_g": 368.3,
+"dims": [
+69.0,
+110.0,
+110.0
+],
+"where": "베어링 자리 면압",
+"sf_run": null,
+"sf_mis": 161,
+"ratio": 80.5,
+"src": "mech_M06",
+"verdict": "여유",
+"note": "롤 심 지름·베어링이 정함(출력품)",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_M06_ROLL_WASHER",
+"unit": "U7_ROLL_MOUNT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 10.2,
+"dims": [
+3.0,
+24.0,
+24.0
+],
+"where": "롤 빼는 손 100 N",
+"sf_run": null,
+"sf_mis": 15.4,
+"ratio": 7.7,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "기성 와셔 후보(판금부)",
+"geo": "old 없음"
+},
+{
+"name": "P_M06_G1_PIN",
+"unit": "U7_ROLL_MOUNT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 31.8,
+"dims": [
+16.0,
+16.0,
+43.5
+],
+"where": "핀 뿌리",
+"sf_run": null,
+"sf_mis": 5.59,
+"ratio": 2.79,
+"src": "mech_M06",
+"verdict": "됨",
+"note": "",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_M06_G1_ROLLER",
+"unit": "U7_ROLL_MOUNT",
+"mat": "PET-CF",
+"nb": 1,
+"mass_g": 33.0,
+"dims": [
+35.8,
+38.0,
+38.0
+],
+"where": "핀 면압 0.35 MPa",
+"sf_run": null,
+"sf_mis": 86,
+"ratio": 43.0,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "테이프 굽힘 반지름이 지름을 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M06_TOP_PIN",
+"unit": "U7_ROLL_MOUNT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 31.8,
+"dims": [
+16.0,
+16.0,
+43.5
+],
+"where": "핀 뿌리",
+"sf_run": null,
+"sf_mis": 5.59,
+"ratio": 2.79,
+"src": "mech_M06",
+"verdict": "됨",
+"note": "",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_M06_TOP_ROLLER",
+"unit": "U7_ROLL_MOUNT",
+"mat": "PET-CF",
+"nb": 1,
+"mass_g": 33.0,
+"dims": [
+35.8,
+38.0,
+38.0
+],
+"where": "핀 면압 0.35 MPa",
+"sf_run": null,
+"sf_mis": 86,
+"ratio": 43.0,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "테이프 굽힘 반지름이 지름을 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M03_LIFT_TOP",
+"unit": "U5_LIFT",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 974.5,
+"dims": [
+8.0,
+148.0,
+170.0
+],
+"where": "승강판 t8",
+"sf_run": 14.7,
+"sf_mis": 5.1,
+"ratio": 2.55,
+"src": "mech_FUNC-01",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_M06_SHOE",
+"unit": "U6_PRESS",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 139.3,
+"dims": [
+23.0,
+37.5,
+130.0
+],
+"where": "윗날개가 턱에 눌림(탭 뿌리 6.09)",
+"sf_run": null,
+"sf_mis": 1.2,
+"ratio": 0.6,
+"src": "mech_RX-10_F1b",
+"verdict": "미달",
+"note": "RX-10-F7: 닿는 자리별 2.40 · 1.42 · 1.20",
+"geo": "같음"
+},
+{
+"name": "P_M02_DISK_BASE",
+"unit": "U4_WHEEL_N",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 4081.1,
+"dims": [
+8.0,
+250.0,
+270.0
+],
+"where": "받침판 t8",
+"sf_run": 15.2,
+"sf_mis": null,
+"ratio": 5.07,
+"src": "mech_M02",
+"verdict": "여유",
+"note": "t6이면 M5 탭 물림 6 → 조임 SF 0.87",
+"geo": "같음"
+},
+{
+"name": "P_M02_DISK_HSG",
+"unit": "U4_WHEEL_N",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 197.4,
+"dims": [
+32.0,
+90.0,
+90.0
+],
+"where": "하우징 플랜지",
+"sf_run": 15.2,
+"sf_mis": null,
+"ratio": 5.07,
+"src": "mech_M02",
+"verdict": "여유",
+"note": "베어링 자리·P.C.D 76이 정함",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX06_STOP_A",
+"unit": "U4_XAXIS",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 0.9,
+"dims": [
+2.0,
+4.5,
+12.0
+],
+"where": "손 100 N 뿌리 전단 4.2 MPa",
+"sf_run": null,
+"sf_mis": 28.0,
+"ratio": 14.0,
+"src": "mech_RX-06",
+"verdict": "여유",
+"note": "2 × 4.5 × 12 최소 크기. RX-16 자리(U4 X 스토퍼) — 안 건드림",
+"geo": "같음"
+},
+{
+"name": "P_RX06_STOP_B",
+"unit": "U4_XAXIS",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 0.9,
+"dims": [
+2.0,
+4.5,
+12.0
+],
+"where": "손 100 N 뿌리 전단 4.2 MPa",
+"sf_run": null,
+"sf_mis": 28.0,
+"ratio": 14.0,
+"src": "mech_RX-06",
+"verdict": "여유",
+"note": "2 × 4.5 × 12 최소 크기. RX-16 자리(U4 X 스토퍼) — 안 건드림",
+"geo": "old 없음"
+},
+{
+"name": "P_RX06R_LOCK_BLADE_판금",
+"unit": "U4_XAXIS",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 465.0,
+"dims": [
+27.5,
+120.0,
+213.0
+],
+"where": "날 굽힘(틈 0.5 · 공차 끝 0.8)",
+"sf_run": 2.26,
+"sf_mis": 1.41,
+"ratio": 0.7,
+"src": "mech_RX-06R",
+"verdict": "미달",
+"note": "운전 기준 3 미달",
+"geo": "old 없음"
+},
+{
+"name": "P_RXDC03_BEAM_CLAMP_판금",
+"unit": "U4_XAXIS",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 26.0,
+"dims": [
+14.0,
+32.5,
+52.0
+],
+"where": "선반 외팔 49",
+"sf_run": 7.28,
+"sf_mis": 1.76,
+"ratio": 0.88,
+"src": "mech_RX-DC-03",
+"verdict": "미달",
+"note": "RXDC03-FEA-D3",
+"geo": "old 없음"
+},
+{
+"name": "P_RX19_BLOCK_밀링",
+"unit": "U4_XCAR",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 2492.8,
+"dims": [
+151.5,
+205.0,
+361.0
+],
+"where": "스톱 받침 기둥(러그 25.1 · 7.74)",
+"sf_run": 5.71,
+"sf_mis": 1.71,
+"ratio": 0.85,
+"src": "mech_RX-19",
+"verdict": "미달",
+"note": "처짐 오조작 0.66 > 뜸 0.5. M4 탭 2.21(물림 7이면 1.72)",
+"geo": "old 없음"
+},
+{
+"name": "P_RX06R_LOCK_CLAMP_레이저",
+"unit": "U4_XCAR",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 51.2,
+"dims": [
+3.0,
+20.0,
+110.0
+],
+"where": "누름 판",
+"sf_run": 5.79,
+"sf_mis": 3.62,
+"ratio": 1.81,
+"src": "mech_RX-06R",
+"verdict": "됨",
+"note": "",
+"geo": "old 없음"
+},
+{
+"name": "P_RXDC03_T2_GUIDE_판금",
+"unit": "U4_XCAR",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 21.0,
+"dims": [
+18.0,
+24.0,
+30.6
+],
+"where": "팔",
+"sf_run": 24.9,
+"sf_mis": 5.27,
+"ratio": 2.63,
+"src": "mech_RX-DC-03",
+"verdict": "됨",
+"note": "",
+"geo": "old 없음"
+},
+{
+"name": "P_RXDC03_RISER_BRKT_판금",
+"unit": "U4_XCAR",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 188.0,
+"dims": [
+32.0,
+50.6,
+237.0
+],
+"where": "ㄷ 단면 뿌리(국부 플랜지 0.96~1.93)",
+"sf_run": 11.61,
+"sf_mis": 2.2,
+"ratio": 1.1,
+"src": "mech_RX-DC-C1_fea3",
+"verdict": "미달",
+"note": "국부 플랜지는 손계산으로 못 가름 — FEA 대기(RXDCC1-FEA-D4)",
+"geo": "old 없음"
+},
+{
+"name": "P_RX15_CUT_BASE",
+"unit": "U7_TAPE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 121.0,
+"dims": [
+32.0,
+33.0,
+139.0
+],
+"where": "실린더 코 벽 t4(가장 얇은 FEED)",
+"sf_run": 14.95,
+"sf_mis": null,
+"ratio": 4.98,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "벽 4 mm = 실린더 코 너트 자리",
+"geo": "같음"
+},
+{
+"name": "P_RX15_TUCK_BASE",
+"unit": "U7_TAPE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 125.8,
+"dims": [
+28.0,
+40.0,
+86.0
+],
+"where": "실린더 코 벽 t4(가장 얇은 FEED)",
+"sf_run": 14.95,
+"sf_mis": null,
+"ratio": 4.98,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "벽 4 mm = 실린더 코 너트 자리",
+"geo": "같음"
+},
+{
+"name": "P_RX15_FEED_BASE",
+"unit": "U7_TAPE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 57.7,
+"dims": [
+27.0,
+28.0,
+56.0
+],
+"where": "실린더 코 벽 t4(가장 얇은 FEED)",
+"sf_run": 14.95,
+"sf_mis": null,
+"ratio": 4.98,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "벽 4 mm = 실린더 코 너트 자리",
+"geo": "같음"
+},
+{
+"name": "P_RX15_FEED_SLIDE",
+"unit": "U7_TAPE",
+"mat": "POM",
+"nb": 1,
+"mass_g": 5.9,
+"dims": [
+10.0,
+18.0,
+29.8
+],
+"where": "POM 너트 좌면",
+"sf_run": 18.3,
+"sf_mis": null,
+"ratio": 6.1,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "미끄럼 블록 최소 크기",
+"geo": "같음"
+},
+{
+"name": "P_RX15_FEED_CLAW",
+"unit": "U7_TAPE",
+"mat": "SUS304-1/2H",
+"nb": 1,
+"mass_g": 0.4,
+"dims": [
+10.0,
+12.3,
+16.0
+],
+"where": "판 스프링 t0.3(끄는 힘 2 N 임시)",
+"sf_run": 4.86,
+"sf_mis": null,
+"ratio": 1.62,
+"src": "detail_2026-11-28",
+"verdict": "조건",
+"note": "휨 0.2 mm까지 SF 3, 0.5 mm에서 1.22. 9.7 N에서 굽음(D-06)",
+"geo": "같음"
+},
+{
+"name": "P_RX15_TUCK_ARM",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 15.2,
+"dims": [
+7.0,
+23.0,
+24.8
+],
+"where": "접기 실린더 로드 M5 골(팔 편심 20.8)",
+"sf_run": 6.28,
+"sf_mis": 0.78,
+"ratio": 0.39,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "걸림(전 추력 80.5 N)에서 로드가 굽는다. 로드 내력 450이면 1.71",
+"geo": "같음"
+},
+{
+"name": "P_RX15_TUCKER",
+"unit": "U7_TAPE",
+"mat": "SUS304-1/2H",
+"nb": 1,
+"mass_g": 6.7,
+"dims": [
+14.8,
+30.0,
+61.8
+],
+"where": "귀 굽힘(굽힘선 폭 8 · t0.8)",
+"sf_run": 9.66,
+"sf_mis": 1.2,
+"ratio": 0.6,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "볼트 중심 기준 보수 0.59",
+"geo": "같음"
+},
+{
+"name": "P_RX15_CUT_SLIDE",
+"unit": "U7_TAPE",
+"mat": "A6061",
+"nb": 1,
+"mass_g": 43.6,
+"dims": [
+29.2,
+34.5,
+154.0
+],
+"where": "로드 굽힘 + 축(CUT 7)",
+"sf_run": 1.6,
+"sf_mis": 1.57,
+"ratio": 0.53,
+"src": "mech_RX-15_fea3",
+"verdict": "미달",
+"note": "절단 40 N 임시(D-06). 홈 바닥 틈 0.2면 1.13",
+"geo": "같음"
+},
+{
+"name": "P_RX15_PIN",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 1.2,
+"dims": [
+2.0,
+2.0,
+47.0
+],
+"where": "접기 핀 Ø2 외팔(테이프 당김 5 N 임시)",
+"sf_run": 1.31,
+"sf_mis": null,
+"ratio": 0.44,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "2 N이면 3.29. SUS304 풀림재",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX15_BLADE",
+"unit": "U7_TAPE",
+"mat": "SK5",
+"nb": 1,
+"mass_g": 2.3,
+"dims": [
+0.5,
+31.8,
+48.0
+],
+"where": "날 팔 뿌리",
+"sf_run": 2.75,
+"sf_mis": 2.25,
+"ratio": 0.92,
+"src": "mech_RX-15_fea2",
+"verdict": "미달",
+"note": "SK5 내력 1,000 어림 — 운전 기준 −8 %",
+"geo": "같음"
+},
+{
+"name": "P_RX15_BLADE_CLAMP",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 5.9,
+"dims": [
+4.4,
+13.5,
+15.0
+],
+"where": "평면 눌림 12.5 MPa(하중 경로 밖)",
+"sf_run": 16.4,
+"sf_mis": null,
+"ratio": 5.47,
+"src": "mech_RX-15_fea1",
+"verdict": "여유",
+"note": "t4.4는 나사 물림이 정함. 탭 물림 0.75d는 체결부",
+"geo": "같음"
+},
+{
+"name": "P_RX15_BLADE_PIN_L",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 0.2,
+"dims": [
+2.0,
+2.0,
+10.0
+],
+"where": "핀 전단",
+"sf_run": 4.4,
+"sf_mis": 3.6,
+"ratio": 1.47,
+"src": "mech_RX-15_fea2",
+"verdict": "됨",
+"note": "",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX15_BLADE_PIN_U",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 0.2,
+"dims": [
+2.0,
+2.0,
+10.0
+],
+"where": "핀 전단",
+"sf_run": 4.4,
+"sf_mis": 3.6,
+"ratio": 1.47,
+"src": "mech_RX-15_fea2",
+"verdict": "됨",
+"note": "",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX14_KIT_PLATE",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 86.8,
+"dims": [
+19.5,
+78.0,
+108.0
+],
+"where": "받이 귀",
+"sf_run": 4.33,
+"sf_mis": null,
+"ratio": 1.44,
+"src": "mech_RX-14_fea1",
+"verdict": "됨",
+"note": "바인더 임시(D-211)",
+"geo": "같음"
+},
+{
+"name": "P_RX14_KIT_COVER",
+"unit": "U7_TAPE",
+"mat": "SUS304-1/2H",
+"nb": 1,
+"mass_g": 34.6,
+"dims": [
+7.5,
+46.0,
+93.0
+],
+"where": "덮개 코 윗판(1/2H)",
+"sf_run": null,
+"sf_mis": 2.33,
+"ratio": 1.17,
+"src": "mech_RX-14_fea1",
+"verdict": "됨",
+"note": "재질 SUS304-1/2H로 지정됨(F10 풀림)",
+"geo": "같음"
+},
+{
+"name": "P_RX14_KIT_SEAT",
+"unit": "U7_TAPE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 124.5,
+"dims": [
+20.0,
+48.0,
+84.0
+],
+"where": "포켓 바닥 살 t5",
+"sf_run": 4.33,
+"sf_mis": null,
+"ratio": 1.44,
+"src": "mech_RX-14",
+"verdict": "됨",
+"note": "H112면 2.44",
+"geo": "같음"
+},
+{
+"name": "P_RX14_DUCT",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 328.8,
+"dims": [
+6.0,
+48.0,
+1025.0
+],
+"where": "끝 외팔 X 굽힘",
+"sf_run": null,
+"sf_mis": 4.13,
+"ratio": 2.06,
+"src": "mech_RX-14_fea1",
+"verdict": "됨",
+"note": "길이 850 → 1,025(국부 경간 그대로)",
+"geo": "다름 dims [6.0, 48.0, 850.0]→[6.0, 48.0, 1025.0] r+[] r-[]"
+},
+{
+"name": "P_RX14_DUCT_LID",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 290.1,
+"dims": [
+6.0,
+48.0,
+1025.0
+],
+"where": "뚜껑 t1 자유 끝 변(안쪽 2.53)",
+"sf_run": null,
+"sf_mis": 1.28,
+"ratio": 0.64,
+"src": "mech_RX-14_fea2",
+"verdict": "미달",
+"note": "RX-14-F12",
+"geo": "다름 dims [6.0, 48.0, 850.0]→[6.0, 48.0, 1025.0] r+[] r-[]"
+},
+{
+"name": "P_RX14_R1_BRKT",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 1114.4,
+"dims": [
+46.0,
+118.5,
+151.0
+],
+"where": "팔·뒷판 모서리",
+"sf_run": 45.8,
+"sf_mis": 7.34,
+"ratio": 3.67,
+"src": "mech_RX-14",
+"verdict": "과사양",
+"note": "운전 15배 · 오조작 3.7배",
+"geo": "같음"
+},
+{
+"name": "P_RX14_R2_BRKT",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 770.8,
+"dims": [
+48.0,
+50.0,
+295.0
+],
+"where": "세운 판 48 × 6",
+"sf_run": 64.7,
+"sf_mis": 2.28,
+"ratio": 1.14,
+"src": "mech_RX-14",
+"verdict": "됨",
+"note": "오조작이 정함",
+"geo": "같음"
+},
+{
+"name": "P_RX14_DUCT_STRIP",
+"unit": "U7_TAPE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 444.5,
+"dims": [
+2.0,
+30.0,
+1025.0
+],
+"where": "받침 띠 눌림 0.22 MPa",
+"sf_run": null,
+"sf_mis": 999,
+"ratio": 499.5,
+"src": "mech_RX-14_fea2",
+"verdict": "여유",
+"note": "눌림만 받는 받침",
+"geo": "다름 dims [2.0, 30.0, 850.0]→[2.0, 30.0, 1025.0] r+[] r-[]"
+},
+{
+"name": "P_M08_TUBE_CLAMP_CAR",
+"unit": "U5_CAR",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 34.9,
+"dims": [
+20.0,
+32.0,
+45.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_BRKT_ARM_1",
+"unit": "U5_CAR",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 55.9,
+"dims": [
+40.0,
+40.0,
+54.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_BRKT_ARM_2",
+"unit": "U5_CAR",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 47.2,
+"dims": [
+36.0,
+40.0,
+40.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_9",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 130.7,
+"dims": [
+16.0,
+47.9,
+73.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_5",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 130.7,
+"dims": [
+16.0,
+47.9,
+73.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_6",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 130.7,
+"dims": [
+16.0,
+47.9,
+73.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_7",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 189.5,
+"dims": [
+16.0,
+67.9,
+73.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_ML_8",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 69.4,
+"dims": [
+16.0,
+39.0,
+47.9
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_U5_1",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 69.4,
+"dims": [
+16.0,
+39.0,
+47.9
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_COMB_U5_2",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 67.7,
+"dims": [
+16.0,
+39.0,
+46.9
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_F_1",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 48.8,
+"dims": [
+18.0,
+24.0,
+50.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_F_2",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 48.8,
+"dims": [
+18.0,
+24.0,
+50.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_F_3",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 48.8,
+"dims": [
+18.0,
+24.0,
+50.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_F_4",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 48.8,
+"dims": [
+18.0,
+24.0,
+50.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_F_5",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 48.8,
+"dims": [
+18.0,
+24.0,
+50.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_L_1",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 33.2,
+"dims": [
+18.0,
+24.0,
+36.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_L_2",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 51.1,
+"dims": [
+18.0,
+24.0,
+52.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_L_3",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 30.1,
+"dims": [
+18.0,
+24.0,
+32.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_L_4",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 30.1,
+"dims": [
+18.0,
+24.0,
+32.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_L_5",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 30.1,
+"dims": [
+18.0,
+24.0,
+32.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_L_6",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 30.1,
+"dims": [
+18.0,
+24.0,
+32.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_RISER_COMB_1",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 243.4,
+"dims": [
+36.0,
+72.0,
+135.0
+],
+"where": "관 빗",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1",
+"verdict": "됨",
+"note": "같은 묶음",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_RISER_COMB_2",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 238.7,
+"dims": [
+32.0,
+72.0,
+135.0
+],
+"where": "관 빗",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1",
+"verdict": "됨",
+"note": "같은 묶음",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_SO_1",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 188.3,
+"dims": [
+40.0,
+75.0,
+99.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "같음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_SO_2",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 36.9,
+"dims": [
+26.0,
+40.0,
+46.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_SO_3",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 31.3,
+"dims": [
+26.0,
+33.0,
+40.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_TUBE_CLAMP_F_6",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 48.8,
+"dims": [
+18.0,
+24.0,
+50.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M08_VP_PLATE",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 87.8,
+"dims": [
+6.0,
+40.0,
+138.0
+],
+"where": "판 t6",
+"sf_run": 799,
+"sf_mis": 3.5,
+"ratio": 1.75,
+"src": "mech_RX-01",
+"verdict": "됨",
+"note": "오조작이 정함",
+"geo": "같음"
+},
+{
+"name": "P_M08_PSW_BRKT",
+"unit": "U8_PNEU",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 43.4,
+"dims": [
+34.0,
+50.0,
+86.0
+],
+"where": "가로판 t4",
+"sf_run": 132,
+"sf_mis": 2.36,
+"ratio": 1.18,
+"src": "mech_RX-01",
+"verdict": "됨",
+"note": "오조작이 정함",
+"geo": "같음"
+},
+{
+"name": "P_M03_GCOV_SM",
+"unit": "U5_WHEEL_F",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 2994.4,
+"dims": [
+93.0,
+230.0,
+1760.0
+],
+"where": "C 단면 손 수평(순단면)",
+"sf_run": 64.0,
+"sf_mis": 4.28,
+"ratio": 2.14,
+"src": "mech_RX-05_v1",
+"verdict": "됨",
+"note": "클린칭 너트 조임 1.55 · 헛돎 1.92(조임 토크)",
+"geo": "같음"
+},
+{
+"name": "P_M03_GCOV_RBRKT_SM",
+"unit": "U5_WHEEL_F",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 787.7,
+"dims": [
+14.0,
+50.0,
+1720.0
+],
+"where": "밑 다리 손 아래 100 N",
+"sf_run": null,
+"sf_mis": 6.48,
+"ratio": 3.24,
+"src": "mech_RX-05",
+"verdict": "과사양",
+"note": "t2면 2.88 — 판금부 SH-09(굽힘 사이·플랜지)도 같이 풀림",
+"geo": "같음"
+},
+{
+"name": "P_M08_TUBE_BRKT_U6",
+"unit": "U4_WHEEL_N",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 50.8,
+"dims": [
+26.0,
+32.0,
+50.0
+],
+"where": "관 고정품(가장 약한 것)",
+"sf_run": 77.0,
+"sf_mis": 2.48,
+"ratio": 1.24,
+"src": "mech_PNEU-01_fea1·fea2",
+"verdict": "됨",
+"note": "관 구멍 길이·볼트 자리가 두께를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_RX08_STOP_BLOCK_밀링",
+"unit": "U4_STOP",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 300.9,
+"dims": [
+36.4,
+40.0,
+74.0
+],
+"where": "탭 밑 순 단면",
+"sf_run": 65.7,
+"sf_mis": 19.7,
+"ratio": 9.85,
+"src": "mech_RX-19",
+"verdict": "여유",
+"note": "스토퍼 탭·닿는 면이 크기를 정함. 텅 모서리 선 닿음 2.85",
+"geo": "old 없음"
+},
+{
+"name": "P_RX04_LED_BRKT_SHT",
+"unit": "U3_HEAD",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 65.1,
+"dims": [
+28.3,
+29.5,
+126.0
+],
+"where": "플랜지 볼트 줄(손 20 N)",
+"sf_run": 18.8,
+"sf_mis": 3.18,
+"ratio": 1.59,
+"src": "mech_RX-04",
+"verdict": "기록",
+"note": "손 100 N이면 0.64 — 손 하중 기준(D-38)·헤드 취부",
+"geo": "같음"
+},
+{
+"name": "P_RX04_CBL_CLIP_PRT_1",
+"unit": "U3_HEAD",
+"mat": "PA12",
+"nb": 1,
+"mass_g": 0.5,
+"dims": [
+7.6,
+10.0,
+13.6
+],
+"where": "케이블 무게 0.6 N(3 g)",
+"sf_run": 100,
+"sf_mis": null,
+"ratio": 33.33,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "출력 클립 1 g — 최소 살",
+"geo": "old 없음"
+},
+{
+"name": "P_RX04_CBL_CLIP_PRT_2",
+"unit": "U3_HEAD",
+"mat": "PA12",
+"nb": 1,
+"mass_g": 0.5,
+"dims": [
+7.6,
+10.0,
+13.6
+],
+"where": "케이블 무게 0.6 N(3 g)",
+"sf_run": 100,
+"sf_mis": null,
+"ratio": 33.33,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "출력 클립 1 g — 최소 살",
+"geo": "old 없음"
+},
+{
+"name": "P_RX04_CBL_CLIP_PRT_3",
+"unit": "U3_HEAD",
+"mat": "PA12",
+"nb": 1,
+"mass_g": 0.6,
+"dims": [
+8.6,
+10.0,
+13.6
+],
+"where": "케이블 무게 0.6 N(3 g)",
+"sf_run": 100,
+"sf_mis": null,
+"ratio": 33.33,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "출력 클립 1 g — 최소 살",
+"geo": "old 없음"
+},
+{
+"name": "P_RX02_NOZ_BLK_MILL",
+"unit": "U3_HEAD",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 36.5,
+"dims": [
+20.0,
+28.0,
+28.0
+],
+"where": "블록",
+"sf_run": 123,
+"sf_mis": null,
+"ratio": 41.0,
+"src": "mech_RX-02",
+"verdict": "여유",
+"note": "포트·소켓 자리가 크기를 정함",
+"geo": "같음"
+},
+{
+"name": "P_RX02_NOZ_PIPE",
+"unit": "U3_HEAD",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 3.7,
+"dims": [
+22.7,
+22.7,
+74.8
+],
+"where": "노즐 관 Ø4 × 0.5",
+"sf_run": 8.17,
+"sf_mis": 1.18,
+"ratio": 0.59,
+"src": "mech_RX-02",
+"verdict": "기록",
+"note": "손 10 N 미달(RX02-F1) — 헤드 암 취부(D-10)",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_M04_LBRKC_PY_PZ",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 46,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "C형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 26.47,
+"ratio": 13.23,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4 R4면 5.69(SH-01)",
+"geo": "old 없음"
+},
+{
+"name": "P_M04_LBRKC_NY_PZ",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 40,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "C형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 26.47,
+"ratio": 13.23,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4 R4면 5.69(SH-01)",
+"geo": "old 없음"
+},
+{
+"name": "P_M04_LBRK_PY_PX",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 11,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 가로대 끝 473.8 N",
+"sf_run": null,
+"sf_mis": 2.6,
+"ratio": 1.3,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "t4면 굽힘 1.15 · 비틀림 1.16 → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M04_LBRK_NY_PX",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 11,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 가로대 끝 473.8 N",
+"sf_run": null,
+"sf_mis": 2.6,
+"ratio": 1.3,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "t4면 굽힘 1.15 · 비틀림 1.16 → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_RX11_SADDLE",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 8,
+"mass_g": 19.7,
+"dims": [
+14.0,
+14.0,
+53.0
+],
+"where": "새들 홈 위 압축(0.6 N·m + 누름)",
+"sf_run": 3.46,
+"sf_mis": 3.03,
+"ratio": 1.15,
+"src": "mech_RX-11_fea1",
+"verdict": "조건",
+"note": "조임 0.6 N·m 지정이 전제. 예압 흩어짐에서 2.25~2.89(RX-11-F7)",
+"geo": "같음"
+},
+{
+"name": "P_RX11_CLAMP",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 8,
+"mass_g": 34.3,
+"dims": [
+14.0,
+19.0,
+60.0
+],
+"where": "클램프(0.6 N·m)",
+"sf_run": 7.66,
+"sf_mis": null,
+"ratio": 2.55,
+"src": "mech_RX-11_fea1",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_TAB_PL",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 387.1,
+"dims": [
+8.0,
+145.0,
+174.0
+],
+"where": "끝 손 100 N 외팔 154",
+"sf_run": null,
+"sf_mis": 13.5,
+"ratio": 6.75,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "처짐 0.41 mm가 두께를 정한다(t5면 1.68 mm)",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_LATCH_BLK_A",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 195.3,
+"dims": [
+22.0,
+24.0,
+145.0
+],
+"where": "블록 볼트 미끄럼 1.2 kN ↔ 119 N",
+"sf_run": null,
+"sf_mis": 10.1,
+"ratio": 5.05,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "빗장 봉 안내 구멍·탭 자리가 크기를 정함",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_LATCH_BLK_B",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 195.3,
+"dims": [
+22.0,
+24.0,
+145.0
+],
+"where": "블록 볼트 미끄럼 1.2 kN ↔ 119 N",
+"sf_run": null,
+"sf_mis": 10.1,
+"ratio": 5.05,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "빗장 봉 안내 구멍·탭 자리가 크기를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_RX12C1_GS_CLEVIS",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 207.9,
+"dims": [
+38.0,
+50.0,
+130.0
+],
+"where": "깎은 −Y 볼",
+"sf_run": 8.28,
+"sf_mis": 6.4,
+"ratio": 2.76,
+"src": "mech_RX-DC-02_fea",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_GS_PIN_A",
+"unit": "U2_TABLE",
+"mat": "SCM435",
+"nb": 1,
+"mass_g": 15.0,
+"dims": [
+8.0,
+8.0,
+38.0
+],
+"where": "핀 A 굽힘",
+"sf_run": 3.88,
+"sf_mis": 3.0,
+"ratio": 1.29,
+"src": "mech_RX-DC-02_fea",
+"verdict": "됨",
+"note": "",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX12C1_STOP_A",
+"unit": "U2_TABLE",
+"mat": "POM",
+"nb": 1,
+"mass_g": 24.0,
+"dims": [
+10.0,
+30.0,
+60.0
+],
+"where": "POM 받침 눌림 0.24 MPa",
+"sf_run": null,
+"sf_mis": 250,
+"ratio": 125.0,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "닿는 넓이가 크기를 정함",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_STOP_B",
+"unit": "U2_TABLE",
+"mat": "POM",
+"nb": 1,
+"mass_g": 24.0,
+"dims": [
+10.0,
+30.0,
+60.0
+],
+"where": "POM 받침 눌림 0.24 MPa",
+"sf_run": null,
+"sf_mis": 250,
+"ratio": 125.0,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "닿는 넓이가 크기를 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_RX12C1_UPSTOP_BLK",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 88.8,
+"dims": [
+27.0,
+27.0,
+50.0
+],
+"where": "블록 볼트 미끄럼(CB6-20 나사 16.2)",
+"sf_run": null,
+"sf_mis": 2.01,
+"ratio": 1.0,
+"src": "mech_RX-12-C1",
+"verdict": "됨",
+"note": "기준 턱걸이(+0.5 %) — 감쇠 가스 스프링(D-231) 전제",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_BUMP_BRKT_A",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 99.7,
+"dims": [
+23.0,
+24.0,
+145.0
+],
+"where": "볼트 미끄럼(턱 23 · 세움 16)",
+"sf_run": 6.62,
+"sf_mis": 4.4,
+"ratio": 2.2,
+"src": "mech_RX-12-C1_fea1",
+"verdict": "됨",
+"note": "99.7 g — 줄일 값 작음",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_BUMP_BRKT_B",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 99.7,
+"dims": [
+23.0,
+24.0,
+145.0
+],
+"where": "볼트 미끄럼(턱 23 · 세움 16)",
+"sf_run": 6.62,
+"sf_mis": 4.4,
+"ratio": 2.2,
+"src": "mech_RX-12-C1_fea1",
+"verdict": "됨",
+"note": "99.7 g — 줄일 값 작음",
+"geo": "old 없음"
+},
+{
+"name": "P_RXDC02_GS_SPACER_A",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 12.0,
+"dims": [
+14.0,
+14.0,
+15.0
+],
+"where": "받침 고리",
+"sf_run": 131.8,
+"sf_mis": 101.9,
+"ratio": 43.93,
+"src": "mech_RX-DC-02_fea",
+"verdict": "여유",
+"note": "지름 방향 하중 없는 고리 — 기성 칼라 후보(판금부)",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX12C1_FLAP_PL",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 7468.2,
+"dims": [
+5.0,
+695.0,
+895.0
+],
+"where": "판 t5(처짐 0.49)",
+"sf_run": 5.2,
+"sf_mis": 5.04,
+"ratio": 1.73,
+"src": "mech_RX-12-C1",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_FLAP_BAR_L1",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 530.8,
+"dims": [
+10.0,
+30.0,
+662.0
+],
+"where": "막대 10 × 30",
+"sf_run": 22.4,
+"sf_mis": 14.0,
+"ratio": 7.0,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "판 처짐 0.49 mm(≤ 0.5)를 막대 강성이 정함",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_FLAP_BAR_L2",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 530.8,
+"dims": [
+10.0,
+30.0,
+662.0
+],
+"where": "막대 10 × 30",
+"sf_run": 22.4,
+"sf_mis": 14.0,
+"ratio": 7.0,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "판 처짐 0.49 mm(≤ 0.5)를 막대 강성이 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_RX12C1_FLAP_BAR_L3",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 530.8,
+"dims": [
+10.0,
+30.0,
+662.0
+],
+"where": "막대 10 × 30",
+"sf_run": 22.4,
+"sf_mis": 14.0,
+"ratio": 7.0,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "판 처짐 0.49 mm(≤ 0.5)를 막대 강성이 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_RX12C1_FLAP_BAR_XN",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 1286.2,
+"dims": [
+18.0,
+30.0,
+895.0
+],
+"where": "패드 반력 굽힘",
+"sf_run": 5.13,
+"sf_mis": 3.41,
+"ratio": 1.71,
+"src": "mech_RX-12-C1_fea1",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_FLAP_BAR_XP",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 1070.9,
+"dims": [
+15.0,
+30.0,
+895.0
+],
+"where": "경첩 쪽 막대(3 g 반 + 손 100)",
+"sf_run": null,
+"sf_mis": 41.5,
+"ratio": 20.75,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "경첩 탭 물림·판 강성이 단면을 정함",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_GS_ARM_BLK",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 140.0,
+"dims": [
+30.0,
+40.0,
+44.0
+],
+"where": "귀판 볼트 CB5-12 ×2 미끄럼(1,573 N)",
+"sf_run": 0.76,
+"sf_mis": null,
+"ratio": 0.25,
+"src": "detail_2026-11-28",
+"verdict": "미달",
+"note": "미끄러지면 볼트 전단 11.9 — 구멍 틈 0.25 mm 움직임",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_GS_LUG",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 90.5,
+"dims": [
+6.0,
+40.0,
+50.0
+],
+"where": "귀판 면 밖 굽힘",
+"sf_run": 2.09,
+"sf_mis": 1.61,
+"ratio": 0.7,
+"src": "mech_RX-DC-02_fea",
+"verdict": "미달",
+"note": "RXDC02-D4",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_GS_PIN_P",
+"unit": "U2_TABLE",
+"mat": "SCM435",
+"nb": 1,
+"mass_g": 10.7,
+"dims": [
+8.0,
+8.0,
+27.0
+],
+"where": "핀 P Ø8 외팔 15",
+"sf_run": 1.67,
+"sf_mis": 1.29,
+"ratio": 0.56,
+"src": "mech_RX-DC-02_fea",
+"verdict": "미달",
+"note": "RXDC02-D1",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX12C1_UPSTOP_TONGUE",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 29.5,
+"dims": [
+24.0,
+30.0,
+35.0
+],
+"where": "혀(빗장 뺀 0°)",
+"sf_run": null,
+"sf_mis": 5.94,
+"ratio": 2.97,
+"src": "mech_RX-12-C1",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_BUMP_LUG_A",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 16.0,
+"dims": [
+12.7,
+24.0,
+30.0
+],
+"where": "러그 볼트 줄 굽힘",
+"sf_run": 4.66,
+"sf_mis": 3.1,
+"ratio": 1.55,
+"src": "mech_RX-12-C1_fea1",
+"verdict": "됨",
+"note": "",
+"geo": "같음"
+},
+{
+"name": "P_RX12C1_BUMP_PAD_A",
+"unit": "U2_TABLE",
+"mat": "Urethane_A70",
+"nb": 1,
+"mass_g": 0.5,
+"dims": [
+5.0,
+10.0,
+10.0
+],
+"where": "우레탄 변형률 0.31/0.25 · 0.47/0.40",
+"sf_run": 0.81,
+"sf_mis": 0.85,
+"ratio": 0.27,
+"src": "mech_RX-12-C1_fea1",
+"verdict": "미달",
+"note": "변형률 한도 ÷ 값. 가스 스프링 감쇠(D-231) 임시",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX12C1_BUMP_LUG_B",
+"unit": "U2_TABLE",
+"mat": "A5052",
+"nb": 1,
+"mass_g": 16.0,
+"dims": [
+12.7,
+24.0,
+30.0
+],
+"where": "러그 볼트 줄 굽힘",
+"sf_run": 4.66,
+"sf_mis": 3.1,
+"ratio": 1.55,
+"src": "mech_RX-12-C1_fea1",
+"verdict": "됨",
+"note": "",
+"geo": "old 없음"
+},
+{
+"name": "P_RX12C1_BUMP_PAD_B",
+"unit": "U2_TABLE",
+"mat": "Urethane_A70",
+"nb": 1,
+"mass_g": 0.5,
+"dims": [
+5.0,
+10.0,
+10.0
+],
+"where": "우레탄 변형률 0.31/0.25 · 0.47/0.40",
+"sf_run": 0.81,
+"sf_mis": 0.85,
+"ratio": 0.27,
+"src": "mech_RX-12-C1_fea1",
+"verdict": "미달",
+"note": "변형률 한도 ÷ 값. 가스 스프링 감쇠(D-231) 임시",
+"geo": "old 없음"
+},
+{
+"name": "P_RXDC02_GS_SPACER_P",
+"unit": "U2_TABLE",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 5.6,
+"dims": [
+7.0,
+14.0,
+14.0
+],
+"where": "받침 고리",
+"sf_run": 131.8,
+"sf_mis": 101.9,
+"ratio": 43.93,
+"src": "mech_RX-DC-02_fea",
+"verdict": "여유",
+"note": "지름 방향 하중 없는 고리 — 기성 칼라 후보(판금부)",
+"geo": "old 없음"
+},
+{
+"name": "P_RX12C1_LATCH_ROD_A",
+"unit": "U2_TABLE",
+"mat": "SUS303",
+"nb": 1,
+"mass_g": 314.4,
+"dims": [
+16.0,
+52.0,
+721.0
+],
+"where": "빗장 막대",
+"sf_run": null,
+"sf_mis": 7.2,
+"ratio": 3.6,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "빗장 Z ±0.15 맞춤·길이 721이 지름을 정함",
+"geo": "같음(둥근 부품: 반지름만 대조)"
+},
+{
+"name": "P_RX12C1_LATCH_ROD_B",
+"unit": "U2_TABLE",
+"mat": "SUS303",
+"nb": 1,
+"mass_g": 314.4,
+"dims": [
+16.0,
+52.0,
+721.0
+],
+"where": "빗장 막대",
+"sf_run": null,
+"sf_mis": 7.2,
+"ratio": 3.6,
+"src": "mech_RX-12-C1",
+"verdict": "여유",
+"note": "빗장 Z ±0.15 맞춤·길이 721이 지름을 정함",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRKC_PZ_NX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 6,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "C형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 26.47,
+"ratio": 13.23,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4 R4면 5.69(판금부 SH-01과 같은 안)",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRK_PY_PX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 9,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 7.22,
+"ratio": 3.61,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t4면 2.49로 되지만 구멍 자리가 같은 가로대 끝 S형(t4면 1.15)과 섞여 끼워진다(M-12) → t6 유지",
+"geo": "같음"
+},
+{
+"name": "P_M07_LBRK_NY_PX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 9,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 7.22,
+"ratio": 3.61,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t4면 2.49로 되지만 구멍 자리가 같은 가로대 끝 S형(t4면 1.15)과 섞여 끼워진다(M-12) → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRK_PY_NX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 6,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 7.22,
+"ratio": 3.61,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t4면 2.49로 되지만 구멍 자리가 같은 가로대 끝 S형(t4면 1.15)과 섞여 끼워진다(M-12) → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRK_NY_NX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 2,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 7.22,
+"ratio": 3.61,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t4면 2.49로 되지만 구멍 자리가 같은 가로대 끝 S형(t4면 1.15)과 섞여 끼워진다(M-12) → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRKT_PX_PZ",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 9,
+"mass_g": 154.9,
+"dims": [
+30.0,
+45.0,
+75.0
+],
+"where": "T형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 2.27,
+"ratio": 1.14,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "기준 +13.5 %. t4면 0.92 → t6 유지",
+"geo": "같음"
+},
+{
+"name": "P_M07_LBRKT_NX_PZ",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 2,
+"mass_g": 154.9,
+"dims": [
+30.0,
+45.0,
+75.0
+],
+"where": "T형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 2.27,
+"ratio": 1.14,
+"src": "detail_2026-11-28",
+"verdict": "됨",
+"note": "기준 +13.5 %. t4면 0.92 → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRK_NZ_PX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 6,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 7.22,
+"ratio": 3.61,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t4면 2.49로 되지만 구멍 자리가 같은 가로대 끝 S형(t4면 1.15)과 섞여 끼워진다(M-12) → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRK_NZ_PY",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 2,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 7.22,
+"ratio": 3.61,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t4면 2.49로 되지만 구멍 자리가 같은 가로대 끝 S형(t4면 1.15)과 섞여 끼워진다(M-12) → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRK_NZ_NY",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 2,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 7.22,
+"ratio": 3.61,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t4면 2.49로 되지만 구멍 자리가 같은 가로대 끝 S형(t4면 1.15)과 섞여 끼워진다(M-12) → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRK_NZ_NX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 6,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "S형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 7.22,
+"ratio": 3.61,
+"src": "detail_2026-11-28",
+"verdict": "여유",
+"note": "t4면 2.49로 되지만 구멍 자리가 같은 가로대 끝 S형(t4면 1.15)과 섞여 끼워진다(M-12) → t6 유지",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRKC_PZ_PX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 5,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "C형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 26.47,
+"ratio": 13.23,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4 R4면 5.69(판금부 SH-01과 같은 안)",
+"geo": "같음"
+},
+{
+"name": "P_M07_LBRKC_NZ_PX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 2,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "C형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 26.47,
+"ratio": 13.23,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4 R4면 5.69(판금부 SH-01과 같은 안)",
+"geo": "old 없음"
+},
+{
+"name": "P_M07_LBRKC_NZ_NX",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 2,
+"mass_g": 112.1,
+"dims": [
+30.0,
+45.0,
+45.0
+],
+"where": "C형 L t6 옆힘 286 N",
+"sf_run": null,
+"sf_mis": 26.47,
+"ratio": 13.23,
+"src": "detail_2026-11-28",
+"verdict": "과사양",
+"note": "t4 R4면 5.69(판금부 SH-01과 같은 안)",
+"geo": "old 없음"
+},
+{
+"name": "P_DC203_TRAY",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 1380.5,
+"dims": [
+16.5,
+236.0,
+416.0
+],
+"where": "받이 판 단순 지지",
+"sf_run": 6.83,
+"sf_mis": 4.41,
+"ratio": 2.21,
+"src": "mech_DC2-03_fea1",
+"verdict": "됨",
+"note": "모서리 누름 2.41",
+"geo": "같음"
+},
+{
+"name": "P_RX12C2_LBRK_COL_U",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 94.9,
+"dims": [
+40.0,
+40.0,
+40.0
+],
+"where": "위 L 세운 다리 손 −Y 100 N",
+"sf_run": 7.93,
+"sf_mis": 1.67,
+"ratio": 0.83,
+"src": "mech_RX-12-C2",
+"verdict": "미달",
+"note": "아래 L 3.02. 옆 손 100 N은 볼트 마찰의 2.5배(볼트 1개)",
+"geo": "old 없음"
+},
+{
+"name": "P_RX12C2_LBRK_COL_L",
+"unit": "U1_FRAME",
+"mat": "SUS304",
+"nb": 1,
+"mass_g": 94.9,
+"dims": [
+40.0,
+40.0,
+40.0
+],
+"where": "위 L 세운 다리 손 −Y 100 N",
+"sf_run": 7.93,
+"sf_mis": 1.67,
+"ratio": 0.83,
+"src": "mech_RX-12-C2",
+"verdict": "미달",
+"note": "아래 L 3.02. 옆 손 100 N은 볼트 마찰의 2.5배(볼트 1개)",
+"geo": "old 없음"
+}
+]
+}

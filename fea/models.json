@@ -777,7 +777,8 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "note_detail_DP-2": "2026-11-28 DP-2(v2.30.7) 손계산 fea/results/detail_DP-2_handcalc.json · 형상 detail_DP-2_stepgeo.json. FEA 못 함 — 환경 없음(D-16). 고정 · 하중 그대로, 단면만 STEP 탭 자리 순단면(나사 Ø5)으로. 뒤끝 탭 밑구멍 12 → 15(Y 1.5 → −13.5), 당김 볼트 CB5-12 → CB5-16(물림 6 → 10). 뿌리는 전에도 탭이 지나는 빈 단면(Ø10/Ø5, Z 92.04): 오조작 5.24(지난 값 5.59는 속 찬 단면). 볼트 조임 암나사 0.97 → 1.61"
   },
   "P_M06_TOP_PIN": {
    "case": "cases/mech_M06_handcalc.py",
@@ -787,7 +788,8 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2(SUS304 205, S45C 345, A5052 195, PET-CF 60). 처짐은 6-2 미정(D-08) -> 기록",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "note_detail_DP-2": "2026-11-28 DP-2(v2.30.7) 손계산 fea/results/detail_DP-2_handcalc.json · 형상 detail_DP-2_stepgeo.json. FEA 못 함 — 환경 없음(D-16). 고정 · 하중 그대로, 단면만 STEP 탭 자리 순단면(나사 Ø5)으로. 뒤끝 탭 밑구멍 12 → 15(Y 1.5 → −13.5), 당김 볼트 CB5-12 → CB5-16(물림 6 → 10). 뿌리는 전에도 탭이 지나는 빈 단면(Ø10/Ø5, Z 92.04): 오조작 5.24(지난 값 5.59는 속 찬 단면). 볼트 조임 암나사 0.97 → 1.61"
   },
   "P_DC204_PUSH_BLK": {
    "case": "cases/mech_DC2-04_fea1_handcalc.py",
@@ -899,7 +901,8 @@
     "tools/out/mech_M07-K1/stepout/P_M07_LBRKT_PX_PZ.step",
     "tools/out/mech_M07-K1/stepout/P_M07_LBRKC_PZ_PX.step"
    ],
-   "_변경": "2026-11-05 M07-K1 해석부: 모델링부 모델(볼트 머리 가장자리 고정, 팔 = 구멍 - 4.25, Kt 없음)에서 굽힘 구석 고정 + Kt 1.3으로. 같은 형상 옛 모델 T형 SF 2.32 ↔ 새 2.27"
+   "_변경": "2026-11-05 M07-K1 해석부: 모델링부 모델(볼트 머리 가장자리 고정, 팔 = 구멍 - 4.25, Kt 없음)에서 굽힘 구석 고정 + Kt 1.3으로. 같은 형상 옛 모델 T형 SF 2.32 ↔ 새 2.27",
+   "note_detail_2026-11-28": "2026-11-28 디테일링: 같은 모델로 t4 R4를 풀었다(detail_2026-11-28_handcalc.json L_bracket_t6_vs_t4). C형 26.47 -> 5.69(됨), S형 7.22 -> 2.49, T형 2.27 -> 0.92(안 됨), 가로대 끝 S형 2.60 -> 1.15(안 됨). 형상은 v2.30.6에서 굽힘 R이 판금 기능으로 그려진 것 말고 같다"
   },
   "P_M04_LBRK·LBRKC + P_M04R 가로대 끝(판금 L SUS304 t6)": {
    "case": "cases/mech_M07-K1_fea1_handcalc.py",
@@ -913,7 +916,8 @@
    },
    "step": [
     "tools/out/mech_M07-K1/stepout/P_M04_LBRKT_PY_PZ.step(첫 저장 T형, 지금 C형과 다름 — 판정은 S·C 형상)"
-   ]
+   ],
+   "note_detail_2026-11-28": "2026-11-28 디테일링: 같은 모델로 t4 R4를 풀었다(detail_2026-11-28_handcalc.json L_bracket_t6_vs_t4). C형 26.47 -> 5.69(됨), S형 7.22 -> 2.49, T형 2.27 -> 0.92(안 됨), 가로대 끝 S형 2.60 -> 1.15(안 됨). 형상은 v2.30.6에서 굽힘 R이 판금 기능으로 그려진 것 말고 같다"
   },
   "P_DC203_TRAY": {
    "case": "cases/mech_DC2-03_fea1_handcalc.py (v2.5.5) · 옛 cases/mech_DC2-03_handcalc.py (v2.5.4 외팔)",
@@ -1629,7 +1633,8 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "note_detail_DP-2": "2026-11-28 DP-2(v2.30.7) 손계산 fea/results/detail_DP-2_handcalc.json · 형상 detail_DP-2_stepgeo.json. FEA 못 함 — 환경 없음(D-16). 고정 · 하중 그대로, 단면만 STEP 탭 자리 순단면(나사 Ø5)으로. 윗 탭 4곳 밑구멍 10 → 15(Z −13 → −28). 탭 자리 Z_min 946.1 → 883.9, Ktn 2.125: 운전 6.39 · 오조작 3.99(구멍 없는 가운데 단면 22.4 · 14.0). 가운데 처짐 0.5125 → 0.5132 mm"
   },
   "P_RX12C1_FLAP_BAR_XN": {
    "case": "cases/mech_RX-12-C1_handcalc.py",
@@ -1641,7 +1646,8 @@
     "source": "요구서 6-1(M-09 기본값)"
    },
    "load_bump": "[RX-12-C1 수정 1회차 v2.27.1] 빗장 뺀 충격: 패드 A·B(Y −448·−1052, 사이 604) 단순지지, 판 묶음 관성 합(운전 340 N · 오조작 511 N)을 가운데 한 점(보수), 단면 18×30 · Kt 2. 밑면 M5 탭 4(Ø4.2 깊이 13, X 414)",
-   "case_bump": "cases/mech_RX-12-C1_fea1_handcalc.py"
+   "case_bump": "cases/mech_RX-12-C1_fea1_handcalc.py",
+   "note_detail_DP-2": "2026-11-28 DP-2(v2.30.7) 손계산 fea/results/detail_DP-2_handcalc.json · 형상 detail_DP-2_stepgeo.json. FEA 못 함 — 환경 없음(D-16). 고정 · 하중 그대로, 단면만 STEP 탭 자리 순단면(나사 Ø5)으로. 윗 탭 5곳 10 → 15. 가운데 탭(414, −750)이 충격 굽힘 최대 자리와 겹침: Z_min 2158.1 → 2109.5. 옛 모델(전체 단면 Z 2700 · Kt 2) 5.13 · 3.41 그대로, 순단면 × Kt 2는 4.01 · 2.66, 순단면 × Ktn 2.377은 3.37 · 2.24(기준 +12 %)"
   },
   "P_RX12C1_GS_PIN_P": {
    "case": "cases/mech_RX-DC-02_fea_handcalc.py",
@@ -1671,7 +1677,8 @@
    "criteria": {
     "value": "운전 SF 3, 오조작 SF 2, 과사양 = 필요치 3배. A5052 σy 195 · E 70.3 GPa, SUS304·SUS303 205, SCM435 785, POM 60",
     "source": "요구서 6-1(M-09 기본값)"
-   }
+   },
+   "note_detail_DP-2": "2026-11-28 DP-2(v2.30.7) 손계산 fea/results/detail_DP-2_handcalc.json · 형상 detail_DP-2_stepgeo.json. FEA 못 함 — 환경 없음(D-16). 고정 · 하중 그대로, 단면만 STEP 탭 자리 순단면(나사 Ø5)으로. 윗 탭 2 · 옆 탭 2 밑구멍 10 → 15, 볼트 CB5-12 → CB5-16(물림 7 → 11 · 6 → 10). 나사 전단 운전 6.13 → 9.64 · 5.26 → 8.76, 조임(4.5 N·m) 암나사 1.07 → 1.68 · 0.92 → 1.53. 귀판 볼트 미끄럼 0.76은 그대로(FEA-05)"
   },
   "P_RX12C1_GS_CLEVIS": {
    "case": "cases/mech_RX-DC-02_fea_handcalc.py",
@@ -1894,6 +1901,247 @@
    "status": "손계산. 운전 SF 7.28 · 오조작 1.76(디테일 RXDC03-FEA-D3), 처짐 0.08/0.32. 벽 볼트 오조작 71 N 암나사 전단 SF 97.6",
    "step": "tools/out/mech_RX-DC-03/stepout/P_RXDC03_BEAM_CLAMP.step",
    "version": "v2.29.3"
+  },
+  "P_M08_LC_BRKT_FR_SM_1·_2": {
+   "fixed": "레일 쪽 다리(Y -1524~-1520, X 300~360)가 HFS8-4080-2680_M07 · -2555_M04 -Y 면에 CB5-12 x2(X 315, Z 간격 40). 굽힘 구석 t+R 고정 외팔(M07-K1과 같은 모델, Kt 1.3)",
+   "contact": "기둥 쪽 다리(X 356~360, Y -1595~-1520)가 기둥 HFS8-4080-1175_M08_FR -X 면에 CB5-12 x2(Y -1580)",
+   "load": "기둥 꼭대기 Z 805에 기대는 손 100 N(D-38 임시) X·Y 각각. 두 단(Z -290 · -52, 간격 238) 반력 360.1 · 460.1 N",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). t4: X 기댐 SM_2 1.38 · SM_1 1.96, -Y 당김 2.01(오조작 기준 2 미달). t6면 3.38 · 4.80 · 5.15",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M08_LBRK_R1~R3_SM": {
+   "fixed": "다리 하나가 HFS8-80160-1090_M07 -Y 면에 CB5-16 x1(구석에서 20)",
+   "contact": "다른 다리가 뒤 기둥 HFS8-4080-1175_M08_R -X 면에 CB5-16 x1",
+   "load": "기둥 꼭대기 손 100 N(D-38 임시). 세 단(Z -300 · 150 · 600) 가운데 맨 위 단 145.6 N",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). t6 SF 52.0(과사양), t4 R4면 11.2",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M08_LBRK_H1·H2_SM + HNTT8-5(HMI 팔 뿌리)": {
+   "fixed": "세운 다리가 받침판 P_M08_HMI_MOUNT_ML(Y 110)에 CB5-16 x1(구석에서 30), 누운 다리가 팔 HFS8-4080-570_M08_HMI 윗면·밑면 홈에 CB5-16 x1 + HNTT8-5(구석에서 25)",
+   "contact": "팔 끝면(Y 110)이 받침판에 맞닿음(누르기만). 받침점 팔 밑 모서리 Z 400, 위 홈 Z 480(레버 80). 홈이 팔 축(Y)과 나란해 당김은 T너트 마찰(예압 4 kN x 0.15 = 600 N, D-54)만 받는다",
+   "load": "패널 2.0 kg(설계안 임시 — 모델 U8_HMI_PANEL 4.28 kg은 기본 재질이라 뺌) + 판 1.156 + 팔 1.716 kg. 운전 x3 g / 운전 1 g + 누름 30 N / 오조작 1 g + 손 100 N(패널 끝 Y -522)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 위 브래킷 당김 864.6 / 525.2 / 1,078.2 N -> T너트 미끄럼 SF 0.69 / 1.14 / 0.56, 세운 다리 t6 2.39 / 3.93 / 1.91(t4면 0.82 / 1.35 / 0.66)",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M08_HMI_PLATE_SM": {
+   "fixed": "플랜지(X 1163~1165, Y -465~-400)가 팔 -X 면에 CB5-12 x2(Y -431, Z 420 · 460) + HNTT8-5",
+   "contact": "세운 판(Y -465~-463, X 1163~1442)에 HMI 패널. 팔 끝면과는 틈 3",
+   "load": "운전: 화면 누름 30 N(설계안 임시) 가운데 X 1306 · 먼 끝 X 1442. 오조작: 손 100 N 같은 자리. 굽힘선 Kt 1.3, 플랜지 유효 폭 100(볼트 2 + 45도)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). t2: 누름 30 N 5.24 / 2.69(플랜지 3.19 / 1.63), 손 100 N 1.57 / 0.81(플랜지 0.96 / 0.49). t4면 손 먼 끝 3.23(플랜지 1.96)",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M08_HMI_MOUNT_ML": {
+   "fixed": "보 앞면 Y 120에 CB5-16 x4(물림 8)",
+   "contact": "팔 끝면·L 브래킷",
+   "load": "팔 뿌리 모멘트(위와 같음)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 볼트 당김 240 N/개, 암나사 전단 28.9 · 분리 16.7. 판은 보 면에 맞닿아 굽힘 없음",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M08_LC2F_BRKT_SM_1·_2": {
+   "fixed": "긴 다리(X -2303~-2300)가 기둥 HFS8-4080-1650_M08_FL -X 면에 CB5-12 x1(Y -1580)",
+   "contact": "짧은 다리(Y -1561~-1558)에 F39-LSGF + 커튼 2E(CB5-6 x1)",
+   "load": "운전 커튼 1.14 kg(모델 값, 기본 재질 — 카탈로그 값 대기) x3 g, 두 받침. 오조작 손 100 N(커튼 가운데, 두 받침이 50 N씩)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 손 4.76(한 받침 전부면 2.38), 볼트 1개 돌림 마찰 2.96(3 g)",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M08_LC_JOINT_FL_WJ": {
+   "fixed": "HFS8-4080-510_M07 -X 면 CB5-12 x2(Y -1500, Z -700 · -440)",
+   "contact": "기둥 HFS8-4080-1650_M08_FL -X 면 CB5-12 x2(Y -1580)",
+   "load": "기둥 꼭대기 Z 810 손 100 N X(판 면 밖). 볼트 짝힘 530.8 N, 띠 팔 71.5 · 유효 폭 130",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 48.7 MPa SF 4.01",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_RX12C2_PANEL_PX": {
+   "fixed": "HFS8-4080-166_RX12C2 x7(Y -100~1500, 가장 넓은 칸 260) + HFS8-4080-1760 위에 얹힘",
+   "contact": "윗면 매트",
+   "load": "오조작 손 100 N 칸 가운데(유효 폭 130, 볼 구멍 판 응력 계수 1.56 — mech_M04R와 같은 값)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 29.2 MPa SF 7.01, 처짐 0.27. t3면 3.94 · 0.65",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_RX15_TUCK_ARM(+접기 실린더 로드)": {
+   "fixed": "CJ2B16-60SZ_RX15_TUCK 로드 끝 M5(Y 5, Z -30)에 나사 물림",
+   "contact": "접기 판 귀를 CB5-12(Y -12, Z -18)로 묶음. 편심 20.8",
+   "load": "운전 접는 저항 10 N(임시, D-06 미정). 오조작 걸림 = 전 추력 80.5 N(0.5 MPa - 스프링 20 N)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 로드 M5 골 굽힘 6.28 / 0.78(로드 내력 205. 450이면 13.8 / 1.71)",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_RX15_TUCKER": {
+   "fixed": "귀(X 192~192.8, Z -24~-10)가 볼트 머리와 팔 사이에 물림. 머리 가장자리 Z -13.75",
+   "contact": "레일(Y -16~-8, t0.8)이 판넬 장공 안에서 미끄럼",
+   "load": "위와 같음. 귀 굽힘선 폭 8, 팔 4.15(머리 가장자리)~8.4(볼트 중심)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 운전 9.66(4.77), 걸림 1.20(0.59). 레일 좌굴 6.59. SUS304-CSP 1/2H 내력 470 임시",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_RX15_PIN": {
+   "fixed": "P_RX15_CUT_SLIDE에 7.5 물림(Y -83.5~-76)",
+   "contact": "테이프 꼬리가 핀 바깥 30 구간에 감김",
+   "load": "테이프 당김 2~5 N(임시, D-06). 외팔 39.5, 하중 중심 팔 24.5",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). SUS304: 2 N 3.29 / 5 N 1.31, 처짐 0.07~0.16. 담금질 핀이면 9.6 이상",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_RX15_FEED_CLAW": {
+   "fixed": "발(X 322~322.3)이 블록에 CB5-12",
+   "contact": "끝이 테이프 밑면에 닿음(모델은 닿음 0)",
+   "load": "판 스프링 t0.3 폭 5 길이 10.6, 20도. 끄는 힘 2 N(임시)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). handcalc beam: 휨 0.2 mm SF 3.04, 0.5 mm 1.22. 끄는 힘 2 N 4.86, 9.7 N에서 굽음",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_RX15_CUT·TUCK·FEED_BASE": {
+   "fixed": "판넬 밑면에 매달림",
+   "contact": "실린더 코 너트",
+   "load": "실린더 추력 100.5 N(행정 끝마다 걸림 = 운전), 팔 18",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 벽 t4 13.0 MPa SF 14.95",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_RX15_FEED_SLIDE": {
+   "fixed": "로드 너트 2개 사이",
+   "contact": "POM",
+   "load": "100.5 N",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 좌면 3.3 MPa SF 18.3",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M02·M03_WHEEL_TREAD": {
+   "fixed": "바퀴 몸 Ø100에 붙음(살 10)",
+   "contact": "매트",
+   "load": "누름 30~100 N(D-92), 접선 58.3 N",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 100 N: 반폭 6.46, 최대 0.39 MPa, 변형률 0.069(한도 0.25). 매트 자국은 요구서 7절",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M03_IDLER_WASHER_I·O": {
+   "fixed": "아이들러 축 끝 CB5",
+   "contact": "베어링 안륜",
+   "load": "M5 예압 4 kN",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 36.7 MPa SF 5.58",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_F01_SPRING_SEAT_N·P": {
+   "fixed": "축 PSFJ16",
+   "contact": "스프링",
+   "load": "오조작 453 N 전부(보수)",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 60.4 MPa SF 3.39",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M06_ROLL_WASHER": {
+   "fixed": "롤 축 끝 볼트",
+   "contact": "롤 허브",
+   "load": "손 100 N",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). SF 15.4",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_M06_G1·TOP_ROLLER": {
+   "fixed": "핀 Ø8",
+   "contact": "테이프",
+   "load": "손 100 N",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 면압 0.35 MPa",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6"
+  },
+  "P_RX12C1_FLAP_BAR_XP": {
+   "fixed": "판에 CB5-12 줄",
+   "contact": "경첩 잎 HHPSN8",
+   "load": "접이판 묶음 11.4 kg x3 g 반 + 손 100 N이 경첩 하나에",
+   "status": "손계산 fea/results/detail_2026-11-28_handcalc.json. FEA 못 함 — 환경 없음(D-16). 형상은 tools/out/detail/stepout STEP 꼭짓점 + signatures bbox(v2.30.6). 4.7 MPa SF 41.5",
+   "case": "cases/detail_2026-11-28_handcalc.py",
+   "criteria": {
+    "value": "운전 SF 3, 오조작 SF 2, 3배 넘으면 과사양. 처짐은 6-2 미정(D-08) -> 기록",
+    "source": "요구서 6-1(M-09 기본값)"
+   },
+   "version": "v2.30.6",
+   "note_detail_DP-2": "2026-11-28 DP-2(v2.30.7) 손계산 fea/results/detail_DP-2_handcalc.json · 형상 detail_DP-2_stepgeo.json. FEA 못 함 — 환경 없음(D-16). 고정 · 하중 그대로, 단면만 STEP 탭 자리 순단면(나사 Ø5)으로. 윗 탭 4곳 10 → 15, XP_TAP_1 10 → 12, 혀 탭 2곳 10 → 관통 15. 순단면 × Ktn 2.296: 윗 탭 13.28 · 혀 탭 16.99 · XP_TAP_1 + 경첩 탭 겹침 12.45(전체 단면 41.5). XP_TAP_1 ↔ 경첩 탭 살 2.07(밑구멍) · 1.41(나사)"
   }
  },
  "_바꿀 때": "모델을 바꿔야 하면 이유를 보고서 맨 위에 적고, 옛 모델도 같은 형상으로 풀어 차이를 남긴다."
