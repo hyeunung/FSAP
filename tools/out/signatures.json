@@ -2,8 +2,8 @@
  "date": "2026-11-28",
  "pose": "REST step 0",
  "source": "RGSEE 모델링부 저장본 FSAP_v2.30.6 전수 측정(SolidCraft 0.50.0 헤드리스 inspect.measure, 3,759바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.30.8.sc",
- "doc_hash": "45d5ed7fea63ad67",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.31.1.sc",
+ "doc_hash": "587fb3c7f3bb4b2a",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -35,8 +35,8 @@
     250.0,
     650.0
    ],
-   "volume": 35559403.03,
-   "mass": 279141.314,
+   "volume": 34426804.563,
+   "mass": 270250.416,
    "material": "STKR400",
    "bolt": false,
    "spec": ""
@@ -89,8 +89,8 @@
     150.0,
     640.0
    ],
-   "volume": 462059.602,
-   "mass": 3627.168,
+   "volume": 461117.124,
+   "mass": 3619.769,
    "material": "SS400",
    "bolt": false,
    "spec": ""
@@ -107,8 +107,8 @@
     150.0,
     640.0
    ],
-   "volume": 439259.602,
-   "mass": 3448.188,
+   "volume": 438317.124,
+   "mass": 3440.789,
    "material": "SS400",
    "bolt": false,
    "spec": ""
@@ -966,14 +966,14 @@
    "bbox": [
     242.0,
     258.0,
-    124.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     697.0
    ],
-   "volume": 47542.223,
-   "mass": 127.413,
-   "material": "A5052",
+   "volume": 50572.303,
+   "mass": 68.273,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -984,14 +984,14 @@
    "bbox": [
     642.0,
     658.0,
-    124.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     697.0
    ],
-   "volume": 47542.223,
-   "mass": 127.413,
-   "material": "A5052",
+   "volume": 50572.303,
+   "mass": 68.273,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -1002,14 +1002,14 @@
    "bbox": [
     -358.0,
     -342.0,
-    124.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     697.0
    ],
-   "volume": 47542.223,
-   "mass": 127.413,
-   "material": "A5052",
+   "volume": 50572.303,
+   "mass": 68.273,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -1020,14 +1020,14 @@
    "bbox": [
     -958.0,
     -942.0,
-    124.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     697.0
    ],
-   "volume": 47542.223,
-   "mass": 127.413,
-   "material": "A5052",
+   "volume": 50572.303,
+   "mass": 68.273,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -8501,96 +8501,6 @@
    "bolt": true,
    "spec": "CB5-16"
   },
-  "U8_PNEU/CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:3)": {
-   "name": "CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:3)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_PY",
-   "bbox": [
-    -2364.25,
-    -2355.75,
-    109.0,
-    130.0,
-    595.75,
-    604.25
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
-  "U8_PNEU/CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:4)": {
-   "name": "CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:4)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_PY",
-   "bbox": [
-    1165.75,
-    1174.25,
-    105.0,
-    126.0,
-    345.75,
-    354.25
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
-  "U8_PNEU/CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:5)": {
-   "name": "CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:5)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_PY",
-   "bbox": [
-    1165.75,
-    1174.25,
-    105.0,
-    126.0,
-    525.75,
-    534.25
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
-  "U8_PNEU/CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:6)": {
-   "name": "CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:6)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_PY",
-   "bbox": [
-    1205.75,
-    1214.25,
-    105.0,
-    126.0,
-    345.75,
-    354.25
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
-  "U8_PNEU/CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:7)": {
-   "name": "CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:7)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_PY",
-   "bbox": [
-    1205.75,
-    1214.25,
-    105.0,
-    126.0,
-    525.75,
-    534.25
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
   "U8_PNEU/CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:8)": {
    "name": "CB5-16_M08_PY (U8_PNEU:1/CB5-16_M08_PY:8)",
    "unit": "U8_PNEU",
@@ -9239,78 +9149,6 @@
    "bolt": false,
    "spec": ""
   },
-  "U8_PNEU/CB5-16_M08_NZ_COMB": {
-   "name": "CB5-16_M08_NZ_COMB",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    245.75,
-    254.25,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:2)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:2)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    645.75,
-    654.25,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:3)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:3)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    -354.25,
-    -345.75,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:4)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:4)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    -954.25,
-    -945.75,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
   "U8_PNEU/CB5-12_M08_PX_HMI": {
    "name": "CB5-12_M08_PX_HMI",
    "unit": "U8_PNEU",
@@ -9688,78 +9526,6 @@
    "material": "Default",
    "bolt": false,
    "spec": ""
-  },
-  "U8_PNEU/CB4-25_M08": {
-   "name": "CB4-25_M08",
-   "unit": "U8_PNEU",
-   "component": "U8_PNEU",
-   "bbox": [
-    1036.3,
-    1043.3,
-    96.0,
-    125.0,
-    339.5,
-    346.5
-   ],
-   "volume": 448.693,
-   "mass": 3.522,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB4-25"
-  },
-  "U8_PNEU/CB4-25_M08 (U8_PNEU:1/CB4-25_M08:2)": {
-   "name": "CB4-25_M08 (U8_PNEU:1/CB4-25_M08:2)",
-   "unit": "U8_PNEU",
-   "component": "U8_PNEU",
-   "bbox": [
-    1036.3,
-    1043.3,
-    96.0,
-    125.0,
-    355.5,
-    362.5
-   ],
-   "volume": 448.693,
-   "mass": 3.522,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB4-25"
-  },
-  "U8_PNEU/CB4-25_M08 (U8_PNEU:1/CB4-25_M08:3)": {
-   "name": "CB4-25_M08 (U8_PNEU:1/CB4-25_M08:3)",
-   "unit": "U8_PNEU",
-   "component": "CB4-25_M08",
-   "bbox": [
-    1140.2,
-    1147.2,
-    96.0,
-    125.0,
-    339.5,
-    346.5
-   ],
-   "volume": 448.693,
-   "mass": 3.522,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB4-25"
-  },
-  "U8_PNEU/CB4-25_M08 (U8_PNEU:1/CB4-25_M08:4)": {
-   "name": "CB4-25_M08 (U8_PNEU:1/CB4-25_M08:4)",
-   "unit": "U8_PNEU",
-   "component": "CB4-25_M08",
-   "bbox": [
-    1140.2,
-    1147.2,
-    96.0,
-    125.0,
-    355.5,
-    362.5
-   ],
-   "volume": 448.693,
-   "mass": 3.522,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB4-25"
   },
   "U8_PNEU/CB5-6_M08_PY_LC2F": {
    "name": "CB5-6_M08_PY_LC2F",
@@ -10247,24 +10013,6 @@
    "bolt": false,
    "spec": ""
   },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:5)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:5)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    995.75,
-    1004.25,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
-  },
   "U8_PNEU/P_M08_TUBE_COMB_ML_9": {
    "name": "P_M08_TUBE_COMB_ML_9",
    "unit": "U8_PNEU",
@@ -10272,34 +10020,16 @@
    "bbox": [
     992.0,
     1008.0,
-    124.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     698.0
    ],
-   "volume": 48771.037,
-   "mass": 130.706,
-   "material": "A5052",
+   "volume": 51861.917,
+   "mass": 70.014,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:6)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:6)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    945.75,
-    954.25,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
   },
   "U8_PNEU/P_M08_TUBE_COMB_ML_5": {
    "name": "P_M08_TUBE_COMB_ML_5",
@@ -10308,34 +10038,16 @@
    "bbox": [
     942.0,
     958.0,
-    124.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     698.0
    ],
-   "volume": 48771.037,
-   "mass": 130.706,
-   "material": "A5052",
+   "volume": 51861.917,
+   "mass": 70.014,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:7)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:7)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    445.75,
-    454.25,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
   },
   "U8_PNEU/P_M08_TUBE_COMB_ML_6": {
    "name": "P_M08_TUBE_COMB_ML_6",
@@ -10344,34 +10056,16 @@
    "bbox": [
     442.0,
     458.0,
-    124.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     698.0
    ],
-   "volume": 48771.037,
-   "mass": 130.706,
-   "material": "A5052",
+   "volume": 51861.917,
+   "mass": 70.014,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:8)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:8)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    45.75,
-    54.25,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
   },
   "U8_PNEU/P_M08_TUBE_COMB_ML_7": {
    "name": "P_M08_TUBE_COMB_ML_7",
@@ -10380,34 +10074,16 @@
    "bbox": [
     42.0,
     58.0,
-    124.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     718.0
    ],
-   "volume": 70713.393,
-   "mass": 189.512,
-   "material": "A5052",
+   "volume": 75020.273,
+   "mass": 101.277,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:9)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:9)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    -654.25,
-    -645.75,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
   },
   "U8_PNEU/P_M08_TUBE_COMB_ML_8": {
    "name": "P_M08_TUBE_COMB_ML_8",
@@ -10416,34 +10092,16 @@
    "bbox": [
     -658.0,
     -642.0,
-    158.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     698.0
    ],
-   "volume": 25899.012,
-   "mass": 69.409,
-   "material": "A5052",
+   "volume": 29101.572,
+   "mass": 39.287,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:10)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:10)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    -104.25,
-    -95.75,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
   },
   "U8_PNEU/P_M08_TUBE_COMB_U5_1": {
    "name": "P_M08_TUBE_COMB_U5_1",
@@ -10452,34 +10110,16 @@
    "bbox": [
     -108.0,
     -92.0,
-    158.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     698.0
    ],
-   "volume": 25899.012,
-   "mass": 69.409,
-   "material": "A5052",
+   "volume": 29101.572,
+   "mass": 39.287,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
-  },
-  "U8_PNEU/CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:11)": {
-   "name": "CB5-16_M08_NZ_COMB (U8_PNEU:1/CB5-16_M08_NZ_COMB:11)",
-   "unit": "U8_PNEU",
-   "component": "CB5-16_M08_NZ_COMB",
-   "bbox": [
-    -1249.25,
-    -1240.75,
-    161.75,
-    170.25,
-    644.0,
-    665.0
-   ],
-   "volume": 555.003,
-   "mass": 4.357,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-16"
   },
   "U8_PNEU/P_M08_TUBE_COMB_U5_2": {
    "name": "P_M08_TUBE_COMB_U5_2",
@@ -10488,14 +10128,14 @@
    "bbox": [
     -1253.0,
     -1237.0,
-    158.0,
+    120.2,
     197.0,
-    650.1,
+    647.0,
     697.0
    ],
-   "volume": 25261.071,
-   "mass": 67.7,
-   "material": "A5052",
+   "volume": 28463.631,
+   "mass": 38.426,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10548,8 +10188,8 @@
     470.0
    ],
    "volume": 18209.436,
-   "mass": 48.801,
-   "material": "A5052",
+   "mass": 24.583,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10602,8 +10242,8 @@
     470.0
    ],
    "volume": 18209.436,
-   "mass": 48.801,
-   "material": "A5052",
+   "mass": 24.583,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10656,8 +10296,8 @@
     470.0
    ],
    "volume": 18209.436,
-   "mass": 48.801,
-   "material": "A5052",
+   "mass": 24.583,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10710,8 +10350,8 @@
     470.0
    ],
    "volume": 18209.436,
-   "mass": 48.801,
-   "material": "A5052",
+   "mass": 24.583,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10764,8 +10404,8 @@
     470.0
    ],
    "volume": 18209.436,
-   "mass": 48.801,
-   "material": "A5052",
+   "mass": 24.583,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10818,8 +10458,8 @@
     304.0
    ],
    "volume": 12392.343,
-   "mass": 33.211,
-   "material": "A5052",
+   "mass": 16.73,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10872,8 +10512,8 @@
     304.0
    ],
    "volume": 19073.436,
-   "mass": 51.117,
-   "material": "A5052",
+   "mass": 25.749,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10926,8 +10566,8 @@
     284.0
    ],
    "volume": 11229.83,
-   "mass": 30.096,
-   "material": "A5052",
+   "mass": 15.16,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -10980,8 +10620,8 @@
     284.0
    ],
    "volume": 11229.83,
-   "mass": 30.096,
-   "material": "A5052",
+   "mass": 15.16,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -11034,8 +10674,8 @@
     284.0
    ],
    "volume": 11229.83,
-   "mass": 30.096,
-   "material": "A5052",
+   "mass": 15.16,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -11088,8 +10728,8 @@
     284.0
    ],
    "volume": 11229.83,
-   "mass": 30.096,
-   "material": "A5052",
+   "mass": 15.16,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -11250,8 +10890,8 @@
     272.0
    ],
    "volume": 70265.432,
-   "mass": 188.311,
-   "material": "A5052",
+   "mass": 94.858,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -11304,8 +10944,8 @@
     322.0
    ],
    "volume": 13754.403,
-   "mass": 36.862,
-   "material": "A5052",
+   "mass": 18.568,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -11358,8 +10998,8 @@
     322.0
    ],
    "volume": 11674.403,
-   "mass": 31.287,
-   "material": "A5052",
+   "mass": 15.76,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -11482,8 +11122,8 @@
     470.0
    ],
    "volume": 18209.436,
-   "mass": 48.801,
-   "material": "A5052",
+   "mass": 24.583,
+   "material": "PET-CF",
    "bolt": false,
    "spec": "",
    "unit": "U8_PNEU",
@@ -67666,6 +67306,546 @@
    "material": "SCM435",
    "bolt": true,
    "spec": "CB5-14"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB": {
+   "name": "CB5-20_M08_NZ_COMB",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    245.75,
+    254.25,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:2)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:2)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    645.75,
+    654.25,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:3)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:3)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    -354.25,
+    -345.75,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:4)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:4)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    -954.25,
+    -945.75,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/STEP대기_CB4-30_M08": {
+   "name": "STEP대기_CB4-30_M08",
+   "unit": "U8_PNEU",
+   "component": "STEP대기_CB4-30_M08",
+   "bbox": [
+    1036.3,
+    1043.3,
+    96.0,
+    130.0,
+    339.5,
+    346.5
+   ],
+   "volume": 511.525,
+   "mass": 4.015,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB4-30"
+  },
+  "U8_PNEU/STEP대기_CB4-30_M08 (U8_PNEU:1/STEP대기_CB4-30_M08:2)": {
+   "name": "STEP대기_CB4-30_M08 (U8_PNEU:1/STEP대기_CB4-30_M08:2)",
+   "unit": "U8_PNEU",
+   "component": "STEP대기_CB4-30_M08",
+   "bbox": [
+    1036.3,
+    1043.3,
+    96.0,
+    130.0,
+    355.5,
+    362.5
+   ],
+   "volume": 511.525,
+   "mass": 4.015,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB4-30"
+  },
+  "U8_PNEU/STEP대기_CB4-30_M08 (U8_PNEU:1/STEP대기_CB4-30_M08:3)": {
+   "name": "STEP대기_CB4-30_M08 (U8_PNEU:1/STEP대기_CB4-30_M08:3)",
+   "unit": "U8_PNEU",
+   "component": "STEP대기_CB4-30_M08",
+   "bbox": [
+    1140.2,
+    1147.2,
+    96.0,
+    130.0,
+    339.5,
+    346.5
+   ],
+   "volume": 511.525,
+   "mass": 4.015,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB4-30"
+  },
+  "U8_PNEU/STEP대기_CB4-30_M08 (U8_PNEU:1/STEP대기_CB4-30_M08:4)": {
+   "name": "STEP대기_CB4-30_M08 (U8_PNEU:1/STEP대기_CB4-30_M08:4)",
+   "unit": "U8_PNEU",
+   "component": "STEP대기_CB4-30_M08",
+   "bbox": [
+    1140.2,
+    1147.2,
+    96.0,
+    130.0,
+    355.5,
+    362.5
+   ],
+   "volume": 511.525,
+   "mass": 4.015,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB4-30"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:5)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:5)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    995.75,
+    1004.25,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:6)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:6)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    945.75,
+    954.25,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:7)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:7)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    445.75,
+    454.25,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:8)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:8)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    45.75,
+    54.25,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:9)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:9)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    -654.25,
+    -645.75,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:10)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:10)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    -104.25,
+    -95.75,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:11)": {
+   "name": "CB5-20_M08_NZ_COMB (U8_PNEU:1/CB5-20_M08_NZ_COMB:11)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_M08_NZ_COMB",
+   "bbox": [
+    -1249.25,
+    -1240.75,
+    161.75,
+    170.25,
+    640.0,
+    665.0
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_DP2 (U8_PNEU:1/CB5-20_DP2:7)": {
+   "name": "CB5-20_DP2 (U8_PNEU:1/CB5-20_DP2:7)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_DP2",
+   "bbox": [
+    1165.75,
+    1174.25,
+    105.0,
+    130.0,
+    345.75,
+    354.25
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_DP2 (U8_PNEU:1/CB5-20_DP2:8)": {
+   "name": "CB5-20_DP2 (U8_PNEU:1/CB5-20_DP2:8)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_DP2",
+   "bbox": [
+    1165.75,
+    1174.25,
+    105.0,
+    130.0,
+    525.75,
+    534.25
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_DP2 (U8_PNEU:1/CB5-20_DP2:9)": {
+   "name": "CB5-20_DP2 (U8_PNEU:1/CB5-20_DP2:9)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_DP2",
+   "bbox": [
+    1205.75,
+    1214.25,
+    105.0,
+    130.0,
+    345.75,
+    354.25
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/CB5-20_DP2 (U8_PNEU:1/CB5-20_DP2:10)": {
+   "name": "CB5-20_DP2 (U8_PNEU:1/CB5-20_DP2:10)",
+   "unit": "U8_PNEU",
+   "component": "CB5-20_DP2",
+   "bbox": [
+    1205.75,
+    1214.25,
+    105.0,
+    130.0,
+    525.75,
+    534.25
+   ],
+   "volume": 633.542,
+   "mass": 4.973,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-20"
+  },
+  "U8_PNEU/STEP대기_CB5-14_DP2 (U8_PNEU:1/STEP대기_CB5-14_DP2:8)": {
+   "name": "STEP대기_CB5-14_DP2 (U8_PNEU:1/STEP대기_CB5-14_DP2:8)",
+   "unit": "U8_PNEU",
+   "component": "STEP대기_CB5-14_DP2",
+   "bbox": [
+    -2364.25,
+    -2355.75,
+    109.0,
+    128.0,
+    595.75,
+    604.25
+   ],
+   "volume": 515.733,
+   "mass": 4.049,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-14"
+  },
+  "U1_FRAME/P_M07_BEAM_CAP": {
+   "name": "P_M07_BEAM_CAP",
+   "unit": "U1_FRAME",
+   "component": "P_M07_BEAM_CAP",
+   "bbox": [
+    -2380.0,
+    -2355.0,
+    128.2,
+    311.8,
+    258.5,
+    641.5
+   ],
+   "volume": 255686.871,
+   "mass": 2027.597,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U1_FRAME/P_M07_BEAM_CAP (U1_FRAME:1/P_M07_BEAM_CAP:2)": {
+   "name": "P_M07_BEAM_CAP (U1_FRAME:1/P_M07_BEAM_CAP:2)",
+   "unit": "U1_FRAME",
+   "component": "P_M07_BEAM_CAP",
+   "bbox": [
+    1325.0,
+    1350.0,
+    128.2,
+    311.8,
+    258.5,
+    641.5
+   ],
+   "volume": 255686.871,
+   "mass": 2027.597,
+   "material": "SUS304",
+   "bolt": false,
+   "spec": ""
+  },
+  "U1_FRAME/CB5-16_M07_CAP": {
+   "name": "CB5-16_M07_CAP",
+   "unit": "U1_FRAME",
+   "component": "CB5-16_M07_CAP",
+   "bbox": [
+    -2366.25,
+    -2357.75,
+    115.0,
+    136.0,
+    345.75,
+    354.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "U1_FRAME/CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:2)": {
+   "name": "CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:2)",
+   "unit": "U1_FRAME",
+   "component": "CB5-16_M07_CAP",
+   "bbox": [
+    -2366.25,
+    -2357.75,
+    304.0,
+    325.0,
+    345.75,
+    354.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "U1_FRAME/CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:3)": {
+   "name": "CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:3)",
+   "unit": "U1_FRAME",
+   "component": "CB5-16_M07_CAP",
+   "bbox": [
+    -2366.25,
+    -2357.75,
+    115.0,
+    136.0,
+    545.75,
+    554.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "U1_FRAME/CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:4)": {
+   "name": "CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:4)",
+   "unit": "U1_FRAME",
+   "component": "CB5-16_M07_CAP",
+   "bbox": [
+    -2366.25,
+    -2357.75,
+    304.0,
+    325.0,
+    545.75,
+    554.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "U1_FRAME/CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:5)": {
+   "name": "CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:5)",
+   "unit": "U1_FRAME",
+   "component": "CB5-16_M07_CAP",
+   "bbox": [
+    1327.75,
+    1336.25,
+    115.0,
+    136.0,
+    345.75,
+    354.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "U1_FRAME/CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:6)": {
+   "name": "CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:6)",
+   "unit": "U1_FRAME",
+   "component": "CB5-16_M07_CAP",
+   "bbox": [
+    1327.75,
+    1336.25,
+    304.0,
+    325.0,
+    345.75,
+    354.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "U1_FRAME/CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:7)": {
+   "name": "CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:7)",
+   "unit": "U1_FRAME",
+   "component": "CB5-16_M07_CAP",
+   "bbox": [
+    1327.75,
+    1336.25,
+    115.0,
+    136.0,
+    545.75,
+    554.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "U1_FRAME/CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:8)": {
+   "name": "CB5-16_M07_CAP (U1_FRAME:1/CB5-16_M07_CAP:8)",
+   "unit": "U1_FRAME",
+   "component": "CB5-16_M07_CAP",
+   "bbox": [
+    1327.75,
+    1336.25,
+    304.0,
+    325.0,
+    545.75,
+    554.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
   }
  }
 }
