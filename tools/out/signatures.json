@@ -2,8 +2,8 @@
  "date": "2026-11-28",
  "pose": "REST step 0",
  "source": "RGSEE 모델링부 저장본 FSAP_v2.30.6 전수 측정(SolidCraft 0.50.0 헤드리스 inspect.measure, 3,759바디)",
- "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.31.1.sc",
- "doc_hash": "587fb3c7f3bb4b2a",
+ "doc": "C:\\Users\\hyeun\\OneDrive\\Documents\\workspace\\FSAP\\3D_Modeling\\FSAP_v2.31.3.sc",
+ "doc_hash": "8729f3cd46400f8b",
  "parts": {
   "U1_FRAME/REF_NEEDLE_AXIS_MARK": {
    "name": "REF_NEEDLE_AXIS_MARK",
@@ -14490,8 +14490,8 @@
     272.0
    ],
    "volume": 18956.206,
-   "mass": 50.803,
-   "material": "A5052",
+   "mass": 25.591,
+   "material": "PET-CF",
    "bolt": false,
    "spec": ""
   },
@@ -63341,8 +63341,8 @@
     121.0,
     482.0
    ],
-   "volume": 930144.825,
-   "mass": 2492.788,
+   "volume": 929925.557,
+   "mass": 2492.2,
    "material": "A5052",
    "bolt": false,
    "spec": ""
@@ -63433,24 +63433,6 @@
    ],
    "volume": 707.895,
    "mass": 5.614,
-   "material": "SUS304",
-   "bolt": false,
-   "spec": ""
-  },
-  "U4_PRESS/P_RXDC03_LEAD_GUIDE_판금": {
-   "name": "P_RXDC03_LEAD_GUIDE_판금",
-   "unit": "U4_PRESS",
-   "component": "U4_PRESS",
-   "bbox": [
-    -318.6,
-    -246.0,
-    41.416,
-    98.018,
-    82.256,
-    161.724
-   ],
-   "volume": 10980.346,
-   "mass": 87.074,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -63551,32 +63533,14 @@
    "component": "U4_XCAR",
    "bbox": [
     -310.6,
-    -280.0,
+    -276.5,
     66.0,
     84.0,
     212.0,
     236.0
    ],
-   "volume": 2643.85,
-   "mass": 20.966,
-   "material": "SUS304",
-   "bolt": false,
-   "spec": ""
-  },
-  "U4_XCAR/P_RXDC03_RISER_BRKT_판금": {
-   "name": "P_RXDC03_RISER_BRKT_판금",
-   "unit": "U4_XCAR",
-   "component": "U4_XCAR",
-   "bbox": [
-    -318.6,
-    -268.0,
-    65.0,
-    97.0,
-    250.0,
-    487.0
-   ],
-   "volume": 23710.437,
-   "mass": 188.024,
+   "volume": 2728.554,
+   "mass": 21.637,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -63658,15 +63622,15 @@
    "unit": "U4_XAXIS",
    "component": "U4_XAXIS",
    "bbox": [
-    -352.0,
-    -338.0,
+    -357.0,
+    -333.0,
     68.0,
     120.0,
     603.5,
-    636.0
+    639.0
    ],
-   "volume": 3280.45,
-   "mass": 26.014,
+   "volume": 5802.388,
+   "mass": 46.013,
    "material": "SUS304",
    "bolt": false,
    "spec": ""
@@ -63743,42 +63707,6 @@
    "bolt": false,
    "spec": ""
   },
-  "CB5-12_RXDC03_GUIDE_1/CB5-12_RXDC03_GUIDE_1": {
-   "name": "CB5-12_RXDC03_GUIDE_1",
-   "unit": "U4_PRESS",
-   "component": "CB5-12_RXDC03_GUIDE_1",
-   "bbox": [
-    -254.0,
-    -237.0,
-    80.475,
-    88.975,
-    143.217,
-    151.717
-   ],
-   "volume": 476.463,
-   "mass": 3.74,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12"
-  },
-  "CB5-12_RXDC03_GUIDE_2/CB5-12_RXDC03_GUIDE_2": {
-   "name": "CB5-12_RXDC03_GUIDE_2",
-   "unit": "U4_PRESS",
-   "component": "CB5-12_RXDC03_GUIDE_2",
-   "bbox": [
-    -254.0,
-    -237.0,
-    83.483,
-    91.983,
-    151.699,
-    160.199
-   ],
-   "volume": 476.463,
-   "mass": 3.74,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12"
-  },
   "CB5-12_RXDC03_T2_1/CB5-12_RXDC03_T2_1": {
    "name": "CB5-12_RXDC03_T2_1",
    "unit": "U4_XCAR",
@@ -63802,48 +63730,12 @@
    "unit": "U4_XCAR",
    "component": "CB5-12_RXDC03_T2_2",
    "bbox": [
-    -290.25,
-    -281.75,
+    -288.25,
+    -279.75,
     70.75,
     79.25,
     228.0,
     245.0
-   ],
-   "volume": 476.463,
-   "mass": 3.74,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12"
-  },
-  "CB5-12_RXDC03_RISER_1/CB5-12_RXDC03_RISER_1": {
-   "name": "CB5-12_RXDC03_RISER_1",
-   "unit": "U4_XCAR",
-   "component": "CB5-12_RXDC03_RISER_1",
-   "bbox": [
-    -292.25,
-    -283.75,
-    85.75,
-    94.25,
-    241.0,
-    258.0
-   ],
-   "volume": 476.463,
-   "mass": 3.74,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB5-12"
-  },
-  "CB5-12_RXDC03_RISER_2/CB5-12_RXDC03_RISER_2": {
-   "name": "CB5-12_RXDC03_RISER_2",
-   "unit": "U4_XCAR",
-   "component": "CB5-12_RXDC03_RISER_2",
-   "bbox": [
-    -282.25,
-    -273.75,
-    85.75,
-    94.25,
-    241.0,
-    258.0
    ],
    "volume": 476.463,
    "mass": 3.74,
@@ -63878,32 +63770,14 @@
     -340.75,
     112.0,
     129.0,
-    625.75,
-    634.25
+    627.25,
+    635.75
    ],
    "volume": 476.463,
    "mass": 3.74,
    "material": "SCM435",
    "bolt": true,
    "spec": "CB5-12"
-  },
-  "CB4-12_RXDCC1_RISER_3/CB4-12_RXDCC1_RISER_3": {
-   "name": "CB4-12_RXDCC1_RISER_3",
-   "unit": "U4_XCAR",
-   "component": "CB4-12_RXDCC1_RISER_3",
-   "bbox": [
-    -284.0,
-    -277.0,
-    74.75,
-    81.75,
-    241.0,
-    257.0
-   ],
-   "volume": 285.33,
-   "mass": 2.24,
-   "material": "SCM435",
-   "bolt": true,
-   "spec": "CB4-12"
   },
   "U7_BASE/CB5-16_DP2 (U7_BASE:1/CB5-16_DP2:34)": {
    "name": "CB5-16_DP2 (U7_BASE:1/CB5-16_DP2:34)",
@@ -67840,6 +67714,132 @@
     325.0,
     545.75,
     554.25
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "U4_XCAR/P_RXDC03_RISER_BRKT_밀링": {
+   "name": "P_RXDC03_RISER_BRKT_밀링",
+   "unit": "U4_XCAR",
+   "component": "U4_XCAR",
+   "bbox": [
+    -318.6,
+    -258.0,
+    65.0,
+    97.0,
+    250.0,
+    487.0
+   ],
+   "volume": 42616.65,
+   "mass": 114.213,
+   "material": "A5052",
+   "bolt": false,
+   "spec": ""
+  },
+  "U4_PRESS/P_RXDC03_LEAD_GUIDE_3DP": {
+   "name": "P_RXDC03_LEAD_GUIDE_3DP",
+   "unit": "U4_PRESS",
+   "component": "U4_PRESS",
+   "bbox": [
+    -318.6,
+    -246.0,
+    41.416,
+    102.766,
+    82.256,
+    163.138
+   ],
+   "volume": 25540.66,
+   "mass": 34.48,
+   "material": "PET-CF",
+   "bolt": false,
+   "spec": ""
+  },
+  "CB5-16_RXDC03_RISER_1/CB5-16_RXDC03_RISER_1": {
+   "name": "CB5-16_RXDC03_RISER_1",
+   "unit": "U4_XCAR",
+   "component": "CB5-16_RXDC03_RISER_1",
+   "bbox": [
+    -292.25,
+    -283.75,
+    85.75,
+    94.25,
+    240.0,
+    261.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "CB5-16_RXDC03_RISER_2/CB5-16_RXDC03_RISER_2": {
+   "name": "CB5-16_RXDC03_RISER_2",
+   "unit": "U4_XCAR",
+   "component": "CB5-16_RXDC03_RISER_2",
+   "bbox": [
+    -282.25,
+    -273.75,
+    85.75,
+    94.25,
+    240.0,
+    261.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "CB5-16_RXDCC1_RISER_3/CB5-16_RXDCC1_RISER_3": {
+   "name": "CB5-16_RXDCC1_RISER_3",
+   "unit": "U4_XCAR",
+   "component": "CB5-16_RXDCC1_RISER_3",
+   "bbox": [
+    -269.5,
+    -261.0,
+    74.75,
+    83.25,
+    240.0,
+    261.0
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "CB5-16_RXDC03_GUIDE_1/CB5-16_RXDC03_GUIDE_1": {
+   "name": "CB5-16_RXDC03_GUIDE_1",
+   "unit": "U4_PRESS",
+   "component": "CB5-16_RXDC03_GUIDE_1",
+   "bbox": [
+    -257.0,
+    -236.0,
+    80.475,
+    88.975,
+    143.217,
+    151.717
+   ],
+   "volume": 555.003,
+   "mass": 4.357,
+   "material": "SCM435",
+   "bolt": true,
+   "spec": "CB5-16"
+  },
+  "CB5-16_RXDC03_GUIDE_2/CB5-16_RXDC03_GUIDE_2": {
+   "name": "CB5-16_RXDC03_GUIDE_2",
+   "unit": "U4_PRESS",
+   "component": "CB5-16_RXDC03_GUIDE_2",
+   "bbox": [
+    -257.0,
+    -236.0,
+    83.483,
+    91.983,
+    151.699,
+    160.199
    ],
    "volume": 555.003,
    "mass": 4.357,
