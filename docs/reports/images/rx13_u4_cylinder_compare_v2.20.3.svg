@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2440" height="760" viewBox="0 0 2440 760">
+<rect width="2440" height="760" fill="#fff"/>
+<text x="10" y="24" font-size="18" font-family="sans-serif">R375X 사진(crop_detail1_u4_cylinder_redblock.png)</text>
+<image x="10" y="40" width="600" height="700" preserveAspectRatio="xMidYMid meet" xlink:href="../../images/r375x/crops/crop_detail1_u4_cylinder_redblock.png"/>
+<text x="630" y="24" font-size="18" font-family="sans-serif">FSAP v2.20.3 모델 렌더 1(카메라 target -240,10,190 · yaw -2.3 · pitch 0.45 · 거리 520)</text>
+<image x="630" y="40" width="900" height="700" xlink:href="rx13_shot_v2.20.3_yawm2.3.png"/>
+<text x="1540" y="24" font-size="18" font-family="sans-serif">FSAP v2.20.3 모델 렌더 2(yaw -0.8)</text>
+<image x="1540" y="40" width="900" height="700" xlink:href="rx13_shot_v2.20.3_yawm0.8.png"/>
+</svg>

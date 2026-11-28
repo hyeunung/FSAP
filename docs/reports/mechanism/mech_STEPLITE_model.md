@@ -1,5 +1,83 @@
 # 구동 STEPLITE 모델링 — F3SG-4RA0800-14 간이 형상 (2026-11-10)
 
+> 2026-11-28 재실행 8(엔진 v4.1.2, 작업 전 문서 FSAP_v2.30.5.sc) 요약
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0(MCP·CLI 호출 0).** 최신은 그대로 `3D_Modeling/FSAP_v2.30.5.sc`(tools/config.json doc 그대로, v2.30.6 만들지 않음).
+> - 막힌 이유 1: 실행 지시 (h) 원문 "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."가 2026-11-28 머리글 (마)("2026-11-27 머리글의 (D)(E)는 그대로다") → 11-27 (E)("나머지((c)~(e)·(g)~(j))는 그대로 따른다")로 살아 있다. tools/run-args.json shellNote에도 같은 문장, 선정 보고서 mech_step_wait.md 4행도 "실행 지시 (h)로 STEPLITE는 넣지 않음".
+> - 막힌 이유 2: `import gmsh` → ModuleNotFoundError, engine/fea/.venv 없음(2026-11-28 다시 확인, 설치 안 함, D-16) — stepinfo measure·compare를 못 돌려 완료 판정 'out/lite/<형번>.json pass'를 낼 수 없다.
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절: 곡면 끝 마개, 깊이 0.2 렌즈 오목 80개). `out/lite/F3SG-4RA0800-14.json` pass false·decision '원본 유지'. 예외 요청(6절)은 결정로그에 판정이 없다(excerpt.py --keys STEPLITE,F3SG,LITE로 확인) — 사용자 결정 대기 그대로.
+> - 막힌 이유 4(이번 실행): 이 실행은 구동 과제 0에서 못 본 범위(RGSEE)와 구동부 끝 전 구간 회귀를 v2.30.5에 대고 한 번 도는 실행이다(머리글 (다)). 얻는 것이 열기 시간 약 0.1 %인 과제로 v2.30.6을 만들면 회귀 기준 문서만 바뀐다.
+> - 확인한 것(E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", CAD 없이): stepcheck F3SG-4RA0800-14 '있음', 원본 STEP 4,335,344 B 그대로. 저장본 v2.30.5 document.json에 `F3SG-4RA0800-14_M08_1`·`_2` 있음, `LITE_F3SG` 0. BOM v2.30.5 purchased 82행 수량 2 그대로.
+> - 바뀐 부품·볼트·조인트 없음. edit.json 빈 배열, edit_meta.json base v2.30.5·result null. sigpatch·임시 STEP 대상 없음.
+> - 워크플로우 메모: (h)로 막힌 STEPLITE가 열세 번째로(2026-11-28 첫 번째) 모델링부에 배정됐다. STEP 대기 재시도의 lite 목록이 실행 지시 (h)와 `out/lite/<형번>.json`의 decision '원본 유지'를 보지 않고 과제가 된다(WF-204 계열 반복). 과제 정리 단계에서 걸러야 한다 — 사용자가 6절 ①(이 형번을 간이 형상 대상에서 뺌)을 정하면 요구서 3-2에 적어 다시 올라오지 않게 할 수 있다.
+
+> 2026-11-27 재실행 7(엔진 v4.1.2, 작업 전 문서 FSAP_v2.30.3.sc) 요약
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0(MCP·CLI 호출 0).** 최신은 그대로 `3D_Modeling/FSAP_v2.30.3.sc`(tools/config.json doc 그대로, v2.30.4 만들지 않음).
+> - 막힌 이유 1: 실행 지시 (h) 원문 "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."가 2026-11-27 머리글 (E)("나머지((c)~(e)·(g)~(j))는 그대로 따른다")로 살아 있다. tools/run-args.json shellNote에도 같은 문장이 있고, 선정 보고서 mech_step_wait.md 55행도 "실행 지시 (h)로 LITE 과제는 넣지 않음".
+> - 막힌 이유 2: `import gmsh` → ModuleNotFoundError, engine/fea/.venv 없음(2026-11-27 다시 확인, 설치 안 함, D-16) — stepinfo measure·compare를 못 돌려 완료 판정 'out/lite/<형번>.json pass'를 낼 수 없다.
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절). 예외 요청(6절)은 결정로그에 판정이 없어 사용자 결정 대기 그대로.
+> - 막힌 이유 4(이번에 새로): v2.30.3은 RX-DC-C1 모델링 1회차 저장본이고 해석부 불합격(세움 받침 꺾음 날 밑 플랜지)으로 수정 회차가 남았다(머리글 (B)). 여기서 STEPLITE가 v2.30.4를 먼저 쓰면 RX-DC-C1 수정본과 번호·기준 문서가 엇갈린다.
+> - 확인한 것(E-21 "다시 부르면 이전 결과 파일부터 읽고 남은 것만", CAD 없이): stepcheck F3SG-4RA0800-14 '있음', 원본 STEP 4,335,344 B 그대로. 저장본 v2.30.3 document.json에 `F3SG-4RA0800-14_M08_1`·`_2` 있음, `LITE_F3SG` 0. BOM v2.30.3 82행 수량 2 그대로.
+> - 바뀐 부품·볼트·조인트 없음. edit.json 빈 배열, edit_meta.json base v2.30.3·result null. sigpatch·임시 STEP 대상 없음.
+> - 워크플로우 메모: (h)로 막힌 STEPLITE가 열두 번째로(2026-11-27 첫 번째) 모델링부에 배정됐다. STEP 대기 재시도의 lite 목록이 실행 지시 (h)와 `out/lite/<형번>.json`의 decision '원본 유지'를 보지 않고 과제가 된다(WF-204 계열 반복). 과제 정리 단계에서 걸러야 한다.
+
+> 2026-11-24 재실행 6(엔진 v4.0.0, 작업 전 문서 FSAP_v2.30.2.sc) 요약
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0.** 최신은 그대로 `3D_Modeling/FSAP_v2.30.2.sc`(tools/config.json doc 그대로, v2.30.3 만들지 않음).
+> - 막힌 이유 1: 실행 지시 (h) 원문 "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."가 2026-11-24 머리글 (E)("나머지((c)~(e)·(g)~(j))는 그대로 따른다")로 살아 있다. 선정 보고서 mech_step_wait.md 12·25·45행 "실행 지시 (h)로 넣지 않음".
+> - 막힌 이유 2: engine/fea/.venv 없음, `import gmsh` 실패(ModuleNotFoundError, 다시 확인, 설치 안 함, D-16) — stepinfo measure·compare 대조 pass 불가.
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절). 예외 요청(6절) 사용자 결정 대기.
+> - 원본 STEP purchased-step/F3SG-4RA0800-14/F3SG-4RA0800-14.stp 4,335,344 B 그대로. 바뀐 부품·볼트·조인트 없음. edit.json 빈 배열, edit_meta.json base v2.30.2·result null.
+> - 워크플로우 메모: (h)로 막힌 STEPLITE가 같은 날 여섯 번째로 배정됐다(WF-204 계열 반복). 과제 정리부가 실행 지시 (h)를 읽어 STEPLITE를 빼야 한다.
+
+
+> 2026-11-24 재실행 5(엔진 v4.0.0, 작업 전 문서 FSAP_v2.29.3.sc) 요약
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0.** 최신은 그대로 `3D_Modeling/FSAP_v2.29.3.sc`(tools/config.json doc 그대로, v2.29.4 없음).
+> - 막힌 이유 1: 실행 지시 (h) 원문 "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."가 2026-11-24 머리글 (E)로 살아 있다. 선정 보고서 mech_step_wait.md 12·25행 "실행 지시 (h)로 넣지 않음".
+> - 막힌 이유 2: engine/fea/.venv 없음, `import gmsh` 실패(ModuleNotFoundError, 다시 확인, 설치 안 함, D-16) — stepinfo measure·compare 대조 pass 불가.
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절). 예외 요청(6절) 사용자 결정 대기.
+> - 원본 STEP purchased-step/F3SG-4RA0800-14/F3SG-4RA0800-14.stp 4,335,344 B 그대로. 바뀐 부품·볼트·조인트 없음. edit.json 빈 배열, edit_meta.json base v2.29.3·result null.
+> - 워크플로우 메모: (h)로 막힌 STEPLITE가 같은 날 다섯 번째로 배정됐다(WF-204 계열 반복). 과제 정리부가 실행 지시 (h)를 읽어 STEPLITE를 빼야 한다.
+
+> 2026-11-24 재실행 4(엔진 v4.0.0, 작업 전 문서 FSAP_v2.29.3.sc) 요약
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0.** 최신은 그대로 `3D_Modeling/FSAP_v2.29.3.sc`(tools/config.json doc 그대로).
+> - 막힌 이유 1: 실행 지시 (h) 원문 "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."가 2026-11-24 머리글 (E)로 살아 있다. 선정 보고서 mech_step_wait.md 12·25행 "실행 지시 (h)로 넣지 않음".
+> - 막힌 이유 2: engine/fea/.venv 없음, `import gmsh` 실패(다시 확인, 설치 안 함, D-16) — stepinfo measure·compare 대조 pass를 낼 수 없다.
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절). 예외 요청(6절) 사용자 결정 대기.
+> - 원본 STEP purchased-step/F3SG-4RA0800-14/F3SG-4RA0800-14.stp 4,335,344 B 그대로. 바뀐 부품·볼트·조인트 없음. edit.json 빈 배열, edit_meta.json base v2.29.3·result null.
+> - 워크플로우 메모: (h)로 막힌 STEPLITE가 같은 날 네 번째로 배정됐다. 과제 정리부가 실행 지시 (h)를 읽어 STEPLITE를 빼야 한다.
+
+> 2026-11-24 재실행 3(엔진 v4.0.0, 작업 전 문서 FSAP_v2.29.3.sc) 요약
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0.** 최신은 그대로 `3D_Modeling/FSAP_v2.29.3.sc`(tools/config.json doc 그대로). 새 번호 파일 없음.
+> - 막힌 이유 1: 실행 지시 (h) 원문 "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."가 2026-11-24 머리글 (E)("나머지((c)~(e)·(g)~(j))는 그대로 따른다")로 살아 있다. 선정 보고서 mech_step_wait.md 7·20행도 "실행 지시 (h)로 넣지 않음". 판정이 갈리면 실행 지시를 따른다.
+> - 막힌 이유 2: stepinfo measure·compare용 파이썬 환경 없음 — engine/fea/.venv 없음, `import gmsh` 실패(2026-11-24 다시 확인, 설치 안 함, D-16).
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절). 예외 요청(6절) 사용자 결정 대기 그대로.
+> - 원본 STEP: purchased-step/F3SG-4RA0800-14/F3SG-4RA0800-14.stp 4,335,344 B 그대로.
+> - 바뀐 부품·볼트·조인트: 없음. edit.json 빈 배열, edit_meta.json base v2.29.3·result null.
+> - 워크플로우 메모: 실행 지시 (h)로 막힌 STEPLITE가 같은 날 세 번째로 배정됐다. 과제 정리부가 (h)를 읽어 STEPLITE를 빼야 한다(회고에 올림).
+
+> 2026-11-24 재실행 2(엔진 v4.0.0, 작업 전 문서 FSAP_v2.28.1.sc) 요약
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0.** 최신은 그대로 `3D_Modeling/FSAP_v2.28.1.sc`(tools/config.json doc 그대로). 새 번호 파일 없음.
+> - 막힌 이유 1: 실행 지시 (h) 원문 "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."가 2026-11-24 머리글 (E)로 살아 있다. 선정 보고서 mech_step_wait.md도 "lite: F3SG-4RA0800-14 (실행 지시 (h)로 넣지 않음)". 판정이 갈리면 실행 지시를 따른다.
+> - 막힌 이유 2: 대조 도구 stepinfo measure·compare를 돌릴 파이썬 환경 없음 — engine/fea/.venv 없음, `import gmsh` 실패(2026-11-24 다시 확인, 설치 안 함, D-16). 완료 판정 out/lite/<형번>.json pass를 낼 수 없다.
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절). 예외 요청(6절) 사용자 결정 대기 그대로.
+> - 원본 STEP: purchased-step/F3SG-4RA0800-14/F3SG-4RA0800-14.stp 4,335,344 B 그대로.
+> - 바뀐 부품·볼트·조인트: 없음. edit.json 빈 배열, edit_meta.json base v2.28.1·result null.
+
+> 2026-11-24 재실행(엔진 v4.0.0, 작업 전 문서 FSAP_v2.25.2.sc) 요약
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0.** 최신은 그대로 `3D_Modeling/FSAP_v2.25.2.sc`, `tools/config.json` doc 그대로. v2.25.3은 만들지 않았다.
+> - 막힌 이유 1: 이번 실행 지시 (h)(2026-11-24 머리글 (E)가 "나머지((c)~(e)·(g)~(j))는 그대로 따른다"로 살림) 원문 "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."와 과제가 어긋난다. 선정 보고서 mech_step_wait.md 8행도 "실행 지시 (h)로 넣지 않음"이다. 판정이 갈리면 실행 지시(사용자 쪽)를 따른다.
+> - 막힌 이유 2: 대조 도구 `stepinfo measure·compare`를 돌릴 FEA 파이썬이 없다(engine/fea/.venv 없음, 설치 안 함, D-16) — 완료 판정 out/lite/<형번>.json pass를 낼 수 없다.
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절, 곡면 끝 마개·깊이 0.2 오목). 예외 요청(6절)은 사용자 결정 대기 그대로.
+> - 바뀐 부품·볼트·조인트: 없음. 미완: LITE 대조 pass, 원본 STEP 바디 0.
+
+> 2026-11-13 재실행(엔진 v4.0.0, 작업 전 문서 FSAP_v2.13.0.sc) 요약 — 자세한 것은 9절
+> - 결과: **모델 변경 0, 저장 없음, CAD 열기 0.** 최신은 그대로 `3D_Modeling/FSAP_v2.13.0.sc`, `tools/config.json` doc 그대로. v2.13.1은 만들지 않았다.
+> - 바뀐 부품·볼트: 없음. components_added·removed 0. 조인트·리지드·동작 연구 변경 0.
+> - 막힌 이유 1: 이번 실행 지시 (f)(`tools/run-args.json` shellNote) "STEPLITE는 넣지 않는다 … 다시 넣지 않는다"와 과제가 어긋난다. 선정 보고서(mech_step_wait.md)도 "실행 지시 (f)로 이번엔 STEPLITE 넣지 않음"이라 적었다.
+> - 막힌 이유 2: 완료 판정 'out/lite/<형번>.json pass'를 낼 도구가 없다 — `import gmsh` 실패, `engine/fea/.venv` 없음(2026-11-13 다시 확인, 설치하지 않음, D-16).
+> - 막힌 이유 3: 2026-11-10 시도에서 tol 0.1 간이 형상이 구조적으로 불합격(2절). 예외 요청(6절)은 사용자 결정 대기 그대로.
+> - 핵심 수치: 원본 4.34 MB·면 1,516, 모델 안 두 벌 피처 0.27 + 0.26 s(전체 열기의 약 0.1 %).
+> - 미완: LITE_F3SG-4RA0800-14 대조 pass, 원본 STEP 바디 0.
+>
 > 2026-11-11 재실행(엔진 v4.0.0): 변화 없음 — gmsh 없음으로 대조 불가, 모델 변경 0·저장 없음(7절).
 
 요약
@@ -96,3 +174,35 @@
   - ① 이 형번을 간이 대상에서 빼고 원본 유지(추천).
   - ② 대조를 CAD 단면·bbox·부피로 대신하고, 렌즈 오목·마개 모따기 ≤ 1 mm 생략을 허용하는 tol로 간이 형상을 만든다.
   - ③ gmsh(엔진 해석 환경)를 설치하도록 허락한다 — 그러면 7절 참고 방법으로 tol 0.1 대조를 시도할 수 있다.
+
+## 9. 재실행(2026-11-13, 엔진 v4.0.0, 작업 전 문서 FSAP_v2.13.0.sc)
+- E-21("다시 부르면 이전 결과 파일부터 읽고 남은 것만")대로 1~8절과 `tools/out/lite/F3SG-4RA0800-14.json`(pass false, decision '원본 유지')부터 읽었다. 남은 것은 여전히 LITE 대조 pass 하나다.
+- 과제와 실행 지시가 어긋난다.
+  - 이번 실행 인자 `tools/run-args.json` shellNote (f): "STEPLITE는 넣지 않는다(2026-11-11 실행 지시 그대로: 구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다."
+  - 이번 실행의 선정 보고서 `mech_step_wait.md`: "lite(무거운 원본): F3SG-4RA0800-14(4.34 MB, 면 1516) — 실행 지시 (f)로 이번엔 STEPLITE 넣지 않음".
+  - 그런데 워크플로우는 무거움 목록에서 과제 STEPLITE를 그대로 만들어 모델링부에 넘겼다. 사용자가 준 실행 인자가 우선이라 모델을 바꾸지 않았다.
+- 그릴 수 있는지 확인(절차 1):
+  - 원본 STEP: `stepcheck.py F3SG-4RA0800-14` → 있음(`purchased-step/F3SG-4RA0800-14/F3SG-4RA0800-14.stp`).
+  - 대조 도구: 호스트 파이썬 `import gmsh` → ModuleNotFoundError. 엔진 `engine/fea/.venv` 없음. 지시대로 설치하지 않았다. `stepinfo compare`가 못 도니 이 컴퓨터에서는 어떤 간이 형상도 'pass'를 받을 수 없다.
+  - 형상: 2절 그대로 — 끝 마개 곡면과 깊이 0.2 렌즈 오목 80개 때문에 tol 0.1 간이 형상은 원본보다 가볍지 않다.
+- 모델 상태: 이번 실행 STEP 대기 재시도가 v2.13.0 `assembly.bom`으로 원본 F3SG-4RA0800-14가 그대로 들어 있음을 확인했다(mech_step_wait.md). 따로 다시 재지 않았다.
+- 한 것: 없음. CAD를 열지 않았고(MCP·CLI 호출 0, 설계 파일 열기 0) 저장하지 않았다. `ledger.py sigpatch`·임시 STEP 내보내기도 대상이 없어 돌리지 않았다. BOM 수량 그대로(2세트).
+- 기록 파일: `tools/out/mech_STEPLITE/edit.json`(빈 배열 그대로), `edit_meta.json`(base v2.13.0, result null).
+- 예외 요청(6절·8절 ①~③)은 그대로 사용자 결정 대기다. 추천은 ① 이 형번을 간이 대상에서 빼고 원본 유지.
+
+## 워크플로우 메모(2026-11-13)
+- 실행 지시 (f)가 "STEPLITE는 넣지 않는다"인데도 과제 STEPLITE가 만들어졌다(이 형번으로 네 번째: 2026-11-10, 11-11, 11-11 2차, 11-13). STEP 대기 재시도의 lite 목록이 실행 지시·이전 불합격 기록(`out/lite/<형번>.json` decision '원본 유지')을 보지 않고 과제가 된다. 불합격·예외 대기 형번을 건너뛰는 인자나 기록 확인이 있으면 헛돌지 않는다.
+
+## 10. 2026-11-22 재실행(엔진 v4.0.0, 작업 전 문서 FSAP_v2.17.2.sc)
+
+요약
+- 결과: **모델 변경 0, 저장 없음, CAD 열기 0.** 최신은 그대로 `3D_Modeling/FSAP_v2.17.2.sc`, `tools/config.json` doc 그대로. v2.17.3은 만들지 않았다.
+- 바뀐 부품·볼트: 없음. components_added·removed 0. 조인트·리지드·동작 연구 변경 0.
+- 막힌 이유 1: 이번 실행 지시 (h) "STEPLITE는 넣지 않는다(구매품 STEP이 열기 시간의 약 0.1 %). LITE는 v2.6.5·v2.8.10에 두 번 했으므로 다시 넣지 않는다"와 이 과제가 어긋난다.
+- 막힌 이유 2: 실행 지시 (f) "과제 FIX-045가 다른 모든 과제보다 먼저, 혼자 돌아 오류를 0으로 만들고 새 번호로 저장한다. 그 전에는 어떤 과제도 저장하지 않는다." FIX-045는 아직 미해결이다(요구서 5절 156행 '미해결', config.json doc가 v2.17.2). SolidCraft 0.45.0에서 v2.17.2는 타임라인 오류 103으로 열리므로 지금 다른 이름 저장을 하면 깨진 상태가 새 번호로 굳는다.
+- 막힌 이유 3: 완료 판정 'out/lite/<형번>.json pass'를 낼 도구가 없다 — `import gmsh` 실패, `engine/fea/.venv` 없음(2026-11-22 다시 확인, 설치하지 않음, D-16). 2026-11-10 시도의 tol 0.1 구조적 불합격(2절)과 예외 요청(6절)도 그대로다.
+- 미완: LITE_F3SG-4RA0800-14 대조 pass, 원본 STEP 바디 0. 수정 회차로 풀리지 않는다.
+
+### 워크플로우 메모
+- 실행 지시 (h)가 STEPLITE를 넣지 말라고 하는데도 과제 목록에 STEPLITE가 들어와 모델링부까지 왔다(2026-11-13에 이어 2회째). 과제 정리 단계에서 걸러야 한다.
+- STEPLITE가 FIX-045보다 먼저(또는 함께) 모델링부에 배정됐다. 지시 (f)의 'FIX-045 혼자 먼저'와 순서가 어긋난다.

@@ -1,0 +1,1 @@
+{"inputs": {"d": 8, "le": 8.0, "load_N": 246.0, "torque_Nm": 0.0, "bolt": "12.9", "base": "A5052", "dw": 13.3, "dh": 8.5, "K": 0.2, "sf_min": 3.0}, "preload_N": 0.0, "engage_ratio": 1.0, "sf_operating": {"나사 인장": 163.66, "암나사 전단": 35.86}, "sf_tightening": {}, "worst": "암나사 전단", "ok": false, "needs_fea": false, "near_limit": []}

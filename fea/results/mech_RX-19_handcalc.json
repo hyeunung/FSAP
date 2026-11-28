@@ -1,0 +1,172 @@
+{
+ "loads": {
+  "F_lift_N": 157.1,
+  "F_pull_run_N": 29.9,
+  "F_pull_mis_N": 117.8,
+  "T_stop_run_Nmm": 3686.0,
+  "T_stop_mis_Nmm": 12319.0,
+  "F_stop_run_N": 245.7,
+  "F_stop_mis_N": 821.2,
+  "stopper_push_N": 245.4,
+  "stopper_pull_N": 206.2
+ },
+ "block_stop_support": {
+  "run": {
+   "F": 245.7,
+   "post": {
+    "sigma": 24.4,
+    "tau": 13.8,
+    "vm": 34.2,
+    "SF": 5.71,
+    "d_bend": 0.0635,
+    "d_tors": 0.1264
+   },
+   "head": {
+    "sigma": 21.5,
+    "SF": 9.07,
+    "d": 0.0075
+   },
+   "defl_total_Y": 0.197,
+   "float_0.5_ok": true
+  },
+  "mis": {
+   "F": 821.2,
+   "post": {
+    "sigma": 81.5,
+    "tau": 46.2,
+    "vm": 114.2,
+    "SF": 1.71,
+    "d_bend": 0.2122,
+    "d_tors": 0.4225
+   },
+   "head": {
+    "sigma": 71.9,
+    "SF": 2.71,
+    "d": 0.0252
+   },
+   "defl_total_Y": 0.66,
+   "float_0.5_ok": false
+  },
+  "k_support_N_mm": 1247.0,
+  "k_rod_N_mm": 58790.0,
+  "mis_over_float_mm": 0.16,
+  "mis_rod_side_N": 194.0,
+  "mis_rod_bend_MPa": 25.1
+ },
+ "stop_block": {
+  "run": {
+   "sigma_net": 3.0,
+   "SF": 65.71,
+   "head_bearing": 1.4,
+   "edge_line_N_per_mm": 20.5,
+   "edge_bed1mm_MPa": 20.5,
+   "edge_bed1mm_SF": 9.52
+  },
+  "mis": {
+   "sigma_net": 9.9,
+   "SF": 19.66,
+   "head_bearing": 4.6,
+   "edge_line_N_per_mm": 68.4,
+   "edge_bed1mm_MPa": 68.4,
+   "edge_bed1mm_SF": 2.85
+  }
+ },
+ "swing_tongue": {
+  "stop_run": {
+   "sigma": 10.4,
+   "SF": 18.75
+  },
+  "stop_mis": {
+   "sigma": 34.9,
+   "SF": 5.59
+  },
+  "lift_root116": {
+   "sigma": 12.6,
+   "SF": 15.48
+  },
+  "lift_root160": {
+   "sigma": 5.9,
+   "SF": 33.05
+  },
+  "slot_bearing_MPa": 2.45
+ },
+ "pin_reaction_N": {
+  "press_run": 30.3,
+  "lift": 163.9,
+  "stop_run": 220.8,
+  "stop_mis": 717.3
+ },
+ "block_lug": {
+  "run": {
+   "F": 220.8,
+   "sigma": 7.76,
+   "SF": 25.14,
+   "tip_d": 0.0269
+  },
+  "mis": {
+   "F": 717.3,
+   "sigma": 25.2,
+   "SF": 7.74,
+   "tip_d": 0.0874
+  }
+ },
+ "pin": {
+  "run": {
+   "bend": 15.6,
+   "SF_bend": 21.96,
+   "tau_double": 0.98,
+   "bush_p_MPa": 0.92,
+   "lug_bear_MPa": 0.84
+  },
+  "mis": {
+   "bend": 50.7,
+   "SF_bend": 6.76,
+   "tau_double": 3.17,
+   "bush_p_MPa": 2.99,
+   "lug_bear_MPa": 2.72
+  }
+ },
+ "swing_cheek": {
+  "run": {
+   "sigma_root": 1.0,
+   "SF": 190.4,
+   "net_tension": 0.66
+  },
+  "mis": {
+   "sigma_root": 3.3,
+   "SF": 58.61,
+   "net_tension": 2.13
+  }
+ },
+ "swing_neck": {
+  "run": {
+   "sigma": 6.4,
+   "tau": 5.1,
+   "vm": 10.9,
+   "SF": 17.82
+  },
+  "mis_3g": {
+   "sigma": 19.1,
+   "tau": 15.4,
+   "vm": 32.8,
+   "SF": 5.94
+  }
+ },
+ "wheel_contact_defl": {
+  "lug_Z": 0.0041,
+  "neck_Z": 0.0171,
+  "sum_Z": 0.0212,
+  "lug_X": 0.0294,
+  "neck_X": 0.0507,
+  "cheek_X": 0.002,
+  "sum_X": 0.0821,
+  "sum_abs": 0.103,
+  "limit": 0.5,
+  "ok": true
+ },
+ "overspec_notes": [
+  "러그 운전 SF 25 ≥ 9: 강도로는 과사양, 폭은 바퀴 접지 강성·핀 구멍 자리로 정함",
+  "스톱 블록 운전 SF 66: 크기는 M8 탭·조인트 자리로 정함",
+  "핀 Ø12 운전 SF 22: 부시 MPFZ12 구멍으로 정함"
+ ]
+}

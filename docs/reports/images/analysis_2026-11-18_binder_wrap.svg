@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1267 575" width="1267" height="575" font-family="Malgun Gothic, Apple SD Gothic Neo, sans-serif">
+<rect width="1267" height="575" fill="#fafafa"/>
+<text x="40" y="30" font-size="17" font-weight="bold" fill="#111">테이프 올마다 가야 하는 길 (지금 설계의 접는 자리, 옆에서 본 그림)</text>
+<text x="40" y="52" font-size="13" fill="#444">테이프는 길이로 거의 늘지 않는다. 폭 방향의 모든 올이 같은 길이를 가야 하는데, 아랫날개 쪽 올은 그보다 먼 길을 가야 한다</text>
+<clipPath id="cw"><rect x="40.0" y="70.0" width="765.6" height="475.2"/></clipPath>
+<rect x="40.0" y="70.0" width="765.6" height="475.2" fill="#ffffff" stroke="#999"/>
+<g clip-path="url(#cw)">
+<polygon points="40.0,545.2 805.6,545.2 805.6,492.4 40.0,492.4" fill="#d5d9df" stroke="#888" stroke-width="1.2" />
+<polygon points="416.2,501.6 792.4,501.6 792.4,492.4 416.2,492.4" fill="#ffffff" stroke="#888" stroke-width="1.2" />
+<polygon points="40.0,492.4 805.6,492.4 805.6,426.4 40.0,426.4" fill="#e9dcc9" stroke="#a08b6b" stroke-width="1.2" />
+<polygon points="86.2,347.2 86.2,96.4 643.9,96.4 643.9,347.2 653.8,347.2 653.8,406.6 546.2,406.6 418.8,347.2" fill="#eef1f5" stroke="#555" stroke-width="1.5" />
+<polygon points="86.2,169.7 546.2,384.2 653.8,384.2 653.8,397.4 546.2,397.4 86.2,182.9" fill="#ffffff" stroke="#888" stroke-width="1" />
+<line x1="713.2" y1="532.0" x2="713.2" y2="83.2" stroke="#d02020" stroke-width="1.6" />
+<polyline points="86.2,176.3 290.8,271.7 546.2,390.8 653.8,390.8 713.2,423.1" fill="none" stroke="#1f6fd0" stroke-width="3" />
+<polyline points="290.8,271.7 620.8,495.7 713.2,495.7" fill="none" stroke="#e03131" stroke-width="3" stroke-dasharray="9 4"/>
+<line x1="290.8" y1="400.0" x2="290.8" y2="155.8" stroke="#555" stroke-width="1" stroke-dasharray="3 3"/>
+</g>
+<text x="304.0" y="142.6" font-size="12" fill="#555" text-anchor="middle">여기(Y -64)까지 테이프가 통로 안에 평평하게 잡혀 있음</text>
+<text x="457.2" y="288.4" font-size="13" fill="#1f6fd0" text-anchor="start" font-weight="bold">접힘선·윗날개 올 69.2 mm</text>
+<text x="53.2" y="390.1" font-size="13" fill="#e03131" text-anchor="start" font-weight="bold">아랫날개 끝 올: 가장 짧게 가도 80.7 mm</text>
+<text x="718.2" y="95.2" font-size="12" fill="#d02020" text-anchor="start">바늘</text>
+<text x="317.2" y="463.4" font-size="11" fill="#e03131" text-anchor="start">(매트 가장자리 바깥으로 내려와 밑으로 들어감)</text>
+<text x="53.2" y="463.4" font-size="12" fill="#6b5a3c" text-anchor="start">매트 (두께 10)</text>
+<text x="53.2" y="522.8" font-size="12" fill="#555" text-anchor="start">바늘판</text>
+<text x="515.2" y="514.6" font-size="11" fill="#555" text-anchor="start">홈 깊이 1.4</text>
+<text x="627.4" y="122.8" font-size="12" fill="#555" text-anchor="end">바인더</text>
+<rect x="855.0" y="100.0" width="372.0" height="288.0" fill="#ffffff" stroke="#999"/>
+<polygon points="855.0,388.0 1227.0,388.0 1227.0,292.0 1083.0,292.0 1083.0,308.8 915.0,308.8 915.0,292.0 855.0,292.0" fill="#d5d9df" stroke="#888" stroke-width="1.2" />
+<polygon points="855.0,292.0 1041.0,292.0 1041.0,172.0 855.0,172.0" fill="#e9dcc9" stroke="#a08b6b" stroke-width="1.2" />
+<polyline points="933.0,166.0 1047.0,166.0 1047.0,298.0 933.0,298.0" fill="none" stroke="#c2570c" stroke-width="4" />
+<line x1="963.0" y1="340.0" x2="963.0" y2="112.0" stroke="#d02020" stroke-width="1.4" />
+<circle cx="1041.0" cy="166.0" r="4" fill="#e03131"/>
+<text x="1049.0" y="158.0" font-size="12" fill="#e03131" text-anchor="start" font-weight="bold">접힘선 0</text>
+<circle cx="1047.0" cy="226.0" r="4" fill="#e03131"/>
+<text x="1055.0" y="230.0" font-size="12" fill="#e03131" text-anchor="start" font-weight="bold">+0.5</text>
+<circle cx="1047.0" cy="298.0" r="4" fill="#e03131"/>
+<text x="1057.0" y="303.0" font-size="12" fill="#e03131" text-anchor="start" font-weight="bold">+4.0 mm (5.8 %)</text>
+<circle cx="933.0" cy="298.0" r="4" fill="#e03131"/>
+<text x="933.0" y="328.0" font-size="12" fill="#e03131" text-anchor="middle" font-weight="bold">+11.4 mm (16.5 %)</text>
+<text x="861.0" y="232.0" font-size="12" fill="#6b5a3c" text-anchor="start">매트</text>
+<text x="855" y="88" font-size="13" font-weight="bold" fill="#111">바늘 자리 단면: 접힘선보다 더 필요한 길이</text>
+<text x="855" y="408" font-size="12" fill="#444">(Y -64에서 바늘까지, 주황 = 감긴 테이프)</text>
+</svg>
